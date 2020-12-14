@@ -5,43 +5,43 @@ declare namespace cocoascript {
    */
   interface IOBluetoothSDPDataElement extends NSObject {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396701-initwithelementvalue
-    initWithElementValue(element: cocoascript.NSObject):cocoascript.IOBluetoothSDPDataElement;
+    initWithElementValue(element: NSObject):IOBluetoothSDPDataElement;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396719-initwithtype
-    initWithType_sizeDescriptor_size_value(newType: cocoascript.BluetoothSDPDataElementTypeDescriptor, newSizeDescriptor: cocoascript.BluetoothSDPDataElementSizeDescriptor, newSize: number, newValue: cocoascript.NSObject):cocoascript.IOBluetoothSDPDataElement;
+    initWithType_sizeDescriptor_size_value(newType: BluetoothSDPDataElementTypeDescriptor, newSizeDescriptor: BluetoothSDPDataElementSizeDescriptor, newSize: number, newValue: NSObject):IOBluetoothSDPDataElement;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396689-containsdataelement
-    containsDataElement(dataElement: cocoascript.IOBluetoothSDPDataElement):cocoascript.BOOL;
+    containsDataElement(dataElement: IOBluetoothSDPDataElement):BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396715-containsvalue
-    containsValue(cmpValue: cocoascript.NSObject):cocoascript.BOOL;
+    containsValue(cmpValue: NSObject):BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396708-getarrayvalue
-    getArrayValue():cocoascript.NSArray;
+    getArrayValue():NSArray;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396717-getdatavalue
-    getDataValue():cocoascript.NSData;
+    getDataValue():NSData;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396693-getnumbervalue
-    getNumberValue():cocoascript.NSNumber;
+    getNumberValue():NSNumber;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396704-getsdpdataelementref
-    getSDPDataElementRef():cocoascript.IOBluetoothSDPDataElementRef;
+    getSDPDataElementRef():IOBluetoothSDPDataElementRef;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396713-getsize
     getSize():number;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396691-getsizedescriptor
-    getSizeDescriptor():cocoascript.BluetoothSDPDataElementSizeDescriptor;
+    getSizeDescriptor():BluetoothSDPDataElementSizeDescriptor;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396695-getstringvalue
     getStringValue():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396697-gettypedescriptor
-    getTypeDescriptor():cocoascript.BluetoothSDPDataElementTypeDescriptor;
+    getTypeDescriptor():BluetoothSDPDataElementTypeDescriptor;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396702-getuuidvalue
-    getUUIDValue():cocoascript.IOBluetoothSDPUUID;
+    getUUIDValue():IOBluetoothSDPUUID;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396699-getvalue
-    getValue():cocoascript.NSObject;
+    getValue():NSObject;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396721-withelementvalue
-    withElementValue(element: cocoascript.NSObject):cocoascript.IOBluetoothSDPDataElement;
+    withElementValue(element: NSObject):IOBluetoothSDPDataElement;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396687-withsdpdataelementref
-    withSDPDataElementRef(sdpDataElementRef: cocoascript.IOBluetoothSDPDataElementRef):cocoascript.IOBluetoothSDPDataElement;
+    withSDPDataElementRef(sdpDataElementRef: IOBluetoothSDPDataElementRef):IOBluetoothSDPDataElement;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396706-withtype
-    withType_sizeDescriptor_size_value(type: cocoascript.BluetoothSDPDataElementTypeDescriptor, newSizeDescriptor: cocoascript.BluetoothSDPDataElementSizeDescriptor, newSize: number, newValue: cocoascript.NSObject):cocoascript.IOBluetoothSDPDataElement;
+    withType_sizeDescriptor_size_value(type: BluetoothSDPDataElementTypeDescriptor, newSizeDescriptor: BluetoothSDPDataElementSizeDescriptor, newSize: number, newValue: NSObject):IOBluetoothSDPDataElement;
     //
-    alloc():cocoascript.IOBluetoothSDPDataElement;
+    alloc():IOBluetoothSDPDataElement;
     //
-    init():cocoascript.IOBluetoothSDPDataElement;
+    init():IOBluetoothSDPDataElement;
   }
 }
 
@@ -53,31 +53,31 @@ declare namespace cocoascript {
    */
   interface IOBluetoothSDPUUID extends NSData {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpuuid/1431398-initwithuuid16
-    initWithUUID16(uuid16: cocoascript.BluetoothSDPUUID16):cocoascript.IOBluetoothSDPUUID;
+    initWithUUID16(uuid16: BluetoothSDPUUID16):IOBluetoothSDPUUID;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpuuid/1430416-initwithuuid32
-    initWithUUID32(uuid32: cocoascript.BluetoothSDPUUID32):cocoascript.IOBluetoothSDPUUID;
+    initWithUUID32(uuid32: BluetoothSDPUUID32):IOBluetoothSDPUUID;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpuuid/1428320-uuidwithbytes
-    uuidWithBytes_length(bytes: void, length: number):cocoascript.IOBluetoothSDPUUID;
+    uuidWithBytes_length(bytes: void, length: number):IOBluetoothSDPUUID;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpuuid/1433987-uuidwithdata
-    uuidWithData(data: cocoascript.NSData):cocoascript.IOBluetoothSDPUUID;
+    uuidWithData(data: NSData):IOBluetoothSDPUUID;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpuuid/1434310-classforarchiver
-    classForArchiver():cocoascript.Class;
+    classForArchiver():Class;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpuuid/1431004-classforcoder
-    classForCoder():cocoascript.Class;
+    classForCoder():Class;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpuuid/1429202-classforportcoder
-    classForPortCoder():cocoascript.Class;
+    classForPortCoder():Class;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpuuid/1434307-getuuidwithlength
-    getUUIDWithLength(newLength: number):cocoascript.IOBluetoothSDPUUID;
+    getUUIDWithLength(newLength: number):IOBluetoothSDPUUID;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpuuid/1428786-isequaltouuid
-    isEqualToUUID(otherUUID: cocoascript.IOBluetoothSDPUUID):cocoascript.BOOL;
+    isEqualToUUID(otherUUID: IOBluetoothSDPUUID):BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpuuid/1433610-uuid16
-    uuid16(uuid16: cocoascript.BluetoothSDPUUID16):cocoascript.IOBluetoothSDPUUID;
+    uuid16(uuid16: BluetoothSDPUUID16):IOBluetoothSDPUUID;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpuuid/1429154-uuid32
-    uuid32(uuid32: cocoascript.BluetoothSDPUUID32):cocoascript.IOBluetoothSDPUUID;
+    uuid32(uuid32: BluetoothSDPUUID32):IOBluetoothSDPUUID;
     //
-    alloc():cocoascript.IOBluetoothSDPUUID;
+    alloc():IOBluetoothSDPUUID;
     //
-    init():cocoascript.IOBluetoothSDPUUID;
+    init():IOBluetoothSDPUUID;
   }
 }
 
@@ -89,23 +89,23 @@ declare namespace cocoascript {
    */
   interface IOBluetoothSDPServiceAttribute extends NSObject {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpserviceattribute/1434496-initwithid
-    initWithID_attributeElement(newAttributeID: cocoascript.BluetoothSDPServiceAttributeID, attributeElement: cocoascript.IOBluetoothSDPDataElement):cocoascript.IOBluetoothSDPServiceAttribute;
+    initWithID_attributeElement(newAttributeID: BluetoothSDPServiceAttributeID, attributeElement: IOBluetoothSDPDataElement):IOBluetoothSDPServiceAttribute;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpserviceattribute/1434660-initwithid
-    initWithID_attributeElementValue(newAttributeID: cocoascript.BluetoothSDPServiceAttributeID, attributeElementValue: cocoascript.NSObject):cocoascript.IOBluetoothSDPServiceAttribute;
+    initWithID_attributeElementValue(newAttributeID: BluetoothSDPServiceAttributeID, attributeElementValue: NSObject):IOBluetoothSDPServiceAttribute;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpserviceattribute/1432222-getattributeid
-    getAttributeID():cocoascript.BluetoothSDPServiceAttributeID;
+    getAttributeID():BluetoothSDPServiceAttributeID;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpserviceattribute/1434313-getdataelement
-    getDataElement():cocoascript.IOBluetoothSDPDataElement;
+    getDataElement():IOBluetoothSDPDataElement;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpserviceattribute/1429114-getiddataelement
-    getIDDataElement():cocoascript.IOBluetoothSDPDataElement;
+    getIDDataElement():IOBluetoothSDPDataElement;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpserviceattribute/1431154-withid
-    withID_attributeElement(newAttributeID: cocoascript.BluetoothSDPServiceAttributeID, attributeElement: cocoascript.IOBluetoothSDPDataElement):cocoascript.IOBluetoothSDPServiceAttribute;
+    withID_attributeElement(newAttributeID: BluetoothSDPServiceAttributeID, attributeElement: IOBluetoothSDPDataElement):IOBluetoothSDPServiceAttribute;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpserviceattribute/1430305-withid
-    withID_attributeElementValue(newAttributeID: cocoascript.BluetoothSDPServiceAttributeID, attributeElementValue: cocoascript.NSObject):cocoascript.IOBluetoothSDPServiceAttribute;
+    withID_attributeElementValue(newAttributeID: BluetoothSDPServiceAttributeID, attributeElementValue: NSObject):IOBluetoothSDPServiceAttribute;
     //
-    alloc():cocoascript.IOBluetoothSDPServiceAttribute;
+    alloc():IOBluetoothSDPServiceAttribute;
     //
-    init():cocoascript.IOBluetoothSDPServiceAttribute;
+    init():IOBluetoothSDPServiceAttribute;
   }
 }
 
@@ -117,50 +117,50 @@ declare namespace cocoascript {
    */
   interface IOBluetoothSDPServiceRecord extends NSObject {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1431493-initwithservicedictionary
-    initWithServiceDictionary_device(serviceDict: cocoascript.NSDictionary, device: cocoascript.IOBluetoothDevice):cocoascript.IOBluetoothSDPServiceRecord;
+    initWithServiceDictionary_device(serviceDict: NSDictionary, device: IOBluetoothDevice):IOBluetoothSDPServiceRecord;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1433779-attributes
-    attributes(): cocoascript.NSDictionary;
+    attributes(): NSDictionary;
     setAttributes(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1433059-device
-    device(): cocoascript.IOBluetoothDevice;
+    device(): IOBluetoothDevice;
     setDevice(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1434569-sortedattributes
-    sortedAttributes(): cocoascript.NSArray;
+    sortedAttributes(): NSArray;
     setSortedAttributes(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1429300-getattributedataelement
-    getAttributeDataElement(attributeID: cocoascript.BluetoothSDPServiceAttributeID):cocoascript.IOBluetoothSDPDataElement;
+    getAttributeDataElement(attributeID: BluetoothSDPServiceAttributeID):IOBluetoothSDPDataElement;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1430339-getl2cappsm
-    getL2CAPPSM(outPSM: cocoascript.BluetoothL2CAPPSM):any;
+    getL2CAPPSM(outPSM: BluetoothL2CAPPSM):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1434175-getrfcommchannelid
-    getRFCOMMChannelID(rfcommChannelID: cocoascript.BluetoothRFCOMMChannelID):any;
+    getRFCOMMChannelID(rfcommChannelID: BluetoothRFCOMMChannelID):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1429688-getsdpservicerecordref
-    getSDPServiceRecordRef():cocoascript.IOBluetoothSDPServiceRecordRef;
+    getSDPServiceRecordRef():IOBluetoothSDPServiceRecordRef;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1434797-getservicename
     getServiceName():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1432281-getservicerecordhandle
-    getServiceRecordHandle(outServiceRecordHandle: cocoascript.BluetoothSDPServiceRecordHandle):any;
+    getServiceRecordHandle(outServiceRecordHandle: BluetoothSDPServiceRecordHandle):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1427810-handsfreesupportedfeatures
     handsFreeSupportedFeatures():number;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1433726-hasservicefromarray
-    hasServiceFromArray(array: cocoascript.NSArray):cocoascript.BOOL;
+    hasServiceFromArray(array: NSArray):BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1431678-matchessearcharray
-    matchesSearchArray(searchArray: cocoascript.NSArray):cocoascript.BOOL;
+    matchesSearchArray(searchArray: NSArray):BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1429229-matchesuuid16
-    matchesUUID16(uuid16: cocoascript.BluetoothSDPUUID16):cocoascript.BOOL;
+    matchesUUID16(uuid16: BluetoothSDPUUID16):BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1434055-matchesuuidarray
-    matchesUUIDArray(uuidArray: cocoascript.NSArray):cocoascript.BOOL;
+    matchesUUIDArray(uuidArray: NSArray):BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1432315-removeservicerecord
     removeServiceRecord():any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1430450-publishedservicerecordwithdictio
-    publishedServiceRecordWithDictionary(serviceDict: cocoascript.NSDictionary):cocoascript.IOBluetoothSDPServiceRecord;
+    publishedServiceRecordWithDictionary(serviceDict: NSDictionary):IOBluetoothSDPServiceRecord;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1434716-withsdpservicerecordref
-    withSDPServiceRecordRef(sdpServiceRecordRef: cocoascript.IOBluetoothSDPServiceRecordRef):cocoascript.IOBluetoothSDPServiceRecord;
+    withSDPServiceRecordRef(sdpServiceRecordRef: IOBluetoothSDPServiceRecordRef):IOBluetoothSDPServiceRecord;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1435073-withservicedictionary
-    withServiceDictionary_device(serviceDict: cocoascript.NSDictionary, device: cocoascript.IOBluetoothDevice):cocoascript.IOBluetoothSDPServiceRecord;
+    withServiceDictionary_device(serviceDict: NSDictionary, device: IOBluetoothDevice):IOBluetoothSDPServiceRecord;
     //
-    alloc():cocoascript.IOBluetoothSDPServiceRecord;
+    alloc():IOBluetoothSDPServiceRecord;
     //
-    init():cocoascript.IOBluetoothSDPServiceRecord;
+    init():IOBluetoothSDPServiceRecord;
   }
 }
 
@@ -172,32 +172,32 @@ declare namespace cocoascript {
    */
   interface IOBluetoothDevice extends IOBluetoothObject {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1434863-devicewithaddress
-    deviceWithAddress(address: cocoascript.BluetoothDeviceAddress):cocoascript.IOBluetoothDevice;
+    deviceWithAddress(address: BluetoothDeviceAddress):IOBluetoothDevice;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1434342-devicewithaddressstring
-    deviceWithAddressString(address: string | cocoascript.NSString):cocoascript.IOBluetoothDevice;
+    deviceWithAddressString(address: string | cocoascript.NSString):IOBluetoothDevice;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1431756-addressstring
     addressString(): string | cocoascript.NSString;
     setAddressString(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1428484-classofdevice
-    classOfDevice(): cocoascript.BluetoothClassOfDevice;
+    classOfDevice(): BluetoothClassOfDevice;
     setClassOfDevice(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1431263-connectionhandle
-    connectionHandle(): cocoascript.BluetoothConnectionHandle;
+    connectionHandle(): BluetoothConnectionHandle;
     setConnectionHandle(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1435069-deviceclassmajor
-    deviceClassMajor(): cocoascript.BluetoothDeviceClassMajor;
+    deviceClassMajor(): BluetoothDeviceClassMajor;
     setDeviceClassMajor(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1429321-deviceclassminor
-    deviceClassMinor(): cocoascript.BluetoothDeviceClassMinor;
+    deviceClassMinor(): BluetoothDeviceClassMinor;
     setDeviceClassMinor(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1427806-handsfreeaudiogateway
-    handsFreeAudioGateway(): cocoascript.BOOL;
+    handsFreeAudioGateway(): BOOL;
     setHandsFreeAudioGateway(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1427742-handsfreedevice
-    handsFreeDevice(): cocoascript.BOOL;
+    handsFreeDevice(): BOOL;
     setHandsFreeDevice(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1430448-lastnameupdate
-    lastNameUpdate(): cocoascript.NSDate;
+    lastNameUpdate(): NSDate;
     setLastNameUpdate(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1434669-name
     name(): string | cocoascript.NSString;
@@ -206,105 +206,105 @@ declare namespace cocoascript {
     nameOrAddress(): string | cocoascript.NSString;
     setNameOrAddress(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1429342-serviceclassmajor
-    serviceClassMajor(): cocoascript.BluetoothServiceClassMajor;
+    serviceClassMajor(): BluetoothServiceClassMajor;
     setServiceClassMajor(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1432771-services
-    services(): cocoascript.NSArray;
+    services(): NSArray;
     setServices(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1431127-rssi
-    RSSI():cocoascript.BluetoothHCIRSSIValue;
+    RSSI():BluetoothHCIRSSIValue;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1433449-addtofavorites
     addToFavorites():any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1434886-awakeafterusingcoder
-    awakeAfterUsingCoder(coder: cocoascript.NSCoder):cocoascript.IOBluetoothDevice;
+    awakeAfterUsingCoder(coder: NSCoder):IOBluetoothDevice;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1433689-closeconnection
     closeConnection():any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1434306-getaddress
-    getAddress():cocoascript.BluetoothDeviceAddress;
+    getAddress():BluetoothDeviceAddress;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1428369-getclockoffset
-    getClockOffset():cocoascript.BluetoothClockOffset;
+    getClockOffset():BluetoothClockOffset;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1433989-getencryptionmode
-    getEncryptionMode():cocoascript.BluetoothHCIEncryptionMode;
+    getEncryptionMode():BluetoothHCIEncryptionMode;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1434397-getlastinquiryupdate
-    getLastInquiryUpdate():cocoascript.NSDate;
+    getLastInquiryUpdate():NSDate;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1434331-getlastservicesupdate
-    getLastServicesUpdate():cocoascript.NSDate;
+    getLastServicesUpdate():NSDate;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1430010-getlinktype
-    getLinkType():cocoascript.BluetoothLinkType;
+    getLinkType():BluetoothLinkType;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1428665-getpagescanmode
-    getPageScanMode():cocoascript.BluetoothPageScanMode;
+    getPageScanMode():BluetoothPageScanMode;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1432874-getpagescanperiodmode
-    getPageScanPeriodMode():cocoascript.BluetoothPageScanPeriodMode;
+    getPageScanPeriodMode():BluetoothPageScanPeriodMode;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1432512-getpagescanrepetitionmode
-    getPageScanRepetitionMode():cocoascript.BluetoothPageScanRepetitionMode;
+    getPageScanRepetitionMode():BluetoothPageScanRepetitionMode;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1433525-getservicerecordforuuid
-    getServiceRecordForUUID(sdpUUID: cocoascript.IOBluetoothSDPUUID):cocoascript.IOBluetoothSDPServiceRecord;
+    getServiceRecordForUUID(sdpUUID: IOBluetoothSDPUUID):IOBluetoothSDPServiceRecord;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1427826-handsfreeaudiogatewayservicereco
-    handsFreeAudioGatewayServiceRecord():cocoascript.IOBluetoothSDPServiceRecord;
+    handsFreeAudioGatewayServiceRecord():IOBluetoothSDPServiceRecord;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1427740-handsfreedeviceservicerecord
-    handsFreeDeviceServiceRecord():cocoascript.IOBluetoothSDPServiceRecord;
+    handsFreeDeviceServiceRecord():IOBluetoothSDPServiceRecord;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1432785-isconnected
-    isConnected():cocoascript.BOOL;
+    isConnected():BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1433415-isfavorite
-    isFavorite():cocoascript.BOOL;
+    isFavorite():BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1434030-isincoming
-    isIncoming():cocoascript.BOOL;
+    isIncoming():BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1432940-ispaired
-    isPaired():cocoascript.BOOL;
+    isPaired():BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1428435-openconnection
     openConnection():any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1429815-openconnection
-    openConnection(target: cocoascript.IOBluetoothDevice):any;
+    openConnection(target: IOBluetoothDevice):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1433547-openconnection
-    openConnection_withPageTimeout_authenticationRequired(target: cocoascript.IOBluetoothDevice, pageTimeoutValue: cocoascript.BluetoothHCIPageTimeout, authenticationRequired: cocoascript.BOOL):any;
+    openConnection_withPageTimeout_authenticationRequired(target: IOBluetoothDevice, pageTimeoutValue: BluetoothHCIPageTimeout, authenticationRequired: BOOL):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1431981-openl2capchannelasync
-    openL2CAPChannelAsync_withPSM_delegate(newChannel: cocoascript.IOBluetoothL2CAPChannel, psm: cocoascript.BluetoothL2CAPPSM, channelDelegate: cocoascript.IOBluetoothDevice):any;
+    openL2CAPChannelAsync_withPSM_delegate(newChannel: IOBluetoothL2CAPChannel, psm: BluetoothL2CAPPSM, channelDelegate: IOBluetoothDevice):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1430889-openl2capchannelasync
-    openL2CAPChannelAsync_withPSM_withConfiguration_delegate(newChannel: cocoascript.IOBluetoothL2CAPChannel, psm: cocoascript.BluetoothL2CAPPSM, channelConfiguration: cocoascript.NSDictionary, channelDelegate: cocoascript.IOBluetoothDevice):any;
+    openL2CAPChannelAsync_withPSM_withConfiguration_delegate(newChannel: IOBluetoothL2CAPChannel, psm: BluetoothL2CAPPSM, channelConfiguration: NSDictionary, channelDelegate: IOBluetoothDevice):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1434939-openl2capchannelsync
-    openL2CAPChannelSync_withPSM_delegate(newChannel: cocoascript.IOBluetoothL2CAPChannel, psm: cocoascript.BluetoothL2CAPPSM, channelDelegate: cocoascript.IOBluetoothDevice):any;
+    openL2CAPChannelSync_withPSM_delegate(newChannel: IOBluetoothL2CAPChannel, psm: BluetoothL2CAPPSM, channelDelegate: IOBluetoothDevice):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1429338-openl2capchannelsync
-    openL2CAPChannelSync_withPSM_withConfiguration_delegate(newChannel: cocoascript.IOBluetoothL2CAPChannel, psm: cocoascript.BluetoothL2CAPPSM, channelConfiguration: cocoascript.NSDictionary, channelDelegate: cocoascript.IOBluetoothDevice):any;
+    openL2CAPChannelSync_withPSM_withConfiguration_delegate(newChannel: IOBluetoothL2CAPChannel, psm: BluetoothL2CAPPSM, channelConfiguration: NSDictionary, channelDelegate: IOBluetoothDevice):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1435022-openrfcommchannelasync
-    openRFCOMMChannelAsync_withChannelID_delegate(rfcommChannel: cocoascript.IOBluetoothRFCOMMChannel, channelID: cocoascript.BluetoothRFCOMMChannelID, channelDelegate: cocoascript.IOBluetoothDevice):any;
+    openRFCOMMChannelAsync_withChannelID_delegate(rfcommChannel: IOBluetoothRFCOMMChannel, channelID: BluetoothRFCOMMChannelID, channelDelegate: IOBluetoothDevice):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1431606-openrfcommchannelsync
-    openRFCOMMChannelSync_withChannelID_delegate(rfcommChannel: cocoascript.IOBluetoothRFCOMMChannel, channelID: cocoascript.BluetoothRFCOMMChannelID, channelDelegate: cocoascript.IOBluetoothDevice):any;
+    openRFCOMMChannelSync_withChannelID_delegate(rfcommChannel: IOBluetoothRFCOMMChannel, channelID: BluetoothRFCOMMChannelID, channelDelegate: IOBluetoothDevice):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1432337-performsdpquery
-    performSDPQuery(target: cocoascript.IOBluetoothDevice):any;
+    performSDPQuery(target: IOBluetoothDevice):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1431740-performsdpquery
-    performSDPQuery_uuids(target: cocoascript.IOBluetoothDevice, uuidArray: cocoascript.NSArray):any;
+    performSDPQuery_uuids(target: IOBluetoothDevice, uuidArray: NSArray):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1434998-rawrssi
-    rawRSSI():cocoascript.BluetoothHCIRSSIValue;
+    rawRSSI():BluetoothHCIRSSIValue;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1432994-recentaccessdate
-    recentAccessDate():cocoascript.NSDate;
+    recentAccessDate():NSDate;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1429542-registerfordisconnectnotificatio
-    registerForDisconnectNotification_selector(observer: cocoascript.IOBluetoothDevice, inSelector: cocoascript.SEL):cocoascript.IOBluetoothUserNotification;
+    registerForDisconnectNotification_selector(observer: IOBluetoothDevice, inSelector: SEL):IOBluetoothUserNotification;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1433706-remotenamerequest
-    remoteNameRequest(target: cocoascript.IOBluetoothDevice):any;
+    remoteNameRequest(target: IOBluetoothDevice):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1432647-remotenamerequest
-    remoteNameRequest_withPageTimeout(target: cocoascript.IOBluetoothDevice, pageTimeoutValue: cocoascript.BluetoothHCIPageTimeout):any;
+    remoteNameRequest_withPageTimeout(target: IOBluetoothDevice, pageTimeoutValue: BluetoothHCIPageTimeout):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1430142-removefromfavorites
     removeFromFavorites():any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1430322-requestauthentication
     requestAuthentication():any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1431303-sendl2capechorequest
-    sendL2CAPEchoRequest_length(data: void, length: cocoascript.UInt16):any;
+    sendL2CAPEchoRequest_length(data: void, length: UInt16):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1431049-setsupervisiontimeout
-    setSupervisionTimeout(timeout: cocoascript.UInt16):any;
+    setSupervisionTimeout(timeout: UInt16):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1589893-openl2capchannel
-    openL2CAPChannel_findExisting_newChannel(psm: cocoascript.BluetoothL2CAPPSM, findExisting: cocoascript.BOOL, newChannel: cocoascript.IOBluetoothL2CAPChannel):any;
+    openL2CAPChannel_findExisting_newChannel(psm: BluetoothL2CAPPSM, findExisting: BOOL, newChannel: IOBluetoothL2CAPChannel):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1433372-favoritedevices
-    favoriteDevices():cocoascript.NSArray;
+    favoriteDevices():NSArray;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1433674-paireddevices
-    pairedDevices():cocoascript.NSArray;
+    pairedDevices():NSArray;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1433426-recentdevices
-    recentDevices(numDevices: number):cocoascript.NSArray;
+    recentDevices(numDevices: number):NSArray;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1433370-registerforconnectnotifications
-    registerForConnectNotifications_selector(observer: cocoascript.IOBluetoothDevice, inSelector: cocoascript.SEL):cocoascript.IOBluetoothUserNotification;
+    registerForConnectNotifications_selector(observer: IOBluetoothDevice, inSelector: SEL):IOBluetoothUserNotification;
     //
-    alloc():cocoascript.IOBluetoothDevice;
+    alloc():IOBluetoothDevice;
     //
-    init():cocoascript.IOBluetoothDevice;
+    init():IOBluetoothDevice;
   }
 }
 
@@ -315,19 +315,19 @@ declare namespace cocoascript {
    */
   interface IOBluetoothDevicePairDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepairdelegate/1432152-devicepairingconnecting
-    devicePairingConnecting(sender: cocoascript.IOBluetoothDevicePairDelegate):void;
+    devicePairingConnecting(sender: IOBluetoothDevicePairDelegate):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepairdelegate/1434609-devicepairingfinished
-    devicePairingFinished_error(sender: cocoascript.IOBluetoothDevicePairDelegate, error: any):void;
+    devicePairingFinished_error(sender: IOBluetoothDevicePairDelegate, error: any):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepairdelegate/1432539-devicepairingpincoderequest
-    devicePairingPINCodeRequest(sender: cocoascript.IOBluetoothDevicePairDelegate):void;
+    devicePairingPINCodeRequest(sender: IOBluetoothDevicePairDelegate):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepairdelegate/1431489-devicepairingstarted
-    devicePairingStarted(sender: cocoascript.IOBluetoothDevicePairDelegate):void;
+    devicePairingStarted(sender: IOBluetoothDevicePairDelegate):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepairdelegate/1431902-devicepairinguserconfirmationreq
-    devicePairingUserConfirmationRequest_numericValue(sender: cocoascript.IOBluetoothDevicePairDelegate, numericValue: cocoascript.BluetoothNumericValue):void;
+    devicePairingUserConfirmationRequest_numericValue(sender: IOBluetoothDevicePairDelegate, numericValue: BluetoothNumericValue):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepairdelegate/1432500-devicepairinguserpasskeynotifica
-    devicePairingUserPasskeyNotification_passkey(sender: cocoascript.IOBluetoothDevicePairDelegate, passkey: cocoascript.BluetoothPasskey):void;
+    devicePairingUserPasskeyNotification_passkey(sender: IOBluetoothDevicePairDelegate, passkey: BluetoothPasskey):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepairdelegate/1429233-devicesimplepairingcomplete
-    deviceSimplePairingComplete_status(sender: cocoascript.IOBluetoothDevicePairDelegate, status: cocoascript.BluetoothHCIEventStatus):void;
+    deviceSimplePairingComplete_status(sender: IOBluetoothDevicePairDelegate, status: BluetoothHCIEventStatus):void;
   }
 }
 declare namespace cocoascript {
@@ -336,13 +336,13 @@ declare namespace cocoascript {
    */
   interface IOBluetoothHandsFreeDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedelegate/1427880-handsfree
-    handsFree_connected(device: cocoascript.IOBluetoothHandsFree, status: cocoascript.NSNumber):void;
+    handsFree_connected(device: IOBluetoothHandsFree, status: NSNumber):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedelegate/1427728-handsfree
-    handsFree_disconnected(device: cocoascript.IOBluetoothHandsFree, status: cocoascript.NSNumber):void;
+    handsFree_disconnected(device: IOBluetoothHandsFree, status: NSNumber):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedelegate/1427824-handsfree
-    handsFree_scoConnectionClosed(device: cocoascript.IOBluetoothHandsFree, status: cocoascript.NSNumber):void;
+    handsFree_scoConnectionClosed(device: IOBluetoothHandsFree, status: NSNumber):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedelegate/1427868-handsfree
-    handsFree_scoConnectionOpened(device: cocoascript.IOBluetoothHandsFree, status: cocoascript.NSNumber):void;
+    handsFree_scoConnectionOpened(device: IOBluetoothHandsFree, status: NSNumber):void;
   }
 }
 declare namespace cocoascript {
@@ -351,9 +351,9 @@ declare namespace cocoascript {
    */
   interface IOBluetoothObject extends NSObject {
     //
-    alloc():cocoascript.IOBluetoothObject;
+    alloc():IOBluetoothObject;
     //
-    init():cocoascript.IOBluetoothObject;
+    init():IOBluetoothObject;
   }
 }
 
@@ -365,50 +365,50 @@ declare namespace cocoascript {
    */
   interface OBEXFileTransferServices extends NSObject {
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1431373-initwithobexsession
-    initWithOBEXSession(inOBEXSession: cocoascript.IOBluetoothOBEXSession):cocoascript.OBEXFileTransferServices;
+    initWithOBEXSession(inOBEXSession: IOBluetoothOBEXSession):OBEXFileTransferServices;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1430781-delegate
-    delegate(): cocoascript.id;
+    delegate(): id;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1429764-abort
-    abort():cocoascript.OBEXError;
+    abort():OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1429850-changecurrentfolderbackward
-    changeCurrentFolderBackward():cocoascript.OBEXError;
+    changeCurrentFolderBackward():OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1429069-changecurrentfolderforwardtopath
-    changeCurrentFolderForwardToPath(inDirName: string | cocoascript.NSString):cocoascript.OBEXError;
+    changeCurrentFolderForwardToPath(inDirName: string | cocoascript.NSString):OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1428745-changecurrentfoldertoroot
-    changeCurrentFolderToRoot():cocoascript.OBEXError;
+    changeCurrentFolderToRoot():OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1433641-connecttoftpservice
-    connectToFTPService():cocoascript.OBEXError;
+    connectToFTPService():OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1429786-connecttoobjectpushservice
-    connectToObjectPushService():cocoascript.OBEXError;
+    connectToObjectPushService():OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1434277-copyremotefile
-    copyRemoteFile_toLocalPath(inRemoteFileName: string | cocoascript.NSString, inLocalPathAndName: string | cocoascript.NSString):cocoascript.OBEXError;
+    copyRemoteFile_toLocalPath(inRemoteFileName: string | cocoascript.NSString, inLocalPathAndName: string | cocoascript.NSString):OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1434906-createfolder
-    createFolder(inDirName: string | cocoascript.NSString):cocoascript.OBEXError;
+    createFolder(inDirName: string | cocoascript.NSString):OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1434309-currentpath
     currentPath():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1434667-disconnect
-    disconnect():cocoascript.OBEXError;
+    disconnect():OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1433891-getdefaultvcard
-    getDefaultVCard(inLocalPathAndName: string | cocoascript.NSString):cocoascript.OBEXError;
+    getDefaultVCard(inLocalPathAndName: string | cocoascript.NSString):OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1434607-isbusy
-    isBusy():cocoascript.BOOL;
+    isBusy():BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1428521-isconnected
-    isConnected():cocoascript.BOOL;
+    isConnected():BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1428401-removeitem
-    removeItem(inItemName: string | cocoascript.NSString):cocoascript.OBEXError;
+    removeItem(inItemName: string | cocoascript.NSString):OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1433947-retrievefolderlisting
-    retrieveFolderListing():cocoascript.OBEXError;
+    retrieveFolderListing():OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1432819-senddata
-    sendData_type_name(inData: cocoascript.NSData, inType: string | cocoascript.NSString, inName: string | cocoascript.NSString):cocoascript.OBEXError;
+    sendData_type_name(inData: NSData, inType: string | cocoascript.NSString, inName: string | cocoascript.NSString):OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1430911-sendfile
-    sendFile(inLocalPathAndName: string | cocoascript.NSString):cocoascript.OBEXError;
+    sendFile(inLocalPathAndName: string | cocoascript.NSString):OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1435045-withobexsession
-    withOBEXSession(inOBEXSession: cocoascript.IOBluetoothOBEXSession):cocoascript.OBEXFileTransferServices;
+    withOBEXSession(inOBEXSession: IOBluetoothOBEXSession):OBEXFileTransferServices;
     //
-    alloc():cocoascript.OBEXFileTransferServices;
+    alloc():OBEXFileTransferServices;
     //
-    init():cocoascript.OBEXFileTransferServices;
+    init():OBEXFileTransferServices;
   }
 }
 
@@ -432,56 +432,56 @@ declare namespace cocoascript {
    */
   interface IOBluetoothL2CAPChannel extends IOBluetoothObject {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1432783-psm
-    PSM(): cocoascript.BluetoothL2CAPPSM;
+    PSM(): BluetoothL2CAPPSM;
     setPSM(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1433430-device
-    device(): cocoascript.IOBluetoothDevice;
+    device(): IOBluetoothDevice;
     setDevice(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1431269-incomingmtu
-    incomingMTU(): cocoascript.BluetoothL2CAPMTU;
+    incomingMTU(): BluetoothL2CAPMTU;
     setIncomingMTU(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1434996-localchannelid
-    localChannelID(): cocoascript.BluetoothL2CAPChannelID;
+    localChannelID(): BluetoothL2CAPChannelID;
     setLocalChannelID(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1428413-objectid
-    objectID(): cocoascript.IOBluetoothObjectID;
+    objectID(): IOBluetoothObjectID;
     setObjectID(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1433700-outgoingmtu
-    outgoingMTU(): cocoascript.BluetoothL2CAPMTU;
+    outgoingMTU(): BluetoothL2CAPMTU;
     setOutgoingMTU(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1434793-remotechannelid
-    remoteChannelID(): cocoascript.BluetoothL2CAPChannelID;
+    remoteChannelID(): BluetoothL2CAPChannelID;
     setRemoteChannelID(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1433617-closechannel
     closeChannel():any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1431693-delegate
-    delegate():cocoascript.IOBluetoothL2CAPChannel;
+    delegate():IOBluetoothL2CAPChannel;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1435024-isincoming
-    isIncoming():cocoascript.BOOL;
+    isIncoming():BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1432240-registerforchannelclosenotificat
-    registerForChannelCloseNotification_selector(observer: cocoascript.IOBluetoothL2CAPChannel, inSelector: cocoascript.SEL):cocoascript.IOBluetoothUserNotification;
+    registerForChannelCloseNotification_selector(observer: IOBluetoothL2CAPChannel, inSelector: SEL):IOBluetoothUserNotification;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1430453-requestremotemtu
-    requestRemoteMTU(remoteMTU: cocoascript.BluetoothL2CAPMTU):any;
+    requestRemoteMTU(remoteMTU: BluetoothL2CAPMTU):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1430338-setdelegate
-    setDelegate(channelDelegate: cocoascript.IOBluetoothL2CAPChannel):any;
+    setDelegate(channelDelegate: IOBluetoothL2CAPChannel):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1430853-setdelegate
-    setDelegate_withConfiguration(channelDelegate: cocoascript.IOBluetoothL2CAPChannel, channelConfiguration: cocoascript.NSDictionary):any;
+    setDelegate_withConfiguration(channelDelegate: IOBluetoothL2CAPChannel, channelConfiguration: NSDictionary):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1431569-writeasync
-    writeAsync_length_refcon(data: void, length: cocoascript.UInt16, refcon: void):any;
+    writeAsync_length_refcon(data: void, length: UInt16, refcon: void):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/2980981-writeasynctrap
-    writeAsyncTrap_length_refcon(data: void, length: cocoascript.UInt16, refcon: void):any;
+    writeAsyncTrap_length_refcon(data: void, length: UInt16, refcon: void):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1433699-writesync
-    writeSync_length(data: void, length: cocoascript.UInt16):any;
+    writeSync_length(data: void, length: UInt16):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1433032-registerforchannelopennotificati
-    registerForChannelOpenNotifications_selector(object: cocoascript.IOBluetoothL2CAPChannel, selector: cocoascript.SEL):cocoascript.IOBluetoothUserNotification;
+    registerForChannelOpenNotifications_selector(object: IOBluetoothL2CAPChannel, selector: SEL):IOBluetoothUserNotification;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1429004-registerforchannelopennotificati
-    registerForChannelOpenNotifications_selector_withPSM_direction(object: cocoascript.IOBluetoothL2CAPChannel, selector: cocoascript.SEL, psm: cocoascript.BluetoothL2CAPPSM, inDirection: cocoascript.IOBluetoothUserNotificationChannelDirection):cocoascript.IOBluetoothUserNotification;
+    registerForChannelOpenNotifications_selector_withPSM_direction(object: IOBluetoothL2CAPChannel, selector: SEL, psm: BluetoothL2CAPPSM, inDirection: IOBluetoothUserNotificationChannelDirection):IOBluetoothUserNotification;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1433768-withobjectid
-    withObjectID(objectID: cocoascript.IOBluetoothObjectID):cocoascript.IOBluetoothL2CAPChannel;
+    withObjectID(objectID: IOBluetoothObjectID):IOBluetoothL2CAPChannel;
     //
-    alloc():cocoascript.IOBluetoothL2CAPChannel;
+    alloc():IOBluetoothL2CAPChannel;
     //
-    init():cocoascript.IOBluetoothL2CAPChannel;
+    init():IOBluetoothL2CAPChannel;
   }
 }
 
@@ -495,47 +495,47 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1428722-closechannel
     closeChannel():any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1432238-delegate
-    delegate():cocoascript.IOBluetoothRFCOMMChannel;
+    delegate():IOBluetoothRFCOMMChannel;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1431850-getchannelid
-    getChannelID():cocoascript.BluetoothRFCOMMChannelID;
+    getChannelID():BluetoothRFCOMMChannelID;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1432615-getdevice
-    getDevice():cocoascript.IOBluetoothDevice;
+    getDevice():IOBluetoothDevice;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1428996-getmtu
-    getMTU():cocoascript.BluetoothRFCOMMMTU;
+    getMTU():BluetoothRFCOMMMTU;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1434526-getobjectid
-    getObjectID():cocoascript.IOBluetoothObjectID;
+    getObjectID():IOBluetoothObjectID;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1434600-getrfcommchannelref
-    getRFCOMMChannelRef():cocoascript.IOBluetoothRFCOMMChannelRef;
+    getRFCOMMChannelRef():IOBluetoothRFCOMMChannelRef;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1430334-isincoming
-    isIncoming():cocoascript.BOOL;
+    isIncoming():BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1430708-isopen
-    isOpen():cocoascript.BOOL;
+    isOpen():BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1434740-istransmissionpaused
-    isTransmissionPaused():cocoascript.BOOL;
+    isTransmissionPaused():BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1428800-registerforchannelclosenotificat
-    registerForChannelCloseNotification_selector(observer: cocoascript.IOBluetoothRFCOMMChannel, inSelector: cocoascript.SEL):cocoascript.IOBluetoothUserNotification;
+    registerForChannelCloseNotification_selector(observer: IOBluetoothRFCOMMChannel, inSelector: SEL):IOBluetoothUserNotification;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1434323-sendremotelinestatus
-    sendRemoteLineStatus(lineStatus: cocoascript.BluetoothRFCOMMLineStatus):any;
+    sendRemoteLineStatus(lineStatus: BluetoothRFCOMMLineStatus):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1430417-setdelegate
-    setDelegate(delegate: cocoascript.IOBluetoothRFCOMMChannel):any;
+    setDelegate(delegate: IOBluetoothRFCOMMChannel):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1431119-setserialparameters
-    setSerialParameters_dataBits_parity_stopBits(speed: number, nBits: cocoascript.UInt8, parity: cocoascript.BluetoothRFCOMMParityType, bitStop: cocoascript.UInt8):any;
+    setSerialParameters_dataBits_parity_stopBits(speed: number, nBits: UInt8, parity: BluetoothRFCOMMParityType, bitStop: UInt8):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1430167-writeasync
-    writeAsync_length_refcon(data: void, length: cocoascript.UInt16, refcon: void):any;
+    writeAsync_length_refcon(data: void, length: UInt16, refcon: void):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1434633-writesync
-    writeSync_length(data: void, length: cocoascript.UInt16):any;
+    writeSync_length(data: void, length: UInt16):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1430146-registerforchannelopennotificati
-    registerForChannelOpenNotifications_selector(object: cocoascript.IOBluetoothRFCOMMChannel, selector: cocoascript.SEL):cocoascript.IOBluetoothUserNotification;
+    registerForChannelOpenNotifications_selector(object: IOBluetoothRFCOMMChannel, selector: SEL):IOBluetoothUserNotification;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1431566-registerforchannelopennotificati
-    registerForChannelOpenNotifications_selector_withChannelID_direction(object: cocoascript.IOBluetoothRFCOMMChannel, selector: cocoascript.SEL, channelID: cocoascript.BluetoothRFCOMMChannelID, inDirection: cocoascript.IOBluetoothUserNotificationChannelDirection):cocoascript.IOBluetoothUserNotification;
+    registerForChannelOpenNotifications_selector_withChannelID_direction(object: IOBluetoothRFCOMMChannel, selector: SEL, channelID: BluetoothRFCOMMChannelID, inDirection: IOBluetoothUserNotificationChannelDirection):IOBluetoothUserNotification;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1430561-withobjectid
-    withObjectID(objectID: cocoascript.IOBluetoothObjectID):cocoascript.IOBluetoothRFCOMMChannel;
+    withObjectID(objectID: IOBluetoothObjectID):IOBluetoothRFCOMMChannel;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1433571-withrfcommchannelref
-    withRFCOMMChannelRef(rfcommChannelRef: cocoascript.IOBluetoothRFCOMMChannelRef):cocoascript.IOBluetoothRFCOMMChannel;
+    withRFCOMMChannelRef(rfcommChannelRef: IOBluetoothRFCOMMChannelRef):IOBluetoothRFCOMMChannel;
     //
-    alloc():cocoascript.IOBluetoothRFCOMMChannel;
+    alloc():IOBluetoothRFCOMMChannel;
     //
-    init():cocoascript.IOBluetoothRFCOMMChannel;
+    init():IOBluetoothRFCOMMChannel;
   }
 }
 
@@ -546,31 +546,31 @@ declare namespace cocoascript {
    */
   interface IOBluetoothHandsFreeDeviceDelegate extends IOBluetoothHandsFreeDelegate {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1428496-handsfree
-    handsFree_batteryCharge(device: cocoascript.IOBluetoothHandsFreeDevice, batteryCharge: cocoascript.NSNumber):void;
+    handsFree_batteryCharge(device: IOBluetoothHandsFreeDevice, batteryCharge: NSNumber):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433981-handsfree
-    handsFree_callHoldState(device: cocoascript.IOBluetoothHandsFreeDevice, callHoldState: cocoascript.NSNumber):void;
+    handsFree_callHoldState(device: IOBluetoothHandsFreeDevice, callHoldState: NSNumber):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1429223-handsfree
-    handsFree_callSetupMode(device: cocoascript.IOBluetoothHandsFreeDevice, callSetupMode: cocoascript.NSNumber):void;
+    handsFree_callSetupMode(device: IOBluetoothHandsFreeDevice, callSetupMode: NSNumber):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1432883-handsfree
-    handsFree_currentCall(device: cocoascript.IOBluetoothHandsFreeDevice, currentCall: cocoascript.NSDictionary):void;
+    handsFree_currentCall(device: IOBluetoothHandsFreeDevice, currentCall: NSDictionary):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1429210-handsfree
-    handsFree_incomingCallFrom(device: cocoascript.IOBluetoothHandsFreeDevice, number: string | cocoascript.NSString):void;
+    handsFree_incomingCallFrom(device: IOBluetoothHandsFreeDevice, number: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1430510-handsfree
-    handsFree_incomingSMS(device: cocoascript.IOBluetoothHandsFreeDevice, sms: cocoascript.NSDictionary):void;
+    handsFree_incomingSMS(device: IOBluetoothHandsFreeDevice, sms: NSDictionary):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431339-handsfree
-    handsFree_isCallActive(device: cocoascript.IOBluetoothHandsFreeDevice, isCallActive: cocoascript.NSNumber):void;
+    handsFree_isCallActive(device: IOBluetoothHandsFreeDevice, isCallActive: NSNumber):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431758-handsfree
-    handsFree_isRoaming(device: cocoascript.IOBluetoothHandsFreeDevice, isRoaming: cocoascript.NSNumber):void;
+    handsFree_isRoaming(device: IOBluetoothHandsFreeDevice, isRoaming: NSNumber):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433100-handsfree
-    handsFree_isServiceAvailable(device: cocoascript.IOBluetoothHandsFreeDevice, isServiceAvailable: cocoascript.NSNumber):void;
+    handsFree_isServiceAvailable(device: IOBluetoothHandsFreeDevice, isServiceAvailable: NSNumber):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431746-handsfree
-    handsFree_ringAttempt(device: cocoascript.IOBluetoothHandsFreeDevice, ringAttempt: cocoascript.NSNumber):void;
+    handsFree_ringAttempt(device: IOBluetoothHandsFreeDevice, ringAttempt: NSNumber):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1432799-handsfree
-    handsFree_signalStrength(device: cocoascript.IOBluetoothHandsFreeDevice, signalStrength: cocoascript.NSNumber):void;
+    handsFree_signalStrength(device: IOBluetoothHandsFreeDevice, signalStrength: NSNumber):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1430067-handsfree
-    handsFree_subscriberNumber(device: cocoascript.IOBluetoothHandsFreeDevice, subscriberNumber: string | cocoascript.NSString):void;
+    handsFree_subscriberNumber(device: IOBluetoothHandsFreeDevice, subscriberNumber: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433815-handsfree
-    handsFree_unhandledResultCode(device: cocoascript.IOBluetoothHandsFreeDevice, resultCode: string | cocoascript.NSString):void;
+    handsFree_unhandledResultCode(device: IOBluetoothHandsFreeDevice, resultCode: string | cocoascript.NSString):void;
   }
 }
 declare namespace cocoascript {
@@ -580,35 +580,35 @@ declare namespace cocoascript {
    */
   interface IOBluetoothDeviceInquiry extends NSObject {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquiry/1423401-initwithdelegate
-    initWithDelegate(delegate: cocoascript.IOBluetoothDeviceInquiry):cocoascript.IOBluetoothDeviceInquiry;
+    initWithDelegate(delegate: IOBluetoothDeviceInquiry):IOBluetoothDeviceInquiry;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquiry/1423403-delegate
-    delegate(): cocoascript.id;
+    delegate(): id;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquiry/1423397-inquirylength
     inquiryLength(): number;
     setInquiryLength(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquiry/1423413-searchtype
-    searchType(): cocoascript.IOBluetoothDeviceSearchTypes;
+    searchType(): IOBluetoothDeviceSearchTypes;
     setSearchType(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquiry/1423419-updatenewdevicenames
-    updateNewDeviceNames(): cocoascript.BOOL;
+    updateNewDeviceNames(): BOOL;
     setUpdateNewDeviceNames(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquiry/1423417-clearfounddevices
     clearFoundDevices():void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquiry/1423411-founddevices
-    foundDevices():cocoascript.NSArray;
+    foundDevices():NSArray;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquiry/1423399-setsearchcriteria
-    setSearchCriteria_majorDeviceClass_minorDeviceClass(inServiceClassMajor: cocoascript.BluetoothServiceClassMajor, inMajorDeviceClass: cocoascript.BluetoothDeviceClassMajor, inMinorDeviceClass: cocoascript.BluetoothDeviceClassMinor):void;
+    setSearchCriteria_majorDeviceClass_minorDeviceClass(inServiceClassMajor: BluetoothServiceClassMajor, inMajorDeviceClass: BluetoothDeviceClassMajor, inMinorDeviceClass: BluetoothDeviceClassMinor):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquiry/1423423-start
     start():any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquiry/1423407-stop
     stop():any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquiry/1423421-inquirywithdelegate
-    inquiryWithDelegate(delegate: cocoascript.IOBluetoothDeviceInquiry):cocoascript.IOBluetoothDeviceInquiry;
+    inquiryWithDelegate(delegate: IOBluetoothDeviceInquiry):IOBluetoothDeviceInquiry;
     //
-    alloc():cocoascript.IOBluetoothDeviceInquiry;
+    alloc():IOBluetoothDeviceInquiry;
     //
-    init():cocoascript.IOBluetoothDeviceInquiry;
+    init():IOBluetoothDeviceInquiry;
   }
 }
 
@@ -620,26 +620,26 @@ declare namespace cocoascript {
    */
   interface IOBluetoothDevicePair extends NSObject {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepair/1429730-pairwithdevice
-    pairWithDevice(device: cocoascript.IOBluetoothDevice):cocoascript.IOBluetoothDevicePair;
+    pairWithDevice(device: IOBluetoothDevice):IOBluetoothDevicePair;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepair/1431438-delegate
-    delegate(): cocoascript.id;
+    delegate(): id;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepair/1432295-device
-    device():cocoascript.IOBluetoothDevice;
+    device():IOBluetoothDevice;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepair/1434270-replypincode
-    replyPINCode_PINCode(PINCodeSize: cocoascript.ByteCount, PINCode: cocoascript.BluetoothPINCode):void;
+    replyPINCode_PINCode(PINCodeSize: ByteCount, PINCode: BluetoothPINCode):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepair/1429385-replyuserconfirmation
-    replyUserConfirmation(reply: cocoascript.BOOL):void;
+    replyUserConfirmation(reply: BOOL):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepair/1433332-setdevice
-    setDevice(inDevice: cocoascript.IOBluetoothDevice):void;
+    setDevice(inDevice: IOBluetoothDevice):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepair/1430048-start
     start():any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepair/1433707-stop
     stop():void;
     //
-    alloc():cocoascript.IOBluetoothDevicePair;
+    alloc():IOBluetoothDevicePair;
     //
-    init():cocoascript.IOBluetoothDevicePair;
+    init():IOBluetoothDevicePair;
   }
 }
 
@@ -657,21 +657,21 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfree/1811379-isconnected
     ():void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfree/1427916-initwithdevice
-    initWithDevice_delegate(device: cocoascript.IOBluetoothDevice, inDelegate: cocoascript.IOBluetoothHandsFreeDelegate):cocoascript.IOBluetoothHandsFree;
+    initWithDevice_delegate(device: IOBluetoothDevice, inDelegate: IOBluetoothHandsFreeDelegate):IOBluetoothHandsFree;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfree/1427726-smsenabled
-    SMSEnabled(): cocoascript.BOOL;
+    SMSEnabled(): BOOL;
     setSMSEnabled(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfree/1427794-smsmode
-    SMSMode(): cocoascript.IOBluetoothSMSMode;
+    SMSMode(): IOBluetoothSMSMode;
     setSMSMode(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfree/1427760-connected
-    connected(): cocoascript.BOOL;
+    connected(): BOOL;
     setConnected(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfree/1427851-delegate
-    delegate(): cocoascript.IOBluetoothHandsFreeDelegate;
+    delegate(): IOBluetoothHandsFreeDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfree/1427918-device
-    device(): cocoascript.IOBluetoothDevice;
+    device(): IOBluetoothDevice;
     setDevice(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfree/1427864-devicecallholdmodes
     deviceCallHoldModes(): number;
@@ -683,13 +683,13 @@ declare namespace cocoascript {
     deviceSupportedSMSServices(): number;
     setDeviceSupportedSMSServices(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfree/1427800-inputmuted
-    inputMuted(): cocoascript.BOOL;
+    inputMuted(): BOOL;
     setInputMuted(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfree/1427816-inputvolume
     inputVolume(): number;
     setInputVolume(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfree/1427756-outputmuted
-    outputMuted(): cocoascript.BOOL;
+    outputMuted(): BOOL;
     setOutputMuted(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfree/1427874-outputvolume
     outputVolume(): number;
@@ -708,13 +708,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfree/1427897-indicator
     indicator(indicatorName: string | cocoascript.NSString):number;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfree/1427858-isscoconnected
-    isSCOConnected():cocoascript.BOOL;
+    isSCOConnected():BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfree/1427872-setindicator
     setIndicator_value(indicatorName: string | cocoascript.NSString, indicatorValue: number):void;
     //
-    alloc():cocoascript.IOBluetoothHandsFree;
+    alloc():IOBluetoothHandsFree;
     //
-    init():cocoascript.IOBluetoothHandsFree;
+    init():IOBluetoothHandsFree;
   }
 }
 
@@ -725,7 +725,7 @@ declare namespace cocoascript {
    */
   interface IOBluetoothHandsFreeAudioGateway extends IOBluetoothHandsFree {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1428663-initwithdevice
-    initWithDevice_delegate(device: cocoascript.IOBluetoothDevice, inDelegate: cocoascript.IOBluetoothHandsFreeAudioGateway):cocoascript.IOBluetoothHandsFreeAudioGateway;
+    initWithDevice_delegate(device: IOBluetoothDevice, inDelegate: IOBluetoothHandsFreeAudioGateway):IOBluetoothHandsFreeAudioGateway;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1431383-createindicator
     createIndicator_min_max_currentValue(indicatorName: string | cocoascript.NSString, minValue: number, maxValue: number, currentValue: number):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1429231-processatcommand
@@ -735,11 +735,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1434911-sendresponse
     sendResponse(response: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1434547-sendresponse
-    sendResponse_withOK(response: string | cocoascript.NSString, withOK: cocoascript.BOOL):void;
+    sendResponse_withOK(response: string | cocoascript.NSString, withOK: BOOL):void;
     //
-    alloc():cocoascript.IOBluetoothHandsFreeAudioGateway;
+    alloc():IOBluetoothHandsFreeAudioGateway;
     //
-    init():cocoascript.IOBluetoothHandsFreeAudioGateway;
+    init():IOBluetoothHandsFreeAudioGateway;
   }
 }
 
@@ -750,7 +750,7 @@ declare namespace cocoascript {
    */
   interface IOBluetoothHandsFreeDevice extends IOBluetoothHandsFree {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1428834-initwithdevice
-    initWithDevice_delegate(device: cocoascript.IOBluetoothDevice, delegate: cocoascript.IOBluetoothHandsFreeDevice):cocoascript.IOBluetoothHandsFreeDevice;
+    initWithDevice_delegate(device: IOBluetoothDevice, delegate: IOBluetoothHandsFreeDevice):IOBluetoothHandsFreeDevice;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1430391-acceptcall
     acceptCall():void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1432773-acceptcallonphone
@@ -782,7 +782,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1429190-sendatcommand
     sendATCommand(atCommand: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1430619-sendatcommand
-    sendATCommand_timeout_selector_target(atCommand: string | cocoascript.NSString, timeout: number, selector: cocoascript.SEL, target: cocoascript.IOBluetoothHandsFreeDevice):void;
+    sendATCommand_timeout_selector_target(atCommand: string | cocoascript.NSString, timeout: number, selector: SEL, target: IOBluetoothHandsFreeDevice):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1428351-senddtmf
     sendDTMF(character: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1429652-sendsms
@@ -794,9 +794,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1434079-transferaudiotophone
     transferAudioToPhone():void;
     //
-    alloc():cocoascript.IOBluetoothHandsFreeDevice;
+    alloc():IOBluetoothHandsFreeDevice;
     //
-    init():cocoascript.IOBluetoothHandsFreeDevice;
+    init():IOBluetoothHandsFreeDevice;
   }
 }
 
@@ -808,25 +808,25 @@ declare namespace cocoascript {
    */
   interface IOBluetoothHostController extends NSObject {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontroller/1434248-delegate
-    delegate(): cocoascript.id;
+    delegate(): id;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontroller/1429740-powerstate
-    powerState(): cocoascript.BluetoothHCIPowerState;
+    powerState(): BluetoothHCIPowerState;
     setPowerState(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontroller/1434703-addressasstring
     addressAsString():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontroller/1428536-classofdevice
-    classOfDevice():cocoascript.BluetoothClassOfDevice;
+    classOfDevice():BluetoothClassOfDevice;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontroller/1431310-nameasstring
     nameAsString():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontroller/1433813-setclassofdevice
-    setClassOfDevice_forTimeInterval(classOfDevice: cocoascript.BluetoothClassOfDevice, seconds: cocoascript.NSTimeInterval):any;
+    setClassOfDevice_forTimeInterval(classOfDevice: BluetoothClassOfDevice, seconds: NSTimeInterval):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontroller/1433496-defaultcontroller
-    defaultController():cocoascript.IOBluetoothHostController;
+    defaultController():IOBluetoothHostController;
     //
-    alloc():cocoascript.IOBluetoothHostController;
+    alloc():IOBluetoothHostController;
     //
-    init():cocoascript.IOBluetoothHostController;
+    init():IOBluetoothHostController;
   }
 }
 
@@ -842,43 +842,43 @@ declare namespace cocoascript {
    */
   interface IOBluetoothOBEXSession extends OBEXSession {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession/1429196-initwithsdpservicerecord
-    initWithSDPServiceRecord(inSDPServiceRecord: cocoascript.IOBluetoothSDPServiceRecord):cocoascript.IOBluetoothOBEXSession;
+    initWithSDPServiceRecord(inSDPServiceRecord: IOBluetoothSDPServiceRecord):IOBluetoothOBEXSession;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession/1429922-initwithdevice
-    initWithDevice_channelID(inDevice: cocoascript.IOBluetoothDevice, inChannelID: cocoascript.BluetoothRFCOMMChannelID):cocoascript.IOBluetoothOBEXSession;
+    initWithDevice_channelID(inDevice: IOBluetoothDevice, inChannelID: BluetoothRFCOMMChannelID):IOBluetoothOBEXSession;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession/1431317-initwithincomingrfcommchannel
-    initWithIncomingRFCOMMChannel_eventSelector_selectorTarget_refCon(inChannel: cocoascript.IOBluetoothRFCOMMChannel, inEventSelector: cocoascript.SEL, inEventSelectorTarget: cocoascript.IOBluetoothOBEXSession, inUserRefCon: void):cocoascript.IOBluetoothOBEXSession;
+    initWithIncomingRFCOMMChannel_eventSelector_selectorTarget_refCon(inChannel: IOBluetoothRFCOMMChannel, inEventSelector: SEL, inEventSelectorTarget: IOBluetoothOBEXSession, inUserRefCon: void):IOBluetoothOBEXSession;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession/1430752-closetransportconnection
-    closeTransportConnection():cocoascript.OBEXError;
+    closeTransportConnection():OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession/1428836-getdevice
-    getDevice():cocoascript.IOBluetoothDevice;
+    getDevice():IOBluetoothDevice;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession/1434690-getrfcommchannel
-    getRFCOMMChannel():cocoascript.IOBluetoothRFCOMMChannel;
+    getRFCOMMChannel():IOBluetoothRFCOMMChannel;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession/1433323-hasopentransportconnection
-    hasOpenTransportConnection():cocoascript.BOOL;
+    hasOpenTransportConnection():BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession/1435097-issessiontargetamac
-    isSessionTargetAMac():cocoascript.BOOL;
+    isSessionTargetAMac():BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession/1428333-opentransportconnection
-    openTransportConnection_selectorTarget_refCon(inSelector: cocoascript.SEL, inTarget: cocoascript.IOBluetoothOBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    openTransportConnection_selectorTarget_refCon(inSelector: SEL, inTarget: IOBluetoothOBEXSession, inUserRefCon: void):OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession/1429280-restarttransmission
     restartTransmission():void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession/1432899-sendbuffertroughchannel
     sendBufferTroughChannel():any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession/1428500-senddatatotransport
-    sendDataToTransport_dataLength(inDataToSend: void, inDataLength: any):cocoascript.OBEXError;
+    sendDataToTransport_dataLength(inDataToSend: void, inDataLength: any):OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession/1431213-setobexsessionopenconnectioncall
-    setOBEXSessionOpenConnectionCallback_refCon(inCallback: cocoascript.IOBluetoothOBEXSessionOpenConnectionCallback, inUserRefCon: void):void;
+    setOBEXSessionOpenConnectionCallback_refCon(inCallback: IOBluetoothOBEXSessionOpenConnectionCallback, inUserRefCon: void):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession/1434129-setopentransportconnectionasyncs
-    setOpenTransportConnectionAsyncSelector_target_refCon(inSelector: cocoascript.SEL, inSelectorTarget: cocoascript.IOBluetoothOBEXSession, inUserRefCon: cocoascript.IOBluetoothOBEXSession):void;
+    setOpenTransportConnectionAsyncSelector_target_refCon(inSelector: SEL, inSelectorTarget: IOBluetoothOBEXSession, inUserRefCon: IOBluetoothOBEXSession):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession/1432953-withdevice
-    withDevice_channelID(inDevice: cocoascript.IOBluetoothDevice, inRFCOMMChannelID: cocoascript.BluetoothRFCOMMChannelID):cocoascript.IOBluetoothOBEXSession;
+    withDevice_channelID(inDevice: IOBluetoothDevice, inRFCOMMChannelID: BluetoothRFCOMMChannelID):IOBluetoothOBEXSession;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession/1431248-withincomingrfcommchannel
-    withIncomingRFCOMMChannel_eventSelector_selectorTarget_refCon(inChannel: cocoascript.IOBluetoothRFCOMMChannel, inEventSelector: cocoascript.SEL, inEventSelectorTarget: cocoascript.IOBluetoothOBEXSession, inUserRefCon: void):cocoascript.IOBluetoothOBEXSession;
+    withIncomingRFCOMMChannel_eventSelector_selectorTarget_refCon(inChannel: IOBluetoothRFCOMMChannel, inEventSelector: SEL, inEventSelectorTarget: IOBluetoothOBEXSession, inUserRefCon: void):IOBluetoothOBEXSession;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession/1431979-withsdpservicerecord
-    withSDPServiceRecord(inSDPServiceRecord: cocoascript.IOBluetoothSDPServiceRecord):cocoascript.IOBluetoothOBEXSession;
+    withSDPServiceRecord(inSDPServiceRecord: IOBluetoothSDPServiceRecord):IOBluetoothOBEXSession;
     //
-    alloc():cocoascript.IOBluetoothOBEXSession;
+    alloc():IOBluetoothOBEXSession;
     //
-    init():cocoascript.IOBluetoothOBEXSession;
+    init():IOBluetoothOBEXSession;
   }
 }
 
@@ -912,9 +912,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothusernotification/1398108-unregister
     unregister():void;
     //
-    alloc():cocoascript.IOBluetoothUserNotification;
+    alloc():IOBluetoothUserNotification;
     //
-    init():cocoascript.IOBluetoothUserNotification;
+    init():IOBluetoothUserNotification;
   }
 }
 
@@ -930,59 +930,59 @@ declare namespace cocoascript {
    */
   interface OBEXSession extends NSObject {
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1429402-obexabort
-    OBEXAbort_optionalHeadersLength_eventSelector_selectorTarget_refCon(inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    OBEXAbort_optionalHeadersLength_eventSelector_selectorTarget_refCon(inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: SEL, inTarget: OBEXSession, inUserRefCon: void):OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1432852-obexabortresponse
-    OBEXAbortResponse_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inResponseOpCode: cocoascript.OBEXOpCode, inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    OBEXAbortResponse_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inResponseOpCode: OBEXOpCode, inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: SEL, inTarget: OBEXSession, inUserRefCon: void):OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1433181-obexconnect
-    OBEXConnect_maxPacketLength_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inFlags: cocoascript.OBEXFlags, inMaxPacketLength: cocoascript.OBEXMaxPacketLength, inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    OBEXConnect_maxPacketLength_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inFlags: OBEXFlags, inMaxPacketLength: OBEXMaxPacketLength, inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: SEL, inTarget: OBEXSession, inUserRefCon: void):OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1434390-obexconnectresponse
-    OBEXConnectResponse_flags_maxPacketLength_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inResponseOpCode: cocoascript.OBEXOpCode, inFlags: cocoascript.OBEXFlags, inMaxPacketLength: cocoascript.OBEXMaxPacketLength, inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    OBEXConnectResponse_flags_maxPacketLength_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inResponseOpCode: OBEXOpCode, inFlags: OBEXFlags, inMaxPacketLength: OBEXMaxPacketLength, inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: SEL, inTarget: OBEXSession, inUserRefCon: void):OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1434125-obexdisconnect
-    OBEXDisconnect_optionalHeadersLength_eventSelector_selectorTarget_refCon(inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    OBEXDisconnect_optionalHeadersLength_eventSelector_selectorTarget_refCon(inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: SEL, inTarget: OBEXSession, inUserRefCon: void):OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1434021-obexdisconnectresponse
-    OBEXDisconnectResponse_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inResponseOpCode: cocoascript.OBEXOpCode, inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    OBEXDisconnectResponse_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inResponseOpCode: OBEXOpCode, inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: SEL, inTarget: OBEXSession, inUserRefCon: void):OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1434710-obexget
-    OBEXGet_headers_headersLength_eventSelector_selectorTarget_refCon(isFinalChunk: boolean, inHeaders: void, inHeadersLength: any, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    OBEXGet_headers_headersLength_eventSelector_selectorTarget_refCon(isFinalChunk: boolean, inHeaders: void, inHeadersLength: any, inSelector: SEL, inTarget: OBEXSession, inUserRefCon: void):OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1434941-obexgetresponse
-    OBEXGetResponse_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inResponseOpCode: cocoascript.OBEXOpCode, inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    OBEXGetResponse_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inResponseOpCode: OBEXOpCode, inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: SEL, inTarget: OBEXSession, inUserRefCon: void):OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1431295-obexput
-    OBEXPut_headersData_headersDataLength_bodyData_bodyDataLength_eventSelector_selectorTarget_refCon(isFinalChunk: boolean, inHeadersData: void, inHeadersDataLength: any, inBodyData: void, inBodyDataLength: any, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    OBEXPut_headersData_headersDataLength_bodyData_bodyDataLength_eventSelector_selectorTarget_refCon(isFinalChunk: boolean, inHeadersData: void, inHeadersDataLength: any, inBodyData: void, inBodyDataLength: any, inSelector: SEL, inTarget: OBEXSession, inUserRefCon: void):OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1429618-obexputresponse
-    OBEXPutResponse_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inResponseOpCode: cocoascript.OBEXOpCode, inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    OBEXPutResponse_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inResponseOpCode: OBEXOpCode, inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: SEL, inTarget: OBEXSession, inUserRefCon: void):OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1428620-obexsetpath
-    OBEXSetPath_constants_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inFlags: cocoascript.OBEXFlags, inConstants: cocoascript.OBEXConstants, inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    OBEXSetPath_constants_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inFlags: OBEXFlags, inConstants: OBEXConstants, inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: SEL, inTarget: OBEXSession, inUserRefCon: void):OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1434520-obexsetpathresponse
-    OBEXSetPathResponse_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inResponseOpCode: cocoascript.OBEXOpCode, inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    OBEXSetPathResponse_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inResponseOpCode: OBEXOpCode, inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: SEL, inTarget: OBEXSession, inUserRefCon: void):OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1434885-clienthandleincomingdata
-    clientHandleIncomingData(event: cocoascript.OBEXTransportEvent):void;
+    clientHandleIncomingData(event: OBEXTransportEvent):void;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1434109-closetransportconnection
-    closeTransportConnection():cocoascript.OBEXError;
+    closeTransportConnection():OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1431412-getavailablecommandpayloadlength
-    getAvailableCommandPayloadLength(inOpCode: cocoascript.OBEXOpCode):cocoascript.OBEXMaxPacketLength;
+    getAvailableCommandPayloadLength(inOpCode: OBEXOpCode):OBEXMaxPacketLength;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1428698-getavailablecommandresponsepaylo
-    getAvailableCommandResponsePayloadLength(inOpCode: cocoascript.OBEXOpCode):cocoascript.OBEXMaxPacketLength;
+    getAvailableCommandResponsePayloadLength(inOpCode: OBEXOpCode):OBEXMaxPacketLength;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1428595-getmaxpacketlength
-    getMaxPacketLength():cocoascript.OBEXMaxPacketLength;
+    getMaxPacketLength():OBEXMaxPacketLength;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1429707-hasopenobexconnection
-    hasOpenOBEXConnection():cocoascript.BOOL;
+    hasOpenOBEXConnection():BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1430785-hasopentransportconnection
     hasOpenTransportConnection():boolean;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1431621-opentransportconnection
-    openTransportConnection_selectorTarget_refCon(inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    openTransportConnection_selectorTarget_refCon(inSelector: SEL, inTarget: OBEXSession, inUserRefCon: void):OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1430616-senddatatotransport
-    sendDataToTransport_dataLength(inDataToSend: void, inDataLength: any):cocoascript.OBEXError;
+    sendDataToTransport_dataLength(inDataToSend: void, inDataLength: any):OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1432452-serverhandleincomingdata
-    serverHandleIncomingData(event: cocoascript.OBEXTransportEvent):void;
+    serverHandleIncomingData(event: OBEXTransportEvent):void;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1431039-seteventcallback
-    setEventCallback(inEventCallback: cocoascript.OBEXSessionEventCallback):void;
+    setEventCallback(inEventCallback: OBEXSessionEventCallback):void;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1434706-seteventrefcon
     setEventRefCon(inRefCon: void):void;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1430378-seteventselector
-    setEventSelector_target_refCon(inEventSelector: cocoascript.SEL, inEventSelectorTarget: cocoascript.OBEXSession, inUserRefCon: cocoascript.OBEXSession):void;
+    setEventSelector_target_refCon(inEventSelector: SEL, inEventSelectorTarget: OBEXSession, inUserRefCon: OBEXSession):void;
     //
-    alloc():cocoascript.OBEXSession;
+    alloc():OBEXSession;
     //
-    init():cocoascript.OBEXSession;
+    init():OBEXSession;
   }
 }
 
@@ -993,11 +993,11 @@ declare namespace cocoascript {
    */
   interface IOBluetoothDeviceAsyncCallbacks {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceasynccallbacks/1434956-connectioncomplete
-    connectionComplete_status(device: cocoascript.IOBluetoothDevice, status: any):void;
+    connectionComplete_status(device: IOBluetoothDevice, status: any):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceasynccallbacks/1434878-remotenamerequestcomplete
-    remoteNameRequestComplete_status(device: cocoascript.IOBluetoothDevice, status: any):void;
+    remoteNameRequestComplete_status(device: IOBluetoothDevice, status: any):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceasynccallbacks/1434694-sdpquerycomplete
-    sdpQueryComplete_status(device: cocoascript.IOBluetoothDevice, status: any):void;
+    sdpQueryComplete_status(device: IOBluetoothDevice, status: any):void;
   }
 }
 declare namespace cocoascript {
@@ -1007,15 +1007,15 @@ declare namespace cocoascript {
    */
   interface IOBluetoothDeviceInquiryDelegate {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquirydelegate/1423409-deviceinquirycomplete
-    deviceInquiryComplete_error_aborted(sender: cocoascript.IOBluetoothDeviceInquiry, error: any, aborted: cocoascript.BOOL):void;
+    deviceInquiryComplete_error_aborted(sender: IOBluetoothDeviceInquiry, error: any, aborted: BOOL):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquirydelegate/1423415-deviceinquirydevicefound
-    deviceInquiryDeviceFound_device(sender: cocoascript.IOBluetoothDeviceInquiry, device: cocoascript.IOBluetoothDevice):void;
+    deviceInquiryDeviceFound_device(sender: IOBluetoothDeviceInquiry, device: IOBluetoothDevice):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquirydelegate/1423429-deviceinquirydevicenameupdated
-    deviceInquiryDeviceNameUpdated_device_devicesRemaining(sender: cocoascript.IOBluetoothDeviceInquiry, device: cocoascript.IOBluetoothDevice, devicesRemaining: number):void;
+    deviceInquiryDeviceNameUpdated_device_devicesRemaining(sender: IOBluetoothDeviceInquiry, device: IOBluetoothDevice, devicesRemaining: number):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquirydelegate/1423405-deviceinquirystarted
-    deviceInquiryStarted(sender: cocoascript.IOBluetoothDeviceInquiry):void;
+    deviceInquiryStarted(sender: IOBluetoothDeviceInquiry):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquirydelegate/1423425-deviceinquiryupdatingdevicenames
-    deviceInquiryUpdatingDeviceNamesStarted_devicesRemaining(sender: cocoascript.IOBluetoothDeviceInquiry, devicesRemaining: number):void;
+    deviceInquiryUpdatingDeviceNamesStarted_devicesRemaining(sender: IOBluetoothDeviceInquiry, devicesRemaining: number):void;
   }
 }
 declare namespace cocoascript {
@@ -1024,9 +1024,9 @@ declare namespace cocoascript {
    */
   interface IOBluetoothHandsFreeAudioGatewayDelegate {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogatewaydelegate/1433943-handsfree
-    handsFree_hangup(device: cocoascript.IOBluetoothHandsFreeAudioGateway, hangup: cocoascript.NSNumber):void;
+    handsFree_hangup(device: IOBluetoothHandsFreeAudioGateway, hangup: NSNumber):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogatewaydelegate/1433563-handsfree
-    handsFree_redial(device: cocoascript.IOBluetoothHandsFreeAudioGateway, redial: cocoascript.NSNumber):void;
+    handsFree_redial(device: IOBluetoothHandsFreeAudioGateway, redial: NSNumber):void;
   }
 }
 declare namespace cocoascript {
@@ -1035,17 +1035,17 @@ declare namespace cocoascript {
    */
   interface IOBluetoothL2CAPChannelDelegate {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchanneldelegate/1433766-l2capchannelclosed
-    l2capChannelClosed(l2capChannel: cocoascript.IOBluetoothL2CAPChannel):void;
+    l2capChannelClosed(l2capChannel: IOBluetoothL2CAPChannel):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchanneldelegate/1431868-l2capchanneldata
-    l2capChannelData_data_length(l2capChannel: cocoascript.IOBluetoothL2CAPChannel, dataPointer: void, dataLength: any):void;
+    l2capChannelData_data_length(l2capChannel: IOBluetoothL2CAPChannel, dataPointer: void, dataLength: any):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchanneldelegate/1430363-l2capchannelopencomplete
-    l2capChannelOpenComplete_status(l2capChannel: cocoascript.IOBluetoothL2CAPChannel, error: any):void;
+    l2capChannelOpenComplete_status(l2capChannel: IOBluetoothL2CAPChannel, error: any):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchanneldelegate/1431728-l2capchannelqueuespaceavailable
-    l2capChannelQueueSpaceAvailable(l2capChannel: cocoascript.IOBluetoothL2CAPChannel):void;
+    l2capChannelQueueSpaceAvailable(l2capChannel: IOBluetoothL2CAPChannel):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchanneldelegate/1428740-l2capchannelreconfigured
-    l2capChannelReconfigured(l2capChannel: cocoascript.IOBluetoothL2CAPChannel):void;
+    l2capChannelReconfigured(l2capChannel: IOBluetoothL2CAPChannel):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchanneldelegate/1431099-l2capchannelwritecomplete
-    l2capChannelWriteComplete_refcon_status(l2capChannel: cocoascript.IOBluetoothL2CAPChannel, refcon: void, error: any):void;
+    l2capChannelWriteComplete_refcon_status(l2capChannel: IOBluetoothL2CAPChannel, refcon: void, error: any):void;
   }
 }
 declare namespace cocoascript {
@@ -1054,19 +1054,19 @@ declare namespace cocoascript {
    */
   interface IOBluetoothRFCOMMChannelDelegate {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchanneldelegate/1434518-rfcommchannelclosed
-    rfcommChannelClosed(rfcommChannel: cocoascript.IOBluetoothRFCOMMChannel):void;
+    rfcommChannelClosed(rfcommChannel: IOBluetoothRFCOMMChannel):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchanneldelegate/1429160-rfcommchannelcontrolsignalschang
-    rfcommChannelControlSignalsChanged(rfcommChannel: cocoascript.IOBluetoothRFCOMMChannel):void;
+    rfcommChannelControlSignalsChanged(rfcommChannel: IOBluetoothRFCOMMChannel):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchanneldelegate/1431822-rfcommchanneldata
-    rfcommChannelData_data_length(rfcommChannel: cocoascript.IOBluetoothRFCOMMChannel, dataPointer: void, dataLength: any):void;
+    rfcommChannelData_data_length(rfcommChannel: IOBluetoothRFCOMMChannel, dataPointer: void, dataLength: any):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchanneldelegate/1430179-rfcommchannelflowcontrolchanged
-    rfcommChannelFlowControlChanged(rfcommChannel: cocoascript.IOBluetoothRFCOMMChannel):void;
+    rfcommChannelFlowControlChanged(rfcommChannel: IOBluetoothRFCOMMChannel):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchanneldelegate/1429633-rfcommchannelopencomplete
-    rfcommChannelOpenComplete_status(rfcommChannel: cocoascript.IOBluetoothRFCOMMChannel, error: any):void;
+    rfcommChannelOpenComplete_status(rfcommChannel: IOBluetoothRFCOMMChannel, error: any):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchanneldelegate/1429752-rfcommchannelqueuespaceavailable
-    rfcommChannelQueueSpaceAvailable(rfcommChannel: cocoascript.IOBluetoothRFCOMMChannel):void;
+    rfcommChannelQueueSpaceAvailable(rfcommChannel: IOBluetoothRFCOMMChannel):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchanneldelegate/1434978-rfcommchannelwritecomplete
-    rfcommChannelWriteComplete_refcon_status(rfcommChannel: cocoascript.IOBluetoothRFCOMMChannel, refcon: void, error: any):void;
+    rfcommChannelWriteComplete_refcon_status(rfcommChannel: IOBluetoothRFCOMMChannel, refcon: void, error: any):void;
   }
 }
 declare namespace cocoascript {

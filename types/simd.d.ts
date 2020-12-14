@@ -963,14 +963,14 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/simd/matrix_identity_double2x2
-declare const matrix_identity_double2x2: cocoascript.simd_double2x2;
+declare const matrix_identity_double2x2: simd_double2x2;
 // doc://com.apple.documentation/documentation/simd/matrix_identity_double3x3
-declare const matrix_identity_double3x3: cocoascript.simd_double3x3;
+declare const matrix_identity_double3x3: simd_double3x3;
 // doc://com.apple.documentation/documentation/simd/matrix_identity_double4x4
-declare const matrix_identity_double4x4: cocoascript.simd_double4x4;
+declare const matrix_identity_double4x4: simd_double4x4;
 // doc://com.apple.documentation/documentation/simd/matrix_identity_float2x2
-declare const matrix_identity_float2x2: cocoascript.simd_float2x2;
+declare const matrix_identity_float2x2: simd_float2x2;
 // doc://com.apple.documentation/documentation/simd/matrix_identity_float3x3
-declare const matrix_identity_float3x3: cocoascript.simd_float3x3;
+declare const matrix_identity_float3x3: simd_float3x3;
 // doc://com.apple.documentation/documentation/simd/matrix_identity_float4x4
-declare const matrix_identity_float4x4: cocoascript.simd_float4x4;
+declare const matrix_identity_float4x4: simd_float4x4;

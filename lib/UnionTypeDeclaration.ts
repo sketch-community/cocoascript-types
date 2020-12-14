@@ -34,7 +34,7 @@ export class UnionTypeDeclaration {
     const code = new CodeGenerator();
     code.namespace(() => {
       code.appendLine(`// ${this.id}`);
-      code.appendLine(`type ${this.identifier} = ${normalizeType(this.alias!)};`);
+      code.appendLine(`type ${this.identifier} = ${normalizeType(this.alias!, true)};`);
     });
     code.appendLine();
     return code.toString();

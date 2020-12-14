@@ -5,13 +5,13 @@ declare namespace cocoascript {
    */
   interface NCWidgetProviding extends NSExtensionRequestHandling {
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetproviding/1490248-widgetmargininsetsforproposedmar
-    widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: cocoascript.UIEdgeInsets):cocoascript.UIEdgeInsets;
+    widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: UIEdgeInsets):UIEdgeInsets;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetproviding/1649132-widgetactivedisplaymodedidchange
-    widgetActiveDisplayModeDidChange_withMaximumSize(activeDisplayMode: cocoascript.NCWidgetDisplayMode, maxSize: cocoascript.CGSize):void;
+    widgetActiveDisplayModeDidChange_withMaximumSize(activeDisplayMode: NCWidgetDisplayMode, maxSize: CGSize):void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetproviding/1490262-widgetperformupdatewithcompletio
-    widgetPerformUpdateWithCompletionHandler(completionHandler: cocoascript.NCUpdateResult):void;
+    widgetPerformUpdateWithCompletionHandler(completionHandler: NCUpdateResult):void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetproviding/1490251-widgetallowsediting
-    widgetAllowsEditing(): cocoascript.BOOL;
+    widgetAllowsEditing(): BOOL;
     setWidgetAllowsEditing(): void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetproviding/1490249-widgetdidbeginediting
     widgetDidBeginEditing():void;
@@ -26,17 +26,17 @@ declare namespace cocoascript {
    */
   interface NCWidgetListViewDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetlistviewdelegate/1476055-widgetlist
-    widgetList_viewControllerForRow(list: cocoascript.NCWidgetListViewController, row: cocoascript.NSUInteger):cocoascript.NSViewController;
+    widgetList_viewControllerForRow(list: NCWidgetListViewController, row: NSUInteger):NSViewController;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetlistviewdelegate/1476049-widgetlist
-    widgetList_didRemoveRow(list: cocoascript.NCWidgetListViewController, row: cocoascript.NSUInteger):void;
+    widgetList_didRemoveRow(list: NCWidgetListViewController, row: NSUInteger):void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetlistviewdelegate/1476035-widgetlist
-    widgetList_shouldRemoveRow(list: cocoascript.NCWidgetListViewController, row: cocoascript.NSUInteger):cocoascript.BOOL;
+    widgetList_shouldRemoveRow(list: NCWidgetListViewController, row: NSUInteger):BOOL;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetlistviewdelegate/1476037-widgetlistperformaddaction
-    widgetListPerformAddAction(list: cocoascript.NCWidgetListViewController):void;
+    widgetListPerformAddAction(list: NCWidgetListViewController):void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetlistviewdelegate/1476063-widgetlist
-    widgetList_didReorderRow_toRow(list: cocoascript.NCWidgetListViewController, row: cocoascript.NSUInteger, newIndex: cocoascript.NSUInteger):void;
+    widgetList_didReorderRow_toRow(list: NCWidgetListViewController, row: NSUInteger, newIndex: NSUInteger):void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetlistviewdelegate/1476059-widgetlist
-    widgetList_shouldReorderRow(list: cocoascript.NCWidgetListViewController, row: cocoascript.NSUInteger):cocoascript.BOOL;
+    widgetList_shouldReorderRow(list: NCWidgetListViewController, row: NSUInteger):BOOL;
   }
 }
 declare namespace cocoascript {
@@ -46,11 +46,11 @@ declare namespace cocoascript {
    */
   interface NCWidgetSearchViewDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetsearchviewdelegate/1449558-widgetsearch
-    widgetSearch_searchForTerm_maxResults(controller: cocoascript.NCWidgetSearchViewController, searchTerm: string | cocoascript.NSString, max: cocoascript.NSUInteger):void;
+    widgetSearch_searchForTerm_maxResults(controller: NCWidgetSearchViewController, searchTerm: string | cocoascript.NSString, max: NSUInteger):void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetsearchviewdelegate/1449548-widgetsearch
-    widgetSearch_resultSelected(controller: cocoascript.NCWidgetSearchViewController, object: cocoascript.NCWidgetSearchViewDelegate):void;
+    widgetSearch_resultSelected(controller: NCWidgetSearchViewController, object: NCWidgetSearchViewDelegate):void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetsearchviewdelegate/1449550-widgetsearchtermcleared
-    widgetSearchTermCleared(controller: cocoascript.NCWidgetSearchViewController):void;
+    widgetSearchTermCleared(controller: NCWidgetSearchViewController):void;
   }
 }
 declare namespace cocoascript {
@@ -68,15 +68,15 @@ declare namespace cocoascript {
    */
   interface NCWidgetController extends NSObject {
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetcontroller/1456687-widgetcontroller
-    widgetController():cocoascript.NCWidgetController;
+    widgetController():NCWidgetController;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetcontroller/1456693-sethascontent
-    setHasContent_forWidgetWithBundleIdentifier(flag: cocoascript.BOOL, bundleID: string | cocoascript.NSString):void;
+    setHasContent_forWidgetWithBundleIdentifier(flag: BOOL, bundleID: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetcontroller/1456691-defaultwidgetcontroller
-    defaultWidgetController():cocoascript.NCWidgetController;
+    defaultWidgetController():NCWidgetController;
     //
-    alloc():cocoascript.NCWidgetController;
+    alloc():NCWidgetController;
     //
-    init():cocoascript.NCWidgetController;
+    init():NCWidgetController;
   }
 }
 
@@ -88,31 +88,31 @@ declare namespace cocoascript {
    */
   interface NCWidgetListViewController extends NSViewController {
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetlistviewcontroller/1476044-delegate
-    delegate(): cocoascript.NCWidgetListViewDelegate;
+    delegate(): NCWidgetListViewDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetlistviewcontroller/1476057-contents
-    contents(): cocoascript.id;
+    contents(): id;
     setContents(): void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetlistviewcontroller/1476053-rowforviewcontroller
-    rowForViewController(viewController: cocoascript.NSViewController):cocoascript.NSUInteger;
+    rowForViewController(viewController: NSViewController):NSUInteger;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetlistviewcontroller/1476061-viewcontrolleratrow
-    viewControllerAtRow_makeIfNecessary(row: cocoascript.NSUInteger, makeIfNecesary: cocoascript.BOOL):cocoascript.NSViewController;
+    viewControllerAtRow_makeIfNecessary(row: NSUInteger, makeIfNecesary: BOOL):NSViewController;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetlistviewcontroller/1476034-minimumvisiblerowcount
-    minimumVisibleRowCount(): cocoascript.NSUInteger;
+    minimumVisibleRowCount(): NSUInteger;
     setMinimumVisibleRowCount(): void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetlistviewcontroller/1476043-hasdividerlines
-    hasDividerLines(): cocoascript.BOOL;
+    hasDividerLines(): BOOL;
     setHasDividerLines(): void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetlistviewcontroller/1476039-editing
-    editing(): cocoascript.BOOL;
+    editing(): BOOL;
     setEditing(): void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetlistviewcontroller/1476041-showsaddbuttonwhenediting
-    showsAddButtonWhenEditing(): cocoascript.BOOL;
+    showsAddButtonWhenEditing(): BOOL;
     setShowsAddButtonWhenEditing(): void;
     //
-    alloc():cocoascript.NCWidgetListViewController;
+    alloc():NCWidgetListViewController;
     //
-    init():cocoascript.NCWidgetListViewController;
+    init():NCWidgetListViewController;
   }
 }
 
@@ -124,7 +124,7 @@ declare namespace cocoascript {
    */
   interface NCWidgetSearchViewController extends NSViewController {
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetsearchviewcontroller/1449562-delegate
-    delegate(): cocoascript.NCWidgetSearchViewDelegate;
+    delegate(): NCWidgetSearchViewDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetsearchviewcontroller/1449554-searchdescription
     searchDescription(): string | cocoascript.NSString;
@@ -136,12 +136,12 @@ declare namespace cocoascript {
     searchResultKeyPath(): string | cocoascript.NSString;
     setSearchResultKeyPath(): void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetsearchviewcontroller/1449551-searchresults
-    searchResults(): cocoascript.id;
+    searchResults(): id;
     setSearchResults(): void;
     //
-    alloc():cocoascript.NCWidgetSearchViewController;
+    alloc():NCWidgetSearchViewController;
     //
-    init():cocoascript.NCWidgetSearchViewController;
+    init():NCWidgetSearchViewController;
   }
 }
 

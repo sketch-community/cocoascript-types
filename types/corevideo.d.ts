@@ -143,6 +143,6 @@ declare namespace cocoascript {
   type CVEAGLContext = cocoascript.EAGLContext;
 }
 // doc://com.apple.documentation/documentation/corevideo/kcvzerotime
-declare const kCVZeroTime: cocoascript.CVTime;
+declare const kCVZeroTime: CVTime;
 // doc://com.apple.documentation/documentation/corevideo/kcvindefinitetime
-declare const kCVIndefiniteTime: cocoascript.CVTime;
+declare const kCVIndefiniteTime: CVTime;

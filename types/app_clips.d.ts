@@ -5,20 +5,20 @@ declare namespace cocoascript {
    */
   interface APActivationPayload extends NSObject {
     // doc://com.apple.documentation/documentation/app_clips/apactivationpayload/3580308-url
-    URL(): cocoascript.NSURL;
+    URL(): NSURL;
     setURL(): void;
     // doc://com.apple.documentation/documentation/app_clips/apactivationpayload/3580309-confirmacquiredinregion
-    confirmAcquiredInRegion_completionHandler(region: cocoascript.CLRegion, completionHandler: cocoascript.NSError):void;
+    confirmAcquiredInRegion_completionHandler(region: CLRegion, completionHandler: NSError):void;
     //
-    alloc():cocoascript.APActivationPayload;
+    alloc():APActivationPayload;
     //
-    init():cocoascript.APActivationPayload;
+    init():APActivationPayload;
   }
 }
 
 declare const APActivationPayload: cocoascript.APActivationPayload;
 // doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderrordomain
-declare const APActivationPayloadErrorDomain: cocoascript.NSErrorDomain;
+declare const APActivationPayloadErrorDomain: NSErrorDomain;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/app_clips/apactivationpayloaderrorcode
   type APActivationPayloadErrorCode = cocoascript.NSInteger;

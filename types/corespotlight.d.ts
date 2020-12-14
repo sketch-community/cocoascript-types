@@ -5,9 +5,9 @@ declare namespace cocoascript {
    */
   interface CSIndexExtensionRequestHandler extends NSObject {
     //
-    alloc():cocoascript.CSIndexExtensionRequestHandler;
+    alloc():CSIndexExtensionRequestHandler;
     //
-    init():cocoascript.CSIndexExtensionRequestHandler;
+    init():CSIndexExtensionRequestHandler;
   }
 }
 
@@ -19,17 +19,17 @@ declare namespace cocoascript {
    */
   interface CSSearchableIndexDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableindexdelegate/2867899-dataforsearchableindex
-    dataForSearchableIndex_itemIdentifier_typeIdentifier_error(searchableIndex: cocoascript.CSSearchableIndex, itemIdentifier: string | cocoascript.NSString, typeIdentifier: string | cocoascript.NSString, outError: cocoascript.NSError):cocoascript.NSData;
+    dataForSearchableIndex_itemIdentifier_typeIdentifier_error(searchableIndex: CSSearchableIndex, itemIdentifier: string | cocoascript.NSString, typeIdentifier: string | cocoascript.NSString, outError: NSError):NSData;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableindexdelegate/2867898-fileurlforsearchableindex
-    fileURLForSearchableIndex_itemIdentifier_typeIdentifier_inPlace_error(searchableIndex: cocoascript.CSSearchableIndex, itemIdentifier: string | cocoascript.NSString, typeIdentifier: string | cocoascript.NSString, inPlace: cocoascript.BOOL, outError: cocoascript.NSError):cocoascript.NSURL;
+    fileURLForSearchableIndex_itemIdentifier_typeIdentifier_inPlace_error(searchableIndex: CSSearchableIndex, itemIdentifier: string | cocoascript.NSString, typeIdentifier: string | cocoascript.NSString, inPlace: BOOL, outError: NSError):NSURL;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableindexdelegate/1620348-searchableindex
-    searchableIndex_reindexAllSearchableItemsWithAcknowledgementHandler(searchableIndex: cocoascript.CSSearchableIndex, acknowledgementHandler: void):void;
+    searchableIndex_reindexAllSearchableItemsWithAcknowledgementHandler(searchableIndex: CSSearchableIndex, acknowledgementHandler: void):void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableindexdelegate/1620338-searchableindex
-    searchableIndex_reindexSearchableItemsWithIdentifiers_acknowledgementHandler(searchableIndex: cocoascript.CSSearchableIndex, identifiers: string | cocoascript.NSString, acknowledgementHandler: void):void;
+    searchableIndex_reindexSearchableItemsWithIdentifiers_acknowledgementHandler(searchableIndex: CSSearchableIndex, identifiers: string | cocoascript.NSString, acknowledgementHandler: void):void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableindexdelegate/1620353-searchableindexdidthrottle
-    searchableIndexDidThrottle(searchableIndex: cocoascript.CSSearchableIndex):void;
+    searchableIndexDidThrottle(searchableIndex: CSSearchableIndex):void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableindexdelegate/1620343-searchableindexdidfinishthrottle
-    searchableIndexDidFinishThrottle(searchableIndex: cocoascript.CSSearchableIndex):void;
+    searchableIndexDidFinishThrottle(searchableIndex: CSSearchableIndex):void;
   }
 }
 declare namespace cocoascript {
@@ -39,13 +39,13 @@ declare namespace cocoascript {
    */
   interface CSSearchableItemAttributeSet extends NSObject {
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/3573909-initwithcontenttype
-    initWithContentType(contentType: cocoascript.UTType):cocoascript.CSSearchableItemAttributeSet;
+    initWithContentType(contentType: UTType):CSSearchableItemAttributeSet;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616406-initwithitemcontenttype
-    initWithItemContentType(itemContentType: string | cocoascript.NSString):cocoascript.CSSearchableItemAttributeSet;
+    initWithItemContentType(itemContentType: string | cocoascript.NSString):CSSearchableItemAttributeSet;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616395-setvalue
-    setValue_forCustomKey(value: cocoascript.NSSecureCoding, key: cocoascript.CSCustomAttributeKey):void;
+    setValue_forCustomKey(value: NSSecureCoding, key: CSCustomAttributeKey):void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616407-valueforcustomkey
-    valueForCustomKey(key: cocoascript.CSCustomAttributeKey):cocoascript.NSSecureCoding;
+    valueForCustomKey(key: CSCustomAttributeKey):NSSecureCoding;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621571-audiences
     audiences(): string | cocoascript.NSString;
     setAudiences(): void;
@@ -59,7 +59,7 @@ declare namespace cocoascript {
     encodingApplications(): string | cocoascript.NSString;
     setEncodingApplications(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621565-filesize
-    fileSize(): cocoascript.NSNumber;
+    fileSize(): NSNumber;
     setFileSize(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621566-fontnames
     fontNames(): string | cocoascript.NSString;
@@ -71,13 +71,13 @@ declare namespace cocoascript {
     kind(): string | cocoascript.NSString;
     setKind(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621627-pagecount
-    pageCount(): cocoascript.NSNumber;
+    pageCount(): NSNumber;
     setPageCount(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621673-pageheight
-    pageHeight(): cocoascript.NSNumber;
+    pageHeight(): NSNumber;
     setPageHeight(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621670-pagewidth
-    pageWidth(): cocoascript.NSNumber;
+    pageWidth(): NSNumber;
     setPageWidth(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621658-securitymethod
     securityMethod(): string | cocoascript.NSString;
@@ -89,22 +89,22 @@ declare namespace cocoascript {
     theme(): string | cocoascript.NSString;
     setTheme(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616636-allday
-    allDay(): cocoascript.NSNumber;
+    allDay(): NSNumber;
     setAllDay(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616637-completiondate
-    completionDate(): cocoascript.NSDate;
+    completionDate(): NSDate;
     setCompletionDate(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616641-duedate
-    dueDate(): cocoascript.NSDate;
+    dueDate(): NSDate;
     setDueDate(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616638-enddate
-    endDate(): cocoascript.NSDate;
+    endDate(): NSDate;
     setEndDate(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616639-importantdates
-    importantDates(): cocoascript.NSDate;
+    importantDates(): NSDate;
     setImportantDates(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616640-startdate
-    startDate(): cocoascript.NSDate;
+    startDate(): NSDate;
     setStartDate(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621662-alternatenames
     alternateNames(): string | cocoascript.NSString;
@@ -116,7 +116,7 @@ declare namespace cocoascript {
     contentTypeTree(): string | cocoascript.NSString;
     setContentTypeTree(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621651-contenturl
-    contentURL(): cocoascript.NSURL;
+    contentURL(): NSURL;
     setContentURL(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621676-displayname
     displayName(): string | cocoascript.NSString;
@@ -125,7 +125,7 @@ declare namespace cocoascript {
     keywords(): string | cocoascript.NSString;
     setKeywords(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621657-metadatamodificationdate
-    metadataModificationDate(): cocoascript.NSDate;
+    metadataModificationDate(): NSDate;
     setMetadataModificationDate(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621559-path
     path(): string | cocoascript.NSString;
@@ -134,10 +134,10 @@ declare namespace cocoascript {
     relatedUniqueIdentifier(): string | cocoascript.NSString;
     setRelatedUniqueIdentifier(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621582-thumbnaildata
-    thumbnailData(): cocoascript.NSData;
+    thumbnailData(): NSData;
     setThumbnailData(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621560-thumbnailurl
-    thumbnailURL(): cocoascript.NSURL;
+    thumbnailURL(): NSURL;
     setThumbnailURL(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621615-title
     title(): string | cocoascript.NSString;
@@ -149,7 +149,7 @@ declare namespace cocoascript {
     weakRelatedUniqueIdentifier(): string | cocoascript.NSString;
     setWeakRelatedUniqueIdentifier(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1620579-altitude
-    altitude(): cocoascript.NSNumber;
+    altitude(): NSNumber;
     setAltitude(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1620594-city
     city(): string | cocoascript.NSString;
@@ -161,25 +161,25 @@ declare namespace cocoascript {
     GPSAreaInformation(): string | cocoascript.NSString;
     setGPSAreaInformation(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1620593-gpsdop
-    GPSDOP(): cocoascript.NSNumber;
+    GPSDOP(): NSNumber;
     setGPSDOP(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1620587-gpsdatestamp
-    GPSDateStamp(): cocoascript.NSDate;
+    GPSDateStamp(): NSDate;
     setGPSDateStamp(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1620577-gpsdestbearing
-    GPSDestBearing(): cocoascript.NSNumber;
+    GPSDestBearing(): NSNumber;
     setGPSDestBearing(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1620582-gpsdestdistance
-    GPSDestDistance(): cocoascript.NSNumber;
+    GPSDestDistance(): NSNumber;
     setGPSDestDistance(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1620572-gpsdestlatitude
-    GPSDestLatitude(): cocoascript.NSNumber;
+    GPSDestLatitude(): NSNumber;
     setGPSDestLatitude(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1620580-gpsdestlongitude
-    GPSDestLongitude(): cocoascript.NSNumber;
+    GPSDestLongitude(): NSNumber;
     setGPSDestLongitude(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1620592-gpsdifferental
-    GPSDifferental(): cocoascript.NSNumber;
+    GPSDifferental(): NSNumber;
     setGPSDifferental(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1620583-gpsmapdatum
     GPSMapDatum(): string | cocoascript.NSString;
@@ -194,34 +194,34 @@ declare namespace cocoascript {
     GPSStatus(): string | cocoascript.NSString;
     setGPSStatus(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1620588-gpstrack
-    GPSTrack(): cocoascript.NSNumber;
+    GPSTrack(): NSNumber;
     setGPSTrack(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1620585-headline
     headline(): string | cocoascript.NSString;
     setHeadline(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1620576-imagedirection
-    imageDirection(): cocoascript.NSNumber;
+    imageDirection(): NSNumber;
     setImageDirection(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1620590-instructions
     instructions(): string | cocoascript.NSString;
     setInstructions(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1620586-latitude
-    latitude(): cocoascript.NSNumber;
+    latitude(): NSNumber;
     setLatitude(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1620571-longitude
-    longitude(): cocoascript.NSNumber;
+    longitude(): NSNumber;
     setLongitude(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1620584-namedlocation
     namedLocation(): string | cocoascript.NSString;
     setNamedLocation(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1620591-speed
-    speed(): cocoascript.NSNumber;
+    speed(): NSNumber;
     setSpeed(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1620570-stateorprovince
     stateOrProvince(): string | cocoascript.NSString;
     setStateOrProvince(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1620574-timestamp
-    timestamp(): cocoascript.NSDate;
+    timestamp(): NSDate;
     setTimestamp(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1649301-fullyformattedaddress
     fullyFormattedAddress(): string | cocoascript.NSString;
@@ -239,10 +239,10 @@ declare namespace cocoascript {
     comment(): string | cocoascript.NSString;
     setComment(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616001-contentcreationdate
-    contentCreationDate(): cocoascript.NSDate;
+    contentCreationDate(): NSDate;
     setContentCreationDate(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616085-contentmodificationdate
-    contentModificationDate(): cocoascript.NSDate;
+    contentModificationDate(): NSDate;
     setContentModificationDate(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616024-contentsources
     contentSources(): string | cocoascript.NSString;
@@ -251,13 +251,13 @@ declare namespace cocoascript {
     copyright(): string | cocoascript.NSString;
     setCopyright(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616035-downloadeddate
-    downloadedDate(): cocoascript.NSDate;
+    downloadedDate(): NSDate;
     setDownloadedDate(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616088-editors
     editors(): string | cocoascript.NSString;
     setEditors(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616018-lastuseddate
-    lastUsedDate(): cocoascript.NSDate;
+    lastUsedDate(): NSDate;
     setLastUsedDate(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616045-participants
     participants(): string | cocoascript.NSString;
@@ -266,7 +266,7 @@ declare namespace cocoascript {
     projects(): string | cocoascript.NSString;
     setProjects(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616029-addeddate
-    addedDate(): cocoascript.NSDate;
+    addedDate(): NSDate;
     setAddedDate(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616047-codecs
     codecs(): string | cocoascript.NSString;
@@ -275,10 +275,10 @@ declare namespace cocoascript {
     contactKeywords(): string | cocoascript.NSString;
     setContactKeywords(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616062-deliverytype
-    deliveryType(): cocoascript.NSNumber;
+    deliveryType(): NSNumber;
     setDeliveryType(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616056-duration
-    duration(): cocoascript.NSNumber;
+    duration(): NSNumber;
     setDuration(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616064-mediatypes
     mediaTypes(): string | cocoascript.NSString;
@@ -287,19 +287,19 @@ declare namespace cocoascript {
     organizations(): string | cocoascript.NSString;
     setOrganizations(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616054-streamable
-    streamable(): cocoascript.NSNumber;
+    streamable(): NSNumber;
     setStreamable(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616058-totalbitrate
-    totalBitRate(): cocoascript.NSNumber;
+    totalBitRate(): NSNumber;
     setTotalBitRate(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616103-audiobitrate
-    audioBitRate(): cocoascript.NSNumber;
+    audioBitRate(): NSNumber;
     setAudioBitRate(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616093-version
     version(): string | cocoascript.NSString;
     setVersion(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616090-videobitrate
-    videoBitRate(): cocoascript.NSNumber;
+    videoBitRate(): NSNumber;
     setVideoBitRate(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616060-contributors
     contributors(): string | cocoascript.NSString;
@@ -317,7 +317,7 @@ declare namespace cocoascript {
     role(): string | cocoascript.NSString;
     setRole(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616027-contentrating
-    contentRating(): cocoascript.NSNumber;
+    contentRating(): NSNumber;
     setContentRating(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616006-coverage
     coverage(): string | cocoascript.NSString;
@@ -332,7 +332,7 @@ declare namespace cocoascript {
     information(): string | cocoascript.NSString;
     setInformation(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616049-local
-    local(): cocoascript.NSNumber;
+    local(): NSNumber;
     setLocal(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616097-originalformat
     originalFormat(): string | cocoascript.NSString;
@@ -344,19 +344,19 @@ declare namespace cocoascript {
     performers(): string | cocoascript.NSString;
     setPerformers(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616041-playcount
-    playCount(): cocoascript.NSNumber;
+    playCount(): NSNumber;
     setPlayCount(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616092-producer
     producer(): string | cocoascript.NSString;
     setProducer(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616011-rating
-    rating(): cocoascript.NSNumber;
+    rating(): NSNumber;
     setRating(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616037-ratingdescription
     ratingDescription(): string | cocoascript.NSString;
     setRatingDescription(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616087-url
-    URL(): cocoascript.NSURL;
+    URL(): NSURL;
     setURL(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616016-album
     album(): string | cocoascript.NSString;
@@ -365,16 +365,16 @@ declare namespace cocoascript {
     artist(): string | cocoascript.NSString;
     setArtist(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616072-audiochannelcount
-    audioChannelCount(): cocoascript.NSNumber;
+    audioChannelCount(): NSNumber;
     setAudioChannelCount(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616039-audioencodingapplication
     audioEncodingApplication(): string | cocoascript.NSString;
     setAudioEncodingApplication(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616008-audiosamplerate
-    audioSampleRate(): cocoascript.NSNumber;
+    audioSampleRate(): NSNumber;
     setAudioSampleRate(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616095-audiotracknumber
-    audioTrackNumber(): cocoascript.NSNumber;
+    audioTrackNumber(): NSNumber;
     setAudioTrackNumber(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616074-composer
     composer(): string | cocoascript.NSString;
@@ -389,16 +389,16 @@ declare namespace cocoascript {
     musicalGenre(): string | cocoascript.NSString;
     setMusicalGenre(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616051-recordingdate
-    recordingDate(): cocoascript.NSDate;
+    recordingDate(): NSDate;
     setRecordingDate(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616005-tempo
-    tempo(): cocoascript.NSNumber;
+    tempo(): NSNumber;
     setTempo(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616079-timesignature
     timeSignature(): string | cocoascript.NSString;
     setTimeSignature(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616081-generalmidisequence
-    generalMIDISequence(): cocoascript.NSNumber;
+    generalMIDISequence(): NSNumber;
     setGeneralMIDISequence(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1616099-musicalinstrumentcategory
     musicalInstrumentCategory(): string | cocoascript.NSString;
@@ -407,7 +407,7 @@ declare namespace cocoascript {
     musicalInstrumentName(): string | cocoascript.NSString;
     setMusicalInstrumentName(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621548-isospeed
-    ISOSpeed(): cocoascript.NSNumber;
+    ISOSpeed(): NSNumber;
     setISOSpeed(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621542-acquisitionmake
     acquisitionMake(): string | cocoascript.NSString;
@@ -416,10 +416,10 @@ declare namespace cocoascript {
     acquisitionModel(): string | cocoascript.NSString;
     setAcquisitionModel(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621528-aperture
-    aperture(): cocoascript.NSNumber;
+    aperture(): NSNumber;
     setAperture(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621530-bitspersample
-    bitsPerSample(): cocoascript.NSNumber;
+    bitsPerSample(): NSNumber;
     setBitsPerSample(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621522-cameraowner
     cameraOwner(): string | cocoascript.NSString;
@@ -428,13 +428,13 @@ declare namespace cocoascript {
     colorSpace(): string | cocoascript.NSString;
     setColorSpace(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621525-flashon
-    flashOn(): cocoascript.NSNumber;
+    flashOn(): NSNumber;
     setFlashOn(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621533-focallength
-    focalLength(): cocoascript.NSNumber;
+    focalLength(): NSNumber;
     setFocalLength(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621546-focallength35mm
-    focalLength35mm(): cocoascript.NSNumber;
+    focalLength35mm(): NSNumber;
     setFocalLength35mm(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621519-layernames
     layerNames(): string | cocoascript.NSString;
@@ -443,19 +443,19 @@ declare namespace cocoascript {
     lensModel(): string | cocoascript.NSString;
     setLensModel(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621524-orientation
-    orientation(): cocoascript.NSNumber;
+    orientation(): NSNumber;
     setOrientation(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621517-pixelcount
-    pixelCount(): cocoascript.NSNumber;
+    pixelCount(): NSNumber;
     setPixelCount(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621535-pixelheight
-    pixelHeight(): cocoascript.NSNumber;
+    pixelHeight(): NSNumber;
     setPixelHeight(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621527-pixelwidth
-    pixelWidth(): cocoascript.NSNumber;
+    pixelWidth(): NSNumber;
     setPixelWidth(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621539-whitebalance
-    whiteBalance(): cocoascript.NSNumber;
+    whiteBalance(): NSNumber;
     setWhiteBalance(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621543-exifgpsversion
     EXIFGPSVersion(): string | cocoascript.NSString;
@@ -464,25 +464,25 @@ declare namespace cocoascript {
     EXIFVersion(): string | cocoascript.NSString;
     setEXIFVersion(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621540-exposuremode
-    exposureMode(): cocoascript.NSNumber;
+    exposureMode(): NSNumber;
     setExposureMode(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621547-exposureprogram
     exposureProgram(): string | cocoascript.NSString;
     setExposureProgram(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621532-exposuretime
-    exposureTime(): cocoascript.NSNumber;
+    exposureTime(): NSNumber;
     setExposureTime(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621521-exposuretimestring
     exposureTimeString(): string | cocoascript.NSString;
     setExposureTimeString(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621549-fnumber
-    fNumber(): cocoascript.NSNumber;
+    fNumber(): NSNumber;
     setFNumber(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621518-hasalphachannel
-    hasAlphaChannel(): cocoascript.NSNumber;
+    hasAlphaChannel(): NSNumber;
     setHasAlphaChannel(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621545-maxaperture
-    maxAperture(): cocoascript.NSNumber;
+    maxAperture(): NSNumber;
     setMaxAperture(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621538-meteringmode
     meteringMode(): string | cocoascript.NSString;
@@ -491,16 +491,16 @@ declare namespace cocoascript {
     profileName(): string | cocoascript.NSString;
     setProfileName(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621520-redeyeon
-    redEyeOn(): cocoascript.NSNumber;
+    redEyeOn(): NSNumber;
     setRedEyeOn(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621526-resolutionheightdpi
-    resolutionHeightDPI(): cocoascript.NSNumber;
+    resolutionHeightDPI(): NSNumber;
     setResolutionHeightDPI(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621544-resolutionwidthdpi
-    resolutionWidthDPI(): cocoascript.NSNumber;
+    resolutionWidthDPI(): NSNumber;
     setResolutionWidthDPI(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621669-htmlcontentdata
-    HTMLContentData(): cocoascript.NSData;
+    HTMLContentData(): NSData;
     setHTMLContentData(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621567-accounthandles
     accountHandles(): string | cocoascript.NSString;
@@ -509,7 +509,7 @@ declare namespace cocoascript {
     accountIdentifier(): string | cocoascript.NSString;
     setAccountIdentifier(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621664-additionalrecipients
-    additionalRecipients(): cocoascript.CSPerson;
+    additionalRecipients(): CSPerson;
     setAdditionalRecipients(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621671-authoraddresses
     authorAddresses(): string | cocoascript.NSString;
@@ -521,22 +521,22 @@ declare namespace cocoascript {
     authorNames(): string | cocoascript.NSString;
     setAuthorNames(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621608-authors
-    authors(): cocoascript.CSPerson;
+    authors(): CSPerson;
     setAuthors(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621572-emailaddresses
     emailAddresses(): string | cocoascript.NSString;
     setEmailAddresses(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621568-emailheaders
-    emailHeaders(): cocoascript.NSArray;
+    emailHeaders(): NSArray;
     setEmailHeaders(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621645-hiddenadditionalrecipients
-    hiddenAdditionalRecipients(): cocoascript.CSPerson;
+    hiddenAdditionalRecipients(): CSPerson;
     setHiddenAdditionalRecipients(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621575-instantmessageaddresses
     instantMessageAddresses(): string | cocoascript.NSString;
     setInstantMessageAddresses(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621646-likelyjunk
-    likelyJunk(): cocoascript.NSNumber;
+    likelyJunk(): NSNumber;
     setLikelyJunk(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621654-mailboxidentifiers
     mailboxIdentifiers(): string | cocoascript.NSString;
@@ -545,7 +545,7 @@ declare namespace cocoascript {
     phoneNumbers(): string | cocoascript.NSString;
     setPhoneNumbers(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621675-primaryrecipients
-    primaryRecipients(): cocoascript.CSPerson;
+    primaryRecipients(): CSPerson;
     setPrimaryRecipients(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621648-recipientaddresses
     recipientAddresses(): string | cocoascript.NSString;
@@ -566,16 +566,16 @@ declare namespace cocoascript {
     containerIdentifier(): string | cocoascript.NSString;
     setContainerIdentifier(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621586-containerorder
-    containerOrder(): cocoascript.NSNumber;
+    containerOrder(): NSNumber;
     setContainerOrder(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621661-containertitle
     containerTitle(): string | cocoascript.NSString;
     setContainerTitle(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621564-supportsnavigation
-    supportsNavigation(): cocoascript.NSNumber;
+    supportsNavigation(): NSNumber;
     setSupportsNavigation(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/1621653-supportsphonecall
-    supportsPhoneCall(): cocoascript.NSNumber;
+    supportsPhoneCall(): NSNumber;
     setSupportsPhoneCall(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2867859-providerdatatypeidentifiers
     providerDataTypeIdentifiers(): string | cocoascript.NSString;
@@ -587,21 +587,21 @@ declare namespace cocoascript {
     providerInPlaceFileTypeIdentifiers(): string | cocoascript.NSString;
     setProviderInPlaceFileTypeIdentifiers(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887563-rankinghint
-    rankingHint(): cocoascript.NSNumber;
+    rankingHint(): NSNumber;
     setRankingHint(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887561-usercreated
-    userCreated(): cocoascript.NSNumber;
+    userCreated(): NSNumber;
     setUserCreated(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887562-usercurated
-    userCurated(): cocoascript.NSNumber;
+    userCurated(): NSNumber;
     setUserCurated(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemattributeset/2887564-userowned
-    userOwned(): cocoascript.NSNumber;
+    userOwned(): NSNumber;
     setUserOwned(): void;
     //
-    alloc():cocoascript.CSSearchableItemAttributeSet;
+    alloc():CSSearchableItemAttributeSet;
     //
-    init():cocoascript.CSSearchableItemAttributeSet;
+    init():CSSearchableItemAttributeSet;
   }
 }
 
@@ -613,28 +613,28 @@ declare namespace cocoascript {
    */
   interface CSCustomAttributeKey extends NSObject {
     // doc://com.apple.documentation/documentation/corespotlight/cscustomattributekey/1616402-initwithkeyname
-    initWithKeyName(keyName: string | cocoascript.NSString):cocoascript.CSCustomAttributeKey;
+    initWithKeyName(keyName: string | cocoascript.NSString):CSCustomAttributeKey;
     // doc://com.apple.documentation/documentation/corespotlight/cscustomattributekey/1616410-initwithkeyname
-    initWithKeyName_searchable_searchableByDefault_unique_multiValued(keyName: string | cocoascript.NSString, searchable: cocoascript.BOOL, searchableByDefault: cocoascript.BOOL, unique: cocoascript.BOOL, multiValued: cocoascript.BOOL):cocoascript.CSCustomAttributeKey;
+    initWithKeyName_searchable_searchableByDefault_unique_multiValued(keyName: string | cocoascript.NSString, searchable: BOOL, searchableByDefault: BOOL, unique: BOOL, multiValued: BOOL):CSCustomAttributeKey;
     // doc://com.apple.documentation/documentation/corespotlight/cscustomattributekey/1616405-keyname
     keyName(): string | cocoascript.NSString;
     setKeyName(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cscustomattributekey/1616400-multivalued
-    multiValued(): cocoascript.BOOL;
+    multiValued(): BOOL;
     setMultiValued(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cscustomattributekey/1616397-searchable
-    searchable(): cocoascript.BOOL;
+    searchable(): BOOL;
     setSearchable(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cscustomattributekey/1616396-searchablebydefault
-    searchableByDefault(): cocoascript.BOOL;
+    searchableByDefault(): BOOL;
     setSearchableByDefault(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cscustomattributekey/1616409-unique
-    unique(): cocoascript.BOOL;
+    unique(): BOOL;
     setUnique(): void;
     //
-    alloc():cocoascript.CSCustomAttributeKey;
+    alloc():CSCustomAttributeKey;
     //
-    init():cocoascript.CSCustomAttributeKey;
+    init():CSCustomAttributeKey;
   }
 }
 
@@ -646,7 +646,7 @@ declare namespace cocoascript {
    */
   interface CSPerson extends NSObject {
     // doc://com.apple.documentation/documentation/corespotlight/csperson/1618464-initwithdisplayname
-    initWithDisplayName_handles_handleIdentifier(displayName: string | cocoascript.NSString, handles: string | cocoascript.NSString, handleIdentifier: string | cocoascript.NSString):cocoascript.CSPerson;
+    initWithDisplayName_handles_handleIdentifier(displayName: string | cocoascript.NSString, handles: string | cocoascript.NSString, handleIdentifier: string | cocoascript.NSString):CSPerson;
     // doc://com.apple.documentation/documentation/corespotlight/csperson/1618468-contactidentifier
     contactIdentifier(): string | cocoascript.NSString;
     setContactIdentifier(): void;
@@ -660,9 +660,9 @@ declare namespace cocoascript {
     handles(): string | cocoascript.NSString;
     setHandles(): void;
     //
-    alloc():cocoascript.CSPerson;
+    alloc():CSPerson;
     //
-    init():cocoascript.CSPerson;
+    init():CSPerson;
   }
 }
 
@@ -674,23 +674,23 @@ declare namespace cocoascript {
    */
   interface CSSearchableItem extends NSObject {
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitem/1621647-initwithuniqueidentifier
-    initWithUniqueIdentifier_domainIdentifier_attributeSet(uniqueIdentifier: string | cocoascript.NSString, domainIdentifier: string | cocoascript.NSString, attributeSet: cocoascript.CSSearchableItemAttributeSet):cocoascript.CSSearchableItem;
+    initWithUniqueIdentifier_domainIdentifier_attributeSet(uniqueIdentifier: string | cocoascript.NSString, domainIdentifier: string | cocoascript.NSString, attributeSet: CSSearchableItemAttributeSet):CSSearchableItem;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitem/1621649-attributeset
-    attributeSet(): cocoascript.CSSearchableItemAttributeSet;
+    attributeSet(): CSSearchableItemAttributeSet;
     setAttributeSet(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitem/1621665-domainidentifier
     domainIdentifier(): string | cocoascript.NSString;
     setDomainIdentifier(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitem/1621680-expirationdate
-    expirationDate(): cocoascript.NSDate;
+    expirationDate(): NSDate;
     setExpirationDate(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableitem/1621672-uniqueidentifier
     uniqueIdentifier(): string | cocoascript.NSString;
     setUniqueIdentifier(): void;
     //
-    alloc():cocoascript.CSSearchableItem;
+    alloc():CSSearchableItem;
     //
-    init():cocoascript.CSSearchableItem;
+    init():CSSearchableItem;
   }
 }
 
@@ -710,34 +710,34 @@ declare namespace cocoascript {
    */
   interface CSSearchableIndex extends NSObject {
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableindex/1620350-isindexingavailable
-    isIndexingAvailable():cocoascript.BOOL;
+    isIndexingAvailable():BOOL;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableindex/1620341-defaultsearchableindex
-    defaultSearchableIndex():cocoascript.CSSearchableIndex;
+    defaultSearchableIndex():CSSearchableIndex;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableindex/1620347-initwithname
-    initWithName(name: string | cocoascript.NSString):cocoascript.CSSearchableIndex;
+    initWithName(name: string | cocoascript.NSString):CSSearchableIndex;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableindex/1620332-initwithname
-    initWithName_protectionClass(name: string | cocoascript.NSString, protectionClass: cocoascript.NSFileProtectionType):cocoascript.CSSearchableIndex;
+    initWithName_protectionClass(name: string | cocoascript.NSString, protectionClass: NSFileProtectionType):CSSearchableIndex;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableindex/1620354-indexdelegate
-    indexDelegate(): cocoascript.CSSearchableIndexDelegate;
+    indexDelegate(): CSSearchableIndexDelegate;
     setIndexDelegate(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableindex/1620342-deleteallsearchableitemswithcomp
-    deleteAllSearchableItemsWithCompletionHandler(completionHandler: cocoascript.NSError):void;
+    deleteAllSearchableItemsWithCompletionHandler(completionHandler: NSError):void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableindex/1620351-deletesearchableitemswithdomaini
-    deleteSearchableItemsWithDomainIdentifiers_completionHandler(domainIdentifiers: string | cocoascript.NSString, completionHandler: cocoascript.NSError):void;
+    deleteSearchableItemsWithDomainIdentifiers_completionHandler(domainIdentifiers: string | cocoascript.NSString, completionHandler: NSError):void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableindex/1620337-deletesearchableitemswithidentif
-    deleteSearchableItemsWithIdentifiers_completionHandler(identifiers: string | cocoascript.NSString, completionHandler: cocoascript.NSError):void;
+    deleteSearchableItemsWithIdentifiers_completionHandler(identifiers: string | cocoascript.NSString, completionHandler: NSError):void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableindex/1620333-indexsearchableitems
-    indexSearchableItems_completionHandler(items: cocoascript.CSSearchableItem, completionHandler: cocoascript.NSError):void;
+    indexSearchableItems_completionHandler(items: CSSearchableItem, completionHandler: NSError):void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableindex/1620331-beginindexbatch
     beginIndexBatch():void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableindex/1620344-endindexbatchwithclientstate
-    endIndexBatchWithClientState_completionHandler(clientState: cocoascript.NSData, completionHandler: cocoascript.NSError):void;
+    endIndexBatchWithClientState_completionHandler(clientState: NSData, completionHandler: NSError):void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableindex/1620346-fetchlastclientstatewithcompleti
-    fetchLastClientStateWithCompletionHandler(completionHandler: cocoascript.NSError):void;
+    fetchLastClientStateWithCompletionHandler(completionHandler: NSError):void;
     //
-    alloc():cocoascript.CSSearchableIndex;
+    alloc():CSSearchableIndex;
     //
-    init():cocoascript.CSSearchableIndex;
+    init():CSSearchableIndex;
   }
 }
 
@@ -749,30 +749,30 @@ declare namespace cocoascript {
    */
   interface CSSearchQuery extends NSObject {
     // doc://com.apple.documentation/documentation/corespotlight/cssearchquery/1649308-initwithquerystring
-    initWithQueryString_attributes(queryString: string | cocoascript.NSString, attributes: string | cocoascript.NSString):cocoascript.CSSearchQuery;
+    initWithQueryString_attributes(queryString: string | cocoascript.NSString, attributes: string | cocoascript.NSString):CSSearchQuery;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchquery/1649311-protectionclasses
-    protectionClasses(): cocoascript.NSFileProtectionType;
+    protectionClasses(): NSFileProtectionType;
     setProtectionClasses(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchquery/1649296-start
     start():void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchquery/1649309-cancel
     cancel():void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchquery/1649294-cancelled
-    cancelled(): cocoascript.BOOL;
+    cancelled(): BOOL;
     setCancelled(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchquery/1649312-completionhandler
-    completionHandler(): cocoascript.NSError;
+    completionHandler(): NSError;
     setCompletionHandler(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchquery/1649300-founditemcount
-    foundItemCount(): cocoascript.NSUInteger;
+    foundItemCount(): NSUInteger;
     setFoundItemCount(): void;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchquery/1649306-founditemshandler
-    foundItemsHandler(): cocoascript.CSSearchableItem;
+    foundItemsHandler(): CSSearchableItem;
     setFoundItemsHandler(): void;
     //
-    alloc():cocoascript.CSSearchQuery;
+    alloc():CSSearchQuery;
     //
-    init():cocoascript.CSSearchQuery;
+    init():CSSearchQuery;
   }
 }
 
@@ -788,13 +788,13 @@ declare namespace cocoascript {
    */
   interface CSLocalizedString extends NSString {
     // doc://com.apple.documentation/documentation/corespotlight/cslocalizedstring/1616403-initwithlocalizedstrings
-    initWithLocalizedStrings(localizedStrings: cocoascript.NSDictionary):cocoascript.CSLocalizedString;
+    initWithLocalizedStrings(localizedStrings: NSDictionary):CSLocalizedString;
     // doc://com.apple.documentation/documentation/corespotlight/cslocalizedstring/1616401-localizedstring
     localizedString():string | cocoascript.NSString;
     //
-    alloc():cocoascript.CSLocalizedString;
+    alloc():CSLocalizedString;
     //
-    init():cocoascript.CSLocalizedString;
+    init():CSLocalizedString;
   }
 }
 

@@ -1,6 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { CodeGenerator } from './CodeGenerator';
+import { NAMESPACE } from './constant';
 import { ConstDeclaration } from './ConstDeclaration';
 import { normalizeType } from './helpers';
 import { MethodDeclaration } from './MethodDeclaration';
@@ -108,7 +109,7 @@ export class InterfaceDeclaration {
       });
     });
     if (this.type === 'interface') {
-      code.appendLine().appendLine(`declare const ${this.identifier}: ${normalizeType(this.identifier)};`);
+      code.appendLine().appendLine(`declare const ${this.identifier}: ${normalizeType(this.identifier, true)};`);
     }
     this.constants.forEach(constant => {
       code.appendLine(constant.generate());

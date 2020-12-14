@@ -319,9 +319,9 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/accelerate/1399110-vimageconverter_getsourcebuffero
-declare const vImageConverter_GetSourceBufferOrder: cocoascript.vImageConverterRef;
+declare const vImageConverter_GetSourceBufferOrder: vImageConverterRef;
 // doc://com.apple.documentation/documentation/accelerate/1399076-vimageconverter_getdestinationbu
-declare const vImageConverter_GetDestinationBufferOrder: cocoascript.vImageConverterRef;
+declare const vImageConverter_GetDestinationBufferOrder: vImageConverterRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/accelerate/vimageypcbcrtype
   type vImageYpCbCrType = number;
@@ -547,33 +547,33 @@ declare namespace cocoascript {
   type sparse_matrix_property = number;
 }
 // doc://com.apple.documentation/documentation/accelerate/vimage_cgimageformat/1399034-decode
-declare const decode: cocoascript.CGFloat;
+declare const decode: CGFloat;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/accelerate/vimageconstcvimageformatref
   type vImageConstCVImageFormatRef = cocoascript.vImageCVImageFormat;
 }
 // doc://com.apple.documentation/documentation/accelerate/1498252-vimagecvimageformat_getchannelde
-declare const vImageCVImageFormat_GetChannelDescription: cocoascript.vImageBufferTypeCode;
+declare const vImageCVImageFormat_GetChannelDescription: vImageBufferTypeCode;
 // doc://com.apple.documentation/documentation/accelerate/1498192-vimagecvimageformat_getchannelna
-declare const vImageCVImageFormat_GetChannelNames: cocoascript.vImageConstCVImageFormatRef;
+declare const vImageCVImageFormat_GetChannelNames: vImageConstCVImageFormatRef;
 declare namespace cocoascript {
   interface vImageChannelDescription {
   }
 }
 // doc://com.apple.documentation/documentation/accelerate/1498191-vimagecvimageformat_getconversio
-declare const vImageCVImageFormat_GetConversionMatrix: cocoascript.vImageMatrixType;
+declare const vImageCVImageFormat_GetConversionMatrix: vImageMatrixType;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/accelerate/vimagebuffertypecode
   type vImageBufferTypeCode = number;
 }
 // doc://com.apple.documentation/documentation/accelerate/kvimage_ypcbcrtoargbmatrix_itu_r_601_4
-declare const kvImage_YpCbCrToARGBMatrix_ITU_R_601_4: cocoascript.vImage_YpCbCrToARGBMatrix;
+declare const kvImage_YpCbCrToARGBMatrix_ITU_R_601_4: vImage_YpCbCrToARGBMatrix;
 // doc://com.apple.documentation/documentation/accelerate/kvimage_ypcbcrtoargbmatrix_itu_r_709_2
-declare const kvImage_YpCbCrToARGBMatrix_ITU_R_709_2: cocoascript.vImage_YpCbCrToARGBMatrix;
+declare const kvImage_YpCbCrToARGBMatrix_ITU_R_709_2: vImage_YpCbCrToARGBMatrix;
 // doc://com.apple.documentation/documentation/accelerate/kvimage_argbtoypcbcrmatrix_itu_r_709_2
-declare const kvImage_ARGBToYpCbCrMatrix_ITU_R_709_2: cocoascript.vImage_ARGBToYpCbCrMatrix;
+declare const kvImage_ARGBToYpCbCrMatrix_ITU_R_709_2: vImage_ARGBToYpCbCrMatrix;
 // doc://com.apple.documentation/documentation/accelerate/kvimage_argbtoypcbcrmatrix_itu_r_601_4
-declare const kvImage_ARGBToYpCbCrMatrix_ITU_R_601_4: cocoascript.vImage_ARGBToYpCbCrMatrix;
+declare const kvImage_ARGBToYpCbCrMatrix_ITU_R_601_4: vImage_ARGBToYpCbCrMatrix;
 declare namespace cocoascript {
   interface SparseOpaqueSymbolicFactorization {
   }
@@ -627,7 +627,7 @@ declare namespace cocoascript {
   type vS1024 = cocoascript.union;
 }
 // doc://com.apple.documentation/documentation/accelerate/kvimagedecodearray_16q12format
-declare const kvImageDecodeArray_16Q12Format: cocoascript.CGFloat;
+declare const kvImageDecodeArray_16Q12Format: CGFloat;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/accelerate/sparsescaling_t
   type SparseScaling_t = number;

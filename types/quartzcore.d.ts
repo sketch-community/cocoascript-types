@@ -5,18 +5,18 @@ declare namespace cocoascript {
    */
   interface CAOpenGLLayer extends CALayer {
     // doc://com.apple.documentation/documentation/quartzcore/caopengllayer/1521873-colorspace
-    colorspace(): cocoascript.CGColorSpaceRef;
+    colorspace(): CGColorSpaceRef;
     setColorspace(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caopengllayer/1521900-wantsextendeddynamicrangecontent
-    wantsExtendedDynamicRangeContent(): cocoascript.BOOL;
+    wantsExtendedDynamicRangeContent(): BOOL;
     setWantsExtendedDynamicRangeContent(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caopengllayer/1522116-asynchronous
-    asynchronous(): cocoascript.BOOL;
+    asynchronous(): BOOL;
     setAsynchronous(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caopengllayer/1522184-candrawincglcontext
-    canDrawInCGLContext_pixelFormat_forLayerTime_displayTime(ctx: any, pf: any, t: cocoascript.CFTimeInterval, ts: cocoascript.CVTimeStamp):cocoascript.BOOL;
+    canDrawInCGLContext_pixelFormat_forLayerTime_displayTime(ctx: any, pf: any, t: CFTimeInterval, ts: CVTimeStamp):BOOL;
     // doc://com.apple.documentation/documentation/quartzcore/caopengllayer/1522316-drawincglcontext
-    drawInCGLContext_pixelFormat_forLayerTime_displayTime(ctx: any, pf: any, t: cocoascript.CFTimeInterval, ts: cocoascript.CVTimeStamp):void;
+    drawInCGLContext_pixelFormat_forLayerTime_displayTime(ctx: any, pf: any, t: CFTimeInterval, ts: CVTimeStamp):void;
     // doc://com.apple.documentation/documentation/quartzcore/caopengllayer/1522052-copycglpixelformatfordisplaymask
     copyCGLPixelFormatForDisplayMask(mask: number):any;
     // doc://com.apple.documentation/documentation/quartzcore/caopengllayer/1521910-releasecglpixelformat
@@ -26,9 +26,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartzcore/caopengllayer/1521850-releasecglcontext
     releaseCGLContext(ctx: any):void;
     //
-    alloc():cocoascript.CAOpenGLLayer;
+    alloc():CAOpenGLLayer;
     //
-    init():cocoascript.CAOpenGLLayer;
+    init():CAOpenGLLayer;
   }
 }
 
@@ -40,199 +40,199 @@ declare namespace cocoascript {
    */
   interface CALayer extends NSObject {
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410793-layer
-    layer():cocoascript.CALayer;
+    layer():CALayer;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410835-init
-    init():cocoascript.CALayer;
+    init():CALayer;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410842-initwithlayer
-    initWithLayer(layer: cocoascript.CALayer):cocoascript.CALayer;
+    initWithLayer(layer: CALayer):CALayer;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1522119-layerwithremoteclientid
-    layerWithRemoteClientId(client_id: number):cocoascript.CALayer;
+    layerWithRemoteClientId(client_id: number):CALayer;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410744-presentationlayer
-    presentationLayer():cocoascript.CALayer;
+    presentationLayer():CALayer;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410853-modellayer
-    modelLayer():cocoascript.CALayer;
+    modelLayer():CALayer;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410984-delegate
-    delegate(): cocoascript.CALayerDelegate;
+    delegate(): CALayerDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410773-contents
-    contents(): cocoascript.id;
+    contents(): id;
     setContents(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410866-contentsrect
-    contentsRect(): cocoascript.CGRect;
+    contentsRect(): CGRect;
     setContentsRect(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410740-contentscenter
-    contentsCenter(): cocoascript.CGRect;
+    contentsCenter(): CGRect;
     setContentsCenter(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410926-display
     display():void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410757-drawincontext
-    drawInContext(ctx: cocoascript.CGContextRef):void;
+    drawInContext(ctx: CGContextRef):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410872-contentsgravity
-    contentsGravity(): cocoascript.CALayerContentsGravity;
+    contentsGravity(): CALayerContentsGravity;
     setContentsGravity(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410933-opacity
     opacity(): number;
     setOpacity(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410838-hidden
-    hidden(): cocoascript.BOOL;
+    hidden(): BOOL;
     setHidden(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410896-maskstobounds
-    masksToBounds(): cocoascript.BOOL;
+    masksToBounds(): BOOL;
     setMasksToBounds(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410861-mask
-    mask(): cocoascript.CALayer;
+    mask(): CALayer;
     setMask(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410924-doublesided
-    doubleSided(): cocoascript.BOOL;
+    doubleSided(): BOOL;
     setDoubleSided(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410818-cornerradius
-    cornerRadius(): cocoascript.CGFloat;
+    cornerRadius(): CGFloat;
     setCornerRadius(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/2877488-maskedcorners
-    maskedCorners(): cocoascript.CACornerMask;
+    maskedCorners(): CACornerMask;
     setMaskedCorners(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410917-borderwidth
-    borderWidth(): cocoascript.CGFloat;
+    borderWidth(): CGFloat;
     setBorderWidth(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410903-bordercolor
-    borderColor(): cocoascript.CGColorRef;
+    borderColor(): CGColorRef;
     setBorderColor(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410966-backgroundcolor
-    backgroundColor(): cocoascript.CGColorRef;
+    backgroundColor(): CGColorRef;
     setBackgroundColor(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410751-shadowopacity
     shadowOpacity(): number;
     setShadowOpacity(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410819-shadowradius
-    shadowRadius(): cocoascript.CGFloat;
+    shadowRadius(): CGFloat;
     setShadowRadius(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410970-shadowoffset
-    shadowOffset(): cocoascript.CGSize;
+    shadowOffset(): CGSize;
     setShadowOffset(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410829-shadowcolor
-    shadowColor(): cocoascript.CGColorRef;
+    shadowColor(): CGColorRef;
     setShadowColor(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410771-shadowpath
-    shadowPath(): cocoascript.CGPathRef;
+    shadowPath(): CGPathRef;
     setShadowPath(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410875-style
-    style(): cocoascript.NSDictionary;
+    style(): NSDictionary;
     setStyle(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1621285-allowsedgeantialiasing
-    allowsEdgeAntialiasing(): cocoascript.BOOL;
+    allowsEdgeAntialiasing(): BOOL;
     setAllowsEdgeAntialiasing(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1621277-allowsgroupopacity
-    allowsGroupOpacity(): cocoascript.BOOL;
+    allowsGroupOpacity(): BOOL;
     setAllowsGroupOpacity(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410901-filters
-    filters(): cocoascript.NSArray;
+    filters(): NSArray;
     setFilters(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410748-compositingfilter
-    compositingFilter(): cocoascript.id;
+    compositingFilter(): id;
     setCompositingFilter(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410827-backgroundfilters
-    backgroundFilters(): cocoascript.NSArray;
+    backgroundFilters(): NSArray;
     setBackgroundFilters(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410898-minificationfilter
-    minificationFilter(): cocoascript.CALayerContentsFilter;
+    minificationFilter(): CALayerContentsFilter;
     setMinificationFilter(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410775-minificationfilterbias
     minificationFilterBias(): number;
     setMinificationFilterBias(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410907-magnificationfilter
-    magnificationFilter(): cocoascript.CALayerContentsFilter;
+    magnificationFilter(): CALayerContentsFilter;
     setMagnificationFilter(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410763-opaque
-    opaque(): cocoascript.BOOL;
+    opaque(): BOOL;
     setOpaque(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410892-edgeantialiasingmask
-    edgeAntialiasingMask(): cocoascript.CAEdgeAntialiasingMask;
+    edgeAntialiasingMask(): CAEdgeAntialiasingMask;
     setEdgeAntialiasingMask(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410777-contentsareflipped
-    contentsAreFlipped():cocoascript.BOOL;
+    contentsAreFlipped():BOOL;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410960-geometryflipped
-    geometryFlipped(): cocoascript.BOOL;
+    geometryFlipped(): BOOL;
     setGeometryFlipped(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410974-drawsasynchronously
-    drawsAsynchronously(): cocoascript.BOOL;
+    drawsAsynchronously(): BOOL;
     setDrawsAsynchronously(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410905-shouldrasterize
-    shouldRasterize(): cocoascript.BOOL;
+    shouldRasterize(): BOOL;
     setShouldRasterize(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410801-rasterizationscale
-    rasterizationScale(): cocoascript.CGFloat;
+    rasterizationScale(): CGFloat;
     setRasterizationScale(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1792104-contentsformat
-    contentsFormat(): cocoascript.CALayerContentsFormat;
+    contentsFormat(): CALayerContentsFormat;
     setContentsFormat(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410909-renderincontext
-    renderInContext(ctx: cocoascript.CGContextRef):void;
+    renderInContext(ctx: CGContextRef):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410779-frame
-    frame(): cocoascript.CGRect;
+    frame(): CGRect;
     setFrame(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410915-bounds
-    bounds(): cocoascript.CGRect;
+    bounds(): CGRect;
     setBounds(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410791-position
-    position(): cocoascript.CGPoint;
+    position(): CGPoint;
     setPosition(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410884-zposition
-    zPosition(): cocoascript.CGFloat;
+    zPosition(): CGFloat;
     setZPosition(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410796-anchorpointz
-    anchorPointZ(): cocoascript.CGFloat;
+    anchorPointZ(): CGFloat;
     setAnchorPointZ(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410817-anchorpoint
-    anchorPoint(): cocoascript.CGPoint;
+    anchorPoint(): CGPoint;
     setAnchorPoint(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410746-contentsscale
-    contentsScale(): cocoascript.CGFloat;
+    contentsScale(): CGFloat;
     setContentsScale(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410836-transform
-    transform(): cocoascript.CATransform3D;
+    transform(): CATransform3D;
     setTransform(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410888-sublayertransform
-    sublayerTransform(): cocoascript.CATransform3D;
+    sublayerTransform(): CATransform3D;
     setSublayerTransform(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410882-affinetransform
-    affineTransform():cocoascript.CGAffineTransform;
+    affineTransform():CGAffineTransform;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410868-setaffinetransform
-    setAffineTransform(m: cocoascript.CGAffineTransform):void;
+    setAffineTransform(m: CGAffineTransform):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410802-sublayers
-    sublayers(): cocoascript.CALayer;
+    sublayers(): CALayer;
     setSublayers(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410761-superlayer
-    superlayer(): cocoascript.CALayer;
+    superlayer(): CALayer;
     setSuperlayer(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410833-addsublayer
-    addSublayer(layer: cocoascript.CALayer):void;
+    addSublayer(layer: CALayer):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410767-removefromsuperlayer
     removeFromSuperlayer():void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410944-insertsublayer
-    insertSublayer_atIndex(layer: cocoascript.CALayer, idx: number):void;
+    insertSublayer_atIndex(layer: CALayer, idx: number):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410840-insertsublayer
-    insertSublayer_below(layer: cocoascript.CALayer, sibling: cocoascript.CALayer):void;
+    insertSublayer_below(layer: CALayer, sibling: CALayer):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410798-insertsublayer
-    insertSublayer_above(layer: cocoascript.CALayer, sibling: cocoascript.CALayer):void;
+    insertSublayer_above(layer: CALayer, sibling: CALayer):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410820-replacesublayer
-    replaceSublayer_with(oldLayer: cocoascript.CALayer, newLayer: cocoascript.CALayer):void;
+    replaceSublayer_with(oldLayer: CALayer, newLayer: CALayer):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410855-setneedsdisplay
     setNeedsDisplay():void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410800-setneedsdisplayinrect
-    setNeedsDisplayInRect(r: cocoascript.CGRect):void;
+    setNeedsDisplayInRect(r: CGRect):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410923-needsdisplayonboundschange
-    needsDisplayOnBoundsChange(): cocoascript.BOOL;
+    needsDisplayOnBoundsChange(): BOOL;
     setNeedsDisplayOnBoundsChange(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410813-displayifneeded
     displayIfNeeded():void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410958-needsdisplay
-    needsDisplay():cocoascript.BOOL;
+    needsDisplay():BOOL;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410769-needsdisplayforkey
-    needsDisplayForKey(key: string | cocoascript.NSString):cocoascript.BOOL;
+    needsDisplayForKey(key: string | cocoascript.NSString):BOOL;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410848-addanimation
-    addAnimation_forKey(anim: cocoascript.CAAnimation, key: string | cocoascript.NSString):void;
+    addAnimation_forKey(anim: CAAnimation, key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410808-animationforkey
-    animationForKey(key: string | cocoascript.NSString):cocoascript.CAAnimation;
+    animationForKey(key: string | cocoascript.NSString):CAAnimation;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410810-removeallanimations
     removeAllAnimations():void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410939-removeanimationforkey
@@ -240,7 +240,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410937-animationkeys
     animationKeys():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410749-layoutmanager
-    layoutManager(): cocoascript.CALayoutManager;
+    layoutManager(): CALayoutManager;
     setLayoutManager(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410946-setneedslayout
     setNeedsLayout():void;
@@ -249,77 +249,77 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410873-layoutifneeded
     layoutIfNeeded():void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410956-needslayout
-    needsLayout():cocoascript.BOOL;
+    needsLayout():BOOL;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410877-autoresizingmask
-    autoresizingMask(): cocoascript.CAAutoresizingMask;
+    autoresizingMask(): CAAutoresizingMask;
     setAutoresizingMask(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410894-resizewitholdsuperlayersize
-    resizeWithOldSuperlayerSize(size: cocoascript.CGSize):void;
+    resizeWithOldSuperlayerSize(size: CGSize):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410929-resizesublayerswitholdsize
-    resizeSublayersWithOldSize(size: cocoascript.CGSize):void;
+    resizeSublayersWithOldSize(size: CGSize):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410980-preferredframesize
-    preferredFrameSize():cocoascript.CGSize;
+    preferredFrameSize():CGSize;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1521906-constraints
-    constraints(): cocoascript.CAConstraint;
+    constraints(): CAConstraint;
     setConstraints(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1521899-addconstraint
-    addConstraint(c: cocoascript.CAConstraint):void;
+    addConstraint(c: CAConstraint):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410844-actionforkey
-    actionForKey(event: string | cocoascript.NSString):cocoascript.CAAction;
+    actionForKey(event: string | cocoascript.NSString):CAAction;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410789-actions
-    actions(): cocoascript.CAAction;
+    actions(): CAAction;
     setActions(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410954-defaultactionforkey
-    defaultActionForKey(event: string | cocoascript.NSString):cocoascript.CAAction;
+    defaultActionForKey(event: string | cocoascript.NSString):CAAction;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410825-convertpoint
-    convertPoint_fromLayer(p: cocoascript.CGPoint, l: cocoascript.CALayer):cocoascript.CGPoint;
+    convertPoint_fromLayer(p: CGPoint, l: CALayer):CGPoint;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410881-convertpoint
-    convertPoint_toLayer(p: cocoascript.CGPoint, l: cocoascript.CALayer):cocoascript.CGPoint;
+    convertPoint_toLayer(p: CGPoint, l: CALayer):CGPoint;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410948-convertrect
-    convertRect_fromLayer(r: cocoascript.CGRect, l: cocoascript.CALayer):cocoascript.CGRect;
+    convertRect_fromLayer(r: CGRect, l: CALayer):CGRect;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410742-convertrect
-    convertRect_toLayer(r: cocoascript.CGRect, l: cocoascript.CALayer):cocoascript.CGRect;
+    convertRect_toLayer(r: CGRect, l: CALayer):CGRect;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410821-converttime
-    convertTime_fromLayer(t: cocoascript.CFTimeInterval, l: cocoascript.CALayer):cocoascript.CFTimeInterval;
+    convertTime_fromLayer(t: CFTimeInterval, l: CALayer):CFTimeInterval;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410823-converttime
-    convertTime_toLayer(t: cocoascript.CFTimeInterval, l: cocoascript.CALayer):cocoascript.CFTimeInterval;
+    convertTime_toLayer(t: CFTimeInterval, l: CALayer):CFTimeInterval;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410972-hittest
-    hitTest(p: cocoascript.CGPoint):cocoascript.CALayer;
+    hitTest(p: CGPoint):CALayer;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410857-containspoint
-    containsPoint(p: cocoascript.CGPoint):cocoascript.BOOL;
+    containsPoint(p: CGPoint):BOOL;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1521892-visiblerect
-    visibleRect(): cocoascript.CGRect;
+    visibleRect(): CGRect;
     setVisibleRect(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1522202-scrollpoint
-    scrollPoint(p: cocoascript.CGPoint):void;
+    scrollPoint(p: CGPoint):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1522139-scrollrecttovisible
-    scrollRectToVisible(r: cocoascript.CGRect):void;
+    scrollRectToVisible(r: CGRect):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410879-name
     name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410753-shouldarchivevalueforkey
-    shouldArchiveValueForKey(key: string | cocoascript.NSString):cocoascript.BOOL;
+    shouldArchiveValueForKey(key: string | cocoascript.NSString):BOOL;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410886-defaultvalueforkey
-    defaultValueForKey(key: string | cocoascript.NSString):cocoascript.CALayer;
+    defaultValueForKey(key: string | cocoascript.NSString):CALayer;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/3152596-cornercurve
-    cornerCurve(): cocoascript.CALayerCornerCurve;
+    cornerCurve(): CALayerCornerCurve;
     setCornerCurve(): void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/3152597-cornercurveexpansionfactor
-    cornerCurveExpansionFactor(curve: cocoascript.CALayerCornerCurve):cocoascript.CGFloat;
+    cornerCurveExpansionFactor(curve: CALayerCornerCurve):CGFloat;
     //
-    alloc():cocoascript.CALayer;
+    alloc():CALayer;
     //
-    init():cocoascript.CALayer;
+    init():CALayer;
   }
 }
 
 declare const CALayer: cocoascript.CALayer;
 // doc://com.apple.documentation/documentation/quartzcore/kcagravityresize
-declare const kCAGravityResize: cocoascript.CALayerContentsGravity;
+declare const kCAGravityResize: CALayerContentsGravity;
 // doc://com.apple.documentation/documentation/quartzcore/kcagravityresizeaspect
-declare const kCAGravityResizeAspect: cocoascript.CALayerContentsGravity;
+declare const kCAGravityResizeAspect: CALayerContentsGravity;
 // doc://com.apple.documentation/documentation/quartzcore/kcagravityresizeaspectfill
-declare const kCAGravityResizeAspectFill: cocoascript.CALayerContentsGravity;
+declare const kCAGravityResizeAspectFill: CALayerContentsGravity;
 declare namespace cocoascript {
   /**
    * The abstract superclass for animations in Core Animation.
@@ -327,38 +327,38 @@ declare namespace cocoascript {
    */
   interface CAAnimation extends NSObject {
     // doc://com.apple.documentation/documentation/quartzcore/caanimation/1412479-animation
-    animation():cocoascript.CAAnimation;
+    animation():CAAnimation;
     // doc://com.apple.documentation/documentation/quartzcore/caanimation/2867443-animationwithscnanimation
-    animationWithSCNAnimation(animation: cocoascript.SCNAnimation):cocoascript.CAAnimation;
+    animationWithSCNAnimation(animation: SCNAnimation):CAAnimation;
     // doc://com.apple.documentation/documentation/quartzcore/caanimation/1412458-removedoncompletion
-    removedOnCompletion(): cocoascript.BOOL;
+    removedOnCompletion(): BOOL;
     setRemovedOnCompletion(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caanimation/1412456-timingfunction
-    timingFunction(): cocoascript.CAMediaTimingFunction;
+    timingFunction(): CAMediaTimingFunction;
     setTimingFunction(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caanimation/1412530-defaultvalueforkey
-    defaultValueForKey(key: string | cocoascript.NSString):cocoascript.CAAnimation;
+    defaultValueForKey(key: string | cocoascript.NSString):CAAnimation;
     // doc://com.apple.documentation/documentation/quartzcore/caanimation/1412490-delegate
-    delegate(): cocoascript.CAAnimationDelegate;
+    delegate(): CAAnimationDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caanimation/1412525-shouldarchivevalueforkey
-    shouldArchiveValueForKey(key: string | cocoascript.NSString):cocoascript.BOOL;
+    shouldArchiveValueForKey(key: string | cocoascript.NSString):BOOL;
     // doc://com.apple.documentation/documentation/quartzcore/caanimation/1523819-usesscenetimebase
-    usesSceneTimeBase(): cocoascript.BOOL;
+    usesSceneTimeBase(): BOOL;
     setUsesSceneTimeBase(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caanimation/1523370-fadeinduration
-    fadeInDuration(): cocoascript.CGFloat;
+    fadeInDuration(): CGFloat;
     setFadeInDuration(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caanimation/1522959-fadeoutduration
-    fadeOutDuration(): cocoascript.CGFloat;
+    fadeOutDuration(): CGFloat;
     setFadeOutDuration(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caanimation/1523940-animationevents
-    animationEvents(): cocoascript.SCNAnimationEvent;
+    animationEvents(): SCNAnimationEvent;
     setAnimationEvents(): void;
     //
-    alloc():cocoascript.CAAnimation;
+    alloc():CAAnimation;
     //
-    init():cocoascript.CAAnimation;
+    init():CAAnimation;
   }
 }
 
@@ -376,17 +376,17 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartzcore/catransaction/1448270-flush
     flush():void;
     // doc://com.apple.documentation/documentation/quartzcore/catransaction/1448263-animationduration
-    animationDuration():cocoascript.CFTimeInterval;
+    animationDuration():CFTimeInterval;
     // doc://com.apple.documentation/documentation/quartzcore/catransaction/1448283-setanimationduration
-    setAnimationDuration(dur: cocoascript.CFTimeInterval):void;
+    setAnimationDuration(dur: CFTimeInterval):void;
     // doc://com.apple.documentation/documentation/quartzcore/catransaction/1448269-animationtimingfunction
-    animationTimingFunction():cocoascript.CAMediaTimingFunction;
+    animationTimingFunction():CAMediaTimingFunction;
     // doc://com.apple.documentation/documentation/quartzcore/catransaction/1448279-setanimationtimingfunction
-    setAnimationTimingFunction(function: cocoascript.CAMediaTimingFunction):void;
+    setAnimationTimingFunction(function: CAMediaTimingFunction):void;
     // doc://com.apple.documentation/documentation/quartzcore/catransaction/1448276-disableactions
-    disableActions():cocoascript.BOOL;
+    disableActions():BOOL;
     // doc://com.apple.documentation/documentation/quartzcore/catransaction/1448261-setdisableactions
-    setDisableActions(flag: cocoascript.BOOL):void;
+    setDisableActions(flag: BOOL):void;
     // doc://com.apple.documentation/documentation/quartzcore/catransaction/1448280-completionblock
     completionBlock():void;
     // doc://com.apple.documentation/documentation/quartzcore/catransaction/1448281-setcompletionblock
@@ -396,13 +396,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartzcore/catransaction/1448285-unlock
     unlock():void;
     // doc://com.apple.documentation/documentation/quartzcore/catransaction/1448278-setvalue
-    setValue_forKey(anObject: cocoascript.CATransaction, key: string | cocoascript.NSString):void;
+    setValue_forKey(anObject: CATransaction, key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/quartzcore/catransaction/1448259-valueforkey
-    valueForKey(key: string | cocoascript.NSString):cocoascript.CATransaction;
+    valueForKey(key: string | cocoascript.NSString):CATransaction;
     //
-    alloc():cocoascript.CATransaction;
+    alloc():CATransaction;
     //
-    init():cocoascript.CATransaction;
+    init():CATransaction;
   }
 }
 
@@ -423,38 +423,38 @@ declare namespace cocoascript {
     pixelFormat(): any;
     setPixelFormat(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cametallayer/1478170-colorspace
-    colorspace(): cocoascript.CGColorSpaceRef;
+    colorspace(): CGColorSpaceRef;
     setColorspace(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cametallayer/1478168-framebufferonly
-    framebufferOnly(): cocoascript.BOOL;
+    framebufferOnly(): BOOL;
     setFramebufferOnly(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cametallayer/1478174-drawablesize
-    drawableSize(): cocoascript.CGSize;
+    drawableSize(): CGSize;
     setDrawableSize(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cametallayer/1478157-presentswithtransaction
-    presentsWithTransaction(): cocoascript.BOOL;
+    presentsWithTransaction(): BOOL;
     setPresentsWithTransaction(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cametallayer/2887087-displaysyncenabled
-    displaySyncEnabled(): cocoascript.BOOL;
+    displaySyncEnabled(): BOOL;
     setDisplaySyncEnabled(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cametallayer/1478161-wantsextendeddynamicrangecontent
-    wantsExtendedDynamicRangeContent(): cocoascript.BOOL;
+    wantsExtendedDynamicRangeContent(): BOOL;
     setWantsExtendedDynamicRangeContent(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cametallayer/3182052-edrmetadata
-    EDRMetadata(): cocoascript.CAEDRMetadata;
+    EDRMetadata(): CAEDRMetadata;
     setEDRMetadata(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cametallayer/1478172-nextdrawable
-    nextDrawable():cocoascript.CAMetalDrawable;
+    nextDrawable():CAMetalDrawable;
     // doc://com.apple.documentation/documentation/quartzcore/cametallayer/2938720-maximumdrawablecount
-    maximumDrawableCount(): cocoascript.NSUInteger;
+    maximumDrawableCount(): NSUInteger;
     setMaximumDrawableCount(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cametallayer/2887086-allowsnextdrawabletimeout
-    allowsNextDrawableTimeout(): cocoascript.BOOL;
+    allowsNextDrawableTimeout(): BOOL;
     setAllowsNextDrawableTimeout(): void;
     //
-    alloc():cocoascript.CAMetalLayer;
+    alloc():CAMetalLayer;
     //
-    init():cocoascript.CAMetalLayer;
+    init():CAMetalLayer;
   }
 }
 
@@ -469,7 +469,7 @@ declare namespace cocoascript {
     texture(): any;
     setTexture(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cametaldrawable/1478165-layer
-    layer(): cocoascript.CAMetalLayer;
+    layer(): CAMetalLayer;
     setLayer(): void;
   }
 }
@@ -480,12 +480,12 @@ declare namespace cocoascript {
    */
   interface CAEAGLLayer extends CALayer {
     // doc://com.apple.documentation/documentation/quartzcore/caeagllayer/1618676-presentswithtransaction
-    presentsWithTransaction(): cocoascript.BOOL;
+    presentsWithTransaction(): BOOL;
     setPresentsWithTransaction(): void;
     //
-    alloc():cocoascript.CAEAGLLayer;
+    alloc():CAEAGLLayer;
     //
-    init():cocoascript.CAEAGLLayer;
+    init():CAEAGLLayer;
   }
 }
 
@@ -497,16 +497,16 @@ declare namespace cocoascript {
    */
   interface CAEDRMetadata extends NSObject {
     // doc://com.apple.documentation/documentation/quartzcore/caedrmetadata/3194384-hlgmetadata
-    HLGMetadata(): cocoascript.CAEDRMetadata;
+    HLGMetadata(): CAEDRMetadata;
     setHLGMetadata(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caedrmetadata/3194382-hdr10metadatawithdisplayinfo
-    HDR10MetadataWithDisplayInfo_contentInfo_opticalOutputScale(displayData: cocoascript.NSData, contentData: cocoascript.NSData, scale: number):cocoascript.CAEDRMetadata;
+    HDR10MetadataWithDisplayInfo_contentInfo_opticalOutputScale(displayData: NSData, contentData: NSData, scale: number):CAEDRMetadata;
     // doc://com.apple.documentation/documentation/quartzcore/caedrmetadata/3194383-hdr10metadatawithminluminance
-    HDR10MetadataWithMinLuminance_maxLuminance_opticalOutputScale(minNits: number, maxNits: number, scale: number):cocoascript.CAEDRMetadata;
+    HDR10MetadataWithMinLuminance_maxLuminance_opticalOutputScale(minNits: number, maxNits: number, scale: number):CAEDRMetadata;
     //
-    alloc():cocoascript.CAEDRMetadata;
+    alloc():CAEDRMetadata;
     //
-    init():cocoascript.CAEDRMetadata;
+    init():CAEDRMetadata;
   }
 }
 
@@ -518,33 +518,33 @@ declare namespace cocoascript {
    */
   interface CARenderer extends NSObject {
     // doc://com.apple.documentation/documentation/quartzcore/carenderer/1519589-rendererwithcglcontext
-    rendererWithCGLContext_options(ctx: void, dict: cocoascript.NSDictionary):cocoascript.CARenderer;
+    rendererWithCGLContext_options(ctx: void, dict: NSDictionary):CARenderer;
     // doc://com.apple.documentation/documentation/quartzcore/carenderer/2869759-rendererwithmtltexture
-    rendererWithMTLTexture_options(tex: any, dict: cocoascript.NSDictionary):cocoascript.CARenderer;
+    rendererWithMTLTexture_options(tex: any, dict: NSDictionary):CARenderer;
     // doc://com.apple.documentation/documentation/quartzcore/carenderer/1519583-layer
-    layer(): cocoascript.CALayer;
+    layer(): CALayer;
     setLayer(): void;
     // doc://com.apple.documentation/documentation/quartzcore/carenderer/1519591-bounds
-    bounds(): cocoascript.CGRect;
+    bounds(): CGRect;
     setBounds(): void;
     // doc://com.apple.documentation/documentation/quartzcore/carenderer/1519595-beginframeattime
-    beginFrameAtTime_timeStamp(t: cocoascript.CFTimeInterval, ts: cocoascript.CVTimeStamp):void;
+    beginFrameAtTime_timeStamp(t: CFTimeInterval, ts: CVTimeStamp):void;
     // doc://com.apple.documentation/documentation/quartzcore/carenderer/1519594-updatebounds
-    updateBounds():cocoascript.CGRect;
+    updateBounds():CGRect;
     // doc://com.apple.documentation/documentation/quartzcore/carenderer/1519585-addupdaterect
-    addUpdateRect(r: cocoascript.CGRect):void;
+    addUpdateRect(r: CGRect):void;
     // doc://com.apple.documentation/documentation/quartzcore/carenderer/1519582-render
     render():void;
     // doc://com.apple.documentation/documentation/quartzcore/carenderer/1519592-nextframetime
-    nextFrameTime():cocoascript.CFTimeInterval;
+    nextFrameTime():CFTimeInterval;
     // doc://com.apple.documentation/documentation/quartzcore/carenderer/1519593-endframe
     endFrame():void;
     // doc://com.apple.documentation/documentation/quartzcore/carenderer/2998892-setdestination
     setDestination(tex: any):void;
     //
-    alloc():cocoascript.CARenderer;
+    alloc():CARenderer;
     //
-    init():cocoascript.CARenderer;
+    init():CARenderer;
   }
 }
 
@@ -556,7 +556,7 @@ declare namespace cocoascript {
    */
   interface CATiledLayer extends CALayer {
     // doc://com.apple.documentation/documentation/quartzcore/catiledlayer/1522145-fadeduration
-    fadeDuration():cocoascript.CFTimeInterval;
+    fadeDuration():CFTimeInterval;
     // doc://com.apple.documentation/documentation/quartzcore/catiledlayer/1522244-levelsofdetail
     levelsOfDetail(): any;
     setLevelsOfDetail(): void;
@@ -564,12 +564,12 @@ declare namespace cocoascript {
     levelsOfDetailBias(): any;
     setLevelsOfDetailBias(): void;
     // doc://com.apple.documentation/documentation/quartzcore/catiledlayer/1522114-tilesize
-    tileSize(): cocoascript.CGSize;
+    tileSize(): CGSize;
     setTileSize(): void;
     //
-    alloc():cocoascript.CATiledLayer;
+    alloc():CATiledLayer;
     //
-    init():cocoascript.CATiledLayer;
+    init():CATiledLayer;
   }
 }
 
@@ -581,15 +581,15 @@ declare namespace cocoascript {
    */
   interface CALayerDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/quartzcore/calayerdelegate/2097261-displaylayer
-    displayLayer(layer: cocoascript.CALayer):void;
+    displayLayer(layer: CALayer):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayerdelegate/2097262-drawlayer
-    drawLayer_inContext(layer: cocoascript.CALayer, ctx: cocoascript.CGContextRef):void;
+    drawLayer_inContext(layer: CALayer, ctx: CGContextRef):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayerdelegate/2097263-layerwilldraw
-    layerWillDraw(layer: cocoascript.CALayer):void;
+    layerWillDraw(layer: CALayer):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayerdelegate/2097257-layoutsublayersoflayer
-    layoutSublayersOfLayer(layer: cocoascript.CALayer):void;
+    layoutSublayersOfLayer(layer: CALayer):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayerdelegate/2097264-actionforlayer
-    actionForLayer_forKey(layer: cocoascript.CALayer, event: string | cocoascript.NSString):cocoascript.CAAction;
+    actionForLayer_forKey(layer: CALayer, event: string | cocoascript.NSString):CAAction;
   }
 }
 declare namespace cocoascript {
@@ -599,9 +599,9 @@ declare namespace cocoascript {
    */
   interface CAAnimationDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/quartzcore/caanimationdelegate/2097265-animationdidstart
-    animationDidStart(anim: cocoascript.CAAnimation):void;
+    animationDidStart(anim: CAAnimation):void;
     // doc://com.apple.documentation/documentation/quartzcore/caanimationdelegate/2097259-animationdidstop
-    animationDidStop_finished(anim: cocoascript.CAAnimation, flag: cocoascript.BOOL):void;
+    animationDidStop_finished(anim: CAAnimation, flag: BOOL):void;
   }
 }
 declare namespace cocoascript {
@@ -611,11 +611,11 @@ declare namespace cocoascript {
    */
   interface CALayoutManager extends NSObject {
     // doc://com.apple.documentation/documentation/quartzcore/calayoutmanager/2097258-invalidatelayoutoflayer
-    invalidateLayoutOfLayer(layer: cocoascript.CALayer):void;
+    invalidateLayoutOfLayer(layer: CALayer):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayoutmanager/2097260-layoutsublayersoflayer
-    layoutSublayersOfLayer(layer: cocoascript.CALayer):void;
+    layoutSublayersOfLayer(layer: CALayer):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayoutmanager/2097256-preferredsizeoflayer
-    preferredSizeOfLayer(layer: cocoascript.CALayer):cocoascript.CGSize;
+    preferredSizeOfLayer(layer: CALayer):CGSize;
   }
 }
 declare namespace cocoascript {
@@ -625,28 +625,28 @@ declare namespace cocoascript {
    */
   interface CAMediaTiming {
     // doc://com.apple.documentation/documentation/quartzcore/camediatiming/1427654-begintime
-    beginTime(): cocoascript.CFTimeInterval;
+    beginTime(): CFTimeInterval;
     setBeginTime(): void;
     // doc://com.apple.documentation/documentation/quartzcore/camediatiming/1427650-timeoffset
-    timeOffset(): cocoascript.CFTimeInterval;
+    timeOffset(): CFTimeInterval;
     setTimeOffset(): void;
     // doc://com.apple.documentation/documentation/quartzcore/camediatiming/1427666-repeatcount
     repeatCount(): number;
     setRepeatCount(): void;
     // doc://com.apple.documentation/documentation/quartzcore/camediatiming/1427643-repeatduration
-    repeatDuration(): cocoascript.CFTimeInterval;
+    repeatDuration(): CFTimeInterval;
     setRepeatDuration(): void;
     // doc://com.apple.documentation/documentation/quartzcore/camediatiming/1427652-duration
-    duration(): cocoascript.CFTimeInterval;
+    duration(): CFTimeInterval;
     setDuration(): void;
     // doc://com.apple.documentation/documentation/quartzcore/camediatiming/1427647-speed
     speed(): number;
     setSpeed(): void;
     // doc://com.apple.documentation/documentation/quartzcore/camediatiming/1427645-autoreverses
-    autoreverses(): cocoascript.BOOL;
+    autoreverses(): BOOL;
     setAutoreverses(): void;
     // doc://com.apple.documentation/documentation/quartzcore/camediatiming/1427656-fillmode
-    fillMode(): cocoascript.CAMediaTimingFillMode;
+    fillMode(): CAMediaTimingFillMode;
     setFillMode(): void;
   }
 }
@@ -657,7 +657,7 @@ declare namespace cocoascript {
    */
   interface CAAction {
     // doc://com.apple.documentation/documentation/quartzcore/caaction/1410806-runactionforkey
-    runActionForKey_object_arguments(event: string | cocoascript.NSString, anObject: cocoascript.CAAction, dict: cocoascript.NSDictionary):void;
+    runActionForKey_object_arguments(event: string | cocoascript.NSString, anObject: CAAction, dict: NSDictionary):void;
   }
 }
 declare namespace cocoascript {
@@ -683,32 +683,32 @@ declare namespace cocoascript {
    */
   interface CAConstraint extends NSObject {
     // doc://com.apple.documentation/documentation/quartzcore/caconstraint/1574941-constraintwithattribute
-    constraintWithAttribute_relativeTo_attribute_scale_offset(attr: cocoascript.CAConstraintAttribute, srcId: string | cocoascript.NSString, srcAttr: cocoascript.CAConstraintAttribute, m: cocoascript.CGFloat, c: cocoascript.CGFloat):cocoascript.CAConstraint;
+    constraintWithAttribute_relativeTo_attribute_scale_offset(attr: CAConstraintAttribute, srcId: string | cocoascript.NSString, srcAttr: CAConstraintAttribute, m: CGFloat, c: CGFloat):CAConstraint;
     // doc://com.apple.documentation/documentation/quartzcore/caconstraint/1522328-constraintwithattribute
-    constraintWithAttribute_relativeTo_attribute_offset(attr: cocoascript.CAConstraintAttribute, srcId: string | cocoascript.NSString, srcAttr: cocoascript.CAConstraintAttribute, c: cocoascript.CGFloat):cocoascript.CAConstraint;
+    constraintWithAttribute_relativeTo_attribute_offset(attr: CAConstraintAttribute, srcId: string | cocoascript.NSString, srcAttr: CAConstraintAttribute, c: CGFloat):CAConstraint;
     // doc://com.apple.documentation/documentation/quartzcore/caconstraint/1521924-constraintwithattribute
-    constraintWithAttribute_relativeTo_attribute(attr: cocoascript.CAConstraintAttribute, srcId: string | cocoascript.NSString, srcAttr: cocoascript.CAConstraintAttribute):cocoascript.CAConstraint;
+    constraintWithAttribute_relativeTo_attribute(attr: CAConstraintAttribute, srcId: string | cocoascript.NSString, srcAttr: CAConstraintAttribute):CAConstraint;
     // doc://com.apple.documentation/documentation/quartzcore/caconstraint/1522213-initwithattribute
-    initWithAttribute_relativeTo_attribute_scale_offset(attr: cocoascript.CAConstraintAttribute, srcId: string | cocoascript.NSString, srcAttr: cocoascript.CAConstraintAttribute, m: cocoascript.CGFloat, c: cocoascript.CGFloat):cocoascript.CAConstraint;
+    initWithAttribute_relativeTo_attribute_scale_offset(attr: CAConstraintAttribute, srcId: string | cocoascript.NSString, srcAttr: CAConstraintAttribute, m: CGFloat, c: CGFloat):CAConstraint;
     // doc://com.apple.documentation/documentation/quartzcore/caconstraint/1522186-attribute
-    attribute(): cocoascript.CAConstraintAttribute;
+    attribute(): CAConstraintAttribute;
     setAttribute(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caconstraint/1522142-offset
-    offset(): cocoascript.CGFloat;
+    offset(): CGFloat;
     setOffset(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caconstraint/1521911-scale
-    scale(): cocoascript.CGFloat;
+    scale(): CGFloat;
     setScale(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caconstraint/1522385-sourceattribute
-    sourceAttribute(): cocoascript.CAConstraintAttribute;
+    sourceAttribute(): CAConstraintAttribute;
     setSourceAttribute(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caconstraint/1522224-sourcename
     sourceName(): string | cocoascript.NSString;
     setSourceName(): void;
     //
-    alloc():cocoascript.CAConstraint;
+    alloc():CAConstraint;
     //
-    init():cocoascript.CAConstraint;
+    init():CAConstraint;
   }
 }
 
@@ -720,11 +720,11 @@ declare namespace cocoascript {
    */
   interface CAConstraintLayoutManager extends NSObject {
     // doc://com.apple.documentation/documentation/quartzcore/caconstraintlayoutmanager/1574940-layoutmanager
-    layoutManager():cocoascript.CAConstraintLayoutManager;
+    layoutManager():CAConstraintLayoutManager;
     //
-    alloc():cocoascript.CAConstraintLayoutManager;
+    alloc():CAConstraintLayoutManager;
     //
-    init():cocoascript.CAConstraintLayoutManager;
+    init():CAConstraintLayoutManager;
   }
 }
 
@@ -734,15 +734,15 @@ declare namespace cocoascript {
   type CALayerContentsGravity = string | cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/quartzcore/kcagravitytop
-declare const kCAGravityTop: cocoascript.CALayerContentsGravity;
+declare const kCAGravityTop: CALayerContentsGravity;
 // doc://com.apple.documentation/documentation/quartzcore/kcagravitybottom
-declare const kCAGravityBottom: cocoascript.CALayerContentsGravity;
+declare const kCAGravityBottom: CALayerContentsGravity;
 // doc://com.apple.documentation/documentation/quartzcore/kcagravitycenter
-declare const kCAGravityCenter: cocoascript.CALayerContentsGravity;
+declare const kCAGravityCenter: CALayerContentsGravity;
 // doc://com.apple.documentation/documentation/quartzcore/kcagravitybottomleft
-declare const kCAGravityBottomLeft: cocoascript.CALayerContentsGravity;
+declare const kCAGravityBottomLeft: CALayerContentsGravity;
 // doc://com.apple.documentation/documentation/quartzcore/kcagravitytopleft
-declare const kCAGravityTopLeft: cocoascript.CALayerContentsGravity;
+declare const kCAGravityTopLeft: CALayerContentsGravity;
 declare namespace cocoascript {
   /**
    * An object that provides a flexible method of defining animated transformations.
@@ -750,14 +750,14 @@ declare namespace cocoascript {
    */
   interface CAValueFunction extends NSObject {
     // doc://com.apple.documentation/documentation/quartzcore/cavaluefunction/1521888-name
-    name(): cocoascript.CAValueFunctionName;
+    name(): CAValueFunctionName;
     setName(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cavaluefunction/1522115-functionwithname
-    functionWithName(name: cocoascript.CAValueFunctionName):cocoascript.CAValueFunction;
+    functionWithName(name: CAValueFunctionName):CAValueFunction;
     //
-    alloc():cocoascript.CAValueFunction;
+    alloc():CAValueFunction;
     //
-    init():cocoascript.CAValueFunction;
+    init():CAValueFunction;
   }
 }
 
@@ -769,17 +769,17 @@ declare namespace cocoascript {
    */
   interface CAMediaTimingFunction extends NSObject {
     // doc://com.apple.documentation/documentation/quartzcore/camediatimingfunction/1521979-functionwithname
-    functionWithName(name: cocoascript.CAMediaTimingFunctionName):cocoascript.CAMediaTimingFunction;
+    functionWithName(name: CAMediaTimingFunctionName):CAMediaTimingFunction;
     // doc://com.apple.documentation/documentation/quartzcore/camediatimingfunction/1574338-functionwithcontrolpoints
-    functionWithControlPoints(c1x: number):cocoascript.CAMediaTimingFunction;
+    functionWithControlPoints(c1x: number):CAMediaTimingFunction;
     // doc://com.apple.documentation/documentation/quartzcore/camediatimingfunction/1522235-initwithcontrolpoints
-    initWithControlPoints(c1x: number):cocoascript.CAMediaTimingFunction;
+    initWithControlPoints(c1x: number):CAMediaTimingFunction;
     // doc://com.apple.documentation/documentation/quartzcore/camediatimingfunction/1522057-getcontrolpointatindex
     getControlPointAtIndex_values(idx: any, ptr: number):void;
     //
-    alloc():cocoascript.CAMediaTimingFunction;
+    alloc():CAMediaTimingFunction;
     //
-    init():cocoascript.CAMediaTimingFunction;
+    init():CAMediaTimingFunction;
   }
 }
 
@@ -791,21 +791,21 @@ declare namespace cocoascript {
    */
   interface CAEmitterCell extends NSObject {
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1584370-emittercell
-    emitterCell():cocoascript.CAEmitterCell;
+    emitterCell():CAEmitterCell;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1522109-contents
-    contents(): cocoascript.id;
+    contents(): id;
     setContents(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1522124-contentsrect
-    contentsRect(): cocoascript.CGRect;
+    contentsRect(): CGRect;
     setContentsRect(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1521866-emittercells
-    emitterCells(): cocoascript.CAEmitterCell;
+    emitterCells(): CAEmitterCell;
     setEmitterCells(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1521831-enabled
-    enabled(): cocoascript.BOOL;
+    enabled(): BOOL;
     setEnabled(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1522322-color
-    color(): cocoascript.CGColorRef;
+    color(): CGColorRef;
     setColor(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1522176-redrange
     redRange(): number;
@@ -841,34 +841,34 @@ declare namespace cocoascript {
     minificationFilterBias(): number;
     setMinificationFilterBias(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1522287-scale
-    scale(): cocoascript.CGFloat;
+    scale(): CGFloat;
     setScale(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1521915-scalerange
-    scaleRange(): cocoascript.CGFloat;
+    scaleRange(): CGFloat;
     setScaleRange(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1522197-contentsscale
-    contentsScale(): cocoascript.CGFloat;
+    contentsScale(): CGFloat;
     setContentsScale(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1521909-name
     name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1521925-style
-    style(): cocoascript.NSDictionary;
+    style(): NSDictionary;
     setStyle(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1522361-spin
-    spin(): cocoascript.CGFloat;
+    spin(): CGFloat;
     setSpin(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1522084-spinrange
-    spinRange(): cocoascript.CGFloat;
+    spinRange(): CGFloat;
     setSpinRange(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1521857-emissionlatitude
-    emissionLatitude(): cocoascript.CGFloat;
+    emissionLatitude(): CGFloat;
     setEmissionLatitude(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1522013-emissionlongitude
-    emissionLongitude(): cocoascript.CGFloat;
+    emissionLongitude(): CGFloat;
     setEmissionLongitude(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1521847-emissionrange
-    emissionRange(): cocoascript.CGFloat;
+    emissionRange(): CGFloat;
     setEmissionRange(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1522075-lifetime
     lifetime(): number;
@@ -880,31 +880,31 @@ declare namespace cocoascript {
     birthRate(): number;
     setBirthRate(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1522241-scalespeed
-    scaleSpeed(): cocoascript.CGFloat;
+    scaleSpeed(): CGFloat;
     setScaleSpeed(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1521837-velocity
-    velocity(): cocoascript.CGFloat;
+    velocity(): CGFloat;
     setVelocity(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1522330-velocityrange
-    velocityRange(): cocoascript.CGFloat;
+    velocityRange(): CGFloat;
     setVelocityRange(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1521879-xacceleration
-    xAcceleration(): cocoascript.CGFloat;
+    xAcceleration(): CGFloat;
     setXAcceleration(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1522077-yacceleration
-    yAcceleration(): cocoascript.CGFloat;
+    yAcceleration(): CGFloat;
     setYAcceleration(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1522298-zacceleration
-    zAcceleration(): cocoascript.CGFloat;
+    zAcceleration(): CGFloat;
     setZAcceleration(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1521964-defaultvalueforkey
-    defaultValueForKey(key: string | cocoascript.NSString):cocoascript.CAEmitterCell;
+    defaultValueForKey(key: string | cocoascript.NSString):CAEmitterCell;
     // doc://com.apple.documentation/documentation/quartzcore/caemittercell/1522005-shouldarchivevalueforkey
-    shouldArchiveValueForKey(key: string | cocoascript.NSString):cocoascript.BOOL;
+    shouldArchiveValueForKey(key: string | cocoascript.NSString):BOOL;
     //
-    alloc():cocoascript.CAEmitterCell;
+    alloc():CAEmitterCell;
     //
-    init():cocoascript.CAEmitterCell;
+    init():CAEmitterCell;
   }
 }
 
@@ -916,18 +916,18 @@ declare namespace cocoascript {
    */
   interface CABasicAnimation extends CAPropertyAnimation {
     // doc://com.apple.documentation/documentation/quartzcore/cabasicanimation/1412519-fromvalue
-    fromValue(): cocoascript.id;
+    fromValue(): id;
     setFromValue(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cabasicanimation/1412523-tovalue
-    toValue(): cocoascript.id;
+    toValue(): id;
     setToValue(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cabasicanimation/1412445-byvalue
-    byValue(): cocoascript.id;
+    byValue(): id;
     setByValue(): void;
     //
-    alloc():cocoascript.CABasicAnimation;
+    alloc():CABasicAnimation;
     //
-    init():cocoascript.CABasicAnimation;
+    init():CABasicAnimation;
   }
 }
 
@@ -939,36 +939,36 @@ declare namespace cocoascript {
    */
   interface CAKeyframeAnimation extends CAPropertyAnimation {
     // doc://com.apple.documentation/documentation/quartzcore/cakeyframeanimation/1412498-values
-    values(): cocoascript.NSArray;
+    values(): NSArray;
     setValues(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cakeyframeanimation/1412474-path
-    path(): cocoascript.CGPathRef;
+    path(): CGPathRef;
     setPath(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cakeyframeanimation/1412522-keytimes
-    keyTimes(): cocoascript.NSNumber;
+    keyTimes(): NSNumber;
     setKeyTimes(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cakeyframeanimation/1412465-timingfunctions
-    timingFunctions(): cocoascript.CAMediaTimingFunction;
+    timingFunctions(): CAMediaTimingFunction;
     setTimingFunctions(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cakeyframeanimation/1412500-calculationmode
-    calculationMode(): cocoascript.CAAnimationCalculationMode;
+    calculationMode(): CAAnimationCalculationMode;
     setCalculationMode(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cakeyframeanimation/1412454-rotationmode
-    rotationMode(): cocoascript.CAAnimationRotationMode;
+    rotationMode(): CAAnimationRotationMode;
     setRotationMode(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cakeyframeanimation/1412475-tensionvalues
-    tensionValues(): cocoascript.NSNumber;
+    tensionValues(): NSNumber;
     setTensionValues(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cakeyframeanimation/1412491-continuityvalues
-    continuityValues(): cocoascript.NSNumber;
+    continuityValues(): NSNumber;
     setContinuityValues(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cakeyframeanimation/1412485-biasvalues
-    biasValues(): cocoascript.NSNumber;
+    biasValues(): NSNumber;
     setBiasValues(): void;
     //
-    alloc():cocoascript.CAKeyframeAnimation;
+    alloc():CAKeyframeAnimation;
     //
-    init():cocoascript.CAKeyframeAnimation;
+    init():CAKeyframeAnimation;
   }
 }
 
@@ -980,12 +980,12 @@ declare namespace cocoascript {
    */
   interface CAAnimationGroup extends CAAnimation {
     // doc://com.apple.documentation/documentation/quartzcore/caanimationgroup/1412516-animations
-    animations(): cocoascript.CAAnimation;
+    animations(): CAAnimation;
     setAnimations(): void;
     //
-    alloc():cocoascript.CAAnimationGroup;
+    alloc():CAAnimationGroup;
     //
-    init():cocoascript.CAAnimationGroup;
+    init():CAAnimationGroup;
   }
 }
 
@@ -1003,18 +1003,18 @@ declare namespace cocoascript {
     endProgress(): number;
     setEndProgress(): void;
     // doc://com.apple.documentation/documentation/quartzcore/catransition/1412502-type
-    type(): cocoascript.CATransitionType;
+    type(): CATransitionType;
     setType(): void;
     // doc://com.apple.documentation/documentation/quartzcore/catransition/1412467-subtype
-    subtype(): cocoascript.CATransitionSubtype;
+    subtype(): CATransitionSubtype;
     setSubtype(): void;
     // doc://com.apple.documentation/documentation/quartzcore/catransition/1412506-filter
-    filter(): cocoascript.id;
+    filter(): id;
     setFilter(): void;
     //
-    alloc():cocoascript.CATransition;
+    alloc():CATransition;
     //
-    init():cocoascript.CATransition;
+    init():CATransition;
   }
 }
 
@@ -1029,20 +1029,20 @@ declare namespace cocoascript {
     keyPath(): string | cocoascript.NSString;
     setKeyPath(): void;
     // doc://com.apple.documentation/documentation/quartzcore/capropertyanimation/1412538-cumulative
-    cumulative(): cocoascript.BOOL;
+    cumulative(): BOOL;
     setCumulative(): void;
     // doc://com.apple.documentation/documentation/quartzcore/capropertyanimation/1412493-additive
-    additive(): cocoascript.BOOL;
+    additive(): BOOL;
     setAdditive(): void;
     // doc://com.apple.documentation/documentation/quartzcore/capropertyanimation/1412447-valuefunction
-    valueFunction(): cocoascript.CAValueFunction;
+    valueFunction(): CAValueFunction;
     setValueFunction(): void;
     // doc://com.apple.documentation/documentation/quartzcore/capropertyanimation/1412534-animationwithkeypath
-    animationWithKeyPath(path: string | cocoascript.NSString):cocoascript.CAPropertyAnimation;
+    animationWithKeyPath(path: string | cocoascript.NSString):CAPropertyAnimation;
     //
-    alloc():cocoascript.CAPropertyAnimation;
+    alloc():CAPropertyAnimation;
     //
-    init():cocoascript.CAPropertyAnimation;
+    init():CAPropertyAnimation;
   }
 }
 
@@ -1054,24 +1054,24 @@ declare namespace cocoascript {
    */
   interface CASpringAnimation extends CABasicAnimation {
     // doc://com.apple.documentation/documentation/quartzcore/caspringanimation/1412532-damping
-    damping(): cocoascript.CGFloat;
+    damping(): CGFloat;
     setDamping(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caspringanimation/1412443-initialvelocity
-    initialVelocity(): cocoascript.CGFloat;
+    initialVelocity(): CGFloat;
     setInitialVelocity(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caspringanimation/1412540-mass
-    mass(): cocoascript.CGFloat;
+    mass(): CGFloat;
     setMass(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caspringanimation/1412524-settlingduration
-    settlingDuration(): cocoascript.CFTimeInterval;
+    settlingDuration(): CFTimeInterval;
     setSettlingDuration(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caspringanimation/1412515-stiffness
-    stiffness(): cocoascript.CGFloat;
+    stiffness(): CGFloat;
     setStiffness(): void;
     //
-    alloc():cocoascript.CASpringAnimation;
+    alloc():CASpringAnimation;
     //
-    init():cocoascript.CASpringAnimation;
+    init():CASpringAnimation;
   }
 }
 
@@ -1083,33 +1083,33 @@ declare namespace cocoascript {
    */
   interface CATextLayer extends CALayer {
     // doc://com.apple.documentation/documentation/quartzcore/catextlayer/1515295-string
-    string(): cocoascript.id;
+    string(): id;
     setString(): void;
     // doc://com.apple.documentation/documentation/quartzcore/catextlayer/1515303-font
-    font(): cocoascript.CFTypeRef;
+    font(): CFTypeRef;
     setFont(): void;
     // doc://com.apple.documentation/documentation/quartzcore/catextlayer/1515290-fontsize
-    fontSize(): cocoascript.CGFloat;
+    fontSize(): CGFloat;
     setFontSize(): void;
     // doc://com.apple.documentation/documentation/quartzcore/catextlayer/1515305-foregroundcolor
-    foregroundColor(): cocoascript.CGColorRef;
+    foregroundColor(): CGColorRef;
     setForegroundColor(): void;
     // doc://com.apple.documentation/documentation/quartzcore/catextlayer/1515300-allowsfontsubpixelquantization
-    allowsFontSubpixelQuantization(): cocoascript.BOOL;
+    allowsFontSubpixelQuantization(): BOOL;
     setAllowsFontSubpixelQuantization(): void;
     // doc://com.apple.documentation/documentation/quartzcore/catextlayer/1515302-wrapped
-    wrapped(): cocoascript.BOOL;
+    wrapped(): BOOL;
     setWrapped(): void;
     // doc://com.apple.documentation/documentation/quartzcore/catextlayer/1515301-alignmentmode
-    alignmentMode(): cocoascript.CATextLayerAlignmentMode;
+    alignmentMode(): CATextLayerAlignmentMode;
     setAlignmentMode(): void;
     // doc://com.apple.documentation/documentation/quartzcore/catextlayer/1515296-truncationmode
-    truncationMode(): cocoascript.CATextLayerTruncationMode;
+    truncationMode(): CATextLayerTruncationMode;
     setTruncationMode(): void;
     //
-    alloc():cocoascript.CATextLayer;
+    alloc():CATextLayer;
     //
-    init():cocoascript.CATextLayer;
+    init():CATextLayer;
   }
 }
 
@@ -1121,45 +1121,45 @@ declare namespace cocoascript {
    */
   interface CAShapeLayer extends CALayer {
     // doc://com.apple.documentation/documentation/quartzcore/cashapelayer/1521904-path
-    path(): cocoascript.CGPathRef;
+    path(): CGPathRef;
     setPath(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cashapelayer/1522248-fillcolor
-    fillColor(): cocoascript.CGColorRef;
+    fillColor(): CGColorRef;
     setFillColor(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cashapelayer/1522146-fillrule
-    fillRule(): cocoascript.CAShapeLayerFillRule;
+    fillRule(): CAShapeLayerFillRule;
     setFillRule(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cashapelayer/1521905-linecap
-    lineCap(): cocoascript.CAShapeLayerLineCap;
+    lineCap(): CAShapeLayerLineCap;
     setLineCap(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cashapelayer/1521921-linedashpattern
-    lineDashPattern(): cocoascript.NSNumber;
+    lineDashPattern(): NSNumber;
     setLineDashPattern(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cashapelayer/1521856-linedashphase
-    lineDashPhase(): cocoascript.CGFloat;
+    lineDashPhase(): CGFloat;
     setLineDashPhase(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cashapelayer/1522147-linejoin
-    lineJoin(): cocoascript.CAShapeLayerLineJoin;
+    lineJoin(): CAShapeLayerLineJoin;
     setLineJoin(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cashapelayer/1521890-linewidth
-    lineWidth(): cocoascript.CGFloat;
+    lineWidth(): CGFloat;
     setLineWidth(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cashapelayer/1521870-miterlimit
-    miterLimit(): cocoascript.CGFloat;
+    miterLimit(): CGFloat;
     setMiterLimit(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cashapelayer/1521897-strokecolor
-    strokeColor(): cocoascript.CGColorRef;
+    strokeColor(): CGColorRef;
     setStrokeColor(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cashapelayer/1521929-strokestart
-    strokeStart(): cocoascript.CGFloat;
+    strokeStart(): CGFloat;
     setStrokeStart(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cashapelayer/1522252-strokeend
-    strokeEnd(): cocoascript.CGFloat;
+    strokeEnd(): CGFloat;
     setStrokeEnd(): void;
     //
-    alloc():cocoascript.CAShapeLayer;
+    alloc():CAShapeLayer;
     //
-    init():cocoascript.CAShapeLayer;
+    init():CAShapeLayer;
   }
 }
 
@@ -1171,24 +1171,24 @@ declare namespace cocoascript {
    */
   interface CAGradientLayer extends CALayer {
     // doc://com.apple.documentation/documentation/quartzcore/cagradientlayer/1462403-colors
-    colors(): cocoascript.NSArray;
+    colors(): NSArray;
     setColors(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cagradientlayer/1462410-locations
-    locations(): cocoascript.NSNumber;
+    locations(): NSNumber;
     setLocations(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cagradientlayer/1462412-endpoint
-    endPoint(): cocoascript.CGPoint;
+    endPoint(): CGPoint;
     setEndPoint(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cagradientlayer/1462408-startpoint
-    startPoint(): cocoascript.CGPoint;
+    startPoint(): CGPoint;
     setStartPoint(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cagradientlayer/1462413-type
-    type(): cocoascript.CAGradientLayerType;
+    type(): CAGradientLayerType;
     setType(): void;
     //
-    alloc():cocoascript.CAGradientLayer;
+    alloc():CAGradientLayer;
     //
-    init():cocoascript.CAGradientLayer;
+    init():CAGradientLayer;
   }
 }
 
@@ -1200,35 +1200,35 @@ declare namespace cocoascript {
    */
   interface CADisplayLink extends NSObject {
     // doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621228-displaylinkwithtarget
-    displayLinkWithTarget_selector(target: cocoascript.CADisplayLink, sel: cocoascript.SEL):cocoascript.CADisplayLink;
+    displayLinkWithTarget_selector(target: CADisplayLink, sel: SEL):CADisplayLink;
     // doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621323-addtorunloop
-    addToRunLoop_forMode(runloop: cocoascript.NSRunLoop, mode: cocoascript.NSRunLoopMode):void;
+    addToRunLoop_forMode(runloop: NSRunLoop, mode: NSRunLoopMode):void;
     // doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621325-removefromrunloop
-    removeFromRunLoop_forMode(runloop: cocoascript.NSRunLoop, mode: cocoascript.NSRunLoopMode):void;
+    removeFromRunLoop_forMode(runloop: NSRunLoop, mode: NSRunLoopMode):void;
     // doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621293-invalidate
     invalidate():void;
     // doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621292-duration
-    duration(): cocoascript.CFTimeInterval;
+    duration(): CFTimeInterval;
     setDuration(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1648421-preferredframespersecond
-    preferredFramesPerSecond(): cocoascript.NSInteger;
+    preferredFramesPerSecond(): NSInteger;
     setPreferredFramesPerSecond(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621231-frameinterval
-    frameInterval(): cocoascript.NSInteger;
+    frameInterval(): NSInteger;
     setFrameInterval(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621229-paused
-    paused(): cocoascript.BOOL;
+    paused(): BOOL;
     setPaused(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1621257-timestamp
-    timestamp(): cocoascript.CFTimeInterval;
+    timestamp(): CFTimeInterval;
     setTimestamp(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cadisplaylink/1648422-targettimestamp
-    targetTimestamp(): cocoascript.CFTimeInterval;
+    targetTimestamp(): CFTimeInterval;
     setTargetTimestamp(): void;
     //
-    alloc():cocoascript.CADisplayLink;
+    alloc():CADisplayLink;
     //
-    init():cocoascript.CADisplayLink;
+    init():CADisplayLink;
   }
 }
 
@@ -1240,25 +1240,25 @@ declare namespace cocoascript {
    */
   interface CAEmitterLayer extends CALayer {
     // doc://com.apple.documentation/documentation/quartzcore/caemitterlayer/1521923-emittercells
-    emitterCells(): cocoascript.CAEmitterCell;
+    emitterCells(): CAEmitterCell;
     setEmitterCells(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemitterlayer/1522104-rendermode
-    renderMode(): cocoascript.CAEmitterLayerRenderMode;
+    renderMode(): CAEmitterLayerRenderMode;
     setRenderMode(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemitterlayer/1522289-emitterposition
-    emitterPosition(): cocoascript.CGPoint;
+    emitterPosition(): CGPoint;
     setEmitterPosition(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemitterlayer/1521919-emittershape
-    emitterShape(): cocoascript.CAEmitterLayerEmitterShape;
+    emitterShape(): CAEmitterLayerEmitterShape;
     setEmitterShape(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemitterlayer/1522169-emitterzposition
-    emitterZPosition(): cocoascript.CGFloat;
+    emitterZPosition(): CGFloat;
     setEmitterZPosition(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemitterlayer/1521844-emitterdepth
-    emitterDepth(): cocoascript.CGFloat;
+    emitterDepth(): CGFloat;
     setEmitterDepth(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemitterlayer/1521869-emittersize
-    emitterSize(): cocoascript.CGSize;
+    emitterSize(): CGSize;
     setEmitterSize(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemitterlayer/1521841-scale
     scale(): number;
@@ -1276,18 +1276,18 @@ declare namespace cocoascript {
     birthRate(): number;
     setBirthRate(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemitterlayer/1522128-emittermode
-    emitterMode(): cocoascript.CAEmitterLayerEmitterMode;
+    emitterMode(): CAEmitterLayerEmitterMode;
     setEmitterMode(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemitterlayer/1522144-lifetime
     lifetime(): number;
     setLifetime(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caemitterlayer/1521872-preservesdepth
-    preservesDepth(): cocoascript.BOOL;
+    preservesDepth(): BOOL;
     setPreservesDepth(): void;
     //
-    alloc():cocoascript.CAEmitterLayer;
+    alloc():CAEmitterLayer;
     //
-    init():cocoascript.CAEmitterLayer;
+    init():CAEmitterLayer;
   }
 }
 
@@ -1299,16 +1299,16 @@ declare namespace cocoascript {
    */
   interface CAScrollLayer extends CALayer {
     // doc://com.apple.documentation/documentation/quartzcore/cascrolllayer/1522111-scrollmode
-    scrollMode(): cocoascript.CAScrollLayerScrollMode;
+    scrollMode(): CAScrollLayerScrollMode;
     setScrollMode(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cascrolllayer/1522021-scrolltopoint
-    scrollToPoint(p: cocoascript.CGPoint):void;
+    scrollToPoint(p: CGPoint):void;
     // doc://com.apple.documentation/documentation/quartzcore/cascrolllayer/1522167-scrolltorect
-    scrollToRect(r: cocoascript.CGRect):void;
+    scrollToRect(r: CGRect):void;
     //
-    alloc():cocoascript.CAScrollLayer;
+    alloc():CAScrollLayer;
     //
-    init():cocoascript.CAScrollLayer;
+    init():CAScrollLayer;
   }
 }
 
@@ -1322,9 +1322,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartzcore/catransformlayer/1805274-hittest
     ():void;
     //
-    alloc():cocoascript.CATransformLayer;
+    alloc():CATransformLayer;
     //
-    init():cocoascript.CATransformLayer;
+    init():CATransformLayer;
   }
 }
 
@@ -1336,19 +1336,19 @@ declare namespace cocoascript {
    */
   interface CAReplicatorLayer extends CALayer {
     // doc://com.apple.documentation/documentation/quartzcore/careplicatorlayer/1521883-instancecount
-    instanceCount(): cocoascript.NSInteger;
+    instanceCount(): NSInteger;
     setInstanceCount(): void;
     // doc://com.apple.documentation/documentation/quartzcore/careplicatorlayer/1522391-instancedelay
-    instanceDelay(): cocoascript.CFTimeInterval;
+    instanceDelay(): CFTimeInterval;
     setInstanceDelay(): void;
     // doc://com.apple.documentation/documentation/quartzcore/careplicatorlayer/1522312-instancetransform
-    instanceTransform(): cocoascript.CATransform3D;
+    instanceTransform(): CATransform3D;
     setInstanceTransform(): void;
     // doc://com.apple.documentation/documentation/quartzcore/careplicatorlayer/1522095-preservesdepth
-    preservesDepth(): cocoascript.BOOL;
+    preservesDepth(): BOOL;
     setPreservesDepth(): void;
     // doc://com.apple.documentation/documentation/quartzcore/careplicatorlayer/1522154-instancecolor
-    instanceColor(): cocoascript.CGColorRef;
+    instanceColor(): CGColorRef;
     setInstanceColor(): void;
     // doc://com.apple.documentation/documentation/quartzcore/careplicatorlayer/1522090-instanceredoffset
     instanceRedOffset(): number;
@@ -1363,9 +1363,9 @@ declare namespace cocoascript {
     instanceAlphaOffset(): number;
     setInstanceAlphaOffset(): void;
     //
-    alloc():cocoascript.CAReplicatorLayer;
+    alloc():CAReplicatorLayer;
     //
-    init():cocoascript.CAReplicatorLayer;
+    init():CAReplicatorLayer;
   }
 }
 
@@ -1376,19 +1376,19 @@ declare namespace cocoascript {
    */
   interface CARemoteLayerClient extends NSObject {
     // doc://com.apple.documentation/documentation/quartzcore/caremotelayerclient/1418377-initwithserverport
-    initWithServerPort(port: any):cocoascript.CARemoteLayerClient;
+    initWithServerPort(port: any):CARemoteLayerClient;
     // doc://com.apple.documentation/documentation/quartzcore/caremotelayerclient/1418375-clientid
     clientId(): number;
     setClientId(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caremotelayerclient/1418373-layer
-    layer(): cocoascript.CALayer;
+    layer(): CALayer;
     setLayer(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caremotelayerclient/1418372-invalidate
     invalidate():void;
     //
-    alloc():cocoascript.CARemoteLayerClient;
+    alloc():CARemoteLayerClient;
     //
-    init():cocoascript.CARemoteLayerClient;
+    init():CARemoteLayerClient;
   }
 }
 
@@ -1402,41 +1402,41 @@ declare namespace cocoascript {
     serverPort(): any;
     setServerPort(): void;
     // doc://com.apple.documentation/documentation/quartzcore/caremotelayerserver/1521954-sharedserver
-    sharedServer():cocoascript.CARemoteLayerServer;
+    sharedServer():CARemoteLayerServer;
     //
-    alloc():cocoascript.CARemoteLayerServer;
+    alloc():CARemoteLayerServer;
     //
-    init():cocoascript.CARemoteLayerServer;
+    init():CARemoteLayerServer;
   }
 }
 
 declare const CARemoteLayerServer: cocoascript.CARemoteLayerServer;
 // doc://com.apple.documentation/documentation/quartzcore/kcafilterlinear
-declare const kCAFilterLinear: cocoascript.CALayerContentsFilter;
+declare const kCAFilterLinear: CALayerContentsFilter;
 // doc://com.apple.documentation/documentation/quartzcore/kcafilternearest
-declare const kCAFilterNearest: cocoascript.CALayerContentsFilter;
+declare const kCAFilterNearest: CALayerContentsFilter;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/quartzcore/calayercontentsfilter
   type CALayerContentsFilter = string | cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/quartzcore/kcagravityleft
-declare const kCAGravityLeft: cocoascript.CALayerContentsGravity;
+declare const kCAGravityLeft: CALayerContentsGravity;
 // doc://com.apple.documentation/documentation/quartzcore/kcagravityright
-declare const kCAGravityRight: cocoascript.CALayerContentsGravity;
+declare const kCAGravityRight: CALayerContentsGravity;
 // doc://com.apple.documentation/documentation/quartzcore/kcagravitytopright
-declare const kCAGravityTopRight: cocoascript.CALayerContentsGravity;
+declare const kCAGravityTopRight: CALayerContentsGravity;
 // doc://com.apple.documentation/documentation/quartzcore/kcagravitybottomright
-declare const kCAGravityBottomRight: cocoascript.CALayerContentsGravity;
+declare const kCAGravityBottomRight: CALayerContentsGravity;
 // doc://com.apple.documentation/documentation/quartzcore/kcafiltertrilinear
-declare const kCAFilterTrilinear: cocoascript.CALayerContentsFilter;
+declare const kCAFilterTrilinear: CALayerContentsFilter;
 // doc://com.apple.documentation/documentation/quartzcore/kcacontentsformatrgba8uint
-declare const kCAContentsFormatRGBA8Uint: cocoascript.CALayerContentsFormat;
+declare const kCAContentsFormatRGBA8Uint: CALayerContentsFormat;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/quartzcore/calayercontentsformat
   type CALayerContentsFormat = string | cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/quartzcore/catransform3didentity
-declare const CATransform3DIdentity: cocoascript.CATransform3D;
+declare const CATransform3DIdentity: CATransform3D;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/quartzcore/calayercornercurve
   type CALayerCornerCurve = string | cocoascript.NSString;
@@ -1514,158 +1514,158 @@ declare namespace cocoascript {
   type CAValueFunctionName = string | cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/quartzcore/kcavaluefunctionrotatez
-declare const kCAValueFunctionRotateZ: cocoascript.CAValueFunctionName;
+declare const kCAValueFunctionRotateZ: CAValueFunctionName;
 // doc://com.apple.documentation/documentation/quartzcore/kcavaluefunctionscale
-declare const kCAValueFunctionScale: cocoascript.CAValueFunctionName;
+declare const kCAValueFunctionScale: CAValueFunctionName;
 // doc://com.apple.documentation/documentation/quartzcore/kcavaluefunctiontranslate
-declare const kCAValueFunctionTranslate: cocoascript.CAValueFunctionName;
+declare const kCAValueFunctionTranslate: CAValueFunctionName;
 // doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayerpoint
-declare const kCAEmitterLayerPoint: cocoascript.CAEmitterLayerEmitterShape;
+declare const kCAEmitterLayerPoint: CAEmitterLayerEmitterShape;
 // doc://com.apple.documentation/documentation/quartzcore/kcafillmoderemoved
-declare const kCAFillModeRemoved: cocoascript.CAMediaTimingFillMode;
+declare const kCAFillModeRemoved: CAMediaTimingFillMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcafillmodeforwards
-declare const kCAFillModeForwards: cocoascript.CAMediaTimingFillMode;
+declare const kCAFillModeForwards: CAMediaTimingFillMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcafillmodebackwards
-declare const kCAFillModeBackwards: cocoascript.CAMediaTimingFillMode;
+declare const kCAFillModeBackwards: CAMediaTimingFillMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcafillmodeboth
-declare const kCAFillModeBoth: cocoascript.CAMediaTimingFillMode;
+declare const kCAFillModeBoth: CAMediaTimingFillMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcacontentsformatrgba16float
-declare const kCAContentsFormatRGBA16Float: cocoascript.CALayerContentsFormat;
+declare const kCAContentsFormatRGBA16Float: CALayerContentsFormat;
 // doc://com.apple.documentation/documentation/quartzcore/kcacontentsformatgray8uint
-declare const kCAContentsFormatGray8Uint: cocoascript.CALayerContentsFormat;
+declare const kCAContentsFormatGray8Uint: CALayerContentsFormat;
 // doc://com.apple.documentation/documentation/quartzcore/kcacornercurvecircular
-declare const kCACornerCurveCircular: cocoascript.CALayerCornerCurve;
+declare const kCACornerCurveCircular: CALayerCornerCurve;
 // doc://com.apple.documentation/documentation/quartzcore/kcacornercurvecontinuous
-declare const kCACornerCurveContinuous: cocoascript.CALayerCornerCurve;
+declare const kCACornerCurveContinuous: CALayerCornerCurve;
 // doc://com.apple.documentation/documentation/quartzcore/kcaanimationcubic
-declare const kCAAnimationCubic: cocoascript.CAAnimationCalculationMode;
+declare const kCAAnimationCubic: CAAnimationCalculationMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcaanimationcubicpaced
-declare const kCAAnimationCubicPaced: cocoascript.CAAnimationCalculationMode;
+declare const kCAAnimationCubicPaced: CAAnimationCalculationMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcaanimationdiscrete
-declare const kCAAnimationDiscrete: cocoascript.CAAnimationCalculationMode;
+declare const kCAAnimationDiscrete: CAAnimationCalculationMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcaanimationlinear
-declare const kCAAnimationLinear: cocoascript.CAAnimationCalculationMode;
+declare const kCAAnimationLinear: CAAnimationCalculationMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcaanimationpaced
-declare const kCAAnimationPaced: cocoascript.CAAnimationCalculationMode;
+declare const kCAAnimationPaced: CAAnimationCalculationMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcaanimationrotateauto
-declare const kCAAnimationRotateAuto: cocoascript.CAAnimationRotationMode;
+declare const kCAAnimationRotateAuto: CAAnimationRotationMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcaanimationrotateautoreverse
-declare const kCAAnimationRotateAutoReverse: cocoascript.CAAnimationRotationMode;
+declare const kCAAnimationRotateAutoReverse: CAAnimationRotationMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayeroutline
-declare const kCAEmitterLayerOutline: cocoascript.CAEmitterLayerEmitterMode;
+declare const kCAEmitterLayerOutline: CAEmitterLayerEmitterMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayerpoints
-declare const kCAEmitterLayerPoints: cocoascript.CAEmitterLayerEmitterMode;
+declare const kCAEmitterLayerPoints: CAEmitterLayerEmitterMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayersurface
-declare const kCAEmitterLayerSurface: cocoascript.CAEmitterLayerEmitterMode;
+declare const kCAEmitterLayerSurface: CAEmitterLayerEmitterMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayervolume
-declare const kCAEmitterLayerVolume: cocoascript.CAEmitterLayerEmitterMode;
+declare const kCAEmitterLayerVolume: CAEmitterLayerEmitterMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayercircle
-declare const kCAEmitterLayerCircle: cocoascript.CAEmitterLayerEmitterShape;
+declare const kCAEmitterLayerCircle: CAEmitterLayerEmitterShape;
 // doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayercuboid
-declare const kCAEmitterLayerCuboid: cocoascript.CAEmitterLayerEmitterShape;
+declare const kCAEmitterLayerCuboid: CAEmitterLayerEmitterShape;
 // doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayerline
-declare const kCAEmitterLayerLine: cocoascript.CAEmitterLayerEmitterShape;
+declare const kCAEmitterLayerLine: CAEmitterLayerEmitterShape;
 // doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayerrectangle
-declare const kCAEmitterLayerRectangle: cocoascript.CAEmitterLayerEmitterShape;
+declare const kCAEmitterLayerRectangle: CAEmitterLayerEmitterShape;
 // doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayersphere
-declare const kCAEmitterLayerSphere: cocoascript.CAEmitterLayerEmitterShape;
+declare const kCAEmitterLayerSphere: CAEmitterLayerEmitterShape;
 // doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayeradditive
-declare const kCAEmitterLayerAdditive: cocoascript.CAEmitterLayerRenderMode;
+declare const kCAEmitterLayerAdditive: CAEmitterLayerRenderMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayerbacktofront
-declare const kCAEmitterLayerBackToFront: cocoascript.CAEmitterLayerRenderMode;
+declare const kCAEmitterLayerBackToFront: CAEmitterLayerRenderMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayeroldestfirst
-declare const kCAEmitterLayerOldestFirst: cocoascript.CAEmitterLayerRenderMode;
+declare const kCAEmitterLayerOldestFirst: CAEmitterLayerRenderMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayeroldestlast
-declare const kCAEmitterLayerOldestLast: cocoascript.CAEmitterLayerRenderMode;
+declare const kCAEmitterLayerOldestLast: CAEmitterLayerRenderMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcaemitterlayerunordered
-declare const kCAEmitterLayerUnordered: cocoascript.CAEmitterLayerRenderMode;
+declare const kCAEmitterLayerUnordered: CAEmitterLayerRenderMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcagradientlayeraxial
-declare const kCAGradientLayerAxial: cocoascript.CAGradientLayerType;
+declare const kCAGradientLayerAxial: CAGradientLayerType;
 // doc://com.apple.documentation/documentation/quartzcore/kcagradientlayerconic
-declare const kCAGradientLayerConic: cocoascript.CAGradientLayerType;
+declare const kCAGradientLayerConic: CAGradientLayerType;
 // doc://com.apple.documentation/documentation/quartzcore/kcagradientlayerradial
-declare const kCAGradientLayerRadial: cocoascript.CAGradientLayerType;
+declare const kCAGradientLayerRadial: CAGradientLayerType;
 // doc://com.apple.documentation/documentation/quartzcore/kcamediatimingfunctiondefault
-declare const kCAMediaTimingFunctionDefault: cocoascript.CAMediaTimingFunctionName;
+declare const kCAMediaTimingFunctionDefault: CAMediaTimingFunctionName;
 // doc://com.apple.documentation/documentation/quartzcore/kcamediatimingfunctioneasein
-declare const kCAMediaTimingFunctionEaseIn: cocoascript.CAMediaTimingFunctionName;
+declare const kCAMediaTimingFunctionEaseIn: CAMediaTimingFunctionName;
 // doc://com.apple.documentation/documentation/quartzcore/kcamediatimingfunctioneaseineaseout
-declare const kCAMediaTimingFunctionEaseInEaseOut: cocoascript.CAMediaTimingFunctionName;
+declare const kCAMediaTimingFunctionEaseInEaseOut: CAMediaTimingFunctionName;
 // doc://com.apple.documentation/documentation/quartzcore/kcamediatimingfunctioneaseout
-declare const kCAMediaTimingFunctionEaseOut: cocoascript.CAMediaTimingFunctionName;
+declare const kCAMediaTimingFunctionEaseOut: CAMediaTimingFunctionName;
 // doc://com.apple.documentation/documentation/quartzcore/kcamediatimingfunctionlinear
-declare const kCAMediaTimingFunctionLinear: cocoascript.CAMediaTimingFunctionName;
+declare const kCAMediaTimingFunctionLinear: CAMediaTimingFunctionName;
 // doc://com.apple.documentation/documentation/quartzcore/kcascrollboth
-declare const kCAScrollBoth: cocoascript.CAScrollLayerScrollMode;
+declare const kCAScrollBoth: CAScrollLayerScrollMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcascrollhorizontally
-declare const kCAScrollHorizontally: cocoascript.CAScrollLayerScrollMode;
+declare const kCAScrollHorizontally: CAScrollLayerScrollMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcascrollnone
-declare const kCAScrollNone: cocoascript.CAScrollLayerScrollMode;
+declare const kCAScrollNone: CAScrollLayerScrollMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcascrollvertically
-declare const kCAScrollVertically: cocoascript.CAScrollLayerScrollMode;
+declare const kCAScrollVertically: CAScrollLayerScrollMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcafillruleevenodd
-declare const kCAFillRuleEvenOdd: cocoascript.CAShapeLayerFillRule;
+declare const kCAFillRuleEvenOdd: CAShapeLayerFillRule;
 // doc://com.apple.documentation/documentation/quartzcore/kcafillrulenonzero
-declare const kCAFillRuleNonZero: cocoascript.CAShapeLayerFillRule;
+declare const kCAFillRuleNonZero: CAShapeLayerFillRule;
 // doc://com.apple.documentation/documentation/quartzcore/kcalinecapbutt
-declare const kCALineCapButt: cocoascript.CAShapeLayerLineCap;
+declare const kCALineCapButt: CAShapeLayerLineCap;
 // doc://com.apple.documentation/documentation/quartzcore/kcalinecapround
-declare const kCALineCapRound: cocoascript.CAShapeLayerLineCap;
+declare const kCALineCapRound: CAShapeLayerLineCap;
 // doc://com.apple.documentation/documentation/quartzcore/kcalinecapsquare
-declare const kCALineCapSquare: cocoascript.CAShapeLayerLineCap;
+declare const kCALineCapSquare: CAShapeLayerLineCap;
 // doc://com.apple.documentation/documentation/quartzcore/kcalinejoinbevel
-declare const kCALineJoinBevel: cocoascript.CAShapeLayerLineJoin;
+declare const kCALineJoinBevel: CAShapeLayerLineJoin;
 // doc://com.apple.documentation/documentation/quartzcore/kcalinejoinmiter
-declare const kCALineJoinMiter: cocoascript.CAShapeLayerLineJoin;
+declare const kCALineJoinMiter: CAShapeLayerLineJoin;
 // doc://com.apple.documentation/documentation/quartzcore/kcalinejoinround
-declare const kCALineJoinRound: cocoascript.CAShapeLayerLineJoin;
+declare const kCALineJoinRound: CAShapeLayerLineJoin;
 // doc://com.apple.documentation/documentation/quartzcore/kcaalignmentcenter
-declare const kCAAlignmentCenter: cocoascript.CATextLayerAlignmentMode;
+declare const kCAAlignmentCenter: CATextLayerAlignmentMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcaalignmentjustified
-declare const kCAAlignmentJustified: cocoascript.CATextLayerAlignmentMode;
+declare const kCAAlignmentJustified: CATextLayerAlignmentMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcaalignmentleft
-declare const kCAAlignmentLeft: cocoascript.CATextLayerAlignmentMode;
+declare const kCAAlignmentLeft: CATextLayerAlignmentMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcaalignmentnatural
-declare const kCAAlignmentNatural: cocoascript.CATextLayerAlignmentMode;
+declare const kCAAlignmentNatural: CATextLayerAlignmentMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcaalignmentright
-declare const kCAAlignmentRight: cocoascript.CATextLayerAlignmentMode;
+declare const kCAAlignmentRight: CATextLayerAlignmentMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcatruncationend
-declare const kCATruncationEnd: cocoascript.CATextLayerTruncationMode;
+declare const kCATruncationEnd: CATextLayerTruncationMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcatruncationmiddle
-declare const kCATruncationMiddle: cocoascript.CATextLayerTruncationMode;
+declare const kCATruncationMiddle: CATextLayerTruncationMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcatruncationnone
-declare const kCATruncationNone: cocoascript.CATextLayerTruncationMode;
+declare const kCATruncationNone: CATextLayerTruncationMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcatruncationstart
-declare const kCATruncationStart: cocoascript.CATextLayerTruncationMode;
+declare const kCATruncationStart: CATextLayerTruncationMode;
 // doc://com.apple.documentation/documentation/quartzcore/kcatransitionfrombottom
-declare const kCATransitionFromBottom: cocoascript.CATransitionSubtype;
+declare const kCATransitionFromBottom: CATransitionSubtype;
 // doc://com.apple.documentation/documentation/quartzcore/kcatransitionfromleft
-declare const kCATransitionFromLeft: cocoascript.CATransitionSubtype;
+declare const kCATransitionFromLeft: CATransitionSubtype;
 // doc://com.apple.documentation/documentation/quartzcore/kcatransitionfromright
-declare const kCATransitionFromRight: cocoascript.CATransitionSubtype;
+declare const kCATransitionFromRight: CATransitionSubtype;
 // doc://com.apple.documentation/documentation/quartzcore/kcatransitionfromtop
-declare const kCATransitionFromTop: cocoascript.CATransitionSubtype;
+declare const kCATransitionFromTop: CATransitionSubtype;
 // doc://com.apple.documentation/documentation/quartzcore/kcatransitionfade
-declare const kCATransitionFade: cocoascript.CATransitionType;
+declare const kCATransitionFade: CATransitionType;
 // doc://com.apple.documentation/documentation/quartzcore/kcatransitionmovein
-declare const kCATransitionMoveIn: cocoascript.CATransitionType;
+declare const kCATransitionMoveIn: CATransitionType;
 // doc://com.apple.documentation/documentation/quartzcore/kcatransitionpush
-declare const kCATransitionPush: cocoascript.CATransitionType;
+declare const kCATransitionPush: CATransitionType;
 // doc://com.apple.documentation/documentation/quartzcore/kcatransitionreveal
-declare const kCATransitionReveal: cocoascript.CATransitionType;
+declare const kCATransitionReveal: CATransitionType;
 // doc://com.apple.documentation/documentation/quartzcore/kcavaluefunctionrotatex
-declare const kCAValueFunctionRotateX: cocoascript.CAValueFunctionName;
+declare const kCAValueFunctionRotateX: CAValueFunctionName;
 // doc://com.apple.documentation/documentation/quartzcore/kcavaluefunctionrotatey
-declare const kCAValueFunctionRotateY: cocoascript.CAValueFunctionName;
+declare const kCAValueFunctionRotateY: CAValueFunctionName;
 // doc://com.apple.documentation/documentation/quartzcore/kcavaluefunctionscalex
-declare const kCAValueFunctionScaleX: cocoascript.CAValueFunctionName;
+declare const kCAValueFunctionScaleX: CAValueFunctionName;
 // doc://com.apple.documentation/documentation/quartzcore/kcavaluefunctionscaley
-declare const kCAValueFunctionScaleY: cocoascript.CAValueFunctionName;
+declare const kCAValueFunctionScaleY: CAValueFunctionName;
 // doc://com.apple.documentation/documentation/quartzcore/kcavaluefunctionscalez
-declare const kCAValueFunctionScaleZ: cocoascript.CAValueFunctionName;
+declare const kCAValueFunctionScaleZ: CAValueFunctionName;
 // doc://com.apple.documentation/documentation/quartzcore/kcavaluefunctiontranslatex
-declare const kCAValueFunctionTranslateX: cocoascript.CAValueFunctionName;
+declare const kCAValueFunctionTranslateX: CAValueFunctionName;
 // doc://com.apple.documentation/documentation/quartzcore/kcavaluefunctiontranslatey
-declare const kCAValueFunctionTranslateY: cocoascript.CAValueFunctionName;
+declare const kCAValueFunctionTranslateY: CAValueFunctionName;
 // doc://com.apple.documentation/documentation/quartzcore/kcavaluefunctiontranslatez
-declare const kCAValueFunctionTranslateZ: cocoascript.CAValueFunctionName;
+declare const kCAValueFunctionTranslateZ: CAValueFunctionName;

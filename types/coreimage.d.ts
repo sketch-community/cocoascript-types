@@ -5,87 +5,87 @@ declare namespace cocoascript {
    */
   interface CIColor extends NSObject {
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1437821-initwithcgcolor
-    initWithCGColor(c: cocoascript.CGColorRef):cocoascript.CIColor;
+    initWithCGColor(c: CGColorRef):CIColor;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1528762-initwithcolor
-    initWithColor(color: cocoascript.UIColor):cocoascript.CIColor;
+    initWithColor(color: UIColor):CIColor;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1502102-initwithred
-    initWithRed_green_blue(r: cocoascript.CGFloat, g: cocoascript.CGFloat, b: cocoascript.CGFloat):cocoascript.CIColor;
+    initWithRed_green_blue(r: CGFloat, g: CGFloat, b: CGFloat):CIColor;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1438084-initwithred
-    initWithRed_green_blue_alpha(r: cocoascript.CGFloat, g: cocoascript.CGFloat, b: cocoascript.CGFloat, a: cocoascript.CGFloat):cocoascript.CIColor;
+    initWithRed_green_blue_alpha(r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat):CIColor;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1643576-initwithred
-    initWithRed_green_blue_colorSpace(r: cocoascript.CGFloat, g: cocoascript.CGFloat, b: cocoascript.CGFloat, colorSpace: cocoascript.CGColorSpaceRef):cocoascript.CIColor;
+    initWithRed_green_blue_colorSpace(r: CGFloat, g: CGFloat, b: CGFloat, colorSpace: CGColorSpaceRef):CIColor;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1643572-initwithred
-    initWithRed_green_blue_alpha_colorSpace(r: cocoascript.CGFloat, g: cocoascript.CGFloat, b: cocoascript.CGFloat, a: cocoascript.CGFloat, colorSpace: cocoascript.CGColorSpaceRef):cocoascript.CIColor;
+    initWithRed_green_blue_alpha_colorSpace(r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat, colorSpace: CGColorSpaceRef):CIColor;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1502106-colorwithcgcolor
-    colorWithCGColor(c: cocoascript.CGColorRef):cocoascript.CIColor;
+    colorWithCGColor(c: CGColorRef):CIColor;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1437941-colorwithred
-    colorWithRed_green_blue(r: cocoascript.CGFloat, g: cocoascript.CGFloat, b: cocoascript.CGFloat):cocoascript.CIColor;
+    colorWithRed_green_blue(r: CGFloat, g: CGFloat, b: CGFloat):CIColor;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1502111-colorwithred
-    colorWithRed_green_blue_alpha(r: cocoascript.CGFloat, g: cocoascript.CGFloat, b: cocoascript.CGFloat, a: cocoascript.CGFloat):cocoascript.CIColor;
+    colorWithRed_green_blue_alpha(r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat):CIColor;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1438059-colorwithstring
-    colorWithString(representation: string | cocoascript.NSString):cocoascript.CIColor;
+    colorWithString(representation: string | cocoascript.NSString):CIColor;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1643579-colorwithred
-    colorWithRed_green_blue_colorSpace(r: cocoascript.CGFloat, g: cocoascript.CGFloat, b: cocoascript.CGFloat, colorSpace: cocoascript.CGColorSpaceRef):cocoascript.CIColor;
+    colorWithRed_green_blue_colorSpace(r: CGFloat, g: CGFloat, b: CGFloat, colorSpace: CGColorSpaceRef):CIColor;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1643575-colorwithred
-    colorWithRed_green_blue_alpha_colorSpace(r: cocoascript.CGFloat, g: cocoascript.CGFloat, b: cocoascript.CGFloat, a: cocoascript.CGFloat, colorSpace: cocoascript.CGColorSpaceRef):cocoascript.CIColor;
+    colorWithRed_green_blue_alpha_colorSpace(r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat, colorSpace: CGColorSpaceRef):CIColor;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1437917-colorspace
-    colorSpace(): cocoascript.CGColorSpaceRef;
+    colorSpace(): CGColorSpaceRef;
     setColorSpace(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1437862-components
-    components(): cocoascript.CGFloat;
+    components(): CGFloat;
     setComponents(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1438151-numberofcomponents
     numberOfComponents(): any;
     setNumberOfComponents(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1437969-red
-    red(): cocoascript.CGFloat;
+    red(): CGFloat;
     setRed(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1437607-green
-    green(): cocoascript.CGFloat;
+    green(): CGFloat;
     setGreen(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1438033-blue
-    blue(): cocoascript.CGFloat;
+    blue(): CGFloat;
     setBlue(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1437981-alpha
-    alpha(): cocoascript.CGFloat;
+    alpha(): CGFloat;
     setAlpha(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1437910-stringrepresentation
     stringRepresentation(): string | cocoascript.NSString;
     setStringRepresentation(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1643578-blackcolor
-    blackColor(): cocoascript.CIColor;
+    blackColor(): CIColor;
     setBlackColor(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1643569-bluecolor
-    blueColor(): cocoascript.CIColor;
+    blueColor(): CIColor;
     setBlueColor(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1643577-clearcolor
-    clearColor(): cocoascript.CIColor;
+    clearColor(): CIColor;
     setClearColor(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1643581-cyancolor
-    cyanColor(): cocoascript.CIColor;
+    cyanColor(): CIColor;
     setCyanColor(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1643573-graycolor
-    grayColor(): cocoascript.CIColor;
+    grayColor(): CIColor;
     setGrayColor(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1643580-greencolor
-    greenColor(): cocoascript.CIColor;
+    greenColor(): CIColor;
     setGreenColor(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1643574-magentacolor
-    magentaColor(): cocoascript.CIColor;
+    magentaColor(): CIColor;
     setMagentaColor(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1643570-redcolor
-    redColor(): cocoascript.CIColor;
+    redColor(): CIColor;
     setRedColor(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1643571-whitecolor
-    whiteColor(): cocoascript.CIColor;
+    whiteColor(): CIColor;
     setWhiteColor(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolor/1643582-yellowcolor
-    yellowColor(): cocoascript.CIColor;
+    yellowColor(): CIColor;
     setYellowColor(): void;
     //
-    alloc():cocoascript.CIColor;
+    alloc():CIColor;
     //
-    init():cocoascript.CIColor;
+    init():CIColor;
   }
 }
 
@@ -97,243 +97,243 @@ declare namespace cocoascript {
    */
   interface CIImage extends NSObject {
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1438023-emptyimage
-    emptyImage():cocoascript.CIImage;
+    emptyImage():CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1547012-imagewithcolor
-    imageWithColor(color: cocoascript.CIColor):cocoascript.CIImage;
+    imageWithColor(color: CIColor):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1547023-imagewithbitmapdata
-    imageWithBitmapData_bytesPerRow_size_format_colorSpace(data: cocoascript.NSData, bytesPerRow: any, size: cocoascript.CGSize, format: cocoascript.CIFormat, colorSpace: cocoascript.CGColorSpaceRef):cocoascript.CIImage;
+    imageWithBitmapData_bytesPerRow_size_format_colorSpace(data: NSData, bytesPerRow: any, size: CGSize, format: CIFormat, colorSpace: CGColorSpaceRef):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1547025-imagewithcgimage
-    imageWithCGImage(image: cocoascript.CGImageRef):cocoascript.CIImage;
+    imageWithCGImage(image: CGImageRef):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1547021-imagewithcgimage
-    imageWithCGImage_options(image: cocoascript.CGImageRef, options: cocoascript.CIImage):cocoascript.CIImage;
+    imageWithCGImage_options(image: CGImageRef, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1547022-imagewithcglayer
-    imageWithCGLayer(layer: cocoascript.CGLayerRef):cocoascript.CIImage;
+    imageWithCGLayer(layer: CGLayerRef):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1546998-imagewithcglayer
-    imageWithCGLayer_options(layer: cocoascript.CGLayerRef, options: cocoascript.CIImage):cocoascript.CIImage;
+    imageWithCGLayer_options(layer: CGLayerRef, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1547027-imagewithcontentsofurl
-    imageWithContentsOfURL(url: cocoascript.NSURL):cocoascript.CIImage;
+    imageWithContentsOfURL(url: NSURL):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1546997-imagewithcontentsofurl
-    imageWithContentsOfURL_options(url: cocoascript.NSURL, options: cocoascript.CIImage):cocoascript.CIImage;
+    imageWithContentsOfURL_options(url: NSURL, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1547007-imagewithcvimagebuffer
-    imageWithCVImageBuffer(imageBuffer: cocoascript.CVImageBufferRef):cocoascript.CIImage;
+    imageWithCVImageBuffer(imageBuffer: CVImageBufferRef):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1547028-imagewithcvimagebuffer
-    imageWithCVImageBuffer_options(imageBuffer: cocoascript.CVImageBufferRef, options: cocoascript.CIImage):cocoascript.CIImage;
+    imageWithCVImageBuffer_options(imageBuffer: CVImageBufferRef, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1547005-imagewithcvpixelbuffer
-    imageWithCVPixelBuffer(pixelBuffer: cocoascript.CVPixelBufferRef):cocoascript.CIImage;
+    imageWithCVPixelBuffer(pixelBuffer: CVPixelBufferRef):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1547003-imagewithcvpixelbuffer
-    imageWithCVPixelBuffer_options(pixelBuffer: cocoascript.CVPixelBufferRef, options: cocoascript.CIImage):cocoascript.CIImage;
+    imageWithCVPixelBuffer_options(pixelBuffer: CVPixelBufferRef, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1547029-imagewithdata
-    imageWithData(data: cocoascript.NSData):cocoascript.CIImage;
+    imageWithData(data: NSData):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1547016-imagewithdata
-    imageWithData_options(data: cocoascript.NSData, options: cocoascript.CIImage):cocoascript.CIImage;
+    imageWithData_options(data: NSData, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1579115-imagewithimageprovider
-    imageWithImageProvider_size__format_colorSpace_options(p: cocoascript.CIImage, width: any, height: any, f: cocoascript.CIFormat, cs: cocoascript.CGColorSpaceRef, options: cocoascript.CIImage):cocoascript.CIImage;
+    imageWithImageProvider_size__format_colorSpace_options(p: CIImage, width: any, height: any, f: CIFormat, cs: CGColorSpaceRef, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1547006-imagewithtexture
-    imageWithTexture_size_flipped_colorSpace(name: number, size: cocoascript.CGSize, flipped: cocoascript.BOOL, colorSpace: cocoascript.CGColorSpaceRef):cocoascript.CIImage;
+    imageWithTexture_size_flipped_colorSpace(name: number, size: CGSize, flipped: BOOL, colorSpace: CGColorSpaceRef):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1547000-imagewithtexture
-    imageWithTexture_size_flipped_options(name: number, size: cocoascript.CGSize, flipped: cocoascript.BOOL, options: cocoascript.CIImage):cocoascript.CIImage;
+    imageWithTexture_size_flipped_options(name: number, size: CGSize, flipped: BOOL, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1546999-imagewithmtltexture
-    imageWithMTLTexture_options(texture: any, options: cocoascript.CIImage):cocoascript.CIImage;
+    imageWithMTLTexture_options(texture: any, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1547024-imagewithiosurface
-    imageWithIOSurface(surface: cocoascript.IOSurfaceRef):cocoascript.CIImage;
+    imageWithIOSurface(surface: IOSurfaceRef):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1547001-imagewithiosurface
-    imageWithIOSurface_options(surface: cocoascript.IOSurfaceRef, options: cocoascript.CIImage):cocoascript.CIImage;
+    imageWithIOSurface_options(surface: IOSurfaceRef, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1437947-initwithcolor
-    initWithColor(color: cocoascript.CIColor):cocoascript.CIImage;
+    initWithColor(color: CIColor):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1437857-initwithbitmapdata
-    initWithBitmapData_bytesPerRow_size_format_colorSpace(data: cocoascript.NSData, bytesPerRow: any, size: cocoascript.CGSize, format: cocoascript.CIFormat, colorSpace: cocoascript.CGColorSpaceRef):cocoascript.CIImage;
+    initWithBitmapData_bytesPerRow_size_format_colorSpace(data: NSData, bytesPerRow: any, size: CGSize, format: CIFormat, colorSpace: CGColorSpaceRef):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1437986-initwithcgimage
-    initWithCGImage(image: cocoascript.CGImageRef):cocoascript.CIImage;
+    initWithCGImage(image: CGImageRef):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1437764-initwithcgimage
-    initWithCGImage_options(image: cocoascript.CGImageRef, options: cocoascript.CIImage):cocoascript.CIImage;
+    initWithCGImage_options(image: CGImageRef, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1535335-initwithbitmapimagerep
-    initWithBitmapImageRep(bitmapImageRep: cocoascript.NSBitmapImageRep):cocoascript.CIImage;
+    initWithBitmapImageRep(bitmapImageRep: NSBitmapImageRep):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1624119-initwithimage
-    initWithImage(image: cocoascript.UIImage):cocoascript.CIImage;
+    initWithImage(image: UIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1624098-initwithimage
-    initWithImage_options(image: cocoascript.UIImage, options: cocoascript.CIImage):cocoascript.CIImage;
+    initWithImage_options(image: UIImage, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1438065-initwithcglayer
-    initWithCGLayer(layer: cocoascript.CGLayerRef):cocoascript.CIImage;
+    initWithCGLayer(layer: CGLayerRef):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1437687-initwithcglayer
-    initWithCGLayer_options(layer: cocoascript.CGLayerRef, options: cocoascript.CIImage):cocoascript.CIImage;
+    initWithCGLayer_options(layer: CGLayerRef, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1437908-initwithcontentsofurl
-    initWithContentsOfURL(url: cocoascript.NSURL):cocoascript.CIImage;
+    initWithContentsOfURL(url: NSURL):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1437867-initwithcontentsofurl
-    initWithContentsOfURL_options(url: cocoascript.NSURL, options: cocoascript.CIImage):cocoascript.CIImage;
+    initWithContentsOfURL_options(url: NSURL, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1438012-initwithcvimagebuffer
-    initWithCVImageBuffer(imageBuffer: cocoascript.CVImageBufferRef):cocoascript.CIImage;
+    initWithCVImageBuffer(imageBuffer: CVImageBufferRef):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1437617-initwithcvimagebuffer
-    initWithCVImageBuffer_options(imageBuffer: cocoascript.CVImageBufferRef, options: cocoascript.CIImage):cocoascript.CIImage;
+    initWithCVImageBuffer_options(imageBuffer: CVImageBufferRef, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1438072-initwithcvpixelbuffer
-    initWithCVPixelBuffer(pixelBuffer: cocoascript.CVPixelBufferRef):cocoascript.CIImage;
+    initWithCVPixelBuffer(pixelBuffer: CVPixelBufferRef):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1438209-initwithcvpixelbuffer
-    initWithCVPixelBuffer_options(pixelBuffer: cocoascript.CVPixelBufferRef, options: cocoascript.CIImage):cocoascript.CIImage;
+    initWithCVPixelBuffer_options(pixelBuffer: CVPixelBufferRef, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1437925-initwithdata
-    initWithData(data: cocoascript.NSData):cocoascript.CIImage;
+    initWithData(data: NSData):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1438032-initwithdata
-    initWithData_options(data: cocoascript.NSData, options: cocoascript.CIImage):cocoascript.CIImage;
+    initWithData_options(data: NSData, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1437868-initwithimageprovider
-    initWithImageProvider_size__format_colorSpace_options(p: cocoascript.CIImage, width: any, height: any, f: cocoascript.CIFormat, cs: cocoascript.CGColorSpaceRef, options: cocoascript.CIImage):cocoascript.CIImage;
+    initWithImageProvider_size__format_colorSpace_options(p: CIImage, width: any, height: any, f: CIFormat, cs: CGColorSpaceRef, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1438015-initwithtexture
-    initWithTexture_size_flipped_colorSpace(name: number, size: cocoascript.CGSize, flipped: cocoascript.BOOL, colorSpace: cocoascript.CGColorSpaceRef):cocoascript.CIImage;
+    initWithTexture_size_flipped_colorSpace(name: number, size: CGSize, flipped: BOOL, colorSpace: CGColorSpaceRef):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1437880-initwithtexture
-    initWithTexture_size_flipped_options(name: number, size: cocoascript.CGSize, flipped: cocoascript.BOOL, options: cocoascript.CIImage):cocoascript.CIImage;
+    initWithTexture_size_flipped_options(name: number, size: CGSize, flipped: BOOL, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1437890-initwithmtltexture
-    initWithMTLTexture_options(texture: any, options: cocoascript.CIImage):cocoascript.CIImage;
+    initWithMTLTexture_options(texture: any, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1438030-initwithiosurface
-    initWithIOSurface(surface: cocoascript.IOSurfaceRef):cocoascript.CIImage;
+    initWithIOSurface(surface: IOSurfaceRef):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1438181-initwithiosurface
-    initWithIOSurface_options(surface: cocoascript.IOSurfaceRef, options: cocoascript.CIImage):cocoascript.CIImage;
+    initWithIOSurface_options(surface: IOSurfaceRef, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1437670-initwithiosurface
-    initWithIOSurface_plane_format_options(surface: cocoascript.IOSurfaceRef, plane: any, format: cocoascript.CIFormat, options: cocoascript.CIImage):cocoascript.CIImage;
+    initWithIOSurface_plane_format_options(surface: IOSurfaceRef, plane: any, format: CIFormat, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1437589-imagebyapplyingfilter
-    imageByApplyingFilter_withInputParameters(filterName: string | cocoascript.NSString, params: cocoascript.CIImage):cocoascript.CIImage;
+    imageByApplyingFilter_withInputParameters(filterName: string | cocoascript.NSString, params: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/2915368-imagebyapplyingfilter
-    imageByApplyingFilter(filterName: string | cocoascript.NSString):cocoascript.CIImage;
+    imageByApplyingFilter(filterName: string | cocoascript.NSString):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1438203-imagebyapplyingtransform
-    imageByApplyingTransform(matrix: cocoascript.CGAffineTransform):cocoascript.CIImage;
+    imageByApplyingTransform(matrix: CGAffineTransform):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1437833-imagebycroppingtorect
-    imageByCroppingToRect(rect: cocoascript.CGRect):cocoascript.CIImage;
+    imageByCroppingToRect(rect: CGRect):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1438223-imagebyapplyingorientation
-    imageByApplyingOrientation(orientation: number):cocoascript.CIImage;
+    imageByApplyingOrientation(orientation: number):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1437628-imagebyclampingtoextent
-    imageByClampingToExtent():cocoascript.CIImage;
+    imageByClampingToExtent():CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1645893-imagebyclampingtorect
-    imageByClampingToRect(rect: cocoascript.CGRect):cocoascript.CIImage;
+    imageByClampingToRect(rect: CGRect):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1437837-imagebycompositingoverimage
-    imageByCompositingOverImage(dest: cocoascript.CIImage):cocoascript.CIImage;
+    imageByCompositingOverImage(dest: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1645896-imagebycolormatchingcolorspaceto
-    imageByColorMatchingColorSpaceToWorkingSpace(colorSpace: cocoascript.CGColorSpaceRef):cocoascript.CIImage;
+    imageByColorMatchingColorSpaceToWorkingSpace(colorSpace: CGColorSpaceRef):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1645898-imagebycolormatchingworkingspace
-    imageByColorMatchingWorkingSpaceToColorSpace(colorSpace: cocoascript.CGColorSpaceRef):cocoascript.CIImage;
+    imageByColorMatchingWorkingSpaceToColorSpace(colorSpace: CGColorSpaceRef):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1645894-imagebypremultiplyingalpha
-    imageByPremultiplyingAlpha():cocoascript.CIImage;
+    imageByPremultiplyingAlpha():CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1645892-imagebyunpremultiplyingalpha
-    imageByUnpremultiplyingAlpha():cocoascript.CIImage;
+    imageByUnpremultiplyingAlpha():CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1645891-imagebysettingalphaoneinextent
-    imageBySettingAlphaOneInExtent(extent: cocoascript.CGRect):cocoascript.CIImage;
+    imageBySettingAlphaOneInExtent(extent: CGRect):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1645897-imagebyapplyinggaussianblurwiths
-    imageByApplyingGaussianBlurWithSigma(sigma: number):cocoascript.CIImage;
+    imageByApplyingGaussianBlurWithSigma(sigma: number):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1645895-imagebysettingproperties
-    imageBySettingProperties(properties: cocoascript.NSDictionary):cocoascript.CIImage;
+    imageBySettingProperties(properties: NSDictionary):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/2966521-imagebyinsertingintermediate
-    imageByInsertingIntermediate():cocoascript.CIImage;
+    imageByInsertingIntermediate():CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/2966522-imagebyinsertingintermediate
-    imageByInsertingIntermediate(cache: cocoascript.BOOL):cocoascript.CIImage;
+    imageByInsertingIntermediate(cache: BOOL):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1437804-definition
-    definition(): cocoascript.CIFilterShape;
+    definition(): CIFilterShape;
     setDefinition(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1437996-extent
-    extent(): cocoascript.CGRect;
+    extent(): CGRect;
     setExtent(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1437733-properties
-    properties(): cocoascript.id;
+    properties(): id;
     setProperties(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1438195-url
-    url(): cocoascript.NSURL;
+    url(): NSURL;
     setUrl(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1437750-colorspace
-    colorSpace(): cocoascript.CGColorSpaceRef;
+    colorSpace(): CGColorSpaceRef;
     setColorSpace(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1437930-imagetransformfororientation
-    imageTransformForOrientation(orientation: number):cocoascript.CGAffineTransform;
+    imageTransformForOrientation(orientation: number):CGAffineTransform;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1534432-drawatpoint
-    drawAtPoint_fromRect_operation_fraction(point: cocoascript.NSPoint, fromRect: cocoascript.NSRect, op: cocoascript.NSCompositingOperation, delta: cocoascript.CGFloat):void;
+    drawAtPoint_fromRect_operation_fraction(point: NSPoint, fromRect: NSRect, op: NSCompositingOperation, delta: CGFloat):void;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1534407-drawinrect
-    drawInRect_fromRect_operation_fraction(rect: cocoascript.NSRect, fromRect: cocoascript.NSRect, op: cocoascript.NSCompositingOperation, delta: cocoascript.CGFloat):void;
+    drawInRect_fromRect_operation_fraction(rect: NSRect, fromRect: NSRect, op: NSCompositingOperation, delta: CGFloat):void;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1645889-autoadjustmentfilters
-    autoAdjustmentFilters():cocoascript.CIFilter;
+    autoAdjustmentFilters():CIFilter;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1437792-autoadjustmentfilterswithoptions
-    autoAdjustmentFiltersWithOptions(options: cocoascript.CIImage):cocoascript.CIFilter;
+    autoAdjustmentFiltersWithOptions(options: CIImage):CIFilter;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1437994-regionofinterestforimage
-    regionOfInterestForImage_inRect(image: cocoascript.CIImage, rect: cocoascript.CGRect):cocoascript.CGRect;
+    regionOfInterestForImage_inRect(image: CIImage, rect: CGRect):CGRect;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/2919727-imagebyapplyingcgorientation
-    imageByApplyingCGOrientation(orientation: cocoascript.CGImagePropertyOrientation):cocoascript.CIImage;
+    imageByApplyingCGOrientation(orientation: CGImagePropertyOrientation):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/2919726-imagetransformforcgorientation
-    imageTransformForCGOrientation(orientation: cocoascript.CGImagePropertyOrientation):cocoascript.CGAffineTransform;
+    imageTransformForCGOrientation(orientation: CGImagePropertyOrientation):CGAffineTransform;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/2867429-imagebysamplingnearest
-    imageBySamplingNearest():cocoascript.CIImage;
+    imageBySamplingNearest():CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/2867346-imagebysamplinglinear
-    imageBySamplingLinear():cocoascript.CIImage;
+    imageBySamplingLinear():CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1687603-cgimage
-    CGImage(): cocoascript.CGImageRef;
+    CGImage(): CGImageRef;
     setCGImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/1687604-pixelbuffer
-    pixelBuffer(): cocoascript.CVPixelBufferRef;
+    pixelBuffer(): CVPixelBufferRef;
     setPixelBuffer(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/2902251-depthdata
-    depthData(): cocoascript.AVDepthData;
+    depthData(): AVDepthData;
     setDepthData(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/2976440-portraiteffectsmatte
-    portraitEffectsMatte(): cocoascript.AVPortraitEffectsMatte;
+    portraitEffectsMatte(): AVPortraitEffectsMatte;
     setPortraitEffectsMatte(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/3152399-initwithcgimagesource
-    initWithCGImageSource_index_options(source: cocoascript.CGImageSourceRef, index: any, dict: cocoascript.CIImage):cocoascript.CIImage;
+    initWithCGImageSource_index_options(source: CGImageSourceRef, index: any, dict: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/2998421-initwithdepthdata
-    initWithDepthData(data: cocoascript.AVDepthData):cocoascript.CIImage;
+    initWithDepthData(data: AVDepthData):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/2998422-initwithdepthdata
-    initWithDepthData_options(data: cocoascript.AVDepthData, options: cocoascript.CIImage):cocoascript.CIImage;
+    initWithDepthData_options(data: AVDepthData, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/2998423-initwithportaiteffectsmatte
-    initWithPortaitEffectsMatte(matte: cocoascript.AVPortraitEffectsMatte):cocoascript.CIImage;
+    initWithPortaitEffectsMatte(matte: AVPortraitEffectsMatte):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/2998424-initwithportaiteffectsmatte
-    initWithPortaitEffectsMatte_options(matte: cocoascript.AVPortraitEffectsMatte, options: cocoascript.CIImage):cocoascript.CIImage;
+    initWithPortaitEffectsMatte_options(matte: AVPortraitEffectsMatte, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/3242779-initwithsemanticsegmentationmatt
-    initWithSemanticSegmentationMatte(matte: cocoascript.AVSemanticSegmentationMatte):cocoascript.CIImage;
+    initWithSemanticSegmentationMatte(matte: AVSemanticSegmentationMatte):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/3242780-initwithsemanticsegmentationmatt
-    initWithSemanticSegmentationMatte_options(matte: cocoascript.AVSemanticSegmentationMatte, options: cocoascript.CIImage):cocoascript.CIImage;
+    initWithSemanticSegmentationMatte_options(matte: AVSemanticSegmentationMatte, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/3242781-semanticsegmentationmatte
-    semanticSegmentationMatte(): cocoascript.AVSemanticSegmentationMatte;
+    semanticSegmentationMatte(): AVSemanticSegmentationMatte;
     setSemanticSegmentationMatte(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/3074421-blackimage
-    blackImage(): cocoascript.CIImage;
+    blackImage(): CIImage;
     setBlackImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/3074422-blueimage
-    blueImage(): cocoascript.CIImage;
+    blueImage(): CIImage;
     setBlueImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/3074423-clearimage
-    clearImage(): cocoascript.CIImage;
+    clearImage(): CIImage;
     setClearImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/3074424-cyanimage
-    cyanImage(): cocoascript.CIImage;
+    cyanImage(): CIImage;
     setCyanImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/3074425-grayimage
-    grayImage(): cocoascript.CIImage;
+    grayImage(): CIImage;
     setGrayImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/3074426-greenimage
-    greenImage(): cocoascript.CIImage;
+    greenImage(): CIImage;
     setGreenImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/3074427-magentaimage
-    magentaImage(): cocoascript.CIImage;
+    magentaImage(): CIImage;
     setMagentaImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/3074428-redimage
-    redImage(): cocoascript.CIImage;
+    redImage(): CIImage;
     setRedImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/3074429-whiteimage
-    whiteImage(): cocoascript.CIImage;
+    whiteImage(): CIImage;
     setWhiteImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/3074430-yellowimage
-    yellowImage(): cocoascript.CIImage;
+    yellowImage(): CIImage;
     setYellowImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/3334939-imagebyapplyingtransform
-    imageByApplyingTransform_highQualityDownsample(matrix: cocoascript.CGAffineTransform, highQualityDownsample: cocoascript.BOOL):cocoascript.CIImage;
+    imageByApplyingTransform_highQualityDownsample(matrix: CGAffineTransform, highQualityDownsample: BOOL):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/3152398-imagewithcgimagesource
-    imageWithCGImageSource_index_options(source: cocoascript.CGImageSourceRef, index: any, dict: cocoascript.CIImage):cocoascript.CIImage;
+    imageWithCGImageSource_index_options(source: CGImageSourceRef, index: any, dict: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/2998417-imagewithdepthdata
-    imageWithDepthData(data: cocoascript.AVDepthData):cocoascript.CIImage;
+    imageWithDepthData(data: AVDepthData):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/2998418-imagewithdepthdata
-    imageWithDepthData_options(data: cocoascript.AVDepthData, options: cocoascript.CIImage):cocoascript.CIImage;
+    imageWithDepthData_options(data: AVDepthData, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/2998419-imagewithportaiteffectsmatte
-    imageWithPortaitEffectsMatte(matte: cocoascript.AVPortraitEffectsMatte):cocoascript.CIImage;
+    imageWithPortaitEffectsMatte(matte: AVPortraitEffectsMatte):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/2998420-imagewithportaiteffectsmatte
-    imageWithPortaitEffectsMatte_options(matte: cocoascript.AVPortraitEffectsMatte, options: cocoascript.CIImage):cocoascript.CIImage;
+    imageWithPortaitEffectsMatte_options(matte: AVPortraitEffectsMatte, options: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/3242777-imagewithsemanticsegmentationmat
-    imageWithSemanticSegmentationMatte(matte: cocoascript.AVSemanticSegmentationMatte):cocoascript.CIImage;
+    imageWithSemanticSegmentationMatte(matte: AVSemanticSegmentationMatte):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimage/3242778-imagewithsemanticsegmentationmat
-    imageWithSemanticSegmentationMatte_options(matte: cocoascript.AVSemanticSegmentationMatte, options: cocoascript.CIImage):cocoascript.CIImage;
+    imageWithSemanticSegmentationMatte_options(matte: AVSemanticSegmentationMatte, options: CIImage):CIImage;
     //
-    alloc():cocoascript.CIImage;
+    alloc():CIImage;
     //
-    init():cocoascript.CIImage;
+    init():CIImage;
   }
 }
 
@@ -345,27 +345,27 @@ declare namespace cocoascript {
    */
   interface CISampler extends NSObject {
     // doc://com.apple.documentation/documentation/coreimage/cisampler/1555075-samplerwithimage
-    samplerWithImage(im: cocoascript.CIImage):cocoascript.CISampler;
+    samplerWithImage(im: CIImage):CISampler;
     // doc://com.apple.documentation/documentation/coreimage/cisampler/1555078-samplerwithimage
-    samplerWithImage_keysAndValues(im: cocoascript.CIImage, key0: cocoascript.CISampler):cocoascript.CISampler;
+    samplerWithImage_keysAndValues(im: CIImage, ...key0: Array<id>):CISampler;
     // doc://com.apple.documentation/documentation/coreimage/cisampler/1555076-samplerwithimage
-    samplerWithImage_options(im: cocoascript.CIImage, dict: cocoascript.NSDictionary):cocoascript.CISampler;
+    samplerWithImage_options(im: CIImage, dict: NSDictionary):CISampler;
     // doc://com.apple.documentation/documentation/coreimage/cisampler/1438117-initwithimage
-    initWithImage(im: cocoascript.CIImage):cocoascript.CISampler;
+    initWithImage(im: CIImage):CISampler;
     // doc://com.apple.documentation/documentation/coreimage/cisampler/1555077-initwithimage
-    initWithImage_keysAndValues(im: cocoascript.CIImage, key0: cocoascript.CISampler):cocoascript.CISampler;
+    initWithImage_keysAndValues(im: CIImage, ...key0: Array<id>):CISampler;
     // doc://com.apple.documentation/documentation/coreimage/cisampler/1437963-initwithimage
-    initWithImage_options(im: cocoascript.CIImage, dict: cocoascript.NSDictionary):cocoascript.CISampler;
+    initWithImage_options(im: CIImage, dict: NSDictionary):CISampler;
     // doc://com.apple.documentation/documentation/coreimage/cisampler/1437877-definition
-    definition(): cocoascript.CIFilterShape;
+    definition(): CIFilterShape;
     setDefinition(): void;
     // doc://com.apple.documentation/documentation/coreimage/cisampler/1437872-extent
-    extent(): cocoascript.CGRect;
+    extent(): CGRect;
     setExtent(): void;
     //
-    alloc():cocoascript.CISampler;
+    alloc():CISampler;
     //
-    init():cocoascript.CISampler;
+    init():CISampler;
   }
 }
 
@@ -377,30 +377,30 @@ declare namespace cocoascript {
    */
   interface CIFilter extends NSObject {
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1438255-filterwithname
-    filterWithName(name: string | cocoascript.NSString):cocoascript.CIFilter;
+    filterWithName(name: string | cocoascript.NSString):CIFilter;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1437894-filterwithname
-    filterWithName_withInputParameters(name: string | cocoascript.NSString, params: cocoascript.CIFilter):cocoascript.CIFilter;
+    filterWithName_withInputParameters(name: string | cocoascript.NSString, params: CIFilter):CIFilter;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1562057-filterwithname
-    filterWithName_keysAndValues(name: string | cocoascript.NSString, key0: cocoascript.CIFilter):cocoascript.CIFilter;
+    filterWithName_keysAndValues(name: string | cocoascript.NSString, ...key0: Array<id>):CIFilter;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1437879-filterwithimagedata
-    filterWithImageData_options(data: cocoascript.NSData, options: cocoascript.CIFilter):cocoascript.CIFilter;
+    filterWithImageData_options(data: NSData, options: CIFilter):CIFilter;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1438096-filterwithimageurl
-    filterWithImageURL_options(url: cocoascript.NSURL, options: cocoascript.CIFilter):cocoascript.CIFilter;
+    filterWithImageURL_options(url: NSURL, options: CIFilter):CIFilter;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/2138288-filterwithcvpixelbuffer
-    filterWithCVPixelBuffer_properties_options(pixelBuffer: cocoascript.CVPixelBufferRef, properties: cocoascript.NSDictionary, options: cocoascript.CIFilter):cocoascript.CIFilter;
+    filterWithCVPixelBuffer_properties_options(pixelBuffer: CVPixelBufferRef, properties: NSDictionary, options: CIFilter):CIFilter;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1437595-filternamesincategories
     filterNamesInCategories(categories: string | cocoascript.NSString):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1438145-filternamesincategory
     filterNamesInCategory(category: string | cocoascript.NSString):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1437889-registerfiltername
-    registerFilterName_constructor_classAttributes(name: string | cocoascript.NSString, anObject: cocoascript.CIFilterConstructor, attributes: cocoascript.CIFilter):void;
+    registerFilterName_constructor_classAttributes(name: string | cocoascript.NSString, anObject: CIFilterConstructor, attributes: CIFilter):void;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1437997-setname
     name():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1438276-enabled
-    enabled(): cocoascript.BOOL;
+    enabled(): BOOL;
     setEnabled(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1437661-attributes
-    attributes(): cocoascript.id;
+    attributes(): id;
     setAttributes(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1438013-inputkeys
     inputKeys(): string | cocoascript.NSString;
@@ -409,14 +409,14 @@ declare namespace cocoascript {
     outputKeys(): string | cocoascript.NSString;
     setOutputKeys(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1438169-outputimage
-    outputImage(): cocoascript.CIImage;
+    outputImage(): CIImage;
     setOutputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1437902-setdefaults
     setDefaults():void;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1438077-apply
-    apply_arguments_options(k: cocoascript.CIKernel, args: cocoascript.NSArray, dict: cocoascript.CIFilter):cocoascript.CIImage;
+    apply_arguments_options(k: CIKernel, args: NSArray, dict: CIFilter):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1562058-apply
-    apply(k: cocoascript.CIKernel):cocoascript.CIImage;
+    apply(...k: Array<CIKernel>):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1437697-localizednameforfiltername
     localizedNameForFilterName(filterName: string | cocoascript.NSString):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1438057-localizednameforcategory
@@ -424,447 +424,447 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1437591-localizeddescriptionforfilternam
     localizedDescriptionForFilterName(filterName: string | cocoascript.NSString):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1437642-localizedreferencedocumentationf
-    localizedReferenceDocumentationForFilterName(filterName: string | cocoascript.NSString):cocoascript.NSURL;
+    localizedReferenceDocumentationForFilterName(filterName: string | cocoascript.NSString):NSURL;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1427521-viewforuiconfiguration
-    viewForUIConfiguration_excludedKeys(inUIConfiguration: cocoascript.NSDictionary, inKeys: cocoascript.NSArray):cocoascript.IKFilterUIView;
+    viewForUIConfiguration_excludedKeys(inUIConfiguration: NSDictionary, inKeys: NSArray):IKFilterUIView;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1438006-serializedxmpfromfilters
-    serializedXMPFromFilters_inputImageExtent(filters: cocoascript.CIFilter, extent: cocoascript.CGRect):cocoascript.NSData;
+    serializedXMPFromFilters_inputImageExtent(filters: CIFilter, extent: CGRect):NSData;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1438237-filterarrayfromserializedxmp
-    filterArrayFromSerializedXMP_inputImageExtent_error(xmpData: cocoascript.NSData, extent: cocoascript.CGRect, outError: cocoascript.NSError):cocoascript.CIFilter;
+    filterArrayFromSerializedXMP_inputImageExtent_error(xmpData: NSData, extent: CGRect, outError: NSError):CIFilter;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3242782-supportedrawcameramodels
     supportedRawCameraModels():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228259-cmykhalftone
-    CMYKHalftone():cocoascript.CICMYKHalftone;
+    CMYKHalftone():CICMYKHalftone;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3547110-kmeansfilter
-    KMeansFilter():cocoascript.CIKMeans;
+    KMeansFilter():CIKMeans;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228260-labdeltae
-    LabDeltaE():cocoascript.CILabDeltaE;
+    LabDeltaE():CILabDeltaE;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228261-pdf417barcodegenerator
-    PDF417BarcodeGenerator():cocoascript.CIPDF417BarcodeGenerator;
+    PDF417BarcodeGenerator():CIPDF417BarcodeGenerator;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228262-qrcodegenerator
-    QRCodeGenerator():cocoascript.CIQRCodeGenerator;
+    QRCodeGenerator():CIQRCodeGenerator;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228263-accordionfoldtransitionfilter
-    accordionFoldTransitionFilter():cocoascript.CIAccordionFoldTransition;
+    accordionFoldTransitionFilter():CIAccordionFoldTransition;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228264-additioncompositingfilter
-    additionCompositingFilter():cocoascript.CICompositeOperation;
+    additionCompositingFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228265-affineclampfilter
-    affineClampFilter():cocoascript.CIAffineClamp;
+    affineClampFilter():CIAffineClamp;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228266-affinetilefilter
-    affineTileFilter():cocoascript.CIAffineTile;
+    affineTileFilter():CIAffineTile;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3547111-areaaveragefilter
-    areaAverageFilter():cocoascript.CIAreaAverage;
+    areaAverageFilter():CIAreaAverage;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3547112-areahistogramfilter
-    areaHistogramFilter():cocoascript.CIAreaHistogram;
+    areaHistogramFilter():CIAreaHistogram;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3547113-areamaximumalphafilter
-    areaMaximumAlphaFilter():cocoascript.CIAreaMaximumAlpha;
+    areaMaximumAlphaFilter():CIAreaMaximumAlpha;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3547114-areamaximumfilter
-    areaMaximumFilter():cocoascript.CIAreaMaximum;
+    areaMaximumFilter():CIAreaMaximum;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3547115-areaminmaxfilter
-    areaMinMaxFilter():cocoascript.CIAreaMinMax;
+    areaMinMaxFilter():CIAreaMinMax;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3547116-areaminmaxredfilter
-    areaMinMaxRedFilter():cocoascript.CIAreaMinMaxRed;
+    areaMinMaxRedFilter():CIAreaMinMaxRed;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3547117-areaminimumalphafilter
-    areaMinimumAlphaFilter():cocoascript.CIAreaMinimumAlpha;
+    areaMinimumAlphaFilter():CIAreaMinimumAlpha;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3547118-areaminimumfilter
-    areaMinimumFilter():cocoascript.CIAreaMinimum;
+    areaMinimumFilter():CIAreaMinimum;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228267-attributedtextimagegeneratorfilt
-    attributedTextImageGeneratorFilter():cocoascript.CIAttributedTextImageGenerator;
+    attributedTextImageGeneratorFilter():CIAttributedTextImageGenerator;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228268-azteccodegeneratorfilter
-    aztecCodeGeneratorFilter():cocoascript.CIAztecCodeGenerator;
+    aztecCodeGeneratorFilter():CIAztecCodeGenerator;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228269-barcodegeneratorfilter
-    barcodeGeneratorFilter():cocoascript.CIBarcodeGenerator;
+    barcodeGeneratorFilter():CIBarcodeGenerator;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228270-barsswipetransitionfilter
-    barsSwipeTransitionFilter():cocoascript.CIBarsSwipeTransition;
+    barsSwipeTransitionFilter():CIBarsSwipeTransition;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228271-bicubicscaletransformfilter
-    bicubicScaleTransformFilter():cocoascript.CIBicubicScaleTransform;
+    bicubicScaleTransformFilter():CIBicubicScaleTransform;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228272-blendwithalphamaskfilter
-    blendWithAlphaMaskFilter():cocoascript.CIBlendWithMask;
+    blendWithAlphaMaskFilter():CIBlendWithMask;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228273-blendwithbluemaskfilter
-    blendWithBlueMaskFilter():cocoascript.CIBlendWithMask;
+    blendWithBlueMaskFilter():CIBlendWithMask;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228274-blendwithmaskfilter
-    blendWithMaskFilter():cocoascript.CIBlendWithMask;
+    blendWithMaskFilter():CIBlendWithMask;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228275-blendwithredmaskfilter
-    blendWithRedMaskFilter():cocoascript.CIBlendWithMask;
+    blendWithRedMaskFilter():CIBlendWithMask;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228276-bloomfilter
-    bloomFilter():cocoascript.CIBloom;
+    bloomFilter():CIBloom;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228277-bokehblurfilter
-    bokehBlurFilter():cocoascript.CIBokehBlur;
+    bokehBlurFilter():CIBokehBlur;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228278-boxblurfilter
-    boxBlurFilter():cocoascript.CIBoxBlur;
+    boxBlurFilter():CIBoxBlur;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3600138-bumpdistortionfilter
-    bumpDistortionFilter():cocoascript.CIBumpDistortion;
+    bumpDistortionFilter():CIBumpDistortion;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3600139-bumpdistortionlinearfilter
-    bumpDistortionLinearFilter():cocoascript.CIBumpDistortionLinear;
+    bumpDistortionLinearFilter():CIBumpDistortionLinear;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228279-checkerboardgeneratorfilter
-    checkerboardGeneratorFilter():cocoascript.CICheckerboardGenerator;
+    checkerboardGeneratorFilter():CICheckerboardGenerator;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3600140-circlesplashdistortionfilter
-    circleSplashDistortionFilter():cocoascript.CICircleSplashDistortion;
+    circleSplashDistortionFilter():CICircleSplashDistortion;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228280-circularscreenfilter
-    circularScreenFilter():cocoascript.CICircularScreen;
+    circularScreenFilter():CICircularScreen;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3600141-circularwrapfilter
-    circularWrapFilter():cocoascript.CICircularWrap;
+    circularWrapFilter():CICircularWrap;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228281-code128barcodegeneratorfilter
-    code128BarcodeGeneratorFilter():cocoascript.CICode128BarcodeGenerator;
+    code128BarcodeGeneratorFilter():CICode128BarcodeGenerator;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3547119-colorabsolutedifferencefilter
-    colorAbsoluteDifferenceFilter():cocoascript.CIColorAbsoluteDifference;
+    colorAbsoluteDifferenceFilter():CIColorAbsoluteDifference;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228282-colorblendmodefilter
-    colorBlendModeFilter():cocoascript.CICompositeOperation;
+    colorBlendModeFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228283-colorburnblendmodefilter
-    colorBurnBlendModeFilter():cocoascript.CICompositeOperation;
+    colorBurnBlendModeFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228284-colorclampfilter
-    colorClampFilter():cocoascript.CIColorClamp;
+    colorClampFilter():CIColorClamp;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228285-colorcontrolsfilter
-    colorControlsFilter():cocoascript.CIColorControls;
+    colorControlsFilter():CIColorControls;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228286-colorcrosspolynomialfilter
-    colorCrossPolynomialFilter():cocoascript.CIColorCrossPolynomial;
+    colorCrossPolynomialFilter():CIColorCrossPolynomial;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228287-colorcubefilter
-    colorCubeFilter():cocoascript.CIColorCube;
+    colorCubeFilter():CIColorCube;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228288-colorcubewithcolorspacefilter
-    colorCubeWithColorSpaceFilter():cocoascript.CIColorCubeWithColorSpace;
+    colorCubeWithColorSpaceFilter():CIColorCubeWithColorSpace;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228289-colorcubesmixedwithmaskfilter
-    colorCubesMixedWithMaskFilter():cocoascript.CIColorCubesMixedWithMask;
+    colorCubesMixedWithMaskFilter():CIColorCubesMixedWithMask;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228290-colorcurvesfilter
-    colorCurvesFilter():cocoascript.CIColorCurves;
+    colorCurvesFilter():CIColorCurves;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228291-colordodgeblendmodefilter
-    colorDodgeBlendModeFilter():cocoascript.CICompositeOperation;
+    colorDodgeBlendModeFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228292-colorinvertfilter
-    colorInvertFilter():cocoascript.CIColorInvert;
+    colorInvertFilter():CIColorInvert;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228293-colormapfilter
-    colorMapFilter():cocoascript.CIColorMap;
+    colorMapFilter():CIColorMap;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228294-colormatrixfilter
-    colorMatrixFilter():cocoascript.CIColorMatrix;
+    colorMatrixFilter():CIColorMatrix;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228295-colormonochromefilter
-    colorMonochromeFilter():cocoascript.CIColorMonochrome;
+    colorMonochromeFilter():CIColorMonochrome;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228296-colorpolynomialfilter
-    colorPolynomialFilter():cocoascript.CIColorPolynomial;
+    colorPolynomialFilter():CIColorPolynomial;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228297-colorposterizefilter
-    colorPosterizeFilter():cocoascript.CIColorPosterize;
+    colorPosterizeFilter():CIColorPosterize;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3547120-colorthresholdfilter
-    colorThresholdFilter():cocoascript.CIColorThreshold;
+    colorThresholdFilter():CIColorThreshold;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3584770-colorthresholdotsufilter
-    colorThresholdOtsuFilter():cocoascript.CIColorThresholdOtsu;
+    colorThresholdOtsuFilter():CIColorThresholdOtsu;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3547121-columnaveragefilter
-    columnAverageFilter():cocoascript.CIColumnAverage;
+    columnAverageFilter():CIColumnAverage;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228298-comiceffectfilter
-    comicEffectFilter():cocoascript.CIComicEffect;
+    comicEffectFilter():CIComicEffect;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228299-convolution3x3filter
-    convolution3X3Filter():cocoascript.CIConvolution;
+    convolution3X3Filter():CIConvolution;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228300-convolution5x5filter
-    convolution5X5Filter():cocoascript.CIConvolution;
+    convolution5X5Filter():CIConvolution;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228301-convolution7x7filter
-    convolution7X7Filter():cocoascript.CIConvolution;
+    convolution7X7Filter():CIConvolution;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228302-convolution9horizontalfilter
-    convolution9HorizontalFilter():cocoascript.CIConvolution;
+    convolution9HorizontalFilter():CIConvolution;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228303-convolution9verticalfilter
-    convolution9VerticalFilter():cocoascript.CIConvolution;
+    convolution9VerticalFilter():CIConvolution;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228304-copymachinetransitionfilter
-    copyMachineTransitionFilter():cocoascript.CICopyMachineTransition;
+    copyMachineTransitionFilter():CICopyMachineTransition;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228305-coremlmodelfilter
-    coreMLModelFilter():cocoascript.CICoreMLModel;
+    coreMLModelFilter():CICoreMLModel;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228306-crystallizefilter
-    crystallizeFilter():cocoascript.CICrystallize;
+    crystallizeFilter():CICrystallize;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228307-darkenblendmodefilter
-    darkenBlendModeFilter():cocoascript.CICompositeOperation;
+    darkenBlendModeFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228308-depthoffieldfilter
-    depthOfFieldFilter():cocoascript.CIDepthOfField;
+    depthOfFieldFilter():CIDepthOfField;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228309-depthtodisparityfilter
-    depthToDisparityFilter():cocoascript.CIDepthToDisparity;
+    depthToDisparityFilter():CIDepthToDisparity;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228310-differenceblendmodefilter
-    differenceBlendModeFilter():cocoascript.CICompositeOperation;
+    differenceBlendModeFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228311-discblurfilter
-    discBlurFilter():cocoascript.CIDiscBlur;
+    discBlurFilter():CIDiscBlur;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228312-disintegratewithmasktransitionfi
-    disintegrateWithMaskTransitionFilter():cocoascript.CIDisintegrateWithMaskTransition;
+    disintegrateWithMaskTransitionFilter():CIDisintegrateWithMaskTransition;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228313-disparitytodepthfilter
-    disparityToDepthFilter():cocoascript.CIDisparityToDepth;
+    disparityToDepthFilter():CIDisparityToDepth;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3600142-displacementdistortionfilter
-    displacementDistortionFilter():cocoascript.CIDisplacementDistortion;
+    displacementDistortionFilter():CIDisplacementDistortion;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228314-dissolvetransitionfilter
-    dissolveTransitionFilter():cocoascript.CIDissolveTransition;
+    dissolveTransitionFilter():CIDissolveTransition;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228315-ditherfilter
-    ditherFilter():cocoascript.CIDither;
+    ditherFilter():CIDither;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228316-divideblendmodefilter
-    divideBlendModeFilter():cocoascript.CICompositeOperation;
+    divideBlendModeFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228317-documentenhancerfilter
-    documentEnhancerFilter():cocoascript.CIDocumentEnhancer;
+    documentEnhancerFilter():CIDocumentEnhancer;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228318-dotscreenfilter
-    dotScreenFilter():cocoascript.CIDotScreen;
+    dotScreenFilter():CIDotScreen;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3600143-drostefilter
-    drosteFilter():cocoascript.CIDroste;
+    drosteFilter():CIDroste;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228319-edgepreserveupsamplefilter
-    edgePreserveUpsampleFilter():cocoascript.CIEdgePreserveUpsample;
+    edgePreserveUpsampleFilter():CIEdgePreserveUpsample;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228320-edgeworkfilter
-    edgeWorkFilter():cocoascript.CIEdgeWork;
+    edgeWorkFilter():CIEdgeWork;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228321-edgesfilter
-    edgesFilter():cocoascript.CIEdges;
+    edgesFilter():CIEdges;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228322-eightfoldreflectedtilefilter
-    eightfoldReflectedTileFilter():cocoascript.CIEightfoldReflectedTile;
+    eightfoldReflectedTileFilter():CIEightfoldReflectedTile;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228323-exclusionblendmodefilter
-    exclusionBlendModeFilter():cocoascript.CICompositeOperation;
+    exclusionBlendModeFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228324-exposureadjustfilter
-    exposureAdjustFilter():cocoascript.CIExposureAdjust;
+    exposureAdjustFilter():CIExposureAdjust;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228325-falsecolorfilter
-    falseColorFilter():cocoascript.CIFalseColor;
+    falseColorFilter():CIFalseColor;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228326-flashtransitionfilter
-    flashTransitionFilter():cocoascript.CIFlashTransition;
+    flashTransitionFilter():CIFlashTransition;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228327-fourfoldreflectedtilefilter
-    fourfoldReflectedTileFilter():cocoascript.CIFourfoldReflectedTile;
+    fourfoldReflectedTileFilter():CIFourfoldReflectedTile;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228328-fourfoldrotatedtilefilter
-    fourfoldRotatedTileFilter():cocoascript.CIFourfoldRotatedTile;
+    fourfoldRotatedTileFilter():CIFourfoldRotatedTile;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228329-fourfoldtranslatedtilefilter
-    fourfoldTranslatedTileFilter():cocoascript.CIFourfoldTranslatedTile;
+    fourfoldTranslatedTileFilter():CIFourfoldTranslatedTile;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3325508-gaborgradientsfilter
-    gaborGradientsFilter():cocoascript.CIGaborGradients;
+    gaborGradientsFilter():CIGaborGradients;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228330-gammaadjustfilter
-    gammaAdjustFilter():cocoascript.CIGammaAdjust;
+    gammaAdjustFilter():CIGammaAdjust;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228331-gaussianblurfilter
-    gaussianBlurFilter():cocoascript.CIGaussianBlur;
+    gaussianBlurFilter():CIGaussianBlur;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228332-gaussiangradientfilter
-    gaussianGradientFilter():cocoascript.CIGaussianGradient;
+    gaussianGradientFilter():CIGaussianGradient;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3600144-glassdistortionfilter
-    glassDistortionFilter():cocoascript.CIGlassDistortion;
+    glassDistortionFilter():CIGlassDistortion;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3600145-glasslozengefilter
-    glassLozengeFilter():cocoascript.CIGlassLozenge;
+    glassLozengeFilter():CIGlassLozenge;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228333-glidereflectedtilefilter
-    glideReflectedTileFilter():cocoascript.CIGlideReflectedTile;
+    glideReflectedTileFilter():CIGlideReflectedTile;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228334-gloomfilter
-    gloomFilter():cocoascript.CIGloom;
+    gloomFilter():CIGloom;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228335-hardlightblendmodefilter
-    hardLightBlendModeFilter():cocoascript.CICompositeOperation;
+    hardLightBlendModeFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228336-hatchedscreenfilter
-    hatchedScreenFilter():cocoascript.CIHatchedScreen;
+    hatchedScreenFilter():CIHatchedScreen;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228337-heightfieldfrommaskfilter
-    heightFieldFromMaskFilter():cocoascript.CIHeightFieldFromMask;
+    heightFieldFromMaskFilter():CIHeightFieldFromMask;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228338-hexagonalpixellatefilter
-    hexagonalPixellateFilter():cocoascript.CIHexagonalPixellate;
+    hexagonalPixellateFilter():CIHexagonalPixellate;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228339-highlightshadowadjustfilter
-    highlightShadowAdjustFilter():cocoascript.CIHighlightShadowAdjust;
+    highlightShadowAdjustFilter():CIHighlightShadowAdjust;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3547122-histogramdisplayfilter
-    histogramDisplayFilter():cocoascript.CIHistogramDisplay;
+    histogramDisplayFilter():CIHistogramDisplay;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3600146-holedistortionfilter
-    holeDistortionFilter():cocoascript.CIHoleDistortion;
+    holeDistortionFilter():CIHoleDistortion;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228340-hueadjustfilter
-    hueAdjustFilter():cocoascript.CIHueAdjust;
+    hueAdjustFilter():CIHueAdjust;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228341-hueblendmodefilter
-    hueBlendModeFilter():cocoascript.CICompositeOperation;
+    hueBlendModeFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228342-huesaturationvaluegradientfilter
-    hueSaturationValueGradientFilter():cocoascript.CIHueSaturationValueGradient;
+    hueSaturationValueGradientFilter():CIHueSaturationValueGradient;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228343-kaleidoscopefilter
-    kaleidoscopeFilter():cocoascript.CIKaleidoscope;
+    kaleidoscopeFilter():CIKaleidoscope;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3325509-keystonecorrectioncombinedfilter
-    keystoneCorrectionCombinedFilter():cocoascript.CIKeystoneCorrectionCombined;
+    keystoneCorrectionCombinedFilter():CIKeystoneCorrectionCombined;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3325510-keystonecorrectionhorizontalfilt
-    keystoneCorrectionHorizontalFilter():cocoascript.CIKeystoneCorrectionHorizontal;
+    keystoneCorrectionHorizontalFilter():CIKeystoneCorrectionHorizontal;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3325511-keystonecorrectionverticalfilter
-    keystoneCorrectionVerticalFilter():cocoascript.CIKeystoneCorrectionVertical;
+    keystoneCorrectionVerticalFilter():CIKeystoneCorrectionVertical;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228344-lanczosscaletransformfilter
-    lanczosScaleTransformFilter():cocoascript.CILanczosScaleTransform;
+    lanczosScaleTransformFilter():CILanczosScaleTransform;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228345-lenticularhalogeneratorfilter
-    lenticularHaloGeneratorFilter():cocoascript.CILenticularHaloGenerator;
+    lenticularHaloGeneratorFilter():CILenticularHaloGenerator;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3600147-lighttunnelfilter
-    lightTunnelFilter():cocoascript.CILightTunnel;
+    lightTunnelFilter():CILightTunnel;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228346-lightenblendmodefilter
-    lightenBlendModeFilter():cocoascript.CICompositeOperation;
+    lightenBlendModeFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228347-lineoverlayfilter
-    lineOverlayFilter():cocoascript.CILineOverlay;
+    lineOverlayFilter():CILineOverlay;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228348-linescreenfilter
-    lineScreenFilter():cocoascript.CILineScreen;
+    lineScreenFilter():CILineScreen;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228349-linearburnblendmodefilter
-    linearBurnBlendModeFilter():cocoascript.CICompositeOperation;
+    linearBurnBlendModeFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228350-lineardodgeblendmodefilter
-    linearDodgeBlendModeFilter():cocoascript.CICompositeOperation;
+    linearDodgeBlendModeFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228351-lineargradientfilter
-    linearGradientFilter():cocoascript.CILinearGradient;
+    linearGradientFilter():CILinearGradient;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228352-lineartosrgbtonecurvefilter
-    linearToSRGBToneCurveFilter():cocoascript.CILinearToSRGBToneCurve;
+    linearToSRGBToneCurveFilter():CILinearToSRGBToneCurve;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228353-luminosityblendmodefilter
-    luminosityBlendModeFilter():cocoascript.CICompositeOperation;
+    luminosityBlendModeFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228354-masktoalphafilter
-    maskToAlphaFilter():cocoascript.CIMaskToAlpha;
+    maskToAlphaFilter():CIMaskToAlpha;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228355-maskedvariableblurfilter
-    maskedVariableBlurFilter():cocoascript.CIMaskedVariableBlur;
+    maskedVariableBlurFilter():CIMaskedVariableBlur;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228356-maximumcomponentfilter
-    maximumComponentFilter():cocoascript.CIMaximumComponent;
+    maximumComponentFilter():CIMaximumComponent;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228357-maximumcompositingfilter
-    maximumCompositingFilter():cocoascript.CICompositeOperation;
+    maximumCompositingFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228358-medianfilter
-    medianFilter():cocoascript.CIMedian;
+    medianFilter():CIMedian;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228359-meshgeneratorfilter
-    meshGeneratorFilter():cocoascript.CIMeshGenerator;
+    meshGeneratorFilter():CIMeshGenerator;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228360-minimumcomponentfilter
-    minimumComponentFilter():cocoascript.CIMinimumComponent;
+    minimumComponentFilter():CIMinimumComponent;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228361-minimumcompositingfilter
-    minimumCompositingFilter():cocoascript.CICompositeOperation;
+    minimumCompositingFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228362-mixfilter
-    mixFilter():cocoascript.CIMix;
+    mixFilter():CIMix;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228363-modtransitionfilter
-    modTransitionFilter():cocoascript.CIModTransition;
+    modTransitionFilter():CIModTransition;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228364-morphologygradientfilter
-    morphologyGradientFilter():cocoascript.CIMorphologyGradient;
+    morphologyGradientFilter():CIMorphologyGradient;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228365-morphologymaximumfilter
-    morphologyMaximumFilter():cocoascript.CIMorphologyMaximum;
+    morphologyMaximumFilter():CIMorphologyMaximum;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228366-morphologyminimumfilter
-    morphologyMinimumFilter():cocoascript.CIMorphologyMinimum;
+    morphologyMinimumFilter():CIMorphologyMinimum;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228367-morphologyrectanglemaximumfilter
-    morphologyRectangleMaximumFilter():cocoascript.CIMorphologyRectangleMaximum;
+    morphologyRectangleMaximumFilter():CIMorphologyRectangleMaximum;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228368-morphologyrectangleminimumfilter
-    morphologyRectangleMinimumFilter():cocoascript.CIMorphologyRectangleMinimum;
+    morphologyRectangleMinimumFilter():CIMorphologyRectangleMinimum;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228369-motionblurfilter
-    motionBlurFilter():cocoascript.CIMotionBlur;
+    motionBlurFilter():CIMotionBlur;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228370-multiplyblendmodefilter
-    multiplyBlendModeFilter():cocoascript.CICompositeOperation;
+    multiplyBlendModeFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228371-multiplycompositingfilter
-    multiplyCompositingFilter():cocoascript.CICompositeOperation;
+    multiplyCompositingFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3600148-ninepartstretchedfilter
-    ninePartStretchedFilter():cocoascript.CINinePartStretched;
+    ninePartStretchedFilter():CINinePartStretched;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3600149-nineparttiledfilter
-    ninePartTiledFilter():cocoascript.CINinePartTiled;
+    ninePartTiledFilter():CINinePartTiled;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228372-noisereductionfilter
-    noiseReductionFilter():cocoascript.CINoiseReduction;
+    noiseReductionFilter():CINoiseReduction;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228373-optilefilter
-    opTileFilter():cocoascript.CIOpTile;
+    opTileFilter():CIOpTile;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228374-overlayblendmodefilter
-    overlayBlendModeFilter():cocoascript.CICompositeOperation;
+    overlayBlendModeFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228375-pagecurltransitionfilter
-    pageCurlTransitionFilter():cocoascript.CIPageCurlTransition;
+    pageCurlTransitionFilter():CIPageCurlTransition;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228376-pagecurlwithshadowtransitionfilt
-    pageCurlWithShadowTransitionFilter():cocoascript.CIPageCurlWithShadowTransition;
+    pageCurlWithShadowTransitionFilter():CIPageCurlWithShadowTransition;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228377-palettecentroidfilter
-    paletteCentroidFilter():cocoascript.CIPaletteCentroid;
+    paletteCentroidFilter():CIPaletteCentroid;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228378-palettizefilter
-    palettizeFilter():cocoascript.CIPalettize;
+    palettizeFilter():CIPalettize;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228379-parallelogramtilefilter
-    parallelogramTileFilter():cocoascript.CIParallelogramTile;
+    parallelogramTileFilter():CIParallelogramTile;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228380-perspectivecorrectionfilter
-    perspectiveCorrectionFilter():cocoascript.CIPerspectiveCorrection;
+    perspectiveCorrectionFilter():CIPerspectiveCorrection;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3325512-perspectiverotatefilter
-    perspectiveRotateFilter():cocoascript.CIPerspectiveRotate;
+    perspectiveRotateFilter():CIPerspectiveRotate;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228381-perspectivetilefilter
-    perspectiveTileFilter():cocoascript.CIPerspectiveTile;
+    perspectiveTileFilter():CIPerspectiveTile;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228382-perspectivetransformfilter
-    perspectiveTransformFilter():cocoascript.CIPerspectiveTransform;
+    perspectiveTransformFilter():CIPerspectiveTransform;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228383-perspectivetransformwithextentfi
-    perspectiveTransformWithExtentFilter():cocoascript.CIPerspectiveTransformWithExtent;
+    perspectiveTransformWithExtentFilter():CIPerspectiveTransformWithExtent;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228384-photoeffectchromefilter
-    photoEffectChromeFilter():cocoascript.CIPhotoEffect;
+    photoEffectChromeFilter():CIPhotoEffect;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228385-photoeffectfadefilter
-    photoEffectFadeFilter():cocoascript.CIPhotoEffect;
+    photoEffectFadeFilter():CIPhotoEffect;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228386-photoeffectinstantfilter
-    photoEffectInstantFilter():cocoascript.CIPhotoEffect;
+    photoEffectInstantFilter():CIPhotoEffect;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228387-photoeffectmonofilter
-    photoEffectMonoFilter():cocoascript.CIPhotoEffect;
+    photoEffectMonoFilter():CIPhotoEffect;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228388-photoeffectnoirfilter
-    photoEffectNoirFilter():cocoascript.CIPhotoEffect;
+    photoEffectNoirFilter():CIPhotoEffect;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228389-photoeffectprocessfilter
-    photoEffectProcessFilter():cocoascript.CIPhotoEffect;
+    photoEffectProcessFilter():CIPhotoEffect;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228390-photoeffecttonalfilter
-    photoEffectTonalFilter():cocoascript.CIPhotoEffect;
+    photoEffectTonalFilter():CIPhotoEffect;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228391-photoeffecttransferfilter
-    photoEffectTransferFilter():cocoascript.CIPhotoEffect;
+    photoEffectTransferFilter():CIPhotoEffect;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228392-pinlightblendmodefilter
-    pinLightBlendModeFilter():cocoascript.CICompositeOperation;
+    pinLightBlendModeFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3600150-pinchdistortionfilter
-    pinchDistortionFilter():cocoascript.CIPinchDistortion;
+    pinchDistortionFilter():CIPinchDistortion;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228393-pixellatefilter
-    pixellateFilter():cocoascript.CIPixellate;
+    pixellateFilter():CIPixellate;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228394-pointillizefilter
-    pointillizeFilter():cocoascript.CIPointillize;
+    pointillizeFilter():CIPointillize;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228395-radialgradientfilter
-    radialGradientFilter():cocoascript.CIRadialGradient;
+    radialGradientFilter():CIRadialGradient;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228396-randomgeneratorfilter
-    randomGeneratorFilter():cocoascript.CIRandomGenerator;
+    randomGeneratorFilter():CIRandomGenerator;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228397-rippletransitionfilter
-    rippleTransitionFilter():cocoascript.CIRippleTransition;
+    rippleTransitionFilter():CIRippleTransition;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3335007-roundedrectanglegeneratorfilter
-    roundedRectangleGeneratorFilter():cocoascript.CIRoundedRectangleGenerator;
+    roundedRectangleGeneratorFilter():CIRoundedRectangleGenerator;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3547123-rowaveragefilter
-    rowAverageFilter():cocoascript.CIRowAverage;
+    rowAverageFilter():CIRowAverage;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228398-srgbtonecurvetolinearfilter
-    sRGBToneCurveToLinearFilter():cocoascript.CISRGBToneCurveToLinear;
+    sRGBToneCurveToLinearFilter():CISRGBToneCurveToLinear;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228399-saliencymapfilter
-    saliencyMapFilter():cocoascript.CISaliencyMap;
+    saliencyMapFilter():CISaliencyMap;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228400-saturationblendmodefilter
-    saturationBlendModeFilter():cocoascript.CICompositeOperation;
+    saturationBlendModeFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228401-screenblendmodefilter
-    screenBlendModeFilter():cocoascript.CICompositeOperation;
+    screenBlendModeFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228402-sepiatonefilter
-    sepiaToneFilter():cocoascript.CISepiaTone;
+    sepiaToneFilter():CISepiaTone;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228403-shadedmaterialfilter
-    shadedMaterialFilter():cocoascript.CIShadedMaterial;
+    shadedMaterialFilter():CIShadedMaterial;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228404-sharpenluminancefilter
-    sharpenLuminanceFilter():cocoascript.CISharpenLuminance;
+    sharpenLuminanceFilter():CISharpenLuminance;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228405-sixfoldreflectedtilefilter
-    sixfoldReflectedTileFilter():cocoascript.CISixfoldReflectedTile;
+    sixfoldReflectedTileFilter():CISixfoldReflectedTile;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228406-sixfoldrotatedtilefilter
-    sixfoldRotatedTileFilter():cocoascript.CISixfoldRotatedTile;
+    sixfoldRotatedTileFilter():CISixfoldRotatedTile;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228407-smoothlineargradientfilter
-    smoothLinearGradientFilter():cocoascript.CISmoothLinearGradient;
+    smoothLinearGradientFilter():CISmoothLinearGradient;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228408-softlightblendmodefilter
-    softLightBlendModeFilter():cocoascript.CICompositeOperation;
+    softLightBlendModeFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228409-sourceatopcompositingfilter
-    sourceAtopCompositingFilter():cocoascript.CICompositeOperation;
+    sourceAtopCompositingFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228410-sourceincompositingfilter
-    sourceInCompositingFilter():cocoascript.CICompositeOperation;
+    sourceInCompositingFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228411-sourceoutcompositingfilter
-    sourceOutCompositingFilter():cocoascript.CICompositeOperation;
+    sourceOutCompositingFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228412-sourceovercompositingfilter
-    sourceOverCompositingFilter():cocoascript.CICompositeOperation;
+    sourceOverCompositingFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228413-spotcolorfilter
-    spotColorFilter():cocoascript.CISpotColor;
+    spotColorFilter():CISpotColor;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228414-spotlightfilter
-    spotLightFilter():cocoascript.CISpotLight;
+    spotLightFilter():CISpotLight;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228415-starshinegeneratorfilter
-    starShineGeneratorFilter():cocoascript.CIStarShineGenerator;
+    starShineGeneratorFilter():CIStarShineGenerator;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228416-straightenfilter
-    straightenFilter():cocoascript.CIStraighten;
+    straightenFilter():CIStraighten;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3600151-stretchcropfilter
-    stretchCropFilter():cocoascript.CIStretchCrop;
+    stretchCropFilter():CIStretchCrop;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228417-stripesgeneratorfilter
-    stripesGeneratorFilter():cocoascript.CIStripesGenerator;
+    stripesGeneratorFilter():CIStripesGenerator;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228418-subtractblendmodefilter
-    subtractBlendModeFilter():cocoascript.CICompositeOperation;
+    subtractBlendModeFilter():CICompositeOperation;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228419-sunbeamsgeneratorfilter
-    sunbeamsGeneratorFilter():cocoascript.CISunbeamsGenerator;
+    sunbeamsGeneratorFilter():CISunbeamsGenerator;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228420-swipetransitionfilter
-    swipeTransitionFilter():cocoascript.CISwipeTransition;
+    swipeTransitionFilter():CISwipeTransition;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228421-temperatureandtintfilter
-    temperatureAndTintFilter():cocoascript.CITemperatureAndTint;
+    temperatureAndTintFilter():CITemperatureAndTint;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228422-textimagegeneratorfilter
-    textImageGeneratorFilter():cocoascript.CITextImageGenerator;
+    textImageGeneratorFilter():CITextImageGenerator;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228423-thermalfilter
-    thermalFilter():cocoascript.CIThermal;
+    thermalFilter():CIThermal;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228424-tonecurvefilter
-    toneCurveFilter():cocoascript.CIToneCurve;
+    toneCurveFilter():CIToneCurve;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3600152-toruslensdistortionfilter
-    torusLensDistortionFilter():cocoascript.CITorusLensDistortion;
+    torusLensDistortionFilter():CITorusLensDistortion;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228425-trianglekaleidoscopefilter
-    triangleKaleidoscopeFilter():cocoascript.CITriangleKaleidoscope;
+    triangleKaleidoscopeFilter():CITriangleKaleidoscope;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228426-triangletilefilter
-    triangleTileFilter():cocoascript.CITriangleTile;
+    triangleTileFilter():CITriangleTile;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228427-twelvefoldreflectedtilefilter
-    twelvefoldReflectedTileFilter():cocoascript.CITwelvefoldReflectedTile;
+    twelvefoldReflectedTileFilter():CITwelvefoldReflectedTile;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3600153-twirldistortionfilter
-    twirlDistortionFilter():cocoascript.CITwirlDistortion;
+    twirlDistortionFilter():CITwirlDistortion;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228428-unsharpmaskfilter
-    unsharpMaskFilter():cocoascript.CIUnsharpMask;
+    unsharpMaskFilter():CIUnsharpMask;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228429-vibrancefilter
-    vibranceFilter():cocoascript.CIVibrance;
+    vibranceFilter():CIVibrance;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228430-vignetteeffectfilter
-    vignetteEffectFilter():cocoascript.CIVignetteEffect;
+    vignetteEffectFilter():CIVignetteEffect;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228431-vignettefilter
-    vignetteFilter():cocoascript.CIVignette;
+    vignetteFilter():CIVignette;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3600154-vortexdistortionfilter
-    vortexDistortionFilter():cocoascript.CIVortexDistortion;
+    vortexDistortionFilter():CIVortexDistortion;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228432-whitepointadjustfilter
-    whitePointAdjustFilter():cocoascript.CIWhitePointAdjust;
+    whitePointAdjustFilter():CIWhitePointAdjust;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228433-xrayfilter
-    xRayFilter():cocoascript.CIXRay;
+    xRayFilter():CIXRay;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228434-zoomblurfilter
-    zoomBlurFilter():cocoascript.CIZoomBlur;
+    zoomBlurFilter():CIZoomBlur;
     //
-    alloc():cocoascript.CIFilter;
+    alloc():CIFilter;
     //
-    init():cocoascript.CIFilter;
+    init():CIFilter;
   }
 }
 
@@ -876,28 +876,28 @@ declare namespace cocoascript {
    */
   interface CIFilterShape extends NSObject {
     // doc://com.apple.documentation/documentation/coreimage/cifiltershape/1562074-shapewithrect
-    shapeWithRect(r: cocoascript.CGRect):cocoascript.CIFilterShape;
+    shapeWithRect(r: CGRect):CIFilterShape;
     // doc://com.apple.documentation/documentation/coreimage/cifiltershape/1437921-initwithrect
-    initWithRect(r: cocoascript.CGRect):cocoascript.CIFilterShape;
+    initWithRect(r: CGRect):CIFilterShape;
     // doc://com.apple.documentation/documentation/coreimage/cifiltershape/1438022-extent
-    extent(): cocoascript.CGRect;
+    extent(): CGRect;
     setExtent(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifiltershape/1437987-insetbyx
-    insetByX_Y(dx: number, dy: number):cocoascript.CIFilterShape;
+    insetByX_Y(dx: number, dy: number):CIFilterShape;
     // doc://com.apple.documentation/documentation/coreimage/cifiltershape/1437881-intersectwith
-    intersectWith(s2: cocoascript.CIFilterShape):cocoascript.CIFilterShape;
+    intersectWith(s2: CIFilterShape):CIFilterShape;
     // doc://com.apple.documentation/documentation/coreimage/cifiltershape/1437806-intersectwithrect
-    intersectWithRect(r: cocoascript.CGRect):cocoascript.CIFilterShape;
+    intersectWithRect(r: CGRect):CIFilterShape;
     // doc://com.apple.documentation/documentation/coreimage/cifiltershape/1437808-transformby
-    transformBy_interior(m: cocoascript.CGAffineTransform, flag: cocoascript.BOOL):cocoascript.CIFilterShape;
+    transformBy_interior(m: CGAffineTransform, flag: BOOL):CIFilterShape;
     // doc://com.apple.documentation/documentation/coreimage/cifiltershape/1438227-unionwith
-    unionWith(s2: cocoascript.CIFilterShape):cocoascript.CIFilterShape;
+    unionWith(s2: CIFilterShape):CIFilterShape;
     // doc://com.apple.documentation/documentation/coreimage/cifiltershape/1437601-unionwithrect
-    unionWithRect(r: cocoascript.CGRect):cocoascript.CIFilterShape;
+    unionWithRect(r: CGRect):CIFilterShape;
     //
-    alloc():cocoascript.CIFilterShape;
+    alloc():CIFilterShape;
     //
-    init():cocoascript.CIFilterShape;
+    init():CIFilterShape;
   }
 }
 
@@ -909,74 +909,74 @@ declare namespace cocoascript {
    */
   interface CIVector extends NSObject {
     // doc://com.apple.documentation/documentation/coreimage/civector/1564088-vectorwithvalues
-    vectorWithValues_count(values: cocoascript.CGFloat, count: any):cocoascript.CIVector;
+    vectorWithValues_count(values: CGFloat, count: any):CIVector;
     // doc://com.apple.documentation/documentation/coreimage/civector/1564092-vectorwithx
-    vectorWithX(x: cocoascript.CGFloat):cocoascript.CIVector;
+    vectorWithX(x: CGFloat):CIVector;
     // doc://com.apple.documentation/documentation/coreimage/civector/1564091-vectorwithx
-    vectorWithX_Y(x: cocoascript.CGFloat, y: cocoascript.CGFloat):cocoascript.CIVector;
+    vectorWithX_Y(x: CGFloat, y: CGFloat):CIVector;
     // doc://com.apple.documentation/documentation/coreimage/civector/1564089-vectorwithx
-    vectorWithX_Y_Z(x: cocoascript.CGFloat, y: cocoascript.CGFloat, z: cocoascript.CGFloat):cocoascript.CIVector;
+    vectorWithX_Y_Z(x: CGFloat, y: CGFloat, z: CGFloat):CIVector;
     // doc://com.apple.documentation/documentation/coreimage/civector/1564087-vectorwithx
-    vectorWithX_Y_Z_W(x: cocoascript.CGFloat, y: cocoascript.CGFloat, z: cocoascript.CGFloat, w: cocoascript.CGFloat):cocoascript.CIVector;
+    vectorWithX_Y_Z_W(x: CGFloat, y: CGFloat, z: CGFloat, w: CGFloat):CIVector;
     // doc://com.apple.documentation/documentation/coreimage/civector/1564093-vectorwithstring
-    vectorWithString(representation: string | cocoascript.NSString):cocoascript.CIVector;
+    vectorWithString(representation: string | cocoascript.NSString):CIVector;
     // doc://com.apple.documentation/documentation/coreimage/civector/1564090-vectorwithcgaffinetransform
-    vectorWithCGAffineTransform(t: cocoascript.CGAffineTransform):cocoascript.CIVector;
+    vectorWithCGAffineTransform(t: CGAffineTransform):CIVector;
     // doc://com.apple.documentation/documentation/coreimage/civector/1564086-vectorwithcgpoint
-    vectorWithCGPoint(p: cocoascript.CGPoint):cocoascript.CIVector;
+    vectorWithCGPoint(p: CGPoint):CIVector;
     // doc://com.apple.documentation/documentation/coreimage/civector/1564085-vectorwithcgrect
-    vectorWithCGRect(r: cocoascript.CGRect):cocoascript.CIVector;
+    vectorWithCGRect(r: CGRect):CIVector;
     // doc://com.apple.documentation/documentation/coreimage/civector/1437849-initwithvalues
-    initWithValues_count(values: cocoascript.CGFloat, count: any):cocoascript.CIVector;
+    initWithValues_count(values: CGFloat, count: any):CIVector;
     // doc://com.apple.documentation/documentation/coreimage/civector/1437657-initwithx
-    initWithX(x: cocoascript.CGFloat):cocoascript.CIVector;
+    initWithX(x: CGFloat):CIVector;
     // doc://com.apple.documentation/documentation/coreimage/civector/1437865-initwithx
-    initWithX_Y(x: cocoascript.CGFloat, y: cocoascript.CGFloat):cocoascript.CIVector;
+    initWithX_Y(x: CGFloat, y: CGFloat):CIVector;
     // doc://com.apple.documentation/documentation/coreimage/civector/1438056-initwithx
-    initWithX_Y_Z(x: cocoascript.CGFloat, y: cocoascript.CGFloat, z: cocoascript.CGFloat):cocoascript.CIVector;
+    initWithX_Y_Z(x: CGFloat, y: CGFloat, z: CGFloat):CIVector;
     // doc://com.apple.documentation/documentation/coreimage/civector/1438088-initwithx
-    initWithX_Y_Z_W(x: cocoascript.CGFloat, y: cocoascript.CGFloat, z: cocoascript.CGFloat, w: cocoascript.CGFloat):cocoascript.CIVector;
+    initWithX_Y_Z_W(x: CGFloat, y: CGFloat, z: CGFloat, w: CGFloat):CIVector;
     // doc://com.apple.documentation/documentation/coreimage/civector/1437938-initwithstring
-    initWithString(representation: string | cocoascript.NSString):cocoascript.CIVector;
+    initWithString(representation: string | cocoascript.NSString):CIVector;
     // doc://com.apple.documentation/documentation/coreimage/civector/1438102-initwithcgaffinetransform
-    initWithCGAffineTransform(r: cocoascript.CGAffineTransform):cocoascript.CIVector;
+    initWithCGAffineTransform(r: CGAffineTransform):CIVector;
     // doc://com.apple.documentation/documentation/coreimage/civector/1438133-initwithcgpoint
-    initWithCGPoint(p: cocoascript.CGPoint):cocoascript.CIVector;
+    initWithCGPoint(p: CGPoint):CIVector;
     // doc://com.apple.documentation/documentation/coreimage/civector/1437644-initwithcgrect
-    initWithCGRect(r: cocoascript.CGRect):cocoascript.CIVector;
+    initWithCGRect(r: CGRect):CIVector;
     // doc://com.apple.documentation/documentation/coreimage/civector/1438207-valueatindex
-    valueAtIndex(index: any):cocoascript.CGFloat;
+    valueAtIndex(index: any):CGFloat;
     // doc://com.apple.documentation/documentation/coreimage/civector/1438197-count
     count(): any;
     setCount(): void;
     // doc://com.apple.documentation/documentation/coreimage/civector/1437738-x
-    X(): cocoascript.CGFloat;
+    X(): CGFloat;
     setX(): void;
     // doc://com.apple.documentation/documentation/coreimage/civector/1437843-y
-    Y(): cocoascript.CGFloat;
+    Y(): CGFloat;
     setY(): void;
     // doc://com.apple.documentation/documentation/coreimage/civector/1437627-z
-    Z(): cocoascript.CGFloat;
+    Z(): CGFloat;
     setZ(): void;
     // doc://com.apple.documentation/documentation/coreimage/civector/1438058-w
-    W(): cocoascript.CGFloat;
+    W(): CGFloat;
     setW(): void;
     // doc://com.apple.documentation/documentation/coreimage/civector/1437752-stringrepresentation
     stringRepresentation(): string | cocoascript.NSString;
     setStringRepresentation(): void;
     // doc://com.apple.documentation/documentation/coreimage/civector/1438249-cgaffinetransformvalue
-    CGAffineTransformValue(): cocoascript.CGAffineTransform;
+    CGAffineTransformValue(): CGAffineTransform;
     setCGAffineTransformValue(): void;
     // doc://com.apple.documentation/documentation/coreimage/civector/1437672-cgpointvalue
-    CGPointValue(): cocoascript.CGPoint;
+    CGPointValue(): CGPoint;
     setCGPointValue(): void;
     // doc://com.apple.documentation/documentation/coreimage/civector/1438108-cgrectvalue
-    CGRectValue(): cocoascript.CGRect;
+    CGRectValue(): CGRect;
     setCGRectValue(): void;
     //
-    alloc():cocoascript.CIVector;
+    alloc():CIVector;
     //
-    init():cocoascript.CIVector;
+    init():CIVector;
   }
 }
 
@@ -988,30 +988,30 @@ declare namespace cocoascript {
    */
   interface CIQRCodeFeature extends CIFeature {
     // doc://com.apple.documentation/documentation/coreimage/ciqrcodefeature/1438153-bounds
-    bounds(): cocoascript.CGRect;
+    bounds(): CGRect;
     setBounds(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciqrcodefeature/1438035-messagestring
     messageString(): string | cocoascript.NSString;
     setMessageString(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciqrcodefeature/2875553-symboldescriptor
-    symbolDescriptor(): cocoascript.CIQRCodeDescriptor;
+    symbolDescriptor(): CIQRCodeDescriptor;
     setSymbolDescriptor(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciqrcodefeature/1437985-bottomleft
-    bottomLeft(): cocoascript.CGPoint;
+    bottomLeft(): CGPoint;
     setBottomLeft(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciqrcodefeature/1438245-bottomright
-    bottomRight(): cocoascript.CGPoint;
+    bottomRight(): CGPoint;
     setBottomRight(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciqrcodefeature/1437780-topleft
-    topLeft(): cocoascript.CGPoint;
+    topLeft(): CGPoint;
     setTopLeft(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciqrcodefeature/1437896-topright
-    topRight(): cocoascript.CGPoint;
+    topRight(): CGPoint;
     setTopRight(): void;
     //
-    alloc():cocoascript.CIQRCodeFeature;
+    alloc():CIQRCodeFeature;
     //
-    init():cocoascript.CIQRCodeFeature;
+    init():CIQRCodeFeature;
   }
 }
 
@@ -1023,9 +1023,9 @@ declare namespace cocoascript {
    */
   interface CIBarcodeDescriptor extends NSObject {
     //
-    alloc():cocoascript.CIBarcodeDescriptor;
+    alloc():CIBarcodeDescriptor;
     //
-    init():cocoascript.CIBarcodeDescriptor;
+    init():CIBarcodeDescriptor;
   }
 }
 
@@ -1037,37 +1037,37 @@ declare namespace cocoascript {
    */
   interface CIFilterGenerator extends NSObject {
     // doc://com.apple.documentation/documentation/coreimage/cifiltergenerator/1525954-filtergenerator
-    filterGenerator():cocoascript.CIFilterGenerator;
+    filterGenerator():CIFilterGenerator;
     // doc://com.apple.documentation/documentation/coreimage/cifiltergenerator/1525950-filtergeneratorwithcontentsofurl
-    filterGeneratorWithContentsOfURL(aURL: cocoascript.NSURL):cocoascript.CIFilterGenerator;
+    filterGeneratorWithContentsOfURL(aURL: NSURL):CIFilterGenerator;
     // doc://com.apple.documentation/documentation/coreimage/cifiltergenerator/1437742-initwithcontentsofurl
-    initWithContentsOfURL(aURL: cocoascript.NSURL):cocoascript.CIFilterGenerator;
+    initWithContentsOfURL(aURL: NSURL):CIFilterGenerator;
     // doc://com.apple.documentation/documentation/coreimage/cifiltergenerator/1438159-connectobject
-    connectObject_withKey_toObject_withKey(sourceObject: cocoascript.CIFilterGenerator, sourceKey: string | cocoascript.NSString, targetObject: cocoascript.CIFilterGenerator, targetKey: string | cocoascript.NSString):void;
+    connectObject_withKey_toObject_withKey(sourceObject: CIFilterGenerator, sourceKey: string | cocoascript.NSString, targetObject: CIFilterGenerator, targetKey: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/coreimage/cifiltergenerator/1438075-disconnectobject
-    disconnectObject_withKey_toObject_withKey(sourceObject: cocoascript.CIFilterGenerator, sourceKey: string | cocoascript.NSString, targetObject: cocoascript.CIFilterGenerator, targetKey: string | cocoascript.NSString):void;
+    disconnectObject_withKey_toObject_withKey(sourceObject: CIFilterGenerator, sourceKey: string | cocoascript.NSString, targetObject: CIFilterGenerator, targetKey: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/coreimage/cifiltergenerator/1437955-exportedkeys
-    exportedKeys(): cocoascript.NSDictionary;
+    exportedKeys(): NSDictionary;
     setExportedKeys(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifiltergenerator/1438155-exportkey
-    exportKey_fromObject_withName(key: string | cocoascript.NSString, targetObject: cocoascript.CIFilterGenerator, exportedKeyName: string | cocoascript.NSString):void;
+    exportKey_fromObject_withName(key: string | cocoascript.NSString, targetObject: CIFilterGenerator, exportedKeyName: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/coreimage/cifiltergenerator/1438191-removeexportedkey
     removeExportedKey(exportedKeyName: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/coreimage/cifiltergenerator/1438069-setattributes
-    setAttributes_forExportedKey(attributes: cocoascript.NSDictionary, key: string | cocoascript.NSString):void;
+    setAttributes_forExportedKey(attributes: NSDictionary, key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/coreimage/cifiltergenerator/1437855-classattributes
-    classAttributes(): cocoascript.NSDictionary;
+    classAttributes(): NSDictionary;
     setClassAttributes(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifiltergenerator/1438179-writetourl
-    writeToURL_atomically(aURL: cocoascript.NSURL, flag: cocoascript.BOOL):cocoascript.BOOL;
+    writeToURL_atomically(aURL: NSURL, flag: BOOL):BOOL;
     // doc://com.apple.documentation/documentation/coreimage/cifiltergenerator/1437891-registerfiltername
     registerFilterName(name: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/coreimage/cifiltergenerator/1438044-filter
-    filter():cocoascript.CIFilter;
+    filter():CIFilter;
     //
-    alloc():cocoascript.CIFilterGenerator;
+    alloc():CIFilterGenerator;
     //
-    init():cocoascript.CIFilterGenerator;
+    init():CIFilterGenerator;
   }
 }
 
@@ -1079,55 +1079,55 @@ declare namespace cocoascript {
    */
   interface CIContext extends NSObject {
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1642219-context
-    context():cocoascript.CIContext;
+    context():CIContext;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1642212-init
-    init():cocoascript.CIContext;
+    init():CIContext;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1438261-initwithoptions
-    contextWithOptions(options: cocoascript.CIContext):cocoascript.CIContext;
+    contextWithOptions(options: CIContext):CIContext;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1437864-contextwithcgcontext
-    contextWithCGContext_options(cgctx: cocoascript.CGContextRef, options: cocoascript.CIContext):cocoascript.CIContext;
+    contextWithCGContext_options(cgctx: CGContextRef, options: CIContext):CIContext;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1438137-contextwithcglcontext
-    contextWithCGLContext_pixelFormat_colorSpace_options(cglctx: any, pixelFormat: any, colorSpace: cocoascript.CGColorSpaceRef, options: cocoascript.CIContext):cocoascript.CIContext;
+    contextWithCGLContext_pixelFormat_colorSpace_options(cglctx: any, pixelFormat: any, colorSpace: CGColorSpaceRef, options: CIContext):CIContext;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1473525-contextwithcglcontext
-    contextWithCGLContext_pixelFormat_options(cglctx: any, pixelFormat: any, options: cocoascript.CIContext):cocoascript.CIContext;
+    contextWithCGLContext_pixelFormat_options(cglctx: any, pixelFormat: any, options: CIContext):CIContext;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1620419-contextwitheaglcontext
-    contextWithEAGLContext(eaglContext: cocoascript.EAGLContext):cocoascript.CIContext;
+    contextWithEAGLContext(eaglContext: EAGLContext):CIContext;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1620362-contextwitheaglcontext
-    contextWithEAGLContext_options(eaglContext: cocoascript.EAGLContext, options: cocoascript.CIContext):cocoascript.CIContext;
+    contextWithEAGLContext_options(eaglContext: EAGLContext, options: CIContext):CIContext;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1437772-contextforofflinegpuatindex
-    contextForOfflineGPUAtIndex(index: number):cocoascript.CIContext;
+    contextForOfflineGPUAtIndex(index: number):CIContext;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1437758-contextforofflinegpuatindex
-    contextForOfflineGPUAtIndex_colorSpace_options_sharedContext(index: number, colorSpace: cocoascript.CGColorSpaceRef, options: cocoascript.CIContext, sharedContext: any):cocoascript.CIContext;
+    contextForOfflineGPUAtIndex_colorSpace_options_sharedContext(index: number, colorSpace: CGColorSpaceRef, options: CIContext, sharedContext: any):CIContext;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1437609-contextwithmtldevice
-    contextWithMTLDevice(device: any):cocoascript.CIContext;
+    contextWithMTLDevice(device: any):CIContext;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1437711-contextwithmtldevice
-    contextWithMTLDevice_options(device: any, options: cocoascript.CIContext):cocoascript.CIContext;
+    contextWithMTLDevice_options(device: any, options: CIContext):CIContext;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1437784-createcgimage
-    createCGImage_fromRect(image: cocoascript.CIImage, fromRect: cocoascript.CGRect):cocoascript.CGImageRef;
+    createCGImage_fromRect(image: CIImage, fromRect: CGRect):CGImageRef;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1437978-createcgimage
-    createCGImage_fromRect_format_colorSpace(image: cocoascript.CIImage, fromRect: cocoascript.CGRect, format: cocoascript.CIFormat, colorSpace: cocoascript.CGColorSpaceRef):cocoascript.CGImageRef;
+    createCGImage_fromRect_format_colorSpace(image: CIImage, fromRect: CGRect, format: CIFormat, colorSpace: CGColorSpaceRef):CGImageRef;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1642211-createcgimage
-    createCGImage_fromRect_format_colorSpace_deferred(image: cocoascript.CIImage, fromRect: cocoascript.CGRect, format: cocoascript.CIFormat, colorSpace: cocoascript.CGColorSpaceRef, deferred: cocoascript.BOOL):cocoascript.CGImageRef;
+    createCGImage_fromRect_format_colorSpace_deferred(image: CIImage, fromRect: CGRect, format: CIFormat, colorSpace: CGColorSpaceRef, deferred: BOOL):CGImageRef;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1438267-createcglayerwithsize
-    createCGLayerWithSize_info(size: cocoascript.CGSize, info: cocoascript.CFDictionaryRef):cocoascript.CGLayerRef;
+    createCGLayerWithSize_info(size: CGSize, info: CFDictionaryRef):CGLayerRef;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1437897-render
-    render_toBitmap_rowBytes_bounds_format_colorSpace(image: cocoascript.CIImage, data: void, rowBytes: cocoascript.ptrdiff_t, bounds: cocoascript.CGRect, format: cocoascript.CIFormat, colorSpace: cocoascript.CGColorSpaceRef):void;
+    render_toBitmap_rowBytes_bounds_format_colorSpace(image: CIImage, data: void, rowBytes: ptrdiff_t, bounds: CGRect, format: CIFormat, colorSpace: CGColorSpaceRef):void;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1437853-render
-    render_toCVPixelBuffer(image: cocoascript.CIImage, buffer: cocoascript.CVPixelBufferRef):void;
+    render_toCVPixelBuffer(image: CIImage, buffer: CVPixelBufferRef):void;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1437835-render
-    render_toCVPixelBuffer_bounds_colorSpace(image: cocoascript.CIImage, buffer: cocoascript.CVPixelBufferRef, bounds: cocoascript.CGRect, colorSpace: cocoascript.CGColorSpaceRef):void;
+    render_toCVPixelBuffer_bounds_colorSpace(image: CIImage, buffer: CVPixelBufferRef, bounds: CGRect, colorSpace: CGColorSpaceRef):void;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1437778-render
-    render_toIOSurface_bounds_colorSpace(image: cocoascript.CIImage, surface: cocoascript.IOSurfaceRef, bounds: cocoascript.CGRect, colorSpace: cocoascript.CGColorSpaceRef):void;
+    render_toIOSurface_bounds_colorSpace(image: CIImage, surface: IOSurfaceRef, bounds: CGRect, colorSpace: CGColorSpaceRef):void;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1438026-render
-    render_toMTLTexture_commandBuffer_bounds_colorSpace(image: cocoascript.CIImage, texture: any, commandBuffer: any, bounds: cocoascript.CGRect, colorSpace: cocoascript.CGColorSpaceRef):void;
+    render_toMTLTexture_commandBuffer_bounds_colorSpace(image: CIImage, texture: any, commandBuffer: any, bounds: CGRect, colorSpace: CGColorSpaceRef):void;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1473521-drawimage
-    drawImage_atPoint_fromRect(image: cocoascript.CIImage, atPoint: cocoascript.CGPoint, fromRect: cocoascript.CGRect):void;
+    drawImage_atPoint_fromRect(image: CIImage, atPoint: CGPoint, fromRect: CGRect):void;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1437786-drawimage
-    drawImage_inRect_fromRect(image: cocoascript.CIImage, inRect: cocoascript.CGRect, fromRect: cocoascript.CGRect):void;
+    drawImage_inRect_fromRect(image: CIImage, inRect: CGRect, fromRect: CGRect):void;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1620425-inputimagemaximumsize
-    inputImageMaximumSize():cocoascript.CGSize;
+    inputImageMaximumSize():CGSize;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1620335-outputimagemaximumsize
-    outputImageMaximumSize():cocoascript.CGSize;
+    outputImageMaximumSize():CGSize;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1437790-clearcaches
     clearCaches():void;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1437967-reclaimresources
@@ -1135,79 +1135,79 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1437817-offlinegpucount
     offlineGPUCount():number;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1438061-workingcolorspace
-    workingColorSpace(): cocoascript.CGColorSpaceRef;
+    workingColorSpace(): CGColorSpaceRef;
     setWorkingColorSpace(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1642215-workingformat
-    workingFormat(): cocoascript.CIFormat;
+    workingFormat(): CIFormat;
     setWorkingFormat(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1642220-tiffrepresentationofimage
-    TIFFRepresentationOfImage_format_colorSpace_options(image: cocoascript.CIImage, format: cocoascript.CIFormat, colorSpace: cocoascript.CGColorSpaceRef, options: cocoascript.CIContext):cocoascript.NSData;
+    TIFFRepresentationOfImage_format_colorSpace_options(image: CIImage, format: CIFormat, colorSpace: CGColorSpaceRef, options: CIContext):NSData;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1642214-jpegrepresentationofimage
-    JPEGRepresentationOfImage_colorSpace_options(image: cocoascript.CIImage, colorSpace: cocoascript.CGColorSpaceRef, options: cocoascript.CIContext):cocoascript.NSData;
+    JPEGRepresentationOfImage_colorSpace_options(image: CIImage, colorSpace: CGColorSpaceRef, options: CIContext):NSData;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/2866196-pngrepresentationofimage
-    PNGRepresentationOfImage_format_colorSpace_options(image: cocoascript.CIImage, format: cocoascript.CIFormat, colorSpace: cocoascript.CGColorSpaceRef, options: cocoascript.CIContext):cocoascript.NSData;
+    PNGRepresentationOfImage_format_colorSpace_options(image: CIImage, format: CIFormat, colorSpace: CGColorSpaceRef, options: CIContext):NSData;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/2902269-heifrepresentationofimage
-    HEIFRepresentationOfImage_format_colorSpace_options(image: cocoascript.CIImage, format: cocoascript.CIFormat, colorSpace: cocoascript.CGColorSpaceRef, options: cocoascript.CIContext):cocoascript.NSData;
+    HEIFRepresentationOfImage_format_colorSpace_options(image: CIImage, format: CIFormat, colorSpace: CGColorSpaceRef, options: CIContext):NSData;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1642213-writetiffrepresentationofimage
-    writeTIFFRepresentationOfImage_toURL_format_colorSpace_options_error(image: cocoascript.CIImage, url: cocoascript.NSURL, format: cocoascript.CIFormat, colorSpace: cocoascript.CGColorSpaceRef, options: cocoascript.CIContext, errorPtr: cocoascript.NSError):cocoascript.BOOL;
+    writeTIFFRepresentationOfImage_toURL_format_colorSpace_options_error(image: CIImage, url: NSURL, format: CIFormat, colorSpace: CGColorSpaceRef, options: CIContext, errorPtr: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/1642218-writejpegrepresentationofimage
-    writeJPEGRepresentationOfImage_toURL_colorSpace_options_error(image: cocoascript.CIImage, url: cocoascript.NSURL, colorSpace: cocoascript.CGColorSpaceRef, options: cocoascript.CIContext, errorPtr: cocoascript.NSError):cocoascript.BOOL;
+    writeJPEGRepresentationOfImage_toURL_colorSpace_options_error(image: CIImage, url: NSURL, colorSpace: CGColorSpaceRef, options: CIContext, errorPtr: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/2866197-writepngrepresentationofimage
-    writePNGRepresentationOfImage_toURL_format_colorSpace_options_error(image: cocoascript.CIImage, url: cocoascript.NSURL, format: cocoascript.CIFormat, colorSpace: cocoascript.CGColorSpaceRef, options: cocoascript.CIContext, errorPtr: cocoascript.NSError):cocoascript.BOOL;
+    writePNGRepresentationOfImage_toURL_format_colorSpace_options_error(image: CIImage, url: NSURL, format: CIFormat, colorSpace: CGColorSpaceRef, options: CIContext, errorPtr: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/2902266-writeheifrepresentationofimage
-    writeHEIFRepresentationOfImage_toURL_format_colorSpace_options_error(image: cocoascript.CIImage, url: cocoascript.NSURL, format: cocoascript.CIFormat, colorSpace: cocoascript.CGColorSpaceRef, options: cocoascript.CIContext, errorPtr: cocoascript.NSError):cocoascript.BOOL;
+    writeHEIFRepresentationOfImage_toURL_format_colorSpace_options_error(image: CIImage, url: NSURL, format: CIFormat, colorSpace: CGColorSpaceRef, options: CIContext, errorPtr: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/2875428-preparerender
-    prepareRender_fromRect_toDestination_atPoint_error(image: cocoascript.CIImage, fromRect: cocoascript.CGRect, destination: cocoascript.CIRenderDestination, atPoint: cocoascript.CGPoint, error: cocoascript.NSError):cocoascript.BOOL;
+    prepareRender_fromRect_toDestination_atPoint_error(image: CIImage, fromRect: CGRect, destination: CIRenderDestination, atPoint: CGPoint, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/2875450-starttasktoclear
-    startTaskToClear_error(destination: cocoascript.CIRenderDestination, error: cocoascript.NSError):cocoascript.CIRenderTask;
+    startTaskToClear_error(destination: CIRenderDestination, error: NSError):CIRenderTask;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/2875448-starttasktorender
-    startTaskToRender_fromRect_toDestination_atPoint_error(image: cocoascript.CIImage, fromRect: cocoascript.CGRect, destination: cocoascript.CIRenderDestination, atPoint: cocoascript.CGPoint, error: cocoascript.NSError):cocoascript.CIRenderTask;
+    startTaskToRender_fromRect_toDestination_atPoint_error(image: CIImage, fromRect: CGRect, destination: CIRenderDestination, atPoint: CGPoint, error: NSError):CIRenderTask;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/2875429-starttasktorender
-    startTaskToRender_toDestination_error(image: cocoascript.CIImage, destination: cocoascript.CIRenderDestination, error: cocoascript.NSError):cocoascript.CIRenderTask;
+    startTaskToRender_toDestination_error(image: CIImage, destination: CIRenderDestination, error: NSError):CIRenderTask;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/3365984-contextwithmtlcommandqueue
-    contextWithMTLCommandQueue(commandQueue: any):cocoascript.CIContext;
+    contextWithMTLCommandQueue(commandQueue: any):CIContext;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/3365985-contextwithmtlcommandqueue
-    contextWithMTLCommandQueue_options(commandQueue: any, options: cocoascript.CIContext):cocoascript.CIContext;
+    contextWithMTLCommandQueue_options(commandQueue: any, options: CIContext):CIContext;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/3600105-depthblureffectfilterforimage
-    depthBlurEffectFilterForImage_disparityImage_portraitEffectsMatte_hairSemanticSegmentation_glassesMatte_gainMap_orientation_options(image: cocoascript.CIImage, disparityImage: cocoascript.CIImage, portraitEffectsMatte: cocoascript.CIImage, hairSemanticSegmentation: cocoascript.CIImage, glassesMatte: cocoascript.CIImage, gainMap: cocoascript.CIImage, orientation: cocoascript.CGImagePropertyOrientation, options: cocoascript.NSDictionary):cocoascript.CIFilter;
+    depthBlurEffectFilterForImage_disparityImage_portraitEffectsMatte_hairSemanticSegmentation_glassesMatte_gainMap_orientation_options(image: CIImage, disparityImage: CIImage, portraitEffectsMatte: CIImage, hairSemanticSegmentation: CIImage, glassesMatte: CIImage, gainMap: CIImage, orientation: CGImagePropertyOrientation, options: NSDictionary):CIFilter;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/3228045-depthblureffectfilterforimage
-    depthBlurEffectFilterForImage_disparityImage_portraitEffectsMatte_hairSemanticSegmentation_orientation_options(image: cocoascript.CIImage, disparityImage: cocoascript.CIImage, portraitEffectsMatte: cocoascript.CIImage, hairSemanticSegmentation: cocoascript.CIImage, orientation: cocoascript.CGImagePropertyOrientation, options: cocoascript.NSDictionary):cocoascript.CIFilter;
+    depthBlurEffectFilterForImage_disparityImage_portraitEffectsMatte_hairSemanticSegmentation_orientation_options(image: CIImage, disparityImage: CIImage, portraitEffectsMatte: CIImage, hairSemanticSegmentation: CIImage, orientation: CGImagePropertyOrientation, options: NSDictionary):CIFilter;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/3019315-depthblureffectfilterforimage
-    depthBlurEffectFilterForImage_disparityImage_portraitEffectsMatte_orientation_options(image: cocoascript.CIImage, disparityImage: cocoascript.CIImage, portraitEffectsMatte: cocoascript.CIImage, orientation: cocoascript.CGImagePropertyOrientation, options: cocoascript.NSDictionary):cocoascript.CIFilter;
+    depthBlurEffectFilterForImage_disparityImage_portraitEffectsMatte_orientation_options(image: CIImage, disparityImage: CIImage, portraitEffectsMatte: CIImage, orientation: CGImagePropertyOrientation, options: NSDictionary):CIFilter;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/3020629-depthblureffectfilterforimagedat
-    depthBlurEffectFilterForImageData_options(data: cocoascript.NSData, options: cocoascript.NSDictionary):cocoascript.CIFilter;
+    depthBlurEffectFilterForImageData_options(data: NSData, options: NSDictionary):CIFilter;
     // doc://com.apple.documentation/documentation/coreimage/cicontext/3019316-depthblureffectfilterforimageurl
-    depthBlurEffectFilterForImageURL_options(url: cocoascript.NSURL, options: cocoascript.NSDictionary):cocoascript.CIFilter;
+    depthBlurEffectFilterForImageURL_options(url: NSURL, options: NSDictionary):CIFilter;
     //
-    alloc():cocoascript.CIContext;
+    alloc():CIContext;
     //
-    init():cocoascript.CIContext;
+    init():CIContext;
   }
 }
 
 declare const CIContext: cocoascript.CIContext;
 // doc://com.apple.documentation/documentation/coreimage/kciimageprovidertilesize
-declare const kCIImageProviderTileSize: cocoascript.CIImageOption;
+declare const kCIImageProviderTileSize: CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageprovideruserinfo
-declare const kCIImageProviderUserInfo: cocoascript.CIImageOption;
+declare const kCIImageProviderUserInfo: CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagecolorspace
-declare const kCIImageColorSpace: cocoascript.CIImageOption;
+declare const kCIImageColorSpace: CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageproperties
-declare const kCIImageProperties: cocoascript.CIImageOption;
+declare const kCIImageProperties: CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageapplyorientationproperty
-declare const kCIImageApplyOrientationProperty: cocoascript.CIImageOption;
+declare const kCIImageApplyOrientationProperty: CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagetexturetarget
-declare const kCIImageTextureTarget: cocoascript.CIImageOption;
+declare const kCIImageTextureTarget: CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagetextureformat
-declare const kCIImageTextureFormat: cocoascript.CIImageOption;
+declare const kCIImageTextureFormat: CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagenearestsampling
-declare const kCIImageNearestSampling: cocoascript.CIImageOption;
+declare const kCIImageNearestSampling: CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageauxiliarydepth
-declare const kCIImageAuxiliaryDepth: cocoascript.CIImageOption;
+declare const kCIImageAuxiliaryDepth: CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageauxiliarydisparity
-declare const kCIImageAuxiliaryDisparity: cocoascript.CIImageOption;
+declare const kCIImageAuxiliaryDisparity: CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageauxiliaryportraiteffectsmatte
-declare const kCIImageAuxiliaryPortraitEffectsMatte: cocoascript.CIImageOption;
+declare const kCIImageAuxiliaryPortraitEffectsMatte: CIImageOption;
 declare namespace cocoascript {
   /**
    * A GPU-based image processing routine used to create custom Core Image filters.
@@ -1215,26 +1215,26 @@ declare namespace cocoascript {
    */
   interface CIKernel extends NSObject {
     // doc://com.apple.documentation/documentation/coreimage/cikernel/1437796-kernelwithstring
-    kernelWithString(string: string | cocoascript.NSString):cocoascript.CIKernel;
+    kernelWithString(string: string | cocoascript.NSString):CIKernel;
     // doc://com.apple.documentation/documentation/coreimage/cikernel/1437876-kernelswithstring
-    kernelsWithString(string: string | cocoascript.NSString):cocoascript.CIKernel;
+    kernelsWithString(string: string | cocoascript.NSString):CIKernel;
     // doc://com.apple.documentation/documentation/coreimage/cikernel/2880194-kernelwithfunctionname
-    kernelWithFunctionName_fromMetalLibraryData_error(name: string | cocoascript.NSString, data: cocoascript.NSData, error: cocoascript.NSError):cocoascript.CIKernel;
+    kernelWithFunctionName_fromMetalLibraryData_error(name: string | cocoascript.NSString, data: NSData, error: NSError):CIKernel;
     // doc://com.apple.documentation/documentation/coreimage/cikernel/2880195-kernelwithfunctionname
-    kernelWithFunctionName_fromMetalLibraryData_outputPixelFormat_error(name: string | cocoascript.NSString, data: cocoascript.NSData, format: cocoascript.CIFormat, error: cocoascript.NSError):cocoascript.CIKernel;
+    kernelWithFunctionName_fromMetalLibraryData_outputPixelFormat_error(name: string | cocoascript.NSString, data: NSData, format: CIFormat, error: NSError):CIKernel;
     // doc://com.apple.documentation/documentation/coreimage/cikernel/1438067-name
     name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/coreimage/cikernel/1437691-setroiselector
-    setROISelector(method: cocoascript.SEL):void;
+    setROISelector(method: SEL):void;
     // doc://com.apple.documentation/documentation/coreimage/cikernel/1438243-applywithextent
-    applyWithExtent_roiCallback_arguments(extent: cocoascript.CGRect, callback: cocoascript.CIKernelROICallback, args: cocoascript.CIKernel):cocoascript.CIImage;
+    applyWithExtent_roiCallback_arguments(extent: CGRect, callback: CIKernelROICallback, args: CIKernel):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/cikernel/3577535-kernelnamesfrommetallibrarydata
-    kernelNamesFromMetalLibraryData(data: cocoascript.NSData):string | cocoascript.NSString;
+    kernelNamesFromMetalLibraryData(data: NSData):string | cocoascript.NSString;
     //
-    alloc():cocoascript.CIKernel;
+    alloc():CIKernel;
     //
-    init():cocoascript.CIKernel;
+    init():CIKernel;
   }
 }
 
@@ -1246,13 +1246,13 @@ declare namespace cocoascript {
    */
   interface CIColorKernel extends CIKernel {
     // doc://com.apple.documentation/documentation/coreimage/cicolorkernel/1438143-kernelwithstring
-    kernelWithString(string: string | cocoascript.NSString):cocoascript.CIColorKernel;
+    kernelWithString(string: string | cocoascript.NSString):CIColorKernel;
     // doc://com.apple.documentation/documentation/coreimage/cicolorkernel/1438110-applywithextent
-    applyWithExtent_arguments(extent: cocoascript.CGRect, args: cocoascript.CIColorKernel):cocoascript.CIImage;
+    applyWithExtent_arguments(extent: CGRect, args: CIColorKernel):CIImage;
     //
-    alloc():cocoascript.CIColorKernel;
+    alloc():CIColorKernel;
     //
-    init():cocoascript.CIColorKernel;
+    init():CIColorKernel;
   }
 }
 
@@ -1264,13 +1264,13 @@ declare namespace cocoascript {
    */
   interface CIWarpKernel extends CIKernel {
     // doc://com.apple.documentation/documentation/coreimage/ciwarpkernel/1438278-kernelwithstring
-    kernelWithString(string: string | cocoascript.NSString):cocoascript.CIWarpKernel;
+    kernelWithString(string: string | cocoascript.NSString):CIWarpKernel;
     // doc://com.apple.documentation/documentation/coreimage/ciwarpkernel/1437798-applywithextent
-    applyWithExtent_roiCallback_inputImage_arguments(extent: cocoascript.CGRect, callback: cocoascript.CIKernelROICallback, image: cocoascript.CIImage, args: cocoascript.CIWarpKernel):cocoascript.CIImage;
+    applyWithExtent_roiCallback_inputImage_arguments(extent: CGRect, callback: CIKernelROICallback, image: CIImage, args: CIWarpKernel):CIImage;
     //
-    alloc():cocoascript.CIWarpKernel;
+    alloc():CIWarpKernel;
     //
-    init():cocoascript.CIWarpKernel;
+    init():CIWarpKernel;
   }
 }
 
@@ -1282,138 +1282,138 @@ declare namespace cocoascript {
    */
   interface CIBlendKernel extends CIColorKernel {
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867353-kernelwithstring
-    kernelWithString(string: string | cocoascript.NSString):cocoascript.CIBlendKernel;
+    kernelWithString(string: string | cocoascript.NSString):CIBlendKernel;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2919728-applywithforeground
-    applyWithForeground_background(foreground: cocoascript.CIImage, background: cocoascript.CIImage):cocoascript.CIImage;
+    applyWithForeground_background(foreground: CIImage, background: CIImage):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867388-clear
-    clear(): cocoascript.CIBlendKernel;
+    clear(): CIBlendKernel;
     setClear(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867350-color
-    color(): cocoascript.CIBlendKernel;
+    color(): CIBlendKernel;
     setColor(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867391-colorburn
-    colorBurn(): cocoascript.CIBlendKernel;
+    colorBurn(): CIBlendKernel;
     setColorBurn(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867417-colordodge
-    colorDodge(): cocoascript.CIBlendKernel;
+    colorDodge(): CIBlendKernel;
     setColorDodge(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867384-componentadd
-    componentAdd(): cocoascript.CIBlendKernel;
+    componentAdd(): CIBlendKernel;
     setComponentAdd(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867433-componentmax
-    componentMax(): cocoascript.CIBlendKernel;
+    componentMax(): CIBlendKernel;
     setComponentMax(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867425-componentmin
-    componentMin(): cocoascript.CIBlendKernel;
+    componentMin(): CIBlendKernel;
     setComponentMin(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867406-componentmultiply
-    componentMultiply(): cocoascript.CIBlendKernel;
+    componentMultiply(): CIBlendKernel;
     setComponentMultiply(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867348-darken
-    darken(): cocoascript.CIBlendKernel;
+    darken(): CIBlendKernel;
     setDarken(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867351-darkercolor
-    darkerColor(): cocoascript.CIBlendKernel;
+    darkerColor(): CIBlendKernel;
     setDarkerColor(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867422-destination
-    destination(): cocoascript.CIBlendKernel;
+    destination(): CIBlendKernel;
     setDestination(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867385-destinationatop
-    destinationAtop(): cocoascript.CIBlendKernel;
+    destinationAtop(): CIBlendKernel;
     setDestinationAtop(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867352-destinationin
-    destinationIn(): cocoascript.CIBlendKernel;
+    destinationIn(): CIBlendKernel;
     setDestinationIn(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867368-destinationout
-    destinationOut(): cocoascript.CIBlendKernel;
+    destinationOut(): CIBlendKernel;
     setDestinationOut(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867432-destinationover
-    destinationOver(): cocoascript.CIBlendKernel;
+    destinationOver(): CIBlendKernel;
     setDestinationOver(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867416-difference
-    difference(): cocoascript.CIBlendKernel;
+    difference(): CIBlendKernel;
     setDifference(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867410-divide
-    divide(): cocoascript.CIBlendKernel;
+    divide(): CIBlendKernel;
     setDivide(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867343-exclusion
-    exclusion(): cocoascript.CIBlendKernel;
+    exclusion(): CIBlendKernel;
     setExclusion(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867421-exclusiveor
-    exclusiveOr(): cocoascript.CIBlendKernel;
+    exclusiveOr(): CIBlendKernel;
     setExclusiveOr(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867418-hardlight
-    hardLight(): cocoascript.CIBlendKernel;
+    hardLight(): CIBlendKernel;
     setHardLight(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867347-hardmix
-    hardMix(): cocoascript.CIBlendKernel;
+    hardMix(): CIBlendKernel;
     setHardMix(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867408-hue
-    hue(): cocoascript.CIBlendKernel;
+    hue(): CIBlendKernel;
     setHue(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867424-lighten
-    lighten(): cocoascript.CIBlendKernel;
+    lighten(): CIBlendKernel;
     setLighten(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867427-lightercolor
-    lighterColor(): cocoascript.CIBlendKernel;
+    lighterColor(): CIBlendKernel;
     setLighterColor(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867409-linearburn
-    linearBurn(): cocoascript.CIBlendKernel;
+    linearBurn(): CIBlendKernel;
     setLinearBurn(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867354-lineardodge
-    linearDodge(): cocoascript.CIBlendKernel;
+    linearDodge(): CIBlendKernel;
     setLinearDodge(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867435-linearlight
-    linearLight(): cocoascript.CIBlendKernel;
+    linearLight(): CIBlendKernel;
     setLinearLight(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867423-luminosity
-    luminosity(): cocoascript.CIBlendKernel;
+    luminosity(): CIBlendKernel;
     setLuminosity(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867419-multiply
-    multiply(): cocoascript.CIBlendKernel;
+    multiply(): CIBlendKernel;
     setMultiply(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867411-overlay
-    overlay(): cocoascript.CIBlendKernel;
+    overlay(): CIBlendKernel;
     setOverlay(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867420-pinlight
-    pinLight(): cocoascript.CIBlendKernel;
+    pinLight(): CIBlendKernel;
     setPinLight(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867431-saturation
-    saturation(): cocoascript.CIBlendKernel;
+    saturation(): CIBlendKernel;
     setSaturation(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867356-screen
-    screen(): cocoascript.CIBlendKernel;
+    screen(): CIBlendKernel;
     setScreen(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867434-softlight
-    softLight(): cocoascript.CIBlendKernel;
+    softLight(): CIBlendKernel;
     setSoftLight(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867407-source
-    source(): cocoascript.CIBlendKernel;
+    source(): CIBlendKernel;
     setSource(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867357-sourceatop
-    sourceAtop(): cocoascript.CIBlendKernel;
+    sourceAtop(): CIBlendKernel;
     setSourceAtop(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867428-sourcein
-    sourceIn(): cocoascript.CIBlendKernel;
+    sourceIn(): CIBlendKernel;
     setSourceIn(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867415-sourceout
-    sourceOut(): cocoascript.CIBlendKernel;
+    sourceOut(): CIBlendKernel;
     setSourceOut(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867413-sourceover
-    sourceOver(): cocoascript.CIBlendKernel;
+    sourceOver(): CIBlendKernel;
     setSourceOver(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867370-subtract
-    subtract(): cocoascript.CIBlendKernel;
+    subtract(): CIBlendKernel;
     setSubtract(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/2867358-vividlight
-    vividLight(): cocoascript.CIBlendKernel;
+    vividLight(): CIBlendKernel;
     setVividLight(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendkernel/3152403-applywithforeground
-    applyWithForeground_background_colorSpace(foreground: cocoascript.CIImage, background: cocoascript.CIImage, colorSpace: cocoascript.CGColorSpaceRef):cocoascript.CIImage;
+    applyWithForeground_background_colorSpace(foreground: CIImage, background: CIImage, colorSpace: CGColorSpaceRef):CIImage;
     //
-    alloc():cocoascript.CIBlendKernel;
+    alloc():CIBlendKernel;
     //
-    init():cocoascript.CIBlendKernel;
+    init():CIBlendKernel;
   }
 }
 
@@ -1429,15 +1429,15 @@ declare namespace cocoascript {
    */
   interface CIDetector extends NSObject {
     // doc://com.apple.documentation/documentation/coreimage/cidetector/1437884-detectoroftype
-    detectorOfType_context_options(type: string | cocoascript.NSString, context: cocoascript.CIContext, options: cocoascript.CIDetector):cocoascript.CIDetector;
+    detectorOfType_context_options(type: string | cocoascript.NSString, context: CIContext, options: CIDetector):CIDetector;
     // doc://com.apple.documentation/documentation/coreimage/cidetector/1438049-featuresinimage
-    featuresInImage(image: cocoascript.CIImage):cocoascript.CIFeature;
+    featuresInImage(image: CIImage):CIFeature;
     // doc://com.apple.documentation/documentation/coreimage/cidetector/1438189-featuresinimage
-    featuresInImage_options(image: cocoascript.CIImage, options: cocoascript.CIDetector):cocoascript.CIFeature;
+    featuresInImage_options(image: CIImage, options: CIDetector):CIFeature;
     //
-    alloc():cocoascript.CIDetector;
+    alloc():CIDetector;
     //
-    init():cocoascript.CIDetector;
+    init():CIDetector;
   }
 }
 
@@ -1449,15 +1449,15 @@ declare namespace cocoascript {
    */
   interface CIFeature extends NSObject {
     // doc://com.apple.documentation/documentation/coreimage/cifeature/1437782-bounds
-    bounds(): cocoascript.CGRect;
+    bounds(): CGRect;
     setBounds(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifeature/1438092-type
     type(): string | cocoascript.NSString;
     setType(): void;
     //
-    alloc():cocoascript.CIFeature;
+    alloc():CIFeature;
     //
-    init():cocoascript.CIFeature;
+    init():CIFeature;
   }
 }
 
@@ -1477,57 +1477,57 @@ declare namespace cocoascript {
    */
   interface CIFaceFeature extends CIFeature {
     // doc://com.apple.documentation/documentation/coreimage/cifacefeature/1438068-bounds
-    bounds(): cocoascript.CGRect;
+    bounds(): CGRect;
     setBounds(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifacefeature/1438165-hasfaceangle
-    hasFaceAngle(): cocoascript.BOOL;
+    hasFaceAngle(): BOOL;
     setHasFaceAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifacefeature/1437689-faceangle
     faceAngle(): number;
     setFaceAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifacefeature/1437900-haslefteyeposition
-    hasLeftEyePosition(): cocoascript.BOOL;
+    hasLeftEyePosition(): BOOL;
     setHasLeftEyePosition(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifacefeature/1438076-hasrighteyeposition
-    hasRightEyePosition(): cocoascript.BOOL;
+    hasRightEyePosition(): BOOL;
     setHasRightEyePosition(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifacefeature/1437976-hasmouthposition
-    hasMouthPosition(): cocoascript.BOOL;
+    hasMouthPosition(): BOOL;
     setHasMouthPosition(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifacefeature/1437923-lefteyeposition
-    leftEyePosition(): cocoascript.CGPoint;
+    leftEyePosition(): CGPoint;
     setLeftEyePosition(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifacefeature/1438213-righteyeposition
-    rightEyePosition(): cocoascript.CGPoint;
+    rightEyePosition(): CGPoint;
     setRightEyePosition(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifacefeature/1438020-mouthposition
-    mouthPosition(): cocoascript.CGPoint;
+    mouthPosition(): CGPoint;
     setMouthPosition(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifacefeature/1437882-hassmile
-    hasSmile(): cocoascript.BOOL;
+    hasSmile(): BOOL;
     setHasSmile(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifacefeature/1437630-lefteyeclosed
-    leftEyeClosed(): cocoascript.BOOL;
+    leftEyeClosed(): BOOL;
     setLeftEyeClosed(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifacefeature/1437615-righteyeclosed
-    rightEyeClosed(): cocoascript.BOOL;
+    rightEyeClosed(): BOOL;
     setRightEyeClosed(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifacefeature/1437683-hastrackingid
-    hasTrackingID(): cocoascript.BOOL;
+    hasTrackingID(): BOOL;
     setHasTrackingID(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifacefeature/1437709-trackingid
     trackingID(): number;
     setTrackingID(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifacefeature/1437731-hastrackingframecount
-    hasTrackingFrameCount(): cocoascript.BOOL;
+    hasTrackingFrameCount(): BOOL;
     setHasTrackingFrameCount(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifacefeature/1437953-trackingframecount
     trackingFrameCount(): number;
     setTrackingFrameCount(): void;
     //
-    alloc():cocoascript.CIFaceFeature;
+    alloc():CIFaceFeature;
     //
-    init():cocoascript.CIFaceFeature;
+    init():CIFaceFeature;
   }
 }
 
@@ -1539,24 +1539,24 @@ declare namespace cocoascript {
    */
   interface CIRectangleFeature extends CIFeature {
     // doc://com.apple.documentation/documentation/coreimage/cirectanglefeature/1438024-bounds
-    bounds(): cocoascript.CGRect;
+    bounds(): CGRect;
     setBounds(): void;
     // doc://com.apple.documentation/documentation/coreimage/cirectanglefeature/1437878-bottomleft
-    bottomLeft(): cocoascript.CGPoint;
+    bottomLeft(): CGPoint;
     setBottomLeft(): void;
     // doc://com.apple.documentation/documentation/coreimage/cirectanglefeature/1437888-bottomright
-    bottomRight(): cocoascript.CGPoint;
+    bottomRight(): CGPoint;
     setBottomRight(): void;
     // doc://com.apple.documentation/documentation/coreimage/cirectanglefeature/1437951-topleft
-    topLeft(): cocoascript.CGPoint;
+    topLeft(): CGPoint;
     setTopLeft(): void;
     // doc://com.apple.documentation/documentation/coreimage/cirectanglefeature/1438071-topright
-    topRight(): cocoascript.CGPoint;
+    topRight(): CGPoint;
     setTopRight(): void;
     //
-    alloc():cocoascript.CIRectangleFeature;
+    alloc():CIRectangleFeature;
     //
-    init():cocoascript.CIRectangleFeature;
+    init():CIRectangleFeature;
   }
 }
 
@@ -1568,27 +1568,27 @@ declare namespace cocoascript {
    */
   interface CITextFeature extends CIFeature {
     // doc://com.apple.documentation/documentation/coreimage/citextfeature/1437885-bounds
-    bounds(): cocoascript.CGRect;
+    bounds(): CGRect;
     setBounds(): void;
     // doc://com.apple.documentation/documentation/coreimage/citextfeature/1437810-subfeatures
-    subFeatures(): cocoascript.NSArray;
+    subFeatures(): NSArray;
     setSubFeatures(): void;
     // doc://com.apple.documentation/documentation/coreimage/citextfeature/1438004-bottomleft
-    bottomLeft(): cocoascript.CGPoint;
+    bottomLeft(): CGPoint;
     setBottomLeft(): void;
     // doc://com.apple.documentation/documentation/coreimage/citextfeature/1437659-bottomright
-    bottomRight(): cocoascript.CGPoint;
+    bottomRight(): CGPoint;
     setBottomRight(): void;
     // doc://com.apple.documentation/documentation/coreimage/citextfeature/1438221-topleft
-    topLeft(): cocoascript.CGPoint;
+    topLeft(): CGPoint;
     setTopLeft(): void;
     // doc://com.apple.documentation/documentation/coreimage/citextfeature/1438282-topright
-    topRight(): cocoascript.CGPoint;
+    topRight(): CGPoint;
     setTopRight(): void;
     //
-    alloc():cocoascript.CITextFeature;
+    alloc():CITextFeature;
     //
-    init():cocoascript.CITextFeature;
+    init():CITextFeature;
   }
 }
 
@@ -1600,25 +1600,25 @@ declare namespace cocoascript {
    */
   interface CIQRCodeDescriptor extends CIBarcodeDescriptor {
     // doc://com.apple.documentation/documentation/coreimage/ciqrcodedescriptor/2875180-initwithpayload
-    initWithPayload_symbolVersion_maskPattern_errorCorrectionLevel(errorCorrectedPayload: cocoascript.NSData, symbolVersion: cocoascript.NSInteger, maskPattern: number, errorCorrectionLevel: cocoascript.CIQRCodeErrorCorrectionLevel):cocoascript.CIQRCodeDescriptor;
+    initWithPayload_symbolVersion_maskPattern_errorCorrectionLevel(errorCorrectedPayload: NSData, symbolVersion: NSInteger, maskPattern: number, errorCorrectionLevel: CIQRCodeErrorCorrectionLevel):CIQRCodeDescriptor;
     // doc://com.apple.documentation/documentation/coreimage/ciqrcodedescriptor/2875169-descriptorwithpayload
-    descriptorWithPayload_symbolVersion_maskPattern_errorCorrectionLevel(errorCorrectedPayload: cocoascript.NSData, symbolVersion: cocoascript.NSInteger, maskPattern: number, errorCorrectionLevel: cocoascript.CIQRCodeErrorCorrectionLevel):cocoascript.CIQRCodeDescriptor;
+    descriptorWithPayload_symbolVersion_maskPattern_errorCorrectionLevel(errorCorrectedPayload: NSData, symbolVersion: NSInteger, maskPattern: number, errorCorrectionLevel: CIQRCodeErrorCorrectionLevel):CIQRCodeDescriptor;
     // doc://com.apple.documentation/documentation/coreimage/ciqrcodedescriptor/2875167-errorcorrectedpayload
-    errorCorrectedPayload(): cocoascript.NSData;
+    errorCorrectedPayload(): NSData;
     setErrorCorrectedPayload(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciqrcodedescriptor/2875193-symbolversion
-    symbolVersion(): cocoascript.NSInteger;
+    symbolVersion(): NSInteger;
     setSymbolVersion(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciqrcodedescriptor/2875191-maskpattern
     maskPattern(): number;
     setMaskPattern(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciqrcodedescriptor/2875196-errorcorrectionlevel
-    errorCorrectionLevel(): cocoascript.CIQRCodeErrorCorrectionLevel;
+    errorCorrectionLevel(): CIQRCodeErrorCorrectionLevel;
     setErrorCorrectionLevel(): void;
     //
-    alloc():cocoascript.CIQRCodeDescriptor;
+    alloc():CIQRCodeDescriptor;
     //
-    init():cocoascript.CIQRCodeDescriptor;
+    init():CIQRCodeDescriptor;
   }
 }
 
@@ -1630,25 +1630,25 @@ declare namespace cocoascript {
    */
   interface CIAztecCodeDescriptor extends CIBarcodeDescriptor {
     // doc://com.apple.documentation/documentation/coreimage/ciazteccodedescriptor/2875188-initwithpayload
-    initWithPayload_isCompact_layerCount_dataCodewordCount(errorCorrectedPayload: cocoascript.NSData, isCompact: cocoascript.BOOL, layerCount: cocoascript.NSInteger, dataCodewordCount: cocoascript.NSInteger):cocoascript.CIAztecCodeDescriptor;
+    initWithPayload_isCompact_layerCount_dataCodewordCount(errorCorrectedPayload: NSData, isCompact: BOOL, layerCount: NSInteger, dataCodewordCount: NSInteger):CIAztecCodeDescriptor;
     // doc://com.apple.documentation/documentation/coreimage/ciazteccodedescriptor/2875192-descriptorwithpayload
-    descriptorWithPayload_isCompact_layerCount_dataCodewordCount(errorCorrectedPayload: cocoascript.NSData, isCompact: cocoascript.BOOL, layerCount: cocoascript.NSInteger, dataCodewordCount: cocoascript.NSInteger):cocoascript.CIAztecCodeDescriptor;
+    descriptorWithPayload_isCompact_layerCount_dataCodewordCount(errorCorrectedPayload: NSData, isCompact: BOOL, layerCount: NSInteger, dataCodewordCount: NSInteger):CIAztecCodeDescriptor;
     // doc://com.apple.documentation/documentation/coreimage/ciazteccodedescriptor/2875187-errorcorrectedpayload
-    errorCorrectedPayload(): cocoascript.NSData;
+    errorCorrectedPayload(): NSData;
     setErrorCorrectedPayload(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciazteccodedescriptor/2875203-iscompact
-    isCompact(): cocoascript.BOOL;
+    isCompact(): BOOL;
     setIsCompact(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciazteccodedescriptor/2875174-layercount
-    layerCount(): cocoascript.NSInteger;
+    layerCount(): NSInteger;
     setLayerCount(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciazteccodedescriptor/2875166-datacodewordcount
-    dataCodewordCount(): cocoascript.NSInteger;
+    dataCodewordCount(): NSInteger;
     setDataCodewordCount(): void;
     //
-    alloc():cocoascript.CIAztecCodeDescriptor;
+    alloc():CIAztecCodeDescriptor;
     //
-    init():cocoascript.CIAztecCodeDescriptor;
+    init():CIAztecCodeDescriptor;
   }
 }
 
@@ -1660,25 +1660,25 @@ declare namespace cocoascript {
    */
   interface CIPDF417CodeDescriptor extends CIBarcodeDescriptor {
     // doc://com.apple.documentation/documentation/coreimage/cipdf417codedescriptor/2875182-initwithpayload
-    initWithPayload_isCompact_rowCount_columnCount(errorCorrectedPayload: cocoascript.NSData, isCompact: cocoascript.BOOL, rowCount: cocoascript.NSInteger, columnCount: cocoascript.NSInteger):cocoascript.CIPDF417CodeDescriptor;
+    initWithPayload_isCompact_rowCount_columnCount(errorCorrectedPayload: NSData, isCompact: BOOL, rowCount: NSInteger, columnCount: NSInteger):CIPDF417CodeDescriptor;
     // doc://com.apple.documentation/documentation/coreimage/cipdf417codedescriptor/2875195-descriptorwithpayload
-    descriptorWithPayload_isCompact_rowCount_columnCount(errorCorrectedPayload: cocoascript.NSData, isCompact: cocoascript.BOOL, rowCount: cocoascript.NSInteger, columnCount: cocoascript.NSInteger):cocoascript.CIPDF417CodeDescriptor;
+    descriptorWithPayload_isCompact_rowCount_columnCount(errorCorrectedPayload: NSData, isCompact: BOOL, rowCount: NSInteger, columnCount: NSInteger):CIPDF417CodeDescriptor;
     // doc://com.apple.documentation/documentation/coreimage/cipdf417codedescriptor/2875204-errorcorrectedpayload
-    errorCorrectedPayload(): cocoascript.NSData;
+    errorCorrectedPayload(): NSData;
     setErrorCorrectedPayload(): void;
     // doc://com.apple.documentation/documentation/coreimage/cipdf417codedescriptor/2875194-iscompact
-    isCompact(): cocoascript.BOOL;
+    isCompact(): BOOL;
     setIsCompact(): void;
     // doc://com.apple.documentation/documentation/coreimage/cipdf417codedescriptor/2875199-rowcount
-    rowCount(): cocoascript.NSInteger;
+    rowCount(): NSInteger;
     setRowCount(): void;
     // doc://com.apple.documentation/documentation/coreimage/cipdf417codedescriptor/2875171-columncount
-    columnCount(): cocoascript.NSInteger;
+    columnCount(): NSInteger;
     setColumnCount(): void;
     //
-    alloc():cocoascript.CIPDF417CodeDescriptor;
+    alloc():CIPDF417CodeDescriptor;
     //
-    init():cocoascript.CIPDF417CodeDescriptor;
+    init():CIPDF417CodeDescriptor;
   }
 }
 
@@ -1690,25 +1690,25 @@ declare namespace cocoascript {
    */
   interface CIDataMatrixCodeDescriptor extends CIBarcodeDescriptor {
     // doc://com.apple.documentation/documentation/coreimage/cidatamatrixcodedescriptor/2875201-initwithpayload
-    initWithPayload_rowCount_columnCount_eccVersion(errorCorrectedPayload: cocoascript.NSData, rowCount: cocoascript.NSInteger, columnCount: cocoascript.NSInteger, eccVersion: cocoascript.CIDataMatrixCodeECCVersion):cocoascript.CIDataMatrixCodeDescriptor;
+    initWithPayload_rowCount_columnCount_eccVersion(errorCorrectedPayload: NSData, rowCount: NSInteger, columnCount: NSInteger, eccVersion: CIDataMatrixCodeECCVersion):CIDataMatrixCodeDescriptor;
     // doc://com.apple.documentation/documentation/coreimage/cidatamatrixcodedescriptor/2875163-descriptorwithpayload
-    descriptorWithPayload_rowCount_columnCount_eccVersion(errorCorrectedPayload: cocoascript.NSData, rowCount: cocoascript.NSInteger, columnCount: cocoascript.NSInteger, eccVersion: cocoascript.CIDataMatrixCodeECCVersion):cocoascript.CIDataMatrixCodeDescriptor;
+    descriptorWithPayload_rowCount_columnCount_eccVersion(errorCorrectedPayload: NSData, rowCount: NSInteger, columnCount: NSInteger, eccVersion: CIDataMatrixCodeECCVersion):CIDataMatrixCodeDescriptor;
     // doc://com.apple.documentation/documentation/coreimage/cidatamatrixcodedescriptor/2875173-errorcorrectedpayload
-    errorCorrectedPayload(): cocoascript.NSData;
+    errorCorrectedPayload(): NSData;
     setErrorCorrectedPayload(): void;
     // doc://com.apple.documentation/documentation/coreimage/cidatamatrixcodedescriptor/2875200-rowcount
-    rowCount(): cocoascript.NSInteger;
+    rowCount(): NSInteger;
     setRowCount(): void;
     // doc://com.apple.documentation/documentation/coreimage/cidatamatrixcodedescriptor/2875202-columncount
-    columnCount(): cocoascript.NSInteger;
+    columnCount(): NSInteger;
     setColumnCount(): void;
     // doc://com.apple.documentation/documentation/coreimage/cidatamatrixcodedescriptor/2875170-eccversion
-    eccVersion(): cocoascript.CIDataMatrixCodeECCVersion;
+    eccVersion(): CIDataMatrixCodeECCVersion;
     setEccVersion(): void;
     //
-    alloc():cocoascript.CIDataMatrixCodeDescriptor;
+    alloc():CIDataMatrixCodeDescriptor;
     //
-    init():cocoascript.CIDataMatrixCodeDescriptor;
+    init():CIDataMatrixCodeDescriptor;
   }
 }
 
@@ -1724,15 +1724,15 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/coreimage/ciplugin/1437599-loadnonexecutableplugins
     loadNonExecutablePlugIns():void;
     // doc://com.apple.documentation/documentation/coreimage/ciplugin/1438187-loadplugin
-    loadPlugIn_allowExecutableCode(url: cocoascript.NSURL, allowExecutableCode: cocoascript.BOOL):void;
+    loadPlugIn_allowExecutableCode(url: NSURL, allowExecutableCode: BOOL):void;
     // doc://com.apple.documentation/documentation/coreimage/ciplugin/1551323-loadplugin
-    loadPlugIn_allowNonExecutable(url: cocoascript.NSURL, allowNonExecutable: cocoascript.BOOL):void;
+    loadPlugIn_allowNonExecutable(url: NSURL, allowNonExecutable: BOOL):void;
     // doc://com.apple.documentation/documentation/coreimage/ciplugin/3180431-loadnonexecutableplugin
-    loadNonExecutablePlugIn(url: cocoascript.NSURL):void;
+    loadNonExecutablePlugIn(url: NSURL):void;
     //
-    alloc():cocoascript.CIPlugIn;
+    alloc():CIPlugIn;
     //
-    init():cocoascript.CIPlugIn;
+    init():CIPlugIn;
   }
 }
 
@@ -1744,7 +1744,7 @@ declare namespace cocoascript {
    */
   interface CIFilterConstructor {
     // doc://com.apple.documentation/documentation/coreimage/cifilterconstructor/1438018-filterwithname
-    filterWithName(name: string | cocoascript.NSString):cocoascript.CIFilter;
+    filterWithName(name: string | cocoascript.NSString):CIFilter;
   }
 }
 declare namespace cocoascript {
@@ -1754,7 +1754,7 @@ declare namespace cocoascript {
    */
   interface CIPlugInRegistration {
     // doc://com.apple.documentation/documentation/coreimage/cipluginregistration/1437823-load
-    load(host: void):cocoascript.BOOL;
+    load(host: void):BOOL;
   }
 }
 declare namespace cocoascript {
@@ -1762,27 +1762,27 @@ declare namespace cocoascript {
   type CIRAWFilterOption = string | cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/coreimage/kciimagerepresentationavdepthdata
-declare const kCIImageRepresentationAVDepthData: cocoascript.CIImageRepresentationOption;
+declare const kCIImageRepresentationAVDepthData: CIImageRepresentationOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagerepresentationdepthimage
-declare const kCIImageRepresentationDepthImage: cocoascript.CIImageRepresentationOption;
+declare const kCIImageRepresentationDepthImage: CIImageRepresentationOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagerepresentationdisparityimage
-declare const kCIImageRepresentationDisparityImage: cocoascript.CIImageRepresentationOption;
+declare const kCIImageRepresentationDisparityImage: CIImageRepresentationOption;
 // doc://com.apple.documentation/documentation/coreimage/kcicontextoutputcolorspace
-declare const kCIContextOutputColorSpace: cocoascript.CIContextOption;
+declare const kCIContextOutputColorSpace: CIContextOption;
 // doc://com.apple.documentation/documentation/coreimage/kcicontextworkingcolorspace
-declare const kCIContextWorkingColorSpace: cocoascript.CIContextOption;
+declare const kCIContextWorkingColorSpace: CIContextOption;
 // doc://com.apple.documentation/documentation/coreimage/kcicontextworkingformat
-declare const kCIContextWorkingFormat: cocoascript.CIContextOption;
+declare const kCIContextWorkingFormat: CIContextOption;
 // doc://com.apple.documentation/documentation/coreimage/kcicontexthighqualitydownsample
-declare const kCIContextHighQualityDownsample: cocoascript.CIContextOption;
+declare const kCIContextHighQualityDownsample: CIContextOption;
 // doc://com.apple.documentation/documentation/coreimage/kcicontextoutputpremultiplied
-declare const kCIContextOutputPremultiplied: cocoascript.CIContextOption;
+declare const kCIContextOutputPremultiplied: CIContextOption;
 // doc://com.apple.documentation/documentation/coreimage/kcicontextcacheintermediates
-declare const kCIContextCacheIntermediates: cocoascript.CIContextOption;
+declare const kCIContextCacheIntermediates: CIContextOption;
 // doc://com.apple.documentation/documentation/coreimage/kcicontextusesoftwarerenderer
-declare const kCIContextUseSoftwareRenderer: cocoascript.CIContextOption;
+declare const kCIContextUseSoftwareRenderer: CIContextOption;
 // doc://com.apple.documentation/documentation/coreimage/kcicontextpriorityrequestlow
-declare const kCIContextPriorityRequestLow: cocoascript.CIContextOption;
+declare const kCIContextPriorityRequestLow: CIContextOption;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreimage/ciimageoption
   type CIImageOption = string | cocoascript.NSString;
@@ -1794,48 +1794,48 @@ declare namespace cocoascript {
    */
   interface CIRenderDestination extends NSObject {
     // doc://com.apple.documentation/documentation/coreimage/cirenderdestination/2875436-initwithpixelbuffer
-    initWithPixelBuffer(pixelBuffer: cocoascript.CVPixelBufferRef):cocoascript.CIRenderDestination;
+    initWithPixelBuffer(pixelBuffer: CVPixelBufferRef):CIRenderDestination;
     // doc://com.apple.documentation/documentation/coreimage/cirenderdestination/2876044-initwithiosurface
-    initWithIOSurface(surface: cocoascript.IOSurface):cocoascript.CIRenderDestination;
+    initWithIOSurface(surface: IOSurface):CIRenderDestination;
     // doc://com.apple.documentation/documentation/coreimage/cirenderdestination/2880273-initwithmtltexture
-    initWithMTLTexture_commandBuffer(texture: any, commandBuffer: any):cocoascript.CIRenderDestination;
+    initWithMTLTexture_commandBuffer(texture: any, commandBuffer: any):CIRenderDestination;
     // doc://com.apple.documentation/documentation/coreimage/cirenderdestination/2880274-initwithwidth
-    initWithWidth_height_pixelFormat_commandBuffer_mtlTextureProvider(width: cocoascript.NSUInteger, height: cocoascript.NSUInteger, pixelFormat: any, commandBuffer: any, block: void):cocoascript.CIRenderDestination;
+    initWithWidth_height_pixelFormat_commandBuffer_mtlTextureProvider(width: NSUInteger, height: NSUInteger, pixelFormat: any, commandBuffer: any, block: void):CIRenderDestination;
     // doc://com.apple.documentation/documentation/coreimage/cirenderdestination/2875438-initwithgltexture
-    initWithGLTexture_target_width_height(texture: number, target: number, width: cocoascript.NSUInteger, height: cocoascript.NSUInteger):cocoascript.CIRenderDestination;
+    initWithGLTexture_target_width_height(texture: number, target: number, width: NSUInteger, height: NSUInteger):CIRenderDestination;
     // doc://com.apple.documentation/documentation/coreimage/cirenderdestination/2875427-initwithbitmapdata
-    initWithBitmapData_width_height_bytesPerRow_format(data: void, width: cocoascript.NSUInteger, height: cocoascript.NSUInteger, bytesPerRow: cocoascript.NSUInteger, format: cocoascript.CIFormat):cocoascript.CIRenderDestination;
+    initWithBitmapData_width_height_bytesPerRow_format(data: void, width: NSUInteger, height: NSUInteger, bytesPerRow: NSUInteger, format: CIFormat):CIRenderDestination;
     // doc://com.apple.documentation/documentation/coreimage/cirenderdestination/2875443-alphamode
-    alphaMode(): cocoascript.CIRenderDestinationAlphaMode;
+    alphaMode(): CIRenderDestinationAlphaMode;
     setAlphaMode(): void;
     // doc://com.apple.documentation/documentation/coreimage/cirenderdestination/2875452-blendkernel
-    blendKernel(): cocoascript.CIBlendKernel;
+    blendKernel(): CIBlendKernel;
     setBlendKernel(): void;
     // doc://com.apple.documentation/documentation/coreimage/cirenderdestination/2875437-blendsindestinationcolorspace
-    blendsInDestinationColorSpace(): cocoascript.BOOL;
+    blendsInDestinationColorSpace(): BOOL;
     setBlendsInDestinationColorSpace(): void;
     // doc://com.apple.documentation/documentation/coreimage/cirenderdestination/2875439-colorspace
-    colorSpace(): cocoascript.CGColorSpaceRef;
+    colorSpace(): CGColorSpaceRef;
     setColorSpace(): void;
     // doc://com.apple.documentation/documentation/coreimage/cirenderdestination/2875434-width
-    width(): cocoascript.NSUInteger;
+    width(): NSUInteger;
     setWidth(): void;
     // doc://com.apple.documentation/documentation/coreimage/cirenderdestination/2875433-height
-    height(): cocoascript.NSUInteger;
+    height(): NSUInteger;
     setHeight(): void;
     // doc://com.apple.documentation/documentation/coreimage/cirenderdestination/2875451-clamped
-    clamped(): cocoascript.BOOL;
+    clamped(): BOOL;
     setClamped(): void;
     // doc://com.apple.documentation/documentation/coreimage/cirenderdestination/2875441-dithered
-    dithered(): cocoascript.BOOL;
+    dithered(): BOOL;
     setDithered(): void;
     // doc://com.apple.documentation/documentation/coreimage/cirenderdestination/2875442-flipped
-    flipped(): cocoascript.BOOL;
+    flipped(): BOOL;
     setFlipped(): void;
     //
-    alloc():cocoascript.CIRenderDestination;
+    alloc():CIRenderDestination;
     //
-    init():cocoascript.CIRenderDestination;
+    init():CIRenderDestination;
   }
 }
 
@@ -1847,7 +1847,7 @@ declare namespace cocoascript {
    */
   interface CIImageProcessorKernel extends NSObject {
     // doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2143065-outputformat
-    outputFormat(): cocoascript.CIFormat;
+    outputFormat(): CIFormat;
     setOutputFormat(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2867389-outputisopaque
     outputIsOpaque(): boolean;
@@ -1856,17 +1856,17 @@ declare namespace cocoascript {
     synchronizeInputs(): boolean;
     setSynchronizeInputs(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2138284-applywithextent
-    applyWithExtent_inputs_arguments_error(extent: cocoascript.CGRect, inputs: cocoascript.CIImage, args: cocoascript.CIImageProcessorKernel, error: cocoascript.NSError):cocoascript.CIImage;
+    applyWithExtent_inputs_arguments_error(extent: CGRect, inputs: CIImage, args: CIImageProcessorKernel, error: NSError):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2138289-formatforinputatindex
-    formatForInputAtIndex(input: number):cocoascript.CIFormat;
+    formatForInputAtIndex(input: number):CIFormat;
     // doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2138290-processwithinputs
-    processWithInputs_arguments_output_error(inputs: cocoascript.CIImageProcessorInput, arguments: cocoascript.CIImageProcessorKernel, output: cocoascript.CIImageProcessorOutput, error: cocoascript.NSError):cocoascript.BOOL;
+    processWithInputs_arguments_output_error(inputs: CIImageProcessorInput, arguments: CIImageProcessorKernel, output: CIImageProcessorOutput, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coreimage/ciimageprocessorkernel/2138287-roiforinput
-    roiForInput_arguments_outputRect(input: number, arguments: cocoascript.CIImageProcessorKernel, outputRect: cocoascript.CGRect):cocoascript.CGRect;
+    roiForInput_arguments_outputRect(input: number, arguments: CIImageProcessorKernel, outputRect: CGRect):CGRect;
     //
-    alloc():cocoascript.CIImageProcessorKernel;
+    alloc():CIImageProcessorKernel;
     //
-    init():cocoascript.CIImageProcessorKernel;
+    init():CIImageProcessorKernel;
   }
 }
 
@@ -1884,19 +1884,19 @@ declare namespace cocoascript {
     metalTexture(): any;
     setMetalTexture(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimageprocessorinput/1639649-pixelbuffer
-    pixelBuffer(): cocoascript.CVPixelBufferRef;
+    pixelBuffer(): CVPixelBufferRef;
     setPixelBuffer(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimageprocessorinput/1639657-surface
-    surface(): cocoascript.IOSurfaceRef;
+    surface(): IOSurfaceRef;
     setSurface(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimageprocessorinput/1639633-region
-    region(): cocoascript.CGRect;
+    region(): CGRect;
     setRegion(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimageprocessorinput/1639655-bytesperrow
     bytesPerRow(): any;
     setBytesPerRow(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimageprocessorinput/1639639-format
-    format(): cocoascript.CIFormat;
+    format(): CIFormat;
     setFormat(): void;
   }
 }
@@ -1913,13 +1913,13 @@ declare namespace cocoascript {
     metalTexture(): any;
     setMetalTexture(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimageprocessoroutput/1639647-pixelbuffer
-    pixelBuffer(): cocoascript.CVPixelBufferRef;
+    pixelBuffer(): CVPixelBufferRef;
     setPixelBuffer(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimageprocessoroutput/1639627-surface
-    surface(): cocoascript.IOSurfaceRef;
+    surface(): IOSurfaceRef;
     setSurface(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimageprocessoroutput/1639629-region
-    region(): cocoascript.CGRect;
+    region(): CGRect;
     setRegion(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimageprocessoroutput/1639641-metalcommandbuffer
     metalCommandBuffer(): any;
@@ -1928,7 +1928,7 @@ declare namespace cocoascript {
     bytesPerRow(): any;
     setBytesPerRow(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimageprocessoroutput/1639628-format
-    format(): cocoascript.CIFormat;
+    format(): CIFormat;
     setFormat(): void;
   }
 }
@@ -1939,18 +1939,18 @@ declare namespace cocoascript {
    */
   interface CIRenderInfo extends NSObject {
     // doc://com.apple.documentation/documentation/coreimage/cirenderinfo/2875453-kernelexecutiontime
-    kernelExecutionTime(): cocoascript.NSTimeInterval;
+    kernelExecutionTime(): NSTimeInterval;
     setKernelExecutionTime(): void;
     // doc://com.apple.documentation/documentation/coreimage/cirenderinfo/2875446-passcount
-    passCount(): cocoascript.NSInteger;
+    passCount(): NSInteger;
     setPassCount(): void;
     // doc://com.apple.documentation/documentation/coreimage/cirenderinfo/2919725-pixelsprocessed
-    pixelsProcessed(): cocoascript.NSInteger;
+    pixelsProcessed(): NSInteger;
     setPixelsProcessed(): void;
     //
-    alloc():cocoascript.CIRenderInfo;
+    alloc():CIRenderInfo;
     //
-    init():cocoascript.CIRenderInfo;
+    init():CIRenderInfo;
   }
 }
 
@@ -1962,11 +1962,11 @@ declare namespace cocoascript {
    */
   interface CIRenderTask extends NSObject {
     // doc://com.apple.documentation/documentation/coreimage/cirendertask/2881294-waituntilcompletedandreturnerror
-    waitUntilCompletedAndReturnError(error: cocoascript.NSError):cocoascript.CIRenderInfo;
+    waitUntilCompletedAndReturnError(error: NSError):CIRenderInfo;
     //
-    alloc():cocoascript.CIRenderTask;
+    alloc():CIRenderTask;
     //
-    init():cocoascript.CIRenderTask;
+    init():CIRenderTask;
   }
 }
 
@@ -1978,31 +1978,31 @@ declare namespace cocoascript {
    */
   interface CIImageAccumulator extends NSObject {
     // doc://com.apple.documentation/documentation/coreimage/ciimageaccumulator/1427722-imageaccumulatorwithextent
-    imageAccumulatorWithExtent_format(extent: cocoascript.CGRect, format: cocoascript.CIFormat):cocoascript.CIImageAccumulator;
+    imageAccumulatorWithExtent_format(extent: CGRect, format: CIFormat):CIImageAccumulator;
     // doc://com.apple.documentation/documentation/coreimage/ciimageaccumulator/1427712-imageaccumulatorwithextent
-    imageAccumulatorWithExtent_format_colorSpace(extent: cocoascript.CGRect, format: cocoascript.CIFormat, colorSpace: cocoascript.CGColorSpaceRef):cocoascript.CIImageAccumulator;
+    imageAccumulatorWithExtent_format_colorSpace(extent: CGRect, format: CIFormat, colorSpace: CGColorSpaceRef):CIImageAccumulator;
     // doc://com.apple.documentation/documentation/coreimage/ciimageaccumulator/1427718-initwithextent
-    initWithExtent_format(extent: cocoascript.CGRect, format: cocoascript.CIFormat):cocoascript.CIImageAccumulator;
+    initWithExtent_format(extent: CGRect, format: CIFormat):CIImageAccumulator;
     // doc://com.apple.documentation/documentation/coreimage/ciimageaccumulator/1427710-initwithextent
-    initWithExtent_format_colorSpace(extent: cocoascript.CGRect, format: cocoascript.CIFormat, colorSpace: cocoascript.CGColorSpaceRef):cocoascript.CIImageAccumulator;
+    initWithExtent_format_colorSpace(extent: CGRect, format: CIFormat, colorSpace: CGColorSpaceRef):CIImageAccumulator;
     // doc://com.apple.documentation/documentation/coreimage/ciimageaccumulator/1427702-setimage
-    setImage(image: cocoascript.CIImage):void;
+    setImage(image: CIImage):void;
     // doc://com.apple.documentation/documentation/coreimage/ciimageaccumulator/1427706-setimage
-    setImage_dirtyRect(image: cocoascript.CIImage, dirtyRect: cocoascript.CGRect):void;
+    setImage_dirtyRect(image: CIImage, dirtyRect: CGRect):void;
     // doc://com.apple.documentation/documentation/coreimage/ciimageaccumulator/1427714-extent
-    extent(): cocoascript.CGRect;
+    extent(): CGRect;
     setExtent(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimageaccumulator/1427716-format
-    format(): cocoascript.CIFormat;
+    format(): CIFormat;
     setFormat(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciimageaccumulator/1427704-image
-    image():cocoascript.CIImage;
+    image():CIImage;
     // doc://com.apple.documentation/documentation/coreimage/ciimageaccumulator/1427720-clear
     clear():void;
     //
-    alloc():cocoascript.CIImageAccumulator;
+    alloc():CIImageAccumulator;
     //
-    init():cocoascript.CIImageAccumulator;
+    init():CIImageAccumulator;
   }
 }
 
@@ -2020,7 +2020,7 @@ declare namespace cocoascript {
    */
   interface CIAreaHistogram extends CIAreaReductionFilter {
     // doc://com.apple.documentation/documentation/coreimage/ciareahistogram/3547092-count
-    count(): cocoascript.NSInteger;
+    count(): NSInteger;
     setCount(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciareahistogram/3547093-scale
     scale(): number;
@@ -2075,10 +2075,10 @@ declare namespace cocoascript {
    */
   interface CIAreaReductionFilter extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/ciareareductionfilter/3547101-extent
-    extent(): cocoascript.CGRect;
+    extent(): CGRect;
     setExtent(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciareareductionfilter/3547102-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -2088,10 +2088,10 @@ declare namespace cocoascript {
    */
   interface CIBumpDistortion extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cibumpdistortion/3600107-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cibumpdistortion/3600108-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cibumpdistortion/3600109-radius
     radius(): number;
@@ -2110,10 +2110,10 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/cibumpdistortionlinear/3600113-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cibumpdistortionlinear/3600114-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cibumpdistortionlinear/3600115-radius
     radius(): number;
@@ -2129,10 +2129,10 @@ declare namespace cocoascript {
    */
   interface CICircleSplashDistortion extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cicirclesplashdistortion/3600118-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicirclesplashdistortion/3600119-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicirclesplashdistortion/3600120-radius
     radius(): number;
@@ -2148,10 +2148,10 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicircularwrap/3600123-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicircularwrap/3600124-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicircularwrap/3600125-radius
     radius(): number;
@@ -2164,10 +2164,10 @@ declare namespace cocoascript {
    */
   interface CIColorAbsoluteDifference extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cicolorabsolutedifference/3547104-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorabsolutedifference/3547105-inputimage2
-    inputImage2(): cocoascript.CIImage;
+    inputImage2(): CIImage;
     setInputImage2(): void;
   }
 }
@@ -2177,7 +2177,7 @@ declare namespace cocoascript {
    */
   interface CIColorThreshold extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cicolorthreshold/3547107-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorthreshold/3547108-threshold
     threshold(): number;
@@ -2190,7 +2190,7 @@ declare namespace cocoascript {
    */
   interface CIColorThresholdOtsu extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cicolorthresholdotsu/3584769-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -2207,10 +2207,10 @@ declare namespace cocoascript {
    */
   interface CIDisplacementDistortion extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cidisplacementdistortion/3600127-displacementimage
-    displacementImage(): cocoascript.CIImage;
+    displacementImage(): CIImage;
     setDisplacementImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cidisplacementdistortion/3600128-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cidisplacementdistortion/3600129-scale
     scale(): number;
@@ -2223,13 +2223,13 @@ declare namespace cocoascript {
    */
   interface CIDroste extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cidroste/3600131-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cidroste/3600132-insetpoint0
-    insetPoint0(): cocoascript.CGPoint;
+    insetPoint0(): CGPoint;
     setInsetPoint0(): void;
     // doc://com.apple.documentation/documentation/coreimage/cidroste/3600133-insetpoint1
-    insetPoint1(): cocoascript.CGPoint;
+    insetPoint1(): CGPoint;
     setInsetPoint1(): void;
     // doc://com.apple.documentation/documentation/coreimage/cidroste/3600134-periodicity
     periodicity(): number;
@@ -2252,19 +2252,19 @@ declare namespace cocoascript {
    */
   interface CIFourCoordinateGeometryFilter extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cifourcoordinategeometryfilter/3338731-bottomleft
-    bottomLeft(): cocoascript.CGPoint;
+    bottomLeft(): CGPoint;
     setBottomLeft(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifourcoordinategeometryfilter/3338732-bottomright
-    bottomRight(): cocoascript.CGPoint;
+    bottomRight(): CGPoint;
     setBottomRight(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifourcoordinategeometryfilter/3338733-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifourcoordinategeometryfilter/3338734-topleft
-    topLeft(): cocoascript.CGPoint;
+    topLeft(): CGPoint;
     setTopLeft(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifourcoordinategeometryfilter/3338735-topright
-    topRight(): cocoascript.CGPoint;
+    topRight(): CGPoint;
     setTopRight(): void;
   }
 }
@@ -2274,16 +2274,16 @@ declare namespace cocoascript {
    */
   interface CIGlassDistortion extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/ciglassdistortion/3600156-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciglassdistortion/3600157-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciglassdistortion/3600158-scale
     scale(): number;
     setScale(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciglassdistortion/3600159-textureimage
-    textureImage(): cocoascript.CIImage;
+    textureImage(): CIImage;
     setTextureImage(): void;
   }
 }
@@ -2293,13 +2293,13 @@ declare namespace cocoascript {
    */
   interface CIGlassLozenge extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/ciglasslozenge/3600161-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciglasslozenge/3600162-point0
-    point0(): cocoascript.CGPoint;
+    point0(): CGPoint;
     setPoint0(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciglasslozenge/3600163-point1
-    point1(): cocoascript.CGPoint;
+    point1(): CGPoint;
     setPoint1(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciglasslozenge/3600164-radius
     radius(): number;
@@ -2321,7 +2321,7 @@ declare namespace cocoascript {
     highLimit(): number;
     setHighLimit(): void;
     // doc://com.apple.documentation/documentation/coreimage/cihistogramdisplay/3547127-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cihistogramdisplay/3547128-lowlimit
     lowLimit(): number;
@@ -2334,10 +2334,10 @@ declare namespace cocoascript {
    */
   interface CIHoleDistortion extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/ciholedistortion/3600167-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciholedistortion/3600168-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciholedistortion/3600169-radius
     radius(): number;
@@ -2350,10 +2350,10 @@ declare namespace cocoascript {
    */
   interface CIKMeans extends CIAreaReductionFilter {
     // doc://com.apple.documentation/documentation/coreimage/cikmeans/3547130-count
-    count(): cocoascript.NSInteger;
+    count(): NSInteger;
     setCount(): void;
     // doc://com.apple.documentation/documentation/coreimage/cikmeans/3547131-inputmeans
-    inputMeans(): cocoascript.CIImage;
+    inputMeans(): CIImage;
     setInputMeans(): void;
     // doc://com.apple.documentation/documentation/coreimage/cikmeans/3547132-passes
     passes(): number;
@@ -2369,10 +2369,10 @@ declare namespace cocoascript {
    */
   interface CILightTunnel extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cilighttunnel/3600171-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cilighttunnel/3600172-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cilighttunnel/3600173-radius
     radius(): number;
@@ -2388,16 +2388,16 @@ declare namespace cocoascript {
    */
   interface CINinePartStretched extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cininepartstretched/3600176-breakpoint0
-    breakpoint0(): cocoascript.CGPoint;
+    breakpoint0(): CGPoint;
     setBreakpoint0(): void;
     // doc://com.apple.documentation/documentation/coreimage/cininepartstretched/3600177-breakpoint1
-    breakpoint1(): cocoascript.CGPoint;
+    breakpoint1(): CGPoint;
     setBreakpoint1(): void;
     // doc://com.apple.documentation/documentation/coreimage/cininepartstretched/3600178-growamount
-    growAmount(): cocoascript.CGPoint;
+    growAmount(): CGPoint;
     setGrowAmount(): void;
     // doc://com.apple.documentation/documentation/coreimage/cininepartstretched/3600179-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -2407,19 +2407,19 @@ declare namespace cocoascript {
    */
   interface CINinePartTiled extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cinineparttiled/3600181-breakpoint0
-    breakpoint0(): cocoascript.CGPoint;
+    breakpoint0(): CGPoint;
     setBreakpoint0(): void;
     // doc://com.apple.documentation/documentation/coreimage/cinineparttiled/3600182-breakpoint1
-    breakpoint1(): cocoascript.CGPoint;
+    breakpoint1(): CGPoint;
     setBreakpoint1(): void;
     // doc://com.apple.documentation/documentation/coreimage/cinineparttiled/3600183-flipytiles
     flipYTiles(): boolean;
     setFlipYTiles(): void;
     // doc://com.apple.documentation/documentation/coreimage/cinineparttiled/3600184-growamount
-    growAmount(): cocoascript.CGPoint;
+    growAmount(): CGPoint;
     setGrowAmount(): void;
     // doc://com.apple.documentation/documentation/coreimage/cinineparttiled/3600185-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -2429,10 +2429,10 @@ declare namespace cocoascript {
    */
   interface CIPinchDistortion extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cipinchdistortion/3600187-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cipinchdistortion/3600188-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cipinchdistortion/3600189-radius
     radius(): number;
@@ -2461,10 +2461,10 @@ declare namespace cocoascript {
     cropAmount(): number;
     setCropAmount(): void;
     // doc://com.apple.documentation/documentation/coreimage/cistretchcrop/3600194-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cistretchcrop/3600195-size
-    size(): cocoascript.CGPoint;
+    size(): CGPoint;
     setSize(): void;
   }
 }
@@ -2474,10 +2474,10 @@ declare namespace cocoascript {
    */
   interface CITorusLensDistortion extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/citoruslensdistortion/3600197-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/citoruslensdistortion/3600198-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/citoruslensdistortion/3600199-radius
     radius(): number;
@@ -2499,10 +2499,10 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/citwirldistortion/3600204-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/citwirldistortion/3600205-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/citwirldistortion/3600206-radius
     radius(): number;
@@ -2518,10 +2518,10 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/civortexdistortion/3600209-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/civortexdistortion/3600210-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/civortexdistortion/3600211-radius
     radius(): number;
@@ -2533,75 +2533,75 @@ declare namespace cocoascript {
   type CIImageAutoAdjustmentOption = string | cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/coreimage/kciimageautoadjustenhance
-declare const kCIImageAutoAdjustEnhance: cocoascript.CIImageAutoAdjustmentOption;
+declare const kCIImageAutoAdjustEnhance: CIImageAutoAdjustmentOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageautoadjustredeye
-declare const kCIImageAutoAdjustRedEye: cocoascript.CIImageAutoAdjustmentOption;
+declare const kCIImageAutoAdjustRedEye: CIImageAutoAdjustmentOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageautoadjustfeatures
-declare const kCIImageAutoAdjustFeatures: cocoascript.CIImageAutoAdjustmentOption;
+declare const kCIImageAutoAdjustFeatures: CIImageAutoAdjustmentOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageautoadjustcrop
-declare const kCIImageAutoAdjustCrop: cocoascript.CIImageAutoAdjustmentOption;
+declare const kCIImageAutoAdjustCrop: CIImageAutoAdjustmentOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageautoadjustlevel
-declare const kCIImageAutoAdjustLevel: cocoascript.CIImageAutoAdjustmentOption;
+declare const kCIImageAutoAdjustLevel: CIImageAutoAdjustmentOption;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreimage/cikernelroicallback
   type CIKernelROICallback = cocoascript.CGRect;
 }
 // doc://com.apple.documentation/documentation/coreimage/kciinputbaselineexposurekey
-declare const kCIInputBaselineExposureKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputBaselineExposureKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputdisablegamutmapkey
-declare const kCIInputDisableGamutMapKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputDisableGamutMapKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputmoireamountkey
-declare const kCIInputMoireAmountKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputMoireAmountKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kcisupporteddecoderversionskey
-declare const kCISupportedDecoderVersionsKey: cocoascript.CIRAWFilterOption;
+declare const kCISupportedDecoderVersionsKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputallowdraftmodekey
-declare const kCIInputAllowDraftModeKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputAllowDraftModeKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputdecoderversionkey
-declare const kCIInputDecoderVersionKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputDecoderVersionKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputboostkey
-declare const kCIInputBoostKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputBoostKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputneutralchromaticityxkey
-declare const kCIInputNeutralChromaticityXKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputNeutralChromaticityXKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputneutralchromaticityykey
-declare const kCIInputNeutralChromaticityYKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputNeutralChromaticityYKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputneutraltemperaturekey
-declare const kCIInputNeutralTemperatureKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputNeutralTemperatureKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputneutraltintkey
-declare const kCIInputNeutralTintKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputNeutralTintKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputneutrallocationkey
-declare const kCIInputNeutralLocationKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputNeutralLocationKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputscalefactorkey
-declare const kCIInputScaleFactorKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputScaleFactorKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputignoreimageorientationkey
-declare const kCIInputIgnoreImageOrientationKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputIgnoreImageOrientationKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputimageorientationkey
-declare const kCIInputImageOrientationKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputImageOrientationKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputenablesharpeningkey
-declare const kCIInputEnableSharpeningKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputEnableSharpeningKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputenablechromaticnoisetrackingkey
-declare const kCIInputEnableChromaticNoiseTrackingKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputEnableChromaticNoiseTrackingKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputnoisereductionamountkey
-declare const kCIInputNoiseReductionAmountKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputNoiseReductionAmountKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputenablevendorlenscorrectionkey
-declare const kCIInputEnableVendorLensCorrectionKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputEnableVendorLensCorrectionKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputluminancenoisereductionamountkey
-declare const kCIInputLuminanceNoiseReductionAmountKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputLuminanceNoiseReductionAmountKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputcolornoisereductionamountkey
-declare const kCIInputColorNoiseReductionAmountKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputColorNoiseReductionAmountKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputnoisereductionsharpnessamountkey
-declare const kCIInputNoiseReductionSharpnessAmountKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputNoiseReductionSharpnessAmountKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputnoisereductioncontrastamountkey
-declare const kCIInputNoiseReductionContrastAmountKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputNoiseReductionContrastAmountKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputnoisereductiondetailamountkey
-declare const kCIInputNoiseReductionDetailAmountKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputNoiseReductionDetailAmountKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputboostshadowamountkey
-declare const kCIInputBoostShadowAmountKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputBoostShadowAmountKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputlinearspacefilter
-declare const kCIInputLinearSpaceFilter: cocoascript.CIRAWFilterOption;
+declare const kCIInputLinearSpaceFilter: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kcioutputnativesizekey
-declare const kCIOutputNativeSizeKey: cocoascript.CIRAWFilterOption;
+declare const kCIOutputNativeSizeKey: CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciactivekeys
-declare const kCIActiveKeys: cocoascript.CIRAWFilterOption;
+declare const kCIActiveKeys: CIRAWFilterOption;
 declare namespace cocoascript {
   /**
    * The properties you use to configure a CMYK halftone filter.
@@ -2612,13 +2612,13 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicmykhalftone/3228098-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicmykhalftone/3228099-graycomponentreplacement
     grayComponentReplacement(): number;
     setGrayComponentReplacement(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicmykhalftone/3228100-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicmykhalftone/3228101-sharpness
     sharpness(): number;
@@ -2638,10 +2638,10 @@ declare namespace cocoascript {
    */
   interface CILabDeltaE extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cilabdeltae/3228513-image2
-    image2(): cocoascript.CIImage;
+    image2(): CIImage;
     setImage2(): void;
     // doc://com.apple.documentation/documentation/coreimage/cilabdeltae/3228514-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -2673,7 +2673,7 @@ declare namespace cocoascript {
     maxWidth(): number;
     setMaxWidth(): void;
     // doc://com.apple.documentation/documentation/coreimage/cipdf417barcodegenerator/3228612-message
-    message(): cocoascript.NSData;
+    message(): NSData;
     setMessage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cipdf417barcodegenerator/3228613-minheight
     minHeight(): number;
@@ -2699,7 +2699,7 @@ declare namespace cocoascript {
     correctionLevel(): string | cocoascript.NSString;
     setCorrectionLevel(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciqrcodegenerator/3228683-message
-    message(): cocoascript.NSData;
+    message(): NSData;
     setMessage(): void;
   }
 }
@@ -2727,10 +2727,10 @@ declare namespace cocoascript {
    */
   interface CICompositeOperation extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cicompositeoperation/3228182-backgroundimage
-    backgroundImage(): cocoascript.CIImage;
+    backgroundImage(): CIImage;
     setBackgroundImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicompositeoperation/3228183-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -2741,10 +2741,10 @@ declare namespace cocoascript {
    */
   interface CIAffineClamp extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/ciaffineclamp/3228054-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciaffineclamp/3228055-transform
-    transform(): cocoascript.CGAffineTransform;
+    transform(): CGAffineTransform;
     setTransform(): void;
   }
 }
@@ -2755,10 +2755,10 @@ declare namespace cocoascript {
    */
   interface CIAffineTile extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/ciaffinetile/3228057-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciaffinetile/3228058-transform
-    transform(): cocoascript.CGAffineTransform;
+    transform(): CGAffineTransform;
     setTransform(): void;
   }
 }
@@ -2772,7 +2772,7 @@ declare namespace cocoascript {
     scaleFactor(): number;
     setScaleFactor(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciattributedtextimagegenerator/3228061-text
-    text(): cocoascript.NSAttributedString;
+    text(): NSAttributedString;
     setText(): void;
   }
 }
@@ -2792,7 +2792,7 @@ declare namespace cocoascript {
     layers(): number;
     setLayers(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciazteccodegenerator/3228066-message
-    message(): cocoascript.NSData;
+    message(): NSData;
     setMessage(): void;
   }
 }
@@ -2803,7 +2803,7 @@ declare namespace cocoascript {
    */
   interface CIBarcodeGenerator extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cibarcodegenerator/3228068-barcodedescriptor
-    barcodeDescriptor(): cocoascript.CIBarcodeDescriptor;
+    barcodeDescriptor(): CIBarcodeDescriptor;
     setBarcodeDescriptor(): void;
   }
 }
@@ -2834,7 +2834,7 @@ declare namespace cocoascript {
     aspectRatio(): number;
     setAspectRatio(): void;
     // doc://com.apple.documentation/documentation/coreimage/cibicubicscaletransform/3228075-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cibicubicscaletransform/3228076-parameterb
     parameterB(): number;
@@ -2854,13 +2854,13 @@ declare namespace cocoascript {
    */
   interface CIBlendWithMask extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/ciblendwithmask/3228080-backgroundimage
-    backgroundImage(): cocoascript.CIImage;
+    backgroundImage(): CIImage;
     setBackgroundImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendwithmask/3228081-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciblendwithmask/3228082-maskimage
-    maskImage(): cocoascript.CIImage;
+    maskImage(): CIImage;
     setMaskImage(): void;
   }
 }
@@ -2871,7 +2871,7 @@ declare namespace cocoascript {
    */
   interface CIBloom extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cibloom/3228084-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cibloom/3228085-intensity
     intensity(): number;
@@ -2888,7 +2888,7 @@ declare namespace cocoascript {
    */
   interface CIBokehBlur extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cibokehblur/3228088-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cibokehblur/3228089-radius
     radius(): number;
@@ -2911,7 +2911,7 @@ declare namespace cocoascript {
    */
   interface CIBoxBlur extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/ciboxblur/3228094-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciboxblur/3228095-radius
     radius(): number;
@@ -2925,13 +2925,13 @@ declare namespace cocoascript {
    */
   interface CICheckerboardGenerator extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cicheckerboardgenerator/3228105-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicheckerboardgenerator/3228106-color0
-    color0(): cocoascript.CIColor;
+    color0(): CIColor;
     setColor0(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicheckerboardgenerator/3228107-color1
-    color1(): cocoascript.CIColor;
+    color1(): CIColor;
     setColor1(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicheckerboardgenerator/3228108-sharpness
     sharpness(): number;
@@ -2948,10 +2948,10 @@ declare namespace cocoascript {
    */
   interface CICircularScreen extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cicircularscreen/3228111-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicircularscreen/3228112-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicircularscreen/3228113-sharpness
     sharpness(): number;
@@ -2971,7 +2971,7 @@ declare namespace cocoascript {
     barcodeHeight(): number;
     setBarcodeHeight(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicode128barcodegenerator/3228117-message
-    message(): cocoascript.NSData;
+    message(): NSData;
     setMessage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicode128barcodegenerator/3228118-quietspace
     quietSpace(): number;
@@ -2985,13 +2985,13 @@ declare namespace cocoascript {
    */
   interface CIColorClamp extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cicolorclamp/3228120-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorclamp/3228121-maxcomponents
-    maxComponents(): cocoascript.CIVector;
+    maxComponents(): CIVector;
     setMaxComponents(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorclamp/3228122-mincomponents
-    minComponents(): cocoascript.CIVector;
+    minComponents(): CIVector;
     setMinComponents(): void;
   }
 }
@@ -3008,7 +3008,7 @@ declare namespace cocoascript {
     contrast(): number;
     setContrast(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorcontrols/3228126-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorcontrols/3228127-saturation
     saturation(): number;
@@ -3022,16 +3022,16 @@ declare namespace cocoascript {
    */
   interface CIColorCrossPolynomial extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cicolorcrosspolynomial/3228129-bluecoefficients
-    blueCoefficients(): cocoascript.CIVector;
+    blueCoefficients(): CIVector;
     setBlueCoefficients(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorcrosspolynomial/3228130-greencoefficients
-    greenCoefficients(): cocoascript.CIVector;
+    greenCoefficients(): CIVector;
     setGreenCoefficients(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorcrosspolynomial/3228131-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorcrosspolynomial/3228132-redcoefficients
-    redCoefficients(): cocoascript.CIVector;
+    redCoefficients(): CIVector;
     setRedCoefficients(): void;
   }
 }
@@ -3042,13 +3042,13 @@ declare namespace cocoascript {
    */
   interface CIColorCube extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cicolorcube/3228134-cubedata
-    cubeData(): cocoascript.NSData;
+    cubeData(): NSData;
     setCubeData(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorcube/3228135-cubedimension
     cubeDimension(): number;
     setCubeDimension(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorcube/3228136-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -3059,16 +3059,16 @@ declare namespace cocoascript {
    */
   interface CIColorCubeWithColorSpace extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cicolorcubewithcolorspace/3228138-colorspace
-    colorSpace(): cocoascript.CGColorSpaceRef;
+    colorSpace(): CGColorSpaceRef;
     setColorSpace(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorcubewithcolorspace/3228139-cubedata
-    cubeData(): cocoascript.NSData;
+    cubeData(): NSData;
     setCubeData(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorcubewithcolorspace/3228140-cubedimension
     cubeDimension(): number;
     setCubeDimension(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorcubewithcolorspace/3228141-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -3079,22 +3079,22 @@ declare namespace cocoascript {
    */
   interface CIColorCubesMixedWithMask extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cicolorcubesmixedwithmask/3228143-colorspace
-    colorSpace(): cocoascript.CGColorSpaceRef;
+    colorSpace(): CGColorSpaceRef;
     setColorSpace(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorcubesmixedwithmask/3228144-cube0data
-    cube0Data(): cocoascript.NSData;
+    cube0Data(): NSData;
     setCube0Data(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorcubesmixedwithmask/3228145-cube1data
-    cube1Data(): cocoascript.NSData;
+    cube1Data(): NSData;
     setCube1Data(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorcubesmixedwithmask/3228146-cubedimension
     cubeDimension(): number;
     setCubeDimension(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorcubesmixedwithmask/3228147-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorcubesmixedwithmask/3228148-maskimage
-    maskImage(): cocoascript.CIImage;
+    maskImage(): CIImage;
     setMaskImage(): void;
   }
 }
@@ -3105,16 +3105,16 @@ declare namespace cocoascript {
    */
   interface CIColorCurves extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cicolorcurves/3228150-colorspace
-    colorSpace(): cocoascript.CGColorSpaceRef;
+    colorSpace(): CGColorSpaceRef;
     setColorSpace(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorcurves/3228151-curvesdata
-    curvesData(): cocoascript.NSData;
+    curvesData(): NSData;
     setCurvesData(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorcurves/3228152-curvesdomain
-    curvesDomain(): cocoascript.CIVector;
+    curvesDomain(): CIVector;
     setCurvesDomain(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorcurves/3228153-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -3125,7 +3125,7 @@ declare namespace cocoascript {
    */
   interface CIColorInvert extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cicolorinvert/3228155-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -3136,10 +3136,10 @@ declare namespace cocoascript {
    */
   interface CIColorMap extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cicolormap/3228157-gradientimage
-    gradientImage(): cocoascript.CIImage;
+    gradientImage(): CIImage;
     setGradientImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolormap/3228158-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -3150,22 +3150,22 @@ declare namespace cocoascript {
    */
   interface CIColorMatrix extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cicolormatrix/3228160-avector
-    AVector(): cocoascript.CIVector;
+    AVector(): CIVector;
     setAVector(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolormatrix/3228161-bvector
-    BVector(): cocoascript.CIVector;
+    BVector(): CIVector;
     setBVector(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolormatrix/3228162-gvector
-    GVector(): cocoascript.CIVector;
+    GVector(): CIVector;
     setGVector(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolormatrix/3228163-rvector
-    RVector(): cocoascript.CIVector;
+    RVector(): CIVector;
     setRVector(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolormatrix/3228164-biasvector
-    biasVector(): cocoascript.CIVector;
+    biasVector(): CIVector;
     setBiasVector(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolormatrix/3228165-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -3176,10 +3176,10 @@ declare namespace cocoascript {
    */
   interface CIColorMonochrome extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cicolormonochrome/3228167-color
-    color(): cocoascript.CIColor;
+    color(): CIColor;
     setColor(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolormonochrome/3228168-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolormonochrome/3228169-intensity
     intensity(): number;
@@ -3193,19 +3193,19 @@ declare namespace cocoascript {
    */
   interface CIColorPolynomial extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cicolorpolynomial/3228171-alphacoefficients
-    alphaCoefficients(): cocoascript.CIVector;
+    alphaCoefficients(): CIVector;
     setAlphaCoefficients(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorpolynomial/3228172-bluecoefficients
-    blueCoefficients(): cocoascript.CIVector;
+    blueCoefficients(): CIVector;
     setBlueCoefficients(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorpolynomial/3228173-greencoefficients
-    greenCoefficients(): cocoascript.CIVector;
+    greenCoefficients(): CIVector;
     setGreenCoefficients(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorpolynomial/3228174-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorpolynomial/3228175-redcoefficients
-    redCoefficients(): cocoascript.CIVector;
+    redCoefficients(): CIVector;
     setRedCoefficients(): void;
   }
 }
@@ -3216,7 +3216,7 @@ declare namespace cocoascript {
    */
   interface CIColorPosterize extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cicolorposterize/3228177-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicolorposterize/3228178-levels
     levels(): number;
@@ -3230,7 +3230,7 @@ declare namespace cocoascript {
    */
   interface CIComicEffect extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cicomiceffect/3228180-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -3244,10 +3244,10 @@ declare namespace cocoascript {
     bias(): number;
     setBias(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciconvolution/3228186-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciconvolution/3228187-weights
-    weights(): cocoascript.CIVector;
+    weights(): CIVector;
     setWeights(): void;
   }
 }
@@ -3261,10 +3261,10 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicopymachinetransition/3228190-color
-    color(): cocoascript.CIColor;
+    color(): CIColor;
     setColor(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicopymachinetransition/3228191-extent
-    extent(): cocoascript.CGRect;
+    extent(): CGRect;
     setExtent(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicopymachinetransition/3228192-opacity
     opacity(): number;
@@ -3284,10 +3284,10 @@ declare namespace cocoascript {
     headIndex(): number;
     setHeadIndex(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicoremlmodel/3228196-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicoremlmodel/3228197-model
-    model(): cocoascript.MLModel;
+    model(): MLModel;
     setModel(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicoremlmodel/3228198-softmaxnormalization
     softmaxNormalization(): boolean;
@@ -3301,10 +3301,10 @@ declare namespace cocoascript {
    */
   interface CICrystallize extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cicrystallize/3228200-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicrystallize/3228201-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cicrystallize/3228202-radius
     radius(): number;
@@ -3318,13 +3318,13 @@ declare namespace cocoascript {
    */
   interface CIDepthOfField extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cidepthoffield/3228204-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cidepthoffield/3228205-point0
-    point0(): cocoascript.CGPoint;
+    point0(): CGPoint;
     setPoint0(): void;
     // doc://com.apple.documentation/documentation/coreimage/cidepthoffield/3228206-point1
-    point1(): cocoascript.CGPoint;
+    point1(): CGPoint;
     setPoint1(): void;
     // doc://com.apple.documentation/documentation/coreimage/cidepthoffield/3228207-radius
     radius(): number;
@@ -3347,7 +3347,7 @@ declare namespace cocoascript {
    */
   interface CIDepthToDisparity extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cidepthtodisparity/3228212-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -3358,7 +3358,7 @@ declare namespace cocoascript {
    */
   interface CIDiscBlur extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cidiscblur/3228214-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cidiscblur/3228215-radius
     radius(): number;
@@ -3372,13 +3372,13 @@ declare namespace cocoascript {
    */
   interface CIDisintegrateWithMaskTransition extends CITransitionFilter {
     // doc://com.apple.documentation/documentation/coreimage/cidisintegratewithmasktransition/3228217-maskimage
-    maskImage(): cocoascript.CIImage;
+    maskImage(): CIImage;
     setMaskImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cidisintegratewithmasktransition/3228218-shadowdensity
     shadowDensity(): number;
     setShadowDensity(): void;
     // doc://com.apple.documentation/documentation/coreimage/cidisintegratewithmasktransition/3228219-shadowoffset
-    shadowOffset(): cocoascript.CGPoint;
+    shadowOffset(): CGPoint;
     setShadowOffset(): void;
     // doc://com.apple.documentation/documentation/coreimage/cidisintegratewithmasktransition/3228220-shadowradius
     shadowRadius(): number;
@@ -3392,7 +3392,7 @@ declare namespace cocoascript {
    */
   interface CIDisparityToDepth extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cidisparitytodepth/3228222-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -3411,7 +3411,7 @@ declare namespace cocoascript {
    */
   interface CIDither extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cidither/3228225-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cidither/3228226-intensity
     intensity(): number;
@@ -3428,7 +3428,7 @@ declare namespace cocoascript {
     amount(): number;
     setAmount(): void;
     // doc://com.apple.documentation/documentation/coreimage/cidocumentenhancer/3228229-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -3442,10 +3442,10 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/cidotscreen/3228232-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cidotscreen/3228233-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cidotscreen/3228234-sharpness
     sharpness(): number;
@@ -3462,13 +3462,13 @@ declare namespace cocoascript {
    */
   interface CIEdgePreserveUpsample extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/ciedgepreserveupsample/3228237-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciedgepreserveupsample/3228238-lumasigma
     lumaSigma(): number;
     setLumaSigma(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciedgepreserveupsample/3228239-smallimage
-    smallImage(): cocoascript.CIImage;
+    smallImage(): CIImage;
     setSmallImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciedgepreserveupsample/3228240-spatialsigma
     spatialSigma(): number;
@@ -3482,7 +3482,7 @@ declare namespace cocoascript {
    */
   interface CIEdgeWork extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/ciedgework/3228242-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciedgework/3228243-radius
     radius(): number;
@@ -3496,7 +3496,7 @@ declare namespace cocoascript {
    */
   interface CIEdges extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/ciedges/3228245-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciedges/3228246-intensity
     intensity(): number;
@@ -3513,10 +3513,10 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/cieightfoldreflectedtile/3228249-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cieightfoldreflectedtile/3228250-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cieightfoldreflectedtile/3228251-width
     width(): number;
@@ -3533,7 +3533,7 @@ declare namespace cocoascript {
     EV(): number;
     setEV(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciexposureadjust/3228254-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -3544,13 +3544,13 @@ declare namespace cocoascript {
    */
   interface CIFalseColor extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cifalsecolor/3228256-color0
-    color0(): cocoascript.CIColor;
+    color0(): CIColor;
     setColor0(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifalsecolor/3228257-color1
-    color1(): cocoascript.CIColor;
+    color1(): CIColor;
     setColor1(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifalsecolor/3228258-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -3561,13 +3561,13 @@ declare namespace cocoascript {
    */
   interface CIFlashTransition extends CITransitionFilter {
     // doc://com.apple.documentation/documentation/coreimage/ciflashtransition/3228436-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciflashtransition/3228437-color
-    color(): cocoascript.CIColor;
+    color(): CIColor;
     setColor(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciflashtransition/3228438-extent
-    extent(): cocoascript.CGRect;
+    extent(): CGRect;
     setExtent(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciflashtransition/3228439-fadethreshold
     fadeThreshold(): number;
@@ -3596,10 +3596,10 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifourfoldreflectedtile/3228446-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifourfoldreflectedtile/3228447-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifourfoldreflectedtile/3228448-width
     width(): number;
@@ -3616,10 +3616,10 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifourfoldrotatedtile/3228451-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifourfoldrotatedtile/3228452-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifourfoldrotatedtile/3228453-width
     width(): number;
@@ -3639,10 +3639,10 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifourfoldtranslatedtile/3228457-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifourfoldtranslatedtile/3228458-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifourfoldtranslatedtile/3228459-width
     width(): number;
@@ -3656,7 +3656,7 @@ declare namespace cocoascript {
    */
   interface CIGaborGradients extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cigaborgradients/3325514-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -3667,7 +3667,7 @@ declare namespace cocoascript {
    */
   interface CIGammaAdjust extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cigammaadjust/3228461-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cigammaadjust/3228462-power
     power(): number;
@@ -3681,7 +3681,7 @@ declare namespace cocoascript {
    */
   interface CIGaussianBlur extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cigaussianblur/3228464-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cigaussianblur/3228465-radius
     radius(): number;
@@ -3695,13 +3695,13 @@ declare namespace cocoascript {
    */
   interface CIGaussianGradient extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cigaussiangradient/3228467-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cigaussiangradient/3228468-color0
-    color0(): cocoascript.CIColor;
+    color0(): CIColor;
     setColor0(): void;
     // doc://com.apple.documentation/documentation/coreimage/cigaussiangradient/3228469-color1
-    color1(): cocoascript.CIColor;
+    color1(): CIColor;
     setColor1(): void;
     // doc://com.apple.documentation/documentation/coreimage/cigaussiangradient/3228470-radius
     radius(): number;
@@ -3718,10 +3718,10 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciglidereflectedtile/3228473-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciglidereflectedtile/3228474-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciglidereflectedtile/3228475-width
     width(): number;
@@ -3735,7 +3735,7 @@ declare namespace cocoascript {
    */
   interface CIGloom extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cigloom/3228477-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cigloom/3228478-intensity
     intensity(): number;
@@ -3755,10 +3755,10 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/cihatchedscreen/3228482-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cihatchedscreen/3228483-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cihatchedscreen/3228484-sharpness
     sharpness(): number;
@@ -3775,7 +3775,7 @@ declare namespace cocoascript {
    */
   interface CIHeightFieldFromMask extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/ciheightfieldfrommask/3228487-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciheightfieldfrommask/3228488-radius
     radius(): number;
@@ -3789,10 +3789,10 @@ declare namespace cocoascript {
    */
   interface CIHexagonalPixellate extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cihexagonalpixellate/3228490-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cihexagonalpixellate/3228491-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cihexagonalpixellate/3228492-scale
     scale(): number;
@@ -3809,7 +3809,7 @@ declare namespace cocoascript {
     highlightAmount(): number;
     setHighlightAmount(): void;
     // doc://com.apple.documentation/documentation/coreimage/cihighlightshadowadjust/3228495-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cihighlightshadowadjust/3228496-radius
     radius(): number;
@@ -3829,7 +3829,7 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/cihueadjust/3228500-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -3840,7 +3840,7 @@ declare namespace cocoascript {
    */
   interface CIHueSaturationValueGradient extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cihuesaturationvaluegradient/3228502-colorspace
-    colorSpace(): cocoascript.CGColorSpaceRef;
+    colorSpace(): CGColorSpaceRef;
     setColorSpace(): void;
     // doc://com.apple.documentation/documentation/coreimage/cihuesaturationvaluegradient/3228503-dither
     dither(): number;
@@ -3866,13 +3866,13 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/cikaleidoscope/3228509-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cikaleidoscope/3228510-count
-    count(): cocoascript.NSInteger;
+    count(): NSInteger;
     setCount(): void;
     // doc://com.apple.documentation/documentation/coreimage/cikaleidoscope/3228511-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -3919,7 +3919,7 @@ declare namespace cocoascript {
     aspectRatio(): number;
     setAspectRatio(): void;
     // doc://com.apple.documentation/documentation/coreimage/cilanczosscaletransform/3228517-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cilanczosscaletransform/3228518-scale
     scale(): number;
@@ -3933,10 +3933,10 @@ declare namespace cocoascript {
    */
   interface CILenticularHaloGenerator extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cilenticularhalogenerator/3228520-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cilenticularhalogenerator/3228521-color
-    color(): cocoascript.CIColor;
+    color(): CIColor;
     setColor(): void;
     // doc://com.apple.documentation/documentation/coreimage/cilenticularhalogenerator/3228522-halooverlap
     haloOverlap(): number;
@@ -3977,7 +3977,7 @@ declare namespace cocoascript {
     edgeIntensity(): number;
     setEdgeIntensity(): void;
     // doc://com.apple.documentation/documentation/coreimage/cilineoverlay/3228533-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cilineoverlay/3228534-threshold
     threshold(): number;
@@ -3994,10 +3994,10 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/cilinescreen/3228537-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cilinescreen/3228538-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cilinescreen/3228539-sharpness
     sharpness(): number;
@@ -4014,16 +4014,16 @@ declare namespace cocoascript {
    */
   interface CILinearGradient extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cilineargradient/3228542-color0
-    color0(): cocoascript.CIColor;
+    color0(): CIColor;
     setColor0(): void;
     // doc://com.apple.documentation/documentation/coreimage/cilineargradient/3228543-color1
-    color1(): cocoascript.CIColor;
+    color1(): CIColor;
     setColor1(): void;
     // doc://com.apple.documentation/documentation/coreimage/cilineargradient/3228544-point0
-    point0(): cocoascript.CGPoint;
+    point0(): CGPoint;
     setPoint0(): void;
     // doc://com.apple.documentation/documentation/coreimage/cilineargradient/3228545-point1
-    point1(): cocoascript.CGPoint;
+    point1(): CGPoint;
     setPoint1(): void;
   }
 }
@@ -4034,7 +4034,7 @@ declare namespace cocoascript {
    */
   interface CILinearToSRGBToneCurve extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cilineartosrgbtonecurve/3228547-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -4045,7 +4045,7 @@ declare namespace cocoascript {
    */
   interface CIMaskToAlpha extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cimasktoalpha/3228549-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -4056,10 +4056,10 @@ declare namespace cocoascript {
    */
   interface CIMaskedVariableBlur extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cimaskedvariableblur/3228551-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cimaskedvariableblur/3228552-mask
-    mask(): cocoascript.CIImage;
+    mask(): CIImage;
     setMask(): void;
     // doc://com.apple.documentation/documentation/coreimage/cimaskedvariableblur/3228553-radius
     radius(): number;
@@ -4073,7 +4073,7 @@ declare namespace cocoascript {
    */
   interface CIMaximumComponent extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cimaximumcomponent/3228555-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -4084,7 +4084,7 @@ declare namespace cocoascript {
    */
   interface CIMedian extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cimedian/3228557-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -4095,10 +4095,10 @@ declare namespace cocoascript {
    */
   interface CIMeshGenerator extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cimeshgenerator/3228559-color
-    color(): cocoascript.CIColor;
+    color(): CIColor;
     setColor(): void;
     // doc://com.apple.documentation/documentation/coreimage/cimeshgenerator/3228560-mesh
-    mesh(): cocoascript.NSArray;
+    mesh(): NSArray;
     setMesh(): void;
     // doc://com.apple.documentation/documentation/coreimage/cimeshgenerator/3228561-width
     width(): number;
@@ -4112,7 +4112,7 @@ declare namespace cocoascript {
    */
   interface CIMinimumComponent extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/ciminimumcomponent/3228563-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -4126,10 +4126,10 @@ declare namespace cocoascript {
     amount(): number;
     setAmount(): void;
     // doc://com.apple.documentation/documentation/coreimage/cimix/3228566-backgroundimage
-    backgroundImage(): cocoascript.CIImage;
+    backgroundImage(): CIImage;
     setBackgroundImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cimix/3228567-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -4143,7 +4143,7 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/cimodtransition/3228570-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cimodtransition/3228571-compression
     compression(): number;
@@ -4160,7 +4160,7 @@ declare namespace cocoascript {
    */
   interface CIMorphologyGradient extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cimorphologygradient/3228574-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cimorphologygradient/3228575-radius
     radius(): number;
@@ -4174,7 +4174,7 @@ declare namespace cocoascript {
    */
   interface CIMorphologyMaximum extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cimorphologymaximum/3228577-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cimorphologymaximum/3228578-radius
     radius(): number;
@@ -4188,7 +4188,7 @@ declare namespace cocoascript {
    */
   interface CIMorphologyMinimum extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cimorphologyminimum/3228580-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cimorphologyminimum/3228581-radius
     radius(): number;
@@ -4205,7 +4205,7 @@ declare namespace cocoascript {
     height(): number;
     setHeight(): void;
     // doc://com.apple.documentation/documentation/coreimage/cimorphologyrectanglemaximum/3228584-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cimorphologyrectanglemaximum/3228585-width
     width(): number;
@@ -4222,7 +4222,7 @@ declare namespace cocoascript {
     height(): number;
     setHeight(): void;
     // doc://com.apple.documentation/documentation/coreimage/cimorphologyrectangleminimum/3228588-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cimorphologyrectangleminimum/3228589-width
     width(): number;
@@ -4239,7 +4239,7 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/cimotionblur/3228592-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cimotionblur/3228593-radius
     radius(): number;
@@ -4253,7 +4253,7 @@ declare namespace cocoascript {
    */
   interface CINoiseReduction extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cinoisereduction/3228595-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cinoisereduction/3228596-noiselevel
     noiseLevel(): number;
@@ -4273,10 +4273,10 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/cioptile/3228600-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cioptile/3228601-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cioptile/3228602-scale
     scale(): number;
@@ -4296,16 +4296,16 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/cipagecurltransition/3228619-backsideimage
-    backsideImage(): cocoascript.CIImage;
+    backsideImage(): CIImage;
     setBacksideImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cipagecurltransition/3228620-extent
-    extent(): cocoascript.CGRect;
+    extent(): CGRect;
     setExtent(): void;
     // doc://com.apple.documentation/documentation/coreimage/cipagecurltransition/3228621-radius
     radius(): number;
     setRadius(): void;
     // doc://com.apple.documentation/documentation/coreimage/cipagecurltransition/3228622-shadingimage
-    shadingImage(): cocoascript.CIImage;
+    shadingImage(): CIImage;
     setShadingImage(): void;
   }
 }
@@ -4319,10 +4319,10 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/cipagecurlwithshadowtransition/3228625-backsideimage
-    backsideImage(): cocoascript.CIImage;
+    backsideImage(): CIImage;
     setBacksideImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cipagecurlwithshadowtransition/3228626-extent
-    extent(): cocoascript.CGRect;
+    extent(): CGRect;
     setExtent(): void;
     // doc://com.apple.documentation/documentation/coreimage/cipagecurlwithshadowtransition/3228627-radius
     radius(): number;
@@ -4331,7 +4331,7 @@ declare namespace cocoascript {
     shadowAmount(): number;
     setShadowAmount(): void;
     // doc://com.apple.documentation/documentation/coreimage/cipagecurlwithshadowtransition/3228629-shadowextent
-    shadowExtent(): cocoascript.CGRect;
+    shadowExtent(): CGRect;
     setShadowExtent(): void;
     // doc://com.apple.documentation/documentation/coreimage/cipagecurlwithshadowtransition/3228630-shadowsize
     shadowSize(): number;
@@ -4345,10 +4345,10 @@ declare namespace cocoascript {
    */
   interface CIPaletteCentroid extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cipalettecentroid/3228632-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cipalettecentroid/3228633-paletteimage
-    paletteImage(): cocoascript.CIImage;
+    paletteImage(): CIImage;
     setPaletteImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cipalettecentroid/3228634-perceptual
     perceptual(): boolean;
@@ -4362,10 +4362,10 @@ declare namespace cocoascript {
    */
   interface CIPalettize extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cipalettize/3228636-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cipalettize/3228637-paletteimage
-    paletteImage(): cocoascript.CIImage;
+    paletteImage(): CIImage;
     setPaletteImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cipalettize/3228638-perceptual
     perceptual(): boolean;
@@ -4385,10 +4385,10 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciparallelogramtile/3228642-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciparallelogramtile/3228643-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciparallelogramtile/3228644-width
     width(): number;
@@ -4416,7 +4416,7 @@ declare namespace cocoascript {
     focalLength(): number;
     setFocalLength(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciperspectiverotate/3325538-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciperspectiverotate/3325539-pitch
     pitch(): number;
@@ -4436,19 +4436,19 @@ declare namespace cocoascript {
    */
   interface CIPerspectiveTile extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/ciperspectivetile/3228653-bottomleft
-    bottomLeft(): cocoascript.CGPoint;
+    bottomLeft(): CGPoint;
     setBottomLeft(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciperspectivetile/3228654-bottomright
-    bottomRight(): cocoascript.CGPoint;
+    bottomRight(): CGPoint;
     setBottomRight(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciperspectivetile/3228655-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciperspectivetile/3228656-topleft
-    topLeft(): cocoascript.CGPoint;
+    topLeft(): CGPoint;
     setTopLeft(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciperspectivetile/3228657-topright
-    topRight(): cocoascript.CGPoint;
+    topRight(): CGPoint;
     setTopRight(): void;
   }
 }
@@ -4467,7 +4467,7 @@ declare namespace cocoascript {
    */
   interface CIPerspectiveTransformWithExtent extends CIFourCoordinateGeometryFilter {
     // doc://com.apple.documentation/documentation/coreimage/ciperspectivetransformwithextent/3228667-extent
-    extent(): cocoascript.CGRect;
+    extent(): CGRect;
     setExtent(): void;
   }
 }
@@ -4478,7 +4478,7 @@ declare namespace cocoascript {
    */
   interface CIPhotoEffect extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/ciphotoeffect/3228672-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -4489,10 +4489,10 @@ declare namespace cocoascript {
    */
   interface CIPixellate extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cipixellate/3228674-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cipixellate/3228675-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cipixellate/3228676-scale
     scale(): number;
@@ -4506,10 +4506,10 @@ declare namespace cocoascript {
    */
   interface CIPointillize extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cipointillize/3228678-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cipointillize/3228679-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cipointillize/3228680-radius
     radius(): number;
@@ -4523,13 +4523,13 @@ declare namespace cocoascript {
    */
   interface CIRadialGradient extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/ciradialgradient/3228685-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciradialgradient/3228686-color0
-    color0(): cocoascript.CIColor;
+    color0(): CIColor;
     setColor0(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciradialgradient/3228687-color1
-    color1(): cocoascript.CIColor;
+    color1(): CIColor;
     setColor1(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciradialgradient/3228688-radius0
     radius0(): number;
@@ -4554,16 +4554,16 @@ declare namespace cocoascript {
    */
   interface CIRippleTransition extends CITransitionFilter {
     // doc://com.apple.documentation/documentation/coreimage/cirippletransition/3228692-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cirippletransition/3228693-extent
-    extent(): cocoascript.CGRect;
+    extent(): CGRect;
     setExtent(): void;
     // doc://com.apple.documentation/documentation/coreimage/cirippletransition/3228694-scale
     scale(): number;
     setScale(): void;
     // doc://com.apple.documentation/documentation/coreimage/cirippletransition/3228695-shadingimage
-    shadingImage(): cocoascript.CIImage;
+    shadingImage(): CIImage;
     setShadingImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cirippletransition/3228696-width
     width(): number;
@@ -4577,10 +4577,10 @@ declare namespace cocoascript {
    */
   interface CIRoundedRectangleGenerator extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/ciroundedrectanglegenerator/3338737-color
-    color(): cocoascript.CIColor;
+    color(): CIColor;
     setColor(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciroundedrectanglegenerator/3338738-extent
-    extent(): cocoascript.CGRect;
+    extent(): CGRect;
     setExtent(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciroundedrectanglegenerator/3338739-radius
     radius(): number;
@@ -4594,7 +4594,7 @@ declare namespace cocoascript {
    */
   interface CISRGBToneCurveToLinear extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cisrgbtonecurvetolinear/3228698-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -4605,7 +4605,7 @@ declare namespace cocoascript {
    */
   interface CISaliencyMap extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cisaliencymap/3228700-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -4616,7 +4616,7 @@ declare namespace cocoascript {
    */
   interface CISepiaTone extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cisepiatone/3228702-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cisepiatone/3228703-intensity
     intensity(): number;
@@ -4630,13 +4630,13 @@ declare namespace cocoascript {
    */
   interface CIShadedMaterial extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cishadedmaterial/3228705-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cishadedmaterial/3228706-scale
     scale(): number;
     setScale(): void;
     // doc://com.apple.documentation/documentation/coreimage/cishadedmaterial/3228707-shadingimage
-    shadingImage(): cocoascript.CIImage;
+    shadingImage(): CIImage;
     setShadingImage(): void;
   }
 }
@@ -4647,7 +4647,7 @@ declare namespace cocoascript {
    */
   interface CISharpenLuminance extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cisharpenluminance/3228709-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cisharpenluminance/3228710-radius
     radius(): number;
@@ -4667,10 +4667,10 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/cisixfoldreflectedtile/3228714-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cisixfoldreflectedtile/3228715-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cisixfoldreflectedtile/3228716-width
     width(): number;
@@ -4687,10 +4687,10 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/cisixfoldrotatedtile/3228719-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cisixfoldrotatedtile/3228720-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cisixfoldrotatedtile/3228721-width
     width(): number;
@@ -4704,16 +4704,16 @@ declare namespace cocoascript {
    */
   interface CISmoothLinearGradient extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cismoothlineargradient/3228723-color0
-    color0(): cocoascript.CIColor;
+    color0(): CIColor;
     setColor0(): void;
     // doc://com.apple.documentation/documentation/coreimage/cismoothlineargradient/3228724-color1
-    color1(): cocoascript.CIColor;
+    color1(): CIColor;
     setColor1(): void;
     // doc://com.apple.documentation/documentation/coreimage/cismoothlineargradient/3228725-point0
-    point0(): cocoascript.CGPoint;
+    point0(): CGPoint;
     setPoint0(): void;
     // doc://com.apple.documentation/documentation/coreimage/cismoothlineargradient/3228726-point1
-    point1(): cocoascript.CGPoint;
+    point1(): CGPoint;
     setPoint1(): void;
   }
 }
@@ -4724,13 +4724,13 @@ declare namespace cocoascript {
    */
   interface CISpotColor extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cispotcolor/3228728-centercolor1
-    centerColor1(): cocoascript.CIColor;
+    centerColor1(): CIColor;
     setCenterColor1(): void;
     // doc://com.apple.documentation/documentation/coreimage/cispotcolor/3228729-centercolor2
-    centerColor2(): cocoascript.CIColor;
+    centerColor2(): CIColor;
     setCenterColor2(): void;
     // doc://com.apple.documentation/documentation/coreimage/cispotcolor/3228730-centercolor3
-    centerColor3(): cocoascript.CIColor;
+    centerColor3(): CIColor;
     setCenterColor3(): void;
     // doc://com.apple.documentation/documentation/coreimage/cispotcolor/3228731-closeness1
     closeness1(): number;
@@ -4751,16 +4751,16 @@ declare namespace cocoascript {
     contrast3(): number;
     setContrast3(): void;
     // doc://com.apple.documentation/documentation/coreimage/cispotcolor/3228737-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cispotcolor/3228738-replacementcolor1
-    replacementColor1(): cocoascript.CIColor;
+    replacementColor1(): CIColor;
     setReplacementColor1(): void;
     // doc://com.apple.documentation/documentation/coreimage/cispotcolor/3228739-replacementcolor2
-    replacementColor2(): cocoascript.CIColor;
+    replacementColor2(): CIColor;
     setReplacementColor2(): void;
     // doc://com.apple.documentation/documentation/coreimage/cispotcolor/3228740-replacementcolor3
-    replacementColor3(): cocoascript.CIColor;
+    replacementColor3(): CIColor;
     setReplacementColor3(): void;
   }
 }
@@ -4774,19 +4774,19 @@ declare namespace cocoascript {
     brightness(): number;
     setBrightness(): void;
     // doc://com.apple.documentation/documentation/coreimage/cispotlight/3228743-color
-    color(): cocoascript.CIColor;
+    color(): CIColor;
     setColor(): void;
     // doc://com.apple.documentation/documentation/coreimage/cispotlight/3228744-concentration
     concentration(): number;
     setConcentration(): void;
     // doc://com.apple.documentation/documentation/coreimage/cispotlight/3228745-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cispotlight/3228746-lightpointsat
-    lightPointsAt(): cocoascript.CIVector;
+    lightPointsAt(): CIVector;
     setLightPointsAt(): void;
     // doc://com.apple.documentation/documentation/coreimage/cispotlight/3228747-lightposition
-    lightPosition(): cocoascript.CIVector;
+    lightPosition(): CIVector;
     setLightPosition(): void;
   }
 }
@@ -4797,10 +4797,10 @@ declare namespace cocoascript {
    */
   interface CIStarShineGenerator extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cistarshinegenerator/3228749-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cistarshinegenerator/3228750-color
-    color(): cocoascript.CIColor;
+    color(): CIColor;
     setColor(): void;
     // doc://com.apple.documentation/documentation/coreimage/cistarshinegenerator/3228751-crossangle
     crossAngle(): number;
@@ -4832,7 +4832,7 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/cistraighten/3228759-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -4843,13 +4843,13 @@ declare namespace cocoascript {
    */
   interface CIStripesGenerator extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cistripesgenerator/3228761-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cistripesgenerator/3228762-color0
-    color0(): cocoascript.CIColor;
+    color0(): CIColor;
     setColor0(): void;
     // doc://com.apple.documentation/documentation/coreimage/cistripesgenerator/3228763-color1
-    color1(): cocoascript.CIColor;
+    color1(): CIColor;
     setColor1(): void;
     // doc://com.apple.documentation/documentation/coreimage/cistripesgenerator/3228764-sharpness
     sharpness(): number;
@@ -4866,10 +4866,10 @@ declare namespace cocoascript {
    */
   interface CISunbeamsGenerator extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cisunbeamsgenerator/3228767-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cisunbeamsgenerator/3228768-color
-    color(): cocoascript.CIColor;
+    color(): CIColor;
     setColor(): void;
     // doc://com.apple.documentation/documentation/coreimage/cisunbeamsgenerator/3228769-maxstriationradius
     maxStriationRadius(): number;
@@ -4898,10 +4898,10 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciswipetransition/3228776-color
-    color(): cocoascript.CIColor;
+    color(): CIColor;
     setColor(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciswipetransition/3228777-extent
-    extent(): cocoascript.CGRect;
+    extent(): CGRect;
     setExtent(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciswipetransition/3228778-opacity
     opacity(): number;
@@ -4918,13 +4918,13 @@ declare namespace cocoascript {
    */
   interface CITemperatureAndTint extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/citemperatureandtint/3228781-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/citemperatureandtint/3228782-neutral
-    neutral(): cocoascript.CIVector;
+    neutral(): CIVector;
     setNeutral(): void;
     // doc://com.apple.documentation/documentation/coreimage/citemperatureandtint/3228783-targetneutral
-    targetNeutral(): cocoascript.CIVector;
+    targetNeutral(): CIVector;
     setTargetNeutral(): void;
   }
 }
@@ -4955,7 +4955,7 @@ declare namespace cocoascript {
    */
   interface CIThermal extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cithermal/3228790-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -4966,22 +4966,22 @@ declare namespace cocoascript {
    */
   interface CIToneCurve extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/citonecurve/3228792-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/citonecurve/3228793-point0
-    point0(): cocoascript.CGPoint;
+    point0(): CGPoint;
     setPoint0(): void;
     // doc://com.apple.documentation/documentation/coreimage/citonecurve/3228794-point1
-    point1(): cocoascript.CGPoint;
+    point1(): CGPoint;
     setPoint1(): void;
     // doc://com.apple.documentation/documentation/coreimage/citonecurve/3228795-point2
-    point2(): cocoascript.CGPoint;
+    point2(): CGPoint;
     setPoint2(): void;
     // doc://com.apple.documentation/documentation/coreimage/citonecurve/3228796-point3
-    point3(): cocoascript.CGPoint;
+    point3(): CGPoint;
     setPoint3(): void;
     // doc://com.apple.documentation/documentation/coreimage/citonecurve/3228797-point4
-    point4(): cocoascript.CGPoint;
+    point4(): CGPoint;
     setPoint4(): void;
   }
 }
@@ -4995,10 +4995,10 @@ declare namespace cocoascript {
     decay(): number;
     setDecay(): void;
     // doc://com.apple.documentation/documentation/coreimage/citrianglekaleidoscope/3228804-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/citrianglekaleidoscope/3228805-point
-    point(): cocoascript.CGPoint;
+    point(): CGPoint;
     setPoint(): void;
     // doc://com.apple.documentation/documentation/coreimage/citrianglekaleidoscope/3228806-rotation
     rotation(): number;
@@ -5018,10 +5018,10 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/citriangletile/3228810-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/citriangletile/3228811-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/citriangletile/3228812-width
     width(): number;
@@ -5038,10 +5038,10 @@ declare namespace cocoascript {
     angle(): number;
     setAngle(): void;
     // doc://com.apple.documentation/documentation/coreimage/citwelvefoldreflectedtile/3228815-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/citwelvefoldreflectedtile/3228816-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/citwelvefoldreflectedtile/3228817-width
     width(): number;
@@ -5055,7 +5055,7 @@ declare namespace cocoascript {
    */
   interface CIUnsharpMask extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/ciunsharpmask/3228819-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciunsharpmask/3228820-intensity
     intensity(): number;
@@ -5075,7 +5075,7 @@ declare namespace cocoascript {
     amount(): number;
     setAmount(): void;
     // doc://com.apple.documentation/documentation/coreimage/civibrance/3228824-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -5086,13 +5086,13 @@ declare namespace cocoascript {
    */
   interface CIVignetteEffect extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/civignetteeffect/3228830-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/civignetteeffect/3228831-falloff
     falloff(): number;
     setFalloff(): void;
     // doc://com.apple.documentation/documentation/coreimage/civignetteeffect/3228832-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/civignetteeffect/3228833-intensity
     intensity(): number;
@@ -5109,7 +5109,7 @@ declare namespace cocoascript {
    */
   interface CIVignette extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/civignette/3228826-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/civignette/3228827-intensity
     intensity(): number;
@@ -5126,10 +5126,10 @@ declare namespace cocoascript {
    */
   interface CIWhitePointAdjust extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/ciwhitepointadjust/3228836-color
-    color(): cocoascript.CIColor;
+    color(): CIColor;
     setColor(): void;
     // doc://com.apple.documentation/documentation/coreimage/ciwhitepointadjust/3228837-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -5140,7 +5140,7 @@ declare namespace cocoascript {
    */
   interface CIXRay extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cixray/3228839-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -5154,10 +5154,10 @@ declare namespace cocoascript {
     amount(): number;
     setAmount(): void;
     // doc://com.apple.documentation/documentation/coreimage/cizoomblur/3228842-center
-    center(): cocoascript.CGPoint;
+    center(): CGPoint;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/coreimage/cizoomblur/3228843-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
   }
 }
@@ -5170,7 +5170,7 @@ declare namespace cocoascript {
   type CIDataMatrixCodeECCVersion = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/coreimage/kciinputlocaltonemapamountkey
-declare const kCIInputLocalToneMapAmountKey: cocoascript.CIRAWFilterOption;
+declare const kCIInputLocalToneMapAmountKey: CIRAWFilterOption;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreimage/cirenderdestinationalphamode
   type CIRenderDestinationAlphaMode = cocoascript.NSUInteger;
@@ -5184,17 +5184,17 @@ declare namespace cocoascript {
   type CIImageRepresentationOption = string | cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/coreimage/kciimageauxiliarysemanticsegmentationglassesmatte
-declare const kCIImageAuxiliarySemanticSegmentationGlassesMatte: cocoascript.CIImageOption;
+declare const kCIImageAuxiliarySemanticSegmentationGlassesMatte: CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageauxiliarysemanticsegmentationhairmatte
-declare const kCIImageAuxiliarySemanticSegmentationHairMatte: cocoascript.CIImageOption;
+declare const kCIImageAuxiliarySemanticSegmentationHairMatte: CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageauxiliarysemanticsegmentationskinmatte
-declare const kCIImageAuxiliarySemanticSegmentationSkinMatte: cocoascript.CIImageOption;
+declare const kCIImageAuxiliarySemanticSegmentationSkinMatte: CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageauxiliarysemanticsegmentationskymatte
-declare const kCIImageAuxiliarySemanticSegmentationSkyMatte: cocoascript.CIImageOption;
+declare const kCIImageAuxiliarySemanticSegmentationSkyMatte: CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageauxiliarysemanticsegmentationteethmatte
-declare const kCIImageAuxiliarySemanticSegmentationTeethMatte: cocoascript.CIImageOption;
+declare const kCIImageAuxiliarySemanticSegmentationTeethMatte: CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagetonemaphdrtosdr
-declare const kCIImageToneMapHDRtoSDR: cocoascript.CIImageOption;
+declare const kCIImageToneMapHDRtoSDR: CIImageOption;
 declare namespace cocoascript {
   /**
    * The properties you use to configure a Core Image filter.
@@ -5202,10 +5202,10 @@ declare namespace cocoascript {
    */
   interface CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228048-outputimage
-    outputImage(): cocoascript.CIImage;
+    outputImage(): CIImage;
     setOutputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228047-customattributes
-    customAttributes():cocoascript.CIFilter;
+    customAttributes():CIFilter;
   }
 }
 declare namespace cocoascript {
@@ -5215,10 +5215,10 @@ declare namespace cocoascript {
    */
   interface CITransitionFilter extends CIFilter {
     // doc://com.apple.documentation/documentation/coreimage/citransitionfilter/3228799-inputimage
-    inputImage(): cocoascript.CIImage;
+    inputImage(): CIImage;
     setInputImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/citransitionfilter/3228800-targetimage
-    targetImage(): cocoascript.CIImage;
+    targetImage(): CIImage;
     setTargetImage(): void;
     // doc://com.apple.documentation/documentation/coreimage/citransitionfilter/3228801-time
     time(): number;
@@ -5226,22 +5226,22 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/coreimage/kcicontextallowlowpower
-declare const kCIContextAllowLowPower: cocoascript.CIContextOption;
+declare const kCIContextAllowLowPower: CIContextOption;
 // doc://com.apple.documentation/documentation/coreimage/kcicontextname
-declare const kCIContextName: cocoascript.CIContextOption;
+declare const kCIContextName: CIContextOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagerepresentationavportraiteffectsmatte
-declare const kCIImageRepresentationAVPortraitEffectsMatte: cocoascript.CIImageRepresentationOption;
+declare const kCIImageRepresentationAVPortraitEffectsMatte: CIImageRepresentationOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagerepresentationavsemanticsegmentationmattes
-declare const kCIImageRepresentationAVSemanticSegmentationMattes: cocoascript.CIImageRepresentationOption;
+declare const kCIImageRepresentationAVSemanticSegmentationMattes: CIImageRepresentationOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagerepresentationportraiteffectsmatteimage
-declare const kCIImageRepresentationPortraitEffectsMatteImage: cocoascript.CIImageRepresentationOption;
+declare const kCIImageRepresentationPortraitEffectsMatteImage: CIImageRepresentationOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagerepresentationsemanticsegmentationglassesmatteimage
-declare const kCIImageRepresentationSemanticSegmentationGlassesMatteImage: cocoascript.CIImageRepresentationOption;
+declare const kCIImageRepresentationSemanticSegmentationGlassesMatteImage: CIImageRepresentationOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagerepresentationsemanticsegmentationhairmatteimage
-declare const kCIImageRepresentationSemanticSegmentationHairMatteImage: cocoascript.CIImageRepresentationOption;
+declare const kCIImageRepresentationSemanticSegmentationHairMatteImage: CIImageRepresentationOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagerepresentationsemanticsegmentationskinmatteimage
-declare const kCIImageRepresentationSemanticSegmentationSkinMatteImage: cocoascript.CIImageRepresentationOption;
+declare const kCIImageRepresentationSemanticSegmentationSkinMatteImage: CIImageRepresentationOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagerepresentationsemanticsegmentationskymatteimage
-declare const kCIImageRepresentationSemanticSegmentationSkyMatteImage: cocoascript.CIImageRepresentationOption;
+declare const kCIImageRepresentationSemanticSegmentationSkyMatteImage: CIImageRepresentationOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagerepresentationsemanticsegmentationteethmatteimage
-declare const kCIImageRepresentationSemanticSegmentationTeethMatteImage: cocoascript.CIImageRepresentationOption;
+declare const kCIImageRepresentationSemanticSegmentationTeethMatteImage: CIImageRepresentationOption;

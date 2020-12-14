@@ -5,45 +5,45 @@ declare namespace cocoascript {
    */
   interface CLLocationManagerDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/3563956-locationmanagerdidchangeauthoriz
-    locationManagerDidChangeAuthorization(manager: cocoascript.CLLocationManager):void;
+    locationManagerDidChangeAuthorization(manager: CLLocationManager):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423701-locationmanager
-    locationManager_didChangeAuthorizationStatus(manager: cocoascript.CLLocationManager, status: cocoascript.CLAuthorizationStatus):void;
+    locationManager_didChangeAuthorizationStatus(manager: CLLocationManager, status: CLAuthorizationStatus):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423786-locationmanager
-    locationManager_didFailWithError(manager: cocoascript.CLLocationManager, error: cocoascript.NSError):void;
+    locationManager_didFailWithError(manager: CLLocationManager, error: NSError):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager
-    locationManager_didUpdateLocations(manager: cocoascript.CLLocationManager, locations: cocoascript.CLLocation):void;
+    locationManager_didUpdateLocations(manager: CLLocationManager, locations: CLLocation):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423716-locationmanager
-    locationManager_didUpdateToLocation_fromLocation(manager: cocoascript.CLLocationManager, newLocation: cocoascript.CLLocation, oldLocation: cocoascript.CLLocation):void;
+    locationManager_didUpdateToLocation_fromLocation(manager: CLLocationManager, newLocation: CLLocation, oldLocation: CLLocation):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423537-locationmanager
-    locationManager_didFinishDeferredUpdatesWithError(manager: cocoascript.CLLocationManager, error: cocoascript.NSError):void;
+    locationManager_didFinishDeferredUpdatesWithError(manager: CLLocationManager, error: NSError):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1621553-locationmanagerdidpauselocationu
-    locationManagerDidPauseLocationUpdates(manager: cocoascript.CLLocationManager):void;
+    locationManagerDidPauseLocationUpdates(manager: CLLocationManager):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1621512-locationmanagerdidresumelocation
-    locationManagerDidResumeLocationUpdates(manager: cocoascript.CLLocationManager):void;
+    locationManagerDidResumeLocationUpdates(manager: CLLocationManager):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1621555-locationmanager
-    locationManager_didUpdateHeading(manager: cocoascript.CLLocationManager, newHeading: cocoascript.CLHeading):void;
+    locationManager_didUpdateHeading(manager: CLLocationManager, newHeading: CLHeading):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1621457-locationmanagershoulddisplayhead
-    locationManagerShouldDisplayHeadingCalibration(manager: cocoascript.CLLocationManager):cocoascript.BOOL;
+    locationManagerShouldDisplayHeadingCalibration(manager: CLLocationManager):BOOL;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423560-locationmanager
-    locationManager_didEnterRegion(manager: cocoascript.CLLocationManager, region: cocoascript.CLRegion):void;
+    locationManager_didEnterRegion(manager: CLLocationManager, region: CLRegion):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423630-locationmanager
-    locationManager_didExitRegion(manager: cocoascript.CLLocationManager, region: cocoascript.CLRegion):void;
+    locationManager_didExitRegion(manager: CLLocationManager, region: CLRegion):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423570-locationmanager
-    locationManager_didDetermineState_forRegion(manager: cocoascript.CLLocationManager, state: cocoascript.CLRegionState, region: cocoascript.CLRegion):void;
+    locationManager_didDetermineState_forRegion(manager: CLLocationManager, state: CLRegionState, region: CLRegion):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423720-locationmanager
-    locationManager_monitoringDidFailForRegion_withError(manager: cocoascript.CLLocationManager, region: cocoascript.CLRegion, error: cocoascript.NSError):void;
+    locationManager_monitoringDidFailForRegion_withError(manager: CLLocationManager, region: CLRegion, error: NSError):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1423842-locationmanager
-    locationManager_didStartMonitoringForRegion(manager: cocoascript.CLLocationManager, region: cocoascript.CLRegion):void;
+    locationManager_didStartMonitoringForRegion(manager: CLLocationManager, region: CLRegion):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/3240610-locationmanager
-    locationManager_didRangeBeacons_satisfyingConstraint(manager: cocoascript.CLLocationManager, beacons: cocoascript.CLBeacon, beaconConstraint: cocoascript.CLBeaconIdentityConstraint):void;
+    locationManager_didRangeBeacons_satisfyingConstraint(manager: CLLocationManager, beacons: CLBeacon, beaconConstraint: CLBeaconIdentityConstraint):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/3240609-locationmanager
-    locationManager_didFailRangingBeaconsForConstraint_error(manager: cocoascript.CLLocationManager, beaconConstraint: cocoascript.CLBeaconIdentityConstraint, error: cocoascript.NSError):void;
+    locationManager_didFailRangingBeaconsForConstraint_error(manager: CLLocationManager, beaconConstraint: CLBeaconIdentityConstraint, error: NSError):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1621501-locationmanager
-    locationManager_didRangeBeacons_inRegion(manager: cocoascript.CLLocationManager, beacons: cocoascript.CLBeacon, region: cocoascript.CLBeaconRegion):void;
+    locationManager_didRangeBeacons_inRegion(manager: CLLocationManager, beacons: CLBeacon, region: CLBeaconRegion):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1621483-locationmanager
-    locationManager_rangingBeaconsDidFailForRegion_withError(manager: cocoascript.CLLocationManager, region: cocoascript.CLBeaconRegion, error: cocoascript.NSError):void;
+    locationManager_rangingBeaconsDidFailForRegion_withError(manager: CLLocationManager, region: CLBeaconRegion, error: NSError):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanagerdelegate/1621529-locationmanager
-    locationManager_didVisit(manager: cocoascript.CLLocationManager, visit: cocoascript.CLVisit):void;
+    locationManager_didVisit(manager: CLLocationManager, visit: CLVisit):void;
   }
 }
 declare namespace cocoascript {
@@ -53,51 +53,51 @@ declare namespace cocoascript {
    */
   interface CLLocation extends NSObject {
     // doc://com.apple.documentation/documentation/corelocation/cllocation/1423660-initwithlatitude
-    initWithLatitude_longitude(latitude: cocoascript.CLLocationDegrees, longitude: cocoascript.CLLocationDegrees):cocoascript.CLLocation;
+    initWithLatitude_longitude(latitude: CLLocationDegrees, longitude: CLLocationDegrees):CLLocation;
     // doc://com.apple.documentation/documentation/corelocation/cllocation/1423666-initwithcoordinate
-    initWithCoordinate_altitude_horizontalAccuracy_verticalAccuracy_timestamp(coordinate: cocoascript.CLLocationCoordinate2D, altitude: cocoascript.CLLocationDistance, hAccuracy: cocoascript.CLLocationAccuracy, vAccuracy: cocoascript.CLLocationAccuracy, timestamp: cocoascript.NSDate):cocoascript.CLLocation;
+    initWithCoordinate_altitude_horizontalAccuracy_verticalAccuracy_timestamp(coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance, hAccuracy: CLLocationAccuracy, vAccuracy: CLLocationAccuracy, timestamp: NSDate):CLLocation;
     // doc://com.apple.documentation/documentation/corelocation/cllocation/1423718-initwithcoordinate
-    initWithCoordinate_altitude_horizontalAccuracy_verticalAccuracy_course_speed_timestamp(coordinate: cocoascript.CLLocationCoordinate2D, altitude: cocoascript.CLLocationDistance, hAccuracy: cocoascript.CLLocationAccuracy, vAccuracy: cocoascript.CLLocationAccuracy, course: cocoascript.CLLocationDirection, speed: cocoascript.CLLocationSpeed, timestamp: cocoascript.NSDate):cocoascript.CLLocation;
+    initWithCoordinate_altitude_horizontalAccuracy_verticalAccuracy_course_speed_timestamp(coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance, hAccuracy: CLLocationAccuracy, vAccuracy: CLLocationAccuracy, course: CLLocationDirection, speed: CLLocationSpeed, timestamp: NSDate):CLLocation;
     // doc://com.apple.documentation/documentation/corelocation/cllocation/3524339-initwithcoordinate
-    initWithCoordinate_altitude_horizontalAccuracy_verticalAccuracy_course_courseAccuracy_speed_speedAccuracy_timestamp(coordinate: cocoascript.CLLocationCoordinate2D, altitude: cocoascript.CLLocationDistance, hAccuracy: cocoascript.CLLocationAccuracy, vAccuracy: cocoascript.CLLocationAccuracy, course: cocoascript.CLLocationDirection, courseAccuracy: cocoascript.CLLocationDirectionAccuracy, speed: cocoascript.CLLocationSpeed, speedAccuracy: cocoascript.CLLocationSpeedAccuracy, timestamp: cocoascript.NSDate):cocoascript.CLLocation;
+    initWithCoordinate_altitude_horizontalAccuracy_verticalAccuracy_course_courseAccuracy_speed_speedAccuracy_timestamp(coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance, hAccuracy: CLLocationAccuracy, vAccuracy: CLLocationAccuracy, course: CLLocationDirection, courseAccuracy: CLLocationDirectionAccuracy, speed: CLLocationSpeed, speedAccuracy: CLLocationSpeedAccuracy, timestamp: NSDate):CLLocation;
     // doc://com.apple.documentation/documentation/corelocation/cllocation/1423504-coordinate
-    coordinate(): cocoascript.CLLocationCoordinate2D;
+    coordinate(): CLLocationCoordinate2D;
     setCoordinate(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocation/1423820-altitude
-    altitude(): cocoascript.CLLocationDistance;
+    altitude(): CLLocationDistance;
     setAltitude(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocation/1616762-floor
-    floor(): cocoascript.CLFloor;
+    floor(): CLFloor;
     setFloor(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocation/1423599-horizontalaccuracy
-    horizontalAccuracy(): cocoascript.CLLocationAccuracy;
+    horizontalAccuracy(): CLLocationAccuracy;
     setHorizontalAccuracy(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocation/1423550-verticalaccuracy
-    verticalAccuracy(): cocoascript.CLLocationAccuracy;
+    verticalAccuracy(): CLLocationAccuracy;
     setVerticalAccuracy(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocation/3524340-speedaccuracy
-    speedAccuracy(): cocoascript.CLLocationSpeedAccuracy;
+    speedAccuracy(): CLLocationSpeedAccuracy;
     setSpeedAccuracy(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocation/3524338-courseaccuracy
-    courseAccuracy(): cocoascript.CLLocationDirectionAccuracy;
+    courseAccuracy(): CLLocationDirectionAccuracy;
     setCourseAccuracy(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocation/1423589-timestamp
-    timestamp(): cocoascript.NSDate;
+    timestamp(): NSDate;
     setTimestamp(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocation/1423689-distancefromlocation
-    distanceFromLocation(location: cocoascript.CLLocation):cocoascript.CLLocationDistance;
+    distanceFromLocation(location: CLLocation):CLLocationDistance;
     // doc://com.apple.documentation/documentation/corelocation/cllocation/1616758-getdistancefrom
-    getDistanceFrom(location: cocoascript.CLLocation):cocoascript.CLLocationDistance;
+    getDistanceFrom(location: CLLocation):CLLocationDistance;
     // doc://com.apple.documentation/documentation/corelocation/cllocation/1423798-speed
-    speed(): cocoascript.CLLocationSpeed;
+    speed(): CLLocationSpeed;
     setSpeed(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocation/1423832-course
-    course(): cocoascript.CLLocationDirection;
+    course(): CLLocationDirection;
     setCourse(): void;
     //
-    alloc():cocoascript.CLLocation;
+    alloc():CLLocation;
     //
-    init():cocoascript.CLLocation;
+    init():CLLocation;
   }
 }
 
@@ -109,11 +109,11 @@ declare namespace cocoascript {
    */
   interface CLPlacemark extends NSObject {
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423818-initwithplacemark
-    initWithPlacemark(placemark: cocoascript.CLPlacemark):cocoascript.CLPlacemark;
+    initWithPlacemark(placemark: CLPlacemark):CLPlacemark;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/2132103-placemarkwithlocation
-    placemarkWithLocation_name_postalAddress(location: cocoascript.CLLocation, name: string | cocoascript.NSString, postalAddress: cocoascript.CNPostalAddress):cocoascript.CLPlacemark;
+    placemarkWithLocation_name_postalAddress(location: CLLocation, name: string | cocoascript.NSString, postalAddress: CNPostalAddress):CLPlacemark;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423603-location
-    location(): cocoascript.CLLocation;
+    location(): CLLocation;
     setLocation(): void;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423634-name
     name(): string | cocoascript.NSString;
@@ -146,16 +146,16 @@ declare namespace cocoascript {
     subThoroughfare(): string | cocoascript.NSString;
     setSubThoroughfare(): void;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423808-region
-    region(): cocoascript.CLRegion;
+    region(): CLRegion;
     setRegion(): void;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423707-timezone
-    timeZone(): cocoascript.NSTimeZone;
+    timeZone(): NSTimeZone;
     setTimeZone(): void;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/2890749-postaladdress
-    postalAddress(): cocoascript.CNPostalAddress;
+    postalAddress(): CNPostalAddress;
     setPostalAddress(): void;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423605-addressdictionary
-    addressDictionary(): cocoascript.NSDictionary;
+    addressDictionary(): NSDictionary;
     setAddressDictionary(): void;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423738-inlandwater
     inlandWater(): string | cocoascript.NSString;
@@ -167,9 +167,9 @@ declare namespace cocoascript {
     areasOfInterest(): string | cocoascript.NSString;
     setAreasOfInterest(): void;
     //
-    alloc():cocoascript.CLPlacemark;
+    alloc():CLPlacemark;
     //
-    init():cocoascript.CLPlacemark;
+    init():CLPlacemark;
   }
 }
 
@@ -181,30 +181,30 @@ declare namespace cocoascript {
    */
   interface CLHeading extends NSObject {
     // doc://com.apple.documentation/documentation/corelocation/clheading/1423763-magneticheading
-    magneticHeading(): cocoascript.CLLocationDirection;
+    magneticHeading(): CLLocationDirection;
     setMagneticHeading(): void;
     // doc://com.apple.documentation/documentation/corelocation/clheading/1423568-trueheading
-    trueHeading(): cocoascript.CLLocationDirection;
+    trueHeading(): CLLocationDirection;
     setTrueHeading(): void;
     // doc://com.apple.documentation/documentation/corelocation/clheading/1423705-headingaccuracy
-    headingAccuracy(): cocoascript.CLLocationDirection;
+    headingAccuracy(): CLLocationDirection;
     setHeadingAccuracy(): void;
     // doc://com.apple.documentation/documentation/corelocation/clheading/1423525-timestamp
-    timestamp(): cocoascript.NSDate;
+    timestamp(): NSDate;
     setTimestamp(): void;
     // doc://com.apple.documentation/documentation/corelocation/clheading/1423685-x
-    x(): cocoascript.CLHeadingComponentValue;
+    x(): CLHeadingComponentValue;
     setX(): void;
     // doc://com.apple.documentation/documentation/corelocation/clheading/1423617-y
-    y(): cocoascript.CLHeadingComponentValue;
+    y(): CLHeadingComponentValue;
     setY(): void;
     // doc://com.apple.documentation/documentation/corelocation/clheading/1423609-z
-    z(): cocoascript.CLHeadingComponentValue;
+    z(): CLHeadingComponentValue;
     setZ(): void;
     //
-    alloc():cocoascript.CLHeading;
+    alloc():CLHeading;
     //
-    init():cocoascript.CLHeading;
+    init():CLHeading;
   }
 }
 
@@ -219,25 +219,25 @@ declare namespace cocoascript {
     identifier(): string | cocoascript.NSString;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/corelocation/clregion/1423566-notifyonentry
-    notifyOnEntry(): cocoascript.BOOL;
+    notifyOnEntry(): BOOL;
     setNotifyOnEntry(): void;
     // doc://com.apple.documentation/documentation/corelocation/clregion/1423595-notifyonexit
-    notifyOnExit(): cocoascript.BOOL;
+    notifyOnExit(): BOOL;
     setNotifyOnExit(): void;
     // doc://com.apple.documentation/documentation/corelocation/clregion/1423681-initcircularregionwithcenter
-    initCircularRegionWithCenter_radius_identifier(center: cocoascript.CLLocationCoordinate2D, radius: cocoascript.CLLocationDistance, identifier: string | cocoascript.NSString):cocoascript.CLRegion;
+    initCircularRegionWithCenter_radius_identifier(center: CLLocationCoordinate2D, radius: CLLocationDistance, identifier: string | cocoascript.NSString):CLRegion;
     // doc://com.apple.documentation/documentation/corelocation/clregion/1423828-containscoordinate
-    containsCoordinate(coordinate: cocoascript.CLLocationCoordinate2D):cocoascript.BOOL;
+    containsCoordinate(coordinate: CLLocationCoordinate2D):BOOL;
     // doc://com.apple.documentation/documentation/corelocation/clregion/1423691-center
-    center(): cocoascript.CLLocationCoordinate2D;
+    center(): CLLocationCoordinate2D;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/corelocation/clregion/1423730-radius
-    radius(): cocoascript.CLLocationDistance;
+    radius(): CLLocationDistance;
     setRadius(): void;
     //
-    alloc():cocoascript.CLRegion;
+    alloc():CLRegion;
     //
-    init():cocoascript.CLRegion;
+    init():CLRegion;
   }
 }
 
@@ -249,21 +249,21 @@ declare namespace cocoascript {
    */
   interface CLVisit extends NSObject {
     // doc://com.apple.documentation/documentation/corelocation/clvisit/1614677-coordinate
-    coordinate(): cocoascript.CLLocationCoordinate2D;
+    coordinate(): CLLocationCoordinate2D;
     setCoordinate(): void;
     // doc://com.apple.documentation/documentation/corelocation/clvisit/1614679-horizontalaccuracy
-    horizontalAccuracy(): cocoascript.CLLocationAccuracy;
+    horizontalAccuracy(): CLLocationAccuracy;
     setHorizontalAccuracy(): void;
     // doc://com.apple.documentation/documentation/corelocation/clvisit/1614681-arrivaldate
-    arrivalDate(): cocoascript.NSDate;
+    arrivalDate(): NSDate;
     setArrivalDate(): void;
     // doc://com.apple.documentation/documentation/corelocation/clvisit/1614685-departuredate
-    departureDate(): cocoascript.NSDate;
+    departureDate(): NSDate;
     setDepartureDate(): void;
     //
-    alloc():cocoascript.CLVisit;
+    alloc():CLVisit;
     //
-    init():cocoascript.CLVisit;
+    init():CLVisit;
   }
 }
 
@@ -275,12 +275,12 @@ declare namespace cocoascript {
    */
   interface CLFloor extends NSObject {
     // doc://com.apple.documentation/documentation/corelocation/clfloor/1616759-level
-    level(): cocoascript.NSInteger;
+    level(): NSInteger;
     setLevel(): void;
     //
-    alloc():cocoascript.CLFloor;
+    alloc():CLFloor;
     //
-    init():cocoascript.CLFloor;
+    init():CLFloor;
   }
 }
 
@@ -292,33 +292,33 @@ declare namespace cocoascript {
    */
   interface CLBeacon extends NSObject {
     // doc://com.apple.documentation/documentation/corelocation/clbeacon/3183017-uuid
-    UUID(): cocoascript.NSUUID;
+    UUID(): NSUUID;
     setUUID(): void;
     // doc://com.apple.documentation/documentation/corelocation/clbeacon/1621418-major
-    major(): cocoascript.NSNumber;
+    major(): NSNumber;
     setMajor(): void;
     // doc://com.apple.documentation/documentation/corelocation/clbeacon/1621558-minor
-    minor(): cocoascript.NSNumber;
+    minor(): NSNumber;
     setMinor(): void;
     // doc://com.apple.documentation/documentation/corelocation/clbeacon/1621508-proximityuuid
-    proximityUUID(): cocoascript.NSUUID;
+    proximityUUID(): NSUUID;
     setProximityUUID(): void;
     // doc://com.apple.documentation/documentation/corelocation/clbeacon/1621554-proximity
-    proximity(): cocoascript.CLProximity;
+    proximity(): CLProximity;
     setProximity(): void;
     // doc://com.apple.documentation/documentation/corelocation/clbeacon/1621551-accuracy
-    accuracy(): cocoascript.CLLocationAccuracy;
+    accuracy(): CLLocationAccuracy;
     setAccuracy(): void;
     // doc://com.apple.documentation/documentation/corelocation/clbeacon/1621557-rssi
-    rssi(): cocoascript.NSInteger;
+    rssi(): NSInteger;
     setRssi(): void;
     // doc://com.apple.documentation/documentation/corelocation/clbeacon/3183021-timestamp
-    timestamp(): cocoascript.NSDate;
+    timestamp(): NSDate;
     setTimestamp(): void;
     //
-    alloc():cocoascript.CLBeacon;
+    alloc():CLBeacon;
     //
-    init():cocoascript.CLBeacon;
+    init():CLBeacon;
   }
 }
 
@@ -330,24 +330,24 @@ declare namespace cocoascript {
    */
   interface CLBeaconIdentityConstraint extends NSObject {
     // doc://com.apple.documentation/documentation/corelocation/clbeaconidentityconstraint/3240599-initwithuuid
-    initWithUUID(uuid: cocoascript.NSUUID):cocoascript.CLBeaconIdentityConstraint;
+    initWithUUID(uuid: NSUUID):CLBeaconIdentityConstraint;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconidentityconstraint/3240600-initwithuuid
-    initWithUUID_major(uuid: cocoascript.NSUUID, major: cocoascript.CLBeaconMajorValue):cocoascript.CLBeaconIdentityConstraint;
+    initWithUUID_major(uuid: NSUUID, major: CLBeaconMajorValue):CLBeaconIdentityConstraint;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconidentityconstraint/3240601-initwithuuid
-    initWithUUID_major_minor(uuid: cocoascript.NSUUID, major: cocoascript.CLBeaconMajorValue, minor: cocoascript.CLBeaconMinorValue):cocoascript.CLBeaconIdentityConstraint;
+    initWithUUID_major_minor(uuid: NSUUID, major: CLBeaconMajorValue, minor: CLBeaconMinorValue):CLBeaconIdentityConstraint;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconidentityconstraint/3240598-uuid
-    UUID(): cocoascript.NSUUID;
+    UUID(): NSUUID;
     setUUID(): void;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconidentityconstraint/3240602-major
-    major(): cocoascript.NSNumber;
+    major(): NSNumber;
     setMajor(): void;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconidentityconstraint/3240603-minor
-    minor(): cocoascript.NSNumber;
+    minor(): NSNumber;
     setMinor(): void;
     //
-    alloc():cocoascript.CLBeaconIdentityConstraint;
+    alloc():CLBeaconIdentityConstraint;
     //
-    init():cocoascript.CLBeaconIdentityConstraint;
+    init():CLBeaconIdentityConstraint;
   }
 }
 
@@ -359,47 +359,47 @@ declare namespace cocoascript {
    */
   interface CLLocationManager extends NSObject {
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423677-significantlocationchangemonitor
-    significantLocationChangeMonitoringAvailable():cocoascript.BOOL;
+    significantLocationChangeMonitoringAvailable():BOOL;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423502-headingavailable
-    headingAvailable():cocoascript.BOOL;
+    headingAvailable():BOOL;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3675588-authorizedforwidgetupdates
-    authorizedForWidgetUpdates(): cocoascript.BOOL;
+    authorizedForWidgetUpdates(): BOOL;
     setAuthorizedForWidgetUpdates(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3600215-accuracyauthorization
-    accuracyAuthorization(): cocoascript.CLAccuracyAuthorization;
+    accuracyAuthorization(): CLAccuracyAuthorization;
     setAccuracyAuthorization(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423654-ismonitoringavailableforclass
-    isMonitoringAvailableForClass(regionClass: cocoascript.Class):cocoascript.BOOL;
+    isMonitoringAvailableForClass(regionClass: Class):BOOL;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620549-israngingavailable
-    isRangingAvailable():cocoascript.BOOL;
+    isRangingAvailable():BOOL;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423648-locationservicesenabled
-    locationServicesEnabled():cocoascript.BOOL;
+    locationServicesEnabled():BOOL;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620561-headingavailable
-    headingAvailable(): cocoascript.BOOL;
+    headingAvailable(): BOOL;
     setHeadingAvailable(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620566-locationservicesenabled
-    locationServicesEnabled(): cocoascript.BOOL;
+    locationServicesEnabled(): BOOL;
     setLocationServicesEnabled(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423564-regionmonitoringavailable
-    regionMonitoringAvailable():cocoascript.BOOL;
+    regionMonitoringAvailable():BOOL;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423585-regionmonitoringenabled
-    regionMonitoringEnabled():cocoascript.BOOL;
+    regionMonitoringEnabled():BOOL;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423792-delegate
-    delegate(): cocoascript.CLLocationManagerDelegate;
+    delegate(): CLLocationManagerDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620562-requestwheninuseauthorization
     requestWhenInUseAuthorization():void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization
     requestAlwaysAuthorization():void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3600217-requesttemporaryfullaccuracyauth
-    requestTemporaryFullAccuracyAuthorizationWithPurposeKey_completion(purposeKey: string | cocoascript.NSString, completion: cocoascript.NSError):void;
+    requestTemporaryFullAccuracyAuthorizationWithPurposeKey_completion(purposeKey: string | cocoascript.NSString, completion: NSError):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3600216-requesttemporaryfullaccuracyauth
     requestTemporaryFullAccuracyAuthorizationWithPurposeKey(purposeKey: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3563952-authorizationstatus
-    authorizationStatus(): cocoascript.CLAuthorizationStatus;
+    authorizationStatus(): CLAuthorizationStatus;
     setAuthorizationStatus(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423523-authorizationstatus
-    authorizationStatus():cocoascript.CLAuthorizationStatus;
+    authorizationStatus():CLAuthorizationStatus;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423742-purpose
     purpose(): string | cocoascript.NSString;
     setPurpose(): void;
@@ -410,22 +410,22 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620548-requestlocation
     requestLocation():void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620553-pauseslocationupdatesautomatical
-    pausesLocationUpdatesAutomatically(): cocoascript.BOOL;
+    pausesLocationUpdatesAutomatically(): BOOL;
     setPausesLocationUpdatesAutomatically(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620568-allowsbackgroundlocationupdates
-    allowsBackgroundLocationUpdates(): cocoascript.BOOL;
+    allowsBackgroundLocationUpdates(): BOOL;
     setAllowsBackgroundLocationUpdates(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/2923541-showsbackgroundlocationindicator
-    showsBackgroundLocationIndicator(): cocoascript.BOOL;
+    showsBackgroundLocationIndicator(): BOOL;
     setShowsBackgroundLocationIndicator(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423500-distancefilter
-    distanceFilter(): cocoascript.CLLocationDistance;
+    distanceFilter(): CLLocationDistance;
     setDistanceFilter(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423836-desiredaccuracy
-    desiredAccuracy(): cocoascript.CLLocationAccuracy;
+    desiredAccuracy(): CLLocationAccuracy;
     setDesiredAccuracy(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620567-activitytype
-    activityType(): cocoascript.CLActivityType;
+    activityType(): CLActivityType;
     setActivityType(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423531-startmonitoringsignificantlocati
     startMonitoringSignificantLocationChanges():void;
@@ -438,59 +438,59 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620563-dismissheadingcalibrationdisplay
     dismissHeadingCalibrationDisplay():void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620550-headingfilter
-    headingFilter(): cocoascript.CLLocationDegrees;
+    headingFilter(): CLLocationDegrees;
     setHeadingFilter(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620556-headingorientation
-    headingOrientation(): cocoascript.CLDeviceOrientation;
+    headingOrientation(): CLDeviceOrientation;
     setHeadingOrientation(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423656-startmonitoringforregion
-    startMonitoringForRegion(region: cocoascript.CLRegion):void;
+    startMonitoringForRegion(region: CLRegion):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423840-stopmonitoringforregion
-    stopMonitoringForRegion(region: cocoascript.CLRegion):void;
+    stopMonitoringForRegion(region: CLRegion):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423790-monitoredregions
-    monitoredRegions(): cocoascript.CLRegion;
+    monitoredRegions(): CLRegion;
     setMonitoredRegions(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423740-maximumregionmonitoringdistance
-    maximumRegionMonitoringDistance(): cocoascript.CLLocationDistance;
+    maximumRegionMonitoringDistance(): CLLocationDistance;
     setMaximumRegionMonitoringDistance(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620560-startmonitoringforregion
-    startMonitoringForRegion_desiredAccuracy(region: cocoascript.CLRegion, accuracy: cocoascript.CLLocationAccuracy):void;
+    startMonitoringForRegion_desiredAccuracy(region: CLRegion, accuracy: CLLocationAccuracy):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423804-requeststateforregion
-    requestStateForRegion(region: cocoascript.CLRegion):void;
+    requestStateForRegion(region: CLRegion):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3240607-startrangingbeaconssatisfyingcon
-    startRangingBeaconsSatisfyingConstraint(constraint: cocoascript.CLBeaconIdentityConstraint):void;
+    startRangingBeaconsSatisfyingConstraint(constraint: CLBeaconIdentityConstraint):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3240608-stoprangingbeaconssatisfyingcons
-    stopRangingBeaconsSatisfyingConstraint(constraint: cocoascript.CLBeaconIdentityConstraint):void;
+    stopRangingBeaconsSatisfyingConstraint(constraint: CLBeaconIdentityConstraint):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3240606-rangedbeaconconstraints
-    rangedBeaconConstraints(): cocoascript.CLBeaconIdentityConstraint;
+    rangedBeaconConstraints(): CLBeaconIdentityConstraint;
     setRangedBeaconConstraints(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620554-startrangingbeaconsinregion
-    startRangingBeaconsInRegion(region: cocoascript.CLBeaconRegion):void;
+    startRangingBeaconsInRegion(region: CLBeaconRegion):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620559-stoprangingbeaconsinregion
-    stopRangingBeaconsInRegion(region: cocoascript.CLBeaconRegion):void;
+    stopRangingBeaconsInRegion(region: CLBeaconRegion):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620552-rangedregions
-    rangedRegions(): cocoascript.CLRegion;
+    rangedRegions(): CLRegion;
     setRangedRegions(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1618692-startmonitoringvisits
     startMonitoringVisits():void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1618693-stopmonitoringvisits
     stopMonitoringVisits():void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423687-location
-    location(): cocoascript.CLLocation;
+    location(): CLLocation;
     setLocation(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620555-heading
-    heading(): cocoascript.CLHeading;
+    heading(): CLHeading;
     setHeading(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423830-deferredlocationupdatesavailable
-    deferredLocationUpdatesAvailable():cocoascript.BOOL;
+    deferredLocationUpdatesAvailable():BOOL;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620547-allowdeferredlocationupdatesunti
-    allowDeferredLocationUpdatesUntilTraveled_timeout(distance: cocoascript.CLLocationDistance, timeout: cocoascript.NSTimeInterval):void;
+    allowDeferredLocationUpdatesUntilTraveled_timeout(distance: CLLocationDistance, timeout: NSTimeInterval):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620565-disallowdeferredlocationupdates
     disallowDeferredLocationUpdates():void;
     //
-    alloc():cocoascript.CLLocationManager;
+    alloc():CLLocationManager;
     //
-    init():cocoascript.CLLocationManager;
+    init():CLLocationManager;
   }
 }
 
@@ -502,30 +502,30 @@ declare namespace cocoascript {
    */
   interface CLGeocoder extends NSObject {
     // doc://com.apple.documentation/documentation/corelocation/clgeocoder/2908779-reversegeocodelocation
-    reverseGeocodeLocation_preferredLocale_completionHandler(location: cocoascript.CLLocation, locale: cocoascript.NSLocale, completionHandler: cocoascript.CLGeocodeCompletionHandler):void;
+    reverseGeocodeLocation_preferredLocale_completionHandler(location: CLLocation, locale: NSLocale, completionHandler: CLGeocodeCompletionHandler):void;
     // doc://com.apple.documentation/documentation/corelocation/clgeocoder/1423621-reversegeocodelocation
-    reverseGeocodeLocation_completionHandler(location: cocoascript.CLLocation, completionHandler: cocoascript.CLGeocodeCompletionHandler):void;
+    reverseGeocodeLocation_completionHandler(location: CLLocation, completionHandler: CLGeocodeCompletionHandler):void;
     // doc://com.apple.documentation/documentation/corelocation/clgeocoder/2890753-geocodeaddressstring
-    geocodeAddressString_inRegion_preferredLocale_completionHandler(addressString: string | cocoascript.NSString, region: cocoascript.CLRegion, locale: cocoascript.NSLocale, completionHandler: cocoascript.CLGeocodeCompletionHandler):void;
+    geocodeAddressString_inRegion_preferredLocale_completionHandler(addressString: string | cocoascript.NSString, region: CLRegion, locale: NSLocale, completionHandler: CLGeocodeCompletionHandler):void;
     // doc://com.apple.documentation/documentation/corelocation/clgeocoder/1423509-geocodeaddressstring
-    geocodeAddressString_completionHandler(addressString: string | cocoascript.NSString, completionHandler: cocoascript.CLGeocodeCompletionHandler):void;
+    geocodeAddressString_completionHandler(addressString: string | cocoascript.NSString, completionHandler: CLGeocodeCompletionHandler):void;
     // doc://com.apple.documentation/documentation/corelocation/clgeocoder/1423591-geocodeaddressstring
-    geocodeAddressString_inRegion_completionHandler(addressString: string | cocoascript.NSString, region: cocoascript.CLRegion, completionHandler: cocoascript.CLGeocodeCompletionHandler):void;
+    geocodeAddressString_inRegion_completionHandler(addressString: string | cocoascript.NSString, region: CLRegion, completionHandler: CLGeocodeCompletionHandler):void;
     // doc://com.apple.documentation/documentation/corelocation/clgeocoder/2890752-geocodepostaladdress
-    geocodePostalAddress_completionHandler(postalAddress: cocoascript.CNPostalAddress, completionHandler: cocoascript.CLGeocodeCompletionHandler):void;
+    geocodePostalAddress_completionHandler(postalAddress: CNPostalAddress, completionHandler: CLGeocodeCompletionHandler):void;
     // doc://com.apple.documentation/documentation/corelocation/clgeocoder/2890750-geocodepostaladdress
-    geocodePostalAddress_preferredLocale_completionHandler(postalAddress: cocoascript.CNPostalAddress, locale: cocoascript.NSLocale, completionHandler: cocoascript.CLGeocodeCompletionHandler):void;
+    geocodePostalAddress_preferredLocale_completionHandler(postalAddress: CNPostalAddress, locale: NSLocale, completionHandler: CLGeocodeCompletionHandler):void;
     // doc://com.apple.documentation/documentation/corelocation/clgeocoder/1423693-geocodeaddressdictionary
-    geocodeAddressDictionary_completionHandler(addressDictionary: cocoascript.NSDictionary, completionHandler: cocoascript.CLGeocodeCompletionHandler):void;
+    geocodeAddressDictionary_completionHandler(addressDictionary: NSDictionary, completionHandler: CLGeocodeCompletionHandler):void;
     // doc://com.apple.documentation/documentation/corelocation/clgeocoder/1423562-cancelgeocode
     cancelGeocode():void;
     // doc://com.apple.documentation/documentation/corelocation/clgeocoder/1423765-geocoding
-    geocoding(): cocoascript.BOOL;
+    geocoding(): BOOL;
     setGeocoding(): void;
     //
-    alloc():cocoascript.CLGeocoder;
+    alloc():CLGeocoder;
     //
-    init():cocoascript.CLGeocoder;
+    init():CLGeocoder;
   }
 }
 
@@ -573,19 +573,19 @@ declare namespace cocoascript {
    */
   interface CLCircularRegion extends CLRegion {
     // doc://com.apple.documentation/documentation/corelocation/clcircularregion/1423761-initwithcenter
-    initWithCenter_radius_identifier(center: cocoascript.CLLocationCoordinate2D, radius: cocoascript.CLLocationDistance, identifier: string | cocoascript.NSString):cocoascript.CLCircularRegion;
+    initWithCenter_radius_identifier(center: CLLocationCoordinate2D, radius: CLLocationDistance, identifier: string | cocoascript.NSString):CLCircularRegion;
     // doc://com.apple.documentation/documentation/corelocation/clcircularregion/1423601-center
-    center(): cocoascript.CLLocationCoordinate2D;
+    center(): CLLocationCoordinate2D;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/corelocation/clcircularregion/1423734-radius
-    radius(): cocoascript.CLLocationDistance;
+    radius(): CLLocationDistance;
     setRadius(): void;
     // doc://com.apple.documentation/documentation/corelocation/clcircularregion/1423697-containscoordinate
-    containsCoordinate(coordinate: cocoascript.CLLocationCoordinate2D):cocoascript.BOOL;
+    containsCoordinate(coordinate: CLLocationCoordinate2D):BOOL;
     //
-    alloc():cocoascript.CLCircularRegion;
+    alloc():CLCircularRegion;
     //
-    init():cocoascript.CLCircularRegion;
+    init():CLCircularRegion;
   }
 }
 
@@ -597,43 +597,43 @@ declare namespace cocoascript {
    */
   interface CLBeaconRegion extends CLRegion {
     // doc://com.apple.documentation/documentation/corelocation/clbeaconregion/3240605-initwithbeaconidentityconstraint
-    initWithBeaconIdentityConstraint_identifier(beaconIdentityConstraint: cocoascript.CLBeaconIdentityConstraint, identifier: string | cocoascript.NSString):cocoascript.CLBeaconRegion;
+    initWithBeaconIdentityConstraint_identifier(beaconIdentityConstraint: CLBeaconIdentityConstraint, identifier: string | cocoascript.NSString):CLBeaconRegion;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconregion/3183025-initwithuuid
-    initWithUUID_identifier(uuid: cocoascript.NSUUID, identifier: string | cocoascript.NSString):cocoascript.CLBeaconRegion;
+    initWithUUID_identifier(uuid: NSUUID, identifier: string | cocoascript.NSString):CLBeaconRegion;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconregion/3183026-initwithuuid
-    initWithUUID_major_identifier(uuid: cocoascript.NSUUID, major: cocoascript.CLBeaconMajorValue, identifier: string | cocoascript.NSString):cocoascript.CLBeaconRegion;
+    initWithUUID_major_identifier(uuid: NSUUID, major: CLBeaconMajorValue, identifier: string | cocoascript.NSString):CLBeaconRegion;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconregion/3183027-initwithuuid
-    initWithUUID_major_minor_identifier(uuid: cocoascript.NSUUID, major: cocoascript.CLBeaconMajorValue, minor: cocoascript.CLBeaconMinorValue, identifier: string | cocoascript.NSString):cocoascript.CLBeaconRegion;
+    initWithUUID_major_minor_identifier(uuid: NSUUID, major: CLBeaconMajorValue, minor: CLBeaconMinorValue, identifier: string | cocoascript.NSString):CLBeaconRegion;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconregion/1621534-initwithproximityuuid
-    initWithProximityUUID_identifier(proximityUUID: cocoascript.NSUUID, identifier: string | cocoascript.NSString):cocoascript.CLBeaconRegion;
+    initWithProximityUUID_identifier(proximityUUID: NSUUID, identifier: string | cocoascript.NSString):CLBeaconRegion;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconregion/1621475-initwithproximityuuid
-    initWithProximityUUID_major_identifier(proximityUUID: cocoascript.NSUUID, major: cocoascript.CLBeaconMajorValue, identifier: string | cocoascript.NSString):cocoascript.CLBeaconRegion;
+    initWithProximityUUID_major_identifier(proximityUUID: NSUUID, major: CLBeaconMajorValue, identifier: string | cocoascript.NSString):CLBeaconRegion;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconregion/1621392-initwithproximityuuid
-    initWithProximityUUID_major_minor_identifier(proximityUUID: cocoascript.NSUUID, major: cocoascript.CLBeaconMajorValue, minor: cocoascript.CLBeaconMinorValue, identifier: string | cocoascript.NSString):cocoascript.CLBeaconRegion;
+    initWithProximityUUID_major_minor_identifier(proximityUUID: NSUUID, major: CLBeaconMajorValue, minor: CLBeaconMinorValue, identifier: string | cocoascript.NSString):CLBeaconRegion;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconregion/3183022-uuid
-    UUID(): cocoascript.NSUUID;
+    UUID(): NSUUID;
     setUUID(): void;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconregion/1621536-major
-    major(): cocoascript.NSNumber;
+    major(): NSNumber;
     setMajor(): void;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconregion/1621414-minor
-    minor(): cocoascript.NSNumber;
+    minor(): NSNumber;
     setMinor(): void;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconregion/3240604-beaconidentityconstraint
-    beaconIdentityConstraint(): cocoascript.CLBeaconIdentityConstraint;
+    beaconIdentityConstraint(): CLBeaconIdentityConstraint;
     setBeaconIdentityConstraint(): void;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconregion/1621556-proximityuuid
-    proximityUUID(): cocoascript.NSUUID;
+    proximityUUID(): NSUUID;
     setProximityUUID(): void;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconregion/1621552-notifyentrystateondisplay
-    notifyEntryStateOnDisplay(): cocoascript.BOOL;
+    notifyEntryStateOnDisplay(): BOOL;
     setNotifyEntryStateOnDisplay(): void;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconregion/1621494-peripheraldatawithmeasuredpower
-    peripheralDataWithMeasuredPower(measuredPower: cocoascript.NSNumber):cocoascript.CLBeaconRegion;
+    peripheralDataWithMeasuredPower(measuredPower: NSNumber):CLBeaconRegion;
     //
-    alloc():cocoascript.CLBeaconRegion;
+    alloc():CLBeaconRegion;
     //
-    init():cocoascript.CLBeaconRegion;
+    init():CLBeaconRegion;
   }
 }
 
@@ -655,21 +655,21 @@ declare namespace cocoascript {
   type CLError = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/corelocation/cllocationdistancemax
-declare const CLLocationDistanceMax: cocoascript.CLLocationDistance;
+declare const CLLocationDistanceMax: CLLocationDistance;
 // doc://com.apple.documentation/documentation/corelocation/kcldistancefilternone
-declare const kCLDistanceFilterNone: cocoascript.CLLocationDistance;
+declare const kCLDistanceFilterNone: CLLocationDistance;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corelocation/clactivitytype
   type CLActivityType = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/corelocation/kclheadingfilternone
-declare const kCLHeadingFilterNone: cocoascript.CLLocationDegrees;
+declare const kCLHeadingFilterNone: CLLocationDegrees;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corelocation/cldeviceorientation
   type CLDeviceOrientation = number;
 }
 // doc://com.apple.documentation/documentation/corelocation/cltimeintervalmax
-declare const CLTimeIntervalMax: cocoascript.NSTimeInterval;
+declare const CLTimeIntervalMax: NSTimeInterval;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corelocation/cllocationdegrees
   type CLLocationDegrees = number;
@@ -679,21 +679,21 @@ declare namespace cocoascript {
   type CLGeocodeCompletionHandler = cocoascript.NSError;
 }
 // doc://com.apple.documentation/documentation/corelocation/kcllocationaccuracybestfornavigation
-declare const kCLLocationAccuracyBestForNavigation: cocoascript.CLLocationAccuracy;
+declare const kCLLocationAccuracyBestForNavigation: CLLocationAccuracy;
 // doc://com.apple.documentation/documentation/corelocation/kcllocationaccuracybest
-declare const kCLLocationAccuracyBest: cocoascript.CLLocationAccuracy;
+declare const kCLLocationAccuracyBest: CLLocationAccuracy;
 // doc://com.apple.documentation/documentation/corelocation/kcllocationaccuracynearesttenmeters
-declare const kCLLocationAccuracyNearestTenMeters: cocoascript.CLLocationAccuracy;
+declare const kCLLocationAccuracyNearestTenMeters: CLLocationAccuracy;
 // doc://com.apple.documentation/documentation/corelocation/kcllocationaccuracyhundredmeters
-declare const kCLLocationAccuracyHundredMeters: cocoascript.CLLocationAccuracy;
+declare const kCLLocationAccuracyHundredMeters: CLLocationAccuracy;
 // doc://com.apple.documentation/documentation/corelocation/kcllocationaccuracykilometer
-declare const kCLLocationAccuracyKilometer: cocoascript.CLLocationAccuracy;
+declare const kCLLocationAccuracyKilometer: CLLocationAccuracy;
 // doc://com.apple.documentation/documentation/corelocation/kcllocationaccuracythreekilometers
-declare const kCLLocationAccuracyThreeKilometers: cocoascript.CLLocationAccuracy;
+declare const kCLLocationAccuracyThreeKilometers: CLLocationAccuracy;
 // doc://com.apple.documentation/documentation/corelocation/kcllocationaccuracyreduced
-declare const kCLLocationAccuracyReduced: cocoascript.CLLocationAccuracy;
+declare const kCLLocationAccuracyReduced: CLLocationAccuracy;
 // doc://com.apple.documentation/documentation/corelocation/kcllocationcoordinate2dinvalid
-declare const kCLLocationCoordinate2DInvalid: cocoascript.CLLocationCoordinate2D;
+declare const kCLLocationCoordinate2DInvalid: CLLocationCoordinate2D;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corelocation/clbeaconmajorvalue
   type CLBeaconMajorValue = number;

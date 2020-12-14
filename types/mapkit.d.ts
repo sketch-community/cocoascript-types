@@ -5,177 +5,177 @@ declare namespace cocoascript {
    */
   interface MKMapView extends NSView {
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452115-delegate
-    delegate(): cocoascript.MKMapViewDelegate;
+    delegate(): MKMapViewDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452742-maptype
-    mapType(): cocoascript.MKMapType;
+    mapType(): MKMapType;
     setMapType(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452577-zoomenabled
-    zoomEnabled(): cocoascript.BOOL;
+    zoomEnabled(): BOOL;
     setZoomEnabled(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1451998-scrollenabled
-    scrollEnabled(): cocoascript.BOOL;
+    scrollEnabled(): BOOL;
     setScrollEnabled(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452265-pitchenabled
-    pitchEnabled(): cocoascript.BOOL;
+    pitchEnabled(): BOOL;
     setPitchEnabled(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452274-rotateenabled
-    rotateEnabled(): cocoascript.BOOL;
+    rotateEnabled(): BOOL;
     setRotateEnabled(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452709-region
-    region(): cocoascript.MKCoordinateRegion;
+    region(): MKCoordinateRegion;
     setRegion(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452768-setregion
-    setRegion_animated(region: cocoascript.MKCoordinateRegion, animated: cocoascript.BOOL):void;
+    setRegion_animated(region: MKCoordinateRegion, animated: BOOL):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1451901-centercoordinate
-    centerCoordinate(): cocoascript.CLLocationCoordinate2D;
+    centerCoordinate(): CLLocationCoordinate2D;
     setCenterCoordinate(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1451976-setcentercoordinate
-    setCenterCoordinate_animated(coordinate: cocoascript.CLLocationCoordinate2D, animated: cocoascript.BOOL):void;
+    setCenterCoordinate_animated(coordinate: CLLocationCoordinate2D, animated: BOOL):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452309-showannotations
-    showAnnotations_animated(annotations: cocoascript.MKAnnotation, animated: cocoascript.BOOL):void;
+    showAnnotations_animated(annotations: MKAnnotation, animated: BOOL):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452732-visiblemaprect
-    visibleMapRect(): cocoascript.MKMapRect;
+    visibleMapRect(): MKMapRect;
     setVisibleMapRect(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452658-setvisiblemaprect
-    setVisibleMapRect_animated(mapRect: cocoascript.MKMapRect, animate: cocoascript.BOOL):void;
+    setVisibleMapRect_animated(mapRect: MKMapRect, animate: BOOL):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452461-setvisiblemaprect
-    setVisibleMapRect_edgePadding_animated(mapRect: cocoascript.MKMapRect, insets: cocoascript.UIEdgeInsets, animate: cocoascript.BOOL):void;
+    setVisibleMapRect_edgePadding_animated(mapRect: MKMapRect, insets: UIEdgeInsets, animate: BOOL):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/3143418-setcameraboundary
-    setCameraBoundary_animated(cameraBoundary: cocoascript.MKMapCameraBoundary, animated: cocoascript.BOOL):void;
+    setCameraBoundary_animated(cameraBoundary: MKMapCameraBoundary, animated: BOOL):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/3143416-cameraboundary
-    cameraBoundary(): cocoascript.MKMapCameraBoundary;
+    cameraBoundary(): MKMapCameraBoundary;
     setCameraBoundary(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/3114302-setcamerazoomrange
-    setCameraZoomRange_animated(cameraZoomRange: cocoascript.MKMapCameraZoomRange, animated: cocoascript.BOOL):void;
+    setCameraZoomRange_animated(cameraZoomRange: MKMapCameraZoomRange, animated: BOOL):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/3114301-camerazoomrange
-    cameraZoomRange(): cocoascript.MKMapCameraZoomRange;
+    cameraZoomRange(): MKMapCameraZoomRange;
     setCameraZoomRange(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452476-setcamera
-    setCamera_animated(camera: cocoascript.MKMapCamera, animated: cocoascript.BOOL):void;
+    setCamera_animated(camera: MKMapCamera, animated: BOOL):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452277-camera
-    camera(): cocoascript.MKMapCamera;
+    camera(): MKMapCamera;
     setCamera(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/3143417-pointofinterestfilter
-    pointOfInterestFilter(): cocoascript.MKPointOfInterestFilter;
+    pointOfInterestFilter(): MKPointOfInterestFilter;
     setPointOfInterestFilter(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452483-showsbuildings
-    showsBuildings(): cocoascript.BOOL;
+    showsBuildings(): BOOL;
     setShowsBuildings(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1451879-showscompass
-    showsCompass(): cocoascript.BOOL;
+    showsCompass(): BOOL;
     setShowsCompass(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1451958-showszoomcontrols
-    showsZoomControls(): cocoascript.BOOL;
+    showsZoomControls(): BOOL;
     setShowsZoomControls(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452343-showsscale
-    showsScale(): cocoascript.BOOL;
+    showsScale(): BOOL;
     setShowsScale(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452433-showstraffic
-    showsTraffic(): cocoascript.BOOL;
+    showsTraffic(): BOOL;
     setShowsTraffic(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452102-showspointsofinterest
-    showsPointsOfInterest(): cocoascript.BOOL;
+    showsPointsOfInterest(): BOOL;
     setShowsPointsOfInterest(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/3567212-showspitchcontrol
-    showsPitchControl(): cocoascript.BOOL;
+    showsPitchControl(): BOOL;
     setShowsPitchControl(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452682-showsuserlocation
-    showsUserLocation(): cocoascript.BOOL;
+    showsUserLocation(): BOOL;
     setShowsUserLocation(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452040-userlocationvisible
-    userLocationVisible(): cocoascript.BOOL;
+    userLocationVisible(): BOOL;
     setUserLocationVisible(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452459-userlocation
-    userLocation(): cocoascript.MKUserLocation;
+    userLocation(): MKUserLocation;
     setUserLocation(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1616208-usertrackingmode
-    userTrackingMode(): cocoascript.MKUserTrackingMode;
+    userTrackingMode(): MKUserTrackingMode;
     setUserTrackingMode(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1616205-setusertrackingmode
-    setUserTrackingMode_animated(mode: cocoascript.MKUserTrackingMode, animated: cocoascript.BOOL):void;
+    setUserTrackingMode_animated(mode: MKUserTrackingMode, animated: BOOL):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452593-annotations
-    annotations(): cocoascript.MKAnnotation;
+    annotations(): MKAnnotation;
     setAnnotations(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452069-addannotation
-    addAnnotation(annotation: cocoascript.MKAnnotation):void;
+    addAnnotation(annotation: MKAnnotation):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1451889-addannotations
-    addAnnotations(annotations: cocoascript.MKAnnotation):void;
+    addAnnotations(annotations: MKAnnotation):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452409-removeannotation
-    removeAnnotation(annotation: cocoascript.MKAnnotation):void;
+    removeAnnotation(annotation: MKAnnotation):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452130-removeannotations
-    removeAnnotations(annotations: cocoascript.MKAnnotation):void;
+    removeAnnotations(annotations: MKAnnotation):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452279-annotationsinmaprect
-    annotationsInMapRect(mapRect: cocoascript.MKMapRect):cocoascript.MKAnnotation;
+    annotationsInMapRect(mapRect: MKMapRect):MKAnnotation;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452717-annotationvisiblerect
-    annotationVisibleRect(): cocoascript.CGRect;
+    annotationVisibleRect(): CGRect;
     setAnnotationVisibleRect(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452570-selectedannotations
-    selectedAnnotations(): cocoascript.MKAnnotation;
+    selectedAnnotations(): MKAnnotation;
     setSelectedAnnotations(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1451950-selectannotation
-    selectAnnotation_animated(annotation: cocoascript.MKAnnotation, animated: cocoascript.BOOL):void;
+    selectAnnotation_animated(annotation: MKAnnotation, animated: BOOL):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1451988-deselectannotation
-    deselectAnnotation_animated(annotation: cocoascript.MKAnnotation, animated: cocoascript.BOOL):void;
+    deselectAnnotation_animated(annotation: MKAnnotation, animated: BOOL):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/2887124-registerclass
-    registerClass_forAnnotationViewWithReuseIdentifier(viewClass: cocoascript.Class, identifier: string | cocoascript.NSString):void;
+    registerClass_forAnnotationViewWithReuseIdentifier(viewClass: Class, identifier: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/2887123-dequeuereusableannotationviewwit
-    dequeueReusableAnnotationViewWithIdentifier_forAnnotation(identifier: string | cocoascript.NSString, annotation: cocoascript.MKAnnotation):cocoascript.MKAnnotationView;
+    dequeueReusableAnnotationViewWithIdentifier_forAnnotation(identifier: string | cocoascript.NSString, annotation: MKAnnotation):MKAnnotationView;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452672-dequeuereusableannotationviewwit
-    dequeueReusableAnnotationViewWithIdentifier(identifier: string | cocoascript.NSString):cocoascript.MKAnnotationView;
+    dequeueReusableAnnotationViewWithIdentifier(identifier: string | cocoascript.NSString):MKAnnotationView;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452512-viewforannotation
-    viewForAnnotation(annotation: cocoascript.MKAnnotation):cocoascript.MKAnnotationView;
+    viewForAnnotation(annotation: MKAnnotation):MKAnnotationView;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452784-overlays
-    overlays(): cocoascript.MKOverlay;
+    overlays(): MKOverlay;
     setOverlays(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452757-overlaysinlevel
-    overlaysInLevel(level: cocoascript.MKOverlayLevel):cocoascript.MKOverlay;
+    overlaysInLevel(level: MKOverlayLevel):MKOverlay;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452464-rendererforoverlay
-    rendererForOverlay(overlay: cocoascript.MKOverlay):cocoascript.MKOverlayRenderer;
+    rendererForOverlay(overlay: MKOverlay):MKOverlayRenderer;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1616201-viewforoverlay
-    viewForOverlay(overlay: cocoascript.MKOverlay):cocoascript.MKOverlayView;
+    viewForOverlay(overlay: MKOverlay):MKOverlayView;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452635-addoverlay
-    addOverlay_level(overlay: cocoascript.MKOverlay, level: cocoascript.MKOverlayLevel):void;
+    addOverlay_level(overlay: MKOverlay, level: MKOverlayLevel):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452518-addoverlays
-    addOverlays_level(overlays: cocoascript.MKOverlay, level: cocoascript.MKOverlayLevel):void;
+    addOverlays_level(overlays: MKOverlay, level: MKOverlayLevel):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1451964-addoverlay
-    addOverlay(overlay: cocoascript.MKOverlay):void;
+    addOverlay(overlay: MKOverlay):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452335-addoverlays
-    addOverlays(overlays: cocoascript.MKOverlay):void;
+    addOverlays(overlays: MKOverlay):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452723-insertoverlay
-    insertOverlay_atIndex_level(overlay: cocoascript.MKOverlay, index: cocoascript.NSUInteger, level: cocoascript.MKOverlayLevel):void;
+    insertOverlay_atIndex_level(overlay: MKOverlay, index: NSUInteger, level: MKOverlayLevel):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452249-insertoverlay
-    insertOverlay_atIndex(overlay: cocoascript.MKOverlay, index: cocoascript.NSUInteger):void;
+    insertOverlay_atIndex(overlay: MKOverlay, index: NSUInteger):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452427-insertoverlay
-    insertOverlay_aboveOverlay(overlay: cocoascript.MKOverlay, sibling: cocoascript.MKOverlay):void;
+    insertOverlay_aboveOverlay(overlay: MKOverlay, sibling: MKOverlay):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452526-insertoverlay
-    insertOverlay_belowOverlay(overlay: cocoascript.MKOverlay, sibling: cocoascript.MKOverlay):void;
+    insertOverlay_belowOverlay(overlay: MKOverlay, sibling: MKOverlay):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452491-exchangeoverlay
-    exchangeOverlay_withOverlay(overlay1: cocoascript.MKOverlay, overlay2: cocoascript.MKOverlay):void;
+    exchangeOverlay_withOverlay(overlay1: MKOverlay, overlay2: MKOverlay):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452575-exchangeoverlayatindex
-    exchangeOverlayAtIndex_withOverlayAtIndex(index1: cocoascript.NSUInteger, index2: cocoascript.NSUInteger):void;
+    exchangeOverlayAtIndex_withOverlayAtIndex(index1: NSUInteger, index2: NSUInteger):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1451921-removeoverlay
-    removeOverlay(overlay: cocoascript.MKOverlay):void;
+    removeOverlay(overlay: MKOverlay):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452719-removeoverlays
-    removeOverlays(overlays: cocoascript.MKOverlay):void;
+    removeOverlays(overlays: MKOverlay):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452694-convertcoordinate
-    convertCoordinate_toPointToView(coordinate: cocoascript.CLLocationCoordinate2D, view: cocoascript.UIView):cocoascript.CGPoint;
+    convertCoordinate_toPointToView(coordinate: CLLocationCoordinate2D, view: UIView):CGPoint;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452503-convertpoint
-    convertPoint_toCoordinateFromView(point: cocoascript.CGPoint, view: cocoascript.UIView):cocoascript.CLLocationCoordinate2D;
+    convertPoint_toCoordinateFromView(point: CGPoint, view: UIView):CLLocationCoordinate2D;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452055-convertregion
-    convertRegion_toRectToView(region: cocoascript.MKCoordinateRegion, view: cocoascript.UIView):cocoascript.CGRect;
+    convertRegion_toRectToView(region: MKCoordinateRegion, view: UIView):CGRect;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452305-convertrect
-    convertRect_toRegionFromView(rect: cocoascript.CGRect, view: cocoascript.UIView):cocoascript.MKCoordinateRegion;
+    convertRect_toRegionFromView(rect: CGRect, view: UIView):MKCoordinateRegion;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452371-regionthatfits
-    regionThatFits(region: cocoascript.MKCoordinateRegion):cocoascript.MKCoordinateRegion;
+    regionThatFits(region: MKCoordinateRegion):MKCoordinateRegion;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452169-maprectthatfits
-    mapRectThatFits(mapRect: cocoascript.MKMapRect):cocoascript.MKMapRect;
+    mapRectThatFits(mapRect: MKMapRect):MKMapRect;
     // doc://com.apple.documentation/documentation/mapkit/mkmapview/1452625-maprectthatfits
-    mapRectThatFits_edgePadding(mapRect: cocoascript.MKMapRect, insets: cocoascript.UIEdgeInsets):cocoascript.MKMapRect;
+    mapRectThatFits_edgePadding(mapRect: MKMapRect, insets: UIEdgeInsets):MKMapRect;
     //
-    alloc():cocoascript.MKMapView;
+    alloc():MKMapView;
     //
-    init():cocoascript.MKMapView;
+    init():MKMapView;
   }
 }
 
@@ -191,10 +191,10 @@ declare namespace cocoascript {
    */
   interface MKAnnotation extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mkannotation/1429524-coordinate
-    coordinate(): cocoascript.CLLocationCoordinate2D;
+    coordinate(): CLLocationCoordinate2D;
     setCoordinate(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotation/1429528-setcoordinate
-    setCoordinate(newCoordinate: cocoascript.CLLocationCoordinate2D):void;
+    setCoordinate(newCoordinate: CLLocationCoordinate2D):void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotation/1429522-title
     title(): string | cocoascript.NSString;
     setTitle(): void;
@@ -210,53 +210,53 @@ declare namespace cocoascript {
    */
   interface MKMapViewDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1452571-mapview
-    mapView_regionWillChangeAnimated(mapView: cocoascript.MKMapView, animated: cocoascript.BOOL):void;
+    mapView_regionWillChangeAnimated(mapView: MKMapView, animated: BOOL):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/2998428-mapviewdidchangevisibleregion
-    mapViewDidChangeVisibleRegion(mapView: cocoascript.MKMapView):void;
+    mapViewDidChangeVisibleRegion(mapView: MKMapView):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1452345-mapview
-    mapView_regionDidChangeAnimated(mapView: cocoascript.MKMapView, animated: cocoascript.BOOL):void;
+    mapView_regionDidChangeAnimated(mapView: MKMapView, animated: BOOL):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1452744-mapviewwillstartloadingmap
-    mapViewWillStartLoadingMap(mapView: cocoascript.MKMapView):void;
+    mapViewWillStartLoadingMap(mapView: MKMapView):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1452291-mapviewdidfinishloadingmap
-    mapViewDidFinishLoadingMap(mapView: cocoascript.MKMapView):void;
+    mapViewDidFinishLoadingMap(mapView: MKMapView):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1452327-mapviewdidfailloadingmap
-    mapViewDidFailLoadingMap_withError(mapView: cocoascript.MKMapView, error: cocoascript.NSError):void;
+    mapViewDidFailLoadingMap_withError(mapView: MKMapView, error: NSError):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1451970-mapviewwillstartrenderingmap
-    mapViewWillStartRenderingMap(mapView: cocoascript.MKMapView):void;
+    mapViewWillStartRenderingMap(mapView: MKMapView):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1451897-mapviewdidfinishrenderingmap
-    mapViewDidFinishRenderingMap_fullyRendered(mapView: cocoascript.MKMapView, fullyRendered: cocoascript.BOOL):void;
+    mapViewDidFinishRenderingMap_fullyRendered(mapView: MKMapView, fullyRendered: BOOL):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1452171-mapviewwillstartlocatinguser
-    mapViewWillStartLocatingUser(mapView: cocoascript.MKMapView):void;
+    mapViewWillStartLocatingUser(mapView: MKMapView):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1452715-mapviewdidstoplocatinguser
-    mapViewDidStopLocatingUser(mapView: cocoascript.MKMapView):void;
+    mapViewDidStopLocatingUser(mapView: MKMapView):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1452086-mapview
-    mapView_didUpdateUserLocation(mapView: cocoascript.MKMapView, userLocation: cocoascript.MKUserLocation):void;
+    mapView_didUpdateUserLocation(mapView: MKMapView, userLocation: MKUserLocation):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1452211-mapview
-    mapView_didFailToLocateUserWithError(mapView: cocoascript.MKMapView, error: cocoascript.NSError):void;
+    mapView_didFailToLocateUserWithError(mapView: MKMapView, error: NSError):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1616202-mapview
-    mapView_didChangeUserTrackingMode_animated(mapView: cocoascript.MKMapView, mode: cocoascript.MKUserTrackingMode, animated: cocoascript.BOOL):void;
+    mapView_didChangeUserTrackingMode_animated(mapView: MKMapView, mode: MKUserTrackingMode, animated: BOOL):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1452045-mapview
-    mapView_viewForAnnotation(mapView: cocoascript.MKMapView, annotation: cocoascript.MKAnnotation):cocoascript.MKAnnotationView;
+    mapView_viewForAnnotation(mapView: MKMapView, annotation: MKAnnotation):MKAnnotationView;
     // doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1452311-mapview
-    mapView_didAddAnnotationViews(mapView: cocoascript.MKMapView, views: cocoascript.MKAnnotationView):void;
+    mapView_didAddAnnotationViews(mapView: MKMapView, views: MKAnnotationView):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1616211-mapview
-    mapView_annotationView_calloutAccessoryControlTapped(mapView: cocoascript.MKMapView, view: cocoascript.MKAnnotationView, control: cocoascript.UIControl):void;
+    mapView_annotationView_calloutAccessoryControlTapped(mapView: MKMapView, view: MKAnnotationView, control: UIControl):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/2867923-mapview
-    mapView_clusterAnnotationForMemberAnnotations(mapView: cocoascript.MKMapView, memberAnnotations: cocoascript.MKAnnotation):cocoascript.MKClusterAnnotation;
+    mapView_clusterAnnotationForMemberAnnotations(mapView: MKMapView, memberAnnotations: MKAnnotation):MKClusterAnnotation;
     // doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1452229-mapview
-    mapView_annotationView_didChangeDragState_fromOldState(mapView: cocoascript.MKMapView, view: cocoascript.MKAnnotationView, newState: cocoascript.MKAnnotationViewDragState, oldState: cocoascript.MKAnnotationViewDragState):void;
+    mapView_annotationView_didChangeDragState_fromOldState(mapView: MKMapView, view: MKAnnotationView, newState: MKAnnotationViewDragState, oldState: MKAnnotationViewDragState):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1452393-mapview
-    mapView_didSelectAnnotationView(mapView: cocoascript.MKMapView, view: cocoascript.MKAnnotationView):void;
+    mapView_didSelectAnnotationView(mapView: MKMapView, view: MKAnnotationView):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1452707-mapview
-    mapView_didDeselectAnnotationView(mapView: cocoascript.MKMapView, view: cocoascript.MKAnnotationView):void;
+    mapView_didDeselectAnnotationView(mapView: MKMapView, view: MKAnnotationView):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1452203-mapview
-    mapView_rendererForOverlay(mapView: cocoascript.MKMapView, overlay: cocoascript.MKOverlay):cocoascript.MKOverlayRenderer;
+    mapView_rendererForOverlay(mapView: MKMapView, overlay: MKOverlay):MKOverlayRenderer;
     // doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1452609-mapview
-    mapView_didAddOverlayRenderers(mapView: cocoascript.MKMapView, renderers: cocoascript.MKOverlayRenderer):void;
+    mapView_didAddOverlayRenderers(mapView: MKMapView, renderers: MKOverlayRenderer):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1616210-mapview
-    mapView_viewForOverlay(mapView: cocoascript.MKMapView, overlay: cocoascript.MKOverlay):cocoascript.MKOverlayView;
+    mapView_viewForOverlay(mapView: MKMapView, overlay: MKOverlay):MKOverlayView;
     // doc://com.apple.documentation/documentation/mapkit/mkmapviewdelegate/1616206-mapview
-    mapView_didAddOverlayViews(mapView: cocoascript.MKMapView, overlayViews: cocoascript.NSArray):void;
+    mapView_didAddOverlayViews(mapView: MKMapView, overlayViews: NSArray):void;
   }
 }
 declare namespace cocoascript {
@@ -266,9 +266,9 @@ declare namespace cocoascript {
    */
   interface MKLocalSearchCompleterDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleterdelegate/1452209-completerdidupdateresults
-    completerDidUpdateResults(completer: cocoascript.MKLocalSearchCompleter):void;
+    completerDidUpdateResults(completer: MKLocalSearchCompleter):void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleterdelegate/1451885-completer
-    completer_didFailWithError(completer: cocoascript.MKLocalSearchCompleter, error: cocoascript.NSError):void;
+    completer_didFailWithError(completer: MKLocalSearchCompleter, error: NSError):void;
   }
 }
 declare namespace cocoascript {
@@ -278,9 +278,9 @@ declare namespace cocoascript {
    */
   interface MKReverseGeocoderDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mkreversegeocoderdelegate/1618476-reversegeocoder
-    reverseGeocoder_didFindPlacemark(geocoder: cocoascript.MKReverseGeocoder, placemark: cocoascript.MKPlacemark):void;
+    reverseGeocoder_didFindPlacemark(geocoder: MKReverseGeocoder, placemark: MKPlacemark):void;
     // doc://com.apple.documentation/documentation/mapkit/mkreversegeocoderdelegate/1618473-reversegeocoder
-    reverseGeocoder_didFailWithError(geocoder: cocoascript.MKReverseGeocoder, error: cocoascript.NSError):void;
+    reverseGeocoder_didFailWithError(geocoder: MKReverseGeocoder, error: NSError):void;
   }
 }
 declare namespace cocoascript {
@@ -298,30 +298,30 @@ declare namespace cocoascript {
    */
   interface MKMapCamera extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mkmapcamera/1411085-camera
-    camera():cocoascript.MKMapCamera;
+    camera():MKMapCamera;
     // doc://com.apple.documentation/documentation/mapkit/mkmapcamera/1411092-cameralookingatcentercoordinate
-    cameraLookingAtCenterCoordinate_fromEyeCoordinate_eyeAltitude(centerCoordinate: cocoascript.CLLocationCoordinate2D, eyeCoordinate: cocoascript.CLLocationCoordinate2D, eyeAltitude: cocoascript.CLLocationDistance):cocoascript.MKMapCamera;
+    cameraLookingAtCenterCoordinate_fromEyeCoordinate_eyeAltitude(centerCoordinate: CLLocationCoordinate2D, eyeCoordinate: CLLocationCoordinate2D, eyeAltitude: CLLocationDistance):MKMapCamera;
     // doc://com.apple.documentation/documentation/mapkit/mkmapcamera/1411079-cameralookingatcentercoordinate
-    cameraLookingAtCenterCoordinate_fromDistance_pitch_heading(centerCoordinate: cocoascript.CLLocationCoordinate2D, distance: cocoascript.CLLocationDistance, pitch: cocoascript.CGFloat, heading: cocoascript.CLLocationDirection):cocoascript.MKMapCamera;
+    cameraLookingAtCenterCoordinate_fromDistance_pitch_heading(centerCoordinate: CLLocationCoordinate2D, distance: CLLocationDistance, pitch: CGFloat, heading: CLLocationDirection):MKMapCamera;
     // doc://com.apple.documentation/documentation/mapkit/mkmapcamera/1411081-centercoordinate
-    centerCoordinate(): cocoascript.CLLocationCoordinate2D;
+    centerCoordinate(): CLLocationCoordinate2D;
     setCenterCoordinate(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapcamera/1411087-heading
-    heading(): cocoascript.CLLocationDirection;
+    heading(): CLLocationDirection;
     setHeading(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapcamera/3114295-centercoordinatedistance
-    centerCoordinateDistance(): cocoascript.CLLocationDistance;
+    centerCoordinateDistance(): CLLocationDistance;
     setCenterCoordinateDistance(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapcamera/1411083-pitch
-    pitch(): cocoascript.CGFloat;
+    pitch(): CGFloat;
     setPitch(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapcamera/1411078-altitude
-    altitude(): cocoascript.CLLocationDistance;
+    altitude(): CLLocationDistance;
     setAltitude(): void;
     //
-    alloc():cocoascript.MKMapCamera;
+    alloc():MKMapCamera;
     //
-    init():cocoascript.MKMapCamera;
+    init():MKMapCamera;
   }
 }
 
@@ -333,29 +333,29 @@ declare namespace cocoascript {
    */
   interface MKLocalSearchRequest extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchrequest/3235755-init
-    init():cocoascript.MKLocalSearchRequest;
+    init():MKLocalSearchRequest;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchrequest/1452301-initwithcompletion
-    initWithCompletion(completion: cocoascript.MKLocalSearchCompletion):cocoascript.MKLocalSearchRequest;
+    initWithCompletion(completion: MKLocalSearchCompletion):MKLocalSearchRequest;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchrequest/3235756-initwithnaturallanguagequery
-    initWithNaturalLanguageQuery(naturalLanguageQuery: string | cocoascript.NSString):cocoascript.MKLocalSearchRequest;
+    initWithNaturalLanguageQuery(naturalLanguageQuery: string | cocoascript.NSString):MKLocalSearchRequest;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchrequest/3235757-initwithnaturallanguagequery
-    initWithNaturalLanguageQuery_region(naturalLanguageQuery: string | cocoascript.NSString, region: cocoascript.MKCoordinateRegion):cocoascript.MKLocalSearchRequest;
+    initWithNaturalLanguageQuery_region(naturalLanguageQuery: string | cocoascript.NSString, region: MKCoordinateRegion):MKLocalSearchRequest;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchrequest/1452353-naturallanguagequery
     naturalLanguageQuery(): string | cocoascript.NSString;
     setNaturalLanguageQuery(): void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchrequest/1451919-region
-    region(): cocoascript.MKCoordinateRegion;
+    region(): MKCoordinateRegion;
     setRegion(): void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchrequest/3143410-pointofinterestfilter
-    pointOfInterestFilter(): cocoascript.MKPointOfInterestFilter;
+    pointOfInterestFilter(): MKPointOfInterestFilter;
     setPointOfInterestFilter(): void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchrequest/3143411-resulttypes
-    resultTypes(): cocoascript.MKLocalSearchResultType;
+    resultTypes(): MKLocalSearchResultType;
     setResultTypes(): void;
     //
-    alloc():cocoascript.MKLocalSearchRequest;
+    alloc():MKLocalSearchRequest;
     //
-    init():cocoascript.MKLocalSearchRequest;
+    init():MKLocalSearchRequest;
   }
 }
 
@@ -367,42 +367,42 @@ declare namespace cocoascript {
    */
   interface MKMapSnapshotOptions extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/1452323-region
-    region(): cocoascript.MKCoordinateRegion;
+    region(): MKCoordinateRegion;
     setRegion(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/1452727-maprect
-    mapRect(): cocoascript.MKMapRect;
+    mapRect(): MKMapRect;
     setMapRect(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/1452082-camera
-    camera(): cocoascript.MKMapCamera;
+    camera(): MKMapCamera;
     setCamera(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/1452341-maptype
-    mapType(): cocoascript.MKMapType;
+    mapType(): MKMapType;
     setMapType(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/1452191-showsbuildings
-    showsBuildings(): cocoascript.BOOL;
+    showsBuildings(): BOOL;
     setShowsBuildings(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/1452316-showspointsofinterest
-    showsPointsOfInterest(): cocoascript.BOOL;
+    showsPointsOfInterest(): BOOL;
     setShowsPointsOfInterest(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/3172734-pointofinterestfilter
-    pointOfInterestFilter(): cocoascript.MKPointOfInterestFilter;
+    pointOfInterestFilter(): MKPointOfInterestFilter;
     setPointOfInterestFilter(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/3152864-traitcollection
-    traitCollection(): cocoascript.UITraitCollection;
+    traitCollection(): UITraitCollection;
     setTraitCollection(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/1452485-size
-    size(): cocoascript.CGSize;
+    size(): CGSize;
     setSize(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/2981023-appearance
-    appearance(): cocoascript.NSAppearance;
+    appearance(): NSAppearance;
     setAppearance(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotoptions/1615960-scale
-    scale(): cocoascript.CGFloat;
+    scale(): CGFloat;
     setScale(): void;
     //
-    alloc():cocoascript.MKMapSnapshotOptions;
+    alloc():MKMapSnapshotOptions;
     //
-    init():cocoascript.MKMapSnapshotOptions;
+    init():MKMapSnapshotOptions;
   }
 }
 
@@ -414,21 +414,21 @@ declare namespace cocoascript {
    */
   interface MKMapCameraZoomRange extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mkmapcamerazoomrange/3114298-initwithmincentercoordinatedista
-    initWithMinCenterCoordinateDistance_maxCenterCoordinateDistance(minDistance: cocoascript.CLLocationDistance, maxDistance: cocoascript.CLLocationDistance):cocoascript.MKMapCameraZoomRange;
+    initWithMinCenterCoordinateDistance_maxCenterCoordinateDistance(minDistance: CLLocationDistance, maxDistance: CLLocationDistance):MKMapCameraZoomRange;
     // doc://com.apple.documentation/documentation/mapkit/mkmapcamerazoomrange/3237246-initwithmincentercoordinatedista
-    initWithMinCenterCoordinateDistance(minDistance: cocoascript.CLLocationDistance):cocoascript.MKMapCameraZoomRange;
+    initWithMinCenterCoordinateDistance(minDistance: CLLocationDistance):MKMapCameraZoomRange;
     // doc://com.apple.documentation/documentation/mapkit/mkmapcamerazoomrange/3237245-initwithmaxcentercoordinatedista
-    initWithMaxCenterCoordinateDistance(maxDistance: cocoascript.CLLocationDistance):cocoascript.MKMapCameraZoomRange;
+    initWithMaxCenterCoordinateDistance(maxDistance: CLLocationDistance):MKMapCameraZoomRange;
     // doc://com.apple.documentation/documentation/mapkit/mkmapcamerazoomrange/3114299-maxcentercoordinatedistance
-    maxCenterCoordinateDistance(): cocoascript.CLLocationDistance;
+    maxCenterCoordinateDistance(): CLLocationDistance;
     setMaxCenterCoordinateDistance(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapcamerazoomrange/3114300-mincentercoordinatedistance
-    minCenterCoordinateDistance(): cocoascript.CLLocationDistance;
+    minCenterCoordinateDistance(): CLLocationDistance;
     setMinCenterCoordinateDistance(): void;
     //
-    alloc():cocoascript.MKMapCameraZoomRange;
+    alloc():MKMapCameraZoomRange;
     //
-    init():cocoascript.MKMapCameraZoomRange;
+    init():MKMapCameraZoomRange;
   }
 }
 
@@ -440,21 +440,21 @@ declare namespace cocoascript {
    */
   interface MKMapCameraBoundary extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mkmapcameraboundary/3141908-initwithcoder
-    initWithCoder(coder: cocoascript.NSCoder):cocoascript.MKMapCameraBoundary;
+    initWithCoder(coder: NSCoder):MKMapCameraBoundary;
     // doc://com.apple.documentation/documentation/mapkit/mkmapcameraboundary/3141909-initwithcoordinateregion
-    initWithCoordinateRegion(region: cocoascript.MKCoordinateRegion):cocoascript.MKMapCameraBoundary;
+    initWithCoordinateRegion(region: MKCoordinateRegion):MKMapCameraBoundary;
     // doc://com.apple.documentation/documentation/mapkit/mkmapcameraboundary/3141910-initwithmaprect
-    initWithMapRect(mapRect: cocoascript.MKMapRect):cocoascript.MKMapCameraBoundary;
+    initWithMapRect(mapRect: MKMapRect):MKMapCameraBoundary;
     // doc://com.apple.documentation/documentation/mapkit/mkmapcameraboundary/3141911-maprect
-    mapRect(): cocoascript.MKMapRect;
+    mapRect(): MKMapRect;
     setMapRect(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapcameraboundary/3141912-region
-    region(): cocoascript.MKCoordinateRegion;
+    region(): MKCoordinateRegion;
     setRegion(): void;
     //
-    alloc():cocoascript.MKMapCameraBoundary;
+    alloc():MKMapCameraBoundary;
     //
-    init():cocoascript.MKMapCameraBoundary;
+    init():MKMapCameraBoundary;
   }
 }
 
@@ -466,23 +466,23 @@ declare namespace cocoascript {
    */
   interface MKPointOfInterestFilter extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestfilter/3143464-filterexcludingallcategories
-    filterExcludingAllCategories(): cocoascript.MKPointOfInterestFilter;
+    filterExcludingAllCategories(): MKPointOfInterestFilter;
     setFilterExcludingAllCategories(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestfilter/3143465-filterincludingallcategories
-    filterIncludingAllCategories(): cocoascript.MKPointOfInterestFilter;
+    filterIncludingAllCategories(): MKPointOfInterestFilter;
     setFilterIncludingAllCategories(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestfilter/3143467-initexcludingcategories
-    initExcludingCategories(categories: cocoascript.MKPointOfInterestCategory):cocoascript.MKPointOfInterestFilter;
+    initExcludingCategories(categories: MKPointOfInterestCategory):MKPointOfInterestFilter;
     // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestfilter/3143468-initincludingcategories
-    initIncludingCategories(categories: cocoascript.MKPointOfInterestCategory):cocoascript.MKPointOfInterestFilter;
+    initIncludingCategories(categories: MKPointOfInterestCategory):MKPointOfInterestFilter;
     // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestfilter/3143463-excludescategory
-    excludesCategory(category: cocoascript.MKPointOfInterestCategory):cocoascript.BOOL;
+    excludesCategory(category: MKPointOfInterestCategory):BOOL;
     // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestfilter/3143466-includescategory
-    includesCategory(category: cocoascript.MKPointOfInterestCategory):cocoascript.BOOL;
+    includesCategory(category: MKPointOfInterestCategory):BOOL;
     //
-    alloc():cocoascript.MKPointOfInterestFilter;
+    alloc():MKPointOfInterestFilter;
     //
-    init():cocoascript.MKPointOfInterestFilter;
+    init():MKPointOfInterestFilter;
   }
 }
 
@@ -494,25 +494,25 @@ declare namespace cocoascript {
    */
   interface MKLocalPointsOfInterestRequest extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mklocalpointsofinterestrequest/3564412-initwithcentercoordinate
-    initWithCenterCoordinate_radius(coordinate: cocoascript.CLLocationCoordinate2D, radius: cocoascript.CLLocationDistance):cocoascript.MKLocalPointsOfInterestRequest;
+    initWithCenterCoordinate_radius(coordinate: CLLocationCoordinate2D, radius: CLLocationDistance):MKLocalPointsOfInterestRequest;
     // doc://com.apple.documentation/documentation/mapkit/mklocalpointsofinterestrequest/3564413-initwithcoordinateregion
-    initWithCoordinateRegion(region: cocoascript.MKCoordinateRegion):cocoascript.MKLocalPointsOfInterestRequest;
+    initWithCoordinateRegion(region: MKCoordinateRegion):MKLocalPointsOfInterestRequest;
     // doc://com.apple.documentation/documentation/mapkit/mklocalpointsofinterestrequest/3564416-region
-    region(): cocoascript.MKCoordinateRegion;
+    region(): MKCoordinateRegion;
     setRegion(): void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalpointsofinterestrequest/3564411-coordinate
-    coordinate(): cocoascript.CLLocationCoordinate2D;
+    coordinate(): CLLocationCoordinate2D;
     setCoordinate(): void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalpointsofinterestrequest/3564415-radius
-    radius(): cocoascript.CLLocationDistance;
+    radius(): CLLocationDistance;
     setRadius(): void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalpointsofinterestrequest/3564414-pointofinterestfilter
-    pointOfInterestFilter(): cocoascript.MKPointOfInterestFilter;
+    pointOfInterestFilter(): MKPointOfInterestFilter;
     setPointOfInterestFilter(): void;
     //
-    alloc():cocoascript.MKLocalPointsOfInterestRequest;
+    alloc():MKLocalPointsOfInterestRequest;
     //
-    init():cocoascript.MKLocalPointsOfInterestRequest;
+    init():MKLocalPointsOfInterestRequest;
   }
 }
 
@@ -524,17 +524,17 @@ declare namespace cocoascript {
    */
   interface MKMapItem extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452002-mapitemforcurrentlocation
-    mapItemForCurrentLocation():cocoascript.MKMapItem;
+    mapItemForCurrentLocation():MKMapItem;
     // doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452285-initwithplacemark
-    initWithPlacemark(placemark: cocoascript.MKPlacemark):cocoascript.MKMapItem;
+    initWithPlacemark(placemark: MKPlacemark):MKMapItem;
     // doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452134-placemark
-    placemark(): cocoascript.MKPlacemark;
+    placemark(): MKPlacemark;
     setPlacemark(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapitem/3143415-pointofinterestcategory
-    pointOfInterestCategory(): cocoascript.MKPointOfInterestCategory;
+    pointOfInterestCategory(): MKPointOfInterestCategory;
     setPointOfInterestCategory(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452319-iscurrentlocation
-    isCurrentLocation(): cocoascript.BOOL;
+    isCurrentLocation(): BOOL;
     setIsCurrentLocation(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452339-name
     name(): string | cocoascript.NSString;
@@ -543,23 +543,23 @@ declare namespace cocoascript {
     phoneNumber(): string | cocoascript.NSString;
     setPhoneNumber(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452746-url
-    url(): cocoascript.NSURL;
+    url(): NSURL;
     setUrl(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452431-timezone
-    timeZone(): cocoascript.NSTimeZone;
+    timeZone(): NSTimeZone;
     setTimeZone(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452207-openmapswithitems
-    openMapsWithItems_launchOptions(mapItems: cocoascript.MKMapItem, launchOptions: cocoascript.MKMapItem):cocoascript.BOOL;
+    openMapsWithItems_launchOptions(mapItems: MKMapItem, launchOptions: MKMapItem):BOOL;
     // doc://com.apple.documentation/documentation/mapkit/mkmapitem/3395860-openmapswithitems
-    openMapsWithItems_launchOptions_fromScene_completionHandler(mapItems: cocoascript.MKMapItem, launchOptions: cocoascript.MKMapItem, scene: cocoascript.UIScene, completion: cocoascript.BOOL):void;
+    openMapsWithItems_launchOptions_fromScene_completionHandler(mapItems: MKMapItem, launchOptions: MKMapItem, scene: UIScene, completion: BOOL):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452239-openinmapswithlaunchoptions
-    openInMapsWithLaunchOptions(launchOptions: cocoascript.MKMapItem):cocoascript.BOOL;
+    openInMapsWithLaunchOptions(launchOptions: MKMapItem):BOOL;
     // doc://com.apple.documentation/documentation/mapkit/mkmapitem/3395859-openinmapswithlaunchoptions
-    openInMapsWithLaunchOptions_fromScene_completionHandler(launchOptions: cocoascript.MKMapItem, scene: cocoascript.UIScene, completion: cocoascript.BOOL):void;
+    openInMapsWithLaunchOptions_fromScene_completionHandler(launchOptions: MKMapItem, scene: UIScene, completion: BOOL):void;
     //
-    alloc():cocoascript.MKMapItem;
+    alloc():MKMapItem;
     //
-    init():cocoascript.MKMapItem;
+    init():MKMapItem;
   }
 }
 
@@ -573,87 +573,87 @@ declare namespace cocoascript {
    */
   interface MKAnnotationView extends NSView {
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452779-initwithannotation
-    initWithAnnotation_reuseIdentifier(annotation: cocoascript.MKAnnotation, reuseIdentifier: string | cocoascript.NSString):cocoascript.MKAnnotationView;
+    initWithAnnotation_reuseIdentifier(annotation: MKAnnotation, reuseIdentifier: string | cocoascript.NSString):MKAnnotationView;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1827527-initwithcoder
-    initWithCoder(aDecoder: cocoascript.NSCoder):cocoascript.MKAnnotationView;
+    initWithCoder(aDecoder: NSCoder):MKAnnotationView;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1451907-prepareforreuse
     prepareForReuse():void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/2921514-preparefordisplay
     prepareForDisplay():void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/2867298-displaypriority
-    displayPriority(): cocoascript.MKFeatureDisplayPriority;
+    displayPriority(): MKFeatureDisplayPriority;
     setDisplayPriority(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/3547913-zpriority
-    zPriority(): cocoascript.MKAnnotationViewZPriority;
+    zPriority(): MKAnnotationViewZPriority;
     setZPriority(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/3547912-selectedzpriority
-    selectedZPriority(): cocoascript.MKAnnotationViewZPriority;
+    selectedZPriority(): MKAnnotationViewZPriority;
     setSelectedZPriority(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452411-enabled
-    enabled(): cocoascript.BOOL;
+    enabled(): BOOL;
     setEnabled(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452094-image
-    image(): cocoascript.UIImage;
+    image(): UIImage;
     setImage(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452047-highlighted
-    highlighted(): cocoascript.BOOL;
+    highlighted(): BOOL;
     setHighlighted(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452613-annotation
-    annotation(): cocoascript.MKAnnotation;
+    annotation(): MKAnnotation;
     setAnnotation(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452144-centeroffset
-    centerOffset(): cocoascript.CGPoint;
+    centerOffset(): CGPoint;
     setCenterOffset(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452771-calloutoffset
-    calloutOffset(): cocoascript.CGPoint;
+    calloutOffset(): CGPoint;
     setCalloutOffset(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452060-reuseidentifier
     reuseIdentifier(): string | cocoascript.NSString;
     setReuseIdentifier(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452381-setselected
-    setSelected_animated(selected: cocoascript.BOOL, animated: cocoascript.BOOL):void;
+    setSelected_animated(selected: BOOL, animated: BOOL):void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452777-selected
-    selected(): cocoascript.BOOL;
+    selected(): BOOL;
     setSelected(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452451-canshowcallout
-    canShowCallout(): cocoascript.BOOL;
+    canShowCallout(): BOOL;
     setCanShowCallout(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452423-leftcalloutaccessoryview
-    leftCalloutAccessoryView(): cocoascript.UIView;
+    leftCalloutAccessoryView(): UIView;
     setLeftCalloutAccessoryView(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452233-rightcalloutaccessoryview
-    rightCalloutAccessoryView(): cocoascript.UIView;
+    rightCalloutAccessoryView(): UIView;
     setRightCalloutAccessoryView(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452543-detailcalloutaccessoryview
-    detailCalloutAccessoryView(): cocoascript.UIView;
+    detailCalloutAccessoryView(): UIView;
     setDetailCalloutAccessoryView(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452545-leftcalloutoffset
-    leftCalloutOffset(): cocoascript.CGPoint;
+    leftCalloutOffset(): CGPoint;
     setLeftCalloutOffset(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452036-rightcalloutoffset
-    rightCalloutOffset(): cocoascript.CGPoint;
+    rightCalloutOffset(): CGPoint;
     setRightCalloutOffset(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452401-draggable
-    draggable(): cocoascript.BOOL;
+    draggable(): BOOL;
     setDraggable(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1452639-setdragstate
-    setDragState_animated(newDragState: cocoascript.MKAnnotationViewDragState, animated: cocoascript.BOOL):void;
+    setDragState_animated(newDragState: MKAnnotationViewDragState, animated: BOOL):void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/1451941-dragstate
-    dragState(): cocoascript.MKAnnotationViewDragState;
+    dragState(): MKAnnotationViewDragState;
     setDragState(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/2873315-collisionmode
-    collisionMode(): cocoascript.MKAnnotationViewCollisionMode;
+    collisionMode(): MKAnnotationViewCollisionMode;
     setCollisionMode(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/2867297-clusteringidentifier
     clusteringIdentifier(): string | cocoascript.NSString;
     setClusteringIdentifier(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkannotationview/2867294-clusterannotationview
-    clusterAnnotationView(): cocoascript.MKAnnotationView;
+    clusterAnnotationView(): MKAnnotationView;
     setClusterAnnotationView(): void;
     //
-    alloc():cocoascript.MKAnnotationView;
+    alloc():MKAnnotationView;
     //
-    init():cocoascript.MKAnnotationView;
+    init():MKAnnotationView;
   }
 }
 
@@ -667,33 +667,33 @@ declare namespace cocoascript {
    */
   interface MKMarkerAnnotationView extends MKAnnotationView {
     // doc://com.apple.documentation/documentation/mapkit/mkmarkerannotationview/2873822-markertintcolor
-    markerTintColor(): cocoascript.UIColor;
+    markerTintColor(): UIColor;
     setMarkerTintColor(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmarkerannotationview/2873817-glyphtext
     glyphText(): string | cocoascript.NSString;
     setGlyphText(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmarkerannotationview/2873823-glyphimage
-    glyphImage(): cocoascript.UIImage;
+    glyphImage(): UIImage;
     setGlyphImage(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmarkerannotationview/2873824-glyphtintcolor
-    glyphTintColor(): cocoascript.UIColor;
+    glyphTintColor(): UIColor;
     setGlyphTintColor(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmarkerannotationview/2873815-selectedglyphimage
-    selectedGlyphImage(): cocoascript.UIImage;
+    selectedGlyphImage(): UIImage;
     setSelectedGlyphImage(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmarkerannotationview/2873816-titlevisibility
-    titleVisibility(): cocoascript.MKFeatureVisibility;
+    titleVisibility(): MKFeatureVisibility;
     setTitleVisibility(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmarkerannotationview/2873813-subtitlevisibility
-    subtitleVisibility(): cocoascript.MKFeatureVisibility;
+    subtitleVisibility(): MKFeatureVisibility;
     setSubtitleVisibility(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmarkerannotationview/2873821-animateswhenadded
-    animatesWhenAdded(): cocoascript.BOOL;
+    animatesWhenAdded(): BOOL;
     setAnimatesWhenAdded(): void;
     //
-    alloc():cocoascript.MKMarkerAnnotationView;
+    alloc():MKMarkerAnnotationView;
     //
-    init():cocoascript.MKMarkerAnnotationView;
+    init():MKMarkerAnnotationView;
   }
 }
 
@@ -705,24 +705,24 @@ declare namespace cocoascript {
    */
   interface MKPinAnnotationView extends MKAnnotationView {
     // doc://com.apple.documentation/documentation/mapkit/mkpinannotationview/1451990-redpincolor
-    redPinColor():cocoascript.UIColor;
+    redPinColor():UIColor;
     // doc://com.apple.documentation/documentation/mapkit/mkpinannotationview/1452568-greenpincolor
-    greenPinColor():cocoascript.UIColor;
+    greenPinColor():UIColor;
     // doc://com.apple.documentation/documentation/mapkit/mkpinannotationview/1452110-purplepincolor
-    purplePinColor():cocoascript.UIColor;
+    purplePinColor():UIColor;
     // doc://com.apple.documentation/documentation/mapkit/mkpinannotationview/1452042-pintintcolor
-    pinTintColor(): cocoascript.UIColor;
+    pinTintColor(): UIColor;
     setPinTintColor(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkpinannotationview/1452654-animatesdrop
-    animatesDrop(): cocoascript.BOOL;
+    animatesDrop(): BOOL;
     setAnimatesDrop(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkpinannotationview/1452530-pincolor
-    pinColor(): cocoascript.MKPinAnnotationColor;
+    pinColor(): MKPinAnnotationColor;
     setPinColor(): void;
     //
-    alloc():cocoascript.MKPinAnnotationView;
+    alloc():MKPinAnnotationView;
     //
-    init():cocoascript.MKPinAnnotationView;
+    init():MKPinAnnotationView;
   }
 }
 
@@ -734,15 +734,15 @@ declare namespace cocoascript {
    */
   interface MKOverlay extends MKAnnotation {
     // doc://com.apple.documentation/documentation/mapkit/mkoverlay/1452113-coordinate
-    coordinate(): cocoascript.CLLocationCoordinate2D;
+    coordinate(): CLLocationCoordinate2D;
     setCoordinate(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlay/1452791-boundingmaprect
-    boundingMapRect(): cocoascript.MKMapRect;
+    boundingMapRect(): MKMapRect;
     setBoundingMapRect(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlay/1452138-intersectsmaprect
-    intersectsMapRect(mapRect: cocoascript.MKMapRect):cocoascript.BOOL;
+    intersectsMapRect(mapRect: MKMapRect):BOOL;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlay/1452399-canreplacemapcontent
-    canReplaceMapContent():cocoascript.BOOL;
+    canReplaceMapContent():BOOL;
   }
 }
 declare namespace cocoascript {
@@ -752,44 +752,44 @@ declare namespace cocoascript {
    */
   interface MKOverlayRenderer extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer/1451915-initwithoverlay
-    initWithOverlay(overlay: cocoascript.MKOverlay):cocoascript.MKOverlayRenderer;
+    initWithOverlay(overlay: MKOverlay):MKOverlayRenderer;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer/1452307-overlay
-    overlay(): cocoascript.MKOverlay;
+    overlay(): MKOverlay;
     setOverlay(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer/1452699-alpha
-    alpha(): cocoascript.CGFloat;
+    alpha(): CGFloat;
     setAlpha(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer/1451931-contentscalefactor
-    contentScaleFactor(): cocoascript.CGFloat;
+    contentScaleFactor(): CGFloat;
     setContentScaleFactor(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer/1451899-pointformappoint
-    pointForMapPoint(mapPoint: cocoascript.MKMapPoint):cocoascript.CGPoint;
+    pointForMapPoint(mapPoint: MKMapPoint):CGPoint;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer/1452670-mappointforpoint
-    mapPointForPoint(point: cocoascript.CGPoint):cocoascript.MKMapPoint;
+    mapPointForPoint(point: CGPoint):MKMapPoint;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer/1452738-rectformaprect
-    rectForMapRect(mapRect: cocoascript.MKMapRect):cocoascript.CGRect;
+    rectForMapRect(mapRect: MKMapRect):CGRect;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer/1452680-maprectforrect
-    mapRectForRect(rect: cocoascript.CGRect):cocoascript.MKMapRect;
+    mapRectForRect(rect: CGRect):MKMapRect;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer/1451891-candrawmaprect
-    canDrawMapRect_zoomScale(mapRect: cocoascript.MKMapRect, zoomScale: cocoascript.MKZoomScale):cocoascript.BOOL;
+    canDrawMapRect_zoomScale(mapRect: MKMapRect, zoomScale: MKZoomScale):BOOL;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer/1452184-drawmaprect
-    drawMapRect_zoomScale_inContext(mapRect: cocoascript.MKMapRect, zoomScale: cocoascript.MKZoomScale, context: cocoascript.CGContextRef):void;
+    drawMapRect_zoomScale_inContext(mapRect: MKMapRect, zoomScale: MKZoomScale, context: CGContextRef):void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer/1452104-setneedsdisplay
     setNeedsDisplay():void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer/1452564-setneedsdisplayinmaprect
-    setNeedsDisplayInMapRect(mapRect: cocoascript.MKMapRect):void;
+    setNeedsDisplayInMapRect(mapRect: MKMapRect):void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlayrenderer/1452793-setneedsdisplayinmaprect
-    setNeedsDisplayInMapRect_zoomScale(mapRect: cocoascript.MKMapRect, zoomScale: cocoascript.MKZoomScale):void;
+    setNeedsDisplayInMapRect_zoomScale(mapRect: MKMapRect, zoomScale: MKZoomScale):void;
     //
-    alloc():cocoascript.MKOverlayRenderer;
+    alloc():MKOverlayRenderer;
     //
-    init():cocoascript.MKOverlayRenderer;
+    init():MKOverlayRenderer;
   }
 }
 
 declare const MKOverlayRenderer: cocoascript.MKOverlayRenderer;
 // doc://com.apple.documentation/documentation/mapkit/1452156-mkroadwidthatzoomscale
-declare const MKRoadWidthAtZoomScale: cocoascript.MKZoomScale;
+declare const MKRoadWidthAtZoomScale: MKZoomScale;
 declare namespace cocoascript {
   /**
    * Defines the basic behavior associated with all overlay views.
@@ -797,30 +797,30 @@ declare namespace cocoascript {
    */
   interface MKOverlayView extends UIView {
     // doc://com.apple.documentation/documentation/mapkit/mkoverlayview/1613884-initwithoverlay
-    initWithOverlay(overlay: cocoascript.MKOverlay):cocoascript.MKOverlayView;
+    initWithOverlay(overlay: MKOverlay):MKOverlayView;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlayview/1613872-overlay
-    overlay(): cocoascript.MKOverlay;
+    overlay(): MKOverlay;
     setOverlay(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlayview/1613874-pointformappoint
-    pointForMapPoint(mapPoint: cocoascript.MKMapPoint):cocoascript.CGPoint;
+    pointForMapPoint(mapPoint: MKMapPoint):CGPoint;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlayview/1613878-mappointforpoint
-    mapPointForPoint(point: cocoascript.CGPoint):cocoascript.MKMapPoint;
+    mapPointForPoint(point: CGPoint):MKMapPoint;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlayview/1613870-rectformaprect
-    rectForMapRect(mapRect: cocoascript.MKMapRect):cocoascript.CGRect;
+    rectForMapRect(mapRect: MKMapRect):CGRect;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlayview/1613882-maprectforrect
-    mapRectForRect(rect: cocoascript.CGRect):cocoascript.MKMapRect;
+    mapRectForRect(rect: CGRect):MKMapRect;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlayview/1613864-candrawmaprect
-    canDrawMapRect_zoomScale(mapRect: cocoascript.MKMapRect, zoomScale: cocoascript.MKZoomScale):cocoascript.BOOL;
+    canDrawMapRect_zoomScale(mapRect: MKMapRect, zoomScale: MKZoomScale):BOOL;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlayview/1613868-drawmaprect
-    drawMapRect_zoomScale_inContext(mapRect: cocoascript.MKMapRect, zoomScale: cocoascript.MKZoomScale, context: cocoascript.CGContextRef):void;
+    drawMapRect_zoomScale_inContext(mapRect: MKMapRect, zoomScale: MKZoomScale, context: CGContextRef):void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlayview/1613866-setneedsdisplayinmaprect
-    setNeedsDisplayInMapRect(mapRect: cocoascript.MKMapRect):void;
+    setNeedsDisplayInMapRect(mapRect: MKMapRect):void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlayview/1613876-setneedsdisplayinmaprect
-    setNeedsDisplayInMapRect_zoomScale(mapRect: cocoascript.MKMapRect, zoomScale: cocoascript.MKZoomScale):void;
+    setNeedsDisplayInMapRect_zoomScale(mapRect: MKMapRect, zoomScale: MKZoomScale):void;
     //
-    alloc():cocoascript.MKOverlayView;
+    alloc():MKOverlayView;
     //
-    init():cocoascript.MKOverlayView;
+    init():MKOverlayView;
   }
 }
 
@@ -862,9 +862,9 @@ declare namespace cocoascript {
     subtitle(): string | cocoascript.NSString;
     setSubtitle(): void;
     //
-    alloc():cocoascript.MKShape;
+    alloc():MKShape;
     //
-    init():cocoascript.MKShape;
+    init():MKShape;
   }
 }
 
@@ -876,13 +876,13 @@ declare namespace cocoascript {
    */
   interface MKUserLocation extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mkuserlocation/1452415-location
-    location(): cocoascript.CLLocation;
+    location(): CLLocation;
     setLocation(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkuserlocation/1452084-updating
-    updating(): cocoascript.BOOL;
+    updating(): BOOL;
     setUpdating(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkuserlocation/1452721-heading
-    heading(): cocoascript.CLHeading;
+    heading(): CLHeading;
     setHeading(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkuserlocation/1452058-title
     title(): string | cocoascript.NSString;
@@ -891,9 +891,9 @@ declare namespace cocoascript {
     subtitle(): string | cocoascript.NSString;
     setSubtitle(): void;
     //
-    alloc():cocoascript.MKUserLocation;
+    alloc():MKUserLocation;
     //
-    init():cocoascript.MKUserLocation;
+    init():MKUserLocation;
   }
 }
 
@@ -905,18 +905,18 @@ declare namespace cocoascript {
    */
   interface MKPlacemark extends CLPlacemark {
     // doc://com.apple.documentation/documentation/mapkit/mkplacemark/2172460-initwithcoordinate
-    initWithCoordinate(coordinate: cocoascript.CLLocationCoordinate2D):cocoascript.MKPlacemark;
+    initWithCoordinate(coordinate: CLLocationCoordinate2D):MKPlacemark;
     // doc://com.apple.documentation/documentation/mapkit/mkplacemark/2172461-initwithcoordinate
-    initWithCoordinate_postalAddress(coordinate: cocoascript.CLLocationCoordinate2D, postalAddress: cocoascript.CNPostalAddress):cocoascript.MKPlacemark;
+    initWithCoordinate_postalAddress(coordinate: CLLocationCoordinate2D, postalAddress: CNPostalAddress):MKPlacemark;
     // doc://com.apple.documentation/documentation/mapkit/mkplacemark/1451895-initwithcoordinate
-    initWithCoordinate_addressDictionary(coordinate: cocoascript.CLLocationCoordinate2D, addressDictionary: cocoascript.MKPlacemark):cocoascript.MKPlacemark;
+    initWithCoordinate_addressDictionary(coordinate: CLLocationCoordinate2D, addressDictionary: MKPlacemark):MKPlacemark;
     // doc://com.apple.documentation/documentation/mapkit/mkplacemark/1451952-countrycode
     countryCode(): string | cocoascript.NSString;
     setCountryCode(): void;
     //
-    alloc():cocoascript.MKPlacemark;
+    alloc():MKPlacemark;
     //
-    init():cocoascript.MKPlacemark;
+    init():MKPlacemark;
   }
 }
 
@@ -928,7 +928,7 @@ declare namespace cocoascript {
    */
   interface MKClusterAnnotation extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mkclusterannotation/2866567-initwithmemberannotations
-    initWithMemberAnnotations(memberAnnotations: cocoascript.MKAnnotation):cocoascript.MKClusterAnnotation;
+    initWithMemberAnnotations(memberAnnotations: MKAnnotation):MKClusterAnnotation;
     // doc://com.apple.documentation/documentation/mapkit/mkclusterannotation/2866569-title
     title(): string | cocoascript.NSString;
     setTitle(): void;
@@ -936,12 +936,12 @@ declare namespace cocoascript {
     subtitle(): string | cocoascript.NSString;
     setSubtitle(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkclusterannotation/2866568-memberannotations
-    memberAnnotations(): cocoascript.MKAnnotation;
+    memberAnnotations(): MKAnnotation;
     setMemberAnnotations(): void;
     //
-    alloc():cocoascript.MKClusterAnnotation;
+    alloc():MKClusterAnnotation;
     //
-    init():cocoascript.MKClusterAnnotation;
+    init():MKClusterAnnotation;
   }
 }
 
@@ -953,35 +953,35 @@ declare namespace cocoascript {
    */
   interface MKLocalSearchCompleter extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleter/1452106-delegate
-    delegate(): cocoascript.MKLocalSearchCompleterDelegate;
+    delegate(): MKLocalSearchCompleterDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleter/1452555-queryfragment
     queryFragment(): string | cocoascript.NSString;
     setQueryFragment(): void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleter/1451923-region
-    region(): cocoascript.MKCoordinateRegion;
+    region(): MKCoordinateRegion;
     setRegion(): void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleter/3143405-resulttypes
-    resultTypes(): cocoascript.MKLocalSearchCompleterResultType;
+    resultTypes(): MKLocalSearchCompleterResultType;
     setResultTypes(): void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleter/3143404-pointofinterestfilter
-    pointOfInterestFilter(): cocoascript.MKPointOfInterestFilter;
+    pointOfInterestFilter(): MKPointOfInterestFilter;
     setPointOfInterestFilter(): void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleter/1452150-filtertype
-    filterType(): cocoascript.MKSearchCompletionFilterType;
+    filterType(): MKSearchCompletionFilterType;
     setFilterType(): void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleter/1452337-cancel
     cancel():void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleter/1452272-searching
-    searching(): cocoascript.BOOL;
+    searching(): BOOL;
     setSearching(): void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleter/1452295-results
-    results(): cocoascript.MKLocalSearchCompletion;
+    results(): MKLocalSearchCompletion;
     setResults(): void;
     //
-    alloc():cocoascript.MKLocalSearchCompleter;
+    alloc():MKLocalSearchCompleter;
     //
-    init():cocoascript.MKLocalSearchCompleter;
+    init():MKLocalSearchCompleter;
   }
 }
 
@@ -993,27 +993,27 @@ declare namespace cocoascript {
    */
   interface MKReverseGeocoder extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mkreversegeocoder/1618471-initwithcoordinate
-    initWithCoordinate(coordinate: cocoascript.CLLocationCoordinate2D):cocoascript.MKReverseGeocoder;
+    initWithCoordinate(coordinate: CLLocationCoordinate2D):MKReverseGeocoder;
     // doc://com.apple.documentation/documentation/mapkit/mkreversegeocoder/1618478-delegate
-    delegate(): cocoascript.MKReverseGeocoderDelegate;
+    delegate(): MKReverseGeocoderDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkreversegeocoder/1618477-coordinate
-    coordinate(): cocoascript.CLLocationCoordinate2D;
+    coordinate(): CLLocationCoordinate2D;
     setCoordinate(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkreversegeocoder/1618481-placemark
-    placemark(): cocoascript.MKPlacemark;
+    placemark(): MKPlacemark;
     setPlacemark(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkreversegeocoder/1618480-start
     start():void;
     // doc://com.apple.documentation/documentation/mapkit/mkreversegeocoder/1618474-querying
-    querying(): cocoascript.BOOL;
+    querying(): BOOL;
     setQuerying(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkreversegeocoder/1618479-cancel
     cancel():void;
     //
-    alloc():cocoascript.MKReverseGeocoder;
+    alloc():MKReverseGeocoder;
     //
-    init():cocoascript.MKReverseGeocoder;
+    init():MKReverseGeocoder;
   }
 }
 
@@ -1025,18 +1025,18 @@ declare namespace cocoascript {
    */
   interface MKGeoJSONFeature extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mkgeojsonfeature/3113996-geometry
-    geometry(): cocoascript.MKGeoJSONObject;
+    geometry(): MKGeoJSONObject;
     setGeometry(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkgeojsonfeature/3113997-identifier
     identifier(): string | cocoascript.NSString;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkgeojsonfeature/3113998-properties
-    properties(): cocoascript.NSData;
+    properties(): NSData;
     setProperties(): void;
     //
-    alloc():cocoascript.MKGeoJSONFeature;
+    alloc():MKGeoJSONFeature;
     //
-    init():cocoascript.MKGeoJSONFeature;
+    init():MKGeoJSONFeature;
   }
 }
 
@@ -1048,11 +1048,11 @@ declare namespace cocoascript {
    */
   interface MKGeoJSONDecoder extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mkgeojsondecoder/3113994-geojsonobjectswithdata
-    geoJSONObjectsWithData_error(data: cocoascript.NSData, errorPtr: cocoascript.NSError):cocoascript.MKGeoJSONObject;
+    geoJSONObjectsWithData_error(data: NSData, errorPtr: NSError):MKGeoJSONObject;
     //
-    alloc():cocoascript.MKGeoJSONDecoder;
+    alloc():MKGeoJSONDecoder;
     //
-    init():cocoascript.MKGeoJSONDecoder;
+    init():MKGeoJSONDecoder;
   }
 }
 
@@ -1064,17 +1064,17 @@ declare namespace cocoascript {
    */
   interface MKCompassButton extends NSView {
     // doc://com.apple.documentation/documentation/mapkit/mkcompassbutton/2890261-compassbuttonwithmapview
-    compassButtonWithMapView(mapView: cocoascript.MKMapView):cocoascript.MKCompassButton;
+    compassButtonWithMapView(mapView: MKMapView):MKCompassButton;
     // doc://com.apple.documentation/documentation/mapkit/mkcompassbutton/2890264-mapview
-    mapView(): cocoascript.MKMapView;
+    mapView(): MKMapView;
     setMapView(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkcompassbutton/2890262-compassvisibility
-    compassVisibility(): cocoascript.MKFeatureVisibility;
+    compassVisibility(): MKFeatureVisibility;
     setCompassVisibility(): void;
     //
-    alloc():cocoascript.MKCompassButton;
+    alloc():MKCompassButton;
     //
-    init():cocoascript.MKCompassButton;
+    init():MKCompassButton;
   }
 }
 
@@ -1086,20 +1086,20 @@ declare namespace cocoascript {
    */
   interface MKScaleView extends UIView {
     // doc://com.apple.documentation/documentation/mapkit/mkscaleview/2890255-scaleviewwithmapview
-    scaleViewWithMapView(mapView: cocoascript.MKMapView):cocoascript.MKScaleView;
+    scaleViewWithMapView(mapView: MKMapView):MKScaleView;
     // doc://com.apple.documentation/documentation/mapkit/mkscaleview/2890257-mapview
-    mapView(): cocoascript.MKMapView;
+    mapView(): MKMapView;
     setMapView(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkscaleview/2890254-scalevisibility
-    scaleVisibility(): cocoascript.MKFeatureVisibility;
+    scaleVisibility(): MKFeatureVisibility;
     setScaleVisibility(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkscaleview/2890258-legendalignment
-    legendAlignment(): cocoascript.MKScaleViewAlignment;
+    legendAlignment(): MKScaleViewAlignment;
     setLegendAlignment(): void;
     //
-    alloc():cocoascript.MKScaleView;
+    alloc():MKScaleView;
     //
-    init():cocoascript.MKScaleView;
+    init():MKScaleView;
   }
 }
 
@@ -1111,14 +1111,14 @@ declare namespace cocoascript {
    */
   interface MKZoomControl extends NSView {
     // doc://com.apple.documentation/documentation/mapkit/mkzoomcontrol/3567218-zoomcontrolwithmapview
-    zoomControlWithMapView(mapView: cocoascript.MKMapView):cocoascript.MKZoomControl;
+    zoomControlWithMapView(mapView: MKMapView):MKZoomControl;
     // doc://com.apple.documentation/documentation/mapkit/mkzoomcontrol/3567217-mapview
-    mapView(): cocoascript.MKMapView;
+    mapView(): MKMapView;
     setMapView(): void;
     //
-    alloc():cocoascript.MKZoomControl;
+    alloc():MKZoomControl;
     //
-    init():cocoascript.MKZoomControl;
+    init():MKZoomControl;
   }
 }
 
@@ -1130,14 +1130,14 @@ declare namespace cocoascript {
    */
   interface MKPitchControl extends NSView {
     // doc://com.apple.documentation/documentation/mapkit/mkpitchcontrol/3567215-pitchcontrolwithmapview
-    pitchControlWithMapView(mapView: cocoascript.MKMapView):cocoascript.MKPitchControl;
+    pitchControlWithMapView(mapView: MKMapView):MKPitchControl;
     // doc://com.apple.documentation/documentation/mapkit/mkpitchcontrol/3567214-mapview
-    mapView(): cocoascript.MKMapView;
+    mapView(): MKMapView;
     setMapView(): void;
     //
-    alloc():cocoascript.MKPitchControl;
+    alloc():MKPitchControl;
     //
-    init():cocoascript.MKPitchControl;
+    init():MKPitchControl;
   }
 }
 
@@ -1149,14 +1149,14 @@ declare namespace cocoascript {
    */
   interface MKUserTrackingButton extends UIView {
     // doc://com.apple.documentation/documentation/mapkit/mkusertrackingbutton/2867281-usertrackingbuttonwithmapview
-    userTrackingButtonWithMapView(mapView: cocoascript.MKMapView):cocoascript.MKUserTrackingButton;
+    userTrackingButtonWithMapView(mapView: MKMapView):MKUserTrackingButton;
     // doc://com.apple.documentation/documentation/mapkit/mkusertrackingbutton/2867283-mapview
-    mapView(): cocoascript.MKMapView;
+    mapView(): MKMapView;
     setMapView(): void;
     //
-    alloc():cocoascript.MKUserTrackingButton;
+    alloc():MKUserTrackingButton;
     //
-    init():cocoascript.MKUserTrackingButton;
+    init():MKUserTrackingButton;
   }
 }
 
@@ -1168,14 +1168,14 @@ declare namespace cocoascript {
    */
   interface MKUserTrackingBarButtonItem extends UIBarButtonItem {
     // doc://com.apple.documentation/documentation/mapkit/mkusertrackingbarbuttonitem/1620146-initwithmapview
-    initWithMapView(mapView: cocoascript.MKMapView):cocoascript.MKUserTrackingBarButtonItem;
+    initWithMapView(mapView: MKMapView):MKUserTrackingBarButtonItem;
     // doc://com.apple.documentation/documentation/mapkit/mkusertrackingbarbuttonitem/1620161-mapview
-    mapView(): cocoascript.MKMapView;
+    mapView(): MKMapView;
     setMapView(): void;
     //
-    alloc():cocoascript.MKUserTrackingBarButtonItem;
+    alloc():MKUserTrackingBarButtonItem;
     //
-    init():cocoascript.MKUserTrackingBarButtonItem;
+    init():MKUserTrackingBarButtonItem;
   }
 }
 
@@ -1187,20 +1187,20 @@ declare namespace cocoascript {
    */
   interface MKLocalSearch extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearch/1452759-initwithrequest
-    initWithRequest(request: cocoascript.MKLocalSearchRequest):cocoascript.MKLocalSearch;
+    initWithRequest(request: MKLocalSearchRequest):MKLocalSearch;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearch/3564418-initwithpointsofinterestrequest
-    initWithPointsOfInterestRequest(request: cocoascript.MKLocalPointsOfInterestRequest):cocoascript.MKLocalSearch;
+    initWithPointsOfInterestRequest(request: MKLocalPointsOfInterestRequest):MKLocalSearch;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearch/1452652-startwithcompletionhandler
-    startWithCompletionHandler(completionHandler: cocoascript.MKLocalSearchCompletionHandler):void;
+    startWithCompletionHandler(completionHandler: MKLocalSearchCompletionHandler):void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearch/1452349-searching
-    searching(): cocoascript.BOOL;
+    searching(): BOOL;
     setSearching(): void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearch/1452160-cancel
     cancel():void;
     //
-    alloc():cocoascript.MKLocalSearch;
+    alloc():MKLocalSearch;
     //
-    init():cocoascript.MKLocalSearch;
+    init():MKLocalSearch;
   }
 }
 
@@ -1216,26 +1216,26 @@ declare namespace cocoascript {
    */
   interface MKMapSnapshotter extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotter/1452090-initwithoptions
-    initWithOptions(options: cocoascript.MKMapSnapshotOptions):cocoascript.MKMapSnapshotter;
+    initWithOptions(options: MKMapSnapshotOptions):MKMapSnapshotter;
     // doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotter/1452479-startwithcompletionhandler
-    startWithCompletionHandler(completionHandler: cocoascript.MKMapSnapshotCompletionHandler):void;
+    startWithCompletionHandler(completionHandler: MKMapSnapshotCompletionHandler):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotter/1452419-startwithqueue
-    startWithQueue_completionHandler(queue: cocoascript.dispatch_queue_t, completionHandler: cocoascript.MKMapSnapshotCompletionHandler):void;
+    startWithQueue_completionHandler(queue: dispatch_queue_t, completionHandler: MKMapSnapshotCompletionHandler):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotter/1452388-cancel
     cancel():void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapsnapshotter/1451960-loading
-    loading(): cocoascript.BOOL;
+    loading(): BOOL;
     setLoading(): void;
     //
-    alloc():cocoascript.MKMapSnapshotter;
+    alloc():MKMapSnapshotter;
     //
-    init():cocoascript.MKMapSnapshotter;
+    init():MKMapSnapshotter;
   }
 }
 
 declare const MKMapSnapshotter: cocoascript.MKMapSnapshotter;
 // doc://com.apple.documentation/documentation/mapkit/mkmapcamerazoomdefault
-declare const MKMapCameraZoomDefault: cocoascript.CLLocationDistance;
+declare const MKMapCameraZoomDefault: CLLocationDistance;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategory
   type MKPointOfInterestCategory = string | cocoascript.NSString;
@@ -1245,7 +1245,7 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/mapkit/mkpointsofinterestrequestmaxradius
-declare const MKPointsOfInterestRequestMaxRadius: cocoascript.CLLocationDistance;
+declare const MKPointsOfInterestRequestMaxRadius: CLLocationDistance;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleterresulttype
   type MKLocalSearchCompleterResultType = cocoascript.NSUInteger;
@@ -1263,15 +1263,15 @@ declare namespace cocoascript {
     subtitle(): string | cocoascript.NSString;
     setSubtitle(): void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompletion/1451935-titlehighlightranges
-    titleHighlightRanges(): cocoascript.NSValue;
+    titleHighlightRanges(): NSValue;
     setTitleHighlightRanges(): void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompletion/1452489-subtitlehighlightranges
-    subtitleHighlightRanges(): cocoascript.NSValue;
+    subtitleHighlightRanges(): NSValue;
     setSubtitleHighlightRanges(): void;
     //
-    alloc():cocoascript.MKLocalSearchCompletion;
+    alloc():MKLocalSearchCompletion;
     //
-    init():cocoascript.MKLocalSearchCompletion;
+    init():MKLocalSearchCompletion;
   }
 }
 
@@ -1287,22 +1287,22 @@ declare namespace cocoascript {
    */
   interface MKDistanceFormatter extends NSFormatter {
     // doc://com.apple.documentation/documentation/mapkit/mkdistanceformatter/1451994-stringfromdistance
-    stringFromDistance(distance: cocoascript.CLLocationDistance):string | cocoascript.NSString;
+    stringFromDistance(distance: CLLocationDistance):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/mapkit/mkdistanceformatter/1452766-distancefromstring
-    distanceFromString(distance: string | cocoascript.NSString):cocoascript.CLLocationDistance;
+    distanceFromString(distance: string | cocoascript.NSString):CLLocationDistance;
     // doc://com.apple.documentation/documentation/mapkit/mkdistanceformatter/1452235-locale
-    locale(): cocoascript.NSLocale;
+    locale(): NSLocale;
     setLocale(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkdistanceformatter/1452775-units
-    units(): cocoascript.MKDistanceFormatterUnits;
+    units(): MKDistanceFormatterUnits;
     setUnits(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkdistanceformatter/1452128-unitstyle
-    unitStyle(): cocoascript.MKDistanceFormatterUnitStyle;
+    unitStyle(): MKDistanceFormatterUnitStyle;
     setUnitStyle(): void;
     //
-    alloc():cocoascript.MKDistanceFormatter;
+    alloc():MKDistanceFormatter;
     //
-    init():cocoascript.MKDistanceFormatter;
+    init():MKDistanceFormatter;
   }
 }
 
@@ -1314,20 +1314,20 @@ declare namespace cocoascript {
    */
   interface MKDirections extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mkdirections/1452197-initwithrequest
-    initWithRequest(request: cocoascript.MKDirectionsRequest):cocoascript.MKDirections;
+    initWithRequest(request: MKDirectionsRequest):MKDirections;
     // doc://com.apple.documentation/documentation/mapkit/mkdirections/1452078-calculatedirectionswithcompletio
-    calculateDirectionsWithCompletionHandler(completionHandler: cocoascript.MKDirectionsHandler):void;
+    calculateDirectionsWithCompletionHandler(completionHandler: MKDirectionsHandler):void;
     // doc://com.apple.documentation/documentation/mapkit/mkdirections/1452736-calculateetawithcompletionhandle
-    calculateETAWithCompletionHandler(completionHandler: cocoascript.MKETAHandler):void;
+    calculateETAWithCompletionHandler(completionHandler: MKETAHandler):void;
     // doc://com.apple.documentation/documentation/mapkit/mkdirections/1452656-cancel
     cancel():void;
     // doc://com.apple.documentation/documentation/mapkit/mkdirections/1452217-calculating
-    calculating(): cocoascript.BOOL;
+    calculating(): BOOL;
     setCalculating(): void;
     //
-    alloc():cocoascript.MKDirections;
+    alloc():MKDirections;
     //
-    init():cocoascript.MKDirections;
+    init():MKDirections;
   }
 }
 
@@ -1339,35 +1339,35 @@ declare namespace cocoascript {
    */
   interface MKDirectionsRequest extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mkdirectionsrequest/1433150-isdirectionsrequesturl
-    isDirectionsRequestURL(url: cocoascript.NSURL):cocoascript.BOOL;
+    isDirectionsRequestURL(url: NSURL):BOOL;
     // doc://com.apple.documentation/documentation/mapkit/mkdirectionsrequest/1433158-initwithcontentsofurl
-    initWithContentsOfURL(url: cocoascript.NSURL):cocoascript.MKDirectionsRequest;
+    initWithContentsOfURL(url: NSURL):MKDirectionsRequest;
     // doc://com.apple.documentation/documentation/mapkit/mkdirectionsrequest/1433144-source
-    source(): cocoascript.MKMapItem;
+    source(): MKMapItem;
     setSource(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkdirectionsrequest/1433156-setsource
-    setSource(source: cocoascript.MKMapItem):void;
+    setSource(source: MKMapItem):void;
     // doc://com.apple.documentation/documentation/mapkit/mkdirectionsrequest/1433146-destination
-    destination(): cocoascript.MKMapItem;
+    destination(): MKMapItem;
     setDestination(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkdirectionsrequest/1433157-setdestination
-    setDestination(destination: cocoascript.MKMapItem):void;
+    setDestination(destination: MKMapItem):void;
     // doc://com.apple.documentation/documentation/mapkit/mkdirectionsrequest/1433152-transporttype
-    transportType(): cocoascript.MKDirectionsTransportType;
+    transportType(): MKDirectionsTransportType;
     setTransportType(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkdirectionsrequest/1433154-requestsalternateroutes
-    requestsAlternateRoutes(): cocoascript.BOOL;
+    requestsAlternateRoutes(): BOOL;
     setRequestsAlternateRoutes(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkdirectionsrequest/1433155-departuredate
-    departureDate(): cocoascript.NSDate;
+    departureDate(): NSDate;
     setDepartureDate(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkdirectionsrequest/1433148-arrivaldate
-    arrivalDate(): cocoascript.NSDate;
+    arrivalDate(): NSDate;
     setArrivalDate(): void;
     //
-    alloc():cocoascript.MKDirectionsRequest;
+    alloc():MKDirectionsRequest;
     //
-    init():cocoascript.MKDirectionsRequest;
+    init():MKDirectionsRequest;
   }
 }
 
@@ -1399,18 +1399,18 @@ declare namespace cocoascript {
    */
   interface MKDirectionsResponse extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mkdirectionsresponse/1452261-source
-    source(): cocoascript.MKMapItem;
+    source(): MKMapItem;
     setSource(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkdirectionsresponse/1451981-destination
-    destination(): cocoascript.MKMapItem;
+    destination(): MKMapItem;
     setDestination(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkdirectionsresponse/1452071-routes
-    routes(): cocoascript.MKRoute;
+    routes(): MKRoute;
     setRoutes(): void;
     //
-    alloc():cocoascript.MKDirectionsResponse;
+    alloc():MKDirectionsResponse;
     //
-    init():cocoascript.MKDirectionsResponse;
+    init():MKDirectionsResponse;
   }
 }
 
@@ -1422,30 +1422,30 @@ declare namespace cocoascript {
    */
   interface MKETAResponse extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mketaresponse/1451947-source
-    source(): cocoascript.MKMapItem;
+    source(): MKMapItem;
     setSource(): void;
     // doc://com.apple.documentation/documentation/mapkit/mketaresponse/1452611-destination
-    destination(): cocoascript.MKMapItem;
+    destination(): MKMapItem;
     setDestination(): void;
     // doc://com.apple.documentation/documentation/mapkit/mketaresponse/1452551-expectedtraveltime
-    expectedTravelTime(): cocoascript.NSTimeInterval;
+    expectedTravelTime(): NSTimeInterval;
     setExpectedTravelTime(): void;
     // doc://com.apple.documentation/documentation/mapkit/mketaresponse/1452644-expecteddeparturedate
-    expectedDepartureDate(): cocoascript.NSDate;
+    expectedDepartureDate(): NSDate;
     setExpectedDepartureDate(): void;
     // doc://com.apple.documentation/documentation/mapkit/mketaresponse/1451881-expectedarrivaldate
-    expectedArrivalDate(): cocoascript.NSDate;
+    expectedArrivalDate(): NSDate;
     setExpectedArrivalDate(): void;
     // doc://com.apple.documentation/documentation/mapkit/mketaresponse/1452164-distance
-    distance(): cocoascript.CLLocationDistance;
+    distance(): CLLocationDistance;
     setDistance(): void;
     // doc://com.apple.documentation/documentation/mapkit/mketaresponse/1452616-transporttype
-    transportType(): cocoascript.MKDirectionsTransportType;
+    transportType(): MKDirectionsTransportType;
     setTransportType(): void;
     //
-    alloc():cocoascript.MKETAResponse;
+    alloc():MKETAResponse;
     //
-    init():cocoascript.MKETAResponse;
+    init():MKETAResponse;
   }
 }
 
@@ -1457,10 +1457,10 @@ declare namespace cocoascript {
    */
   interface MKRoute extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mkroute/1451943-polyline
-    polyline(): cocoascript.MKPolyline;
+    polyline(): MKPolyline;
     setPolyline(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkroute/1452173-steps
-    steps(): cocoascript.MKRouteStep;
+    steps(): MKRouteStep;
     setSteps(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkroute/1452684-name
     name(): string | cocoascript.NSString;
@@ -1469,18 +1469,18 @@ declare namespace cocoascript {
     advisoryNotices(): string | cocoascript.NSString;
     setAdvisoryNotices(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkroute/1452405-distance
-    distance(): cocoascript.CLLocationDistance;
+    distance(): CLLocationDistance;
     setDistance(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkroute/1452297-expectedtraveltime
-    expectedTravelTime(): cocoascript.NSTimeInterval;
+    expectedTravelTime(): NSTimeInterval;
     setExpectedTravelTime(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkroute/1452674-transporttype
-    transportType(): cocoascript.MKDirectionsTransportType;
+    transportType(): MKDirectionsTransportType;
     setTransportType(): void;
     //
-    alloc():cocoascript.MKRoute;
+    alloc():MKRoute;
     //
-    init():cocoascript.MKRoute;
+    init():MKRoute;
   }
 }
 
@@ -1492,7 +1492,7 @@ declare namespace cocoascript {
    */
   interface MKRouteStep extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mkroutestep/1452223-polyline
-    polyline(): cocoascript.MKPolyline;
+    polyline(): MKPolyline;
     setPolyline(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkroutestep/1452447-instructions
     instructions(): string | cocoascript.NSString;
@@ -1501,15 +1501,15 @@ declare namespace cocoascript {
     notice(): string | cocoascript.NSString;
     setNotice(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkroutestep/1452004-distance
-    distance(): cocoascript.CLLocationDistance;
+    distance(): CLLocationDistance;
     setDistance(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkroutestep/1452051-transporttype
-    transportType(): cocoascript.MKDirectionsTransportType;
+    transportType(): MKDirectionsTransportType;
     setTransportType(): void;
     //
-    alloc():cocoascript.MKRouteStep;
+    alloc():MKRouteStep;
     //
-    init():cocoascript.MKRouteStep;
+    init():MKRouteStep;
   }
 }
 
@@ -1521,20 +1521,20 @@ declare namespace cocoascript {
    */
   interface MKMapSnapshot extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mkmapsnapshot/1452701-image
-    image(): cocoascript.UIImage;
+    image(): UIImage;
     setImage(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapsnapshot/3013837-appearance
-    appearance(): cocoascript.NSAppearance;
+    appearance(): NSAppearance;
     setAppearance(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapsnapshot/1452523-pointforcoordinate
-    pointForCoordinate(coordinate: cocoascript.CLLocationCoordinate2D):cocoascript.CGPoint;
+    pointForCoordinate(coordinate: CLLocationCoordinate2D):CGPoint;
     // doc://com.apple.documentation/documentation/mapkit/mkmapsnapshot/3152226-traitcollection
-    traitCollection(): cocoascript.UITraitCollection;
+    traitCollection(): UITraitCollection;
     setTraitCollection(): void;
     //
-    alloc():cocoascript.MKMapSnapshot;
+    alloc():MKMapSnapshot;
     //
-    init():cocoascript.MKMapSnapshot;
+    init():MKMapSnapshot;
   }
 }
 
@@ -1560,7 +1560,7 @@ declare namespace cocoascript {
   type MKAnnotationViewDragState = cocoascript.NSUInteger;
 }
 // doc://com.apple.documentation/documentation/mapkit/mkfeaturedisplayprioritydefaultlow
-declare const MKFeatureDisplayPriorityDefaultLow: cocoascript.MKFeatureDisplayPriority;
+declare const MKFeatureDisplayPriorityDefaultLow: MKFeatureDisplayPriority;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/mapkit/mkfeaturevisibility
   type MKFeatureVisibility = cocoascript.NSInteger;
@@ -1572,18 +1572,18 @@ declare namespace cocoascript {
    */
   interface MKPointAnnotation extends MKShape {
     // doc://com.apple.documentation/documentation/mapkit/mkpointannotation/3235758-init
-    init():cocoascript.MKPointAnnotation;
+    init():MKPointAnnotation;
     // doc://com.apple.documentation/documentation/mapkit/mkpointannotation/3235759-initwithcoordinate
-    initWithCoordinate(coordinate: cocoascript.CLLocationCoordinate2D):cocoascript.MKPointAnnotation;
+    initWithCoordinate(coordinate: CLLocationCoordinate2D):MKPointAnnotation;
     // doc://com.apple.documentation/documentation/mapkit/mkpointannotation/3235760-initwithcoordinate
-    initWithCoordinate_title_subtitle(coordinate: cocoascript.CLLocationCoordinate2D, title: string | cocoascript.NSString, subtitle: string | cocoascript.NSString):cocoascript.MKPointAnnotation;
+    initWithCoordinate_title_subtitle(coordinate: CLLocationCoordinate2D, title: string | cocoascript.NSString, subtitle: string | cocoascript.NSString):MKPointAnnotation;
     // doc://com.apple.documentation/documentation/mapkit/mkpointannotation/1452620-coordinate
-    coordinate(): cocoascript.CLLocationCoordinate2D;
+    coordinate(): CLLocationCoordinate2D;
     setCoordinate(): void;
     //
-    alloc():cocoascript.MKPointAnnotation;
+    alloc():MKPointAnnotation;
     //
-    init():cocoascript.MKPointAnnotation;
+    init():MKPointAnnotation;
   }
 }
 
@@ -1599,22 +1599,22 @@ declare namespace cocoascript {
    */
   interface MKCircle extends MKShape {
     // doc://com.apple.documentation/documentation/mapkit/mkcircle/1411076-circlewithcentercoordinate
-    circleWithCenterCoordinate_radius(coord: cocoascript.CLLocationCoordinate2D, radius: cocoascript.CLLocationDistance):cocoascript.MKCircle;
+    circleWithCenterCoordinate_radius(coord: CLLocationCoordinate2D, radius: CLLocationDistance):MKCircle;
     // doc://com.apple.documentation/documentation/mapkit/mkcircle/1411072-circlewithmaprect
-    circleWithMapRect(mapRect: cocoascript.MKMapRect):cocoascript.MKCircle;
+    circleWithMapRect(mapRect: MKMapRect):MKCircle;
     // doc://com.apple.documentation/documentation/mapkit/mkcircle/1411074-coordinate
-    coordinate(): cocoascript.CLLocationCoordinate2D;
+    coordinate(): CLLocationCoordinate2D;
     setCoordinate(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkcircle/1411067-radius
-    radius(): cocoascript.CLLocationDistance;
+    radius(): CLLocationDistance;
     setRadius(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkcircle/1411065-boundingmaprect
-    boundingMapRect(): cocoascript.MKMapRect;
+    boundingMapRect(): MKMapRect;
     setBoundingMapRect(): void;
     //
-    alloc():cocoascript.MKCircle;
+    alloc():MKCircle;
     //
-    init():cocoascript.MKCircle;
+    init():MKCircle;
   }
 }
 
@@ -1626,33 +1626,33 @@ declare namespace cocoascript {
    */
   interface MKTileOverlay extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mktileoverlay/1452705-initwithurltemplate
-    initWithURLTemplate(URLTemplate: string | cocoascript.NSString):cocoascript.MKTileOverlay;
+    initWithURLTemplate(URLTemplate: string | cocoascript.NSString):MKTileOverlay;
     // doc://com.apple.documentation/documentation/mapkit/mktileoverlay/1452108-tilesize
-    tileSize(): cocoascript.CGSize;
+    tileSize(): CGSize;
     setTileSize(): void;
     // doc://com.apple.documentation/documentation/mapkit/mktileoverlay/1452251-geometryflipped
-    geometryFlipped(): cocoascript.BOOL;
+    geometryFlipped(): BOOL;
     setGeometryFlipped(): void;
     // doc://com.apple.documentation/documentation/mapkit/mktileoverlay/1452199-minimumz
-    minimumZ(): cocoascript.NSInteger;
+    minimumZ(): NSInteger;
     setMinimumZ(): void;
     // doc://com.apple.documentation/documentation/mapkit/mktileoverlay/1452660-maximumz
-    maximumZ(): cocoascript.NSInteger;
+    maximumZ(): NSInteger;
     setMaximumZ(): void;
     // doc://com.apple.documentation/documentation/mapkit/mktileoverlay/1452604-canreplacemapcontent
-    canReplaceMapContent(): cocoascript.BOOL;
+    canReplaceMapContent(): BOOL;
     setCanReplaceMapContent(): void;
     // doc://com.apple.documentation/documentation/mapkit/mktileoverlay/1452256-urltemplate
     URLTemplate(): string | cocoascript.NSString;
     setURLTemplate(): void;
     // doc://com.apple.documentation/documentation/mapkit/mktileoverlay/1452606-urlfortilepath
-    URLForTilePath(path: cocoascript.MKTileOverlayPath):cocoascript.NSURL;
+    URLForTilePath(path: MKTileOverlayPath):NSURL;
     // doc://com.apple.documentation/documentation/mapkit/mktileoverlay/1452445-loadtileatpath
-    loadTileAtPath_result(path: cocoascript.MKTileOverlayPath, result: cocoascript.NSError):void;
+    loadTileAtPath_result(path: MKTileOverlayPath, result: NSError):void;
     //
-    alloc():cocoascript.MKTileOverlay;
+    alloc():MKTileOverlay;
     //
-    init():cocoascript.MKTileOverlay;
+    init():MKTileOverlay;
   }
 }
 
@@ -1664,20 +1664,20 @@ declare namespace cocoascript {
    */
   interface MKPolygon extends MKMultiPoint {
     // doc://com.apple.documentation/documentation/mapkit/mkpolygon/1452247-polygonwithpoints
-    polygonWithPoints_count(points: cocoascript.MKMapPoint, count: cocoascript.NSUInteger):cocoascript.MKPolygon;
+    polygonWithPoints_count(points: MKMapPoint, count: NSUInteger):MKPolygon;
     // doc://com.apple.documentation/documentation/mapkit/mkpolygon/1451945-polygonwithpoints
-    polygonWithPoints_count_interiorPolygons(points: cocoascript.MKMapPoint, count: cocoascript.NSUInteger, interiorPolygons: cocoascript.MKPolygon):cocoascript.MKPolygon;
+    polygonWithPoints_count_interiorPolygons(points: MKMapPoint, count: NSUInteger, interiorPolygons: MKPolygon):MKPolygon;
     // doc://com.apple.documentation/documentation/mapkit/mkpolygon/1452497-polygonwithcoordinates
-    polygonWithCoordinates_count(coords: cocoascript.CLLocationCoordinate2D, count: cocoascript.NSUInteger):cocoascript.MKPolygon;
+    polygonWithCoordinates_count(coords: CLLocationCoordinate2D, count: NSUInteger):MKPolygon;
     // doc://com.apple.documentation/documentation/mapkit/mkpolygon/1452532-polygonwithcoordinates
-    polygonWithCoordinates_count_interiorPolygons(coords: cocoascript.CLLocationCoordinate2D, count: cocoascript.NSUInteger, interiorPolygons: cocoascript.MKPolygon):cocoascript.MKPolygon;
+    polygonWithCoordinates_count_interiorPolygons(coords: CLLocationCoordinate2D, count: NSUInteger, interiorPolygons: MKPolygon):MKPolygon;
     // doc://com.apple.documentation/documentation/mapkit/mkpolygon/1452521-interiorpolygons
-    interiorPolygons(): cocoascript.MKPolygon;
+    interiorPolygons(): MKPolygon;
     setInteriorPolygons(): void;
     //
-    alloc():cocoascript.MKPolygon;
+    alloc():MKPolygon;
     //
-    init():cocoascript.MKPolygon;
+    init():MKPolygon;
   }
 }
 
@@ -1689,13 +1689,13 @@ declare namespace cocoascript {
    */
   interface MKPolyline extends MKMultiPoint {
     // doc://com.apple.documentation/documentation/mapkit/mkpolyline/1452773-polylinewithpoints
-    polylineWithPoints_count(points: cocoascript.MKMapPoint, count: cocoascript.NSUInteger):cocoascript.MKPolyline;
+    polylineWithPoints_count(points: MKMapPoint, count: NSUInteger):MKPolyline;
     // doc://com.apple.documentation/documentation/mapkit/mkpolyline/1452205-polylinewithcoordinates
-    polylineWithCoordinates_count(coords: cocoascript.CLLocationCoordinate2D, count: cocoascript.NSUInteger):cocoascript.MKPolyline;
+    polylineWithCoordinates_count(coords: CLLocationCoordinate2D, count: NSUInteger):MKPolyline;
     //
-    alloc():cocoascript.MKPolyline;
+    alloc():MKPolyline;
     //
-    init():cocoascript.MKPolyline;
+    init():MKPolyline;
   }
 }
 
@@ -1707,14 +1707,14 @@ declare namespace cocoascript {
    */
   interface MKMultiPolygon extends MKShape {
     // doc://com.apple.documentation/documentation/mapkit/mkmultipolygon/3088835-initwithpolygons
-    initWithPolygons(polygons: cocoascript.MKPolygon):cocoascript.MKMultiPolygon;
+    initWithPolygons(polygons: MKPolygon):MKMultiPolygon;
     // doc://com.apple.documentation/documentation/mapkit/mkmultipolygon/3088836-polygons
-    polygons(): cocoascript.MKPolygon;
+    polygons(): MKPolygon;
     setPolygons(): void;
     //
-    alloc():cocoascript.MKMultiPolygon;
+    alloc():MKMultiPolygon;
     //
-    init():cocoascript.MKMultiPolygon;
+    init():MKMultiPolygon;
   }
 }
 
@@ -1726,14 +1726,14 @@ declare namespace cocoascript {
    */
   interface MKMultiPolyline extends MKShape {
     // doc://com.apple.documentation/documentation/mapkit/mkmultipolyline/3088841-initwithpolylines
-    initWithPolylines(polylines: cocoascript.MKPolyline):cocoascript.MKMultiPolyline;
+    initWithPolylines(polylines: MKPolyline):MKMultiPolyline;
     // doc://com.apple.documentation/documentation/mapkit/mkmultipolyline/3088842-polylines
-    polylines(): cocoascript.MKPolyline;
+    polylines(): MKPolyline;
     setPolylines(): void;
     //
-    alloc():cocoascript.MKMultiPolyline;
+    alloc():MKMultiPolyline;
     //
-    init():cocoascript.MKMultiPolyline;
+    init():MKMultiPolyline;
   }
 }
 
@@ -1743,11 +1743,11 @@ declare namespace cocoascript {
   type MKZoomScale = cocoascript.CGFloat;
 }
 // doc://com.apple.documentation/documentation/mapkit/mkmapsizeworld
-declare const MKMapSizeWorld: cocoascript.MKMapSize;
+declare const MKMapSizeWorld: MKMapSize;
 // doc://com.apple.documentation/documentation/mapkit/mkmaprectnull
-declare const MKMapRectNull: cocoascript.MKMapRect;
+declare const MKMapRectNull: MKMapRect;
 // doc://com.apple.documentation/documentation/mapkit/mkmaprectworld
-declare const MKMapRectWorld: cocoascript.MKMapRect;
+declare const MKMapRectWorld: MKMapRect;
 declare namespace cocoascript {
   /**
    * An abstract class that defines the common behavior shared by polygon and polyline overlays.
@@ -1755,20 +1755,20 @@ declare namespace cocoascript {
    */
   interface MKMultiPoint extends MKShape {
     // doc://com.apple.documentation/documentation/mapkit/mkmultipoint/1452425-points
-    points():cocoascript.MKMapPoint;
+    points():MKMapPoint;
     // doc://com.apple.documentation/documentation/mapkit/mkmultipoint/1452179-pointcount
-    pointCount(): cocoascript.NSUInteger;
+    pointCount(): NSUInteger;
     setPointCount(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkmultipoint/3571236-locationatpointindex
-    locationAtPointIndex(index: cocoascript.NSUInteger):cocoascript.CGFloat;
+    locationAtPointIndex(index: NSUInteger):CGFloat;
     // doc://com.apple.documentation/documentation/mapkit/mkmultipoint/3571237-locationsatpointindexes
-    locationsAtPointIndexes(indexes: cocoascript.NSIndexSet):cocoascript.NSNumber;
+    locationsAtPointIndexes(indexes: NSIndexSet):NSNumber;
     // doc://com.apple.documentation/documentation/mapkit/mkmultipoint/1451911-getcoordinates
-    getCoordinates_range(coords: cocoascript.CLLocationCoordinate2D, range: cocoascript.NSRange):void;
+    getCoordinates_range(coords: CLLocationCoordinate2D, range: NSRange):void;
     //
-    alloc():cocoascript.MKMultiPoint;
+    alloc():MKMultiPoint;
     //
-    init():cocoascript.MKMultiPoint;
+    init():MKMultiPoint;
   }
 }
 
@@ -1780,9 +1780,9 @@ declare namespace cocoascript {
    */
   interface MKUserLocationView extends MKAnnotationView {
     //
-    alloc():cocoascript.MKUserLocationView;
+    alloc():MKUserLocationView;
     //
-    init():cocoascript.MKUserLocationView;
+    init():MKUserLocationView;
   }
 }
 
@@ -1794,20 +1794,20 @@ declare namespace cocoascript {
    */
   interface MKCircleRenderer extends MKOverlayPathRenderer {
     // doc://com.apple.documentation/documentation/mapkit/mkcirclerenderer/1452547-initwithcircle
-    initWithCircle(circle: cocoascript.MKCircle):cocoascript.MKCircleRenderer;
+    initWithCircle(circle: MKCircle):MKCircleRenderer;
     // doc://com.apple.documentation/documentation/mapkit/mkcirclerenderer/1452413-circle
-    circle(): cocoascript.MKCircle;
+    circle(): MKCircle;
     setCircle(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkcirclerenderer/3573871-strokestart
-    strokeStart(): cocoascript.CGFloat;
+    strokeStart(): CGFloat;
     setStrokeStart(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkcirclerenderer/3573870-strokeend
-    strokeEnd(): cocoascript.CGFloat;
+    strokeEnd(): CGFloat;
     setStrokeEnd(): void;
     //
-    alloc():cocoascript.MKCircleRenderer;
+    alloc():MKCircleRenderer;
     //
-    init():cocoascript.MKCircleRenderer;
+    init():MKCircleRenderer;
   }
 }
 
@@ -1819,20 +1819,20 @@ declare namespace cocoascript {
    */
   interface MKPolygonRenderer extends MKOverlayPathRenderer {
     // doc://com.apple.documentation/documentation/mapkit/mkpolygonrenderer/1448129-initwithpolygon
-    initWithPolygon(polygon: cocoascript.MKPolygon):cocoascript.MKPolygonRenderer;
+    initWithPolygon(polygon: MKPolygon):MKPolygonRenderer;
     // doc://com.apple.documentation/documentation/mapkit/mkpolygonrenderer/1448132-polygon
-    polygon(): cocoascript.MKPolygon;
+    polygon(): MKPolygon;
     setPolygon(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkpolygonrenderer/3573873-strokestart
-    strokeStart(): cocoascript.CGFloat;
+    strokeStart(): CGFloat;
     setStrokeStart(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkpolygonrenderer/3573872-strokeend
-    strokeEnd(): cocoascript.CGFloat;
+    strokeEnd(): CGFloat;
     setStrokeEnd(): void;
     //
-    alloc():cocoascript.MKPolygonRenderer;
+    alloc():MKPolygonRenderer;
     //
-    init():cocoascript.MKPolygonRenderer;
+    init():MKPolygonRenderer;
   }
 }
 
@@ -1844,14 +1844,14 @@ declare namespace cocoascript {
    */
   interface MKMultiPolygonRenderer extends MKOverlayPathRenderer {
     // doc://com.apple.documentation/documentation/mapkit/mkmultipolygonrenderer/3088838-initwithmultipolygon
-    initWithMultiPolygon(multiPolygon: cocoascript.MKMultiPolygon):cocoascript.MKMultiPolygonRenderer;
+    initWithMultiPolygon(multiPolygon: MKMultiPolygon):MKMultiPolygonRenderer;
     // doc://com.apple.documentation/documentation/mapkit/mkmultipolygonrenderer/3088839-multipolygon
-    multiPolygon(): cocoascript.MKMultiPolygon;
+    multiPolygon(): MKMultiPolygon;
     setMultiPolygon(): void;
     //
-    alloc():cocoascript.MKMultiPolygonRenderer;
+    alloc():MKMultiPolygonRenderer;
     //
-    init():cocoascript.MKMultiPolygonRenderer;
+    init():MKMultiPolygonRenderer;
   }
 }
 
@@ -1863,51 +1863,51 @@ declare namespace cocoascript {
    */
   interface MKOverlayPathRenderer extends MKOverlayRenderer {
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathrenderer/1451875-path
-    path(): cocoascript.CGPathRef;
+    path(): CGPathRef;
     setPath(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathrenderer/1452686-createpath
     createPath():void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathrenderer/1452076-invalidatepath
     invalidatePath():void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathrenderer/1452668-fillcolor
-    fillColor(): cocoascript.UIColor;
+    fillColor(): UIColor;
     setFillColor(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathrenderer/1452175-strokecolor
-    strokeColor(): cocoascript.UIColor;
+    strokeColor(): UIColor;
     setStrokeColor(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathrenderer/1452441-linewidth
-    lineWidth(): cocoascript.CGFloat;
+    lineWidth(): CGFloat;
     setLineWidth(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathrenderer/1452031-linejoin
-    lineJoin(): cocoascript.CGLineJoin;
+    lineJoin(): CGLineJoin;
     setLineJoin(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathrenderer/1452556-linecap
-    lineCap(): cocoascript.CGLineCap;
+    lineCap(): CGLineCap;
     setLineCap(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathrenderer/1452395-miterlimit
-    miterLimit(): cocoascript.CGFloat;
+    miterLimit(): CGFloat;
     setMiterLimit(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathrenderer/1452363-linedashphase
-    lineDashPhase(): cocoascript.CGFloat;
+    lineDashPhase(): CGFloat;
     setLineDashPhase(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathrenderer/1452493-linedashpattern
-    lineDashPattern(): cocoascript.NSNumber;
+    lineDashPattern(): NSNumber;
     setLineDashPattern(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathrenderer/1452713-applystrokepropertiestocontext
-    applyStrokePropertiesToContext_atZoomScale(context: cocoascript.CGContextRef, zoomScale: cocoascript.MKZoomScale):void;
+    applyStrokePropertiesToContext_atZoomScale(context: CGContextRef, zoomScale: MKZoomScale):void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathrenderer/1452281-applyfillpropertiestocontext
-    applyFillPropertiesToContext_atZoomScale(context: cocoascript.CGContextRef, zoomScale: cocoascript.MKZoomScale):void;
+    applyFillPropertiesToContext_atZoomScale(context: CGContextRef, zoomScale: MKZoomScale):void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathrenderer/1452549-strokepath
-    strokePath_inContext(path: cocoascript.CGPathRef, context: cocoascript.CGContextRef):void;
+    strokePath_inContext(path: CGPathRef, context: CGContextRef):void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathrenderer/1452100-fillpath
-    fillPath_inContext(path: cocoascript.CGPathRef, context: cocoascript.CGContextRef):void;
+    fillPath_inContext(path: CGPathRef, context: CGContextRef):void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathrenderer/3088846-shouldrasterize
-    shouldRasterize(): cocoascript.BOOL;
+    shouldRasterize(): BOOL;
     setShouldRasterize(): void;
     //
-    alloc():cocoascript.MKOverlayPathRenderer;
+    alloc():MKOverlayPathRenderer;
     //
-    init():cocoascript.MKOverlayPathRenderer;
+    init():MKOverlayPathRenderer;
   }
 }
 
@@ -1919,13 +1919,13 @@ declare namespace cocoascript {
    */
   interface MKGeodesicPolyline extends MKPolyline {
     // doc://com.apple.documentation/documentation/mapkit/mkgeodesicpolyline/1452053-polylinewithpoints
-    polylineWithPoints_count(points: cocoascript.MKMapPoint, count: cocoascript.NSUInteger):cocoascript.MKGeodesicPolyline;
+    polylineWithPoints_count(points: MKMapPoint, count: NSUInteger):MKGeodesicPolyline;
     // doc://com.apple.documentation/documentation/mapkit/mkgeodesicpolyline/1452314-polylinewithcoordinates
-    polylineWithCoordinates_count(coords: cocoascript.CLLocationCoordinate2D, count: cocoascript.NSUInteger):cocoascript.MKGeodesicPolyline;
+    polylineWithCoordinates_count(coords: CLLocationCoordinate2D, count: NSUInteger):MKGeodesicPolyline;
     //
-    alloc():cocoascript.MKGeodesicPolyline;
+    alloc():MKGeodesicPolyline;
     //
-    init():cocoascript.MKGeodesicPolyline;
+    init():MKGeodesicPolyline;
   }
 }
 
@@ -1937,20 +1937,20 @@ declare namespace cocoascript {
    */
   interface MKPolylineRenderer extends MKOverlayPathRenderer {
     // doc://com.apple.documentation/documentation/mapkit/mkpolylinerenderer/1452074-initwithpolyline
-    initWithPolyline(polyline: cocoascript.MKPolyline):cocoascript.MKPolylineRenderer;
+    initWithPolyline(polyline: MKPolyline):MKPolylineRenderer;
     // doc://com.apple.documentation/documentation/mapkit/mkpolylinerenderer/1452465-polyline
-    polyline(): cocoascript.MKPolyline;
+    polyline(): MKPolyline;
     setPolyline(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkpolylinerenderer/3573875-strokestart
-    strokeStart(): cocoascript.CGFloat;
+    strokeStart(): CGFloat;
     setStrokeStart(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkpolylinerenderer/3573874-strokeend
-    strokeEnd(): cocoascript.CGFloat;
+    strokeEnd(): CGFloat;
     setStrokeEnd(): void;
     //
-    alloc():cocoascript.MKPolylineRenderer;
+    alloc():MKPolylineRenderer;
     //
-    init():cocoascript.MKPolylineRenderer;
+    init():MKPolylineRenderer;
   }
 }
 
@@ -1962,14 +1962,14 @@ declare namespace cocoascript {
    */
   interface MKMultiPolylineRenderer extends MKOverlayPathRenderer {
     // doc://com.apple.documentation/documentation/mapkit/mkmultipolylinerenderer/3088844-initwithmultipolyline
-    initWithMultiPolyline(multiPolyline: cocoascript.MKMultiPolyline):cocoascript.MKMultiPolylineRenderer;
+    initWithMultiPolyline(multiPolyline: MKMultiPolyline):MKMultiPolylineRenderer;
     // doc://com.apple.documentation/documentation/mapkit/mkmultipolylinerenderer/3088845-multipolyline
-    multiPolyline(): cocoascript.MKMultiPolyline;
+    multiPolyline(): MKMultiPolyline;
     setMultiPolyline(): void;
     //
-    alloc():cocoascript.MKMultiPolylineRenderer;
+    alloc():MKMultiPolylineRenderer;
     //
-    init():cocoascript.MKMultiPolylineRenderer;
+    init():MKMultiPolylineRenderer;
   }
 }
 
@@ -1981,17 +1981,17 @@ declare namespace cocoascript {
    */
   interface MKGradientPolylineRenderer extends MKPolylineRenderer {
     // doc://com.apple.documentation/documentation/mapkit/mkgradientpolylinerenderer/3571235-setcolors
-    setColors_atLocations(colors: cocoascript.UIColor, locations: cocoascript.NSNumber):void;
+    setColors_atLocations(colors: UIColor, locations: NSNumber):void;
     // doc://com.apple.documentation/documentation/mapkit/mkgradientpolylinerenderer/3571233-colors
-    colors(): cocoascript.UIColor;
+    colors(): UIColor;
     setColors(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkgradientpolylinerenderer/3571234-locations
-    locations(): cocoascript.NSNumber;
+    locations(): NSNumber;
     setLocations(): void;
     //
-    alloc():cocoascript.MKGradientPolylineRenderer;
+    alloc():MKGradientPolylineRenderer;
     //
-    init():cocoascript.MKGradientPolylineRenderer;
+    init():MKGradientPolylineRenderer;
   }
 }
 
@@ -2003,13 +2003,13 @@ declare namespace cocoascript {
    */
   interface MKTileOverlayRenderer extends MKOverlayRenderer {
     // doc://com.apple.documentation/documentation/mapkit/mktileoverlayrenderer/1452303-initwithtileoverlay
-    initWithTileOverlay(overlay: cocoascript.MKTileOverlay):cocoascript.MKTileOverlayRenderer;
+    initWithTileOverlay(overlay: MKTileOverlay):MKTileOverlayRenderer;
     // doc://com.apple.documentation/documentation/mapkit/mktileoverlayrenderer/1452676-reloaddata
     reloadData():void;
     //
-    alloc():cocoascript.MKTileOverlayRenderer;
+    alloc():MKTileOverlayRenderer;
     //
-    init():cocoascript.MKTileOverlayRenderer;
+    init():MKTileOverlayRenderer;
   }
 }
 
@@ -2025,48 +2025,48 @@ declare namespace cocoascript {
    */
   interface MKOverlayPathView extends MKOverlayView {
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathview/1617215-fillcolor
-    fillColor(): cocoascript.UIColor;
+    fillColor(): UIColor;
     setFillColor(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathview/1617209-strokecolor
-    strokeColor(): cocoascript.UIColor;
+    strokeColor(): UIColor;
     setStrokeColor(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathview/1617218-linewidth
-    lineWidth(): cocoascript.CGFloat;
+    lineWidth(): CGFloat;
     setLineWidth(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathview/1617206-linejoin
-    lineJoin(): cocoascript.CGLineJoin;
+    lineJoin(): CGLineJoin;
     setLineJoin(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathview/1617212-linecap
-    lineCap(): cocoascript.CGLineCap;
+    lineCap(): CGLineCap;
     setLineCap(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathview/1617219-miterlimit
-    miterLimit(): cocoascript.CGFloat;
+    miterLimit(): CGFloat;
     setMiterLimit(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathview/1617211-linedashphase
-    lineDashPhase(): cocoascript.CGFloat;
+    lineDashPhase(): CGFloat;
     setLineDashPhase(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathview/1617210-linedashpattern
-    lineDashPattern(): cocoascript.NSArray;
+    lineDashPattern(): NSArray;
     setLineDashPattern(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathview/1617208-path
-    path(): cocoascript.CGPathRef;
+    path(): CGPathRef;
     setPath(): void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathview/1617216-createpath
     createPath():void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathview/1617217-invalidatepath
     invalidatePath():void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathview/1617205-applystrokepropertiestocontext
-    applyStrokePropertiesToContext_atZoomScale(context: cocoascript.CGContextRef, zoomScale: cocoascript.MKZoomScale):void;
+    applyStrokePropertiesToContext_atZoomScale(context: CGContextRef, zoomScale: MKZoomScale):void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathview/1617207-applyfillpropertiestocontext
-    applyFillPropertiesToContext_atZoomScale(context: cocoascript.CGContextRef, zoomScale: cocoascript.MKZoomScale):void;
+    applyFillPropertiesToContext_atZoomScale(context: CGContextRef, zoomScale: MKZoomScale):void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathview/1617214-strokepath
-    strokePath_inContext(path: cocoascript.CGPathRef, context: cocoascript.CGContextRef):void;
+    strokePath_inContext(path: CGPathRef, context: CGContextRef):void;
     // doc://com.apple.documentation/documentation/mapkit/mkoverlaypathview/1617213-fillpath
-    fillPath_inContext(path: cocoascript.CGPathRef, context: cocoascript.CGContextRef):void;
+    fillPath_inContext(path: CGPathRef, context: CGContextRef):void;
     //
-    alloc():cocoascript.MKOverlayPathView;
+    alloc():MKOverlayPathView;
     //
-    init():cocoascript.MKOverlayPathView;
+    init():MKOverlayPathView;
   }
 }
 
@@ -2078,14 +2078,14 @@ declare namespace cocoascript {
    */
   interface MKCircleView extends MKOverlayPathView {
     // doc://com.apple.documentation/documentation/mapkit/mkcircleview/1623524-initwithcircle
-    initWithCircle(circle: cocoascript.MKCircle):cocoascript.MKCircleView;
+    initWithCircle(circle: MKCircle):MKCircleView;
     // doc://com.apple.documentation/documentation/mapkit/mkcircleview/1623525-circle
-    circle(): cocoascript.MKCircle;
+    circle(): MKCircle;
     setCircle(): void;
     //
-    alloc():cocoascript.MKCircleView;
+    alloc():MKCircleView;
     //
-    init():cocoascript.MKCircleView;
+    init():MKCircleView;
   }
 }
 
@@ -2097,14 +2097,14 @@ declare namespace cocoascript {
    */
   interface MKPolygonView extends MKOverlayPathView {
     // doc://com.apple.documentation/documentation/mapkit/mkpolygonview/1614141-initwithpolygon
-    initWithPolygon(polygon: cocoascript.MKPolygon):cocoascript.MKPolygonView;
+    initWithPolygon(polygon: MKPolygon):MKPolygonView;
     // doc://com.apple.documentation/documentation/mapkit/mkpolygonview/1614140-polygon
-    polygon(): cocoascript.MKPolygon;
+    polygon(): MKPolygon;
     setPolygon(): void;
     //
-    alloc():cocoascript.MKPolygonView;
+    alloc():MKPolygonView;
     //
-    init():cocoascript.MKPolygonView;
+    init():MKPolygonView;
   }
 }
 
@@ -2116,14 +2116,14 @@ declare namespace cocoascript {
    */
   interface MKPolylineView extends MKOverlayPathView {
     // doc://com.apple.documentation/documentation/mapkit/mkpolylineview/1618189-initwithpolyline
-    initWithPolyline(polyline: cocoascript.MKPolyline):cocoascript.MKPolylineView;
+    initWithPolyline(polyline: MKPolyline):MKPolylineView;
     // doc://com.apple.documentation/documentation/mapkit/mkpolylineview/1618188-polyline
-    polyline(): cocoascript.MKPolyline;
+    polyline(): MKPolyline;
     setPolyline(): void;
     //
-    alloc():cocoascript.MKPolylineView;
+    alloc():MKPolylineView;
     //
-    init():cocoascript.MKPolylineView;
+    init():MKPolylineView;
   }
 }
 
@@ -2143,15 +2143,15 @@ declare namespace cocoascript {
    */
   interface MKLocalSearchResponse extends NSObject {
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchresponse/1451939-mapitems
-    mapItems(): cocoascript.MKMapItem;
+    mapItems(): MKMapItem;
     setMapItems(): void;
     // doc://com.apple.documentation/documentation/mapkit/mklocalsearchresponse/1452501-boundingregion
-    boundingRegion(): cocoascript.MKCoordinateRegion;
+    boundingRegion(): MKCoordinateRegion;
     setBoundingRegion(): void;
     //
-    alloc():cocoascript.MKLocalSearchResponse;
+    alloc():MKLocalSearchResponse;
     //
-    init():cocoascript.MKLocalSearchResponse;
+    init():MKLocalSearchResponse;
   }
 }
 
@@ -2161,85 +2161,85 @@ declare namespace cocoascript {
   type MKMapSnapshotCompletionHandler = cocoascript.NSError;
 }
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryairport
-declare const MKPointOfInterestCategoryAirport: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryAirport: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryamusementpark
-declare const MKPointOfInterestCategoryAmusementPark: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryAmusementPark: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryaquarium
-declare const MKPointOfInterestCategoryAquarium: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryAquarium: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryatm
-declare const MKPointOfInterestCategoryATM: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryATM: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorybakery
-declare const MKPointOfInterestCategoryBakery: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryBakery: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorybank
-declare const MKPointOfInterestCategoryBank: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryBank: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorybeach
-declare const MKPointOfInterestCategoryBeach: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryBeach: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorybrewery
-declare const MKPointOfInterestCategoryBrewery: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryBrewery: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorycafe
-declare const MKPointOfInterestCategoryCafe: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryCafe: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorycampground
-declare const MKPointOfInterestCategoryCampground: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryCampground: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorycarrental
-declare const MKPointOfInterestCategoryCarRental: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryCarRental: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryevcharger
-declare const MKPointOfInterestCategoryEVCharger: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryEVCharger: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryfirestation
-declare const MKPointOfInterestCategoryFireStation: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryFireStation: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryfitnesscenter
-declare const MKPointOfInterestCategoryFitnessCenter: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryFitnessCenter: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryfoodmarket
-declare const MKPointOfInterestCategoryFoodMarket: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryFoodMarket: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorygasstation
-declare const MKPointOfInterestCategoryGasStation: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryGasStation: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryhospital
-declare const MKPointOfInterestCategoryHospital: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryHospital: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryhotel
-declare const MKPointOfInterestCategoryHotel: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryHotel: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorylaundry
-declare const MKPointOfInterestCategoryLaundry: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryLaundry: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorylibrary
-declare const MKPointOfInterestCategoryLibrary: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryLibrary: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorymarina
-declare const MKPointOfInterestCategoryMarina: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryMarina: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorymovietheater
-declare const MKPointOfInterestCategoryMovieTheater: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryMovieTheater: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorymuseum
-declare const MKPointOfInterestCategoryMuseum: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryMuseum: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorynationalpark
-declare const MKPointOfInterestCategoryNationalPark: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryNationalPark: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorynightlife
-declare const MKPointOfInterestCategoryNightlife: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryNightlife: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorypark
-declare const MKPointOfInterestCategoryPark: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryPark: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryparking
-declare const MKPointOfInterestCategoryParking: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryParking: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorypharmacy
-declare const MKPointOfInterestCategoryPharmacy: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryPharmacy: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorypolice
-declare const MKPointOfInterestCategoryPolice: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryPolice: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorypostoffice
-declare const MKPointOfInterestCategoryPostOffice: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryPostOffice: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorypublictransport
-declare const MKPointOfInterestCategoryPublicTransport: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryPublicTransport: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryrestaurant
-declare const MKPointOfInterestCategoryRestaurant: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryRestaurant: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryrestroom
-declare const MKPointOfInterestCategoryRestroom: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryRestroom: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryschool
-declare const MKPointOfInterestCategorySchool: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategorySchool: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorystadium
-declare const MKPointOfInterestCategoryStadium: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryStadium: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorystore
-declare const MKPointOfInterestCategoryStore: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryStore: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorytheater
-declare const MKPointOfInterestCategoryTheater: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryTheater: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryuniversity
-declare const MKPointOfInterestCategoryUniversity: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryUniversity: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorywinery
-declare const MKPointOfInterestCategoryWinery: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryWinery: MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryzoo
-declare const MKPointOfInterestCategoryZoo: cocoascript.MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryZoo: MKPointOfInterestCategory;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/mapkit/mkdistanceformatterunits
   type MKDistanceFormatterUnits = cocoascript.NSUInteger;
@@ -2261,17 +2261,17 @@ declare namespace cocoascript {
   type MKDirectionsTransportType = cocoascript.NSUInteger;
 }
 // doc://com.apple.documentation/documentation/mapkit/mkfeaturedisplaypriorityrequired
-declare const MKFeatureDisplayPriorityRequired: cocoascript.MKFeatureDisplayPriority;
+declare const MKFeatureDisplayPriorityRequired: MKFeatureDisplayPriority;
 // doc://com.apple.documentation/documentation/mapkit/mkfeaturedisplayprioritydefaulthigh
-declare const MKFeatureDisplayPriorityDefaultHigh: cocoascript.MKFeatureDisplayPriority;
+declare const MKFeatureDisplayPriorityDefaultHigh: MKFeatureDisplayPriority;
 // doc://com.apple.documentation/documentation/mapkit/mkannotationviewzprioritydefaultunselected
-declare const MKAnnotationViewZPriorityDefaultUnselected: cocoascript.MKAnnotationViewZPriority;
+declare const MKAnnotationViewZPriorityDefaultUnselected: MKAnnotationViewZPriority;
 // doc://com.apple.documentation/documentation/mapkit/mkannotationviewzprioritydefaultselected
-declare const MKAnnotationViewZPriorityDefaultSelected: cocoascript.MKAnnotationViewZPriority;
+declare const MKAnnotationViewZPriorityDefaultSelected: MKAnnotationViewZPriority;
 // doc://com.apple.documentation/documentation/mapkit/mkannotationviewzprioritymax
-declare const MKAnnotationViewZPriorityMax: cocoascript.MKAnnotationViewZPriority;
+declare const MKAnnotationViewZPriorityMax: MKAnnotationViewZPriority;
 // doc://com.apple.documentation/documentation/mapkit/mkannotationviewzprioritymin
-declare const MKAnnotationViewZPriorityMin: cocoascript.MKAnnotationViewZPriority;
+declare const MKAnnotationViewZPriorityMin: MKAnnotationViewZPriority;
 declare namespace cocoascript {
   interface MKTileOverlayPath {
   }

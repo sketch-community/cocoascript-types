@@ -5,47 +5,47 @@ declare namespace cocoascript {
    */
   interface GLKView extends UIView {
     // doc://com.apple.documentation/documentation/glkit/glkview/1615609-initwithframe
-    initWithFrame_context(frame: cocoascript.CGRect, context: cocoascript.EAGLContext):cocoascript.GLKView;
+    initWithFrame_context(frame: CGRect, context: EAGLContext):GLKView;
     // doc://com.apple.documentation/documentation/glkit/glkview/1615557-delegate
-    delegate(): cocoascript.GLKViewDelegate;
+    delegate(): GLKViewDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/glkit/glkview/1615587-drawablecolorformat
-    drawableColorFormat(): cocoascript.GLKViewDrawableColorFormat;
+    drawableColorFormat(): GLKViewDrawableColorFormat;
     setDrawableColorFormat(): void;
     // doc://com.apple.documentation/documentation/glkit/glkview/1615583-drawabledepthformat
-    drawableDepthFormat(): cocoascript.GLKViewDrawableDepthFormat;
+    drawableDepthFormat(): GLKViewDrawableDepthFormat;
     setDrawableDepthFormat(): void;
     // doc://com.apple.documentation/documentation/glkit/glkview/1615605-drawablestencilformat
-    drawableStencilFormat(): cocoascript.GLKViewDrawableStencilFormat;
+    drawableStencilFormat(): GLKViewDrawableStencilFormat;
     setDrawableStencilFormat(): void;
     // doc://com.apple.documentation/documentation/glkit/glkview/1615601-drawablemultisample
-    drawableMultisample(): cocoascript.GLKViewDrawableMultisample;
+    drawableMultisample(): GLKViewDrawableMultisample;
     setDrawableMultisample(): void;
     // doc://com.apple.documentation/documentation/glkit/glkview/1615559-drawableheight
-    drawableHeight(): cocoascript.NSInteger;
+    drawableHeight(): NSInteger;
     setDrawableHeight(): void;
     // doc://com.apple.documentation/documentation/glkit/glkview/1615591-drawablewidth
-    drawableWidth(): cocoascript.NSInteger;
+    drawableWidth(): NSInteger;
     setDrawableWidth(): void;
     // doc://com.apple.documentation/documentation/glkit/glkview/1615597-context
-    context(): cocoascript.EAGLContext;
+    context(): EAGLContext;
     setContext(): void;
     // doc://com.apple.documentation/documentation/glkit/glkview/1615593-binddrawable
     bindDrawable():void;
     // doc://com.apple.documentation/documentation/glkit/glkview/1615561-enablesetneedsdisplay
-    enableSetNeedsDisplay(): cocoascript.BOOL;
+    enableSetNeedsDisplay(): BOOL;
     setEnableSetNeedsDisplay(): void;
     // doc://com.apple.documentation/documentation/glkit/glkview/1615571-display
     display():void;
     // doc://com.apple.documentation/documentation/glkit/glkview/1615562-snapshot
-    snapshot(): cocoascript.UIImage;
+    snapshot(): UIImage;
     setSnapshot(): void;
     // doc://com.apple.documentation/documentation/glkit/glkview/1615569-deletedrawable
     deleteDrawable():void;
     //
-    alloc():cocoascript.GLKView;
+    alloc():GLKView;
     //
-    init():cocoascript.GLKView;
+    init():GLKView;
   }
 }
 
@@ -57,42 +57,42 @@ declare namespace cocoascript {
    */
   interface GLKViewController extends UIViewController {
     // doc://com.apple.documentation/documentation/glkit/glkviewcontroller/1620702-preferredframespersecond
-    preferredFramesPerSecond(): cocoascript.NSInteger;
+    preferredFramesPerSecond(): NSInteger;
     setPreferredFramesPerSecond(): void;
     // doc://com.apple.documentation/documentation/glkit/glkviewcontroller/1620723-framespersecond
-    framesPerSecond(): cocoascript.NSInteger;
+    framesPerSecond(): NSInteger;
     setFramesPerSecond(): void;
     // doc://com.apple.documentation/documentation/glkit/glkviewcontroller/1620711-delegate
-    delegate(): cocoascript.GLKViewControllerDelegate;
+    delegate(): GLKViewControllerDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/glkit/glkviewcontroller/1620712-paused
-    paused(): cocoascript.BOOL;
+    paused(): BOOL;
     setPaused(): void;
     // doc://com.apple.documentation/documentation/glkit/glkviewcontroller/1620699-pauseonwillresignactive
-    pauseOnWillResignActive(): cocoascript.BOOL;
+    pauseOnWillResignActive(): BOOL;
     setPauseOnWillResignActive(): void;
     // doc://com.apple.documentation/documentation/glkit/glkviewcontroller/1620734-resumeondidbecomeactive
-    resumeOnDidBecomeActive(): cocoascript.BOOL;
+    resumeOnDidBecomeActive(): BOOL;
     setResumeOnDidBecomeActive(): void;
     // doc://com.apple.documentation/documentation/glkit/glkviewcontroller/1620790-framesdisplayed
-    framesDisplayed(): cocoascript.NSInteger;
+    framesDisplayed(): NSInteger;
     setFramesDisplayed(): void;
     // doc://com.apple.documentation/documentation/glkit/glkviewcontroller/1620709-timesincefirstresume
-    timeSinceFirstResume(): cocoascript.NSTimeInterval;
+    timeSinceFirstResume(): NSTimeInterval;
     setTimeSinceFirstResume(): void;
     // doc://com.apple.documentation/documentation/glkit/glkviewcontroller/1620706-timesincelastresume
-    timeSinceLastResume(): cocoascript.NSTimeInterval;
+    timeSinceLastResume(): NSTimeInterval;
     setTimeSinceLastResume(): void;
     // doc://com.apple.documentation/documentation/glkit/glkviewcontroller/1620726-timesincelastupdate
-    timeSinceLastUpdate(): cocoascript.NSTimeInterval;
+    timeSinceLastUpdate(): NSTimeInterval;
     setTimeSinceLastUpdate(): void;
     // doc://com.apple.documentation/documentation/glkit/glkviewcontroller/1620725-timesincelastdraw
-    timeSinceLastDraw(): cocoascript.NSTimeInterval;
+    timeSinceLastDraw(): NSTimeInterval;
     setTimeSinceLastDraw(): void;
     //
-    alloc():cocoascript.GLKViewController;
+    alloc():GLKViewController;
     //
-    init():cocoascript.GLKViewController;
+    init():GLKViewController;
   }
 }
 
@@ -104,9 +104,9 @@ declare namespace cocoascript {
    */
   interface GLKViewControllerDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/glkit/glkviewcontrollerdelegate/1620710-glkviewcontrollerupdate
-    glkViewControllerUpdate(controller: cocoascript.GLKViewController):void;
+    glkViewControllerUpdate(controller: GLKViewController):void;
     // doc://com.apple.documentation/documentation/glkit/glkviewcontrollerdelegate/1620776-glkviewcontroller
-    glkViewController_willPause(controller: cocoascript.GLKViewController, pause: cocoascript.BOOL):void;
+    glkViewController_willPause(controller: GLKViewController, pause: BOOL):void;
   }
 }
 declare namespace cocoascript {
@@ -116,7 +116,7 @@ declare namespace cocoascript {
    */
   interface GLKViewDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/glkit/glkviewdelegate/1615595-glkview
-    glkView_drawInRect(view: cocoascript.GLKView, rect: cocoascript.CGRect):void;
+    glkView_drawInRect(view: GLKView, rect: CGRect):void;
   }
 }
 declare namespace cocoascript {
@@ -138,13 +138,13 @@ declare namespace cocoascript {
     width(): any;
     setWidth(): void;
     // doc://com.apple.documentation/documentation/glkit/glktextureinfo/1488624-textureorigin
-    textureOrigin(): cocoascript.GLKTextureInfoOrigin;
+    textureOrigin(): GLKTextureInfoOrigin;
     setTextureOrigin(): void;
     // doc://com.apple.documentation/documentation/glkit/glktextureinfo/1489050-alphastate
-    alphaState(): cocoascript.GLKTextureInfoAlphaState;
+    alphaState(): GLKTextureInfoAlphaState;
     setAlphaState(): void;
     // doc://com.apple.documentation/documentation/glkit/glktextureinfo/1488618-containsmipmaps
-    containsMipmaps(): cocoascript.BOOL;
+    containsMipmaps(): BOOL;
     setContainsMipmaps(): void;
     // doc://com.apple.documentation/documentation/glkit/glktextureinfo/1639613-arraylength
     arrayLength(): any;
@@ -156,9 +156,9 @@ declare namespace cocoascript {
     mimapLevelCount(): any;
     setMimapLevelCount(): void;
     //
-    alloc():cocoascript.GLKTextureInfo;
+    alloc():GLKTextureInfo;
     //
-    init():cocoascript.GLKTextureInfo;
+    init():GLKTextureInfo;
   }
 }
 
@@ -186,45 +186,45 @@ declare namespace cocoascript {
    */
   interface GLKTextureLoader extends NSObject {
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1620707-initwithsharegroup
-    initWithSharegroup(sharegroup: cocoascript.EAGLSharegroup):cocoascript.GLKTextureLoader;
+    initWithSharegroup(sharegroup: EAGLSharegroup):GLKTextureLoader;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1489085-initwithsharecontext
-    initWithShareContext(context: cocoascript.NSOpenGLContext):cocoascript.GLKTextureLoader;
+    initWithShareContext(context: NSOpenGLContext):GLKTextureLoader;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488932-texturewithcontentsoffile
-    textureWithContentsOfFile_options_error(path: string | cocoascript.NSString, options: cocoascript.NSNumber, outError: cocoascript.NSError):cocoascript.GLKTextureInfo;
+    textureWithContentsOfFile_options_error(path: string | cocoascript.NSString, options: NSNumber, outError: NSError):GLKTextureInfo;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1489064-texturewithcontentsoffile
-    textureWithContentsOfFile_options_queue_completionHandler(path: string | cocoascript.NSString, options: cocoascript.NSNumber, queue: cocoascript.dispatch_queue_t, block: cocoascript.GLKTextureLoaderCallback):void;
+    textureWithContentsOfFile_options_queue_completionHandler(path: string | cocoascript.NSString, options: NSNumber, queue: dispatch_queue_t, block: GLKTextureLoaderCallback):void;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1489025-texturewithcontentsofurl
-    textureWithContentsOfURL_options_error(url: cocoascript.NSURL, options: cocoascript.NSNumber, outError: cocoascript.NSError):cocoascript.GLKTextureInfo;
+    textureWithContentsOfURL_options_error(url: NSURL, options: NSNumber, outError: NSError):GLKTextureInfo;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488621-texturewithcontentsofurl
-    textureWithContentsOfURL_options_queue_completionHandler(url: cocoascript.NSURL, options: cocoascript.NSNumber, queue: cocoascript.dispatch_queue_t, block: cocoascript.GLKTextureLoaderCallback):void;
+    textureWithContentsOfURL_options_queue_completionHandler(url: NSURL, options: NSNumber, queue: dispatch_queue_t, block: GLKTextureLoaderCallback):void;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1489081-texturewithcontentsofdata
-    textureWithContentsOfData_options_error(data: cocoascript.NSData, options: cocoascript.NSNumber, outError: cocoascript.NSError):cocoascript.GLKTextureInfo;
+    textureWithContentsOfData_options_error(data: NSData, options: NSNumber, outError: NSError):GLKTextureInfo;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488905-texturewithcontentsofdata
-    textureWithContentsOfData_options_queue_completionHandler(data: cocoascript.NSData, options: cocoascript.NSNumber, queue: cocoascript.dispatch_queue_t, block: cocoascript.GLKTextureLoaderCallback):void;
+    textureWithContentsOfData_options_queue_completionHandler(data: NSData, options: NSNumber, queue: dispatch_queue_t, block: GLKTextureLoaderCallback):void;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488673-texturewithcgimage
-    textureWithCGImage_options_error(cgImage: cocoascript.CGImageRef, options: cocoascript.NSNumber, outError: cocoascript.NSError):cocoascript.GLKTextureInfo;
+    textureWithCGImage_options_error(cgImage: CGImageRef, options: NSNumber, outError: NSError):GLKTextureInfo;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488861-texturewithcgimage
-    textureWithCGImage_options_queue_completionHandler(cgImage: cocoascript.CGImageRef, options: cocoascript.NSNumber, queue: cocoascript.dispatch_queue_t, block: cocoascript.GLKTextureLoaderCallback):void;
+    textureWithCGImage_options_queue_completionHandler(cgImage: CGImageRef, options: NSNumber, queue: dispatch_queue_t, block: GLKTextureLoaderCallback):void;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488848-cubemapwithcontentsoffile
-    cubeMapWithContentsOfFile_options_error(path: string | cocoascript.NSString, options: cocoascript.NSNumber, outError: cocoascript.NSError):cocoascript.GLKTextureInfo;
+    cubeMapWithContentsOfFile_options_error(path: string | cocoascript.NSString, options: NSNumber, outError: NSError):GLKTextureInfo;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488617-cubemapwithcontentsoffile
-    cubeMapWithContentsOfFile_options_queue_completionHandler(path: string | cocoascript.NSString, options: cocoascript.NSNumber, queue: cocoascript.dispatch_queue_t, block: cocoascript.GLKTextureLoaderCallback):void;
+    cubeMapWithContentsOfFile_options_queue_completionHandler(path: string | cocoascript.NSString, options: NSNumber, queue: dispatch_queue_t, block: GLKTextureLoaderCallback):void;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488810-cubemapwithcontentsoffiles
-    cubeMapWithContentsOfFiles_options_error(paths: cocoascript.GLKTextureLoader, options: cocoascript.NSNumber, outError: cocoascript.NSError):cocoascript.GLKTextureInfo;
+    cubeMapWithContentsOfFiles_options_error(paths: GLKTextureLoader, options: NSNumber, outError: NSError):GLKTextureInfo;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488854-cubemapwithcontentsoffiles
-    cubeMapWithContentsOfFiles_options_queue_completionHandler(paths: cocoascript.GLKTextureLoader, options: cocoascript.NSNumber, queue: cocoascript.dispatch_queue_t, block: cocoascript.GLKTextureLoaderCallback):void;
+    cubeMapWithContentsOfFiles_options_queue_completionHandler(paths: GLKTextureLoader, options: NSNumber, queue: dispatch_queue_t, block: GLKTextureLoaderCallback):void;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488743-cubemapwithcontentsofurl
-    cubeMapWithContentsOfURL_options_error(url: cocoascript.NSURL, options: cocoascript.NSNumber, outError: cocoascript.NSError):cocoascript.GLKTextureInfo;
+    cubeMapWithContentsOfURL_options_error(url: NSURL, options: NSNumber, outError: NSError):GLKTextureInfo;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488926-cubemapwithcontentsofurl
-    cubeMapWithContentsOfURL_options_queue_completionHandler(url: cocoascript.NSURL, options: cocoascript.NSNumber, queue: cocoascript.dispatch_queue_t, block: cocoascript.GLKTextureLoaderCallback):void;
+    cubeMapWithContentsOfURL_options_queue_completionHandler(url: NSURL, options: NSNumber, queue: dispatch_queue_t, block: GLKTextureLoaderCallback):void;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1639591-texturewithname
-    textureWithName_scaleFactor_bundle_options_queue_completionHandler(name: string | cocoascript.NSString, scaleFactor: cocoascript.CGFloat, bundle: cocoascript.NSBundle, options: cocoascript.NSNumber, queue: cocoascript.dispatch_queue_t, block: cocoascript.GLKTextureLoaderCallback):void;
+    textureWithName_scaleFactor_bundle_options_queue_completionHandler(name: string | cocoascript.NSString, scaleFactor: CGFloat, bundle: NSBundle, options: NSNumber, queue: dispatch_queue_t, block: GLKTextureLoaderCallback):void;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1639590-texturewithname
-    textureWithName_scaleFactor_bundle_options_error(name: string | cocoascript.NSString, scaleFactor: cocoascript.CGFloat, bundle: cocoascript.NSBundle, options: cocoascript.NSNumber, outError: cocoascript.NSError):cocoascript.GLKTextureInfo;
+    textureWithName_scaleFactor_bundle_options_error(name: string | cocoascript.NSString, scaleFactor: CGFloat, bundle: NSBundle, options: NSNumber, outError: NSError):GLKTextureInfo;
     //
-    alloc():cocoascript.GLKTextureLoader;
+    alloc():GLKTextureLoader;
     //
-    init():cocoascript.GLKTextureLoader;
+    init():GLKTextureLoader;
   }
 }
 
@@ -247,56 +247,56 @@ declare namespace cocoascript {
     label(): string | cocoascript.NSString;
     setLabel(): void;
     // doc://com.apple.documentation/documentation/glkit/glkbaseeffect/1489030-transform
-    transform(): cocoascript.GLKEffectPropertyTransform;
+    transform(): GLKEffectPropertyTransform;
     setTransform(): void;
     // doc://com.apple.documentation/documentation/glkit/glkbaseeffect/1489037-lightingtype
-    lightingType(): cocoascript.GLKLightingType;
+    lightingType(): GLKLightingType;
     setLightingType(): void;
     // doc://com.apple.documentation/documentation/glkit/glkbaseeffect/1489036-lightmodeltwosided
-    lightModelTwoSided(): cocoascript.GLboolean;
+    lightModelTwoSided(): GLboolean;
     setLightModelTwoSided(): void;
     // doc://com.apple.documentation/documentation/glkit/glkbaseeffect/1488753-material
-    material(): cocoascript.GLKEffectPropertyMaterial;
+    material(): GLKEffectPropertyMaterial;
     setMaterial(): void;
     // doc://com.apple.documentation/documentation/glkit/glkbaseeffect/1489061-lightmodelambientcolor
-    lightModelAmbientColor(): cocoascript.GLKVector4;
+    lightModelAmbientColor(): GLKVector4;
     setLightModelAmbientColor(): void;
     // doc://com.apple.documentation/documentation/glkit/glkbaseeffect/1488785-light0
-    light0(): cocoascript.GLKEffectPropertyLight;
+    light0(): GLKEffectPropertyLight;
     setLight0(): void;
     // doc://com.apple.documentation/documentation/glkit/glkbaseeffect/1489095-light1
-    light1(): cocoascript.GLKEffectPropertyLight;
+    light1(): GLKEffectPropertyLight;
     setLight1(): void;
     // doc://com.apple.documentation/documentation/glkit/glkbaseeffect/1488671-light2
-    light2(): cocoascript.GLKEffectPropertyLight;
+    light2(): GLKEffectPropertyLight;
     setLight2(): void;
     // doc://com.apple.documentation/documentation/glkit/glkbaseeffect/1488664-texture2d0
-    texture2d0(): cocoascript.GLKEffectPropertyTexture;
+    texture2d0(): GLKEffectPropertyTexture;
     setTexture2d0(): void;
     // doc://com.apple.documentation/documentation/glkit/glkbaseeffect/1488699-texture2d1
-    texture2d1(): cocoascript.GLKEffectPropertyTexture;
+    texture2d1(): GLKEffectPropertyTexture;
     setTexture2d1(): void;
     // doc://com.apple.documentation/documentation/glkit/glkbaseeffect/1488830-textureorder
-    textureOrder(): cocoascript.GLKEffectPropertyTexture;
+    textureOrder(): GLKEffectPropertyTexture;
     setTextureOrder(): void;
     // doc://com.apple.documentation/documentation/glkit/glkbaseeffect/1488697-fog
-    fog(): cocoascript.GLKEffectPropertyFog;
+    fog(): GLKEffectPropertyFog;
     setFog(): void;
     // doc://com.apple.documentation/documentation/glkit/glkbaseeffect/1488710-colormaterialenabled
-    colorMaterialEnabled(): cocoascript.GLboolean;
+    colorMaterialEnabled(): GLboolean;
     setColorMaterialEnabled(): void;
     // doc://com.apple.documentation/documentation/glkit/glkbaseeffect/1488783-useconstantcolor
-    useConstantColor(): cocoascript.GLboolean;
+    useConstantColor(): GLboolean;
     setUseConstantColor(): void;
     // doc://com.apple.documentation/documentation/glkit/glkbaseeffect/1488903-constantcolor
-    constantColor(): cocoascript.GLKVector4;
+    constantColor(): GLKVector4;
     setConstantColor(): void;
     // doc://com.apple.documentation/documentation/glkit/glkbaseeffect/1489101-preparetodraw
     prepareToDraw():void;
     //
-    alloc():cocoascript.GLKBaseEffect;
+    alloc():GLKBaseEffect;
     //
-    init():cocoascript.GLKBaseEffect;
+    init():GLKBaseEffect;
   }
 }
 
@@ -310,15 +310,15 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/glkit/glkreflectionmapeffect/1415310-preparetodraw
     prepareToDraw():void;
     // doc://com.apple.documentation/documentation/glkit/glkreflectionmapeffect/1415312-texturecubemap
-    textureCubeMap(): cocoascript.GLKEffectPropertyTexture;
+    textureCubeMap(): GLKEffectPropertyTexture;
     setTextureCubeMap(): void;
     // doc://com.apple.documentation/documentation/glkit/glkreflectionmapeffect/1415314-matrix
-    matrix(): cocoascript.GLKMatrix3;
+    matrix(): GLKMatrix3;
     setMatrix(): void;
     //
-    alloc():cocoascript.GLKReflectionMapEffect;
+    alloc():GLKReflectionMapEffect;
     //
-    init():cocoascript.GLKReflectionMapEffect;
+    init():GLKReflectionMapEffect;
   }
 }
 
@@ -337,10 +337,10 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/glkit/glkskyboxeffect/1488843-draw
     draw():void;
     // doc://com.apple.documentation/documentation/glkit/glkskyboxeffect/1488873-texturecubemap
-    textureCubeMap(): cocoascript.GLKEffectPropertyTexture;
+    textureCubeMap(): GLKEffectPropertyTexture;
     setTextureCubeMap(): void;
     // doc://com.apple.documentation/documentation/glkit/glkskyboxeffect/1488839-center
-    center(): cocoascript.GLKVector3;
+    center(): GLKVector3;
     setCenter(): void;
     // doc://com.apple.documentation/documentation/glkit/glkskyboxeffect/1488891-xsize
     xSize(): any;
@@ -352,12 +352,12 @@ declare namespace cocoascript {
     zSize(): any;
     setZSize(): void;
     // doc://com.apple.documentation/documentation/glkit/glkskyboxeffect/1489015-transform
-    transform(): cocoascript.GLKEffectPropertyTransform;
+    transform(): GLKEffectPropertyTransform;
     setTransform(): void;
     //
-    alloc():cocoascript.GLKSkyboxEffect;
+    alloc():GLKSkyboxEffect;
     //
-    init():cocoascript.GLKSkyboxEffect;
+    init():GLKSkyboxEffect;
   }
 }
 
@@ -368,28 +368,28 @@ declare namespace cocoascript {
    */
   interface GLKMesh extends NSObject {
     // doc://com.apple.documentation/documentation/glkit/glkmesh/1488759-initwithmesh
-    initWithMesh_error(mesh: cocoascript.MDLMesh, error: cocoascript.NSError):cocoascript.GLKMesh;
+    initWithMesh_error(mesh: MDLMesh, error: NSError):GLKMesh;
     // doc://com.apple.documentation/documentation/glkit/glkmesh/1489104-name
     name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/glkit/glkmesh/1489060-submeshes
-    submeshes(): cocoascript.GLKSubmesh;
+    submeshes(): GLKSubmesh;
     setSubmeshes(): void;
     // doc://com.apple.documentation/documentation/glkit/glkmesh/1488688-vertexbuffers
-    vertexBuffers(): cocoascript.GLKMeshBuffer;
+    vertexBuffers(): GLKMeshBuffer;
     setVertexBuffers(): void;
     // doc://com.apple.documentation/documentation/glkit/glkmesh/1489043-vertexcount
-    vertexCount(): cocoascript.NSUInteger;
+    vertexCount(): NSUInteger;
     setVertexCount(): void;
     // doc://com.apple.documentation/documentation/glkit/glkmesh/1488990-vertexdescriptor
-    vertexDescriptor(): cocoascript.MDLVertexDescriptor;
+    vertexDescriptor(): MDLVertexDescriptor;
     setVertexDescriptor(): void;
     // doc://com.apple.documentation/documentation/glkit/glkmesh/1488791-newmeshesfromasset
-    newMeshesFromAsset_sourceMeshes_error(asset: cocoascript.MDLAsset, sourceMeshes: cocoascript.MDLMesh, error: cocoascript.NSError):cocoascript.GLKMesh;
+    newMeshesFromAsset_sourceMeshes_error(asset: MDLAsset, sourceMeshes: MDLMesh, error: NSError):GLKMesh;
     //
-    alloc():cocoascript.GLKMesh;
+    alloc():GLKMesh;
     //
-    init():cocoascript.GLKMesh;
+    init():GLKMesh;
   }
 }
 
@@ -400,27 +400,27 @@ declare namespace cocoascript {
    */
   interface GLKMeshBuffer extends NSObject {
     // doc://com.apple.documentation/documentation/glkit/glkmeshbuffer/1489083-allocator
-    allocator(): cocoascript.GLKMeshBufferAllocator;
+    allocator(): GLKMeshBufferAllocator;
     setAllocator(): void;
     // doc://com.apple.documentation/documentation/glkit/glkmeshbuffer/1488636-glbuffername
     glBufferName(): any;
     setGlBufferName(): void;
     // doc://com.apple.documentation/documentation/glkit/glkmeshbuffer/1488631-length
-    length(): cocoascript.NSUInteger;
+    length(): NSUInteger;
     setLength(): void;
     // doc://com.apple.documentation/documentation/glkit/glkmeshbuffer/1488607-offset
-    offset(): cocoascript.NSUInteger;
+    offset(): NSUInteger;
     setOffset(): void;
     // doc://com.apple.documentation/documentation/glkit/glkmeshbuffer/1488681-type
-    type(): cocoascript.MDLMeshBufferType;
+    type(): MDLMeshBufferType;
     setType(): void;
     // doc://com.apple.documentation/documentation/glkit/glkmeshbuffer/1538271-zone
-    zone(): cocoascript.MDLMeshBufferZone;
+    zone(): MDLMeshBufferZone;
     setZone(): void;
     //
-    alloc():cocoascript.GLKMeshBuffer;
+    alloc():GLKMeshBuffer;
     //
-    init():cocoascript.GLKMeshBuffer;
+    init():GLKMeshBuffer;
   }
 }
 
@@ -431,9 +431,9 @@ declare namespace cocoascript {
    */
   interface GLKMeshBufferAllocator extends NSObject {
     //
-    alloc():cocoascript.GLKMeshBufferAllocator;
+    alloc():GLKMeshBufferAllocator;
     //
-    init():cocoascript.GLKMeshBufferAllocator;
+    init():GLKMeshBufferAllocator;
   }
 }
 
@@ -444,13 +444,13 @@ declare namespace cocoascript {
    */
   interface GLKSubmesh extends NSObject {
     // doc://com.apple.documentation/documentation/glkit/glksubmesh/1488972-elementbuffer
-    elementBuffer(): cocoascript.GLKMeshBuffer;
+    elementBuffer(): GLKMeshBuffer;
     setElementBuffer(): void;
     // doc://com.apple.documentation/documentation/glkit/glksubmesh/1489103-elementcount
     elementCount(): any;
     setElementCount(): void;
     // doc://com.apple.documentation/documentation/glkit/glksubmesh/1489108-mesh
-    mesh(): cocoascript.GLKMesh;
+    mesh(): GLKMesh;
     setMesh(): void;
     // doc://com.apple.documentation/documentation/glkit/glksubmesh/1488690-mode
     mode(): any;
@@ -462,9 +462,9 @@ declare namespace cocoascript {
     type(): any;
     setType(): void;
     //
-    alloc():cocoascript.GLKSubmesh;
+    alloc():GLKSubmesh;
     //
-    init():cocoascript.GLKSubmesh;
+    init():GLKSubmesh;
   }
 }
 
@@ -486,9 +486,9 @@ declare namespace cocoascript {
    */
   interface GLKEffectProperty extends NSObject {
     //
-    alloc():cocoascript.GLKEffectProperty;
+    alloc():GLKEffectProperty;
     //
-    init():cocoascript.GLKEffectProperty;
+    init():GLKEffectProperty;
   }
 }
 
@@ -500,13 +500,13 @@ declare namespace cocoascript {
    */
   interface GLKEffectPropertyFog extends GLKEffectProperty {
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertyfog/1429941-enabled
-    enabled(): cocoascript.GLboolean;
+    enabled(): GLboolean;
     setEnabled(): void;
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertyfog/1429943-mode
     mode(): any;
     setMode(): void;
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertyfog/1429938-color
-    color(): cocoascript.GLKVector4;
+    color(): GLKVector4;
     setColor(): void;
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertyfog/1429947-density
     density(): any;
@@ -518,9 +518,9 @@ declare namespace cocoascript {
     end(): any;
     setEnd(): void;
     //
-    alloc():cocoascript.GLKEffectPropertyFog;
+    alloc():GLKEffectPropertyFog;
     //
-    init():cocoascript.GLKEffectPropertyFog;
+    init():GLKEffectPropertyFog;
   }
 }
 
@@ -532,22 +532,22 @@ declare namespace cocoascript {
    */
   interface GLKEffectPropertyLight extends GLKEffectProperty {
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertylight/1473558-enabled
-    enabled(): cocoascript.GLboolean;
+    enabled(): GLboolean;
     setEnabled(): void;
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertylight/1473576-position
-    position(): cocoascript.GLKVector4;
+    position(): GLKVector4;
     setPosition(): void;
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertylight/1473568-transform
-    transform(): cocoascript.GLKEffectPropertyTransform;
+    transform(): GLKEffectPropertyTransform;
     setTransform(): void;
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertylight/1473564-ambientcolor
-    ambientColor(): cocoascript.GLKVector4;
+    ambientColor(): GLKVector4;
     setAmbientColor(): void;
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertylight/1473560-diffusecolor
-    diffuseColor(): cocoascript.GLKVector4;
+    diffuseColor(): GLKVector4;
     setDiffuseColor(): void;
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertylight/1473562-specularcolor
-    specularColor(): cocoascript.GLKVector4;
+    specularColor(): GLKVector4;
     setSpecularColor(): void;
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertylight/1473574-constantattenuation
     constantAttenuation(): any;
@@ -562,15 +562,15 @@ declare namespace cocoascript {
     spotCutoff(): any;
     setSpotCutoff(): void;
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertylight/1473547-spotdirection
-    spotDirection(): cocoascript.GLKVector3;
+    spotDirection(): GLKVector3;
     setSpotDirection(): void;
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertylight/1473551-spotexponent
     spotExponent(): any;
     setSpotExponent(): void;
     //
-    alloc():cocoascript.GLKEffectPropertyLight;
+    alloc():GLKEffectPropertyLight;
     //
-    init():cocoascript.GLKEffectPropertyLight;
+    init():GLKEffectPropertyLight;
   }
 }
 
@@ -582,21 +582,21 @@ declare namespace cocoascript {
    */
   interface GLKEffectPropertyTexture extends GLKEffectProperty {
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertytexture/1488708-enabled
-    enabled(): cocoascript.GLboolean;
+    enabled(): GLboolean;
     setEnabled(): void;
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertytexture/1488986-envmode
-    envMode(): cocoascript.GLKTextureEnvMode;
+    envMode(): GLKTextureEnvMode;
     setEnvMode(): void;
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertytexture/1488884-name
     name(): any;
     setName(): void;
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertytexture/1488852-target
-    target(): cocoascript.GLKTextureTarget;
+    target(): GLKTextureTarget;
     setTarget(): void;
     //
-    alloc():cocoascript.GLKEffectPropertyTexture;
+    alloc():GLKEffectPropertyTexture;
     //
-    init():cocoascript.GLKEffectPropertyTexture;
+    init():GLKEffectPropertyTexture;
   }
 }
 
@@ -608,24 +608,24 @@ declare namespace cocoascript {
    */
   interface GLKEffectPropertyMaterial extends GLKEffectProperty {
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertymaterial/1409844-ambientcolor
-    ambientColor(): cocoascript.GLKVector4;
+    ambientColor(): GLKVector4;
     setAmbientColor(): void;
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertymaterial/1409843-diffusecolor
-    diffuseColor(): cocoascript.GLKVector4;
+    diffuseColor(): GLKVector4;
     setDiffuseColor(): void;
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertymaterial/1409839-emissivecolor
-    emissiveColor(): cocoascript.GLKVector4;
+    emissiveColor(): GLKVector4;
     setEmissiveColor(): void;
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertymaterial/1409837-shininess
     shininess(): any;
     setShininess(): void;
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertymaterial/1409841-specularcolor
-    specularColor(): cocoascript.GLKVector4;
+    specularColor(): GLKVector4;
     setSpecularColor(): void;
     //
-    alloc():cocoascript.GLKEffectPropertyMaterial;
+    alloc():GLKEffectPropertyMaterial;
     //
-    init():cocoascript.GLKEffectPropertyMaterial;
+    init():GLKEffectPropertyMaterial;
   }
 }
 
@@ -637,18 +637,18 @@ declare namespace cocoascript {
    */
   interface GLKEffectPropertyTransform extends GLKEffectProperty {
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertytransform/1489097-modelviewmatrix
-    modelviewMatrix(): cocoascript.GLKMatrix4;
+    modelviewMatrix(): GLKMatrix4;
     setModelviewMatrix(): void;
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertytransform/1488648-normalmatrix
-    normalMatrix(): cocoascript.GLKMatrix3;
+    normalMatrix(): GLKMatrix3;
     setNormalMatrix(): void;
     // doc://com.apple.documentation/documentation/glkit/glkeffectpropertytransform/1489114-projectionmatrix
-    projectionMatrix(): cocoascript.GLKMatrix4;
+    projectionMatrix(): GLKMatrix4;
     setProjectionMatrix(): void;
     //
-    alloc():cocoascript.GLKEffectPropertyTransform;
+    alloc():GLKEffectPropertyTransform;
     //
-    init():cocoascript.GLKEffectPropertyTransform;
+    init():GLKEffectPropertyTransform;
   }
 }
 
@@ -718,8 +718,8 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/glkit/glkmatrix3identity
-declare const GLKMatrix3Identity: cocoascript.GLKMatrix3;
+declare const GLKMatrix3Identity: GLKMatrix3;
 // doc://com.apple.documentation/documentation/glkit/glkmatrix4identity
-declare const GLKMatrix4Identity: cocoascript.GLKMatrix4;
+declare const GLKMatrix4Identity: GLKMatrix4;
 // doc://com.apple.documentation/documentation/glkit/glkquaternionidentity
-declare const GLKQuaternionIdentity: cocoascript.GLKQuaternion;
+declare const GLKQuaternionIdentity: GLKQuaternion;

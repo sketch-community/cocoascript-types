@@ -5,101 +5,101 @@ declare namespace cocoascript {
    */
   interface NSManagedObjectContext extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506709-initwithconcurrencytype
-    initWithConcurrencyType(ct: cocoascript.NSManagedObjectContextConcurrencyType):cocoascript.NSManagedObjectContext;
+    initWithConcurrencyType(ct: NSManagedObjectContextConcurrencyType):NSManagedObjectContext;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506618-persistentstorecoordinator
-    persistentStoreCoordinator(): cocoascript.NSPersistentStoreCoordinator;
+    persistentStoreCoordinator(): NSPersistentStoreCoordinator;
     setPersistentStoreCoordinator(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506529-parentcontext
-    parentContext(): cocoascript.NSManagedObjectContext;
+    parentContext(): NSManagedObjectContext;
     setParentContext(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506231-name
     name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506740-userinfo
-    userInfo(): cocoascript.NSMutableDictionary;
+    userInfo(): NSMutableDictionary;
     setUserInfo(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506673-init
-    init():cocoascript.NSManagedObjectContext;
+    init():NSManagedObjectContext;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506632-new
-    new():cocoascript.NSManagedObjectContext;
+    new():NSManagedObjectContext;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506672-executefetchrequest
-    executeFetchRequest_error(request: cocoascript.NSFetchRequest, error: cocoascript.NSError):cocoascript.NSArray;
+    executeFetchRequest_error(request: NSFetchRequest, error: NSError):NSArray;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506868-countforfetchrequest
-    countForFetchRequest_error(request: cocoascript.NSFetchRequest, error: cocoascript.NSError):cocoascript.NSUInteger;
+    countForFetchRequest_error(request: NSFetchRequest, error: NSError):NSUInteger;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506789-objectregisteredforid
-    objectRegisteredForID(objectID: cocoascript.NSManagedObjectID):cocoascript.NSManagedObject;
+    objectRegisteredForID(objectID: NSManagedObjectID):NSManagedObject;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506197-objectwithid
-    objectWithID(objectID: cocoascript.NSManagedObjectID):cocoascript.NSManagedObject;
+    objectWithID(objectID: NSManagedObjectID):NSManagedObject;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506686-existingobjectwithid
-    existingObjectWithID_error(objectID: cocoascript.NSManagedObjectID, error: cocoascript.NSError):cocoascript.NSManagedObject;
+    existingObjectWithID_error(objectID: NSManagedObjectID, error: NSError):NSManagedObject;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506493-registeredobjects
-    registeredObjects(): cocoascript.NSManagedObject;
+    registeredObjects(): NSManagedObject;
     setRegisteredObjects(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506834-executerequest
-    executeRequest_error(request: cocoascript.NSPersistentStoreRequest, error: cocoascript.NSError):cocoascript.NSPersistentStoreResult;
+    executeRequest_error(request: NSPersistentStoreRequest, error: NSError):NSPersistentStoreResult;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506217-refreshallobjects
     refreshAllObjects():void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506290-retainsregisteredobjects
-    retainsRegisteredObjects(): cocoascript.BOOL;
+    retainsRegisteredObjects(): BOOL;
     setRetainsRegisteredObjects(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506221-shoulddeleteinaccessiblefaults
-    shouldDeleteInaccessibleFaults(): cocoascript.BOOL;
+    shouldDeleteInaccessibleFaults(): BOOL;
     setShouldDeleteInaccessibleFaults(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506192-insertedobjects
-    insertedObjects(): cocoascript.NSManagedObject;
+    insertedObjects(): NSManagedObject;
     setInsertedObjects(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506985-updatedobjects
-    updatedObjects(): cocoascript.NSManagedObject;
+    updatedObjects(): NSManagedObject;
     setUpdatedObjects(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506699-deletedobjects
-    deletedObjects(): cocoascript.NSManagedObject;
+    deletedObjects(): NSManagedObject;
     setDeletedObjects(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506810-shouldhandleinaccessiblefault
-    shouldHandleInaccessibleFault_forObjectID_triggeredByProperty(fault: cocoascript.NSManagedObject, oid: cocoascript.NSManagedObjectID, property: cocoascript.NSPropertyDescription):cocoascript.BOOL;
+    shouldHandleInaccessibleFault_forObjectID_triggeredByProperty(fault: NSManagedObject, oid: NSManagedObjectID, property: NSPropertyDescription):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506794-insertobject
-    insertObject(object: cocoascript.NSManagedObject):void;
+    insertObject(object: NSManagedObject):void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506847-deleteobject
-    deleteObject(object: cocoascript.NSManagedObject):void;
+    deleteObject(object: NSManagedObject):void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506436-assignobject
-    assignObject_toPersistentStore(object: cocoascript.NSManagedObjectContext, store: cocoascript.NSPersistentStore):void;
+    assignObject_toPersistentStore(object: NSManagedObjectContext, store: NSPersistentStore):void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506793-obtainpermanentidsforobjects
-    obtainPermanentIDsForObjects_error(objects: cocoascript.NSManagedObject, error: cocoascript.NSError):cocoascript.BOOL;
+    obtainPermanentIDsForObjects_error(objects: NSManagedObject, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506843-detectconflictsforobject
-    detectConflictsForObject(object: cocoascript.NSManagedObject):void;
+    detectConflictsForObject(object: NSManagedObject):void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506224-refreshobject
-    refreshObject_mergeChanges(object: cocoascript.NSManagedObject, flag: cocoascript.BOOL):void;
+    refreshObject_mergeChanges(object: NSManagedObject, flag: BOOL):void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506661-processpendingchanges
     processPendingChanges():void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506849-observevalueforkeypath
-    observeValueForKeyPath_ofObject_change_context(keyPath: string | cocoascript.NSString, object: cocoascript.NSManagedObjectContext, change: cocoascript.NSManagedObjectContext, context: void):void;
+    observeValueForKeyPath_ofObject_change_context(keyPath: string | cocoascript.NSString, object: NSManagedObjectContext, change: NSManagedObjectContext, context: void):void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1845237-automaticallymergeschangesfrompa
-    automaticallyMergesChangesFromParent(): cocoascript.BOOL;
+    automaticallyMergesChangesFromParent(): BOOL;
     setAutomaticallyMergesChangesFromParent(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506792-concurrencytype
-    concurrencyType(): cocoascript.NSManagedObjectContextConcurrencyType;
+    concurrencyType(): NSManagedObjectContextConcurrencyType;
     setConcurrencyType(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1640477-querygenerationtoken
-    queryGenerationToken(): cocoascript.NSQueryGenerationToken;
+    queryGenerationToken(): NSQueryGenerationToken;
     setQueryGenerationToken(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506490-mergepolicy
-    mergePolicy(): cocoascript.id;
+    mergePolicy(): id;
     setMergePolicy(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/2892348-transactionauthor
     transactionAuthor(): string | cocoascript.NSString;
     setTransactionAuthor(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506606-mergechangesfromcontextdidsaveno
-    mergeChangesFromContextDidSaveNotification(notification: cocoascript.NSNotification):void;
+    mergeChangesFromContextDidSaveNotification(notification: NSNotification):void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1640469-setquerygenerationfromtoken
-    setQueryGenerationFromToken_error(generation: cocoascript.NSQueryGenerationToken, error: cocoascript.NSError):cocoascript.BOOL;
+    setQueryGenerationFromToken_error(generation: NSQueryGenerationToken, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506546-mergechangesfromremotecontextsav
-    mergeChangesFromRemoteContextSave_intoContexts(changeNotificationData: cocoascript.NSDictionary, contexts: cocoascript.NSManagedObjectContext):void;
+    mergeChangesFromRemoteContextSave_intoContexts(changeNotificationData: NSDictionary, contexts: NSManagedObjectContext):void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506866-save
-    save(error: cocoascript.NSError):cocoascript.BOOL;
+    save(error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506954-haschanges
-    hasChanges(): cocoascript.BOOL;
+    hasChanges(): BOOL;
     setHasChanges(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506663-undomanager
-    undoManager(): cocoascript.NSUndoManager;
+    undoManager(): NSUndoManager;
     setUndoManager(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506969-undo
     undo():void;
@@ -110,10 +110,10 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506942-rollback
     rollback():void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506228-propagatesdeletesatendofevent
-    propagatesDeletesAtEndOfEvent(): cocoascript.BOOL;
+    propagatesDeletesAtEndOfEvent(): BOOL;
     setPropagatesDeletesAtEndOfEvent(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506875-stalenessinterval
-    stalenessInterval(): cocoascript.NSTimeInterval;
+    stalenessInterval(): NSTimeInterval;
     setStalenessInterval(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506578-performblock
     performBlock(block: void):void;
@@ -124,11 +124,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506839-unlock
     unlock():void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontext/1506497-trylock
-    tryLock():cocoascript.BOOL;
+    tryLock():BOOL;
     //
-    alloc():cocoascript.NSManagedObjectContext;
+    alloc():NSManagedObjectContext;
     //
-    init():cocoascript.NSManagedObjectContext;
+    init():NSManagedObjectContext;
   }
 }
 
@@ -168,58 +168,58 @@ declare namespace cocoascript {
    */
   interface NSManagedObject extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506357-initwithentity
-    initWithEntity_insertIntoManagedObjectContext(entity: cocoascript.NSEntityDescription, context: cocoascript.NSManagedObjectContext):cocoascript.NSManagedObject;
+    initWithEntity_insertIntoManagedObjectContext(entity: NSEntityDescription, context: NSManagedObjectContext):NSManagedObject;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1640602-initwithcontext
-    initWithContext(moc: cocoascript.NSManagedObjectContext):cocoascript.NSManagedObject;
+    initWithContext(moc: NSManagedObjectContext):NSManagedObject;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506562-entity
-    entity(): cocoascript.NSEntityDescription;
+    entity(): NSEntityDescription;
     setEntity(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506848-objectid
-    objectID(): cocoascript.NSManagedObjectID;
+    objectID(): NSManagedObjectID;
     setObjectID(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1640588-entity
-    entity():cocoascript.NSEntityDescription;
+    entity():NSEntityDescription;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506677-managedobjectcontext
-    managedObjectContext(): cocoascript.NSManagedObjectContext;
+    managedObjectContext(): NSManagedObjectContext;
     setManagedObjectContext(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506654-haschanges
-    hasChanges(): cocoascript.BOOL;
+    hasChanges(): BOOL;
     setHasChanges(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506281-inserted
-    inserted(): cocoascript.BOOL;
+    inserted(): BOOL;
     setInserted(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506867-updated
-    updated(): cocoascript.BOOL;
+    updated(): BOOL;
     setUpdated(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506681-deleted
-    deleted(): cocoascript.BOOL;
+    deleted(): BOOL;
     setDeleted(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506837-fault
-    fault(): cocoascript.BOOL;
+    fault(): BOOL;
     setFault(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506720-faultingstate
-    faultingState(): cocoascript.NSUInteger;
+    faultingState(): NSUInteger;
     setFaultingState(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506973-hasfaultforrelationshipnamed
-    hasFaultForRelationshipNamed(key: string | cocoascript.NSString):cocoascript.BOOL;
+    hasFaultForRelationshipNamed(key: string | cocoascript.NSString):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506240-haspersistentchangedvalues
-    hasPersistentChangedValues(): cocoascript.BOOL;
+    hasPersistentChangedValues(): BOOL;
     setHasPersistentChangedValues(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506727-contextshouldignoreunmodeledprop
-    contextShouldIgnoreUnmodeledPropertyChanges(): cocoascript.BOOL;
+    contextShouldIgnoreUnmodeledPropertyChanges(): BOOL;
     setContextShouldIgnoreUnmodeledPropertyChanges(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506424-awakefromfetch
     awakeFromFetch():void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506548-awakefrominsert
     awakeFromInsert():void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506861-awakefromsnapshotevents
-    awakeFromSnapshotEvents(flags: cocoascript.NSSnapshotEventType):void;
+    awakeFromSnapshotEvents(flags: NSSnapshotEventType):void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506775-changedvalues
-    changedValues():cocoascript.NSManagedObject;
+    changedValues():NSManagedObject;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506472-changedvaluesforcurrentevent
-    changedValuesForCurrentEvent():cocoascript.NSManagedObject;
+    changedValuesForCurrentEvent():NSManagedObject;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506771-committedvaluesforkeys
-    committedValuesForKeys(keys: string | cocoascript.NSString):cocoascript.NSManagedObject;
+    committedValuesForKeys(keys: string | cocoascript.NSString):NSManagedObject;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506674-preparefordeletion
     prepareForDeletion():void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506209-willsave
@@ -231,27 +231,27 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506470-didturnintofault
     didTurnIntoFault():void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1640605-fetchrequest
-    fetchRequest():cocoascript.NSFetchRequest;
+    fetchRequest():NSFetchRequest;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506613-valueforkey
-    valueForKey(key: string | cocoascript.NSString):cocoascript.NSManagedObject;
+    valueForKey(key: string | cocoascript.NSString):NSManagedObject;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506397-setvalue
-    setValue_forKey(value: cocoascript.NSManagedObject, key: string | cocoascript.NSString):void;
+    setValue_forKey(value: NSManagedObject, key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1807259-mutablesetvalueforkey
     ():void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506728-primitivevalueforkey
-    primitiveValueForKey(key: string | cocoascript.NSString):cocoascript.NSManagedObject;
+    primitiveValueForKey(key: string | cocoascript.NSString):NSManagedObject;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506960-setprimitivevalue
-    setPrimitiveValue_forKey(value: cocoascript.NSManagedObject, key: string | cocoascript.NSString):void;
+    setPrimitiveValue_forKey(value: NSManagedObject, key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506201-objectidsforrelationshipnamed
-    objectIDsForRelationshipNamed(key: string | cocoascript.NSString):cocoascript.NSManagedObjectID;
+    objectIDsForRelationshipNamed(key: string | cocoascript.NSString):NSManagedObjectID;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506776-validatevalue
-    validateValue_forKey_error(value: cocoascript.NSManagedObject, key: string | cocoascript.NSString, error: cocoascript.NSError):cocoascript.BOOL;
+    validateValue_forKey_error(value: NSManagedObject, key: string | cocoascript.NSString, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506195-validatefordelete
-    validateForDelete(error: cocoascript.NSError):cocoascript.BOOL;
+    validateForDelete(error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506683-validateforinsert
-    validateForInsert(error: cocoascript.NSError):cocoascript.BOOL;
+    validateForInsert(error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506998-validateforupdate
-    validateForUpdate(error: cocoascript.NSError):cocoascript.BOOL;
+    validateForUpdate(error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506865-didaccessvalueforkey
     didAccessValueForKey(key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506210-observationinfo
@@ -263,15 +263,15 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506976-didchangevalueforkey
     didChangeValueForKey(key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506936-didchangevalueforkey
-    didChangeValueForKey_withSetMutation_usingObjects(inKey: string | cocoascript.NSString, inMutationKind: cocoascript.NSKeyValueSetMutationKind, inObjects: cocoascript.NSSet):void;
+    didChangeValueForKey_withSetMutation_usingObjects(inKey: string | cocoascript.NSString, inMutationKind: NSKeyValueSetMutationKind, inObjects: NSSet):void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506229-willchangevalueforkey
     willChangeValueForKey(key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobject/1506801-willchangevalueforkey
-    willChangeValueForKey_withSetMutation_usingObjects(inKey: string | cocoascript.NSString, inMutationKind: cocoascript.NSKeyValueSetMutationKind, inObjects: cocoascript.NSSet):void;
+    willChangeValueForKey_withSetMutation_usingObjects(inKey: string | cocoascript.NSString, inMutationKind: NSKeyValueSetMutationKind, inObjects: NSSet):void;
     //
-    alloc():cocoascript.NSManagedObject;
+    alloc():NSManagedObject;
     //
-    init():cocoascript.NSManagedObject;
+    init():NSManagedObject;
   }
 }
 
@@ -294,7 +294,7 @@ declare namespace cocoascript {
     name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425121-managedobjectmodel
-    managedObjectModel(): cocoascript.NSManagedObjectModel;
+    managedObjectModel(): NSManagedObjectModel;
     setManagedObjectModel(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425131-managedobjectclassname
     managedObjectClassName(): string | cocoascript.NSString;
@@ -303,45 +303,45 @@ declare namespace cocoascript {
     renamingIdentifier(): string | cocoascript.NSString;
     setRenamingIdentifier(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425097-abstract
-    abstract(): cocoascript.BOOL;
+    abstract(): BOOL;
     setAbstract(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425117-userinfo
-    userInfo(): cocoascript.NSDictionary;
+    userInfo(): NSDictionary;
     setUserInfo(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitydescription/2892364-corespotlightdisplaynameexpressi
-    coreSpotlightDisplayNameExpression(): cocoascript.NSExpression;
+    coreSpotlightDisplayNameExpression(): NSExpression;
     setCoreSpotlightDisplayNameExpression(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425123-subentitiesbyname
-    subentitiesByName(): cocoascript.NSEntityDescription;
+    subentitiesByName(): NSEntityDescription;
     setSubentitiesByName(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425104-subentities
-    subentities(): cocoascript.NSEntityDescription;
+    subentities(): NSEntityDescription;
     setSubentities(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425129-superentity
-    superentity(): cocoascript.NSEntityDescription;
+    superentity(): NSEntityDescription;
     setSuperentity(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425113-iskindofentity
-    isKindOfEntity(entity: cocoascript.NSEntityDescription):cocoascript.BOOL;
+    isKindOfEntity(entity: NSEntityDescription):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425137-propertiesbyname
-    propertiesByName(): cocoascript.NSPropertyDescription;
+    propertiesByName(): NSPropertyDescription;
     setPropertiesByName(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425125-properties
-    properties(): cocoascript.NSPropertyDescription;
+    properties(): NSPropertyDescription;
     setProperties(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425099-attributesbyname
-    attributesByName(): cocoascript.NSAttributeDescription;
+    attributesByName(): NSAttributeDescription;
     setAttributesByName(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425106-relationshipsbyname
-    relationshipsByName(): cocoascript.NSRelationshipDescription;
+    relationshipsByName(): NSRelationshipDescription;
     setRelationshipsByName(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425127-relationshipswithdestinationenti
-    relationshipsWithDestinationEntity(entity: cocoascript.NSEntityDescription):cocoascript.NSRelationshipDescription;
+    relationshipsWithDestinationEntity(entity: NSEntityDescription):NSRelationshipDescription;
     // doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425111-entityforname
-    entityForName_inManagedObjectContext(entityName: string | cocoascript.NSString, context: cocoascript.NSManagedObjectContext):cocoascript.NSEntityDescription;
+    entityForName_inManagedObjectContext(entityName: string | cocoascript.NSString, context: NSManagedObjectContext):NSEntityDescription;
     // doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425093-insertnewobjectforentityforname
-    insertNewObjectForEntityForName_inManagedObjectContext(entityName: string | cocoascript.NSString, context: cocoascript.NSManagedObjectContext):cocoascript.NSManagedObject;
+    insertNewObjectForEntityForName_inManagedObjectContext(entityName: string | cocoascript.NSString, context: NSManagedObjectContext):NSManagedObject;
     // doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425133-versionhash
-    versionHash(): cocoascript.NSData;
+    versionHash(): NSData;
     setVersionHash(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425119-versionhashmodifier
     versionHashModifier(): string | cocoascript.NSString;
@@ -349,18 +349,18 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/coredata/nsentitydescription/1806841-copy
     ():void;
     // doc://com.apple.documentation/documentation/coredata/nsentitydescription/2887059-indexes
-    indexes(): cocoascript.NSFetchIndexDescription;
+    indexes(): NSFetchIndexDescription;
     setIndexes(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425115-compoundindexes
-    compoundIndexes(): cocoascript.id;
+    compoundIndexes(): id;
     setCompoundIndexes(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitydescription/1425095-uniquenessconstraints
-    uniquenessConstraints(): cocoascript.id;
+    uniquenessConstraints(): id;
     setUniquenessConstraints(): void;
     //
-    alloc():cocoascript.NSEntityDescription;
+    alloc():NSEntityDescription;
     //
-    init():cocoascript.NSEntityDescription;
+    init():NSEntityDescription;
   }
 }
 
@@ -372,74 +372,74 @@ declare namespace cocoascript {
    */
   interface NSFetchRequest extends NSPersistentStoreRequest {
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1563437-fetchrequestwithentityname
-    fetchRequestWithEntityName(entityName: string | cocoascript.NSString):cocoascript.NSFetchRequest;
+    fetchRequestWithEntityName(entityName: string | cocoascript.NSString):NSFetchRequest;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506679-init
-    init():cocoascript.NSFetchRequest;
+    init():NSFetchRequest;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506802-initwithentityname
-    initWithEntityName(entityName: string | cocoascript.NSString):cocoascript.NSFetchRequest;
+    initWithEntityName(entityName: string | cocoascript.NSString):NSFetchRequest;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506233-entityname
     entityName(): string | cocoascript.NSString;
     setEntityName(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506979-entity
-    entity(): cocoascript.NSEntityDescription;
+    entity(): NSEntityDescription;
     setEntity(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506366-includessubentities
-    includesSubentities(): cocoascript.BOOL;
+    includesSubentities(): BOOL;
     setIncludesSubentities(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506638-predicate
-    predicate(): cocoascript.NSPredicate;
+    predicate(): NSPredicate;
     setPredicate(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506622-fetchlimit
-    fetchLimit(): cocoascript.NSUInteger;
+    fetchLimit(): NSUInteger;
     setFetchLimit(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506770-fetchoffset
-    fetchOffset(): cocoascript.NSUInteger;
+    fetchOffset(): NSUInteger;
     setFetchOffset(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506558-fetchbatchsize
-    fetchBatchSize(): cocoascript.NSUInteger;
+    fetchBatchSize(): NSUInteger;
     setFetchBatchSize(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506518-affectedstores
-    affectedStores(): cocoascript.NSPersistentStore;
+    affectedStores(): NSPersistentStore;
     setAffectedStores(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506262-sortdescriptors
-    sortDescriptors(): cocoascript.NSSortDescriptor;
+    sortDescriptors(): NSSortDescriptor;
     setSortDescriptors(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506813-relationshipkeypathsforprefetchi
     relationshipKeyPathsForPrefetching(): string | cocoascript.NSString;
     setRelationshipKeyPathsForPrefetching(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506189-resulttype
-    resultType(): cocoascript.NSFetchRequestResultType;
+    resultType(): NSFetchRequestResultType;
     setResultType(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506724-includespendingchanges
-    includesPendingChanges(): cocoascript.BOOL;
+    includesPendingChanges(): BOOL;
     setIncludesPendingChanges(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506851-propertiestofetch
-    propertiesToFetch(): cocoascript.NSArray;
+    propertiesToFetch(): NSArray;
     setPropertiesToFetch(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506344-returnsdistinctresults
-    returnsDistinctResults(): cocoascript.BOOL;
+    returnsDistinctResults(): BOOL;
     setReturnsDistinctResults(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506387-includespropertyvalues
-    includesPropertyValues(): cocoascript.BOOL;
+    includesPropertyValues(): BOOL;
     setIncludesPropertyValues(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506440-shouldrefreshrefetchedobjects
-    shouldRefreshRefetchedObjects(): cocoascript.BOOL;
+    shouldRefreshRefetchedObjects(): BOOL;
     setShouldRefreshRefetchedObjects(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506756-returnsobjectsasfaults
-    returnsObjectsAsFaults(): cocoascript.BOOL;
+    returnsObjectsAsFaults(): BOOL;
     setReturnsObjectsAsFaults(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506191-propertiestogroupby
-    propertiesToGroupBy(): cocoascript.NSArray;
+    propertiesToGroupBy(): NSArray;
     setPropertiesToGroupBy(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1506429-havingpredicate
-    havingPredicate(): cocoascript.NSPredicate;
+    havingPredicate(): NSPredicate;
     setHavingPredicate(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequest/1640594-execute
-    execute(error: cocoascript.NSError):cocoascript.NSArray;
+    execute(error: NSError):NSArray;
     //
-    alloc():cocoascript.NSFetchRequest;
+    alloc():NSFetchRequest;
     //
-    init():cocoascript.NSFetchRequest;
+    init():NSFetchRequest;
   }
 }
 
@@ -451,54 +451,54 @@ declare namespace cocoascript {
    */
   interface NSManagedObjectModel extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel/1506225-initwithcontentsofurl
-    initWithContentsOfURL(url: cocoascript.NSURL):cocoascript.NSManagedObjectModel;
+    initWithContentsOfURL(url: NSURL):NSManagedObjectModel;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel/1506410-init
-    init():cocoascript.NSManagedObjectModel;
+    init():NSManagedObjectModel;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel/1506704-mergedmodelfrombundles
-    mergedModelFromBundles(bundles: cocoascript.NSBundle):cocoascript.NSManagedObjectModel;
+    mergedModelFromBundles(bundles: NSBundle):NSManagedObjectModel;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel/1506788-mergedmodelfrombundles
-    mergedModelFromBundles_forStoreMetadata(bundles: cocoascript.NSBundle, metadata: cocoascript.NSManagedObjectModel):cocoascript.NSManagedObjectModel;
+    mergedModelFromBundles_forStoreMetadata(bundles: NSBundle, metadata: NSManagedObjectModel):NSManagedObjectModel;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel/1506450-modelbymergingmodels
-    modelByMergingModels(models: cocoascript.NSManagedObjectModel):cocoascript.NSManagedObjectModel;
+    modelByMergingModels(models: NSManagedObjectModel):NSManagedObjectModel;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel/1506856-modelbymergingmodels
-    modelByMergingModels_forStoreMetadata(models: cocoascript.NSManagedObjectModel, metadata: cocoascript.NSManagedObjectModel):cocoascript.NSManagedObjectModel;
+    modelByMergingModels_forStoreMetadata(models: NSManagedObjectModel, metadata: NSManagedObjectModel):NSManagedObjectModel;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel/1506318-entities
-    entities(): cocoascript.NSEntityDescription;
+    entities(): NSEntityDescription;
     setEntities(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel/1506203-entitiesbyname
-    entitiesByName(): cocoascript.NSEntityDescription;
+    entitiesByName(): NSEntityDescription;
     setEntitiesByName(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel/1506804-configurations
     configurations(): string | cocoascript.NSString;
     setConfigurations(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel/1506693-entitiesforconfiguration
-    entitiesForConfiguration(configuration: string | cocoascript.NSString):cocoascript.NSEntityDescription;
+    entitiesForConfiguration(configuration: string | cocoascript.NSString):NSEntityDescription;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel/1506287-setentities
-    setEntities_forConfiguration(entities: cocoascript.NSEntityDescription, configuration: string | cocoascript.NSString):void;
+    setEntities_forConfiguration(entities: NSEntityDescription, configuration: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel/1506580-fetchrequesttemplatesbyname
-    fetchRequestTemplatesByName(): cocoascript.NSFetchRequest;
+    fetchRequestTemplatesByName(): NSFetchRequest;
     setFetchRequestTemplatesByName(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel/1506369-fetchrequesttemplateforname
-    fetchRequestTemplateForName(name: string | cocoascript.NSString):cocoascript.NSFetchRequest;
+    fetchRequestTemplateForName(name: string | cocoascript.NSString):NSFetchRequest;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel/1506422-fetchrequestfromtemplatewithname
-    fetchRequestFromTemplateWithName_substitutionVariables(name: string | cocoascript.NSString, variables: cocoascript.NSManagedObjectModel):cocoascript.NSFetchRequest;
+    fetchRequestFromTemplateWithName_substitutionVariables(name: string | cocoascript.NSString, variables: NSManagedObjectModel):NSFetchRequest;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel/1506695-setfetchrequesttemplate
-    setFetchRequestTemplate_forName(fetchRequestTemplate: cocoascript.NSFetchRequest, name: string | cocoascript.NSString):void;
+    setFetchRequestTemplate_forName(fetchRequestTemplate: NSFetchRequest, name: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel/1506846-localizationdictionary
     localizationDictionary(): string | cocoascript.NSString;
     setLocalizationDictionary(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel/1506940-isconfiguration
-    isConfiguration_compatibleWithStoreMetadata(configuration: string | cocoascript.NSString, metadata: cocoascript.NSManagedObjectModel):cocoascript.BOOL;
+    isConfiguration_compatibleWithStoreMetadata(configuration: string | cocoascript.NSString, metadata: NSManagedObjectModel):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel/1506992-entityversionhashesbyname
-    entityVersionHashesByName(): cocoascript.NSData;
+    entityVersionHashesByName(): NSData;
     setEntityVersionHashesByName(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectmodel/1506268-versionidentifiers
-    versionIdentifiers(): cocoascript.NSSet;
+    versionIdentifiers(): NSSet;
     setVersionIdentifiers(): void;
     //
-    alloc():cocoascript.NSManagedObjectModel;
+    alloc():NSManagedObjectModel;
     //
-    init():cocoascript.NSManagedObjectModel;
+    init():NSManagedObjectModel;
   }
 }
 
@@ -510,33 +510,33 @@ declare namespace cocoascript {
    */
   interface NSPropertyDescription extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nspropertydescription/1506745-entity
-    entity(): cocoascript.NSEntityDescription;
+    entity(): NSEntityDescription;
     setEntity(): void;
     // doc://com.apple.documentation/documentation/coredata/nspropertydescription/1506669-indexed
-    indexed(): cocoascript.BOOL;
+    indexed(): BOOL;
     setIndexed(): void;
     // doc://com.apple.documentation/documentation/coredata/nspropertydescription/1506735-optional
-    optional(): cocoascript.BOOL;
+    optional(): BOOL;
     setOptional(): void;
     // doc://com.apple.documentation/documentation/coredata/nspropertydescription/1506766-transient
-    transient(): cocoascript.BOOL;
+    transient(): BOOL;
     setTransient(): void;
     // doc://com.apple.documentation/documentation/coredata/nspropertydescription/1506759-name
     name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/coredata/nspropertydescription/1506833-userinfo
-    userInfo(): cocoascript.NSDictionary;
+    userInfo(): NSDictionary;
     setUserInfo(): void;
     // doc://com.apple.documentation/documentation/coredata/nspropertydescription/1506842-validationpredicates
-    validationPredicates(): cocoascript.NSPredicate;
+    validationPredicates(): NSPredicate;
     setValidationPredicates(): void;
     // doc://com.apple.documentation/documentation/coredata/nspropertydescription/1506886-validationwarnings
-    validationWarnings(): cocoascript.NSArray;
+    validationWarnings(): NSArray;
     setValidationWarnings(): void;
     // doc://com.apple.documentation/documentation/coredata/nspropertydescription/1506852-setvalidationpredicates
-    setValidationPredicates_withValidationWarnings(validationPredicates: cocoascript.NSPredicate, validationWarnings: string | cocoascript.NSString):void;
+    setValidationPredicates_withValidationWarnings(validationPredicates: NSPredicate, validationWarnings: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/coredata/nspropertydescription/1506198-versionhash
-    versionHash(): cocoascript.NSData;
+    versionHash(): NSData;
     setVersionHash(): void;
     // doc://com.apple.documentation/documentation/coredata/nspropertydescription/1506214-versionhashmodifier
     versionHashModifier(): string | cocoascript.NSString;
@@ -545,15 +545,15 @@ declare namespace cocoascript {
     renamingIdentifier(): string | cocoascript.NSString;
     setRenamingIdentifier(): void;
     // doc://com.apple.documentation/documentation/coredata/nspropertydescription/1506784-indexedbyspotlight
-    indexedBySpotlight(): cocoascript.BOOL;
+    indexedBySpotlight(): BOOL;
     setIndexedBySpotlight(): void;
     // doc://com.apple.documentation/documentation/coredata/nspropertydescription/1506260-storedinexternalrecord
-    storedInExternalRecord(): cocoascript.BOOL;
+    storedInExternalRecord(): BOOL;
     setStoredInExternalRecord(): void;
     //
-    alloc():cocoascript.NSPropertyDescription;
+    alloc():NSPropertyDescription;
     //
-    init():cocoascript.NSPropertyDescription;
+    init():NSPropertyDescription;
   }
 }
 
@@ -565,26 +565,26 @@ declare namespace cocoascript {
    */
   interface NSFetchIndexElementDescription extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nsfetchindexelementdescription/2887043-initwithproperty
-    initWithProperty_collationType(property: cocoascript.NSPropertyDescription, collationType: cocoascript.NSFetchIndexElementType):cocoascript.NSFetchIndexElementDescription;
+    initWithProperty_collationType(property: NSPropertyDescription, collationType: NSFetchIndexElementType):NSFetchIndexElementDescription;
     // doc://com.apple.documentation/documentation/coredata/nsfetchindexelementdescription/2887048-collationtype
-    collationType(): cocoascript.NSFetchIndexElementType;
+    collationType(): NSFetchIndexElementType;
     setCollationType(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchindexelementdescription/2887047-indexdescription
-    indexDescription(): cocoascript.NSFetchIndexDescription;
+    indexDescription(): NSFetchIndexDescription;
     setIndexDescription(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchindexelementdescription/2887051-ascending
-    ascending(): cocoascript.BOOL;
+    ascending(): BOOL;
     setAscending(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchindexelementdescription/2887049-property
-    property(): cocoascript.NSPropertyDescription;
+    property(): NSPropertyDescription;
     setProperty(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchindexelementdescription/2887045-propertyname
     propertyName(): string | cocoascript.NSString;
     setPropertyName(): void;
     //
-    alloc():cocoascript.NSFetchIndexElementDescription;
+    alloc():NSFetchIndexElementDescription;
     //
-    init():cocoascript.NSFetchIndexElementDescription;
+    init():NSFetchIndexElementDescription;
   }
 }
 
@@ -596,23 +596,23 @@ declare namespace cocoascript {
    */
   interface NSFetchIndexDescription extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nsfetchindexdescription/2887053-initwithname
-    initWithName_elements(name: string | cocoascript.NSString, elements: cocoascript.NSFetchIndexElementDescription):cocoascript.NSFetchIndexDescription;
+    initWithName_elements(name: string | cocoascript.NSString, elements: NSFetchIndexElementDescription):NSFetchIndexDescription;
     // doc://com.apple.documentation/documentation/coredata/nsfetchindexdescription/2887054-elements
-    elements(): cocoascript.NSFetchIndexElementDescription;
+    elements(): NSFetchIndexElementDescription;
     setElements(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchindexdescription/2887055-entity
-    entity(): cocoascript.NSEntityDescription;
+    entity(): NSEntityDescription;
     setEntity(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchindexdescription/2887056-name
     name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchindexdescription/2887058-partialindexpredicate
-    partialIndexPredicate(): cocoascript.NSPredicate;
+    partialIndexPredicate(): NSPredicate;
     setPartialIndexPredicate(): void;
     //
-    alloc():cocoascript.NSFetchIndexDescription;
+    alloc():NSFetchIndexDescription;
     //
-    init():cocoascript.NSFetchIndexDescription;
+    init():NSFetchIndexDescription;
   }
 }
 
@@ -632,19 +632,19 @@ declare namespace cocoascript {
    */
   interface NSFetchedResultsControllerDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontrollerdelegate/3235742-controller
-    controller_didChangeContentWithSnapshot(controller: cocoascript.NSFetchedResultsController, snapshot: cocoascript.NSManagedObjectID):void;
+    controller_didChangeContentWithSnapshot(controller: NSFetchedResultsController, snapshot: NSManagedObjectID):void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontrollerdelegate/3235741-controller
-    controller_didChangeContentWithDifference(controller: cocoascript.NSFetchedResultsController, diff: cocoascript.NSManagedObjectID):void;
+    controller_didChangeContentWithDifference(controller: NSFetchedResultsController, diff: NSManagedObjectID):void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontrollerdelegate/1622295-controllerwillchangecontent
-    controllerWillChangeContent(controller: cocoascript.NSFetchedResultsController):void;
+    controllerWillChangeContent(controller: NSFetchedResultsController):void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontrollerdelegate/1622296-controller
-    controller_didChangeObject_atIndexPath_forChangeType_newIndexPath(controller: cocoascript.NSFetchedResultsController, anObject: cocoascript.NSFetchedResultsControllerDelegate, indexPath: cocoascript.NSIndexPath, type: cocoascript.NSFetchedResultsChangeType, newIndexPath: cocoascript.NSIndexPath):void;
+    controller_didChangeObject_atIndexPath_forChangeType_newIndexPath(controller: NSFetchedResultsController, anObject: NSFetchedResultsControllerDelegate, indexPath: NSIndexPath, type: NSFetchedResultsChangeType, newIndexPath: NSIndexPath):void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontrollerdelegate/1622298-controller
-    controller_didChangeSection_atIndex_forChangeType(controller: cocoascript.NSFetchedResultsController, sectionInfo: cocoascript.NSFetchedResultsSectionInfo, sectionIndex: cocoascript.NSUInteger, type: cocoascript.NSFetchedResultsChangeType):void;
+    controller_didChangeSection_atIndex_forChangeType(controller: NSFetchedResultsController, sectionInfo: NSFetchedResultsSectionInfo, sectionIndex: NSUInteger, type: NSFetchedResultsChangeType):void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontrollerdelegate/1622290-controllerdidchangecontent
-    controllerDidChangeContent(controller: cocoascript.NSFetchedResultsController):void;
+    controllerDidChangeContent(controller: NSFetchedResultsController):void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontrollerdelegate/1622286-controller
-    controller_sectionIndexTitleForSectionName(controller: cocoascript.NSFetchedResultsController, sectionName: string | cocoascript.NSString):string | cocoascript.NSString;
+    controller_sectionIndexTitleForSectionName(controller: NSFetchedResultsController, sectionName: string | cocoascript.NSString):string | cocoascript.NSString;
   }
 }
 declare namespace cocoascript {
@@ -654,20 +654,20 @@ declare namespace cocoascript {
    */
   interface NSManagedObjectID extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectid/1391684-entity
-    entity(): cocoascript.NSEntityDescription;
+    entity(): NSEntityDescription;
     setEntity(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectid/1391691-temporaryid
-    temporaryID(): cocoascript.BOOL;
+    temporaryID(): BOOL;
     setTemporaryID(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectid/1391693-persistentstore
-    persistentStore(): cocoascript.NSPersistentStore;
+    persistentStore(): NSPersistentStore;
     setPersistentStore(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectid/1391689-urirepresentation
-    URIRepresentation():cocoascript.NSURL;
+    URIRepresentation():NSURL;
     //
-    alloc():cocoascript.NSManagedObjectID;
+    alloc():NSManagedObjectID;
     //
-    init():cocoascript.NSManagedObjectID;
+    init():NSManagedObjectID;
   }
 }
 
@@ -679,15 +679,15 @@ declare namespace cocoascript {
    */
   interface NSPersistentStoreRequest extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorerequest/1506844-affectedstores
-    affectedStores(): cocoascript.NSPersistentStore;
+    affectedStores(): NSPersistentStore;
     setAffectedStores(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorerequest/1506892-requesttype
-    requestType(): cocoascript.NSPersistentStoreRequestType;
+    requestType(): NSPersistentStoreRequestType;
     setRequestType(): void;
     //
-    alloc():cocoascript.NSPersistentStoreRequest;
+    alloc():NSPersistentStoreRequest;
     //
-    init():cocoascript.NSPersistentStoreRequest;
+    init():NSPersistentStoreRequest;
   }
 }
 
@@ -699,12 +699,12 @@ declare namespace cocoascript {
    */
   interface NSQueryGenerationToken extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nsquerygenerationtoken/1640578-currentquerygenerationtoken
-    currentQueryGenerationToken(): cocoascript.NSQueryGenerationToken;
+    currentQueryGenerationToken(): NSQueryGenerationToken;
     setCurrentQueryGenerationToken(): void;
     //
-    alloc():cocoascript.NSQueryGenerationToken;
+    alloc():NSQueryGenerationToken;
     //
-    init():cocoascript.NSQueryGenerationToken;
+    init():NSQueryGenerationToken;
   }
 }
 
@@ -716,50 +716,50 @@ declare namespace cocoascript {
    */
   interface NSPersistentStoreDescription extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nspersistentstoredescription/1640563-initwithurl
-    initWithURL(url: cocoascript.NSURL):cocoascript.NSPersistentStoreDescription;
+    initWithURL(url: NSURL):NSPersistentStoreDescription;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstoredescription/1646473-persistentstoredescriptionwithur
-    persistentStoreDescriptionWithURL(URL: cocoascript.NSURL):cocoascript.NSPersistentStoreDescription;
+    persistentStoreDescriptionWithURL(URL: NSURL):NSPersistentStoreDescription;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstoredescription/1640616-url
-    URL(): cocoascript.NSURL;
+    URL(): NSURL;
     setURL(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstoredescription/1640634-configuration
     configuration(): string | cocoascript.NSString;
     setConfiguration(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstoredescription/1640587-timeout
-    timeout(): cocoascript.NSTimeInterval;
+    timeout(): NSTimeInterval;
     setTimeout(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstoredescription/1640609-type
     type(): string | cocoascript.NSString;
     setType(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstoredescription/1640626-readonly
-    readOnly(): cocoascript.BOOL;
+    readOnly(): BOOL;
     setReadOnly(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstoredescription/1640599-shouldaddstoreasynchronously
-    shouldAddStoreAsynchronously(): cocoascript.BOOL;
+    shouldAddStoreAsynchronously(): BOOL;
     setShouldAddStoreAsynchronously(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstoredescription/1640623-shouldinfermappingmodelautomatic
-    shouldInferMappingModelAutomatically(): cocoascript.BOOL;
+    shouldInferMappingModelAutomatically(): BOOL;
     setShouldInferMappingModelAutomatically(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstoredescription/1640566-shouldmigratestoreautomatically
-    shouldMigrateStoreAutomatically(): cocoascript.BOOL;
+    shouldMigrateStoreAutomatically(): BOOL;
     setShouldMigrateStoreAutomatically(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstoredescription/1640574-setoption
-    setOption_forKey(option: cocoascript.NSObject, key: string | cocoascript.NSString):void;
+    setOption_forKey(option: NSObject, key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstoredescription/1640598-setvalue
-    setValue_forPragmaNamed(value: cocoascript.NSObject, name: string | cocoascript.NSString):void;
+    setValue_forPragmaNamed(value: NSObject, name: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstoredescription/1640571-options
-    options(): cocoascript.NSObject;
+    options(): NSObject;
     setOptions(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstoredescription/1640614-sqlitepragmas
-    sqlitePragmas(): cocoascript.NSObject;
+    sqlitePragmas(): NSObject;
     setSqlitePragmas(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstoredescription/3141672-cloudkitcontaineroptions
-    cloudKitContainerOptions(): cocoascript.NSPersistentCloudKitContainerOptions;
+    cloudKitContainerOptions(): NSPersistentCloudKitContainerOptions;
     setCloudKitContainerOptions(): void;
     //
-    alloc():cocoascript.NSPersistentStoreDescription;
+    alloc():NSPersistentStoreDescription;
     //
-    init():cocoascript.NSPersistentStoreDescription;
+    init():NSPersistentStoreDescription;
   }
 }
 
@@ -771,35 +771,35 @@ declare namespace cocoascript {
    */
   interface NSPersistentHistoryChange extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorychange/3240591-fetchrequest
-    fetchRequest(): cocoascript.NSFetchRequest;
+    fetchRequest(): NSFetchRequest;
     setFetchRequest(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorychange/3240589-entitydescription
-    entityDescription(): cocoascript.NSEntityDescription;
+    entityDescription(): NSEntityDescription;
     setEntityDescription(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorychange/3240590-entitydescriptionwithcontext
-    entityDescriptionWithContext(context: cocoascript.NSManagedObjectContext):cocoascript.NSEntityDescription;
+    entityDescriptionWithContext(context: NSManagedObjectContext):NSEntityDescription;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorychange/2892569-changeid
     changeID(): number;
     setChangeID(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorychange/2892563-changetype
-    changeType(): cocoascript.NSPersistentHistoryChangeType;
+    changeType(): NSPersistentHistoryChangeType;
     setChangeType(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorychange/2892570-changedobjectid
-    changedObjectID(): cocoascript.NSManagedObjectID;
+    changedObjectID(): NSManagedObjectID;
     setChangedObjectID(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorychange/2892564-tombstone
-    tombstone(): cocoascript.NSDictionary;
+    tombstone(): NSDictionary;
     setTombstone(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorychange/2892567-transaction
-    transaction(): cocoascript.NSPersistentHistoryTransaction;
+    transaction(): NSPersistentHistoryTransaction;
     setTransaction(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorychange/2892568-updatedproperties
-    updatedProperties(): cocoascript.NSPropertyDescription;
+    updatedProperties(): NSPropertyDescription;
     setUpdatedProperties(): void;
     //
-    alloc():cocoascript.NSPersistentHistoryChange;
+    alloc():NSPersistentHistoryChange;
     //
-    init():cocoascript.NSPersistentHistoryChange;
+    init():NSPersistentHistoryChange;
   }
 }
 
@@ -811,9 +811,9 @@ declare namespace cocoascript {
    */
   interface NSPersistentHistoryToken extends NSObject {
     //
-    alloc():cocoascript.NSPersistentHistoryToken;
+    alloc():NSPersistentHistoryToken;
     //
-    init():cocoascript.NSPersistentHistoryToken;
+    init():NSPersistentHistoryToken;
   }
 }
 
@@ -825,15 +825,15 @@ declare namespace cocoascript {
    */
   interface NSPersistentHistoryTransaction extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorytransaction/2894946-objectidnotification
-    objectIDNotification():cocoascript.NSNotification;
+    objectIDNotification():NSNotification;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorytransaction/3240596-fetchrequest
-    fetchRequest(): cocoascript.NSFetchRequest;
+    fetchRequest(): NSFetchRequest;
     setFetchRequest(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorytransaction/3240594-entitydescription
-    entityDescription(): cocoascript.NSEntityDescription;
+    entityDescription(): NSEntityDescription;
     setEntityDescription(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorytransaction/3240595-entitydescriptionwithcontext
-    entityDescriptionWithContext(context: cocoascript.NSManagedObjectContext):cocoascript.NSEntityDescription;
+    entityDescriptionWithContext(context: NSManagedObjectContext):NSEntityDescription;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorytransaction/2894947-author
     author(): string | cocoascript.NSString;
     setAuthor(): void;
@@ -841,7 +841,7 @@ declare namespace cocoascript {
     bundleID(): string | cocoascript.NSString;
     setBundleID(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorytransaction/2894948-changes
-    changes(): cocoascript.NSPersistentHistoryChange;
+    changes(): NSPersistentHistoryChange;
     setChanges(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorytransaction/2894944-contextname
     contextName(): string | cocoascript.NSString;
@@ -853,18 +853,18 @@ declare namespace cocoascript {
     storeID(): string | cocoascript.NSString;
     setStoreID(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorytransaction/2894940-timestamp
-    timestamp(): cocoascript.NSDate;
+    timestamp(): NSDate;
     setTimestamp(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorytransaction/2894938-token
-    token(): cocoascript.NSPersistentHistoryToken;
+    token(): NSPersistentHistoryToken;
     setToken(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorytransaction/2894945-transactionnumber
     transactionNumber(): number;
     setTransactionNumber(): void;
     //
-    alloc():cocoascript.NSPersistentHistoryTransaction;
+    alloc():NSPersistentHistoryTransaction;
     //
-    init():cocoascript.NSPersistentHistoryTransaction;
+    init():NSPersistentHistoryTransaction;
   }
 }
 
@@ -875,30 +875,30 @@ declare namespace cocoascript {
    */
   interface NSPersistentCloudKitContainerEvent extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerevent/3618801-enddate
-    endDate(): cocoascript.NSDate;
+    endDate(): NSDate;
     setEndDate(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerevent/3618802-error
-    error(): cocoascript.NSError;
+    error(): NSError;
     setError(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerevent/3618803-identifier
-    identifier(): cocoascript.NSUUID;
+    identifier(): NSUUID;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerevent/3618804-startdate
-    startDate(): cocoascript.NSDate;
+    startDate(): NSDate;
     setStartDate(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerevent/3618805-storeidentifier
     storeIdentifier(): string | cocoascript.NSString;
     setStoreIdentifier(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerevent/3618806-succeeded
-    succeeded(): cocoascript.BOOL;
+    succeeded(): BOOL;
     setSucceeded(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainerevent/3618807-type
-    type(): cocoascript.NSPersistentCloudKitContainerEventType;
+    type(): NSPersistentCloudKitContainerEventType;
     setType(): void;
     //
-    alloc():cocoascript.NSPersistentCloudKitContainerEvent;
+    alloc():NSPersistentCloudKitContainerEvent;
     //
-    init():cocoascript.NSPersistentCloudKitContainerEvent;
+    init():NSPersistentCloudKitContainerEvent;
   }
 }
 
@@ -914,79 +914,79 @@ declare namespace cocoascript {
    */
   interface NSPersistentStoreCoordinator extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468895-initwithmanagedobjectmodel
-    initWithManagedObjectModel(model: cocoascript.NSManagedObjectModel):cocoascript.NSPersistentStoreCoordinator;
+    initWithManagedObjectModel(model: NSManagedObjectModel):NSPersistentStoreCoordinator;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468834-managedobjectmodel
-    managedObjectModel(): cocoascript.NSManagedObjectModel;
+    managedObjectModel(): NSManagedObjectModel;
     setManagedObjectModel(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468870-registeredstoretypes
-    registeredStoreTypes(): cocoascript.NSValue;
+    registeredStoreTypes(): NSValue;
     setRegisteredStoreTypes(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468786-registerstoreclass
-    registerStoreClass_forStoreType(storeClass: cocoascript.Class, storeType: string | cocoascript.NSString):void;
+    registerStoreClass_forStoreType(storeClass: Class, storeType: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468860-addpersistentstorewithtype
-    addPersistentStoreWithType_configuration_URL_options_error(storeType: string | cocoascript.NSString, configuration: string | cocoascript.NSString, storeURL: cocoascript.NSURL, options: cocoascript.NSDictionary, error: cocoascript.NSError):cocoascript.NSPersistentStore;
+    addPersistentStoreWithType_configuration_URL_options_error(storeType: string | cocoascript.NSString, configuration: string | cocoascript.NSString, storeURL: NSURL, options: NSDictionary, error: NSError):NSPersistentStore;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1640556-addpersistentstorewithdescriptio
-    addPersistentStoreWithDescription_completionHandler(storeDescription: cocoascript.NSPersistentStoreDescription, block: cocoascript.NSError):void;
+    addPersistentStoreWithDescription_completionHandler(storeDescription: NSPersistentStoreDescription, block: NSError):void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468858-seturl
-    setURL_forPersistentStore(url: cocoascript.NSURL, store: cocoascript.NSPersistentStore):cocoascript.BOOL;
+    setURL_forPersistentStore(url: NSURL, store: NSPersistentStore):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468907-removepersistentstore
-    removePersistentStore_error(store: cocoascript.NSPersistentStore, error: cocoascript.NSError):cocoascript.BOOL;
+    removePersistentStore_error(store: NSPersistentStore, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468888-destroypersistentstoreaturl
-    destroyPersistentStoreAtURL_withType_options_error(url: cocoascript.NSURL, storeType: string | cocoascript.NSString, options: cocoascript.NSDictionary, error: cocoascript.NSError):cocoascript.BOOL;
+    destroyPersistentStoreAtURL_withType_options_error(url: NSURL, storeType: string | cocoascript.NSString, options: NSDictionary, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468927-migratepersistentstore
-    migratePersistentStore_toURL_options_withType_error(store: cocoascript.NSPersistentStore, URL: cocoascript.NSURL, options: cocoascript.NSDictionary, storeType: string | cocoascript.NSString, error: cocoascript.NSError):cocoascript.NSPersistentStore;
+    migratePersistentStore_toURL_options_withType_error(store: NSPersistentStore, URL: NSURL, options: NSDictionary, storeType: string | cocoascript.NSString, error: NSError):NSPersistentStore;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468790-persistentstores
-    persistentStores(): cocoascript.NSPersistentStore;
+    persistentStores(): NSPersistentStore;
     setPersistentStores(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468824-persistentstoreforurl
-    persistentStoreForURL(URL: cocoascript.NSURL):cocoascript.NSPersistentStore;
+    persistentStoreForURL(URL: NSURL):NSPersistentStore;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468865-urlforpersistentstore
-    URLForPersistentStore(store: cocoascript.NSPersistentStore):cocoascript.NSURL;
+    URLForPersistentStore(store: NSPersistentStore):NSURL;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468917-replacepersistentstoreaturl
-    replacePersistentStoreAtURL_destinationOptions_withPersistentStoreFromURL_sourceOptions_storeType_error(destinationURL: cocoascript.NSURL, destinationOptions: cocoascript.NSDictionary, sourceURL: cocoascript.NSURL, sourceOptions: cocoascript.NSDictionary, storeType: string | cocoascript.NSString, error: cocoascript.NSError):cocoascript.BOOL;
+    replacePersistentStoreAtURL_destinationOptions_withPersistentStoreFromURL_sourceOptions_storeType_error(destinationURL: NSURL, destinationOptions: NSDictionary, sourceURL: NSURL, sourceOptions: NSDictionary, storeType: string | cocoascript.NSString, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468929-name
     name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468872-executerequest
-    executeRequest_withContext_error(request: cocoascript.NSPersistentStoreRequest, context: cocoascript.NSManagedObjectContext, error: cocoascript.NSError):cocoascript.NSPersistentStoreCoordinator;
+    executeRequest_withContext_error(request: NSPersistentStoreRequest, context: NSManagedObjectContext, error: NSError):NSPersistentStoreCoordinator;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468794-performblock
     performBlock(block: void):void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468862-performblockandwait
     performBlockAndWait(block: void):void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/3325497-currentpersistenthistorytokenfro
-    currentPersistentHistoryTokenFromStores(stores: cocoascript.NSArray):cocoascript.NSPersistentHistoryToken;
+    currentPersistentHistoryTokenFromStores(stores: NSArray):NSPersistentHistoryToken;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468778-metadataforpersistentstoreoftype
-    metadataForPersistentStoreOfType_URL_options_error(storeType: string | cocoascript.NSString, url: cocoascript.NSURL, options: cocoascript.NSDictionary, error: cocoascript.NSError):cocoascript.NSPersistentStoreCoordinator;
+    metadataForPersistentStoreOfType_URL_options_error(storeType: string | cocoascript.NSString, url: NSURL, options: NSDictionary, error: NSError):NSPersistentStoreCoordinator;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468893-setmetadata
-    setMetadata_forPersistentStoreOfType_URL_options_error(metadata: cocoascript.NSPersistentStoreCoordinator, storeType: string | cocoascript.NSString, url: cocoascript.NSURL, options: cocoascript.NSDictionary, error: cocoascript.NSError):cocoascript.BOOL;
+    setMetadata_forPersistentStoreOfType_URL_options_error(metadata: NSPersistentStoreCoordinator, storeType: string | cocoascript.NSString, url: NSURL, options: NSDictionary, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468911-metadataforpersistentstore
-    metadataForPersistentStore(store: cocoascript.NSPersistentStore):cocoascript.NSPersistentStoreCoordinator;
+    metadataForPersistentStore(store: NSPersistentStore):NSPersistentStoreCoordinator;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468899-setmetadata
-    setMetadata_forPersistentStore(metadata: cocoascript.NSPersistentStoreCoordinator, store: cocoascript.NSPersistentStore):void;
+    setMetadata_forPersistentStore(metadata: NSPersistentStoreCoordinator, store: NSPersistentStore):void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468919-elementsderivedfromexternalrecor
-    elementsDerivedFromExternalRecordURL(fileURL: cocoascript.NSURL):cocoascript.NSDictionary;
+    elementsDerivedFromExternalRecordURL(fileURL: NSURL):NSDictionary;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468788-importstorewithidentifier
-    importStoreWithIdentifier_fromExternalRecordsDirectory_toURL_options_withType_error(storeIdentifier: string | cocoascript.NSString, externalRecordsURL: cocoascript.NSURL, destinationURL: cocoascript.NSURL, options: cocoascript.NSDictionary, storeType: string | cocoascript.NSString, error: cocoascript.NSError):cocoascript.NSPersistentStore;
+    importStoreWithIdentifier_fromExternalRecordsDirectory_toURL_options_withType_error(storeIdentifier: string | cocoascript.NSString, externalRecordsURL: NSURL, destinationURL: NSURL, options: NSDictionary, storeType: string | cocoascript.NSString, error: NSError):NSPersistentStore;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468882-managedobjectidforurirepresentat
-    managedObjectIDForURIRepresentation(url: cocoascript.NSURL):cocoascript.NSManagedObjectID;
+    managedObjectIDForURIRepresentation(url: NSURL):NSManagedObjectID;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468915-metadataforpersistentstorewithur
-    metadataForPersistentStoreWithURL_error(url: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.NSDictionary;
+    metadataForPersistentStoreWithURL_error(url: NSURL, error: NSError):NSDictionary;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468923-removeubiquitouscontentandpersis
-    removeUbiquitousContentAndPersistentStoreAtURL_options_error(storeURL: cocoascript.NSURL, options: cocoascript.NSDictionary, error: cocoascript.NSError):cocoascript.BOOL;
+    removeUbiquitousContentAndPersistentStoreAtURL_options_error(storeURL: NSURL, options: NSDictionary, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468897-setmetadata
-    setMetadata_forPersistentStoreOfType_URL_error(metadata: cocoascript.NSPersistentStoreCoordinator, storeType: string | cocoascript.NSString, url: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.BOOL;
+    setMetadata_forPersistentStoreOfType_URL_error(metadata: NSPersistentStoreCoordinator, storeType: string | cocoascript.NSString, url: NSURL, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468804-metadataforpersistentstoreoftype
-    metadataForPersistentStoreOfType_URL_error(storeType: string | cocoascript.NSString, url: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.NSPersistentStoreCoordinator;
+    metadataForPersistentStoreOfType_URL_error(storeType: string | cocoascript.NSString, url: NSURL, error: NSError):NSPersistentStoreCoordinator;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468890-unlock
     unlock():void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468775-lock
     lock():void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinator/1468852-trylock
-    tryLock():cocoascript.BOOL;
+    tryLock():BOOL;
     //
-    alloc():cocoascript.NSPersistentStoreCoordinator;
+    alloc():NSPersistentStoreCoordinator;
     //
-    init():cocoascript.NSPersistentStoreCoordinator;
+    init():NSPersistentStoreCoordinator;
   }
 }
 
@@ -1010,30 +1010,30 @@ declare namespace cocoascript {
    */
   interface NSAttributeDescription extends NSPropertyDescription {
     // doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498291-attributetype
-    attributeType(): cocoascript.NSAttributeType;
+    attributeType(): NSAttributeType;
     setAttributeType(): void;
     // doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498309-attributevalueclassname
     attributeValueClassName(): string | cocoascript.NSString;
     setAttributeValueClassName(): void;
     // doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498302-defaultvalue
-    defaultValue(): cocoascript.id;
+    defaultValue(): id;
     setDefaultValue(): void;
     // doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498310-versionhash
-    versionHash(): cocoascript.NSData;
+    versionHash(): NSData;
     setVersionHash(): void;
     // doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498305-valuetransformername
     valueTransformerName(): string | cocoascript.NSString;
     setValueTransformerName(): void;
     // doc://com.apple.documentation/documentation/coredata/nsattributedescription/1498295-allowsexternalbinarydatastorage
-    allowsExternalBinaryDataStorage(): cocoascript.BOOL;
+    allowsExternalBinaryDataStorage(): BOOL;
     setAllowsExternalBinaryDataStorage(): void;
     // doc://com.apple.documentation/documentation/coredata/nsattributedescription/3180042-preservesvalueinhistoryondeletio
-    preservesValueInHistoryOnDeletion(): cocoascript.BOOL;
+    preservesValueInHistoryOnDeletion(): BOOL;
     setPreservesValueInHistoryOnDeletion(): void;
     //
-    alloc():cocoascript.NSAttributeDescription;
+    alloc():NSAttributeDescription;
     //
-    init():cocoascript.NSAttributeDescription;
+    init():NSAttributeDescription;
   }
 }
 
@@ -1049,50 +1049,50 @@ declare namespace cocoascript {
    */
   interface NSPersistentStore extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506232-initwithpersistentstorecoordinat
-    initWithPersistentStoreCoordinator_configurationName_URL_options(root: cocoascript.NSPersistentStoreCoordinator, name: string | cocoascript.NSString, url: cocoascript.NSURL, options: cocoascript.NSDictionary):cocoascript.NSPersistentStore;
+    initWithPersistentStoreCoordinator_configurationName_URL_options(root: NSPersistentStoreCoordinator, name: string | cocoascript.NSString, url: NSURL, options: NSDictionary):NSPersistentStore;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506250-type
     type(): string | cocoascript.NSString;
     setType(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506226-persistentstorecoordinator
-    persistentStoreCoordinator(): cocoascript.NSPersistentStoreCoordinator;
+    persistentStoreCoordinator(): NSPersistentStoreCoordinator;
     setPersistentStoreCoordinator(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506620-configurationname
     configurationName(): string | cocoascript.NSString;
     setConfigurationName(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506821-options
-    options(): cocoascript.NSDictionary;
+    options(): NSDictionary;
     setOptions(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506700-url
-    URL(): cocoascript.NSURL;
+    URL(): NSURL;
     setURL(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506215-identifier
     identifier(): string | cocoascript.NSString;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506183-readonly
-    readOnly(): cocoascript.BOOL;
+    readOnly(): BOOL;
     setReadOnly(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506741-metadataforpersistentstorewithur
-    metadataForPersistentStoreWithURL_error(url: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.NSPersistentStore;
+    metadataForPersistentStoreWithURL_error(url: NSURL, error: NSError):NSPersistentStore;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506824-setmetadata
-    setMetadata_forPersistentStoreWithURL_error(metadata: cocoascript.NSPersistentStore, url: cocoascript.NSURL, error: cocoascript.NSError):cocoascript.BOOL;
+    setMetadata_forPersistentStoreWithURL_error(metadata: NSPersistentStore, url: NSURL, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506564-metadata
-    metadata(): cocoascript.id;
+    metadata(): id;
     setMetadata(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506273-loadmetadata
-    loadMetadata(error: cocoascript.NSError):cocoascript.BOOL;
+    loadMetadata(error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506873-didaddtopersistentstorecoordinat
-    didAddToPersistentStoreCoordinator(coordinator: cocoascript.NSPersistentStoreCoordinator):void;
+    didAddToPersistentStoreCoordinator(coordinator: NSPersistentStoreCoordinator):void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506731-willremovefrompersistentstorecoo
-    willRemoveFromPersistentStoreCoordinator(coordinator: cocoascript.NSPersistentStoreCoordinator):void;
+    willRemoveFromPersistentStoreCoordinator(coordinator: NSPersistentStoreCoordinator):void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstore/1506361-migrationmanagerclass
-    migrationManagerClass():cocoascript.Class;
+    migrationManagerClass():Class;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstore/2897191-corespotlightexporter
-    coreSpotlightExporter(): cocoascript.NSCoreDataCoreSpotlightDelegate;
+    coreSpotlightExporter(): NSCoreDataCoreSpotlightDelegate;
     setCoreSpotlightExporter(): void;
     //
-    alloc():cocoascript.NSPersistentStore;
+    alloc():NSPersistentStore;
     //
-    init():cocoascript.NSPersistentStore;
+    init():NSPersistentStore;
   }
 }
 
@@ -1108,20 +1108,20 @@ declare namespace cocoascript {
    */
   interface NSFetchRequestExpression extends NSExpression {
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequestexpression/1391661-expressionforfetch
-    expressionForFetch_context_countOnly(fetch: cocoascript.NSExpression, context: cocoascript.NSExpression, countFlag: cocoascript.BOOL):cocoascript.NSExpression;
+    expressionForFetch_context_countOnly(fetch: NSExpression, context: NSExpression, countFlag: BOOL):NSExpression;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequestexpression/1391672-requestexpression
-    requestExpression(): cocoascript.NSExpression;
+    requestExpression(): NSExpression;
     setRequestExpression(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequestexpression/1391665-contextexpression
-    contextExpression(): cocoascript.NSExpression;
+    contextExpression(): NSExpression;
     setContextExpression(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchrequestexpression/1391670-countonlyrequest
-    countOnlyRequest(): cocoascript.BOOL;
+    countOnlyRequest(): BOOL;
     setCountOnlyRequest(): void;
     //
-    alloc():cocoascript.NSFetchRequestExpression;
+    alloc():NSFetchRequestExpression;
     //
-    init():cocoascript.NSFetchRequestExpression;
+    init():NSFetchRequestExpression;
   }
 }
 
@@ -1133,15 +1133,15 @@ declare namespace cocoascript {
    */
   interface NSExpressionDescription extends NSPropertyDescription {
     // doc://com.apple.documentation/documentation/coredata/nsexpressiondescription/1506817-expression
-    expression(): cocoascript.NSExpression;
+    expression(): NSExpression;
     setExpression(): void;
     // doc://com.apple.documentation/documentation/coredata/nsexpressiondescription/1506706-expressionresulttype
-    expressionResultType(): cocoascript.NSAttributeType;
+    expressionResultType(): NSAttributeType;
     setExpressionResultType(): void;
     //
-    alloc():cocoascript.NSExpressionDescription;
+    alloc():NSExpressionDescription;
     //
-    init():cocoascript.NSExpressionDescription;
+    init():NSExpressionDescription;
   }
 }
 
@@ -1153,12 +1153,12 @@ declare namespace cocoascript {
    */
   interface NSFetchedPropertyDescription extends NSPropertyDescription {
     // doc://com.apple.documentation/documentation/coredata/nsfetchedpropertydescription/1494679-fetchrequest
-    fetchRequest(): cocoascript.NSFetchRequest;
+    fetchRequest(): NSFetchRequest;
     setFetchRequest(): void;
     //
-    alloc():cocoascript.NSFetchedPropertyDescription;
+    alloc():NSFetchedPropertyDescription;
     //
-    init():cocoascript.NSFetchedPropertyDescription;
+    init():NSFetchedPropertyDescription;
   }
 }
 
@@ -1170,20 +1170,20 @@ declare namespace cocoascript {
    */
   interface NSAsynchronousFetchRequest extends NSPersistentStoreRequest {
     // doc://com.apple.documentation/documentation/coredata/nsasynchronousfetchrequest/1506218-initwithfetchrequest
-    initWithFetchRequest_completionBlock(request: any, blk: any):cocoascript.NSAsynchronousFetchRequest;
+    initWithFetchRequest_completionBlock(request: any, blk: any):NSAsynchronousFetchRequest;
     // doc://com.apple.documentation/documentation/coredata/nsasynchronousfetchrequest/1506815-completionblock
-    completionBlock(): cocoascript.NSPersistentStoreAsynchronousFetchResultCompletionBlock;
+    completionBlock(): NSPersistentStoreAsynchronousFetchResultCompletionBlock;
     setCompletionBlock(): void;
     // doc://com.apple.documentation/documentation/coredata/nsasynchronousfetchrequest/1506474-estimatedresultcount
-    estimatedResultCount(): cocoascript.NSInteger;
+    estimatedResultCount(): NSInteger;
     setEstimatedResultCount(): void;
     // doc://com.apple.documentation/documentation/coredata/nsasynchronousfetchrequest/1506719-fetchrequest
     fetchRequest(): any;
     setFetchRequest(): void;
     //
-    alloc():cocoascript.NSAsynchronousFetchRequest;
+    alloc():NSAsynchronousFetchRequest;
     //
-    init():cocoascript.NSAsynchronousFetchRequest;
+    init():NSAsynchronousFetchRequest;
   }
 }
 
@@ -1201,9 +1201,9 @@ declare namespace cocoascript {
     finalResult(): any;
     setFinalResult(): void;
     //
-    alloc():cocoascript.NSAsynchronousFetchResult;
+    alloc():NSAsynchronousFetchResult;
     //
-    init():cocoascript.NSAsynchronousFetchResult;
+    init():NSAsynchronousFetchResult;
   }
 }
 
@@ -1215,14 +1215,14 @@ declare namespace cocoascript {
    */
   interface NSFetchedResultsController extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622282-initwithfetchrequest
-    initWithFetchRequest_managedObjectContext_sectionNameKeyPath_cacheName(fetchRequest: any, context: cocoascript.NSManagedObjectContext, sectionNameKeyPath: string | cocoascript.NSString, name: string | cocoascript.NSString):cocoascript.NSFetchedResultsController;
+    initWithFetchRequest_managedObjectContext_sectionNameKeyPath_cacheName(fetchRequest: any, context: NSManagedObjectContext, sectionNameKeyPath: string | cocoascript.NSString, name: string | cocoascript.NSString):NSFetchedResultsController;
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622305-performfetch
-    performFetch(error: cocoascript.NSError):cocoascript.BOOL;
+    performFetch(error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622287-fetchrequest
     fetchRequest(): any;
     setFetchRequest(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622304-managedobjectcontext
-    managedObjectContext(): cocoascript.NSManagedObjectContext;
+    managedObjectContext(): NSManagedObjectContext;
     setManagedObjectContext(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622285-sectionnamekeypath
     sectionNameKeyPath(): string | cocoascript.NSString;
@@ -1231,7 +1231,7 @@ declare namespace cocoascript {
     cacheName(): string | cocoascript.NSString;
     setCacheName(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622291-delegate
-    delegate(): cocoascript.NSFetchedResultsControllerDelegate;
+    delegate(): NSFetchedResultsControllerDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622283-deletecachewithname
     deleteCacheWithName(name: string | cocoascript.NSString):void;
@@ -1239,23 +1239,23 @@ declare namespace cocoascript {
     fetchedObjects(): any;
     setFetchedObjects(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622281-objectatindexpath
-    objectAtIndexPath(indexPath: cocoascript.NSIndexPath):void;
+    objectAtIndexPath(indexPath: NSIndexPath):void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622306-indexpathforobject
-    indexPathForObject(object: any):cocoascript.NSIndexPath;
+    indexPathForObject(object: any):NSIndexPath;
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622303-sections
-    sections(): cocoascript.NSFetchedResultsSectionInfo;
+    sections(): NSFetchedResultsSectionInfo;
     setSections(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622284-sectionforsectionindextitle
-    sectionForSectionIndexTitle_atIndex(title: string | cocoascript.NSString, sectionIndex: cocoascript.NSInteger):cocoascript.NSInteger;
+    sectionForSectionIndexTitle_atIndex(title: string | cocoascript.NSString, sectionIndex: NSInteger):NSInteger;
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622308-sectionindextitleforsectionname
     sectionIndexTitleForSectionName(sectionName: string | cocoascript.NSString):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622299-sectionindextitles
     sectionIndexTitles(): string | cocoascript.NSString;
     setSectionIndexTitles(): void;
     //
-    alloc():cocoascript.NSFetchedResultsController;
+    alloc():NSFetchedResultsController;
     //
-    init():cocoascript.NSFetchedResultsController;
+    init():NSFetchedResultsController;
   }
 }
 
@@ -1271,12 +1271,12 @@ declare namespace cocoascript {
    */
   interface NSDerivedAttributeDescription extends NSAttributeDescription {
     // doc://com.apple.documentation/documentation/coredata/nsderivedattributedescription/3174854-derivationexpression
-    derivationExpression(): cocoascript.NSExpression;
+    derivationExpression(): NSExpression;
     setDerivationExpression(): void;
     //
-    alloc():cocoascript.NSDerivedAttributeDescription;
+    alloc():NSDerivedAttributeDescription;
     //
-    init():cocoascript.NSDerivedAttributeDescription;
+    init():NSDerivedAttributeDescription;
   }
 }
 
@@ -1288,33 +1288,33 @@ declare namespace cocoascript {
    */
   interface NSRelationshipDescription extends NSPropertyDescription {
     // doc://com.apple.documentation/documentation/coredata/nsrelationshipdescription/1506652-destinationentity
-    destinationEntity(): cocoascript.NSEntityDescription;
+    destinationEntity(): NSEntityDescription;
     setDestinationEntity(): void;
     // doc://com.apple.documentation/documentation/coredata/nsrelationshipdescription/1506596-inverserelationship
-    inverseRelationship(): cocoascript.NSRelationshipDescription;
+    inverseRelationship(): NSRelationshipDescription;
     setInverseRelationship(): void;
     // doc://com.apple.documentation/documentation/coredata/nsrelationshipdescription/1506870-deleterule
-    deleteRule(): cocoascript.NSDeleteRule;
+    deleteRule(): NSDeleteRule;
     setDeleteRule(): void;
     // doc://com.apple.documentation/documentation/coredata/nsrelationshipdescription/1506780-maxcount
-    maxCount(): cocoascript.NSUInteger;
+    maxCount(): NSUInteger;
     setMaxCount(): void;
     // doc://com.apple.documentation/documentation/coredata/nsrelationshipdescription/1506599-mincount
-    minCount(): cocoascript.NSUInteger;
+    minCount(): NSUInteger;
     setMinCount(): void;
     // doc://com.apple.documentation/documentation/coredata/nsrelationshipdescription/1506560-tomany
-    toMany(): cocoascript.BOOL;
+    toMany(): BOOL;
     setToMany(): void;
     // doc://com.apple.documentation/documentation/coredata/nsrelationshipdescription/1506382-ordered
-    ordered(): cocoascript.BOOL;
+    ordered(): BOOL;
     setOrdered(): void;
     // doc://com.apple.documentation/documentation/coredata/nsrelationshipdescription/1506791-versionhash
-    versionHash(): cocoascript.NSData;
+    versionHash(): NSData;
     setVersionHash(): void;
     //
-    alloc():cocoascript.NSRelationshipDescription;
+    alloc():NSRelationshipDescription;
     //
-    init():cocoascript.NSRelationshipDescription;
+    init():NSRelationshipDescription;
   }
 }
 
@@ -1334,10 +1334,10 @@ declare namespace cocoascript {
    */
   interface NSFetchedResultsSectionInfo {
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultssectioninfo/1622289-numberofobjects
-    numberOfObjects(): cocoascript.NSUInteger;
+    numberOfObjects(): NSUInteger;
     setNumberOfObjects(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultssectioninfo/1622293-objects
-    objects(): cocoascript.NSArray;
+    objects(): NSArray;
     setObjects(): void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultssectioninfo/1622302-name
     name(): string | cocoascript.NSString;
@@ -1358,9 +1358,9 @@ declare namespace cocoascript {
    */
   interface NSPersistentStoreResult extends NSObject {
     //
-    alloc():cocoascript.NSPersistentStoreResult;
+    alloc():NSPersistentStoreResult;
     //
-    init():cocoascript.NSPersistentStoreResult;
+    init():NSPersistentStoreResult;
   }
 }
 
@@ -1372,20 +1372,20 @@ declare namespace cocoascript {
    */
   interface NSPersistentStoreAsynchronousResult extends NSPersistentStoreResult {
     // doc://com.apple.documentation/documentation/coredata/nspersistentstoreasynchronousresult/1404916-managedobjectcontext
-    managedObjectContext(): cocoascript.NSManagedObjectContext;
+    managedObjectContext(): NSManagedObjectContext;
     setManagedObjectContext(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstoreasynchronousresult/1404904-operationerror
-    operationError(): cocoascript.NSError;
+    operationError(): NSError;
     setOperationError(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstoreasynchronousresult/1404920-progress
-    progress(): cocoascript.NSProgress;
+    progress(): NSProgress;
     setProgress(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentstoreasynchronousresult/1404924-cancel
     cancel():void;
     //
-    alloc():cocoascript.NSPersistentStoreAsynchronousResult;
+    alloc():NSPersistentStoreAsynchronousResult;
     //
-    init():cocoascript.NSPersistentStoreAsynchronousResult;
+    init():NSPersistentStoreAsynchronousResult;
   }
 }
 
@@ -1397,23 +1397,23 @@ declare namespace cocoascript {
    */
   interface NSSaveChangesRequest extends NSPersistentStoreRequest {
     // doc://com.apple.documentation/documentation/coredata/nssavechangesrequest/1500418-initwithinsertedobjects
-    initWithInsertedObjects_updatedObjects_deletedObjects_lockedObjects(insertedObjects: cocoascript.NSManagedObject, updatedObjects: cocoascript.NSManagedObject, deletedObjects: cocoascript.NSManagedObject, lockedObjects: cocoascript.NSManagedObject):cocoascript.NSSaveChangesRequest;
+    initWithInsertedObjects_updatedObjects_deletedObjects_lockedObjects(insertedObjects: NSManagedObject, updatedObjects: NSManagedObject, deletedObjects: NSManagedObject, lockedObjects: NSManagedObject):NSSaveChangesRequest;
     // doc://com.apple.documentation/documentation/coredata/nssavechangesrequest/1500416-insertedobjects
-    insertedObjects(): cocoascript.NSManagedObject;
+    insertedObjects(): NSManagedObject;
     setInsertedObjects(): void;
     // doc://com.apple.documentation/documentation/coredata/nssavechangesrequest/1500424-updatedobjects
-    updatedObjects(): cocoascript.NSManagedObject;
+    updatedObjects(): NSManagedObject;
     setUpdatedObjects(): void;
     // doc://com.apple.documentation/documentation/coredata/nssavechangesrequest/1500420-deletedobjects
-    deletedObjects(): cocoascript.NSManagedObject;
+    deletedObjects(): NSManagedObject;
     setDeletedObjects(): void;
     // doc://com.apple.documentation/documentation/coredata/nssavechangesrequest/1500426-lockedobjects
-    lockedObjects(): cocoascript.NSManagedObject;
+    lockedObjects(): NSManagedObject;
     setLockedObjects(): void;
     //
-    alloc():cocoascript.NSSaveChangesRequest;
+    alloc():NSSaveChangesRequest;
     //
-    init():cocoascript.NSSaveChangesRequest;
+    init():NSSaveChangesRequest;
   }
 }
 
@@ -1425,33 +1425,33 @@ declare namespace cocoascript {
    */
   interface NSAtomicStore extends NSPersistentStore {
     // doc://com.apple.documentation/documentation/coredata/nsatomicstore/1388054-initwithpersistentstorecoordinat
-    initWithPersistentStoreCoordinator_configurationName_URL_options(coordinator: cocoascript.NSPersistentStoreCoordinator, configurationName: string | cocoascript.NSString, url: cocoascript.NSURL, options: cocoascript.NSDictionary):cocoascript.NSAtomicStore;
+    initWithPersistentStoreCoordinator_configurationName_URL_options(coordinator: NSPersistentStoreCoordinator, configurationName: string | cocoascript.NSString, url: NSURL, options: NSDictionary):NSAtomicStore;
     // doc://com.apple.documentation/documentation/coredata/nsatomicstore/1388060-load
-    load(error: cocoascript.NSError):cocoascript.BOOL;
+    load(error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsatomicstore/1388058-objectidforentity
-    objectIDForEntity_referenceObject(entity: cocoascript.NSEntityDescription, data: cocoascript.NSAtomicStore):cocoascript.NSManagedObjectID;
+    objectIDForEntity_referenceObject(entity: NSEntityDescription, data: NSAtomicStore):NSManagedObjectID;
     // doc://com.apple.documentation/documentation/coredata/nsatomicstore/1388062-addcachenodes
-    addCacheNodes(cacheNodes: cocoascript.NSAtomicStoreCacheNode):void;
+    addCacheNodes(cacheNodes: NSAtomicStoreCacheNode):void;
     // doc://com.apple.documentation/documentation/coredata/nsatomicstore/1388052-newcachenodeformanagedobject
-    newCacheNodeForManagedObject(managedObject: cocoascript.NSManagedObject):cocoascript.NSAtomicStoreCacheNode;
+    newCacheNodeForManagedObject(managedObject: NSManagedObject):NSAtomicStoreCacheNode;
     // doc://com.apple.documentation/documentation/coredata/nsatomicstore/1388050-newreferenceobjectformanagedobje
-    newReferenceObjectForManagedObject(managedObject: cocoascript.NSManagedObject):cocoascript.NSAtomicStore;
+    newReferenceObjectForManagedObject(managedObject: NSManagedObject):NSAtomicStore;
     // doc://com.apple.documentation/documentation/coredata/nsatomicstore/1388044-updatecachenode
-    updateCacheNode_fromManagedObject(node: cocoascript.NSAtomicStoreCacheNode, managedObject: cocoascript.NSManagedObject):void;
+    updateCacheNode_fromManagedObject(node: NSAtomicStoreCacheNode, managedObject: NSManagedObject):void;
     // doc://com.apple.documentation/documentation/coredata/nsatomicstore/1388064-willremovecachenodes
-    willRemoveCacheNodes(cacheNodes: cocoascript.NSAtomicStoreCacheNode):void;
+    willRemoveCacheNodes(cacheNodes: NSAtomicStoreCacheNode):void;
     // doc://com.apple.documentation/documentation/coredata/nsatomicstore/1388056-save
-    save(error: cocoascript.NSError):cocoascript.BOOL;
+    save(error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsatomicstore/1388042-cachenodes
-    cacheNodes():cocoascript.NSAtomicStoreCacheNode;
+    cacheNodes():NSAtomicStoreCacheNode;
     // doc://com.apple.documentation/documentation/coredata/nsatomicstore/1388040-cachenodeforobjectid
-    cacheNodeForObjectID(objectID: cocoascript.NSManagedObjectID):cocoascript.NSAtomicStoreCacheNode;
+    cacheNodeForObjectID(objectID: NSManagedObjectID):NSAtomicStoreCacheNode;
     // doc://com.apple.documentation/documentation/coredata/nsatomicstore/1388046-referenceobjectforobjectid
-    referenceObjectForObjectID(objectID: cocoascript.NSManagedObjectID):cocoascript.NSAtomicStore;
+    referenceObjectForObjectID(objectID: NSManagedObjectID):NSAtomicStore;
     //
-    alloc():cocoascript.NSAtomicStore;
+    alloc():NSAtomicStore;
     //
-    init():cocoascript.NSAtomicStore;
+    init():NSAtomicStore;
   }
 }
 
@@ -1463,21 +1463,21 @@ declare namespace cocoascript {
    */
   interface NSAtomicStoreCacheNode extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nsatomicstorecachenode/1506754-initwithobjectid
-    initWithObjectID(moid: cocoascript.NSManagedObjectID):cocoascript.NSAtomicStoreCacheNode;
+    initWithObjectID(moid: NSManagedObjectID):NSAtomicStoreCacheNode;
     // doc://com.apple.documentation/documentation/coredata/nsatomicstorecachenode/1506627-objectid
-    objectID(): cocoascript.NSManagedObjectID;
+    objectID(): NSManagedObjectID;
     setObjectID(): void;
     // doc://com.apple.documentation/documentation/coredata/nsatomicstorecachenode/1506283-propertycache
-    propertyCache(): cocoascript.id;
+    propertyCache(): id;
     setPropertyCache(): void;
     // doc://com.apple.documentation/documentation/coredata/nsatomicstorecachenode/1506550-valueforkey
-    valueForKey(key: string | cocoascript.NSString):cocoascript.NSAtomicStoreCacheNode;
+    valueForKey(key: string | cocoascript.NSString):NSAtomicStoreCacheNode;
     // doc://com.apple.documentation/documentation/coredata/nsatomicstorecachenode/1506456-setvalue
-    setValue_forKey(value: cocoascript.NSAtomicStoreCacheNode, key: string | cocoascript.NSString):void;
+    setValue_forKey(value: NSAtomicStoreCacheNode, key: string | cocoascript.NSString):void;
     //
-    alloc():cocoascript.NSAtomicStoreCacheNode;
+    alloc():NSAtomicStoreCacheNode;
     //
-    init():cocoascript.NSAtomicStoreCacheNode;
+    init():NSAtomicStoreCacheNode;
   }
 }
 
@@ -1489,29 +1489,29 @@ declare namespace cocoascript {
    */
   interface NSIncrementalStore extends NSPersistentStore {
     // doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506653-executerequest
-    executeRequest_withContext_error(request: cocoascript.NSPersistentStoreRequest, context: cocoascript.NSManagedObjectContext, error: cocoascript.NSError):cocoascript.NSIncrementalStore;
+    executeRequest_withContext_error(request: NSPersistentStoreRequest, context: NSManagedObjectContext, error: NSError):NSIncrementalStore;
     // doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506729-newvaluesforobjectwithid
-    newValuesForObjectWithID_withContext_error(objectID: cocoascript.NSManagedObjectID, context: cocoascript.NSManagedObjectContext, error: cocoascript.NSError):cocoascript.NSIncrementalStoreNode;
+    newValuesForObjectWithID_withContext_error(objectID: NSManagedObjectID, context: NSManagedObjectContext, error: NSError):NSIncrementalStoreNode;
     // doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506438-newvalueforrelationship
-    newValueForRelationship_forObjectWithID_withContext_error(relationship: cocoascript.NSRelationshipDescription, objectID: cocoascript.NSManagedObjectID, context: cocoascript.NSManagedObjectContext, error: cocoascript.NSError):cocoascript.NSIncrementalStore;
+    newValueForRelationship_forObjectWithID_withContext_error(relationship: NSRelationshipDescription, objectID: NSManagedObjectID, context: NSManagedObjectContext, error: NSError):NSIncrementalStore;
     // doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506348-obtainpermanentidsforobjects
-    obtainPermanentIDsForObjects_error(array: cocoascript.NSManagedObject, error: cocoascript.NSError):cocoascript.NSManagedObjectID;
+    obtainPermanentIDsForObjects_error(array: NSManagedObject, error: NSError):NSManagedObjectID;
     // doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506666-newobjectidforentity
-    newObjectIDForEntity_referenceObject(entity: cocoascript.NSEntityDescription, data: cocoascript.NSIncrementalStore):cocoascript.NSManagedObjectID;
+    newObjectIDForEntity_referenceObject(entity: NSEntityDescription, data: NSIncrementalStore):NSManagedObjectID;
     // doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506828-referenceobjectforobjectid
-    referenceObjectForObjectID(objectID: cocoascript.NSManagedObjectID):cocoascript.NSIncrementalStore;
+    referenceObjectForObjectID(objectID: NSManagedObjectID):NSIncrementalStore;
     // doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506199-managedobjectcontextdidregistero
-    managedObjectContextDidRegisterObjectsWithIDs(objectIDs: cocoascript.NSManagedObjectID):void;
+    managedObjectContextDidRegisterObjectsWithIDs(objectIDs: NSManagedObjectID):void;
     // doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506878-managedobjectcontextdidunregiste
-    managedObjectContextDidUnregisterObjectsWithIDs(objectIDs: cocoascript.NSManagedObjectID):void;
+    managedObjectContextDidUnregisterObjectsWithIDs(objectIDs: NSManagedObjectID):void;
     // doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506781-identifierfornewstoreaturl
-    identifierForNewStoreAtURL(storeURL: cocoascript.NSURL):cocoascript.NSIncrementalStore;
+    identifierForNewStoreAtURL(storeURL: NSURL):NSIncrementalStore;
     // doc://com.apple.documentation/documentation/coredata/nsincrementalstore/1506708-loadmetadata
-    loadMetadata(error: cocoascript.NSError):cocoascript.BOOL;
+    loadMetadata(error: NSError):BOOL;
     //
-    alloc():cocoascript.NSIncrementalStore;
+    alloc():NSIncrementalStore;
     //
-    init():cocoascript.NSIncrementalStore;
+    init():NSIncrementalStore;
   }
 }
 
@@ -1523,21 +1523,21 @@ declare namespace cocoascript {
    */
   interface NSIncrementalStoreNode extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nsincrementalstorenode/1506321-initwithobjectid
-    initWithObjectID_withValues_version(objectID: cocoascript.NSManagedObjectID, values: cocoascript.NSIncrementalStoreNode, version: number):cocoascript.NSIncrementalStoreNode;
+    initWithObjectID_withValues_version(objectID: NSManagedObjectID, values: NSIncrementalStoreNode, version: number):NSIncrementalStoreNode;
     // doc://com.apple.documentation/documentation/coredata/nsincrementalstorenode/1506827-objectid
-    objectID(): cocoascript.NSManagedObjectID;
+    objectID(): NSManagedObjectID;
     setObjectID(): void;
     // doc://com.apple.documentation/documentation/coredata/nsincrementalstorenode/1506721-updatewithvalues
-    updateWithValues_version(values: cocoascript.NSIncrementalStoreNode, version: number):void;
+    updateWithValues_version(values: NSIncrementalStoreNode, version: number):void;
     // doc://com.apple.documentation/documentation/coredata/nsincrementalstorenode/1506442-valueforpropertydescription
-    valueForPropertyDescription(prop: cocoascript.NSPropertyDescription):cocoascript.NSIncrementalStoreNode;
+    valueForPropertyDescription(prop: NSPropertyDescription):NSIncrementalStoreNode;
     // doc://com.apple.documentation/documentation/coredata/nsincrementalstorenode/1506769-version
     version(): number;
     setVersion(): void;
     //
-    alloc():cocoascript.NSIncrementalStoreNode;
+    alloc():NSIncrementalStoreNode;
     //
-    init():cocoascript.NSIncrementalStoreNode;
+    init():NSIncrementalStoreNode;
   }
 }
 
@@ -1549,29 +1549,29 @@ declare namespace cocoascript {
    */
   interface NSConstraintConflict extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nsconstraintconflict/1506668-initwithconstraint
-    initWithConstraint_databaseObject_databaseSnapshot_conflictingObjects_conflictingSnapshots(contraint: string | cocoascript.NSString, databaseObject: cocoascript.NSManagedObject, databaseSnapshot: cocoascript.NSDictionary, conflictingObjects: cocoascript.NSManagedObject, conflictingSnapshots: cocoascript.NSArray):cocoascript.NSConstraintConflict;
+    initWithConstraint_databaseObject_databaseSnapshot_conflictingObjects_conflictingSnapshots(contraint: string | cocoascript.NSString, databaseObject: NSManagedObject, databaseSnapshot: NSDictionary, conflictingObjects: NSManagedObject, conflictingSnapshots: NSArray):NSConstraintConflict;
     // doc://com.apple.documentation/documentation/coredata/nsconstraintconflict/1506707-conflictingobjects
-    conflictingObjects(): cocoascript.NSManagedObject;
+    conflictingObjects(): NSManagedObject;
     setConflictingObjects(): void;
     // doc://com.apple.documentation/documentation/coredata/nsconstraintconflict/1506774-conflictingsnapshots
-    conflictingSnapshots(): cocoascript.NSDictionary;
+    conflictingSnapshots(): NSDictionary;
     setConflictingSnapshots(): void;
     // doc://com.apple.documentation/documentation/coredata/nsconstraintconflict/1506902-constraint
     constraint(): string | cocoascript.NSString;
     setConstraint(): void;
     // doc://com.apple.documentation/documentation/coredata/nsconstraintconflict/1506399-constraintvalues
-    constraintValues(): cocoascript.id;
+    constraintValues(): id;
     setConstraintValues(): void;
     // doc://com.apple.documentation/documentation/coredata/nsconstraintconflict/1506665-databaseobject
-    databaseObject(): cocoascript.NSManagedObject;
+    databaseObject(): NSManagedObject;
     setDatabaseObject(): void;
     // doc://com.apple.documentation/documentation/coredata/nsconstraintconflict/1506687-databasesnapshot
-    databaseSnapshot(): cocoascript.id;
+    databaseSnapshot(): id;
     setDatabaseSnapshot(): void;
     //
-    alloc():cocoascript.NSConstraintConflict;
+    alloc():NSConstraintConflict;
     //
-    init():cocoascript.NSConstraintConflict;
+    init():NSConstraintConflict;
   }
 }
 
@@ -1583,29 +1583,29 @@ declare namespace cocoascript {
    */
   interface NSMergeConflict extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nsmergeconflict/1506216-initwithsource
-    initWithSource_newVersion_oldVersion_cachedSnapshot_persistedSnapshot(srcObject: cocoascript.NSManagedObject, newvers: cocoascript.NSUInteger, oldvers: cocoascript.NSUInteger, cachesnap: cocoascript.NSMergeConflict, persnap: cocoascript.NSMergeConflict):cocoascript.NSMergeConflict;
+    initWithSource_newVersion_oldVersion_cachedSnapshot_persistedSnapshot(srcObject: NSManagedObject, newvers: NSUInteger, oldvers: NSUInteger, cachesnap: NSMergeConflict, persnap: NSMergeConflict):NSMergeConflict;
     // doc://com.apple.documentation/documentation/coredata/nsmergeconflict/1506809-sourceobject
-    sourceObject(): cocoascript.NSManagedObject;
+    sourceObject(): NSManagedObject;
     setSourceObject(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmergeconflict/1506454-objectsnapshot
-    objectSnapshot(): cocoascript.id;
+    objectSnapshot(): id;
     setObjectSnapshot(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmergeconflict/1506685-cachedsnapshot
-    cachedSnapshot(): cocoascript.id;
+    cachedSnapshot(): id;
     setCachedSnapshot(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmergeconflict/1506412-persistedsnapshot
-    persistedSnapshot(): cocoascript.id;
+    persistedSnapshot(): id;
     setPersistedSnapshot(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmergeconflict/1506190-newversionnumber
-    newVersionNumber(): cocoascript.NSUInteger;
+    newVersionNumber(): NSUInteger;
     setNewVersionNumber(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmergeconflict/1506271-oldversionnumber
-    oldVersionNumber(): cocoascript.NSUInteger;
+    oldVersionNumber(): NSUInteger;
     setOldVersionNumber(): void;
     //
-    alloc():cocoascript.NSMergeConflict;
+    alloc():NSMergeConflict;
     //
-    init():cocoascript.NSMergeConflict;
+    init():NSMergeConflict;
   }
 }
 
@@ -1617,35 +1617,35 @@ declare namespace cocoascript {
    */
   interface NSMergePolicy extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1506763-initwithmergetype
-    initWithMergeType(ty: cocoascript.NSMergePolicyType):cocoascript.NSMergePolicy;
+    initWithMergeType(ty: NSMergePolicyType):NSMergePolicy;
     // doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1506675-mergetype
-    mergeType(): cocoascript.NSMergePolicyType;
+    mergeType(): NSMergePolicyType;
     setMergeType(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1506253-resolveconflicts
-    resolveConflicts_error(list: cocoascript.NSArray, error: cocoascript.NSError):cocoascript.BOOL;
+    resolveConflicts_error(list: NSArray, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1506678-resolveconstraintconflicts
-    resolveConstraintConflicts_error(list: cocoascript.NSConstraintConflict, error: cocoascript.NSError):cocoascript.BOOL;
+    resolveConstraintConflicts_error(list: NSConstraintConflict, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1506787-resolveoptimisticlockingversionc
-    resolveOptimisticLockingVersionConflicts_error(list: cocoascript.NSMergeConflict, error: cocoascript.NSError):cocoascript.BOOL;
+    resolveOptimisticLockingVersionConflicts_error(list: NSMergeConflict, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690612-errormergepolicy
-    errorMergePolicy(): cocoascript.NSMergePolicy;
+    errorMergePolicy(): NSMergePolicy;
     setErrorMergePolicy(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690607-mergebypropertyobjecttrumpmergep
-    mergeByPropertyObjectTrumpMergePolicy(): cocoascript.NSMergePolicy;
+    mergeByPropertyObjectTrumpMergePolicy(): NSMergePolicy;
     setMergeByPropertyObjectTrumpMergePolicy(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690609-mergebypropertystoretrumpmergepo
-    mergeByPropertyStoreTrumpMergePolicy(): cocoascript.NSMergePolicy;
+    mergeByPropertyStoreTrumpMergePolicy(): NSMergePolicy;
     setMergeByPropertyStoreTrumpMergePolicy(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690610-overwritemergepolicy
-    overwriteMergePolicy(): cocoascript.NSMergePolicy;
+    overwriteMergePolicy(): NSMergePolicy;
     setOverwriteMergePolicy(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmergepolicy/1690613-rollbackmergepolicy
-    rollbackMergePolicy(): cocoascript.NSMergePolicy;
+    rollbackMergePolicy(): NSMergePolicy;
     setRollbackMergePolicy(): void;
     //
-    alloc():cocoascript.NSMergePolicy;
+    alloc():NSMergePolicy;
     //
-    init():cocoascript.NSMergePolicy;
+    init():NSMergePolicy;
   }
 }
 
@@ -1661,25 +1661,25 @@ declare namespace cocoascript {
    */
   interface NSPersistentCloudKitContainer extends NSPersistentContainer {
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3141668-recordformanagedobjectid
-    recordForManagedObjectID(managedObjectID: cocoascript.NSManagedObjectID):cocoascript.CKRecord;
+    recordForManagedObjectID(managedObjectID: NSManagedObjectID):CKRecord;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3141671-recordsformanagedobjectids
-    recordsForManagedObjectIDs(managedObjectIDs: cocoascript.NSManagedObjectID):cocoascript.CKRecord;
+    recordsForManagedObjectIDs(managedObjectIDs: NSManagedObjectID):CKRecord;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3141669-recordidformanagedobjectid
-    recordIDForManagedObjectID(managedObjectID: cocoascript.NSManagedObjectID):cocoascript.CKRecordID;
+    recordIDForManagedObjectID(managedObjectID: NSManagedObjectID):CKRecordID;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3141670-recordidsformanagedobjectids
-    recordIDsForManagedObjectIDs(managedObjectIDs: cocoascript.NSManagedObjectID):cocoascript.CKRecordID;
+    recordIDsForManagedObjectIDs(managedObjectIDs: NSManagedObjectID):CKRecordID;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3649646-candeleterecordformanagedobjectw
-    canDeleteRecordForManagedObjectWithID(objectID: cocoascript.NSManagedObjectID):cocoascript.BOOL;
+    canDeleteRecordForManagedObjectWithID(objectID: NSManagedObjectID):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3649647-canmodifymanagedobjectsinstore
-    canModifyManagedObjectsInStore(store: cocoascript.NSPersistentStore):cocoascript.BOOL;
+    canModifyManagedObjectsInStore(store: NSPersistentStore):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3649648-canupdaterecordformanagedobjectw
-    canUpdateRecordForManagedObjectWithID(objectID: cocoascript.NSManagedObjectID):cocoascript.BOOL;
+    canUpdateRecordForManagedObjectWithID(objectID: NSManagedObjectID):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainer/3343548-initializecloudkitschemawithopti
-    initializeCloudKitSchemaWithOptions_error(options: cocoascript.NSPersistentCloudKitContainerSchemaInitializationOptions, error: cocoascript.NSError):cocoascript.BOOL;
+    initializeCloudKitSchemaWithOptions_error(options: NSPersistentCloudKitContainerSchemaInitializationOptions, error: NSError):BOOL;
     //
-    alloc():cocoascript.NSPersistentCloudKitContainer;
+    alloc():NSPersistentCloudKitContainer;
     //
-    init():cocoascript.NSPersistentCloudKitContainer;
+    init():NSPersistentCloudKitContainer;
   }
 }
 
@@ -1691,17 +1691,17 @@ declare namespace cocoascript {
    */
   interface NSPersistentCloudKitContainerOptions extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontaineroptions/3141675-initwithcontaineridentifier
-    initWithContainerIdentifier(containerIdentifier: string | cocoascript.NSString):cocoascript.NSPersistentCloudKitContainerOptions;
+    initWithContainerIdentifier(containerIdentifier: string | cocoascript.NSString):NSPersistentCloudKitContainerOptions;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontaineroptions/3141674-containeridentifier
     containerIdentifier(): string | cocoascript.NSString;
     setContainerIdentifier(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontaineroptions/3580372-databasescope
-    databaseScope(): cocoascript.CKDatabaseScope;
+    databaseScope(): CKDatabaseScope;
     setDatabaseScope(): void;
     //
-    alloc():cocoascript.NSPersistentCloudKitContainerOptions;
+    alloc():NSPersistentCloudKitContainerOptions;
     //
-    init():cocoascript.NSPersistentCloudKitContainerOptions;
+    init():NSPersistentCloudKitContainerOptions;
   }
 }
 
@@ -1712,20 +1712,20 @@ declare namespace cocoascript {
    */
   interface NSPersistentCloudKitContainerEventRequest extends NSPersistentStoreRequest {
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventrequest/3618819-resulttype
-    resultType(): cocoascript.NSPersistentCloudKitContainerEventResultType;
+    resultType(): NSPersistentCloudKitContainerEventResultType;
     setResultType(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventrequest/3618815-fetcheventsafterdate
-    fetchEventsAfterDate(date: cocoascript.NSDate):cocoascript.NSPersistentCloudKitContainerEventRequest;
+    fetchEventsAfterDate(date: NSDate):NSPersistentCloudKitContainerEventRequest;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventrequest/3618816-fetcheventsafterevent
-    fetchEventsAfterEvent(event: cocoascript.NSPersistentCloudKitContainerEvent):cocoascript.NSPersistentCloudKitContainerEventRequest;
+    fetchEventsAfterEvent(event: NSPersistentCloudKitContainerEvent):NSPersistentCloudKitContainerEventRequest;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventrequest/3618817-fetcheventsmatchingfetchrequest
-    fetchEventsMatchingFetchRequest(fetchRequest: cocoascript.NSFetchRequest):cocoascript.NSPersistentCloudKitContainerEventRequest;
+    fetchEventsMatchingFetchRequest(fetchRequest: NSFetchRequest):NSPersistentCloudKitContainerEventRequest;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventrequest/3618818-fetchrequestforevents
-    fetchRequestForEvents():cocoascript.NSFetchRequest;
+    fetchRequestForEvents():NSFetchRequest;
     //
-    alloc():cocoascript.NSPersistentCloudKitContainerEventRequest;
+    alloc():NSPersistentCloudKitContainerEventRequest;
     //
-    init():cocoascript.NSPersistentCloudKitContainerEventRequest;
+    init():NSPersistentCloudKitContainerEventRequest;
   }
 }
 
@@ -1736,15 +1736,15 @@ declare namespace cocoascript {
    */
   interface NSPersistentCloudKitContainerEventResult extends NSPersistentStoreResult {
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventresult/3618821-result
-    result(): cocoascript.id;
+    result(): id;
     setResult(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcloudkitcontainereventresult/3618822-resulttype
-    resultType(): cocoascript.NSPersistentCloudKitContainerEventResultType;
+    resultType(): NSPersistentCloudKitContainerEventResultType;
     setResultType(): void;
     //
-    alloc():cocoascript.NSPersistentCloudKitContainerEventResult;
+    alloc():NSPersistentCloudKitContainerEventResult;
     //
-    init():cocoascript.NSPersistentCloudKitContainerEventResult;
+    init():NSPersistentCloudKitContainerEventResult;
   }
 }
 
@@ -1756,40 +1756,40 @@ declare namespace cocoascript {
    */
   interface NSPersistentContainer extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640557-initwithname
-    initWithName(name: string | cocoascript.NSString):cocoascript.NSPersistentContainer;
+    initWithName(name: string | cocoascript.NSString):NSPersistentContainer;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640584-initwithname
-    initWithName_managedObjectModel(name: string | cocoascript.NSString, model: cocoascript.NSManagedObjectModel):cocoascript.NSPersistentContainer;
+    initWithName_managedObjectModel(name: string | cocoascript.NSString, model: NSManagedObjectModel):NSPersistentContainer;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1646295-persistentcontainerwithname
-    persistentContainerWithName(name: string | cocoascript.NSString):cocoascript.NSPersistentContainer;
+    persistentContainerWithName(name: string | cocoascript.NSString):NSPersistentContainer;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1646296-persistentcontainerwithname
-    persistentContainerWithName_managedObjectModel(name: string | cocoascript.NSString, model: cocoascript.NSManagedObjectModel):cocoascript.NSPersistentContainer;
+    persistentContainerWithName_managedObjectModel(name: string | cocoascript.NSString, model: NSManagedObjectModel):NSPersistentContainer;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640577-persistentstoredescriptions
-    persistentStoreDescriptions(): cocoascript.NSPersistentStoreDescription;
+    persistentStoreDescriptions(): NSPersistentStoreDescription;
     setPersistentStoreDescriptions(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640568-loadpersistentstoreswithcompleti
-    loadPersistentStoresWithCompletionHandler(block: cocoascript.NSError):void;
+    loadPersistentStoresWithCompletionHandler(block: NSError):void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640561-managedobjectmodel
-    managedObjectModel(): cocoascript.NSManagedObjectModel;
+    managedObjectModel(): NSManagedObjectModel;
     setManagedObjectModel(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640579-name
     name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640567-persistentstorecoordinator
-    persistentStoreCoordinator(): cocoascript.NSPersistentStoreCoordinator;
+    persistentStoreCoordinator(): NSPersistentStoreCoordinator;
     setPersistentStoreCoordinator(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640581-newbackgroundcontext
-    newBackgroundContext():cocoascript.NSManagedObjectContext;
+    newBackgroundContext():NSManagedObjectContext;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640564-performbackgroundtask
-    performBackgroundTask(block: cocoascript.NSManagedObjectContext):void;
+    performBackgroundTask(block: NSManagedObjectContext):void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640622-viewcontext
-    viewContext(): cocoascript.NSManagedObjectContext;
+    viewContext(): NSManagedObjectContext;
     setViewContext(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistentcontainer/1640597-defaultdirectoryurl
-    defaultDirectoryURL():cocoascript.NSURL;
+    defaultDirectoryURL():NSURL;
     //
-    alloc():cocoascript.NSPersistentContainer;
+    alloc():NSPersistentContainer;
     //
-    init():cocoascript.NSPersistentContainer;
+    init():NSPersistentContainer;
   }
 }
 
@@ -1801,21 +1801,21 @@ declare namespace cocoascript {
    */
   interface NSCoreDataCoreSpotlightDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897196-initforstorewithdescription
-    initForStoreWithDescription_model(description: cocoascript.NSPersistentStoreDescription, model: cocoascript.NSManagedObjectModel):cocoascript.NSCoreDataCoreSpotlightDelegate;
+    initForStoreWithDescription_model(description: NSPersistentStoreDescription, model: NSManagedObjectModel):NSCoreDataCoreSpotlightDelegate;
     // doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897202-domainidentifier
     domainIdentifier():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897199-indexname
     indexName():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897197-attributesetforobject
-    attributeSetForObject(object: cocoascript.NSManagedObject):cocoascript.CSSearchableItemAttributeSet;
+    attributeSetForObject(object: NSManagedObject):CSSearchableItemAttributeSet;
     // doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897201-searchableindex
-    searchableIndex_reindexAllSearchableItemsWithAcknowledgementHandler(searchableIndex: cocoascript.CSSearchableIndex, acknowledgementHandler: void):void;
+    searchableIndex_reindexAllSearchableItemsWithAcknowledgementHandler(searchableIndex: CSSearchableIndex, acknowledgementHandler: void):void;
     // doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897198-searchableindex
-    searchableIndex_reindexSearchableItemsWithIdentifiers_acknowledgementHandler(searchableIndex: cocoascript.CSSearchableIndex, identifiers: string | cocoascript.NSString, acknowledgementHandler: void):void;
+    searchableIndex_reindexSearchableItemsWithIdentifiers_acknowledgementHandler(searchableIndex: CSSearchableIndex, identifiers: string | cocoascript.NSString, acknowledgementHandler: void):void;
     //
-    alloc():cocoascript.NSCoreDataCoreSpotlightDelegate;
+    alloc():NSCoreDataCoreSpotlightDelegate;
     //
-    init():cocoascript.NSCoreDataCoreSpotlightDelegate;
+    init():NSCoreDataCoreSpotlightDelegate;
   }
 }
 
@@ -1834,45 +1834,45 @@ declare namespace cocoascript {
     sourceEntityName(): string | cocoascript.NSString;
     setSourceEntityName(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitymapping/1443182-sourceentityversionhash
-    sourceEntityVersionHash(): cocoascript.NSData;
+    sourceEntityVersionHash(): NSData;
     setSourceEntityVersionHash(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitymapping/1443180-sourceexpression
-    sourceExpression(): cocoascript.NSExpression;
+    sourceExpression(): NSExpression;
     setSourceExpression(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitymapping/1443176-destinationentityname
     destinationEntityName(): string | cocoascript.NSString;
     setDestinationEntityName(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitymapping/1443169-destinationentityversionhash
-    destinationEntityVersionHash(): cocoascript.NSData;
+    destinationEntityVersionHash(): NSData;
     setDestinationEntityVersionHash(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitymapping/1443167-name
     name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitymapping/1443194-mappingtype
-    mappingType(): cocoascript.NSEntityMappingType;
+    mappingType(): NSEntityMappingType;
     setMappingType(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitymapping/1443171-entitymigrationpolicyclassname
     entityMigrationPolicyClassName(): string | cocoascript.NSString;
     setEntityMigrationPolicyClassName(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitymapping/1443193-attributemappings
-    attributeMappings(): cocoascript.NSPropertyMapping;
+    attributeMappings(): NSPropertyMapping;
     setAttributeMappings(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitymapping/1443163-relationshipmappings
-    relationshipMappings(): cocoascript.NSPropertyMapping;
+    relationshipMappings(): NSPropertyMapping;
     setRelationshipMappings(): void;
     // doc://com.apple.documentation/documentation/coredata/nsentitymapping/1443184-userinfo
-    userInfo(): cocoascript.NSDictionary;
+    userInfo(): NSDictionary;
     setUserInfo(): void;
     //
-    alloc():cocoascript.NSEntityMapping;
+    alloc():NSEntityMapping;
     //
-    init():cocoascript.NSEntityMapping;
+    init():NSEntityMapping;
   }
 }
 
 declare const NSEntityMapping: cocoascript.NSEntityMapping;
 // doc://com.apple.documentation/documentation/coredata/nsfetchrequestexpressiontype
-declare const NSFetchRequestExpressionType: cocoascript.NSExpressionType;
+declare const NSFetchRequestExpressionType: NSExpressionType;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coredata/nsdeleterule
   type NSDeleteRule = cocoascript.NSUInteger;
@@ -1888,32 +1888,32 @@ declare namespace cocoascript {
    */
   interface NSPersistentHistoryChangeRequest extends NSPersistentStoreRequest {
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892339-fetchhistoryafterdate
-    fetchHistoryAfterDate(date: cocoascript.NSDate):cocoascript.NSPersistentHistoryChangeRequest;
+    fetchHistoryAfterDate(date: NSDate):NSPersistentHistoryChangeRequest;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892337-fetchhistoryaftertoken
-    fetchHistoryAfterToken(token: cocoascript.NSPersistentHistoryToken):cocoascript.NSPersistentHistoryChangeRequest;
+    fetchHistoryAfterToken(token: NSPersistentHistoryToken):NSPersistentHistoryChangeRequest;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892342-token
-    token(): cocoascript.NSPersistentHistoryToken;
+    token(): NSPersistentHistoryToken;
     setToken(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892344-fetchhistoryaftertransaction
-    fetchHistoryAfterTransaction(transaction: cocoascript.NSPersistentHistoryTransaction):cocoascript.NSPersistentHistoryChangeRequest;
+    fetchHistoryAfterTransaction(transaction: NSPersistentHistoryTransaction):NSPersistentHistoryChangeRequest;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/3240592-fetchhistorywithfetchrequest
-    fetchHistoryWithFetchRequest(fetchRequest: cocoascript.NSFetchRequest):cocoascript.NSPersistentHistoryChangeRequest;
+    fetchHistoryWithFetchRequest(fetchRequest: NSFetchRequest):NSPersistentHistoryChangeRequest;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/3240593-fetchrequest
-    fetchRequest(): cocoascript.NSFetchRequest;
+    fetchRequest(): NSFetchRequest;
     setFetchRequest(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892338-deletehistorybeforedate
-    deleteHistoryBeforeDate(date: cocoascript.NSDate):cocoascript.NSPersistentHistoryChangeRequest;
+    deleteHistoryBeforeDate(date: NSDate):NSPersistentHistoryChangeRequest;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892340-deletehistorybeforetoken
-    deleteHistoryBeforeToken(token: cocoascript.NSPersistentHistoryToken):cocoascript.NSPersistentHistoryChangeRequest;
+    deleteHistoryBeforeToken(token: NSPersistentHistoryToken):NSPersistentHistoryChangeRequest;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892345-deletehistorybeforetransaction
-    deleteHistoryBeforeTransaction(transaction: cocoascript.NSPersistentHistoryTransaction):cocoascript.NSPersistentHistoryChangeRequest;
+    deleteHistoryBeforeTransaction(transaction: NSPersistentHistoryTransaction):NSPersistentHistoryChangeRequest;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistorychangerequest/2892341-resulttype
-    resultType(): cocoascript.NSPersistentHistoryResultType;
+    resultType(): NSPersistentHistoryResultType;
     setResultType(): void;
     //
-    alloc():cocoascript.NSPersistentHistoryChangeRequest;
+    alloc():NSPersistentHistoryChangeRequest;
     //
-    init():cocoascript.NSPersistentHistoryChangeRequest;
+    init():NSPersistentHistoryChangeRequest;
   }
 }
 
@@ -1925,15 +1925,15 @@ declare namespace cocoascript {
    */
   interface NSPersistentHistoryResult extends NSPersistentStoreResult {
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistoryresult/2892350-result
-    result(): cocoascript.id;
+    result(): id;
     setResult(): void;
     // doc://com.apple.documentation/documentation/coredata/nspersistenthistoryresult/2892356-resulttype
-    resultType(): cocoascript.NSPersistentHistoryResultType;
+    resultType(): NSPersistentHistoryResultType;
     setResultType(): void;
     //
-    alloc():cocoascript.NSPersistentHistoryResult;
+    alloc():NSPersistentHistoryResult;
     //
-    init():cocoascript.NSPersistentHistoryResult;
+    init():NSPersistentHistoryResult;
   }
 }
 
@@ -1949,43 +1949,43 @@ declare namespace cocoascript {
    */
   interface NSBatchInsertRequest extends NSPersistentStoreRequest {
     // doc://com.apple.documentation/documentation/coredata/nsbatchinsertrequest/3618790-initwithentity
-    initWithEntity_dictionaryHandler(entity: cocoascript.NSEntityDescription, handler: cocoascript.NSBatchInsertRequest):cocoascript.NSBatchInsertRequest;
+    initWithEntity_dictionaryHandler(entity: NSEntityDescription, handler: NSBatchInsertRequest):NSBatchInsertRequest;
     // doc://com.apple.documentation/documentation/coredata/nsbatchinsertrequest/3618791-initwithentity
-    initWithEntity_managedObjectHandler(entity: cocoascript.NSEntityDescription, handler: cocoascript.NSManagedObject):cocoascript.NSBatchInsertRequest;
+    initWithEntity_managedObjectHandler(entity: NSEntityDescription, handler: NSManagedObject):NSBatchInsertRequest;
     // doc://com.apple.documentation/documentation/coredata/nsbatchinsertrequest/3618787-initwithentityname
-    batchInsertRequestWithEntityName_dictionaryHandler(entityName: string | cocoascript.NSString, handler: cocoascript.NSBatchInsertRequest):cocoascript.NSBatchInsertRequest;
+    batchInsertRequestWithEntityName_dictionaryHandler(entityName: string | cocoascript.NSString, handler: NSBatchInsertRequest):NSBatchInsertRequest;
     // doc://com.apple.documentation/documentation/coredata/nsbatchinsertrequest/3618788-initwithentityname
-    batchInsertRequestWithEntityName_managedObjectHandler(entityName: string | cocoascript.NSString, handler: cocoascript.NSManagedObject):cocoascript.NSBatchInsertRequest;
+    batchInsertRequestWithEntityName_managedObjectHandler(entityName: string | cocoascript.NSString, handler: NSManagedObject):NSBatchInsertRequest;
     // doc://com.apple.documentation/documentation/coredata/nsbatchinsertrequest/3333235-initwithentity
-    initWithEntity_objects(entity: cocoascript.NSEntityDescription, dictionaries: cocoascript.NSBatchInsertRequest):cocoascript.NSBatchInsertRequest;
+    initWithEntity_objects(entity: NSEntityDescription, dictionaries: NSBatchInsertRequest):NSBatchInsertRequest;
     // doc://com.apple.documentation/documentation/coredata/nsbatchinsertrequest/3333237-initwithentityname
-    initWithEntityName_objects(entityName: string | cocoascript.NSString, dictionaries: cocoascript.NSBatchInsertRequest):cocoascript.NSBatchInsertRequest;
+    initWithEntityName_objects(entityName: string | cocoascript.NSString, dictionaries: NSBatchInsertRequest):NSBatchInsertRequest;
     // doc://com.apple.documentation/documentation/coredata/nsbatchinsertrequest/3333230-batchinsertrequestwithentityname
-    batchInsertRequestWithEntityName_objects(entityName: string | cocoascript.NSString, dictionaries: cocoascript.NSBatchInsertRequest):cocoascript.NSBatchInsertRequest;
+    batchInsertRequestWithEntityName_objects(entityName: string | cocoascript.NSString, dictionaries: NSBatchInsertRequest):NSBatchInsertRequest;
     // doc://com.apple.documentation/documentation/coredata/nsbatchinsertrequest/3333233-init
-    init():cocoascript.NSBatchInsertRequest;
+    init():NSBatchInsertRequest;
     // doc://com.apple.documentation/documentation/coredata/nsbatchinsertrequest/3618789-dictionaryhandler
-    dictionaryHandler(): cocoascript.id;
+    dictionaryHandler(): id;
     setDictionaryHandler(): void;
     // doc://com.apple.documentation/documentation/coredata/nsbatchinsertrequest/3333231-entity
-    entity(): cocoascript.NSEntityDescription;
+    entity(): NSEntityDescription;
     setEntity(): void;
     // doc://com.apple.documentation/documentation/coredata/nsbatchinsertrequest/3333232-entityname
     entityName(): string | cocoascript.NSString;
     setEntityName(): void;
     // doc://com.apple.documentation/documentation/coredata/nsbatchinsertrequest/3618792-managedobjecthandler
-    managedObjectHandler(): cocoascript.NSManagedObject;
+    managedObjectHandler(): NSManagedObject;
     setManagedObjectHandler(): void;
     // doc://com.apple.documentation/documentation/coredata/nsbatchinsertrequest/3333238-objectstoinsert
-    objectsToInsert(): cocoascript.id;
+    objectsToInsert(): id;
     setObjectsToInsert(): void;
     // doc://com.apple.documentation/documentation/coredata/nsbatchinsertrequest/3333239-resulttype
-    resultType(): cocoascript.NSBatchInsertRequestResultType;
+    resultType(): NSBatchInsertRequestResultType;
     setResultType(): void;
     //
-    alloc():cocoascript.NSBatchInsertRequest;
+    alloc():NSBatchInsertRequest;
     //
-    init():cocoascript.NSBatchInsertRequest;
+    init():NSBatchInsertRequest;
   }
 }
 
@@ -1997,15 +1997,15 @@ declare namespace cocoascript {
    */
   interface NSBatchInsertResult extends NSPersistentStoreResult {
     // doc://com.apple.documentation/documentation/coredata/nsbatchinsertresult/3333246-result
-    result(): cocoascript.id;
+    result(): id;
     setResult(): void;
     // doc://com.apple.documentation/documentation/coredata/nsbatchinsertresult/3333247-resulttype
-    resultType(): cocoascript.NSBatchInsertRequestResultType;
+    resultType(): NSBatchInsertRequestResultType;
     setResultType(): void;
     //
-    alloc():cocoascript.NSBatchInsertResult;
+    alloc():NSBatchInsertResult;
     //
-    init():cocoascript.NSBatchInsertResult;
+    init():NSBatchInsertResult;
   }
 }
 
@@ -2017,33 +2017,33 @@ declare namespace cocoascript {
    */
   interface NSBatchUpdateRequest extends NSPersistentStoreRequest {
     // doc://com.apple.documentation/documentation/coredata/nsbatchupdaterequest/1506374-initwithentity
-    initWithEntity(entity: cocoascript.NSEntityDescription):cocoascript.NSBatchUpdateRequest;
+    initWithEntity(entity: NSEntityDescription):NSBatchUpdateRequest;
     // doc://com.apple.documentation/documentation/coredata/nsbatchupdaterequest/1506702-initwithentityname
-    initWithEntityName(entityName: string | cocoascript.NSString):cocoascript.NSBatchUpdateRequest;
+    initWithEntityName(entityName: string | cocoascript.NSString):NSBatchUpdateRequest;
     // doc://com.apple.documentation/documentation/coredata/nsbatchupdaterequest/1526273-batchupdaterequestwithentityname
-    batchUpdateRequestWithEntityName(entityName: string | cocoascript.NSString):cocoascript.NSBatchUpdateRequest;
+    batchUpdateRequestWithEntityName(entityName: string | cocoascript.NSString):NSBatchUpdateRequest;
     // doc://com.apple.documentation/documentation/coredata/nsbatchupdaterequest/1506664-entity
-    entity(): cocoascript.NSEntityDescription;
+    entity(): NSEntityDescription;
     setEntity(): void;
     // doc://com.apple.documentation/documentation/coredata/nsbatchupdaterequest/1506796-entityname
     entityName(): string | cocoascript.NSString;
     setEntityName(): void;
     // doc://com.apple.documentation/documentation/coredata/nsbatchupdaterequest/1506477-includessubentities
-    includesSubentities(): cocoascript.BOOL;
+    includesSubentities(): BOOL;
     setIncludesSubentities(): void;
     // doc://com.apple.documentation/documentation/coredata/nsbatchupdaterequest/1506659-predicate
-    predicate(): cocoascript.NSPredicate;
+    predicate(): NSPredicate;
     setPredicate(): void;
     // doc://com.apple.documentation/documentation/coredata/nsbatchupdaterequest/1506582-propertiestoupdate
-    propertiesToUpdate(): cocoascript.NSDictionary;
+    propertiesToUpdate(): NSDictionary;
     setPropertiesToUpdate(): void;
     // doc://com.apple.documentation/documentation/coredata/nsbatchupdaterequest/1506350-resulttype
-    resultType(): cocoascript.NSBatchUpdateRequestResultType;
+    resultType(): NSBatchUpdateRequestResultType;
     setResultType(): void;
     //
-    alloc():cocoascript.NSBatchUpdateRequest;
+    alloc():NSBatchUpdateRequest;
     //
-    init():cocoascript.NSBatchUpdateRequest;
+    init():NSBatchUpdateRequest;
   }
 }
 
@@ -2055,15 +2055,15 @@ declare namespace cocoascript {
    */
   interface NSBatchUpdateResult extends NSPersistentStoreResult {
     // doc://com.apple.documentation/documentation/coredata/nsbatchupdateresult/1404946-result
-    result(): cocoascript.id;
+    result(): id;
     setResult(): void;
     // doc://com.apple.documentation/documentation/coredata/nsbatchupdateresult/1404900-resulttype
-    resultType(): cocoascript.NSBatchUpdateRequestResultType;
+    resultType(): NSBatchUpdateRequestResultType;
     setResultType(): void;
     //
-    alloc():cocoascript.NSBatchUpdateResult;
+    alloc():NSBatchUpdateResult;
     //
-    init():cocoascript.NSBatchUpdateResult;
+    init():NSBatchUpdateResult;
   }
 }
 
@@ -2075,19 +2075,19 @@ declare namespace cocoascript {
    */
   interface NSBatchDeleteRequest extends NSPersistentStoreRequest {
     // doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequest/1506302-initwithfetchrequest
-    initWithFetchRequest(fetch: cocoascript.NSFetchRequest):cocoascript.NSBatchDeleteRequest;
+    initWithFetchRequest(fetch: NSFetchRequest):NSBatchDeleteRequest;
     // doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequest/1506746-initwithobjectids
-    initWithObjectIDs(objects: cocoascript.NSManagedObjectID):cocoascript.NSBatchDeleteRequest;
+    initWithObjectIDs(objects: NSManagedObjectID):NSBatchDeleteRequest;
     // doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequest/1506206-fetchrequest
-    fetchRequest(): cocoascript.NSFetchRequest;
+    fetchRequest(): NSFetchRequest;
     setFetchRequest(): void;
     // doc://com.apple.documentation/documentation/coredata/nsbatchdeleterequest/1506389-resulttype
-    resultType(): cocoascript.NSBatchDeleteRequestResultType;
+    resultType(): NSBatchDeleteRequestResultType;
     setResultType(): void;
     //
-    alloc():cocoascript.NSBatchDeleteRequest;
+    alloc():NSBatchDeleteRequest;
     //
-    init():cocoascript.NSBatchDeleteRequest;
+    init():NSBatchDeleteRequest;
   }
 }
 
@@ -2099,15 +2099,15 @@ declare namespace cocoascript {
    */
   interface NSBatchDeleteResult extends NSPersistentStoreResult {
     // doc://com.apple.documentation/documentation/coredata/nsbatchdeleteresult/1404922-result
-    result(): cocoascript.id;
+    result(): id;
     setResult(): void;
     // doc://com.apple.documentation/documentation/coredata/nsbatchdeleteresult/1404941-resulttype
-    resultType(): cocoascript.NSBatchDeleteRequestResultType;
+    resultType(): NSBatchDeleteRequestResultType;
     setResultType(): void;
     //
-    alloc():cocoascript.NSBatchDeleteResult;
+    alloc():NSBatchDeleteResult;
     //
-    init():cocoascript.NSBatchDeleteResult;
+    init():NSBatchDeleteResult;
   }
 }
 
@@ -2119,21 +2119,21 @@ declare namespace cocoascript {
    */
   interface NSMappingModel extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nsmappingmodel/1506930-mappingmodelfrombundles
-    mappingModelFromBundles_forSourceModel_destinationModel(bundles: cocoascript.NSBundle, sourceModel: cocoascript.NSManagedObjectModel, destinationModel: cocoascript.NSManagedObjectModel):cocoascript.NSMappingModel;
+    mappingModelFromBundles_forSourceModel_destinationModel(bundles: NSBundle, sourceModel: NSManagedObjectModel, destinationModel: NSManagedObjectModel):NSMappingModel;
     // doc://com.apple.documentation/documentation/coredata/nsmappingmodel/1506468-inferredmappingmodelforsourcemod
-    inferredMappingModelForSourceModel_destinationModel_error(sourceModel: cocoascript.NSManagedObjectModel, destinationModel: cocoascript.NSManagedObjectModel, error: cocoascript.NSError):cocoascript.NSMappingModel;
+    inferredMappingModelForSourceModel_destinationModel_error(sourceModel: NSManagedObjectModel, destinationModel: NSManagedObjectModel, error: NSError):NSMappingModel;
     // doc://com.apple.documentation/documentation/coredata/nsmappingmodel/1506304-initwithcontentsofurl
-    initWithContentsOfURL(url: cocoascript.NSURL):cocoascript.NSMappingModel;
+    initWithContentsOfURL(url: NSURL):NSMappingModel;
     // doc://com.apple.documentation/documentation/coredata/nsmappingmodel/1506196-entitymappings
-    entityMappings(): cocoascript.NSEntityMapping;
+    entityMappings(): NSEntityMapping;
     setEntityMappings(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmappingmodel/1506179-entitymappingsbyname
-    entityMappingsByName(): cocoascript.NSEntityMapping;
+    entityMappingsByName(): NSEntityMapping;
     setEntityMappingsByName(): void;
     //
-    alloc():cocoascript.NSMappingModel;
+    alloc():NSMappingModel;
     //
-    init():cocoascript.NSMappingModel;
+    init():NSMappingModel;
   }
 }
 
@@ -2145,54 +2145,54 @@ declare namespace cocoascript {
    */
   interface NSMigrationManager extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417583-initwithsourcemodel
-    initWithSourceModel_destinationModel(sourceModel: cocoascript.NSManagedObjectModel, destinationModel: cocoascript.NSManagedObjectModel):cocoascript.NSMigrationManager;
+    initWithSourceModel_destinationModel(sourceModel: NSManagedObjectModel, destinationModel: NSManagedObjectModel):NSMigrationManager;
     // doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417584-migratestorefromurl
-    migrateStoreFromURL_type_options_withMappingModel_toDestinationURL_destinationType_destinationOptions_error(sourceURL: cocoascript.NSURL, sStoreType: string | cocoascript.NSString, sOptions: cocoascript.NSDictionary, mappings: cocoascript.NSMappingModel, dURL: cocoascript.NSURL, dStoreType: string | cocoascript.NSString, dOptions: cocoascript.NSDictionary, error: cocoascript.NSError):cocoascript.BOOL;
+    migrateStoreFromURL_type_options_withMappingModel_toDestinationURL_destinationType_destinationOptions_error(sourceURL: NSURL, sStoreType: string | cocoascript.NSString, sOptions: NSDictionary, mappings: NSMappingModel, dURL: NSURL, dStoreType: string | cocoascript.NSString, dOptions: NSDictionary, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417590-reset
     reset():void;
     // doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417608-cancelmigrationwitherror
-    cancelMigrationWithError(error: cocoascript.NSError):void;
+    cancelMigrationWithError(error: NSError):void;
     // doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417602-migrationprogress
     migrationProgress(): number;
     setMigrationProgress(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417582-currententitymapping
-    currentEntityMapping(): cocoascript.NSEntityMapping;
+    currentEntityMapping(): NSEntityMapping;
     setCurrentEntityMapping(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417604-associatesourceinstance
-    associateSourceInstance_withDestinationInstance_forEntityMapping(sourceInstance: cocoascript.NSManagedObject, destinationInstance: cocoascript.NSManagedObject, entityMapping: cocoascript.NSEntityMapping):void;
+    associateSourceInstance_withDestinationInstance_forEntityMapping(sourceInstance: NSManagedObject, destinationInstance: NSManagedObject, entityMapping: NSEntityMapping):void;
     // doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417594-destinationinstancesforentitymap
-    destinationInstancesForEntityMappingNamed_sourceInstances(mappingName: string | cocoascript.NSString, sourceInstances: cocoascript.NSManagedObject):cocoascript.NSManagedObject;
+    destinationInstancesForEntityMappingNamed_sourceInstances(mappingName: string | cocoascript.NSString, sourceInstances: NSManagedObject):NSManagedObject;
     // doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417580-sourceinstancesforentitymappingn
-    sourceInstancesForEntityMappingNamed_destinationInstances(mappingName: string | cocoascript.NSString, destinationInstances: cocoascript.NSManagedObject):cocoascript.NSManagedObject;
+    sourceInstancesForEntityMappingNamed_destinationInstances(mappingName: string | cocoascript.NSString, destinationInstances: NSManagedObject):NSManagedObject;
     // doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417600-mappingmodel
-    mappingModel(): cocoascript.NSMappingModel;
+    mappingModel(): NSMappingModel;
     setMappingModel(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417592-sourcemodel
-    sourceModel(): cocoascript.NSManagedObjectModel;
+    sourceModel(): NSManagedObjectModel;
     setSourceModel(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417610-destinationmodel
-    destinationModel(): cocoascript.NSManagedObjectModel;
+    destinationModel(): NSManagedObjectModel;
     setDestinationModel(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417596-sourceentityforentitymapping
-    sourceEntityForEntityMapping(mEntity: cocoascript.NSEntityMapping):cocoascript.NSEntityDescription;
+    sourceEntityForEntityMapping(mEntity: NSEntityMapping):NSEntityDescription;
     // doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417598-destinationentityforentitymappin
-    destinationEntityForEntityMapping(mEntity: cocoascript.NSEntityMapping):cocoascript.NSEntityDescription;
+    destinationEntityForEntityMapping(mEntity: NSEntityMapping):NSEntityDescription;
     // doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417576-sourcecontext
-    sourceContext(): cocoascript.NSManagedObjectContext;
+    sourceContext(): NSManagedObjectContext;
     setSourceContext(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417578-destinationcontext
-    destinationContext(): cocoascript.NSManagedObjectContext;
+    destinationContext(): NSManagedObjectContext;
     setDestinationContext(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417588-userinfo
-    userInfo(): cocoascript.NSDictionary;
+    userInfo(): NSDictionary;
     setUserInfo(): void;
     // doc://com.apple.documentation/documentation/coredata/nsmigrationmanager/1417606-usesstorespecificmigrationmanage
-    usesStoreSpecificMigrationManager(): cocoascript.BOOL;
+    usesStoreSpecificMigrationManager(): BOOL;
     setUsesStoreSpecificMigrationManager(): void;
     //
-    alloc():cocoascript.NSMigrationManager;
+    alloc():NSMigrationManager;
     //
-    init():cocoascript.NSMigrationManager;
+    init():NSMigrationManager;
   }
 }
 
@@ -2204,23 +2204,23 @@ declare namespace cocoascript {
    */
   interface NSEntityMigrationPolicy extends NSObject {
     // doc://com.apple.documentation/documentation/coredata/nsentitymigrationpolicy/1423785-beginentitymapping
-    beginEntityMapping_manager_error(mapping: cocoascript.NSEntityMapping, manager: cocoascript.NSMigrationManager, error: cocoascript.NSError):cocoascript.BOOL;
+    beginEntityMapping_manager_error(mapping: NSEntityMapping, manager: NSMigrationManager, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsentitymigrationpolicy/1423801-createdestinationinstancesforsou
-    createDestinationInstancesForSourceInstance_entityMapping_manager_error(sInstance: cocoascript.NSManagedObject, mapping: cocoascript.NSEntityMapping, manager: cocoascript.NSMigrationManager, error: cocoascript.NSError):cocoascript.BOOL;
+    createDestinationInstancesForSourceInstance_entityMapping_manager_error(sInstance: NSManagedObject, mapping: NSEntityMapping, manager: NSMigrationManager, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsentitymigrationpolicy/1423805-endinstancecreationforentitymapp
-    endInstanceCreationForEntityMapping_manager_error(mapping: cocoascript.NSEntityMapping, manager: cocoascript.NSMigrationManager, error: cocoascript.NSError):cocoascript.BOOL;
+    endInstanceCreationForEntityMapping_manager_error(mapping: NSEntityMapping, manager: NSMigrationManager, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsentitymigrationpolicy/1423783-createrelationshipsfordestinatio
-    createRelationshipsForDestinationInstance_entityMapping_manager_error(dInstance: cocoascript.NSManagedObject, mapping: cocoascript.NSEntityMapping, manager: cocoascript.NSMigrationManager, error: cocoascript.NSError):cocoascript.BOOL;
+    createRelationshipsForDestinationInstance_entityMapping_manager_error(dInstance: NSManagedObject, mapping: NSEntityMapping, manager: NSMigrationManager, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsentitymigrationpolicy/1423793-endrelationshipcreationforentity
-    endRelationshipCreationForEntityMapping_manager_error(mapping: cocoascript.NSEntityMapping, manager: cocoascript.NSMigrationManager, error: cocoascript.NSError):cocoascript.BOOL;
+    endRelationshipCreationForEntityMapping_manager_error(mapping: NSEntityMapping, manager: NSMigrationManager, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsentitymigrationpolicy/1423791-performcustomvalidationforentity
-    performCustomValidationForEntityMapping_manager_error(mapping: cocoascript.NSEntityMapping, manager: cocoascript.NSMigrationManager, error: cocoascript.NSError):cocoascript.BOOL;
+    performCustomValidationForEntityMapping_manager_error(mapping: NSEntityMapping, manager: NSMigrationManager, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/coredata/nsentitymigrationpolicy/1423787-endentitymapping
-    endEntityMapping_manager_error(mapping: cocoascript.NSEntityMapping, manager: cocoascript.NSMigrationManager, error: cocoascript.NSError):cocoascript.BOOL;
+    endEntityMapping_manager_error(mapping: NSEntityMapping, manager: NSMigrationManager, error: NSError):BOOL;
     //
-    alloc():cocoascript.NSEntityMigrationPolicy;
+    alloc():NSEntityMigrationPolicy;
     //
-    init():cocoascript.NSEntityMigrationPolicy;
+    init():NSEntityMigrationPolicy;
   }
 }
 
@@ -2251,15 +2251,15 @@ declare namespace cocoascript {
     name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/coredata/nspropertymapping/1506819-valueexpression
-    valueExpression(): cocoascript.NSExpression;
+    valueExpression(): NSExpression;
     setValueExpression(): void;
     // doc://com.apple.documentation/documentation/coredata/nspropertymapping/1506516-userinfo
-    userInfo(): cocoascript.NSDictionary;
+    userInfo(): NSDictionary;
     setUserInfo(): void;
     //
-    alloc():cocoascript.NSPropertyMapping;
+    alloc():NSPropertyMapping;
     //
-    init():cocoascript.NSPropertyMapping;
+    init():NSPropertyMapping;
   }
 }
 

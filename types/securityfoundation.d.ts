@@ -5,29 +5,29 @@ declare namespace cocoascript {
    */
   interface SFAuthorization extends NSObject {
     // doc://com.apple.documentation/documentation/securityfoundation/sfauthorization/1417643-authorization
-    authorization():cocoascript.SFAuthorization;
+    authorization():SFAuthorization;
     // doc://com.apple.documentation/documentation/securityfoundation/sfauthorization/1417650-authorizationwithflags
-    authorizationWithFlags_rights_environment(flags: cocoascript.AuthorizationFlags, rights: cocoascript.AuthorizationRights, environment: cocoascript.AuthorizationEnvironment):cocoascript.SFAuthorization;
+    authorizationWithFlags_rights_environment(flags: AuthorizationFlags, rights: AuthorizationRights, environment: AuthorizationEnvironment):SFAuthorization;
     // doc://com.apple.documentation/documentation/securityfoundation/sfauthorization/1417646-init
-    init():cocoascript.SFAuthorization;
+    init():SFAuthorization;
     // doc://com.apple.documentation/documentation/securityfoundation/sfauthorization/1417632-initwithflags
-    initWithFlags_rights_environment(flags: cocoascript.AuthorizationFlags, rights: cocoascript.AuthorizationRights, environment: cocoascript.AuthorizationEnvironment):cocoascript.SFAuthorization;
+    initWithFlags_rights_environment(flags: AuthorizationFlags, rights: AuthorizationRights, environment: AuthorizationEnvironment):SFAuthorization;
     // doc://com.apple.documentation/documentation/securityfoundation/sfauthorization/1417636-authorizationref
-    authorizationRef():cocoascript.AuthorizationRef;
+    authorizationRef():AuthorizationRef;
     // doc://com.apple.documentation/documentation/securityfoundation/sfauthorization/1417645-permitwithrights
-    permitWithRights_flags_environment_authorizedRights(rights: cocoascript.AuthorizationRights, flags: cocoascript.AuthorizationFlags, environment: cocoascript.AuthorizationEnvironment, authorizedRights: cocoascript.AuthorizationRights):any;
+    permitWithRights_flags_environment_authorizedRights(rights: AuthorizationRights, flags: AuthorizationFlags, environment: AuthorizationEnvironment, authorizedRights: AuthorizationRights):any;
     // doc://com.apple.documentation/documentation/securityfoundation/sfauthorization/1417648-obtainwithrights
-    obtainWithRights_flags_environment_authorizedRights_error(rights: cocoascript.AuthorizationRights, flags: cocoascript.AuthorizationFlags, environment: cocoascript.AuthorizationEnvironment, authorizedRights: cocoascript.AuthorizationRights, error: cocoascript.NSError):cocoascript.BOOL;
+    obtainWithRights_flags_environment_authorizedRights_error(rights: AuthorizationRights, flags: AuthorizationFlags, environment: AuthorizationEnvironment, authorizedRights: AuthorizationRights, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/securityfoundation/sfauthorization/1417641-permitwithright
-    permitWithRight_flags(rightName: cocoascript.AuthorizationString, flags: cocoascript.AuthorizationFlags):any;
+    permitWithRight_flags(rightName: AuthorizationString, flags: AuthorizationFlags):any;
     // doc://com.apple.documentation/documentation/securityfoundation/sfauthorization/1417652-obtainwithright
-    obtainWithRight_flags_error(rightName: cocoascript.AuthorizationString, flags: cocoascript.AuthorizationFlags, error: cocoascript.NSError):cocoascript.BOOL;
+    obtainWithRight_flags_error(rightName: AuthorizationString, flags: AuthorizationFlags, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/securityfoundation/sfauthorization/1417634-invalidatecredentials
     invalidateCredentials():void;
     //
-    alloc():cocoascript.SFAuthorization;
+    alloc():SFAuthorization;
     //
-    init():cocoascript.SFAuthorization;
+    init():SFAuthorization;
   }
 }
 

@@ -26,9 +26,23 @@ export class MethodDeclaration {
     let index = 0;
     const method = new MethodDeclaration(id, interfaceDecl);
     while (index < tokens.length) {
-      if ((tokens[index].kind === 'typeIdentifier' && tokens[index].preciseIdentifier) || tokens[index].kind === 'keyword') {
+      if (
+        (tokens[index].kind === 'typeIdentifier' && tokens[index].preciseIdentifier) ||
+        tokens[index].kind === 'keyword'
+      ) {
         method.returnType = tokens[index].text;
       }
+
+      if (tokens[index].kind === 'internalParam' && tokens[index].text === '...') {
+        const lastIndex = method.identifiers.length - 1;
+        const lastId = method.identifiers[lastIndex];
+        method.identifiers[lastIndex] = {
+          ...lastId,
+          paramName: `...${lastId.paramName}`,
+          paramType: `Array<${normalizeType(lastId.paramType!)}>`,
+        };
+      }
+
       if (tokens[index].kind === 'identifier') {
         const id = tokens[index].text.replace(/:$/, '');
         let paramType;
@@ -53,8 +67,10 @@ export class MethodDeclaration {
           paramName,
         });
       }
+
       index += 1;
     }
+
     return method;
   }
 

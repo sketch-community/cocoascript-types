@@ -57,7 +57,7 @@ declare namespace cocoascript {
 // doc://com.apple.documentation/documentation/security/kauthorizationexternalformlength
 declare const kAuthorizationExternalFormLength: any;
 // doc://com.apple.documentation/documentation/security/ksecsharedpassword
-declare const kSecSharedPassword: cocoascript.CFStringRef;
+declare const kSecSharedPassword: CFStringRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/security/authorizationpluginref
   type AuthorizationPluginRef = void;
@@ -123,11 +123,11 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/security/ksecattraccessgroup
-declare const kSecAttrAccessGroup: cocoascript.CFStringRef;
+declare const kSecAttrAccessGroup: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecusedataprotectionkeychain
-declare const kSecUseDataProtectionKeychain: cocoascript.CFStringRef;
+declare const kSecUseDataProtectionKeychain: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrsynchronizable
-declare const kSecAttrSynchronizable: cocoascript.CFStringRef;
+declare const kSecAttrSynchronizable: CFStringRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/security/secaccesscontrolcreateflags
   type SecAccessControlCreateFlags = cocoascript.CFOptionFlags;
@@ -221,7 +221,7 @@ declare namespace cocoascript {
   type SecRandomRef = any;
 }
 // doc://com.apple.documentation/documentation/security/ksecrandomdefault
-declare const kSecRandomDefault: cocoascript.SecRandomRef;
+declare const kSecRandomDefault: SecRandomRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/security/sectransformref
   type SecTransformRef = cocoascript.CFTypeRef;
@@ -271,11 +271,11 @@ declare namespace cocoascript {
   type SecMessageBlock = boolean;
 }
 // doc://com.apple.documentation/documentation/security/ksectransformerrordomain
-declare const kSecTransformErrorDomain: cocoascript.CFStringRef;
+declare const kSecTransformErrorDomain: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksectransformpreviouserrorkey
-declare const kSecTransformPreviousErrorKey: cocoascript.CFStringRef;
+declare const kSecTransformPreviousErrorKey: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksectransformabortoriginatorkey
-declare const kSecTransformAbortOriginatorKey: cocoascript.CFStringRef;
+declare const kSecTransformAbortOriginatorKey: CFStringRef;
 declare namespace cocoascript {
   interface SecAsn1CoderRef {
   }
@@ -309,19 +309,19 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/security/cssmoid_apple_extension_developer_authentication
-declare const CSSMOID_APPLE_EXTENSION_DEVELOPER_AUTHENTICATION: cocoascript.SecAsn1Oid;
+declare const CSSMOID_APPLE_EXTENSION_DEVELOPER_AUTHENTICATION: SecAsn1Oid;
 // doc://com.apple.documentation/documentation/security/cssmoid_apple_extension_provisioning_profile_signing
-declare const CSSMOID_APPLE_EXTENSION_PROVISIONING_PROFILE_SIGNING: cocoascript.SecAsn1Oid;
+declare const CSSMOID_APPLE_EXTENSION_PROVISIONING_PROFILE_SIGNING: SecAsn1Oid;
 // doc://com.apple.documentation/documentation/security/cssmoid_apple_extension_server_authentication
-declare const CSSMOID_APPLE_EXTENSION_SERVER_AUTHENTICATION: cocoascript.SecAsn1Oid;
+declare const CSSMOID_APPLE_EXTENSION_SERVER_AUTHENTICATION: SecAsn1Oid;
 // doc://com.apple.documentation/documentation/security/cssmoid_apple_tp_pcs_escrow_service
-declare const CSSMOID_APPLE_TP_PCS_ESCROW_SERVICE: cocoascript.SecAsn1Oid;
+declare const CSSMOID_APPLE_TP_PCS_ESCROW_SERVICE: SecAsn1Oid;
 // doc://com.apple.documentation/documentation/security/cssmoid_apple_tp_provisioning_profile_signing
-declare const CSSMOID_APPLE_TP_PROVISIONING_PROFILE_SIGNING: cocoascript.SecAsn1Oid;
+declare const CSSMOID_APPLE_TP_PROVISIONING_PROFILE_SIGNING: SecAsn1Oid;
 // doc://com.apple.documentation/documentation/security/kcmsencoderdigestalgorithmsha1
-declare const kCMSEncoderDigestAlgorithmSHA1: cocoascript.CFStringRef;
+declare const kCMSEncoderDigestAlgorithmSHA1: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kcmsencoderdigestalgorithmsha256
-declare const kCMSEncoderDigestAlgorithmSHA256: cocoascript.CFStringRef;
+declare const kCMSEncoderDigestAlgorithmSHA256: CFStringRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/security/ce_crldistreasonflags
   type CE_CrlDistReasonFlags = number;
@@ -703,11 +703,11 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/security/ksecattrserver
-declare const kSecAttrServer: cocoascript.CFStringRef;
+declare const kSecAttrServer: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattraccount
-declare const kSecAttrAccount: cocoascript.CFStringRef;
+declare const kSecAttrAccount: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrport
-declare const kSecAttrPort: cocoascript.CFStringRef;
+declare const kSecAttrPort: CFStringRef;
 declare namespace cocoascript {
   interface SecKeychainRef {
   }
@@ -789,73 +789,73 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/security/ksecattraccess
-declare const kSecAttrAccess: cocoascript.CFStringRef;
+declare const kSecAttrAccess: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattraccesscontrol
-declare const kSecAttrAccessControl: cocoascript.CFStringRef;
+declare const kSecAttrAccessControl: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattraccessible
-declare const kSecAttrAccessible: cocoascript.CFStringRef;
+declare const kSecAttrAccessible: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrcreationdate
-declare const kSecAttrCreationDate: cocoascript.CFStringRef;
+declare const kSecAttrCreationDate: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrmodificationdate
-declare const kSecAttrModificationDate: cocoascript.CFStringRef;
+declare const kSecAttrModificationDate: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrdescription
-declare const kSecAttrDescription: cocoascript.CFStringRef;
+declare const kSecAttrDescription: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrcomment
-declare const kSecAttrComment: cocoascript.CFStringRef;
+declare const kSecAttrComment: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrcreator
-declare const kSecAttrCreator: cocoascript.CFStringRef;
+declare const kSecAttrCreator: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrtype
-declare const kSecAttrType: cocoascript.CFStringRef;
+declare const kSecAttrType: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrlabel
-declare const kSecAttrLabel: cocoascript.CFStringRef;
+declare const kSecAttrLabel: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrisinvisible
-declare const kSecAttrIsInvisible: cocoascript.CFStringRef;
+declare const kSecAttrIsInvisible: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrisnegative
-declare const kSecAttrIsNegative: cocoascript.CFStringRef;
+declare const kSecAttrIsNegative: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrsyncviewhint
-declare const kSecAttrSyncViewHint: cocoascript.CFStringRef;
+declare const kSecAttrSyncViewHint: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrpersistantreference
-declare const kSecAttrPersistantReference: cocoascript.CFStringRef;
+declare const kSecAttrPersistantReference: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrpersistentreference
-declare const kSecAttrPersistentReference: cocoascript.CFStringRef;
+declare const kSecAttrPersistentReference: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecuseitemlist
-declare const kSecUseItemList: cocoascript.CFStringRef;
+declare const kSecUseItemList: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecclass
-declare const kSecClass: cocoascript.CFStringRef;
+declare const kSecClass: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecvaluedata
-declare const kSecValueData: cocoascript.CFStringRef;
+declare const kSecValueData: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecmatchlimit
-declare const kSecMatchLimit: cocoascript.CFStringRef;
+declare const kSecMatchLimit: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecreturndata
-declare const kSecReturnData: cocoascript.CFStringRef;
+declare const kSecReturnData: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecmatchlimitall
-declare const kSecMatchLimitAll: cocoascript.CFStringRef;
+declare const kSecMatchLimitAll: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecmatchitemlist
-declare const kSecMatchItemList: cocoascript.CFStringRef;
+declare const kSecMatchItemList: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecmatchsearchlist
-declare const kSecMatchSearchList: cocoascript.CFStringRef;
+declare const kSecMatchSearchList: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecreturnref
-declare const kSecReturnRef: cocoascript.CFStringRef;
+declare const kSecReturnRef: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecusekeychain
-declare const kSecUseKeychain: cocoascript.CFStringRef;
+declare const kSecUseKeychain: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecuseoperationprompt
-declare const kSecUseOperationPrompt: cocoascript.CFStringRef;
+declare const kSecUseOperationPrompt: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecusenoauthenticationui
-declare const kSecUseNoAuthenticationUI: cocoascript.CFStringRef;
+declare const kSecUseNoAuthenticationUI: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecuseauthenticationui
-declare const kSecUseAuthenticationUI: cocoascript.CFStringRef;
+declare const kSecUseAuthenticationUI: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecuseauthenticationcontext
-declare const kSecUseAuthenticationContext: cocoascript.CFStringRef;
+declare const kSecUseAuthenticationContext: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrsynchronizableany
-declare const kSecAttrSynchronizableAny: cocoascript.CFStringRef;
+declare const kSecAttrSynchronizableAny: CFStringRef;
 declare namespace cocoascript {
   interface SecAccessRef {
   }
 }
 // doc://com.apple.documentation/documentation/security/ksecreturnattributes
-declare const kSecReturnAttributes: cocoascript.CFStringRef;
+declare const kSecReturnAttributes: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattraccessiblewhenpasscodesetthisdeviceonly
-declare const kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly: cocoascript.CFStringRef;
+declare const kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly: CFStringRef;
 declare namespace cocoascript {
   interface SecKeychainSearchRef {
   }
@@ -889,9 +889,9 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/security/ksecclassidentity
-declare const kSecClassIdentity: cocoascript.CFStringRef;
+declare const kSecClassIdentity: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecclasscertificate
-declare const kSecClassCertificate: cocoascript.CFStringRef;
+declare const kSecClassCertificate: CFStringRef;
 declare namespace cocoascript {
   interface OpaqueSecCertificateRef {
   }
@@ -937,105 +937,105 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/security/kseccodeattributearchitecture
-declare const kSecCodeAttributeArchitecture: cocoascript.CFStringRef;
+declare const kSecCodeAttributeArchitecture: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeattributesubarchitecture
-declare const kSecCodeAttributeSubarchitecture: cocoascript.CFStringRef;
+declare const kSecCodeAttributeSubarchitecture: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeattributebundleversion
-declare const kSecCodeAttributeBundleVersion: cocoascript.CFStringRef;
+declare const kSecCodeAttributeBundleVersion: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeattributeuniversalfileoffset
-declare const kSecCodeAttributeUniversalFileOffset: cocoascript.CFStringRef;
+declare const kSecCodeAttributeUniversalFileOffset: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinfoidentifier
-declare const kSecCodeInfoIdentifier: cocoascript.CFStringRef;
+declare const kSecCodeInfoIdentifier: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinfocdhashes
-declare const kSecCodeInfoCdHashes: cocoascript.CFStringRef;
+declare const kSecCodeInfoCdHashes: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinfocertificates
-declare const kSecCodeInfoCertificates: cocoascript.CFStringRef;
+declare const kSecCodeInfoCertificates: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinfochangedfiles
-declare const kSecCodeInfoChangedFiles: cocoascript.CFStringRef;
+declare const kSecCodeInfoChangedFiles: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinfocms
-declare const kSecCodeInfoCMS: cocoascript.CFStringRef;
+declare const kSecCodeInfoCMS: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinfodesignatedrequirement
-declare const kSecCodeInfoDesignatedRequirement: cocoascript.CFStringRef;
+declare const kSecCodeInfoDesignatedRequirement: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinfodigestalgorithm
-declare const kSecCodeInfoDigestAlgorithm: cocoascript.CFStringRef;
+declare const kSecCodeInfoDigestAlgorithm: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinfodigestalgorithms
-declare const kSecCodeInfoDigestAlgorithms: cocoascript.CFStringRef;
+declare const kSecCodeInfoDigestAlgorithms: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinfoentitlements
-declare const kSecCodeInfoEntitlements: cocoascript.CFStringRef;
+declare const kSecCodeInfoEntitlements: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinfoentitlementsdict
-declare const kSecCodeInfoEntitlementsDict: cocoascript.CFStringRef;
+declare const kSecCodeInfoEntitlementsDict: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinfoformat
-declare const kSecCodeInfoFormat: cocoascript.CFStringRef;
+declare const kSecCodeInfoFormat: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinfoflags
-declare const kSecCodeInfoFlags: cocoascript.CFStringRef;
+declare const kSecCodeInfoFlags: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinfoimplicitdesignatedrequirement
-declare const kSecCodeInfoImplicitDesignatedRequirement: cocoascript.CFStringRef;
+declare const kSecCodeInfoImplicitDesignatedRequirement: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinfomainexecutable
-declare const kSecCodeInfoMainExecutable: cocoascript.CFStringRef;
+declare const kSecCodeInfoMainExecutable: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinfoplist
-declare const kSecCodeInfoPList: cocoascript.CFStringRef;
+declare const kSecCodeInfoPList: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinfoplatformidentifier
-declare const kSecCodeInfoPlatformIdentifier: cocoascript.CFStringRef;
+declare const kSecCodeInfoPlatformIdentifier: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinforequirements
-declare const kSecCodeInfoRequirements: cocoascript.CFStringRef;
+declare const kSecCodeInfoRequirements: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinforequirementdata
-declare const kSecCodeInfoRequirementData: cocoascript.CFStringRef;
+declare const kSecCodeInfoRequirementData: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinforuntimeversion
-declare const kSecCodeInfoRuntimeVersion: cocoascript.CFStringRef;
+declare const kSecCodeInfoRuntimeVersion: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinfosource
-declare const kSecCodeInfoSource: cocoascript.CFStringRef;
+declare const kSecCodeInfoSource: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinfostatus
-declare const kSecCodeInfoStatus: cocoascript.CFStringRef;
+declare const kSecCodeInfoStatus: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinfoteamidentifier
-declare const kSecCodeInfoTeamIdentifier: cocoascript.CFStringRef;
+declare const kSecCodeInfoTeamIdentifier: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinfotime
-declare const kSecCodeInfoTime: cocoascript.CFStringRef;
+declare const kSecCodeInfoTime: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinfotimestamp
-declare const kSecCodeInfoTimestamp: cocoascript.CFStringRef;
+declare const kSecCodeInfoTimestamp: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinfotrust
-declare const kSecCodeInfoTrust: cocoascript.CFStringRef;
+declare const kSecCodeInfoTrust: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccodeinfounique
-declare const kSecCodeInfoUnique: cocoascript.CFStringRef;
+declare const kSecCodeInfoUnique: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecguestattributecanonical
-declare const kSecGuestAttributeCanonical: cocoascript.CFStringRef;
+declare const kSecGuestAttributeCanonical: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecguestattributearchitecture
-declare const kSecGuestAttributeArchitecture: cocoascript.CFStringRef;
+declare const kSecGuestAttributeArchitecture: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecguestattributeaudit
-declare const kSecGuestAttributeAudit: cocoascript.CFStringRef;
+declare const kSecGuestAttributeAudit: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecguestattributedynamiccode
-declare const kSecGuestAttributeDynamicCode: cocoascript.CFStringRef;
+declare const kSecGuestAttributeDynamicCode: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecguestattributedynamiccodeinfoplist
-declare const kSecGuestAttributeDynamicCodeInfoPlist: cocoascript.CFStringRef;
+declare const kSecGuestAttributeDynamicCodeInfoPlist: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecguestattributehash
-declare const kSecGuestAttributeHash: cocoascript.CFStringRef;
+declare const kSecGuestAttributeHash: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecguestattributemachport
-declare const kSecGuestAttributeMachPort: cocoascript.CFStringRef;
+declare const kSecGuestAttributeMachPort: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecguestattributepid
-declare const kSecGuestAttributePid: cocoascript.CFStringRef;
+declare const kSecGuestAttributePid: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecguestattributesubarchitecture
-declare const kSecGuestAttributeSubarchitecture: cocoascript.CFStringRef;
+declare const kSecGuestAttributeSubarchitecture: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccferrorarchitecture
-declare const kSecCFErrorArchitecture: cocoascript.CFStringRef;
+declare const kSecCFErrorArchitecture: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccferrorpattern
-declare const kSecCFErrorPattern: cocoascript.CFStringRef;
+declare const kSecCFErrorPattern: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccferrorresourceseal
-declare const kSecCFErrorResourceSeal: cocoascript.CFStringRef;
+declare const kSecCFErrorResourceSeal: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccferrorresourceadded
-declare const kSecCFErrorResourceAdded: cocoascript.CFStringRef;
+declare const kSecCFErrorResourceAdded: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccferrorresourcealtered
-declare const kSecCFErrorResourceAltered: cocoascript.CFStringRef;
+declare const kSecCFErrorResourceAltered: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccferrorresourcemissing
-declare const kSecCFErrorResourceMissing: cocoascript.CFStringRef;
+declare const kSecCFErrorResourceMissing: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccferrorresourcesideband
-declare const kSecCFErrorResourceSideband: cocoascript.CFStringRef;
+declare const kSecCFErrorResourceSideband: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccferrorinfoplist
-declare const kSecCFErrorInfoPlist: cocoascript.CFStringRef;
+declare const kSecCFErrorInfoPlist: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccferrorguestattributes
-declare const kSecCFErrorGuestAttributes: cocoascript.CFStringRef;
+declare const kSecCFErrorGuestAttributes: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccferrorrequirementsyntax
-declare const kSecCFErrorRequirementSyntax: cocoascript.CFStringRef;
+declare const kSecCFErrorRequirementSyntax: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccferrorpath
-declare const kSecCFErrorPath: cocoascript.CFStringRef;
+declare const kSecCFErrorPath: CFStringRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/security/seckeyalgorithm
   type SecKeyAlgorithm = cocoascript.CFStringRef;
@@ -1081,1096 +1081,1096 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/security/ksecpolicyappletimestamping
-declare const kSecPolicyAppleTimeStamping: cocoascript.CFStringRef;
+declare const kSecPolicyAppleTimeStamping: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecinputisplaintext
-declare const kSecInputIsPlainText: cocoascript.CFStringRef;
+declare const kSecInputIsPlainText: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecdigesttypeattribute
-declare const kSecDigestTypeAttribute: cocoascript.CFStringRef;
+declare const kSecDigestTypeAttribute: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecdigestlengthattribute
-declare const kSecDigestLengthAttribute: cocoascript.CFStringRef;
+declare const kSecDigestLengthAttribute: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecencodetypeattribute
-declare const kSecEncodeTypeAttribute: cocoascript.CFStringRef;
+declare const kSecEncodeTypeAttribute: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecdecodetypeattribute
-declare const kSecDecodeTypeAttribute: cocoascript.CFStringRef;
+declare const kSecDecodeTypeAttribute: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecencodelinelengthattribute
-declare const kSecEncodeLineLengthAttribute: cocoascript.CFStringRef;
+declare const kSecEncodeLineLengthAttribute: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpaddingkey
-declare const kSecPaddingKey: cocoascript.CFStringRef;
+declare const kSecPaddingKey: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecencryptionmode
-declare const kSecEncryptionMode: cocoascript.CFStringRef;
+declare const kSecEncryptionMode: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseccompressionratio
-declare const kSecCompressionRatio: cocoascript.CFStringRef;
+declare const kSecCompressionRatio: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecdigesthmackeyattribute
-declare const kSecDigestHMACKeyAttribute: cocoascript.CFStringRef;
+declare const kSecDigestHMACKeyAttribute: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecencryptkey
-declare const kSecEncryptKey: cocoascript.CFStringRef;
+declare const kSecEncryptKey: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecivkey
-declare const kSecIVKey: cocoascript.CFStringRef;
+declare const kSecIVKey: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoaepencodingparametersattributename
-declare const kSecOAEPEncodingParametersAttributeName: cocoascript.CFStringRef;
+declare const kSecOAEPEncodingParametersAttributeName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoaepmgf1digestalgorithmattributename
-declare const kSecOAEPMGF1DigestAlgorithmAttributeName: cocoascript.CFStringRef;
+declare const kSecOAEPMGF1DigestAlgorithmAttributeName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoaepmessagelengthattributename
-declare const kSecOAEPMessageLengthAttributeName: cocoascript.CFStringRef;
+declare const kSecOAEPMessageLengthAttributeName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksectransforminputattributename
-declare const kSecTransformInputAttributeName: cocoascript.CFStringRef;
+declare const kSecTransformInputAttributeName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksectransformoutputattributename
-declare const kSecTransformOutputAttributeName: cocoascript.CFStringRef;
+declare const kSecTransformOutputAttributeName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksectransformdebugattributename
-declare const kSecTransformDebugAttributeName: cocoascript.CFStringRef;
+declare const kSecTransformDebugAttributeName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseckeyattributename
-declare const kSecKeyAttributeName: cocoascript.CFStringRef;
+declare const kSecKeyAttributeName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksectransformabortattributename
-declare const kSecTransformAbortAttributeName: cocoascript.CFStringRef;
+declare const kSecTransformAbortAttributeName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksectransformtransformname
-declare const kSecTransformTransformName: cocoascript.CFStringRef;
+declare const kSecTransformTransformName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecbase32encoding
-declare const kSecBase32Encoding: cocoascript.CFStringRef;
+declare const kSecBase32Encoding: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecbase64encoding
-declare const kSecBase64Encoding: cocoascript.CFStringRef;
+declare const kSecBase64Encoding: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseczlibencoding
-declare const kSecZLibEncoding: cocoascript.CFStringRef;
+declare const kSecZLibEncoding: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecdigestmd2
-declare const kSecDigestMD2: cocoascript.CFStringRef;
+declare const kSecDigestMD2: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecdigestmd4
-declare const kSecDigestMD4: cocoascript.CFStringRef;
+declare const kSecDigestMD4: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecdigestmd5
-declare const kSecDigestMD5: cocoascript.CFStringRef;
+declare const kSecDigestMD5: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecdigestsha1
-declare const kSecDigestSHA1: cocoascript.CFStringRef;
+declare const kSecDigestSHA1: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecdigestsha2
-declare const kSecDigestSHA2: cocoascript.CFStringRef;
+declare const kSecDigestSHA2: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecdigesthmacmd5
-declare const kSecDigestHMACMD5: cocoascript.CFStringRef;
+declare const kSecDigestHMACMD5: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecdigesthmacsha1
-declare const kSecDigestHMACSHA1: cocoascript.CFStringRef;
+declare const kSecDigestHMACSHA1: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecdigesthmacsha2
-declare const kSecDigestHMACSHA2: cocoascript.CFStringRef;
+declare const kSecDigestHMACSHA2: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseclinelength64
-declare const kSecLineLength64: cocoascript.CFStringRef;
+declare const kSecLineLength64: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseclinelength76
-declare const kSecLineLength76: cocoascript.CFStringRef;
+declare const kSecLineLength76: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpaddingnonekey
-declare const kSecPaddingNoneKey: cocoascript.CFStringRef;
+declare const kSecPaddingNoneKey: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpaddingoaepkey
-declare const kSecPaddingOAEPKey: cocoascript.CFStringRef;
+declare const kSecPaddingOAEPKey: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpaddingpkcs1key
-declare const kSecPaddingPKCS1Key: cocoascript.CFStringRef;
+declare const kSecPaddingPKCS1Key: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpaddingpkcs5key
-declare const kSecPaddingPKCS5Key: cocoascript.CFStringRef;
+declare const kSecPaddingPKCS5Key: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpaddingpkcs7key
-declare const kSecPaddingPKCS7Key: cocoascript.CFStringRef;
+declare const kSecPaddingPKCS7Key: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecmodenonekey
-declare const kSecModeNoneKey: cocoascript.CFStringRef;
+declare const kSecModeNoneKey: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecmodecbckey
-declare const kSecModeCBCKey: cocoascript.CFStringRef;
+declare const kSecModeCBCKey: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecmodecfbkey
-declare const kSecModeCFBKey: cocoascript.CFStringRef;
+declare const kSecModeCFBKey: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecmodeecbkey
-declare const kSecModeECBKey: cocoascript.CFStringRef;
+declare const kSecModeECBKey: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecmodeofbkey
-declare const kSecModeOFBKey: cocoascript.CFStringRef;
+declare const kSecModeOFBKey: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksectransformactionprocessdata
-declare const kSecTransformActionProcessData: cocoascript.CFStringRef;
+declare const kSecTransformActionProcessData: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksectransformactionattributenotification
-declare const kSecTransformActionAttributeNotification: cocoascript.CFStringRef;
+declare const kSecTransformActionAttributeNotification: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksectransformactioninternalizeextradata
-declare const kSecTransformActionInternalizeExtraData: cocoascript.CFStringRef;
+declare const kSecTransformActionInternalizeExtraData: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksectransformactionattributevalidation
-declare const kSecTransformActionAttributeValidation: cocoascript.CFStringRef;
+declare const kSecTransformActionAttributeValidation: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksectransformactioncanexecute
-declare const kSecTransformActionCanExecute: cocoascript.CFStringRef;
+declare const kSecTransformActionCanExecute: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksectransformactionstartingexecution
-declare const kSecTransformActionStartingExecution: cocoascript.CFStringRef;
+declare const kSecTransformActionStartingExecution: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksectransformactionfinalize
-declare const kSecTransformActionFinalize: cocoascript.CFStringRef;
+declare const kSecTransformActionFinalize: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksectransformactionexternalizeextradata
-declare const kSecTransformActionExternalizeExtraData: cocoascript.CFStringRef;
+declare const kSecTransformActionExternalizeExtraData: CFStringRef;
 // doc://com.apple.documentation/documentation/security/secasn1template/1398515-sub
 declare const sub: void;
 // doc://com.apple.documentation/documentation/security/ksecasn1anytemplate
-declare const kSecAsn1AnyTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1AnyTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1bmpstringtemplate
-declare const kSecAsn1BMPStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1BMPStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1bitstringtemplate
-declare const kSecAsn1BitStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1BitStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1booleantemplate
-declare const kSecAsn1BooleanTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1BooleanTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1enumeratedtemplate
-declare const kSecAsn1EnumeratedTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1EnumeratedTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1generalizedtimetemplate
-declare const kSecAsn1GeneralizedTimeTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1GeneralizedTimeTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1ia5stringtemplate
-declare const kSecAsn1IA5StringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1IA5StringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1integertemplate
-declare const kSecAsn1IntegerTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1IntegerTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1nulltemplate
-declare const kSecAsn1NullTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1NullTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1objectidtemplate
-declare const kSecAsn1ObjectIDTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1ObjectIDTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1octetstringtemplate
-declare const kSecAsn1OctetStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1OctetStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1printablestringtemplate
-declare const kSecAsn1PrintableStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1PrintableStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1skiptemplate
-declare const kSecAsn1SkipTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SkipTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1t61stringtemplate
-declare const kSecAsn1T61StringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1T61StringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1teletexstringtemplate
-declare const kSecAsn1TeletexStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1TeletexStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1utctimetemplate
-declare const kSecAsn1UTCTimeTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1UTCTimeTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1utf8stringtemplate
-declare const kSecAsn1UTF8StringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1UTF8StringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1universalstringtemplate
-declare const kSecAsn1UniversalStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1UniversalStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1unsignedintegertemplate
-declare const kSecAsn1UnsignedIntegerTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1UnsignedIntegerTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1visiblestringtemplate
-declare const kSecAsn1VisibleStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1VisibleStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1pointertoanytemplate
-declare const kSecAsn1PointerToAnyTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1PointerToAnyTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1pointertobmpstringtemplate
-declare const kSecAsn1PointerToBMPStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1PointerToBMPStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1pointertobitstringtemplate
-declare const kSecAsn1PointerToBitStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1PointerToBitStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1pointertobooleantemplate
-declare const kSecAsn1PointerToBooleanTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1PointerToBooleanTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1pointertoenumeratedtemplate
-declare const kSecAsn1PointerToEnumeratedTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1PointerToEnumeratedTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1pointertogeneralizedtimetemplate
-declare const kSecAsn1PointerToGeneralizedTimeTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1PointerToGeneralizedTimeTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1pointertoia5stringtemplate
-declare const kSecAsn1PointerToIA5StringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1PointerToIA5StringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1pointertointegertemplate
-declare const kSecAsn1PointerToIntegerTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1PointerToIntegerTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1pointertonulltemplate
-declare const kSecAsn1PointerToNullTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1PointerToNullTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1pointertoobjectidtemplate
-declare const kSecAsn1PointerToObjectIDTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1PointerToObjectIDTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1pointertooctetstringtemplate
-declare const kSecAsn1PointerToOctetStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1PointerToOctetStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1pointertoprintablestringtemplate
-declare const kSecAsn1PointerToPrintableStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1PointerToPrintableStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1pointertot61stringtemplate
-declare const kSecAsn1PointerToT61StringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1PointerToT61StringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1pointertoteletexstringtemplate
-declare const kSecAsn1PointerToTeletexStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1PointerToTeletexStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1pointertoutctimetemplate
-declare const kSecAsn1PointerToUTCTimeTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1PointerToUTCTimeTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1pointertoutf8stringtemplate
-declare const kSecAsn1PointerToUTF8StringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1PointerToUTF8StringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1pointertouniversalstringtemplate
-declare const kSecAsn1PointerToUniversalStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1PointerToUniversalStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1pointertovisiblestringtemplate
-declare const kSecAsn1PointerToVisibleStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1PointerToVisibleStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1setofanytemplate
-declare const kSecAsn1SetOfAnyTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SetOfAnyTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1setofbmpstringtemplate
-declare const kSecAsn1SetOfBMPStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SetOfBMPStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1setofbitstringtemplate
-declare const kSecAsn1SetOfBitStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SetOfBitStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1setofbooleantemplate
-declare const kSecAsn1SetOfBooleanTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SetOfBooleanTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1setofenumeratedtemplate
-declare const kSecAsn1SetOfEnumeratedTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SetOfEnumeratedTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1setofgeneralizedtimetemplate
-declare const kSecAsn1SetOfGeneralizedTimeTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SetOfGeneralizedTimeTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1setofia5stringtemplate
-declare const kSecAsn1SetOfIA5StringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SetOfIA5StringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1setofintegertemplate
-declare const kSecAsn1SetOfIntegerTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SetOfIntegerTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1setofnulltemplate
-declare const kSecAsn1SetOfNullTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SetOfNullTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1setofobjectidtemplate
-declare const kSecAsn1SetOfObjectIDTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SetOfObjectIDTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1setofoctetstringtemplate
-declare const kSecAsn1SetOfOctetStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SetOfOctetStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1setofprintablestringtemplate
-declare const kSecAsn1SetOfPrintableStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SetOfPrintableStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1setoft61stringtemplate
-declare const kSecAsn1SetOfT61StringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SetOfT61StringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1setofteletexstringtemplate
-declare const kSecAsn1SetOfTeletexStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SetOfTeletexStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1setofutctimetemplate
-declare const kSecAsn1SetOfUTCTimeTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SetOfUTCTimeTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1setofutf8stringtemplate
-declare const kSecAsn1SetOfUTF8StringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SetOfUTF8StringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1setofuniversalstringtemplate
-declare const kSecAsn1SetOfUniversalStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SetOfUniversalStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1setofvisiblestringtemplate
-declare const kSecAsn1SetOfVisibleStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SetOfVisibleStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1sequenceofanytemplate
-declare const kSecAsn1SequenceOfAnyTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SequenceOfAnyTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1sequenceofbmpstringtemplate
-declare const kSecAsn1SequenceOfBMPStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SequenceOfBMPStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1sequenceofbitstringtemplate
-declare const kSecAsn1SequenceOfBitStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SequenceOfBitStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1sequenceofbooleantemplate
-declare const kSecAsn1SequenceOfBooleanTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SequenceOfBooleanTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1sequenceofenumeratedtemplate
-declare const kSecAsn1SequenceOfEnumeratedTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SequenceOfEnumeratedTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1sequenceofgeneralizedtimetemplate
-declare const kSecAsn1SequenceOfGeneralizedTimeTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SequenceOfGeneralizedTimeTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1sequenceofia5stringtemplate
-declare const kSecAsn1SequenceOfIA5StringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SequenceOfIA5StringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1sequenceofintegertemplate
-declare const kSecAsn1SequenceOfIntegerTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SequenceOfIntegerTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1sequenceofnulltemplate
-declare const kSecAsn1SequenceOfNullTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SequenceOfNullTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1sequenceofobjectidtemplate
-declare const kSecAsn1SequenceOfObjectIDTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SequenceOfObjectIDTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1sequenceofoctetstringtemplate
-declare const kSecAsn1SequenceOfOctetStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SequenceOfOctetStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1sequenceofprintablestringtemplate
-declare const kSecAsn1SequenceOfPrintableStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SequenceOfPrintableStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1sequenceoft61stringtemplate
-declare const kSecAsn1SequenceOfT61StringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SequenceOfT61StringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1sequenceofteletexstringtemplate
-declare const kSecAsn1SequenceOfTeletexStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SequenceOfTeletexStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1sequenceofutctimetemplate
-declare const kSecAsn1SequenceOfUTCTimeTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SequenceOfUTCTimeTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1sequenceofutf8stringtemplate
-declare const kSecAsn1SequenceOfUTF8StringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SequenceOfUTF8StringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1sequenceofuniversalstringtemplate
-declare const kSecAsn1SequenceOfUniversalStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SequenceOfUniversalStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecasn1sequenceofvisiblestringtemplate
-declare const kSecAsn1SequenceOfVisibleStringTemplate: cocoascript.SecAsn1Template;
+declare const kSecAsn1SequenceOfVisibleStringTemplate: SecAsn1Template;
 // doc://com.apple.documentation/documentation/security/ksecattrservice
-declare const kSecAttrService: cocoascript.CFStringRef;
+declare const kSecAttrService: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrsecuritydomain
-declare const kSecAttrSecurityDomain: cocoascript.CFStringRef;
+declare const kSecAttrSecurityDomain: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocol
-declare const kSecAttrProtocol: cocoascript.CFStringRef;
+declare const kSecAttrProtocol: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrauthenticationtype
-declare const kSecAttrAuthenticationType: cocoascript.CFStringRef;
+declare const kSecAttrAuthenticationType: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrpath
-declare const kSecAttrPath: cocoascript.CFStringRef;
+declare const kSecAttrPath: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrcertificatetype
-declare const kSecAttrCertificateType: cocoascript.CFStringRef;
+declare const kSecAttrCertificateType: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrissuer
-declare const kSecAttrIssuer: cocoascript.CFStringRef;
+declare const kSecAttrIssuer: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrserialnumber
-declare const kSecAttrSerialNumber: cocoascript.CFStringRef;
+declare const kSecAttrSerialNumber: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrkeyclass
-declare const kSecAttrKeyClass: cocoascript.CFStringRef;
+declare const kSecAttrKeyClass: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrkeytype
-declare const kSecAttrKeyType: cocoascript.CFStringRef;
+declare const kSecAttrKeyType: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrapplicationlabel
-declare const kSecAttrApplicationLabel: cocoascript.CFStringRef;
+declare const kSecAttrApplicationLabel: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrapplicationtag
-declare const kSecAttrApplicationTag: cocoascript.CFStringRef;
+declare const kSecAttrApplicationTag: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrkeysizeinbits
-declare const kSecAttrKeySizeInBits: cocoascript.CFStringRef;
+declare const kSecAttrKeySizeInBits: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattreffectivekeysize
-declare const kSecAttrEffectiveKeySize: cocoascript.CFStringRef;
+declare const kSecAttrEffectiveKeySize: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksslsessionconfig_3des_fallback
-declare const kSSLSessionConfig_3DES_fallback: cocoascript.CFStringRef;
+declare const kSSLSessionConfig_3DES_fallback: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksslsessionconfig_atsv1
-declare const kSSLSessionConfig_ATSv1: cocoascript.CFStringRef;
+declare const kSSLSessionConfig_ATSv1: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksslsessionconfig_atsv1_nopfs
-declare const kSSLSessionConfig_ATSv1_noPFS: cocoascript.CFStringRef;
+declare const kSSLSessionConfig_ATSv1_noPFS: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksslsessionconfig_rc4_fallback
-declare const kSSLSessionConfig_RC4_fallback: cocoascript.CFStringRef;
+declare const kSSLSessionConfig_RC4_fallback: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksslsessionconfig_tlsv1_3des_fallback
-declare const kSSLSessionConfig_TLSv1_3DES_fallback: cocoascript.CFStringRef;
+declare const kSSLSessionConfig_TLSv1_3DES_fallback: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksslsessionconfig_tlsv1_rc4_fallback
-declare const kSSLSessionConfig_TLSv1_RC4_fallback: cocoascript.CFStringRef;
+declare const kSSLSessionConfig_TLSv1_RC4_fallback: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksslsessionconfig_tlsv1_fallback
-declare const kSSLSessionConfig_TLSv1_fallback: cocoascript.CFStringRef;
+declare const kSSLSessionConfig_TLSv1_fallback: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksslsessionconfig_anonymous
-declare const kSSLSessionConfig_anonymous: cocoascript.CFStringRef;
+declare const kSSLSessionConfig_anonymous: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksslsessionconfig_default
-declare const kSSLSessionConfig_default: cocoascript.CFStringRef;
+declare const kSSLSessionConfig_default: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksslsessionconfig_legacy
-declare const kSSLSessionConfig_legacy: cocoascript.CFStringRef;
+declare const kSSLSessionConfig_legacy: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksslsessionconfig_legacy_dhe
-declare const kSSLSessionConfig_legacy_DHE: cocoascript.CFStringRef;
+declare const kSSLSessionConfig_legacy_DHE: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksslsessionconfig_standard
-declare const kSSLSessionConfig_standard: cocoascript.CFStringRef;
+declare const kSSLSessionConfig_standard: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecclassinternetpassword
-declare const kSecClassInternetPassword: cocoascript.CFStringRef;
+declare const kSecClassInternetPassword: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrgeneric
-declare const kSecAttrGeneric: cocoascript.CFStringRef;
+declare const kSecAttrGeneric: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecclassgenericpassword
-declare const kSecClassGenericPassword: cocoascript.CFStringRef;
+declare const kSecClassGenericPassword: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecclasskey
-declare const kSecClassKey: cocoascript.CFStringRef;
+declare const kSecClassKey: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrtokenid
-declare const kSecAttrTokenID: cocoascript.CFStringRef;
+declare const kSecAttrTokenID: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprf
-declare const kSecAttrPRF: cocoascript.CFStringRef;
+declare const kSecAttrPRF: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrsubject
-declare const kSecAttrSubject: cocoascript.CFStringRef;
+declare const kSecAttrSubject: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrsubjectkeyid
-declare const kSecAttrSubjectKeyID: cocoascript.CFStringRef;
+declare const kSecAttrSubjectKeyID: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrpublickeyhash
-declare const kSecAttrPublicKeyHash: cocoascript.CFStringRef;
+declare const kSecAttrPublicKeyHash: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrcertificateencoding
-declare const kSecAttrCertificateEncoding: cocoascript.CFStringRef;
+declare const kSecAttrCertificateEncoding: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrsalt
-declare const kSecAttrSalt: cocoascript.CFStringRef;
+declare const kSecAttrSalt: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrrounds
-declare const kSecAttrRounds: cocoascript.CFStringRef;
+declare const kSecAttrRounds: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrispermanent
-declare const kSecAttrIsPermanent: cocoascript.CFStringRef;
+declare const kSecAttrIsPermanent: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrissensitive
-declare const kSecAttrIsSensitive: cocoascript.CFStringRef;
+declare const kSecAttrIsSensitive: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrisextractable
-declare const kSecAttrIsExtractable: cocoascript.CFStringRef;
+declare const kSecAttrIsExtractable: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrcanencrypt
-declare const kSecAttrCanEncrypt: cocoascript.CFStringRef;
+declare const kSecAttrCanEncrypt: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrcandecrypt
-declare const kSecAttrCanDecrypt: cocoascript.CFStringRef;
+declare const kSecAttrCanDecrypt: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrcanderive
-declare const kSecAttrCanDerive: cocoascript.CFStringRef;
+declare const kSecAttrCanDerive: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrcansign
-declare const kSecAttrCanSign: cocoascript.CFStringRef;
+declare const kSecAttrCanSign: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrcanverify
-declare const kSecAttrCanVerify: cocoascript.CFStringRef;
+declare const kSecAttrCanVerify: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrcanwrap
-declare const kSecAttrCanWrap: cocoascript.CFStringRef;
+declare const kSecAttrCanWrap: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrcanunwrap
-declare const kSecAttrCanUnwrap: cocoascript.CFStringRef;
+declare const kSecAttrCanUnwrap: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolftp
-declare const kSecAttrProtocolFTP: cocoascript.CFStringRef;
+declare const kSecAttrProtocolFTP: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolftpaccount
-declare const kSecAttrProtocolFTPAccount: cocoascript.CFStringRef;
+declare const kSecAttrProtocolFTPAccount: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolhttp
-declare const kSecAttrProtocolHTTP: cocoascript.CFStringRef;
+declare const kSecAttrProtocolHTTP: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolirc
-declare const kSecAttrProtocolIRC: cocoascript.CFStringRef;
+declare const kSecAttrProtocolIRC: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolnntp
-declare const kSecAttrProtocolNNTP: cocoascript.CFStringRef;
+declare const kSecAttrProtocolNNTP: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolpop3
-declare const kSecAttrProtocolPOP3: cocoascript.CFStringRef;
+declare const kSecAttrProtocolPOP3: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolsmtp
-declare const kSecAttrProtocolSMTP: cocoascript.CFStringRef;
+declare const kSecAttrProtocolSMTP: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolsocks
-declare const kSecAttrProtocolSOCKS: cocoascript.CFStringRef;
+declare const kSecAttrProtocolSOCKS: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolimap
-declare const kSecAttrProtocolIMAP: cocoascript.CFStringRef;
+declare const kSecAttrProtocolIMAP: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolldap
-declare const kSecAttrProtocolLDAP: cocoascript.CFStringRef;
+declare const kSecAttrProtocolLDAP: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolappletalk
-declare const kSecAttrProtocolAppleTalk: cocoascript.CFStringRef;
+declare const kSecAttrProtocolAppleTalk: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolafp
-declare const kSecAttrProtocolAFP: cocoascript.CFStringRef;
+declare const kSecAttrProtocolAFP: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocoltelnet
-declare const kSecAttrProtocolTelnet: cocoascript.CFStringRef;
+declare const kSecAttrProtocolTelnet: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolssh
-declare const kSecAttrProtocolSSH: cocoascript.CFStringRef;
+declare const kSecAttrProtocolSSH: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolftps
-declare const kSecAttrProtocolFTPS: cocoascript.CFStringRef;
+declare const kSecAttrProtocolFTPS: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolhttps
-declare const kSecAttrProtocolHTTPS: cocoascript.CFStringRef;
+declare const kSecAttrProtocolHTTPS: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolhttpproxy
-declare const kSecAttrProtocolHTTPProxy: cocoascript.CFStringRef;
+declare const kSecAttrProtocolHTTPProxy: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolhttpsproxy
-declare const kSecAttrProtocolHTTPSProxy: cocoascript.CFStringRef;
+declare const kSecAttrProtocolHTTPSProxy: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolftpproxy
-declare const kSecAttrProtocolFTPProxy: cocoascript.CFStringRef;
+declare const kSecAttrProtocolFTPProxy: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolsmb
-declare const kSecAttrProtocolSMB: cocoascript.CFStringRef;
+declare const kSecAttrProtocolSMB: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolrtsp
-declare const kSecAttrProtocolRTSP: cocoascript.CFStringRef;
+declare const kSecAttrProtocolRTSP: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolrtspproxy
-declare const kSecAttrProtocolRTSPProxy: cocoascript.CFStringRef;
+declare const kSecAttrProtocolRTSPProxy: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocoldaap
-declare const kSecAttrProtocolDAAP: cocoascript.CFStringRef;
+declare const kSecAttrProtocolDAAP: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocoleppc
-declare const kSecAttrProtocolEPPC: cocoascript.CFStringRef;
+declare const kSecAttrProtocolEPPC: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolipp
-declare const kSecAttrProtocolIPP: cocoascript.CFStringRef;
+declare const kSecAttrProtocolIPP: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolnntps
-declare const kSecAttrProtocolNNTPS: cocoascript.CFStringRef;
+declare const kSecAttrProtocolNNTPS: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolldaps
-declare const kSecAttrProtocolLDAPS: cocoascript.CFStringRef;
+declare const kSecAttrProtocolLDAPS: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocoltelnets
-declare const kSecAttrProtocolTelnetS: cocoascript.CFStringRef;
+declare const kSecAttrProtocolTelnetS: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolimaps
-declare const kSecAttrProtocolIMAPS: cocoascript.CFStringRef;
+declare const kSecAttrProtocolIMAPS: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolircs
-declare const kSecAttrProtocolIRCS: cocoascript.CFStringRef;
+declare const kSecAttrProtocolIRCS: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprotocolpop3s
-declare const kSecAttrProtocolPOP3S: cocoascript.CFStringRef;
+declare const kSecAttrProtocolPOP3S: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypentlm
-declare const kSecAttrAuthenticationTypeNTLM: cocoascript.CFStringRef;
+declare const kSecAttrAuthenticationTypeNTLM: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypemsn
-declare const kSecAttrAuthenticationTypeMSN: cocoascript.CFStringRef;
+declare const kSecAttrAuthenticationTypeMSN: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypedpa
-declare const kSecAttrAuthenticationTypeDPA: cocoascript.CFStringRef;
+declare const kSecAttrAuthenticationTypeDPA: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrauthenticationtyperpa
-declare const kSecAttrAuthenticationTypeRPA: cocoascript.CFStringRef;
+declare const kSecAttrAuthenticationTypeRPA: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypehttpbasic
-declare const kSecAttrAuthenticationTypeHTTPBasic: cocoascript.CFStringRef;
+declare const kSecAttrAuthenticationTypeHTTPBasic: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypehttpdigest
-declare const kSecAttrAuthenticationTypeHTTPDigest: cocoascript.CFStringRef;
+declare const kSecAttrAuthenticationTypeHTTPDigest: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypehtmlform
-declare const kSecAttrAuthenticationTypeHTMLForm: cocoascript.CFStringRef;
+declare const kSecAttrAuthenticationTypeHTMLForm: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypedefault
-declare const kSecAttrAuthenticationTypeDefault: cocoascript.CFStringRef;
+declare const kSecAttrAuthenticationTypeDefault: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrkeyclasspublic
-declare const kSecAttrKeyClassPublic: cocoascript.CFStringRef;
+declare const kSecAttrKeyClassPublic: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrkeyclassprivate
-declare const kSecAttrKeyClassPrivate: cocoascript.CFStringRef;
+declare const kSecAttrKeyClassPrivate: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrkeyclasssymmetric
-declare const kSecAttrKeyClassSymmetric: cocoascript.CFStringRef;
+declare const kSecAttrKeyClassSymmetric: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrkeytypersa
-declare const kSecAttrKeyTypeRSA: cocoascript.CFStringRef;
+declare const kSecAttrKeyTypeRSA: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrkeytypedsa
-declare const kSecAttrKeyTypeDSA: cocoascript.CFStringRef;
+declare const kSecAttrKeyTypeDSA: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrkeytypeaes
-declare const kSecAttrKeyTypeAES: cocoascript.CFStringRef;
+declare const kSecAttrKeyTypeAES: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrkeytypedes
-declare const kSecAttrKeyTypeDES: cocoascript.CFStringRef;
+declare const kSecAttrKeyTypeDES: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrkeytype3des
-declare const kSecAttrKeyType3DES: cocoascript.CFStringRef;
+declare const kSecAttrKeyType3DES: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrkeytyperc4
-declare const kSecAttrKeyTypeRC4: cocoascript.CFStringRef;
+declare const kSecAttrKeyTypeRC4: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrkeytyperc2
-declare const kSecAttrKeyTypeRC2: cocoascript.CFStringRef;
+declare const kSecAttrKeyTypeRC2: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrkeytypecast
-declare const kSecAttrKeyTypeCAST: cocoascript.CFStringRef;
+declare const kSecAttrKeyTypeCAST: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrkeytypeecdsa
-declare const kSecAttrKeyTypeECDSA: cocoascript.CFStringRef;
+declare const kSecAttrKeyTypeECDSA: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrkeytypeec
-declare const kSecAttrKeyTypeEC: cocoascript.CFStringRef;
+declare const kSecAttrKeyTypeEC: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrkeytypeecsecprimerandom
-declare const kSecAttrKeyTypeECSECPrimeRandom: cocoascript.CFStringRef;
+declare const kSecAttrKeyTypeECSECPrimeRandom: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrtokenidsecureenclave
-declare const kSecAttrTokenIDSecureEnclave: cocoascript.CFStringRef;
+declare const kSecAttrTokenIDSecureEnclave: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattraccessiblewhenunlockedthisdeviceonly
-declare const kSecAttrAccessibleWhenUnlockedThisDeviceOnly: cocoascript.CFStringRef;
+declare const kSecAttrAccessibleWhenUnlockedThisDeviceOnly: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattraccessiblewhenunlocked
-declare const kSecAttrAccessibleWhenUnlocked: cocoascript.CFStringRef;
+declare const kSecAttrAccessibleWhenUnlocked: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattraccessibleafterfirstunlockthisdeviceonly
-declare const kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly: cocoascript.CFStringRef;
+declare const kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattraccessibleafterfirstunlock
-declare const kSecAttrAccessibleAfterFirstUnlock: cocoascript.CFStringRef;
+declare const kSecAttrAccessibleAfterFirstUnlock: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattraccessiblealwaysthisdeviceonly
-declare const kSecAttrAccessibleAlwaysThisDeviceOnly: cocoascript.CFStringRef;
+declare const kSecAttrAccessibleAlwaysThisDeviceOnly: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattraccessiblealways
-declare const kSecAttrAccessibleAlways: cocoascript.CFStringRef;
+declare const kSecAttrAccessibleAlways: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprfhmacalgsha1
-declare const kSecAttrPRFHmacAlgSHA1: cocoascript.CFStringRef;
+declare const kSecAttrPRFHmacAlgSHA1: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprfhmacalgsha224
-declare const kSecAttrPRFHmacAlgSHA224: cocoascript.CFStringRef;
+declare const kSecAttrPRFHmacAlgSHA224: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprfhmacalgsha256
-declare const kSecAttrPRFHmacAlgSHA256: cocoascript.CFStringRef;
+declare const kSecAttrPRFHmacAlgSHA256: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprfhmacalgsha384
-declare const kSecAttrPRFHmacAlgSHA384: cocoascript.CFStringRef;
+declare const kSecAttrPRFHmacAlgSHA384: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattrprfhmacalgsha512
-declare const kSecAttrPRFHmacAlgSHA512: cocoascript.CFStringRef;
+declare const kSecAttrPRFHmacAlgSHA512: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecattraccessgrouptoken
-declare const kSecAttrAccessGroupToken: cocoascript.CFStringRef;
+declare const kSecAttrAccessGroupToken: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecmatchlimitone
-declare const kSecMatchLimitOne: cocoascript.CFStringRef;
+declare const kSecMatchLimitOne: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecmatchpolicy
-declare const kSecMatchPolicy: cocoascript.CFStringRef;
+declare const kSecMatchPolicy: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecmatchissuers
-declare const kSecMatchIssuers: cocoascript.CFStringRef;
+declare const kSecMatchIssuers: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecmatchemailaddressifpresent
-declare const kSecMatchEmailAddressIfPresent: cocoascript.CFStringRef;
+declare const kSecMatchEmailAddressIfPresent: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecmatchsubjectcontains
-declare const kSecMatchSubjectContains: cocoascript.CFStringRef;
+declare const kSecMatchSubjectContains: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecmatchsubjectstartswith
-declare const kSecMatchSubjectStartsWith: cocoascript.CFStringRef;
+declare const kSecMatchSubjectStartsWith: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecmatchsubjectendswith
-declare const kSecMatchSubjectEndsWith: cocoascript.CFStringRef;
+declare const kSecMatchSubjectEndsWith: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecmatchsubjectwholestring
-declare const kSecMatchSubjectWholeString: cocoascript.CFStringRef;
+declare const kSecMatchSubjectWholeString: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecmatchcaseinsensitive
-declare const kSecMatchCaseInsensitive: cocoascript.CFStringRef;
+declare const kSecMatchCaseInsensitive: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecmatchdiacriticinsensitive
-declare const kSecMatchDiacriticInsensitive: cocoascript.CFStringRef;
+declare const kSecMatchDiacriticInsensitive: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecmatchwidthinsensitive
-declare const kSecMatchWidthInsensitive: cocoascript.CFStringRef;
+declare const kSecMatchWidthInsensitive: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecmatchtrustedonly
-declare const kSecMatchTrustedOnly: cocoascript.CFStringRef;
+declare const kSecMatchTrustedOnly: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecmatchvalidondate
-declare const kSecMatchValidOnDate: cocoascript.CFStringRef;
+declare const kSecMatchValidOnDate: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecuseauthenticationuiallow
-declare const kSecUseAuthenticationUIAllow: cocoascript.CFStringRef;
+declare const kSecUseAuthenticationUIAllow: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecuseauthenticationuifail
-declare const kSecUseAuthenticationUIFail: cocoascript.CFStringRef;
+declare const kSecUseAuthenticationUIFail: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecuseauthenticationuiskip
-declare const kSecUseAuthenticationUISkip: cocoascript.CFStringRef;
+declare const kSecUseAuthenticationUISkip: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecreturnpersistentref
-declare const kSecReturnPersistentRef: cocoascript.CFStringRef;
+declare const kSecReturnPersistentRef: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecvalueref
-declare const kSecValueRef: cocoascript.CFStringRef;
+declare const kSecValueRef: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecvaluepersistentref
-declare const kSecValuePersistentRef: cocoascript.CFStringRef;
+declare const kSecValuePersistentRef: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpublickeyattrs
-declare const kSecPublicKeyAttrs: cocoascript.CFStringRef;
+declare const kSecPublicKeyAttrs: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecprivatekeyattrs
-declare const kSecPrivateKeyAttrs: cocoascript.CFStringRef;
+declare const kSecPrivateKeyAttrs: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsaencryptionoaepsha512
-declare const kSecKeyAlgorithmRSAEncryptionOAEPSHA512: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSAEncryptionOAEPSHA512: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsaencryptionoaepsha512aesgcm
-declare const kSecKeyAlgorithmRSAEncryptionOAEPSHA512AESGCM: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSAEncryptionOAEPSHA512AESGCM: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmeciesencryptioncofactorx963sha256aesgcm
-declare const kSecKeyAlgorithmECIESEncryptionCofactorX963SHA256AESGCM: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECIESEncryptionCofactorX963SHA256AESGCM: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsasignaturedigestpkcs1v15sha512
-declare const kSecKeyAlgorithmRSASignatureDigestPKCS1v15SHA512: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSASignatureDigestPKCS1v15SHA512: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmecdsasignaturemessagex962sha512
-declare const kSecKeyAlgorithmECDSASignatureMessageX962SHA512: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECDSASignatureMessageX962SHA512: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/ksectrustcertificatetransparency
-declare const kSecTrustCertificateTransparency: cocoascript.CFStringRef;
+declare const kSecTrustCertificateTransparency: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksectrustcertificatetransparencywhitelist
-declare const kSecTrustCertificateTransparencyWhiteList: cocoascript.CFStringRef;
+declare const kSecTrustCertificateTransparencyWhiteList: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksectrustevaluationdate
-declare const kSecTrustEvaluationDate: cocoascript.CFStringRef;
+declare const kSecTrustEvaluationDate: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksectrustextendedvalidation
-declare const kSecTrustExtendedValidation: cocoascript.CFStringRef;
+declare const kSecTrustExtendedValidation: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksectrustorganizationname
-declare const kSecTrustOrganizationName: cocoascript.CFStringRef;
+declare const kSecTrustOrganizationName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksectrustresultvalue
-declare const kSecTrustResultValue: cocoascript.CFStringRef;
+declare const kSecTrustResultValue: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksectrustrevocationchecked
-declare const kSecTrustRevocationChecked: cocoascript.CFStringRef;
+declare const kSecTrustRevocationChecked: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksectrustrevocationvaliduntildate
-declare const kSecTrustRevocationValidUntilDate: cocoascript.CFStringRef;
+declare const kSecTrustRevocationValidUntilDate: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecimportitemidentity
-declare const kSecImportItemIdentity: cocoascript.CFStringRef;
+declare const kSecImportItemIdentity: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecimportitemcertchain
-declare const kSecImportItemCertChain: cocoascript.CFStringRef;
+declare const kSecImportItemCertChain: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecimportitemtrust
-declare const kSecImportItemTrust: cocoascript.CFStringRef;
+declare const kSecImportItemTrust: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecimportitemkeyid
-declare const kSecImportItemKeyID: cocoascript.CFStringRef;
+declare const kSecImportItemKeyID: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecimportitemlabel
-declare const kSecImportItemLabel: cocoascript.CFStringRef;
+declare const kSecImportItemLabel: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecimportexportpassphrase
-declare const kSecImportExportPassphrase: cocoascript.CFStringRef;
+declare const kSecImportExportPassphrase: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecimportexportkeychain
-declare const kSecImportExportKeychain: cocoascript.CFStringRef;
+declare const kSecImportExportKeychain: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecimportexportaccess
-declare const kSecImportExportAccess: cocoascript.CFStringRef;
+declare const kSecImportExportAccess: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecidentitydomaindefault
-declare const kSecIdentityDomainDefault: cocoascript.CFStringRef;
+declare const kSecIdentityDomainDefault: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecidentitydomainkerberoskdc
-declare const kSecIdentityDomainKerberosKDC: cocoascript.CFStringRef;
+declare const kSecIdentityDomainKerberosKDC: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidadc_cert_policy
-declare const kSecOIDADC_CERT_POLICY: cocoascript.CFStringRef;
+declare const kSecOIDADC_CERT_POLICY: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidapple_cert_policy
-declare const kSecOIDAPPLE_CERT_POLICY: cocoascript.CFStringRef;
+declare const kSecOIDAPPLE_CERT_POLICY: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidapple_eku_code_signing
-declare const kSecOIDAPPLE_EKU_CODE_SIGNING: cocoascript.CFStringRef;
+declare const kSecOIDAPPLE_EKU_CODE_SIGNING: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidapple_eku_code_signing_dev
-declare const kSecOIDAPPLE_EKU_CODE_SIGNING_DEV: cocoascript.CFStringRef;
+declare const kSecOIDAPPLE_EKU_CODE_SIGNING_DEV: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidapple_eku_ichat_encryption
-declare const kSecOIDAPPLE_EKU_ICHAT_ENCRYPTION: cocoascript.CFStringRef;
+declare const kSecOIDAPPLE_EKU_ICHAT_ENCRYPTION: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidapple_eku_ichat_signing
-declare const kSecOIDAPPLE_EKU_ICHAT_SIGNING: cocoascript.CFStringRef;
+declare const kSecOIDAPPLE_EKU_ICHAT_SIGNING: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidapple_eku_resource_signing
-declare const kSecOIDAPPLE_EKU_RESOURCE_SIGNING: cocoascript.CFStringRef;
+declare const kSecOIDAPPLE_EKU_RESOURCE_SIGNING: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidapple_eku_system_identity
-declare const kSecOIDAPPLE_EKU_SYSTEM_IDENTITY: cocoascript.CFStringRef;
+declare const kSecOIDAPPLE_EKU_SYSTEM_IDENTITY: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidapple_extension
-declare const kSecOIDAPPLE_EXTENSION: cocoascript.CFStringRef;
+declare const kSecOIDAPPLE_EXTENSION: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidapple_extension_aai_intermediate
-declare const kSecOIDAPPLE_EXTENSION_AAI_INTERMEDIATE: cocoascript.CFStringRef;
+declare const kSecOIDAPPLE_EXTENSION_AAI_INTERMEDIATE: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidapple_extension_adc_apple_signing
-declare const kSecOIDAPPLE_EXTENSION_ADC_APPLE_SIGNING: cocoascript.CFStringRef;
+declare const kSecOIDAPPLE_EXTENSION_ADC_APPLE_SIGNING: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidapple_extension_adc_dev_signing
-declare const kSecOIDAPPLE_EXTENSION_ADC_DEV_SIGNING: cocoascript.CFStringRef;
+declare const kSecOIDAPPLE_EXTENSION_ADC_DEV_SIGNING: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidapple_extension_appleid_intermediate
-declare const kSecOIDAPPLE_EXTENSION_APPLEID_INTERMEDIATE: cocoascript.CFStringRef;
+declare const kSecOIDAPPLE_EXTENSION_APPLEID_INTERMEDIATE: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidapple_extension_apple_signing
-declare const kSecOIDAPPLE_EXTENSION_APPLE_SIGNING: cocoascript.CFStringRef;
+declare const kSecOIDAPPLE_EXTENSION_APPLE_SIGNING: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidapple_extension_code_signing
-declare const kSecOIDAPPLE_EXTENSION_CODE_SIGNING: cocoascript.CFStringRef;
+declare const kSecOIDAPPLE_EXTENSION_CODE_SIGNING: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidapple_extension_intermediate_marker
-declare const kSecOIDAPPLE_EXTENSION_INTERMEDIATE_MARKER: cocoascript.CFStringRef;
+declare const kSecOIDAPPLE_EXTENSION_INTERMEDIATE_MARKER: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidapple_extension_itms_intermediate
-declare const kSecOIDAPPLE_EXTENSION_ITMS_INTERMEDIATE: cocoascript.CFStringRef;
+declare const kSecOIDAPPLE_EXTENSION_ITMS_INTERMEDIATE: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidapple_extension_wwdr_intermediate
-declare const kSecOIDAPPLE_EXTENSION_WWDR_INTERMEDIATE: cocoascript.CFStringRef;
+declare const kSecOIDAPPLE_EXTENSION_WWDR_INTERMEDIATE: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidauthorityinfoaccess
-declare const kSecOIDAuthorityInfoAccess: cocoascript.CFStringRef;
+declare const kSecOIDAuthorityInfoAccess: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidauthoritykeyidentifier
-declare const kSecOIDAuthorityKeyIdentifier: cocoascript.CFStringRef;
+declare const kSecOIDAuthorityKeyIdentifier: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidbasicconstraints
-declare const kSecOIDBasicConstraints: cocoascript.CFStringRef;
+declare const kSecOIDBasicConstraints: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidbiometricinfo
-declare const kSecOIDBiometricInfo: cocoascript.CFStringRef;
+declare const kSecOIDBiometricInfo: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidcssmkeystruct
-declare const kSecOIDCSSMKeyStruct: cocoascript.CFStringRef;
+declare const kSecOIDCSSMKeyStruct: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidcertissuer
-declare const kSecOIDCertIssuer: cocoascript.CFStringRef;
+declare const kSecOIDCertIssuer: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidcertificatepolicies
-declare const kSecOIDCertificatePolicies: cocoascript.CFStringRef;
+declare const kSecOIDCertificatePolicies: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidclientauth
-declare const kSecOIDClientAuth: cocoascript.CFStringRef;
+declare const kSecOIDClientAuth: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidcollectivestateprovincename
-declare const kSecOIDCollectiveStateProvinceName: cocoascript.CFStringRef;
+declare const kSecOIDCollectiveStateProvinceName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidcollectivestreetaddress
-declare const kSecOIDCollectiveStreetAddress: cocoascript.CFStringRef;
+declare const kSecOIDCollectiveStreetAddress: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidcommonname
-declare const kSecOIDCommonName: cocoascript.CFStringRef;
+declare const kSecOIDCommonName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidcountryname
-declare const kSecOIDCountryName: cocoascript.CFStringRef;
+declare const kSecOIDCountryName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidcrldistributionpoints
-declare const kSecOIDCrlDistributionPoints: cocoascript.CFStringRef;
+declare const kSecOIDCrlDistributionPoints: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidcrlnumber
-declare const kSecOIDCrlNumber: cocoascript.CFStringRef;
+declare const kSecOIDCrlNumber: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidcrlreason
-declare const kSecOIDCrlReason: cocoascript.CFStringRef;
+declare const kSecOIDCrlReason: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoiddotmac_cert_email_encrypt
-declare const kSecOIDDOTMAC_CERT_EMAIL_ENCRYPT: cocoascript.CFStringRef;
+declare const kSecOIDDOTMAC_CERT_EMAIL_ENCRYPT: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoiddotmac_cert_email_sign
-declare const kSecOIDDOTMAC_CERT_EMAIL_SIGN: cocoascript.CFStringRef;
+declare const kSecOIDDOTMAC_CERT_EMAIL_SIGN: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoiddotmac_cert_extension
-declare const kSecOIDDOTMAC_CERT_EXTENSION: cocoascript.CFStringRef;
+declare const kSecOIDDOTMAC_CERT_EXTENSION: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoiddotmac_cert_identity
-declare const kSecOIDDOTMAC_CERT_IDENTITY: cocoascript.CFStringRef;
+declare const kSecOIDDOTMAC_CERT_IDENTITY: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoiddotmac_cert_policy
-declare const kSecOIDDOTMAC_CERT_POLICY: cocoascript.CFStringRef;
+declare const kSecOIDDOTMAC_CERT_POLICY: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoiddeltacrlindicator
-declare const kSecOIDDeltaCrlIndicator: cocoascript.CFStringRef;
+declare const kSecOIDDeltaCrlIndicator: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoiddescription
-declare const kSecOIDDescription: cocoascript.CFStringRef;
+declare const kSecOIDDescription: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoideku_ipsec
-declare const kSecOIDEKU_IPSec: cocoascript.CFStringRef;
+declare const kSecOIDEKU_IPSec: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidemailaddress
-declare const kSecOIDEmailAddress: cocoascript.CFStringRef;
+declare const kSecOIDEmailAddress: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidemailprotection
-declare const kSecOIDEmailProtection: cocoascript.CFStringRef;
+declare const kSecOIDEmailProtection: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidextendedkeyusage
-declare const kSecOIDExtendedKeyUsage: cocoascript.CFStringRef;
+declare const kSecOIDExtendedKeyUsage: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidextendedkeyusageany
-declare const kSecOIDExtendedKeyUsageAny: cocoascript.CFStringRef;
+declare const kSecOIDExtendedKeyUsageAny: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidextendedusecodesigning
-declare const kSecOIDExtendedUseCodeSigning: cocoascript.CFStringRef;
+declare const kSecOIDExtendedUseCodeSigning: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidgivenname
-declare const kSecOIDGivenName: cocoascript.CFStringRef;
+declare const kSecOIDGivenName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidholdinstructioncode
-declare const kSecOIDHoldInstructionCode: cocoascript.CFStringRef;
+declare const kSecOIDHoldInstructionCode: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidinvaliditydate
-declare const kSecOIDInvalidityDate: cocoascript.CFStringRef;
+declare const kSecOIDInvalidityDate: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidissueraltname
-declare const kSecOIDIssuerAltName: cocoascript.CFStringRef;
+declare const kSecOIDIssuerAltName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidissuingdistributionpoint
-declare const kSecOIDIssuingDistributionPoint: cocoascript.CFStringRef;
+declare const kSecOIDIssuingDistributionPoint: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidissuingdistributionpoints
-declare const kSecOIDIssuingDistributionPoints: cocoascript.CFStringRef;
+declare const kSecOIDIssuingDistributionPoints: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidkerbv5_pkinit_kp_client_auth
-declare const kSecOIDKERBv5_PKINIT_KP_CLIENT_AUTH: cocoascript.CFStringRef;
+declare const kSecOIDKERBv5_PKINIT_KP_CLIENT_AUTH: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidkerbv5_pkinit_kp_kdc
-declare const kSecOIDKERBv5_PKINIT_KP_KDC: cocoascript.CFStringRef;
+declare const kSecOIDKERBv5_PKINIT_KP_KDC: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidkeyusage
-declare const kSecOIDKeyUsage: cocoascript.CFStringRef;
+declare const kSecOIDKeyUsage: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidlocalityname
-declare const kSecOIDLocalityName: cocoascript.CFStringRef;
+declare const kSecOIDLocalityName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidms_ntprincipalname
-declare const kSecOIDMS_NTPrincipalName: cocoascript.CFStringRef;
+declare const kSecOIDMS_NTPrincipalName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidmicrosoftsgc
-declare const kSecOIDMicrosoftSGC: cocoascript.CFStringRef;
+declare const kSecOIDMicrosoftSGC: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidnameconstraints
-declare const kSecOIDNameConstraints: cocoascript.CFStringRef;
+declare const kSecOIDNameConstraints: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidnetscapecertsequence
-declare const kSecOIDNetscapeCertSequence: cocoascript.CFStringRef;
+declare const kSecOIDNetscapeCertSequence: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidnetscapecerttype
-declare const kSecOIDNetscapeCertType: cocoascript.CFStringRef;
+declare const kSecOIDNetscapeCertType: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidnetscapesgc
-declare const kSecOIDNetscapeSGC: cocoascript.CFStringRef;
+declare const kSecOIDNetscapeSGC: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidocspsigning
-declare const kSecOIDOCSPSigning: cocoascript.CFStringRef;
+declare const kSecOIDOCSPSigning: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidorganizationname
-declare const kSecOIDOrganizationName: cocoascript.CFStringRef;
+declare const kSecOIDOrganizationName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidorganizationalunitname
-declare const kSecOIDOrganizationalUnitName: cocoascript.CFStringRef;
+declare const kSecOIDOrganizationalUnitName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidpolicyconstraints
-declare const kSecOIDPolicyConstraints: cocoascript.CFStringRef;
+declare const kSecOIDPolicyConstraints: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidpolicymappings
-declare const kSecOIDPolicyMappings: cocoascript.CFStringRef;
+declare const kSecOIDPolicyMappings: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidprivatekeyusageperiod
-declare const kSecOIDPrivateKeyUsagePeriod: cocoascript.CFStringRef;
+declare const kSecOIDPrivateKeyUsagePeriod: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidqc_statements
-declare const kSecOIDQC_Statements: cocoascript.CFStringRef;
+declare const kSecOIDQC_Statements: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidsrvname
-declare const kSecOIDSRVName: cocoascript.CFStringRef;
+declare const kSecOIDSRVName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidserialnumber
-declare const kSecOIDSerialNumber: cocoascript.CFStringRef;
+declare const kSecOIDSerialNumber: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidserverauth
-declare const kSecOIDServerAuth: cocoascript.CFStringRef;
+declare const kSecOIDServerAuth: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidstateprovincename
-declare const kSecOIDStateProvinceName: cocoascript.CFStringRef;
+declare const kSecOIDStateProvinceName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidstreetaddress
-declare const kSecOIDStreetAddress: cocoascript.CFStringRef;
+declare const kSecOIDStreetAddress: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidsubjectaltname
-declare const kSecOIDSubjectAltName: cocoascript.CFStringRef;
+declare const kSecOIDSubjectAltName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidsubjectdirectoryattributes
-declare const kSecOIDSubjectDirectoryAttributes: cocoascript.CFStringRef;
+declare const kSecOIDSubjectDirectoryAttributes: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidsubjectemailaddress
-declare const kSecOIDSubjectEmailAddress: cocoascript.CFStringRef;
+declare const kSecOIDSubjectEmailAddress: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidsubjectinfoaccess
-declare const kSecOIDSubjectInfoAccess: cocoascript.CFStringRef;
+declare const kSecOIDSubjectInfoAccess: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidsubjectkeyidentifier
-declare const kSecOIDSubjectKeyIdentifier: cocoascript.CFStringRef;
+declare const kSecOIDSubjectKeyIdentifier: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidsubjectpicture
-declare const kSecOIDSubjectPicture: cocoascript.CFStringRef;
+declare const kSecOIDSubjectPicture: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidsubjectsignaturebitmap
-declare const kSecOIDSubjectSignatureBitmap: cocoascript.CFStringRef;
+declare const kSecOIDSubjectSignatureBitmap: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidsurname
-declare const kSecOIDSurname: cocoascript.CFStringRef;
+declare const kSecOIDSurname: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidtimestamping
-declare const kSecOIDTimeStamping: cocoascript.CFStringRef;
+declare const kSecOIDTimeStamping: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidtitle
-declare const kSecOIDTitle: cocoascript.CFStringRef;
+declare const kSecOIDTitle: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoiduseexemptions
-declare const kSecOIDUseExemptions: cocoascript.CFStringRef;
+declare const kSecOIDUseExemptions: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v1certificateissueruniqueid
-declare const kSecOIDX509V1CertificateIssuerUniqueId: cocoascript.CFStringRef;
+declare const kSecOIDX509V1CertificateIssuerUniqueId: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v1certificatesubjectuniqueid
-declare const kSecOIDX509V1CertificateSubjectUniqueId: cocoascript.CFStringRef;
+declare const kSecOIDX509V1CertificateSubjectUniqueId: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v1issuername
-declare const kSecOIDX509V1IssuerName: cocoascript.CFStringRef;
+declare const kSecOIDX509V1IssuerName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v1issuernamecstruct
-declare const kSecOIDX509V1IssuerNameCStruct: cocoascript.CFStringRef;
+declare const kSecOIDX509V1IssuerNameCStruct: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v1issuernameldap
-declare const kSecOIDX509V1IssuerNameLDAP: cocoascript.CFStringRef;
+declare const kSecOIDX509V1IssuerNameLDAP: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v1issuernamestd
-declare const kSecOIDX509V1IssuerNameStd: cocoascript.CFStringRef;
+declare const kSecOIDX509V1IssuerNameStd: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v1serialnumber
-declare const kSecOIDX509V1SerialNumber: cocoascript.CFStringRef;
+declare const kSecOIDX509V1SerialNumber: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v1signature
-declare const kSecOIDX509V1Signature: cocoascript.CFStringRef;
+declare const kSecOIDX509V1Signature: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v1signaturealgorithm
-declare const kSecOIDX509V1SignatureAlgorithm: cocoascript.CFStringRef;
+declare const kSecOIDX509V1SignatureAlgorithm: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v1signaturealgorithmparameters
-declare const kSecOIDX509V1SignatureAlgorithmParameters: cocoascript.CFStringRef;
+declare const kSecOIDX509V1SignatureAlgorithmParameters: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v1signaturealgorithmtbs
-declare const kSecOIDX509V1SignatureAlgorithmTBS: cocoascript.CFStringRef;
+declare const kSecOIDX509V1SignatureAlgorithmTBS: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v1signaturecstruct
-declare const kSecOIDX509V1SignatureCStruct: cocoascript.CFStringRef;
+declare const kSecOIDX509V1SignatureCStruct: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v1signaturestruct
-declare const kSecOIDX509V1SignatureStruct: cocoascript.CFStringRef;
+declare const kSecOIDX509V1SignatureStruct: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v1subjectname
-declare const kSecOIDX509V1SubjectName: cocoascript.CFStringRef;
+declare const kSecOIDX509V1SubjectName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v1subjectnamecstruct
-declare const kSecOIDX509V1SubjectNameCStruct: cocoascript.CFStringRef;
+declare const kSecOIDX509V1SubjectNameCStruct: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v1subjectnameldap
-declare const kSecOIDX509V1SubjectNameLDAP: cocoascript.CFStringRef;
+declare const kSecOIDX509V1SubjectNameLDAP: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v1subjectnamestd
-declare const kSecOIDX509V1SubjectNameStd: cocoascript.CFStringRef;
+declare const kSecOIDX509V1SubjectNameStd: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v1subjectpublickey
-declare const kSecOIDX509V1SubjectPublicKey: cocoascript.CFStringRef;
+declare const kSecOIDX509V1SubjectPublicKey: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v1subjectpublickeyalgorithm
-declare const kSecOIDX509V1SubjectPublicKeyAlgorithm: cocoascript.CFStringRef;
+declare const kSecOIDX509V1SubjectPublicKeyAlgorithm: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v1subjectpublickeyalgorithmparameters
-declare const kSecOIDX509V1SubjectPublicKeyAlgorithmParameters: cocoascript.CFStringRef;
+declare const kSecOIDX509V1SubjectPublicKeyAlgorithmParameters: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v1subjectpublickeycstruct
-declare const kSecOIDX509V1SubjectPublicKeyCStruct: cocoascript.CFStringRef;
+declare const kSecOIDX509V1SubjectPublicKeyCStruct: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v1validitynotafter
-declare const kSecOIDX509V1ValidityNotAfter: cocoascript.CFStringRef;
+declare const kSecOIDX509V1ValidityNotAfter: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v1validitynotbefore
-declare const kSecOIDX509V1ValidityNotBefore: cocoascript.CFStringRef;
+declare const kSecOIDX509V1ValidityNotBefore: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v1version
-declare const kSecOIDX509V1Version: cocoascript.CFStringRef;
+declare const kSecOIDX509V1Version: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v3certificate
-declare const kSecOIDX509V3Certificate: cocoascript.CFStringRef;
+declare const kSecOIDX509V3Certificate: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v3certificatecstruct
-declare const kSecOIDX509V3CertificateCStruct: cocoascript.CFStringRef;
+declare const kSecOIDX509V3CertificateCStruct: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v3certificateextensioncstruct
-declare const kSecOIDX509V3CertificateExtensionCStruct: cocoascript.CFStringRef;
+declare const kSecOIDX509V3CertificateExtensionCStruct: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v3certificateextensioncritical
-declare const kSecOIDX509V3CertificateExtensionCritical: cocoascript.CFStringRef;
+declare const kSecOIDX509V3CertificateExtensionCritical: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v3certificateextensionid
-declare const kSecOIDX509V3CertificateExtensionId: cocoascript.CFStringRef;
+declare const kSecOIDX509V3CertificateExtensionId: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v3certificateextensionstruct
-declare const kSecOIDX509V3CertificateExtensionStruct: cocoascript.CFStringRef;
+declare const kSecOIDX509V3CertificateExtensionStruct: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v3certificateextensiontype
-declare const kSecOIDX509V3CertificateExtensionType: cocoascript.CFStringRef;
+declare const kSecOIDX509V3CertificateExtensionType: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v3certificateextensionvalue
-declare const kSecOIDX509V3CertificateExtensionValue: cocoascript.CFStringRef;
+declare const kSecOIDX509V3CertificateExtensionValue: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v3certificateextensionscstruct
-declare const kSecOIDX509V3CertificateExtensionsCStruct: cocoascript.CFStringRef;
+declare const kSecOIDX509V3CertificateExtensionsCStruct: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v3certificateextensionsstruct
-declare const kSecOIDX509V3CertificateExtensionsStruct: cocoascript.CFStringRef;
+declare const kSecOIDX509V3CertificateExtensionsStruct: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v3certificatenumberofextensions
-declare const kSecOIDX509V3CertificateNumberOfExtensions: cocoascript.CFStringRef;
+declare const kSecOIDX509V3CertificateNumberOfExtensions: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v3signedcertificate
-declare const kSecOIDX509V3SignedCertificate: cocoascript.CFStringRef;
+declare const kSecOIDX509V3SignedCertificate: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecoidx509v3signedcertificatecstruct
-declare const kSecOIDX509V3SignedCertificateCStruct: cocoascript.CFStringRef;
+declare const kSecOIDX509V3SignedCertificateCStruct: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpropertykeytype
-declare const kSecPropertyKeyType: cocoascript.CFStringRef;
+declare const kSecPropertyKeyType: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpropertykeylabel
-declare const kSecPropertyKeyLabel: cocoascript.CFStringRef;
+declare const kSecPropertyKeyLabel: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpropertykeylocalizedlabel
-declare const kSecPropertyKeyLocalizedLabel: cocoascript.CFStringRef;
+declare const kSecPropertyKeyLocalizedLabel: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpropertykeyvalue
-declare const kSecPropertyKeyValue: cocoascript.CFStringRef;
+declare const kSecPropertyKeyValue: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpropertytypewarning
-declare const kSecPropertyTypeWarning: cocoascript.CFStringRef;
+declare const kSecPropertyTypeWarning: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpropertytypesuccess
-declare const kSecPropertyTypeSuccess: cocoascript.CFStringRef;
+declare const kSecPropertyTypeSuccess: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpropertytypesection
-declare const kSecPropertyTypeSection: cocoascript.CFStringRef;
+declare const kSecPropertyTypeSection: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpropertytypedata
-declare const kSecPropertyTypeData: cocoascript.CFStringRef;
+declare const kSecPropertyTypeData: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpropertytypestring
-declare const kSecPropertyTypeString: cocoascript.CFStringRef;
+declare const kSecPropertyTypeString: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpropertytypeurl
-declare const kSecPropertyTypeURL: cocoascript.CFStringRef;
+declare const kSecPropertyTypeURL: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpropertytypedate
-declare const kSecPropertyTypeDate: cocoascript.CFStringRef;
+declare const kSecPropertyTypeDate: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpropertytypearray
-declare const kSecPropertyTypeArray: cocoascript.CFStringRef;
+declare const kSecPropertyTypeArray: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpropertytypenumber
-declare const kSecPropertyTypeNumber: cocoascript.CFStringRef;
+declare const kSecPropertyTypeNumber: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpropertytypetitle
-declare const kSecPropertyTypeTitle: cocoascript.CFStringRef;
+declare const kSecPropertyTypeTitle: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpropertytypeerror
-declare const kSecPropertyTypeError: cocoascript.CFStringRef;
+declare const kSecPropertyTypeError: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecaclauthorizationchangeacl
-declare const kSecACLAuthorizationChangeACL: cocoascript.CFStringRef;
+declare const kSecACLAuthorizationChangeACL: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecaclauthorizationany
-declare const kSecACLAuthorizationAny: cocoascript.CFStringRef;
+declare const kSecACLAuthorizationAny: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecaclauthorizationlogin
-declare const kSecACLAuthorizationLogin: cocoascript.CFStringRef;
+declare const kSecACLAuthorizationLogin: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecaclauthorizationgenkey
-declare const kSecACLAuthorizationGenKey: cocoascript.CFStringRef;
+declare const kSecACLAuthorizationGenKey: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecaclauthorizationdelete
-declare const kSecACLAuthorizationDelete: cocoascript.CFStringRef;
+declare const kSecACLAuthorizationDelete: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecaclauthorizationexportwrapped
-declare const kSecACLAuthorizationExportWrapped: cocoascript.CFStringRef;
+declare const kSecACLAuthorizationExportWrapped: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecaclauthorizationexportclear
-declare const kSecACLAuthorizationExportClear: cocoascript.CFStringRef;
+declare const kSecACLAuthorizationExportClear: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecaclauthorizationimportwrapped
-declare const kSecACLAuthorizationImportWrapped: cocoascript.CFStringRef;
+declare const kSecACLAuthorizationImportWrapped: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecaclauthorizationimportclear
-declare const kSecACLAuthorizationImportClear: cocoascript.CFStringRef;
+declare const kSecACLAuthorizationImportClear: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecaclauthorizationsign
-declare const kSecACLAuthorizationSign: cocoascript.CFStringRef;
+declare const kSecACLAuthorizationSign: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecaclauthorizationencrypt
-declare const kSecACLAuthorizationEncrypt: cocoascript.CFStringRef;
+declare const kSecACLAuthorizationEncrypt: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecaclauthorizationdecrypt
-declare const kSecACLAuthorizationDecrypt: cocoascript.CFStringRef;
+declare const kSecACLAuthorizationDecrypt: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecaclauthorizationmac
-declare const kSecACLAuthorizationMAC: cocoascript.CFStringRef;
+declare const kSecACLAuthorizationMAC: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecaclauthorizationderive
-declare const kSecACLAuthorizationDerive: cocoascript.CFStringRef;
+declare const kSecACLAuthorizationDerive: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecaclauthorizationkeychaincreate
-declare const kSecACLAuthorizationKeychainCreate: cocoascript.CFStringRef;
+declare const kSecACLAuthorizationKeychainCreate: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecaclauthorizationkeychaindelete
-declare const kSecACLAuthorizationKeychainDelete: cocoascript.CFStringRef;
+declare const kSecACLAuthorizationKeychainDelete: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecaclauthorizationkeychainitemread
-declare const kSecACLAuthorizationKeychainItemRead: cocoascript.CFStringRef;
+declare const kSecACLAuthorizationKeychainItemRead: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecaclauthorizationkeychainiteminsert
-declare const kSecACLAuthorizationKeychainItemInsert: cocoascript.CFStringRef;
+declare const kSecACLAuthorizationKeychainItemInsert: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecaclauthorizationkeychainitemmodify
-declare const kSecACLAuthorizationKeychainItemModify: cocoascript.CFStringRef;
+declare const kSecACLAuthorizationKeychainItemModify: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecaclauthorizationkeychainitemdelete
-declare const kSecACLAuthorizationKeychainItemDelete: cocoascript.CFStringRef;
+declare const kSecACLAuthorizationKeychainItemDelete: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecaclauthorizationchangeowner
-declare const kSecACLAuthorizationChangeOwner: cocoascript.CFStringRef;
+declare const kSecACLAuthorizationChangeOwner: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecaclauthorizationintegrity
-declare const kSecACLAuthorizationIntegrity: cocoascript.CFStringRef;
+declare const kSecACLAuthorizationIntegrity: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecaclauthorizationpartitionid
-declare const kSecACLAuthorizationPartitionID: cocoascript.CFStringRef;
+declare const kSecACLAuthorizationPartitionID: CFStringRef;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmeciesencryptionstandardx963sha1aesgcm
-declare const kSecKeyAlgorithmECIESEncryptionStandardX963SHA1AESGCM: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECIESEncryptionStandardX963SHA1AESGCM: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmeciesencryptionstandardx963sha224aesgcm
-declare const kSecKeyAlgorithmECIESEncryptionStandardX963SHA224AESGCM: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECIESEncryptionStandardX963SHA224AESGCM: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmeciesencryptionstandardx963sha256aesgcm
-declare const kSecKeyAlgorithmECIESEncryptionStandardX963SHA256AESGCM: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECIESEncryptionStandardX963SHA256AESGCM: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmeciesencryptionstandardx963sha384aesgcm
-declare const kSecKeyAlgorithmECIESEncryptionStandardX963SHA384AESGCM: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECIESEncryptionStandardX963SHA384AESGCM: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmeciesencryptionstandardx963sha512aesgcm
-declare const kSecKeyAlgorithmECIESEncryptionStandardX963SHA512AESGCM: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECIESEncryptionStandardX963SHA512AESGCM: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmeciesencryptionstandardvariableivx963sha224aesgcm
-declare const kSecKeyAlgorithmECIESEncryptionStandardVariableIVX963SHA224AESGCM: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECIESEncryptionStandardVariableIVX963SHA224AESGCM: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmeciesencryptionstandardvariableivx963sha256aesgcm
-declare const kSecKeyAlgorithmECIESEncryptionStandardVariableIVX963SHA256AESGCM: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECIESEncryptionStandardVariableIVX963SHA256AESGCM: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmeciesencryptionstandardvariableivx963sha384aesgcm
-declare const kSecKeyAlgorithmECIESEncryptionStandardVariableIVX963SHA384AESGCM: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECIESEncryptionStandardVariableIVX963SHA384AESGCM: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmeciesencryptionstandardvariableivx963sha512aesgcm
-declare const kSecKeyAlgorithmECIESEncryptionStandardVariableIVX963SHA512AESGCM: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECIESEncryptionStandardVariableIVX963SHA512AESGCM: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmeciesencryptioncofactorvariableivx963sha224aesgcm
-declare const kSecKeyAlgorithmECIESEncryptionCofactorVariableIVX963SHA224AESGCM: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECIESEncryptionCofactorVariableIVX963SHA224AESGCM: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmeciesencryptioncofactorvariableivx963sha256aesgcm
-declare const kSecKeyAlgorithmECIESEncryptionCofactorVariableIVX963SHA256AESGCM: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECIESEncryptionCofactorVariableIVX963SHA256AESGCM: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmeciesencryptioncofactorvariableivx963sha384aesgcm
-declare const kSecKeyAlgorithmECIESEncryptionCofactorVariableIVX963SHA384AESGCM: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECIESEncryptionCofactorVariableIVX963SHA384AESGCM: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmeciesencryptioncofactorvariableivx963sha512aesgcm
-declare const kSecKeyAlgorithmECIESEncryptionCofactorVariableIVX963SHA512AESGCM: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECIESEncryptionCofactorVariableIVX963SHA512AESGCM: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmeciesencryptioncofactorx963sha1aesgcm
-declare const kSecKeyAlgorithmECIESEncryptionCofactorX963SHA1AESGCM: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECIESEncryptionCofactorX963SHA1AESGCM: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmeciesencryptioncofactorx963sha224aesgcm
-declare const kSecKeyAlgorithmECIESEncryptionCofactorX963SHA224AESGCM: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECIESEncryptionCofactorX963SHA224AESGCM: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmeciesencryptioncofactorx963sha384aesgcm
-declare const kSecKeyAlgorithmECIESEncryptionCofactorX963SHA384AESGCM: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECIESEncryptionCofactorX963SHA384AESGCM: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmeciesencryptioncofactorx963sha512aesgcm
-declare const kSecKeyAlgorithmECIESEncryptionCofactorX963SHA512AESGCM: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECIESEncryptionCofactorX963SHA512AESGCM: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmecdsasignaturerfc4754
-declare const kSecKeyAlgorithmECDSASignatureRFC4754: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECDSASignatureRFC4754: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmecdsasignaturedigestx962
-declare const kSecKeyAlgorithmECDSASignatureDigestX962: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECDSASignatureDigestX962: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmecdsasignaturedigestx962sha1
-declare const kSecKeyAlgorithmECDSASignatureDigestX962SHA1: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECDSASignatureDigestX962SHA1: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmecdsasignaturedigestx962sha224
-declare const kSecKeyAlgorithmECDSASignatureDigestX962SHA224: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECDSASignatureDigestX962SHA224: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmecdsasignaturedigestx962sha256
-declare const kSecKeyAlgorithmECDSASignatureDigestX962SHA256: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECDSASignatureDigestX962SHA256: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmecdsasignaturedigestx962sha384
-declare const kSecKeyAlgorithmECDSASignatureDigestX962SHA384: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECDSASignatureDigestX962SHA384: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmecdsasignaturedigestx962sha512
-declare const kSecKeyAlgorithmECDSASignatureDigestX962SHA512: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECDSASignatureDigestX962SHA512: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmecdsasignaturemessagex962sha1
-declare const kSecKeyAlgorithmECDSASignatureMessageX962SHA1: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECDSASignatureMessageX962SHA1: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmecdsasignaturemessagex962sha224
-declare const kSecKeyAlgorithmECDSASignatureMessageX962SHA224: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECDSASignatureMessageX962SHA224: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmecdsasignaturemessagex962sha256
-declare const kSecKeyAlgorithmECDSASignatureMessageX962SHA256: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECDSASignatureMessageX962SHA256: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmecdsasignaturemessagex962sha384
-declare const kSecKeyAlgorithmECDSASignatureMessageX962SHA384: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECDSASignatureMessageX962SHA384: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmecdhkeyexchangecofactor
-declare const kSecKeyAlgorithmECDHKeyExchangeCofactor: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECDHKeyExchangeCofactor: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmecdhkeyexchangestandard
-declare const kSecKeyAlgorithmECDHKeyExchangeStandard: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECDHKeyExchangeStandard: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmecdhkeyexchangecofactorx963sha1
-declare const kSecKeyAlgorithmECDHKeyExchangeCofactorX963SHA1: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECDHKeyExchangeCofactorX963SHA1: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmecdhkeyexchangestandardx963sha1
-declare const kSecKeyAlgorithmECDHKeyExchangeStandardX963SHA1: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECDHKeyExchangeStandardX963SHA1: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmecdhkeyexchangecofactorx963sha224
-declare const kSecKeyAlgorithmECDHKeyExchangeCofactorX963SHA224: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECDHKeyExchangeCofactorX963SHA224: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmecdhkeyexchangecofactorx963sha256
-declare const kSecKeyAlgorithmECDHKeyExchangeCofactorX963SHA256: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECDHKeyExchangeCofactorX963SHA256: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmecdhkeyexchangecofactorx963sha384
-declare const kSecKeyAlgorithmECDHKeyExchangeCofactorX963SHA384: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECDHKeyExchangeCofactorX963SHA384: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmecdhkeyexchangecofactorx963sha512
-declare const kSecKeyAlgorithmECDHKeyExchangeCofactorX963SHA512: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECDHKeyExchangeCofactorX963SHA512: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmecdhkeyexchangestandardx963sha224
-declare const kSecKeyAlgorithmECDHKeyExchangeStandardX963SHA224: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECDHKeyExchangeStandardX963SHA224: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmecdhkeyexchangestandardx963sha256
-declare const kSecKeyAlgorithmECDHKeyExchangeStandardX963SHA256: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECDHKeyExchangeStandardX963SHA256: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmecdhkeyexchangestandardx963sha384
-declare const kSecKeyAlgorithmECDHKeyExchangeStandardX963SHA384: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECDHKeyExchangeStandardX963SHA384: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmecdhkeyexchangestandardx963sha512
-declare const kSecKeyAlgorithmECDHKeyExchangeStandardX963SHA512: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmECDHKeyExchangeStandardX963SHA512: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsaencryptionraw
-declare const kSecKeyAlgorithmRSAEncryptionRaw: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSAEncryptionRaw: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsaencryptionpkcs1
-declare const kSecKeyAlgorithmRSAEncryptionPKCS1: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSAEncryptionPKCS1: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsaencryptionoaepsha1
-declare const kSecKeyAlgorithmRSAEncryptionOAEPSHA1: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSAEncryptionOAEPSHA1: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsaencryptionoaepsha224
-declare const kSecKeyAlgorithmRSAEncryptionOAEPSHA224: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSAEncryptionOAEPSHA224: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsaencryptionoaepsha256
-declare const kSecKeyAlgorithmRSAEncryptionOAEPSHA256: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSAEncryptionOAEPSHA256: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsaencryptionoaepsha384
-declare const kSecKeyAlgorithmRSAEncryptionOAEPSHA384: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSAEncryptionOAEPSHA384: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsaencryptionoaepsha1aesgcm
-declare const kSecKeyAlgorithmRSAEncryptionOAEPSHA1AESGCM: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSAEncryptionOAEPSHA1AESGCM: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsaencryptionoaepsha224aesgcm
-declare const kSecKeyAlgorithmRSAEncryptionOAEPSHA224AESGCM: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSAEncryptionOAEPSHA224AESGCM: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsaencryptionoaepsha256aesgcm
-declare const kSecKeyAlgorithmRSAEncryptionOAEPSHA256AESGCM: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSAEncryptionOAEPSHA256AESGCM: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsaencryptionoaepsha384aesgcm
-declare const kSecKeyAlgorithmRSAEncryptionOAEPSHA384AESGCM: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSAEncryptionOAEPSHA384AESGCM: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsasignatureraw
-declare const kSecKeyAlgorithmRSASignatureRaw: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSASignatureRaw: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsasignaturedigestpkcs1v15raw
-declare const kSecKeyAlgorithmRSASignatureDigestPKCS1v15Raw: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSASignatureDigestPKCS1v15Raw: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsasignaturedigestpkcs1v15sha1
-declare const kSecKeyAlgorithmRSASignatureDigestPKCS1v15SHA1: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSASignatureDigestPKCS1v15SHA1: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsasignaturedigestpkcs1v15sha224
-declare const kSecKeyAlgorithmRSASignatureDigestPKCS1v15SHA224: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSASignatureDigestPKCS1v15SHA224: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsasignaturedigestpkcs1v15sha256
-declare const kSecKeyAlgorithmRSASignatureDigestPKCS1v15SHA256: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSASignatureDigestPKCS1v15SHA256: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsasignaturedigestpkcs1v15sha384
-declare const kSecKeyAlgorithmRSASignatureDigestPKCS1v15SHA384: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSASignatureDigestPKCS1v15SHA384: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsasignaturemessagepkcs1v15sha1
-declare const kSecKeyAlgorithmRSASignatureMessagePKCS1v15SHA1: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSASignatureMessagePKCS1v15SHA1: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsasignaturemessagepkcs1v15sha224
-declare const kSecKeyAlgorithmRSASignatureMessagePKCS1v15SHA224: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSASignatureMessagePKCS1v15SHA224: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsasignaturemessagepkcs1v15sha256
-declare const kSecKeyAlgorithmRSASignatureMessagePKCS1v15SHA256: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSASignatureMessagePKCS1v15SHA256: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsasignaturemessagepkcs1v15sha384
-declare const kSecKeyAlgorithmRSASignatureMessagePKCS1v15SHA384: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSASignatureMessagePKCS1v15SHA384: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsasignaturemessagepkcs1v15sha512
-declare const kSecKeyAlgorithmRSASignatureMessagePKCS1v15SHA512: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSASignatureMessagePKCS1v15SHA512: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsasignaturedigestpsssha1
-declare const kSecKeyAlgorithmRSASignatureDigestPSSSHA1: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSASignatureDigestPSSSHA1: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsasignaturedigestpsssha224
-declare const kSecKeyAlgorithmRSASignatureDigestPSSSHA224: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSASignatureDigestPSSSHA224: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsasignaturedigestpsssha256
-declare const kSecKeyAlgorithmRSASignatureDigestPSSSHA256: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSASignatureDigestPSSSHA256: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsasignaturedigestpsssha384
-declare const kSecKeyAlgorithmRSASignatureDigestPSSSHA384: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSASignatureDigestPSSSHA384: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsasignaturedigestpsssha512
-declare const kSecKeyAlgorithmRSASignatureDigestPSSSHA512: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSASignatureDigestPSSSHA512: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsasignaturemessagepsssha1
-declare const kSecKeyAlgorithmRSASignatureMessagePSSSHA1: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSASignatureMessagePSSSHA1: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsasignaturemessagepsssha224
-declare const kSecKeyAlgorithmRSASignatureMessagePSSSHA224: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSASignatureMessagePSSSHA224: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsasignaturemessagepsssha256
-declare const kSecKeyAlgorithmRSASignatureMessagePSSSHA256: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSASignatureMessagePSSSHA256: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsasignaturemessagepsssha384
-declare const kSecKeyAlgorithmRSASignatureMessagePSSSHA384: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSASignatureMessagePSSSHA384: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsasignaturemessagepsssha512
-declare const kSecKeyAlgorithmRSASignatureMessagePSSSHA512: cocoascript.SecKeyAlgorithm;
+declare const kSecKeyAlgorithmRSASignatureMessagePSSSHA512: SecKeyAlgorithm;
 // doc://com.apple.documentation/documentation/security/kseckeykeyexchangeparameterrequestedsize
-declare const kSecKeyKeyExchangeParameterRequestedSize: cocoascript.SecKeyKeyExchangeParameter;
+declare const kSecKeyKeyExchangeParameterRequestedSize: SecKeyKeyExchangeParameter;
 // doc://com.apple.documentation/documentation/security/kseckeykeyexchangeparametersharedinfo
-declare const kSecKeyKeyExchangeParameterSharedInfo: cocoascript.SecKeyKeyExchangeParameter;
+declare const kSecKeyKeyExchangeParameterSharedInfo: SecKeyKeyExchangeParameter;
 // doc://com.apple.documentation/documentation/security/ksecpolicyoid
-declare const kSecPolicyOid: cocoascript.CFStringRef;
+declare const kSecPolicyOid: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyname
-declare const kSecPolicyName: cocoascript.CFStringRef;
+declare const kSecPolicyName: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyclient
-declare const kSecPolicyClient: cocoascript.CFStringRef;
+declare const kSecPolicyClient: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyrevocationflags
-declare const kSecPolicyRevocationFlags: cocoascript.CFStringRef;
+declare const kSecPolicyRevocationFlags: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyteamidentifier
-declare const kSecPolicyTeamIdentifier: cocoascript.CFStringRef;
+declare const kSecPolicyTeamIdentifier: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyku_digitalsignature
-declare const kSecPolicyKU_DigitalSignature: cocoascript.CFStringRef;
+declare const kSecPolicyKU_DigitalSignature: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyku_nonrepudiation
-declare const kSecPolicyKU_NonRepudiation: cocoascript.CFStringRef;
+declare const kSecPolicyKU_NonRepudiation: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyku_keyencipherment
-declare const kSecPolicyKU_KeyEncipherment: cocoascript.CFStringRef;
+declare const kSecPolicyKU_KeyEncipherment: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyku_dataencipherment
-declare const kSecPolicyKU_DataEncipherment: cocoascript.CFStringRef;
+declare const kSecPolicyKU_DataEncipherment: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyku_keyagreement
-declare const kSecPolicyKU_KeyAgreement: cocoascript.CFStringRef;
+declare const kSecPolicyKU_KeyAgreement: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyku_keycertsign
-declare const kSecPolicyKU_KeyCertSign: cocoascript.CFStringRef;
+declare const kSecPolicyKU_KeyCertSign: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyku_crlsign
-declare const kSecPolicyKU_CRLSign: cocoascript.CFStringRef;
+declare const kSecPolicyKU_CRLSign: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyku_encipheronly
-declare const kSecPolicyKU_EncipherOnly: cocoascript.CFStringRef;
+declare const kSecPolicyKU_EncipherOnly: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyku_decipheronly
-declare const kSecPolicyKU_DecipherOnly: cocoascript.CFStringRef;
+declare const kSecPolicyKU_DecipherOnly: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyapplex509basic
-declare const kSecPolicyAppleX509Basic: cocoascript.CFStringRef;
+declare const kSecPolicyAppleX509Basic: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyapplessl
-declare const kSecPolicyAppleSSL: cocoascript.CFStringRef;
+declare const kSecPolicyAppleSSL: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyapplesmime
-declare const kSecPolicyAppleSMIME: cocoascript.CFStringRef;
+declare const kSecPolicyAppleSMIME: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyappleeap
-declare const kSecPolicyAppleEAP: cocoascript.CFStringRef;
+declare const kSecPolicyAppleEAP: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyappleipsec
-declare const kSecPolicyAppleIPsec: cocoascript.CFStringRef;
+declare const kSecPolicyAppleIPsec: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyappleichat
-declare const kSecPolicyAppleiChat: cocoascript.CFStringRef;
+declare const kSecPolicyAppleiChat: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyapplepkinitclient
-declare const kSecPolicyApplePKINITClient: cocoascript.CFStringRef;
+declare const kSecPolicyApplePKINITClient: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyapplepkinitserver
-declare const kSecPolicyApplePKINITServer: cocoascript.CFStringRef;
+declare const kSecPolicyApplePKINITServer: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyapplecodesigning
-declare const kSecPolicyAppleCodeSigning: cocoascript.CFStringRef;
+declare const kSecPolicyAppleCodeSigning: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicymacappstorereceipt
-declare const kSecPolicyMacAppStoreReceipt: cocoascript.CFStringRef;
+declare const kSecPolicyMacAppStoreReceipt: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyappleidvalidation
-declare const kSecPolicyAppleIDValidation: cocoascript.CFStringRef;
+declare const kSecPolicyAppleIDValidation: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyapplepassbooksigning
-declare const kSecPolicyApplePassbookSigning: cocoascript.CFStringRef;
+declare const kSecPolicyApplePassbookSigning: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyapplepayissuerencryption
-declare const kSecPolicyApplePayIssuerEncryption: cocoascript.CFStringRef;
+declare const kSecPolicyApplePayIssuerEncryption: CFStringRef;
 // doc://com.apple.documentation/documentation/security/ksecpolicyapplerevocation
-declare const kSecPolicyAppleRevocation: cocoascript.CFStringRef;
+declare const kSecPolicyAppleRevocation: CFStringRef;
