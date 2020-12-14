@@ -4,6 +4,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/securityfoundation/sfauthorization
    */
   interface SFAuthorization extends NSObject {
+    // doc://com.apple.documentation/documentation/securityfoundation/sfauthorization/1417643-authorization
+    authorization():cocoascript.SFAuthorization;
+    // doc://com.apple.documentation/documentation/securityfoundation/sfauthorization/1417650-authorizationwithflags
+    authorizationWithFlags_rights_environment(flags: cocoascript.AuthorizationFlags, rights: cocoascript.AuthorizationRights, environment: cocoascript.AuthorizationEnvironment):cocoascript.SFAuthorization;
     // doc://com.apple.documentation/documentation/securityfoundation/sfauthorization/1417646-init
     init():cocoascript.SFAuthorization;
     // doc://com.apple.documentation/documentation/securityfoundation/sfauthorization/1417632-initwithflags

@@ -709,6 +709,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/corespotlight/cssearchableindex
    */
   interface CSSearchableIndex extends NSObject {
+    // doc://com.apple.documentation/documentation/corespotlight/cssearchableindex/1620350-isindexingavailable
+    isIndexingAvailable():cocoascript.BOOL;
+    // doc://com.apple.documentation/documentation/corespotlight/cssearchableindex/1620341-defaultsearchableindex
+    defaultSearchableIndex():cocoascript.CSSearchableIndex;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableindex/1620347-initwithname
     initWithName(name: cocoascript.NSString):cocoascript.CSSearchableIndex;
     // doc://com.apple.documentation/documentation/corespotlight/cssearchableindex/1620332-initwithname

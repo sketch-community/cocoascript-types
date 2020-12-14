@@ -402,6 +402,8 @@ declare namespace cocoascript {
     initWithZoneName(zoneName: cocoascript.NSString):cocoascript.CKRecordZone;
     // doc://com.apple.documentation/documentation/cloudkit/ckrecordzone/1515207-initwithzoneid
     initWithZoneID(zoneID: cocoascript.CKRecordZoneID):cocoascript.CKRecordZone;
+    // doc://com.apple.documentation/documentation/cloudkit/ckrecordzone/1514919-defaultrecordzone
+    defaultRecordZone():cocoascript.CKRecordZone;
     // doc://com.apple.documentation/documentation/cloudkit/ckrecordzone/1514917-zoneid
     zoneID(): cocoascript.CKRecordZoneID;
     setZoneID(): void;
@@ -497,6 +499,12 @@ declare namespace cocoascript {
     initWithPhoneNumber(phoneNumber: cocoascript.NSString):cocoascript.CKUserIdentityLookupInfo;
     // doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640419-initwithuserrecordid
     initWithUserRecordID(userRecordID: cocoascript.CKRecordID):cocoascript.CKUserIdentityLookupInfo;
+    // doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640439-lookupinfoswithemails
+    lookupInfosWithEmails(emails: cocoascript.NSString):cocoascript.CKUserIdentityLookupInfo;
+    // doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640429-lookupinfoswithphonenumbers
+    lookupInfosWithPhoneNumbers(phoneNumbers: cocoascript.NSString):cocoascript.CKUserIdentityLookupInfo;
+    // doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640407-lookupinfoswithrecordids
+    lookupInfosWithRecordIDs(recordIDs: cocoascript.CKRecordID):cocoascript.CKUserIdentityLookupInfo;
     // doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640462-emailaddress
     emailAddress(): cocoascript.NSString;
     setEmailAddress(): void;
@@ -607,6 +615,8 @@ declare namespace cocoascript {
     initWithSubscriptionID(subscriptionID: cocoascript.CKSubscriptionID):cocoascript.CKDatabaseSubscription;
     // doc://com.apple.documentation/documentation/cloudkit/ckdatabasesubscription/3547080-initwithcoder
     initWithCoder(aDecoder: cocoascript.NSCoder):cocoascript.CKDatabaseSubscription;
+    // doc://com.apple.documentation/documentation/cloudkit/ckdatabasesubscription/2976439-new
+    new():cocoascript.CKDatabaseSubscription;
     // doc://com.apple.documentation/documentation/cloudkit/ckdatabasesubscription/1640418-recordtype
     recordType(): cocoascript.CKRecordType;
     setRecordType(): void;
@@ -899,6 +909,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/cloudkit/ckcontainer
    */
   interface CKContainer extends NSObject {
+    // doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399189-defaultcontainer
+    defaultContainer():cocoascript.CKContainer;
+    // doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399193-containerwithidentifier
+    containerWithIdentifier(containerIdentifier: cocoascript.NSString):cocoascript.CKContainer;
     // doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399205-privateclouddatabase
     privateCloudDatabase(): cocoascript.CKDatabase;
     setPrivateCloudDatabase(): void;
@@ -1036,6 +1050,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/cloudkit/cknotification
    */
   interface CKNotification extends NSObject {
+    // doc://com.apple.documentation/documentation/cloudkit/cknotification/1428130-notificationfromremotenotificati
+    notificationFromRemoteNotificationDictionary(notificationDictionary: cocoascript.NSDictionary):cocoascript.CKNotification;
     // doc://com.apple.documentation/documentation/cloudkit/cknotification/1428080-notificationid
     notificationID(): cocoascript.CKNotificationID;
     setNotificationID(): void;
@@ -1134,6 +1150,8 @@ declare namespace cocoascript {
     initWithRecordIDs(recordIDs: cocoascript.CKRecordID):cocoascript.CKFetchRecordsOperation;
     // doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordsoperation/1476072-init
     init():cocoascript.CKFetchRecordsOperation;
+    // doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordsoperation/1476070-fetchcurrentuserrecordoperation
+    fetchCurrentUserRecordOperation():cocoascript.CKFetchRecordsOperation;
     // doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordsoperation/1476076-recordids
     recordIDs(): cocoascript.CKRecordID;
     setRecordIDs(): void;
@@ -1167,6 +1185,8 @@ declare namespace cocoascript {
     initWithRecordZoneIDs(zoneIDs: cocoascript.CKRecordZoneID):cocoascript.CKFetchRecordZonesOperation;
     // doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonesoperation/1515256-init
     init():cocoascript.CKFetchRecordZonesOperation;
+    // doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonesoperation/1514890-fetchallrecordzonesoperation
+    fetchAllRecordZonesOperation():cocoascript.CKFetchRecordZonesOperation;
     // doc://com.apple.documentation/documentation/cloudkit/ckfetchrecordzonesoperation/1515084-recordzoneids
     recordZoneIDs(): cocoascript.CKRecordZoneID;
     setRecordZoneIDs(): void;
@@ -1618,6 +1638,8 @@ declare namespace cocoascript {
     initWithSubscriptionIDs(subscriptionIDs: cocoascript.CKSubscriptionID):cocoascript.CKFetchSubscriptionsOperation;
     // doc://com.apple.documentation/documentation/cloudkit/ckfetchsubscriptionsoperation/1515123-init
     init():cocoascript.CKFetchSubscriptionsOperation;
+    // doc://com.apple.documentation/documentation/cloudkit/ckfetchsubscriptionsoperation/1515282-fetchallsubscriptionsoperation
+    fetchAllSubscriptionsOperation():cocoascript.CKFetchSubscriptionsOperation;
     // doc://com.apple.documentation/documentation/cloudkit/ckfetchsubscriptionsoperation/1515011-subscriptionids
     subscriptionIDs(): cocoascript.CKSubscriptionID;
     setSubscriptionIDs(): void;

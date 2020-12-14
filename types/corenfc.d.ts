@@ -230,10 +230,18 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/corenfc/nfcndefpayload
    */
   interface NFCNDEFPayload extends NSObject {
+    // doc://com.apple.documentation/documentation/corenfc/nfcndefpayload/3153119-wellknowntypeuripayloadwithurl
+    wellKnownTypeURIPayloadWithURL(url: cocoascript.NSURL):cocoascript.NFCNDEFPayload;
+    // doc://com.apple.documentation/documentation/corenfc/nfcndefpayload/3153118-wellknowntypeuripayloadwithstrin
+    wellKnownTypeURIPayloadWithString(uri: cocoascript.NSString):cocoascript.NFCNDEFPayload;
+    // doc://com.apple.documentation/documentation/corenfc/nfcndefpayload/3355755-wellknowntypetextpayloadwithstri
+    wellKnownTypeTextPayloadWithString_locale(text: cocoascript.NSString, locale: cocoascript.NSLocale):cocoascript.NFCNDEFPayload;
     // doc://com.apple.documentation/documentation/corenfc/nfcndefpayload/3043842-initwithformat
     initWithFormat_type_identifier_payload(format: cocoascript.NFCTypeNameFormat, type: cocoascript.NSData, identifier: cocoascript.NSData, payload: cocoascript.NSData):cocoascript.NFCNDEFPayload;
     // doc://com.apple.documentation/documentation/corenfc/nfcndefpayload/3043843-initwithformat
     initWithFormat_type_identifier_payload_chunkSize(format: cocoascript.NFCTypeNameFormat, type: cocoascript.NSData, identifier: cocoascript.NSData, payload: cocoascript.NSData, chunkSize: any):cocoascript.NFCNDEFPayload;
+    // doc://com.apple.documentation/documentation/corenfc/nfcndefpayload/3153115-wellknowtypetextpayloadwithstrin
+    wellKnowTypeTextPayloadWithString_locale(text: cocoascript.NSString, locale: cocoascript.NSLocale):cocoascript.NFCNDEFPayload;
     // doc://com.apple.documentation/documentation/corenfc/nfcndefpayload/2875573-identifier
     identifier(): cocoascript.NSData;
     setIdentifier(): void;
@@ -266,6 +274,8 @@ declare namespace cocoascript {
   interface NFCNDEFMessage extends NSObject {
     // doc://com.apple.documentation/documentation/corenfc/nfcndefmessage/3075560-initwithndefrecords
     initWithNDEFRecords(records: cocoascript.NFCNDEFPayload):cocoascript.NFCNDEFMessage;
+    // doc://com.apple.documentation/documentation/corenfc/nfcndefmessage/3183039-ndefmessagewithdata
+    ndefMessageWithData(data: cocoascript.NSData):cocoascript.NFCNDEFMessage;
     // doc://com.apple.documentation/documentation/corenfc/nfcndefmessage/2875563-records
     records(): cocoascript.NFCNDEFPayload;
     setRecords(): void;

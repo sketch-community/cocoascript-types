@@ -4,6 +4,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/eventkit/ekrecurrenceend
    */
   interface EKRecurrenceEnd extends NSObject {
+    // doc://com.apple.documentation/documentation/eventkit/ekrecurrenceend/1415644-recurrenceendwithenddate
+    recurrenceEndWithEndDate(endDate: cocoascript.NSDate):cocoascript.EKRecurrenceEnd;
+    // doc://com.apple.documentation/documentation/eventkit/ekrecurrenceend/1415640-recurrenceendwithoccurrencecount
+    recurrenceEndWithOccurrenceCount(occurrenceCount: cocoascript.NSUInteger):cocoascript.EKRecurrenceEnd;
     // doc://com.apple.documentation/documentation/eventkit/ekrecurrenceend/1415648-enddate
     endDate(): cocoascript.NSDate;
     setEndDate(): void;
@@ -24,6 +28,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/eventkit/ekrecurrencedayofweek
    */
   interface EKRecurrenceDayOfWeek extends NSObject {
+    // doc://com.apple.documentation/documentation/eventkit/ekrecurrencedayofweek/1448589-dayofweek
+    dayOfWeek(dayOfTheWeek: cocoascript.EKWeekday):cocoascript.EKRecurrenceDayOfWeek;
+    // doc://com.apple.documentation/documentation/eventkit/ekrecurrencedayofweek/1448591-dayofweek
+    dayOfWeek_weekNumber(dayOfTheWeek: cocoascript.EKWeekday, weekNumber: cocoascript.NSInteger):cocoascript.EKRecurrenceDayOfWeek;
     // doc://com.apple.documentation/documentation/eventkit/ekrecurrencedayofweek/1448581-initwithdayoftheweek
     initWithDayOfTheWeek_weekNumber(dayOfTheWeek: cocoascript.EKWeekday, weekNumber: cocoascript.NSInteger):cocoascript.EKRecurrenceDayOfWeek;
     // doc://com.apple.documentation/documentation/eventkit/ekrecurrencedayofweek/1448579-dayoftheweek
@@ -135,6 +143,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/eventkit/ekstructuredlocation
    */
   interface EKStructuredLocation extends EKObject {
+    // doc://com.apple.documentation/documentation/eventkit/ekstructuredlocation/1507366-locationwithtitle
+    locationWithTitle(title: cocoascript.NSString):cocoascript.EKStructuredLocation;
+    // doc://com.apple.documentation/documentation/eventkit/ekstructuredlocation/1507493-locationwithmapitem
+    locationWithMapItem(mapItem: cocoascript.MKMapItem):cocoascript.EKStructuredLocation;
     // doc://com.apple.documentation/documentation/eventkit/ekstructuredlocation/1507137-title
     title(): cocoascript.NSString;
     setTitle(): void;
@@ -158,6 +170,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/eventkit/ekalarm
    */
   interface EKAlarm extends EKObject {
+    // doc://com.apple.documentation/documentation/eventkit/ekalarm/1507130-alarmwithabsolutedate
+    alarmWithAbsoluteDate(date: cocoascript.NSDate):cocoascript.EKAlarm;
+    // doc://com.apple.documentation/documentation/eventkit/ekalarm/1507338-alarmwithrelativeoffset
+    alarmWithRelativeOffset(offset: cocoascript.NSTimeInterval):cocoascript.EKAlarm;
     // doc://com.apple.documentation/documentation/eventkit/ekalarm/1507486-absolutedate
     absoluteDate(): cocoascript.NSDate;
     setAbsoluteDate(): void;
@@ -200,6 +216,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/eventkit/ekevent
    */
   interface EKEvent extends EKCalendarItem {
+    // doc://com.apple.documentation/documentation/eventkit/ekevent/1507483-eventwitheventstore
+    eventWithEventStore(eventStore: cocoascript.EKEventStore):cocoascript.EKEvent;
     // doc://com.apple.documentation/documentation/eventkit/ekevent/1507335-comparestartdatewithevent
     compareStartDateWithEvent(other: cocoascript.EKEvent):cocoascript.NSComparisonResult;
     // doc://com.apple.documentation/documentation/eventkit/ekevent/1507437-eventidentifier
@@ -263,6 +281,8 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/eventkit/ekobject/1507333-haschanges
     hasChanges(): cocoascript.BOOL;
     setHasChanges(): void;
+    // doc://com.apple.documentation/documentation/eventkit/ekobject/1812546-isnew
+    ():void;
     // doc://com.apple.documentation/documentation/eventkit/ekobject/1507327-refresh
     refresh():cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/eventkit/ekobject/1507405-reset
@@ -383,6 +403,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/eventkit/ekcalendar
    */
   interface EKCalendar extends EKObject {
+    // doc://com.apple.documentation/documentation/eventkit/ekcalendar/1507516-calendarforentitytype
+    calendarForEntityType_eventStore(entityType: cocoascript.EKEntityType, eventStore: cocoascript.EKEventStore):cocoascript.EKCalendar;
+    // doc://com.apple.documentation/documentation/eventkit/ekcalendar/1620447-calendarwitheventstore
+    calendarWithEventStore(eventStore: cocoascript.EKEventStore):cocoascript.EKCalendar;
     // doc://com.apple.documentation/documentation/eventkit/ekcalendar/1507068-allowscontentmodifications
     allowsContentModifications(): cocoascript.BOOL;
     setAllowsContentModifications(): void;
@@ -438,6 +462,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/eventkit/ekreminder
    */
   interface EKReminder extends EKCalendarItem {
+    // doc://com.apple.documentation/documentation/eventkit/ekreminder/1507429-reminderwitheventstore
+    reminderWithEventStore(eventStore: cocoascript.EKEventStore):cocoascript.EKReminder;
     // doc://com.apple.documentation/documentation/eventkit/ekreminder/1507173-priority
     priority(): cocoascript.NSUInteger;
     setPriority(): void;
@@ -478,6 +504,8 @@ declare namespace cocoascript {
     initWithAccessToEntityTypes(entityTypes: cocoascript.EKEntityMask):cocoascript.EKEventStore;
     // doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507547-requestaccesstoentitytype
     requestAccessToEntityType_completion(entityType: cocoascript.EKEntityType, completion: cocoascript.EKEventStoreRequestAccessCompletionHandler):void;
+    // doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507239-authorizationstatusforentitytype
+    authorizationStatusForEntityType(entityType: cocoascript.EKEntityType):cocoascript.EKAuthorizationStatus;
     // doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507315-sources
     sources(): cocoascript.EKSource;
     setSources(): void;

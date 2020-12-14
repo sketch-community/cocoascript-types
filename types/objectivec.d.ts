@@ -4,18 +4,48 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/objectivec/nsobject
    */
   interface NSObject {
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1418639-initialize
+    initialize():void;
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1418815-load
+    load():void;
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1571958-alloc
+    alloc():cocoascript.NSObject;
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1571945-allocwithzone
+    allocWithZone(zone: cocoascript._NSZone):cocoascript.NSObject;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1418641-init
     init():cocoascript.NSObject;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1418807-copy
     copy():cocoascript.NSObject;
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1571953-copywithzone
+    copyWithZone(zone: cocoascript._NSZone):cocoascript.NSObject;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1418978-mutablecopy
     mutableCopy():cocoascript.NSObject;
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1571956-mutablecopywithzone
+    mutableCopyWithZone(zone: cocoascript._NSZone):cocoascript.NSObject;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1571947-dealloc
     dealloc():void;
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1571948-new
+    new():cocoascript.NSObject;
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1571950-class
+    class():cocoascript.Class;
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1418803-superclass
+    superclass():cocoascript.Class;
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1418669-issubclassofclass
+    isSubclassOfClass(aClass: cocoascript.Class):cocoascript.BOOL;
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1418555-instancesrespondtoselector
+    instancesRespondToSelector(aSelector: cocoascript.SEL):cocoascript.BOOL;
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1418893-conformstoprotocol
+    conformsToProtocol(protocol: cocoascript.Protocol):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1418863-methodforselector
     methodForSelector(aSelector: cocoascript.SEL):any;
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1418713-instancemethodforselector
+    instanceMethodForSelector(aSelector: cocoascript.SEL):any;
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1571959-instancemethodsignatureforselect
+    instanceMethodSignatureForSelector(aSelector: cocoascript.SEL):cocoascript.NSMethodSignature;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1571960-methodsignatureforselector
     methodSignatureForSelector(aSelector: cocoascript.SEL):cocoascript.NSMethodSignature;
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1418799-description
+    description():cocoascript.NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1409224-autocontentaccessingproxy
     autoContentAccessingProxy(): cocoascript.id;
     setAutoContentAccessingProxy(): void;
@@ -33,10 +63,18 @@ declare namespace cocoascript {
     performSelector_onThread_withObject_waitUntilDone_modes(aSelector: cocoascript.SEL, thr: cocoascript.NSThread, arg: cocoascript.NSObject, wait: cocoascript.BOOL, array: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1412390-performselectorinbackground
     performSelectorInBackground_withObject(aSelector: cocoascript.SEL, arg: cocoascript.NSObject):void;
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1417611-cancelpreviousperformrequestswit
+    cancelPreviousPerformRequestsWithTarget(aTarget: cocoascript.NSObject):void;
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1410849-cancelpreviousperformrequestswit
+    cancelPreviousPerformRequestsWithTarget_selector_object(aTarget: cocoascript.NSObject, aSelector: cocoascript.SEL, anArgument: cocoascript.NSObject):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1418855-forwardingtargetforselector
     forwardingTargetForSelector(aSelector: cocoascript.SEL):cocoascript.NSObject;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1571955-forwardinvocation
     forwardInvocation(anInvocation: cocoascript.NSInvocation):void;
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1418889-resolveclassmethod
+    resolveClassMethod(sel: cocoascript.SEL):cocoascript.BOOL;
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1418500-resolveinstancemethod
+    resolveInstanceMethod(sel: cocoascript.SEL):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1418637-doesnotrecognizeselector
     doesNotRecognizeSelector(aSelector: cocoascript.SEL):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1417074-awakeafterusingcoder
@@ -50,6 +88,10 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1410512-classforkeyedarchiver
     classForKeyedArchiver(): cocoascript.Class;
     setClassForKeyedArchiver(): void;
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1411048-classfallbacksforkeyedarchiver
+    classFallbacksForKeyedArchiver():cocoascript.NSString;
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1410547-classforkeyedunarchiver
+    classForKeyedUnarchiver():cocoascript.Class;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1580076-classforportcoder
     classForPortCoder(): cocoascript.Class;
     setClassForPortCoder(): void;
@@ -59,6 +101,10 @@ declare namespace cocoascript {
     replacementObjectForCoder(coder: cocoascript.NSCoder):cocoascript.NSObject;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1417663-replacementobjectforkeyedarchive
     replacementObjectForKeyedArchiver(archiver: cocoascript.NSKeyedArchiver):cocoascript.NSObject;
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1416538-setversion
+    setVersion(aVersion: cocoascript.NSInteger):void;
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1415151-version
+    version():cocoascript.NSInteger;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1415656-attributekeys
     attributeKeys(): cocoascript.NSString;
     setAttributeKeys(): void;
@@ -366,6 +412,10 @@ declare namespace cocoascript {
     willChangePPDOptionKeyValue_ppdChoice(option: cocoascript.NSString, choice: cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1494204-willshow
     willShow():void;
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1418711-debugdescription
+    debugDescription():cocoascript.NSString;
+    // doc://com.apple.documentation/documentation/objectivec/nsobject/1418561-hash
+    hash():cocoascript.NSUInteger;
     //
     alloc():cocoascript.NSObject;
     //

@@ -14,6 +14,12 @@ declare namespace cocoascript {
     setIntentResponse(): void;
     // doc://com.apple.documentation/documentation/sirikit/ininteraction/1690386-donateinteractionwithcompletion
     donateInteractionWithCompletion(completion: cocoascript.NSError):void;
+    // doc://com.apple.documentation/documentation/sirikit/ininteraction/1690389-deleteallinteractionswithcomplet
+    deleteAllInteractionsWithCompletion(completion: cocoascript.NSError):void;
+    // doc://com.apple.documentation/documentation/sirikit/ininteraction/1690400-deleteinteractionswithidentifier
+    deleteInteractionsWithIdentifiers_completion(identifiers: cocoascript.NSString, completion: cocoascript.NSError):void;
+    // doc://com.apple.documentation/documentation/sirikit/ininteraction/1690364-deleteinteractionswithgroupident
+    deleteInteractionsWithGroupIdentifier_completion(groupIdentifier: cocoascript.NSString, completion: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/sirikit/ininteraction/1638740-intenthandlingstatus
     intentHandlingStatus(): cocoascript.INIntentHandlingStatus;
     setIntentHandlingStatus(): void;
@@ -1193,8 +1199,24 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inimage
    */
   interface INImage extends NSObject {
+    // doc://com.apple.documentation/documentation/sirikit/inimage/1778402-imagenamed
+    imageNamed(name: cocoascript.NSString):cocoascript.INImage;
+    // doc://com.apple.documentation/documentation/sirikit/inimage/1648802-imagewithuiimage
+    imageWithUIImage(image: cocoascript.UIImage):cocoascript.INImage;
+    // doc://com.apple.documentation/documentation/sirikit/inimage/1648801-imagewithcgimage
+    imageWithCGImage(imageRef: cocoascript.CGImageRef):cocoascript.INImage;
+    // doc://com.apple.documentation/documentation/sirikit/inimage/1638698-imagewithurl
+    imageWithURL(URL: cocoascript.NSURL):cocoascript.INImage;
+    // doc://com.apple.documentation/documentation/sirikit/inimage/1639328-imagewithimagedata
+    imageWithImageData(imageData: cocoascript.NSData):cocoascript.INImage;
+    // doc://com.apple.documentation/documentation/sirikit/inimage/2915209-imagewithurl
+    imageWithURL_width_height(URL: cocoascript.NSURL, width: number, height: number):cocoascript.INImage;
     // doc://com.apple.documentation/documentation/sirikit/inimage/2915857-fetchuiimagewithcompletion
     fetchUIImageWithCompletion(completion: cocoascript.UIImage):void;
+    // doc://com.apple.documentation/documentation/sirikit/inimage/1648800-imagesizeforintentresponse
+    imageSizeForIntentResponse(response: cocoascript.INIntentResponse):cocoascript.CGSize;
+    // doc://com.apple.documentation/documentation/sirikit/inimage/3577546-systemimagenamed
+    systemImageNamed(systemImageName: cocoascript.NSString):cocoascript.INImage;
     //
     alloc():cocoascript.INImage;
     //
@@ -1378,6 +1400,8 @@ declare namespace cocoascript {
   interface INPaymentMethod extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inpaymentmethod/2211609-initwithtype
     initWithType_name_identificationHint_icon(type: cocoascript.INPaymentMethodType, name: cocoascript.NSString, identificationHint: cocoascript.NSString, icon: cocoascript.INImage):cocoascript.INPaymentMethod;
+    // doc://com.apple.documentation/documentation/sirikit/inpaymentmethod/2247185-applepaypaymentmethod
+    applePayPaymentMethod():cocoascript.INPaymentMethod;
     // doc://com.apple.documentation/documentation/sirikit/inpaymentmethod/1638590-type
     type(): cocoascript.INPaymentMethodType;
     setType(): void;
@@ -2058,6 +2082,20 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inridecompletionstatus
    */
   interface INRideCompletionStatus extends NSObject {
+    // doc://com.apple.documentation/documentation/sirikit/inridecompletionstatus/2132116-completed
+    completed():cocoascript.INRideCompletionStatus;
+    // doc://com.apple.documentation/documentation/sirikit/inridecompletionstatus/2132110-completedwithsettledpaymentamoun
+    completedWithSettledPaymentAmount(settledPaymentAmount: cocoascript.INCurrencyAmount):cocoascript.INRideCompletionStatus;
+    // doc://com.apple.documentation/documentation/sirikit/inridecompletionstatus/2132112-completedwithoutstandingpaymenta
+    completedWithOutstandingPaymentAmount(outstandingPaymentAmount: cocoascript.INCurrencyAmount):cocoascript.INRideCompletionStatus;
+    // doc://com.apple.documentation/documentation/sirikit/inridecompletionstatus/2875465-completedwithoutstandingfeedback
+    completedWithOutstandingFeedbackType(feedbackType: cocoascript.INRideFeedbackTypeOptions):cocoascript.INRideCompletionStatus;
+    // doc://com.apple.documentation/documentation/sirikit/inridecompletionstatus/2132105-canceledbyservice
+    canceledByService():cocoascript.INRideCompletionStatus;
+    // doc://com.apple.documentation/documentation/sirikit/inridecompletionstatus/2132107-canceledbyuser
+    canceledByUser():cocoascript.INRideCompletionStatus;
+    // doc://com.apple.documentation/documentation/sirikit/inridecompletionstatus/2132113-canceledmissedpickup
+    canceledMissedPickup():cocoascript.INRideCompletionStatus;
     // doc://com.apple.documentation/documentation/sirikit/inridecompletionstatus/2132108-completionuseractivity
     completionUserActivity(): cocoascript.NSUserActivity;
     setCompletionUserActivity(): void;
@@ -2548,6 +2586,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inparameter
    */
   interface INParameter extends NSObject {
+    // doc://com.apple.documentation/documentation/sirikit/inparameter/2908772-parameterforclass
+    parameterForClass_keyPath(aClass: cocoascript.Class, keyPath: cocoascript.NSString):cocoascript.INParameter;
     // doc://com.apple.documentation/documentation/sirikit/inparameter/2908771-parameterkeypath
     parameterKeyPath(): cocoascript.NSString;
     setParameterKeyPath(): void;
@@ -2761,6 +2801,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inmediadestination
    */
   interface INMediaDestination extends NSObject {
+    // doc://com.apple.documentation/documentation/sirikit/inmediadestination/3074215-librarydestination
+    libraryDestination():cocoascript.INMediaDestination;
+    // doc://com.apple.documentation/documentation/sirikit/inmediadestination/3074217-playlistdestinationwithname
+    playlistDestinationWithName(playlistName: cocoascript.NSString):cocoascript.INMediaDestination;
     // doc://com.apple.documentation/documentation/sirikit/inmediadestination/3074218-playlistname
     playlistName(): cocoascript.NSString;
     setPlaylistName(): void;
@@ -3601,6 +3645,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/infile
    */
   interface INFile extends NSObject {
+    // doc://com.apple.documentation/documentation/sirikit/infile/3152215-filewithdata
+    fileWithData_filename_typeIdentifier(data: cocoascript.NSData, filename: cocoascript.NSString, typeIdentifier: cocoascript.NSString):cocoascript.INFile;
+    // doc://com.apple.documentation/documentation/sirikit/infile/3152216-filewithfileurl
+    fileWithFileURL_filename_typeIdentifier(fileURL: cocoascript.NSURL, filename: cocoascript.NSString, typeIdentifier: cocoascript.NSString):cocoascript.INFile;
     // doc://com.apple.documentation/documentation/sirikit/infile/3152217-filename
     filename(): cocoascript.NSString;
     setFilename(): void;
@@ -3880,6 +3928,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetyperesolutionresult
    */
   interface INOutgoingMessageTypeResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetyperesolutionresult/3552223-confirmationrequiredwithoutgoing
+    confirmationRequiredWithOutgoingMessageTypeToConfirm(outgoingMessageTypeToConfirm: cocoascript.INOutgoingMessageType):cocoascript.INOutgoingMessageTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inoutgoingmessagetyperesolutionresult/3552224-successwithresolvedoutgoingmessa
+    successWithResolvedOutgoingMessageType(resolvedOutgoingMessageType: cocoascript.INOutgoingMessageType):cocoascript.INOutgoingMessageTypeResolutionResult;
     //
     alloc():cocoascript.INOutgoingMessageTypeResolutionResult;
     //
@@ -5777,6 +5829,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/insendmessageattachment
    */
   interface INSendMessageAttachment extends NSObject {
+    // doc://com.apple.documentation/documentation/sirikit/insendmessageattachment/3621860-attachmentwithaudiomessagefile
+    attachmentWithAudioMessageFile(audioMessageFile: cocoascript.INFile):cocoascript.INSendMessageAttachment;
     // doc://com.apple.documentation/documentation/sirikit/insendmessageattachment/3621861-audiomessagefile
     audioMessageFile(): cocoascript.INFile;
     setAudioMessageFile(): void;
@@ -6684,6 +6738,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/intemporaleventtriggertypeoptionsresolutionresult
    */
   interface INTemporalEventTriggerTypeOptionsResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/intemporaleventtriggertypeoptionsresolutionresult/3141880-successwithresolvedtemporalevent
+    successWithResolvedTemporalEventTriggerTypeOptions(resolvedTemporalEventTriggerTypeOptions: cocoascript.INTemporalEventTriggerTypeOptions):cocoascript.INTemporalEventTriggerTypeOptionsResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/intemporaleventtriggertypeoptionsresolutionresult/3141879-confirmationrequiredwithtemporal
+    confirmationRequiredWithTemporalEventTriggerTypeOptionsToConfirm(temporalEventTriggerTypeOptionsToConfirm: cocoascript.INTemporalEventTriggerTypeOptions):cocoascript.INTemporalEventTriggerTypeOptionsResolutionResult;
     //
     alloc():cocoascript.INTemporalEventTriggerTypeOptionsResolutionResult;
     //
@@ -6852,6 +6910,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/invocabulary
    */
   interface INVocabulary extends NSObject {
+    // doc://com.apple.documentation/documentation/sirikit/invocabulary/1639206-sharedvocabulary
+    sharedVocabulary():cocoascript.INVocabulary;
     // doc://com.apple.documentation/documentation/sirikit/invocabulary/2873636-setvocabulary
     setVocabulary_ofType(vocabulary: cocoascript.INSpeakable, type: cocoascript.INVocabularyStringType):void;
     // doc://com.apple.documentation/documentation/sirikit/invocabulary/1638998-setvocabularystrings
@@ -6871,6 +6931,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/incallrecordresolutionresult
    */
   interface INCallRecordResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/incallrecordresolutionresult/3649667-confirmationrequiredwithcallreco
+    confirmationRequiredWithCallRecordToConfirm(callRecordToConfirm: cocoascript.INCallRecord):cocoascript.INCallRecordResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incallrecordresolutionresult/3649668-disambiguationwithcallrecordstod
+    disambiguationWithCallRecordsToDisambiguate(callRecordsToDisambiguate: cocoascript.INCallRecord):cocoascript.INCallRecordResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incallrecordresolutionresult/3649669-successwithresolvedcallrecord
+    successWithResolvedCallRecord(resolvedCallRecord: cocoascript.INCallRecord):cocoascript.INCallRecordResolutionResult;
     //
     alloc():cocoascript.INCallRecordResolutionResult;
     //
@@ -6886,6 +6952,8 @@ declare namespace cocoascript {
   interface INStartCallCallRecordToCallBackResolutionResult extends INCallRecordResolutionResult {
     // doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackresolutionresult/3649671-initwithcallrecordresolutionresu
     initWithCallRecordResolutionResult(callRecordResolutionResult: cocoascript.INCallRecordResolutionResult):cocoascript.INStartCallCallRecordToCallBackResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/instartcallcallrecordtocallbackresolutionresult/3649672-unsupportedforreason
+    unsupportedForReason(reason: cocoascript.INStartCallCallRecordToCallBackUnsupportedReason):cocoascript.INStartCallCallRecordToCallBackResolutionResult;
     //
     alloc():cocoascript.INStartCallCallRecordToCallBackResolutionResult;
     //
@@ -6904,6 +6972,16 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult
    */
   interface INIntentResolutionResult extends NSObject {
+    // doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult/3191874-confirmationrequiredwithitemtoco
+    confirmationRequiredWithItemToConfirm_forReason(itemToConfirm: cocoascript.INIntentResolutionResult, reason: cocoascript.NSInteger):cocoascript.INIntentResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult/1639445-unsupportedwithreason
+    unsupportedWithReason(reason: cocoascript.NSInteger):cocoascript.INIntentResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult/1902446-needsvalue
+    needsValue():cocoascript.INIntentResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult/1902445-notrequired
+    notRequired():cocoascript.INIntentResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inintentresolutionresult/2138302-unsupported
+    unsupported():cocoascript.INIntentResolutionResult;
     //
     alloc():cocoascript.INIntentResolutionResult;
     //
@@ -6918,6 +6996,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inpersonresolutionresult
    */
   interface INPersonResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inpersonresolutionresult/1902499-successwithresolvedperson
+    successWithResolvedPerson(resolvedPerson: cocoascript.INPerson):cocoascript.INPersonResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inpersonresolutionresult/1902496-confirmationrequiredwithpersonto
+    confirmationRequiredWithPersonToConfirm(personToConfirm: cocoascript.INPerson):cocoascript.INPersonResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inpersonresolutionresult/1902497-disambiguationwithpeopletodisamb
+    disambiguationWithPeopleToDisambiguate(peopleToDisambiguate: cocoascript.INPerson):cocoascript.INPersonResolutionResult;
     //
     alloc():cocoascript.INPersonResolutionResult;
     //
@@ -6932,6 +7016,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inplacemarkresolutionresult
    */
   interface INPlacemarkResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inplacemarkresolutionresult/1902457-successwithresolvedplacemark
+    successWithResolvedPlacemark(resolvedPlacemark: cocoascript.CLPlacemark):cocoascript.INPlacemarkResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inplacemarkresolutionresult/1902453-confirmationrequiredwithplacemar
+    confirmationRequiredWithPlacemarkToConfirm(placemarkToConfirm: cocoascript.CLPlacemark):cocoascript.INPlacemarkResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inplacemarkresolutionresult/1902456-disambiguationwithplacemarkstodi
+    disambiguationWithPlacemarksToDisambiguate(placemarksToDisambiguate: cocoascript.CLPlacemark):cocoascript.INPlacemarkResolutionResult;
     //
     alloc():cocoascript.INPlacemarkResolutionResult;
     //
@@ -6946,6 +7036,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/indatecomponentsrangeresolutionresult
    */
   interface INDateComponentsRangeResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/indatecomponentsrangeresolutionresult/1906920-successwithresolveddatecomponent
+    successWithResolvedDateComponentsRange(resolvedDateComponentsRange: cocoascript.INDateComponentsRange):cocoascript.INDateComponentsRangeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/indatecomponentsrangeresolutionresult/1906923-confirmationrequiredwithdatecomp
+    confirmationRequiredWithDateComponentsRangeToConfirm(dateComponentsRangeToConfirm: cocoascript.INDateComponentsRange):cocoascript.INDateComponentsRangeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/indatecomponentsrangeresolutionresult/1906922-disambiguationwithdatecomponents
+    disambiguationWithDateComponentsRangesToDisambiguate(dateComponentsRangesToDisambiguate: cocoascript.INDateComponentsRange):cocoascript.INDateComponentsRangeResolutionResult;
     //
     alloc():cocoascript.INDateComponentsRangeResolutionResult;
     //
@@ -6960,6 +7056,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/indatecomponentsresolutionresult
    */
   interface INDateComponentsResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/indatecomponentsresolutionresult/2305429-successwithresolveddatecomponent
+    successWithResolvedDateComponents(resolvedDateComponents: cocoascript.NSDateComponents):cocoascript.INDateComponentsResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/indatecomponentsresolutionresult/2305424-confirmationrequiredwithdatecomp
+    confirmationRequiredWithDateComponentsToConfirm(dateComponentsToConfirm: cocoascript.NSDateComponents):cocoascript.INDateComponentsResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/indatecomponentsresolutionresult/2305431-disambiguationwithdatecomponents
+    disambiguationWithDateComponentsToDisambiguate(dateComponentsToDisambiguate: cocoascript.NSDateComponents):cocoascript.INDateComponentsResolutionResult;
     //
     alloc():cocoascript.INDateComponentsResolutionResult;
     //
@@ -6974,6 +7076,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/infileresolutionresult
    */
   interface INFileResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/infileresolutionresult/3152222-successwithresolvedfile
+    successWithResolvedFile(resolvedFile: cocoascript.INFile):cocoascript.INFileResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/infileresolutionresult/3152220-confirmationrequiredwithfiletoco
+    confirmationRequiredWithFileToConfirm(fileToConfirm: cocoascript.INFile):cocoascript.INFileResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/infileresolutionresult/3152221-disambiguationwithfilestodisambi
+    disambiguationWithFilesToDisambiguate(filesToDisambiguate: cocoascript.INFile):cocoascript.INFileResolutionResult;
     //
     alloc():cocoascript.INFileResolutionResult;
     //
@@ -6988,6 +7096,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inspeedresolutionresult
    */
   interface INSpeedResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inspeedresolutionresult/3172631-successwithresolvedspeed
+    successWithResolvedSpeed(resolvedSpeed: cocoascript.NSUnitSpeed):cocoascript.INSpeedResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inspeedresolutionresult/3172629-confirmationrequiredwithspeedtoc
+    confirmationRequiredWithSpeedToConfirm(speedToConfirm: cocoascript.NSUnitSpeed):cocoascript.INSpeedResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inspeedresolutionresult/3172630-disambiguationwithspeedtodisambi
+    disambiguationWithSpeedToDisambiguate(speedToDisambiguate: cocoascript.NSUnitSpeed):cocoascript.INSpeedResolutionResult;
     //
     alloc():cocoascript.INSpeedResolutionResult;
     //
@@ -7002,6 +7116,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/involumeresolutionresult
    */
   interface INVolumeResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/involumeresolutionresult/3172637-successwithresolvedvolume
+    successWithResolvedVolume(resolvedVolume: cocoascript.NSUnitVolume):cocoascript.INVolumeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/involumeresolutionresult/3172635-confirmationrequiredwithvolumeto
+    confirmationRequiredWithVolumeToConfirm(volumeToConfirm: cocoascript.NSUnitVolume):cocoascript.INVolumeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/involumeresolutionresult/3172636-disambiguationwithvolumetodisamb
+    disambiguationWithVolumeToDisambiguate(volumeToDisambiguate: cocoascript.NSUnitVolume):cocoascript.INVolumeResolutionResult;
     //
     alloc():cocoascript.INVolumeResolutionResult;
     //
@@ -7016,6 +7136,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inenergyresolutionresult
    */
   interface INEnergyResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inenergyresolutionresult/3172595-successwithresolvedenergy
+    successWithResolvedEnergy(resolvedEnergy: cocoascript.NSUnitEnergy):cocoascript.INEnergyResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inenergyresolutionresult/3172593-confirmationrequiredwithenergyto
+    confirmationRequiredWithEnergyToConfirm(energyToConfirm: cocoascript.NSUnitEnergy):cocoascript.INEnergyResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inenergyresolutionresult/3172594-disambiguationwithenergytodisamb
+    disambiguationWithEnergyToDisambiguate(energyToDisambiguate: cocoascript.NSUnitEnergy):cocoascript.INEnergyResolutionResult;
     //
     alloc():cocoascript.INEnergyResolutionResult;
     //
@@ -7030,6 +7156,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inlengthresolutionresult
    */
   interface INLengthResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inlengthresolutionresult/3088757-successwithresolvedlength
+    successWithResolvedLength(resolvedLength: cocoascript.NSUnitLength):cocoascript.INLengthResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inlengthresolutionresult/3088755-confirmationrequiredwithlengthto
+    confirmationRequiredWithLengthToConfirm(lengthToConfirm: cocoascript.NSUnitLength):cocoascript.INLengthResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inlengthresolutionresult/3088756-disambiguationwithlengthstodisam
+    disambiguationWithLengthsToDisambiguate(lengthsToDisambiguate: cocoascript.NSUnitLength):cocoascript.INLengthResolutionResult;
     //
     alloc():cocoascript.INLengthResolutionResult;
     //
@@ -7044,6 +7176,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inmassresolutionresult
    */
   interface INMassResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inmassresolutionresult/3172621-successwithresolvedmass
+    successWithResolvedMass(resolvedMass: cocoascript.NSUnitMass):cocoascript.INMassResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inmassresolutionresult/3172619-confirmationrequiredwithmasstoco
+    confirmationRequiredWithMassToConfirm(massToConfirm: cocoascript.NSUnitMass):cocoascript.INMassResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inmassresolutionresult/3172620-disambiguationwithmasstodisambig
+    disambiguationWithMassToDisambiguate(massToDisambiguate: cocoascript.NSUnitMass):cocoascript.INMassResolutionResult;
     //
     alloc():cocoascript.INMassResolutionResult;
     //
@@ -7058,6 +7196,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/incurrencyamountresolutionresult
    */
   interface INCurrencyAmountResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/incurrencyamountresolutionresult/1906932-successwithresolvedcurrencyamoun
+    successWithResolvedCurrencyAmount(resolvedCurrencyAmount: cocoascript.INCurrencyAmount):cocoascript.INCurrencyAmountResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incurrencyamountresolutionresult/1906933-confirmationrequiredwithcurrency
+    confirmationRequiredWithCurrencyAmountToConfirm(currencyAmountToConfirm: cocoascript.INCurrencyAmount):cocoascript.INCurrencyAmountResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incurrencyamountresolutionresult/1906935-disambiguationwithcurrencyamount
+    disambiguationWithCurrencyAmountsToDisambiguate(currencyAmountsToDisambiguate: cocoascript.INCurrencyAmount):cocoascript.INCurrencyAmountResolutionResult;
     //
     alloc():cocoascript.INCurrencyAmountResolutionResult;
     //
@@ -7072,6 +7216,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inintegerresolutionresult
    */
   interface INIntegerResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inintegerresolutionresult/1888714-successwithresolvedvalue
+    successWithResolvedValue(resolvedValue: cocoascript.NSInteger):cocoascript.INIntegerResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inintegerresolutionresult/1888715-confirmationrequiredwithvaluetoc
+    confirmationRequiredWithValueToConfirm(valueToConfirm: cocoascript.NSNumber):cocoascript.INIntegerResolutionResult;
     //
     alloc():cocoascript.INIntegerResolutionResult;
     //
@@ -7086,6 +7234,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/indoubleresolutionresult
    */
   interface INDoubleResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/indoubleresolutionresult/1906910-successwithresolvedvalue
+    successWithResolvedValue(resolvedValue: number):cocoascript.INDoubleResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/indoubleresolutionresult/1906912-confirmationrequiredwithvaluetoc
+    confirmationRequiredWithValueToConfirm(valueToConfirm: cocoascript.NSNumber):cocoascript.INDoubleResolutionResult;
     //
     alloc():cocoascript.INDoubleResolutionResult;
     //
@@ -7100,6 +7252,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inbooleanresolutionresult
    */
   interface INBooleanResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inbooleanresolutionresult/1906928-successwithresolvedvalue
+    successWithResolvedValue(resolvedValue: cocoascript.BOOL):cocoascript.INBooleanResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inbooleanresolutionresult/1906927-confirmationrequiredwithvaluetoc
+    confirmationRequiredWithValueToConfirm(valueToConfirm: cocoascript.NSNumber):cocoascript.INBooleanResolutionResult;
     //
     alloc():cocoascript.INBooleanResolutionResult;
     //
@@ -7114,6 +7270,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/instringresolutionresult
    */
   interface INStringResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/instringresolutionresult/1902377-successwithresolvedstring
+    successWithResolvedString(resolvedString: cocoascript.NSString):cocoascript.INStringResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/instringresolutionresult/1902375-confirmationrequiredwithstringto
+    confirmationRequiredWithStringToConfirm(stringToConfirm: cocoascript.NSString):cocoascript.INStringResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/instringresolutionresult/1902378-disambiguationwithstringstodisam
+    disambiguationWithStringsToDisambiguate(stringsToDisambiguate: cocoascript.NSString):cocoascript.INStringResolutionResult;
     //
     alloc():cocoascript.INStringResolutionResult;
     //
@@ -7128,6 +7290,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inspeakablestringresolutionresult
    */
   interface INSpeakableStringResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inspeakablestringresolutionresult/2092304-successwithresolvedstring
+    successWithResolvedString(resolvedString: cocoascript.INSpeakableString):cocoascript.INSpeakableStringResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inspeakablestringresolutionresult/2092307-confirmationrequiredwithstringto
+    confirmationRequiredWithStringToConfirm(stringToConfirm: cocoascript.INSpeakableString):cocoascript.INSpeakableStringResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inspeakablestringresolutionresult/2092305-disambiguationwithstringstodisam
+    disambiguationWithStringsToDisambiguate(stringsToDisambiguate: cocoascript.INSpeakableString):cocoascript.INSpeakableStringResolutionResult;
     //
     alloc():cocoascript.INSpeakableStringResolutionResult;
     //
@@ -7142,6 +7310,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/intimeintervalresolutionresult
    */
   interface INTimeIntervalResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/intimeintervalresolutionresult/3141892-successwithresolvedtimeinterval
+    successWithResolvedTimeInterval(resolvedTimeInterval: cocoascript.NSTimeInterval):cocoascript.INTimeIntervalResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/intimeintervalresolutionresult/3141891-confirmationrequiredwithtimeinte
+    confirmationRequiredWithTimeIntervalToConfirm(timeIntervalToConfirm: cocoascript.NSTimeInterval):cocoascript.INTimeIntervalResolutionResult;
     //
     alloc():cocoascript.INTimeIntervalResolutionResult;
     //
@@ -7156,6 +7328,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inenumresolutionresult
    */
   interface INEnumResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inenumresolutionresult/3088753-successwithresolvedvalue
+    successWithResolvedValue(resolvedValue: cocoascript.NSInteger):cocoascript.INEnumResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inenumresolutionresult/3088752-confirmationrequiredwithvaluetoc
+    confirmationRequiredWithValueToConfirm(valueToConfirm: cocoascript.NSInteger):cocoascript.INEnumResolutionResult;
     //
     alloc():cocoascript.INEnumResolutionResult;
     //
@@ -7170,6 +7346,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inobjectresolutionresult
    */
   interface INObjectResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inobjectresolutionresult/3088761-successwithresolvedobject
+    successWithResolvedObject(resolvedObject: cocoascript.INObject):cocoascript.INObjectResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inobjectresolutionresult/3088759-confirmationrequiredwithobjectto
+    confirmationRequiredWithObjectToConfirm(objectToConfirm: cocoascript.INObject):cocoascript.INObjectResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inobjectresolutionresult/3088760-disambiguationwithobjectstodisam
+    disambiguationWithObjectsToDisambiguate(objectsToDisambiguate: cocoascript.INObject):cocoascript.INObjectResolutionResult;
     //
     alloc():cocoascript.INObjectResolutionResult;
     //
@@ -7184,6 +7366,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inurlresolutionresult
    */
   interface INURLResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inurlresolutionresult/3088765-successwithresolvedurl
+    successWithResolvedURL(resolvedURL: cocoascript.NSURL):cocoascript.INURLResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inurlresolutionresult/3088763-confirmationrequiredwithurltocon
+    confirmationRequiredWithURLToConfirm(urlToConfirm: cocoascript.NSURL):cocoascript.INURLResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inurlresolutionresult/3088764-disambiguationwithurlstodisambig
+    disambiguationWithURLsToDisambiguate(urlsToDisambiguate: cocoascript.NSURL):cocoascript.INURLResolutionResult;
     //
     alloc():cocoascript.INURLResolutionResult;
     //
@@ -7230,6 +7418,8 @@ declare namespace cocoascript {
   interface INAddTasksTargetTaskListResolutionResult extends INTaskListResolutionResult {
     // doc://com.apple.documentation/documentation/sirikit/inaddtaskstargettasklistresolutionresult/3131046-initwithtasklistresolutionresult
     initWithTaskListResolutionResult(taskListResolutionResult: cocoascript.INTaskListResolutionResult):cocoascript.INAddTasksTargetTaskListResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inaddtaskstargettasklistresolutionresult/3131045-confirmationrequiredwithtasklist
+    confirmationRequiredWithTaskListToConfirm_forReason(taskListToConfirm: cocoascript.INTaskList, reason: cocoascript.INAddTasksTargetTaskListConfirmationReason):cocoascript.INAddTasksTargetTaskListResolutionResult;
     //
     alloc():cocoascript.INAddTasksTargetTaskListResolutionResult;
     //
@@ -7246,6 +7436,8 @@ declare namespace cocoascript {
   interface INAddTasksTemporalEventTriggerResolutionResult extends INTemporalEventTriggerResolutionResult {
     // doc://com.apple.documentation/documentation/sirikit/inaddtaskstemporaleventtriggerresolutionresult/3327002-initwithtemporaleventtriggerreso
     initWithTemporalEventTriggerResolutionResult(temporalEventTriggerResolutionResult: cocoascript.INTemporalEventTriggerResolutionResult):cocoascript.INAddTasksTemporalEventTriggerResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inaddtaskstemporaleventtriggerresolutionresult/3327003-unsupportedforreason
+    unsupportedForReason(reason: cocoascript.INAddTasksTemporalEventTriggerUnsupportedReason):cocoascript.INAddTasksTemporalEventTriggerResolutionResult;
     //
     alloc():cocoascript.INAddTasksTemporalEventTriggerResolutionResult;
     //
@@ -7262,6 +7454,8 @@ declare namespace cocoascript {
   interface INDeleteTasksTaskListResolutionResult extends INTaskListResolutionResult {
     // doc://com.apple.documentation/documentation/sirikit/indeletetaskstasklistresolutionresult/3141706-initwithtasklistresolutionresult
     initWithTaskListResolutionResult(taskListResolutionResult: cocoascript.INTaskListResolutionResult):cocoascript.INDeleteTasksTaskListResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/indeletetaskstasklistresolutionresult/3141707-unsupportedforreason
+    unsupportedForReason(reason: cocoascript.INDeleteTasksTaskListUnsupportedReason):cocoascript.INDeleteTasksTaskListResolutionResult;
     //
     alloc():cocoascript.INDeleteTasksTaskListResolutionResult;
     //
@@ -7278,6 +7472,8 @@ declare namespace cocoascript {
   interface INDeleteTasksTaskResolutionResult extends INTaskResolutionResult {
     // doc://com.apple.documentation/documentation/sirikit/indeletetaskstaskresolutionresult/3141711-initwithtaskresolutionresult
     initWithTaskResolutionResult(taskResolutionResult: cocoascript.INTaskResolutionResult):cocoascript.INDeleteTasksTaskResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/indeletetaskstaskresolutionresult/3141712-unsupportedforreason
+    unsupportedForReason(reason: cocoascript.INDeleteTasksTaskUnsupportedReason):cocoascript.INDeleteTasksTaskResolutionResult;
     //
     alloc():cocoascript.INDeleteTasksTaskResolutionResult;
     //
@@ -7292,6 +7488,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/indatesearchtyperesolutionresult
    */
   interface INDateSearchTypeResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/indatesearchtyperesolutionresult/2875634-successwithresolveddatesearchtyp
+    successWithResolvedDateSearchType(resolvedDateSearchType: cocoascript.INDateSearchType):cocoascript.INDateSearchTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/indatesearchtyperesolutionresult/2875584-confirmationrequiredwithdatesear
+    confirmationRequiredWithDateSearchTypeToConfirm(dateSearchTypeToConfirm: cocoascript.INDateSearchType):cocoascript.INDateSearchTypeResolutionResult;
     //
     alloc():cocoascript.INDateSearchTypeResolutionResult;
     //
@@ -7306,6 +7506,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inlocationsearchtyperesolutionresult
    */
   interface INLocationSearchTypeResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inlocationsearchtyperesolutionresult/2875683-successwithresolvedlocationsearc
+    successWithResolvedLocationSearchType(resolvedLocationSearchType: cocoascript.INLocationSearchType):cocoascript.INLocationSearchTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inlocationsearchtyperesolutionresult/2875658-confirmationrequiredwithlocation
+    confirmationRequiredWithLocationSearchTypeToConfirm(locationSearchTypeToConfirm: cocoascript.INLocationSearchType):cocoascript.INLocationSearchTypeResolutionResult;
     //
     alloc():cocoascript.INLocationSearchTypeResolutionResult;
     //
@@ -7320,6 +7524,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/innoteresolutionresult
    */
   interface INNoteResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/innoteresolutionresult/2879142-successwithresolvednote
+    successWithResolvedNote(resolvedNote: cocoascript.INNote):cocoascript.INNoteResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/innoteresolutionresult/2879158-confirmationrequiredwithnotetoco
+    confirmationRequiredWithNoteToConfirm(noteToConfirm: cocoascript.INNote):cocoascript.INNoteResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/innoteresolutionresult/2879151-disambiguationwithnotestodisambi
+    disambiguationWithNotesToDisambiguate(notesToDisambiguate: cocoascript.INNote):cocoascript.INNoteResolutionResult;
     //
     alloc():cocoascript.INNoteResolutionResult;
     //
@@ -7334,6 +7544,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/innotecontentresolutionresult
    */
   interface INNoteContentResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/innotecontentresolutionresult/2875689-successwithresolvednotecontent
+    successWithResolvedNoteContent(resolvedNoteContent: cocoascript.INNoteContent):cocoascript.INNoteContentResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/innotecontentresolutionresult/2875620-confirmationrequiredwithnotecont
+    confirmationRequiredWithNoteContentToConfirm(noteContentToConfirm: cocoascript.INNoteContent):cocoascript.INNoteContentResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/innotecontentresolutionresult/2875691-disambiguationwithnotecontentsto
+    disambiguationWithNoteContentsToDisambiguate(noteContentsToDisambiguate: cocoascript.INNoteContent):cocoascript.INNoteContentResolutionResult;
     //
     alloc():cocoascript.INNoteContentResolutionResult;
     //
@@ -7348,6 +7564,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/innotebookitemtyperesolutionresult
    */
   interface INNotebookItemTypeResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/innotebookitemtyperesolutionresult/2875673-successwithresolvednotebookitemt
+    successWithResolvedNotebookItemType(resolvedNotebookItemType: cocoascript.INNotebookItemType):cocoascript.INNotebookItemTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/innotebookitemtyperesolutionresult/2875686-confirmationrequiredwithnotebook
+    confirmationRequiredWithNotebookItemTypeToConfirm(notebookItemTypeToConfirm: cocoascript.INNotebookItemType):cocoascript.INNotebookItemTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/innotebookitemtyperesolutionresult/2923323-disambiguationwithnotebookitemty
+    disambiguationWithNotebookItemTypesToDisambiguate(notebookItemTypesToDisambiguate: cocoascript.NSNumber):cocoascript.INNotebookItemTypeResolutionResult;
     //
     alloc():cocoascript.INNotebookItemTypeResolutionResult;
     //
@@ -7364,6 +7586,8 @@ declare namespace cocoascript {
   interface INSetTaskAttributeTemporalEventTriggerResolutionResult extends INTemporalEventTriggerResolutionResult {
     // doc://com.apple.documentation/documentation/sirikit/insettaskattributetemporaleventtriggerresolutionresult/3327012-initwithtemporaleventtriggerreso
     initWithTemporalEventTriggerResolutionResult(temporalEventTriggerResolutionResult: cocoascript.INTemporalEventTriggerResolutionResult):cocoascript.INSetTaskAttributeTemporalEventTriggerResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/insettaskattributetemporaleventtriggerresolutionresult/3327013-unsupportedforreason
+    unsupportedForReason(reason: cocoascript.INSetTaskAttributeTemporalEventTriggerUnsupportedReason):cocoascript.INSetTaskAttributeTemporalEventTriggerResolutionResult;
     //
     alloc():cocoascript.INSetTaskAttributeTemporalEventTriggerResolutionResult;
     //
@@ -7380,6 +7604,8 @@ declare namespace cocoascript {
   interface INSnoozeTasksTaskResolutionResult extends INTaskResolutionResult {
     // doc://com.apple.documentation/documentation/sirikit/insnoozetaskstaskresolutionresult/3141861-initwithtaskresolutionresult
     initWithTaskResolutionResult(taskResolutionResult: cocoascript.INTaskResolutionResult):cocoascript.INSnoozeTasksTaskResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/insnoozetaskstaskresolutionresult/3141862-unsupportedforreason
+    unsupportedForReason(reason: cocoascript.INSnoozeTasksTaskUnsupportedReason):cocoascript.INSnoozeTasksTaskResolutionResult;
     //
     alloc():cocoascript.INSnoozeTasksTaskResolutionResult;
     //
@@ -7394,6 +7620,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inspatialeventtriggerresolutionresult
    */
   interface INSpatialEventTriggerResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inspatialeventtriggerresolutionresult/2879156-successwithresolvedspatialeventt
+    successWithResolvedSpatialEventTrigger(resolvedSpatialEventTrigger: cocoascript.INSpatialEventTrigger):cocoascript.INSpatialEventTriggerResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inspatialeventtriggerresolutionresult/2879161-confirmationrequiredwithspatiale
+    confirmationRequiredWithSpatialEventTriggerToConfirm(spatialEventTriggerToConfirm: cocoascript.INSpatialEventTrigger):cocoascript.INSpatialEventTriggerResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inspatialeventtriggerresolutionresult/2879145-disambiguationwithspatialeventtr
+    disambiguationWithSpatialEventTriggersToDisambiguate(spatialEventTriggersToDisambiguate: cocoascript.INSpatialEventTrigger):cocoascript.INSpatialEventTriggerResolutionResult;
     //
     alloc():cocoascript.INSpatialEventTriggerResolutionResult;
     //
@@ -7408,6 +7640,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/intasklistresolutionresult
    */
   interface INTaskListResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/intasklistresolutionresult/2879152-successwithresolvedtasklist
+    successWithResolvedTaskList(resolvedTaskList: cocoascript.INTaskList):cocoascript.INTaskListResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/intasklistresolutionresult/2879157-confirmationrequiredwithtasklist
+    confirmationRequiredWithTaskListToConfirm(taskListToConfirm: cocoascript.INTaskList):cocoascript.INTaskListResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/intasklistresolutionresult/2879144-disambiguationwithtaskliststodis
+    disambiguationWithTaskListsToDisambiguate(taskListsToDisambiguate: cocoascript.INTaskList):cocoascript.INTaskListResolutionResult;
     //
     alloc():cocoascript.INTaskListResolutionResult;
     //
@@ -7422,6 +7660,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/intaskresolutionresult
    */
   interface INTaskResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/intaskresolutionresult/2879147-successwithresolvedtask
+    successWithResolvedTask(resolvedTask: cocoascript.INTask):cocoascript.INTaskResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/intaskresolutionresult/2879154-confirmationrequiredwithtasktoco
+    confirmationRequiredWithTaskToConfirm(taskToConfirm: cocoascript.INTask):cocoascript.INTaskResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/intaskresolutionresult/2879149-disambiguationwithtaskstodisambi
+    disambiguationWithTasksToDisambiguate(tasksToDisambiguate: cocoascript.INTask):cocoascript.INTaskResolutionResult;
     //
     alloc():cocoascript.INTaskResolutionResult;
     //
@@ -7436,6 +7680,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/intaskstatusresolutionresult
    */
   interface INTaskStatusResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/intaskstatusresolutionresult/2875697-successwithresolvedtaskstatus
+    successWithResolvedTaskStatus(resolvedTaskStatus: cocoascript.INTaskStatus):cocoascript.INTaskStatusResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/intaskstatusresolutionresult/2875636-confirmationrequiredwithtaskstat
+    confirmationRequiredWithTaskStatusToConfirm(taskStatusToConfirm: cocoascript.INTaskStatus):cocoascript.INTaskStatusResolutionResult;
     //
     alloc():cocoascript.INTaskStatusResolutionResult;
     //
@@ -7450,6 +7698,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/intemporaleventtriggerresolutionresult
    */
   interface INTemporalEventTriggerResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/intemporaleventtriggerresolutionresult/2879141-successwithresolvedtemporalevent
+    successWithResolvedTemporalEventTrigger(resolvedTemporalEventTrigger: cocoascript.INTemporalEventTrigger):cocoascript.INTemporalEventTriggerResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/intemporaleventtriggerresolutionresult/2879148-confirmationrequiredwithtemporal
+    confirmationRequiredWithTemporalEventTriggerToConfirm(temporalEventTriggerToConfirm: cocoascript.INTemporalEventTrigger):cocoascript.INTemporalEventTriggerResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/intemporaleventtriggerresolutionresult/2879143-disambiguationwithtemporaleventt
+    disambiguationWithTemporalEventTriggersToDisambiguate(temporalEventTriggersToDisambiguate: cocoascript.INTemporalEventTrigger):cocoascript.INTemporalEventTriggerResolutionResult;
     //
     alloc():cocoascript.INTemporalEventTriggerResolutionResult;
     //
@@ -7464,6 +7718,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/intaskpriorityresolutionresult
    */
   interface INTaskPriorityResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/intaskpriorityresolutionresult/3141872-successwithresolvedtaskpriority
+    successWithResolvedTaskPriority(resolvedTaskPriority: cocoascript.INTaskPriority):cocoascript.INTaskPriorityResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/intaskpriorityresolutionresult/3141871-confirmationrequiredwithtaskprio
+    confirmationRequiredWithTaskPriorityToConfirm(taskPriorityToConfirm: cocoascript.INTaskPriority):cocoascript.INTaskPriorityResolutionResult;
     //
     alloc():cocoascript.INTaskPriorityResolutionResult;
     //
@@ -7478,6 +7736,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/innotecontenttyperesolutionresult
    */
   interface INNoteContentTypeResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/innotecontenttyperesolutionresult/2875624-successwithresolvednotecontentty
+    successWithResolvedNoteContentType(resolvedNoteContentType: cocoascript.INNoteContentType):cocoascript.INNoteContentTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/innotecontenttyperesolutionresult/2875614-confirmationrequiredwithnotecont
+    confirmationRequiredWithNoteContentTypeToConfirm(noteContentTypeToConfirm: cocoascript.INNoteContentType):cocoascript.INNoteContentTypeResolutionResult;
     //
     alloc():cocoascript.INNoteContentTypeResolutionResult;
     //
@@ -7524,6 +7786,14 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/incarseatresolutionresult
    */
   interface INCarSeatResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/incarseatresolutionresult/1902373-successwithresolvedcarseat
+    successWithResolvedCarSeat(resolvedCarSeat: cocoascript.INCarSeat):cocoascript.INCarSeatResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incarseatresolutionresult/1902371-confirmationrequiredwithcarseatt
+    confirmationRequiredWithCarSeatToConfirm(carSeatToConfirm: cocoascript.INCarSeat):cocoascript.INCarSeatResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incarseatresolutionresult/2933978-successwithresolvedvalue
+    successWithResolvedValue(resolvedValue: cocoascript.INCarSeat):cocoascript.INCarSeatResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incarseatresolutionresult/2933977-confirmationrequiredwithvaluetoc
+    confirmationRequiredWithValueToConfirm(valueToConfirm: cocoascript.INCarSeat):cocoascript.INCarSeatResolutionResult;
     //
     alloc():cocoascript.INCarSeatResolutionResult;
     //
@@ -7538,6 +7808,14 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/incardefrosterresolutionresult
    */
   interface INCarDefrosterResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/incardefrosterresolutionresult/1902347-successwithresolvedcardefroster
+    successWithResolvedCarDefroster(resolvedCarDefroster: cocoascript.INCarDefroster):cocoascript.INCarDefrosterResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incardefrosterresolutionresult/1902346-confirmationrequiredwithcardefro
+    confirmationRequiredWithCarDefrosterToConfirm(carDefrosterToConfirm: cocoascript.INCarDefroster):cocoascript.INCarDefrosterResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incardefrosterresolutionresult/2933970-successwithresolvedvalue
+    successWithResolvedValue(resolvedValue: cocoascript.INCarDefroster):cocoascript.INCarDefrosterResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incardefrosterresolutionresult/2933969-confirmationrequiredwithvaluetoc
+    confirmationRequiredWithValueToConfirm(valueToConfirm: cocoascript.INCarDefroster):cocoascript.INCarDefrosterResolutionResult;
     //
     alloc():cocoascript.INCarDefrosterResolutionResult;
     //
@@ -7552,6 +7830,14 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/incaraudiosourceresolutionresult
    */
   interface INCarAudioSourceResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/incaraudiosourceresolutionresult/1904855-successwithresolvedcaraudiosourc
+    successWithResolvedCarAudioSource(resolvedCarAudioSource: cocoascript.INCarAudioSource):cocoascript.INCarAudioSourceResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incaraudiosourceresolutionresult/1904854-confirmationrequiredwithcaraudio
+    confirmationRequiredWithCarAudioSourceToConfirm(carAudioSourceToConfirm: cocoascript.INCarAudioSource):cocoascript.INCarAudioSourceResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incaraudiosourceresolutionresult/2933988-successwithresolvedvalue
+    successWithResolvedValue(resolvedValue: cocoascript.INCarAudioSource):cocoascript.INCarAudioSourceResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incaraudiosourceresolutionresult/2933987-confirmationrequiredwithvaluetoc
+    confirmationRequiredWithValueToConfirm(valueToConfirm: cocoascript.INCarAudioSource):cocoascript.INCarAudioSourceResolutionResult;
     //
     alloc():cocoascript.INCarAudioSourceResolutionResult;
     //
@@ -7566,6 +7852,14 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/incaraircirculationmoderesolutionresult
    */
   interface INCarAirCirculationModeResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/incaraircirculationmoderesolutionresult/1902411-successwithresolvedcaraircircula
+    successWithResolvedCarAirCirculationMode(resolvedCarAirCirculationMode: cocoascript.INCarAirCirculationMode):cocoascript.INCarAirCirculationModeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incaraircirculationmoderesolutionresult/1902412-confirmationrequiredwithcarairci
+    confirmationRequiredWithCarAirCirculationModeToConfirm(carAirCirculationModeToConfirm: cocoascript.INCarAirCirculationMode):cocoascript.INCarAirCirculationModeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incaraircirculationmoderesolutionresult/2933981-successwithresolvedvalue
+    successWithResolvedValue(resolvedValue: cocoascript.INCarAirCirculationMode):cocoascript.INCarAirCirculationModeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incaraircirculationmoderesolutionresult/2933982-confirmationrequiredwithvaluetoc
+    confirmationRequiredWithValueToConfirm(valueToConfirm: cocoascript.INCarAirCirculationMode):cocoascript.INCarAirCirculationModeResolutionResult;
     //
     alloc():cocoascript.INCarAirCirculationModeResolutionResult;
     //
@@ -7580,6 +7874,14 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inradiotyperesolutionresult
    */
   interface INRadioTypeResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inradiotyperesolutionresult/1902423-successwithresolvedradiotype
+    successWithResolvedRadioType(resolvedRadioType: cocoascript.INRadioType):cocoascript.INRadioTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inradiotyperesolutionresult/1902421-confirmationrequiredwithradiotyp
+    confirmationRequiredWithRadioTypeToConfirm(radioTypeToConfirm: cocoascript.INRadioType):cocoascript.INRadioTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inradiotyperesolutionresult/2933984-successwithresolvedvalue
+    successWithResolvedValue(resolvedValue: cocoascript.INRadioType):cocoascript.INRadioTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inradiotyperesolutionresult/2933983-confirmationrequiredwithvaluetoc
+    confirmationRequiredWithValueToConfirm(valueToConfirm: cocoascript.INRadioType):cocoascript.INRadioTypeResolutionResult;
     //
     alloc():cocoascript.INRadioTypeResolutionResult;
     //
@@ -7594,6 +7896,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/intemperatureresolutionresult
    */
   interface INTemperatureResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/intemperatureresolutionresult/2132221-successwithresolvedtemperature
+    successWithResolvedTemperature(resolvedTemperature: cocoascript.NSUnitTemperature):cocoascript.INTemperatureResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/intemperatureresolutionresult/2132222-confirmationrequiredwithtemperat
+    confirmationRequiredWithTemperatureToConfirm(temperatureToConfirm: cocoascript.NSUnitTemperature):cocoascript.INTemperatureResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/intemperatureresolutionresult/2132223-disambiguationwithtemperaturesto
+    disambiguationWithTemperaturesToDisambiguate(temperaturesToDisambiguate: cocoascript.NSUnitTemperature):cocoascript.INTemperatureResolutionResult;
     //
     alloc():cocoascript.INTemperatureResolutionResult;
     //
@@ -7608,6 +7916,14 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inrelativereferenceresolutionresult
    */
   interface INRelativeReferenceResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inrelativereferenceresolutionresult/1902364-successwithresolvedrelativerefer
+    successWithResolvedRelativeReference(resolvedRelativeReference: cocoascript.INRelativeReference):cocoascript.INRelativeReferenceResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inrelativereferenceresolutionresult/1902363-confirmationrequiredwithrelative
+    confirmationRequiredWithRelativeReferenceToConfirm(relativeReferenceToConfirm: cocoascript.INRelativeReference):cocoascript.INRelativeReferenceResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inrelativereferenceresolutionresult/2933974-successwithresolvedvalue
+    successWithResolvedValue(resolvedValue: cocoascript.INRelativeReference):cocoascript.INRelativeReferenceResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inrelativereferenceresolutionresult/2933973-confirmationrequiredwithvaluetoc
+    confirmationRequiredWithValueToConfirm(valueToConfirm: cocoascript.INRelativeReference):cocoascript.INRelativeReferenceResolutionResult;
     //
     alloc():cocoascript.INRelativeReferenceResolutionResult;
     //
@@ -7622,6 +7938,14 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inrelativesettingresolutionresult
    */
   interface INRelativeSettingResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inrelativesettingresolutionresult/1906918-successwithresolvedrelativesetti
+    successWithResolvedRelativeSetting(resolvedRelativeSetting: cocoascript.INRelativeSetting):cocoascript.INRelativeSettingResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inrelativesettingresolutionresult/1906919-confirmationrequiredwithrelative
+    confirmationRequiredWithRelativeSettingToConfirm(relativeSettingToConfirm: cocoascript.INRelativeSetting):cocoascript.INRelativeSettingResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inrelativesettingresolutionresult/2933989-successwithresolvedvalue
+    successWithResolvedValue(resolvedValue: cocoascript.INRelativeSetting):cocoascript.INRelativeSettingResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inrelativesettingresolutionresult/2933990-confirmationrequiredwithvaluetoc
+    confirmationRequiredWithValueToConfirm(valueToConfirm: cocoascript.INRelativeSetting):cocoascript.INRelativeSettingResolutionResult;
     //
     alloc():cocoascript.INRelativeSettingResolutionResult;
     //
@@ -7644,6 +7968,14 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inmessageattributeresolutionresult
    */
   interface INMessageAttributeResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inmessageattributeresolutionresult/1902369-successwithresolvedmessageattrib
+    successWithResolvedMessageAttribute(resolvedMessageAttribute: cocoascript.INMessageAttribute):cocoascript.INMessageAttributeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inmessageattributeresolutionresult/1902368-confirmationrequiredwithmessagea
+    confirmationRequiredWithMessageAttributeToConfirm(messageAttributeToConfirm: cocoascript.INMessageAttribute):cocoascript.INMessageAttributeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inmessageattributeresolutionresult/2933976-successwithresolvedvalue
+    successWithResolvedValue(resolvedValue: cocoascript.INMessageAttribute):cocoascript.INMessageAttributeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inmessageattributeresolutionresult/2933975-confirmationrequiredwithvaluetoc
+    confirmationRequiredWithValueToConfirm(valueToConfirm: cocoascript.INMessageAttribute):cocoascript.INMessageAttributeResolutionResult;
     //
     alloc():cocoascript.INMessageAttributeResolutionResult;
     //
@@ -7658,6 +7990,14 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inmessageattributeoptionsresolutionresult
    */
   interface INMessageAttributeOptionsResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inmessageattributeoptionsresolutionresult/1906939-successwithresolvedmessageattrib
+    successWithResolvedMessageAttributeOptions(resolvedMessageAttributeOptions: cocoascript.INMessageAttributeOptions):cocoascript.INMessageAttributeOptionsResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inmessageattributeoptionsresolutionresult/1906938-confirmationrequiredwithmessagea
+    confirmationRequiredWithMessageAttributeOptionsToConfirm(messageAttributeOptionsToConfirm: cocoascript.INMessageAttributeOptions):cocoascript.INMessageAttributeOptionsResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inmessageattributeoptionsresolutionresult/2933992-successwithresolvedvalue
+    successWithResolvedValue(resolvedValue: cocoascript.INMessageAttributeOptions):cocoascript.INMessageAttributeOptionsResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inmessageattributeoptionsresolutionresult/2933991-confirmationrequiredwithvaluetoc
+    confirmationRequiredWithValueToConfirm(valueToConfirm: cocoascript.INMessageAttributeOptions):cocoascript.INMessageAttributeOptionsResolutionResult;
     //
     alloc():cocoascript.INMessageAttributeOptionsResolutionResult;
     //
@@ -7672,6 +8012,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/insendmessagerecipientresolutionresult
    */
   interface INSendMessageRecipientResolutionResult extends INPersonResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/insendmessagerecipientresolutionresult/2914622-unsupportedforreason
+    unsupportedForReason(reason: cocoascript.INSendMessageRecipientUnsupportedReason):cocoascript.INSendMessageRecipientResolutionResult;
     // doc://com.apple.documentation/documentation/sirikit/insendmessagerecipientresolutionresult/2914612-initwithpersonresolutionresult
     initWithPersonResolutionResult(personResolutionResult: cocoascript.INPersonResolutionResult):cocoascript.INSendMessageRecipientResolutionResult;
     //
@@ -7696,6 +8038,14 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inaccounttyperesolutionresult
    */
   interface INAccountTypeResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inaccounttyperesolutionresult/2867303-successwithresolvedaccounttype
+    successWithResolvedAccountType(resolvedAccountType: cocoascript.INAccountType):cocoascript.INAccountTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inaccounttyperesolutionresult/2867304-confirmationrequiredwithaccountt
+    confirmationRequiredWithAccountTypeToConfirm(accountTypeToConfirm: cocoascript.INAccountType):cocoascript.INAccountTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inaccounttyperesolutionresult/2934001-successwithresolvedvalue
+    successWithResolvedValue(resolvedValue: cocoascript.INAccountType):cocoascript.INAccountTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inaccounttyperesolutionresult/2934002-confirmationrequiredwithvaluetoc
+    confirmationRequiredWithValueToConfirm(valueToConfirm: cocoascript.INAccountType):cocoascript.INAccountTypeResolutionResult;
     //
     alloc():cocoascript.INAccountTypeResolutionResult;
     //
@@ -7710,6 +8060,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inbalancetyperesolutionresult
    */
   interface INBalanceTypeResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inbalancetyperesolutionresult/2866592-successwithresolvedbalancetype
+    successWithResolvedBalanceType(resolvedBalanceType: cocoascript.INBalanceType):cocoascript.INBalanceTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inbalancetyperesolutionresult/2866590-confirmationrequiredwithbalancet
+    confirmationRequiredWithBalanceTypeToConfirm(balanceTypeToConfirm: cocoascript.INBalanceType):cocoascript.INBalanceTypeResolutionResult;
     //
     alloc():cocoascript.INBalanceTypeResolutionResult;
     //
@@ -7724,6 +8078,14 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inbilltyperesolutionresult
    */
   interface INBillTypeResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inbilltyperesolutionresult/2799011-successwithresolvedbilltype
+    successWithResolvedBillType(resolvedBillType: cocoascript.INBillType):cocoascript.INBillTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inbilltyperesolutionresult/2799013-confirmationrequiredwithbilltype
+    confirmationRequiredWithBillTypeToConfirm(billTypeToConfirm: cocoascript.INBillType):cocoascript.INBillTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inbilltyperesolutionresult/2933993-successwithresolvedvalue
+    successWithResolvedValue(resolvedValue: cocoascript.INBillType):cocoascript.INBillTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inbilltyperesolutionresult/2933994-confirmationrequiredwithvaluetoc
+    confirmationRequiredWithValueToConfirm(valueToConfirm: cocoascript.INBillType):cocoascript.INBillTypeResolutionResult;
     //
     alloc():cocoascript.INBillTypeResolutionResult;
     //
@@ -7738,6 +8100,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inbillpayeeresolutionresult
    */
   interface INBillPayeeResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inbillpayeeresolutionresult/2799319-successwithresolvedbillpayee
+    successWithResolvedBillPayee(resolvedBillPayee: cocoascript.INBillPayee):cocoascript.INBillPayeeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inbillpayeeresolutionresult/2799318-confirmationrequiredwithbillpaye
+    confirmationRequiredWithBillPayeeToConfirm(billPayeeToConfirm: cocoascript.INBillPayee):cocoascript.INBillPayeeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inbillpayeeresolutionresult/2799320-disambiguationwithbillpayeestodi
+    disambiguationWithBillPayeesToDisambiguate(billPayeesToDisambiguate: cocoascript.INBillPayee):cocoascript.INBillPayeeResolutionResult;
     //
     alloc():cocoascript.INBillPayeeResolutionResult;
     //
@@ -7752,6 +8120,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inpaymentaccountresolutionresult
    */
   interface INPaymentAccountResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inpaymentaccountresolutionresult/2799057-successwithresolvedpaymentaccoun
+    successWithResolvedPaymentAccount(resolvedPaymentAccount: cocoascript.INPaymentAccount):cocoascript.INPaymentAccountResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inpaymentaccountresolutionresult/2799054-confirmationrequiredwithpaymenta
+    confirmationRequiredWithPaymentAccountToConfirm(paymentAccountToConfirm: cocoascript.INPaymentAccount):cocoascript.INPaymentAccountResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inpaymentaccountresolutionresult/2799055-disambiguationwithpaymentaccount
+    disambiguationWithPaymentAccountsToDisambiguate(paymentAccountsToDisambiguate: cocoascript.INPaymentAccount):cocoascript.INPaymentAccountResolutionResult;
     //
     alloc():cocoascript.INPaymentAccountResolutionResult;
     //
@@ -7766,6 +8140,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inpaymentamountresolutionresult
    */
   interface INPaymentAmountResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inpaymentamountresolutionresult/2799251-successwithresolvedpaymentamount
+    successWithResolvedPaymentAmount(resolvedPaymentAmount: cocoascript.INPaymentAmount):cocoascript.INPaymentAmountResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inpaymentamountresolutionresult/2799249-confirmationrequiredwithpaymenta
+    confirmationRequiredWithPaymentAmountToConfirm(paymentAmountToConfirm: cocoascript.INPaymentAmount):cocoascript.INPaymentAmountResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inpaymentamountresolutionresult/2799252-disambiguationwithpaymentamounts
+    disambiguationWithPaymentAmountsToDisambiguate(paymentAmountsToDisambiguate: cocoascript.INPaymentAmount):cocoascript.INPaymentAmountResolutionResult;
     //
     alloc():cocoascript.INPaymentAmountResolutionResult;
     //
@@ -7780,6 +8160,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inpaymentmethodresolutionresult
    */
   interface INPaymentMethodResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inpaymentmethodresolutionresult/1902391-confirmationrequiredwithpaymentm
+    confirmationRequiredWithPaymentMethodToConfirm(paymentMethodToConfirm: cocoascript.INPaymentMethod):cocoascript.INPaymentMethodResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inpaymentmethodresolutionresult/1902394-disambiguationwithpaymentmethods
+    disambiguationWithPaymentMethodsToDisambiguate(paymentMethodsToDisambiguate: cocoascript.INPaymentMethod):cocoascript.INPaymentMethodResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inpaymentmethodresolutionresult/1902389-successwithresolvedpaymentmethod
+    successWithResolvedPaymentMethod(resolvedPaymentMethod: cocoascript.INPaymentMethod):cocoascript.INPaymentMethodResolutionResult;
     //
     alloc():cocoascript.INPaymentMethodResolutionResult;
     //
@@ -7794,6 +8180,14 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inpaymentstatusresolutionresult
    */
   interface INPaymentStatusResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inpaymentstatusresolutionresult/2799123-successwithresolvedpaymentstatus
+    successWithResolvedPaymentStatus(resolvedPaymentStatus: cocoascript.INPaymentStatus):cocoascript.INPaymentStatusResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inpaymentstatusresolutionresult/2799125-confirmationrequiredwithpayments
+    confirmationRequiredWithPaymentStatusToConfirm(paymentStatusToConfirm: cocoascript.INPaymentStatus):cocoascript.INPaymentStatusResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inpaymentstatusresolutionresult/2933995-successwithresolvedvalue
+    successWithResolvedValue(resolvedValue: cocoascript.INPaymentStatus):cocoascript.INPaymentStatusResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inpaymentstatusresolutionresult/2933996-confirmationrequiredwithvaluetoc
+    confirmationRequiredWithValueToConfirm(valueToConfirm: cocoascript.INPaymentStatus):cocoascript.INPaymentStatusResolutionResult;
     //
     alloc():cocoascript.INPaymentStatusResolutionResult;
     //
@@ -7808,6 +8202,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inrequestpaymentcurrencyamountresolutionresult
    */
   interface INRequestPaymentCurrencyAmountResolutionResult extends INCurrencyAmountResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inrequestpaymentcurrencyamountresolutionresult/2875666-unsupportedforreason
+    unsupportedForReason(reason: cocoascript.INRequestPaymentCurrencyAmountUnsupportedReason):cocoascript.INRequestPaymentCurrencyAmountResolutionResult;
     // doc://com.apple.documentation/documentation/sirikit/inrequestpaymentcurrencyamountresolutionresult/2915220-initwithcurrencyamountresolution
     initWithCurrencyAmountResolutionResult(currencyAmountResolutionResult: cocoascript.INCurrencyAmountResolutionResult):cocoascript.INRequestPaymentCurrencyAmountResolutionResult;
     //
@@ -7824,6 +8220,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inrequestpaymentpayerresolutionresult
    */
   interface INRequestPaymentPayerResolutionResult extends INPersonResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inrequestpaymentpayerresolutionresult/2875362-unsupportedforreason
+    unsupportedForReason(reason: cocoascript.INRequestPaymentPayerUnsupportedReason):cocoascript.INRequestPaymentPayerResolutionResult;
     // doc://com.apple.documentation/documentation/sirikit/inrequestpaymentpayerresolutionresult/2915217-initwithpersonresolutionresult
     initWithPersonResolutionResult(personResolutionResult: cocoascript.INPersonResolutionResult):cocoascript.INRequestPaymentPayerResolutionResult;
     //
@@ -7840,6 +8238,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/insendpaymentcurrencyamountresolutionresult
    */
   interface INSendPaymentCurrencyAmountResolutionResult extends INCurrencyAmountResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/insendpaymentcurrencyamountresolutionresult/2875701-unsupportedforreason
+    unsupportedForReason(reason: cocoascript.INSendPaymentCurrencyAmountUnsupportedReason):cocoascript.INSendPaymentCurrencyAmountResolutionResult;
     // doc://com.apple.documentation/documentation/sirikit/insendpaymentcurrencyamountresolutionresult/2915223-initwithcurrencyamountresolution
     initWithCurrencyAmountResolutionResult(currencyAmountResolutionResult: cocoascript.INCurrencyAmountResolutionResult):cocoascript.INSendPaymentCurrencyAmountResolutionResult;
     //
@@ -7856,6 +8256,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/insendpaymentpayeeresolutionresult
    */
   interface INSendPaymentPayeeResolutionResult extends INPersonResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/insendpaymentpayeeresolutionresult/2875696-unsupportedforreason
+    unsupportedForReason(reason: cocoascript.INSendPaymentPayeeUnsupportedReason):cocoascript.INSendPaymentPayeeResolutionResult;
     // doc://com.apple.documentation/documentation/sirikit/insendpaymentpayeeresolutionresult/2914909-initwithpersonresolutionresult
     initWithPersonResolutionResult(personResolutionResult: cocoascript.INPersonResolutionResult):cocoascript.INSendPaymentPayeeResolutionResult;
     //
@@ -7872,6 +8274,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/invisualcodetyperesolutionresult
    */
   interface INVisualCodeTypeResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/invisualcodetyperesolutionresult/2873988-successwithresolvedvisualcodetyp
+    successWithResolvedVisualCodeType(resolvedVisualCodeType: cocoascript.INVisualCodeType):cocoascript.INVisualCodeTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/invisualcodetyperesolutionresult/2873987-confirmationrequiredwithvisualco
+    confirmationRequiredWithVisualCodeTypeToConfirm(visualCodeTypeToConfirm: cocoascript.INVisualCodeType):cocoascript.INVisualCodeTypeResolutionResult;
     //
     alloc():cocoascript.INVisualCodeTypeResolutionResult;
     //
@@ -7898,6 +8304,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inrestaurantresolutionresult
    */
   interface INRestaurantResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inrestaurantresolutionresult/2305433-successwithresolvedrestaurant
+    successWithResolvedRestaurant(resolvedRestaurant: cocoascript.INRestaurant):cocoascript.INRestaurantResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inrestaurantresolutionresult/2305410-confirmationrequiredwithrestaura
+    confirmationRequiredWithRestaurantToConfirm(restaurantToConfirm: cocoascript.INRestaurant):cocoascript.INRestaurantResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inrestaurantresolutionresult/2305428-disambiguationwithrestaurantstod
+    disambiguationWithRestaurantsToDisambiguate(restaurantsToDisambiguate: cocoascript.INRestaurant):cocoascript.INRestaurantResolutionResult;
     //
     alloc():cocoascript.INRestaurantResolutionResult;
     //
@@ -7912,6 +8324,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inrestaurantguestresolutionresult
    */
   interface INRestaurantGuestResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inrestaurantguestresolutionresult/2305413-successwithresolvedrestaurantgue
+    successWithResolvedRestaurantGuest(resolvedRestaurantGuest: cocoascript.INRestaurantGuest):cocoascript.INRestaurantGuestResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inrestaurantguestresolutionresult/2305416-confirmationrequiredwithrestaura
+    confirmationRequiredWithRestaurantGuestToConfirm(restaurantGuestToConfirm: cocoascript.INRestaurantGuest):cocoascript.INRestaurantGuestResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inrestaurantguestresolutionresult/2305411-disambiguationwithrestaurantgues
+    disambiguationWithRestaurantGuestsToDisambiguate(restaurantGuestsToDisambiguate: cocoascript.INRestaurantGuest):cocoascript.INRestaurantGuestResolutionResult;
     //
     alloc():cocoascript.INRestaurantGuestResolutionResult;
     //
@@ -7942,6 +8360,14 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inworkoutgoalunittyperesolutionresult
    */
   interface INWorkoutGoalUnitTypeResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inworkoutgoalunittyperesolutionresult/1902384-successwithresolvedworkoutgoalun
+    successWithResolvedWorkoutGoalUnitType(resolvedWorkoutGoalUnitType: cocoascript.INWorkoutGoalUnitType):cocoascript.INWorkoutGoalUnitTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inworkoutgoalunittyperesolutionresult/1902385-confirmationrequiredwithworkoutg
+    confirmationRequiredWithWorkoutGoalUnitTypeToConfirm(workoutGoalUnitTypeToConfirm: cocoascript.INWorkoutGoalUnitType):cocoascript.INWorkoutGoalUnitTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inworkoutgoalunittyperesolutionresult/2933979-successwithresolvedvalue
+    successWithResolvedValue(resolvedValue: cocoascript.INWorkoutGoalUnitType):cocoascript.INWorkoutGoalUnitTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inworkoutgoalunittyperesolutionresult/2933980-confirmationrequiredwithvaluetoc
+    confirmationRequiredWithValueToConfirm(valueToConfirm: cocoascript.INWorkoutGoalUnitType):cocoascript.INWorkoutGoalUnitTypeResolutionResult;
     //
     alloc():cocoascript.INWorkoutGoalUnitTypeResolutionResult;
     //
@@ -7956,6 +8382,14 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inworkoutlocationtyperesolutionresult
    */
   interface INWorkoutLocationTypeResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inworkoutlocationtyperesolutionresult/1902430-successwithresolvedworkoutlocati
+    successWithResolvedWorkoutLocationType(resolvedWorkoutLocationType: cocoascript.INWorkoutLocationType):cocoascript.INWorkoutLocationTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inworkoutlocationtyperesolutionresult/1902432-confirmationrequiredwithworkoutl
+    confirmationRequiredWithWorkoutLocationTypeToConfirm(workoutLocationTypeToConfirm: cocoascript.INWorkoutLocationType):cocoascript.INWorkoutLocationTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inworkoutlocationtyperesolutionresult/2933985-successwithresolvedvalue
+    successWithResolvedValue(resolvedValue: cocoascript.INWorkoutLocationType):cocoascript.INWorkoutLocationTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inworkoutlocationtyperesolutionresult/2933986-confirmationrequiredwithvaluetoc
+    confirmationRequiredWithValueToConfirm(valueToConfirm: cocoascript.INWorkoutLocationType):cocoascript.INWorkoutLocationTypeResolutionResult;
     //
     alloc():cocoascript.INWorkoutLocationTypeResolutionResult;
     //
@@ -7994,6 +8428,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/incallcapabilityresolutionresult
    */
   interface INCallCapabilityResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/incallcapabilityresolutionresult/3165922-successwithresolvedcallcapabilit
+    successWithResolvedCallCapability(resolvedCallCapability: cocoascript.INCallCapability):cocoascript.INCallCapabilityResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incallcapabilityresolutionresult/3165921-confirmationrequiredwithcallcapa
+    confirmationRequiredWithCallCapabilityToConfirm(callCapabilityToConfirm: cocoascript.INCallCapability):cocoascript.INCallCapabilityResolutionResult;
     //
     alloc():cocoascript.INCallCapabilityResolutionResult;
     //
@@ -8008,6 +8446,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/incalldestinationtyperesolutionresult
    */
   interface INCallDestinationTypeResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/incalldestinationtyperesolutionresult/2873700-successwithresolvedcalldestinati
+    successWithResolvedCallDestinationType(resolvedCallDestinationType: cocoascript.INCallDestinationType):cocoascript.INCallDestinationTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incalldestinationtyperesolutionresult/2873702-confirmationrequiredwithcalldest
+    confirmationRequiredWithCallDestinationTypeToConfirm(callDestinationTypeToConfirm: cocoascript.INCallDestinationType):cocoascript.INCallDestinationTypeResolutionResult;
     //
     alloc():cocoascript.INCallDestinationTypeResolutionResult;
     //
@@ -8022,6 +8464,14 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/incallrecordtyperesolutionresult
    */
   interface INCallRecordTypeResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/incallrecordtyperesolutionresult/1902352-successwithresolvedcallrecordtyp
+    successWithResolvedCallRecordType(resolvedCallRecordType: cocoascript.INCallRecordType):cocoascript.INCallRecordTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incallrecordtyperesolutionresult/1902351-confirmationrequiredwithcallreco
+    confirmationRequiredWithCallRecordTypeToConfirm(callRecordTypeToConfirm: cocoascript.INCallRecordType):cocoascript.INCallRecordTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incallrecordtyperesolutionresult/2933972-successwithresolvedvalue
+    successWithResolvedValue(resolvedValue: cocoascript.INCallRecordType):cocoascript.INCallRecordTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incallrecordtyperesolutionresult/2933971-confirmationrequiredwithvaluetoc
+    confirmationRequiredWithValueToConfirm(valueToConfirm: cocoascript.INCallRecordType):cocoascript.INCallRecordTypeResolutionResult;
     //
     alloc():cocoascript.INCallRecordTypeResolutionResult;
     //
@@ -8036,6 +8486,14 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptionsresolutionresult
    */
   interface INCallRecordTypeOptionsResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptionsresolutionresult/2867599-successwithresolvedcallrecordtyp
+    successWithResolvedCallRecordTypeOptions(resolvedCallRecordTypeOptions: cocoascript.INCallRecordTypeOptions):cocoascript.INCallRecordTypeOptionsResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptionsresolutionresult/2867601-confirmationrequiredwithcallreco
+    confirmationRequiredWithCallRecordTypeOptionsToConfirm(callRecordTypeOptionsToConfirm: cocoascript.INCallRecordTypeOptions):cocoascript.INCallRecordTypeOptionsResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptionsresolutionresult/2934003-successwithresolvedvalue
+    successWithResolvedValue(resolvedValue: cocoascript.INCallRecordTypeOptions):cocoascript.INCallRecordTypeOptionsResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incallrecordtypeoptionsresolutionresult/2934004-confirmationrequiredwithvaluetoc
+    confirmationRequiredWithValueToConfirm(valueToConfirm: cocoascript.INCallRecordTypeOptions):cocoascript.INCallRecordTypeOptionsResolutionResult;
     //
     alloc():cocoascript.INCallRecordTypeOptionsResolutionResult;
     //
@@ -8052,6 +8510,8 @@ declare namespace cocoascript {
   interface INStartCallCallCapabilityResolutionResult extends INCallCapabilityResolutionResult {
     // doc://com.apple.documentation/documentation/sirikit/instartcallcallcapabilityresolutionresult/3165924-initwithcallcapabilityresolution
     initWithCallCapabilityResolutionResult(callCapabilityResolutionResult: cocoascript.INCallCapabilityResolutionResult):cocoascript.INStartCallCallCapabilityResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/instartcallcallcapabilityresolutionresult/3165925-unsupportedforreason
+    unsupportedForReason(reason: cocoascript.INStartCallCallCapabilityUnsupportedReason):cocoascript.INStartCallCallCapabilityResolutionResult;
     //
     alloc():cocoascript.INStartCallCallCapabilityResolutionResult;
     //
@@ -8068,6 +8528,8 @@ declare namespace cocoascript {
   interface INStartCallContactResolutionResult extends INPersonResolutionResult {
     // doc://com.apple.documentation/documentation/sirikit/instartcallcontactresolutionresult/3165931-initwithpersonresolutionresult
     initWithPersonResolutionResult(personResolutionResult: cocoascript.INPersonResolutionResult):cocoascript.INStartCallContactResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/instartcallcontactresolutionresult/3165932-unsupportedforreason
+    unsupportedForReason(reason: cocoascript.INStartCallContactUnsupportedReason):cocoascript.INStartCallContactResolutionResult;
     //
     alloc():cocoascript.INStartCallContactResolutionResult;
     //
@@ -8130,6 +8592,14 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/incarsignaloptionsresolutionresult
    */
   interface INCarSignalOptionsResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/incarsignaloptionsresolutionresult/2799307-successwithresolvedcarsignalopti
+    successWithResolvedCarSignalOptions(resolvedCarSignalOptions: cocoascript.INCarSignalOptions):cocoascript.INCarSignalOptionsResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incarsignaloptionsresolutionresult/2799306-confirmationrequiredwithcarsigna
+    confirmationRequiredWithCarSignalOptionsToConfirm(carSignalOptionsToConfirm: cocoascript.INCarSignalOptions):cocoascript.INCarSignalOptionsResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incarsignaloptionsresolutionresult/2933998-successwithresolvedvalue
+    successWithResolvedValue(resolvedValue: cocoascript.INCarSignalOptions):cocoascript.INCarSignalOptionsResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/incarsignaloptionsresolutionresult/2933997-confirmationrequiredwithvaluetoc
+    confirmationRequiredWithValueToConfirm(valueToConfirm: cocoascript.INCarSignalOptions):cocoascript.INCarSignalOptionsResolutionResult;
     //
     alloc():cocoascript.INCarSignalOptionsResolutionResult;
     //
@@ -8191,6 +8661,8 @@ declare namespace cocoascript {
   interface INAddMediaMediaDestinationResolutionResult extends INMediaDestinationResolutionResult {
     // doc://com.apple.documentation/documentation/sirikit/inaddmediamediadestinationresolutionresult/3180117-initwithmediadestinationresoluti
     initWithMediaDestinationResolutionResult(mediaDestinationResolutionResult: cocoascript.INMediaDestinationResolutionResult):cocoascript.INAddMediaMediaDestinationResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inaddmediamediadestinationresolutionresult/3180118-unsupportedforreason
+    unsupportedForReason(reason: cocoascript.INAddMediaMediaDestinationUnsupportedReason):cocoascript.INAddMediaMediaDestinationResolutionResult;
     //
     alloc():cocoascript.INAddMediaMediaDestinationResolutionResult;
     //
@@ -8205,8 +8677,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inaddmediamediaitemresolutionresult
    */
   interface INAddMediaMediaItemResolutionResult extends INMediaItemResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inaddmediamediaitemresolutionresult/3600221-successeswithresolvedmediaitems
+    successesWithResolvedMediaItems(resolvedMediaItems: cocoascript.INMediaItem):cocoascript.INAddMediaMediaItemResolutionResult;
     // doc://com.apple.documentation/documentation/sirikit/inaddmediamediaitemresolutionresult/3180122-initwithmediaitemresolutionresul
     initWithMediaItemResolutionResult(mediaItemResolutionResult: cocoascript.INMediaItemResolutionResult):cocoascript.INAddMediaMediaItemResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inaddmediamediaitemresolutionresult/3180123-unsupportedforreason
+    unsupportedForReason(reason: cocoascript.INAddMediaMediaItemUnsupportedReason):cocoascript.INAddMediaMediaItemResolutionResult;
     //
     alloc():cocoascript.INAddMediaMediaItemResolutionResult;
     //
@@ -8221,6 +8697,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inmediadestinationresolutionresult
    */
   interface INMediaDestinationResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inmediadestinationresolutionresult/3074222-successwithresolvedmediadestinat
+    successWithResolvedMediaDestination(resolvedMediaDestination: cocoascript.INMediaDestination):cocoascript.INMediaDestinationResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inmediadestinationresolutionresult/3074220-confirmationrequiredwithmediades
+    confirmationRequiredWithMediaDestinationToConfirm(mediaDestinationToConfirm: cocoascript.INMediaDestination):cocoascript.INMediaDestinationResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inmediadestinationresolutionresult/3074221-disambiguationwithmediadestinati
+    disambiguationWithMediaDestinationsToDisambiguate(mediaDestinationsToDisambiguate: cocoascript.INMediaDestination):cocoascript.INMediaDestinationResolutionResult;
     //
     alloc():cocoascript.INMediaDestinationResolutionResult;
     //
@@ -8235,6 +8717,14 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inmediaitemresolutionresult
    */
   interface INMediaItemResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inmediaitemresolutionresult/3074233-successwithresolvedmediaitem
+    successWithResolvedMediaItem(resolvedMediaItem: cocoascript.INMediaItem):cocoascript.INMediaItemResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inmediaitemresolutionresult/3235754-successeswithresolvedmediaitems
+    successesWithResolvedMediaItems(resolvedMediaItems: cocoascript.INMediaItem):cocoascript.INMediaItemResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inmediaitemresolutionresult/3074231-confirmationrequiredwithmediaite
+    confirmationRequiredWithMediaItemToConfirm(mediaItemToConfirm: cocoascript.INMediaItem):cocoascript.INMediaItemResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inmediaitemresolutionresult/3074232-disambiguationwithmediaitemstodi
+    disambiguationWithMediaItemsToDisambiguate(mediaItemsToDisambiguate: cocoascript.INMediaItem):cocoascript.INMediaItemResolutionResult;
     //
     alloc():cocoascript.INMediaItemResolutionResult;
     //
@@ -8249,6 +8739,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inmediaaffinitytyperesolutionresult
    */
   interface INMediaAffinityTypeResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inmediaaffinitytyperesolutionresult/3074213-successwithresolvedmediaaffinity
+    successWithResolvedMediaAffinityType(resolvedMediaAffinityType: cocoascript.INMediaAffinityType):cocoascript.INMediaAffinityTypeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inmediaaffinitytyperesolutionresult/3074212-confirmationrequiredwithmediaaff
+    confirmationRequiredWithMediaAffinityTypeToConfirm(mediaAffinityTypeToConfirm: cocoascript.INMediaAffinityType):cocoascript.INMediaAffinityTypeResolutionResult;
     //
     alloc():cocoascript.INMediaAffinityTypeResolutionResult;
     //
@@ -8265,6 +8759,10 @@ declare namespace cocoascript {
   interface INPlayMediaMediaItemResolutionResult extends INMediaItemResolutionResult {
     // doc://com.apple.documentation/documentation/sirikit/inplaymediamediaitemresolutionresult/3180133-initwithmediaitemresolutionresul
     initWithMediaItemResolutionResult(mediaItemResolutionResult: cocoascript.INMediaItemResolutionResult):cocoascript.INPlayMediaMediaItemResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inplaymediamediaitemresolutionresult/3600222-successeswithresolvedmediaitems
+    successesWithResolvedMediaItems(resolvedMediaItems: cocoascript.INMediaItem):cocoascript.INPlayMediaMediaItemResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inplaymediamediaitemresolutionresult/3180134-unsupportedforreason
+    unsupportedForReason(reason: cocoascript.INPlayMediaMediaItemUnsupportedReason):cocoascript.INPlayMediaMediaItemResolutionResult;
     //
     alloc():cocoascript.INPlayMediaMediaItemResolutionResult;
     //
@@ -8281,6 +8779,8 @@ declare namespace cocoascript {
   interface INPlayMediaPlaybackSpeedResolutionResult extends INDoubleResolutionResult {
     // doc://com.apple.documentation/documentation/sirikit/inplaymediaplaybackspeedresolutionresult/3180142-initwithdoubleresolutionresult
     initWithDoubleResolutionResult(doubleResolutionResult: cocoascript.INDoubleResolutionResult):cocoascript.INPlayMediaPlaybackSpeedResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inplaymediaplaybackspeedresolutionresult/3180143-unsupportedforreason
+    unsupportedForReason(reason: cocoascript.INPlayMediaPlaybackSpeedUnsupportedReason):cocoascript.INPlayMediaPlaybackSpeedResolutionResult;
     //
     alloc():cocoascript.INPlayMediaPlaybackSpeedResolutionResult;
     //
@@ -8295,6 +8795,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inplaybackrepeatmoderesolutionresult
    */
   interface INPlaybackRepeatModeResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inplaybackrepeatmoderesolutionresult/3074292-successwithresolvedplaybackrepea
+    successWithResolvedPlaybackRepeatMode(resolvedPlaybackRepeatMode: cocoascript.INPlaybackRepeatMode):cocoascript.INPlaybackRepeatModeResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inplaybackrepeatmoderesolutionresult/3074291-confirmationrequiredwithplayback
+    confirmationRequiredWithPlaybackRepeatModeToConfirm(playbackRepeatModeToConfirm: cocoascript.INPlaybackRepeatMode):cocoascript.INPlaybackRepeatModeResolutionResult;
     //
     alloc():cocoascript.INPlaybackRepeatModeResolutionResult;
     //
@@ -8309,6 +8813,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inplaybackqueuelocationresolutionresult
    */
   interface INPlaybackQueueLocationResolutionResult extends INIntentResolutionResult {
+    // doc://com.apple.documentation/documentation/sirikit/inplaybackqueuelocationresolutionresult/3074289-successwithresolvedplaybackqueue
+    successWithResolvedPlaybackQueueLocation(resolvedPlaybackQueueLocation: cocoascript.INPlaybackQueueLocation):cocoascript.INPlaybackQueueLocationResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inplaybackqueuelocationresolutionresult/3074288-confirmationrequiredwithplayback
+    confirmationRequiredWithPlaybackQueueLocationToConfirm(playbackQueueLocationToConfirm: cocoascript.INPlaybackQueueLocation):cocoascript.INPlaybackQueueLocationResolutionResult;
     //
     alloc():cocoascript.INPlaybackQueueLocationResolutionResult;
     //
@@ -8325,6 +8833,10 @@ declare namespace cocoascript {
   interface INSearchForMediaMediaItemResolutionResult extends INMediaItemResolutionResult {
     // doc://com.apple.documentation/documentation/sirikit/insearchformediamediaitemresolutionresult/3180156-initwithmediaitemresolutionresul
     initWithMediaItemResolutionResult(mediaItemResolutionResult: cocoascript.INMediaItemResolutionResult):cocoascript.INSearchForMediaMediaItemResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/insearchformediamediaitemresolutionresult/3600223-successeswithresolvedmediaitems
+    successesWithResolvedMediaItems(resolvedMediaItems: cocoascript.INMediaItem):cocoascript.INSearchForMediaMediaItemResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/insearchformediamediaitemresolutionresult/3180157-unsupportedforreason
+    unsupportedForReason(reason: cocoascript.INSearchForMediaMediaItemUnsupportedReason):cocoascript.INSearchForMediaMediaItemResolutionResult;
     //
     alloc():cocoascript.INSearchForMediaMediaItemResolutionResult;
     //
@@ -8341,6 +8853,10 @@ declare namespace cocoascript {
   interface INUpdateMediaAffinityMediaItemResolutionResult extends INMediaItemResolutionResult {
     // doc://com.apple.documentation/documentation/sirikit/inupdatemediaaffinitymediaitemresolutionresult/3180165-initwithmediaitemresolutionresul
     initWithMediaItemResolutionResult(mediaItemResolutionResult: cocoascript.INMediaItemResolutionResult):cocoascript.INUpdateMediaAffinityMediaItemResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inupdatemediaaffinitymediaitemresolutionresult/3600224-successeswithresolvedmediaitems
+    successesWithResolvedMediaItems(resolvedMediaItems: cocoascript.INMediaItem):cocoascript.INUpdateMediaAffinityMediaItemResolutionResult;
+    // doc://com.apple.documentation/documentation/sirikit/inupdatemediaaffinitymediaitemresolutionresult/3180166-unsupportedforreason
+    unsupportedForReason(reason: cocoascript.INUpdateMediaAffinityMediaItemUnsupportedReason):cocoascript.INUpdateMediaAffinityMediaItemResolutionResult;
     //
     alloc():cocoascript.INUpdateMediaAffinityMediaItemResolutionResult;
     //
@@ -8447,6 +8963,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/sirikit/inpreferences
    */
   interface INPreferences extends NSObject {
+    // doc://com.apple.documentation/documentation/sirikit/inpreferences/1829429-requestsiriauthorization
+    requestSiriAuthorization(handler: cocoascript.INSiriAuthorizationStatus):void;
+    // doc://com.apple.documentation/documentation/sirikit/inpreferences/1829430-siriauthorizationstatus
+    siriAuthorizationStatus():cocoascript.INSiriAuthorizationStatus;
+    // doc://com.apple.documentation/documentation/sirikit/inpreferences/1638761-sirilanguagecode
+    siriLanguageCode():cocoascript.NSString;
     //
     alloc():cocoascript.INPreferences;
     //

@@ -110,6 +110,8 @@ declare namespace cocoascript {
   interface CLPlacemark extends NSObject {
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423818-initwithplacemark
     initWithPlacemark(placemark: cocoascript.CLPlacemark):cocoascript.CLPlacemark;
+    // doc://com.apple.documentation/documentation/corelocation/clplacemark/2132103-placemarkwithlocation
+    placemarkWithLocation_name_postalAddress(location: cocoascript.CLLocation, name: cocoascript.NSString, postalAddress: cocoascript.CNPostalAddress):cocoascript.CLPlacemark;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423603-location
     location(): cocoascript.CLLocation;
     setLocation(): void;
@@ -356,18 +358,32 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/corelocation/cllocationmanager
    */
   interface CLLocationManager extends NSObject {
+    // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423677-significantlocationchangemonitor
+    significantLocationChangeMonitoringAvailable():cocoascript.BOOL;
+    // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423502-headingavailable
+    headingAvailable():cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3675588-authorizedforwidgetupdates
     authorizedForWidgetUpdates(): cocoascript.BOOL;
     setAuthorizedForWidgetUpdates(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3600215-accuracyauthorization
     accuracyAuthorization(): cocoascript.CLAccuracyAuthorization;
     setAccuracyAuthorization(): void;
+    // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423654-ismonitoringavailableforclass
+    isMonitoringAvailableForClass(regionClass: cocoascript.Class):cocoascript.BOOL;
+    // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620549-israngingavailable
+    isRangingAvailable():cocoascript.BOOL;
+    // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423648-locationservicesenabled
+    locationServicesEnabled():cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620561-headingavailable
     headingAvailable(): cocoascript.BOOL;
     setHeadingAvailable(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620566-locationservicesenabled
     locationServicesEnabled(): cocoascript.BOOL;
     setLocationServicesEnabled(): void;
+    // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423564-regionmonitoringavailable
+    regionMonitoringAvailable():cocoascript.BOOL;
+    // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423585-regionmonitoringenabled
+    regionMonitoringEnabled():cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423792-delegate
     delegate(): cocoascript.CLLocationManagerDelegate;
     setDelegate(): void;
@@ -382,6 +398,8 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3563952-authorizationstatus
     authorizationStatus(): cocoascript.CLAuthorizationStatus;
     setAuthorizationStatus(): void;
+    // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423523-authorizationstatus
+    authorizationStatus():cocoascript.CLAuthorizationStatus;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423742-purpose
     purpose(): cocoascript.NSString;
     setPurpose(): void;
@@ -463,6 +481,8 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620555-heading
     heading(): cocoascript.CLHeading;
     setHeading(): void;
+    // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423830-deferredlocationupdatesavailable
+    deferredLocationUpdatesAvailable():cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620547-allowdeferredlocationupdatesunti
     allowDeferredLocationUpdatesUntilTraveled_timeout(distance: cocoascript.CLLocationDistance, timeout: cocoascript.NSTimeInterval):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620565-disallowdeferredlocationupdates

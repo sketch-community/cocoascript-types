@@ -58,16 +58,28 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/addressbook/abperson
    */
   interface ABPerson extends ABRecord {
+    // doc://com.apple.documentation/documentation/addressbook/abperson/1458438-addpropertiesandtypes
+    addPropertiesAndTypes(properties: cocoascript.NSDictionary):cocoascript.NSInteger;
+    // doc://com.apple.documentation/documentation/addressbook/abperson/1458554-removeproperties
+    removeProperties(properties: cocoascript.NSArray):cocoascript.NSInteger;
+    // doc://com.apple.documentation/documentation/addressbook/abperson/1458494-properties
+    properties():cocoascript.NSArray;
+    // doc://com.apple.documentation/documentation/addressbook/abperson/1458682-typeofproperty
+    typeOfProperty(property: cocoascript.NSString):cocoascript.ABPropertyType;
     // doc://com.apple.documentation/documentation/addressbook/abperson/1458372-linkedpeople
     linkedPeople():cocoascript.NSArray;
     // doc://com.apple.documentation/documentation/addressbook/abperson/1458380-parentgroups
     parentGroups():cocoascript.NSArray;
+    // doc://com.apple.documentation/documentation/addressbook/abperson/1392511-cancelloadingimagedatafortag
+    cancelLoadingImageDataForTag(tag: cocoascript.NSInteger):void;
     // doc://com.apple.documentation/documentation/addressbook/abperson/1392507-beginloadingimagedataforclient
     beginLoadingImageDataForClient(client: cocoascript.ABImageClient):cocoascript.NSInteger;
     // doc://com.apple.documentation/documentation/addressbook/abperson/1392509-imagedata
     imageData():cocoascript.NSData;
     // doc://com.apple.documentation/documentation/addressbook/abperson/1392513-setimagedata
     setImageData(data: cocoascript.NSData):cocoascript.BOOL;
+    // doc://com.apple.documentation/documentation/addressbook/abperson/1458332-searchelementforproperty
+    searchElementForProperty_label_key_value_comparison(property: cocoascript.NSString, label: cocoascript.NSString, key: cocoascript.NSString, value: cocoascript.ABPerson, comparison: cocoascript.ABSearchComparison):cocoascript.ABSearchElement;
     // doc://com.apple.documentation/documentation/addressbook/abperson/1458755-initwithvcardrepresentation
     initWithVCardRepresentation(vCardData: cocoascript.NSData):cocoascript.ABPerson;
     // doc://com.apple.documentation/documentation/addressbook/abperson/1458307-vcardrepresentation
@@ -140,6 +152,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/addressbook/abaddressbook
    */
   interface ABAddressBook extends NSObject {
+    // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458758-sharedaddressbook
+    sharedAddressBook():cocoascript.ABAddressBook;
+    // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1529221-addressbook
+    addressBook():cocoascript.ABAddressBook;
     // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458440-groups
     groups():cocoascript.NSArray;
     // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458683-people
@@ -192,6 +208,14 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/addressbook/abgroup
    */
   interface ABGroup extends ABRecord {
+    // doc://com.apple.documentation/documentation/addressbook/abgroup/1427944-addpropertiesandtypes
+    addPropertiesAndTypes(properties: cocoascript.NSDictionary):cocoascript.NSInteger;
+    // doc://com.apple.documentation/documentation/addressbook/abgroup/1427954-removeproperties
+    removeProperties(properties: cocoascript.NSArray):cocoascript.NSInteger;
+    // doc://com.apple.documentation/documentation/addressbook/abgroup/1427958-properties
+    properties():cocoascript.NSArray;
+    // doc://com.apple.documentation/documentation/addressbook/abgroup/1427950-typeofproperty
+    typeOfProperty(property: cocoascript.NSString):cocoascript.ABPropertyType;
     // doc://com.apple.documentation/documentation/addressbook/abgroup/1427932-addmember
     addMember(person: cocoascript.ABPerson):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/addressbook/abgroup/1427940-removemember
@@ -210,6 +234,8 @@ declare namespace cocoascript {
     distributionIdentifierForProperty_person(property: cocoascript.NSString, person: cocoascript.ABPerson):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/addressbook/abgroup/1427936-setdistributionidentifier
     setDistributionIdentifier_forProperty_person(identifier: cocoascript.NSString, property: cocoascript.NSString, person: cocoascript.ABPerson):cocoascript.BOOL;
+    // doc://com.apple.documentation/documentation/addressbook/abgroup/1427946-searchelementforproperty
+    searchElementForProperty_label_key_value_comparison(property: cocoascript.NSString, label: cocoascript.NSString, key: cocoascript.NSString, value: cocoascript.ABGroup, comparison: cocoascript.ABSearchComparison):cocoascript.ABSearchElement;
     //
     alloc():cocoascript.ABGroup;
     //
@@ -370,6 +396,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/addressbook/absearchelement
    */
   interface ABSearchElement extends NSObject {
+    // doc://com.apple.documentation/documentation/addressbook/absearchelement/1458423-searchelementforconjunction
+    searchElementForConjunction_children(conjuction: cocoascript.ABSearchConjunction, children: cocoascript.NSArray):cocoascript.ABSearchElement;
     // doc://com.apple.documentation/documentation/addressbook/absearchelement/1458642-matchesrecord
     matchesRecord(record: cocoascript.ABRecord):cocoascript.BOOL;
     //

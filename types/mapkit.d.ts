@@ -297,6 +297,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/mapkit/mkmapcamera
    */
   interface MKMapCamera extends NSObject {
+    // doc://com.apple.documentation/documentation/mapkit/mkmapcamera/1411085-camera
+    camera():cocoascript.MKMapCamera;
+    // doc://com.apple.documentation/documentation/mapkit/mkmapcamera/1411092-cameralookingatcentercoordinate
+    cameraLookingAtCenterCoordinate_fromEyeCoordinate_eyeAltitude(centerCoordinate: cocoascript.CLLocationCoordinate2D, eyeCoordinate: cocoascript.CLLocationCoordinate2D, eyeAltitude: cocoascript.CLLocationDistance):cocoascript.MKMapCamera;
+    // doc://com.apple.documentation/documentation/mapkit/mkmapcamera/1411079-cameralookingatcentercoordinate
+    cameraLookingAtCenterCoordinate_fromDistance_pitch_heading(centerCoordinate: cocoascript.CLLocationCoordinate2D, distance: cocoascript.CLLocationDistance, pitch: cocoascript.CGFloat, heading: cocoascript.CLLocationDirection):cocoascript.MKMapCamera;
     // doc://com.apple.documentation/documentation/mapkit/mkmapcamera/1411081-centercoordinate
     centerCoordinate(): cocoascript.CLLocationCoordinate2D;
     setCenterCoordinate(): void;
@@ -517,6 +523,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/mapkit/mkmapitem
    */
   interface MKMapItem extends NSObject {
+    // doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452002-mapitemforcurrentlocation
+    mapItemForCurrentLocation():cocoascript.MKMapItem;
     // doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452285-initwithplacemark
     initWithPlacemark(placemark: cocoascript.MKPlacemark):cocoascript.MKMapItem;
     // doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452134-placemark
@@ -540,6 +548,10 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452431-timezone
     timeZone(): cocoascript.NSTimeZone;
     setTimeZone(): void;
+    // doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452207-openmapswithitems
+    openMapsWithItems_launchOptions(mapItems: cocoascript.MKMapItem, launchOptions: cocoascript.MKMapItem):cocoascript.BOOL;
+    // doc://com.apple.documentation/documentation/mapkit/mkmapitem/3395860-openmapswithitems
+    openMapsWithItems_launchOptions_fromScene_completionHandler(mapItems: cocoascript.MKMapItem, launchOptions: cocoascript.MKMapItem, scene: cocoascript.UIScene, completion: cocoascript.BOOL):void;
     // doc://com.apple.documentation/documentation/mapkit/mkmapitem/1452239-openinmapswithlaunchoptions
     openInMapsWithLaunchOptions(launchOptions: cocoascript.MKMapItem):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/mapkit/mkmapitem/3395859-openinmapswithlaunchoptions
@@ -692,6 +704,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/mapkit/mkpinannotationview
    */
   interface MKPinAnnotationView extends MKAnnotationView {
+    // doc://com.apple.documentation/documentation/mapkit/mkpinannotationview/1451990-redpincolor
+    redPinColor():cocoascript.UIColor;
+    // doc://com.apple.documentation/documentation/mapkit/mkpinannotationview/1452568-greenpincolor
+    greenPinColor():cocoascript.UIColor;
+    // doc://com.apple.documentation/documentation/mapkit/mkpinannotationview/1452110-purplepincolor
+    purplePinColor():cocoascript.UIColor;
     // doc://com.apple.documentation/documentation/mapkit/mkpinannotationview/1452042-pintintcolor
     pinTintColor(): cocoascript.UIColor;
     setPinTintColor(): void;
@@ -1045,6 +1063,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/mapkit/mkcompassbutton
    */
   interface MKCompassButton extends NSView {
+    // doc://com.apple.documentation/documentation/mapkit/mkcompassbutton/2890261-compassbuttonwithmapview
+    compassButtonWithMapView(mapView: cocoascript.MKMapView):cocoascript.MKCompassButton;
     // doc://com.apple.documentation/documentation/mapkit/mkcompassbutton/2890264-mapview
     mapView(): cocoascript.MKMapView;
     setMapView(): void;
@@ -1065,6 +1085,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/mapkit/mkscaleview
    */
   interface MKScaleView extends UIView {
+    // doc://com.apple.documentation/documentation/mapkit/mkscaleview/2890255-scaleviewwithmapview
+    scaleViewWithMapView(mapView: cocoascript.MKMapView):cocoascript.MKScaleView;
     // doc://com.apple.documentation/documentation/mapkit/mkscaleview/2890257-mapview
     mapView(): cocoascript.MKMapView;
     setMapView(): void;
@@ -1088,6 +1110,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/mapkit/mkzoomcontrol
    */
   interface MKZoomControl extends NSView {
+    // doc://com.apple.documentation/documentation/mapkit/mkzoomcontrol/3567218-zoomcontrolwithmapview
+    zoomControlWithMapView(mapView: cocoascript.MKMapView):cocoascript.MKZoomControl;
     // doc://com.apple.documentation/documentation/mapkit/mkzoomcontrol/3567217-mapview
     mapView(): cocoascript.MKMapView;
     setMapView(): void;
@@ -1105,6 +1129,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/mapkit/mkpitchcontrol
    */
   interface MKPitchControl extends NSView {
+    // doc://com.apple.documentation/documentation/mapkit/mkpitchcontrol/3567215-pitchcontrolwithmapview
+    pitchControlWithMapView(mapView: cocoascript.MKMapView):cocoascript.MKPitchControl;
     // doc://com.apple.documentation/documentation/mapkit/mkpitchcontrol/3567214-mapview
     mapView(): cocoascript.MKMapView;
     setMapView(): void;
@@ -1122,6 +1148,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/mapkit/mkusertrackingbutton
    */
   interface MKUserTrackingButton extends UIView {
+    // doc://com.apple.documentation/documentation/mapkit/mkusertrackingbutton/2867281-usertrackingbuttonwithmapview
+    userTrackingButtonWithMapView(mapView: cocoascript.MKMapView):cocoascript.MKUserTrackingButton;
     // doc://com.apple.documentation/documentation/mapkit/mkusertrackingbutton/2867283-mapview
     mapView(): cocoascript.MKMapView;
     setMapView(): void;
@@ -1310,6 +1338,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/mapkit/mkdirectionsrequest
    */
   interface MKDirectionsRequest extends NSObject {
+    // doc://com.apple.documentation/documentation/mapkit/mkdirectionsrequest/1433150-isdirectionsrequesturl
+    isDirectionsRequestURL(url: cocoascript.NSURL):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/mapkit/mkdirectionsrequest/1433158-initwithcontentsofurl
     initWithContentsOfURL(url: cocoascript.NSURL):cocoascript.MKDirectionsRequest;
     // doc://com.apple.documentation/documentation/mapkit/mkdirectionsrequest/1433144-source
@@ -1568,6 +1598,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/mapkit/mkcircle
    */
   interface MKCircle extends MKShape {
+    // doc://com.apple.documentation/documentation/mapkit/mkcircle/1411076-circlewithcentercoordinate
+    circleWithCenterCoordinate_radius(coord: cocoascript.CLLocationCoordinate2D, radius: cocoascript.CLLocationDistance):cocoascript.MKCircle;
+    // doc://com.apple.documentation/documentation/mapkit/mkcircle/1411072-circlewithmaprect
+    circleWithMapRect(mapRect: cocoascript.MKMapRect):cocoascript.MKCircle;
     // doc://com.apple.documentation/documentation/mapkit/mkcircle/1411074-coordinate
     coordinate(): cocoascript.CLLocationCoordinate2D;
     setCoordinate(): void;
@@ -1629,6 +1663,14 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/mapkit/mkpolygon
    */
   interface MKPolygon extends MKMultiPoint {
+    // doc://com.apple.documentation/documentation/mapkit/mkpolygon/1452247-polygonwithpoints
+    polygonWithPoints_count(points: cocoascript.MKMapPoint, count: cocoascript.NSUInteger):cocoascript.MKPolygon;
+    // doc://com.apple.documentation/documentation/mapkit/mkpolygon/1451945-polygonwithpoints
+    polygonWithPoints_count_interiorPolygons(points: cocoascript.MKMapPoint, count: cocoascript.NSUInteger, interiorPolygons: cocoascript.MKPolygon):cocoascript.MKPolygon;
+    // doc://com.apple.documentation/documentation/mapkit/mkpolygon/1452497-polygonwithcoordinates
+    polygonWithCoordinates_count(coords: cocoascript.CLLocationCoordinate2D, count: cocoascript.NSUInteger):cocoascript.MKPolygon;
+    // doc://com.apple.documentation/documentation/mapkit/mkpolygon/1452532-polygonwithcoordinates
+    polygonWithCoordinates_count_interiorPolygons(coords: cocoascript.CLLocationCoordinate2D, count: cocoascript.NSUInteger, interiorPolygons: cocoascript.MKPolygon):cocoascript.MKPolygon;
     // doc://com.apple.documentation/documentation/mapkit/mkpolygon/1452521-interiorpolygons
     interiorPolygons(): cocoascript.MKPolygon;
     setInteriorPolygons(): void;
@@ -1646,6 +1688,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/mapkit/mkpolyline
    */
   interface MKPolyline extends MKMultiPoint {
+    // doc://com.apple.documentation/documentation/mapkit/mkpolyline/1452773-polylinewithpoints
+    polylineWithPoints_count(points: cocoascript.MKMapPoint, count: cocoascript.NSUInteger):cocoascript.MKPolyline;
+    // doc://com.apple.documentation/documentation/mapkit/mkpolyline/1452205-polylinewithcoordinates
+    polylineWithCoordinates_count(coords: cocoascript.CLLocationCoordinate2D, count: cocoascript.NSUInteger):cocoascript.MKPolyline;
     //
     alloc():cocoascript.MKPolyline;
     //
@@ -1872,6 +1918,10 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/mapkit/mkgeodesicpolyline
    */
   interface MKGeodesicPolyline extends MKPolyline {
+    // doc://com.apple.documentation/documentation/mapkit/mkgeodesicpolyline/1452053-polylinewithpoints
+    polylineWithPoints_count(points: cocoascript.MKMapPoint, count: cocoascript.NSUInteger):cocoascript.MKGeodesicPolyline;
+    // doc://com.apple.documentation/documentation/mapkit/mkgeodesicpolyline/1452314-polylinewithcoordinates
+    polylineWithCoordinates_count(coords: cocoascript.CLLocationCoordinate2D, count: cocoascript.NSUInteger):cocoascript.MKGeodesicPolyline;
     //
     alloc():cocoascript.MKGeodesicPolyline;
     //

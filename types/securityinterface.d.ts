@@ -60,6 +60,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/securityinterface/sfcertificatepanel
    */
   interface SFCertificatePanel extends NSPanel {
+    // doc://com.apple.documentation/documentation/securityinterface/sfcertificatepanel/1543245-sharedcertificatepanel
+    sharedCertificatePanel():cocoascript.SFCertificatePanel;
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatepanel/1543234-sethelpanchor
     setHelpAnchor(anchor: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatepanel/1543223-setshowshelp
@@ -102,6 +104,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel
    */
   interface SFChooseIdentityPanel extends NSPanel {
+    // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556984-sharedchooseidentitypanel
+    sharedChooseIdentityPanel():cocoascript.SFChooseIdentityPanel;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556990-sethelpanchor
     setHelpAnchor(anchor: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556992-setshowshelp
@@ -194,6 +198,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/securityinterface/sfcertificatetrustpanel
    */
   interface SFCertificateTrustPanel extends SFCertificatePanel {
+    // doc://com.apple.documentation/documentation/securityinterface/sfcertificatetrustpanel/1518349-sharedcertificatetrustpanel
+    sharedCertificateTrustPanel():cocoascript.SFCertificateTrustPanel;
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatetrustpanel/1518350-beginsheetforwindow
     beginSheetForWindow_modalDelegate_didEndSelector_contextInfo_trust_message(docWindow: cocoascript.NSWindow, delegate: cocoascript.SFCertificateTrustPanel, didEndSelector: cocoascript.SEL, contextInfo: void, trust: cocoascript.SecTrustRef, message: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatetrustpanel/1518354-runmodalfortrust
@@ -276,6 +282,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/securityinterface/sfkeychainsavepanel
    */
   interface SFKeychainSavePanel extends NSSavePanel {
+    // doc://com.apple.documentation/documentation/securityinterface/sfkeychainsavepanel/1580411-sharedkeychainsavepanel
+    sharedKeychainSavePanel():cocoascript.SFKeychainSavePanel;
     // doc://com.apple.documentation/documentation/securityinterface/sfkeychainsavepanel/1580414-setpassword
     setPassword(password: cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/securityinterface/sfkeychainsavepanel/1580416-beginsheetfordirectory
@@ -300,6 +308,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/securityinterface/sfkeychainsettingspanel
    */
   interface SFKeychainSettingsPanel extends NSPanel {
+    // doc://com.apple.documentation/documentation/securityinterface/sfkeychainsettingspanel/1543503-sharedkeychainsettingspanel
+    sharedKeychainSettingsPanel():cocoascript.SFKeychainSettingsPanel;
     // doc://com.apple.documentation/documentation/securityinterface/sfkeychainsettingspanel/1543505-beginsheetforwindow
     beginSheetForWindow_modalDelegate_didEndSelector_contextInfo_settings_keychain(docWindow: cocoascript.NSWindow, delegate: cocoascript.SFKeychainSettingsPanel, didEndSelector: cocoascript.SEL, contextInfo: void, settings: cocoascript.SecKeychainSettings, keychain: cocoascript.SecKeychainRef):void;
     // doc://com.apple.documentation/documentation/securityinterface/sfkeychainsettingspanel/1543500-runmodalforsettings

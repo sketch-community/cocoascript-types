@@ -4,6 +4,28 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype
    */
   interface UTType extends NSObject {
+    // doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3548222-typeswithtag
+    typesWithTag_tagClass_conformingToType(tag: cocoascript.NSString, tagClass: cocoascript.NSString, supertype: cocoascript.UTType):cocoascript.UTType;
+    // doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3600608-exportedtypewithidentifier
+    exportedTypeWithIdentifier(identifier: cocoascript.NSString):cocoascript.UTType;
+    // doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3600609-exportedtypewithidentifier
+    exportedTypeWithIdentifier_conformingToType(identifier: cocoascript.NSString, parentType: cocoascript.UTType):cocoascript.UTType;
+    // doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3600610-importedtypewithidentifier
+    importedTypeWithIdentifier(identifier: cocoascript.NSString):cocoascript.UTType;
+    // doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3600611-importedtypewithidentifier
+    importedTypeWithIdentifier_conformingToType(identifier: cocoascript.NSString, parentType: cocoascript.UTType):cocoascript.UTType;
+    // doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3548218-typewithidentifier
+    typeWithIdentifier(identifier: cocoascript.NSString):cocoascript.UTType;
+    // doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3548216-typewithfilenameextension
+    typeWithFilenameExtension(filenameExtension: cocoascript.NSString):cocoascript.UTType;
+    // doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3548217-typewithfilenameextension
+    typeWithFilenameExtension_conformingToType(filenameExtension: cocoascript.NSString, supertype: cocoascript.UTType):cocoascript.UTType;
+    // doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3548219-typewithmimetype
+    typeWithMIMEType(mimeType: cocoascript.NSString):cocoascript.UTType;
+    // doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3548220-typewithmimetype
+    typeWithMIMEType_conformingToType(mimeType: cocoascript.NSString, supertype: cocoascript.UTType):cocoascript.UTType;
+    // doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3548221-typewithtag
+    typeWithTag_tagClass_conformingToType(tag: cocoascript.NSString, tagClass: cocoascript.NSString, supertype: cocoascript.UTType):cocoascript.UTType;
     // doc://com.apple.documentation/documentation/uniformtypeidentifiers/uttype/3548206-identifier
     identifier(): cocoascript.NSString;
     setIdentifier(): void;

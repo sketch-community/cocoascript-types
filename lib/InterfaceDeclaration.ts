@@ -1,8 +1,6 @@
-import { O_DIRECT } from 'constants';
 import * as fs from 'fs';
 import * as path from 'path';
 import { CodeGenerator } from './CodeGenerator';
-import { NAMESPACE } from './constant';
 import { ConstDeclaration } from './ConstDeclaration';
 import { normalizeType } from './helpers';
 import { MethodDeclaration } from './MethodDeclaration';
@@ -67,7 +65,7 @@ export class InterfaceDeclaration {
     }
     const { tokens } = firstSection.declarations[0];
     let index = 0;
-    if (tokens[index].text === '- (') {
+    if (/[\-+] \(/.test(tokens[index].text)) {
       const method = MethodDeclaration.initFromTokens(doc.identifier.url, clazz, tokens);
       clazz.properties.push(method);
     }

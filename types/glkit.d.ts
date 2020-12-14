@@ -189,22 +189,38 @@ declare namespace cocoascript {
     initWithSharegroup(sharegroup: cocoascript.EAGLSharegroup):cocoascript.GLKTextureLoader;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1489085-initwithsharecontext
     initWithShareContext(context: cocoascript.NSOpenGLContext):cocoascript.GLKTextureLoader;
+    // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488932-texturewithcontentsoffile
+    textureWithContentsOfFile_options_error(path: cocoascript.NSString, options: cocoascript.NSNumber, outError: cocoascript.NSError):cocoascript.GLKTextureInfo;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1489064-texturewithcontentsoffile
     textureWithContentsOfFile_options_queue_completionHandler(path: cocoascript.NSString, options: cocoascript.NSNumber, queue: cocoascript.dispatch_queue_t, block: cocoascript.GLKTextureLoaderCallback):void;
+    // doc://com.apple.documentation/documentation/glkit/glktextureloader/1489025-texturewithcontentsofurl
+    textureWithContentsOfURL_options_error(url: cocoascript.NSURL, options: cocoascript.NSNumber, outError: cocoascript.NSError):cocoascript.GLKTextureInfo;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488621-texturewithcontentsofurl
     textureWithContentsOfURL_options_queue_completionHandler(url: cocoascript.NSURL, options: cocoascript.NSNumber, queue: cocoascript.dispatch_queue_t, block: cocoascript.GLKTextureLoaderCallback):void;
+    // doc://com.apple.documentation/documentation/glkit/glktextureloader/1489081-texturewithcontentsofdata
+    textureWithContentsOfData_options_error(data: cocoascript.NSData, options: cocoascript.NSNumber, outError: cocoascript.NSError):cocoascript.GLKTextureInfo;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488905-texturewithcontentsofdata
     textureWithContentsOfData_options_queue_completionHandler(data: cocoascript.NSData, options: cocoascript.NSNumber, queue: cocoascript.dispatch_queue_t, block: cocoascript.GLKTextureLoaderCallback):void;
+    // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488673-texturewithcgimage
+    textureWithCGImage_options_error(cgImage: cocoascript.CGImageRef, options: cocoascript.NSNumber, outError: cocoascript.NSError):cocoascript.GLKTextureInfo;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488861-texturewithcgimage
     textureWithCGImage_options_queue_completionHandler(cgImage: cocoascript.CGImageRef, options: cocoascript.NSNumber, queue: cocoascript.dispatch_queue_t, block: cocoascript.GLKTextureLoaderCallback):void;
+    // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488848-cubemapwithcontentsoffile
+    cubeMapWithContentsOfFile_options_error(path: cocoascript.NSString, options: cocoascript.NSNumber, outError: cocoascript.NSError):cocoascript.GLKTextureInfo;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488617-cubemapwithcontentsoffile
     cubeMapWithContentsOfFile_options_queue_completionHandler(path: cocoascript.NSString, options: cocoascript.NSNumber, queue: cocoascript.dispatch_queue_t, block: cocoascript.GLKTextureLoaderCallback):void;
+    // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488810-cubemapwithcontentsoffiles
+    cubeMapWithContentsOfFiles_options_error(paths: cocoascript.GLKTextureLoader, options: cocoascript.NSNumber, outError: cocoascript.NSError):cocoascript.GLKTextureInfo;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488854-cubemapwithcontentsoffiles
     cubeMapWithContentsOfFiles_options_queue_completionHandler(paths: cocoascript.GLKTextureLoader, options: cocoascript.NSNumber, queue: cocoascript.dispatch_queue_t, block: cocoascript.GLKTextureLoaderCallback):void;
+    // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488743-cubemapwithcontentsofurl
+    cubeMapWithContentsOfURL_options_error(url: cocoascript.NSURL, options: cocoascript.NSNumber, outError: cocoascript.NSError):cocoascript.GLKTextureInfo;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488926-cubemapwithcontentsofurl
     cubeMapWithContentsOfURL_options_queue_completionHandler(url: cocoascript.NSURL, options: cocoascript.NSNumber, queue: cocoascript.dispatch_queue_t, block: cocoascript.GLKTextureLoaderCallback):void;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1639591-texturewithname
     textureWithName_scaleFactor_bundle_options_queue_completionHandler(name: cocoascript.NSString, scaleFactor: cocoascript.CGFloat, bundle: cocoascript.NSBundle, options: cocoascript.NSNumber, queue: cocoascript.dispatch_queue_t, block: cocoascript.GLKTextureLoaderCallback):void;
+    // doc://com.apple.documentation/documentation/glkit/glktextureloader/1639590-texturewithname
+    textureWithName_scaleFactor_bundle_options_error(name: cocoascript.NSString, scaleFactor: cocoascript.CGFloat, bundle: cocoascript.NSBundle, options: cocoascript.NSNumber, outError: cocoascript.NSError):cocoascript.GLKTextureInfo;
     //
     alloc():cocoascript.GLKTextureLoader;
     //
@@ -368,6 +384,8 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/glkit/glkmesh/1488990-vertexdescriptor
     vertexDescriptor(): cocoascript.MDLVertexDescriptor;
     setVertexDescriptor(): void;
+    // doc://com.apple.documentation/documentation/glkit/glkmesh/1488791-newmeshesfromasset
+    newMeshesFromAsset_sourceMeshes_error(asset: cocoascript.MDLAsset, sourceMeshes: cocoascript.MDLMesh, error: cocoascript.NSError):cocoascript.GLKMesh;
     //
     alloc():cocoascript.GLKMesh;
     //

@@ -67,8 +67,12 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/notificationcenter/ncwidgetcontroller
    */
   interface NCWidgetController extends NSObject {
+    // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetcontroller/1456687-widgetcontroller
+    widgetController():cocoascript.NCWidgetController;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetcontroller/1456693-sethascontent
     setHasContent_forWidgetWithBundleIdentifier(flag: cocoascript.BOOL, bundleID: cocoascript.NSString):void;
+    // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetcontroller/1456691-defaultwidgetcontroller
+    defaultWidgetController():cocoascript.NCWidgetController;
     //
     alloc():cocoascript.NCWidgetController;
     //

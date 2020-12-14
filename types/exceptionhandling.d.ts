@@ -4,6 +4,8 @@ declare namespace cocoascript {
    * doc://com.apple.documentation/documentation/exceptionhandling/nsexceptionhandler
    */
   interface NSExceptionHandler extends NSObject {
+    // doc://com.apple.documentation/documentation/exceptionhandling/nsexceptionhandler/1489834-defaultexceptionhandler
+    defaultExceptionHandler():cocoascript.NSExceptionHandler;
     // doc://com.apple.documentation/documentation/exceptionhandling/nsexceptionhandler/1489836-exceptionhandlingmask
     exceptionHandlingMask():cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/exceptionhandling/nsexceptionhandler/1489837-exceptionhangingmask
