@@ -25,7 +25,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396691-getsizedescriptor
     getSizeDescriptor():cocoascript.BluetoothSDPDataElementSizeDescriptor;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396695-getstringvalue
-    getStringValue():cocoascript.NSString;
+    getStringValue():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396697-gettypedescriptor
     getTypeDescriptor():cocoascript.BluetoothSDPDataElementTypeDescriptor;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396702-getuuidvalue
@@ -136,7 +136,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1429688-getsdpservicerecordref
     getSDPServiceRecordRef():cocoascript.IOBluetoothSDPServiceRecordRef;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1434797-getservicename
-    getServiceName():cocoascript.NSString;
+    getServiceName():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1432281-getservicerecordhandle
     getServiceRecordHandle(outServiceRecordHandle: cocoascript.BluetoothSDPServiceRecordHandle):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1427810-handsfreesupportedfeatures
@@ -174,9 +174,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1434863-devicewithaddress
     deviceWithAddress(address: cocoascript.BluetoothDeviceAddress):cocoascript.IOBluetoothDevice;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1434342-devicewithaddressstring
-    deviceWithAddressString(address: cocoascript.NSString):cocoascript.IOBluetoothDevice;
+    deviceWithAddressString(address: string | cocoascript.NSString):cocoascript.IOBluetoothDevice;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1431756-addressstring
-    addressString(): cocoascript.NSString;
+    addressString(): string | cocoascript.NSString;
     setAddressString(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1428484-classofdevice
     classOfDevice(): cocoascript.BluetoothClassOfDevice;
@@ -200,10 +200,10 @@ declare namespace cocoascript {
     lastNameUpdate(): cocoascript.NSDate;
     setLastNameUpdate(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1434669-name
-    name(): cocoascript.NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1429807-nameoraddress
-    nameOrAddress(): cocoascript.NSString;
+    nameOrAddress(): string | cocoascript.NSString;
     setNameOrAddress(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1429342-serviceclassmajor
     serviceClassMajor(): cocoascript.BluetoothServiceClassMajor;
@@ -374,7 +374,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1429850-changecurrentfolderbackward
     changeCurrentFolderBackward():cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1429069-changecurrentfolderforwardtopath
-    changeCurrentFolderForwardToPath(inDirName: cocoascript.NSString):cocoascript.OBEXError;
+    changeCurrentFolderForwardToPath(inDirName: string | cocoascript.NSString):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1428745-changecurrentfoldertoroot
     changeCurrentFolderToRoot():cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1433641-connecttoftpservice
@@ -382,27 +382,27 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1429786-connecttoobjectpushservice
     connectToObjectPushService():cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1434277-copyremotefile
-    copyRemoteFile_toLocalPath(inRemoteFileName: cocoascript.NSString, inLocalPathAndName: cocoascript.NSString):cocoascript.OBEXError;
+    copyRemoteFile_toLocalPath(inRemoteFileName: string | cocoascript.NSString, inLocalPathAndName: string | cocoascript.NSString):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1434906-createfolder
-    createFolder(inDirName: cocoascript.NSString):cocoascript.OBEXError;
+    createFolder(inDirName: string | cocoascript.NSString):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1434309-currentpath
-    currentPath():cocoascript.NSString;
+    currentPath():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1434667-disconnect
     disconnect():cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1433891-getdefaultvcard
-    getDefaultVCard(inLocalPathAndName: cocoascript.NSString):cocoascript.OBEXError;
+    getDefaultVCard(inLocalPathAndName: string | cocoascript.NSString):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1434607-isbusy
     isBusy():cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1428521-isconnected
     isConnected():cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1428401-removeitem
-    removeItem(inItemName: cocoascript.NSString):cocoascript.OBEXError;
+    removeItem(inItemName: string | cocoascript.NSString):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1433947-retrievefolderlisting
     retrieveFolderListing():cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1432819-senddata
-    sendData_type_name(inData: cocoascript.NSData, inType: cocoascript.NSString, inName: cocoascript.NSString):cocoascript.OBEXError;
+    sendData_type_name(inData: cocoascript.NSData, inType: string | cocoascript.NSString, inName: string | cocoascript.NSString):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1430911-sendfile
-    sendFile(inLocalPathAndName: cocoascript.NSString):cocoascript.OBEXError;
+    sendFile(inLocalPathAndName: string | cocoascript.NSString):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1435045-withobexsession
     withOBEXSession(inOBEXSession: cocoascript.IOBluetoothOBEXSession):cocoascript.OBEXFileTransferServices;
     //
@@ -554,7 +554,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1432883-handsfree
     handsFree_currentCall(device: cocoascript.IOBluetoothHandsFreeDevice, currentCall: cocoascript.NSDictionary):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1429210-handsfree
-    handsFree_incomingCallFrom(device: cocoascript.IOBluetoothHandsFreeDevice, number: cocoascript.NSString):void;
+    handsFree_incomingCallFrom(device: cocoascript.IOBluetoothHandsFreeDevice, number: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1430510-handsfree
     handsFree_incomingSMS(device: cocoascript.IOBluetoothHandsFreeDevice, sms: cocoascript.NSDictionary):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1431339-handsfree
@@ -568,9 +568,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1432799-handsfree
     handsFree_signalStrength(device: cocoascript.IOBluetoothHandsFreeDevice, signalStrength: cocoascript.NSNumber):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1430067-handsfree
-    handsFree_subscriberNumber(device: cocoascript.IOBluetoothHandsFreeDevice, subscriberNumber: cocoascript.NSString):void;
+    handsFree_subscriberNumber(device: cocoascript.IOBluetoothHandsFreeDevice, subscriberNumber: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevicedelegate/1433815-handsfree
-    handsFree_unhandledResultCode(device: cocoascript.IOBluetoothHandsFreeDevice, resultCode: cocoascript.NSString):void;
+    handsFree_unhandledResultCode(device: cocoascript.IOBluetoothHandsFreeDevice, resultCode: string | cocoascript.NSString):void;
   }
 }
 declare namespace cocoascript {
@@ -706,11 +706,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfree/1427766-disconnectsco
     disconnectSCO():void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfree/1427897-indicator
-    indicator(indicatorName: cocoascript.NSString):number;
+    indicator(indicatorName: string | cocoascript.NSString):number;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfree/1427858-isscoconnected
     isSCOConnected():cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfree/1427872-setindicator
-    setIndicator_value(indicatorName: cocoascript.NSString, indicatorValue: number):void;
+    setIndicator_value(indicatorName: string | cocoascript.NSString, indicatorValue: number):void;
     //
     alloc():cocoascript.IOBluetoothHandsFree;
     //
@@ -727,15 +727,15 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1428663-initwithdevice
     initWithDevice_delegate(device: cocoascript.IOBluetoothDevice, inDelegate: cocoascript.IOBluetoothHandsFreeAudioGateway):cocoascript.IOBluetoothHandsFreeAudioGateway;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1431383-createindicator
-    createIndicator_min_max_currentValue(indicatorName: cocoascript.NSString, minValue: number, maxValue: number, currentValue: number):void;
+    createIndicator_min_max_currentValue(indicatorName: string | cocoascript.NSString, minValue: number, maxValue: number, currentValue: number):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1429231-processatcommand
-    processATCommand(atCommand: cocoascript.NSString):void;
+    processATCommand(atCommand: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1429059-sendokresponse
     sendOKResponse():void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1434911-sendresponse
-    sendResponse(response: cocoascript.NSString):void;
+    sendResponse(response: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreeaudiogateway/1434547-sendresponse
-    sendResponse_withOK(response: cocoascript.NSString, withOK: cocoascript.BOOL):void;
+    sendResponse_withOK(response: string | cocoascript.NSString, withOK: cocoascript.BOOL):void;
     //
     alloc():cocoascript.IOBluetoothHandsFreeAudioGateway;
     //
@@ -762,7 +762,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1430837-currentcalllist
     currentCallList():void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1430771-dialnumber
-    dialNumber(aNumber: cocoascript.NSString):void;
+    dialNumber(aNumber: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1430763-endcall
     endCall():void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1434936-holdcall
@@ -780,13 +780,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1433087-releaseheldcalls
     releaseHeldCalls():void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1429190-sendatcommand
-    sendATCommand(atCommand: cocoascript.NSString):void;
+    sendATCommand(atCommand: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1430619-sendatcommand
-    sendATCommand_timeout_selector_target(atCommand: cocoascript.NSString, timeout: number, selector: cocoascript.SEL, target: cocoascript.IOBluetoothHandsFreeDevice):void;
+    sendATCommand_timeout_selector_target(atCommand: string | cocoascript.NSString, timeout: number, selector: cocoascript.SEL, target: cocoascript.IOBluetoothHandsFreeDevice):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1428351-senddtmf
-    sendDTMF(character: cocoascript.NSString):void;
+    sendDTMF(character: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1429652-sendsms
-    sendSMS_message(aNumber: cocoascript.NSString, aMessage: cocoascript.NSString):void;
+    sendSMS_message(aNumber: string | cocoascript.NSString, aMessage: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1430919-subscribernumber
     subscriberNumber():void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfreedevice/1429256-transferaudiotocomputer
@@ -814,11 +814,11 @@ declare namespace cocoascript {
     powerState(): cocoascript.BluetoothHCIPowerState;
     setPowerState(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontroller/1434703-addressasstring
-    addressAsString():cocoascript.NSString;
+    addressAsString():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontroller/1428536-classofdevice
     classOfDevice():cocoascript.BluetoothClassOfDevice;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontroller/1431310-nameasstring
-    nameAsString():cocoascript.NSString;
+    nameAsString():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontroller/1433813-setclassofdevice
     setClassOfDevice_forTimeInterval(classOfDevice: cocoascript.BluetoothClassOfDevice, seconds: cocoascript.NSTimeInterval):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontroller/1433496-defaultcontroller

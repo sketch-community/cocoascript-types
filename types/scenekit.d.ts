@@ -56,32 +56,32 @@ declare namespace cocoascript {
    */
   interface SCNAnimatable extends NSObject {
     // doc://com.apple.documentation/documentation/scenekit/scnanimatable/1523386-addanimation
-    addAnimation_forKey(animation: cocoascript.SCNAnimation, key: cocoascript.NSString):void;
+    addAnimation_forKey(animation: cocoascript.SCNAnimation, key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/scenekit/scnanimatable/1524020-animationforkey
-    animationForKey(key: cocoascript.NSString):cocoascript.CAAnimation;
+    animationForKey(key: string | cocoascript.NSString):cocoascript.CAAnimation;
     // doc://com.apple.documentation/documentation/scenekit/scnanimatable/1523610-animationkeys
-    animationKeys(): cocoascript.NSString;
+    animationKeys(): string | cocoascript.NSString;
     setAnimationKeys(): void;
     // doc://com.apple.documentation/documentation/scenekit/scnanimatable/1522762-removeallanimations
     removeAllAnimations():void;
     // doc://com.apple.documentation/documentation/scenekit/scnanimatable/1522880-removeanimationforkey
-    removeAnimationForKey(key: cocoascript.NSString):void;
+    removeAnimationForKey(key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/scenekit/scnanimatable/1522841-removeanimationforkey
-    removeAnimationForKey_fadeOutDuration(key: cocoascript.NSString, duration: cocoascript.CGFloat):void;
+    removeAnimationForKey_fadeOutDuration(key: string | cocoascript.NSString, duration: cocoascript.CGFloat):void;
     // doc://com.apple.documentation/documentation/scenekit/scnanimatable/1523592-pauseanimationforkey
-    pauseAnimationForKey(key: cocoascript.NSString):void;
+    pauseAnimationForKey(key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/scenekit/scnanimatable/1523332-resumeanimationforkey
-    resumeAnimationForKey(key: cocoascript.NSString):void;
+    resumeAnimationForKey(key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/scenekit/scnanimatable/1523703-isanimationforkeypaused
-    isAnimationForKeyPaused(key: cocoascript.NSString):cocoascript.BOOL;
+    isAnimationForKeyPaused(key: string | cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/scenekit/scnanimatable/2866031-addanimationplayer
-    addAnimationPlayer_forKey(player: cocoascript.SCNAnimationPlayer, key: cocoascript.NSString):void;
+    addAnimationPlayer_forKey(player: cocoascript.SCNAnimationPlayer, key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/scenekit/scnanimatable/2866026-animationplayerforkey
-    animationPlayerForKey(key: cocoascript.NSString):cocoascript.SCNAnimationPlayer;
+    animationPlayerForKey(key: string | cocoascript.NSString):cocoascript.SCNAnimationPlayer;
     // doc://com.apple.documentation/documentation/scenekit/scnanimatable/2887039-removeanimationforkey
-    removeAnimationForKey_blendOutDuration(key: cocoascript.NSString, duration: cocoascript.CGFloat):void;
+    removeAnimationForKey_blendOutDuration(key: string | cocoascript.NSString, duration: cocoascript.CGFloat):void;
     // doc://com.apple.documentation/documentation/scenekit/scnanimatable/1778343-setspeed
-    setSpeed_forAnimationKey(speed: cocoascript.CGFloat, key: cocoascript.NSString):void;
+    setSpeed_forAnimationKey(speed: cocoascript.CGFloat, key: string | cocoascript.NSString):void;
   }
 }
 declare namespace cocoascript {
@@ -247,19 +247,19 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/scenekit/scnactionable/1524219-runaction
     runAction_completionHandler(action: cocoascript.SCNAction, block: void):void;
     // doc://com.apple.documentation/documentation/scenekit/scnactionable/1524222-runaction
-    runAction_forKey(action: cocoascript.SCNAction, key: cocoascript.NSString):void;
+    runAction_forKey(action: cocoascript.SCNAction, key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/scenekit/scnactionable/1522791-runaction
-    runAction_forKey_completionHandler(action: cocoascript.SCNAction, key: cocoascript.NSString, block: void):void;
+    runAction_forKey_completionHandler(action: cocoascript.SCNAction, key: string | cocoascript.NSString, block: void):void;
     // doc://com.apple.documentation/documentation/scenekit/scnactionable/1523287-actionforkey
-    actionForKey(key: cocoascript.NSString):cocoascript.SCNAction;
+    actionForKey(key: string | cocoascript.NSString):cocoascript.SCNAction;
     // doc://com.apple.documentation/documentation/scenekit/scnactionable/1523794-hasactions
     hasActions(): cocoascript.BOOL;
     setHasActions(): void;
     // doc://com.apple.documentation/documentation/scenekit/scnactionable/1523036-actionkeys
-    actionKeys(): cocoascript.NSString;
+    actionKeys(): string | cocoascript.NSString;
     setActionKeys(): void;
     // doc://com.apple.documentation/documentation/scenekit/scnactionable/1523617-removeactionforkey
-    removeActionForKey(key: cocoascript.NSString):void;
+    removeActionForKey(key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/scenekit/scnactionable/1524181-removeallactions
     removeAllActions():void;
   }
@@ -286,13 +286,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/scenekit/scnprogramdelegate/1523068-programisopaque
     programIsOpaque(program: cocoascript.SCNProgram):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/scenekit/scnprogramdelegate/1524155-program
-    program_bindValueForSymbol_atLocation_programID_renderer(program: cocoascript.SCNProgram, symbol: cocoascript.NSString, location: number, programID: number, renderer: cocoascript.SCNRenderer):cocoascript.BOOL;
+    program_bindValueForSymbol_atLocation_programID_renderer(program: cocoascript.SCNProgram, symbol: string | cocoascript.NSString, location: number, programID: number, renderer: cocoascript.SCNRenderer):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/scenekit/scnprogramdelegate/1523857-program
-    program_unbindValueForSymbol_atLocation_programID_renderer(program: cocoascript.SCNProgram, symbol: cocoascript.NSString, location: number, programID: number, renderer: cocoascript.SCNRenderer):void;
+    program_unbindValueForSymbol_atLocation_programID_renderer(program: cocoascript.SCNProgram, symbol: string | cocoascript.NSString, location: number, programID: number, renderer: cocoascript.SCNRenderer):void;
   }
 }
 // doc://com.apple.documentation/documentation/scenekit/scnerrordomain
-declare const SCNErrorDomain: cocoascript.NSString;
+declare const SCNErrorDomain: string | cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * Methods you can implement to participate in the process of exporting a scene to a file.
@@ -313,12 +313,12 @@ declare namespace cocoascript {
     program(): cocoascript.SCNProgram;
     setProgram(): void;
     // doc://com.apple.documentation/documentation/scenekit/scnshadable/1523348-shadermodifiers
-    shaderModifiers(): cocoascript.NSString;
+    shaderModifiers(): string | cocoascript.NSString;
     setShaderModifiers(): void;
     // doc://com.apple.documentation/documentation/scenekit/scnshadable/1523063-handlebindingofsymbol
-    handleBindingOfSymbol_usingBlock(symbol: cocoascript.NSString, block: cocoascript.SCNBindingBlock):void;
+    handleBindingOfSymbol_usingBlock(symbol: string | cocoascript.NSString, block: cocoascript.SCNBindingBlock):void;
     // doc://com.apple.documentation/documentation/scenekit/scnshadable/1522783-handleunbindingofsymbol
-    handleUnbindingOfSymbol_usingBlock(symbol: cocoascript.NSString, block: cocoascript.SCNBindingBlock):void;
+    handleUnbindingOfSymbol_usingBlock(symbol: string | cocoascript.NSString, block: cocoascript.SCNBindingBlock):void;
   }
 }
 declare namespace cocoascript {
@@ -499,7 +499,7 @@ declare namespace cocoascript {
     simdPivot(): cocoascript.simd_float4x4;
     setSimdPivot(): void;
     // doc://com.apple.documentation/documentation/scenekit/scnnode/1408014-name
-    name(): cocoascript.NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/scenekit/scnnode/1408004-light
     light(): cocoascript.SCNLight;
@@ -560,7 +560,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/scenekit/scnnode/1407982-childnodespassingtest
     childNodesPassingTest(predicate: cocoascript.BOOL):any;
     // doc://com.apple.documentation/documentation/scenekit/scnnode/1407951-childnodewithname
-    childNodeWithName_recursively(name: cocoascript.NSString, recursively: cocoascript.BOOL):any;
+    childNodeWithName_recursively(name: string | cocoascript.NSString, recursively: cocoascript.BOOL):any;
     // doc://com.apple.documentation/documentation/scenekit/scnnode/1408032-enumeratechildnodesusingblock
     enumerateChildNodesUsingBlock(block: cocoascript.BOOL):void;
     // doc://com.apple.documentation/documentation/scenekit/scnnode/1642248-enumeratehierarchyusingblock
@@ -747,7 +747,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/scenekit/scncamera/1419839-camerawithmdlcamera
     cameraWithMDLCamera(mdlCamera: cocoascript.MDLCamera):cocoascript.SCNCamera;
     // doc://com.apple.documentation/documentation/scenekit/scncamera/1436623-name
-    name(): cocoascript.NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/scenekit/scncamera/1436592-znear
     zNear(): number;
@@ -936,7 +936,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/scenekit/scnmaterial/1419835-materialwithmdlmaterial
     materialWithMDLMaterial(mdlMaterial: cocoascript.MDLMaterial):cocoascript.SCNMaterial;
     // doc://com.apple.documentation/documentation/scenekit/scnmaterial/1462525-name
-    name(): cocoascript.NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/scenekit/scnmaterial/1462518-lightingmodelname
     lightingModelName(): cocoascript.SCNLightingModel;
@@ -1214,7 +1214,7 @@ declare namespace cocoascript {
     dictionaryRepresentation(): cocoascript.id;
     setDictionaryRepresentation(): void;
     // doc://com.apple.documentation/documentation/scenekit/scntechnique/1520490-handlebindingofsymbol
-    handleBindingOfSymbol_usingBlock(symbol: cocoascript.NSString, block: cocoascript.SCNBindingBlock):void;
+    handleBindingOfSymbol_usingBlock(symbol: string | cocoascript.NSString, block: cocoascript.SCNBindingBlock):void;
     // doc://com.apple.documentation/documentation/scenekit/scntechnique/1520495-setobject
     setObject_forKeyedSubscript(obj: cocoascript.SCNTechnique, key: cocoascript.NSCopying):void;
     // doc://com.apple.documentation/documentation/scenekit/scntechnique/1520493-objectforkeyedsubscript
@@ -1264,9 +1264,9 @@ declare namespace cocoascript {
    */
   interface SCNAudioSource extends NSObject {
     // doc://com.apple.documentation/documentation/scenekit/scnaudiosource/1524138-audiosourcenamed
-    audioSourceNamed(fileName: cocoascript.NSString):cocoascript.SCNAudioSource;
+    audioSourceNamed(fileName: string | cocoascript.NSString):cocoascript.SCNAudioSource;
     // doc://com.apple.documentation/documentation/scenekit/scnaudiosource/1524225-initwithfilenamed
-    initWithFileNamed(name: cocoascript.NSString):cocoascript.SCNAudioSource;
+    initWithFileNamed(name: string | cocoascript.NSString):cocoascript.SCNAudioSource;
     // doc://com.apple.documentation/documentation/scenekit/scnaudiosource/1523264-initwithurl
     initWithURL(url: cocoascript.NSURL):cocoascript.SCNAudioSource;
     // doc://com.apple.documentation/documentation/scenekit/scnaudiosource/1524185-positional
@@ -1323,12 +1323,12 @@ declare namespace cocoascript {
     sphericalHarmonicsCoefficients(): cocoascript.NSData;
     setSphericalHarmonicsCoefficients(): void;
     // doc://com.apple.documentation/documentation/scenekit/scnlight/1522839-name
-    name(): cocoascript.NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/scenekit/scnlight/1523345-attributeforkey
-    attributeForKey(key: cocoascript.NSString):cocoascript.SCNLight;
+    attributeForKey(key: string | cocoascript.NSString):cocoascript.SCNLight;
     // doc://com.apple.documentation/documentation/scenekit/scnlight/1523148-setattribute
-    setAttribute_forKey(attribute: cocoascript.SCNLight, key: cocoascript.NSString):void;
+    setAttribute_forKey(attribute: cocoascript.SCNLight, key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/scenekit/scnlight/1524223-attenuationstartdistance
     attenuationStartDistance(): cocoascript.CGFloat;
     setAttenuationStartDistance(): void;
@@ -1457,7 +1457,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/scenekit/scnparticlesystem/1564486-particlesystem
     particleSystem():cocoascript.SCNParticleSystem;
     // doc://com.apple.documentation/documentation/scenekit/scnparticlesystem/1522772-particlesystemnamed
-    particleSystemNamed_inDirectory(name: cocoascript.NSString, directory: cocoascript.NSString):cocoascript.SCNParticleSystem;
+    particleSystemNamed_inDirectory(name: string | cocoascript.NSString, directory: string | cocoascript.NSString):cocoascript.SCNParticleSystem;
     // doc://com.apple.documentation/documentation/scenekit/scnparticlesystem/1523998-emissionduration
     emissionDuration(): cocoascript.CGFloat;
     setEmissionDuration(): void;
@@ -1708,24 +1708,24 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/scenekit/scnprogram/1565076-program
     program():cocoascript.SCNProgram;
     // doc://com.apple.documentation/documentation/scenekit/scnprogram/1522891-vertexshader
-    vertexShader(): cocoascript.NSString;
+    vertexShader(): string | cocoascript.NSString;
     setVertexShader(): void;
     // doc://com.apple.documentation/documentation/scenekit/scnprogram/1523135-fragmentshader
-    fragmentShader(): cocoascript.NSString;
+    fragmentShader(): string | cocoascript.NSString;
     setFragmentShader(): void;
     // doc://com.apple.documentation/documentation/scenekit/scnprogram/1524049-geometryshader
-    geometryShader(): cocoascript.NSString;
+    geometryShader(): string | cocoascript.NSString;
     setGeometryShader(): void;
     // doc://com.apple.documentation/documentation/scenekit/scnprogram/1523852-tessellationcontrolshader
-    tessellationControlShader(): cocoascript.NSString;
+    tessellationControlShader(): string | cocoascript.NSString;
     setTessellationControlShader(): void;
     // doc://com.apple.documentation/documentation/scenekit/scnprogram/1523760-tessellationevaluationshader
-    tessellationEvaluationShader(): cocoascript.NSString;
+    tessellationEvaluationShader(): string | cocoascript.NSString;
     setTessellationEvaluationShader(): void;
     // doc://com.apple.documentation/documentation/scenekit/scnprogram/1522730-setsemantic
-    setSemantic_forSymbol_options(semantic: cocoascript.NSString, symbol: cocoascript.NSString, options: cocoascript.SCNProgram):void;
+    setSemantic_forSymbol_options(semantic: string | cocoascript.NSString, symbol: string | cocoascript.NSString, options: cocoascript.SCNProgram):void;
     // doc://com.apple.documentation/documentation/scenekit/scnprogram/1523350-semanticforsymbol
-    semanticForSymbol(symbol: cocoascript.NSString):cocoascript.NSString;
+    semanticForSymbol(symbol: string | cocoascript.NSString):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/scenekit/scnprogram/1522611-delegate
     delegate(): cocoascript.SCNProgramDelegate;
     setDelegate(): void;
@@ -1733,12 +1733,12 @@ declare namespace cocoascript {
     opaque(): cocoascript.BOOL;
     setOpaque(): void;
     // doc://com.apple.documentation/documentation/scenekit/scnprogram/1524047-handlebindingofbuffernamed
-    handleBindingOfBufferNamed_frequency_usingBlock(name: cocoascript.NSString, frequency: cocoascript.SCNBufferFrequency, block: cocoascript.SCNBufferBindingBlock):void;
+    handleBindingOfBufferNamed_frequency_usingBlock(name: string | cocoascript.NSString, frequency: cocoascript.SCNBufferFrequency, block: cocoascript.SCNBufferBindingBlock):void;
     // doc://com.apple.documentation/documentation/scenekit/scnprogram/1522799-vertexfunctionname
-    vertexFunctionName(): cocoascript.NSString;
+    vertexFunctionName(): string | cocoascript.NSString;
     setVertexFunctionName(): void;
     // doc://com.apple.documentation/documentation/scenekit/scnprogram/1524012-fragmentfunctionname
-    fragmentFunctionName(): cocoascript.NSString;
+    fragmentFunctionName(): string | cocoascript.NSString;
     setFragmentFunctionName(): void;
     // doc://com.apple.documentation/documentation/scenekit/scnprogram/1522934-library
     library(): cocoascript.MTLLibrary;
@@ -1752,19 +1752,19 @@ declare namespace cocoascript {
 
 declare const SCNProgram: cocoascript.SCNProgram;
 // doc://com.apple.documentation/documentation/scenekit/scnprogrammappingchannelkey
-declare const SCNProgramMappingChannelKey: cocoascript.NSString;
+declare const SCNProgramMappingChannelKey: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/scenekit/scnmodeltransform
-declare const SCNModelTransform: cocoascript.NSString;
+declare const SCNModelTransform: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/scenekit/scnmodelviewprojectiontransform
-declare const SCNModelViewProjectionTransform: cocoascript.NSString;
+declare const SCNModelViewProjectionTransform: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/scenekit/scnmodelviewtransform
-declare const SCNModelViewTransform: cocoascript.NSString;
+declare const SCNModelViewTransform: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/scenekit/scnnormaltransform
-declare const SCNNormalTransform: cocoascript.NSString;
+declare const SCNNormalTransform: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/scenekit/scnprojectiontransform
-declare const SCNProjectionTransform: cocoascript.NSString;
+declare const SCNProjectionTransform: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/scenekit/scnviewtransform
-declare const SCNViewTransform: cocoascript.NSString;
+declare const SCNViewTransform: string | cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A simple, reusable animation that changes attributes of any node you attach it to.
@@ -1826,7 +1826,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/scenekit/scnaction/1523692-customactionwithduration
     customActionWithDuration_actionBlock(seconds: cocoascript.NSTimeInterval, block: cocoascript.CGFloat):cocoascript.SCNAction;
     // doc://com.apple.documentation/documentation/scenekit/scnaction/1523984-javascriptactionwithscript
-    javaScriptActionWithScript_duration(script: cocoascript.NSString, seconds: cocoascript.NSTimeInterval):cocoascript.SCNAction;
+    javaScriptActionWithScript_duration(script: string | cocoascript.NSString, seconds: cocoascript.NSTimeInterval):cocoascript.SCNAction;
     // doc://com.apple.documentation/documentation/scenekit/scnaction/1522815-reversedaction
     reversedAction():cocoascript.SCNAction;
     // doc://com.apple.documentation/documentation/scenekit/scnaction/1524162-duration
@@ -1862,7 +1862,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/scenekit/scngeometry/1419845-geometrywithmdlmesh
     geometryWithMDLMesh(mdlMesh: cocoascript.MDLMesh):cocoascript.SCNGeometry;
     // doc://com.apple.documentation/documentation/scenekit/scngeometry/1522953-name
-    name(): cocoascript.NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/scenekit/scngeometry/1523472-materials
     materials(): cocoascript.SCNMaterial;
@@ -1871,7 +1871,7 @@ declare namespace cocoascript {
     firstMaterial(): cocoascript.SCNMaterial;
     setFirstMaterial(): void;
     // doc://com.apple.documentation/documentation/scenekit/scngeometry/1523789-materialwithname
-    materialWithName(name: cocoascript.NSString):cocoascript.SCNMaterial;
+    materialWithName(name: string | cocoascript.NSString):cocoascript.SCNMaterial;
     // doc://com.apple.documentation/documentation/scenekit/scngeometry/1522876-insertmaterial
     insertMaterial_atIndex(material: cocoascript.SCNMaterial, index: cocoascript.NSUInteger):void;
     // doc://com.apple.documentation/documentation/scenekit/scngeometry/1522646-removematerialatindex
@@ -1960,7 +1960,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/scenekit/scnanimation/2866053-animationwithcontentsofurl
     animationWithContentsOfURL(animationUrl: cocoascript.NSURL):cocoascript.SCNAnimation;
     // doc://com.apple.documentation/documentation/scenekit/scnanimation/2866042-animationnamed
-    animationNamed(animationName: cocoascript.NSString):cocoascript.SCNAnimation;
+    animationNamed(animationName: string | cocoascript.NSString):cocoascript.SCNAnimation;
     // doc://com.apple.documentation/documentation/scenekit/scnanimation/2866063-animationdidstart
     animationDidStart(): cocoascript.SCNAnimationDidStartBlock;
     setAnimationDidStart(): void;
@@ -2001,7 +2001,7 @@ declare namespace cocoascript {
     removedOnCompletion(): cocoascript.BOOL;
     setRemovedOnCompletion(): void;
     // doc://com.apple.documentation/documentation/scenekit/scnanimation/2878148-keypath
-    keyPath(): cocoascript.NSString;
+    keyPath(): string | cocoascript.NSString;
     setKeyPath(): void;
     // doc://com.apple.documentation/documentation/scenekit/scnanimation/2878146-repeatcount
     repeatCount(): cocoascript.CGFloat;
@@ -2234,9 +2234,9 @@ declare namespace cocoascript {
     weights(): cocoascript.NSNumber;
     setWeights(): void;
     // doc://com.apple.documentation/documentation/scenekit/scnmorpher/2915238-setweight
-    setWeight_forTargetNamed(weight: cocoascript.CGFloat, targetName: cocoascript.NSString):void;
+    setWeight_forTargetNamed(weight: cocoascript.CGFloat, targetName: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/scenekit/scnmorpher/2915239-weightfortargetnamed
-    weightForTargetNamed(targetName: cocoascript.NSString):cocoascript.CGFloat;
+    weightForTargetNamed(targetName: string | cocoascript.NSString):cocoascript.CGFloat;
     //
     alloc():cocoascript.SCNMorpher;
     //
@@ -2254,9 +2254,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/scenekit/scnscene/1574179-scene
     scene():any;
     // doc://com.apple.documentation/documentation/scenekit/scnscene/1523355-scenenamed
-    sceneNamed(name: cocoascript.NSString):any;
+    sceneNamed(name: string | cocoascript.NSString):any;
     // doc://com.apple.documentation/documentation/scenekit/scnscene/1522851-scenenamed
-    sceneNamed_inDirectory_options(name: cocoascript.NSString, directory: cocoascript.NSString, options: any):any;
+    sceneNamed_inDirectory_options(name: string | cocoascript.NSString, directory: string | cocoascript.NSString, options: any):any;
     // doc://com.apple.documentation/documentation/scenekit/scnscene/1522660-scenewithurl
     sceneWithURL_options_error(url: cocoascript.NSURL, options: any, error: cocoascript.NSError):any;
     // doc://com.apple.documentation/documentation/scenekit/scnscene/1419833-scenewithmdlasset
@@ -2274,9 +2274,9 @@ declare namespace cocoascript {
     lightingEnvironment(): cocoascript.SCNMaterialProperty;
     setLightingEnvironment(): void;
     // doc://com.apple.documentation/documentation/scenekit/scnscene/1522858-attributeforkey
-    attributeForKey(key: cocoascript.NSString):any;
+    attributeForKey(key: string | cocoascript.NSString):any;
     // doc://com.apple.documentation/documentation/scenekit/scnscene/1524229-setattribute
-    setAttribute_forKey(attribute: any, key: cocoascript.NSString):void;
+    setAttribute_forKey(attribute: any, key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/scenekit/scnscene/1523577-writetourl
     writeToURL_options_delegate_progressHandler(url: cocoascript.NSURL, options: any, delegate: cocoascript.SCNSceneExportDelegate, progressHandler: cocoascript.SCNSceneExportProgressHandler):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/scenekit/scnscene/1522790-fogstartdistance
@@ -2597,9 +2597,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/scenekit/scntransaction/1523166-unlock
     unlock():void;
     // doc://com.apple.documentation/documentation/scenekit/scntransaction/1524124-setvalue
-    setValue_forKey(value: cocoascript.SCNTransaction, key: cocoascript.NSString):void;
+    setValue_forKey(value: cocoascript.SCNTransaction, key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/scenekit/scntransaction/1523919-valueforkey
-    valueForKey(key: cocoascript.NSString):cocoascript.SCNTransaction;
+    valueForKey(key: string | cocoascript.NSString):cocoascript.SCNTransaction;
     //
     alloc():cocoascript.SCNTransaction;
     //
@@ -2749,7 +2749,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnhittestoption
-  type SCNHitTestOption = cocoascript.NSString;
+  type SCNHitTestOption = string | cocoascript.NSString;
 }
 declare namespace cocoascript {
   interface SCNVector3 {
@@ -2773,7 +2773,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnshadermodifierentrypoint
-  type SCNShaderModifierEntryPoint = cocoascript.NSString;
+  type SCNShaderModifierEntryPoint = string | cocoascript.NSString;
 }
 declare namespace cocoascript {
   /**
@@ -2955,7 +2955,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnlightingmodel
-  type SCNLightingModel = cocoascript.NSString;
+  type SCNLightingModel = string | cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scntransparencymode
@@ -3168,7 +3168,7 @@ declare namespace cocoascript {
 declare const SCNCapsule: cocoascript.SCNCapsule;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnphysicsshapeoption
-  type SCNPhysicsShapeOption = cocoascript.NSString;
+  type SCNPhysicsShapeOption = string | cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnphysicscollisioncategory
@@ -3214,7 +3214,7 @@ declare namespace cocoascript {
 declare const SCNAudioPlayer: cocoascript.SCNAudioPlayer;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnlighttype
-  type SCNLightType = cocoascript.NSString;
+  type SCNLightType = string | cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnshadowmode
@@ -3256,7 +3256,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnparticleproperty
-  type SCNParticleProperty = cocoascript.NSString;
+  type SCNParticleProperty = string | cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnparticlemodifierstage
@@ -3317,9 +3317,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/scenekit/scnscenesource/1523962-scenewithoptions
     sceneWithOptions_error(options: cocoascript.SCNSceneSource, error: cocoascript.NSError):any;
     // doc://com.apple.documentation/documentation/scenekit/scnscenesource/1523656-identifiersofentrieswithclass
-    identifiersOfEntriesWithClass(entryClass: cocoascript.Class):cocoascript.NSString;
+    identifiersOfEntriesWithClass(entryClass: cocoascript.Class):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/scenekit/scnscenesource/1573762-entrywithidentifier
-    entryWithIdentifier_withClass(uid: cocoascript.NSString, entryClass: cocoascript.Class):cocoascript.SCNSceneSource;
+    entryWithIdentifier_withClass(uid: string | cocoascript.NSString, entryClass: cocoascript.Class):cocoascript.SCNSceneSource;
     // doc://com.apple.documentation/documentation/scenekit/scnscenesource/1523055-entriespassingtest
     entriesPassingTest(predicate: cocoascript.BOOL):cocoascript.SCNSceneSource;
     // doc://com.apple.documentation/documentation/scenekit/scnscenesource/1524038-url
@@ -3329,7 +3329,7 @@ declare namespace cocoascript {
     data(): cocoascript.NSData;
     setData(): void;
     // doc://com.apple.documentation/documentation/scenekit/scnscenesource/1523277-propertyforkey
-    propertyForKey(key: cocoascript.NSString):cocoascript.SCNSceneSource;
+    propertyForKey(key: string | cocoascript.NSString):cocoascript.SCNSceneSource;
     //
     alloc():cocoascript.SCNSceneSource;
     //
@@ -3452,10 +3452,10 @@ declare namespace cocoascript {
     wrapped(): cocoascript.BOOL;
     setWrapped(): void;
     // doc://com.apple.documentation/documentation/scenekit/scntext/1523158-alignmentmode
-    alignmentMode(): cocoascript.NSString;
+    alignmentMode(): string | cocoascript.NSString;
     setAlignmentMode(): void;
     // doc://com.apple.documentation/documentation/scenekit/scntext/1523414-truncationmode
-    truncationMode(): cocoascript.NSString;
+    truncationMode(): string | cocoascript.NSString;
     setTruncationMode(): void;
     // doc://com.apple.documentation/documentation/scenekit/scntext/1523680-textsize
     textSize(): cocoascript.CGSize;
@@ -3662,7 +3662,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnphysicstestoption
-  type SCNPhysicsTestOption = cocoascript.NSString;
+  type SCNPhysicsTestOption = string | cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnmorphercalculationmode
@@ -3670,7 +3670,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnsceneattribute
-  type SCNSceneAttribute = cocoascript.NSString;
+  type SCNSceneAttribute = string | cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnsceneexportprogresshandler
@@ -3678,7 +3678,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemantic
-  type SCNGeometrySourceSemantic = cocoascript.NSString;
+  type SCNGeometrySourceSemantic = string | cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scngeometryprimitivetype
@@ -3690,7 +3690,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnviewoption
-  type SCNViewOption = cocoascript.NSString;
+  type SCNViewOption = string | cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnantialiasingmode
@@ -4031,7 +4031,7 @@ declare const SCNPhysicsShapeOptionCollisionMargin: cocoascript.SCNPhysicsShapeO
 declare const SCNPhysicsShapeScaleKey: cocoascript.SCNPhysicsShapeOption;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnphysicsshapetype
-  type SCNPhysicsShapeType = cocoascript.NSString;
+  type SCNPhysicsShapeType = string | cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/scenekit/scnlighttypeies
 declare const SCNLightTypeIES: cocoascript.SCNLightType;
@@ -4093,7 +4093,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnscenesourceloadingoption
-  type SCNSceneSourceLoadingOption = cocoascript.NSString;
+  type SCNSceneSourceLoadingOption = string | cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnscenesourcestatus
@@ -4115,7 +4115,7 @@ declare const SCNPhysicsTestBackfaceCullingKey: cocoascript.SCNPhysicsTestOption
 declare const SCNPhysicsTestCollisionBitMaskKey: cocoascript.SCNPhysicsTestOption;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnphysicstestsearchmode
-  type SCNPhysicsTestSearchMode = cocoascript.NSString;
+  type SCNPhysicsTestSearchMode = string | cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/scenekit/scnsceneendtimeattributekey
 declare const SCNSceneEndTimeAttributeKey: cocoascript.SCNSceneAttribute;
@@ -4127,7 +4127,7 @@ declare const SCNSceneStartTimeAttributeKey: cocoascript.SCNSceneAttribute;
 declare const SCNSceneUpAxisAttributeKey: cocoascript.SCNSceneAttribute;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnscenesourceanimationimportpolicy
-  type SCNSceneSourceAnimationImportPolicy = cocoascript.NSString;
+  type SCNSceneSourceAnimationImportPolicy = string | cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnbillboardaxis

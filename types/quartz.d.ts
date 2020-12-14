@@ -145,7 +145,7 @@ declare namespace cocoascript {
     previewItemURL(): cocoascript.NSURL;
     setPreviewItemURL(): void;
     // doc://com.apple.documentation/documentation/quartz/qlpreviewitem/1419911-previewitemtitle
-    previewItemTitle(): cocoascript.NSString;
+    previewItemTitle(): string | cocoascript.NSString;
     setPreviewItemTitle(): void;
     // doc://com.apple.documentation/documentation/quartz/qlpreviewitem/1419915-previewitemdisplaystate
     previewItemDisplayState(): cocoascript.id;
@@ -161,7 +161,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/qlpreviewingcontroller/2867936-preparepreviewoffileaturl
     preparePreviewOfFileAtURL_completionHandler(url: cocoascript.NSURL, handler: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/quartz/qlpreviewingcontroller/2882042-preparepreviewofsearchableitemwi
-    preparePreviewOfSearchableItemWithIdentifier_queryString_completionHandler(identifier: cocoascript.NSString, queryString: cocoascript.NSString, handler: cocoascript.NSError):void;
+    preparePreviewOfSearchableItemWithIdentifier_queryString_completionHandler(identifier: string | cocoascript.NSString, queryString: string | cocoascript.NSString, handler: cocoascript.NSError):void;
   }
 }
 declare namespace cocoascript {
@@ -171,7 +171,7 @@ declare namespace cocoascript {
    */
   interface QCComposition extends NSObject {
     // doc://com.apple.documentation/documentation/quartz/qccomposition/1503768-compositionwithfile
-    compositionWithFile(path: cocoascript.NSString):cocoascript.QCComposition;
+    compositionWithFile(path: string | cocoascript.NSString):cocoascript.QCComposition;
     // doc://com.apple.documentation/documentation/quartz/qccomposition/1504831-compositionwithdata
     compositionWithData(data: cocoascript.NSData):cocoascript.QCComposition;
     // doc://com.apple.documentation/documentation/quartz/qccomposition/1505184-attributes
@@ -179,7 +179,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/qccomposition/1503694-protocols
     protocols():cocoascript.NSArray;
     // doc://com.apple.documentation/documentation/quartz/qccomposition/1493218-identifier
-    identifier():cocoascript.NSString;
+    identifier():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/quartz/qccomposition/1504185-inputkeys
     inputKeys():cocoascript.NSArray;
     // doc://com.apple.documentation/documentation/quartz/qccomposition/1504100-outputkeys
@@ -252,11 +252,11 @@ declare namespace cocoascript {
    */
   interface QCCompositionLayer extends CAOpenGLLayer {
     // doc://com.apple.documentation/documentation/quartz/qccompositionlayer/1515355-compositionlayerwithfile
-    compositionLayerWithFile(path: cocoascript.NSString):cocoascript.QCCompositionLayer;
+    compositionLayerWithFile(path: string | cocoascript.NSString):cocoascript.QCCompositionLayer;
     // doc://com.apple.documentation/documentation/quartz/qccompositionlayer/1515353-compositionlayerwithcomposition
     compositionLayerWithComposition(composition: cocoascript.QCComposition):cocoascript.QCCompositionLayer;
     // doc://com.apple.documentation/documentation/quartz/qccompositionlayer/1504706-initwithfile
-    initWithFile(path: cocoascript.NSString):cocoascript.QCCompositionLayer;
+    initWithFile(path: string | cocoascript.NSString):cocoascript.QCCompositionLayer;
     // doc://com.apple.documentation/documentation/quartz/qccompositionlayer/1503553-initwithcomposition
     initWithComposition(composition: cocoascript.QCComposition):cocoascript.QCCompositionLayer;
     // doc://com.apple.documentation/documentation/quartz/qccompositionlayer/1503496-composition
@@ -316,7 +316,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/qccompositionpickerview/1447373-drawsbackground
     drawsBackground():cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/quartz/qccompositionpickerview/1447371-setdefaultvalue
-    setDefaultValue_forInputKey(value: cocoascript.QCCompositionPickerView, key: cocoascript.NSString):void;
+    setDefaultValue_forInputKey(value: cocoascript.QCCompositionPickerView, key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/quartz/qccompositionpickerview/1447344-resetdefaultinputvalues
     resetDefaultInputValues():void;
     // doc://com.apple.documentation/documentation/quartz/qccompositionpickerview/1447361-startanimation
@@ -338,7 +338,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/qccompositionpickerview/1447333-delegate
     delegate():cocoascript.QCCompositionPickerView;
     // doc://com.apple.documentation/documentation/quartz/qccompositionpickerview/1447335-setcompositionsfromrepositorywit
-    setCompositionsFromRepositoryWithProtocol_andAttributes(protocol: cocoascript.NSString, attributes: cocoascript.NSDictionary):void;
+    setCompositionsFromRepositoryWithProtocol_andAttributes(protocol: string | cocoascript.NSString, attributes: cocoascript.NSDictionary):void;
     // doc://com.apple.documentation/documentation/quartz/qccompositionpickerview/1447327-compositions
     compositions():cocoascript.NSArray;
     // doc://com.apple.documentation/documentation/quartz/qccompositionpickerview/1447340-setallowsemptyselection
@@ -370,7 +370,7 @@ declare namespace cocoascript {
 
 declare const QCCompositionPickerView: cocoascript.QCCompositionPickerView;
 // doc://com.apple.documentation/documentation/quartz/qccompositionpickerviewdidselectcompositionnotification
-declare const QCCompositionPickerViewDidSelectCompositionNotification: cocoascript.NSString;
+declare const QCCompositionPickerViewDidSelectCompositionNotification: string | cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * The
@@ -387,7 +387,7 @@ declare namespace cocoascript {
     rotationAngle(): cocoascript.CGFloat;
     setRotationAngle(): void;
     // doc://com.apple.documentation/documentation/quartz/ikimageview/1503607-currenttoolmode
-    currentToolMode(): cocoascript.NSString;
+    currentToolMode(): string | cocoascript.NSString;
     setCurrentToolMode(): void;
     // doc://com.apple.documentation/documentation/quartz/ikimageview/1503709-autoresizes
     autoresizes(): cocoascript.BOOL;
@@ -451,9 +451,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/ikimageview/1503427-rotateimageright
     rotateImageRight(sender: cocoascript.IKImageView):void;
     // doc://com.apple.documentation/documentation/quartz/ikimageview/1504283-setoverlay
-    setOverlay_forType(layer: cocoascript.CALayer, layerType: cocoascript.NSString):void;
+    setOverlay_forType(layer: cocoascript.CALayer, layerType: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/quartz/ikimageview/1504236-overlayfortype
-    overlayForType(layerType: cocoascript.NSString):cocoascript.CALayer;
+    overlayForType(layerType: string | cocoascript.NSString):cocoascript.CALayer;
     // doc://com.apple.documentation/documentation/quartz/ikimageview/1503677-scrolltopoint
     scrollToPoint(point: cocoascript.NSPoint):void;
     // doc://com.apple.documentation/documentation/quartz/ikimageview/1504366-scrolltorect
@@ -519,7 +519,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/quartzfilter/1433684-applytocontext
     applyToContext(aContext: cocoascript.CGContextRef):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/quartz/quartzfilter/1433682-localizedname
-    localizedName():cocoascript.NSString;
+    localizedName():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/quartz/quartzfilter/1433686-properties
     properties():cocoascript.NSDictionary;
     // doc://com.apple.documentation/documentation/quartz/quartzfilter/1433679-removefromcontext
@@ -541,14 +541,14 @@ declare namespace cocoascript {
    */
   interface IKSaveOptions extends NSObject {
     // doc://com.apple.documentation/documentation/quartz/iksaveoptions/1503412-initwithimageproperties
-    initWithImageProperties_imageUTType(imageProperties: cocoascript.NSDictionary, imageUTType: cocoascript.NSString):cocoascript.IKSaveOptions;
+    initWithImageProperties_imageUTType(imageProperties: cocoascript.NSDictionary, imageUTType: string | cocoascript.NSString):cocoascript.IKSaveOptions;
     // doc://com.apple.documentation/documentation/quartz/iksaveoptions/1503458-addsaveoptionsaccessoryviewtosav
     addSaveOptionsAccessoryViewToSavePanel(savePanel: cocoascript.NSSavePanel):void;
     // doc://com.apple.documentation/documentation/quartz/iksaveoptions/1505299-imageproperties
     imageProperties(): cocoascript.NSDictionary;
     setImageProperties(): void;
     // doc://com.apple.documentation/documentation/quartz/iksaveoptions/1504388-imageuttype
-    imageUTType(): cocoascript.NSString;
+    imageUTType(): string | cocoascript.NSString;
     setImageUTType(): void;
     // doc://com.apple.documentation/documentation/quartz/iksaveoptions/1504791-userselection
     userSelection(): cocoascript.NSDictionary;
@@ -557,7 +557,7 @@ declare namespace cocoascript {
     delegate(): cocoascript.id;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1503501-saveoptions
-    saveOptions_shouldShowUTType(saveOptions: cocoascript.IKSaveOptions, utType: cocoascript.NSString):cocoascript.BOOL;
+    saveOptions_shouldShowUTType(saveOptions: cocoascript.IKSaveOptions, utType: string | cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/quartz/iksaveoptions/1504945-addsaveoptionstoview
     addSaveOptionsToView(view: cocoascript.NSView):void;
     //
@@ -577,7 +577,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/qccompositionrepository/1493222-sharedcompositionrepository
     sharedCompositionRepository():cocoascript.QCCompositionRepository;
     // doc://com.apple.documentation/documentation/quartz/qccompositionrepository/1493225-compositionwithidentifier
-    compositionWithIdentifier(identifier: cocoascript.NSString):cocoascript.QCComposition;
+    compositionWithIdentifier(identifier: string | cocoascript.NSString):cocoascript.QCComposition;
     // doc://com.apple.documentation/documentation/quartz/qccompositionrepository/1493216-compositionswithprotocols
     compositionsWithProtocols_andAttributes(protocols: cocoascript.NSArray, attributes: cocoascript.NSDictionary):cocoascript.NSArray;
     // doc://com.apple.documentation/documentation/quartz/qccompositionrepository/1493221-allcompositions
@@ -591,7 +591,7 @@ declare namespace cocoascript {
 
 declare const QCCompositionRepository: cocoascript.QCCompositionRepository;
 // doc://com.apple.documentation/documentation/quartz/qccompositionrepositorydidupdatenotification
-declare const QCCompositionRepositoryDidUpdateNotification: cocoascript.NSString;
+declare const QCCompositionRepositoryDidUpdateNotification: string | cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A
@@ -601,7 +601,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/qcrenderer/1504825-initwithcomposition
     initWithComposition_colorSpace(composition: cocoascript.QCComposition, colorSpace: cocoascript.CGColorSpaceRef):cocoascript.QCRenderer;
     // doc://com.apple.documentation/documentation/quartz/qcrenderer/1504247-initwithopenglcontext
-    initWithOpenGLContext_pixelFormat_file(context: cocoascript.NSOpenGLContext, format: cocoascript.NSOpenGLPixelFormat, path: cocoascript.NSString):cocoascript.QCRenderer;
+    initWithOpenGLContext_pixelFormat_file(context: cocoascript.NSOpenGLContext, format: cocoascript.NSOpenGLPixelFormat, path: string | cocoascript.NSString):cocoascript.QCRenderer;
     // doc://com.apple.documentation/documentation/quartz/qcrenderer/1504424-initwithcglcontext
     initWithCGLContext_pixelFormat_colorSpace_composition(context: any, format: any, colorSpace: cocoascript.CGColorSpaceRef, composition: cocoascript.QCComposition):cocoascript.QCRenderer;
     // doc://com.apple.documentation/documentation/quartz/qcrenderer/1504610-initoffscreenwithsize
@@ -613,7 +613,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/qcrenderer/1504422-snapshotimage
     snapshotImage():cocoascript.NSImage;
     // doc://com.apple.documentation/documentation/quartz/qcrenderer/1503473-createsnapshotimageoftype
-    createSnapshotImageOfType(type: cocoascript.NSString):cocoascript.QCRenderer;
+    createSnapshotImageOfType(type: string | cocoascript.NSString):cocoascript.QCRenderer;
     // doc://com.apple.documentation/documentation/quartz/qcrenderer/1504024-renderingtimefortime
     renderingTimeForTime_arguments(time: cocoascript.NSTimeInterval, arguments: cocoascript.NSDictionary):cocoascript.NSTimeInterval;
     //
@@ -633,7 +633,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/qcview/1436256-renderattime
     renderAtTime_arguments(time: cocoascript.NSTimeInterval, arguments: cocoascript.NSDictionary):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/quartz/qcview/1436241-loadcompositionfromfile
-    loadCompositionFromFile(path: cocoascript.NSString):cocoascript.BOOL;
+    loadCompositionFromFile(path: string | cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/quartz/qcview/1436246-loadcomposition
     loadComposition(composition: cocoascript.QCComposition):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/quartz/qcview/1436242-loadedcomposition
@@ -679,7 +679,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/qcview/1436235-snapshotimage
     snapshotImage():cocoascript.NSImage;
     // doc://com.apple.documentation/documentation/quartz/qcview/1436250-createsnapshotimageoftype
-    createSnapshotImageOfType(type: cocoascript.NSString):cocoascript.QCView;
+    createSnapshotImageOfType(type: string | cocoascript.NSString):cocoascript.QCView;
     // doc://com.apple.documentation/documentation/quartz/qcview/1436249-openglcontext
     openGLContext():cocoascript.NSOpenGLContext;
     // doc://com.apple.documentation/documentation/quartz/qcview/1436234-openglpixelformat
@@ -693,9 +693,9 @@ declare namespace cocoascript {
 
 declare const QCView: cocoascript.QCView;
 // doc://com.apple.documentation/documentation/quartz/qcviewdidstartrenderingnotification
-declare const QCViewDidStartRenderingNotification: cocoascript.NSString;
+declare const QCViewDidStartRenderingNotification: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/quartz/qcviewdidstoprenderingnotification
-declare const QCViewDidStopRenderingNotification: cocoascript.NSString;
+declare const QCViewDidStopRenderingNotification: string | cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * The
@@ -749,7 +749,7 @@ declare namespace cocoascript {
    */
   interface IKFilterBrowserPanel extends NSPanel {
     // doc://com.apple.documentation/documentation/quartz/ikfilterbrowserpanel/1504426-filtername
-    filterName():cocoascript.NSString;
+    filterName():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/quartz/ikfilterbrowserpanel/1503992-filterbrowserviewwithoptions
     filterBrowserViewWithOptions(inOptions: cocoascript.NSDictionary):cocoascript.IKFilterBrowserView;
     // doc://com.apple.documentation/documentation/quartz/ikfilterbrowserpanel/1504894-beginwithoptions
@@ -771,11 +771,11 @@ declare namespace cocoascript {
 
 declare const IKFilterBrowserPanel: cocoascript.IKFilterBrowserPanel;
 // doc://com.apple.documentation/documentation/quartz/ikfilterbrowserwillpreviewfilternotification
-declare const IKFilterBrowserWillPreviewFilterNotification: cocoascript.NSString;
+declare const IKFilterBrowserWillPreviewFilterNotification: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/quartz/ikfilterbrowserfilterselectednotification
-declare const IKFilterBrowserFilterSelectedNotification: cocoascript.NSString;
+declare const IKFilterBrowserFilterSelectedNotification: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/quartz/ikfilterbrowserfilterdoubleclicknotification
-declare const IKFilterBrowserFilterDoubleClickNotification: cocoascript.NSString;
+declare const IKFilterBrowserFilterDoubleClickNotification: string | cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * The
@@ -827,10 +827,10 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/ikcameradeviceview/1504326-downloadallitems
     downloadAllItems(sender: cocoascript.IKCameraDeviceView):void;
     // doc://com.apple.documentation/documentation/quartz/ikcameradeviceview/1503822-downloadselectedcontrollabel
-    downloadSelectedControlLabel(): cocoascript.NSString;
+    downloadSelectedControlLabel(): string | cocoascript.NSString;
     setDownloadSelectedControlLabel(): void;
     // doc://com.apple.documentation/documentation/quartz/ikcameradeviceview/1504281-downloadallcontrollabel
-    downloadAllControlLabel(): cocoascript.NSString;
+    downloadAllControlLabel(): string | cocoascript.NSString;
     setDownloadAllControlLabel(): void;
     // doc://com.apple.documentation/documentation/quartz/ikcameradeviceview/1505006-displaysdownloadsdirectorycontro
     displaysDownloadsDirectoryControl(): cocoascript.BOOL;
@@ -958,7 +958,7 @@ declare namespace cocoascript {
     transferMode(): cocoascript.IKScannerDeviceViewTransferMode;
     setTransferMode(): void;
     // doc://com.apple.documentation/documentation/quartz/ikscannerdeviceview/1503744-documentname
-    documentName(): cocoascript.NSString;
+    documentName(): string | cocoascript.NSString;
     setDocumentName(): void;
     // doc://com.apple.documentation/documentation/quartz/ikscannerdeviceview/1505053-displayspostprocessapplicationco
     displaysPostProcessApplicationControl(): cocoascript.BOOL;
@@ -970,10 +970,10 @@ declare namespace cocoascript {
     delegate(): cocoascript.IKScannerDeviceViewDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/quartz/ikscannerdeviceview/1504055-overviewcontrollabel
-    overviewControlLabel(): cocoascript.NSString;
+    overviewControlLabel(): string | cocoascript.NSString;
     setOverviewControlLabel(): void;
     // doc://com.apple.documentation/documentation/quartz/ikscannerdeviceview/1504143-scancontrollabel
-    scanControlLabel(): cocoascript.NSString;
+    scanControlLabel(): string | cocoascript.NSString;
     setScanControlLabel(): void;
     //
     alloc():cocoascript.IKScannerDeviceView;
@@ -992,7 +992,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/ikslideshow/1504883-sharedslideshow
     sharedSlideshow():cocoascript.IKSlideshow;
     // doc://com.apple.documentation/documentation/quartz/ikslideshow/1504036-runslideshowwithdatasource
-    runSlideshowWithDataSource_inMode_options(dataSource: cocoascript.IKSlideshowDataSource, slideshowMode: cocoascript.NSString, slideshowOptions: cocoascript.NSDictionary):void;
+    runSlideshowWithDataSource_inMode_options(dataSource: cocoascript.IKSlideshowDataSource, slideshowMode: string | cocoascript.NSString, slideshowOptions: cocoascript.NSDictionary):void;
     // doc://com.apple.documentation/documentation/quartz/ikslideshow/1503801-stopslideshow
     stopSlideshow(sender: cocoascript.IKSlideshow):void;
     // doc://com.apple.documentation/documentation/quartz/ikslideshow/1504967-autoplaydelay
@@ -1005,9 +1005,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/ikslideshow/1504713-reloadslideshowitematindex
     reloadSlideshowItemAtIndex(index: cocoascript.NSUInteger):void;
     // doc://com.apple.documentation/documentation/quartz/ikslideshow/1504783-canexporttoapplication
-    canExportToApplication(applicationBundleIdentifier: cocoascript.NSString):cocoascript.BOOL;
+    canExportToApplication(applicationBundleIdentifier: string | cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/quartz/ikslideshow/1503513-exportslideshowitem
-    exportSlideshowItem_toApplication(item: cocoascript.IKSlideshow, applicationBundleIdentifier: cocoascript.NSString):void;
+    exportSlideshowItem_toApplication(item: cocoascript.IKSlideshow, applicationBundleIdentifier: string | cocoascript.NSString):void;
     //
     alloc():cocoascript.IKSlideshow;
     //
@@ -1025,7 +1025,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/ikfilterbrowserview/1405296-setpreviewstate
     setPreviewState(inState: cocoascript.BOOL):void;
     // doc://com.apple.documentation/documentation/quartz/ikfilterbrowserview/1405294-filtername
-    filterName():cocoascript.NSString;
+    filterName():string | cocoascript.NSString;
     //
     alloc():cocoascript.IKFilterBrowserView;
     //
@@ -1086,7 +1086,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/ikimagebrowsercell/1500062-cellstate
     cellState():cocoascript.IKImageBrowserCellState;
     // doc://com.apple.documentation/documentation/quartz/ikimagebrowsercell/1500045-layerfortype
-    layerForType(type: cocoascript.NSString):cocoascript.CALayer;
+    layerForType(type: string | cocoascript.NSString):cocoascript.CALayer;
     // doc://com.apple.documentation/documentation/quartz/ikimagebrowsercell/1500049-imagebrowserview
     imageBrowserView():cocoascript.IKImageBrowserView;
     //
@@ -1200,9 +1200,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/ikslideshowdatasource/1503729-slideshowitematindex
     slideshowItemAtIndex(index: cocoascript.NSUInteger):cocoascript.IKSlideshowDataSource;
     // doc://com.apple.documentation/documentation/quartz/ikslideshowdatasource/1503638-nameofslideshowitematindex
-    nameOfSlideshowItemAtIndex(index: cocoascript.NSUInteger):cocoascript.NSString;
+    nameOfSlideshowItemAtIndex(index: cocoascript.NSUInteger):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/quartz/ikslideshowdatasource/1505226-canexportslideshowitematindex
-    canExportSlideshowItemAtIndex_toApplication(index: cocoascript.NSUInteger, applicationBundleIdentifier: cocoascript.NSString):cocoascript.BOOL;
+    canExportSlideshowItemAtIndex_toApplication(index: cocoascript.NSUInteger, applicationBundleIdentifier: string | cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/quartz/ikslideshowdatasource/1504337-slideshowwillstart
     slideshowWillStart():void;
     // doc://com.apple.documentation/documentation/quartz/ikslideshowdatasource/1504870-slideshowdidstop
@@ -1222,13 +1222,13 @@ declare namespace cocoascript {
    */
   interface QCCompositionRenderer {
     // doc://com.apple.documentation/documentation/quartz/qccompositionrenderer/1503737-setvalue
-    setValue_forInputKey(value: cocoascript.QCCompositionRenderer, key: cocoascript.NSString):cocoascript.BOOL;
+    setValue_forInputKey(value: cocoascript.QCCompositionRenderer, key: string | cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/quartz/qccompositionrenderer/1505206-valueforinputkey
-    valueForInputKey(key: cocoascript.NSString):cocoascript.QCCompositionRenderer;
+    valueForInputKey(key: string | cocoascript.NSString):cocoascript.QCCompositionRenderer;
     // doc://com.apple.documentation/documentation/quartz/qccompositionrenderer/1504448-valueforoutputkey
-    valueForOutputKey(key: cocoascript.NSString):cocoascript.QCCompositionRenderer;
+    valueForOutputKey(key: string | cocoascript.NSString):cocoascript.QCCompositionRenderer;
     // doc://com.apple.documentation/documentation/quartz/qccompositionrenderer/1504745-valueforoutputkey
-    valueForOutputKey_ofType(key: cocoascript.NSString, type: cocoascript.NSString):cocoascript.QCCompositionRenderer;
+    valueForOutputKey_ofType(key: string | cocoascript.NSString, type: string | cocoascript.NSString):cocoascript.QCCompositionRenderer;
     // doc://com.apple.documentation/documentation/quartz/qccompositionrenderer/1503626-inputkeys
     inputKeys():cocoascript.NSArray;
     // doc://com.apple.documentation/documentation/quartz/qccompositionrenderer/1503732-outputkeys
@@ -1262,7 +1262,7 @@ declare namespace cocoascript {
 
 declare const QCCompositionPickerPanel: cocoascript.QCCompositionPickerPanel;
 // doc://com.apple.documentation/documentation/quartz/qccompositionpickerpaneldidselectcompositionnotification
-declare const QCCompositionPickerPanelDidSelectCompositionNotification: cocoascript.NSString;
+declare const QCCompositionPickerPanelDidSelectCompositionNotification: string | cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * doc://com.apple.documentation/documentation/quartz/qcpatchcontroller
@@ -1299,31 +1299,31 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/qcplugin/1488869-attributes
     attributes():cocoascript.NSDictionary;
     // doc://com.apple.documentation/documentation/quartz/qcplugin/1488766-attributesforpropertyportwithkey
-    attributesForPropertyPortWithKey(key: cocoascript.NSString):cocoascript.NSDictionary;
+    attributesForPropertyPortWithKey(key: string | cocoascript.NSString):cocoascript.NSDictionary;
     // doc://com.apple.documentation/documentation/quartz/qcplugin/1504984-createviewcontroller
     createViewController():cocoascript.QCPlugInViewController;
     // doc://com.apple.documentation/documentation/quartz/qcplugin/1488790-pluginkeys
     plugInKeys():cocoascript.NSArray;
     // doc://com.apple.documentation/documentation/quartz/qcplugin/1488752-serializedvalueforkey
-    serializedValueForKey(key: cocoascript.NSString):cocoascript.QCPlugIn;
+    serializedValueForKey(key: string | cocoascript.NSString):cocoascript.QCPlugIn;
     // doc://com.apple.documentation/documentation/quartz/qcplugin/1488851-setserializedvalue
-    setSerializedValue_forKey(serializedValue: cocoascript.QCPlugIn, key: cocoascript.NSString):void;
+    setSerializedValue_forKey(serializedValue: cocoascript.QCPlugIn, key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/quartz/qcplugin/1488858-addinputportwithtype
-    addInputPortWithType_forKey_withAttributes(type: cocoascript.NSString, key: cocoascript.NSString, attributes: cocoascript.NSDictionary):void;
+    addInputPortWithType_forKey_withAttributes(type: string | cocoascript.NSString, key: string | cocoascript.NSString, attributes: cocoascript.NSDictionary):void;
     // doc://com.apple.documentation/documentation/quartz/qcplugin/1488707-removeinputportforkey
-    removeInputPortForKey(key: cocoascript.NSString):void;
+    removeInputPortForKey(key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/quartz/qcplugin/1488760-addoutputportwithtype
-    addOutputPortWithType_forKey_withAttributes(type: cocoascript.NSString, key: cocoascript.NSString, attributes: cocoascript.NSDictionary):void;
+    addOutputPortWithType_forKey_withAttributes(type: string | cocoascript.NSString, key: string | cocoascript.NSString, attributes: cocoascript.NSDictionary):void;
     // doc://com.apple.documentation/documentation/quartz/qcplugin/1488800-removeoutputportforkey
-    removeOutputPortForKey(key: cocoascript.NSString):void;
+    removeOutputPortForKey(key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/quartz/qcplugin/1488811-didvalueforinputkeychange
-    didValueForInputKeyChange(key: cocoascript.NSString):cocoascript.BOOL;
+    didValueForInputKeyChange(key: string | cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/quartz/qcplugin/1488802-valueforinputkey
-    valueForInputKey(key: cocoascript.NSString):cocoascript.QCPlugIn;
+    valueForInputKey(key: string | cocoascript.NSString):cocoascript.QCPlugIn;
     // doc://com.apple.documentation/documentation/quartz/qcplugin/1488788-setvalue
-    setValue_forOutputKey(value: cocoascript.QCPlugIn, key: cocoascript.NSString):cocoascript.BOOL;
+    setValue_forOutputKey(value: cocoascript.QCPlugIn, key: string | cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/quartz/qcplugin/1488840-loadpluginatpath
-    loadPlugInAtPath(path: cocoascript.NSString):cocoascript.BOOL;
+    loadPlugInAtPath(path: string | cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/quartz/qcplugin/1488853-registerpluginclass
     registerPlugInClass(aClass: cocoascript.Class):void;
     // doc://com.apple.documentation/documentation/quartz/qcplugin/1488742-sortedpropertyportkeys
@@ -1345,7 +1345,7 @@ declare namespace cocoascript {
    */
   interface QCPlugInViewController extends NSViewController {
     // doc://com.apple.documentation/documentation/quartz/qcpluginviewcontroller/1504077-initwithplugin
-    initWithPlugIn_viewNibName(plugIn: cocoascript.QCPlugIn, name: cocoascript.NSString):cocoascript.QCPlugInViewController;
+    initWithPlugIn_viewNibName(plugIn: cocoascript.QCPlugIn, name: string | cocoascript.NSString):cocoascript.QCPlugInViewController;
     // doc://com.apple.documentation/documentation/quartz/qcpluginviewcontroller/1504411-plugin
     plugIn():cocoascript.QCPlugIn;
     //
@@ -1365,7 +1365,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/qcplugincontext/1488849-cglcontextobj
     CGLContextObj():any;
     // doc://com.apple.documentation/documentation/quartz/qcplugincontext/1488711-logmessage
-    logMessage(format: cocoascript.NSString):void;
+    logMessage(format: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/quartz/qcplugincontext/1488731-userinfo
     userInfo():cocoascript.NSMutableDictionary;
     // doc://com.apple.documentation/documentation/quartz/qcplugincontext/1488700-bounds
@@ -1373,9 +1373,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/qcplugincontext/1488846-colorspace
     colorSpace():cocoascript.CGColorSpaceRef;
     // doc://com.apple.documentation/documentation/quartz/qcplugincontext/1488754-outputimageproviderfrombufferwit
-    outputImageProviderFromBufferWithPixelFormat_pixelsWide_pixelsHigh_baseAddress_bytesPerRow_releaseCallback_releaseContext_colorSpace_shouldColorMatch(format: cocoascript.NSString, width: cocoascript.NSUInteger, height: cocoascript.NSUInteger, baseAddress: void, rowBytes: cocoascript.NSUInteger, callback: cocoascript.QCPlugInBufferReleaseCallback, context: void, colorSpace: cocoascript.CGColorSpaceRef, colorMatch: cocoascript.BOOL):cocoascript.QCPlugInContext;
+    outputImageProviderFromBufferWithPixelFormat_pixelsWide_pixelsHigh_baseAddress_bytesPerRow_releaseCallback_releaseContext_colorSpace_shouldColorMatch(format: string | cocoascript.NSString, width: cocoascript.NSUInteger, height: cocoascript.NSUInteger, baseAddress: void, rowBytes: cocoascript.NSUInteger, callback: cocoascript.QCPlugInBufferReleaseCallback, context: void, colorSpace: cocoascript.CGColorSpaceRef, colorMatch: cocoascript.BOOL):cocoascript.QCPlugInContext;
     // doc://com.apple.documentation/documentation/quartz/qcplugincontext/1488756-outputimageproviderfromtexturewi
-    outputImageProviderFromTextureWithPixelFormat_pixelsWide_pixelsHigh_name_flipped_releaseCallback_releaseContext_colorSpace_shouldColorMatch(format: cocoascript.NSString, width: cocoascript.NSUInteger, height: cocoascript.NSUInteger, name: any, flipped: cocoascript.BOOL, callback: cocoascript.QCPlugInTextureReleaseCallback, context: void, colorSpace: cocoascript.CGColorSpaceRef, colorMatch: cocoascript.BOOL):cocoascript.QCPlugInContext;
+    outputImageProviderFromTextureWithPixelFormat_pixelsWide_pixelsHigh_name_flipped_releaseCallback_releaseContext_colorSpace_shouldColorMatch(format: string | cocoascript.NSString, width: cocoascript.NSUInteger, height: cocoascript.NSUInteger, name: any, flipped: cocoascript.BOOL, callback: cocoascript.QCPlugInTextureReleaseCallback, context: void, colorSpace: cocoascript.CGColorSpaceRef, colorMatch: cocoascript.BOOL):cocoascript.QCPlugInContext;
     // doc://com.apple.documentation/documentation/quartz/qcplugincontext/1488750-compositionurl
     compositionURL():cocoascript.NSURL;
   }
@@ -1391,7 +1391,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488856-unlocktexturerepresentation
     unlockTextureRepresentation():void;
     // doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488746-lockbufferrepresentationwithpixe
-    lockBufferRepresentationWithPixelFormat_colorSpace_forBounds(format: cocoascript.NSString, colorSpace: cocoascript.CGColorSpaceRef, bounds: cocoascript.NSRect):cocoascript.BOOL;
+    lockBufferRepresentationWithPixelFormat_colorSpace_forBounds(format: string | cocoascript.NSString, colorSpace: cocoascript.CGColorSpaceRef, bounds: cocoascript.NSRect):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488704-bindtexturerepresentationtocglco
     bindTextureRepresentationToCGLContext_textureUnit_normalizeCoordinates(cgl_ctx: any, unit: any, flag: cocoascript.BOOL):void;
     // doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488702-unbindtexturerepresentationfromc
@@ -1423,7 +1423,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488860-bufferpixelshigh
     bufferPixelsHigh():cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488758-bufferpixelformat
-    bufferPixelFormat():cocoascript.NSString;
+    bufferPixelFormat():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488698-buffercolorspace
     bufferColorSpace():cocoascript.CGColorSpaceRef;
     // doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488774-bufferbaseaddress
@@ -1439,9 +1439,9 @@ declare namespace cocoascript {
    */
   interface QCPlugInOutputImageProvider {
     // doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488841-rendertobuffer
-    renderToBuffer_withBytesPerRow_pixelFormat_forBounds(baseAddress: void, rowBytes: cocoascript.NSUInteger, format: cocoascript.NSString, bounds: cocoascript.NSRect):cocoascript.BOOL;
+    renderToBuffer_withBytesPerRow_pixelFormat_forBounds(baseAddress: void, rowBytes: cocoascript.NSUInteger, format: string | cocoascript.NSString, bounds: cocoascript.NSRect):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488717-copyrenderedtextureforcglcontext
-    copyRenderedTextureForCGLContext_pixelFormat_bounds_isFlipped(cgl_ctx: any, format: cocoascript.NSString, bounds: cocoascript.NSRect, flipped: cocoascript.BOOL):any;
+    copyRenderedTextureForCGLContext_pixelFormat_bounds_isFlipped(cgl_ctx: any, format: string | cocoascript.NSString, bounds: cocoascript.NSRect, flipped: cocoascript.BOOL):any;
     // doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488815-renderwithcglcontext
     renderWithCGLContext_forBounds(cgl_ctx: any, bounds: cocoascript.NSRect):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488829-releaserenderedtexture

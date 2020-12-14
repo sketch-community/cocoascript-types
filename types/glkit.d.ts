@@ -190,9 +190,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1489085-initwithsharecontext
     initWithShareContext(context: cocoascript.NSOpenGLContext):cocoascript.GLKTextureLoader;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488932-texturewithcontentsoffile
-    textureWithContentsOfFile_options_error(path: cocoascript.NSString, options: cocoascript.NSNumber, outError: cocoascript.NSError):cocoascript.GLKTextureInfo;
+    textureWithContentsOfFile_options_error(path: string | cocoascript.NSString, options: cocoascript.NSNumber, outError: cocoascript.NSError):cocoascript.GLKTextureInfo;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1489064-texturewithcontentsoffile
-    textureWithContentsOfFile_options_queue_completionHandler(path: cocoascript.NSString, options: cocoascript.NSNumber, queue: cocoascript.dispatch_queue_t, block: cocoascript.GLKTextureLoaderCallback):void;
+    textureWithContentsOfFile_options_queue_completionHandler(path: string | cocoascript.NSString, options: cocoascript.NSNumber, queue: cocoascript.dispatch_queue_t, block: cocoascript.GLKTextureLoaderCallback):void;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1489025-texturewithcontentsofurl
     textureWithContentsOfURL_options_error(url: cocoascript.NSURL, options: cocoascript.NSNumber, outError: cocoascript.NSError):cocoascript.GLKTextureInfo;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488621-texturewithcontentsofurl
@@ -206,9 +206,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488861-texturewithcgimage
     textureWithCGImage_options_queue_completionHandler(cgImage: cocoascript.CGImageRef, options: cocoascript.NSNumber, queue: cocoascript.dispatch_queue_t, block: cocoascript.GLKTextureLoaderCallback):void;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488848-cubemapwithcontentsoffile
-    cubeMapWithContentsOfFile_options_error(path: cocoascript.NSString, options: cocoascript.NSNumber, outError: cocoascript.NSError):cocoascript.GLKTextureInfo;
+    cubeMapWithContentsOfFile_options_error(path: string | cocoascript.NSString, options: cocoascript.NSNumber, outError: cocoascript.NSError):cocoascript.GLKTextureInfo;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488617-cubemapwithcontentsoffile
-    cubeMapWithContentsOfFile_options_queue_completionHandler(path: cocoascript.NSString, options: cocoascript.NSNumber, queue: cocoascript.dispatch_queue_t, block: cocoascript.GLKTextureLoaderCallback):void;
+    cubeMapWithContentsOfFile_options_queue_completionHandler(path: string | cocoascript.NSString, options: cocoascript.NSNumber, queue: cocoascript.dispatch_queue_t, block: cocoascript.GLKTextureLoaderCallback):void;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488810-cubemapwithcontentsoffiles
     cubeMapWithContentsOfFiles_options_error(paths: cocoascript.GLKTextureLoader, options: cocoascript.NSNumber, outError: cocoascript.NSError):cocoascript.GLKTextureInfo;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488854-cubemapwithcontentsoffiles
@@ -218,9 +218,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1488926-cubemapwithcontentsofurl
     cubeMapWithContentsOfURL_options_queue_completionHandler(url: cocoascript.NSURL, options: cocoascript.NSNumber, queue: cocoascript.dispatch_queue_t, block: cocoascript.GLKTextureLoaderCallback):void;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1639591-texturewithname
-    textureWithName_scaleFactor_bundle_options_queue_completionHandler(name: cocoascript.NSString, scaleFactor: cocoascript.CGFloat, bundle: cocoascript.NSBundle, options: cocoascript.NSNumber, queue: cocoascript.dispatch_queue_t, block: cocoascript.GLKTextureLoaderCallback):void;
+    textureWithName_scaleFactor_bundle_options_queue_completionHandler(name: string | cocoascript.NSString, scaleFactor: cocoascript.CGFloat, bundle: cocoascript.NSBundle, options: cocoascript.NSNumber, queue: cocoascript.dispatch_queue_t, block: cocoascript.GLKTextureLoaderCallback):void;
     // doc://com.apple.documentation/documentation/glkit/glktextureloader/1639590-texturewithname
-    textureWithName_scaleFactor_bundle_options_error(name: cocoascript.NSString, scaleFactor: cocoascript.CGFloat, bundle: cocoascript.NSBundle, options: cocoascript.NSNumber, outError: cocoascript.NSError):cocoascript.GLKTextureInfo;
+    textureWithName_scaleFactor_bundle_options_error(name: string | cocoascript.NSString, scaleFactor: cocoascript.CGFloat, bundle: cocoascript.NSBundle, options: cocoascript.NSNumber, outError: cocoascript.NSError):cocoascript.GLKTextureInfo;
     //
     alloc():cocoascript.GLKTextureLoader;
     //
@@ -244,7 +244,7 @@ declare namespace cocoascript {
    */
   interface GLKBaseEffect extends NSObject {
     // doc://com.apple.documentation/documentation/glkit/glkbaseeffect/1488835-label
-    label(): cocoascript.NSString;
+    label(): string | cocoascript.NSString;
     setLabel(): void;
     // doc://com.apple.documentation/documentation/glkit/glkbaseeffect/1489030-transform
     transform(): cocoascript.GLKEffectPropertyTransform;
@@ -330,7 +330,7 @@ declare namespace cocoascript {
    */
   interface GLKSkyboxEffect extends NSObject {
     // doc://com.apple.documentation/documentation/glkit/glkskyboxeffect/1489038-label
-    label(): cocoascript.NSString;
+    label(): string | cocoascript.NSString;
     setLabel(): void;
     // doc://com.apple.documentation/documentation/glkit/glkskyboxeffect/1488887-preparetodraw
     prepareToDraw():void;
@@ -370,7 +370,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/glkit/glkmesh/1488759-initwithmesh
     initWithMesh_error(mesh: cocoascript.MDLMesh, error: cocoascript.NSError):cocoascript.GLKMesh;
     // doc://com.apple.documentation/documentation/glkit/glkmesh/1489104-name
-    name(): cocoascript.NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/glkit/glkmesh/1489060-submeshes
     submeshes(): cocoascript.GLKSubmesh;
@@ -456,7 +456,7 @@ declare namespace cocoascript {
     mode(): any;
     setMode(): void;
     // doc://com.apple.documentation/documentation/glkit/glksubmesh/1488724-name
-    name(): cocoascript.NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/glkit/glksubmesh/1489072-type
     type(): any;

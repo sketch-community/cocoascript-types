@@ -114,9 +114,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/corenfc/nfcreadersession/2874107-invalidatesession
     invalidateSession():void;
     // doc://com.apple.documentation/documentation/corenfc/nfcreadersession/3229946-invalidatesessionwitherrormessag
-    invalidateSessionWithErrorMessage(errorMessage: cocoascript.NSString):void;
+    invalidateSessionWithErrorMessage(errorMessage: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/corenfc/nfcreadersession/2919987-alertmessage
-    alertMessage(): cocoascript.NSString;
+    alertMessage(): string | cocoascript.NSString;
     setAlertMessage(): void;
   }
 }
@@ -183,12 +183,12 @@ declare namespace cocoascript {
    */
   interface NFCVASCommandConfiguration extends NSObject {
     // doc://com.apple.documentation/documentation/corenfc/nfcvascommandconfiguration/3043860-initwithvasmode
-    initWithVASMode_passTypeIdentifier_url(mode: cocoascript.NFCVASMode, passTypeIdentifier: cocoascript.NSString, url: cocoascript.NSURL):cocoascript.NFCVASCommandConfiguration;
+    initWithVASMode_passTypeIdentifier_url(mode: cocoascript.NFCVASMode, passTypeIdentifier: string | cocoascript.NSString, url: cocoascript.NSURL):cocoascript.NFCVASCommandConfiguration;
     // doc://com.apple.documentation/documentation/corenfc/nfcvascommandconfiguration/3043861-mode
     mode(): cocoascript.NFCVASMode;
     setMode(): void;
     // doc://com.apple.documentation/documentation/corenfc/nfcvascommandconfiguration/3043862-passtypeidentifier
-    passTypeIdentifier(): cocoascript.NSString;
+    passTypeIdentifier(): string | cocoascript.NSString;
     setPassTypeIdentifier(): void;
     // doc://com.apple.documentation/documentation/corenfc/nfcvascommandconfiguration/3043863-url
     url(): cocoascript.NSURL;
@@ -233,15 +233,15 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/corenfc/nfcndefpayload/3153119-wellknowntypeuripayloadwithurl
     wellKnownTypeURIPayloadWithURL(url: cocoascript.NSURL):cocoascript.NFCNDEFPayload;
     // doc://com.apple.documentation/documentation/corenfc/nfcndefpayload/3153118-wellknowntypeuripayloadwithstrin
-    wellKnownTypeURIPayloadWithString(uri: cocoascript.NSString):cocoascript.NFCNDEFPayload;
+    wellKnownTypeURIPayloadWithString(uri: string | cocoascript.NSString):cocoascript.NFCNDEFPayload;
     // doc://com.apple.documentation/documentation/corenfc/nfcndefpayload/3355755-wellknowntypetextpayloadwithstri
-    wellKnownTypeTextPayloadWithString_locale(text: cocoascript.NSString, locale: cocoascript.NSLocale):cocoascript.NFCNDEFPayload;
+    wellKnownTypeTextPayloadWithString_locale(text: string | cocoascript.NSString, locale: cocoascript.NSLocale):cocoascript.NFCNDEFPayload;
     // doc://com.apple.documentation/documentation/corenfc/nfcndefpayload/3043842-initwithformat
     initWithFormat_type_identifier_payload(format: cocoascript.NFCTypeNameFormat, type: cocoascript.NSData, identifier: cocoascript.NSData, payload: cocoascript.NSData):cocoascript.NFCNDEFPayload;
     // doc://com.apple.documentation/documentation/corenfc/nfcndefpayload/3043843-initwithformat
     initWithFormat_type_identifier_payload_chunkSize(format: cocoascript.NFCTypeNameFormat, type: cocoascript.NSData, identifier: cocoascript.NSData, payload: cocoascript.NSData, chunkSize: any):cocoascript.NFCNDEFPayload;
     // doc://com.apple.documentation/documentation/corenfc/nfcndefpayload/3153115-wellknowtypetextpayloadwithstrin
-    wellKnowTypeTextPayloadWithString_locale(text: cocoascript.NSString, locale: cocoascript.NSLocale):cocoascript.NFCNDEFPayload;
+    wellKnowTypeTextPayloadWithString_locale(text: string | cocoascript.NSString, locale: cocoascript.NSLocale):cocoascript.NFCNDEFPayload;
     // doc://com.apple.documentation/documentation/corenfc/nfcndefpayload/2875573-identifier
     identifier(): cocoascript.NSData;
     setIdentifier(): void;
@@ -257,7 +257,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/corenfc/nfcndefpayload/3153117-wellknowntypeuripayload
     wellKnownTypeURIPayload():cocoascript.NSURL;
     // doc://com.apple.documentation/documentation/corenfc/nfcndefpayload/3153116-wellknowntypetextpayloadwithloca
-    wellKnownTypeTextPayloadWithLocale(locale: cocoascript.NSLocale):cocoascript.NSString;
+    wellKnownTypeTextPayloadWithLocale(locale: cocoascript.NSLocale):string | cocoascript.NSString;
     //
     alloc():cocoascript.NFCNDEFPayload;
     //
@@ -383,7 +383,7 @@ declare namespace cocoascript {
    */
   interface NFCISO7816Tag extends NFCNDEFTag {
     // doc://com.apple.documentation/documentation/corenfc/nfciso7816tag/3043834-initialselectedaid
-    initialSelectedAID(): cocoascript.NSString;
+    initialSelectedAID(): string | cocoascript.NSString;
     setInitialSelectedAID(): void;
     // doc://com.apple.documentation/documentation/corenfc/nfciso7816tag/3183035-identifier
     identifier(): cocoascript.NSData;
@@ -513,7 +513,7 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/corenfc/nfciso15693tagresponseerrorkey
-declare const NFCISO15693TagResponseErrorKey: cocoascript.NSString;
+declare const NFCISO15693TagResponseErrorKey: string | cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An interface for interacting with a MIFARE® tag.

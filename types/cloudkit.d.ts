@@ -102,7 +102,7 @@ declare namespace cocoascript {
     share(): cocoascript.CKShare;
     setShare(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640400-containeridentifier
-    containerIdentifier(): cocoascript.NSString;
+    containerIdentifier(): string | cocoascript.NSString;
     setContainerIdentifier(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cksharemetadata/1640498-owneridentity
     ownerIdentity(): cocoascript.CKUserIdentity;
@@ -217,10 +217,10 @@ declare namespace cocoascript {
     lastModifiedUserRecordID(): cocoascript.CKRecordID;
     setLastModifiedUserRecordID(): void;
     // doc://com.apple.documentation/documentation/cloudkit/ckrecord/1462195-recordchangetag
-    recordChangeTag(): cocoascript.NSString;
+    recordChangeTag(): string | cocoascript.NSString;
     setRecordChangeTag(): void;
     // doc://com.apple.documentation/documentation/cloudkit/ckrecord/1462199-alltokens
-    allTokens():cocoascript.NSString;
+    allTokens():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/cloudkit/ckrecord/1462200-encodesystemfieldswithcoder
     encodeSystemFieldsWithCoder(coder: cocoascript.NSCoder):void;
     // doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640527-parent
@@ -248,11 +248,11 @@ declare namespace cocoascript {
    */
   interface CKRecordID extends NSObject {
     // doc://com.apple.documentation/documentation/cloudkit/ckrecordid/1500975-initwithrecordname
-    initWithRecordName(recordName: cocoascript.NSString):cocoascript.CKRecordID;
+    initWithRecordName(recordName: string | cocoascript.NSString):cocoascript.CKRecordID;
     // doc://com.apple.documentation/documentation/cloudkit/ckrecordid/1500967-initwithrecordname
-    initWithRecordName_zoneID(recordName: cocoascript.NSString, zoneID: cocoascript.CKRecordZoneID):cocoascript.CKRecordID;
+    initWithRecordName_zoneID(recordName: string | cocoascript.NSString, zoneID: cocoascript.CKRecordZoneID):cocoascript.CKRecordID;
     // doc://com.apple.documentation/documentation/cloudkit/ckrecordid/1500973-recordname
-    recordName(): cocoascript.NSString;
+    recordName(): string | cocoascript.NSString;
     setRecordName(): void;
     // doc://com.apple.documentation/documentation/cloudkit/ckrecordid/1500969-zoneid
     zoneID(): cocoascript.CKRecordZoneID;
@@ -272,12 +272,12 @@ declare namespace cocoascript {
    */
   interface CKRecordZoneID extends NSObject {
     // doc://com.apple.documentation/documentation/cloudkit/ckrecordzoneid/1508089-initwithzonename
-    initWithZoneName_ownerName(zoneName: cocoascript.NSString, ownerName: cocoascript.NSString):cocoascript.CKRecordZoneID;
+    initWithZoneName_ownerName(zoneName: string | cocoascript.NSString, ownerName: string | cocoascript.NSString):cocoascript.CKRecordZoneID;
     // doc://com.apple.documentation/documentation/cloudkit/ckrecordzoneid/1508094-zonename
-    zoneName(): cocoascript.NSString;
+    zoneName(): string | cocoascript.NSString;
     setZoneName(): void;
     // doc://com.apple.documentation/documentation/cloudkit/ckrecordzoneid/1508096-ownername
-    ownerName(): cocoascript.NSString;
+    ownerName(): string | cocoascript.NSString;
     setOwnerName(): void;
     //
     alloc():cocoascript.CKRecordZoneID;
@@ -331,31 +331,31 @@ declare namespace cocoascript {
    */
   interface CKNotificationInfo extends NSObject {
     // doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/1515082-category
-    category(): cocoascript.NSString;
+    category(): string | cocoascript.NSString;
     setCategory(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/2887430-collapseidkey
-    collapseIDKey(): cocoascript.NSString;
+    collapseIDKey(): string | cocoascript.NSString;
     setCollapseIDKey(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/1514996-shouldbadge
     shouldBadge(): cocoascript.BOOL;
     setShouldBadge(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/1515270-alertbody
-    alertBody(): cocoascript.NSString;
+    alertBody(): string | cocoascript.NSString;
     setAlertBody(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/1514968-alertlocalizationkey
-    alertLocalizationKey(): cocoascript.NSString;
+    alertLocalizationKey(): string | cocoascript.NSString;
     setAlertLocalizationKey(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/1515182-alertlocalizationargs
     alertLocalizationArgs(): cocoascript.CKRecordFieldKey;
     setAlertLocalizationArgs(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/1514945-alertactionlocalizationkey
-    alertActionLocalizationKey(): cocoascript.NSString;
+    alertActionLocalizationKey(): string | cocoascript.NSString;
     setAlertActionLocalizationKey(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/1515075-alertlaunchimage
-    alertLaunchImage(): cocoascript.NSString;
+    alertLaunchImage(): string | cocoascript.NSString;
     setAlertLaunchImage(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/1514987-soundname
-    soundName(): cocoascript.NSString;
+    soundName(): string | cocoascript.NSString;
     setSoundName(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/1515110-shouldsendcontentavailable
     shouldSendContentAvailable(): cocoascript.BOOL;
@@ -367,19 +367,19 @@ declare namespace cocoascript {
     desiredKeys(): cocoascript.CKRecordFieldKey;
     setDesiredKeys(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/2869870-title
-    title(): cocoascript.NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/2869865-titlelocalizationkey
-    titleLocalizationKey(): cocoascript.NSString;
+    titleLocalizationKey(): string | cocoascript.NSString;
     setTitleLocalizationKey(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/2869866-titlelocalizationargs
     titleLocalizationArgs(): cocoascript.CKRecordFieldKey;
     setTitleLocalizationArgs(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/2869863-subtitle
-    subtitle(): cocoascript.NSString;
+    subtitle(): string | cocoascript.NSString;
     setSubtitle(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/2869864-subtitlelocalizationkey
-    subtitleLocalizationKey(): cocoascript.NSString;
+    subtitleLocalizationKey(): string | cocoascript.NSString;
     setSubtitleLocalizationKey(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotificationinfo/2869869-subtitlelocalizationargs
     subtitleLocalizationArgs(): cocoascript.CKRecordFieldKey;
@@ -399,7 +399,7 @@ declare namespace cocoascript {
    */
   interface CKRecordZone extends NSObject {
     // doc://com.apple.documentation/documentation/cloudkit/ckrecordzone/1515102-initwithzonename
-    initWithZoneName(zoneName: cocoascript.NSString):cocoascript.CKRecordZone;
+    initWithZoneName(zoneName: string | cocoascript.NSString):cocoascript.CKRecordZone;
     // doc://com.apple.documentation/documentation/cloudkit/ckrecordzone/1515207-initwithzoneid
     initWithZoneID(zoneID: cocoascript.CKRecordZoneID):cocoascript.CKRecordZone;
     // doc://com.apple.documentation/documentation/cloudkit/ckrecordzone/1514919-defaultrecordzone
@@ -419,7 +419,7 @@ declare namespace cocoascript {
 
 declare const CKRecordZone: cocoascript.CKRecordZone;
 // doc://com.apple.documentation/documentation/cloudkit/ckrecordzonedefaultname
-declare const CKRecordZoneDefaultName: cocoascript.NSString;
+declare const CKRecordZoneDefaultName: string | cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object that identifies a specific version of a record.
@@ -474,7 +474,7 @@ declare namespace cocoascript {
     userRecordID(): cocoascript.CKRecordID;
     setUserRecordID(): void;
     // doc://com.apple.documentation/documentation/cloudkit/ckuseridentity/2866227-contactidentifiers
-    contactIdentifiers(): cocoascript.NSString;
+    contactIdentifiers(): string | cocoascript.NSString;
     setContactIdentifiers(): void;
     // doc://com.apple.documentation/documentation/cloudkit/ckuseridentity/1640458-namecomponents
     nameComponents(): cocoascript.NSPersonNameComponents;
@@ -494,22 +494,22 @@ declare namespace cocoascript {
    */
   interface CKUserIdentityLookupInfo extends NSObject {
     // doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640484-initwithemailaddress
-    initWithEmailAddress(emailAddress: cocoascript.NSString):cocoascript.CKUserIdentityLookupInfo;
+    initWithEmailAddress(emailAddress: string | cocoascript.NSString):cocoascript.CKUserIdentityLookupInfo;
     // doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640402-initwithphonenumber
-    initWithPhoneNumber(phoneNumber: cocoascript.NSString):cocoascript.CKUserIdentityLookupInfo;
+    initWithPhoneNumber(phoneNumber: string | cocoascript.NSString):cocoascript.CKUserIdentityLookupInfo;
     // doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640419-initwithuserrecordid
     initWithUserRecordID(userRecordID: cocoascript.CKRecordID):cocoascript.CKUserIdentityLookupInfo;
     // doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640439-lookupinfoswithemails
-    lookupInfosWithEmails(emails: cocoascript.NSString):cocoascript.CKUserIdentityLookupInfo;
+    lookupInfosWithEmails(emails: string | cocoascript.NSString):cocoascript.CKUserIdentityLookupInfo;
     // doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640429-lookupinfoswithphonenumbers
-    lookupInfosWithPhoneNumbers(phoneNumbers: cocoascript.NSString):cocoascript.CKUserIdentityLookupInfo;
+    lookupInfosWithPhoneNumbers(phoneNumbers: string | cocoascript.NSString):cocoascript.CKUserIdentityLookupInfo;
     // doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640407-lookupinfoswithrecordids
     lookupInfosWithRecordIDs(recordIDs: cocoascript.CKRecordID):cocoascript.CKUserIdentityLookupInfo;
     // doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640462-emailaddress
-    emailAddress(): cocoascript.NSString;
+    emailAddress(): string | cocoascript.NSString;
     setEmailAddress(): void;
     // doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640482-phonenumber
-    phoneNumber(): cocoascript.NSString;
+    phoneNumber(): string | cocoascript.NSString;
     setPhoneNumber(): void;
     // doc://com.apple.documentation/documentation/cloudkit/ckuseridentitylookupinfo/1640405-userrecordid
     userRecordID(): cocoascript.CKRecordID;
@@ -684,7 +684,7 @@ declare namespace cocoascript {
    */
   interface CKLocationSortDescriptor extends NSSortDescriptor {
     // doc://com.apple.documentation/documentation/cloudkit/cklocationsortdescriptor/1515071-initwithkey
-    initWithKey_relativeLocation(key: cocoascript.NSString, relativeLocation: cocoascript.CLLocation):cocoascript.CKLocationSortDescriptor;
+    initWithKey_relativeLocation(key: string | cocoascript.NSString, relativeLocation: cocoascript.CLLocation):cocoascript.CKLocationSortDescriptor;
     // doc://com.apple.documentation/documentation/cloudkit/cklocationsortdescriptor/1515257-initwithcoder
     initWithCoder(aDecoder: cocoascript.NSCoder):cocoascript.CKLocationSortDescriptor;
     // doc://com.apple.documentation/documentation/cloudkit/cklocationsortdescriptor/1514915-relativelocation
@@ -718,10 +718,10 @@ declare namespace cocoascript {
     expectedSendSize(): cocoascript.CKOperationGroupTransferSize;
     setExpectedSendSize(): void;
     // doc://com.apple.documentation/documentation/cloudkit/ckoperationgroup/2866233-name
-    name(): cocoascript.NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/cloudkit/ckoperationgroup/2866238-operationgroupid
-    operationGroupID(): cocoascript.NSString;
+    operationGroupID(): string | cocoascript.NSString;
     setOperationGroupID(): void;
     // doc://com.apple.documentation/documentation/cloudkit/ckoperationgroup/2866220-quantity
     quantity(): cocoascript.NSUInteger;
@@ -912,7 +912,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399189-defaultcontainer
     defaultContainer():cocoascript.CKContainer;
     // doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399193-containerwithidentifier
-    containerWithIdentifier(containerIdentifier: cocoascript.NSString):cocoascript.CKContainer;
+    containerWithIdentifier(containerIdentifier: string | cocoascript.NSString):cocoascript.CKContainer;
     // doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399205-privateclouddatabase
     privateCloudDatabase(): cocoascript.CKDatabase;
     setPrivateCloudDatabase(): void;
@@ -925,7 +925,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1640475-databasewithdatabasescope
     databaseWithDatabaseScope(databaseScope: cocoascript.CKDatabaseScope):cocoascript.CKDatabase;
     // doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399182-containeridentifier
-    containerIdentifier(): cocoascript.NSString;
+    containerIdentifier(): string | cocoascript.NSString;
     setContainerIdentifier(): void;
     // doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399180-accountstatuswithcompletionhandl
     accountStatusWithCompletionHandler(completionHandler: cocoascript.NSError):void;
@@ -938,15 +938,15 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1640421-discoverallidentitieswithcomplet
     discoverAllIdentitiesWithCompletionHandler(completionHandler: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1640430-discoveruseridentitywithemailadd
-    discoverUserIdentityWithEmailAddress_completionHandler(email: cocoascript.NSString, completionHandler: cocoascript.NSError):void;
+    discoverUserIdentityWithEmailAddress_completionHandler(email: string | cocoascript.NSString, completionHandler: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1640516-discoveruseridentitywithphonenum
-    discoverUserIdentityWithPhoneNumber_completionHandler(phoneNumber: cocoascript.NSString, completionHandler: cocoascript.NSError):void;
+    discoverUserIdentityWithPhoneNumber_completionHandler(phoneNumber: string | cocoascript.NSString, completionHandler: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1640517-discoveruseridentitywithuserreco
     discoverUserIdentityWithUserRecordID_completionHandler(userRecordID: cocoascript.CKRecordID, completionHandler: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1640489-fetchshareparticipantwithemailad
-    fetchShareParticipantWithEmailAddress_completionHandler(emailAddress: cocoascript.NSString, completionHandler: cocoascript.NSError):void;
+    fetchShareParticipantWithEmailAddress_completionHandler(emailAddress: string | cocoascript.NSString, completionHandler: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1640493-fetchshareparticipantwithphonenu
-    fetchShareParticipantWithPhoneNumber_completionHandler(phoneNumber: cocoascript.NSString, completionHandler: cocoascript.NSError):void;
+    fetchShareParticipantWithPhoneNumber_completionHandler(phoneNumber: string | cocoascript.NSString, completionHandler: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1640387-fetchshareparticipantwithuserrec
     fetchShareParticipantWithUserRecordID_completionHandler(userRecordID: cocoascript.CKRecordID, completionHandler: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/cloudkit/ckcontainer/1399191-fetchuserrecordidwithcompletionh
@@ -968,11 +968,11 @@ declare namespace cocoascript {
 
 declare const CKContainer: cocoascript.CKContainer;
 // doc://com.apple.documentation/documentation/cloudkit/ckcurrentuserdefaultname
-declare const CKCurrentUserDefaultName: cocoascript.NSString;
+declare const CKCurrentUserDefaultName: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/cloudkit/ckownerdefaultname
-declare const CKOwnerDefaultName: cocoascript.NSString;
+declare const CKOwnerDefaultName: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/cloudkit/ckaccountchangednotification
-declare const CKAccountChangedNotification: cocoascript.NSString;
+declare const CKAccountChangedNotification: string | cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A conduit for accessing and performing operations on the data of an app container.
@@ -1023,11 +1023,11 @@ declare namespace cocoascript {
    */
   interface CKFetchWebAuthTokenOperation extends CKDatabaseOperation {
     // doc://com.apple.documentation/documentation/cloudkit/ckfetchwebauthtokenoperation/1515266-initwithapitoken
-    initWithAPIToken(APIToken: cocoascript.NSString):cocoascript.CKFetchWebAuthTokenOperation;
+    initWithAPIToken(APIToken: string | cocoascript.NSString):cocoascript.CKFetchWebAuthTokenOperation;
     // doc://com.apple.documentation/documentation/cloudkit/ckfetchwebauthtokenoperation/2715839-init
     init():cocoascript.CKFetchWebAuthTokenOperation;
     // doc://com.apple.documentation/documentation/cloudkit/ckfetchwebauthtokenoperation/1515095-apitoken
-    APIToken(): cocoascript.NSString;
+    APIToken(): string | cocoascript.NSString;
     setAPIToken(): void;
     // doc://com.apple.documentation/documentation/cloudkit/ckfetchwebauthtokenoperation/1514980-fetchwebauthtokencompletionblock
     fetchWebAuthTokenCompletionBlock(): cocoascript.NSError;
@@ -1059,34 +1059,34 @@ declare namespace cocoascript {
     notificationType(): cocoascript.CKNotificationType;
     setNotificationType(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotification/1428119-containeridentifier
-    containerIdentifier(): cocoascript.NSString;
+    containerIdentifier(): string | cocoascript.NSString;
     setContainerIdentifier(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotification/1428088-ispruned
     isPruned(): cocoascript.BOOL;
     setIsPruned(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotification/1428084-alertbody
-    alertBody(): cocoascript.NSString;
+    alertBody(): string | cocoascript.NSString;
     setAlertBody(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotification/1428095-alertlocalizationkey
-    alertLocalizationKey(): cocoascript.NSString;
+    alertLocalizationKey(): string | cocoascript.NSString;
     setAlertLocalizationKey(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotification/1428105-alertlocalizationargs
-    alertLocalizationArgs(): cocoascript.NSString;
+    alertLocalizationArgs(): string | cocoascript.NSString;
     setAlertLocalizationArgs(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotification/1428109-alertactionlocalizationkey
-    alertActionLocalizationKey(): cocoascript.NSString;
+    alertActionLocalizationKey(): string | cocoascript.NSString;
     setAlertActionLocalizationKey(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotification/1428103-alertlaunchimage
-    alertLaunchImage(): cocoascript.NSString;
+    alertLaunchImage(): string | cocoascript.NSString;
     setAlertLaunchImage(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotification/1428077-soundname
-    soundName(): cocoascript.NSString;
+    soundName(): string | cocoascript.NSString;
     setSoundName(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotification/1428082-badge
     badge(): cocoascript.NSNumber;
     setBadge(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotification/1428107-category
-    category(): cocoascript.NSString;
+    category(): string | cocoascript.NSString;
     setCategory(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotification/1428118-subscriptionid
     subscriptionID(): cocoascript.CKSubscriptionID;
@@ -1095,22 +1095,22 @@ declare namespace cocoascript {
     subscriptionOwnerUserRecordID(): cocoascript.CKRecordID;
     setSubscriptionOwnerUserRecordID(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotification/2868440-title
-    title(): cocoascript.NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotification/2868436-titlelocalizationkey
-    titleLocalizationKey(): cocoascript.NSString;
+    titleLocalizationKey(): string | cocoascript.NSString;
     setTitleLocalizationKey(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotification/2868437-titlelocalizationargs
-    titleLocalizationArgs(): cocoascript.NSString;
+    titleLocalizationArgs(): string | cocoascript.NSString;
     setTitleLocalizationArgs(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotification/2868435-subtitle
-    subtitle(): cocoascript.NSString;
+    subtitle(): string | cocoascript.NSString;
     setSubtitle(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotification/2868438-subtitlelocalizationkey
-    subtitleLocalizationKey(): cocoascript.NSString;
+    subtitleLocalizationKey(): string | cocoascript.NSString;
     setSubtitleLocalizationKey(): void;
     // doc://com.apple.documentation/documentation/cloudkit/cknotification/2868439-subtitlelocalizationargs
-    subtitleLocalizationArgs(): cocoascript.NSString;
+    subtitleLocalizationArgs(): string | cocoascript.NSString;
     setSubtitleLocalizationArgs(): void;
     //
     alloc():cocoascript.CKNotification;
@@ -1126,11 +1126,11 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/cloudkit/ckrecordtype
-  type CKRecordType = cocoascript.NSString;
+  type CKRecordType = string | cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/cloudkit/ckrecordfieldkey
-  type CKRecordFieldKey = cocoascript.NSString;
+  type CKRecordFieldKey = string | cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/cloudkit/ckrecordparentkey
 declare const CKRecordParentKey: cocoascript.CKRecordFieldKey;
@@ -1594,7 +1594,7 @@ declare namespace cocoascript {
 declare const CKFetchShareParticipantsOperation: cocoascript.CKFetchShareParticipantsOperation;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/cloudkit/ckoperationid
-  type CKOperationID = cocoascript.NSString;
+  type CKOperationID = string | cocoascript.NSString;
 }
 declare namespace cocoascript {
   /**
@@ -1721,7 +1721,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/cloudkit/cksubscriptionid
-  type CKSubscriptionID = cocoascript.NSString;
+  type CKSubscriptionID = string | cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/cloudkit/ckshareparticipanttype

@@ -59,7 +59,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/eventkit/ekrecurrencerule/1507320-initrecurrencewithfrequency
     initRecurrenceWithFrequency_interval_daysOfTheWeek_daysOfTheMonth_monthsOfTheYear_weeksOfTheYear_daysOfTheYear_setPositions_end(type: cocoascript.EKRecurrenceFrequency, interval: cocoascript.NSInteger, days: cocoascript.EKRecurrenceDayOfWeek, monthDays: cocoascript.NSNumber, months: cocoascript.NSNumber, weeksOfTheYear: cocoascript.NSNumber, daysOfTheYear: cocoascript.NSNumber, setPositions: cocoascript.NSNumber, end: cocoascript.EKRecurrenceEnd):cocoascript.EKRecurrenceRule;
     // doc://com.apple.documentation/documentation/eventkit/ekrecurrencerule/1507340-calendaridentifier
-    calendarIdentifier(): cocoascript.NSString;
+    calendarIdentifier(): string | cocoascript.NSString;
     setCalendarIdentifier(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekrecurrencerule/1507254-recurrenceend
     recurrenceEnd(): cocoascript.EKRecurrenceEnd;
@@ -109,7 +109,7 @@ declare namespace cocoascript {
     currentUser(): cocoascript.BOOL;
     setCurrentUser(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekparticipant/1507480-name
-    name(): cocoascript.NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekparticipant/1507494-participantrole
     participantRole(): cocoascript.EKParticipantRole;
@@ -144,11 +144,11 @@ declare namespace cocoascript {
    */
   interface EKStructuredLocation extends EKObject {
     // doc://com.apple.documentation/documentation/eventkit/ekstructuredlocation/1507366-locationwithtitle
-    locationWithTitle(title: cocoascript.NSString):cocoascript.EKStructuredLocation;
+    locationWithTitle(title: string | cocoascript.NSString):cocoascript.EKStructuredLocation;
     // doc://com.apple.documentation/documentation/eventkit/ekstructuredlocation/1507493-locationwithmapitem
     locationWithMapItem(mapItem: cocoascript.MKMapItem):cocoascript.EKStructuredLocation;
     // doc://com.apple.documentation/documentation/eventkit/ekstructuredlocation/1507137-title
-    title(): cocoascript.NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekstructuredlocation/1507110-geolocation
     geoLocation(): cocoascript.CLLocation;
@@ -190,10 +190,10 @@ declare namespace cocoascript {
     type(): cocoascript.EKAlarmType;
     setType(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekalarm/1507267-emailaddress
-    emailAddress(): cocoascript.NSString;
+    emailAddress(): string | cocoascript.NSString;
     setEmailAddress(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekalarm/1507227-soundname
-    soundName(): cocoascript.NSString;
+    soundName(): string | cocoascript.NSString;
     setSoundName(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekalarm/1589757-url
     url(): cocoascript.NSURL;
@@ -221,7 +221,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/eventkit/ekevent/1507335-comparestartdatewithevent
     compareStartDateWithEvent(other: cocoascript.EKEvent):cocoascript.NSComparisonResult;
     // doc://com.apple.documentation/documentation/eventkit/ekevent/1507437-eventidentifier
-    eventIdentifier(): cocoascript.NSString;
+    eventIdentifier(): string | cocoascript.NSString;
     setEventIdentifier(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekevent/1507313-availability
     availability(): cocoascript.EKEventAvailability;
@@ -248,7 +248,7 @@ declare namespace cocoascript {
     status(): cocoascript.EKEventStatus;
     setStatus(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekevent/1507349-birthdaycontactidentifier
-    birthdayContactIdentifier(): cocoascript.NSString;
+    birthdayContactIdentifier(): string | cocoascript.NSString;
     setBirthdayContactIdentifier(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekevent/1507185-structuredlocation
     structuredLocation(): cocoascript.EKStructuredLocation;
@@ -257,7 +257,7 @@ declare namespace cocoascript {
     birthdayPersonID(): cocoascript.NSInteger;
     setBirthdayPersonID(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekevent/1507361-birthdaypersonuniqueid
-    birthdayPersonUniqueID(): cocoascript.NSString;
+    birthdayPersonUniqueID(): string | cocoascript.NSString;
     setBirthdayPersonUniqueID(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekevent/1507089-refresh
     refresh():cocoascript.BOOL;
@@ -312,22 +312,22 @@ declare namespace cocoascript {
    */
   interface EKCalendarItem extends EKObject {
     // doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507075-calendaritemidentifier
-    calendarItemIdentifier(): cocoascript.NSString;
+    calendarItemIdentifier(): string | cocoascript.NSString;
     setCalendarItemIdentifier(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507283-calendaritemexternalidentifier
-    calendarItemExternalIdentifier(): cocoascript.NSString;
+    calendarItemExternalIdentifier(): string | cocoascript.NSString;
     setCalendarItemExternalIdentifier(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1623897-uuid
-    UUID(): cocoascript.NSString;
+    UUID(): string | cocoascript.NSString;
     setUUID(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507169-calendar
     calendar(): cocoascript.EKCalendar;
     setCalendar(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507305-title
-    title(): cocoascript.NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507269-location
-    location(): cocoascript.NSString;
+    location(): string | cocoascript.NSString;
     setLocation(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507213-creationdate
     creationDate(): cocoascript.NSDate;
@@ -345,7 +345,7 @@ declare namespace cocoascript {
     hasNotes(): cocoascript.BOOL;
     setHasNotes(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507507-notes
-    notes(): cocoascript.NSString;
+    notes(): string | cocoascript.NSString;
     setNotes(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507073-hasattendees
     hasAttendees(): cocoascript.BOOL;
@@ -420,7 +420,7 @@ declare namespace cocoascript {
     immutable(): cocoascript.BOOL;
     setImmutable(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekcalendar/1507487-title
-    title(): cocoascript.NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekcalendar/1507145-type
     type(): cocoascript.EKCalendarType;
@@ -438,7 +438,7 @@ declare namespace cocoascript {
     supportedEventAvailabilities(): cocoascript.EKCalendarEventAvailabilityMask;
     setSupportedEventAvailabilities(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekcalendar/1507380-calendaridentifier
-    calendarIdentifier(): cocoascript.NSString;
+    calendarIdentifier(): string | cocoascript.NSString;
     setCalendarIdentifier(): void;
     //
     alloc():cocoascript.EKCalendar;
@@ -498,7 +498,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507179-initwithsources
     initWithSources(sources: cocoascript.EKSource):cocoascript.EKEventStore;
     // doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507442-eventstoreidentifier
-    eventStoreIdentifier(): cocoascript.NSString;
+    eventStoreIdentifier(): string | cocoascript.NSString;
     setEventStoreIdentifier(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekeventstore/1536382-initwithaccesstoentitytypes
     initWithAccessToEntityTypes(entityTypes: cocoascript.EKEntityMask):cocoascript.EKEventStore;
@@ -513,7 +513,7 @@ declare namespace cocoascript {
     delegateSources(): cocoascript.EKSource;
     setDelegateSources(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507521-sourcewithidentifier
-    sourceWithIdentifier(identifier: cocoascript.NSString):cocoascript.EKSource;
+    sourceWithIdentifier(identifier: string | cocoascript.NSString):cocoascript.EKSource;
     // doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507424-commit
     commit(error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507345-reset
@@ -528,7 +528,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507128-calendarsforentitytype
     calendarsForEntityType(entityType: cocoascript.EKEntityType):cocoascript.EKCalendar;
     // doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507484-calendarwithidentifier
-    calendarWithIdentifier(identifier: cocoascript.NSString):cocoascript.EKCalendar;
+    calendarWithIdentifier(identifier: string | cocoascript.NSString):cocoascript.EKCalendar;
     // doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507080-savecalendar
     saveCalendar_commit_error(calendar: cocoascript.EKCalendar, commit: cocoascript.BOOL, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507523-removecalendar
@@ -537,11 +537,11 @@ declare namespace cocoascript {
     calendars(): cocoascript.EKCalendar;
     setCalendars(): void;
     // doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507490-eventwithidentifier
-    eventWithIdentifier(identifier: cocoascript.NSString):cocoascript.EKEvent;
+    eventWithIdentifier(identifier: string | cocoascript.NSString):cocoascript.EKEvent;
     // doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507433-calendaritemwithidentifier
-    calendarItemWithIdentifier(identifier: cocoascript.NSString):cocoascript.EKCalendarItem;
+    calendarItemWithIdentifier(identifier: string | cocoascript.NSString):cocoascript.EKCalendarItem;
     // doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507281-calendaritemswithexternalidentif
-    calendarItemsWithExternalIdentifier(externalIdentifier: cocoascript.NSString):cocoascript.EKCalendarItem;
+    calendarItemsWithExternalIdentifier(externalIdentifier: string | cocoascript.NSString):cocoascript.EKCalendarItem;
     // doc://com.apple.documentation/documentation/eventkit/ekeventstore/1615882-removeevent
     removeEvent_span_error(event: cocoascript.EKEvent, span: cocoascript.EKSpan, error: cocoascript.NSError):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507469-removeevent
@@ -585,13 +585,13 @@ declare namespace cocoascript {
    */
   interface EKSource extends EKObject {
     // doc://com.apple.documentation/documentation/eventkit/eksource/1507275-sourceidentifier
-    sourceIdentifier(): cocoascript.NSString;
+    sourceIdentifier(): string | cocoascript.NSString;
     setSourceIdentifier(): void;
     // doc://com.apple.documentation/documentation/eventkit/eksource/1507300-sourcetype
     sourceType(): cocoascript.EKSourceType;
     setSourceType(): void;
     // doc://com.apple.documentation/documentation/eventkit/eksource/1507385-title
-    title(): cocoascript.NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/eventkit/eksource/1507387-calendarsforentitytype
     calendarsForEntityType(entityType: cocoascript.EKEntityType):cocoascript.EKCalendar;

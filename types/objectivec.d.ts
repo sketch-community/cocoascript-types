@@ -45,7 +45,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1571960-methodsignatureforselector
     methodSignatureForSelector(aSelector: cocoascript.SEL):cocoascript.NSMethodSignature;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1418799-description
-    description():cocoascript.NSString;
+    description():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1409224-autocontentaccessingproxy
     autoContentAccessingProxy(): cocoascript.id;
     setAutoContentAccessingProxy(): void;
@@ -56,11 +56,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1414900-performselectoronmainthread
     performSelectorOnMainThread_withObject_waitUntilDone(aSelector: cocoascript.SEL, arg: cocoascript.NSObject, wait: cocoascript.BOOL):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1411637-performselectoronmainthread
-    performSelectorOnMainThread_withObject_waitUntilDone_modes(aSelector: cocoascript.SEL, arg: cocoascript.NSObject, wait: cocoascript.BOOL, array: cocoascript.NSString):void;
+    performSelectorOnMainThread_withObject_waitUntilDone_modes(aSelector: cocoascript.SEL, arg: cocoascript.NSObject, wait: cocoascript.BOOL, array: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1414476-performselector
     performSelector_onThread_withObject_waitUntilDone(aSelector: cocoascript.SEL, thr: cocoascript.NSThread, arg: cocoascript.NSObject, wait: cocoascript.BOOL):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1417922-performselector
-    performSelector_onThread_withObject_waitUntilDone_modes(aSelector: cocoascript.SEL, thr: cocoascript.NSThread, arg: cocoascript.NSObject, wait: cocoascript.BOOL, array: cocoascript.NSString):void;
+    performSelector_onThread_withObject_waitUntilDone_modes(aSelector: cocoascript.SEL, thr: cocoascript.NSThread, arg: cocoascript.NSObject, wait: cocoascript.BOOL, array: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1412390-performselectorinbackground
     performSelectorInBackground_withObject(aSelector: cocoascript.SEL, arg: cocoascript.NSObject):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1417611-cancelpreviousperformrequestswit
@@ -89,7 +89,7 @@ declare namespace cocoascript {
     classForKeyedArchiver(): cocoascript.Class;
     setClassForKeyedArchiver(): void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1411048-classfallbacksforkeyedarchiver
-    classFallbacksForKeyedArchiver():cocoascript.NSString;
+    classFallbacksForKeyedArchiver():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1410547-classforkeyedunarchiver
     classForKeyedUnarchiver():cocoascript.Class;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1580076-classforportcoder
@@ -106,29 +106,29 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1415151-version
     version():cocoascript.NSInteger;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1415656-attributekeys
-    attributeKeys(): cocoascript.NSString;
+    attributeKeys(): string | cocoascript.NSString;
     setAttributeKeys(): void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1411858-classdescription
     classDescription(): cocoascript.NSClassDescription;
     setClassDescription(): void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1411046-inverseforrelationshipkey
-    inverseForRelationshipKey(relationshipKey: cocoascript.NSString):cocoascript.NSString;
+    inverseForRelationshipKey(relationshipKey: string | cocoascript.NSString):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1415662-tomanyrelationshipkeys
-    toManyRelationshipKeys(): cocoascript.NSString;
+    toManyRelationshipKeys(): string | cocoascript.NSString;
     setToManyRelationshipKeys(): void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1414814-toonerelationshipkeys
-    toOneRelationshipKeys(): cocoascript.NSString;
+    toOneRelationshipKeys(): string | cocoascript.NSString;
     setToOneRelationshipKeys(): void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1413991-classcode
     classCode(): any;
     setClassCode(): void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1411337-classname
-    className(): cocoascript.NSString;
+    className(): string | cocoascript.NSString;
     setClassName(): void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1410291-copyscriptingvalue
-    copyScriptingValue_forKey_withProperties(value: cocoascript.NSObject, key: cocoascript.NSString, properties: cocoascript.NSObject):cocoascript.NSObject;
+    copyScriptingValue_forKey_withProperties(value: cocoascript.NSObject, key: string | cocoascript.NSString, properties: cocoascript.NSObject):cocoascript.NSObject;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1418458-newscriptingobjectofclass
-    newScriptingObjectOfClass_forValueForKey_withContentsValue_properties(objectClass: cocoascript.Class, key: cocoascript.NSString, contentsValue: cocoascript.NSObject, properties: cocoascript.NSObject):cocoascript.NSObject;
+    newScriptingObjectOfClass_forValueForKey_withContentsValue_properties(objectClass: cocoascript.Class, key: string | cocoascript.NSString, contentsValue: cocoascript.NSObject, properties: cocoascript.NSObject):cocoascript.NSObject;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1417254-scriptingproperties
     scriptingProperties(): cocoascript.id;
     setScriptingProperties(): void;
@@ -143,7 +143,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1504653-acceptspreviewpanelcontrol
     acceptsPreviewPanelControl(panel: cocoascript.QLPreviewPanel):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1411302-actionproperty
-    actionProperty():cocoascript.NSString;
+    actionProperty():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1416402-attemptrecoveryfromerror
     attemptRecoveryFromError_optionIndex(error: cocoascript.NSError, recoveryOptionIndex: cocoascript.NSUInteger):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1411071-attemptrecoveryfromerror
@@ -175,9 +175,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1385416-composedstring
     composedString(sender: cocoascript.NSObject):cocoascript.NSObject;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1505265-compositionparameterview
-    compositionParameterView_didChangeParameterWithKey(parameterView: cocoascript.QCCompositionParameterView, portKey: cocoascript.NSString):void;
+    compositionParameterView_didChangeParameterWithKey(parameterView: cocoascript.QCCompositionParameterView, portKey: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1503523-compositionparameterview
-    compositionParameterView_shouldDisplayParameterWithKey_attributes(parameterView: cocoascript.QCCompositionParameterView, portKey: cocoascript.NSString, portAttributes: cocoascript.NSDictionary):cocoascript.BOOL;
+    compositionParameterView_shouldDisplayParameterWithKey_attributes(parameterView: cocoascript.QCCompositionParameterView, portKey: string | cocoascript.NSString, portAttributes: cocoascript.NSDictionary):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1447352-compositionpickerview
     compositionPickerView_didSelectComposition(pickerView: cocoascript.QCCompositionPickerView, composition: cocoascript.QCComposition):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1447342-compositionpickerviewdidstartani
@@ -203,15 +203,15 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1431422-filetransferservicescopyremotefi
     fileTransferServicesCopyRemoteFileProgress_transferProgress(inServices: cocoascript.OBEXFileTransferServices, inProgressDescription: cocoascript.NSDictionary):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1430913-filetransferservicescreatefolder
-    fileTransferServicesCreateFolderComplete_error_folder(inServices: cocoascript.OBEXFileTransferServices, inError: cocoascript.OBEXError, inFolderName: cocoascript.NSString):void;
+    fileTransferServicesCreateFolderComplete_error_folder(inServices: cocoascript.OBEXFileTransferServices, inError: cocoascript.OBEXError, inFolderName: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1434806-filetransferservicesdisconnectio
     fileTransferServicesDisconnectionComplete_error(inServices: cocoascript.OBEXFileTransferServices, inError: cocoascript.OBEXError):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1432086-filetransferservicesfilepreparat
     fileTransferServicesFilePreparationComplete_error(inServices: cocoascript.OBEXFileTransferServices, inError: cocoascript.OBEXError):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1432583-filetransferservicespathchangeco
-    fileTransferServicesPathChangeComplete_error_finalPath(inServices: cocoascript.OBEXFileTransferServices, inError: cocoascript.OBEXError, inPath: cocoascript.NSString):void;
+    fileTransferServicesPathChangeComplete_error_finalPath(inServices: cocoascript.OBEXFileTransferServices, inError: cocoascript.OBEXError, inPath: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1434702-filetransferservicesremoveitemco
-    fileTransferServicesRemoveItemComplete_error_removedItem(inServices: cocoascript.OBEXFileTransferServices, inError: cocoascript.OBEXError, inItemName: cocoascript.NSString):void;
+    fileTransferServicesRemoveItemComplete_error_removedItem(inServices: cocoascript.OBEXFileTransferServices, inError: cocoascript.OBEXError, inItemName: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1434777-filetransferservicesretrievefold
     fileTransferServicesRetrieveFolderListingComplete_error_listing(inServices: cocoascript.OBEXFileTransferServices, inError: cocoascript.OBEXError, inListing: cocoascript.NSArray):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1434240-filetransferservicessendfilecomp
@@ -241,23 +241,23 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1504801-imagerepresentation
     imageRepresentation():cocoascript.NSObject;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1503547-imagerepresentationtype
-    imageRepresentationType():cocoascript.NSString;
+    imageRepresentationType():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1503725-imagesubtitle
-    imageSubtitle():cocoascript.NSString;
+    imageSubtitle():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1504080-imagetitle
-    imageTitle():cocoascript.NSString;
+    imageTitle():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1503516-imageuid
-    imageUID():cocoascript.NSString;
+    imageUID():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1504444-imageversion
     imageVersion():cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1417806-indicesofobjectsbyevaluatingobje
     indicesOfObjectsByEvaluatingObjectSpecifier(specifier: cocoascript.NSScriptObjectSpecifier):cocoascript.NSNumber;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1385446-inputtext
-    inputText_client(string: cocoascript.NSString, sender: cocoascript.NSObject):cocoascript.BOOL;
+    inputText_client(string: string | cocoascript.NSString, sender: cocoascript.NSObject):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1385436-inputtext
-    inputText_key_modifiers_client(string: cocoascript.NSString, keyCode: cocoascript.NSInteger, flags: cocoascript.NSUInteger, sender: cocoascript.NSObject):cocoascript.BOOL;
+    inputText_key_modifiers_client(string: string | cocoascript.NSString, keyCode: cocoascript.NSInteger, flags: cocoascript.NSUInteger, sender: cocoascript.NSObject):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1393837-iscaseinsensitivelike
-    isCaseInsensitiveLike(object: cocoascript.NSString):cocoascript.BOOL;
+    isCaseInsensitiveLike(object: string | cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1393823-isequalto
     isEqualTo(object: cocoascript.NSObject):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1393885-isgreaterthan
@@ -269,7 +269,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1393827-islessthanorequalto
     isLessThanOrEqualTo(object: cocoascript.NSObject):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1393866-islike
-    isLike(object: cocoascript.NSString):cocoascript.BOOL;
+    isLike(object: string | cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1393843-isnotequalto
     isNotEqualTo(object: cocoascript.NSObject):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1503514-numberofgroupsinimagebrowser
@@ -279,7 +279,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1385400-originalstring
     originalString(sender: cocoascript.NSObject):cocoascript.NSAttributedString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1411298-performactionforperson
-    performActionForPerson_identifier(person: cocoascript.ABPerson, identifier: cocoascript.NSString):void;
+    performActionForPerson_identifier(person: cocoascript.ABPerson, identifier: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1402908-prepareforinterfacebuilder
     prepareForInterfaceBuilder():void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1438175-provideimagedata
@@ -297,27 +297,27 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1428399-readrssifordevicecomplete
     readRSSIForDeviceComplete_device_info_error(controller: cocoascript.NSObject, device: cocoascript.IOBluetoothDevice, info: cocoascript.BluetoothHCIRSSIInfo, error: any):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1503501-saveoptions
-    saveOptions_shouldShowUTType(saveOptions: cocoascript.IKSaveOptions, utType: cocoascript.NSString):cocoascript.BOOL;
+    saveOptions_shouldShowUTType(saveOptions: cocoascript.IKSaveOptions, utType: string | cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1411300-shouldenableactionforperson
-    shouldEnableActionForPerson_identifier(person: cocoascript.ABPerson, identifier: cocoascript.NSString):cocoascript.BOOL;
+    shouldEnableActionForPerson_identifier(person: cocoascript.ABPerson, identifier: string | cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1411304-titleforperson
-    titleForPerson_identifier(person: cocoascript.ABPerson, identifier: cocoascript.NSString):cocoascript.NSString;
+    titleForPerson_identifier(person: cocoascript.ABPerson, identifier: string | cocoascript.NSString):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1494234-pdepanelsfortype
-    PDEPanelsForType_withHostInfo(pdeType: cocoascript.NSString, host: cocoascript.NSObject):cocoascript.NSArray;
+    PDEPanelsForType_withHostInfo(pdeType: string | cocoascript.NSString, host: cocoascript.NSObject):cocoascript.NSArray;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1494230-pmprinter
     PMPrinter():cocoascript.PMPrinter;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1494202-ppdoptionkeyvaluedidchange
-    PPDOptionKeyValueDidChange_ppdChoice(option: cocoascript.NSString, choice: cocoascript.NSString):void;
+    PPDOptionKeyValueDidChange_ppdChoice(option: string | cocoascript.NSString, choice: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1572039-url
     URL_resourceDataDidBecomeAvailable(sender: cocoascript.NSURL, newBytes: cocoascript.NSData):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1572040-url
-    URL_resourceDidFailLoadingWithReason(sender: cocoascript.NSURL, reason: cocoascript.NSString):void;
+    URL_resourceDidFailLoadingWithReason(sender: cocoascript.NSURL, reason: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1572048-urlresourcedidcancelloading
     URLResourceDidCancelLoading(sender: cocoascript.NSURL):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1572036-urlresourcedidfinishloading
     URLResourceDidFinishLoading(sender: cocoascript.NSURL):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1494285-application
-    application_delegateHandlesKey(sender: cocoascript.NSApplication, key: cocoascript.NSString):cocoascript.BOOL;
+    application_delegateHandlesKey(sender: cocoascript.NSApplication, key: string | cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1532638-changecolor
     changeColor(sender: cocoascript.NSObject):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1462311-changefont
@@ -359,17 +359,17 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1494209-pageformat
     pageFormat():cocoascript.PMPageFormat;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1539083-panel
-    panel_compareFilename_with_caseSensitive(sender: cocoascript.NSObject, name1: cocoascript.NSString, name2: cocoascript.NSString, caseSensitive: cocoascript.BOOL):cocoascript.NSComparisonResult;
+    panel_compareFilename_with_caseSensitive(sender: cocoascript.NSObject, name1: string | cocoascript.NSString, name2: string | cocoascript.NSString, caseSensitive: cocoascript.BOOL):cocoascript.NSComparisonResult;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1539080-panel
-    panel_directoryDidChange(sender: cocoascript.NSObject, path: cocoascript.NSString):void;
+    panel_directoryDidChange(sender: cocoascript.NSObject, path: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1538970-panel
-    panel_isValidFilename(sender: cocoascript.NSObject, filename: cocoascript.NSString):cocoascript.BOOL;
+    panel_isValidFilename(sender: cocoascript.NSObject, filename: string | cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1539030-panel
-    panel_shouldShowFilename(sender: cocoascript.NSObject, filename: cocoascript.NSString):cocoascript.BOOL;
+    panel_shouldShowFilename(sender: cocoascript.NSObject, filename: string | cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1494208-panelkind
-    panelKind():cocoascript.NSString;
+    panelKind():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1494224-panelname
-    panelName():cocoascript.NSString;
+    panelName():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1494214-panelview
     panelView():cocoascript.NSView;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1525907-pasteboard
@@ -407,13 +407,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1524282-validatetoolbaritem
     validateToolbarItem(item: cocoascript.NSToolbarItem):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1483693-view
-    view_stringForToolTip_point_userData(view: cocoascript.NSView, tag: cocoascript.NSToolTipTag, point: cocoascript.NSPoint, data: void):cocoascript.NSString;
+    view_stringForToolTip_point_userData(view: cocoascript.NSView, tag: cocoascript.NSToolTipTag, point: cocoascript.NSPoint, data: void):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1494235-willchangeppdoptionkeyvalue
-    willChangePPDOptionKeyValue_ppdChoice(option: cocoascript.NSString, choice: cocoascript.NSString):cocoascript.BOOL;
+    willChangePPDOptionKeyValue_ppdChoice(option: string | cocoascript.NSString, choice: string | cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1494204-willshow
     willShow():void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1418711-debugdescription
-    debugDescription():cocoascript.NSString;
+    debugDescription():string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1418561-hash
     hash():cocoascript.NSUInteger;
     //
@@ -451,10 +451,10 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418515-conformstoprotocol
     conformsToProtocol(aProtocol: cocoascript.Protocol):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418746-description
-    description(): cocoascript.NSString;
+    description(): string | cocoascript.NSString;
     setDescription(): void;
     // doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418703-debugdescription
-    debugDescription(): cocoascript.NSString;
+    debugDescription(): string | cocoascript.NSString;
     setDebugDescription(): void;
     // doc://com.apple.documentation/documentation/objectivec/1418956-nsobject/1418867-performselector
     performSelector(aSelector: cocoascript.SEL):cocoascript.NSObject;

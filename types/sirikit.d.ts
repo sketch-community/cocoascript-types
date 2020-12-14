@@ -17,9 +17,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/sirikit/ininteraction/1690389-deleteallinteractionswithcomplet
     deleteAllInteractionsWithCompletion(completion: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/sirikit/ininteraction/1690400-deleteinteractionswithidentifier
-    deleteInteractionsWithIdentifiers_completion(identifiers: cocoascript.NSString, completion: cocoascript.NSError):void;
+    deleteInteractionsWithIdentifiers_completion(identifiers: string | cocoascript.NSString, completion: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/sirikit/ininteraction/1690364-deleteinteractionswithgroupident
-    deleteInteractionsWithGroupIdentifier_completion(groupIdentifier: cocoascript.NSString, completion: cocoascript.NSError):void;
+    deleteInteractionsWithGroupIdentifier_completion(groupIdentifier: string | cocoascript.NSString, completion: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/sirikit/ininteraction/1638740-intenthandlingstatus
     intentHandlingStatus(): cocoascript.INIntentHandlingStatus;
     setIntentHandlingStatus(): void;
@@ -30,10 +30,10 @@ declare namespace cocoascript {
     dateInterval(): cocoascript.NSDateInterval;
     setDateInterval(): void;
     // doc://com.apple.documentation/documentation/sirikit/ininteraction/1638924-identifier
-    identifier(): cocoascript.NSString;
+    identifier(): string | cocoascript.NSString;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/ininteraction/1638832-groupidentifier
-    groupIdentifier(): cocoascript.NSString;
+    groupIdentifier(): string | cocoascript.NSString;
     setGroupIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/ininteraction/2908769-parametervalueforparameter
     parameterValueForParameter(parameter: cocoascript.INParameter):cocoascript.INInteraction;
@@ -333,16 +333,16 @@ declare namespace cocoascript {
    */
   interface INSpeakable extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inspeakable/2092306-spokenphrase
-    spokenPhrase(): cocoascript.NSString;
+    spokenPhrase(): string | cocoascript.NSString;
     setSpokenPhrase(): void;
     // doc://com.apple.documentation/documentation/sirikit/inspeakable/2092309-pronunciationhint
-    pronunciationHint(): cocoascript.NSString;
+    pronunciationHint(): string | cocoascript.NSString;
     setPronunciationHint(): void;
     // doc://com.apple.documentation/documentation/sirikit/inspeakable/2873318-vocabularyidentifier
-    vocabularyIdentifier(): cocoascript.NSString;
+    vocabularyIdentifier(): string | cocoascript.NSString;
     setVocabularyIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/inspeakable/2092308-identifier
-    identifier(): cocoascript.NSString;
+    identifier(): string | cocoascript.NSString;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/inspeakable/2873673-alternativespeakablematches
     alternativeSpeakableMatches(): cocoascript.INSpeakable;
@@ -1200,7 +1200,7 @@ declare namespace cocoascript {
    */
   interface INImage extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inimage/1778402-imagenamed
-    imageNamed(name: cocoascript.NSString):cocoascript.INImage;
+    imageNamed(name: string | cocoascript.NSString):cocoascript.INImage;
     // doc://com.apple.documentation/documentation/sirikit/inimage/1648802-imagewithuiimage
     imageWithUIImage(image: cocoascript.UIImage):cocoascript.INImage;
     // doc://com.apple.documentation/documentation/sirikit/inimage/1648801-imagewithcgimage
@@ -1216,7 +1216,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/sirikit/inimage/1648800-imagesizeforintentresponse
     imageSizeForIntentResponse(response: cocoascript.INIntentResponse):cocoascript.CGSize;
     // doc://com.apple.documentation/documentation/sirikit/inimage/3577546-systemimagenamed
-    systemImageNamed(systemImageName: cocoascript.NSString):cocoascript.INImage;
+    systemImageNamed(systemImageName: string | cocoascript.NSString):cocoascript.INImage;
     //
     alloc():cocoascript.INImage;
     //
@@ -1232,21 +1232,21 @@ declare namespace cocoascript {
    */
   interface INIntent extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inintent/1639000-identifier
-    identifier(): cocoascript.NSString;
+    identifier(): string | cocoascript.NSString;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/inintent/2921266-intentdescription
-    intentDescription(): cocoascript.NSString;
+    intentDescription(): string | cocoascript.NSString;
     setIntentDescription(): void;
     // doc://com.apple.documentation/documentation/sirikit/inintent/2962960-suggestedinvocationphrase
-    suggestedInvocationPhrase(): cocoascript.NSString;
+    suggestedInvocationPhrase(): string | cocoascript.NSString;
     setSuggestedInvocationPhrase(): void;
     // doc://com.apple.documentation/documentation/sirikit/inintent/3552187-shortcutavailability
     shortcutAvailability(): cocoascript.INShortcutAvailabilityOptions;
     setShortcutAvailability(): void;
     // doc://com.apple.documentation/documentation/sirikit/inintent/2976222-imageforparameternamed
-    imageForParameterNamed(parameterName: cocoascript.NSString):cocoascript.INImage;
+    imageForParameterNamed(parameterName: string | cocoascript.NSString):cocoascript.INImage;
     // doc://com.apple.documentation/documentation/sirikit/inintent/2976224-setimage
-    setImage_forParameterNamed(image: cocoascript.INImage, parameterName: cocoascript.NSString):void;
+    setImage_forParameterNamed(image: cocoascript.INImage, parameterName: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/sirikit/inintent/2976223-keyimage
     keyImage():cocoascript.INImage;
     //
@@ -1264,19 +1264,19 @@ declare namespace cocoascript {
    */
   interface INPerson extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inperson/2138319-initwithpersonhandle
-    initWithPersonHandle_nameComponents_displayName_image_contactIdentifier_customIdentifier(personHandle: cocoascript.INPersonHandle, nameComponents: cocoascript.NSPersonNameComponents, displayName: cocoascript.NSString, image: cocoascript.INImage, contactIdentifier: cocoascript.NSString, customIdentifier: cocoascript.NSString):cocoascript.INPerson;
+    initWithPersonHandle_nameComponents_displayName_image_contactIdentifier_customIdentifier(personHandle: cocoascript.INPersonHandle, nameComponents: cocoascript.NSPersonNameComponents, displayName: string | cocoascript.NSString, image: cocoascript.INImage, contactIdentifier: string | cocoascript.NSString, customIdentifier: string | cocoascript.NSString):cocoascript.INPerson;
     // doc://com.apple.documentation/documentation/sirikit/inperson/2976230-initwithpersonhandle
-    initWithPersonHandle_nameComponents_displayName_image_contactIdentifier_customIdentifier_isMe(personHandle: cocoascript.INPersonHandle, nameComponents: cocoascript.NSPersonNameComponents, displayName: cocoascript.NSString, image: cocoascript.INImage, contactIdentifier: cocoascript.NSString, customIdentifier: cocoascript.NSString, isMe: cocoascript.BOOL):cocoascript.INPerson;
+    initWithPersonHandle_nameComponents_displayName_image_contactIdentifier_customIdentifier_isMe(personHandle: cocoascript.INPersonHandle, nameComponents: cocoascript.NSPersonNameComponents, displayName: string | cocoascript.NSString, image: cocoascript.INImage, contactIdentifier: string | cocoascript.NSString, customIdentifier: string | cocoascript.NSString, isMe: cocoascript.BOOL):cocoascript.INPerson;
     // doc://com.apple.documentation/documentation/sirikit/inperson/2138310-initwithpersonhandle
-    initWithPersonHandle_nameComponents_displayName_image_contactIdentifier_customIdentifier_aliases_suggestionType(personHandle: cocoascript.INPersonHandle, nameComponents: cocoascript.NSPersonNameComponents, displayName: cocoascript.NSString, image: cocoascript.INImage, contactIdentifier: cocoascript.NSString, customIdentifier: cocoascript.NSString, aliases: cocoascript.INPersonHandle, suggestionType: cocoascript.INPersonSuggestionType):cocoascript.INPerson;
+    initWithPersonHandle_nameComponents_displayName_image_contactIdentifier_customIdentifier_aliases_suggestionType(personHandle: cocoascript.INPersonHandle, nameComponents: cocoascript.NSPersonNameComponents, displayName: string | cocoascript.NSString, image: cocoascript.INImage, contactIdentifier: string | cocoascript.NSString, customIdentifier: string | cocoascript.NSString, aliases: cocoascript.INPersonHandle, suggestionType: cocoascript.INPersonSuggestionType):cocoascript.INPerson;
     // doc://com.apple.documentation/documentation/sirikit/inperson/1638494-initwithhandle
-    initWithHandle_displayName_contactIdentifier(handle: cocoascript.NSString, displayName: cocoascript.NSString, contactIdentifier: cocoascript.NSString):cocoascript.INPerson;
+    initWithHandle_displayName_contactIdentifier(handle: string | cocoascript.NSString, displayName: string | cocoascript.NSString, contactIdentifier: string | cocoascript.NSString):cocoascript.INPerson;
     // doc://com.apple.documentation/documentation/sirikit/inperson/1639010-initwithhandle
-    initWithHandle_nameComponents_contactIdentifier(handle: cocoascript.NSString, nameComponents: cocoascript.NSPersonNameComponents, contactIdentifier: cocoascript.NSString):cocoascript.INPerson;
+    initWithHandle_nameComponents_contactIdentifier(handle: string | cocoascript.NSString, nameComponents: cocoascript.NSPersonNameComponents, contactIdentifier: string | cocoascript.NSString):cocoascript.INPerson;
     // doc://com.apple.documentation/documentation/sirikit/inperson/1638508-initwithhandle
-    initWithHandle_nameComponents_displayName_image_contactIdentifier(handle: cocoascript.NSString, nameComponents: cocoascript.NSPersonNameComponents, displayName: cocoascript.NSString, image: cocoascript.INImage, contactIdentifier: cocoascript.NSString):cocoascript.INPerson;
+    initWithHandle_nameComponents_displayName_image_contactIdentifier(handle: string | cocoascript.NSString, nameComponents: cocoascript.NSPersonNameComponents, displayName: string | cocoascript.NSString, image: cocoascript.INImage, contactIdentifier: string | cocoascript.NSString):cocoascript.INPerson;
     // doc://com.apple.documentation/documentation/sirikit/inperson/1638921-displayname
-    displayName(): cocoascript.NSString;
+    displayName(): string | cocoascript.NSString;
     setDisplayName(): void;
     // doc://com.apple.documentation/documentation/sirikit/inperson/1638822-namecomponents
     nameComponents(): cocoascript.NSPersonNameComponents;
@@ -1294,13 +1294,13 @@ declare namespace cocoascript {
     aliases(): cocoascript.INPersonHandle;
     setAliases(): void;
     // doc://com.apple.documentation/documentation/sirikit/inperson/1639190-handle
-    handle(): cocoascript.NSString;
+    handle(): string | cocoascript.NSString;
     setHandle(): void;
     // doc://com.apple.documentation/documentation/sirikit/inperson/1638320-contactidentifier
-    contactIdentifier(): cocoascript.NSString;
+    contactIdentifier(): string | cocoascript.NSString;
     setContactIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/inperson/2138295-customidentifier
-    customIdentifier(): cocoascript.NSString;
+    customIdentifier(): string | cocoascript.NSString;
     setCustomIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/inperson/2138313-suggestiontype
     suggestionType(): cocoascript.INPersonSuggestionType;
@@ -1312,7 +1312,7 @@ declare namespace cocoascript {
     siriMatches(): cocoascript.INPerson;
     setSiriMatches(): void;
     // doc://com.apple.documentation/documentation/sirikit/inperson/3552225-initwithpersonhandle
-    initWithPersonHandle_nameComponents_displayName_image_contactIdentifier_customIdentifier_relationship(personHandle: cocoascript.INPersonHandle, nameComponents: cocoascript.NSPersonNameComponents, displayName: cocoascript.NSString, image: cocoascript.INImage, contactIdentifier: cocoascript.NSString, customIdentifier: cocoascript.NSString, relationship: cocoascript.INPersonRelationship):cocoascript.INPerson;
+    initWithPersonHandle_nameComponents_displayName_image_contactIdentifier_customIdentifier_relationship(personHandle: cocoascript.INPersonHandle, nameComponents: cocoascript.NSPersonNameComponents, displayName: string | cocoascript.NSString, image: cocoascript.INImage, contactIdentifier: string | cocoascript.NSString, customIdentifier: string | cocoascript.NSString, relationship: cocoascript.INPersonRelationship):cocoascript.INPerson;
     //
     alloc():cocoascript.INPerson;
     //
@@ -1328,12 +1328,12 @@ declare namespace cocoascript {
    */
   interface INCurrencyAmount extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/incurrencyamount/1638814-initwithamount
-    initWithAmount_currencyCode(amount: cocoascript.NSDecimalNumber, currencyCode: cocoascript.NSString):cocoascript.INCurrencyAmount;
+    initWithAmount_currencyCode(amount: cocoascript.NSDecimalNumber, currencyCode: string | cocoascript.NSString):cocoascript.INCurrencyAmount;
     // doc://com.apple.documentation/documentation/sirikit/incurrencyamount/1638388-amount
     amount(): cocoascript.NSDecimalNumber;
     setAmount(): void;
     // doc://com.apple.documentation/documentation/sirikit/incurrencyamount/1638973-currencycode
-    currencyCode(): cocoascript.NSString;
+    currencyCode(): string | cocoascript.NSString;
     setCurrencyCode(): void;
     //
     alloc():cocoascript.INCurrencyAmount;
@@ -1350,18 +1350,18 @@ declare namespace cocoascript {
    */
   interface INMessage extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inmessage/2882886-initwithidentifier
-    initWithIdentifier_conversationIdentifier_content_dateSent_sender_recipients_messageType(identifier: cocoascript.NSString, conversationIdentifier: cocoascript.NSString, content: cocoascript.NSString, dateSent: cocoascript.NSDate, sender: cocoascript.INPerson, recipients: cocoascript.INPerson, messageType: cocoascript.INMessageType):cocoascript.INMessage;
+    initWithIdentifier_conversationIdentifier_content_dateSent_sender_recipients_messageType(identifier: string | cocoascript.NSString, conversationIdentifier: string | cocoascript.NSString, content: string | cocoascript.NSString, dateSent: cocoascript.NSDate, sender: cocoascript.INPerson, recipients: cocoascript.INPerson, messageType: cocoascript.INMessageType):cocoascript.INMessage;
     // doc://com.apple.documentation/documentation/sirikit/inmessage/2919433-initwithidentifier
-    initWithIdentifier_conversationIdentifier_content_dateSent_sender_recipients_groupName_messageType(identifier: cocoascript.NSString, conversationIdentifier: cocoascript.NSString, content: cocoascript.NSString, dateSent: cocoascript.NSDate, sender: cocoascript.INPerson, recipients: cocoascript.INPerson, groupName: cocoascript.INSpeakableString, messageType: cocoascript.INMessageType):cocoascript.INMessage;
+    initWithIdentifier_conversationIdentifier_content_dateSent_sender_recipients_groupName_messageType(identifier: string | cocoascript.NSString, conversationIdentifier: string | cocoascript.NSString, content: string | cocoascript.NSString, dateSent: cocoascript.NSDate, sender: cocoascript.INPerson, recipients: cocoascript.INPerson, groupName: cocoascript.INSpeakableString, messageType: cocoascript.INMessageType):cocoascript.INMessage;
     // doc://com.apple.documentation/documentation/sirikit/inmessage/1687606-initwithidentifier
-    initWithIdentifier_content_dateSent_sender_recipients(identifier: cocoascript.NSString, content: cocoascript.NSString, dateSent: cocoascript.NSDate, sender: cocoascript.INPerson, recipients: cocoascript.INPerson):cocoascript.INMessage;
+    initWithIdentifier_content_dateSent_sender_recipients(identifier: string | cocoascript.NSString, content: string | cocoascript.NSString, dateSent: cocoascript.NSDate, sender: cocoascript.INPerson, recipients: cocoascript.INPerson):cocoascript.INMessage;
     // doc://com.apple.documentation/documentation/sirikit/inmessage/3392958-initwithidentifier
-    initWithIdentifier_conversationIdentifier_content_dateSent_sender_recipients_groupName_messageType_serviceName(identifier: cocoascript.NSString, conversationIdentifier: cocoascript.NSString, content: cocoascript.NSString, dateSent: cocoascript.NSDate, sender: cocoascript.INPerson, recipients: cocoascript.INPerson, groupName: cocoascript.INSpeakableString, messageType: cocoascript.INMessageType, serviceName: cocoascript.NSString):cocoascript.INMessage;
+    initWithIdentifier_conversationIdentifier_content_dateSent_sender_recipients_groupName_messageType_serviceName(identifier: string | cocoascript.NSString, conversationIdentifier: string | cocoascript.NSString, content: string | cocoascript.NSString, dateSent: cocoascript.NSDate, sender: cocoascript.INPerson, recipients: cocoascript.INPerson, groupName: cocoascript.INSpeakableString, messageType: cocoascript.INMessageType, serviceName: string | cocoascript.NSString):cocoascript.INMessage;
     // doc://com.apple.documentation/documentation/sirikit/inmessage/1638230-identifier
-    identifier(): cocoascript.NSString;
+    identifier(): string | cocoascript.NSString;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/inmessage/2867834-conversationidentifier
-    conversationIdentifier(): cocoascript.NSString;
+    conversationIdentifier(): string | cocoascript.NSString;
     setConversationIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/inmessage/2882867-messagetype
     messageType(): cocoascript.INMessageType;
@@ -1376,13 +1376,13 @@ declare namespace cocoascript {
     groupName(): cocoascript.INSpeakableString;
     setGroupName(): void;
     // doc://com.apple.documentation/documentation/sirikit/inmessage/1638554-content
-    content(): cocoascript.NSString;
+    content(): string | cocoascript.NSString;
     setContent(): void;
     // doc://com.apple.documentation/documentation/sirikit/inmessage/1639255-datesent
     dateSent(): cocoascript.NSDate;
     setDateSent(): void;
     // doc://com.apple.documentation/documentation/sirikit/inmessage/3392959-servicename
-    serviceName(): cocoascript.NSString;
+    serviceName(): string | cocoascript.NSString;
     setServiceName(): void;
     //
     alloc():cocoascript.INMessage;
@@ -1399,17 +1399,17 @@ declare namespace cocoascript {
    */
   interface INPaymentMethod extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inpaymentmethod/2211609-initwithtype
-    initWithType_name_identificationHint_icon(type: cocoascript.INPaymentMethodType, name: cocoascript.NSString, identificationHint: cocoascript.NSString, icon: cocoascript.INImage):cocoascript.INPaymentMethod;
+    initWithType_name_identificationHint_icon(type: cocoascript.INPaymentMethodType, name: string | cocoascript.NSString, identificationHint: string | cocoascript.NSString, icon: cocoascript.INImage):cocoascript.INPaymentMethod;
     // doc://com.apple.documentation/documentation/sirikit/inpaymentmethod/2247185-applepaypaymentmethod
     applePayPaymentMethod():cocoascript.INPaymentMethod;
     // doc://com.apple.documentation/documentation/sirikit/inpaymentmethod/1638590-type
     type(): cocoascript.INPaymentMethodType;
     setType(): void;
     // doc://com.apple.documentation/documentation/sirikit/inpaymentmethod/1638237-name
-    name(): cocoascript.NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/sirikit/inpaymentmethod/2211608-identificationhint
-    identificationHint(): cocoascript.NSString;
+    identificationHint(): string | cocoascript.NSString;
     setIdentificationHint(): void;
     // doc://com.apple.documentation/documentation/sirikit/inpaymentmethod/1639364-icon
     icon(): cocoascript.INImage;
@@ -1429,18 +1429,18 @@ declare namespace cocoascript {
    */
   interface INRideDriver extends INPerson {
     // doc://com.apple.documentation/documentation/sirikit/inridedriver/2727146-initwithphonenumber
-    initWithPhoneNumber_nameComponents_displayName_image_rating(phoneNumber: cocoascript.NSString, nameComponents: cocoascript.NSPersonNameComponents, displayName: cocoascript.NSString, image: cocoascript.INImage, rating: cocoascript.NSString):cocoascript.INRideDriver;
+    initWithPhoneNumber_nameComponents_displayName_image_rating(phoneNumber: string | cocoascript.NSString, nameComponents: cocoascript.NSPersonNameComponents, displayName: string | cocoascript.NSString, image: cocoascript.INImage, rating: string | cocoascript.NSString):cocoascript.INRideDriver;
     // doc://com.apple.documentation/documentation/sirikit/inridedriver/1639295-initwithhandle
-    initWithHandle_displayName_image_rating_phoneNumber(handle: cocoascript.NSString, displayName: cocoascript.NSString, image: cocoascript.INImage, rating: cocoascript.NSString, phoneNumber: cocoascript.NSString):cocoascript.INRideDriver;
+    initWithHandle_displayName_image_rating_phoneNumber(handle: string | cocoascript.NSString, displayName: string | cocoascript.NSString, image: cocoascript.INImage, rating: string | cocoascript.NSString, phoneNumber: string | cocoascript.NSString):cocoascript.INRideDriver;
     // doc://com.apple.documentation/documentation/sirikit/inridedriver/1638407-initwithhandle
-    initWithHandle_nameComponents_image_rating_phoneNumber(handle: cocoascript.NSString, nameComponents: cocoascript.NSPersonNameComponents, image: cocoascript.INImage, rating: cocoascript.NSString, phoneNumber: cocoascript.NSString):cocoascript.INRideDriver;
+    initWithHandle_nameComponents_image_rating_phoneNumber(handle: string | cocoascript.NSString, nameComponents: cocoascript.NSPersonNameComponents, image: cocoascript.INImage, rating: string | cocoascript.NSString, phoneNumber: string | cocoascript.NSString):cocoascript.INRideDriver;
     // doc://com.apple.documentation/documentation/sirikit/inridedriver/2143442-initwithpersonhandle
-    initWithPersonHandle_nameComponents_displayName_image_rating_phoneNumber(personHandle: cocoascript.INPersonHandle, nameComponents: cocoascript.NSPersonNameComponents, displayName: cocoascript.NSString, image: cocoascript.INImage, rating: cocoascript.NSString, phoneNumber: cocoascript.NSString):cocoascript.INRideDriver;
+    initWithPersonHandle_nameComponents_displayName_image_rating_phoneNumber(personHandle: cocoascript.INPersonHandle, nameComponents: cocoascript.NSPersonNameComponents, displayName: string | cocoascript.NSString, image: cocoascript.INImage, rating: string | cocoascript.NSString, phoneNumber: string | cocoascript.NSString):cocoascript.INRideDriver;
     // doc://com.apple.documentation/documentation/sirikit/inridedriver/1638184-rating
-    rating(): cocoascript.NSString;
+    rating(): string | cocoascript.NSString;
     setRating(): void;
     // doc://com.apple.documentation/documentation/sirikit/inridedriver/1639331-phonenumber
-    phoneNumber(): cocoascript.NSString;
+    phoneNumber(): string | cocoascript.NSString;
     setPhoneNumber(): void;
     //
     alloc():cocoascript.INRideDriver;
@@ -1505,9 +1505,9 @@ declare namespace cocoascript {
    */
   interface INPaymentRecord extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inpaymentrecord/2274388-initwithpayee
-    initWithPayee_payer_currencyAmount_paymentMethod_note_status_feeAmount(payee: cocoascript.INPerson, payer: cocoascript.INPerson, currencyAmount: cocoascript.INCurrencyAmount, paymentMethod: cocoascript.INPaymentMethod, note: cocoascript.NSString, status: cocoascript.INPaymentStatus, feeAmount: cocoascript.INCurrencyAmount):cocoascript.INPaymentRecord;
+    initWithPayee_payer_currencyAmount_paymentMethod_note_status_feeAmount(payee: cocoascript.INPerson, payer: cocoascript.INPerson, currencyAmount: cocoascript.INCurrencyAmount, paymentMethod: cocoascript.INPaymentMethod, note: string | cocoascript.NSString, status: cocoascript.INPaymentStatus, feeAmount: cocoascript.INCurrencyAmount):cocoascript.INPaymentRecord;
     // doc://com.apple.documentation/documentation/sirikit/inpaymentrecord/1638960-initwithpayee
-    initWithPayee_payer_currencyAmount_paymentMethod_note_status(payee: cocoascript.INPerson, payer: cocoascript.INPerson, currencyAmount: cocoascript.INCurrencyAmount, paymentMethod: cocoascript.INPaymentMethod, note: cocoascript.NSString, status: cocoascript.INPaymentStatus):cocoascript.INPaymentRecord;
+    initWithPayee_payer_currencyAmount_paymentMethod_note_status(payee: cocoascript.INPerson, payer: cocoascript.INPerson, currencyAmount: cocoascript.INCurrencyAmount, paymentMethod: cocoascript.INPaymentMethod, note: string | cocoascript.NSString, status: cocoascript.INPaymentStatus):cocoascript.INPaymentRecord;
     // doc://com.apple.documentation/documentation/sirikit/inpaymentrecord/1639333-status
     status(): cocoascript.INPaymentStatus;
     setStatus(): void;
@@ -1527,7 +1527,7 @@ declare namespace cocoascript {
     paymentMethod(): cocoascript.INPaymentMethod;
     setPaymentMethod(): void;
     // doc://com.apple.documentation/documentation/sirikit/inpaymentrecord/1638190-note
-    note(): cocoascript.NSString;
+    note(): string | cocoascript.NSString;
     setNote(): void;
     //
     alloc():cocoascript.INPaymentRecord;
@@ -1544,13 +1544,13 @@ declare namespace cocoascript {
    */
   interface INPriceRange extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inpricerange/1638476-initwithprice
-    initWithPrice_currencyCode(price: cocoascript.NSDecimalNumber, currencyCode: cocoascript.NSString):cocoascript.INPriceRange;
+    initWithPrice_currencyCode(price: cocoascript.NSDecimalNumber, currencyCode: string | cocoascript.NSString):cocoascript.INPriceRange;
     // doc://com.apple.documentation/documentation/sirikit/inpricerange/1639347-initwithrangebetweenprice
-    initWithRangeBetweenPrice_andPrice_currencyCode(firstPrice: cocoascript.NSDecimalNumber, secondPrice: cocoascript.NSDecimalNumber, currencyCode: cocoascript.NSString):cocoascript.INPriceRange;
+    initWithRangeBetweenPrice_andPrice_currencyCode(firstPrice: cocoascript.NSDecimalNumber, secondPrice: cocoascript.NSDecimalNumber, currencyCode: string | cocoascript.NSString):cocoascript.INPriceRange;
     // doc://com.apple.documentation/documentation/sirikit/inpricerange/1638268-initwithmaximumprice
-    initWithMaximumPrice_currencyCode(maximumPrice: cocoascript.NSDecimalNumber, currencyCode: cocoascript.NSString):cocoascript.INPriceRange;
+    initWithMaximumPrice_currencyCode(maximumPrice: cocoascript.NSDecimalNumber, currencyCode: string | cocoascript.NSString):cocoascript.INPriceRange;
     // doc://com.apple.documentation/documentation/sirikit/inpricerange/1639229-initwithminimumprice
-    initWithMinimumPrice_currencyCode(minimumPrice: cocoascript.NSDecimalNumber, currencyCode: cocoascript.NSString):cocoascript.INPriceRange;
+    initWithMinimumPrice_currencyCode(minimumPrice: cocoascript.NSDecimalNumber, currencyCode: string | cocoascript.NSString):cocoascript.INPriceRange;
     // doc://com.apple.documentation/documentation/sirikit/inpricerange/1638727-minimumprice
     minimumPrice(): cocoascript.NSDecimalNumber;
     setMinimumPrice(): void;
@@ -1558,7 +1558,7 @@ declare namespace cocoascript {
     maximumPrice(): cocoascript.NSDecimalNumber;
     setMaximumPrice(): void;
     // doc://com.apple.documentation/documentation/sirikit/inpricerange/1638555-currencycode
-    currencyCode(): cocoascript.NSString;
+    currencyCode(): string | cocoascript.NSString;
     setCurrencyCode(): void;
     //
     alloc():cocoascript.INPriceRange;
@@ -1575,7 +1575,7 @@ declare namespace cocoascript {
    */
   interface INRestaurantReservationBooking extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inrestaurantreservationbooking/2132093-initwithrestaurant
-    initWithRestaurant_bookingDate_partySize_bookingIdentifier(restaurant: cocoascript.INRestaurant, bookingDate: cocoascript.NSDate, partySize: cocoascript.NSUInteger, bookingIdentifier: cocoascript.NSString):cocoascript.INRestaurantReservationBooking;
+    initWithRestaurant_bookingDate_partySize_bookingIdentifier(restaurant: cocoascript.INRestaurant, bookingDate: cocoascript.NSDate, partySize: cocoascript.NSUInteger, bookingIdentifier: string | cocoascript.NSString):cocoascript.INRestaurantReservationBooking;
     // doc://com.apple.documentation/documentation/sirikit/inrestaurantreservationbooking/1648075-restaurant
     restaurant(): cocoascript.INRestaurant;
     setRestaurant(): void;
@@ -1586,7 +1586,7 @@ declare namespace cocoascript {
     offers(): cocoascript.INRestaurantOffer;
     setOffers(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrestaurantreservationbooking/1648077-bookingidentifier
-    bookingIdentifier(): cocoascript.NSString;
+    bookingIdentifier(): string | cocoascript.NSString;
     setBookingIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrestaurantreservationbooking/1648080-bookingavailable
     bookingAvailable(): cocoascript.BOOL;
@@ -1595,7 +1595,7 @@ declare namespace cocoascript {
     bookingDate(): cocoascript.NSDate;
     setBookingDate(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrestaurantreservationbooking/1778334-bookingdescription
-    bookingDescription(): cocoascript.NSString;
+    bookingDescription(): string | cocoascript.NSString;
     setBookingDescription(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrestaurantreservationbooking/1778336-requiresname
     requiresName(): cocoascript.BOOL;
@@ -1624,7 +1624,7 @@ declare namespace cocoascript {
    */
   interface INRestaurantReservationUserBooking extends INRestaurantReservationBooking {
     // doc://com.apple.documentation/documentation/sirikit/inrestaurantreservationuserbooking/2132117-initwithrestaurant
-    initWithRestaurant_bookingDate_partySize_bookingIdentifier_guest_status_dateStatusModified(restaurant: cocoascript.INRestaurant, bookingDate: cocoascript.NSDate, partySize: cocoascript.NSUInteger, bookingIdentifier: cocoascript.NSString, guest: cocoascript.INRestaurantGuest, status: cocoascript.INRestaurantReservationUserBookingStatus, dateStatusModified: cocoascript.NSDate):cocoascript.INRestaurantReservationUserBooking;
+    initWithRestaurant_bookingDate_partySize_bookingIdentifier_guest_status_dateStatusModified(restaurant: cocoascript.INRestaurant, bookingDate: cocoascript.NSDate, partySize: cocoascript.NSUInteger, bookingIdentifier: string | cocoascript.NSString, guest: cocoascript.INRestaurantGuest, status: cocoascript.INRestaurantReservationUserBookingStatus, dateStatusModified: cocoascript.NSDate):cocoascript.INRestaurantReservationUserBooking;
     // doc://com.apple.documentation/documentation/sirikit/inrestaurantreservationuserbooking/1778366-guest
     guest(): cocoascript.INRestaurantGuest;
     setGuest(): void;
@@ -1635,13 +1635,13 @@ declare namespace cocoascript {
     dateStatusModified(): cocoascript.NSDate;
     setDateStatusModified(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrestaurantreservationuserbooking/2102578-guestprovidedspecialrequesttext
-    guestProvidedSpecialRequestText(): cocoascript.NSString;
+    guestProvidedSpecialRequestText(): string | cocoascript.NSString;
     setGuestProvidedSpecialRequestText(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrestaurantreservationuserbooking/2102577-selectedoffer
     selectedOffer(): cocoascript.INRestaurantOffer;
     setSelectedOffer(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrestaurantreservationuserbooking/1648213-advisementtext
-    advisementText(): cocoascript.NSString;
+    advisementText(): string | cocoascript.NSString;
     setAdvisementText(): void;
     //
     alloc():cocoascript.INRestaurantReservationUserBooking;
@@ -1658,7 +1658,7 @@ declare namespace cocoascript {
    */
   interface INRideStatus extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inridestatus/1648484-rideidentifier
-    rideIdentifier(): cocoascript.NSString;
+    rideIdentifier(): string | cocoascript.NSString;
     setRideIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/inridestatus/1648490-phase
     phase(): cocoascript.INRidePhase;
@@ -1751,13 +1751,13 @@ declare namespace cocoascript {
    */
   interface INRestaurantOffer extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inrestaurantoffer/1649398-offertitletext
-    offerTitleText(): cocoascript.NSString;
+    offerTitleText(): string | cocoascript.NSString;
     setOfferTitleText(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrestaurantoffer/1649401-offerdetailtext
-    offerDetailText(): cocoascript.NSString;
+    offerDetailText(): string | cocoascript.NSString;
     setOfferDetailText(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrestaurantoffer/1649400-offeridentifier
-    offerIdentifier(): cocoascript.NSString;
+    offerIdentifier(): string | cocoascript.NSString;
     setOfferIdentifier(): void;
     //
     alloc():cocoascript.INRestaurantOffer;
@@ -1774,7 +1774,7 @@ declare namespace cocoascript {
    */
   interface INBookRestaurantReservationIntent extends INIntent {
     // doc://com.apple.documentation/documentation/sirikit/inbookrestaurantreservationintent/2877498-initwithrestaurant
-    initWithRestaurant_bookingDateComponents_partySize_bookingIdentifier_guest_selectedOffer_guestProvidedSpecialRequestText(restaurant: cocoascript.INRestaurant, bookingDateComponents: cocoascript.NSDateComponents, partySize: cocoascript.NSUInteger, bookingIdentifier: cocoascript.NSString, guest: cocoascript.INRestaurantGuest, selectedOffer: cocoascript.INRestaurantOffer, guestProvidedSpecialRequestText: cocoascript.NSString):cocoascript.INBookRestaurantReservationIntent;
+    initWithRestaurant_bookingDateComponents_partySize_bookingIdentifier_guest_selectedOffer_guestProvidedSpecialRequestText(restaurant: cocoascript.INRestaurant, bookingDateComponents: cocoascript.NSDateComponents, partySize: cocoascript.NSUInteger, bookingIdentifier: string | cocoascript.NSString, guest: cocoascript.INRestaurantGuest, selectedOffer: cocoascript.INRestaurantOffer, guestProvidedSpecialRequestText: string | cocoascript.NSString):cocoascript.INBookRestaurantReservationIntent;
     // doc://com.apple.documentation/documentation/sirikit/inbookrestaurantreservationintent/1649559-restaurant
     restaurant(): cocoascript.INRestaurant;
     setRestaurant(): void;
@@ -1782,7 +1782,7 @@ declare namespace cocoascript {
     bookingDateComponents(): cocoascript.NSDateComponents;
     setBookingDateComponents(): void;
     // doc://com.apple.documentation/documentation/sirikit/inbookrestaurantreservationintent/1649557-bookingidentifier
-    bookingIdentifier(): cocoascript.NSString;
+    bookingIdentifier(): string | cocoascript.NSString;
     setBookingIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/inbookrestaurantreservationintent/1649565-partysize
     partySize(): cocoascript.NSUInteger;
@@ -1791,7 +1791,7 @@ declare namespace cocoascript {
     guest(): cocoascript.INRestaurantGuest;
     setGuest(): void;
     // doc://com.apple.documentation/documentation/sirikit/inbookrestaurantreservationintent/1778382-guestprovidedspecialrequesttext
-    guestProvidedSpecialRequestText(): cocoascript.NSString;
+    guestProvidedSpecialRequestText(): string | cocoascript.NSString;
     setGuestProvidedSpecialRequestText(): void;
     // doc://com.apple.documentation/documentation/sirikit/inbookrestaurantreservationintent/1649561-selectedoffer
     selectedOffer(): cocoascript.INRestaurantOffer;
@@ -1817,13 +1817,13 @@ declare namespace cocoascript {
     mapAnnotationImage(): cocoascript.INImage;
     setMapAnnotationImage(): void;
     // doc://com.apple.documentation/documentation/sirikit/inridevehicle/1649593-registrationplate
-    registrationPlate(): cocoascript.NSString;
+    registrationPlate(): string | cocoascript.NSString;
     setRegistrationPlate(): void;
     // doc://com.apple.documentation/documentation/sirikit/inridevehicle/1649588-manufacturer
-    manufacturer(): cocoascript.NSString;
+    manufacturer(): string | cocoascript.NSString;
     setManufacturer(): void;
     // doc://com.apple.documentation/documentation/sirikit/inridevehicle/1649592-model
-    model(): cocoascript.NSString;
+    model(): string | cocoascript.NSString;
     setModel(): void;
     //
     alloc():cocoascript.INRideVehicle;
@@ -1840,12 +1840,12 @@ declare namespace cocoascript {
    */
   interface INRidePartySizeOption extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inridepartysizeoption/1649721-initwithpartysizerange
-    initWithPartySizeRange_sizeDescription_priceRange(partySizeRange: cocoascript.NSRange, sizeDescription: cocoascript.NSString, priceRange: cocoascript.INPriceRange):cocoascript.INRidePartySizeOption;
+    initWithPartySizeRange_sizeDescription_priceRange(partySizeRange: cocoascript.NSRange, sizeDescription: string | cocoascript.NSString, priceRange: cocoascript.INPriceRange):cocoascript.INRidePartySizeOption;
     // doc://com.apple.documentation/documentation/sirikit/inridepartysizeoption/1649719-partysizerange
     partySizeRange(): cocoascript.NSRange;
     setPartySizeRange(): void;
     // doc://com.apple.documentation/documentation/sirikit/inridepartysizeoption/1649722-sizedescription
-    sizeDescription(): cocoascript.NSString;
+    sizeDescription(): string | cocoascript.NSString;
     setSizeDescription(): void;
     // doc://com.apple.documentation/documentation/sirikit/inridepartysizeoption/1649723-pricerange
     priceRange(): cocoascript.INPriceRange;
@@ -1865,15 +1865,15 @@ declare namespace cocoascript {
    */
   interface INRideFareLineItem extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inridefarelineitem/1649902-initwithtitle
-    initWithTitle_price_currencyCode(title: cocoascript.NSString, price: cocoascript.NSDecimalNumber, currencyCode: cocoascript.NSString):cocoascript.INRideFareLineItem;
+    initWithTitle_price_currencyCode(title: string | cocoascript.NSString, price: cocoascript.NSDecimalNumber, currencyCode: string | cocoascript.NSString):cocoascript.INRideFareLineItem;
     // doc://com.apple.documentation/documentation/sirikit/inridefarelineitem/1649900-title
-    title(): cocoascript.NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/sirikit/inridefarelineitem/1649903-price
     price(): cocoascript.NSDecimalNumber;
     setPrice(): void;
     // doc://com.apple.documentation/documentation/sirikit/inridefarelineitem/1649901-currencycode
-    currencyCode(): cocoascript.NSString;
+    currencyCode(): string | cocoascript.NSString;
     setCurrencyCode(): void;
     //
     alloc():cocoascript.INRideFareLineItem;
@@ -1890,29 +1890,29 @@ declare namespace cocoascript {
    */
   interface INRideOption extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inrideoption/1649958-initwithname
-    initWithName_estimatedPickupDate(name: cocoascript.NSString, estimatedPickupDate: cocoascript.NSDate):cocoascript.INRideOption;
+    initWithName_estimatedPickupDate(name: string | cocoascript.NSString, estimatedPickupDate: cocoascript.NSDate):cocoascript.INRideOption;
     // doc://com.apple.documentation/documentation/sirikit/inrideoption/1649960-initwithcoder
     initWithCoder(decoder: cocoascript.NSCoder):cocoascript.INRideOption;
     // doc://com.apple.documentation/documentation/sirikit/inrideoption/1649970-name
-    name(): cocoascript.NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrideoption/1649965-estimatedpickupdate
     estimatedPickupDate(): cocoascript.NSDate;
     setEstimatedPickupDate(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrideoption/1649956-disclaimermessage
-    disclaimerMessage(): cocoascript.NSString;
+    disclaimerMessage(): string | cocoascript.NSString;
     setDisclaimerMessage(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrideoption/1649961-availablepartysizeoptions
     availablePartySizeOptions(): cocoascript.INRidePartySizeOption;
     setAvailablePartySizeOptions(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrideoption/1649968-availablepartysizeoptionsselecti
-    availablePartySizeOptionsSelectionPrompt(): cocoascript.NSString;
+    availablePartySizeOptionsSelectionPrompt(): string | cocoascript.NSString;
     setAvailablePartySizeOptionsSelectionPrompt(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrideoption/1649969-pricerange
     priceRange(): cocoascript.INPriceRange;
     setPriceRange(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrideoption/1649964-specialpricing
-    specialPricing(): cocoascript.NSString;
+    specialPricing(): string | cocoascript.NSString;
     setSpecialPricing(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrideoption/1649963-specialpricingbadgeimage
     specialPricingBadgeImage(): cocoascript.INImage;
@@ -1924,7 +1924,7 @@ declare namespace cocoascript {
     fareLineItems(): cocoascript.INRideFareLineItem;
     setFareLineItems(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrideoption/1649962-identifier
-    identifier(): cocoascript.NSString;
+    identifier(): string | cocoascript.NSString;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrideoption/1649957-useractivityforbookinginapplicat
     userActivityForBookingInApplication(): cocoascript.NSUserActivity;
@@ -1944,18 +1944,18 @@ declare namespace cocoascript {
    */
   interface INRestaurant extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inrestaurant/2132091-initwithlocation
-    initWithLocation_name_vendorIdentifier_restaurantIdentifier(location: cocoascript.CLLocation, name: cocoascript.NSString, vendorIdentifier: cocoascript.NSString, restaurantIdentifier: cocoascript.NSString):cocoascript.INRestaurant;
+    initWithLocation_name_vendorIdentifier_restaurantIdentifier(location: cocoascript.CLLocation, name: string | cocoascript.NSString, vendorIdentifier: string | cocoascript.NSString, restaurantIdentifier: string | cocoascript.NSString):cocoascript.INRestaurant;
     // doc://com.apple.documentation/documentation/sirikit/inrestaurant/1649980-name
-    name(): cocoascript.NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrestaurant/1649979-location
     location(): cocoascript.CLLocation;
     setLocation(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrestaurant/1649977-restaurantidentifier
-    restaurantIdentifier(): cocoascript.NSString;
+    restaurantIdentifier(): string | cocoascript.NSString;
     setRestaurantIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrestaurant/1649978-vendoridentifier
-    vendorIdentifier(): cocoascript.NSString;
+    vendorIdentifier(): string | cocoascript.NSString;
     setVendorIdentifier(): void;
     //
     alloc():cocoascript.INRestaurant;
@@ -1972,12 +1972,12 @@ declare namespace cocoascript {
    */
   interface INGetUserCurrentRestaurantReservationBookingsIntent extends INIntent {
     // doc://com.apple.documentation/documentation/sirikit/ingetusercurrentrestaurantreservationbookingsintent/2877506-initwithrestaurant
-    initWithRestaurant_reservationIdentifier_maximumNumberOfResults_earliestBookingDateForResults(restaurant: cocoascript.INRestaurant, reservationIdentifier: cocoascript.NSString, maximumNumberOfResults: cocoascript.NSNumber, earliestBookingDateForResults: cocoascript.NSDate):cocoascript.INGetUserCurrentRestaurantReservationBookingsIntent;
+    initWithRestaurant_reservationIdentifier_maximumNumberOfResults_earliestBookingDateForResults(restaurant: cocoascript.INRestaurant, reservationIdentifier: string | cocoascript.NSString, maximumNumberOfResults: cocoascript.NSNumber, earliestBookingDateForResults: cocoascript.NSDate):cocoascript.INGetUserCurrentRestaurantReservationBookingsIntent;
     // doc://com.apple.documentation/documentation/sirikit/ingetusercurrentrestaurantreservationbookingsintent/1650029-restaurant
     restaurant(): cocoascript.INRestaurant;
     setRestaurant(): void;
     // doc://com.apple.documentation/documentation/sirikit/ingetusercurrentrestaurantreservationbookingsintent/1650028-reservationidentifier
-    reservationIdentifier(): cocoascript.NSString;
+    reservationIdentifier(): string | cocoascript.NSString;
     setReservationIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/ingetusercurrentrestaurantreservationbookingsintent/2102242-maximumnumberofresults
     maximumNumberOfResults(): cocoascript.NSNumber;
@@ -2038,11 +2038,11 @@ declare namespace cocoascript {
    */
   interface INSpeakableString extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inspeakablestring/2721324-initwithspokenphrase
-    initWithSpokenPhrase(spokenPhrase: cocoascript.NSString):cocoascript.INSpeakableString;
+    initWithSpokenPhrase(spokenPhrase: string | cocoascript.NSString):cocoascript.INSpeakableString;
     // doc://com.apple.documentation/documentation/sirikit/inspeakablestring/2873438-initwithvocabularyidentifier
-    initWithVocabularyIdentifier_spokenPhrase_pronunciationHint(vocabularyIdentifier: cocoascript.NSString, spokenPhrase: cocoascript.NSString, pronunciationHint: cocoascript.NSString):cocoascript.INSpeakableString;
+    initWithVocabularyIdentifier_spokenPhrase_pronunciationHint(vocabularyIdentifier: string | cocoascript.NSString, spokenPhrase: string | cocoascript.NSString, pronunciationHint: string | cocoascript.NSString):cocoascript.INSpeakableString;
     // doc://com.apple.documentation/documentation/sirikit/inspeakablestring/2118338-initwithidentifier
-    initWithIdentifier_spokenPhrase_pronunciationHint(identifier: cocoascript.NSString, spokenPhrase: cocoascript.NSString, pronunciationHint: cocoascript.NSString):cocoascript.INSpeakableString;
+    initWithIdentifier_spokenPhrase_pronunciationHint(identifier: string | cocoascript.NSString, spokenPhrase: string | cocoascript.NSString, pronunciationHint: string | cocoascript.NSString):cocoascript.INSpeakableString;
     //
     alloc():cocoascript.INSpeakableString;
     //
@@ -2058,9 +2058,9 @@ declare namespace cocoascript {
    */
   interface INTermsAndConditions extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/intermsandconditions/2132095-initwithlocalizedtermsandconditi
-    initWithLocalizedTermsAndConditionsText_privacyPolicyURL_termsAndConditionsURL(localizedTermsAndConditionsText: cocoascript.NSString, privacyPolicyURL: cocoascript.NSURL, termsAndConditionsURL: cocoascript.NSURL):cocoascript.INTermsAndConditions;
+    initWithLocalizedTermsAndConditionsText_privacyPolicyURL_termsAndConditionsURL(localizedTermsAndConditionsText: string | cocoascript.NSString, privacyPolicyURL: cocoascript.NSURL, termsAndConditionsURL: cocoascript.NSURL):cocoascript.INTermsAndConditions;
     // doc://com.apple.documentation/documentation/sirikit/intermsandconditions/2132098-localizedtermsandconditionstext
-    localizedTermsAndConditionsText(): cocoascript.NSString;
+    localizedTermsAndConditionsText(): string | cocoascript.NSString;
     setLocalizedTermsAndConditionsText(): void;
     // doc://com.apple.documentation/documentation/sirikit/intermsandconditions/2132099-privacypolicyurl
     privacyPolicyURL(): cocoascript.NSURL;
@@ -2135,14 +2135,14 @@ declare namespace cocoascript {
    */
   interface INPersonHandle extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inpersonhandle/2716071-initwithvalue
-    initWithValue_type_label(value: cocoascript.NSString, type: cocoascript.INPersonHandleType, label: cocoascript.INPersonHandleLabel):cocoascript.INPersonHandle;
+    initWithValue_type_label(value: string | cocoascript.NSString, type: cocoascript.INPersonHandleType, label: cocoascript.INPersonHandleLabel):cocoascript.INPersonHandle;
     // doc://com.apple.documentation/documentation/sirikit/inpersonhandle/2138303-initwithvalue
-    initWithValue_type(value: cocoascript.NSString, type: cocoascript.INPersonHandleType):cocoascript.INPersonHandle;
+    initWithValue_type(value: string | cocoascript.NSString, type: cocoascript.INPersonHandleType):cocoascript.INPersonHandle;
     // doc://com.apple.documentation/documentation/sirikit/inpersonhandle/2138309-type
     type(): cocoascript.INPersonHandleType;
     setType(): void;
     // doc://com.apple.documentation/documentation/sirikit/inpersonhandle/2138297-value
-    value(): cocoascript.NSString;
+    value(): string | cocoascript.NSString;
     setValue(): void;
     // doc://com.apple.documentation/documentation/sirikit/inpersonhandle/2716072-label
     label(): cocoascript.INPersonHandleLabel;
@@ -2184,9 +2184,9 @@ declare namespace cocoascript {
    */
   interface INPaymentAccount extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inpaymentaccount/2867840-initwithnickname
-    initWithNickname_number_accountType_organizationName_balance_secondaryBalance(nickname: cocoascript.INSpeakableString, number: cocoascript.NSString, accountType: cocoascript.INAccountType, organizationName: cocoascript.INSpeakableString, balance: cocoascript.INBalanceAmount, secondaryBalance: cocoascript.INBalanceAmount):cocoascript.INPaymentAccount;
+    initWithNickname_number_accountType_organizationName_balance_secondaryBalance(nickname: cocoascript.INSpeakableString, number: string | cocoascript.NSString, accountType: cocoascript.INAccountType, organizationName: cocoascript.INSpeakableString, balance: cocoascript.INBalanceAmount, secondaryBalance: cocoascript.INBalanceAmount):cocoascript.INPaymentAccount;
     // doc://com.apple.documentation/documentation/sirikit/inpaymentaccount/2851531-initwithnickname
-    initWithNickname_number_accountType_organizationName(nickname: cocoascript.INSpeakableString, number: cocoascript.NSString, accountType: cocoascript.INAccountType, organizationName: cocoascript.INSpeakableString):cocoascript.INPaymentAccount;
+    initWithNickname_number_accountType_organizationName(nickname: cocoascript.INSpeakableString, number: string | cocoascript.NSString, accountType: cocoascript.INAccountType, organizationName: cocoascript.INSpeakableString):cocoascript.INPaymentAccount;
     // doc://com.apple.documentation/documentation/sirikit/inpaymentaccount/2851529-nickname
     nickname(): cocoascript.INSpeakableString;
     setNickname(): void;
@@ -2197,7 +2197,7 @@ declare namespace cocoascript {
     accountType(): cocoascript.INAccountType;
     setAccountType(): void;
     // doc://com.apple.documentation/documentation/sirikit/inpaymentaccount/2799154-accountnumber
-    accountNumber(): cocoascript.NSString;
+    accountNumber(): string | cocoascript.NSString;
     setAccountNumber(): void;
     // doc://com.apple.documentation/documentation/sirikit/inpaymentaccount/2867838-balance
     balance(): cocoascript.INBalanceAmount;
@@ -2260,7 +2260,7 @@ declare namespace cocoascript {
    */
   interface INBillPayee extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inbillpayee/2851532-initwithnickname
-    initWithNickname_number_organizationName(nickname: cocoascript.INSpeakableString, number: cocoascript.NSString, organizationName: cocoascript.INSpeakableString):cocoascript.INBillPayee;
+    initWithNickname_number_organizationName(nickname: cocoascript.INSpeakableString, number: string | cocoascript.NSString, organizationName: cocoascript.INSpeakableString):cocoascript.INBillPayee;
     // doc://com.apple.documentation/documentation/sirikit/inbillpayee/2851533-nickname
     nickname(): cocoascript.INSpeakableString;
     setNickname(): void;
@@ -2268,7 +2268,7 @@ declare namespace cocoascript {
     organizationName(): cocoascript.INSpeakableString;
     setOrganizationName(): void;
     // doc://com.apple.documentation/documentation/sirikit/inbillpayee/2799312-accountnumber
-    accountNumber(): cocoascript.NSString;
+    accountNumber(): string | cocoascript.NSString;
     setAccountNumber(): void;
     //
     alloc():cocoascript.INBillPayee;
@@ -2285,14 +2285,14 @@ declare namespace cocoascript {
    */
   interface INBalanceAmount extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inbalanceamount/2867278-initwithamount
-    initWithAmount_currencyCode(amount: cocoascript.NSDecimalNumber, currencyCode: cocoascript.NSString):cocoascript.INBalanceAmount;
+    initWithAmount_currencyCode(amount: cocoascript.NSDecimalNumber, currencyCode: string | cocoascript.NSString):cocoascript.INBalanceAmount;
     // doc://com.apple.documentation/documentation/sirikit/inbalanceamount/2867277-initwithamount
     initWithAmount_balanceType(amount: cocoascript.NSDecimalNumber, balanceType: cocoascript.INBalanceType):cocoascript.INBalanceAmount;
     // doc://com.apple.documentation/documentation/sirikit/inbalanceamount/2867279-amount
     amount(): cocoascript.NSDecimalNumber;
     setAmount(): void;
     // doc://com.apple.documentation/documentation/sirikit/inbalanceamount/2867275-currencycode
-    currencyCode(): cocoascript.NSString;
+    currencyCode(): string | cocoascript.NSString;
     setCurrencyCode(): void;
     // doc://com.apple.documentation/documentation/sirikit/inbalanceamount/2867280-balancetype
     balanceType(): cocoascript.INBalanceType;
@@ -2312,7 +2312,7 @@ declare namespace cocoascript {
    */
   interface INNote extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/innote/2878109-initwithtitle
-    initWithTitle_contents_groupName_createdDateComponents_modifiedDateComponents_identifier(title: cocoascript.INSpeakableString, contents: cocoascript.INNoteContent, groupName: cocoascript.INSpeakableString, createdDateComponents: cocoascript.NSDateComponents, modifiedDateComponents: cocoascript.NSDateComponents, identifier: cocoascript.NSString):cocoascript.INNote;
+    initWithTitle_contents_groupName_createdDateComponents_modifiedDateComponents_identifier(title: cocoascript.INSpeakableString, contents: cocoascript.INNoteContent, groupName: cocoascript.INSpeakableString, createdDateComponents: cocoascript.NSDateComponents, modifiedDateComponents: cocoascript.NSDateComponents, identifier: string | cocoascript.NSString):cocoascript.INNote;
     // doc://com.apple.documentation/documentation/sirikit/innote/2873614-title
     title(): cocoascript.INSpeakableString;
     setTitle(): void;
@@ -2329,7 +2329,7 @@ declare namespace cocoascript {
     modifiedDateComponents(): cocoascript.NSDateComponents;
     setModifiedDateComponents(): void;
     // doc://com.apple.documentation/documentation/sirikit/innote/2873612-identifier
-    identifier(): cocoascript.NSString;
+    identifier(): string | cocoascript.NSString;
     setIdentifier(): void;
     //
     alloc():cocoascript.INNote;
@@ -2365,11 +2365,11 @@ declare namespace cocoascript {
    */
   interface INCallRecord extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/incallrecord/3113792-initwithidentifier
-    initWithIdentifier_dateCreated_caller_callRecordType_callCapability_callDuration_unseen_numberOfCalls(identifier: cocoascript.NSString, dateCreated: cocoascript.NSDate, caller: cocoascript.INPerson, callRecordType: cocoascript.INCallRecordType, callCapability: cocoascript.INCallCapability, callDuration: cocoascript.NSNumber, unseen: cocoascript.NSNumber, numberOfCalls: cocoascript.NSNumber):cocoascript.INCallRecord;
+    initWithIdentifier_dateCreated_caller_callRecordType_callCapability_callDuration_unseen_numberOfCalls(identifier: string | cocoascript.NSString, dateCreated: cocoascript.NSDate, caller: cocoascript.INPerson, callRecordType: cocoascript.INCallRecordType, callCapability: cocoascript.INCallCapability, callDuration: cocoascript.NSNumber, unseen: cocoascript.NSNumber, numberOfCalls: cocoascript.NSNumber):cocoascript.INCallRecord;
     // doc://com.apple.documentation/documentation/sirikit/incallrecord/2881733-initwithidentifier
-    initWithIdentifier_dateCreated_caller_callRecordType_callCapability_callDuration_unseen(identifier: cocoascript.NSString, dateCreated: cocoascript.NSDate, caller: cocoascript.INPerson, callRecordType: cocoascript.INCallRecordType, callCapability: cocoascript.INCallCapability, callDuration: cocoascript.NSNumber, unseen: cocoascript.NSNumber):cocoascript.INCallRecord;
+    initWithIdentifier_dateCreated_caller_callRecordType_callCapability_callDuration_unseen(identifier: string | cocoascript.NSString, dateCreated: cocoascript.NSDate, caller: cocoascript.INPerson, callRecordType: cocoascript.INCallRecordType, callCapability: cocoascript.INCallCapability, callDuration: cocoascript.NSNumber, unseen: cocoascript.NSNumber):cocoascript.INCallRecord;
     // doc://com.apple.documentation/documentation/sirikit/incallrecord/2873326-identifier
-    identifier(): cocoascript.NSString;
+    identifier(): string | cocoascript.NSString;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/incallrecord/2873327-caller
     caller(): cocoascript.INPerson;
@@ -2443,7 +2443,7 @@ declare namespace cocoascript {
    */
   interface INTaskList extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/intasklist/2888348-initwithtitle
-    initWithTitle_tasks_groupName_createdDateComponents_modifiedDateComponents_identifier(title: cocoascript.INSpeakableString, tasks: cocoascript.INTask, groupName: cocoascript.INSpeakableString, createdDateComponents: cocoascript.NSDateComponents, modifiedDateComponents: cocoascript.NSDateComponents, identifier: cocoascript.NSString):cocoascript.INTaskList;
+    initWithTitle_tasks_groupName_createdDateComponents_modifiedDateComponents_identifier(title: cocoascript.INSpeakableString, tasks: cocoascript.INTask, groupName: cocoascript.INSpeakableString, createdDateComponents: cocoascript.NSDateComponents, modifiedDateComponents: cocoascript.NSDateComponents, identifier: string | cocoascript.NSString):cocoascript.INTaskList;
     // doc://com.apple.documentation/documentation/sirikit/intasklist/2874006-title
     title(): cocoascript.INSpeakableString;
     setTitle(): void;
@@ -2460,7 +2460,7 @@ declare namespace cocoascript {
     modifiedDateComponents(): cocoascript.NSDateComponents;
     setModifiedDateComponents(): void;
     // doc://com.apple.documentation/documentation/sirikit/intasklist/2874004-identifier
-    identifier(): cocoascript.NSString;
+    identifier(): string | cocoascript.NSString;
     setIdentifier(): void;
     //
     alloc():cocoascript.INTaskList;
@@ -2477,9 +2477,9 @@ declare namespace cocoascript {
    */
   interface INTask extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/intask/3227907-initwithtitle
-    initWithTitle_status_taskType_spatialEventTrigger_temporalEventTrigger_createdDateComponents_modifiedDateComponents_identifier_priority(title: cocoascript.INSpeakableString, status: cocoascript.INTaskStatus, taskType: cocoascript.INTaskType, spatialEventTrigger: cocoascript.INSpatialEventTrigger, temporalEventTrigger: cocoascript.INTemporalEventTrigger, createdDateComponents: cocoascript.NSDateComponents, modifiedDateComponents: cocoascript.NSDateComponents, identifier: cocoascript.NSString, priority: cocoascript.INTaskPriority):cocoascript.INTask;
+    initWithTitle_status_taskType_spatialEventTrigger_temporalEventTrigger_createdDateComponents_modifiedDateComponents_identifier_priority(title: cocoascript.INSpeakableString, status: cocoascript.INTaskStatus, taskType: cocoascript.INTaskType, spatialEventTrigger: cocoascript.INSpatialEventTrigger, temporalEventTrigger: cocoascript.INTemporalEventTrigger, createdDateComponents: cocoascript.NSDateComponents, modifiedDateComponents: cocoascript.NSDateComponents, identifier: string | cocoascript.NSString, priority: cocoascript.INTaskPriority):cocoascript.INTask;
     // doc://com.apple.documentation/documentation/sirikit/intask/2888298-initwithtitle
-    initWithTitle_status_taskType_spatialEventTrigger_temporalEventTrigger_createdDateComponents_modifiedDateComponents_identifier(title: cocoascript.INSpeakableString, status: cocoascript.INTaskStatus, taskType: cocoascript.INTaskType, spatialEventTrigger: cocoascript.INSpatialEventTrigger, temporalEventTrigger: cocoascript.INTemporalEventTrigger, createdDateComponents: cocoascript.NSDateComponents, modifiedDateComponents: cocoascript.NSDateComponents, identifier: cocoascript.NSString):cocoascript.INTask;
+    initWithTitle_status_taskType_spatialEventTrigger_temporalEventTrigger_createdDateComponents_modifiedDateComponents_identifier(title: cocoascript.INSpeakableString, status: cocoascript.INTaskStatus, taskType: cocoascript.INTaskType, spatialEventTrigger: cocoascript.INSpatialEventTrigger, temporalEventTrigger: cocoascript.INTemporalEventTrigger, createdDateComponents: cocoascript.NSDateComponents, modifiedDateComponents: cocoascript.NSDateComponents, identifier: string | cocoascript.NSString):cocoascript.INTask;
     // doc://com.apple.documentation/documentation/sirikit/intask/2874013-title
     title(): cocoascript.INSpeakableString;
     setTitle(): void;
@@ -2502,7 +2502,7 @@ declare namespace cocoascript {
     taskType(): cocoascript.INTaskType;
     setTaskType(): void;
     // doc://com.apple.documentation/documentation/sirikit/intask/2874016-identifier
-    identifier(): cocoascript.NSString;
+    identifier(): string | cocoascript.NSString;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/intask/3227908-priority
     priority(): cocoascript.INTaskPriority;
@@ -2522,9 +2522,9 @@ declare namespace cocoascript {
    */
   interface INTextNoteContent extends INNoteContent {
     // doc://com.apple.documentation/documentation/sirikit/intextnotecontent/2878142-initwithtext
-    initWithText(text: cocoascript.NSString):cocoascript.INTextNoteContent;
+    initWithText(text: string | cocoascript.NSString):cocoascript.INTextNoteContent;
     // doc://com.apple.documentation/documentation/sirikit/intextnotecontent/2874035-text
-    text(): cocoascript.NSString;
+    text(): string | cocoascript.NSString;
     setText(): void;
     //
     alloc():cocoascript.INTextNoteContent;
@@ -2587,17 +2587,17 @@ declare namespace cocoascript {
    */
   interface INParameter extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inparameter/2908772-parameterforclass
-    parameterForClass_keyPath(aClass: cocoascript.Class, keyPath: cocoascript.NSString):cocoascript.INParameter;
+    parameterForClass_keyPath(aClass: cocoascript.Class, keyPath: string | cocoascript.NSString):cocoascript.INParameter;
     // doc://com.apple.documentation/documentation/sirikit/inparameter/2908771-parameterkeypath
-    parameterKeyPath(): cocoascript.NSString;
+    parameterKeyPath(): string | cocoascript.NSString;
     setParameterKeyPath(): void;
     // doc://com.apple.documentation/documentation/sirikit/inparameter/2908773-parameterclass
     parameterClass(): cocoascript.Class;
     setParameterClass(): void;
     // doc://com.apple.documentation/documentation/sirikit/inparameter/2908767-indexforsubkeypath
-    indexForSubKeyPath(subKeyPath: cocoascript.NSString):cocoascript.NSUInteger;
+    indexForSubKeyPath(subKeyPath: string | cocoascript.NSString):cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/sirikit/inparameter/2908766-setindex
-    setIndex_forSubKeyPath(index: cocoascript.NSUInteger, subKeyPath: cocoascript.NSString):void;
+    setIndex_forSubKeyPath(index: cocoascript.NSUInteger, subKeyPath: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/sirikit/inparameter/2908764-isequaltoparameter
     isEqualToParameter(parameter: cocoascript.INParameter):cocoascript.BOOL;
     //
@@ -2615,12 +2615,12 @@ declare namespace cocoascript {
    */
   interface INDefaultCardTemplate extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/indefaultcardtemplate/2962952-initwithtitle
-    initWithTitle(title: cocoascript.NSString):cocoascript.INDefaultCardTemplate;
+    initWithTitle(title: string | cocoascript.NSString):cocoascript.INDefaultCardTemplate;
     // doc://com.apple.documentation/documentation/sirikit/indefaultcardtemplate/2962954-title
-    title(): cocoascript.NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/sirikit/indefaultcardtemplate/2962953-subtitle
-    subtitle(): cocoascript.NSString;
+    subtitle(): string | cocoascript.NSString;
     setSubtitle(): void;
     // doc://com.apple.documentation/documentation/sirikit/indefaultcardtemplate/2962951-image
     image(): cocoascript.INImage;
@@ -2640,20 +2640,20 @@ declare namespace cocoascript {
    */
   interface INMediaItem extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inmediaitem/2962985-initwithidentifier
-    initWithIdentifier_title_type_artwork(identifier: cocoascript.NSString, title: cocoascript.NSString, type: cocoascript.INMediaItemType, artwork: cocoascript.INImage):cocoascript.INMediaItem;
+    initWithIdentifier_title_type_artwork(identifier: string | cocoascript.NSString, title: string | cocoascript.NSString, type: cocoascript.INMediaItemType, artwork: cocoascript.INImage):cocoascript.INMediaItem;
     // doc://com.apple.documentation/documentation/sirikit/inmediaitem/3074229-initwithidentifier
-    initWithIdentifier_title_type_artwork_artist(identifier: cocoascript.NSString, title: cocoascript.NSString, type: cocoascript.INMediaItemType, artwork: cocoascript.INImage, artist: cocoascript.NSString):cocoascript.INMediaItem;
+    initWithIdentifier_title_type_artwork_artist(identifier: string | cocoascript.NSString, title: string | cocoascript.NSString, type: cocoascript.INMediaItemType, artwork: cocoascript.INImage, artist: string | cocoascript.NSString):cocoascript.INMediaItem;
     // doc://com.apple.documentation/documentation/sirikit/inmediaitem/2962983-artwork
     artwork(): cocoascript.INImage;
     setArtwork(): void;
     // doc://com.apple.documentation/documentation/sirikit/inmediaitem/2962984-identifier
-    identifier(): cocoascript.NSString;
+    identifier(): string | cocoascript.NSString;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/inmediaitem/2962986-title
-    title(): cocoascript.NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/sirikit/inmediaitem/3074228-artist
-    artist(): cocoascript.NSString;
+    artist(): string | cocoascript.NSString;
     setArtist(): void;
     // doc://com.apple.documentation/documentation/sirikit/inmediaitem/2962987-type
     type(): cocoascript.INMediaItemType;
@@ -2690,7 +2690,7 @@ declare namespace cocoascript {
     identifier(): cocoascript.NSUUID;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/invoiceshortcut/2963088-invocationphrase
-    invocationPhrase(): cocoascript.NSString;
+    invocationPhrase(): string | cocoascript.NSString;
     setInvocationPhrase(): void;
     // doc://com.apple.documentation/documentation/sirikit/invoiceshortcut/2994363-shortcut
     shortcut(): cocoascript.INShortcut;
@@ -2710,27 +2710,27 @@ declare namespace cocoascript {
    */
   interface INObject extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inobject/3601151-initwithidentifier
-    initWithIdentifier_displayString_subtitleString_displayImage(identifier: cocoascript.NSString, displayString: cocoascript.NSString, subtitleString: cocoascript.NSString, displayImage: cocoascript.INImage):cocoascript.INObject;
+    initWithIdentifier_displayString_subtitleString_displayImage(identifier: string | cocoascript.NSString, displayString: string | cocoascript.NSString, subtitleString: string | cocoascript.NSString, displayImage: cocoascript.INImage):cocoascript.INObject;
     // doc://com.apple.documentation/documentation/sirikit/inobject/2980692-initwithidentifier
-    initWithIdentifier_displayString(identifier: cocoascript.NSString, displayString: cocoascript.NSString):cocoascript.INObject;
+    initWithIdentifier_displayString(identifier: string | cocoascript.NSString, displayString: string | cocoascript.NSString):cocoascript.INObject;
     // doc://com.apple.documentation/documentation/sirikit/inobject/3601150-initwithidentifier
-    initWithIdentifier_displayString_pronunciationHint_subtitleString_displayImage(identifier: cocoascript.NSString, displayString: cocoascript.NSString, pronunciationHint: cocoascript.NSString, subtitleString: cocoascript.NSString, displayImage: cocoascript.INImage):cocoascript.INObject;
+    initWithIdentifier_displayString_pronunciationHint_subtitleString_displayImage(identifier: string | cocoascript.NSString, displayString: string | cocoascript.NSString, pronunciationHint: string | cocoascript.NSString, subtitleString: string | cocoascript.NSString, displayImage: cocoascript.INImage):cocoascript.INObject;
     // doc://com.apple.documentation/documentation/sirikit/inobject/2980693-initwithidentifier
-    initWithIdentifier_displayString_pronunciationHint(identifier: cocoascript.NSString, displayString: cocoascript.NSString, pronunciationHint: cocoascript.NSString):cocoascript.INObject;
+    initWithIdentifier_displayString_pronunciationHint(identifier: string | cocoascript.NSString, displayString: string | cocoascript.NSString, pronunciationHint: string | cocoascript.NSString):cocoascript.INObject;
     // doc://com.apple.documentation/documentation/sirikit/inobject/2980690-displaystring
-    displayString(): cocoascript.NSString;
+    displayString(): string | cocoascript.NSString;
     setDisplayString(): void;
     // doc://com.apple.documentation/documentation/sirikit/inobject/3552206-subtitlestring
-    subtitleString(): cocoascript.NSString;
+    subtitleString(): string | cocoascript.NSString;
     setSubtitleString(): void;
     // doc://com.apple.documentation/documentation/sirikit/inobject/3552205-displayimage
     displayImage(): cocoascript.INImage;
     setDisplayImage(): void;
     // doc://com.apple.documentation/documentation/sirikit/inobject/2980691-identifier
-    identifier(): cocoascript.NSString;
+    identifier(): string | cocoascript.NSString;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/inobject/2980694-pronunciationhint
-    pronunciationHint(): cocoascript.NSString;
+    pronunciationHint(): string | cocoascript.NSString;
     setPronunciationHint(): void;
     // doc://com.apple.documentation/documentation/sirikit/inobject/3174873-alternativespeakablematches
     alternativeSpeakableMatches(): cocoascript.INSpeakableString;
@@ -2804,9 +2804,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/sirikit/inmediadestination/3074215-librarydestination
     libraryDestination():cocoascript.INMediaDestination;
     // doc://com.apple.documentation/documentation/sirikit/inmediadestination/3074217-playlistdestinationwithname
-    playlistDestinationWithName(playlistName: cocoascript.NSString):cocoascript.INMediaDestination;
+    playlistDestinationWithName(playlistName: string | cocoascript.NSString):cocoascript.INMediaDestination;
     // doc://com.apple.documentation/documentation/sirikit/inmediadestination/3074218-playlistname
-    playlistName(): cocoascript.NSString;
+    playlistName(): string | cocoascript.NSString;
     setPlaylistName(): void;
     // doc://com.apple.documentation/documentation/sirikit/inmediadestination/3074216-mediadestinationtype
     mediaDestinationType(): cocoascript.INMediaDestinationType;
@@ -2826,21 +2826,21 @@ declare namespace cocoascript {
    */
   interface INMediaSearch extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inmediasearch/3362535-initwithmediatype
-    initWithMediaType_sortOrder_mediaName_artistName_albumName_genreNames_moodNames_releaseDate_reference_mediaIdentifier(mediaType: cocoascript.INMediaItemType, sortOrder: cocoascript.INMediaSortOrder, mediaName: cocoascript.NSString, artistName: cocoascript.NSString, albumName: cocoascript.NSString, genreNames: cocoascript.NSString, moodNames: cocoascript.NSString, releaseDate: cocoascript.INDateComponentsRange, reference: cocoascript.INMediaReference, mediaIdentifier: cocoascript.NSString):cocoascript.INMediaSearch;
+    initWithMediaType_sortOrder_mediaName_artistName_albumName_genreNames_moodNames_releaseDate_reference_mediaIdentifier(mediaType: cocoascript.INMediaItemType, sortOrder: cocoascript.INMediaSortOrder, mediaName: string | cocoascript.NSString, artistName: string | cocoascript.NSString, albumName: string | cocoascript.NSString, genreNames: string | cocoascript.NSString, moodNames: string | cocoascript.NSString, releaseDate: cocoascript.INDateComponentsRange, reference: cocoascript.INMediaReference, mediaIdentifier: string | cocoascript.NSString):cocoascript.INMediaSearch;
     // doc://com.apple.documentation/documentation/sirikit/inmediasearch/3074247-genrenames
-    genreNames(): cocoascript.NSString;
+    genreNames(): string | cocoascript.NSString;
     setGenreNames(): void;
     // doc://com.apple.documentation/documentation/sirikit/inmediasearch/3074249-mediaidentifier
-    mediaIdentifier(): cocoascript.NSString;
+    mediaIdentifier(): string | cocoascript.NSString;
     setMediaIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/inmediasearch/3074250-medianame
-    mediaName(): cocoascript.NSString;
+    mediaName(): string | cocoascript.NSString;
     setMediaName(): void;
     // doc://com.apple.documentation/documentation/sirikit/inmediasearch/3074251-mediatype
     mediaType(): cocoascript.INMediaItemType;
     setMediaType(): void;
     // doc://com.apple.documentation/documentation/sirikit/inmediasearch/3074252-moodnames
-    moodNames(): cocoascript.NSString;
+    moodNames(): string | cocoascript.NSString;
     setMoodNames(): void;
     // doc://com.apple.documentation/documentation/sirikit/inmediasearch/3074255-reference
     reference(): cocoascript.INMediaReference;
@@ -2852,13 +2852,13 @@ declare namespace cocoascript {
     sortOrder(): cocoascript.INMediaSortOrder;
     setSortOrder(): void;
     // doc://com.apple.documentation/documentation/sirikit/inmediasearch/3074243-activitynames
-    activityNames(): cocoascript.NSString;
+    activityNames(): string | cocoascript.NSString;
     setActivityNames(): void;
     // doc://com.apple.documentation/documentation/sirikit/inmediasearch/3074244-albumname
-    albumName(): cocoascript.NSString;
+    albumName(): string | cocoascript.NSString;
     setAlbumName(): void;
     // doc://com.apple.documentation/documentation/sirikit/inmediasearch/3074245-artistname
-    artistName(): cocoascript.NSString;
+    artistName(): string | cocoascript.NSString;
     setArtistName(): void;
     //
     alloc():cocoascript.INMediaSearch;
@@ -2875,15 +2875,15 @@ declare namespace cocoascript {
    */
   interface INAirline extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inairline/3113779-initwithname
-    initWithName_iataCode_icaoCode(name: cocoascript.NSString, iataCode: cocoascript.NSString, icaoCode: cocoascript.NSString):cocoascript.INAirline;
+    initWithName_iataCode_icaoCode(name: string | cocoascript.NSString, iataCode: string | cocoascript.NSString, icaoCode: string | cocoascript.NSString):cocoascript.INAirline;
     // doc://com.apple.documentation/documentation/sirikit/inairline/3113780-name
-    name(): cocoascript.NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/sirikit/inairline/3113777-iatacode
-    iataCode(): cocoascript.NSString;
+    iataCode(): string | cocoascript.NSString;
     setIataCode(): void;
     // doc://com.apple.documentation/documentation/sirikit/inairline/3113778-icaocode
-    icaoCode(): cocoascript.NSString;
+    icaoCode(): string | cocoascript.NSString;
     setIcaoCode(): void;
     //
     alloc():cocoascript.INAirline;
@@ -2900,15 +2900,15 @@ declare namespace cocoascript {
    */
   interface INAirport extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inairport/3113784-initwithname
-    initWithName_iataCode_icaoCode(name: cocoascript.NSString, iataCode: cocoascript.NSString, icaoCode: cocoascript.NSString):cocoascript.INAirport;
+    initWithName_iataCode_icaoCode(name: string | cocoascript.NSString, iataCode: string | cocoascript.NSString, icaoCode: string | cocoascript.NSString):cocoascript.INAirport;
     // doc://com.apple.documentation/documentation/sirikit/inairport/3113785-name
-    name(): cocoascript.NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/sirikit/inairport/3113782-iatacode
-    iataCode(): cocoascript.NSString;
+    iataCode(): string | cocoascript.NSString;
     setIataCode(): void;
     // doc://com.apple.documentation/documentation/sirikit/inairport/3113783-icaocode
-    icaoCode(): cocoascript.NSString;
+    icaoCode(): string | cocoascript.NSString;
     setIcaoCode(): void;
     //
     alloc():cocoascript.INAirport;
@@ -2925,12 +2925,12 @@ declare namespace cocoascript {
    */
   interface INFlight extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inflight/3191872-initwithairline
-    initWithAirline_flightNumber_boardingTime_flightDuration_departureAirportGate_arrivalAirportGate(airline: cocoascript.INAirline, flightNumber: cocoascript.NSString, boardingTime: cocoascript.INDateComponentsRange, flightDuration: cocoascript.INDateComponentsRange, departureAirportGate: cocoascript.INAirportGate, arrivalAirportGate: cocoascript.INAirportGate):cocoascript.INFlight;
+    initWithAirline_flightNumber_boardingTime_flightDuration_departureAirportGate_arrivalAirportGate(airline: cocoascript.INAirline, flightNumber: string | cocoascript.NSString, boardingTime: cocoascript.INDateComponentsRange, flightDuration: cocoascript.INDateComponentsRange, departureAirportGate: cocoascript.INAirportGate, arrivalAirportGate: cocoascript.INAirportGate):cocoascript.INFlight;
     // doc://com.apple.documentation/documentation/sirikit/inflight/3113801-airline
     airline(): cocoascript.INAirline;
     setAirline(): void;
     // doc://com.apple.documentation/documentation/sirikit/inflight/3113805-flightnumber
-    flightNumber(): cocoascript.NSString;
+    flightNumber(): string | cocoascript.NSString;
     setFlightNumber(): void;
     // doc://com.apple.documentation/documentation/sirikit/inflight/3113803-boardingtime
     boardingTime(): cocoascript.INDateComponentsRange;
@@ -2959,9 +2959,9 @@ declare namespace cocoascript {
    */
   interface INFlightReservation extends INReservation {
     // doc://com.apple.documentation/documentation/sirikit/inflightreservation/3552165-initwithitemreference
-    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_URL_reservedSeat_flight(itemReference: cocoascript.INSpeakableString, reservationNumber: cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: cocoascript.NSString, actions: cocoascript.INReservationAction, URL: cocoascript.NSURL, reservedSeat: cocoascript.INSeat, flight: cocoascript.INFlight):cocoascript.INFlightReservation;
+    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_URL_reservedSeat_flight(itemReference: cocoascript.INSpeakableString, reservationNumber: string | cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: string | cocoascript.NSString, actions: cocoascript.INReservationAction, URL: cocoascript.NSURL, reservedSeat: cocoascript.INSeat, flight: cocoascript.INFlight):cocoascript.INFlightReservation;
     // doc://com.apple.documentation/documentation/sirikit/inflightreservation/3191873-initwithitemreference
-    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_reservedSeat_flight(itemReference: cocoascript.INSpeakableString, reservationNumber: cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: cocoascript.NSString, actions: cocoascript.INReservationAction, reservedSeat: cocoascript.INSeat, flight: cocoascript.INFlight):cocoascript.INFlightReservation;
+    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_reservedSeat_flight(itemReference: cocoascript.INSpeakableString, reservationNumber: string | cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: string | cocoascript.NSString, actions: cocoascript.INReservationAction, reservedSeat: cocoascript.INSeat, flight: cocoascript.INFlight):cocoascript.INFlightReservation;
     // doc://com.apple.documentation/documentation/sirikit/inflightreservation/3113811-flight
     flight(): cocoascript.INFlight;
     setFlight(): void;
@@ -2983,10 +2983,10 @@ declare namespace cocoascript {
    */
   interface INReservation extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inreservation/3113834-reservationholdername
-    reservationHolderName(): cocoascript.NSString;
+    reservationHolderName(): string | cocoascript.NSString;
     setReservationHolderName(): void;
     // doc://com.apple.documentation/documentation/sirikit/inreservation/3113835-reservationnumber
-    reservationNumber(): cocoascript.NSString;
+    reservationNumber(): string | cocoascript.NSString;
     setReservationNumber(): void;
     // doc://com.apple.documentation/documentation/sirikit/inreservation/3113836-reservationstatus
     reservationStatus(): cocoascript.INReservationStatus;
@@ -3018,18 +3018,18 @@ declare namespace cocoascript {
    */
   interface INSeat extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inseat/3113845-initwithseatsection
-    initWithSeatSection_seatRow_seatNumber_seatingType(seatSection: cocoascript.NSString, seatRow: cocoascript.NSString, seatNumber: cocoascript.NSString, seatingType: cocoascript.NSString):cocoascript.INSeat;
+    initWithSeatSection_seatRow_seatNumber_seatingType(seatSection: string | cocoascript.NSString, seatRow: string | cocoascript.NSString, seatNumber: string | cocoascript.NSString, seatingType: string | cocoascript.NSString):cocoascript.INSeat;
     // doc://com.apple.documentation/documentation/sirikit/inseat/3113848-seatsection
-    seatSection(): cocoascript.NSString;
+    seatSection(): string | cocoascript.NSString;
     setSeatSection(): void;
     // doc://com.apple.documentation/documentation/sirikit/inseat/3113847-seatrow
-    seatRow(): cocoascript.NSString;
+    seatRow(): string | cocoascript.NSString;
     setSeatRow(): void;
     // doc://com.apple.documentation/documentation/sirikit/inseat/3113846-seatnumber
-    seatNumber(): cocoascript.NSString;
+    seatNumber(): string | cocoascript.NSString;
     setSeatNumber(): void;
     // doc://com.apple.documentation/documentation/sirikit/inseat/3113849-seatingtype
-    seatingType(): cocoascript.NSString;
+    seatingType(): string | cocoascript.NSString;
     setSeatingType(): void;
     //
     alloc():cocoascript.INSeat;
@@ -3046,9 +3046,9 @@ declare namespace cocoascript {
    */
   interface INLodgingReservation extends INReservation {
     // doc://com.apple.documentation/documentation/sirikit/inlodgingreservation/3601149-initwithitemreference
-    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_URL_lodgingBusinessLocation_reservationDuration_numberOfAdults_numberOfChildren(itemReference: cocoascript.INSpeakableString, reservationNumber: cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: cocoascript.NSString, actions: cocoascript.INReservationAction, URL: cocoascript.NSURL, lodgingBusinessLocation: cocoascript.CLPlacemark, reservationDuration: cocoascript.INDateComponentsRange, numberOfAdults: cocoascript.NSNumber, numberOfChildren: cocoascript.NSNumber):cocoascript.INLodgingReservation;
+    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_URL_lodgingBusinessLocation_reservationDuration_numberOfAdults_numberOfChildren(itemReference: cocoascript.INSpeakableString, reservationNumber: string | cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: string | cocoascript.NSString, actions: cocoascript.INReservationAction, URL: cocoascript.NSURL, lodgingBusinessLocation: cocoascript.CLPlacemark, reservationDuration: cocoascript.INDateComponentsRange, numberOfAdults: cocoascript.NSNumber, numberOfChildren: cocoascript.NSNumber):cocoascript.INLodgingReservation;
     // doc://com.apple.documentation/documentation/sirikit/inlodgingreservation/3191875-initwithitemreference
-    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_lodgingBusinessLocation_reservationDuration_numberOfAdults_numberOfChildren(itemReference: cocoascript.INSpeakableString, reservationNumber: cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: cocoascript.NSString, actions: cocoascript.INReservationAction, lodgingBusinessLocation: cocoascript.CLPlacemark, reservationDuration: cocoascript.INDateComponentsRange, numberOfAdults: cocoascript.NSNumber, numberOfChildren: cocoascript.NSNumber):cocoascript.INLodgingReservation;
+    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_lodgingBusinessLocation_reservationDuration_numberOfAdults_numberOfChildren(itemReference: cocoascript.INSpeakableString, reservationNumber: string | cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: string | cocoascript.NSString, actions: cocoascript.INReservationAction, lodgingBusinessLocation: cocoascript.CLPlacemark, reservationDuration: cocoascript.INDateComponentsRange, numberOfAdults: cocoascript.NSNumber, numberOfChildren: cocoascript.NSNumber):cocoascript.INLodgingReservation;
     // doc://com.apple.documentation/documentation/sirikit/inlodgingreservation/3141807-lodgingbusinesslocation
     lodgingBusinessLocation(): cocoascript.CLPlacemark;
     setLodgingBusinessLocation(): void;
@@ -3076,21 +3076,21 @@ declare namespace cocoascript {
    */
   interface INRentalCar extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inrentalcar/3141812-initwithrentalcompanyname
-    initWithRentalCompanyName_type_make_model_rentalCarDescription(rentalCompanyName: cocoascript.NSString, type: cocoascript.NSString, make: cocoascript.NSString, model: cocoascript.NSString, rentalCarDescription: cocoascript.NSString):cocoascript.INRentalCar;
+    initWithRentalCompanyName_type_make_model_rentalCarDescription(rentalCompanyName: string | cocoascript.NSString, type: string | cocoascript.NSString, make: string | cocoascript.NSString, model: string | cocoascript.NSString, rentalCarDescription: string | cocoascript.NSString):cocoascript.INRentalCar;
     // doc://com.apple.documentation/documentation/sirikit/inrentalcar/3141816-rentalcompanyname
-    rentalCompanyName(): cocoascript.NSString;
+    rentalCompanyName(): string | cocoascript.NSString;
     setRentalCompanyName(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrentalcar/3141817-type
-    type(): cocoascript.NSString;
+    type(): string | cocoascript.NSString;
     setType(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrentalcar/3141813-make
-    make(): cocoascript.NSString;
+    make(): string | cocoascript.NSString;
     setMake(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrentalcar/3141814-model
-    model(): cocoascript.NSString;
+    model(): string | cocoascript.NSString;
     setModel(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrentalcar/3141815-rentalcardescription
-    rentalCarDescription(): cocoascript.NSString;
+    rentalCarDescription(): string | cocoascript.NSString;
     setRentalCarDescription(): void;
     //
     alloc():cocoascript.INRentalCar;
@@ -3107,9 +3107,9 @@ declare namespace cocoascript {
    */
   interface INRentalCarReservation extends INReservation {
     // doc://com.apple.documentation/documentation/sirikit/inrentalcarreservation/3552228-initwithitemreference
-    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_URL_rentalCar_rentalDuration_pickupLocation_dropOffLocation(itemReference: cocoascript.INSpeakableString, reservationNumber: cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: cocoascript.NSString, actions: cocoascript.INReservationAction, URL: cocoascript.NSURL, rentalCar: cocoascript.INRentalCar, rentalDuration: cocoascript.INDateComponentsRange, pickupLocation: cocoascript.CLPlacemark, dropOffLocation: cocoascript.CLPlacemark):cocoascript.INRentalCarReservation;
+    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_URL_rentalCar_rentalDuration_pickupLocation_dropOffLocation(itemReference: cocoascript.INSpeakableString, reservationNumber: string | cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: string | cocoascript.NSString, actions: cocoascript.INReservationAction, URL: cocoascript.NSURL, rentalCar: cocoascript.INRentalCar, rentalDuration: cocoascript.INDateComponentsRange, pickupLocation: cocoascript.CLPlacemark, dropOffLocation: cocoascript.CLPlacemark):cocoascript.INRentalCarReservation;
     // doc://com.apple.documentation/documentation/sirikit/inrentalcarreservation/3191876-initwithitemreference
-    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_rentalCar_rentalDuration_pickupLocation_dropOffLocation(itemReference: cocoascript.INSpeakableString, reservationNumber: cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: cocoascript.NSString, actions: cocoascript.INReservationAction, rentalCar: cocoascript.INRentalCar, rentalDuration: cocoascript.INDateComponentsRange, pickupLocation: cocoascript.CLPlacemark, dropOffLocation: cocoascript.CLPlacemark):cocoascript.INRentalCarReservation;
+    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_rentalCar_rentalDuration_pickupLocation_dropOffLocation(itemReference: cocoascript.INSpeakableString, reservationNumber: string | cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: string | cocoascript.NSString, actions: cocoascript.INReservationAction, rentalCar: cocoascript.INRentalCar, rentalDuration: cocoascript.INDateComponentsRange, pickupLocation: cocoascript.CLPlacemark, dropOffLocation: cocoascript.CLPlacemark):cocoascript.INRentalCarReservation;
     // doc://com.apple.documentation/documentation/sirikit/inrentalcarreservation/3141822-rentalcar
     rentalCar(): cocoascript.INRentalCar;
     setRentalCar(): void;
@@ -3137,9 +3137,9 @@ declare namespace cocoascript {
    */
   interface INRestaurantReservation extends INReservation {
     // doc://com.apple.documentation/documentation/sirikit/inrestaurantreservation/3601152-initwithitemreference
-    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_URL_reservationDuration_partySize_restaurantLocation(itemReference: cocoascript.INSpeakableString, reservationNumber: cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: cocoascript.NSString, actions: cocoascript.INReservationAction, URL: cocoascript.NSURL, reservationDuration: cocoascript.INDateComponentsRange, partySize: cocoascript.NSNumber, restaurantLocation: cocoascript.CLPlacemark):cocoascript.INRestaurantReservation;
+    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_URL_reservationDuration_partySize_restaurantLocation(itemReference: cocoascript.INSpeakableString, reservationNumber: string | cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: string | cocoascript.NSString, actions: cocoascript.INReservationAction, URL: cocoascript.NSURL, reservationDuration: cocoascript.INDateComponentsRange, partySize: cocoascript.NSNumber, restaurantLocation: cocoascript.CLPlacemark):cocoascript.INRestaurantReservation;
     // doc://com.apple.documentation/documentation/sirikit/inrestaurantreservation/3191888-initwithitemreference
-    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_reservationDuration_partySize_restaurantLocation(itemReference: cocoascript.INSpeakableString, reservationNumber: cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: cocoascript.NSString, actions: cocoascript.INReservationAction, reservationDuration: cocoascript.INDateComponentsRange, partySize: cocoascript.NSNumber, restaurantLocation: cocoascript.CLPlacemark):cocoascript.INRestaurantReservation;
+    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_reservationDuration_partySize_restaurantLocation(itemReference: cocoascript.INSpeakableString, reservationNumber: string | cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: string | cocoascript.NSString, actions: cocoascript.INReservationAction, reservationDuration: cocoascript.INDateComponentsRange, partySize: cocoascript.NSNumber, restaurantLocation: cocoascript.CLPlacemark):cocoascript.INRestaurantReservation;
     // doc://com.apple.documentation/documentation/sirikit/inrestaurantreservation/3141827-reservationduration
     reservationDuration(): cocoascript.INDateComponentsRange;
     setReservationDuration(): void;
@@ -3164,7 +3164,7 @@ declare namespace cocoascript {
    */
   interface INTicketedEvent extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inticketedevent/3191890-initwithcategory
-    initWithCategory_name_eventDuration_location(category: cocoascript.INTicketedEventCategory, name: cocoascript.NSString, eventDuration: cocoascript.INDateComponentsRange, location: cocoascript.CLPlacemark):cocoascript.INTicketedEvent;
+    initWithCategory_name_eventDuration_location(category: cocoascript.INTicketedEventCategory, name: string | cocoascript.NSString, eventDuration: cocoascript.INDateComponentsRange, location: cocoascript.CLPlacemark):cocoascript.INTicketedEvent;
     // doc://com.apple.documentation/documentation/sirikit/inticketedevent/3191889-category
     category(): cocoascript.INTicketedEventCategory;
     setCategory(): void;
@@ -3175,7 +3175,7 @@ declare namespace cocoascript {
     location(): cocoascript.CLPlacemark;
     setLocation(): void;
     // doc://com.apple.documentation/documentation/sirikit/inticketedevent/3141885-name
-    name(): cocoascript.NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     //
     alloc():cocoascript.INTicketedEvent;
@@ -3192,9 +3192,9 @@ declare namespace cocoascript {
    */
   interface INTicketedEventReservation extends INReservation {
     // doc://com.apple.documentation/documentation/sirikit/inticketedeventreservation/3552237-initwithitemreference
-    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_URL_reservedSeat_event(itemReference: cocoascript.INSpeakableString, reservationNumber: cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: cocoascript.NSString, actions: cocoascript.INReservationAction, URL: cocoascript.NSURL, reservedSeat: cocoascript.INSeat, event: cocoascript.INTicketedEvent):cocoascript.INTicketedEventReservation;
+    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_URL_reservedSeat_event(itemReference: cocoascript.INSpeakableString, reservationNumber: string | cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: string | cocoascript.NSString, actions: cocoascript.INReservationAction, URL: cocoascript.NSURL, reservedSeat: cocoascript.INSeat, event: cocoascript.INTicketedEvent):cocoascript.INTicketedEventReservation;
     // doc://com.apple.documentation/documentation/sirikit/inticketedeventreservation/3191895-initwithitemreference
-    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_reservedSeat_event(itemReference: cocoascript.INSpeakableString, reservationNumber: cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: cocoascript.NSString, actions: cocoascript.INReservationAction, reservedSeat: cocoascript.INSeat, event: cocoascript.INTicketedEvent):cocoascript.INTicketedEventReservation;
+    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_reservedSeat_event(itemReference: cocoascript.INSpeakableString, reservationNumber: string | cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: string | cocoascript.NSString, actions: cocoascript.INReservationAction, reservedSeat: cocoascript.INSeat, event: cocoascript.INTicketedEvent):cocoascript.INTicketedEventReservation;
     // doc://com.apple.documentation/documentation/sirikit/inticketedeventreservation/3141887-event
     event(): cocoascript.INTicketedEvent;
     setEvent(): void;
@@ -3216,9 +3216,9 @@ declare namespace cocoascript {
    */
   interface INTrainReservation extends INReservation {
     // doc://com.apple.documentation/documentation/sirikit/intrainreservation/3552238-initwithitemreference
-    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_URL_reservedSeat_trainTrip(itemReference: cocoascript.INSpeakableString, reservationNumber: cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: cocoascript.NSString, actions: cocoascript.INReservationAction, URL: cocoascript.NSURL, reservedSeat: cocoascript.INSeat, trainTrip: cocoascript.INTrainTrip):cocoascript.INTrainReservation;
+    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_URL_reservedSeat_trainTrip(itemReference: cocoascript.INSpeakableString, reservationNumber: string | cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: string | cocoascript.NSString, actions: cocoascript.INReservationAction, URL: cocoascript.NSURL, reservedSeat: cocoascript.INSeat, trainTrip: cocoascript.INTrainTrip):cocoascript.INTrainReservation;
     // doc://com.apple.documentation/documentation/sirikit/intrainreservation/3191896-initwithitemreference
-    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_reservedSeat_trainTrip(itemReference: cocoascript.INSpeakableString, reservationNumber: cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: cocoascript.NSString, actions: cocoascript.INReservationAction, reservedSeat: cocoascript.INSeat, trainTrip: cocoascript.INTrainTrip):cocoascript.INTrainReservation;
+    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_reservedSeat_trainTrip(itemReference: cocoascript.INSpeakableString, reservationNumber: string | cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: string | cocoascript.NSString, actions: cocoascript.INReservationAction, reservedSeat: cocoascript.INSeat, trainTrip: cocoascript.INTrainTrip):cocoascript.INTrainReservation;
     // doc://com.apple.documentation/documentation/sirikit/intrainreservation/3141895-reservedseat
     reservedSeat(): cocoascript.INSeat;
     setReservedSeat(): void;
@@ -3240,15 +3240,15 @@ declare namespace cocoascript {
    */
   interface INTrainTrip extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/intraintrip/3191897-initwithprovider
-    initWithProvider_trainName_trainNumber_tripDuration_departureStationLocation_departurePlatform_arrivalStationLocation_arrivalPlatform(provider: cocoascript.NSString, trainName: cocoascript.NSString, trainNumber: cocoascript.NSString, tripDuration: cocoascript.INDateComponentsRange, departureStationLocation: cocoascript.CLPlacemark, departurePlatform: cocoascript.NSString, arrivalStationLocation: cocoascript.CLPlacemark, arrivalPlatform: cocoascript.NSString):cocoascript.INTrainTrip;
+    initWithProvider_trainName_trainNumber_tripDuration_departureStationLocation_departurePlatform_arrivalStationLocation_arrivalPlatform(provider: string | cocoascript.NSString, trainName: string | cocoascript.NSString, trainNumber: string | cocoascript.NSString, tripDuration: cocoascript.INDateComponentsRange, departureStationLocation: cocoascript.CLPlacemark, departurePlatform: string | cocoascript.NSString, arrivalStationLocation: cocoascript.CLPlacemark, arrivalPlatform: string | cocoascript.NSString):cocoascript.INTrainTrip;
     // doc://com.apple.documentation/documentation/sirikit/intraintrip/3191898-provider
-    provider(): cocoascript.NSString;
+    provider(): string | cocoascript.NSString;
     setProvider(): void;
     // doc://com.apple.documentation/documentation/sirikit/intraintrip/3141904-trainname
-    trainName(): cocoascript.NSString;
+    trainName(): string | cocoascript.NSString;
     setTrainName(): void;
     // doc://com.apple.documentation/documentation/sirikit/intraintrip/3141905-trainnumber
-    trainNumber(): cocoascript.NSString;
+    trainNumber(): string | cocoascript.NSString;
     setTrainNumber(): void;
     // doc://com.apple.documentation/documentation/sirikit/intraintrip/3141906-tripduration
     tripDuration(): cocoascript.INDateComponentsRange;
@@ -3257,13 +3257,13 @@ declare namespace cocoascript {
     departureStationLocation(): cocoascript.CLPlacemark;
     setDepartureStationLocation(): void;
     // doc://com.apple.documentation/documentation/sirikit/intraintrip/3141900-departureplatform
-    departurePlatform(): cocoascript.NSString;
+    departurePlatform(): string | cocoascript.NSString;
     setDeparturePlatform(): void;
     // doc://com.apple.documentation/documentation/sirikit/intraintrip/3141899-arrivalstationlocation
     arrivalStationLocation(): cocoascript.CLPlacemark;
     setArrivalStationLocation(): void;
     // doc://com.apple.documentation/documentation/sirikit/intraintrip/3141898-arrivalplatform
-    arrivalPlatform(): cocoascript.NSString;
+    arrivalPlatform(): string | cocoascript.NSString;
     setArrivalPlatform(): void;
     //
     alloc():cocoascript.INTrainTrip;
@@ -3280,15 +3280,15 @@ declare namespace cocoascript {
    */
   interface INAirportGate extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inairportgate/3191867-initwithairport
-    initWithAirport_terminal_gate(airport: cocoascript.INAirport, terminal: cocoascript.NSString, gate: cocoascript.NSString):cocoascript.INAirportGate;
+    initWithAirport_terminal_gate(airport: cocoascript.INAirport, terminal: string | cocoascript.NSString, gate: string | cocoascript.NSString):cocoascript.INAirportGate;
     // doc://com.apple.documentation/documentation/sirikit/inairportgate/3191865-airport
     airport(): cocoascript.INAirport;
     setAirport(): void;
     // doc://com.apple.documentation/documentation/sirikit/inairportgate/3191868-terminal
-    terminal(): cocoascript.NSString;
+    terminal(): string | cocoascript.NSString;
     setTerminal(): void;
     // doc://com.apple.documentation/documentation/sirikit/inairportgate/3191866-gate
-    gate(): cocoascript.NSString;
+    gate(): string | cocoascript.NSString;
     setGate(): void;
     //
     alloc():cocoascript.INAirportGate;
@@ -3330,15 +3330,15 @@ declare namespace cocoascript {
    */
   interface INBoatTrip extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inboattrip/3552103-initwithprovider
-    initWithProvider_boatName_boatNumber_tripDuration_departureBoatTerminalLocation_arrivalBoatTerminalLocation(provider: cocoascript.NSString, boatName: cocoascript.NSString, boatNumber: cocoascript.NSString, tripDuration: cocoascript.INDateComponentsRange, departureBoatTerminalLocation: cocoascript.CLPlacemark, arrivalBoatTerminalLocation: cocoascript.CLPlacemark):cocoascript.INBoatTrip;
+    initWithProvider_boatName_boatNumber_tripDuration_departureBoatTerminalLocation_arrivalBoatTerminalLocation(provider: string | cocoascript.NSString, boatName: string | cocoascript.NSString, boatNumber: string | cocoascript.NSString, tripDuration: cocoascript.INDateComponentsRange, departureBoatTerminalLocation: cocoascript.CLPlacemark, arrivalBoatTerminalLocation: cocoascript.CLPlacemark):cocoascript.INBoatTrip;
     // doc://com.apple.documentation/documentation/sirikit/inboattrip/3552104-provider
-    provider(): cocoascript.NSString;
+    provider(): string | cocoascript.NSString;
     setProvider(): void;
     // doc://com.apple.documentation/documentation/sirikit/inboattrip/3552100-boatname
-    boatName(): cocoascript.NSString;
+    boatName(): string | cocoascript.NSString;
     setBoatName(): void;
     // doc://com.apple.documentation/documentation/sirikit/inboattrip/3552101-boatnumber
-    boatNumber(): cocoascript.NSString;
+    boatNumber(): string | cocoascript.NSString;
     setBoatNumber(): void;
     // doc://com.apple.documentation/documentation/sirikit/inboattrip/3552105-tripduration
     tripDuration(): cocoascript.INDateComponentsRange;
@@ -3364,27 +3364,27 @@ declare namespace cocoascript {
    */
   interface INBusTrip extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inbustrip/3552117-initwithprovider
-    initWithProvider_busName_busNumber_tripDuration_departureBusStopLocation_departurePlatform_arrivalBusStopLocation_arrivalPlatform(provider: cocoascript.NSString, busName: cocoascript.NSString, busNumber: cocoascript.NSString, tripDuration: cocoascript.INDateComponentsRange, departureBusStopLocation: cocoascript.CLPlacemark, departurePlatform: cocoascript.NSString, arrivalBusStopLocation: cocoascript.CLPlacemark, arrivalPlatform: cocoascript.NSString):cocoascript.INBusTrip;
+    initWithProvider_busName_busNumber_tripDuration_departureBusStopLocation_departurePlatform_arrivalBusStopLocation_arrivalPlatform(provider: string | cocoascript.NSString, busName: string | cocoascript.NSString, busNumber: string | cocoascript.NSString, tripDuration: cocoascript.INDateComponentsRange, departureBusStopLocation: cocoascript.CLPlacemark, departurePlatform: string | cocoascript.NSString, arrivalBusStopLocation: cocoascript.CLPlacemark, arrivalPlatform: string | cocoascript.NSString):cocoascript.INBusTrip;
     // doc://com.apple.documentation/documentation/sirikit/inbustrip/3552111-arrivalbusstoplocation
     arrivalBusStopLocation(): cocoascript.CLPlacemark;
     setArrivalBusStopLocation(): void;
     // doc://com.apple.documentation/documentation/sirikit/inbustrip/3552112-arrivalplatform
-    arrivalPlatform(): cocoascript.NSString;
+    arrivalPlatform(): string | cocoascript.NSString;
     setArrivalPlatform(): void;
     // doc://com.apple.documentation/documentation/sirikit/inbustrip/3552113-busname
-    busName(): cocoascript.NSString;
+    busName(): string | cocoascript.NSString;
     setBusName(): void;
     // doc://com.apple.documentation/documentation/sirikit/inbustrip/3552114-busnumber
-    busNumber(): cocoascript.NSString;
+    busNumber(): string | cocoascript.NSString;
     setBusNumber(): void;
     // doc://com.apple.documentation/documentation/sirikit/inbustrip/3552115-departurebusstoplocation
     departureBusStopLocation(): cocoascript.CLPlacemark;
     setDepartureBusStopLocation(): void;
     // doc://com.apple.documentation/documentation/sirikit/inbustrip/3552116-departureplatform
-    departurePlatform(): cocoascript.NSString;
+    departurePlatform(): string | cocoascript.NSString;
     setDeparturePlatform(): void;
     // doc://com.apple.documentation/documentation/sirikit/inbustrip/3552118-provider
-    provider(): cocoascript.NSString;
+    provider(): string | cocoascript.NSString;
     setProvider(): void;
     // doc://com.apple.documentation/documentation/sirikit/inbustrip/3552119-tripduration
     tripDuration(): cocoascript.INDateComponentsRange;
@@ -3404,24 +3404,24 @@ declare namespace cocoascript {
    */
   interface INCar extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/incar/3552129-initwithcaridentifier
-    initWithCarIdentifier_displayName_year_make_model_color_headUnit_supportedChargingConnectors(carIdentifier: cocoascript.NSString, displayName: cocoascript.NSString, year: cocoascript.NSString, make: cocoascript.NSString, model: cocoascript.NSString, color: cocoascript.CGColorRef, headUnit: cocoascript.INCarHeadUnit, supportedChargingConnectors: cocoascript.INCarChargingConnectorType):cocoascript.INCar;
+    initWithCarIdentifier_displayName_year_make_model_color_headUnit_supportedChargingConnectors(carIdentifier: string | cocoascript.NSString, displayName: string | cocoascript.NSString, year: string | cocoascript.NSString, make: string | cocoascript.NSString, model: string | cocoascript.NSString, color: cocoascript.CGColorRef, headUnit: cocoascript.INCarHeadUnit, supportedChargingConnectors: cocoascript.INCarChargingConnectorType):cocoascript.INCar;
     // doc://com.apple.documentation/documentation/sirikit/incar/3552125-caridentifier
-    carIdentifier(): cocoascript.NSString;
+    carIdentifier(): string | cocoascript.NSString;
     setCarIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/incar/3552127-displayname
-    displayName(): cocoascript.NSString;
+    displayName(): string | cocoascript.NSString;
     setDisplayName(): void;
     // doc://com.apple.documentation/documentation/sirikit/incar/3552130-make
-    make(): cocoascript.NSString;
+    make(): string | cocoascript.NSString;
     setMake(): void;
     // doc://com.apple.documentation/documentation/sirikit/incar/3552132-model
-    model(): cocoascript.NSString;
+    model(): string | cocoascript.NSString;
     setModel(): void;
     // doc://com.apple.documentation/documentation/sirikit/incar/3552126-color
     color(): cocoascript.CGColorRef;
     setColor(): void;
     // doc://com.apple.documentation/documentation/sirikit/incar/3552135-year
-    year(): cocoascript.NSString;
+    year(): string | cocoascript.NSString;
     setYear(): void;
     // doc://com.apple.documentation/documentation/sirikit/incar/3552128-headunit
     headUnit(): cocoascript.INCarHeadUnit;
@@ -3473,12 +3473,12 @@ declare namespace cocoascript {
    */
   interface INObjectSection extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/inobjectsection/3552214-initwithtitle
-    initWithTitle_items(title: cocoascript.NSString, items: any):cocoascript.INObjectSection;
+    initWithTitle_items(title: string | cocoascript.NSString, items: any):cocoascript.INObjectSection;
     // doc://com.apple.documentation/documentation/sirikit/inobjectsection/3552215-items
     items(): any;
     setItems(): void;
     // doc://com.apple.documentation/documentation/sirikit/inobjectsection/3552216-title
-    title(): cocoascript.NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     //
     alloc():cocoascript.INObjectSection;
@@ -3495,7 +3495,7 @@ declare namespace cocoascript {
    */
   interface INBoatReservation extends INReservation {
     // doc://com.apple.documentation/documentation/sirikit/inboatreservation/3601143-initwithitemreference
-    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_URL_reservedSeat_boatTrip(itemReference: cocoascript.INSpeakableString, reservationNumber: cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: cocoascript.NSString, actions: cocoascript.INReservationAction, URL: cocoascript.NSURL, reservedSeat: cocoascript.INSeat, boatTrip: cocoascript.INBoatTrip):cocoascript.INBoatReservation;
+    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_URL_reservedSeat_boatTrip(itemReference: cocoascript.INSpeakableString, reservationNumber: string | cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: string | cocoascript.NSString, actions: cocoascript.INReservationAction, URL: cocoascript.NSURL, reservedSeat: cocoascript.INSeat, boatTrip: cocoascript.INBoatTrip):cocoascript.INBoatReservation;
     // doc://com.apple.documentation/documentation/sirikit/inboatreservation/3601142-boattrip
     boatTrip(): cocoascript.INBoatTrip;
     setBoatTrip(): void;
@@ -3517,7 +3517,7 @@ declare namespace cocoascript {
    */
   interface INBusReservation extends INReservation {
     // doc://com.apple.documentation/documentation/sirikit/inbusreservation/3601147-initwithitemreference
-    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_URL_reservedSeat_busTrip(itemReference: cocoascript.INSpeakableString, reservationNumber: cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: cocoascript.NSString, actions: cocoascript.INReservationAction, URL: cocoascript.NSURL, reservedSeat: cocoascript.INSeat, busTrip: cocoascript.INBusTrip):cocoascript.INBusReservation;
+    initWithItemReference_reservationNumber_bookingTime_reservationStatus_reservationHolderName_actions_URL_reservedSeat_busTrip(itemReference: cocoascript.INSpeakableString, reservationNumber: string | cocoascript.NSString, bookingTime: cocoascript.NSDate, reservationStatus: cocoascript.INReservationStatus, reservationHolderName: string | cocoascript.NSString, actions: cocoascript.INReservationAction, URL: cocoascript.NSURL, reservedSeat: cocoascript.INSeat, busTrip: cocoascript.INBusTrip):cocoascript.INBusReservation;
     // doc://com.apple.documentation/documentation/sirikit/inbusreservation/3601146-bustrip
     busTrip(): cocoascript.INBusTrip;
     setBusTrip(): void;
@@ -3563,12 +3563,12 @@ declare namespace cocoascript {
    */
   interface INCarHeadUnit extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/incarheadunit/3674223-initwithbluetoothidentifier
-    initWithBluetoothIdentifier_iAP2Identifier(bluetoothIdentifier: cocoascript.NSString, iAP2Identifier: cocoascript.NSString):cocoascript.INCarHeadUnit;
+    initWithBluetoothIdentifier_iAP2Identifier(bluetoothIdentifier: string | cocoascript.NSString, iAP2Identifier: string | cocoascript.NSString):cocoascript.INCarHeadUnit;
     // doc://com.apple.documentation/documentation/sirikit/incarheadunit/3674221-bluetoothidentifier
-    bluetoothIdentifier(): cocoascript.NSString;
+    bluetoothIdentifier(): string | cocoascript.NSString;
     setBluetoothIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/incarheadunit/3674222-iap2identifier
-    iAP2Identifier(): cocoascript.NSString;
+    iAP2Identifier(): string | cocoascript.NSString;
     setIAP2Identifier(): void;
     //
     alloc():cocoascript.INCarHeadUnit;
@@ -3597,34 +3597,34 @@ declare namespace cocoascript {
    */
   interface INSendMessageIntent extends INIntent {
     // doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866587-initwithrecipients
-    initWithRecipients_content_speakableGroupName_conversationIdentifier_serviceName_sender(recipients: cocoascript.INPerson, content: cocoascript.NSString, speakableGroupName: cocoascript.INSpeakableString, conversationIdentifier: cocoascript.NSString, serviceName: cocoascript.NSString, sender: cocoascript.INPerson):cocoascript.INSendMessageIntent;
+    initWithRecipients_content_speakableGroupName_conversationIdentifier_serviceName_sender(recipients: cocoascript.INPerson, content: string | cocoascript.NSString, speakableGroupName: cocoascript.INSpeakableString, conversationIdentifier: string | cocoascript.NSString, serviceName: string | cocoascript.NSString, sender: cocoascript.INPerson):cocoascript.INSendMessageIntent;
     // doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1778238-initwithrecipients
-    initWithRecipients_content_groupName_serviceName_sender(recipients: cocoascript.INPerson, content: cocoascript.NSString, groupName: cocoascript.NSString, serviceName: cocoascript.NSString, sender: cocoascript.INPerson):cocoascript.INSendMessageIntent;
+    initWithRecipients_content_groupName_serviceName_sender(recipients: cocoascript.INPerson, content: string | cocoascript.NSString, groupName: string | cocoascript.NSString, serviceName: string | cocoascript.NSString, sender: cocoascript.INPerson):cocoascript.INSendMessageIntent;
     // doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1639316-recipients
     recipients(): cocoascript.INPerson;
     setRecipients(): void;
     // doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866586-conversationidentifier
-    conversationIdentifier(): cocoascript.NSString;
+    conversationIdentifier(): string | cocoascript.NSString;
     setConversationIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/insendmessageintent/2866589-speakablegroupname
     speakableGroupName(): cocoascript.INSpeakableString;
     setSpeakableGroupName(): void;
     // doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1639106-content
-    content(): cocoascript.NSString;
+    content(): string | cocoascript.NSString;
     setContent(): void;
     // doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1639342-servicename
-    serviceName(): cocoascript.NSString;
+    serviceName(): string | cocoascript.NSString;
     setServiceName(): void;
     // doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1639248-sender
     sender(): cocoascript.INPerson;
     setSender(): void;
     // doc://com.apple.documentation/documentation/sirikit/insendmessageintent/1778199-groupname
-    groupName(): cocoascript.NSString;
+    groupName(): string | cocoascript.NSString;
     setGroupName(): void;
     // doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3552231-initwithrecipients
-    initWithRecipients_outgoingMessageType_content_speakableGroupName_conversationIdentifier_serviceName_sender(recipients: cocoascript.INPerson, outgoingMessageType: cocoascript.INOutgoingMessageType, content: cocoascript.NSString, speakableGroupName: cocoascript.INSpeakableString, conversationIdentifier: cocoascript.NSString, serviceName: cocoascript.NSString, sender: cocoascript.INPerson):cocoascript.INSendMessageIntent;
+    initWithRecipients_outgoingMessageType_content_speakableGroupName_conversationIdentifier_serviceName_sender(recipients: cocoascript.INPerson, outgoingMessageType: cocoascript.INOutgoingMessageType, content: string | cocoascript.NSString, speakableGroupName: cocoascript.INSpeakableString, conversationIdentifier: string | cocoascript.NSString, serviceName: string | cocoascript.NSString, sender: cocoascript.INPerson):cocoascript.INSendMessageIntent;
     // doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3621863-initwithrecipients
-    initWithRecipients_outgoingMessageType_content_speakableGroupName_conversationIdentifier_serviceName_sender_attachments(recipients: cocoascript.INPerson, outgoingMessageType: cocoascript.INOutgoingMessageType, content: cocoascript.NSString, speakableGroupName: cocoascript.INSpeakableString, conversationIdentifier: cocoascript.NSString, serviceName: cocoascript.NSString, sender: cocoascript.INPerson, attachments: cocoascript.INSendMessageAttachment):cocoascript.INSendMessageIntent;
+    initWithRecipients_outgoingMessageType_content_speakableGroupName_conversationIdentifier_serviceName_sender_attachments(recipients: cocoascript.INPerson, outgoingMessageType: cocoascript.INOutgoingMessageType, content: string | cocoascript.NSString, speakableGroupName: cocoascript.INSpeakableString, conversationIdentifier: string | cocoascript.NSString, serviceName: string | cocoascript.NSString, sender: cocoascript.INPerson, attachments: cocoascript.INSendMessageAttachment):cocoascript.INSendMessageIntent;
     // doc://com.apple.documentation/documentation/sirikit/insendmessageintent/3621862-attachments
     attachments(): cocoascript.INSendMessageAttachment;
     setAttachments(): void;
@@ -3646,11 +3646,11 @@ declare namespace cocoascript {
    */
   interface INFile extends NSObject {
     // doc://com.apple.documentation/documentation/sirikit/infile/3152215-filewithdata
-    fileWithData_filename_typeIdentifier(data: cocoascript.NSData, filename: cocoascript.NSString, typeIdentifier: cocoascript.NSString):cocoascript.INFile;
+    fileWithData_filename_typeIdentifier(data: cocoascript.NSData, filename: string | cocoascript.NSString, typeIdentifier: string | cocoascript.NSString):cocoascript.INFile;
     // doc://com.apple.documentation/documentation/sirikit/infile/3152216-filewithfileurl
-    fileWithFileURL_filename_typeIdentifier(fileURL: cocoascript.NSURL, filename: cocoascript.NSString, typeIdentifier: cocoascript.NSString):cocoascript.INFile;
+    fileWithFileURL_filename_typeIdentifier(fileURL: cocoascript.NSURL, filename: string | cocoascript.NSString, typeIdentifier: string | cocoascript.NSString):cocoascript.INFile;
     // doc://com.apple.documentation/documentation/sirikit/infile/3152217-filename
-    filename(): cocoascript.NSString;
+    filename(): string | cocoascript.NSString;
     setFilename(): void;
     // doc://com.apple.documentation/documentation/sirikit/infile/3152213-data
     data(): cocoascript.NSData;
@@ -3659,7 +3659,7 @@ declare namespace cocoascript {
     fileURL(): cocoascript.NSURL;
     setFileURL(): void;
     // doc://com.apple.documentation/documentation/sirikit/infile/3152218-typeidentifier
-    typeIdentifier(): cocoascript.NSString;
+    typeIdentifier(): string | cocoascript.NSString;
     setTypeIdentifier(): void;
     //
     alloc():cocoascript.INFile;
@@ -3877,12 +3877,12 @@ declare namespace cocoascript {
    */
   interface INSetMessageAttributeIntent extends INIntent {
     // doc://com.apple.documentation/documentation/sirikit/insetmessageattributeintent/1829396-initwithidentifiers
-    initWithIdentifiers_attribute(identifiers: cocoascript.NSString, attribute: cocoascript.INMessageAttribute):cocoascript.INSetMessageAttributeIntent;
+    initWithIdentifiers_attribute(identifiers: string | cocoascript.NSString, attribute: cocoascript.INMessageAttribute):cocoascript.INSetMessageAttributeIntent;
     // doc://com.apple.documentation/documentation/sirikit/insetmessageattributeintent/1829395-attribute
     attribute(): cocoascript.INMessageAttribute;
     setAttribute(): void;
     // doc://com.apple.documentation/documentation/sirikit/insetmessageattributeintent/1829392-identifiers
-    identifiers(): cocoascript.NSString;
+    identifiers(): string | cocoascript.NSString;
     setIdentifiers(): void;
     //
     alloc():cocoascript.INSetMessageAttributeIntent;
@@ -3947,17 +3947,17 @@ declare namespace cocoascript {
    */
   interface INSaveProfileInCarIntent extends INIntent {
     // doc://com.apple.documentation/documentation/sirikit/insaveprofileincarintent/2727145-initwithprofilenumber
-    initWithProfileNumber_profileName(profileNumber: cocoascript.NSNumber, profileName: cocoascript.NSString):cocoascript.INSaveProfileInCarIntent;
+    initWithProfileNumber_profileName(profileNumber: cocoascript.NSNumber, profileName: string | cocoascript.NSString):cocoascript.INSaveProfileInCarIntent;
     // doc://com.apple.documentation/documentation/sirikit/insaveprofileincarintent/2102343-initwithprofilenumber
-    initWithProfileNumber_profileLabel(profileNumber: cocoascript.NSNumber, profileLabel: cocoascript.NSString):cocoascript.INSaveProfileInCarIntent;
+    initWithProfileNumber_profileLabel(profileNumber: cocoascript.NSNumber, profileLabel: string | cocoascript.NSString):cocoascript.INSaveProfileInCarIntent;
     // doc://com.apple.documentation/documentation/sirikit/insaveprofileincarintent/2102346-profilenumber
     profileNumber(): cocoascript.NSNumber;
     setProfileNumber(): void;
     // doc://com.apple.documentation/documentation/sirikit/insaveprofileincarintent/2727143-profilename
-    profileName(): cocoascript.NSString;
+    profileName(): string | cocoascript.NSString;
     setProfileName(): void;
     // doc://com.apple.documentation/documentation/sirikit/insaveprofileincarintent/2102345-profilelabel
-    profileLabel(): cocoascript.NSString;
+    profileLabel(): string | cocoascript.NSString;
     setProfileLabel(): void;
     //
     alloc():cocoascript.INSaveProfileInCarIntent;
@@ -3993,7 +3993,7 @@ declare namespace cocoascript {
    */
   interface INSendPaymentIntent extends INIntent {
     // doc://com.apple.documentation/documentation/sirikit/insendpaymentintent/2102644-initwithpayee
-    initWithPayee_currencyAmount_note(payee: cocoascript.INPerson, currencyAmount: cocoascript.INCurrencyAmount, note: cocoascript.NSString):cocoascript.INSendPaymentIntent;
+    initWithPayee_currencyAmount_note(payee: cocoascript.INPerson, currencyAmount: cocoascript.INCurrencyAmount, note: string | cocoascript.NSString):cocoascript.INSendPaymentIntent;
     // doc://com.apple.documentation/documentation/sirikit/insendpaymentintent/1639374-payee
     payee(): cocoascript.INPerson;
     setPayee(): void;
@@ -4001,7 +4001,7 @@ declare namespace cocoascript {
     currencyAmount(): cocoascript.INCurrencyAmount;
     setCurrencyAmount(): void;
     // doc://com.apple.documentation/documentation/sirikit/insendpaymentintent/1639091-note
-    note(): cocoascript.NSString;
+    note(): string | cocoascript.NSString;
     setNote(): void;
     //
     alloc():cocoascript.INSendPaymentIntent;
@@ -4740,7 +4740,7 @@ declare namespace cocoascript {
    */
   interface INRequestPaymentIntent extends INIntent {
     // doc://com.apple.documentation/documentation/sirikit/inrequestpaymentintent/2102241-initwithpayer
-    initWithPayer_currencyAmount_note(payer: cocoascript.INPerson, currencyAmount: cocoascript.INCurrencyAmount, note: cocoascript.NSString):cocoascript.INRequestPaymentIntent;
+    initWithPayer_currencyAmount_note(payer: cocoascript.INPerson, currencyAmount: cocoascript.INCurrencyAmount, note: string | cocoascript.NSString):cocoascript.INRequestPaymentIntent;
     // doc://com.apple.documentation/documentation/sirikit/inrequestpaymentintent/1638567-payer
     payer(): cocoascript.INPerson;
     setPayer(): void;
@@ -4748,7 +4748,7 @@ declare namespace cocoascript {
     currencyAmount(): cocoascript.INCurrencyAmount;
     setCurrencyAmount(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrequestpaymentintent/1638628-note
-    note(): cocoascript.NSString;
+    note(): string | cocoascript.NSString;
     setNote(): void;
     //
     alloc():cocoascript.INRequestPaymentIntent;
@@ -4787,7 +4787,7 @@ declare namespace cocoascript {
    */
   interface INSetRadioStationIntent extends INIntent {
     // doc://com.apple.documentation/documentation/sirikit/insetradiostationintent/1778276-initwithradiotype
-    initWithRadioType_frequency_stationName_channel_presetNumber(radioType: cocoascript.INRadioType, frequency: cocoascript.NSNumber, stationName: cocoascript.NSString, channel: cocoascript.NSString, presetNumber: cocoascript.NSNumber):cocoascript.INSetRadioStationIntent;
+    initWithRadioType_frequency_stationName_channel_presetNumber(radioType: cocoascript.INRadioType, frequency: cocoascript.NSNumber, stationName: string | cocoascript.NSString, channel: string | cocoascript.NSString, presetNumber: cocoascript.NSNumber):cocoascript.INSetRadioStationIntent;
     // doc://com.apple.documentation/documentation/sirikit/insetradiostationintent/1649472-radiotype
     radioType(): cocoascript.INRadioType;
     setRadioType(): void;
@@ -4795,10 +4795,10 @@ declare namespace cocoascript {
     frequency(): cocoascript.NSNumber;
     setFrequency(): void;
     // doc://com.apple.documentation/documentation/sirikit/insetradiostationintent/1649478-stationname
-    stationName(): cocoascript.NSString;
+    stationName(): string | cocoascript.NSString;
     setStationName(): void;
     // doc://com.apple.documentation/documentation/sirikit/insetradiostationintent/1778274-channel
-    channel(): cocoascript.NSString;
+    channel(): string | cocoascript.NSString;
     setChannel(): void;
     // doc://com.apple.documentation/documentation/sirikit/insetradiostationintent/1649476-presetnumber
     presetNumber(): cocoascript.NSNumber;
@@ -5004,7 +5004,7 @@ declare namespace cocoascript {
    */
   interface INSearchForPhotosIntent extends INIntent {
     // doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1638173-initwithdatecreated
-    initWithDateCreated_locationCreated_albumName_searchTerms_includedAttributes_excludedAttributes_peopleInPhoto(dateCreated: cocoascript.INDateComponentsRange, locationCreated: cocoascript.CLPlacemark, albumName: cocoascript.NSString, searchTerms: cocoascript.NSString, includedAttributes: cocoascript.INPhotoAttributeOptions, excludedAttributes: cocoascript.INPhotoAttributeOptions, peopleInPhoto: cocoascript.INPerson):cocoascript.INSearchForPhotosIntent;
+    initWithDateCreated_locationCreated_albumName_searchTerms_includedAttributes_excludedAttributes_peopleInPhoto(dateCreated: cocoascript.INDateComponentsRange, locationCreated: cocoascript.CLPlacemark, albumName: string | cocoascript.NSString, searchTerms: string | cocoascript.NSString, includedAttributes: cocoascript.INPhotoAttributeOptions, excludedAttributes: cocoascript.INPhotoAttributeOptions, peopleInPhoto: cocoascript.INPerson):cocoascript.INSearchForPhotosIntent;
     // doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1639439-peopleinphoto
     peopleInPhoto(): cocoascript.INPerson;
     setPeopleInPhoto(): void;
@@ -5012,7 +5012,7 @@ declare namespace cocoascript {
     peopleInPhotoOperator(): cocoascript.INConditionalOperator;
     setPeopleInPhotoOperator(): void;
     // doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1638728-searchterms
-    searchTerms(): cocoascript.NSString;
+    searchTerms(): string | cocoascript.NSString;
     setSearchTerms(): void;
     // doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1639233-searchtermsoperator
     searchTermsOperator(): cocoascript.INConditionalOperator;
@@ -5024,7 +5024,7 @@ declare namespace cocoascript {
     locationCreated(): cocoascript.CLPlacemark;
     setLocationCreated(): void;
     // doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1638234-albumname
-    albumName(): cocoascript.NSString;
+    albumName(): string | cocoascript.NSString;
     setAlbumName(): void;
     // doc://com.apple.documentation/documentation/sirikit/insearchforphotosintent/1638191-includedattributes
     includedAttributes(): cocoascript.INPhotoAttributeOptions;
@@ -5115,9 +5115,9 @@ declare namespace cocoascript {
    */
   interface INCancelRideIntent extends INIntent {
     // doc://com.apple.documentation/documentation/sirikit/incancelrideintent/2875693-initwithrideidentifier
-    initWithRideIdentifier(rideIdentifier: cocoascript.NSString):cocoascript.INCancelRideIntent;
+    initWithRideIdentifier(rideIdentifier: string | cocoascript.NSString):cocoascript.INCancelRideIntent;
     // doc://com.apple.documentation/documentation/sirikit/incancelrideintent/2875648-rideidentifier
-    rideIdentifier(): cocoascript.NSString;
+    rideIdentifier(): string | cocoascript.NSString;
     setRideIdentifier(): void;
     //
     alloc():cocoascript.INCancelRideIntent;
@@ -5268,7 +5268,7 @@ declare namespace cocoascript {
     code(): cocoascript.INGetCarPowerLevelStatusIntentResponseCode;
     setCode(): void;
     // doc://com.apple.documentation/documentation/sirikit/ingetcarpowerlevelstatusintentresponse/3552171-caridentifier
-    carIdentifier(): cocoascript.NSString;
+    carIdentifier(): string | cocoascript.NSString;
     setCarIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/ingetcarpowerlevelstatusintentresponse/2799139-chargepercentremaining
     chargePercentRemaining(): cocoascript.NSNumber;
@@ -5444,15 +5444,15 @@ declare namespace cocoascript {
    */
   interface INSetProfileInCarIntent extends INIntent {
     // doc://com.apple.documentation/documentation/sirikit/insetprofileincarintent/3019575-initwithprofilenumber
-    initWithProfileNumber_profileName_defaultProfile_carName(profileNumber: cocoascript.NSNumber, profileName: cocoascript.NSString, defaultProfile: cocoascript.NSNumber, carName: cocoascript.INSpeakableString):cocoascript.INSetProfileInCarIntent;
+    initWithProfileNumber_profileName_defaultProfile_carName(profileNumber: cocoascript.NSNumber, profileName: string | cocoascript.NSString, defaultProfile: cocoascript.NSNumber, carName: cocoascript.INSpeakableString):cocoascript.INSetProfileInCarIntent;
     // doc://com.apple.documentation/documentation/sirikit/insetprofileincarintent/2102250-defaultprofile
     defaultProfile(): cocoascript.NSNumber;
     setDefaultProfile(): void;
     // doc://com.apple.documentation/documentation/sirikit/insetprofileincarintent/2726869-profilename
-    profileName(): cocoascript.NSString;
+    profileName(): string | cocoascript.NSString;
     setProfileName(): void;
     // doc://com.apple.documentation/documentation/sirikit/insetprofileincarintent/2102254-profilelabel
-    profileLabel(): cocoascript.NSString;
+    profileLabel(): string | cocoascript.NSString;
     setProfileLabel(): void;
     // doc://com.apple.documentation/documentation/sirikit/insetprofileincarintent/2102248-profilenumber
     profileNumber(): cocoascript.NSNumber;
@@ -5461,9 +5461,9 @@ declare namespace cocoascript {
     carName(): cocoascript.INSpeakableString;
     setCarName(): void;
     // doc://com.apple.documentation/documentation/sirikit/insetprofileincarintent/2726871-initwithprofilenumber
-    initWithProfileNumber_profileName_defaultProfile(profileNumber: cocoascript.NSNumber, profileName: cocoascript.NSString, defaultProfile: cocoascript.NSNumber):cocoascript.INSetProfileInCarIntent;
+    initWithProfileNumber_profileName_defaultProfile(profileNumber: cocoascript.NSNumber, profileName: string | cocoascript.NSString, defaultProfile: cocoascript.NSNumber):cocoascript.INSetProfileInCarIntent;
     // doc://com.apple.documentation/documentation/sirikit/insetprofileincarintent/2102245-initwithprofilenumber
-    initWithProfileNumber_profileLabel_defaultProfile(profileNumber: cocoascript.NSNumber, profileLabel: cocoascript.NSString, defaultProfile: cocoascript.NSNumber):cocoascript.INSetProfileInCarIntent;
+    initWithProfileNumber_profileLabel_defaultProfile(profileNumber: cocoascript.NSNumber, profileLabel: string | cocoascript.NSString, defaultProfile: cocoascript.NSNumber):cocoascript.INSetProfileInCarIntent;
     //
     alloc():cocoascript.INSetProfileInCarIntent;
     //
@@ -5508,11 +5508,11 @@ declare namespace cocoascript {
    */
   interface INSearchForNotebookItemsIntent extends INIntent {
     // doc://com.apple.documentation/documentation/sirikit/insearchfornotebookitemsintent/3141829-initwithtitle
-    initWithTitle_content_itemType_status_location_locationSearchType_dateTime_dateSearchType_temporalEventTriggerTypes_taskPriority_notebookItemIdentifier(title: cocoascript.INSpeakableString, content: cocoascript.NSString, itemType: cocoascript.INNotebookItemType, status: cocoascript.INTaskStatus, location: cocoascript.CLPlacemark, locationSearchType: cocoascript.INLocationSearchType, dateTime: cocoascript.INDateComponentsRange, dateSearchType: cocoascript.INDateSearchType, temporalEventTriggerTypes: cocoascript.INTemporalEventTriggerTypeOptions, taskPriority: cocoascript.INTaskPriority, notebookItemIdentifier: cocoascript.NSString):cocoascript.INSearchForNotebookItemsIntent;
+    initWithTitle_content_itemType_status_location_locationSearchType_dateTime_dateSearchType_temporalEventTriggerTypes_taskPriority_notebookItemIdentifier(title: cocoascript.INSpeakableString, content: string | cocoascript.NSString, itemType: cocoascript.INNotebookItemType, status: cocoascript.INTaskStatus, location: cocoascript.CLPlacemark, locationSearchType: cocoascript.INLocationSearchType, dateTime: cocoascript.INDateComponentsRange, dateSearchType: cocoascript.INDateSearchType, temporalEventTriggerTypes: cocoascript.INTemporalEventTriggerTypeOptions, taskPriority: cocoascript.INTaskPriority, notebookItemIdentifier: string | cocoascript.NSString):cocoascript.INSearchForNotebookItemsIntent;
     // doc://com.apple.documentation/documentation/sirikit/insearchfornotebookitemsintent/2935526-initwithtitle
-    initWithTitle_content_itemType_status_location_locationSearchType_dateTime_dateSearchType_notebookItemIdentifier(title: cocoascript.INSpeakableString, content: cocoascript.NSString, itemType: cocoascript.INNotebookItemType, status: cocoascript.INTaskStatus, location: cocoascript.CLPlacemark, locationSearchType: cocoascript.INLocationSearchType, dateTime: cocoascript.INDateComponentsRange, dateSearchType: cocoascript.INDateSearchType, notebookItemIdentifier: cocoascript.NSString):cocoascript.INSearchForNotebookItemsIntent;
+    initWithTitle_content_itemType_status_location_locationSearchType_dateTime_dateSearchType_notebookItemIdentifier(title: cocoascript.INSpeakableString, content: string | cocoascript.NSString, itemType: cocoascript.INNotebookItemType, status: cocoascript.INTaskStatus, location: cocoascript.CLPlacemark, locationSearchType: cocoascript.INLocationSearchType, dateTime: cocoascript.INDateComponentsRange, dateSearchType: cocoascript.INDateSearchType, notebookItemIdentifier: string | cocoascript.NSString):cocoascript.INSearchForNotebookItemsIntent;
     // doc://com.apple.documentation/documentation/sirikit/insearchfornotebookitemsintent/2875705-initwithtitle
-    initWithTitle_content_itemType_status_location_locationSearchType_dateTime_dateSearchType(title: cocoascript.INSpeakableString, content: cocoascript.NSString, itemType: cocoascript.INNotebookItemType, status: cocoascript.INTaskStatus, location: cocoascript.CLPlacemark, locationSearchType: cocoascript.INLocationSearchType, dateTime: cocoascript.INDateComponentsRange, dateSearchType: cocoascript.INDateSearchType):cocoascript.INSearchForNotebookItemsIntent;
+    initWithTitle_content_itemType_status_location_locationSearchType_dateTime_dateSearchType(title: cocoascript.INSpeakableString, content: string | cocoascript.NSString, itemType: cocoascript.INNotebookItemType, status: cocoascript.INTaskStatus, location: cocoascript.CLPlacemark, locationSearchType: cocoascript.INLocationSearchType, dateTime: cocoascript.INDateComponentsRange, dateSearchType: cocoascript.INDateSearchType):cocoascript.INSearchForNotebookItemsIntent;
     // doc://com.apple.documentation/documentation/sirikit/insearchfornotebookitemsintent/2875589-itemtype
     itemType(): cocoascript.INNotebookItemType;
     setItemType(): void;
@@ -5520,7 +5520,7 @@ declare namespace cocoascript {
     title(): cocoascript.INSpeakableString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/sirikit/insearchfornotebookitemsintent/2875644-content
-    content(): cocoascript.NSString;
+    content(): string | cocoascript.NSString;
     setContent(): void;
     // doc://com.apple.documentation/documentation/sirikit/insearchfornotebookitemsintent/2875588-status
     status(): cocoascript.INTaskStatus;
@@ -5538,7 +5538,7 @@ declare namespace cocoascript {
     dateSearchType(): cocoascript.INDateSearchType;
     setDateSearchType(): void;
     // doc://com.apple.documentation/documentation/sirikit/insearchfornotebookitemsintent/2935527-notebookitemidentifier
-    notebookItemIdentifier(): cocoascript.NSString;
+    notebookItemIdentifier(): string | cocoascript.NSString;
     setNotebookItemIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/insearchfornotebookitemsintent/3141830-taskpriority
     taskPriority(): cocoascript.INTaskPriority;
@@ -5765,9 +5765,9 @@ declare namespace cocoascript {
    */
   interface INSendRideFeedbackIntent extends INIntent {
     // doc://com.apple.documentation/documentation/sirikit/insendridefeedbackintent/2875687-initwithrideidentifier
-    initWithRideIdentifier(rideIdentifier: cocoascript.NSString):cocoascript.INSendRideFeedbackIntent;
+    initWithRideIdentifier(rideIdentifier: string | cocoascript.NSString):cocoascript.INSendRideFeedbackIntent;
     // doc://com.apple.documentation/documentation/sirikit/insendridefeedbackintent/2875663-rideidentifier
-    rideIdentifier(): cocoascript.NSString;
+    rideIdentifier(): string | cocoascript.NSString;
     setRideIdentifier(): void;
     // doc://com.apple.documentation/documentation/sirikit/insendridefeedbackintent/2875638-rating
     rating(): cocoascript.NSNumber;
@@ -5871,7 +5871,7 @@ declare namespace cocoascript {
    */
   interface INStartPhotoPlaybackIntent extends INIntent {
     // doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1638354-initwithdatecreated
-    initWithDateCreated_locationCreated_albumName_searchTerms_includedAttributes_excludedAttributes_peopleInPhoto(dateCreated: cocoascript.INDateComponentsRange, locationCreated: cocoascript.CLPlacemark, albumName: cocoascript.NSString, searchTerms: cocoascript.NSString, includedAttributes: cocoascript.INPhotoAttributeOptions, excludedAttributes: cocoascript.INPhotoAttributeOptions, peopleInPhoto: cocoascript.INPerson):cocoascript.INStartPhotoPlaybackIntent;
+    initWithDateCreated_locationCreated_albumName_searchTerms_includedAttributes_excludedAttributes_peopleInPhoto(dateCreated: cocoascript.INDateComponentsRange, locationCreated: cocoascript.CLPlacemark, albumName: string | cocoascript.NSString, searchTerms: string | cocoascript.NSString, includedAttributes: cocoascript.INPhotoAttributeOptions, excludedAttributes: cocoascript.INPhotoAttributeOptions, peopleInPhoto: cocoascript.INPerson):cocoascript.INStartPhotoPlaybackIntent;
     // doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1638564-peopleinphoto
     peopleInPhoto(): cocoascript.INPerson;
     setPeopleInPhoto(): void;
@@ -5879,7 +5879,7 @@ declare namespace cocoascript {
     peopleInPhotoOperator(): cocoascript.INConditionalOperator;
     setPeopleInPhotoOperator(): void;
     // doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1639186-searchterms
-    searchTerms(): cocoascript.NSString;
+    searchTerms(): string | cocoascript.NSString;
     setSearchTerms(): void;
     // doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1639393-searchtermsoperator
     searchTermsOperator(): cocoascript.INConditionalOperator;
@@ -5891,7 +5891,7 @@ declare namespace cocoascript {
     locationCreated(): cocoascript.CLPlacemark;
     setLocationCreated(): void;
     // doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1639239-albumname
-    albumName(): cocoascript.NSString;
+    albumName(): string | cocoascript.NSString;
     setAlbumName(): void;
     // doc://com.apple.documentation/documentation/sirikit/instartphotoplaybackintent/1638591-includedattributes
     includedAttributes(): cocoascript.INPhotoAttributeOptions;
@@ -5994,7 +5994,7 @@ declare namespace cocoascript {
    */
   interface INSearchForMessagesIntent extends INIntent {
     // doc://com.apple.documentation/documentation/sirikit/insearchformessagesintent/2983197-initwithrecipients
-    initWithRecipients_senders_searchTerms_attributes_dateTimeRange_identifiers_notificationIdentifiers_speakableGroupNames_conversationIdentifiers(recipients: cocoascript.INPerson, senders: cocoascript.INPerson, searchTerms: cocoascript.NSString, attributes: cocoascript.INMessageAttributeOptions, dateTimeRange: cocoascript.INDateComponentsRange, identifiers: cocoascript.NSString, notificationIdentifiers: cocoascript.NSString, speakableGroupNames: cocoascript.INSpeakableString, conversationIdentifiers: cocoascript.NSString):cocoascript.INSearchForMessagesIntent;
+    initWithRecipients_senders_searchTerms_attributes_dateTimeRange_identifiers_notificationIdentifiers_speakableGroupNames_conversationIdentifiers(recipients: cocoascript.INPerson, senders: cocoascript.INPerson, searchTerms: string | cocoascript.NSString, attributes: cocoascript.INMessageAttributeOptions, dateTimeRange: cocoascript.INDateComponentsRange, identifiers: string | cocoascript.NSString, notificationIdentifiers: string | cocoascript.NSString, speakableGroupNames: cocoascript.INSpeakableString, conversationIdentifiers: string | cocoascript.NSString):cocoascript.INSearchForMessagesIntent;
     // doc://com.apple.documentation/documentation/sirikit/insearchformessagesintent/1638455-recipients
     recipients(): cocoascript.INPerson;
     setRecipients(): void;
@@ -6014,7 +6014,7 @@ declare namespace cocoascript {
     speakableGroupNamesOperator(): cocoascript.INConditionalOperator;
     setSpeakableGroupNamesOperator(): void;
     // doc://com.apple.documentation/documentation/sirikit/insearchformessagesintent/1639353-searchterms
-    searchTerms(): cocoascript.NSString;
+    searchTerms(): string | cocoascript.NSString;
     setSearchTerms(): void;
     // doc://com.apple.documentation/documentation/sirikit/insearchformessagesintent/1639002-searchtermsoperator
     searchTermsOperator(): cocoascript.INConditionalOperator;
@@ -6026,29 +6026,29 @@ declare namespace cocoascript {
     attributes(): cocoascript.INMessageAttributeOptions;
     setAttributes(): void;
     // doc://com.apple.documentation/documentation/sirikit/insearchformessagesintent/1638976-identifiers
-    identifiers(): cocoascript.NSString;
+    identifiers(): string | cocoascript.NSString;
     setIdentifiers(): void;
     // doc://com.apple.documentation/documentation/sirikit/insearchformessagesintent/1638746-identifiersoperator
     identifiersOperator(): cocoascript.INConditionalOperator;
     setIdentifiersOperator(): void;
     // doc://com.apple.documentation/documentation/sirikit/insearchformessagesintent/2983195-conversationidentifiers
-    conversationIdentifiers(): cocoascript.NSString;
+    conversationIdentifiers(): string | cocoascript.NSString;
     setConversationIdentifiers(): void;
     // doc://com.apple.documentation/documentation/sirikit/insearchformessagesintent/2983196-conversationidentifiersoperator
     conversationIdentifiersOperator(): cocoascript.INConditionalOperator;
     setConversationIdentifiersOperator(): void;
     // doc://com.apple.documentation/documentation/sirikit/insearchformessagesintent/1639365-notificationidentifiers
-    notificationIdentifiers(): cocoascript.NSString;
+    notificationIdentifiers(): string | cocoascript.NSString;
     setNotificationIdentifiers(): void;
     // doc://com.apple.documentation/documentation/sirikit/insearchformessagesintent/1639253-notificationidentifiersoperator
     notificationIdentifiersOperator(): cocoascript.INConditionalOperator;
     setNotificationIdentifiersOperator(): void;
     // doc://com.apple.documentation/documentation/sirikit/insearchformessagesintent/2867286-initwithrecipients
-    initWithRecipients_senders_searchTerms_attributes_dateTimeRange_identifiers_notificationIdentifiers_speakableGroupNames(recipients: cocoascript.INPerson, senders: cocoascript.INPerson, searchTerms: cocoascript.NSString, attributes: cocoascript.INMessageAttributeOptions, dateTimeRange: cocoascript.INDateComponentsRange, identifiers: cocoascript.NSString, notificationIdentifiers: cocoascript.NSString, speakableGroupNames: cocoascript.INSpeakableString):cocoascript.INSearchForMessagesIntent;
+    initWithRecipients_senders_searchTerms_attributes_dateTimeRange_identifiers_notificationIdentifiers_speakableGroupNames(recipients: cocoascript.INPerson, senders: cocoascript.INPerson, searchTerms: string | cocoascript.NSString, attributes: cocoascript.INMessageAttributeOptions, dateTimeRange: cocoascript.INDateComponentsRange, identifiers: string | cocoascript.NSString, notificationIdentifiers: string | cocoascript.NSString, speakableGroupNames: cocoascript.INSpeakableString):cocoascript.INSearchForMessagesIntent;
     // doc://com.apple.documentation/documentation/sirikit/insearchformessagesintent/1902435-initwithrecipients
-    initWithRecipients_senders_searchTerms_attributes_dateTimeRange_identifiers_notificationIdentifiers_groupNames(recipients: cocoascript.INPerson, senders: cocoascript.INPerson, searchTerms: cocoascript.NSString, attributes: cocoascript.INMessageAttributeOptions, dateTimeRange: cocoascript.INDateComponentsRange, identifiers: cocoascript.NSString, notificationIdentifiers: cocoascript.NSString, groupNames: cocoascript.NSString):cocoascript.INSearchForMessagesIntent;
+    initWithRecipients_senders_searchTerms_attributes_dateTimeRange_identifiers_notificationIdentifiers_groupNames(recipients: cocoascript.INPerson, senders: cocoascript.INPerson, searchTerms: string | cocoascript.NSString, attributes: cocoascript.INMessageAttributeOptions, dateTimeRange: cocoascript.INDateComponentsRange, identifiers: string | cocoascript.NSString, notificationIdentifiers: string | cocoascript.NSString, groupNames: string | cocoascript.NSString):cocoascript.INSearchForMessagesIntent;
     // doc://com.apple.documentation/documentation/sirikit/insearchformessagesintent/1778236-groupnames
-    groupNames(): cocoascript.NSString;
+    groupNames(): string | cocoascript.NSString;
     setGroupNames(): void;
     // doc://com.apple.documentation/documentation/sirikit/insearchformessagesintent/1778193-groupnamesoperator
     groupNamesOperator(): cocoascript.INConditionalOperator;
@@ -6090,7 +6090,7 @@ declare namespace cocoascript {
    */
   interface INPayBillIntent extends INIntent {
     // doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799077-initwithbillpayee
-    initWithBillPayee_fromAccount_transactionAmount_transactionScheduledDate_transactionNote_billType_dueDate(billPayee: cocoascript.INBillPayee, fromAccount: cocoascript.INPaymentAccount, transactionAmount: cocoascript.INPaymentAmount, transactionScheduledDate: cocoascript.INDateComponentsRange, transactionNote: cocoascript.NSString, billType: cocoascript.INBillType, dueDate: cocoascript.INDateComponentsRange):cocoascript.INPayBillIntent;
+    initWithBillPayee_fromAccount_transactionAmount_transactionScheduledDate_transactionNote_billType_dueDate(billPayee: cocoascript.INBillPayee, fromAccount: cocoascript.INPaymentAccount, transactionAmount: cocoascript.INPaymentAmount, transactionScheduledDate: cocoascript.INDateComponentsRange, transactionNote: string | cocoascript.NSString, billType: cocoascript.INBillType, dueDate: cocoascript.INDateComponentsRange):cocoascript.INPayBillIntent;
     // doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799063-billpayee
     billPayee(): cocoascript.INBillPayee;
     setBillPayee(): void;
@@ -6107,7 +6107,7 @@ declare namespace cocoascript {
     transactionAmount(): cocoascript.INPaymentAmount;
     setTransactionAmount(): void;
     // doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799062-transactionnote
-    transactionNote(): cocoascript.NSString;
+    transactionNote(): string | cocoascript.NSString;
     setTransactionNote(): void;
     // doc://com.apple.documentation/documentation/sirikit/inpaybillintent/2799075-transactionscheduleddate
     transactionScheduledDate(): cocoascript.INDateComponentsRange;
@@ -6144,7 +6144,7 @@ declare namespace cocoascript {
     transactionScheduledDate(): cocoascript.INDateComponentsRange;
     setTransactionScheduledDate(): void;
     // doc://com.apple.documentation/documentation/sirikit/inpaybillintentresponse/2799035-transactionnote
-    transactionNote(): cocoascript.NSString;
+    transactionNote(): string | cocoascript.NSString;
     setTransactionNote(): void;
     //
     alloc():cocoascript.INPayBillIntentResponse;
@@ -6233,7 +6233,7 @@ declare namespace cocoascript {
    */
   interface INTransferMoneyIntent extends INIntent {
     // doc://com.apple.documentation/documentation/sirikit/intransfermoneyintent/2868061-initwithfromaccount
-    initWithFromAccount_toAccount_transactionAmount_transactionScheduledDate_transactionNote(fromAccount: cocoascript.INPaymentAccount, toAccount: cocoascript.INPaymentAccount, transactionAmount: cocoascript.INPaymentAmount, transactionScheduledDate: cocoascript.INDateComponentsRange, transactionNote: cocoascript.NSString):cocoascript.INTransferMoneyIntent;
+    initWithFromAccount_toAccount_transactionAmount_transactionScheduledDate_transactionNote(fromAccount: cocoascript.INPaymentAccount, toAccount: cocoascript.INPaymentAccount, transactionAmount: cocoascript.INPaymentAmount, transactionScheduledDate: cocoascript.INDateComponentsRange, transactionNote: string | cocoascript.NSString):cocoascript.INTransferMoneyIntent;
     // doc://com.apple.documentation/documentation/sirikit/intransfermoneyintent/2868067-fromaccount
     fromAccount(): cocoascript.INPaymentAccount;
     setFromAccount(): void;
@@ -6247,7 +6247,7 @@ declare namespace cocoascript {
     transactionScheduledDate(): cocoascript.INDateComponentsRange;
     setTransactionScheduledDate(): void;
     // doc://com.apple.documentation/documentation/sirikit/intransfermoneyintent/2868062-transactionnote
-    transactionNote(): cocoascript.NSString;
+    transactionNote(): string | cocoascript.NSString;
     setTransactionNote(): void;
     //
     alloc():cocoascript.INTransferMoneyIntent;
@@ -6281,7 +6281,7 @@ declare namespace cocoascript {
     transactionScheduledDate(): cocoascript.INDateComponentsRange;
     setTransactionScheduledDate(): void;
     // doc://com.apple.documentation/documentation/sirikit/intransfermoneyintentresponse/2868331-transactionnote
-    transactionNote(): cocoascript.NSString;
+    transactionNote(): string | cocoascript.NSString;
     setTransactionNote(): void;
     // doc://com.apple.documentation/documentation/sirikit/intransfermoneyintentresponse/2919431-transferfee
     transferFee(): cocoascript.INCurrencyAmount;
@@ -6518,10 +6518,10 @@ declare namespace cocoascript {
     availableBookings(): cocoascript.INRestaurantReservationBooking;
     setAvailableBookings(): void;
     // doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingsintentresponse/2102233-localizedrestaurantdescriptionte
-    localizedRestaurantDescriptionText(): cocoascript.NSString;
+    localizedRestaurantDescriptionText(): string | cocoascript.NSString;
     setLocalizedRestaurantDescriptionText(): void;
     // doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingsintentresponse/1778416-localizedbookingadvisementtext
-    localizedBookingAdvisementText(): cocoascript.NSString;
+    localizedBookingAdvisementText(): string | cocoascript.NSString;
     setLocalizedBookingAdvisementText(): void;
     // doc://com.apple.documentation/documentation/sirikit/ingetavailablerestaurantreservationbookingsintentresponse/2132101-termsandconditions
     termsAndConditions(): cocoascript.INTermsAndConditions;
@@ -6628,11 +6628,11 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/sirikit/inpersonrelationship
-  type INPersonRelationship = cocoascript.NSString;
+  type INPersonRelationship = string | cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/sirikit/inpersonhandlelabel
-  type INPersonHandleLabel = cocoascript.NSString;
+  type INPersonHandleLabel = string | cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/sirikit/inaccounttype
@@ -6665,12 +6665,12 @@ declare namespace cocoascript {
    */
   interface INRestaurantGuest extends INPerson {
     // doc://com.apple.documentation/documentation/sirikit/inrestaurantguest/2102287-initwithnamecomponents
-    initWithNameComponents_phoneNumber_emailAddress(nameComponents: cocoascript.NSPersonNameComponents, phoneNumber: cocoascript.NSString, emailAddress: cocoascript.NSString):cocoascript.INRestaurantGuest;
+    initWithNameComponents_phoneNumber_emailAddress(nameComponents: cocoascript.NSPersonNameComponents, phoneNumber: string | cocoascript.NSString, emailAddress: string | cocoascript.NSString):cocoascript.INRestaurantGuest;
     // doc://com.apple.documentation/documentation/sirikit/inrestaurantguest/1778341-phonenumber
-    phoneNumber(): cocoascript.NSString;
+    phoneNumber(): string | cocoascript.NSString;
     setPhoneNumber(): void;
     // doc://com.apple.documentation/documentation/sirikit/inrestaurantguest/1778340-emailaddress
-    emailAddress(): cocoascript.NSString;
+    emailAddress(): string | cocoascript.NSString;
     setEmailAddress(): void;
     //
     alloc():cocoascript.INRestaurantGuest;
@@ -6902,7 +6902,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/sirikit/incarchargingconnectortype
-  type INCarChargingConnectorType = cocoascript.NSString;
+  type INCarChargingConnectorType = string | cocoascript.NSString;
 }
 declare namespace cocoascript {
   /**
@@ -6915,7 +6915,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/sirikit/invocabulary/2873636-setvocabulary
     setVocabulary_ofType(vocabulary: cocoascript.INSpeakable, type: cocoascript.INVocabularyStringType):void;
     // doc://com.apple.documentation/documentation/sirikit/invocabulary/1638998-setvocabularystrings
-    setVocabularyStrings_ofType(vocabulary: cocoascript.NSString, type: cocoascript.INVocabularyStringType):void;
+    setVocabularyStrings_ofType(vocabulary: string | cocoascript.NSString, type: cocoascript.INVocabularyStringType):void;
     // doc://com.apple.documentation/documentation/sirikit/invocabulary/1638705-removeallvocabularystrings
     removeAllVocabularyStrings():void;
     //
@@ -7271,11 +7271,11 @@ declare namespace cocoascript {
    */
   interface INStringResolutionResult extends INIntentResolutionResult {
     // doc://com.apple.documentation/documentation/sirikit/instringresolutionresult/1902377-successwithresolvedstring
-    successWithResolvedString(resolvedString: cocoascript.NSString):cocoascript.INStringResolutionResult;
+    successWithResolvedString(resolvedString: string | cocoascript.NSString):cocoascript.INStringResolutionResult;
     // doc://com.apple.documentation/documentation/sirikit/instringresolutionresult/1902375-confirmationrequiredwithstringto
-    confirmationRequiredWithStringToConfirm(stringToConfirm: cocoascript.NSString):cocoascript.INStringResolutionResult;
+    confirmationRequiredWithStringToConfirm(stringToConfirm: string | cocoascript.NSString):cocoascript.INStringResolutionResult;
     // doc://com.apple.documentation/documentation/sirikit/instringresolutionresult/1902378-disambiguationwithstringstodisam
-    disambiguationWithStringsToDisambiguate(stringsToDisambiguate: cocoascript.NSString):cocoascript.INStringResolutionResult;
+    disambiguationWithStringsToDisambiguate(stringsToDisambiguate: string | cocoascript.NSString):cocoascript.INStringResolutionResult;
     //
     alloc():cocoascript.INStringResolutionResult;
     //
@@ -8344,7 +8344,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/sirikit/inworkoutnameidentifier
-  type INWorkoutNameIdentifier = cocoascript.NSString;
+  type INWorkoutNameIdentifier = string | cocoascript.NSString;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/sirikit/inworkoutgoalunittype
@@ -8968,7 +8968,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/sirikit/inpreferences/1829430-siriauthorizationstatus
     siriAuthorizationStatus():cocoascript.INSiriAuthorizationStatus;
     // doc://com.apple.documentation/documentation/sirikit/inpreferences/1638761-sirilanguagecode
-    siriLanguageCode():cocoascript.NSString;
+    siriLanguageCode():string | cocoascript.NSString;
     //
     alloc():cocoascript.INPreferences;
     //

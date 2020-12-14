@@ -46,7 +46,7 @@ declare namespace cocoascript {
    */
   interface NCWidgetSearchViewDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetsearchviewdelegate/1449558-widgetsearch
-    widgetSearch_searchForTerm_maxResults(controller: cocoascript.NCWidgetSearchViewController, searchTerm: cocoascript.NSString, max: cocoascript.NSUInteger):void;
+    widgetSearch_searchForTerm_maxResults(controller: cocoascript.NCWidgetSearchViewController, searchTerm: string | cocoascript.NSString, max: cocoascript.NSUInteger):void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetsearchviewdelegate/1449548-widgetsearch
     widgetSearch_resultSelected(controller: cocoascript.NCWidgetSearchViewController, object: cocoascript.NCWidgetSearchViewDelegate):void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetsearchviewdelegate/1449550-widgetsearchtermcleared
@@ -70,7 +70,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetcontroller/1456687-widgetcontroller
     widgetController():cocoascript.NCWidgetController;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetcontroller/1456693-sethascontent
-    setHasContent_forWidgetWithBundleIdentifier(flag: cocoascript.BOOL, bundleID: cocoascript.NSString):void;
+    setHasContent_forWidgetWithBundleIdentifier(flag: cocoascript.BOOL, bundleID: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetcontroller/1456691-defaultwidgetcontroller
     defaultWidgetController():cocoascript.NCWidgetController;
     //
@@ -127,13 +127,13 @@ declare namespace cocoascript {
     delegate(): cocoascript.NCWidgetSearchViewDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetsearchviewcontroller/1449554-searchdescription
-    searchDescription(): cocoascript.NSString;
+    searchDescription(): string | cocoascript.NSString;
     setSearchDescription(): void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetsearchviewcontroller/1449552-searchresultsplaceholderstring
-    searchResultsPlaceholderString(): cocoascript.NSString;
+    searchResultsPlaceholderString(): string | cocoascript.NSString;
     setSearchResultsPlaceholderString(): void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetsearchviewcontroller/1449556-searchresultkeypath
-    searchResultKeyPath(): cocoascript.NSString;
+    searchResultKeyPath(): string | cocoascript.NSString;
     setSearchResultKeyPath(): void;
     // doc://com.apple.documentation/documentation/notificationcenter/ncwidgetsearchviewcontroller/1449551-searchresults
     searchResults(): cocoascript.id;

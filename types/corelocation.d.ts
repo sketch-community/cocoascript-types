@@ -111,39 +111,39 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423818-initwithplacemark
     initWithPlacemark(placemark: cocoascript.CLPlacemark):cocoascript.CLPlacemark;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/2132103-placemarkwithlocation
-    placemarkWithLocation_name_postalAddress(location: cocoascript.CLLocation, name: cocoascript.NSString, postalAddress: cocoascript.CNPostalAddress):cocoascript.CLPlacemark;
+    placemarkWithLocation_name_postalAddress(location: cocoascript.CLLocation, name: string | cocoascript.NSString, postalAddress: cocoascript.CNPostalAddress):cocoascript.CLPlacemark;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423603-location
     location(): cocoascript.CLLocation;
     setLocation(): void;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423634-name
-    name(): cocoascript.NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423796-isocountrycode
-    ISOcountryCode(): cocoascript.NSString;
+    ISOcountryCode(): string | cocoascript.NSString;
     setISOcountryCode(): void;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423800-country
-    country(): cocoascript.NSString;
+    country(): string | cocoascript.NSString;
     setCountry(): void;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423851-postalcode
-    postalCode(): cocoascript.NSString;
+    postalCode(): string | cocoascript.NSString;
     setPostalCode(): void;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423628-administrativearea
-    administrativeArea(): cocoascript.NSString;
+    administrativeArea(): string | cocoascript.NSString;
     setAdministrativeArea(): void;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423776-subadministrativearea
-    subAdministrativeArea(): cocoascript.NSString;
+    subAdministrativeArea(): string | cocoascript.NSString;
     setSubAdministrativeArea(): void;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423507-locality
-    locality(): cocoascript.NSString;
+    locality(): string | cocoascript.NSString;
     setLocality(): void;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423794-sublocality
-    subLocality(): cocoascript.NSString;
+    subLocality(): string | cocoascript.NSString;
     setSubLocality(): void;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423814-thoroughfare
-    thoroughfare(): cocoascript.NSString;
+    thoroughfare(): string | cocoascript.NSString;
     setThoroughfare(): void;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423782-subthoroughfare
-    subThoroughfare(): cocoascript.NSString;
+    subThoroughfare(): string | cocoascript.NSString;
     setSubThoroughfare(): void;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423808-region
     region(): cocoascript.CLRegion;
@@ -158,13 +158,13 @@ declare namespace cocoascript {
     addressDictionary(): cocoascript.NSDictionary;
     setAddressDictionary(): void;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423738-inlandwater
-    inlandWater(): cocoascript.NSString;
+    inlandWater(): string | cocoascript.NSString;
     setInlandWater(): void;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423619-ocean
-    ocean(): cocoascript.NSString;
+    ocean(): string | cocoascript.NSString;
     setOcean(): void;
     // doc://com.apple.documentation/documentation/corelocation/clplacemark/1423673-areasofinterest
-    areasOfInterest(): cocoascript.NSString;
+    areasOfInterest(): string | cocoascript.NSString;
     setAreasOfInterest(): void;
     //
     alloc():cocoascript.CLPlacemark;
@@ -216,7 +216,7 @@ declare namespace cocoascript {
    */
   interface CLRegion extends NSObject {
     // doc://com.apple.documentation/documentation/corelocation/clregion/1423583-identifier
-    identifier(): cocoascript.NSString;
+    identifier(): string | cocoascript.NSString;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/corelocation/clregion/1423566-notifyonentry
     notifyOnEntry(): cocoascript.BOOL;
@@ -225,7 +225,7 @@ declare namespace cocoascript {
     notifyOnExit(): cocoascript.BOOL;
     setNotifyOnExit(): void;
     // doc://com.apple.documentation/documentation/corelocation/clregion/1423681-initcircularregionwithcenter
-    initCircularRegionWithCenter_radius_identifier(center: cocoascript.CLLocationCoordinate2D, radius: cocoascript.CLLocationDistance, identifier: cocoascript.NSString):cocoascript.CLRegion;
+    initCircularRegionWithCenter_radius_identifier(center: cocoascript.CLLocationCoordinate2D, radius: cocoascript.CLLocationDistance, identifier: string | cocoascript.NSString):cocoascript.CLRegion;
     // doc://com.apple.documentation/documentation/corelocation/clregion/1423828-containscoordinate
     containsCoordinate(coordinate: cocoascript.CLLocationCoordinate2D):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/corelocation/clregion/1423691-center
@@ -392,16 +392,16 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization
     requestAlwaysAuthorization():void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3600217-requesttemporaryfullaccuracyauth
-    requestTemporaryFullAccuracyAuthorizationWithPurposeKey_completion(purposeKey: cocoascript.NSString, completion: cocoascript.NSError):void;
+    requestTemporaryFullAccuracyAuthorizationWithPurposeKey_completion(purposeKey: string | cocoascript.NSString, completion: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3600216-requesttemporaryfullaccuracyauth
-    requestTemporaryFullAccuracyAuthorizationWithPurposeKey(purposeKey: cocoascript.NSString):void;
+    requestTemporaryFullAccuracyAuthorizationWithPurposeKey(purposeKey: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/3563952-authorizationstatus
     authorizationStatus(): cocoascript.CLAuthorizationStatus;
     setAuthorizationStatus(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423523-authorizationstatus
     authorizationStatus():cocoascript.CLAuthorizationStatus;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423742-purpose
-    purpose(): cocoascript.NSString;
+    purpose(): string | cocoascript.NSString;
     setPurpose(): void;
     // doc://com.apple.documentation/documentation/corelocation/cllocationmanager/1423750-startupdatinglocation
     startUpdatingLocation():void;
@@ -506,11 +506,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/corelocation/clgeocoder/1423621-reversegeocodelocation
     reverseGeocodeLocation_completionHandler(location: cocoascript.CLLocation, completionHandler: cocoascript.CLGeocodeCompletionHandler):void;
     // doc://com.apple.documentation/documentation/corelocation/clgeocoder/2890753-geocodeaddressstring
-    geocodeAddressString_inRegion_preferredLocale_completionHandler(addressString: cocoascript.NSString, region: cocoascript.CLRegion, locale: cocoascript.NSLocale, completionHandler: cocoascript.CLGeocodeCompletionHandler):void;
+    geocodeAddressString_inRegion_preferredLocale_completionHandler(addressString: string | cocoascript.NSString, region: cocoascript.CLRegion, locale: cocoascript.NSLocale, completionHandler: cocoascript.CLGeocodeCompletionHandler):void;
     // doc://com.apple.documentation/documentation/corelocation/clgeocoder/1423509-geocodeaddressstring
-    geocodeAddressString_completionHandler(addressString: cocoascript.NSString, completionHandler: cocoascript.CLGeocodeCompletionHandler):void;
+    geocodeAddressString_completionHandler(addressString: string | cocoascript.NSString, completionHandler: cocoascript.CLGeocodeCompletionHandler):void;
     // doc://com.apple.documentation/documentation/corelocation/clgeocoder/1423591-geocodeaddressstring
-    geocodeAddressString_inRegion_completionHandler(addressString: cocoascript.NSString, region: cocoascript.CLRegion, completionHandler: cocoascript.CLGeocodeCompletionHandler):void;
+    geocodeAddressString_inRegion_completionHandler(addressString: string | cocoascript.NSString, region: cocoascript.CLRegion, completionHandler: cocoascript.CLGeocodeCompletionHandler):void;
     // doc://com.apple.documentation/documentation/corelocation/clgeocoder/2890752-geocodepostaladdress
     geocodePostalAddress_completionHandler(postalAddress: cocoascript.CNPostalAddress, completionHandler: cocoascript.CLGeocodeCompletionHandler):void;
     // doc://com.apple.documentation/documentation/corelocation/clgeocoder/2890750-geocodepostaladdress
@@ -573,7 +573,7 @@ declare namespace cocoascript {
    */
   interface CLCircularRegion extends CLRegion {
     // doc://com.apple.documentation/documentation/corelocation/clcircularregion/1423761-initwithcenter
-    initWithCenter_radius_identifier(center: cocoascript.CLLocationCoordinate2D, radius: cocoascript.CLLocationDistance, identifier: cocoascript.NSString):cocoascript.CLCircularRegion;
+    initWithCenter_radius_identifier(center: cocoascript.CLLocationCoordinate2D, radius: cocoascript.CLLocationDistance, identifier: string | cocoascript.NSString):cocoascript.CLCircularRegion;
     // doc://com.apple.documentation/documentation/corelocation/clcircularregion/1423601-center
     center(): cocoascript.CLLocationCoordinate2D;
     setCenter(): void;
@@ -597,19 +597,19 @@ declare namespace cocoascript {
    */
   interface CLBeaconRegion extends CLRegion {
     // doc://com.apple.documentation/documentation/corelocation/clbeaconregion/3240605-initwithbeaconidentityconstraint
-    initWithBeaconIdentityConstraint_identifier(beaconIdentityConstraint: cocoascript.CLBeaconIdentityConstraint, identifier: cocoascript.NSString):cocoascript.CLBeaconRegion;
+    initWithBeaconIdentityConstraint_identifier(beaconIdentityConstraint: cocoascript.CLBeaconIdentityConstraint, identifier: string | cocoascript.NSString):cocoascript.CLBeaconRegion;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconregion/3183025-initwithuuid
-    initWithUUID_identifier(uuid: cocoascript.NSUUID, identifier: cocoascript.NSString):cocoascript.CLBeaconRegion;
+    initWithUUID_identifier(uuid: cocoascript.NSUUID, identifier: string | cocoascript.NSString):cocoascript.CLBeaconRegion;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconregion/3183026-initwithuuid
-    initWithUUID_major_identifier(uuid: cocoascript.NSUUID, major: cocoascript.CLBeaconMajorValue, identifier: cocoascript.NSString):cocoascript.CLBeaconRegion;
+    initWithUUID_major_identifier(uuid: cocoascript.NSUUID, major: cocoascript.CLBeaconMajorValue, identifier: string | cocoascript.NSString):cocoascript.CLBeaconRegion;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconregion/3183027-initwithuuid
-    initWithUUID_major_minor_identifier(uuid: cocoascript.NSUUID, major: cocoascript.CLBeaconMajorValue, minor: cocoascript.CLBeaconMinorValue, identifier: cocoascript.NSString):cocoascript.CLBeaconRegion;
+    initWithUUID_major_minor_identifier(uuid: cocoascript.NSUUID, major: cocoascript.CLBeaconMajorValue, minor: cocoascript.CLBeaconMinorValue, identifier: string | cocoascript.NSString):cocoascript.CLBeaconRegion;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconregion/1621534-initwithproximityuuid
-    initWithProximityUUID_identifier(proximityUUID: cocoascript.NSUUID, identifier: cocoascript.NSString):cocoascript.CLBeaconRegion;
+    initWithProximityUUID_identifier(proximityUUID: cocoascript.NSUUID, identifier: string | cocoascript.NSString):cocoascript.CLBeaconRegion;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconregion/1621475-initwithproximityuuid
-    initWithProximityUUID_major_identifier(proximityUUID: cocoascript.NSUUID, major: cocoascript.CLBeaconMajorValue, identifier: cocoascript.NSString):cocoascript.CLBeaconRegion;
+    initWithProximityUUID_major_identifier(proximityUUID: cocoascript.NSUUID, major: cocoascript.CLBeaconMajorValue, identifier: string | cocoascript.NSString):cocoascript.CLBeaconRegion;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconregion/1621392-initwithproximityuuid
-    initWithProximityUUID_major_minor_identifier(proximityUUID: cocoascript.NSUUID, major: cocoascript.CLBeaconMajorValue, minor: cocoascript.CLBeaconMinorValue, identifier: cocoascript.NSString):cocoascript.CLBeaconRegion;
+    initWithProximityUUID_major_minor_identifier(proximityUUID: cocoascript.NSUUID, major: cocoascript.CLBeaconMajorValue, minor: cocoascript.CLBeaconMinorValue, identifier: string | cocoascript.NSString):cocoascript.CLBeaconRegion;
     // doc://com.apple.documentation/documentation/corelocation/clbeaconregion/3183022-uuid
     UUID(): cocoascript.NSUUID;
     setUUID(): void;
