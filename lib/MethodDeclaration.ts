@@ -11,6 +11,10 @@ interface Identifier {
 
 const keywordBlacklist = ['unsigned', 'const', '_Nullable', '_Null_unspecified', '_Nonnull'];
 
+const paramsMap: Record<string, string> = {
+  function: 'func',
+}
+
 export class MethodDeclaration {
   id: string;
   interfaceDecl: InterfaceDeclaration;
@@ -86,7 +90,7 @@ export class MethodDeclaration {
         const name = usedName.has(identifier.paramName) ? `${identifier.paramName}${i}` : identifier.paramName;
         usedName.add(identifier.paramName);
         params.push(
-          `${name}: ${normalizeType(
+          `${paramsMap[name] ?? name}: ${normalizeType(
             identifier.paramType! === 'id' ? this.interfaceDecl.identifier : identifier.paramType!
           )}`
         );

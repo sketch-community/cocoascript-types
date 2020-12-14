@@ -382,7 +382,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartzcore/catransaction/1448269-animationtimingfunction
     animationTimingFunction():CAMediaTimingFunction;
     // doc://com.apple.documentation/documentation/quartzcore/catransaction/1448279-setanimationtimingfunction
-    setAnimationTimingFunction(function: CAMediaTimingFunction):void;
+    setAnimationTimingFunction(func: CAMediaTimingFunction):void;
     // doc://com.apple.documentation/documentation/quartzcore/catransaction/1448276-disableactions
     disableActions():BOOL;
     // doc://com.apple.documentation/documentation/quartzcore/catransaction/1448261-setdisableactions
