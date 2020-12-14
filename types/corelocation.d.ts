@@ -537,7 +537,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CLLocationCoordinate2D {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corelocation/clheadingcomponentvalue
   type CLHeadingComponentValue = number;
 }

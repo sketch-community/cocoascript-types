@@ -1,0 +1,2325 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Specify the attributes of keychain items."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/keychain_services",
+        "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/item_attribute_keys_and_values",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1662474,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Item Attribute Keys and Values",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/keychain_services/keychain_items/item_attribute_keys_and_values"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/keychain_services/keychain_items/item_attribute_keys_and_values"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services": {
+      "title": "Keychain Services",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services",
+      "url": "/documentation/security/keychain_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items": {
+      "title": "Keychain Items",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items",
+      "url": "/documentation/security/keychain_services/keychain_items",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecclassgenericpassword": {
+      "title": "kSecClassGenericPassword",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecclassgenericpassword",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecclassgenericpassword"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecclassinternetpassword": {
+      "title": "kSecClassInternetPassword",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecclassinternetpassword",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecclassinternetpassword"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecclasscertificate": {
+      "title": "kSecClassCertificate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecclasscertificate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecclasscertificate"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecclassidentity": {
+      "title": "kSecClassIdentity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecclassidentity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecclassidentity"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecclasskey": {
+      "title": "kSecClassKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecclasskey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecclasskey"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocol": {
+      "title": "kSecAttrProtocol",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the item's protocol."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtype": {
+      "title": "kSecAttrAuthenticationType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrauthenticationtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the item's authentication scheme. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrkeyclass": {
+      "title": "kSecAttrKeyClass",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeyclass",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrkeyclass",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the item's cryptographic key class."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrkeytype": {
+      "title": "kSecAttrKeyType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrkeytype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the item's algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrsynchronizable": {
+      "title": "kSecAttrSynchronizable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrsynchronizable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrsynchronizable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value is a string indicating whether the item is synchronized through iCloud."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrtokenid": {
+      "title": "kSecAttrTokenID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrtokenid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrtokenid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates that a cryptographic key is in an external store."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattraccessible": {
+      "title": "kSecAttrAccessible",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccessible",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattraccessible",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates when a keychain item is accessible."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprf": {
+      "title": "kSecAttrPRF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprf",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprf",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the item's pseudorandom function."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattraccessgroup": {
+      "title": "kSecAttrAccessGroup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccessgroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattraccessgroup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value is a string indicating the access group an item is in."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattraccess": {
+      "title": "kSecAttrAccess",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccess",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattraccess",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value in an access instance indicating access control list settings for this item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattraccesscontrol": {
+      "title": "kSecAttrAccessControl",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccesscontrol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattraccesscontrol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value in an access control instance indicating access control settings for the item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrcreationdate": {
+      "title": "kSecAttrCreationDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrcreationdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrcreationdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the item's creation date."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrmodificationdate": {
+      "title": "kSecAttrModificationDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrmodificationdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrmodificationdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the item's last modification date."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrdescription": {
+      "title": "kSecAttrDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrdescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value is a string indicating the item's description."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrcomment": {
+      "title": "kSecAttrComment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrcomment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrcomment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value is a string indicating a comment associated with the item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrcreator": {
+      "title": "kSecAttrCreator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrcreator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrcreator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the item's creator."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrtype": {
+      "title": "kSecAttrType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the item's type."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrlabel": {
+      "title": "kSecAttrLabel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrlabel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrlabel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value is a string indicating the item's label."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrisinvisible": {
+      "title": "kSecAttrIsInvisible",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrisinvisible",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrisinvisible",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value is a Boolean indicating the item's visibility."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrisnegative": {
+      "title": "kSecAttrIsNegative",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrisnegative",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrisnegative",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value is a Boolean indicating whether the item has a valid password."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrsyncviewhint": {
+      "title": "kSecAttrSyncViewHint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrsyncviewhint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrsyncviewhint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value is a string that provides a sync view hint."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrpersistantreference": {
+      "title": "kSecAttrPersistantReference",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrpersistantreference",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrpersistantreference"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrpersistentreference": {
+      "title": "kSecAttrPersistentReference",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrpersistentreference",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrpersistentreference"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattraccount": {
+      "title": "kSecAttrAccount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattraccount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value is a string indicating the item's account name."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrservice": {
+      "title": "kSecAttrService",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrservice",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrservice",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value is a string indicating the item's service."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrgeneric": {
+      "title": "kSecAttrGeneric",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrgeneric",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrgeneric",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the item's user-defined attributes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrsecuritydomain": {
+      "title": "kSecAttrSecurityDomain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrsecuritydomain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrsecuritydomain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value is a string indicating the item's security domain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrserver": {
+      "title": "kSecAttrServer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrserver",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrserver",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value is a string indicating the item's server."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrport": {
+      "title": "kSecAttrPort",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrport",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrport",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the item's port."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrpath": {
+      "title": "kSecAttrPath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrpath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value is a string indicating the item's path attribute. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrsubject": {
+      "title": "kSecAttrSubject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrsubject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrsubject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the item's subject name."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrissuer": {
+      "title": "kSecAttrIssuer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrissuer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrissuer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the item's issuer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrserialnumber": {
+      "title": "kSecAttrSerialNumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrserialnumber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrserialnumber",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the item's serial number."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrsubjectkeyid": {
+      "title": "kSecAttrSubjectKeyID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrsubjectkeyid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrsubjectkeyid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the item's subject key ID."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrpublickeyhash": {
+      "title": "kSecAttrPublicKeyHash",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrpublickeyhash",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrpublickeyhash",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the item's public key hash."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrcertificatetype": {
+      "title": "kSecAttrCertificateType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrcertificatetype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrcertificatetype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the item's certificate type."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrcertificateencoding": {
+      "title": "kSecAttrCertificateEncoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrcertificateencoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrcertificateencoding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the item's certificate encoding."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrapplicationlabel": {
+      "title": "kSecAttrApplicationLabel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrapplicationlabel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrapplicationlabel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the item's application label."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrapplicationtag": {
+      "title": "kSecAttrApplicationTag",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrapplicationtag",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrapplicationtag",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the item's private tag."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrsalt": {
+      "title": "kSecAttrSalt",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrsalt",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrsalt",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the salt to use for this item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrrounds": {
+      "title": "kSecAttrRounds",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrrounds",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrrounds",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the number of rounds to run the pseudorandom function."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrkeysizeinbits": {
+      "title": "kSecAttrKeySizeInBits",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeysizeinbits",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrkeysizeinbits",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the number of bits in a cryptographic key. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattreffectivekeysize": {
+      "title": "kSecAttrEffectiveKeySize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattreffectivekeysize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattreffectivekeysize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the effective number of bits in a cryptographic key."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrispermanent": {
+      "title": "kSecAttrIsPermanent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrispermanent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrispermanent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the item's permanence."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrissensitive": {
+      "title": "kSecAttrIsSensitive",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrissensitive",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrissensitive",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the item's sensitivity."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrisextractable": {
+      "title": "kSecAttrIsExtractable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrisextractable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrisextractable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value indicates the item's extractability."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrcanencrypt": {
+      "title": "kSecAttrCanEncrypt",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrcanencrypt",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrcanencrypt",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value is a Boolean that indicates whether the cryptographic key can be used for encryption."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrcandecrypt": {
+      "title": "kSecAttrCanDecrypt",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrcandecrypt",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrcandecrypt",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value is a Boolean that indicates whether the cryptographic key can be used for decryption."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrcanderive": {
+      "title": "kSecAttrCanDerive",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrcanderive",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrcanderive",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value is a Boolean that indicates whether the cryptographic key can be used for derivation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrcansign": {
+      "title": "kSecAttrCanSign",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrcansign",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrcansign",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value is a Boolean that indicates whether the cryptographic key can be used for digital signing."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrcanverify": {
+      "title": "kSecAttrCanVerify",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrcanverify",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrcanverify",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value is a Boolean that indicates whether the cryptographic key can be used for signature verification."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrcanwrap": {
+      "title": "kSecAttrCanWrap",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrcanwrap",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrcanwrap",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value is a Boolean that indicates whether the cryptographic key can be used for wrapping."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrcanunwrap": {
+      "title": "kSecAttrCanUnwrap",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrcanunwrap",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrcanunwrap",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A key whose value is a Boolean that indicates whether the cryptographic key can be used for unwrapping. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolftp": {
+      "title": "kSecAttrProtocolFTP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolftp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolftp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "FTP protocol."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolftpaccount": {
+      "title": "kSecAttrProtocolFTPAccount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolftpaccount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolftpaccount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A client side FTP account. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolhttp": {
+      "title": "kSecAttrProtocolHTTP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolhttp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolhttp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "HTTP protocol."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolirc": {
+      "title": "kSecAttrProtocolIRC",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolirc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolirc",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "IRC protocol."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolnntp": {
+      "title": "kSecAttrProtocolNNTP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolnntp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolnntp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "NNTP protocol."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolpop3": {
+      "title": "kSecAttrProtocolPOP3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolpop3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolpop3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "POP3 protocol."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolsmtp": {
+      "title": "kSecAttrProtocolSMTP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolsmtp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolsmtp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "SMTP protocol."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolsocks": {
+      "title": "kSecAttrProtocolSOCKS",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolsocks",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolsocks",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "SOCKS  protocol."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolimap": {
+      "title": "kSecAttrProtocolIMAP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolimap",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolimap",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "IMAP  protocol."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolldap": {
+      "title": "kSecAttrProtocolLDAP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolldap",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolldap",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "LDAP protocol."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolappletalk": {
+      "title": "kSecAttrProtocolAppleTalk",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolappletalk",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolappletalk",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "AFP over AppleTalk."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolafp": {
+      "title": "kSecAttrProtocolAFP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolafp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolafp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "AFP over TCP."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocoltelnet": {
+      "title": "kSecAttrProtocolTelnet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocoltelnet",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocoltelnet",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Telnet protocol."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolssh": {
+      "title": "kSecAttrProtocolSSH",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolssh",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolssh",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "SSH protocol."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolftps": {
+      "title": "kSecAttrProtocolFTPS",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolftps",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolftps",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "FTP over TLS/SSL."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolhttps": {
+      "title": "kSecAttrProtocolHTTPS",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolhttps",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolhttps",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "HTTP over TLS/SSL."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolhttpproxy": {
+      "title": "kSecAttrProtocolHTTPProxy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolhttpproxy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolhttpproxy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "HTTP proxy."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolhttpsproxy": {
+      "title": "kSecAttrProtocolHTTPSProxy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolhttpsproxy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolhttpsproxy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "HTTPS proxy."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolftpproxy": {
+      "title": "kSecAttrProtocolFTPProxy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolftpproxy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolftpproxy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "FTP proxy."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolsmb": {
+      "title": "kSecAttrProtocolSMB",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolsmb",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolsmb",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "SMB protocol."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolrtsp": {
+      "title": "kSecAttrProtocolRTSP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolrtsp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolrtsp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "RTSP protocol."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolrtspproxy": {
+      "title": "kSecAttrProtocolRTSPProxy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolrtspproxy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolrtspproxy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "RTSP proxy."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocoldaap": {
+      "title": "kSecAttrProtocolDAAP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocoldaap",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocoldaap",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "DAAP protocol."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocoleppc": {
+      "title": "kSecAttrProtocolEPPC",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocoleppc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocoleppc",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Remote Apple Events. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolipp": {
+      "title": "kSecAttrProtocolIPP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolipp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolipp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "IPP protocol."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolnntps": {
+      "title": "kSecAttrProtocolNNTPS",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolnntps",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolnntps",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "NNTP over TLS/SSL."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolldaps": {
+      "title": "kSecAttrProtocolLDAPS",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolldaps",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolldaps",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "LDAP over TLS/SSL."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocoltelnets": {
+      "title": "kSecAttrProtocolTelnetS",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocoltelnets",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocoltelnets",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Telnet over TLS/SSL."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolimaps": {
+      "title": "kSecAttrProtocolIMAPS",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolimaps",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolimaps",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "IMAP over TLS/SSL."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolircs": {
+      "title": "kSecAttrProtocolIRCS",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolircs",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolircs",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "IRC over TLS/SSL."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprotocolpop3s": {
+      "title": "kSecAttrProtocolPOP3S",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocolpop3s",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprotocolpop3s",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "POP3 over TLS/SSL."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypentlm": {
+      "title": "kSecAttrAuthenticationTypeNTLM",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypentlm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrauthenticationtypentlm",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Windows NT LAN Manager authentication."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypemsn": {
+      "title": "kSecAttrAuthenticationTypeMSN",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypemsn",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrauthenticationtypemsn",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Microsoft Network default authentication."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypedpa": {
+      "title": "kSecAttrAuthenticationTypeDPA",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypedpa",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrauthenticationtypedpa",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Distributed Password authentication."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtyperpa": {
+      "title": "kSecAttrAuthenticationTypeRPA",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtyperpa",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrauthenticationtyperpa",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Remote Password authentication."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypehttpbasic": {
+      "title": "kSecAttrAuthenticationTypeHTTPBasic",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypehttpbasic",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrauthenticationtypehttpbasic",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "HTTP Basic authentication."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypehttpdigest": {
+      "title": "kSecAttrAuthenticationTypeHTTPDigest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypehttpdigest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrauthenticationtypehttpdigest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "HTTP Digest Access authentication."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypehtmlform": {
+      "title": "kSecAttrAuthenticationTypeHTMLForm",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypehtmlform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrauthenticationtypehtmlform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "HTML form based authentication."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypedefault": {
+      "title": "kSecAttrAuthenticationTypeDefault",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypedefault",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrauthenticationtypedefault",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The default authentication type."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrkeyclasspublic": {
+      "title": "kSecAttrKeyClassPublic",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeyclasspublic",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrkeyclasspublic",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A public key of a public-private pair."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrkeyclassprivate": {
+      "title": "kSecAttrKeyClassPrivate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeyclassprivate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrkeyclassprivate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A private key of a public-private pair."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrkeyclasssymmetric": {
+      "title": "kSecAttrKeyClassSymmetric",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeyclasssymmetric",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrkeyclasssymmetric",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A private key used for symmetric-key encryption and decryption."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrkeytypersa": {
+      "title": "kSecAttrKeyTypeRSA",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeytypersa",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrkeytypersa",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "RSA algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrkeytypedsa": {
+      "title": "kSecAttrKeyTypeDSA",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeytypedsa",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrkeytypedsa",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "DSA algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrkeytypeaes": {
+      "title": "kSecAttrKeyTypeAES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeytypeaes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrkeytypeaes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "AES algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrkeytypedes": {
+      "title": "kSecAttrKeyTypeDES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeytypedes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrkeytypedes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "DES algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrkeytype3des": {
+      "title": "kSecAttrKeyType3DES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeytype3des",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrkeytype3des",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "3DES algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrkeytyperc4": {
+      "title": "kSecAttrKeyTypeRC4",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeytyperc4",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrkeytyperc4",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "RC4 algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrkeytyperc2": {
+      "title": "kSecAttrKeyTypeRC2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeytyperc2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrkeytyperc2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "RC2 algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrkeytypecast": {
+      "title": "kSecAttrKeyTypeCAST",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeytypecast",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrkeytypecast",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "CAST algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrkeytypeecdsa": {
+      "title": "kSecAttrKeyTypeECDSA",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeytypeecdsa",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrkeytypeecdsa",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Elliptic curve DSA algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrkeytypeec": {
+      "title": "kSecAttrKeyTypeEC",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeytypeec",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrkeytypeec",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Elliptic curve algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrkeytypeecsecprimerandom": {
+      "title": "kSecAttrKeyTypeECSECPrimeRandom",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeytypeecsecprimerandom",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrkeytypeecsecprimerandom",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Elliptic curve algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrsynchronizableany": {
+      "title": "kSecAttrSynchronizableAny",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrsynchronizableany",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrsynchronizableany",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies that both synchronizable and non-synchronizable results should be returned from a query."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrtokenidsecureenclave": {
+      "title": "kSecAttrTokenIDSecureEnclave",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrtokenidsecureenclave",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrtokenidsecureenclave",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies an item should be stored in the device's Secure Enclave. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattraccessiblewhenpasscodesetthisdeviceonly": {
+      "title": "kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccessiblewhenpasscodesetthisdeviceonly",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattraccessiblewhenpasscodesetthisdeviceonly",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The data in the keychain can only be accessed when the device is unlocked. Only available if a passcode is set on the device."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattraccessiblewhenunlockedthisdeviceonly": {
+      "title": "kSecAttrAccessibleWhenUnlockedThisDeviceOnly",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccessiblewhenunlockedthisdeviceonly",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattraccessiblewhenunlockedthisdeviceonly",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The data in the keychain item can be accessed only while the device is unlocked by the user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattraccessiblewhenunlocked": {
+      "title": "kSecAttrAccessibleWhenUnlocked",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccessiblewhenunlocked",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattraccessiblewhenunlocked",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The data in the keychain item can be accessed only while the device is unlocked by the user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattraccessibleafterfirstunlockthisdeviceonly": {
+      "title": "kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccessibleafterfirstunlockthisdeviceonly",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattraccessibleafterfirstunlockthisdeviceonly",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The data in the keychain item cannot be accessed after a restart until the device has been unlocked once by the user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattraccessibleafterfirstunlock": {
+      "title": "kSecAttrAccessibleAfterFirstUnlock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccessibleafterfirstunlock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattraccessibleafterfirstunlock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The data in the keychain item cannot be accessed after a restart until the device has been unlocked once by the user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattraccessiblealwaysthisdeviceonly": {
+      "title": "kSecAttrAccessibleAlwaysThisDeviceOnly",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccessiblealwaysthisdeviceonly",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattraccessiblealwaysthisdeviceonly",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The data in the keychain item can always be accessed regardless of whether the device is locked."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattraccessiblealways": {
+      "title": "kSecAttrAccessibleAlways",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccessiblealways",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattraccessiblealways",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The data in the keychain item can always be accessed regardless of whether the device is locked."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprfhmacalgsha1": {
+      "title": "kSecAttrPRFHmacAlgSHA1",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprfhmacalgsha1",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprfhmacalgsha1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use the SHA1 algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprfhmacalgsha224": {
+      "title": "kSecAttrPRFHmacAlgSHA224",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprfhmacalgsha224",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprfhmacalgsha224",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use the SHA224 algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprfhmacalgsha256": {
+      "title": "kSecAttrPRFHmacAlgSHA256",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprfhmacalgsha256",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprfhmacalgsha256",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use the SHA256 algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprfhmacalgsha384": {
+      "title": "kSecAttrPRFHmacAlgSHA384",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprfhmacalgsha384",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprfhmacalgsha384",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use the SHA384 algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrprfhmacalgsha512": {
+      "title": "kSecAttrPRFHmacAlgSHA512",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprfhmacalgsha512",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrprfhmacalgsha512",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use the SHA512 algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattraccessgrouptoken": {
+      "title": "kSecAttrAccessGroupToken",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccessgrouptoken",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattraccessgrouptoken",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The access group containing items provided by external tokens."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/adding_a_password_to_the_keychain": {
+      "title": "Adding a Password to the Keychain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/adding_a_password_to_the_keychain",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/keychain_services/keychain_items/adding_a_password_to_the_keychain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add network credentials to the keychain on behalf of the user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1401659-secitemadd": {
+      "title": "SecItemAdd",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1401659-secitemadd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1401659-secitemadd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds one or more items to a keychain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/item_class_keys_and_values": {
+      "title": "Item Class Keys and Values",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/item_class_keys_and_values",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/keychain_services/keychain_items/item_class_keys_and_values",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specify the class of a keychain item. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/item_attribute_keys_and_values": {
+      "title": "Item Attribute Keys and Values",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/item_attribute_keys_and_values",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/keychain_services/keychain_items/item_attribute_keys_and_values",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specify the attributes of keychain items."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "General Item Attribute Keys",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/ksecattraccess",
+        "doc://com.apple.documentation/documentation/security/ksecattraccesscontrol",
+        "doc://com.apple.documentation/documentation/security/ksecattraccessible",
+        "doc://com.apple.documentation/documentation/security/ksecattraccessgroup",
+        "doc://com.apple.documentation/documentation/security/ksecattrsynchronizable",
+        "doc://com.apple.documentation/documentation/security/ksecattrcreationdate",
+        "doc://com.apple.documentation/documentation/security/ksecattrmodificationdate",
+        "doc://com.apple.documentation/documentation/security/ksecattrdescription",
+        "doc://com.apple.documentation/documentation/security/ksecattrcomment",
+        "doc://com.apple.documentation/documentation/security/ksecattrcreator",
+        "doc://com.apple.documentation/documentation/security/ksecattrtype",
+        "doc://com.apple.documentation/documentation/security/ksecattrlabel",
+        "doc://com.apple.documentation/documentation/security/ksecattrisinvisible",
+        "doc://com.apple.documentation/documentation/security/ksecattrisnegative",
+        "doc://com.apple.documentation/documentation/security/ksecattrsyncviewhint",
+        "doc://com.apple.documentation/documentation/security/ksecattrpersistantreference",
+        "doc://com.apple.documentation/documentation/security/ksecattrpersistentreference"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Password Attribute Keys",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/ksecattraccount",
+        "doc://com.apple.documentation/documentation/security/ksecattrservice",
+        "doc://com.apple.documentation/documentation/security/ksecattrgeneric",
+        "doc://com.apple.documentation/documentation/security/ksecattrsecuritydomain",
+        "doc://com.apple.documentation/documentation/security/ksecattrserver",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocol",
+        "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtype",
+        "doc://com.apple.documentation/documentation/security/ksecattrport",
+        "doc://com.apple.documentation/documentation/security/ksecattrpath"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Certificate Attribute Keys",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/ksecattrsubject",
+        "doc://com.apple.documentation/documentation/security/ksecattrissuer",
+        "doc://com.apple.documentation/documentation/security/ksecattrserialnumber",
+        "doc://com.apple.documentation/documentation/security/ksecattrsubjectkeyid",
+        "doc://com.apple.documentation/documentation/security/ksecattrpublickeyhash",
+        "doc://com.apple.documentation/documentation/security/ksecattrcertificatetype",
+        "doc://com.apple.documentation/documentation/security/ksecattrcertificateencoding"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Cryptographic Key Attribute Keys",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/ksecattrkeyclass",
+        "doc://com.apple.documentation/documentation/security/ksecattrapplicationlabel",
+        "doc://com.apple.documentation/documentation/security/ksecattrapplicationtag",
+        "doc://com.apple.documentation/documentation/security/ksecattrkeytype",
+        "doc://com.apple.documentation/documentation/security/ksecattrprf",
+        "doc://com.apple.documentation/documentation/security/ksecattrsalt",
+        "doc://com.apple.documentation/documentation/security/ksecattrrounds",
+        "doc://com.apple.documentation/documentation/security/ksecattrkeysizeinbits",
+        "doc://com.apple.documentation/documentation/security/ksecattreffectivekeysize",
+        "doc://com.apple.documentation/documentation/security/ksecattrtokenid"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Cryptographic Key Usage Attribute Keys",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/ksecattrispermanent",
+        "doc://com.apple.documentation/documentation/security/ksecattrissensitive",
+        "doc://com.apple.documentation/documentation/security/ksecattrisextractable",
+        "doc://com.apple.documentation/documentation/security/ksecattrcanencrypt",
+        "doc://com.apple.documentation/documentation/security/ksecattrcandecrypt",
+        "doc://com.apple.documentation/documentation/security/ksecattrcanderive",
+        "doc://com.apple.documentation/documentation/security/ksecattrcansign",
+        "doc://com.apple.documentation/documentation/security/ksecattrcanverify",
+        "doc://com.apple.documentation/documentation/security/ksecattrcanwrap",
+        "doc://com.apple.documentation/documentation/security/ksecattrcanunwrap"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Protocol Values",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolftp",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolftpaccount",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolhttp",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolirc",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolnntp",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolpop3",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolsmtp",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolsocks",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolimap",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolldap",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolappletalk",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolafp",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocoltelnet",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolssh",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolftps",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolhttps",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolhttpproxy",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolhttpsproxy",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolftpproxy",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolsmb",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolrtsp",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolrtspproxy",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocoldaap",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocoleppc",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolipp",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolnntps",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolldaps",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocoltelnets",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolimaps",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolircs",
+        "doc://com.apple.documentation/documentation/security/ksecattrprotocolpop3s"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values you use with the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprotocol"
+        },
+        {
+          "type": "text",
+          "text": " attribute key."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Authentication Type Values",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypentlm",
+        "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypemsn",
+        "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypedpa",
+        "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtyperpa",
+        "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypehttpbasic",
+        "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypehttpdigest",
+        "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypehtmlform",
+        "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtypedefault"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values you use with the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/security/ksecattrauthenticationtype"
+        },
+        {
+          "type": "text",
+          "text": " attribute key."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Key Class Values",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/ksecattrkeyclasspublic",
+        "doc://com.apple.documentation/documentation/security/ksecattrkeyclassprivate",
+        "doc://com.apple.documentation/documentation/security/ksecattrkeyclasssymmetric"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values you use with the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeyclass"
+        },
+        {
+          "type": "text",
+          "text": " attribute key."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Key Type Values",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/ksecattrkeytypersa",
+        "doc://com.apple.documentation/documentation/security/ksecattrkeytypedsa",
+        "doc://com.apple.documentation/documentation/security/ksecattrkeytypeaes",
+        "doc://com.apple.documentation/documentation/security/ksecattrkeytypedes",
+        "doc://com.apple.documentation/documentation/security/ksecattrkeytype3des",
+        "doc://com.apple.documentation/documentation/security/ksecattrkeytyperc4",
+        "doc://com.apple.documentation/documentation/security/ksecattrkeytyperc2",
+        "doc://com.apple.documentation/documentation/security/ksecattrkeytypecast",
+        "doc://com.apple.documentation/documentation/security/ksecattrkeytypeecdsa",
+        "doc://com.apple.documentation/documentation/security/ksecattrkeytypeec",
+        "doc://com.apple.documentation/documentation/security/ksecattrkeytypeecsecprimerandom"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values you use with the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeytype"
+        },
+        {
+          "type": "text",
+          "text": " attribute key."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Synchronizability Values",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/ksecattrsynchronizableany"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values you use with the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/security/ksecattrsynchronizable"
+        },
+        {
+          "type": "text",
+          "text": " attribute key."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Token ID Values",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/ksecattrtokenidsecureenclave"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values you use with the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/security/ksecattrtokenid"
+        },
+        {
+          "type": "text",
+          "text": " attribute key."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Accessibility Values",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/ksecattraccessiblewhenpasscodesetthisdeviceonly",
+        "doc://com.apple.documentation/documentation/security/ksecattraccessiblewhenunlockedthisdeviceonly",
+        "doc://com.apple.documentation/documentation/security/ksecattraccessiblewhenunlocked",
+        "doc://com.apple.documentation/documentation/security/ksecattraccessibleafterfirstunlockthisdeviceonly",
+        "doc://com.apple.documentation/documentation/security/ksecattraccessibleafterfirstunlock",
+        "doc://com.apple.documentation/documentation/security/ksecattraccessiblealwaysthisdeviceonly",
+        "doc://com.apple.documentation/documentation/security/ksecattraccessiblealways"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values you use with the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccessible"
+        },
+        {
+          "type": "text",
+          "text": " attribute key, listed from most to least restrictive."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Pseudorandom Function Values",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/ksecattrprfhmacalgsha1",
+        "doc://com.apple.documentation/documentation/security/ksecattrprfhmacalgsha224",
+        "doc://com.apple.documentation/documentation/security/ksecattrprfhmacalgsha256",
+        "doc://com.apple.documentation/documentation/security/ksecattrprfhmacalgsha384",
+        "doc://com.apple.documentation/documentation/security/ksecattrprfhmacalgsha512"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values you use with the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/security/ksecattrprf"
+        },
+        {
+          "type": "text",
+          "text": " attribute key to indicate the item's pseudorandom function."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Access Group Values",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/ksecattraccessgrouptoken"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values you use with the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccessgroup"
+        },
+        {
+          "type": "text",
+          "text": " attribute key."
+        }
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/adding_a_password_to_the_keychain",
+        "doc://com.apple.documentation/documentation/security/1401659-secitemadd",
+        "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/item_class_keys_and_values"
+      ],
+      "title": "Adding Keychain Items",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In addition to the data that you want to store, keychain items also have attributes that allow you to find them later and that allow you to control how the data is used or shared."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You specify attributes as the keys and values of a dictionary. The available attribute keys are listed below. Typically, the corresponding value is a string, a number, or some other basic type, as given in each key description. In a few cases, the value comes instead from a list of a known constants. These predefined attribute values are also listed below, grouped according to the key that they serve."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Not all attributes apply to every item class. You can find the list of attributes applicable to a given class in the relevant item class value definition, namely in "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/ksecclassgenericpassword"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/ksecclassinternetpassword"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/ksecclasscertificate"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/ksecclassidentity"
+                },
+                {
+                  "type": "text",
+                  "text": ", or "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/ksecclasskey"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,1552 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A simple, reusable animation that changes attributes of any node you attach it to."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/scenekit",
+        "doc://com.apple.documentation/documentation/scenekit/animation"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/scenekit/scnaction",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1523186,
+  "kind": "symbol",
+  "metadata": {
+    "title": "SCNAction",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "SceneKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "8.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.10",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.1",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)SCNAction",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/scenekit/scnaction"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/scenekit/scnaction"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/scenekit": {
+      "title": "SceneKit",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit",
+      "url": "/documentation/scenekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/animation": {
+      "title": "Animation",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/animation",
+      "url": "/documentation/scenekit/animation",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1524055-timingmode": {
+      "title": "timingMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1524055-timingmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1524055-timingmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The timing mode used to execute an action."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1524130-timingfunction": {
+      "title": "timingFunction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1524130-timingfunction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1524130-timingfunction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A block SceneKit calls to determine the action’s animation timing."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/spritekit/sknode/1483093-runaction": {
+      "title": "runAction:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483093-runaction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/sknode/1483093-runaction",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "runAction:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnactionable": {
+      "title": "SCNActionable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnactionable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnactionable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods for running actions on nodes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1524162-duration": {
+      "title": "duration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1524162-duration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1524162-duration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The duration required to complete an action."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1522811-speed": {
+      "title": "speed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1522811-speed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1522811-speed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A speed factor that modifies how fast an action runs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1522815-reversedaction": {
+      "title": "reversedAction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1522815-reversedaction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1522815-reversedaction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that reverses the behavior of another action."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "reversedAction"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scntransaction": {
+      "title": "SCNTransaction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scntransaction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scntransaction"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnanimatable": {
+      "title": "SCNAnimatable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnanimatable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnanimatable"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnscenerendererdelegate": {
+      "title": "SCNSceneRendererDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscenerendererdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnscenerendererdelegate"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction": {
+      "title": "SCNAction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A simple, reusable animation that changes attributes of any node you attach it to."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction#1655591": {
+      "title": "Creating Custom Actions",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction#1655591",
+      "kind": "article",
+      "role": "task",
+      "url": "/documentation/scenekit/scnaction#1655591"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode": {
+      "title": "SCNNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nssecurecoding": {
+      "title": "NSSecureCoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nssecurecoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nssecurecoding"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscopying": {
+      "title": "NSCopying",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscopying",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscopying"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1523238-movebyx": {
+      "title": "moveByX:y:z:duration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1523238-movebyx",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1523238-movebyx",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that moves a node relative to its current position."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "moveByX:y:z:duration:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1522605-moveby": {
+      "title": "moveBy:duration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1522605-moveby",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1522605-moveby",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that moves a node relative to its current position."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "moveBy:duration:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1522826-moveto": {
+      "title": "moveTo:duration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1522826-moveto",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1522826-moveto",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that moves a node to a new position."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "moveTo:duration:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1523522-rotatebyx": {
+      "title": "rotateByX:y:z:duration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1523522-rotatebyx",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1523522-rotatebyx",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that rotates the node in each of the three principal axes by angles relative to its current orientation."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "rotateByX:y:z:duration:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1524044-rotatetox": {
+      "title": "rotateToX:y:z:duration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1524044-rotatetox",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1524044-rotatetox",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that rotates the node to absolute angles in each of the three principal axes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "rotateToX:y:z:duration:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1522808-rotatetox": {
+      "title": "rotateToX:y:z:duration:shortestUnitArc:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1522808-rotatetox",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1522808-rotatetox",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that rotates the node to absolute angles in each of the three principal axes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "rotateToX:y:z:duration:shortestUnitArc:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1523805-rotatebyangle": {
+      "title": "rotateByAngle:aroundAxis:duration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1523805-rotatebyangle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1523805-rotatebyangle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that rotates the node by an angle around a specified axis."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "rotateByAngle:aroundAxis:duration:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1524191-rotatetoaxisangle": {
+      "title": "rotateToAxisAngle:duration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1524191-rotatetoaxisangle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1524191-rotatetoaxisangle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that rotates the node to an absolute angle around a specified axis."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "rotateToAxisAngle:duration:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1523129-scaleby": {
+      "title": "scaleBy:duration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1523129-scaleby",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1523129-scaleby",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that uniformly changes the scale factor of a node by a relative value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "scaleBy:duration:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1523322-scaleto": {
+      "title": "scaleTo:duration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1523322-scaleto",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1523322-scaleto",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that uniformly changes the scale factor of a node to an absolute value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "scaleTo:duration:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1522777-fadeinwithduration": {
+      "title": "fadeInWithDuration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1522777-fadeinwithduration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1522777-fadeinwithduration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that changes the opacity of the node to "
+        },
+        {
+          "type": "codeVoice",
+          "code": "1.0"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "fadeInWithDuration:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1523922-fadeoutwithduration": {
+      "title": "fadeOutWithDuration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1523922-fadeoutwithduration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1523922-fadeoutwithduration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that changes the opacity of the node to "
+        },
+        {
+          "type": "codeVoice",
+          "code": "0.0"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "fadeOutWithDuration:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1523595-fadeopacityby": {
+      "title": "fadeOpacityBy:duration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1523595-fadeopacityby",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1523595-fadeopacityby",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that adjusts the opacity of a node by a relative value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "fadeOpacityBy:duration:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1523875-fadeopacityto": {
+      "title": "fadeOpacityTo:duration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1523875-fadeopacityto",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1523875-fadeopacityto",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that adjusts the opacity of a node to a new value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "fadeOpacityTo:duration:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1523487-hide": {
+      "title": "hide",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1523487-hide",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1523487-hide",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that hides a node."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "hide"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1524205-unhide": {
+      "title": "unhide",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1524205-unhide",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1524205-unhide",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that ensures a node is not hidden."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "unhide"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1522966-removefromparentnode": {
+      "title": "removeFromParentNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1522966-removefromparentnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1522966-removefromparentnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that removes the node from its parent."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeFromParentNode"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1523651-playaudiosource": {
+      "title": "playAudioSource:waitForCompletion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1523651-playaudiosource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1523651-playaudiosource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that plays an audio source."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "playAudioSource:waitForCompletion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1522779-group": {
+      "title": "group:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1522779-group",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1522779-group",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that runs a collection of actions in parallel."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "group:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1522793-sequence": {
+      "title": "sequence:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1522793-sequence",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1522793-sequence",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that runs a collection of actions sequentially."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "sequence:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1522764-repeataction": {
+      "title": "repeatAction:count:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1522764-repeataction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1522764-repeataction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that repeats another action a specified number of times."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "repeatAction:count:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1522908-repeatactionforever": {
+      "title": "repeatActionForever:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1522908-repeatactionforever",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1522908-repeatactionforever",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that repeats another action forever."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "repeatActionForever:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1523915-waitforduration": {
+      "title": "waitForDuration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1523915-waitforduration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1523915-waitforduration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that idles for a specified period of time."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "waitForDuration:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1523086-waitforduration": {
+      "title": "waitForDuration:withRange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1523086-waitforduration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1523086-waitforduration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that idles for a randomized period of time."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "waitForDuration:withRange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1523637-runblock": {
+      "title": "runBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1523637-runblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1523637-runblock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that executes a block."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "runBlock:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1522875-runblock": {
+      "title": "runBlock:queue:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1522875-runblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1522875-runblock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that executes a block on a specific dispatch queue."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "runBlock:queue:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1523692-customactionwithduration": {
+      "title": "customActionWithDuration:actionBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1523692-customactionwithduration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1523692-customactionwithduration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that executes a block periodically over a specified duration."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "customActionWithDuration:actionBlock:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaction/1523984-javascriptactionwithscript": {
+      "title": "javaScriptActionWithScript:duration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1523984-javascriptactionwithscript",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaction/1523984-javascriptactionwithscript",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an action that executes a JavaScript script periodically over a specified duration."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "javaScriptActionWithScript:duration:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnactiontimingmode": {
+      "title": "SCNActionTimingMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnactiontimingmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnactiontimingmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants affecting the animation curve of an action, used by the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1524055-timingmode"
+        },
+        {
+          "type": "text",
+          "text": " property."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnactiontimingfunction": {
+      "title": "SCNActionTimingFunction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnactiontimingfunction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnactiontimingfunction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The signature for a block that manages animation timing, used by the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1524130-timingfunction"
+        },
+        {
+          "type": "text",
+          "text": " property."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscopying",
+        "doc://com.apple.documentation/documentation/foundation/nssecurecoding"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating Actions That Move a Node",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1523238-movebyx",
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1522605-moveby",
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1522826-moveto"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Creating Actions That Rotate a Node",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1523522-rotatebyx",
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1524044-rotatetox",
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1522808-rotatetox",
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1523805-rotatebyangle",
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1524191-rotatetoaxisangle"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Creating Actions That Change a Node’s Scale",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1523129-scaleby",
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1523322-scaleto"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Creating Actions That Change a Node’s Opacity",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1522777-fadeinwithduration",
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1523922-fadeoutwithduration",
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1523595-fadeopacityby",
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1523875-fadeopacityto"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Creating Actions That Change a Node’s Visibility",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1523487-hide",
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1524205-unhide"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Creating Actions That Remove Nodes from the Scene",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1522966-removefromparentnode"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Creating Actions That Play Audio",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1523651-playaudiosource"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Creating Actions That Combine or Repeat Other Actions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1522779-group",
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1522793-sequence",
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1522764-repeataction",
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1522908-repeatactionforever"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Creating Actions That Add Delays to Action Sequences",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1523915-waitforduration",
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1523086-waitforduration"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Creating Custom Actions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1523637-runblock",
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1522875-runblock",
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1523692-customactionwithduration",
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1523984-javascriptactionwithscript"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Reversing an Action",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1522815-reversedaction"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Adjusting an Action’s Animation Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1524162-duration",
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1522811-speed",
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1524055-timingmode",
+        "doc://com.apple.documentation/documentation/scenekit/scnaction/1524130-timingfunction"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnactiontimingmode",
+        "doc://com.apple.documentation/documentation/scenekit/scnactiontimingfunction"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnactionable"
+      ],
+      "title": "Actions",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "SCNAction"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You use actions most often to change the structure and content of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode"
+            },
+            {
+              "type": "text",
+              "text": " object to which they are attached, but you can also use actions make other changes to the scene. In SceneKit, actions provide an easy way to implement animated behaviors that frequently change in response to user input."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Working with Actions",
+          "anchor": "1655115"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To create an action, call the class method for the action you are interested in. Then, configure the action’s properties. Finally, to execute the action, call a node object’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/sknode/1483093-runaction"
+            },
+            {
+              "type": "text",
+              "text": " method (or a similar method from the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnactionable"
+            },
+            {
+              "type": "text",
+              "text": " protocol) and pass it the action object."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Most actions allow you to change a node’s properties, such as its position, rotation, or scale. Many of these actions are animated by SceneKit, meaning that they change the properties of the associated node over more than one frame of animation rendered by the scene. When an action is animated, the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1524162-duration"
+            },
+            {
+              "type": "text",
+              "text": " property states how long that action takes to complete in seconds and its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1524055-timingmode"
+            },
+            {
+              "type": "text",
+              "text": " property defines the rate at which the animation executes. The action’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1522811-speed"
+            },
+            {
+              "type": "text",
+              "text": " property allows you to adjust the timing of the animation by increasing or decreasing its playback speed."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Many actions can be "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "reversed"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", allowing you to create another action object that reverses the effect of that action. For example, if an action object moves a node "
+            },
+            {
+              "type": "codeVoice",
+              "code": "20"
+            },
+            {
+              "type": "text",
+              "text": " units in the positive X direction of its parent’s local coordinate space, the reversed action moves the node "
+            },
+            {
+              "type": "codeVoice",
+              "code": "20"
+            },
+            {
+              "type": "text",
+              "text": " units in the negative X direction. To create a reversed action object, call an action object’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction/1522815-reversedaction"
+            },
+            {
+              "type": "text",
+              "text": " method."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Some actions include other actions as children:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A "
+                    },
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "sequence action"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " has multiple child actions. Each action in the sequence begins after the previous action ends."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A "
+                    },
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "group action"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " has multiple child actions. All actions stored in the group begin executing at the same time."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A "
+                    },
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "repeating action"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " stores a single child action. When the child action completes, it is restarted."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can nest groups, sequences, and repeating actions. By combining actions together, you can add sophisticated behaviors to a node."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Using Actions for Scene Animation",
+          "anchor": "1655140"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Actions are easily reused, can be added and removed while running, and directly affect presented nodes. For these reasons, actions work well when your scene changes frequently in response to user input—such as when building a game. Not all elements of a scene can be animated using actions. For other kinds of animation, use implicitly animated object properties (see the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scntransaction"
+            },
+            {
+              "type": "text",
+              "text": " class) or explicitly created Core Animation objects (see the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnanimatable"
+            },
+            {
+              "type": "text",
+              "text": " protocol), or change the scene graph directly for each rendered frame (see the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscenerendererdelegate"
+            },
+            {
+              "type": "text",
+              "text": " protocol)."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Subclassing Notes",
+          "anchor": "1680918"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You never subclass "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction"
+            },
+            {
+              "type": "text",
+              "text": " directly. Instead, create actions that call methods on arbitrary objects or execute blocks of code. See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaction#1655591"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

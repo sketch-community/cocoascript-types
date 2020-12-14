@@ -1,0 +1,831 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An object that applies forces, such as gravitation, electromagnetism, and turbulence, to physics bodies within a certain area of effect. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/scenekit",
+        "doc://com.apple.documentation/documentation/scenekit/physics_simulation"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1388124,
+  "kind": "symbol",
+  "metadata": {
+    "title": "SCNPhysicsField",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "SceneKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "8.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.10",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.1",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)SCNPhysicsField",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/scenekit/scnphysicsfield"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/scenekit/scnphysicsfield"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/scenekit": {
+      "title": "SceneKit",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit",
+      "url": "/documentation/scenekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/physics_simulation": {
+      "title": "Physics Simulation",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/physics_simulation",
+      "url": "/documentation/scenekit/physics_simulation",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388136-scope": {
+      "title": "scope",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388136-scope",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfield/1388136-scope",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The area affected by the field, either inside or outside its region."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1408006-physicsfield": {
+      "title": "physicsField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408006-physicsfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1408006-physicsfield"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody": {
+      "title": "SCNPhysicsBody",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnparticlesystem": {
+      "title": "SCNParticleSystem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnparticlesystem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnparticlesystem"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nssecurecoding": {
+      "title": "NSSecureCoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nssecurecoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nssecurecoding"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscopying": {
+      "title": "NSCopying",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscopying",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscopying"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388164-dragfield": {
+      "title": "dragField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388164-dragfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfield/1388164-dragfield",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a field that slows any object in its area of effect with a force proportional to the object’s velocity."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "dragField"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388160-vortexfield": {
+      "title": "vortexField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388160-vortexfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfield/1388160-vortexfield",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a field whose forces circulate around an axis."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "vortexField"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388115-radialgravityfield": {
+      "title": "radialGravityField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388115-radialgravityfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfield/1388115-radialgravityfield",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a field that accelerates objects toward its center."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "radialGravityField"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388130-lineargravityfield": {
+      "title": "linearGravityField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388130-lineargravityfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfield/1388130-lineargravityfield",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a field that accelerates objects in a specific direction."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "linearGravityField"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388150-noisefieldwithsmoothness": {
+      "title": "noiseFieldWithSmoothness:animationSpeed:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388150-noisefieldwithsmoothness",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfield/1388150-noisefieldwithsmoothness",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a field that applies random forces to objects in its area of effect."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "noiseFieldWithSmoothness:animationSpeed:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388162-turbulencefieldwithsmoothness": {
+      "title": "turbulenceFieldWithSmoothness:animationSpeed:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388162-turbulencefieldwithsmoothness",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfield/1388162-turbulencefieldwithsmoothness",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a field that applies random forces to objects in its area of effect, with magnitudes proportional to those objects’ velocities."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "turbulenceFieldWithSmoothness:animationSpeed:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388134-springfield": {
+      "title": "springField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388134-springfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfield/1388134-springfield",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a field that pulls objects toward its center with a spring-like force."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "springField"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388152-electricfield": {
+      "title": "electricField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388152-electricfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfield/1388152-electricfield",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a field that attracts or repels objects based on their electrical charge and on their distance from the field’s center."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "electricField"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388168-magneticfield": {
+      "title": "magneticField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388168-magneticfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfield/1388168-magneticfield",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a field that attracts or repels objects based on their electrical charge, velocity, and distance from the field’s axis."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "magneticField"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388140-customfieldwithevaluationblock": {
+      "title": "customFieldWithEvaluationBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388140-customfieldwithevaluationblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfield/1388140-customfieldwithevaluationblock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a field that runs the specified block to determine the force a field applies to each object in its area of effect."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "customFieldWithEvaluationBlock:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388138-halfextent": {
+      "title": "halfExtent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388138-halfextent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfield/1388138-halfextent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A location marking the end of the field’s area of effect."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388158-usesellipsoidalextent": {
+      "title": "usesEllipsoidalExtent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388158-usesellipsoidalextent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfield/1388158-usesellipsoidalextent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines whether the field’s area of effect is shaped like a box or ellipsoid."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388154-offset": {
+      "title": "offset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388154-offset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfield/1388154-offset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The offset of the field’s center within its area of effect."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388128-direction": {
+      "title": "direction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388128-direction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfield/1388128-direction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The field’s directional axis."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388132-strength": {
+      "title": "strength",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388132-strength",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfield/1388132-strength",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A multiplier for the force that the field applies to objects in its area of effect."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388146-falloffexponent": {
+      "title": "falloffExponent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388146-falloffexponent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfield/1388146-falloffexponent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An exponent that determines how the field’s strength diminishes with distance."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388148-minimumdistance": {
+      "title": "minimumDistance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388148-minimumdistance",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfield/1388148-minimumdistance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The minimum value for distance-based effects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388117-active": {
+      "title": "active",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388117-active",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfield/1388117-active",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines whether the field’s effect is enabled."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388126-exclusive": {
+      "title": "exclusive",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388126-exclusive",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfield/1388126-exclusive",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines whether the field overrides other fields whose areas of effect it overlaps."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388119-categorybitmask": {
+      "title": "categoryBitMask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388119-categorybitmask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfield/1388119-categorybitmask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mask that defines which categories this physics field belongs to."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnfieldforceevaluator": {
+      "title": "SCNFieldForceEvaluator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnfieldforceevaluator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnfieldforceevaluator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The signature for a block that SceneKit calls to determine the effect of a custom field on an object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfieldscope": {
+      "title": "SCNPhysicsFieldScope",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfieldscope",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfieldscope",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options for defining the region of space affected by a physics field, used by the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388136-scope"
+        },
+        {
+          "type": "text",
+          "text": " property."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsworld": {
+      "title": "SCNPhysicsWorld",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsworld",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsworld",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The global simulation of collisions, gravity, joints, and other physics effects in a scene."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield": {
+      "title": "SCNPhysicsField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfield",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that applies forces, such as gravitation, electromagnetism, and turbulence, to physics bodies within a certain area of effect. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbehavior": {
+      "title": "SCNPhysicsBehavior",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbehavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbehavior",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The abstract superclass for joints, vehicle simulations, and other high-level behaviors that incorporate multiple physics bodies."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscopying",
+        "doc://com.apple.documentation/documentation/foundation/nssecurecoding"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating Physics Fields",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388164-dragfield",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388160-vortexfield",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388115-radialgravityfield",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388130-lineargravityfield",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388150-noisefieldwithsmoothness",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388162-turbulencefieldwithsmoothness",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388134-springfield",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388152-electricfield",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388168-magneticfield"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Creating Custom Physics Fields",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388140-customfieldwithevaluationblock"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Specifying a Field’s Area of Effect",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388138-halfextent",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388136-scope",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388158-usesellipsoidalextent",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388154-offset",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388128-direction"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Specifying a Field’s Behavior",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388132-strength",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388146-falloffexponent",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388148-minimumdistance",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388117-active",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388126-exclusive"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Choosing Physics Bodies to Be Affected by the Field",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield/1388119-categorybitmask"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnfieldforceevaluator",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsfieldscope"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsworld",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbehavior"
+      ],
+      "title": "Physics in a Scene",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "SCNPhysicsField"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can create many types of field effects, such as gravitation, electromagnetism, and turbulence. To add a field effect to a scene, you create a physics field of the type you want to use and then attach it to the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408006-physicsfield"
+            },
+            {
+              "type": "text",
+              "text": " property of a node in the scene."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Physics fields can affect both "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody"
+            },
+            {
+              "type": "text",
+              "text": " objects and the particles spawned by "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnparticlesystem"
+            },
+            {
+              "type": "text",
+              "text": " objects."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

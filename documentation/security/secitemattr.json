@@ -1,0 +1,855 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Specifies a keychain item’s attributes."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/keychain_services",
+        "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/secitemattr",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1396846,
+  "kind": "symbol",
+  "metadata": {
+    "title": "SecItemAttr",
+    "role": "symbol",
+    "roleHeading": "Enumeration",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.2",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:@T@SecItemAttr",
+    "symbolKind": "enum"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/secitemattr"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/secitemattr"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services": {
+      "title": "Keychain Services",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services",
+      "url": "/documentation/security/keychain_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items": {
+      "title": "Keychain Items",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/keychain_services/keychain_items"
+    },
+    "link-1670372": {
+      "title": "http://www.opengroup.org/security/cdsa.htm",
+      "type": "topic",
+      "identifier": "link-1670372",
+      "kind": "article",
+      "role": "link",
+      "url": "http://www.opengroup.org/security/cdsa.htm"
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant": {
+      "title": "Keychain Item Attribute Constants For Keys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies the attributes for a key item in a keychain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items#1658658": {
+      "title": "Adding Keychain Items",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items#1658658",
+      "kind": "article",
+      "role": "task",
+      "url": "/documentation/security/keychain_services/keychain_items#1658658"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items#1662299": {
+      "title": "Keychain Item Search",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items#1662299",
+      "kind": "article",
+      "role": "task",
+      "url": "/documentation/security/keychain_services/keychain_items#1662299"
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/kseccreationdateitemattr": {
+      "title": "kSecCreationDateItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/kseccreationdateitemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/kseccreationdateitemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the creation date attribute."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/ksecmoddateitemattr": {
+      "title": "kSecModDateItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/ksecmoddateitemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/ksecmoddateitemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the modification date attribute."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/ksecdescriptionitemattr": {
+      "title": "kSecDescriptionItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/ksecdescriptionitemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/ksecdescriptionitemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the description attribute. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/kseccommentitemattr": {
+      "title": "kSecCommentItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/kseccommentitemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/kseccommentitemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the comment attribute. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/kseccreatoritemattr": {
+      "title": "kSecCreatorItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/kseccreatoritemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/kseccreatoritemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the creator attribute. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/ksectypeitemattr": {
+      "title": "kSecTypeItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/ksectypeitemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/ksectypeitemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the type attribute. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/ksecscriptcodeitemattr": {
+      "title": "kSecScriptCodeItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/ksecscriptcodeitemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/ksecscriptcodeitemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the script code attribute. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/kseclabelitemattr": {
+      "title": "kSecLabelItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/kseclabelitemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/kseclabelitemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the label attribute."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/ksecinvisibleitemattr": {
+      "title": "kSecInvisibleItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/ksecinvisibleitemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/ksecinvisibleitemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the invisible attribute. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/ksecnegativeitemattr": {
+      "title": "kSecNegativeItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/ksecnegativeitemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/ksecnegativeitemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the negative attribute. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/kseccustomiconitemattr": {
+      "title": "kSecCustomIconItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/kseccustomiconitemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/kseccustomiconitemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the custom icon attribute."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/ksecaccountitemattr": {
+      "title": "kSecAccountItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/ksecaccountitemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/ksecaccountitemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the account attribute. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/ksecserviceitemattr": {
+      "title": "kSecServiceItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/ksecserviceitemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/ksecserviceitemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the service attribute. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/ksecgenericitemattr": {
+      "title": "kSecGenericItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/ksecgenericitemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/ksecgenericitemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the generic attribute. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/ksecsecuritydomainitemattr": {
+      "title": "kSecSecurityDomainItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/ksecsecuritydomainitemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/ksecsecuritydomainitemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the security domain attribute. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/ksecserveritemattr": {
+      "title": "kSecServerItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/ksecserveritemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/ksecserveritemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the server attribute. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/ksecauthenticationtypeitemattr": {
+      "title": "kSecAuthenticationTypeItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/ksecauthenticationtypeitemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/ksecauthenticationtypeitemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the authentication type attribute. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/ksecportitemattr": {
+      "title": "kSecPortItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/ksecportitemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/ksecportitemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the port attribute."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/ksecpathitemattr": {
+      "title": "kSecPathItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/ksecpathitemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/ksecpathitemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the path attribute. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/ksecvolumeitemattr": {
+      "title": "kSecVolumeItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/ksecvolumeitemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/ksecvolumeitemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the volume attribute. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/ksecaddressitemattr": {
+      "title": "kSecAddressItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/ksecaddressitemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/ksecaddressitemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the address attribute. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/ksecsignatureitemattr": {
+      "title": "kSecSignatureItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/ksecsignatureitemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/ksecsignatureitemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the server signature attribute. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/ksecprotocolitemattr": {
+      "title": "kSecProtocolItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/ksecprotocolitemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/ksecprotocolitemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies the protocol attribute. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/kseccertificatetype": {
+      "title": "kSecCertificateType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/kseccertificatetype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/kseccertificatetype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CSSM_CERT_TYPE"
+        },
+        {
+          "type": "text",
+          "text": " type."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/kseccertificateencoding": {
+      "title": "kSecCertificateEncoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/kseccertificateencoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/kseccertificateencoding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CSSM_CERT_ENCODING"
+        },
+        {
+          "type": "text",
+          "text": " type."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/kseccrltype": {
+      "title": "kSecCrlType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/kseccrltype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/kseccrltype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CSSM_CRL_TYPE"
+        },
+        {
+          "type": "text",
+          "text": " type."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/kseccrlencoding": {
+      "title": "kSecCrlEncoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/kseccrlencoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/kseccrlencoding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CSSM_CRL_ENCODING"
+        },
+        {
+          "type": "text",
+          "text": " type."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr/ksecalias": {
+      "title": "kSecAlias",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr/ksecalias",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr/ksecalias",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates an alias."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1392372-seckeychainattributeinfoforitemi": {
+      "title": "SecKeychainAttributeInfoForItemID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1392372-seckeychainattributeinfoforitemi",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1392372-seckeychainattributeinfoforitemi",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtains tags for all possible attributes of a given item class."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1400217-seckeychainfreeattributeinfo": {
+      "title": "SecKeychainFreeAttributeInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1400217-seckeychainfreeattributeinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1400217-seckeychainfreeattributeinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Releases the memory acquired by calling the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "SecKeychainAttributeInfoForItemID"
+        },
+        {
+          "type": "text",
+          "text": " function."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seckeychainattributeinfo": {
+      "title": "SecKeychainAttributeInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seckeychainattributeinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seckeychainattributeinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that represents an attribute."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr": {
+      "title": "SecItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies a keychain item’s attributes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secafpserversignature": {
+      "title": "SecAFPServerSignature",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secafpserversignature",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secafpserversignature",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Represents a 16-byte Apple File Protocol server signature block."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/secitemattr/kseccreationdateitemattr",
+        "doc://com.apple.documentation/documentation/security/secitemattr/ksecmoddateitemattr",
+        "doc://com.apple.documentation/documentation/security/secitemattr/ksecdescriptionitemattr",
+        "doc://com.apple.documentation/documentation/security/secitemattr/kseccommentitemattr",
+        "doc://com.apple.documentation/documentation/security/secitemattr/kseccreatoritemattr",
+        "doc://com.apple.documentation/documentation/security/secitemattr/ksectypeitemattr",
+        "doc://com.apple.documentation/documentation/security/secitemattr/ksecscriptcodeitemattr",
+        "doc://com.apple.documentation/documentation/security/secitemattr/kseclabelitemattr",
+        "doc://com.apple.documentation/documentation/security/secitemattr/ksecinvisibleitemattr",
+        "doc://com.apple.documentation/documentation/security/secitemattr/ksecnegativeitemattr",
+        "doc://com.apple.documentation/documentation/security/secitemattr/kseccustomiconitemattr",
+        "doc://com.apple.documentation/documentation/security/secitemattr/ksecaccountitemattr",
+        "doc://com.apple.documentation/documentation/security/secitemattr/ksecserviceitemattr",
+        "doc://com.apple.documentation/documentation/security/secitemattr/ksecgenericitemattr",
+        "doc://com.apple.documentation/documentation/security/secitemattr/ksecsecuritydomainitemattr",
+        "doc://com.apple.documentation/documentation/security/secitemattr/ksecserveritemattr",
+        "doc://com.apple.documentation/documentation/security/secitemattr/ksecauthenticationtypeitemattr",
+        "doc://com.apple.documentation/documentation/security/secitemattr/ksecportitemattr",
+        "doc://com.apple.documentation/documentation/security/secitemattr/ksecpathitemattr",
+        "doc://com.apple.documentation/documentation/security/secitemattr/ksecvolumeitemattr",
+        "doc://com.apple.documentation/documentation/security/secitemattr/ksecaddressitemattr",
+        "doc://com.apple.documentation/documentation/security/secitemattr/ksecsignatureitemattr",
+        "doc://com.apple.documentation/documentation/security/secitemattr/ksecprotocolitemattr",
+        "doc://com.apple.documentation/documentation/security/secitemattr/kseccertificatetype",
+        "doc://com.apple.documentation/documentation/security/secitemattr/kseccertificateencoding",
+        "doc://com.apple.documentation/documentation/security/secitemattr/kseccrltype",
+        "doc://com.apple.documentation/documentation/security/secitemattr/kseccrlencoding",
+        "doc://com.apple.documentation/documentation/security/secitemattr/ksecalias"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1392372-seckeychainattributeinfoforitemi",
+        "doc://com.apple.documentation/documentation/security/1400217-seckeychainfreeattributeinfo",
+        "doc://com.apple.documentation/documentation/security/seckeychainattributeinfo",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant",
+        "doc://com.apple.documentation/documentation/security/secafpserversignature"
+      ],
+      "title": "Legacy Attribute Info",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "typedef"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "enum"
+            },
+            {
+              "kind": "text",
+              "text": " SecItemAttr : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@FourCharCode",
+              "text": "FourCharCode"
+            },
+            {
+              "kind": "text",
+              "text": " {"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    ..."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "} "
+            },
+            {
+              "kind": "identifier",
+              "text": "SecItemAttr"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Not all of these attributes are used for all types of items. Which set of attributes exist for each type of item is documented in the “Data Storage Library Services” chapter of "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Common Security: CDSA and CSSM, version 2 (with corrigenda)"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " from The Open Group ("
+            },
+            {
+              "type": "link",
+              "title": "http://www.opengroup.org/security/cdsa.htm",
+              "destination": "http://www.opengroup.org/security/cdsa.htm"
+            },
+            {
+              "type": "text",
+              "text": ") for standard items and in the DL section of the "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Security Release Notes"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " for Apple-defined item types (if any). "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To obtain information about a certificate, use the CDSA Certificate Library (CL) API. To obtain information about a key, use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SecKeyGetCSSMKey"
+            },
+            {
+              "type": "text",
+              "text": " function and the CDSA Cryptographic Service Provider (CSP) API. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For attributes for keys, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

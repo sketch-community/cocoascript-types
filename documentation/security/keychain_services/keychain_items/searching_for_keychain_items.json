@@ -1,0 +1,675 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Find keychain items based on search criteria that you specify."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/keychain_services",
+        "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/keychain_services",
+        "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items",
+        "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/using_the_keychain_to_manage_user_secrets"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/searching_for_keychain_items",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2922071,
+  "kind": "article",
+  "metadata": {
+    "title": "Searching for Keychain Items",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/keychain_services/keychain_items/searching_for_keychain_items",
+        "documentation/security/keychain_services/keychain_items/using_the_keychain_to_manage_user_secrets/searching_for_keychain_items"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/keychain_services/keychain_items/searching_for_keychain_items",
+        "documentation/security/keychain_services/keychain_items/using_the_keychain_to_manage_user_secrets/searching_for_keychain_items"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services": {
+      "title": "Keychain Services",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services",
+      "url": "/documentation/security/keychain_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items": {
+      "title": "Keychain Items",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items",
+      "url": "/documentation/security/keychain_services/keychain_items",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/using_the_keychain_to_manage_user_secrets": {
+      "title": "Using the Keychain to Manage User Secrets",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/using_the_keychain_to_manage_user_secrets",
+      "url": "/documentation/security/keychain_services/keychain_items/using_the_keychain_to_manage_user_secrets",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/searching_for_keychain_items#2922073": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/searching_for_keychain_items#2922073",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/keychain_services/keychain_items/searching_for_keychain_items#2922073"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecmatchlimit": {
+      "title": "kSecMatchLimit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecmatchlimit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecmatchlimit"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattraccount": {
+      "title": "kSecAttrAccount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattraccount"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattraccessgroup": {
+      "title": "kSecAttrAccessGroup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccessgroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattraccessgroup"
+    },
+    "doc://com.apple.documentation/documentation/security/1398306-secitemcopymatching": {
+      "title": "SecItemCopyMatching",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1398306-secitemcopymatching",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1398306-secitemcopymatching",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns one or more keychain items that match a search query, or copies attributes of specific keychain items."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/searching_for_keychain_items#2922075": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/searching_for_keychain_items#2922075",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/keychain_services/keychain_items/searching_for_keychain_items#2922075"
+    },
+    "doc://com.apple.documentation/documentation/security/1542001-security_framework_result_codes/errsecitemnotfound": {
+      "title": "errSecItemNotFound",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1542001-security_framework_result_codes/errsecitemnotfound",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1542001-security_framework_result_codes/errsecitemnotfound"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/item_return_result_keys": {
+      "title": "Item Return Result Keys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/item_return_result_keys",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/keychain_services/keychain_items/item_return_result_keys",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specify how you want returned keychain item data formatted."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecvaluedata": {
+      "title": "kSecValueData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecvaluedata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecvaluedata"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/searching_for_keychain_items#2922077": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/searching_for_keychain_items#2922077",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/keychain_services/keychain_items/searching_for_keychain_items#2922077"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecmatchlimitall": {
+      "title": "kSecMatchLimitAll",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecmatchlimitall",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecmatchlimitall"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecreturndata": {
+      "title": "kSecReturnData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecreturndata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecreturndata"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/updating_and_deleting_keychain_items": {
+      "title": "Updating and Deleting Keychain Items",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/updating_and_deleting_keychain_items",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/keychain_services/keychain_items/updating_and_deleting_keychain_items"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/adding_a_password_to_the_keychain": {
+      "title": "Adding a Password to the Keychain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/adding_a_password_to_the_keychain",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/keychain_services/keychain_items/adding_a_password_to_the_keychain"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/searching_for_keychain_items": {
+      "title": "Searching for Keychain Items",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/searching_for_keychain_items",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/keychain_services/keychain_items/searching_for_keychain_items",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Find keychain items based on search criteria that you specify."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/search_attribute_keys_and_values": {
+      "title": "Search Attribute Keys and Values",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/search_attribute_keys_and_values",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/keychain_services/keychain_items/search_attribute_keys_and_values",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Filter a keychain item search."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1398306-secitemcopymatching",
+        "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/search_attribute_keys_and_values",
+        "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/item_return_result_keys"
+      ],
+      "title": "Keychain Item Search",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You find keychain items using a query dictionary that tells the keychain services API what item attributes to look for and what to return when a match is found. The query dictionary also lets you specify additional parameters to refine the search. For example, you can control case sensitivity when matching string attributes or limit the number of matches."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As an example of conducting a search, consider the password item stored in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/adding_a_password_to_the_keychain"
+            },
+            {
+              "type": "text",
+              "text": ". After providing credentials (that your app stores) for a network service, the user works with your app for a while and then eventually moves on to something else. When the user returns, your app may need to reauthenticate with the server in order to continue working. This time the app loads the password from the keychain instead of bothering the user with a login view."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Search Query",
+          "anchor": "2922072"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Begin the search by constructing a query dictionary:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let query: [String: Any] = [kSecClass as String: kSecClassInternetPassword,",
+            "                            kSecAttrServer as String: server,",
+            "                            kSecMatchLimit as String: kSecMatchLimitOne,",
+            "                            kSecReturnAttributes as String: true,",
+            "                            kSecReturnData as String: true]"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2922073",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This query searches for Internet password items whose "
+            },
+            {
+              "type": "codeVoice",
+              "code": "server"
+            },
+            {
+              "type": "text",
+              "text": " attribute matches the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "server"
+            },
+            {
+              "type": "text",
+              "text": " attribute you previously used when adding the password item. The query also limits the results to a single value (which is actually the default behavior) using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecmatchlimit"
+            },
+            {
+              "type": "text",
+              "text": " search parameter. You receive only the first match found in the keychain, if any."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Finally, the query requests from the password item both its attributes and its data. You need both, because the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccount"
+            },
+            {
+              "type": "text",
+              "text": " attribute contains the user name and the item’s data holds the password itself."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "By default, your app can freely retrieve its own keychain items but not those of other apps. However, keychain services does provide mechanisms for broadening or narrowing that accessibility, for example, using the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccessgroup"
+                },
+                {
+                  "type": "text",
+                  "text": " attribute."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Initiate the Search",
+          "anchor": "2922074"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After you’ve created the query dictionary, you initiate the search with a call to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1398306-secitemcopymatching"
+            },
+            {
+              "type": "text",
+              "text": " function:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var item: CFTypeRef?",
+            "let status = SecItemCopyMatching(query as CFDictionary, &item)",
+            "guard status != errSecItemNotFound else { throw KeychainError.noPassword }",
+            "guard status == errSecSuccess else { throw KeychainError.unhandledError(status: status) }"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2922075",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As you do with many Security framework functions, you first test the returned status value. Among other things, an error might occur if no matching item is found—for example, because you didn’t previously store a password for the given "
+            },
+            {
+              "type": "codeVoice",
+              "code": "server"
+            },
+            {
+              "type": "text",
+              "text": ". If an error occurs, you receive the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1542001-security_framework_result_codes/errsecitemnotfound"
+            },
+            {
+              "type": "text",
+              "text": " result, which you may want to treat differently from a general error. In fact, detecting this error is one way to recognize that you’re making your first pass through your app’s login flow, before you’ve stored anything."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the search succeeds, the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1398306-secitemcopymatching"
+            },
+            {
+              "type": "text",
+              "text": " function provides a result through its "
+            },
+            {
+              "type": "codeVoice",
+              "code": "item"
+            },
+            {
+              "type": "text",
+              "text": " parameter. The type of the returned item depends on the nature of the query, as described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/item_return_result_keys"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Extract the Result",
+          "anchor": "2922076"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because in your search you requested multiple return types and allowed only a single result, you should expect the result to be a dictionary. You recover the user name from the attribute value associated with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccount"
+            },
+            {
+              "type": "text",
+              "text": " key. Meanwhile, you use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecvaluedata"
+            },
+            {
+              "type": "text",
+              "text": " key to extract the password data, which you then convert to a string:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard let existingItem = item as? [String : Any],",
+            "    let passwordData = existingItem[kSecValueData as String] as? Data,",
+            "    let password = String(data: passwordData, encoding: String.Encoding.utf8),",
+            "    let account = existingItem[kSecAttrAccount as String] as? String",
+            "else {",
+            "    throw KeychainError.unexpectedPasswordData",
+            "}",
+            "let credentials = Credentials(username: account, password: password)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2922077",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If when conducting the search you instead set the value associated with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecmatchlimit"
+            },
+            {
+              "type": "text",
+              "text": " key to an integer number greater than 1, the returned item is an array whose entry count is limited to the value you set. Each entry in this array is formatted like the bare dictionary you obtain when limiting the matches to one. If you specify "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecmatchlimitall"
+            },
+            {
+              "type": "text",
+              "text": " for the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecmatchlimit"
+            },
+            {
+              "type": "text",
+              "text": " key, the array size is limited only by the number of matches found in the keychain."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "You can’t combine the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/ksecreturndata"
+                },
+                {
+                  "type": "text",
+                  "text": " and "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/ksecmatchlimitall"
+                },
+                {
+                  "type": "text",
+                  "text": " options when copying password items, because copying each password item could require additional authentication. Instead, request a reference or persistent reference to the items, then request the data for only the specific passwords that you actually require."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you do get an array of results, you may need to iterate through the array for a single item of interest. You might do this by examining some other item attribute, such as the account, the creation date, or a label. On the other hand, if you know about a distinguishing characteristic ahead of time, it’s typically more efficient to narrow your initial keychain search query with the corresponding attributes."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Whether or not you need to handle multiple matches at all depends on how your app uses the keychain. If you allow the user to select among different identities at runtime, you might want to store multiple passwords for a single server and then let the user select among the search results using the stored account as a selection key. Other times, you might decide to filter your search down to a single result without involving the user. If you take this approach, make sure that you don’t create similar items in the keychain—test for and then delete or modify existing items instead. See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/updating_and_deleting_keychain_items"
+            },
+            {
+              "type": "text",
+              "text": " for more details."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

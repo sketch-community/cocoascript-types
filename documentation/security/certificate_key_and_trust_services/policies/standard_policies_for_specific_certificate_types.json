@@ -1,0 +1,431 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Use special OIDs to cause a certificate to be evaluated based on security policies specific to a given type of certificate."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/policies"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/policies/standard_policies_for_specific_certificate_types",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1670151,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Standard Policies for Specific Certificate Types",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/certificate_key_and_trust_services/policies/standard_policies_for_specific_certificate_types"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/certificate_key_and_trust_services/policies/standard_policies_for_specific_certificate_types"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services": {
+      "title": "Certificate, Key, and Trust Services",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services",
+      "url": "/documentation/security/certificate_key_and_trust_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/policies": {
+      "title": "Policies",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/policies",
+      "url": "/documentation/security/certificate_key_and_trust_services/policies",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "devLink-1747871": {
+      "identifier": "devLink-1747871",
+      "type": "link",
+      "title": "App Distribution Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/AppDistributionGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40012582"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecpolicyapplex509basic": {
+      "title": "kSecPolicyAppleX509Basic",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecpolicyapplex509basic",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecpolicyapplex509basic",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Basic X509-style certificate evaluation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecpolicyapplessl": {
+      "title": "kSecPolicyAppleSSL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecpolicyapplessl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecpolicyapplessl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Basic X509 plus host name verification per RFC 2818."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecpolicyapplesmime": {
+      "title": "kSecPolicyAppleSMIME",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecpolicyapplesmime",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecpolicyapplesmime",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Basic X509 plus email address verification and "
+        },
+        {
+          "type": "codeVoice",
+          "code": "KeyUsage"
+        },
+        {
+          "type": "text",
+          "text": " enforcement per RFC 2632."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecpolicyappleeap": {
+      "title": "kSecPolicyAppleEAP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecpolicyappleeap",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecpolicyappleeap",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Extensible Authentication Protocol. Functionally identical to SSL policy. A separate OID is provided to facilitate per-policy, per-certificate trust settings using the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "SecTrust"
+        },
+        {
+          "type": "text",
+          "text": " mechanism."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecpolicyappleipsec": {
+      "title": "kSecPolicyAppleIPsec",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecpolicyappleipsec",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecpolicyappleipsec",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Policy for use in IPsec communication. Functionally identical to SSL policy. A separate OID is provided to facilitate per-policy, per-certificate trust settings using the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "SecTrust"
+        },
+        {
+          "type": "text",
+          "text": " mechanism."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecpolicyappleichat": {
+      "title": "kSecPolicyAppleiChat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecpolicyappleichat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecpolicyappleichat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Policy for use in iChat."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/ksecpolicyapplepkinitclient": {
+      "title": "kSecPolicyApplePKINITClient",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecpolicyapplepkinitclient",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecpolicyapplepkinitclient",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Kerberos Pkinit client certificate validation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecpolicyapplepkinitserver": {
+      "title": "kSecPolicyApplePKINITServer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecpolicyapplepkinitserver",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecpolicyapplepkinitserver",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Kerberos Pkinit server certificate validation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecpolicyapplecodesigning": {
+      "title": "kSecPolicyAppleCodeSigning",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecpolicyapplecodesigning",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecpolicyapplecodesigning",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Policy for use in evaluating Apple code signing certificates. To learn more about code signing certificates, read "
+        },
+        {
+          "type": "link",
+          "title": "App Distribution Guide",
+          "destination": "https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/AppDistributionGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40012582"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecpolicymacappstorereceipt": {
+      "title": "kSecPolicyMacAppStoreReceipt",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecpolicymacappstorereceipt",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecpolicymacappstorereceipt",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Policy for use in evaluating Mac App Store receipts."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecpolicyappleidvalidation": {
+      "title": "kSecPolicyAppleIDValidation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecpolicyappleidvalidation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecpolicyappleidvalidation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Policy for use in evaluating Apple ID certificates. To learn more about Apple ID certificates, read "
+        },
+        {
+          "type": "link",
+          "title": "App Distribution Guide",
+          "destination": "https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/AppDistributionGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40012582"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecpolicyappletimestamping": {
+      "title": "kSecPolicyAppleTimeStamping",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecpolicyappletimestamping",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecpolicyappletimestamping",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Policy that causes evaluation of the validity of the time stamp on a signature. This can be used to allow verification that a certificate was valid at the time that something was signed with that certificate even if the certificate is no longer valid."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecpolicyapplepassbooksigning": {
+      "title": "kSecPolicyApplePassbookSigning",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecpolicyapplepassbooksigning",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecpolicyapplepassbooksigning"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecpolicyapplepayissuerencryption": {
+      "title": "kSecPolicyApplePayIssuerEncryption",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecpolicyapplepayissuerencryption",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecpolicyapplepayissuerencryption"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecpolicyapplerevocation": {
+      "title": "kSecPolicyAppleRevocation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecpolicyapplerevocation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecpolicyapplerevocation"
+    },
+    "doc://com.apple.documentation/documentation/security/1394568-secpolicycreatewithproperties": {
+      "title": "SecPolicyCreateWithProperties",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1394568-secpolicycreatewithproperties",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1394568-secpolicycreatewithproperties",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a policy object based on an object identifier for the policy type."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1401915-secpolicycopyproperties": {
+      "title": "SecPolicyCopyProperties",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1401915-secpolicycopyproperties",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1401915-secpolicycopyproperties",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a dictionary containing a policy’s properties."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/policies/security_policy_keys": {
+      "title": "Security Policy Keys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/policies/security_policy_keys",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/certificate_key_and_trust_services/policies/security_policy_keys",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use these dictionary keys to get and set policy properties."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/policies/standard_policies_for_specific_certificate_types": {
+      "title": "Standard Policies for Specific Certificate Types",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/policies/standard_policies_for_specific_certificate_types",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/certificate_key_and_trust_services/policies/standard_policies_for_specific_certificate_types",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use special OIDs to cause a certificate to be evaluated based on security policies specific to a given type of certificate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/ksecpolicyapplex509basic",
+        "doc://com.apple.documentation/documentation/security/ksecpolicyapplessl",
+        "doc://com.apple.documentation/documentation/security/ksecpolicyapplesmime",
+        "doc://com.apple.documentation/documentation/security/ksecpolicyappleeap",
+        "doc://com.apple.documentation/documentation/security/ksecpolicyappleipsec",
+        "doc://com.apple.documentation/documentation/security/ksecpolicyappleichat",
+        "doc://com.apple.documentation/documentation/security/ksecpolicyapplepkinitclient",
+        "doc://com.apple.documentation/documentation/security/ksecpolicyapplepkinitserver",
+        "doc://com.apple.documentation/documentation/security/ksecpolicyapplecodesigning",
+        "doc://com.apple.documentation/documentation/security/ksecpolicymacappstorereceipt",
+        "doc://com.apple.documentation/documentation/security/ksecpolicyappleidvalidation",
+        "doc://com.apple.documentation/documentation/security/ksecpolicyappletimestamping",
+        "doc://com.apple.documentation/documentation/security/ksecpolicyapplepassbooksigning",
+        "doc://com.apple.documentation/documentation/security/ksecpolicyapplepayissuerencryption",
+        "doc://com.apple.documentation/documentation/security/ksecpolicyapplerevocation"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1394568-secpolicycreatewithproperties",
+        "doc://com.apple.documentation/documentation/security/1401915-secpolicycopyproperties",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/policies/security_policy_keys"
+      ],
+      "title": "Advanced Policy Management",
+      "generated": true
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

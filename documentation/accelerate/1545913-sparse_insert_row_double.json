@@ -1,0 +1,768 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Inserts a list of scalar entries into a single row of a double-precision sparse matrix."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/blas",
+        "doc://com.apple.documentation/documentation/accelerate/blas/pointwise_matrix_operations"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/1545913-sparse_insert_row_double",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1545913,
+  "kind": "symbol",
+  "metadata": {
+    "title": "sparse_insert_row_double",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.11",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "3.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@F@sparse_insert_row_double",
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/1545913-sparse_insert_row_double"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/1545913-sparse_insert_row_double"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/blas": {
+      "title": "BLAS",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/blas",
+      "url": "/documentation/accelerate/blas",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/blas/pointwise_matrix_operations": {
+      "title": "Pointwise Matrix Operations",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/blas/pointwise_matrix_operations",
+      "url": "/documentation/accelerate/blas/pointwise_matrix_operations",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1544642-sparse_matrix_create_double": {
+      "title": "sparse_matrix_create_double",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1544642-sparse_matrix_create_double",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1544642-sparse_matrix_create_double",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a double-precision sparse matrix object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_status/sparse_illegal_parameter": {
+      "title": "SPARSE_ILLEGAL_PARAMETER",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_status/sparse_illegal_parameter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparse_status/sparse_illegal_parameter"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_status/sparse_success": {
+      "title": "SPARSE_SUCCESS",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_status/sparse_success",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparse_status/sparse_success"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_status": {
+      "title": "sparse_status",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_status",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparse_status"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_matrix_double": {
+      "title": "sparse_matrix_double",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_matrix_double",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparse_matrix_double"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_index": {
+      "title": "sparse_index",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_index",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparse_index"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_dimension": {
+      "title": "sparse_dimension",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_dimension",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparse_dimension"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1546996-sparse_matrix_create_float": {
+      "title": "sparse_matrix_create_float",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1546996-sparse_matrix_create_float",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1546996-sparse_matrix_create_float",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a single-precision sparse matrix object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1546876-sparse_insert_entry_double": {
+      "title": "sparse_insert_entry_double",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1546876-sparse_insert_entry_double",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1546876-sparse_insert_entry_double",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts a single scalar entry into a double-precision sparse matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1546606-sparse_insert_entry_float": {
+      "title": "sparse_insert_entry_float",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1546606-sparse_insert_entry_float",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1546606-sparse_insert_entry_float",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts a single scalar entry into a single-precision sparse matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1546631-sparse_insert_entries_double": {
+      "title": "sparse_insert_entries_double",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1546631-sparse_insert_entries_double",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1546631-sparse_insert_entries_double",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts a list of scalar entries into a double-precision sparse matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1546585-sparse_insert_entries_float": {
+      "title": "sparse_insert_entries_float",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1546585-sparse_insert_entries_float",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1546585-sparse_insert_entries_float",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts a list of scalar entries into a single-precision sparse matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1546659-sparse_insert_col_double": {
+      "title": "sparse_insert_col_double",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1546659-sparse_insert_col_double",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1546659-sparse_insert_col_double",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts a list of scalar entries into a single column of a double-precision sparse matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1545348-sparse_insert_col_float": {
+      "title": "sparse_insert_col_float",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1545348-sparse_insert_col_float",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1545348-sparse_insert_col_float",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts a list of scalar entries into a single column of a single-precision sparse matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1545913-sparse_insert_row_double": {
+      "title": "sparse_insert_row_double",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1545913-sparse_insert_row_double",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1545913-sparse_insert_row_double",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts a list of scalar entries into a single row of a double-precision sparse matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1545432-sparse_insert_row_float": {
+      "title": "sparse_insert_row_float",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1545432-sparse_insert_row_float",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1545432-sparse_insert_row_float",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts a list of scalar entries into a single row of a single-precision sparse matrix."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/1544642-sparse_matrix_create_double",
+        "doc://com.apple.documentation/documentation/accelerate/1546996-sparse_matrix_create_float",
+        "doc://com.apple.documentation/documentation/accelerate/1546876-sparse_insert_entry_double",
+        "doc://com.apple.documentation/documentation/accelerate/1546606-sparse_insert_entry_float",
+        "doc://com.apple.documentation/documentation/accelerate/1546631-sparse_insert_entries_double",
+        "doc://com.apple.documentation/documentation/accelerate/1546585-sparse_insert_entries_float",
+        "doc://com.apple.documentation/documentation/accelerate/1546659-sparse_insert_col_double",
+        "doc://com.apple.documentation/documentation/accelerate/1545348-sparse_insert_col_float",
+        "doc://com.apple.documentation/documentation/accelerate/1545432-sparse_insert_row_float"
+      ],
+      "title": "Matrix Creation and Population",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@sparse_status",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_status",
+              "text": "sparse_status"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "sparse_insert_row_double"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@sparse_matrix_double",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_matrix_double",
+              "text": "sparse_matrix_double"
+            },
+            {
+              "kind": "text",
+              "text": " A, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@sparse_index",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_index",
+              "text": "sparse_index"
+            },
+            {
+              "kind": "text",
+              "text": " i, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@sparse_dimension",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_dimension",
+              "text": "sparse_dimension"
+            },
+            {
+              "kind": "text",
+              "text": " nz, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "double"
+            },
+            {
+              "kind": "text",
+              "text": " *"
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "restrict"
+            },
+            {
+              "kind": "text",
+              "text": " val, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@sparse_index",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_index",
+              "text": "sparse_index"
+            },
+            {
+              "kind": "text",
+              "text": " *"
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "restrict"
+            },
+            {
+              "kind": "text",
+              "text": " jndx);"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "A",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The sparse matrix, "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": ", which must have been created with "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/accelerate/1544642-sparse_matrix_create_double"
+                },
+                {
+                  "type": "text",
+                  "text": ". "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_status/sparse_illegal_parameter"
+                },
+                {
+                  "type": "text",
+                  "text": " is returned if not met."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "i",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The row for value insertion. Indices expected to be in the bounds of matrix dimensions, undefined behavior if not met."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "nz",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The number of values to insert into "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "A"
+                },
+                {
+                  "type": "text",
+                  "text": ".  Each of "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "indx"
+                },
+                {
+                  "type": "text",
+                  "text": " and "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "val"
+                },
+                {
+                  "type": "text",
+                  "text": " are of size "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "nz"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "val",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Pointer to list of scalar values to insert into the sparse matrix.  The value is inserted into the location specified by the corresponding indices of "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "indx"
+                },
+                {
+                  "type": "text",
+                  "text": " and "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "j"
+                },
+                {
+                  "type": "text",
+                  "text": ".  Must hold "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "nz"
+                },
+                {
+                  "type": "text",
+                  "text": " values."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "indx",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "An array of column indices that correspond to the values in val. Must hold "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "nz"
+                },
+                {
+                  "type": "text",
+                  "text": " values."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On successful insertion, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "A"
+            },
+            {
+              "type": "text",
+              "text": " has been updated with the value and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_status/sparse_success"
+            },
+            {
+              "type": "text",
+              "text": " is returned.  If "
+            },
+            {
+              "type": "codeVoice",
+              "code": "A"
+            },
+            {
+              "type": "text",
+              "text": " creation requirements are not met, "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_status/sparse_illegal_parameter"
+            },
+            {
+              "type": "text",
+              "text": " is returned and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "A"
+            },
+            {
+              "type": "text",
+              "text": " is unchanged."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use to build a sparse matrix by providing a list of point entries for a single column.  For each entry provided, update "
+            },
+            {
+              "type": "codeVoice",
+              "code": "A["
+            },
+            {
+              "type": "codeVoice",
+              "code": "i,jndx[i]"
+            },
+            {
+              "type": "codeVoice",
+              "code": "] = val[i]"
+            },
+            {
+              "type": "text",
+              "text": ".  This will not replace the existing contents of the column, it appends new values and overwrites overlapping values."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Note that matrix properties cannot be modified after value insertion begins. This includes properties such as specifying a triangular matrix."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Insertion can be expensive, generally speaking it is best to do a batch update. Inserted values may be temporarily held internally within the object and only inserted into the sparse format when a later computation triggers a need to insert."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Indices in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "indx"
+            },
+            {
+              "type": "text",
+              "text": " are always assumed to be stored in ascending order. Additionally, indices are assumed to be unique.  Finally, indices are assumed to be in the bounds of the matrix.  Undefined behavior if any of these assumptions are not met.All indices are 0 based (the first element of a pointer is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ptr[0]"
+            },
+            {
+              "type": "text",
+              "text": ")."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

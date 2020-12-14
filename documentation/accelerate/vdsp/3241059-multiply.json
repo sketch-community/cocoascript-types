@@ -1,0 +1,2901 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Returns the single-precision elementwise product of an elementwise vector-vector sum and an elementwise vector-vector difference."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp-snv"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/arithmetic_operations"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241059-multiply",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 3241059,
+  "kind": "symbol",
+  "metadata": {
+    "title": "multiply(addition:subtraction:)",
+    "role": "symbol",
+    "roleHeading": "Generic Type Method",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.15",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "6.0",
+        "current": "7.2"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.0",
+        "current": "12.3"
+      }
+    ],
+    "externalID": "s:10Accelerate4vDSPO8multiply8addition11subtractionSaySfGx1a_q_1bt_q0_1c_q1_1dttAA0A6BufferRzAaLR_AaLR0_AaLR1_Sf7ElementRtzSfAMRt_SfAMRt0_SfAMRt1_r2_lFZ",
+    "symbolKind": "enumcm",
+    "fragments": [
+      {
+        "kind": "text",
+        "text": "static func "
+      },
+      {
+        "kind": "identifier",
+        "text": "multiply"
+      },
+      {
+        "kind": "text",
+        "text": "<R, S, T, U>("
+      },
+      {
+        "kind": "identifier",
+        "text": "addition"
+      },
+      {
+        "kind": "text",
+        "text": ": ("
+      },
+      {
+        "kind": "identifier",
+        "text": "a"
+      },
+      {
+        "kind": "text",
+        "text": ": R, "
+      },
+      {
+        "kind": "identifier",
+        "text": "b"
+      },
+      {
+        "kind": "text",
+        "text": ": S), "
+      },
+      {
+        "kind": "identifier",
+        "text": "subtraction"
+      },
+      {
+        "kind": "text",
+        "text": ": ("
+      },
+      {
+        "kind": "identifier",
+        "text": "c"
+      },
+      {
+        "kind": "text",
+        "text": ": T, "
+      },
+      {
+        "kind": "identifier",
+        "text": "d"
+      },
+      {
+        "kind": "text",
+        "text": ": U)) -> [Float]"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/vdsp/3241059-multiply"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp": {
+      "title": "vDSP",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp",
+      "url": "/documentation/accelerate/vdsp",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp-snv": {
+      "title": "vDSP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp-snv",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp-snv",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An enumeration that acts as a namespace for Swift overlays to vDSP."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/arithmetic_operations": {
+      "title": "Arithmetic Operations",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/arithmetic_operations",
+      "url": "/documentation/accelerate/vdsp/arithmetic_operations",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/swift/float": {
+      "title": "Float",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/float",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/float"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer": {
+      "title": "AccelerateBuffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/acceleratebuffer"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241034-multiply": {
+      "title": "multiply(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241034-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241034-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the double-precision elementwise product of a vector and a scalar value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<U>(Double, U) -> [Double]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241035-multiply": {
+      "title": "multiply(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241035-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241035-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the double-precision elementwise product of a vector and a vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<T, U>(T, U) -> [Double]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241036-multiply": {
+      "title": "multiply(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241036-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241036-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the single-precision elementwise product of a vector and a scalar value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<U>(Float, U) -> [Float]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241037-multiply": {
+      "title": "multiply(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241037-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241037-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the single-precision elementwise product of a vector and a vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<T, U>(T, U) -> [Float]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241038-multiply": {
+      "title": "multiply(_:_:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241038-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241038-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the double-precision elementwise product of a vector and a vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<U, V>(Double, U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241039-multiply": {
+      "title": "multiply(_:_:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241039-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241039-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the single-precision elementwise product of a vector and a vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<U, V>(Float, U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241040-multiply": {
+      "title": "multiply(_:_:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241040-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241040-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the double-precision elementwise product of a vector and a vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<T, U, V>(T, U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241041-multiply": {
+      "title": "multiply(_:_:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241041-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241041-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the single-precision elementwise product of a vector and a vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<T, U, V>(T, U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241042-multiply": {
+      "title": "multiply(_:by:count:useConjugate:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241042-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241042-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the product of two complex single-precision vectors, optionally conjugating one of them."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "(DSPSplitComplex, "
+        },
+        {
+          "kind": "identifier",
+          "text": "by"
+        },
+        {
+          "kind": "text",
+          "text": ": DSPSplitComplex, "
+        },
+        {
+          "kind": "identifier",
+          "text": "count"
+        },
+        {
+          "kind": "text",
+          "text": ": Int, "
+        },
+        {
+          "kind": "identifier",
+          "text": "useConjugate"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout DSPSplitComplex)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241043-multiply": {
+      "title": "multiply(_:by:count:useConjugate:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241043-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241043-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the elementwise product of two complex double-precision vectors, optionally conjugating one of them."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "(DSPDoubleSplitComplex, "
+        },
+        {
+          "kind": "identifier",
+          "text": "by"
+        },
+        {
+          "kind": "text",
+          "text": ": DSPDoubleSplitComplex, "
+        },
+        {
+          "kind": "identifier",
+          "text": "count"
+        },
+        {
+          "kind": "text",
+          "text": ": Int, "
+        },
+        {
+          "kind": "identifier",
+          "text": "useConjugate"
+        },
+        {
+          "kind": "text",
+          "text": ": Bool, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout DSPDoubleSplitComplex)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241044-multiply": {
+      "title": "multiply(_:by:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241044-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241044-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the double-precision elementwise product of a complex vector and a real vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<U>(DSPSplitComplex, "
+        },
+        {
+          "kind": "identifier",
+          "text": "by"
+        },
+        {
+          "kind": "text",
+          "text": ": U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout DSPSplitComplex)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241045-multiply": {
+      "title": "multiply(_:by:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241045-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241045-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the single-precision elementwise product of a complex vector and a real vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<U>(DSPDoubleSplitComplex, "
+        },
+        {
+          "kind": "identifier",
+          "text": "by"
+        },
+        {
+          "kind": "text",
+          "text": ": U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout DSPDoubleSplitComplex)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241046-multiply": {
+      "title": "multiply(addition:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241046-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241046-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the double-precision elementwise product of the sum of two vectors and a scalar value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<T, U>("
+        },
+        {
+          "kind": "identifier",
+          "text": "addition"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": T, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": U), Double) -> [Double]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241047-multiply": {
+      "title": "multiply(addition:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241047-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241047-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the double-precision elementwise product of the sum of two vectors and a vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<S, T, U>("
+        },
+        {
+          "kind": "identifier",
+          "text": "addition"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": S, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": T), U) -> [Double]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241048-multiply": {
+      "title": "multiply(addition:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241048-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241048-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the single-precision elementwise product of the sum of two vectors and a scalar value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<T, U>("
+        },
+        {
+          "kind": "identifier",
+          "text": "addition"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": T, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": U), Float) -> [Float]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241049-multiply": {
+      "title": "multiply(addition:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241049-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241049-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the single-precision elementwise product of the sum of two vectors and a vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<S, T, U>("
+        },
+        {
+          "kind": "identifier",
+          "text": "addition"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": S, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": T), U) -> [Float]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241050-multiply": {
+      "title": "multiply(addition:_:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241050-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241050-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the double-precision elementwise product of the sum of two vectors and a scalar value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<T, U, V>("
+        },
+        {
+          "kind": "identifier",
+          "text": "addition"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": T, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": U), Double, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241051-multiply": {
+      "title": "multiply(addition:_:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241051-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241051-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the single-precision elementwise product of the sum of two vectors and a scalar value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<T, U, V>("
+        },
+        {
+          "kind": "identifier",
+          "text": "addition"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": T, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": U), Float, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241052-multiply": {
+      "title": "multiply(addition:_:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241052-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241052-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the double-precision elementwise product of the sum of two vectors and a vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<S, T, U, V>("
+        },
+        {
+          "kind": "identifier",
+          "text": "addition"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": S, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": T), U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241053-multiply": {
+      "title": "multiply(addition:_:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241053-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241053-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the single-precision elementwise product of the sum of two vectors and a vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<S, T, U, V>("
+        },
+        {
+          "kind": "identifier",
+          "text": "addition"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": S, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": T), U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241054-multiply": {
+      "title": "multiply(addition:addition:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241054-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241054-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the double-precision elementwise product of two elementwise vector-vector sums."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<S, T, U>("
+        },
+        {
+          "kind": "identifier",
+          "text": "addition"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": S, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": T), "
+        },
+        {
+          "kind": "identifier",
+          "text": "addition"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "c"
+        },
+        {
+          "kind": "text",
+          "text": ": U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "d"
+        },
+        {
+          "kind": "text",
+          "text": ": U)) -> [Double]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241055-multiply": {
+      "title": "multiply(addition:addition:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241055-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241055-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the single-precision elementwise product of two elementwise vector-vector sums."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<S, T, U>("
+        },
+        {
+          "kind": "identifier",
+          "text": "addition"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": S, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": T), "
+        },
+        {
+          "kind": "identifier",
+          "text": "addition"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "c"
+        },
+        {
+          "kind": "text",
+          "text": ": U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "d"
+        },
+        {
+          "kind": "text",
+          "text": ": U)) -> [Float]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241056-multiply": {
+      "title": "multiply(addition:addition:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241056-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241056-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the double-precision elementwise product of two elementwise vector-vector sums."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<S, T, U, V>("
+        },
+        {
+          "kind": "identifier",
+          "text": "addition"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": S, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": T), "
+        },
+        {
+          "kind": "identifier",
+          "text": "addition"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "c"
+        },
+        {
+          "kind": "text",
+          "text": ": U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "d"
+        },
+        {
+          "kind": "text",
+          "text": ": U), "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241057-multiply": {
+      "title": "multiply(addition:addition:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241057-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241057-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the single-precision elementwise product of two elementwise vector-vector sums."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<S, T, U, V>("
+        },
+        {
+          "kind": "identifier",
+          "text": "addition"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": S, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": T), "
+        },
+        {
+          "kind": "identifier",
+          "text": "addition"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "c"
+        },
+        {
+          "kind": "text",
+          "text": ": U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "d"
+        },
+        {
+          "kind": "text",
+          "text": ": U), "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241058-multiply": {
+      "title": "multiply(addition:subtraction:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241058-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241058-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the double-precision elementwise product of an elementwise vector-vector sum and an elementwise vector-vector difference."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<R, S, T, U>("
+        },
+        {
+          "kind": "identifier",
+          "text": "addition"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": R, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": S), "
+        },
+        {
+          "kind": "identifier",
+          "text": "subtraction"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "c"
+        },
+        {
+          "kind": "text",
+          "text": ": T, "
+        },
+        {
+          "kind": "identifier",
+          "text": "d"
+        },
+        {
+          "kind": "text",
+          "text": ": U)) -> [Double]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241059-multiply": {
+      "title": "multiply(addition:subtraction:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241059-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241059-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the single-precision elementwise product of an elementwise vector-vector sum and an elementwise vector-vector difference."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<R, S, T, U>("
+        },
+        {
+          "kind": "identifier",
+          "text": "addition"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": R, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": S), "
+        },
+        {
+          "kind": "identifier",
+          "text": "subtraction"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "c"
+        },
+        {
+          "kind": "text",
+          "text": ": T, "
+        },
+        {
+          "kind": "identifier",
+          "text": "d"
+        },
+        {
+          "kind": "text",
+          "text": ": U)) -> [Float]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241060-multiply": {
+      "title": "multiply(addition:subtraction:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241060-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241060-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the double-precision elementwise product of an elementwise vector-vector sum and an elementwise vector-vector difference."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<R, S, T, U, V>("
+        },
+        {
+          "kind": "identifier",
+          "text": "addition"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": R, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": S), "
+        },
+        {
+          "kind": "identifier",
+          "text": "subtraction"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "c"
+        },
+        {
+          "kind": "text",
+          "text": ": T, "
+        },
+        {
+          "kind": "identifier",
+          "text": "d"
+        },
+        {
+          "kind": "text",
+          "text": ": U), "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241061-multiply": {
+      "title": "multiply(addition:subtraction:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241061-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241061-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the single-precision elementwise product of an elementwise vector-vector sum and an elementwise vector-vector difference."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<R, S, T, U, V>("
+        },
+        {
+          "kind": "identifier",
+          "text": "addition"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": R, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": S), "
+        },
+        {
+          "kind": "identifier",
+          "text": "subtraction"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "c"
+        },
+        {
+          "kind": "text",
+          "text": ": T, "
+        },
+        {
+          "kind": "identifier",
+          "text": "d"
+        },
+        {
+          "kind": "text",
+          "text": ": U), "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241062-multiply": {
+      "title": "multiply(subtraction:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241062-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241062-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the double-precision elementwise product of the difference of two vectors and a scalar value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<T, U>("
+        },
+        {
+          "kind": "identifier",
+          "text": "subtraction"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": T, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": U), Double) -> [Double]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241063-multiply": {
+      "title": "multiply(subtraction:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241063-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241063-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the double-precision elementwise product of the difference of two vectors and a vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<S, T, U>("
+        },
+        {
+          "kind": "identifier",
+          "text": "subtraction"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": S, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": T), U) -> [Double]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241064-multiply": {
+      "title": "multiply(subtraction:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241064-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241064-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the single-precision elementwise product of the difference of two vectors and a scalar value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<T, U>("
+        },
+        {
+          "kind": "identifier",
+          "text": "subtraction"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": T, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": U), Float) -> [Float]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241065-multiply": {
+      "title": "multiply(subtraction:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241065-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241065-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the single-precision elementwise product of the difference of two vectors and a vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<S, T, U>("
+        },
+        {
+          "kind": "identifier",
+          "text": "subtraction"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": S, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": T), U) -> [Float]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241066-multiply": {
+      "title": "multiply(subtraction:_:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241066-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241066-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the double-precision elementwise product of the difference of two vectors and a scalar value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<T, U, V>("
+        },
+        {
+          "kind": "identifier",
+          "text": "subtraction"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": T, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": U), Double, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241067-multiply": {
+      "title": "multiply(subtraction:_:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241067-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241067-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the single-precision elementwise product of the difference of two vectors and a scalar value."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<T, U, V>("
+        },
+        {
+          "kind": "identifier",
+          "text": "subtraction"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": T, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": U), Float, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241068-multiply": {
+      "title": "multiply(subtraction:_:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241068-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241068-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the double-precision elementwise product of the difference of two vectors and a vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<S, T, U, V>("
+        },
+        {
+          "kind": "identifier",
+          "text": "subtraction"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": S, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": T), U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241069-multiply": {
+      "title": "multiply(subtraction:_:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241069-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241069-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the single-precision elementwise product of the difference of two vectors and a vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<S, T, U, V>("
+        },
+        {
+          "kind": "identifier",
+          "text": "subtraction"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": S, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": T), U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241070-multiply": {
+      "title": "multiply(subtraction:subtraction:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241070-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241070-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the double-precision elementwise product of two elementwise vector-vector differences."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<R, S, T, U>("
+        },
+        {
+          "kind": "identifier",
+          "text": "subtraction"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": R, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": S), "
+        },
+        {
+          "kind": "identifier",
+          "text": "subtraction"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "c"
+        },
+        {
+          "kind": "text",
+          "text": ": T, "
+        },
+        {
+          "kind": "identifier",
+          "text": "d"
+        },
+        {
+          "kind": "text",
+          "text": ": U)) -> [Double]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241071-multiply": {
+      "title": "multiply(subtraction:subtraction:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241071-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241071-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the single-precision elementwise product of two elementwise vector-vector differences."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<R, S, T, U>("
+        },
+        {
+          "kind": "identifier",
+          "text": "subtraction"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": R, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": S), "
+        },
+        {
+          "kind": "identifier",
+          "text": "subtraction"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "c"
+        },
+        {
+          "kind": "text",
+          "text": ": T, "
+        },
+        {
+          "kind": "identifier",
+          "text": "d"
+        },
+        {
+          "kind": "text",
+          "text": ": U)) -> [Float]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241072-multiply": {
+      "title": "multiply(subtraction:subtraction:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241072-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241072-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the double-precision elementwise product of two elementwise vector-vector differences."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<R, S, T, U, V>("
+        },
+        {
+          "kind": "identifier",
+          "text": "subtraction"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": R, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": S), "
+        },
+        {
+          "kind": "identifier",
+          "text": "subtraction"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "c"
+        },
+        {
+          "kind": "text",
+          "text": ": T, "
+        },
+        {
+          "kind": "identifier",
+          "text": "d"
+        },
+        {
+          "kind": "text",
+          "text": ": U), "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241073-multiply": {
+      "title": "multiply(subtraction:subtraction:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241073-multiply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241073-multiply",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the single-precision elementwise product of two elementwise vector-vector differences."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "multiply"
+        },
+        {
+          "kind": "text",
+          "text": "<R, S, T, U, V>("
+        },
+        {
+          "kind": "identifier",
+          "text": "subtraction"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "a"
+        },
+        {
+          "kind": "text",
+          "text": ": R, "
+        },
+        {
+          "kind": "identifier",
+          "text": "b"
+        },
+        {
+          "kind": "text",
+          "text": ": S), "
+        },
+        {
+          "kind": "identifier",
+          "text": "subtraction"
+        },
+        {
+          "kind": "text",
+          "text": ": ("
+        },
+        {
+          "kind": "identifier",
+          "text": "c"
+        },
+        {
+          "kind": "text",
+          "text": ": T, "
+        },
+        {
+          "kind": "identifier",
+          "text": "d"
+        },
+        {
+          "kind": "text",
+          "text": ": U), "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241034-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241035-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241036-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241037-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241038-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241039-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241040-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241041-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241042-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241043-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241044-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241045-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241046-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241047-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241048-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241049-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241050-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241051-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241052-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241053-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241054-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241055-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241056-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241057-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241058-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241060-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241061-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241062-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241063-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241064-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241065-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241066-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241067-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241068-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241069-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241070-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241071-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241072-multiply",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241073-multiply"
+      ],
+      "title": "Multiplication",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "static"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "multiply"
+            },
+            {
+              "kind": "text",
+              "text": "<"
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO8multiply8addition11subtractionSaySfGx1a_q_1bt_q0_1c_q1_1dttAA0A6BufferRzAaLR_AaLR0_AaLR1_Sf7ElementRtzSfAMRt_SfAMRt0_SfAMRt1_r2_lFZ1RL_xmfp",
+              "text": "R"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO8multiply8addition11subtractionSaySfGx1a_q_1bt_q0_1c_q1_1dttAA0A6BufferRzAaLR_AaLR0_AaLR1_Sf7ElementRtzSfAMRt_SfAMRt0_SfAMRt1_r2_lFZ1SL_q_mfp",
+              "text": "S"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO8multiply8addition11subtractionSaySfGx1a_q_1bt_q0_1c_q1_1dttAA0A6BufferRzAaLR_AaLR0_AaLR1_Sf7ElementRtzSfAMRt_SfAMRt0_SfAMRt1_r2_lFZ1TL_q0_mfp",
+              "text": "T"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO8multiply8addition11subtractionSaySfGx1a_q_1bt_q0_1c_q1_1dttAA0A6BufferRzAaLR_AaLR0_AaLR1_Sf7ElementRtzSfAMRt_SfAMRt0_SfAMRt1_r2_lFZ1UL_q1_mfp",
+              "text": "U"
+            },
+            {
+              "kind": "text",
+              "text": ">("
+            },
+            {
+              "kind": "externalParam",
+              "text": "addition"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "text",
+              "text": "a"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "text",
+              "text": "R"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "text",
+              "text": "b"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "text",
+              "text": "S"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "externalParam",
+              "text": "subtraction"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "text",
+              "text": "c"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "text",
+              "text": "T"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "text",
+              "text": "d"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "text",
+              "text": "U"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "text",
+              "text": ") -> "
+            },
+            {
+              "kind": "text",
+              "text": "["
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Sf",
+              "identifier": "doc://com.apple.documentation/documentation/swift/float",
+              "text": "Float"
+            },
+            {
+              "kind": "text",
+              "text": "]"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "where"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "text",
+              "text": "R : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate0A6BufferP",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer",
+              "text": "AccelerateBuffer"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "text",
+              "text": "S : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate0A6BufferP",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer",
+              "text": "AccelerateBuffer"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "text",
+              "text": "T : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate0A6BufferP",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer",
+              "text": "AccelerateBuffer"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "text",
+              "text": "U : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate0A6BufferP",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer",
+              "text": "AccelerateBuffer"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "text",
+              "text": "R.Element == "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Sf",
+              "identifier": "doc://com.apple.documentation/documentation/swift/float",
+              "text": "Float"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "text",
+              "text": "S.Element == "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Sf",
+              "identifier": "doc://com.apple.documentation/documentation/swift/float",
+              "text": "Float"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "text",
+              "text": "T.Element == "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Sf",
+              "identifier": "doc://com.apple.documentation/documentation/swift/float",
+              "text": "Float"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "text",
+              "text": "U.Element == "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Sf",
+              "identifier": "doc://com.apple.documentation/documentation/swift/float",
+              "text": "Float"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

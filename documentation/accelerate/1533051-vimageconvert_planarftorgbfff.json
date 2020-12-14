@@ -1,0 +1,974 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Combines three PlanarF images into one RGBFFF image."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/conversion"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vimage",
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations",
+        "doc://com.apple.documentation/documentation/accelerate/conversion"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/1533051-vimageconvert_planarftorgbfff",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1533051,
+  "kind": "symbol",
+  "metadata": {
+    "title": "vImageConvert_PlanarFtoRGBFFF",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "5.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.4",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@F@vImageConvert_PlanarFtoRGBFFF",
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/1533051-vimageconvert_planarftorgbfff"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/1533051-vimageconvert_planarftorgbfff"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/conversion": {
+      "title": "Conversion",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/conversion",
+      "url": "/documentation/accelerate/conversion",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage": {
+      "title": "vImage",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage",
+      "url": "/documentation/accelerate/vimage",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations": {
+      "title": "vImage Operations",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations",
+      "url": "/documentation/accelerate/vimage/vimage_operations",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1578972-error_codes/kvimagenoerror": {
+      "title": "kvImageNoError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1578972-error_codes/kvimagenoerror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1578972-error_codes/kvimagenoerror"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/data_types_and_constants": {
+      "title": "Data Types and Constants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/data_types_and_constants",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vimage/data_types_and_constants"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagedonottile": {
+      "title": "kvImageDoNotTile",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagedonottile",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1578976-processing_flags/kvimagedonottile"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_error": {
+      "title": "vImage_Error",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_error",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_error"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_buffer": {
+      "title": "vImage_Buffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_buffer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_buffer"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_flags": {
+      "title": "vImage_Flags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_flags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_flags"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/conversion/converting_from_planar_formats": {
+      "title": "Converting From Planar Formats",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/conversion/converting_from_planar_formats",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/conversion/converting_from_planar_formats"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533069-vimageconvert_planar8toargbffff": {
+      "title": "vImageConvert_Planar8ToARGBFFFF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533069-vimageconvert_planar8toargbffff",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533069-vimageconvert_planar8toargbffff",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combines four Planar8 images into one ARGBFFFF image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1532999-vimageconvert_planar8toargb1555": {
+      "title": "vImageConvert_Planar8toARGB1555",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1532999-vimageconvert_planar8toargb1555",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1532999-vimageconvert_planar8toargb1555",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combines four Planar8 images into one ARGB1555 image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533134-vimageconvert_planar8toargb8888": {
+      "title": "vImageConvert_Planar8toARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533134-vimageconvert_planar8toargb8888",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533134-vimageconvert_planar8toargb8888",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combines four Planar8 images into one ARGB8888 image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533215-vimageconvert_planar8tobgrx8888": {
+      "title": "vImageConvert_Planar8ToBGRX8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533215-vimageconvert_planar8tobgrx8888",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533215-vimageconvert_planar8tobgrx8888",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Interleaves three Planar8 images into one BGRX8888 image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533138-vimageconvert_planar8tobgrxffff": {
+      "title": "vImageConvert_Planar8ToBGRXFFFF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533138-vimageconvert_planar8tobgrxffff",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533138-vimageconvert_planar8tobgrxffff",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combines three Planar8 images into one BGRXFFFF image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533146-vimageconvert_planar8torgb565": {
+      "title": "vImageConvert_Planar8toRGB565",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533146-vimageconvert_planar8torgb565",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533146-vimageconvert_planar8torgb565",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combines three Planar8 images into one RGB565 image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533110-vimageconvert_planar8torgb888": {
+      "title": "vImageConvert_Planar8toRGB888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533110-vimageconvert_planar8torgb888",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533110-vimageconvert_planar8torgb888",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combines three Planar8 images into one RGB888 image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533232-vimageconvert_planar8toxrgbffff": {
+      "title": "vImageConvert_Planar8ToXRGBFFFF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533232-vimageconvert_planar8toxrgbffff",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533232-vimageconvert_planar8toxrgbffff",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combines three Planar8 images into one XRGBFFFF image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533265-vimageconvert_planar8toxrgb8888": {
+      "title": "vImageConvert_Planar8ToXRGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533265-vimageconvert_planar8toxrgb8888",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533265-vimageconvert_planar8toxrgb8888",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Interleaves three Planar8 images into one XRGB8888 image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533230-vimageconvert_planar8to16u": {
+      "title": "vImageConvert_Planar8To16U",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533230-vimageconvert_planar8to16u",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533230-vimageconvert_planar8to16u",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a Planar8 image to a 16U image . "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimageconvert_planar8torgbxffff": {
+      "title": "vImageConvert_Planar8ToRGBXFFFF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimageconvert_planar8torgbxffff",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimageconvert_planar8torgbxffff",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combines three Planar8 images into one RGBXFFFF image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimageconvert_planar8torgbx8888": {
+      "title": "vImageConvert_Planar8ToRGBX8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimageconvert_planar8torgbx8888",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimageconvert_planar8torgbx8888",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Interleaves three Planar8 images into one RGBX8888 image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533115-vimageconvert_planar8toindexed1": {
+      "title": "vImageConvert_Planar8toIndexed1",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533115-vimageconvert_planar8toindexed1",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533115-vimageconvert_planar8toindexed1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a Planar8 image to an indexed 1-bit image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533017-vimageconvert_planar8toindexed2": {
+      "title": "vImageConvert_Planar8toIndexed2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533017-vimageconvert_planar8toindexed2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533017-vimageconvert_planar8toindexed2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a Planar8 image to an indexed 2-bit image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533049-vimageconvert_planar8toindexed4": {
+      "title": "vImageConvert_Planar8toIndexed4",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533049-vimageconvert_planar8toindexed4",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533049-vimageconvert_planar8toindexed4",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a Planar8 image to an indexed 4-bit image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1642580-vimageconvert_planar16q12toargb1": {
+      "title": "vImageConvert_Planar16Q12toARGB16F",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1642580-vimageconvert_planar16q12toargb1",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1642580-vimageconvert_planar16q12toargb1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combines three 16Q12 images into one ARGB16F image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533093-vimageconvert_planar16utoargb16u": {
+      "title": "vImageConvert_Planar16UtoARGB16U",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533093-vimageconvert_planar16utoargb16u",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533093-vimageconvert_planar16utoargb16u",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combines four 16U images into one ARGB16U image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533184-vimageconvert_planar16q12torgb88": {
+      "title": "vImageConvert_Planar16Q12toRGB888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533184-vimageconvert_planar16q12torgb88",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533184-vimageconvert_planar16q12torgb88",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combines three 16Q12 images into one RGB888 image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533180-vimageconvert_planar16q12toargb8": {
+      "title": "vImageConvert_Planar16Q12toARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533180-vimageconvert_planar16q12toargb8",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533180-vimageconvert_planar16q12toargb8",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combines three 16Q12 images into one ARGB8888 image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1642476-vimageconvert_planar16q12torgb16": {
+      "title": "vImageConvert_Planar16Q12toRGB16F",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1642476-vimageconvert_planar16q12torgb16",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1642476-vimageconvert_planar16q12torgb16",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combines three 16Q12 images into one RGB16F image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533025-vimageconvert_planar16utorgb16u": {
+      "title": "vImageConvert_Planar16UtoRGB16U",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533025-vimageconvert_planar16utorgb16u",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533025-vimageconvert_planar16utorgb16u",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combines three 16U images into one RGB16U image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533281-vimageconvert_fto16s": {
+      "title": "vImageConvert_FTo16S",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533281-vimageconvert_fto16s",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533281-vimageconvert_fto16s",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a PlanarF image into a special format in which each pixel is a 16-bit signed integer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533273-vimageconvert_fto16u": {
+      "title": "vImageConvert_FTo16U",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533273-vimageconvert_fto16u",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533273-vimageconvert_fto16u",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a PlanarF image into a special format in which each pixel is a 16-bit unsigned integer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533204-vimageconvert_planarftoargbffff": {
+      "title": "vImageConvert_PlanarFtoARGBFFFF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533204-vimageconvert_planarftoargbffff",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533204-vimageconvert_planarftoargbffff",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combines four PlanarF images into one ARGBFFFF image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533216-vimageconvert_planarftoargb8888": {
+      "title": "vImageConvert_PlanarFToARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533216-vimageconvert_planarftoargb8888",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533216-vimageconvert_planarftoargb8888",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts four PlanarF images into one ARGB8888 image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533051-vimageconvert_planarftorgbfff": {
+      "title": "vImageConvert_PlanarFtoRGBFFF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533051-vimageconvert_planarftorgbfff",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533051-vimageconvert_planarftorgbfff",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combines three PlanarF images into one RGBFFF image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533213-vimageconvert_planarftobgrx8888": {
+      "title": "vImageConvert_PlanarFToBGRX8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533213-vimageconvert_planarftobgrx8888",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533213-vimageconvert_planarftobgrx8888",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts three PlanarF images into one BGRX8888 image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533052-vimageconvert_planarftobgrxffff": {
+      "title": "vImageConvert_PlanarFToBGRXFFFF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533052-vimageconvert_planarftobgrxffff",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533052-vimageconvert_planarftobgrxffff",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts three PlanarF images into one BGRXFFFF image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533208-vimageconvert_planarftoxrgbffff": {
+      "title": "vImageConvert_PlanarFToXRGBFFFF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533208-vimageconvert_planarftoxrgbffff",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533208-vimageconvert_planarftoxrgbffff",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts three PlanarF images into one XRGBFFFF image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533297-vimageconvert_planarftoxrgb8888": {
+      "title": "vImageConvert_PlanarFToXRGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533297-vimageconvert_planarftoxrgb8888",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533297-vimageconvert_planarftoxrgb8888",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts three PlanarF images into one XRGB8888 image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimageconvert_planarftorgbxffff": {
+      "title": "vImageConvert_PlanarFToRGBXFFFF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimageconvert_planarftorgbxffff",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimageconvert_planarftorgbxffff",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts three PlanarF images into one RGBXFFFF image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimageconvert_planarftorgbx8888": {
+      "title": "vImageConvert_PlanarFToRGBX8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimageconvert_planarftorgbx8888",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimageconvert_planarftorgbx8888",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts three PlanarF images into one RGBX8888 image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/conversion/converting_from_planar_formats",
+        "doc://com.apple.documentation/documentation/accelerate/1533069-vimageconvert_planar8toargbffff",
+        "doc://com.apple.documentation/documentation/accelerate/1532999-vimageconvert_planar8toargb1555",
+        "doc://com.apple.documentation/documentation/accelerate/1533134-vimageconvert_planar8toargb8888",
+        "doc://com.apple.documentation/documentation/accelerate/1533215-vimageconvert_planar8tobgrx8888",
+        "doc://com.apple.documentation/documentation/accelerate/1533138-vimageconvert_planar8tobgrxffff",
+        "doc://com.apple.documentation/documentation/accelerate/1533146-vimageconvert_planar8torgb565",
+        "doc://com.apple.documentation/documentation/accelerate/1533110-vimageconvert_planar8torgb888",
+        "doc://com.apple.documentation/documentation/accelerate/1533232-vimageconvert_planar8toxrgbffff",
+        "doc://com.apple.documentation/documentation/accelerate/1533265-vimageconvert_planar8toxrgb8888",
+        "doc://com.apple.documentation/documentation/accelerate/1533230-vimageconvert_planar8to16u",
+        "doc://com.apple.documentation/documentation/accelerate/vimageconvert_planar8torgbxffff",
+        "doc://com.apple.documentation/documentation/accelerate/vimageconvert_planar8torgbx8888",
+        "doc://com.apple.documentation/documentation/accelerate/1533115-vimageconvert_planar8toindexed1",
+        "doc://com.apple.documentation/documentation/accelerate/1533017-vimageconvert_planar8toindexed2",
+        "doc://com.apple.documentation/documentation/accelerate/1533049-vimageconvert_planar8toindexed4",
+        "doc://com.apple.documentation/documentation/accelerate/1642580-vimageconvert_planar16q12toargb1",
+        "doc://com.apple.documentation/documentation/accelerate/1533093-vimageconvert_planar16utoargb16u",
+        "doc://com.apple.documentation/documentation/accelerate/1533184-vimageconvert_planar16q12torgb88",
+        "doc://com.apple.documentation/documentation/accelerate/1533180-vimageconvert_planar16q12toargb8",
+        "doc://com.apple.documentation/documentation/accelerate/1642476-vimageconvert_planar16q12torgb16",
+        "doc://com.apple.documentation/documentation/accelerate/1533025-vimageconvert_planar16utorgb16u",
+        "doc://com.apple.documentation/documentation/accelerate/1533281-vimageconvert_fto16s",
+        "doc://com.apple.documentation/documentation/accelerate/1533273-vimageconvert_fto16u",
+        "doc://com.apple.documentation/documentation/accelerate/1533204-vimageconvert_planarftoargbffff",
+        "doc://com.apple.documentation/documentation/accelerate/1533216-vimageconvert_planarftoargb8888",
+        "doc://com.apple.documentation/documentation/accelerate/1533213-vimageconvert_planarftobgrx8888",
+        "doc://com.apple.documentation/documentation/accelerate/1533052-vimageconvert_planarftobgrxffff",
+        "doc://com.apple.documentation/documentation/accelerate/1533208-vimageconvert_planarftoxrgbffff",
+        "doc://com.apple.documentation/documentation/accelerate/1533297-vimageconvert_planarftoxrgb8888",
+        "doc://com.apple.documentation/documentation/accelerate/vimageconvert_planarftorgbxffff",
+        "doc://com.apple.documentation/documentation/accelerate/vimageconvert_planarftorgbx8888"
+      ],
+      "title": "Converting from Planar Formats",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vImage_Error",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_error",
+              "text": "vImage_Error"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "vImageConvert_PlanarFtoRGBFFF"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vImage_Buffer",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_buffer",
+              "text": "vImage_Buffer"
+            },
+            {
+              "kind": "text",
+              "text": " *planarRed, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vImage_Buffer",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_buffer",
+              "text": "vImage_Buffer"
+            },
+            {
+              "kind": "text",
+              "text": " *planarGreen, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vImage_Buffer",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_buffer",
+              "text": "vImage_Buffer"
+            },
+            {
+              "kind": "text",
+              "text": " *planarBlue, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vImage_Buffer",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_buffer",
+              "text": "vImage_Buffer"
+            },
+            {
+              "kind": "text",
+              "text": " *rgbDest, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vImage_Flags",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_flags",
+              "text": "vImage_Flags"
+            },
+            {
+              "kind": "text",
+              "text": " flags);"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "planarRed",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A pointer to a vImage buffer structure that contains the PlanarF image to use as the red channel of the destination image."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "planarGreen",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A pointer to a vImage buffer structure that contains the PlanarF image to use as the green channel of the destination image."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "planarBlue",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A pointer to a vImage buffer structure that contains the PlanarF image to use as the blue channel of the destination image."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "rgbDest",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A pointer to a vImage buffer data structure. You're responsible for filling out the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "height"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "width"
+                },
+                {
+                  "type": "text",
+                  "text": ", and "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "rowBytes"
+                },
+                {
+                  "type": "text",
+                  "text": " fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, you must deallocate the memory."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "flags",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagedonottile"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1578972-error_codes/kvimagenoerror"
+            },
+            {
+              "type": "text",
+              "text": "; otherwise, one of the error codes described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/data_types_and_constants"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The source and destination buffers must have the same height and width. "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

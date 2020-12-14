@@ -1,0 +1,1095 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Fetch events and reminders from the Calendar database."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/eventkit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/eventkit/retrieving_events_and_reminders",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2952776,
+  "kind": "article",
+  "metadata": {
+    "title": "Retrieving Events and Reminders",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "EventKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/eventkit/retrieving_events_and_reminders"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/eventkit/retrieving_events_and_reminders"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/eventkit": {
+      "title": "EventKit",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit",
+      "url": "/documentation/eventkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekeventstore": {
+      "title": "EKEventStore",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekeventstore"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507183-eventsmatchingpredicate": {
+      "title": "eventsMatchingPredicate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507183-eventsmatchingpredicate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekeventstore/1507183-eventsmatchingpredicate",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "eventsMatchingPredicate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nspredicate": {
+      "title": "NSPredicate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nspredicate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nspredicate"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507479-predicateforeventswithstartdate": {
+      "title": "predicateForEventsWithStartDate:endDate:calendars:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507479-predicateforeventswithstartdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekeventstore/1507479-predicateforeventswithstartdate",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "predicateForEventsWithStartDate:endDate:calendars:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/retrieving_events_and_reminders#2952838": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/retrieving_events_and_reminders#2952838",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/eventkit/retrieving_events_and_reminders#2952838",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Fetching events with a predicate"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekcalendar": {
+      "title": "EKCalendar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekcalendar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekcalendar"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507128-calendarsforentitytype": {
+      "title": "calendarsForEntityType:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507128-calendarsforentitytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekeventstore/1507128-calendarsforentitytype",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "calendarsForEntityType:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/dispatch/1453057-dispatch_async": {
+      "title": "dispatch_async",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/dispatch/1453057-dispatch_async",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/dispatch/1453057-dispatch_async"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsoperation": {
+      "title": "NSOperation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsoperation"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507500-fetchremindersmatchingpredicate": {
+      "title": "fetchRemindersMatchingPredicate:completion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507500-fetchremindersmatchingpredicate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekeventstore/1507500-fetchremindersmatchingpredicate",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "fetchRemindersMatchingPredicate:completion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507143-predicateforincompleteremindersw": {
+      "title": "predicateForIncompleteRemindersWithDueDateStarting:ending:calendars:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507143-predicateforincompleteremindersw",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekeventstore/1507143-predicateforincompleteremindersw",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "predicateForIncompleteRemindersWithDueDateStarting:ending:calendars:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507447-predicateforcompletedreminderswi": {
+      "title": "predicateForCompletedRemindersWithCompletionDateStarting:ending:calendars:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507447-predicateforcompletedreminderswi",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekeventstore/1507447-predicateforcompletedreminderswi",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "predicateForCompletedRemindersWithCompletionDateStarting:ending:calendars:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507086-predicateforremindersincalendars": {
+      "title": "predicateForRemindersInCalendars:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507086-predicateforremindersincalendars",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekeventstore/1507086-predicateforremindersincalendars",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "predicateForRemindersInCalendars:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/retrieving_events_and_reminders#2952848": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/retrieving_events_and_reminders#2952848",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/eventkit/retrieving_events_and_reminders#2952848",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Fetching reminders with a predicate"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507342-cancelfetchrequest": {
+      "title": "cancelFetchRequest:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507342-cancelfetchrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekeventstore/1507342-cancelfetchrequest",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "cancelFetchRequest:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507490-eventwithidentifier": {
+      "title": "eventWithIdentifier:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507490-eventwithidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekeventstore/1507490-eventwithidentifier",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "eventWithIdentifier:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekevent/1507437-eventidentifier": {
+      "title": "eventIdentifier",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekevent/1507437-eventidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekevent/1507437-eventidentifier"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507433-calendaritemwithidentifier": {
+      "title": "calendarItemWithIdentifier:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507433-calendaritemwithidentifier",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekeventstore/1507433-calendaritemwithidentifier",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "calendarItemWithIdentifier:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/accessing_the_event_store": {
+      "title": "Accessing the Event Store",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/accessing_the_event_store",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/eventkit/accessing_the_event_store"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekevent": {
+      "title": "EKEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A class that represents an event added to a calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsarray/1410025-sortedarrayusingselector": {
+      "title": "sortedArrayUsingSelector:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsarray/1410025-sortedarrayusingselector",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsarray/1410025-sortedarrayusingselector",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "sortedArrayUsingSelector:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekevent/1507335-comparestartdatewithevent": {
+      "title": "compareStartDateWithEvent:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekevent/1507335-comparestartdatewithevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekevent/1507335-comparestartdatewithevent",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "compareStartDateWithEvent:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/creating_events_and_reminders": {
+      "title": "Creating Events and Reminders",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/creating_events_and_reminders",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/eventkit/creating_events_and_reminders",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create and modify events and reminders in a user's database."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/retrieving_events_and_reminders": {
+      "title": "Retrieving Events and Reminders",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/retrieving_events_and_reminders",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/eventkit/retrieving_events_and_reminders",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Fetch events and reminders from the Calendar database."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/updating_with_notifications": {
+      "title": "Updating with Notifications",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/updating_with_notifications",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/eventkit/updating_with_notifications",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Register to be notified about changes and keep your app up to date."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders": {
+      "title": "Managing Location-Based Reminders",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/eventkit/managing_location-based_reminders",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add, fetch, complete, remove, and sort location-based reminders in your app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekreminder": {
+      "title": "EKReminder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekreminder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekreminder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A class that represents a reminder added to a calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/eventkit/creating_events_and_reminders",
+        "doc://com.apple.documentation/documentation/eventkit/updating_with_notifications",
+        "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders",
+        "doc://com.apple.documentation/documentation/eventkit/ekevent",
+        "doc://com.apple.documentation/documentation/eventkit/ekreminder"
+      ],
+      "title": "Events and Reminders",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To search for and return events and reminders from the Calendar database, you must connect to the event store, as discussed in \""
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/accessing_the_event_store"
+            },
+            {
+              "type": "text",
+              "text": ".\""
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "There are two ways to retrieve events and reminders. You can fetch via:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Predicate"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": ", or "
+                    },
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "search query"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": ", and return zero or more events that match a given query."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Unique identifier"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " and return a single event that corresponds to the given identifier."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Retrieving events from the Calendar database does not necessarily return events in chronological order. To sort an array of "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/eventkit/ekevent"
+                },
+                {
+                  "type": "text",
+                  "text": " objects by date, call "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsarray/1410025-sortedarrayusingselector"
+                },
+                {
+                  "type": "text",
+                  "text": " on the array, providing the selector for the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/eventkit/ekevent/1507335-comparestartdatewithevent"
+                },
+                {
+                  "type": "text",
+                  "text": " method."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Search with Predicates",
+          "anchor": "2952837"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Predicates return events and reminders that match a search query."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Fetch Events",
+          "anchor": "2952839"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "It’s common to fetch events and reminders that fall within a date range. The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore"
+            },
+            {
+              "type": "text",
+              "text": " method "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507183-eventsmatchingpredicate"
+            },
+            {
+              "type": "text",
+              "text": ": fetches all events that fall within the date range specified in the predicate you provide. The following listing demonstrates how to fetch all events that occur between one day before and one year after the current date."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Although the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507183-eventsmatchingpredicate"
+                },
+                {
+                  "type": "text",
+                  "text": " method accepts a parameter of type "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nspredicate"
+                },
+                {
+                  "type": "text",
+                  "text": ", you must supply a predicate created with the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore"
+                },
+                {
+                  "type": "text",
+                  "text": " method "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507479-predicateforeventswithstartdate"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Get the appropriate calendar.",
+            "var calendar = Calendar.current",
+            "",
+            "// Create the start date components",
+            "var oneDayAgoComponents = DateComponents()",
+            "oneDayAgoComponents.day = -1",
+            "var oneDayAgo = calendar.date(byAdding: oneDayAgoComponents, to: Date(), options: [])",
+            "",
+            "// Create the end date components.",
+            "var oneYearFromNowComponents = DateComponents()",
+            "oneYearFromNowComponents.year = 1",
+            "var oneYearFromNow = calendar.date(byAdding: oneYearFromNowComponents, to: Date(), options: [])",
+            "",
+            "// Create the predicate from the event store's instance method.",
+            "var predicate: NSPredicate? = nil",
+            "if let anAgo = oneDayAgo, let aNow = oneYearFromNow {",
+            "    predicate = store.predicateForEvents(withStart: anAgo, end: aNow, calendars: nil)",
+            "}",
+            "",
+            "// Fetch all events that match the predicate.",
+            "var events: [EKEvent]? = nil",
+            "if let aPredicate = predicate {",
+            "    events = store.events(matching: aPredicate)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2952838",
+            "title": "Listing 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Fetching events with a predicate"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can specify a subset of calendars to search by passing an array of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekcalendar"
+            },
+            {
+              "type": "text",
+              "text": " objects as the calendars parameter of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507479-predicateforeventswithstartdate"
+            },
+            {
+              "type": "text",
+              "text": " method. You can get the user’s calendars from the event store’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507128-calendarsforentitytype"
+            },
+            {
+              "type": "text",
+              "text": " method. Passing "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": " tells the method to fetch from all of the user’s calendars."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507183-eventsmatchingpredicate"
+            },
+            {
+              "type": "text",
+              "text": " method is synchronous, you may not want to run it on your app’s main thread. For asynchronous behavior, run the method on another thread with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/dispatch/1453057-dispatch_async"
+            },
+            {
+              "type": "text",
+              "text": " function or with an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsoperation"
+            },
+            {
+              "type": "text",
+              "text": " object."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Fetch Reminders",
+          "anchor": "2952849"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507500-fetchremindersmatchingpredicate"
+            },
+            {
+              "type": "text",
+              "text": " to access multiple reminders that match a predicate. Pass a predicate returned by one of the following methods:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507143-predicateforincompleteremindersw"
+                    },
+                    {
+                      "type": "text",
+                      "text": " finds incomplete reminders within an optional time period."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507447-predicateforcompletedreminderswi"
+                    },
+                    {
+                      "type": "text",
+                      "text": " finds completed reminders within an optional time period."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507086-predicateforremindersincalendars"
+                    },
+                    {
+                      "type": "text",
+                      "text": " finds all reminders."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can iterate across matched reminders by passing a block to the completion argument, as shown in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/retrieving_events_and_reminders#2952848"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var predicate: NSPredicate? = store.predicateForReminders(in: nil)",
+            "if let aPredicate = predicate {",
+            "    store.fetchReminders(matching: aPredicate, completion: {(_ reminders: [Any]?) -> Void in",
+            "        for reminder: EKReminder? in reminders as? [EKReminder?] ?? [EKReminder?]() {",
+            "            // Do something for each reminder.",
+            "        }",
+            "    })",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2952848",
+            "title": "Listing 2",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Fetching reminders with a predicate"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Unlike fetching events via predicate, you can fetch reminders via predicate asynchronously without dispatching to another thread."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you want to abort your fetch request by predicate, call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507342-cancelfetchrequest"
+            },
+            {
+              "type": "text",
+              "text": " while passing the identifier as returned by "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507500-fetchremindersmatchingpredicate"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Search with Unique Identifiers",
+          "anchor": "2952853"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you know the event’s unique identifier because you fetched it previously with a predicate, you can use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore"
+            },
+            {
+              "type": "text",
+              "text": " method "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507490-eventwithidentifier"
+            },
+            {
+              "type": "text",
+              "text": " to fetch the event. If it is a recurring event, this method will return the first occurrence of the event. You can get an event’s unique identifier with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekevent/1507437-eventidentifier"
+            },
+            {
+              "type": "text",
+              "text": " property."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Similarly, if you know a specific reminder’s unique identifier from previously fetching it with a predicate, you can call the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507433-calendaritemwithidentifier"
+            },
+            {
+              "type": "text",
+              "text": " instance method. "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507433-calendaritemwithidentifier"
+            },
+            {
+              "type": "text",
+              "text": " can fetch any calendar item (reminders and events), whereas "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507490-eventwithidentifier"
+            },
+            {
+              "type": "text",
+              "text": " fetches only events. "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

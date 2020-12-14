@@ -657,7 +657,7 @@ declare namespace cocoascript {
     environment(): cocoascript.NSString;
     setEnvironment(): void;
     // doc://com.apple.documentation/documentation/appkit/nsworkspaceopenconfiguration/3172707-architecture
-    architecture(): number;
+    architecture(): any;
     setArchitecture(): void;
     // doc://com.apple.documentation/documentation/appkit/nsworkspaceopenconfiguration/3375728-allowsrunningapplicationsubstitu
     allowsRunningApplicationSubstitution(): cocoascript.BOOL;
@@ -11614,9 +11614,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsopenglcontext/1436218-pixelbuffer
     pixelBuffer():cocoascript.NSOpenGLPixelBuffer;
     // doc://com.apple.documentation/documentation/appkit/nsopenglcontext/1436122-pixelbuffercubemapface
-    pixelBufferCubeMapFace():void;
+    pixelBufferCubeMapFace():any;
     // doc://com.apple.documentation/documentation/appkit/nsopenglcontext/1436173-pixelbuffermipmaplevel
-    pixelBufferMipMapLevel():void;
+    pixelBufferMipMapLevel():any;
     // doc://com.apple.documentation/documentation/appkit/nsopenglcontext/1436164-settextureimagetopixelbuffer
     setTextureImageToPixelBuffer_colorBuffer(pixelBuffer: cocoascript.NSOpenGLPixelBuffer, source: any):void;
     // doc://com.apple.documentation/documentation/appkit/nsopenglcontext/1436140-pixelformat
@@ -13222,7 +13222,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nsatstypesetter/1528343-getlinefragmentrect
     getLineFragmentRect_usedRect_forParagraphSeparatorGlyphRange_atProposedOrigin(lineFragmentRect: cocoascript.NSRect, lineFragmentUsedRect: cocoascript.NSRect, paragraphSeparatorGlyphRange: cocoascript.NSRange, lineOrigin: cocoascript.NSPoint):void;
     // doc://com.apple.documentation/documentation/appkit/nsatstypesetter/1525948-hyphencharacterforglyphatindex
-    hyphenCharacterForGlyphAtIndex(glyphIndex: cocoascript.NSUInteger):void;
+    hyphenCharacterForGlyphAtIndex(glyphIndex: cocoascript.NSUInteger):cocoascript.UTF32Char;
     // doc://com.apple.documentation/documentation/appkit/nsatstypesetter/1533979-hyphenationfactorforglyphatindex
     hyphenationFactorForGlyphAtIndex(glyphIndex: cocoascript.NSUInteger):number;
     // doc://com.apple.documentation/documentation/appkit/nsatstypesetter/1534510-shouldbreaklinebyhyphenatingbefo
@@ -13337,7 +13337,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nstypesetter/1535809-getlinefragmentrect
     getLineFragmentRect_usedRect_remainingRect_forStartingGlyphAtIndex_proposedRect_lineSpacing_paragraphSpacingBefore_paragraphSpacingAfter(lineFragmentRect: cocoascript.NSRectPointer, lineFragmentUsedRect: cocoascript.NSRectPointer, remainingRect: cocoascript.NSRectPointer, startingGlyphIndex: cocoascript.NSUInteger, proposedRect: cocoascript.NSRect, lineSpacing: cocoascript.CGFloat, paragraphSpacingBefore: cocoascript.CGFloat, paragraphSpacingAfter: cocoascript.CGFloat):void;
     // doc://com.apple.documentation/documentation/appkit/nstypesetter/1531874-hyphencharacterforglyphatindex
-    hyphenCharacterForGlyphAtIndex(glyphIndex: cocoascript.NSUInteger):void;
+    hyphenCharacterForGlyphAtIndex(glyphIndex: cocoascript.NSUInteger):cocoascript.UTF32Char;
     // doc://com.apple.documentation/documentation/appkit/nstypesetter/1533345-hyphenationfactorforglyphatindex
     hyphenationFactorForGlyphAtIndex(glyphIndex: cocoascript.NSUInteger):number;
     // doc://com.apple.documentation/documentation/appkit/nstypesetter/1534525-shouldbreaklinebyhyphenatingbefo
@@ -21202,7 +21202,8 @@ declare const NSModalResponseAbort: cocoascript.NSModalResponse;
 declare namespace cocoascript {
   interface NSModalSession {
   }
-}// doc://com.apple.documentation/documentation/appkit/nsprintspooljob
+}
+// doc://com.apple.documentation/documentation/appkit/nsprintspooljob
 declare const NSPrintSpoolJob: cocoascript.NSPrintJobDispositionValue;
 // doc://com.apple.documentation/documentation/appkit/nsprintpreviewjob
 declare const NSPrintPreviewJob: cocoascript.NSPrintJobDispositionValue;

@@ -1,0 +1,977 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Authorizes and preauthorizes rights synchronously."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/authorization_services"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/1395770-authorizationcopyrights",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1395770,
+  "kind": "symbol",
+  "metadata": {
+    "title": "AuthorizationCopyRights",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:@F@AuthorizationCopyRights",
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/1395770-authorizationcopyrights"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/1395770-authorizationcopyrights"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/authorization_services": {
+      "title": "Authorization Services",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorization_services",
+      "url": "/documentation/security/authorization_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/kauthorizationemptyenvironment": {
+      "title": "kAuthorizationEmptyEnvironment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/kauthorizationemptyenvironment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/kauthorizationemptyenvironment"
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflagdefaults": {
+      "title": "kAuthorizationFlagDefaults",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflagdefaults",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationflags/kauthorizationflagdefaults"
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflagextendrights": {
+      "title": "kAuthorizationFlagExtendRights",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflagextendrights",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationflags/kauthorizationflagextendrights"
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflaginteractionallowed": {
+      "title": "kAuthorizationFlagInteractionAllowed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflaginteractionallowed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationflags/kauthorizationflaginteractionallowed"
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflagpartialrights": {
+      "title": "kAuthorizationFlagPartialRights",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflagpartialrights",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationflags/kauthorizationflagpartialrights"
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflagpreauthorize": {
+      "title": "kAuthorizationFlagPreAuthorize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflagpreauthorize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationflags/kauthorizationflagpreauthorize"
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflagdestroyrights": {
+      "title": "kAuthorizationFlagDestroyRights",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflagdestroyrights",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationflags/kauthorizationflagdestroyrights"
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationrights": {
+      "title": "AuthorizationRights",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationrights",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationrights"
+    },
+    "doc://com.apple.documentation/documentation/security/1540009-authorization_rights_flags/kauthorizationflagcannotpreauthorize": {
+      "title": "kAuthorizationFlagCanNotPreAuthorize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1540009-authorization_rights_flags/kauthorizationflagcannotpreauthorize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1540009-authorization_rights_flags/kauthorizationflagcannotpreauthorize"
+    },
+    "doc://com.apple.documentation/documentation/security/1392929-authorizationfreeitemset": {
+      "title": "AuthorizationFreeItemSet",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1392929-authorizationfreeitemset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1392929-authorizationfreeitemset"
+    },
+    "doc://com.apple.documentation/documentation/security/1540004-authorization_services_result_co/errauthorizationdenied": {
+      "title": "errAuthorizationDenied",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1540004-authorization_services_result_co/errauthorizationdenied",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1540004-authorization_services_result_co/errauthorizationdenied"
+    },
+    "doc://com.apple.documentation/documentation/security/1540004-authorization_services_result_co/errauthorizationinteractionnotallowed": {
+      "title": "errAuthorizationInteractionNotAllowed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1540004-authorization_services_result_co/errauthorizationinteractionnotallowed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1540004-authorization_services_result_co/errauthorizationinteractionnotallowed"
+    },
+    "doc://com.apple.documentation/documentation/security/1540004-authorization_services_result_co/errauthorizationcanceled": {
+      "title": "errAuthorizationCanceled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1540004-authorization_services_result_co/errauthorizationcanceled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1540004-authorization_services_result_co/errauthorizationcanceled"
+    },
+    "doc://com.apple.documentation/documentation/security/1540004-authorization_services_result_co": {
+      "title": "Authorization Services Result Codes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1540004-authorization_services_result_co",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/security/1540004-authorization_services_result_co"
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationref": {
+      "title": "AuthorizationRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationref"
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationenvironment": {
+      "title": "AuthorizationEnvironment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationenvironment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationenvironment"
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationflags": {
+      "title": "AuthorizationFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationflags"
+    },
+    "doc://com.apple.documentation/documentation/security/1397734-authorizationcopyinfo": {
+      "title": "AuthorizationCopyInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1397734-authorizationcopyinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1397734-authorizationcopyinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves supporting data such as the user name and other information gathered during evaluation of authorization. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1395770-authorizationcopyrights": {
+      "title": "AuthorizationCopyRights",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1395770-authorizationcopyrights",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1395770-authorizationcopyrights",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Authorizes and preauthorizes rights synchronously."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1394914-authorizationcopyrightsasync": {
+      "title": "AuthorizationCopyRightsAsync",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1394914-authorizationcopyrightsasync",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1394914-authorizationcopyrightsasync",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Authorizes and preauthorizes rights asynchronously."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationasynccallback": {
+      "title": "AuthorizationAsyncCallback",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationasynccallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationasynccallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A block used as a callback for the asynchronous version of copying authorization rights."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationstring": {
+      "title": "AuthorizationString",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationstring",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationstring",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A zero-terminated string in UTF-8 encoding."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1540009-authorization_rights_flags": {
+      "title": "Authorization Rights Flags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1540009-authorization_rights_flags",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/security/1540009-authorization_rights_flags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Recognize the values the Security Server sets in an authorization item’s flag field."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1397734-authorizationcopyinfo",
+        "doc://com.apple.documentation/documentation/security/1394914-authorizationcopyrightsasync",
+        "doc://com.apple.documentation/documentation/security/authorizationasynccallback",
+        "doc://com.apple.documentation/documentation/security/authorizationstring",
+        "doc://com.apple.documentation/documentation/security/1540009-authorization_rights_flags"
+      ],
+      "title": "Rights and Credentials",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@OSStatus",
+              "identifier": "symbol-1480124",
+              "text": "OSStatus"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "AuthorizationCopyRights"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@AuthorizationRef",
+              "identifier": "doc://com.apple.documentation/documentation/security/authorizationref",
+              "text": "AuthorizationRef"
+            },
+            {
+              "kind": "text",
+              "text": " authorization, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@AuthorizationRights",
+              "identifier": "doc://com.apple.documentation/documentation/security/authorizationrights",
+              "text": "AuthorizationRights"
+            },
+            {
+              "kind": "text",
+              "text": " *rights, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@AuthorizationEnvironment",
+              "identifier": "doc://com.apple.documentation/documentation/security/authorizationenvironment",
+              "text": "AuthorizationEnvironment"
+            },
+            {
+              "kind": "text",
+              "text": " *environment, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@AuthorizationFlags",
+              "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags",
+              "text": "AuthorizationFlags"
+            },
+            {
+              "kind": "text",
+              "text": " flags, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@AuthorizationRights",
+              "identifier": "doc://com.apple.documentation/documentation/security/authorizationrights",
+              "text": "AuthorizationRights"
+            },
+            {
+              "kind": "text",
+              "text": " * "
+            },
+            {
+              "kind": "keyword",
+              "text": "_Nullable"
+            },
+            {
+              "kind": "text",
+              "text": " *authorizedRights);"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "authorization",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "An authorization reference referring to the authorization session. "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "rights",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A pointer to a set of authorization rights you create. Pass "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NULL"
+                },
+                {
+                  "type": "text",
+                  "text": " if the application requires no rights at this time. "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "environment",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Data used when authorizing or preauthorizing rights. Not used in OS X v10.2 and earlier. In macOS 10.3 and later, you can pass icon or prompt data to be used in the authentication dialog box. In macOS 10.4 and later, you can also pass a user name and password in order to authorize a user without displaying the authentication dialog box. Possible values for this parameter are listed in "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "Security.framework/Headers/AuthorizationTags.h"
+                },
+                {
+                  "type": "text",
+                  "text": ". The data passed in this parameter is not stored in the authorization reference; it is used only during authorization. If you are not passing any data in this parameter, pass the constant "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/kauthorizationemptyenvironment"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "flags",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A bit mask for specifying authorization options. Use the following option sets."
+                }
+              ]
+            },
+            {
+              "type": "unorderedList",
+              "items": [
+                {
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Pass the constant "
+                        },
+                        {
+                          "type": "reference",
+                          "isActive": true,
+                          "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflagdefaults"
+                        },
+                        {
+                          "type": "text",
+                          "text": " if no options are necessary."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Specify the "
+                        },
+                        {
+                          "type": "reference",
+                          "isActive": true,
+                          "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflagextendrights"
+                        },
+                        {
+                          "type": "text",
+                          "text": " mask to request rights. You can also specify the "
+                        },
+                        {
+                          "type": "reference",
+                          "isActive": true,
+                          "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflaginteractionallowed"
+                        },
+                        {
+                          "type": "text",
+                          "text": " mask to allow user interaction."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Specify the "
+                        },
+                        {
+                          "type": "reference",
+                          "isActive": true,
+                          "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflagpartialrights"
+                        },
+                        {
+                          "type": "text",
+                          "text": " and "
+                        },
+                        {
+                          "type": "codeVoice",
+                          "code": "kAuthorizationFlagExtendRights"
+                        },
+                        {
+                          "type": "text",
+                          "text": " masks to request partial rights. You can also specify the "
+                        },
+                        {
+                          "type": "reference",
+                          "isActive": true,
+                          "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflaginteractionallowed"
+                        },
+                        {
+                          "type": "text",
+                          "text": " mask to allow user interaction."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Specify the "
+                        },
+                        {
+                          "type": "reference",
+                          "isActive": true,
+                          "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflagpreauthorize"
+                        },
+                        {
+                          "type": "text",
+                          "text": " and "
+                        },
+                        {
+                          "type": "reference",
+                          "isActive": true,
+                          "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflagextendrights"
+                        },
+                        {
+                          "type": "text",
+                          "text": " masks to preauthorize rights."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Specify the "
+                        },
+                        {
+                          "type": "reference",
+                          "isActive": true,
+                          "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflagdestroyrights"
+                        },
+                        {
+                          "type": "text",
+                          "text": " mask to prevent the Security Server from preserving the rights obtained during this call."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "authorizedRights",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A pointer to a newly allocated "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/authorizationrights"
+                },
+                {
+                  "type": "text",
+                  "text": " structure. On return, this structure contains the rights granted by the Security framework. If you do not require this information, pass "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NULL"
+                },
+                {
+                  "type": "text",
+                  "text": ". If you specify the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflagpreauthorize"
+                },
+                {
+                  "type": "text",
+                  "text": " mask in the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "flags"
+                },
+                {
+                  "type": "text",
+                  "text": " parameter, the method returns all the requested rights, including those not granted, but the flags of the rights that could not be preauthorized include the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/1540009-authorization_rights_flags/kauthorizationflagcannotpreauthorize"
+                },
+                {
+                  "type": "text",
+                  "text": " bit."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Free the memory associated with this set by calling the function "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/1392929-authorizationfreeitemset"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A result code. See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1540004-authorization_services_result_co"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "There are three main reasons to use this function. The first reason is to preauthorize rights by specifying the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflagpreauthorize"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflaginteractionallowed"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflagextendrights"
+            },
+            {
+              "type": "text",
+              "text": " masks as authorization options. Preauthorization is most useful when a right has a zero timeout. For example, you can preauthorize in the application and if it succeeds, call the helper tool and request authorization. This eliminates calling the helper tool if the Security Server cannot later authorize the specified rights."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The second reason to use this function is to authorize rights before performing a privileged operation by specifying the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflaginteractionallowed"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflagextendrights"
+            },
+            {
+              "type": "text",
+              "text": " masks as authorization options."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The third reason to use this function is to authorize partial rights. By specifying the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflagpartialrights"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflaginteractionallowed"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflagextendrights"
+            },
+            {
+              "type": "text",
+              "text": " masks as authorization options, the Security Server grants all rights it can authorize. On return, the authorized set contains all the rights."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you do not specify the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflagpartialrights"
+            },
+            {
+              "type": "text",
+              "text": " mask and the Security Server denies at least one right, then the status of this function on return is "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1540004-authorization_services_result_co/errauthorizationdenied"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you do not specify the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflaginteractionallowed"
+            },
+            {
+              "type": "text",
+              "text": " mask and the Security Server requires user interaction, then the status of this function on return is "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1540004-authorization_services_result_co/errauthorizationinteractionnotallowed"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you specify the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/authorizationflags/kauthorizationflaginteractionallowed"
+            },
+            {
+              "type": "text",
+              "text": " mask and the user cancels the authentication process, then the status of this function on return is "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1540004-authorization_services_result_co/errauthorizationcanceled"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

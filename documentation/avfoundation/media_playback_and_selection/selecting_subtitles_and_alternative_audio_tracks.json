@@ -1,0 +1,681 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Extend your app’s appeal to users by adding subtitles and alternative audio tracks in their native language."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/selecting_subtitles_and_alternative_audio_tracks",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2948823,
+  "kind": "article",
+  "metadata": {
+    "title": "Selecting Subtitles and Alternative Audio Tracks",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_playback_and_selection/selecting_subtitles_and_alternative_audio_tracks"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_playback_and_selection/selecting_subtitles_and_alternative_audio_tracks"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection": {
+      "title": "Media Playback and Selection",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
+      "url": "/documentation/avfoundation/media_playback_and_selection",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1389433-availablemediacharacteristicswit": {
+      "title": "availableMediaCharacteristicsWithMediaSelectionOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1389433-availablemediacharacteristicswit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1389433-availablemediacharacteristicswit"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicaudible": {
+      "title": "AVMediaCharacteristicAudible",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicaudible",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmediacharacteristicaudible"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicvisual": {
+      "title": "AVMediaCharacteristicVisual",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicvisual",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmediacharacteristicvisual"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiclegible": {
+      "title": "AVMediaCharacteristicLegible",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiclegible",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmediacharacteristiclegible"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1387496-mediaselectiongroupformediachara": {
+      "title": "mediaSelectionGroupForMediaCharacteristic:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1387496-mediaselectiongroupformediachara",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1387496-mediaselectiongroupformediachara",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "mediaSelectionGroupForMediaCharacteristic:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/selecting_subtitles_and_alternative_audio_tracks#2948824": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/selecting_subtitles_and_alternative_audio_tracks#2948824",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/selecting_subtitles_and_alternative_audio_tracks#2948824"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/selecting_subtitles_and_alternative_audio_tracks#2948822": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/selecting_subtitles_and_alternative_audio_tracks#2948822",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/selecting_subtitles_and_alternative_audio_tracks#2948822"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389610-selectmediaoption": {
+      "title": "selectMediaOption:inMediaSelectionGroup:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389610-selectmediaoption",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/1389610-selectmediaoption",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "selectMediaOption:inMediaSelectionGroup:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem": {
+      "title": "AVPlayerItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/selecting_subtitles_and_alternative_audio_tracks#2948820": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/selecting_subtitles_and_alternative_audio_tracks#2948820",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/selecting_subtitles_and_alternative_audio_tracks#2948820"
+    },
+    "doc://com.apple.documentation/documentation/avkit/avplayerviewcontroller": {
+      "title": "AVPlayerViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avkit/avplayerviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avkit/avplayerviewcontroller"
+    },
+    "doc://com.apple.documentation/documentation/avkit/avplayerview": {
+      "title": "AVPlayerView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avkit/avplayerview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avkit/avplayerview"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer": {
+      "title": "AVPlayerLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayerlayer"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer": {
+      "title": "AVPlayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387178-appliesmediaselectioncriteriaaut": {
+      "title": "appliesMediaSelectionCriteriaAutomatically",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387178-appliesmediaselectioncriteriaaut",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1387178-appliesmediaselectioncriteriaaut"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmediaselectiongroup": {
+      "title": "AVMediaSelectionGroup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediaselectiongroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmediaselectiongroup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that represents a collection of mutually exclusive options for the presentation of media within an asset."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmediaselectionoption": {
+      "title": "AVMediaSelectionOption",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediaselectionoption",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmediaselectionoption",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that represents a specific option for the presentation of media within a group of options."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/selecting_subtitles_and_alternative_audio_tracks": {
+      "title": "Selecting Subtitles and Alternative Audio Tracks",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/selecting_subtitles_and_alternative_audio_tracks",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/selecting_subtitles_and_alternative_audio_tracks",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Extend your app’s appeal to users by adding subtitles and alternative audio tracks in their native language."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmediaselection": {
+      "title": "AVMediaSelection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediaselection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmediaselection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that represents a complete rendition of media selection options on an asset."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablemediaselection": {
+      "title": "AVMutableMediaSelection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablemediaselection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablemediaselection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mutable object that represents a complete rendition of media selection options on an asset."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayermediaselectioncriteria": {
+      "title": "AVPlayerMediaSelectionCriteria",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayermediaselectioncriteria",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayermediaselectioncriteria",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that specifies the preferred languages and media characteristics for a player."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avmediaselection",
+        "doc://com.apple.documentation/documentation/avfoundation/avmediaselectiongroup",
+        "doc://com.apple.documentation/documentation/avfoundation/avmediaselectionoption",
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablemediaselection",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayermediaselectioncriteria"
+      ],
+      "title": "Media Selection",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As a developer, you want to make your apps accessible to as broad an audience as possible. One way for you to extend your app’s reach is to make it available to users in their native language as well as to provide support for users who have have hearing impairments or other accessibility needs. AVKit and AVFoundation simplify handling these concerns by providing built-in support for presenting subtitles and closed captions, and for selecting alternative audio and video tracks. If you’re building your own custom player or would like to present your own media-selection interface, use the features provided by AVFoundation’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediaselectiongroup"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediaselectionoption"
+            },
+            {
+              "type": "text",
+              "text": " classes."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Retrieve the Available Media Options",
+          "anchor": "2948821"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "AVMediaSelectionOption"
+            },
+            {
+              "type": "text",
+              "text": " models an alternative audio, video, or text track contained within the source media. Media options are used to select alternative camera angles, present audio dubbed in a user’s native language, or display subtitles and closed captions. You determine which alternative media presentations are available by asynchronously loading and calling the asset’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1389433-availablemediacharacteristicswit"
+            },
+            {
+              "type": "text",
+              "text": " property, which returns an array of strings indicating the available media characteristics. The possible values returned are "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicaudible"
+            },
+            {
+              "type": "text",
+              "text": " (alternative audio tracks), "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicvisual"
+            },
+            {
+              "type": "text",
+              "text": " (alternative video tracks), and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiclegible"
+            },
+            {
+              "type": "text",
+              "text": " (subtitles and closed captions)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After you’ve retrieved the array of available options, you call the asset’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1387496-mediaselectiongroupformediachara"
+            },
+            {
+              "type": "text",
+              "text": " method, passing it the desired characteristic. This method returns the associated "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVMediaSelectionGroup"
+            },
+            {
+              "type": "text",
+              "text": " object, or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": " if no groups exist for the specified characteristic."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "AVMediaSelectionGroup"
+            },
+            {
+              "type": "text",
+              "text": " acts as a container for a collection of mutually exclusive "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVMediaSelectionOption"
+            },
+            {
+              "type": "text",
+              "text": " objects. The following example shows how you retrieve an asset’s media-selection groups and display their available options:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "for characteristic in asset.availableMediaCharacteristicsWithMediaSelectionOptions {",
+            "    print(\"\\(characteristic)\")",
+            "",
+            "    // Retrieve the AVMediaSelectionGroup for the specified characteristic.",
+            "    if let group = asset.mediaSelectionGroup(forMediaCharacteristic: characteristic) {",
+            "        // Print its options.",
+            "        for option in group.options {",
+            "            print(\"  Option: \\(option.displayName)\")",
+            "        }",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2948824",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The output for an asset containing audio and subtitle media options looks similar to the following:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "[AVMediaCharacteristicAudible]",
+            "  Option: English",
+            "  Option: Spanish",
+            "",
+            "[AVMediaCharacteristicLegible]",
+            "  Option: English",
+            "  Option: German",
+            "  Option: Spanish",
+            "  Option: French"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2948822",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Select the Desired Media Option",
+          "anchor": "2948819"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After you’ve retrieved an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVMediaSelectionGroup"
+            },
+            {
+              "type": "text",
+              "text": " object for a particular media characteristic and identified the desired "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVMediaSelectionOption"
+            },
+            {
+              "type": "text",
+              "text": " object, the next step is to select it. You select a media option by calling "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389610-selectmediaoption"
+            },
+            {
+              "type": "text",
+              "text": " on the active "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem"
+            },
+            {
+              "type": "text",
+              "text": ". For instance, to present the asset’s Spanish subtitle option, you could select it as follows:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "if let group = asset.mediaSelectionGroup(forMediaCharacteristic: AVMediaCharacteristicLegible) {",
+            "    let locale = Locale(identifier: \"es-ES\")",
+            "    let options =",
+            "        AVMediaSelectionGroup.mediaSelectionOptions(from: group.options, with: locale)",
+            "    if let option = options.first {",
+            "        // Select Spanish-language subtitle option",
+            "        playerItem.select(option, in: group)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2948820",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Selecting a media option makes it immediately available for presentation. Selecting a subtitle or closed-caption option displays the associated text within the video display provided by "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avkit/avplayerviewcontroller"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avkit/avplayerview"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer"
+            },
+            {
+              "type": "text",
+              "text": ". Selecting an alternative audio or video option replaces the currently presented media with the new selection’s media."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Starting with iOS 7.0 and macOS 10.9, "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer"
+                },
+                {
+                  "type": "text",
+                  "text": " provides automatic media selection based on the user’s system preferences as its default behavior. To take control over when media selections are presented, disable the default behavior by setting the player’s "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387178-appliesmediaselectioncriteriaaut"
+                },
+                {
+                  "type": "text",
+                  "text": " value to "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NO"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

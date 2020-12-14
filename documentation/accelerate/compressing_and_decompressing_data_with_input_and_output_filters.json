@@ -1,0 +1,1316 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Compress and decompress streamed or from-memory data, using input and output filters."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/compression"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3328529,
+  "kind": "article",
+  "metadata": {
+    "title": "Compressing and Decompressing Data with Input and Output Filters",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Compression"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters",
+        "documentation/compression/compressing_and_decompressing_data_with_input_and_output_filters"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters",
+        "documentation/compression/compressing_and_decompressing_data_with_input_and_output_filters"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/compression": {
+      "title": "Compression",
+      "identifier": "doc://com.apple.documentation/documentation/compression",
+      "url": "/documentation/compression",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328530": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328530",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328530"
+    },
+    "doc://com.apple.documentation/documentation/compression/inputfilter": {
+      "title": "InputFilter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/compression/inputfilter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/compression/inputfilter"
+    },
+    "doc://com.apple.documentation/documentation/compression/outputfilter": {
+      "title": "OutputFilter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/compression/outputfilter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/compression/outputfilter"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328545": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328545",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328545"
+    },
+    "doc://com.apple.documentation/documentation/foundation/data": {
+      "title": "Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328547": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328547",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328547"
+    },
+    "doc://com.apple.documentation/documentation/compression/filteroperation/compress": {
+      "title": "FilterOperation.compress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/compression/filteroperation/compress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/compression/filteroperation/compress"
+    },
+    "doc://com.apple.documentation/documentation/compression/algorithm/lzfse": {
+      "title": "Algorithm.lzfse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/compression/algorithm/lzfse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/compression/algorithm/lzfse"
+    },
+    "doc://com.apple.documentation/documentation/compression/compression_algorithm": {
+      "title": "compression_algorithm",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/compression/compression_algorithm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/compression/compression_algorithm"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328546": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328546",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328546"
+    },
+    "doc://com.apple.documentation/documentation/foundation/data/1779918-subdata": {
+      "title": "subdata(in:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data/1779918-subdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data/1779918-subdata"
+    },
+    "doc://com.apple.documentation/documentation/compression/outputfilter/3200242-write": {
+      "title": "write(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/compression/outputfilter/3200242-write",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/compression/outputfilter/3200242-write"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328538": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328538",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328538"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328539": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328539",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328539"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328718": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328718",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328718"
+    },
+    "doc://com.apple.documentation/documentation/compression/filteroperation/decompress": {
+      "title": "FilterOperation.decompress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/compression/filteroperation/decompress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/compression/filteroperation/decompress"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328549": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328549",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328549"
+    },
+    "doc://com.apple.documentation/documentation/compression/inputfilter/3200238-readdata": {
+      "title": "readData(ofLength:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/compression/inputfilter/3200238-readdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/compression/inputfilter/3200238-readdata"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328540": {
+      "title": "Listing 9",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328540",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328540"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328537": {
+      "title": "Listing 10",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328537",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328537"
+    },
+    "doc://com.apple.documentation/documentation/swift/string/3126741-init": {
+      "title": "init(data:encoding:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/string/3126741-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/string/3126741-init"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328552": {
+      "title": "Listing 11",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328552",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328552"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328531": {
+      "title": "Create the Source Data",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328531",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328531"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328721": {
+      "title": "Listing 12",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328721",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328721"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328719": {
+      "title": "Listing 13",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328719",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328719"
+    },
+    "doc://com.apple.documentation/documentation/swift/string": {
+      "title": "String",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/string",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/string"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdata/3174960-compresseddatausingalgorithm": {
+      "title": "compressedDataUsingAlgorithm:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata/3174960-compresseddatausingalgorithm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdata/3174960-compresseddatausingalgorithm",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "compressedDataUsingAlgorithm:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdata/3174961-decompresseddatausingalgorithm": {
+      "title": "decompressedDataUsingAlgorithm:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata/3174961-decompresseddatausingalgorithm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdata/3174961-decompresseddatausingalgorithm",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "decompressedDataUsingAlgorithm:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters": {
+      "title": "Compressing and Decompressing Data with Input and Output Filters",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Compress and decompress streamed or from-memory data, using input and output filters."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_files_with_swift_stream_compression": {
+      "title": "Compressing and Decompressing Files with Swift Stream Compression",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_files_with_swift_stream_compression",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/compressing_and_decompressing_files_with_swift_stream_compression",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Perform compression for all files and decompression for files with supported extension types."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_files_with_swift_stream_compression"
+      ],
+      "title": "Objects that Simplify Multiple-Step Compression",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In this article, you’ll learn how to use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/compression/inputfilter"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/compression/outputfilter"
+            },
+            {
+              "type": "text",
+              "text": " to compress and decompress a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/string"
+            },
+            {
+              "type": "text",
+              "text": " instance. The article walks you through the following steps:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create the sample source data."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Specify the page size, in bytes."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create the destination buffer."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create the output filter that will compress the sample source data."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Compress the sample source data and handle any errors."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create the input filter that will decompress the compressed result from the previous step."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Decompress the compressed data."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create a string from the decompressed data from the previous step."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Although the article uses a string to provide a simplified example, use this API when working with data that’s streamed to or from memory. For example, when reading from or writing to a file."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you’re compressing and decompressing data that’s held entirely in memory, consider using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata/3174960-compresseddatausingalgorithm"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata/3174961-decompresseddatausingalgorithm"
+            },
+            {
+              "type": "text",
+              "text": ". These functions provide a simple API to compress and decompress data in a single step."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create the Source Data",
+          "anchor": "3328531"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Typically, your app dynamically generates the source data that it compresses, but for this example, the source data is a hard-coded string:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let sourceData = \"\"\"",
+            "    Lorem ipsum dolor sit amet consectetur adipiscing elit mi",
+            "    nibh ornare proin blandit diam ridiculus, faucibus mus",
+            "    dui eu vehicula nam donec dictumst sed vivamus bibendum",
+            "    aliquet efficitur. Felis imperdiet sodales dictum morbi",
+            "    vivamus augue dis duis aliquet velit ullamcorper porttitor,",
+            "    lobortis dapibus hac purus aliquam natoque iaculis blandit",
+            "    montes nunc pretium.",
+            "    \"\"\".data(using: .utf8)!"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3328530",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "sourceData"
+            },
+            {
+              "type": "text",
+              "text": " contains the UTF-8 representation of the source string."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Specify the Page Size",
+          "anchor": "3328551"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/compression/inputfilter"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/compression/outputfilter"
+            },
+            {
+              "type": "text",
+              "text": " instances compress and decompress pages of data. Specify the number of bytes in each page that are read from or written to a stream. Smaller values allow your app to report progress or perform other tasks at higher frequencies than larger values. However, larger values allow your app to compress or decompress using fewer steps, possibly in less time."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For this example, use a page size of 128 bytes:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let pageSize = 128"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3328545",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create the Compression Destination Buffer",
+          "anchor": "3328550"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create a mutable, empty "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/data"
+            },
+            {
+              "type": "text",
+              "text": " structure to receive the compressed data:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var compressedData = Data()"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3328547",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create the Output Filter",
+          "anchor": "3328535"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create an "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/compression/outputfilter"
+            },
+            {
+              "type": "text",
+              "text": " instance, and specify the operation as "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/compression/filteroperation/compress"
+            },
+            {
+              "type": "text",
+              "text": " and the compression algorithm as "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/compression/algorithm/lzfse"
+            },
+            {
+              "type": "text",
+              "text": ". For more information about other compression algorithms, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/compression/compression_algorithm"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The final initializer parameter is a closure that the instance calls as it writes each compressed block of data to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "compressedData"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "do {",
+            "    let outputFilter = try OutputFilter(.compress,",
+            "                                         using: .lzfse) { (data: Data?) -> Void in",
+            "                                            if let data = data {",
+            "                                                compressedData.append(data)",
+            "                                            }",
+            "    }"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3328546",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Compress the Data",
+          "anchor": "3328533"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Iterate over the source data and call the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/data/1779918-subdata"
+            },
+            {
+              "type": "text",
+              "text": " method to copy "
+            },
+            {
+              "type": "codeVoice",
+              "code": "pageSize"
+            },
+            {
+              "type": "text",
+              "text": " chunks to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "subdata"
+            },
+            {
+              "type": "text",
+              "text": ". The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/compression/outputfilter/3200242-write"
+            },
+            {
+              "type": "text",
+              "text": " method compresses each chunk and uses the closure specified in the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/compression/outputfilter"
+            },
+            {
+              "type": "text",
+              "text": " initializer to write the result to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "compressedData"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "    var index = 0",
+            "    let bufferSize = sourceData.count",
+            "    ",
+            "    while true {",
+            "        let rangeLength = min(pageSize, bufferSize - index)",
+            "        ",
+            "        let subdata = sourceData.subdata(in: index ..< index + rangeLength)",
+            "        index += rangeLength",
+            "",
+            "        try outputFilter.write(subdata)",
+            "",
+            "        if (rangeLength == 0) {",
+            "            break",
+            "        }",
+            "    }"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3328538",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "compressedData"
+            },
+            {
+              "type": "text",
+              "text": " contains a compressed version of the original source data."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Handle any Errors That Occured During Compression.",
+          "anchor": "3328541"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The output filter’s initializer and write method can both throw errors. Your code should catch and handle any errors the output filter may have thrown during the compression stage."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "} catch {",
+            "    fatalError(\"Error occurred during encoding: \\(error.localizedDescription).\")",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3328539",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create the Decompression Destination Buffer",
+          "anchor": "3328542"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create a mutable, empty "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/data"
+            },
+            {
+              "type": "text",
+              "text": " structure to receive the decompressed data:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var decompressedData = Data()"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3328718",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create the Input Filter",
+          "anchor": "3328543"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create an InputFilter instance, and specify the operation as "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/compression/filteroperation/decompress"
+            },
+            {
+              "type": "text",
+              "text": ", and the compression algorithm as "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/compression/algorithm/lzfse"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The final initializer parameter is a closure the instance calls as it reads each compressed block of data."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "do {",
+            "    var index = 0",
+            "    let bufferSize = compressedData.count",
+            "    ",
+            "    let inputFilter = try InputFilter(.decompress,",
+            "                                      using: .lzfse) { (length: Int) -> Data? in",
+            "                                        let rangeLength = min(length, bufferSize - index)",
+            "                                        let subdata = compressedData.subdata(in: index ..< index + rangeLength)",
+            "                                        index += rangeLength",
+            "                                        ",
+            "                                        return subdata",
+            "    }"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3328549",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Decompress the Data",
+          "anchor": "3328534"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You iterate over the compressed data by repeatedly calling "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/compression/inputfilter/3200238-readdata"
+            },
+            {
+              "type": "text",
+              "text": ", until the function returns nil. With each iteration, append the data returned by the input filter to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "decompressedData"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "    while let page = try inputFilter.readData(ofLength: pageSize) {",
+            "        decompressedData.append(page)",
+            "    }"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3328540",
+            "title": "Listing 9"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Handle any Errors That Occurred During Decompression.",
+          "anchor": "3328536"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The input filter’s initializer and read method can both throw errors. Your code should catch and handle any errors the output filter may have thrown during the decompression stage."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "} catch {",
+            "    fatalError(\"Error occurred during decoding: \\(error.localizedDescription).\")",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3328537",
+            "title": "Listing 10"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a String from the Decompressed Data",
+          "anchor": "3328548"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/string/3126741-init"
+            },
+            {
+              "type": "text",
+              "text": " to recreate a string from the decompressed data:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let decompressedString = String(data: decompressedData,",
+            "                                encoding: .utf8)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3328552",
+            "title": "Listing 11"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "decompressedString"
+            },
+            {
+              "type": "text",
+              "text": " contains the original text shown in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_input_and_output_filters#3328531"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Select Input and Output Filters Based on Requirements",
+          "anchor": "3328720"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You’re not tied to using output filters for compression and input filters for decompression. You should select the appropriate compressor-decompressor based on your app’s requirements."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, the following code shows an "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/compression/inputfilter"
+            },
+            {
+              "type": "text",
+              "text": " instance as the compressor:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var compressedData = Data()",
+            "",
+            "do {",
+            "    var index = 0",
+            "    let bufferSize = sourceData.count",
+            "    ",
+            "    let inputFilter = try InputFilter(.compress,",
+            "                                      using: .lzfse) { (length: Int) -> Data? in",
+            "        let rangeLength = min(length, bufferSize - index)",
+            "        let subdata = sourceData.subdata(in: index ..< index + rangeLength)",
+            "        index += rangeLength",
+            "        ",
+            "        return subdata",
+            "    }",
+            "    ",
+            "    while let page = try inputFilter.readData(ofLength: pageSize) {",
+            "        compressedData.append(page)",
+            "    }",
+            "} catch {",
+            "    fatalError(\"Error occurred during encoding: \\(error.localizedDescription).\")",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3328721",
+            "title": "Listing 12"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following shows an "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/compression/outputfilter"
+            },
+            {
+              "type": "text",
+              "text": " instance as the decompressor:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var decompressedData = Data()",
+            "",
+            "do {",
+            "    let outputFilter = try OutputFilter(.decompress,",
+            "                                        using: .lzfse) {(data: Data?) -> Void in",
+            "                                            if let data = data {",
+            "                                                decompressedData.append(data)",
+            "                                            }",
+            "    }",
+            "",
+            "    var index = 0",
+            "    let bufferSize = compressedData.count",
+            "    ",
+            "    while true {",
+            "        let rangeLength = min(pageSize, bufferSize - index)",
+            "        ",
+            "        let subdata = compressedData.subdata(in: index ..< index + rangeLength)",
+            "        index += rangeLength",
+            "        try outputFilter.write(subdata)",
+            "        if (rangeLength == 0) {",
+            "            break",
+            "        }",
+            "    }",
+            "} catch {",
+            "    fatalError(\"Error occurred during decoding: \\(error.localizedDescription).\")",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3328719",
+            "title": "Listing 13"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

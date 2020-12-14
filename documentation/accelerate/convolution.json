@@ -1,0 +1,907 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Apply a convolution kernel to an image. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vimage",
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/convolution",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1652550,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Convolution",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/convolution",
+        "documentation/accelerate/vimage/vimage_operations/convolution"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/convolution",
+        "documentation/accelerate/vimage/vimage_operations/convolution"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage": {
+      "title": "vImage",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage",
+      "url": "/documentation/accelerate/vimage",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations": {
+      "title": "vImage Operations",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations",
+      "url": "/documentation/accelerate/vimage/vimage_operations",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-media-2557500": {
+      "identifier": "link-media-2557500",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/convolution#2557500"
+    },
+    "media-2557500": {
+      "identifier": "media-2557500",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 207,
+            "height": 28
+          },
+          "url": "https://docs-assets.developer.apple.com/published/f76d9909d5/float_kernel_0a63ee76-e6b0-4a10-9019-42ddc9722e4a.jpg"
+        }
+      ],
+      "title": "Figure 1"
+    },
+    "link-media-2557505": {
+      "identifier": "link-media-2557505",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/accelerate/convolution#2557505"
+    },
+    "media-2557505": {
+      "identifier": "media-2557505",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 210,
+            "height": 61
+          },
+          "url": "https://docs-assets.developer.apple.com/published/f76d9909d5/integer_kernel_a7badca3-0b36-40d3-a808-2f71adc20135.jpg"
+        }
+      ],
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagecopyinplace": {
+      "title": "kvImageCopyInPlace",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagecopyinplace",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1578976-processing_flags/kvimagecopyinplace"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagebackgroundcolorfill": {
+      "title": "kvImageBackgroundColorFill",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagebackgroundcolorfill",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1578976-processing_flags/kvimagebackgroundcolorfill"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimageedgeextend": {
+      "title": "kvImageEdgeExtend",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimageedgeextend",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1578976-processing_flags/kvimageedgeextend"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagetruncatekernel": {
+      "title": "kvImageTruncateKernel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagetruncatekernel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1578976-processing_flags/kvimagetruncatekernel"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/data_types_and_constants": {
+      "title": "Data Types and Constants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/data_types_and_constants",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vimage/data_types_and_constants"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/3546608-vimagesepconvolve_planarf": {
+      "title": "vImageSepConvolve_PlanarF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/3546608-vimagesepconvolve_planarf",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/3546608-vimagesepconvolve_planarf",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convolves a region of interest within a PlanarF source image by a seperable kernel."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/3546606-vimagesepconvolve_planar8": {
+      "title": "vImageSepConvolve_Planar8",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/3546606-vimagesepconvolve_planar8",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/3546606-vimagesepconvolve_planar8",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convolves a region of interest within a Planar8 source image by a seperable kernel."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/3546605-vimagesepconvolve_planar16u": {
+      "title": "vImageSepConvolve_Planar16U",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/3546605-vimagesepconvolve_planar16u",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/3546605-vimagesepconvolve_planar16u",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convolves a region of interest within a Planar16U source image by a seperable kernel."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/3546607-vimagesepconvolve_planar8to16u": {
+      "title": "vImageSepConvolve_Planar8to16U",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/3546607-vimagesepconvolve_planar8to16u",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/3546607-vimagesepconvolve_planar8to16u",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convolves a region of interest within a Planar8 source image by a seperable kernel, writing the result to a Planat16U destination."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1515929-vimageconvolve_argbffff": {
+      "title": "vImageConvolve_ARGBFFFF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1515929-vimageconvolve_argbffff",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1515929-vimageconvolve_argbffff",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convolves a region of interest within an ARGBFFFF source image by an M x N kernel."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1515923-vimageconvolve_argb8888": {
+      "title": "vImageConvolve_ARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1515923-vimageconvolve_argb8888",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1515923-vimageconvolve_argb8888",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convolves a region of interest within a source image by an M x N kernel, then divides the pixel values by a divisor."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1515936-vimageconvolve_planarf": {
+      "title": "vImageConvolve_PlanarF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1515936-vimageconvolve_planarf",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1515936-vimageconvolve_planarf",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convolves a region of interest within a source image by an M x N kernel."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1515925-vimageconvolve_planar8": {
+      "title": "vImageConvolve_Planar8",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1515925-vimageconvolve_planar8",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1515925-vimageconvolve_planar8",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convolves a region of interest within a source image by an M x N kernel, then divides the pixel values by a divisor."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1515933-vimageconvolvewithbias_argb8888": {
+      "title": "vImageConvolveWithBias_ARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1515933-vimageconvolvewithbias_argb8888",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1515933-vimageconvolvewithbias_argb8888",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convolves a region of interest within an ARGB8888 source image by an M x N kernel, then normalizes the pixel values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1515937-vimageconvolvewithbias_planarf": {
+      "title": "vImageConvolveWithBias_PlanarF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1515937-vimageconvolvewithbias_planarf",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1515937-vimageconvolvewithbias_planarf",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convolves a region of interest within a PlanarF source image by an M x N kernel."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1515922-vimageconvolvewithbias_planar8": {
+      "title": "vImageConvolveWithBias_Planar8",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1515922-vimageconvolvewithbias_planar8",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1515922-vimageconvolvewithbias_planar8",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convolves a region of interest within a Planar8 source image by an M x N kernel, then normalizes the pixel values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1515924-vimageconvolvewithbias_argbffff": {
+      "title": "vImageConvolveWithBias_ARGBFFFF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1515924-vimageconvolvewithbias_argbffff",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1515924-vimageconvolvewithbias_argbffff",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convolves a region of interest within an ARGBFFFF source image by an M x N kernel."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1515931-vimageconvolvemultikernel_argbff": {
+      "title": "vImageConvolveMultiKernel_ARGBFFFF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1515931-vimageconvolvemultikernel_argbff",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1515931-vimageconvolvemultikernel_argbff",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convolves each channel of a region of interest within an ARGBFFFF source image by one of the four M x N kernels."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1515930-vimageconvolvemultikernel_argb88": {
+      "title": "vImageConvolveMultiKernel_ARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1515930-vimageconvolvemultikernel_argb88",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1515930-vimageconvolvemultikernel_argb88",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convolves each channel of a region of interest within an ARGB8888 source image by one of the four M x N kernels, then divides the pixel values by one of the four divisors."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1515941-vimageboxconvolve_planar8": {
+      "title": "vImageBoxConvolve_Planar8",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1515941-vimageboxconvolve_planar8",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1515941-vimageboxconvolve_planar8",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convolves a region of interest within a Planar8 source image by an implicit M x N kernel that has the effect of a box filter."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1515945-vimageboxconvolve_argb8888": {
+      "title": "vImageBoxConvolve_ARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1515945-vimageboxconvolve_argb8888",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1515945-vimageboxconvolve_argb8888",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convolves a region of interest within an ARGB8888 source image by an implicit M x N kernel that has the effect of a box filter."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1515934-vimagetentconvolve_planar8": {
+      "title": "vImageTentConvolve_Planar8",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1515934-vimagetentconvolve_planar8",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1515934-vimagetentconvolve_planar8",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convolves a region of interest within a Planar8 source image by an implicit M x N kernel that has the effect of a tent filter."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1515935-vimagetentconvolve_argb8888": {
+      "title": "vImageTentConvolve_ARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1515935-vimagetentconvolve_argb8888",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1515935-vimagetentconvolve_argb8888",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convolves a region of interest within an ARGB8888 source image by an implicit M x N kernel that has the effect of a tent filter."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1515927-vimagerichardsonlucydeconvolve_a": {
+      "title": "vImageRichardsonLucyDeConvolve_ARGBFFFF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1515927-vimagerichardsonlucydeconvolve_a",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1515927-vimagerichardsonlucydeconvolve_a",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sharpens an ARGBFFFF image by undoing a previous convolution that blurred the image, such as diffraction effects in a camera lens."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1515928-vimagerichardsonlucydeconvolve_a": {
+      "title": "vImageRichardsonLucyDeConvolve_ARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1515928-vimagerichardsonlucydeconvolve_a",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1515928-vimagerichardsonlucydeconvolve_a",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sharpens an ARGB8888 image by undoing a previous convolution that blurred the image, such as diffraction effects in a camera lens. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1515932-vimagerichardsonlucydeconvolve_p": {
+      "title": "vImageRichardsonLucyDeConvolve_PlanarF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1515932-vimagerichardsonlucydeconvolve_p",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1515932-vimagerichardsonlucydeconvolve_p",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sharpens a PlanarF image by undoing a previous convolution that blurred the image, such as diffraction effects in a camera lens. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1515943-vimagerichardsonlucydeconvolve_p": {
+      "title": "vImageRichardsonLucyDeConvolve_Planar8",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1515943-vimagerichardsonlucydeconvolve_p",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1515943-vimagerichardsonlucydeconvolve_p",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sharpens a Planar8 image by undoing a previous convolution that blurred the image, such as diffraction effects in a camera lens. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/convolution/1807059-vimagegetminimumtempbuffersizefo": {
+      "title": "vImageGetMinimumTempBufferSizeForConvolution",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/convolution/1807059-vimagegetminimumtempbuffersizefo",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/accelerate/convolution/1807059-vimagegetminimumtempbuffersizefo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the minimum size, in bytes, for the temporary buffer that the caller supplies to any of the convolution functions. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/blurring_an_image": {
+      "title": "Blurring an Image",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/blurring_an_image",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/blurring_an_image",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Filter an image by convolving it with custom and high-speed kernels."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/adding_a_bokeh_effect": {
+      "title": "Adding a Bokeh Effect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/adding_a_bokeh_effect",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/adding_a_bokeh_effect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Simulate a bokeh effect by applying dilation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/convolution": {
+      "title": "Convolution",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/convolution",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/convolution",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Apply a convolution kernel to an image. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/morphology": {
+      "title": "Morphology",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/morphology",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/morphology",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Dilate and erode images. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Convolving With Separable Filter Kernels",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/3546608-vimagesepconvolve_planarf",
+        "doc://com.apple.documentation/documentation/accelerate/3546606-vimagesepconvolve_planar8",
+        "doc://com.apple.documentation/documentation/accelerate/3546605-vimagesepconvolve_planar16u",
+        "doc://com.apple.documentation/documentation/accelerate/3546607-vimagesepconvolve_planar8to16u"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Convolving Without Bias",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/1515929-vimageconvolve_argbffff",
+        "doc://com.apple.documentation/documentation/accelerate/1515923-vimageconvolve_argb8888",
+        "doc://com.apple.documentation/documentation/accelerate/1515936-vimageconvolve_planarf",
+        "doc://com.apple.documentation/documentation/accelerate/1515925-vimageconvolve_planar8"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Convolving With a Bias",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/1515933-vimageconvolvewithbias_argb8888",
+        "doc://com.apple.documentation/documentation/accelerate/1515937-vimageconvolvewithbias_planarf",
+        "doc://com.apple.documentation/documentation/accelerate/1515922-vimageconvolvewithbias_planar8",
+        "doc://com.apple.documentation/documentation/accelerate/1515924-vimageconvolvewithbias_argbffff"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Convolving With Multiple Kernels",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/1515931-vimageconvolvemultikernel_argbff",
+        "doc://com.apple.documentation/documentation/accelerate/1515930-vimageconvolvemultikernel_argb88"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Convolving With High-Speed Box and Tent Filters",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/1515941-vimageboxconvolve_planar8",
+        "doc://com.apple.documentation/documentation/accelerate/1515945-vimageboxconvolve_argb8888",
+        "doc://com.apple.documentation/documentation/accelerate/1515934-vimagetentconvolve_planar8",
+        "doc://com.apple.documentation/documentation/accelerate/1515935-vimagetentconvolve_argb8888"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Deconvolving",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/1515927-vimagerichardsonlucydeconvolve_a",
+        "doc://com.apple.documentation/documentation/accelerate/1515928-vimagerichardsonlucydeconvolve_a",
+        "doc://com.apple.documentation/documentation/accelerate/1515932-vimagerichardsonlucydeconvolve_p",
+        "doc://com.apple.documentation/documentation/accelerate/1515943-vimagerichardsonlucydeconvolve_p"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting the Minimum Buffer Size",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/convolution/1807059-vimagegetminimumtempbuffersizefo"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/blurring_an_image",
+        "doc://com.apple.documentation/documentation/accelerate/adding_a_bokeh_effect",
+        "doc://com.apple.documentation/documentation/accelerate/morphology"
+      ],
+      "title": "Convolution and Morphology",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Convolution functions implement various techniques for smoothing or sharpening an image by replacing a pixel with a weighted sum of itself and nearby pixels. Image convolution does not alter the size of an image."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each convolution function requires that you pass it a convolution kernel, which determines how the values of neighboring pixels are used to compute the value of a destination pixel. A kernel is a packed array, without padding at the ends of the rows. The elements of the array must be of type "
+            },
+            {
+              "type": "codeVoice",
+              "code": "uint8_t"
+            },
+            {
+              "type": "text",
+              "text": " (for the Planar8 and ARGB8888 formats) or of type "
+            },
+            {
+              "type": "codeVoice",
+              "code": "float"
+            },
+            {
+              "type": "text",
+              "text": " (for the PlanarF and ARGBFFFF formats). The height and the width of the array must both be odd numbers."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, a 3 x 3 convolution kernel for a Planar8 image consist of nine 8-bit (1-byte) values, arranged consecutively. The first three values represent the first row of the kernel, the next three values the second row, and the last three values the third row."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Typically, you use normalized values for the convolution kernel. For floating-point formats, this means the sum of the elements of the kernel is 1.0. For integer formats, the sum of the elements of the kernel, divided by the given divisor, is 1. A non-normalized kernel either lightens or darkens the image."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For integer formats, the sum of any subset of elements of the kernel must be in the range –2"
+            },
+            {
+              "type": "superscript",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "24"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " to 2"
+            },
+            {
+              "type": "superscript",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "24"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " – 1, inclusive to prevent integer overflow. If your kernel does not meet this restriction, either use a floating-point format or scale the kernel to use smaller values."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A convolution function transforms a source image as follows:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Places the kernel over the image so that the center element of the kernel lies over the source pixel."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "For floating-point formats, performs this calculation: "
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": []
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "image",
+                      "identifier": "media-2557500",
+                      "metadata": {
+                        "anchor": "2557500",
+                        "title": "Figure 1"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "For integer formats, performs this calculation:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": []
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "image",
+                      "identifier": "media-2557505",
+                      "metadata": {
+                        "anchor": "2557505",
+                        "title": "Figure 2"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Assigns the result to the destination pixel."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the image is in a planar format, the convolution operation uses the single-channel values of the pixels directly. If the image is in an interleaved format, the convolution operation processes each channel (alpha, red, green, and blue) separately. In both the planar and interleaved format, the kernel itself is always planar."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the pixel to be transformed is near the edge of the image—not merely the region of interest, but the entire image of which it is a part—the kernel may extend beyond the edge of the image, so that there are no existing pixels beneath some of the kernel elements. In these cases you must pass a flag that specifies a technique for the convolution function to use: "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagecopyinplace"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagebackgroundcolorfill"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimageedgeextend"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagetruncatekernel"
+            },
+            {
+              "type": "text",
+              "text": ". For a discussion of these options, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/data_types_and_constants"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

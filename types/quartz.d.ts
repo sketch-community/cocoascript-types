@@ -761,7 +761,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/ikscannerdeviceviewdelegate/1503476-scannerdeviceview
     scannerDeviceView_didEncounterError(scannerDeviceView: cocoascript.IKScannerDeviceView, error: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/quartz/ikscannerdeviceviewdelegate/1503867-scannerdeviceview
-    scannerDeviceView_didScanToBandData_scanInfo_error(scannerDeviceView: cocoascript.IKScannerDeviceView, data: cocoascript.ICScannerBandData, scanInfo: cocoascript.NSDictionary, error: cocoascript.NSError):void;
+    scannerDeviceView_didScanToBandData_scanInfo_error(scannerDeviceView: cocoascript.IKScannerDeviceView, data: any, scanInfo: cocoascript.NSDictionary, error: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/quartz/ikscannerdeviceviewdelegate/1504768-scannerdeviceview
     scannerDeviceView_didScanToURL_error(scannerDeviceView: cocoascript.IKScannerDeviceView, url: cocoascript.NSURL, error: cocoascript.NSError):void;
   }
@@ -773,7 +773,7 @@ declare namespace cocoascript {
    */
   interface IKCameraDeviceView extends NSView {
     // doc://com.apple.documentation/documentation/quartz/ikcameradeviceview/1503753-cameradevice
-    cameraDevice(): cocoascript.ICCameraDevice;
+    cameraDevice(): any;
     setCameraDevice(): void;
     // doc://com.apple.documentation/documentation/quartz/ikcameradeviceview/1504002-iconsize
     iconSize(): cocoascript.NSUInteger;
@@ -852,7 +852,7 @@ declare namespace cocoascript {
    */
   interface IKDeviceBrowserView extends NSView {
     // doc://com.apple.documentation/documentation/quartz/ikdevicebrowserview/1443071-selecteddevice
-    selectedDevice(): cocoascript.ICDevice;
+    selectedDevice(): any;
     setSelectedDevice(): void;
     // doc://com.apple.documentation/documentation/quartz/ikdevicebrowserview/1443061-displayslocalcameras
     displaysLocalCameras(): cocoascript.BOOL;
@@ -909,7 +909,7 @@ declare namespace cocoascript {
    */
   interface IKScannerDeviceView extends NSView {
     // doc://com.apple.documentation/documentation/quartz/ikscannerdeviceview/1504379-scannerdevice
-    scannerDevice(): cocoascript.ICScannerDevice;
+    scannerDevice(): any;
     setScannerDevice(): void;
     // doc://com.apple.documentation/documentation/quartz/ikscannerdeviceview/1504321-mode
     mode(): cocoascript.IKScannerDeviceViewDisplayMode;
@@ -1100,7 +1100,7 @@ declare namespace cocoascript {
    */
   interface IKCameraDeviceViewDelegate {
     // doc://com.apple.documentation/documentation/quartz/ikcameradeviceviewdelegate/1503524-cameradeviceview
-    cameraDeviceView_didDownloadFile_location_fileData_error(cameraDeviceView: cocoascript.IKCameraDeviceView, file: cocoascript.ICCameraFile, url: cocoascript.NSURL, data: cocoascript.NSData, error: cocoascript.NSError):void;
+    cameraDeviceView_didDownloadFile_location_fileData_error(cameraDeviceView: cocoascript.IKCameraDeviceView, file: any, url: cocoascript.NSURL, data: cocoascript.NSData, error: cocoascript.NSError):void;
     // doc://com.apple.documentation/documentation/quartz/ikcameradeviceviewdelegate/1505308-cameradeviceviewselectiondidchan
     cameraDeviceViewSelectionDidChange(cameraDeviceView: cocoascript.IKCameraDeviceView):void;
     // doc://com.apple.documentation/documentation/quartz/ikcameradeviceviewdelegate/1505239-cameradeviceview
@@ -1114,7 +1114,7 @@ declare namespace cocoascript {
    */
   interface IKDeviceBrowserViewDelegate {
     // doc://com.apple.documentation/documentation/quartz/ikdevicebrowserviewdelegate/1443059-devicebrowserview
-    deviceBrowserView_selectionDidChange(deviceBrowserView: cocoascript.IKDeviceBrowserView, device: cocoascript.ICDevice):void;
+    deviceBrowserView_selectionDidChange(deviceBrowserView: cocoascript.IKDeviceBrowserView, device: any):void;
     // doc://com.apple.documentation/documentation/quartz/ikdevicebrowserviewdelegate/1443076-devicebrowserview
     deviceBrowserView_didEncounterError(deviceBrowserView: cocoascript.IKDeviceBrowserView, error: cocoascript.NSError):void;
   }
@@ -1319,7 +1319,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/qcplugincontext/1488754-outputimageproviderfrombufferwit
     outputImageProviderFromBufferWithPixelFormat_pixelsWide_pixelsHigh_baseAddress_bytesPerRow_releaseCallback_releaseContext_colorSpace_shouldColorMatch(format: cocoascript.NSString, width: cocoascript.NSUInteger, height: cocoascript.NSUInteger, baseAddress: void, rowBytes: cocoascript.NSUInteger, callback: cocoascript.QCPlugInBufferReleaseCallback, context: void, colorSpace: cocoascript.CGColorSpaceRef, colorMatch: cocoascript.BOOL):cocoascript.QCPlugInContext;
     // doc://com.apple.documentation/documentation/quartz/qcplugincontext/1488756-outputimageproviderfromtexturewi
-    outputImageProviderFromTextureWithPixelFormat_pixelsWide_pixelsHigh_name_flipped_releaseCallback_releaseContext_colorSpace_shouldColorMatch(format: cocoascript.NSString, width: cocoascript.NSUInteger, height: cocoascript.NSUInteger, name: cocoascript.GLuint, flipped: cocoascript.BOOL, callback: cocoascript.QCPlugInTextureReleaseCallback, context: void, colorSpace: cocoascript.CGColorSpaceRef, colorMatch: cocoascript.BOOL):cocoascript.QCPlugInContext;
+    outputImageProviderFromTextureWithPixelFormat_pixelsWide_pixelsHigh_name_flipped_releaseCallback_releaseContext_colorSpace_shouldColorMatch(format: cocoascript.NSString, width: cocoascript.NSUInteger, height: cocoascript.NSUInteger, name: any, flipped: cocoascript.BOOL, callback: cocoascript.QCPlugInTextureReleaseCallback, context: void, colorSpace: cocoascript.CGColorSpaceRef, colorMatch: cocoascript.BOOL):cocoascript.QCPlugInContext;
     // doc://com.apple.documentation/documentation/quartz/qcplugincontext/1488750-compositionurl
     compositionURL():cocoascript.NSURL;
   }
@@ -1351,15 +1351,15 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488768-texturepixelshigh
     texturePixelsHigh():cocoascript.NSUInteger;
     // doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488769-texturetarget
-    textureTarget():void;
+    textureTarget():any;
     // doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488744-texturename
-    textureName():void;
+    textureName():any;
     // doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488836-texturecolorspace
     textureColorSpace():cocoascript.CGColorSpaceRef;
     // doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488693-textureflipped
     textureFlipped():cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488798-texturematrix
-    textureMatrix():cocoascript.const;
+    textureMatrix():any;
     // doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488784-imagebounds
     imageBounds():cocoascript.NSRect;
     // doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488823-bufferpixelswide
@@ -1385,11 +1385,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488841-rendertobuffer
     renderToBuffer_withBytesPerRow_pixelFormat_forBounds(baseAddress: void, rowBytes: cocoascript.NSUInteger, format: cocoascript.NSString, bounds: cocoascript.NSRect):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488717-copyrenderedtextureforcglcontext
-    copyRenderedTextureForCGLContext_pixelFormat_bounds_isFlipped(cgl_ctx: any, format: cocoascript.NSString, bounds: cocoascript.NSRect, flipped: cocoascript.BOOL):void;
+    copyRenderedTextureForCGLContext_pixelFormat_bounds_isFlipped(cgl_ctx: any, format: cocoascript.NSString, bounds: cocoascript.NSRect, flipped: cocoascript.BOOL):any;
     // doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488815-renderwithcglcontext
     renderWithCGLContext_forBounds(cgl_ctx: any, bounds: cocoascript.NSRect):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488829-releaserenderedtexture
-    releaseRenderedTexture_forCGLContext(name: cocoascript.GLuint, cgl_ctx: any):void;
+    releaseRenderedTexture_forCGLContext(name: any, cgl_ctx: any):void;
     // doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488867-imagebounds
     imageBounds():cocoascript.NSRect;
     // doc://com.apple.documentation/documentation/quartz/qcpluginoutputimageprovider/1488715-imagecolorspace

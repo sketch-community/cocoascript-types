@@ -233,7 +233,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/corenfc/nfcndefpayload/3043842-initwithformat
     initWithFormat_type_identifier_payload(format: cocoascript.NFCTypeNameFormat, type: cocoascript.NSData, identifier: cocoascript.NSData, payload: cocoascript.NSData):cocoascript.NFCNDEFPayload;
     // doc://com.apple.documentation/documentation/corenfc/nfcndefpayload/3043843-initwithformat
-    initWithFormat_type_identifier_payload_chunkSize(format: cocoascript.NFCTypeNameFormat, type: cocoascript.NSData, identifier: cocoascript.NSData, payload: cocoascript.NSData, chunkSize: cocoascript.size_t):cocoascript.NFCNDEFPayload;
+    initWithFormat_type_identifier_payload_chunkSize(format: cocoascript.NFCTypeNameFormat, type: cocoascript.NSData, identifier: cocoascript.NSData, payload: cocoascript.NSData, chunkSize: any):cocoascript.NFCNDEFPayload;
     // doc://com.apple.documentation/documentation/corenfc/nfcndefpayload/2875573-identifier
     identifier(): cocoascript.NSData;
     setIdentifier(): void;

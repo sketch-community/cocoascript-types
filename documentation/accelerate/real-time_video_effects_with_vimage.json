@@ -1,0 +1,1000 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Use vImage to apply effects to a video feed in real time."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vimage"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2983562,
+  "kind": "article",
+  "metadata": {
+    "title": "Real-Time Video Effects with vImage",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.3",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/real-time_video_effects_with_vimage",
+        "documentation/accelerate/vimage/real-time_video_effects_with_vimage"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/real-time_video_effects_with_vimage",
+        "documentation/accelerate/vimage/real-time_video_effects_with_vimage"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage": {
+      "title": "vImage",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage",
+      "url": "/documentation/accelerate/vimage",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-media-3570626": {
+      "identifier": "link-media-3570626",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/real-time_video_effects_with_vimage#3570626"
+    },
+    "media-3570626": {
+      "identifier": "media-3570626",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 231
+          },
+          "url": "https://docs-assets.developer.apple.com/published/7a346c0048/78a31d26-fec8-4ed4-9eee-a8d5f1ea4971.png"
+        }
+      ],
+      "alt": "Screenshot of sample code app showing desaturated image.",
+      "title": "Figure 1"
+    },
+    "link-media-3570627": {
+      "identifier": "link-media-3570627",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/accelerate/real-time_video_effects_with_vimage#3570627"
+    },
+    "media-3570627": {
+      "identifier": "media-3570627",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 52
+          },
+          "url": "https://docs-assets.developer.apple.com/published/b15297cc52/92d4d895-eeb0-440e-a408-2b9cf022a6ca.png"
+        }
+      ],
+      "alt": "Screenshot of saturation adjustment formula: Cbʹ = ((Cb - 128) * saturation) + 128.  Crʹ = ((Cr - 128) * saturation) + 128.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage#3570628": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage#3570628",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/real-time_video_effects_with_vimage#3570628"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage#3570629": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage#3570629",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/real-time_video_effects_with_vimage#3570629"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage#3570630": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage#3570630",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/real-time_video_effects_with_vimage#3570630"
+    },
+    "link-media-3570632": {
+      "identifier": "link-media-3570632",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/accelerate/real-time_video_effects_with_vimage#3570632"
+    },
+    "media-3570632": {
+      "identifier": "media-3570632",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 231
+          },
+          "url": "https://docs-assets.developer.apple.com/published/019f6dc836/6f2cd97d-44c5-4f54-bc07-25767dbc3abf.png"
+        }
+      ],
+      "alt": "Screenshot of sample code app showing dithered image.",
+      "title": "Figure 3"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage#3570633": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage#3570633",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/real-time_video_effects_with_vimage#3570633"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage#3570634": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage#3570634",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/real-time_video_effects_with_vimage#3570634"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage#3570635": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage#3570635",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/real-time_video_effects_with_vimage#3570635"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage#3570636": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage#3570636",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/real-time_video_effects_with_vimage#3570636"
+    },
+    "link-media-3570638": {
+      "identifier": "link-media-3570638",
+      "type": "link",
+      "title": "Figure 4",
+      "url": "/documentation/accelerate/real-time_video_effects_with_vimage#3570638"
+    },
+    "media-3570638": {
+      "identifier": "media-3570638",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 232
+          },
+          "url": "https://docs-assets.developer.apple.com/published/fdd42c5774/c4e043fc-99e4-4b8c-9800-82f0cabf5705.png"
+        }
+      ],
+      "alt": "Screenshot of sample code app showing rotated image.",
+      "title": "Figure 4"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage#3570639": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage#3570639",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/real-time_video_effects_with_vimage#3570639"
+    },
+    "link-media-3570641": {
+      "identifier": "link-media-3570641",
+      "type": "link",
+      "title": "Figure 5",
+      "url": "/documentation/accelerate/real-time_video_effects_with_vimage#3570641"
+    },
+    "media-3570641": {
+      "identifier": "media-3570641",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 231
+          },
+          "url": "https://docs-assets.developer.apple.com/published/79f55614aa/e10974ff-09ef-4e60-a9b4-fd10d298f7f7.png"
+        }
+      ],
+      "alt": "Screenshot of sample code app showing color quantized image.",
+      "title": "Figure 5"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage#3570642": {
+      "title": "Listing 9",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage#3570642",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/real-time_video_effects_with_vimage#3570642"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage#3570643": {
+      "title": "Listing 10",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage#3570643",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/real-time_video_effects_with_vimage#3570643"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image": {
+      "title": "Converting Luminance and Chrominance Planes to an ARGB Image",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers": {
+      "title": "Reading From and Writing to Core Video Pixel Buffers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Transfer image data between Core Video pixel buffers and vImage buffers to integrate vImage operations into a Core Image workflow"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers": {
+      "title": "Applying vImage Operations to Video Sample Buffers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use vImage’s convert-any-to-any function to perform real-time image processing of video frames streamed from your device’s camera."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage": {
+      "title": "Real-Time Video Effects with vImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/real-time_video_effects_with_vimage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use vImage to apply effects to a video feed in real time."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/core_video_interoperability": {
+      "title": "Core Video Interoperability",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/core_video_interoperability",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/core_video_interoperability",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Pass image data between Core Video and vImage."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/6acf7c821e/RealTimeVideoEffectsWithVImage.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/6acf7c821e/RealTimeVideoEffectsWithVImage.zip",
+      "checksum": "2f0d9676a361213b97af18cc9ac8203b84ab2dfa20fd1135fd0ed6390049e5ecb2f901de2f7478b2f3fdea50aa74f97e653e24aeeb42c817cf0b212faac63041",
+      "url": "https://docs-assets.developer.apple.com/published/6acf7c821e/RealTimeVideoEffectsWithVImage.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/6acf7c821e/RealTimeVideoEffectsWithVImage.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers",
+        "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers",
+        "doc://com.apple.documentation/documentation/accelerate/core_video_interoperability"
+      ],
+      "title": "Core Video Interoperation",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample builds on the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image"
+            },
+            {
+              "type": "text",
+              "text": " sample to leverage the lower-level, high-performance YpCbCr to RGB conversion functions provided by vImage to add additional, real-time video effects to a live camera stream."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Two effects are implemented in the YpCbCr color space:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Saturation Adjustment."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Dithering."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Two effects are implemented in the RGB color space:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Rotation."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Color quantization using lookup tables."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Saturation Adjustment",
+          "anchor": "3570646"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3570626",
+              "metadata": {
+                "anchor": "3570626",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can easily adjust the color saturation of a YpCbCr image, without affecting its luminance, using the following formula:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3570627",
+              "metadata": {
+                "anchor": "3570627",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageMatrixMultiply_Planar8"
+            },
+            {
+              "type": "text",
+              "text": " function to perform this math on the source chrominance buffer. The following code prepares the source chrominance buffer—which contains two planes for Cb and Cr—for use as the source and destination of the matrix multiply function:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let chromaBufferPointer = withUnsafePointer(to: &sourceChromaBuffer) {",
+            "    return $0",
+            "}",
+            "",
+            "var sources: UnsafePointer<vImage_Buffer>? = chromaBufferPointer",
+            "var destinations: UnsafePointer<vImage_Buffer>? = chromaBufferPointer"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570628",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Pass the pre-bias (–128), and then multiply by the divisor both the post-bias (+128) and the saturation. The saturation is passed to the matrix multiply function as a single element matrix:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var preBias: Int16 = -128",
+            "let divisor: Int32 = 0x1000",
+            "var postBias: Int32 = 128 * divisor",
+            "",
+            "let saturation = mode == .dither ? 0 : fxValue",
+            "",
+            "var matrix = [ Int16(saturation * Float(divisor)) ]"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570629",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With the parameters prepared, call  "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageMatrixMultiply_Planar8"
+            },
+            {
+              "type": "text",
+              "text": "  to perform the saturation adjustment formula to the chrominance planes:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "vImageMatrixMultiply_Planar8(&sources,",
+            "                             &destinations,",
+            "                             1,",
+            "                             1,",
+            "                             &matrix,",
+            "                             divisor,",
+            "                             &preBias,",
+            "                             &postBias,",
+            "                             vImage_Flags(kvImageNoFlags))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570630",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Apply Dithering",
+          "anchor": "3570647"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3570632",
+              "metadata": {
+                "anchor": "3570632",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In this sample, dithering is applied only to the luminance channel: converting the grayscale image to a pattern of black dots. To eliminate the chrominance information, the dithering step uses the previous saturation adjustment step, with the saturation set to zero."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "vImage provides dithering when reducing the bit depth of an image. In this sample, you convert the 8-bit luminance channel to a dithered 1-bit image, and then convert that back to 8-bit to pass to the YpCbCr to RGB function."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To create the 1-bit buffer, you initialize a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImage_Buffer"
+            },
+            {
+              "type": "text",
+              "text": " structure, specifying one bit per pixel:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var ditheredLuma = vImage_Buffer()",
+            "vImageBuffer_Init(&ditheredLuma,",
+            "                  sourceLumaBuffer.height,",
+            "                  sourceLumaBuffer.width,",
+            "                  1,",
+            "                  vImage_Flags(kvImageNoFlags))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570633",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "vImage offers several dithering algorithms, this sample uses Atkinson dithering that’s specified by passing "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kvImageConvert_DitherAtkinson"
+            },
+            {
+              "type": "text",
+              "text": " to the 8-bit to 1-bit conversion function. Because the luminance buffer is planar, use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageConvert_Planar8toPlanar1"
+            },
+            {
+              "type": "text",
+              "text": " to do the conversion:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "vImageConvert_Planar8toPlanar1(&sourceLumaBuffer,",
+            "                               &ditheredLuma,",
+            "                               nil,",
+            "                               Int32(kvImageConvert_DitherAtkinson),",
+            "                               vImage_Flags(kvImageNoFlags))",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570634",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ditheredLuma"
+            },
+            {
+              "type": "text",
+              "text": " populated with the 1-bit dithered image, convert it back to 8-bit, specifying the original 8-bit luminance buffer, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "sourceLumaBuffer"
+            },
+            {
+              "type": "text",
+              "text": ", as the destination:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "vImageConvert_Planar1toPlanar8(&ditheredLuma,",
+            "                               &sourceLumaBuffer,",
+            "                               vImage_Flags(kvImageNoFlags))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570635",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Once you’re finished with the 1-bit planar buffer, free its memory:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "free(ditheredLuma.data)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570636",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Rotate the Image",
+          "anchor": "3570648"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3570638",
+              "metadata": {
+                "anchor": "3570638",
+                "title": "Figure 4"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "vImage supports two types of specialized rotation functions—those that rotate an image in discrete 90º steps and those that rotate an image by an arbitrary angle. This sample uses the latter and specifies opaque white as the background color. Define the rotation, in radians, with the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "fxValue"
+            },
+            {
+              "type": "text",
+              "text": " floating point variable::"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let backcolor: [UInt8] = [255, 255, 255, 255]",
+            "vImageRotate_ARGB8888(&destinationBuffer,",
+            "                      &destinationBuffer,",
+            "                      nil,",
+            "                      fxValue,",
+            "                      backcolor,",
+            "                      vImage_Flags(kvImageBackgroundColorFill))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570639",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Quantize Color Using Lookup Tables",
+          "anchor": "3570649"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3570641",
+              "metadata": {
+                "anchor": "3570641",
+                "title": "Figure 5"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Mapping the individual channel values of an 8-bit per-channel image to a reduced set of values (for example, mapping the range 0…255 to the values "
+            },
+            {
+              "type": "codeVoice",
+              "code": "[0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 255]"
+            },
+            {
+              "type": "text",
+              "text": ") decreases the number of distinct colors in an image. This process is known as color quantization and can be used for special effects or other applications such as compression."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "vImage includes lookup table functions that provide this functionality. In this sample, generate the look up table dynamically based on a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "quantizationLevel"
+            },
+            {
+              "type": "text",
+              "text": " value:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var lookUpTable = (0...255).map {",
+            "    return Pixel_8(($0 / quantizationLevel) * quantizationLevel)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570642",
+            "title": "Listing 9"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "quantizationLevel"
+            },
+            {
+              "type": "text",
+              "text": " value of 25, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "lookUpTable"
+            },
+            {
+              "type": "text",
+              "text": " contains 25 of each of the values in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "[0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 255]"
+            },
+            {
+              "type": "text",
+              "text": ". Passing "
+            },
+            {
+              "type": "codeVoice",
+              "code": "lookupTable"
+            },
+            {
+              "type": "text",
+              "text": " as the red, green, and blue lookup table parameters to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageTableLookUp_ARGB8888"
+            },
+            {
+              "type": "text",
+              "text": " maps all of the red, green, and blue values between 0 and 24 to 0, between 25 and 49 to 25, between 50 and 74 to 50, and so on:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "vImageTableLookUp_ARGB8888(&destinationBuffer,",
+            "                           &destinationBuffer,",
+            "                           nil,",
+            "                           &lookUpTable,",
+            "                           &lookUpTable,",
+            "                           &lookUpTable,",
+            "                           vImage_Flags(kvImageNoFlags))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570643",
+            "title": "Listing 10"
+          }
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

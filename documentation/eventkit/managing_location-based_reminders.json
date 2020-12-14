@@ -1,0 +1,1531 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Add, fetch, complete, remove, and sort location-based reminders in your app."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/eventkit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3386227,
+  "kind": "article",
+  "metadata": {
+    "title": "Managing Location-Based Reminders",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "EventKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "12.0",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/eventkit/managing_location-based_reminders"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/eventkit/managing_location-based_reminders"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/eventkit": {
+      "title": "EventKit",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit",
+      "url": "/documentation/eventkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsremindersusagedescription": {
+      "title": "NSRemindersUsageDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsremindersusagedescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nsremindersusagedescription"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekeventstore": {
+      "title": "EKEventStore",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekeventstore"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekeventstorechangednotification": {
+      "title": "EKEventStoreChangedNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstorechangednotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekeventstorechangednotification"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/updating_with_notifications": {
+      "title": "Updating with Notifications",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/updating_with_notifications",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/eventkit/updating_with_notifications",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Register to be notified about changes and keep your app up to date."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507239-authorizationstatusforentitytype": {
+      "title": "authorizationStatusForEntityType:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507239-authorizationstatusforentitytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekeventstore/1507239-authorizationstatusforentitytype",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "authorizationStatusForEntityType:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekentitytype/ekentitytypereminder": {
+      "title": "EKEntityTypeReminder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekentitytype/ekentitytypereminder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekentitytype/ekentitytypereminder"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697038": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697038",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/eventkit/managing_location-based_reminders#3697038"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekauthorizationstatus/ekauthorizationstatusnotdetermined": {
+      "title": "EKAuthorizationStatusNotDetermined",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekauthorizationstatus/ekauthorizationstatusnotdetermined",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekauthorizationstatus/ekauthorizationstatusnotdetermined"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697039": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697039",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/eventkit/managing_location-based_reminders#3697039"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507547-requestaccesstoentitytype": {
+      "title": "requestAccessToEntityType:completion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507547-requestaccesstoentitytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekeventstore/1507547-requestaccesstoentitytype",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "requestAccessToEntityType:completion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697040": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697040",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/eventkit/managing_location-based_reminders#3697040"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/accessing_the_event_store": {
+      "title": "Accessing the Event Store",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/accessing_the_event_store",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/eventkit/accessing_the_event_store"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationwheninuseusagedescription": {
+      "title": "NSLocationWhenInUseUsageDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationwheninuseusagedescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nslocationwheninuseusagedescription"
+    },
+    "doc://com.apple.documentation/documentation/corelocation/requesting_authorization_for_location_services": {
+      "title": "Requesting Authorization for Location Services",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/requesting_authorization_for_location_services",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/corelocation/requesting_authorization_for_location_services"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507543-defaultcalendarfornewreminders": {
+      "title": "defaultCalendarForNewReminders",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507543-defaultcalendarfornewreminders",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekeventstore/1507543-defaultcalendarfornewreminders",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "defaultCalendarForNewReminders"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekstructuredlocation/1507489-radius": {
+      "title": "radius",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekstructuredlocation/1507489-radius",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekstructuredlocation/1507489-radius"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekreminder": {
+      "title": "EKReminder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekreminder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekreminder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A class that represents a reminder added to a calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekreminder/1507429-reminderwitheventstore": {
+      "title": "reminderWithEventStore:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekreminder/1507429-reminderwitheventstore",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekreminder/1507429-reminderwitheventstore",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "reminderWithEventStore:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507305-title": {
+      "title": "title",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507305-title",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekcalendaritem/1507305-title"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507169-calendar": {
+      "title": "calendar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507169-calendar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekcalendaritem/1507169-calendar"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697044": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697044",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/eventkit/managing_location-based_reminders#3697044"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekstructuredlocation": {
+      "title": "EKStructuredLocation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekstructuredlocation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekstructuredlocation"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekstructuredlocation/1507366-locationwithtitle": {
+      "title": "locationWithTitle:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekstructuredlocation/1507366-locationwithtitle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekstructuredlocation/1507366-locationwithtitle",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "locationWithTitle:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekstructuredlocation/1507493-locationwithmapitem": {
+      "title": "locationWithMapItem:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekstructuredlocation/1507493-locationwithmapitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekstructuredlocation/1507493-locationwithmapitem",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "locationWithMapItem:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/corelocation/cllocation": {
+      "title": "CLLocation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corelocation/cllocation"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekstructuredlocation/1507110-geolocation": {
+      "title": "geoLocation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekstructuredlocation/1507110-geolocation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekstructuredlocation/1507110-geolocation"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697045": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697045",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/eventkit/managing_location-based_reminders#3697045"
+    },
+    "doc://com.apple.documentation/documentation/mapkit/mkmapitem": {
+      "title": "MKMapItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmapitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mapkit/mkmapitem"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697046": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697046",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/eventkit/managing_location-based_reminders#3697046"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697047": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697047",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/eventkit/managing_location-based_reminders#3697047"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekalarm": {
+      "title": "EKAlarm",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekalarm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekalarm"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekalarm/1507331-structuredlocation": {
+      "title": "structuredLocation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekalarm/1507331-structuredlocation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekalarm/1507331-structuredlocation"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekalarm/1507123-proximity": {
+      "title": "proximity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekalarm/1507123-proximity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekalarm/1507123-proximity"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697048": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697048",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/eventkit/managing_location-based_reminders#3697048"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/setting_an_alarm": {
+      "title": "Setting an Alarm",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/setting_an_alarm",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/eventkit/setting_an_alarm"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697049": {
+      "title": "Listing 9",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697049",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/eventkit/managing_location-based_reminders#3697049"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697050": {
+      "title": "Listing 10",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697050",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/eventkit/managing_location-based_reminders#3697050"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507500-fetchremindersmatchingpredicate": {
+      "title": "fetchRemindersMatchingPredicate:completion:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507500-fetchremindersmatchingpredicate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekeventstore/1507500-fetchremindersmatchingpredicate",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "fetchRemindersMatchingPredicate:completion:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697052": {
+      "title": "Listing 11",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697052",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/eventkit/managing_location-based_reminders#3697052"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697053": {
+      "title": "Listing 12",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697053",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/eventkit/managing_location-based_reminders#3697053"
+    },
+    "doc://com.apple.documentation/documentation/swift/array/2296815-sorted": {
+      "title": "sorted(by:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/array/2296815-sorted",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/array/2296815-sorted"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697055": {
+      "title": "Listing 13",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders#3697055",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/eventkit/managing_location-based_reminders#3697055"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/creating_events_and_reminders": {
+      "title": "Creating Events and Reminders",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/creating_events_and_reminders",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/eventkit/creating_events_and_reminders",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create and modify events and reminders in a user's database."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/retrieving_events_and_reminders": {
+      "title": "Retrieving Events and Reminders",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/retrieving_events_and_reminders",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/eventkit/retrieving_events_and_reminders",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Fetch events and reminders from the Calendar database."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders": {
+      "title": "Managing Location-Based Reminders",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/eventkit/managing_location-based_reminders",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add, fetch, complete, remove, and sort location-based reminders in your app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekevent": {
+      "title": "EKEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A class that represents an event added to a calendar."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/5f358fdc4e/ManagingLocationBasedReminders.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/5f358fdc4e/ManagingLocationBasedReminders.zip",
+      "checksum": "d4049bd8b825ebc0911b62b79fa25598b74b29f314c9d4555043a7e0857abecc78ebb75c93b8425d1276b82a3451473d1403508a0ef0ab659fd7e235e448fb89",
+      "url": "https://docs-assets.developer.apple.com/published/5f358fdc4e/ManagingLocationBasedReminders.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/5f358fdc4e/ManagingLocationBasedReminders.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/eventkit/creating_events_and_reminders",
+        "doc://com.apple.documentation/documentation/eventkit/retrieving_events_and_reminders",
+        "doc://com.apple.documentation/documentation/eventkit/updating_with_notifications",
+        "doc://com.apple.documentation/documentation/eventkit/ekevent",
+        "doc://com.apple.documentation/documentation/eventkit/ekreminder"
+      ],
+      "title": "Events and Reminders",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With the Reminders app, users can create reminders with attachments, and alarms based on time and location. When Location Services is turned on, users receive location-based reminders when entering or leaving a specified geographic area or geofence. This sample demonstrates how to add, fetch, complete, remove, and sort location-based reminders."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Provide a Purpose String",
+          "anchor": "3697058"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample first requests and receives authorization from the user before the app attempts to access their reminder data. It provides a purpose string or usage description that describes how the app intends to use the user’s reminder data. It then adds the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsremindersusagedescription"
+            },
+            {
+              "type": "text",
+              "text": " key to the app’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": ". The sample sets its value to a string that explains why the app needs access to reminder data. The system displays the string when prompting the user for authorization."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "This "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NSRemindersUsageDescription"
+                },
+                {
+                  "type": "text",
+                  "text": " key is required for apps that access the user’s reminder data. Apps crash when the key is absent."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Request Authorization",
+          "anchor": "3697059"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Set up your app to instantiate and use a single instance of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore"
+            },
+            {
+              "type": "text",
+              "text": " that manages all reminder-related tasks. An "
+            },
+            {
+              "type": "codeVoice",
+              "code": "EKEventStore"
+            },
+            {
+              "type": "text",
+              "text": " object requires a significant amount of time to initialize and release. The user might add, remove, or update reminders while your app is running. Register for an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstorechangednotification"
+            },
+            {
+              "type": "text",
+              "text": " notification to be notified about changes to the Calendar database. When you receive this notification, refresh all your reminder data. It’s possible that your current data is stale or invalid. For more information on change notification, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/updating_with_notifications"
+            },
+            {
+              "type": "text",
+              "text": " for details."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The user grants or denies permission when apps request access to their reminder data. Because the user can change the app’s authorization status later in the Settings app ( Settings > Privacy > Reminders) on their device, the sample calls "
+            },
+            {
+              "type": "codeVoice",
+              "code": "EKEventStore"
+            },
+            {
+              "type": "text",
+              "text": "’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507239-authorizationstatusforentitytype"
+            },
+            {
+              "type": "text",
+              "text": " with a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekentitytype/ekentitytypereminder"
+            },
+            {
+              "type": "text",
+              "text": " entity type before attempting to access their reminder data."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard EKEventStore.authorizationStatus(for: .reminder) == .notDetermined else {",
+            "    // The user may have already granted, denied, or restricted access to Reminders.",
+            "    verifyAuthorizationStatus()",
+            "    return",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3697038",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the authorization status is "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekauthorizationstatus/ekauthorizationstatusnotdetermined"
+            },
+            {
+              "type": "text",
+              "text": ", create an instance of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "EKEventStore"
+            },
+            {
+              "type": "text",
+              "text": ", then store a strong reference to it."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "private var store = EKEventStore()"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3697039",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Next, call its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507547-requestaccesstoentitytype"
+            },
+            {
+              "type": "text",
+              "text": " method to prompt the user for access."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "store.requestAccess(to: .reminder, completion: {(granted, error) in",
+            "    if granted { self.accessGranted() }",
+            "})"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3697040",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The system remembers the user’s answer, so that subsequent calls to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "requestAccess(to:completion:)"
+            },
+            {
+              "type": "text",
+              "text": " don’t again prompt the user. For more information on user’s reminder data access, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/accessing_the_event_store"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Map Annotations",
+          "anchor": "3697060"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample app uses the current user location and location-specific data saved in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MapData.plist"
+            },
+            {
+              "type": "text",
+              "text": " file to create annotations for the map. It defines a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MapData"
+            },
+            {
+              "type": "text",
+              "text": " data type to represent each point of interest. "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MapData.plist"
+            },
+            {
+              "type": "text",
+              "text": " contains three "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MapData"
+            },
+            {
+              "type": "text",
+              "text": " entries. To test reminders around other locations, duplicate and update a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MapData"
+            },
+            {
+              "type": "text",
+              "text": " entry in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MapData.plist"
+            },
+            {
+              "type": "text",
+              "text": " with other data as needed."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Creating location-based reminders doesn’t require location services. The sample app uses location services to display the user’s current location on the map. As such, it includes and configures the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nslocationwheninuseusagedescription"
+                },
+                {
+                  "type": "text",
+                  "text": " key in its "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "Info.plist"
+                },
+                {
+                  "type": "text",
+                  "text": ". This key is required for apps that access the user’s location services. For more information on user’s location services access, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/corelocation/requesting_authorization_for_location_services"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Check for the Existence of a Default List",
+          "anchor": "3697061"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Creating a reminder requires a list, which is a calendar for these items. Use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "EKEventStore"
+            },
+            {
+              "type": "text",
+              "text": "’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507543-defaultcalendarfornewreminders"
+            },
+            {
+              "type": "text",
+              "text": " to check whether the user has specified a default list for reminders. If "
+            },
+            {
+              "type": "codeVoice",
+              "code": "defaultCalendarForNewReminders()"
+            },
+            {
+              "type": "text",
+              "text": " returns no value, prompt the user to create a list in the Reminders app or provide a mechanism that lets them create it from within the app. The app provides an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Add List"
+            },
+            {
+              "type": "text",
+              "text": " button that allows users to create a new list."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create Location-Based Reminders",
+          "anchor": "3697062"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A location-based reminder is a reminder created with a geofence-enabled alarm. A geofence-enabled alarm has a structured location and proximity configured. The structured location consists of a location object and radius. The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekstructuredlocation/1507489-radius"
+            },
+            {
+              "type": "text",
+              "text": " is defined in meters and uses the system’s default radius when its value is 0. When the user provides a value for "
+            },
+            {
+              "type": "codeVoice",
+              "code": "radius"
+            },
+            {
+              "type": "text",
+              "text": " in a unit other than meters such as miles, convert this value before using it. The sample uses the following steps to create a location-based reminder."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "First, it creates an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekreminder"
+            },
+            {
+              "type": "text",
+              "text": " object using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekreminder/1507429-reminderwitheventstore"
+            },
+            {
+              "type": "text",
+              "text": ", then it sets its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507305-title"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507169-calendar"
+            },
+            {
+              "type": "text",
+              "text": " properties:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard let calendar = store.defaultCalendarForNewReminders() else { throw LocationBasedRemindersError.missingDefaultRemindersList }",
+            "let reminder = EKReminder(eventStore: store)",
+            "",
+            "reminder.calendar = calendar",
+            "reminder.title = title"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3697044",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "title"
+                },
+                {
+                  "type": "text",
+                  "text": " and "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "calendar"
+                },
+                {
+                  "type": "text",
+                  "text": " properties are required and must be set before saving the reminder."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Next, it creates a structured location by using either "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekstructuredlocation"
+            },
+            {
+              "type": "text",
+              "text": "’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekstructuredlocation/1507366-locationwithtitle"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekstructuredlocation/1507493-locationwithmapitem"
+            },
+            {
+              "type": "text",
+              "text": ". When the location object has latitude and longitude coordinates, it uses "
+            },
+            {
+              "type": "codeVoice",
+              "code": "init(title:)"
+            },
+            {
+              "type": "text",
+              "text": " to create the structured location. The sample initializes an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corelocation/cllocation"
+            },
+            {
+              "type": "text",
+              "text": " object with the specified latitude and longitude, then assigns it to the created structured location’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekstructuredlocation/1507110-geolocation"
+            },
+            {
+              "type": "text",
+              "text": " property:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let structuredLocation = EKStructuredLocation(title: geofence.title)",
+            "structuredLocation.geoLocation = CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3697045",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the location object is an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mapkit/mkmapitem"
+            },
+            {
+              "type": "text",
+              "text": " object, the sample uses "
+            },
+            {
+              "type": "codeVoice",
+              "code": "init(mapItem:)"
+            },
+            {
+              "type": "text",
+              "text": " to create the structured location."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let structuredLocation = EKStructuredLocation(mapItem: mapItem)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3697046",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Then, it sets the structured location’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "radius"
+            },
+            {
+              "type": "text",
+              "text": " property to a value in meters:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// The app displays the radius's value in miles. Let's convert it from miles to meters before assigning it to the radius property.",
+            "structuredLocation.radius = 1609.344 * geofence.radius"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3697047",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After that, it creates an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekalarm"
+            },
+            {
+              "type": "text",
+              "text": " object, then sets its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekalarm/1507331-structuredlocation"
+            },
+            {
+              "type": "text",
+              "text": " property to the created structured location object. The sample then sets the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekalarm/1507123-proximity"
+            },
+            {
+              "type": "text",
+              "text": " property to a value to finish configuring the alarm’s geofence:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let alarm = EKAlarm()",
+            "alarm.structuredLocation = structuredLocation",
+            "alarm.proximity = geofence.proximity"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3697048",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample adds the created alarm to the reminder. For more information on adding alarms, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/setting_an_alarm"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "reminder.addAlarm(alarm)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3697049",
+            "title": "Listing 9"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Finally, it saves the reminder to the user’s Calendar database:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "do {",
+            "    try store.save(reminder, commit: true)",
+            "} catch {",
+            "    handleError(error, with: reminder.title)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3697050",
+            "title": "Listing 10"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Fetch Location-Based Reminders",
+          "anchor": "3697063"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507500-fetchremindersmatchingpredicate"
+            },
+            {
+              "type": "text",
+              "text": " method asynchronously fetches all reminders matching a given predicate. When successful, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "fetchReminders(matching:completion:)"
+            },
+            {
+              "type": "text",
+              "text": " returns an array that contains both time-based and location-based reminders."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Predicate that fetches all reminders in all of the user's calendars.",
+            "let predicate = store.predicateForReminders(in: nil)",
+            "var result = [EKReminder]()",
+            "",
+            "store.fetchReminders(matching: predicate, completion: {(reminders: [Any]?) in",
+            "    if let reminders = reminders as? [EKReminder] {",
+            "        // Filter reminders for the location ones.",
+            "        result = reminders.filter({ (item: EKReminder) in item.isLocation })",
+            "    }",
+            "    ",
+            "    DispatchQueue.main.async {",
+            "        completion(result)",
+            "    }",
+            "})"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3697052",
+            "title": "Listing 11"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To retrieve location-based reminders, the sample parses this array for reminders defined with an existing alarm that has a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "structuredlocation"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "proximity"
+            },
+            {
+              "type": "text",
+              "text": " value."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "/// Indicates whether a reminder is a location-based one.",
+            "var isLocation: Bool {",
+            "    guard let alarms = self.alarms else { return false }",
+            "    ",
+            "    return !alarms.filter({(alarm: EKAlarm) in",
+            "        return (alarm.structuredLocation != nil) && ((alarm.proximity == .enter) || (alarm.proximity == .leave))",
+            "    }).isEmpty",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3697053",
+            "title": "Listing 12"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Sort Reminders",
+          "anchor": "3697064"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Retrieving reminders from the Calendar database returns reminders sorted by creation date. To sort an array of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "EKReminder"
+            },
+            {
+              "type": "text",
+              "text": " objects by title, or any other property, the sample implements "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/array/2296815-sorted"
+            },
+            {
+              "type": "text",
+              "text": " on the array with a predicate that uses the property."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            " /// - Returns: An array of reminders sorted by title in an ascending order.",
+            "func sortedByTitle() -> [EKReminder] {",
+            "    return self.sorted(by: { (first: EKReminder, second: EKReminder) in",
+            "        first.title.localizedCaseInsensitiveCompare(second.title) == .orderedAscending",
+            "    })",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3697055",
+            "title": "Listing 13"
+          }
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

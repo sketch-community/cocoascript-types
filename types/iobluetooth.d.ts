@@ -112,15 +112,15 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1429300-getattributedataelement
     getAttributeDataElement(attributeID: cocoascript.BluetoothSDPServiceAttributeID):cocoascript.IOBluetoothSDPDataElement;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1430339-getl2cappsm
-    getL2CAPPSM(outPSM: cocoascript.BluetoothL2CAPPSM):cocoascript.IOReturn;
+    getL2CAPPSM(outPSM: cocoascript.BluetoothL2CAPPSM):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1434175-getrfcommchannelid
-    getRFCOMMChannelID(rfcommChannelID: cocoascript.BluetoothRFCOMMChannelID):cocoascript.IOReturn;
+    getRFCOMMChannelID(rfcommChannelID: cocoascript.BluetoothRFCOMMChannelID):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1429688-getsdpservicerecordref
     getSDPServiceRecordRef():cocoascript.IOBluetoothSDPServiceRecordRef;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1434797-getservicename
     getServiceName():cocoascript.NSString;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1432281-getservicerecordhandle
-    getServiceRecordHandle(outServiceRecordHandle: cocoascript.BluetoothSDPServiceRecordHandle):cocoascript.IOReturn;
+    getServiceRecordHandle(outServiceRecordHandle: cocoascript.BluetoothSDPServiceRecordHandle):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1427810-handsfreesupportedfeatures
     handsFreeSupportedFeatures():number;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1433726-hasservicefromarray
@@ -132,7 +132,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1434055-matchesuuidarray
     matchesUUIDArray(uuidArray: cocoascript.NSArray):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1432315-removeservicerecord
-    removeServiceRecord():cocoascript.IOReturn;
+    removeServiceRecord():any;
     //
     alloc():cocoascript.IOBluetoothSDPServiceRecord;
     //
@@ -186,11 +186,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1431127-rssi
     RSSI():cocoascript.BluetoothHCIRSSIValue;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1433449-addtofavorites
-    addToFavorites():cocoascript.IOReturn;
+    addToFavorites():any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1434886-awakeafterusingcoder
     awakeAfterUsingCoder(coder: cocoascript.NSCoder):cocoascript.IOBluetoothDevice;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1433689-closeconnection
-    closeConnection():cocoascript.IOReturn;
+    closeConnection():any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1434306-getaddress
     getAddress():cocoascript.BluetoothDeviceAddress;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1428369-getclockoffset
@@ -224,27 +224,27 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1432940-ispaired
     isPaired():cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1428435-openconnection
-    openConnection():cocoascript.IOReturn;
+    openConnection():any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1429815-openconnection
-    openConnection(target: cocoascript.IOBluetoothDevice):cocoascript.IOReturn;
+    openConnection(target: cocoascript.IOBluetoothDevice):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1433547-openconnection
-    openConnection_withPageTimeout_authenticationRequired(target: cocoascript.IOBluetoothDevice, pageTimeoutValue: cocoascript.BluetoothHCIPageTimeout, authenticationRequired: cocoascript.BOOL):cocoascript.IOReturn;
+    openConnection_withPageTimeout_authenticationRequired(target: cocoascript.IOBluetoothDevice, pageTimeoutValue: cocoascript.BluetoothHCIPageTimeout, authenticationRequired: cocoascript.BOOL):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1431981-openl2capchannelasync
-    openL2CAPChannelAsync_withPSM_delegate(newChannel: cocoascript.IOBluetoothL2CAPChannel, psm: cocoascript.BluetoothL2CAPPSM, channelDelegate: cocoascript.IOBluetoothDevice):cocoascript.IOReturn;
+    openL2CAPChannelAsync_withPSM_delegate(newChannel: cocoascript.IOBluetoothL2CAPChannel, psm: cocoascript.BluetoothL2CAPPSM, channelDelegate: cocoascript.IOBluetoothDevice):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1430889-openl2capchannelasync
-    openL2CAPChannelAsync_withPSM_withConfiguration_delegate(newChannel: cocoascript.IOBluetoothL2CAPChannel, psm: cocoascript.BluetoothL2CAPPSM, channelConfiguration: cocoascript.NSDictionary, channelDelegate: cocoascript.IOBluetoothDevice):cocoascript.IOReturn;
+    openL2CAPChannelAsync_withPSM_withConfiguration_delegate(newChannel: cocoascript.IOBluetoothL2CAPChannel, psm: cocoascript.BluetoothL2CAPPSM, channelConfiguration: cocoascript.NSDictionary, channelDelegate: cocoascript.IOBluetoothDevice):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1434939-openl2capchannelsync
-    openL2CAPChannelSync_withPSM_delegate(newChannel: cocoascript.IOBluetoothL2CAPChannel, psm: cocoascript.BluetoothL2CAPPSM, channelDelegate: cocoascript.IOBluetoothDevice):cocoascript.IOReturn;
+    openL2CAPChannelSync_withPSM_delegate(newChannel: cocoascript.IOBluetoothL2CAPChannel, psm: cocoascript.BluetoothL2CAPPSM, channelDelegate: cocoascript.IOBluetoothDevice):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1429338-openl2capchannelsync
-    openL2CAPChannelSync_withPSM_withConfiguration_delegate(newChannel: cocoascript.IOBluetoothL2CAPChannel, psm: cocoascript.BluetoothL2CAPPSM, channelConfiguration: cocoascript.NSDictionary, channelDelegate: cocoascript.IOBluetoothDevice):cocoascript.IOReturn;
+    openL2CAPChannelSync_withPSM_withConfiguration_delegate(newChannel: cocoascript.IOBluetoothL2CAPChannel, psm: cocoascript.BluetoothL2CAPPSM, channelConfiguration: cocoascript.NSDictionary, channelDelegate: cocoascript.IOBluetoothDevice):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1435022-openrfcommchannelasync
-    openRFCOMMChannelAsync_withChannelID_delegate(rfcommChannel: cocoascript.IOBluetoothRFCOMMChannel, channelID: cocoascript.BluetoothRFCOMMChannelID, channelDelegate: cocoascript.IOBluetoothDevice):cocoascript.IOReturn;
+    openRFCOMMChannelAsync_withChannelID_delegate(rfcommChannel: cocoascript.IOBluetoothRFCOMMChannel, channelID: cocoascript.BluetoothRFCOMMChannelID, channelDelegate: cocoascript.IOBluetoothDevice):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1431606-openrfcommchannelsync
-    openRFCOMMChannelSync_withChannelID_delegate(rfcommChannel: cocoascript.IOBluetoothRFCOMMChannel, channelID: cocoascript.BluetoothRFCOMMChannelID, channelDelegate: cocoascript.IOBluetoothDevice):cocoascript.IOReturn;
+    openRFCOMMChannelSync_withChannelID_delegate(rfcommChannel: cocoascript.IOBluetoothRFCOMMChannel, channelID: cocoascript.BluetoothRFCOMMChannelID, channelDelegate: cocoascript.IOBluetoothDevice):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1432337-performsdpquery
-    performSDPQuery(target: cocoascript.IOBluetoothDevice):cocoascript.IOReturn;
+    performSDPQuery(target: cocoascript.IOBluetoothDevice):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1431740-performsdpquery
-    performSDPQuery_uuids(target: cocoascript.IOBluetoothDevice, uuidArray: cocoascript.NSArray):cocoascript.IOReturn;
+    performSDPQuery_uuids(target: cocoascript.IOBluetoothDevice, uuidArray: cocoascript.NSArray):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1434998-rawrssi
     rawRSSI():cocoascript.BluetoothHCIRSSIValue;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1432994-recentaccessdate
@@ -252,19 +252,19 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1429542-registerfordisconnectnotificatio
     registerForDisconnectNotification_selector(observer: cocoascript.IOBluetoothDevice, inSelector: cocoascript.SEL):cocoascript.IOBluetoothUserNotification;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1433706-remotenamerequest
-    remoteNameRequest(target: cocoascript.IOBluetoothDevice):cocoascript.IOReturn;
+    remoteNameRequest(target: cocoascript.IOBluetoothDevice):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1432647-remotenamerequest
-    remoteNameRequest_withPageTimeout(target: cocoascript.IOBluetoothDevice, pageTimeoutValue: cocoascript.BluetoothHCIPageTimeout):cocoascript.IOReturn;
+    remoteNameRequest_withPageTimeout(target: cocoascript.IOBluetoothDevice, pageTimeoutValue: cocoascript.BluetoothHCIPageTimeout):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1430142-removefromfavorites
-    removeFromFavorites():cocoascript.IOReturn;
+    removeFromFavorites():any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1430322-requestauthentication
-    requestAuthentication():cocoascript.IOReturn;
+    requestAuthentication():any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1431303-sendl2capechorequest
-    sendL2CAPEchoRequest_length(data: void, length: cocoascript.UInt16):cocoascript.IOReturn;
+    sendL2CAPEchoRequest_length(data: void, length: cocoascript.UInt16):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1431049-setsupervisiontimeout
-    setSupervisionTimeout(timeout: cocoascript.UInt16):cocoascript.IOReturn;
+    setSupervisionTimeout(timeout: cocoascript.UInt16):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevice/1589893-openl2capchannel
-    openL2CAPChannel_findExisting_newChannel(psm: cocoascript.BluetoothL2CAPPSM, findExisting: cocoascript.BOOL, newChannel: cocoascript.IOBluetoothL2CAPChannel):cocoascript.IOReturn;
+    openL2CAPChannel_findExisting_newChannel(psm: cocoascript.BluetoothL2CAPPSM, findExisting: cocoascript.BOOL, newChannel: cocoascript.IOBluetoothL2CAPChannel):any;
     //
     alloc():cocoascript.IOBluetoothDevice;
     //
@@ -281,7 +281,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepairdelegate/1432152-devicepairingconnecting
     devicePairingConnecting(sender: cocoascript.IOBluetoothDevicePairDelegate):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepairdelegate/1434609-devicepairingfinished
-    devicePairingFinished_error(sender: cocoascript.IOBluetoothDevicePairDelegate, error: cocoascript.IOReturn):void;
+    devicePairingFinished_error(sender: cocoascript.IOBluetoothDevicePairDelegate, error: any):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepairdelegate/1432539-devicepairingpincoderequest
     devicePairingPINCodeRequest(sender: cocoascript.IOBluetoothDevicePairDelegate):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepairdelegate/1431489-devicepairingstarted
@@ -382,10 +382,12 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface BluetoothHCILinkQualityInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIRSSIInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   /**
    * An instance of IOBluetoothL2CAPChannel represents a single open L2CAP channel.
    * doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel
@@ -413,7 +415,7 @@ declare namespace cocoascript {
     remoteChannelID(): cocoascript.BluetoothL2CAPChannelID;
     setRemoteChannelID(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1433617-closechannel
-    closeChannel():cocoascript.IOReturn;
+    closeChannel():any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1431693-delegate
     delegate():cocoascript.IOBluetoothL2CAPChannel;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1435024-isincoming
@@ -421,17 +423,17 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1432240-registerforchannelclosenotificat
     registerForChannelCloseNotification_selector(observer: cocoascript.IOBluetoothL2CAPChannel, inSelector: cocoascript.SEL):cocoascript.IOBluetoothUserNotification;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1430453-requestremotemtu
-    requestRemoteMTU(remoteMTU: cocoascript.BluetoothL2CAPMTU):cocoascript.IOReturn;
+    requestRemoteMTU(remoteMTU: cocoascript.BluetoothL2CAPMTU):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1430338-setdelegate
-    setDelegate(channelDelegate: cocoascript.IOBluetoothL2CAPChannel):cocoascript.IOReturn;
+    setDelegate(channelDelegate: cocoascript.IOBluetoothL2CAPChannel):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1430853-setdelegate
-    setDelegate_withConfiguration(channelDelegate: cocoascript.IOBluetoothL2CAPChannel, channelConfiguration: cocoascript.NSDictionary):cocoascript.IOReturn;
+    setDelegate_withConfiguration(channelDelegate: cocoascript.IOBluetoothL2CAPChannel, channelConfiguration: cocoascript.NSDictionary):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1431569-writeasync
-    writeAsync_length_refcon(data: void, length: cocoascript.UInt16, refcon: void):cocoascript.IOReturn;
+    writeAsync_length_refcon(data: void, length: cocoascript.UInt16, refcon: void):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/2980981-writeasynctrap
-    writeAsyncTrap_length_refcon(data: void, length: cocoascript.UInt16, refcon: void):cocoascript.IOReturn;
+    writeAsyncTrap_length_refcon(data: void, length: cocoascript.UInt16, refcon: void):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannel/1433699-writesync
-    writeSync_length(data: void, length: cocoascript.UInt16):cocoascript.IOReturn;
+    writeSync_length(data: void, length: cocoascript.UInt16):any;
     //
     alloc():cocoascript.IOBluetoothL2CAPChannel;
     //
@@ -447,7 +449,7 @@ declare namespace cocoascript {
    */
   interface IOBluetoothRFCOMMChannel extends IOBluetoothObject {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1428722-closechannel
-    closeChannel():cocoascript.IOReturn;
+    closeChannel():any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1432238-delegate
     delegate():cocoascript.IOBluetoothRFCOMMChannel;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1431850-getchannelid
@@ -469,15 +471,15 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1428800-registerforchannelclosenotificat
     registerForChannelCloseNotification_selector(observer: cocoascript.IOBluetoothRFCOMMChannel, inSelector: cocoascript.SEL):cocoascript.IOBluetoothUserNotification;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1434323-sendremotelinestatus
-    sendRemoteLineStatus(lineStatus: cocoascript.BluetoothRFCOMMLineStatus):cocoascript.IOReturn;
+    sendRemoteLineStatus(lineStatus: cocoascript.BluetoothRFCOMMLineStatus):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1430417-setdelegate
-    setDelegate(delegate: cocoascript.IOBluetoothRFCOMMChannel):cocoascript.IOReturn;
+    setDelegate(delegate: cocoascript.IOBluetoothRFCOMMChannel):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1431119-setserialparameters
-    setSerialParameters_dataBits_parity_stopBits(speed: cocoascript.UInt32, nBits: cocoascript.UInt8, parity: cocoascript.BluetoothRFCOMMParityType, bitStop: cocoascript.UInt8):cocoascript.IOReturn;
+    setSerialParameters_dataBits_parity_stopBits(speed: number, nBits: cocoascript.UInt8, parity: cocoascript.BluetoothRFCOMMParityType, bitStop: cocoascript.UInt8):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1430167-writeasync
-    writeAsync_length_refcon(data: void, length: cocoascript.UInt16, refcon: void):cocoascript.IOReturn;
+    writeAsync_length_refcon(data: void, length: cocoascript.UInt16, refcon: void):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchannel/1434633-writesync
-    writeSync_length(data: void, length: cocoascript.UInt16):cocoascript.IOReturn;
+    writeSync_length(data: void, length: cocoascript.UInt16):any;
     //
     alloc():cocoascript.IOBluetoothRFCOMMChannel;
     //
@@ -546,9 +548,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquiry/1423399-setsearchcriteria
     setSearchCriteria_majorDeviceClass_minorDeviceClass(inServiceClassMajor: cocoascript.BluetoothServiceClassMajor, inMajorDeviceClass: cocoascript.BluetoothDeviceClassMajor, inMinorDeviceClass: cocoascript.BluetoothDeviceClassMinor):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquiry/1423423-start
-    start():cocoascript.IOReturn;
+    start():any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquiry/1423407-stop
-    stop():cocoascript.IOReturn;
+    stop():any;
     //
     alloc():cocoascript.IOBluetoothDeviceInquiry;
     //
@@ -575,7 +577,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepair/1433332-setdevice
     setDevice(inDevice: cocoascript.IOBluetoothDevice):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepair/1430048-start
-    start():cocoascript.IOReturn;
+    start():any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicepair/1433707-stop
     stop():void;
     //
@@ -589,7 +591,8 @@ declare const IOBluetoothDevicePair: cocoascript.IOBluetoothDevicePair;
 declare namespace cocoascript {
   interface IOBluetoothDeviceRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   /**
    * Hands free profile class.
    * doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhandsfree
@@ -759,7 +762,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontroller/1431310-nameasstring
     nameAsString():cocoascript.NSString;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontroller/1433813-setclassofdevice
-    setClassOfDevice_forTimeInterval(classOfDevice: cocoascript.BluetoothClassOfDevice, seconds: cocoascript.NSTimeInterval):cocoascript.IOReturn;
+    setClassOfDevice_forTimeInterval(classOfDevice: cocoascript.BluetoothClassOfDevice, seconds: cocoascript.NSTimeInterval):any;
     //
     alloc():cocoascript.IOBluetoothHostController;
     //
@@ -771,7 +774,8 @@ declare const IOBluetoothHostController: cocoascript.IOBluetoothHostController;
 declare namespace cocoascript {
   interface IOBluetoothL2CAPChannelRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   /**
    * An OBEX Session with a Bluetooth RFCOMM channel as the transport.
    * doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession
@@ -798,9 +802,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession/1429280-restarttransmission
     restartTransmission():void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession/1432899-sendbuffertroughchannel
-    sendBufferTroughChannel():cocoascript.IOReturn;
+    sendBufferTroughChannel():any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession/1428500-senddatatotransport
-    sendDataToTransport_dataLength(inDataToSend: void, inDataLength: cocoascript.size_t):cocoascript.OBEXError;
+    sendDataToTransport_dataLength(inDataToSend: void, inDataLength: any):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession/1431213-setobexsessionopenconnectioncall
     setOBEXSessionOpenConnectionCallback_refCon(inCallback: cocoascript.IOBluetoothOBEXSessionOpenConnectionCallback, inUserRefCon: void):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothobexsession/1434129-setopentransportconnectionasyncs
@@ -816,19 +820,24 @@ declare const IOBluetoothOBEXSession: cocoascript.IOBluetoothOBEXSession;
 declare namespace cocoascript {
   interface IOBluetoothObjectRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface IOBluetoothRFCOMMChannelRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface IOBluetoothSDPDataElementRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface IOBluetoothSDPServiceRecordRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface IOBluetoothSDPUUIDRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   /**
    * Represents a registered notification.
    * doc://com.apple.documentation/documentation/iobluetooth/iobluetoothusernotification
@@ -847,36 +856,37 @@ declare const IOBluetoothUserNotification: cocoascript.IOBluetoothUserNotificati
 declare namespace cocoascript {
   interface IOBluetoothUserNotificationRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   /**
    * Object representing an OBEX connection to a remote target.
    * doc://com.apple.documentation/documentation/iobluetooth/obexsession
    */
   interface OBEXSession extends NSObject {
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1429402-obexabort
-    OBEXAbort_optionalHeadersLength_eventSelector_selectorTarget_refCon(inOptionalHeaders: void, inOptionalHeadersLength: cocoascript.size_t, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    OBEXAbort_optionalHeadersLength_eventSelector_selectorTarget_refCon(inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1432852-obexabortresponse
-    OBEXAbortResponse_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inResponseOpCode: cocoascript.OBEXOpCode, inOptionalHeaders: void, inOptionalHeadersLength: cocoascript.size_t, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    OBEXAbortResponse_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inResponseOpCode: cocoascript.OBEXOpCode, inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1433181-obexconnect
-    OBEXConnect_maxPacketLength_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inFlags: cocoascript.OBEXFlags, inMaxPacketLength: cocoascript.OBEXMaxPacketLength, inOptionalHeaders: void, inOptionalHeadersLength: cocoascript.size_t, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    OBEXConnect_maxPacketLength_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inFlags: cocoascript.OBEXFlags, inMaxPacketLength: cocoascript.OBEXMaxPacketLength, inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1434390-obexconnectresponse
-    OBEXConnectResponse_flags_maxPacketLength_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inResponseOpCode: cocoascript.OBEXOpCode, inFlags: cocoascript.OBEXFlags, inMaxPacketLength: cocoascript.OBEXMaxPacketLength, inOptionalHeaders: void, inOptionalHeadersLength: cocoascript.size_t, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    OBEXConnectResponse_flags_maxPacketLength_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inResponseOpCode: cocoascript.OBEXOpCode, inFlags: cocoascript.OBEXFlags, inMaxPacketLength: cocoascript.OBEXMaxPacketLength, inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1434125-obexdisconnect
-    OBEXDisconnect_optionalHeadersLength_eventSelector_selectorTarget_refCon(inOptionalHeaders: void, inOptionalHeadersLength: cocoascript.size_t, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    OBEXDisconnect_optionalHeadersLength_eventSelector_selectorTarget_refCon(inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1434021-obexdisconnectresponse
-    OBEXDisconnectResponse_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inResponseOpCode: cocoascript.OBEXOpCode, inOptionalHeaders: void, inOptionalHeadersLength: cocoascript.size_t, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    OBEXDisconnectResponse_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inResponseOpCode: cocoascript.OBEXOpCode, inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1434710-obexget
-    OBEXGet_headers_headersLength_eventSelector_selectorTarget_refCon(isFinalChunk: cocoascript.Boolean, inHeaders: void, inHeadersLength: cocoascript.size_t, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    OBEXGet_headers_headersLength_eventSelector_selectorTarget_refCon(isFinalChunk: boolean, inHeaders: void, inHeadersLength: any, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1434941-obexgetresponse
-    OBEXGetResponse_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inResponseOpCode: cocoascript.OBEXOpCode, inOptionalHeaders: void, inOptionalHeadersLength: cocoascript.size_t, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    OBEXGetResponse_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inResponseOpCode: cocoascript.OBEXOpCode, inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1431295-obexput
-    OBEXPut_headersData_headersDataLength_bodyData_bodyDataLength_eventSelector_selectorTarget_refCon(isFinalChunk: cocoascript.Boolean, inHeadersData: void, inHeadersDataLength: cocoascript.size_t, inBodyData: void, inBodyDataLength: cocoascript.size_t, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    OBEXPut_headersData_headersDataLength_bodyData_bodyDataLength_eventSelector_selectorTarget_refCon(isFinalChunk: boolean, inHeadersData: void, inHeadersDataLength: any, inBodyData: void, inBodyDataLength: any, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1429618-obexputresponse
-    OBEXPutResponse_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inResponseOpCode: cocoascript.OBEXOpCode, inOptionalHeaders: void, inOptionalHeadersLength: cocoascript.size_t, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    OBEXPutResponse_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inResponseOpCode: cocoascript.OBEXOpCode, inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1428620-obexsetpath
-    OBEXSetPath_constants_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inFlags: cocoascript.OBEXFlags, inConstants: cocoascript.OBEXConstants, inOptionalHeaders: void, inOptionalHeadersLength: cocoascript.size_t, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    OBEXSetPath_constants_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inFlags: cocoascript.OBEXFlags, inConstants: cocoascript.OBEXConstants, inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1434520-obexsetpathresponse
-    OBEXSetPathResponse_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inResponseOpCode: cocoascript.OBEXOpCode, inOptionalHeaders: void, inOptionalHeadersLength: cocoascript.size_t, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
+    OBEXSetPathResponse_optionalHeaders_optionalHeadersLength_eventSelector_selectorTarget_refCon(inResponseOpCode: cocoascript.OBEXOpCode, inOptionalHeaders: void, inOptionalHeadersLength: any, inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1434885-clienthandleincomingdata
     clientHandleIncomingData(event: cocoascript.OBEXTransportEvent):void;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1434109-closetransportconnection
@@ -890,11 +900,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1429707-hasopenobexconnection
     hasOpenOBEXConnection():cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1430785-hasopentransportconnection
-    hasOpenTransportConnection():void;
+    hasOpenTransportConnection():boolean;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1431621-opentransportconnection
     openTransportConnection_selectorTarget_refCon(inSelector: cocoascript.SEL, inTarget: cocoascript.OBEXSession, inUserRefCon: void):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1430616-senddatatotransport
-    sendDataToTransport_dataLength(inDataToSend: void, inDataLength: cocoascript.size_t):cocoascript.OBEXError;
+    sendDataToTransport_dataLength(inDataToSend: void, inDataLength: any):cocoascript.OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1432452-serverhandleincomingdata
     serverHandleIncomingData(event: cocoascript.OBEXTransportEvent):void;
     // doc://com.apple.documentation/documentation/iobluetooth/obexsession/1431039-seteventcallback
@@ -917,11 +927,11 @@ declare namespace cocoascript {
    */
   interface IOBluetoothDeviceAsyncCallbacks {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceasynccallbacks/1434956-connectioncomplete
-    connectionComplete_status(device: cocoascript.IOBluetoothDevice, status: cocoascript.IOReturn):void;
+    connectionComplete_status(device: cocoascript.IOBluetoothDevice, status: any):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceasynccallbacks/1434878-remotenamerequestcomplete
-    remoteNameRequestComplete_status(device: cocoascript.IOBluetoothDevice, status: cocoascript.IOReturn):void;
+    remoteNameRequestComplete_status(device: cocoascript.IOBluetoothDevice, status: any):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceasynccallbacks/1434694-sdpquerycomplete
-    sdpQueryComplete_status(device: cocoascript.IOBluetoothDevice, status: cocoascript.IOReturn):void;
+    sdpQueryComplete_status(device: cocoascript.IOBluetoothDevice, status: any):void;
   }
 }
 declare namespace cocoascript {
@@ -931,7 +941,7 @@ declare namespace cocoascript {
    */
   interface IOBluetoothDeviceInquiryDelegate {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquirydelegate/1423409-deviceinquirycomplete
-    deviceInquiryComplete_error_aborted(sender: cocoascript.IOBluetoothDeviceInquiry, error: cocoascript.IOReturn, aborted: cocoascript.BOOL):void;
+    deviceInquiryComplete_error_aborted(sender: cocoascript.IOBluetoothDeviceInquiry, error: any, aborted: cocoascript.BOOL):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquirydelegate/1423415-deviceinquirydevicefound
     deviceInquiryDeviceFound_device(sender: cocoascript.IOBluetoothDeviceInquiry, device: cocoascript.IOBluetoothDevice):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdeviceinquirydelegate/1423429-deviceinquirydevicenameupdated
@@ -961,15 +971,15 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchanneldelegate/1433766-l2capchannelclosed
     l2capChannelClosed(l2capChannel: cocoascript.IOBluetoothL2CAPChannel):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchanneldelegate/1431868-l2capchanneldata
-    l2capChannelData_data_length(l2capChannel: cocoascript.IOBluetoothL2CAPChannel, dataPointer: void, dataLength: cocoascript.size_t):void;
+    l2capChannelData_data_length(l2capChannel: cocoascript.IOBluetoothL2CAPChannel, dataPointer: void, dataLength: any):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchanneldelegate/1430363-l2capchannelopencomplete
-    l2capChannelOpenComplete_status(l2capChannel: cocoascript.IOBluetoothL2CAPChannel, error: cocoascript.IOReturn):void;
+    l2capChannelOpenComplete_status(l2capChannel: cocoascript.IOBluetoothL2CAPChannel, error: any):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchanneldelegate/1431728-l2capchannelqueuespaceavailable
     l2capChannelQueueSpaceAvailable(l2capChannel: cocoascript.IOBluetoothL2CAPChannel):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchanneldelegate/1428740-l2capchannelreconfigured
     l2capChannelReconfigured(l2capChannel: cocoascript.IOBluetoothL2CAPChannel):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchanneldelegate/1431099-l2capchannelwritecomplete
-    l2capChannelWriteComplete_refcon_status(l2capChannel: cocoascript.IOBluetoothL2CAPChannel, refcon: void, error: cocoascript.IOReturn):void;
+    l2capChannelWriteComplete_refcon_status(l2capChannel: cocoascript.IOBluetoothL2CAPChannel, refcon: void, error: any):void;
   }
 }
 declare namespace cocoascript {
@@ -982,15 +992,15 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchanneldelegate/1429160-rfcommchannelcontrolsignalschang
     rfcommChannelControlSignalsChanged(rfcommChannel: cocoascript.IOBluetoothRFCOMMChannel):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchanneldelegate/1431822-rfcommchanneldata
-    rfcommChannelData_data_length(rfcommChannel: cocoascript.IOBluetoothRFCOMMChannel, dataPointer: void, dataLength: cocoascript.size_t):void;
+    rfcommChannelData_data_length(rfcommChannel: cocoascript.IOBluetoothRFCOMMChannel, dataPointer: void, dataLength: any):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchanneldelegate/1430179-rfcommchannelflowcontrolchanged
     rfcommChannelFlowControlChanged(rfcommChannel: cocoascript.IOBluetoothRFCOMMChannel):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchanneldelegate/1429633-rfcommchannelopencomplete
-    rfcommChannelOpenComplete_status(rfcommChannel: cocoascript.IOBluetoothRFCOMMChannel, error: cocoascript.IOReturn):void;
+    rfcommChannelOpenComplete_status(rfcommChannel: cocoascript.IOBluetoothRFCOMMChannel, error: any):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchanneldelegate/1429752-rfcommchannelqueuespaceavailable
     rfcommChannelQueueSpaceAvailable(rfcommChannel: cocoascript.IOBluetoothRFCOMMChannel):void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothrfcommchanneldelegate/1434978-rfcommchannelwritecomplete
-    rfcommChannelWriteComplete_refcon_status(rfcommChannel: cocoascript.IOBluetoothRFCOMMChannel, refcon: void, error: cocoascript.IOReturn):void;
+    rfcommChannelWriteComplete_refcon_status(rfcommChannel: cocoascript.IOBluetoothRFCOMMChannel, refcon: void, error: any):void;
   }
 }
 declare namespace cocoascript {
@@ -1028,7 +1038,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface BluetoothDeviceAddress {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/iobluetooth/bluetoothclassofdevice
   type BluetoothClassOfDevice = number;
 }
@@ -1095,49 +1106,64 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface OBEXSessionEvent {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface OBEXAbortCommandData {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface OBEXAbortCommandResponseData {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface OBEXConnectCommandData {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface OBEXConnectCommandResponseData {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface OBEXDisconnectCommandData {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface OBEXDisconnectCommandResponseData {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface OBEXErrorData {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface OBEXGetCommandData {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface OBEXGetCommandResponseData {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface OBEXPutCommandData {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface OBEXPutCommandResponseData {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface OBEXSetPathCommandData {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface OBEXSetPathCommandResponseData {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface OBEXTransportEvent {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/iobluetooth/obextransporteventtype
   type OBEXTransportEventType = number;
 }
@@ -1147,297 +1173,393 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicesearchoptions
-  type IOBluetoothDeviceSearchOptions = cocoascript.UInt32;
+  type IOBluetoothDeviceSearchOptions = number;
 }
 declare namespace cocoascript {
   interface IOBluetoothDeviceSearchDeviceAttributes {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothAFHHostChannelClassification {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothAFHResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothEnhancedSynchronousConnectionInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothEventFilterCondition {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIAcceptSynchronousConnectionRequestParams {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIAutomaticFlushTimeoutInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIBufferSize {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCICurrentInquiryAccessCodes {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCICurrentInquiryAccessCodesForWrite {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEnhancedAcceptSynchronousConnectionRequestParams {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEnhancedSetupSynchronousConnectionParams {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventAuthenticationCompleteResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventChangeConnectionLinkKeyCompleteResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventConnectionCompleteResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventConnectionPacketTypeResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventConnectionRequestResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventDataBufferOverflowResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventDisconnectionCompleteResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventEncryptionChangeResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventEncryptionKeyRefreshCompleteResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventFlowSpecificationData {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventFlushOccurredResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventHardwareErrorResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventLEConnectionCompleteResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventLEConnectionUpdateCompleteResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventLELongTermKeyRequestResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventLEMetaResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventLEReadRemoteUsedFeaturesCompleteResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventLinkKeyNotificationResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventMasterLinkKeyCompleteResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventMaxSlotsChangeResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventModeChangeResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventPageScanModeChangeResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventPageScanRepetitionModeChangeResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventQoSSetupCompleteResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventQoSViolationResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventReadClockOffsetResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventReadExtendedFeaturesResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventReadRemoteExtendedFeaturesResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventReadRemoteSupportedFeaturesResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventReadRemoteVersionInfoResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventReadSupportedFeaturesResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventRemoteNameRequestResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventReturnLinkKeysResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventRoleChangeResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventSimplePairingCompleteResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventSniffSubratingResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventSynchronousConnectionChangedResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventSynchronousConnectionCompleteResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventVendorSpecificResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIExtendedFeaturesInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIExtendedInquiryResponse {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIExtendedInquiryResult {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIFailedContactInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIInquiryAccessCode {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIInquiryResult {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIInquiryResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIInquiryWithRSSIResult {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIInquiryWithRSSIResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCILEBufferSize {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCILinkPolicySettingsInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCILinkSupervisionTimeout {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIQualityOfServiceSetupParams {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIReadExtendedInquiryResponseResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIReadLMPHandleResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIReadLocalOOBDataResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIRequestCallbackInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIRoleInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIScanActivity {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCISetupSynchronousConnectionParams {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCISimplePairingOOBData {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIStoredLinkKeysInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCISupportedCommands {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCISupportedFeatures {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCITransmitPowerLevelInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIVersionInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothIOCapabilityResponse {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothIRK {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothKey {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothKeypressNotification {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothL2CAPQualityOfServiceOptions {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothL2CAPRetransmissionAndFlowControlOptions {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothPINCode {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothReadClockInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothRemoteHostSupportedFeaturesNotification {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothSetEventMask {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothSynchronousConnectionInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothTransportInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothUserConfirmationRequest {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothUserPasskeyNotification {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface IOBluetoothDeviceSearchAttributes {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface IOBluetoothL2CAPChannelDataBlock {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface IOBluetoothL2CAPChannelEvent {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEncryptionKeySizeInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCIEventLEEnhancedConnectionCompleteResults {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/iobluetooth/bluetoothampcommandrejectreason
   type BluetoothAMPCommandRejectReason = number;
 }
@@ -1780,10 +1902,12 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface BluetoothHCILESupportedFeatures {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BluetoothHCILEUsedFeatures {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/iobluetooth/bluetoothhcilinkpolicysettings
   type BluetoothHCILinkPolicySettings = number;
 }
@@ -2101,7 +2225,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothdevicesearchtypes
-  type IOBluetoothDeviceSearchTypes = cocoascript.UInt32;
+  type IOBluetoothDeviceSearchTypes = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothl2capchannelincomingdatalistener
@@ -2150,14 +2274,16 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface OBEXSessionRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/iobluetooth/obexversion
   type OBEXVersion = number;
 }
 declare namespace cocoascript {
   interface PrivOBEXSessionDataRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/iobluetooth/transmissionpower
   type TransmissionPower = cocoascript.SInt8;
 }

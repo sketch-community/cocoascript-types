@@ -1,0 +1,805 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates an FIR filter that can be used as a Wiener filter; single precision."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/finite_impulse_response_filters"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/1450711-vdsp_wiener",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1450711,
+  "kind": "symbol",
+  "metadata": {
+    "title": "vDSP_wiener",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "4.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.4",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@F@vDSP_wiener",
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/1450711-vdsp_wiener"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/1450711-vdsp_wiener"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp": {
+      "title": "vDSP",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp",
+      "url": "/documentation/accelerate/vdsp",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/finite_impulse_response_filters": {
+      "title": "Finite Impulse Response Filters",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/finite_impulse_response_filters",
+      "url": "/documentation/accelerate/vdsp/finite_impulse_response_filters",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-media-2557829": {
+      "identifier": "link-media-2557829",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/1450711-vdsp_wiener#2557829"
+    },
+    "media-2557829": {
+      "identifier": "media-2557829",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 378,
+            "height": 71
+          },
+          "url": "https://docs-assets.developer.apple.com/published/097ccd4f03/vdsp_151_2x_921e9286-e106-43cb-ab01-4ccbbb6f2e0d.png"
+        }
+      ],
+      "alt": "mathematical formula",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450711-vdsp_wiener#2557700": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450711-vdsp_wiener#2557700",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/1450711-vdsp_wiener#2557700"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450711-vdsp_wiener#2557701": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450711-vdsp_wiener#2557701",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/1450711-vdsp_wiener#2557701"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_length": {
+      "title": "vDSP_Length",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_length",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_length"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450711-vdsp_wiener": {
+      "title": "vDSP_wiener",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450711-vdsp_wiener",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450711-vdsp_wiener",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an FIR filter that can be used as a Wiener filter; single precision."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450592-vdsp_wienerd": {
+      "title": "vDSP_wienerD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450592-vdsp_wienerd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450592-vdsp_wienerd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an FIR filter that can be used as a Wiener filter; single precision."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/1450592-vdsp_wienerd"
+      ],
+      "title": "FIR Filter Creation",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "vDSP_wiener"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vDSP_Length",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_length",
+              "text": "vDSP_Length"
+            },
+            {
+              "kind": "text",
+              "text": " __L, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "float"
+            },
+            {
+              "kind": "text",
+              "text": " *__A, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "float"
+            },
+            {
+              "kind": "text",
+              "text": " *__C, "
+            },
+            {
+              "kind": "keyword",
+              "text": "float"
+            },
+            {
+              "kind": "text",
+              "text": " *__F, "
+            },
+            {
+              "kind": "keyword",
+              "text": "float"
+            },
+            {
+              "kind": "text",
+              "text": " *__P, "
+            },
+            {
+              "kind": "keyword",
+              "text": "int"
+            },
+            {
+              "kind": "text",
+              "text": " __Flag, "
+            },
+            {
+              "kind": "keyword",
+              "text": "int"
+            },
+            {
+              "kind": "text",
+              "text": " *__Error);"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "__L",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Desired FIR filter length."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__A",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Single-precision real input vector: autocorrelation of a given signal."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__C",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Single-precision real input vector: cross-correlation of signal and observation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__F",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Single-precision real output vector: FIR filter."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__P",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Single-precision real output vector: performance index. See Discussion below."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__Flag",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Not currently used, pass zero."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__Error",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Error flag."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Performs the following operation:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2557829",
+              "metadata": {
+                "anchor": "2557829",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "to solve a set of single-channel normal equations described by:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            " B[n] = C[0] * A[n] + C[1] * A[n-1] +, . . . ,+ C[N-1] * A[n-N+1]",
+            " for n = {0, N-1}"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2557700",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "where matrix "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " contains elements of the symmetric Toeplitz matrix shown below. This function can only be done out of place. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Note that "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A"
+                }
+              ]
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "[-n]"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " is considered to be equal to "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A"
+                }
+              ]
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "[n]"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "vDSP_wiener"
+            },
+            {
+              "type": "text",
+              "text": " solves this set of simultaneous equations using a recursive method  described by Levinson. See Robinson, E.A., "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Multichannel Time Series Analysis with Digital Computer Programs"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ".  San Francisco: Holden-Day, 1967, pp. 43-46. "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            " |A[0]  A[1]  A[2] ... A[N-1] |    |C[0]  |   |B[0]  |",
+            " |A[1]  A[0]  A[1] ... A[N-2] |    |C[1]  |   |B[1]  |",
+            " |A[2]  A[1]  A[0] ... A[N-3] |  * |C[2]  | = |B[2]  |",
+            " | ...   ...   ... ... ...    |    | ...  |   | ...  |",
+            " |A[N-1]A[N-2]A[N-3] ... A[0] |    |C[N-1]|   |B[N-1]|"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2557701",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Typical methods for solving "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "N"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " equations in "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "N"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " unknowns have execution times  proportional to "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "N"
+                }
+              ]
+            },
+            {
+              "type": "superscript",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "3"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", and memory requirements proportional to "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "N"
+                }
+              ]
+            },
+            {
+              "type": "superscript",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "2"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ".  By taking advantage of duplicate elements, the recursion method executes in a time proportional to "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "N"
+                }
+              ]
+            },
+            {
+              "type": "superscript",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "2"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " and requires memory proportional to "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "N"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ". The  Wiener-Levinson algorithm recursively builds a solution by computing the "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "m+1"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "  matrix solution from the "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "m"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " matrix solution."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With successful completion,"
+            },
+            {
+              "type": "codeVoice",
+              "code": "vDSP_wiener"
+            },
+            {
+              "type": "text",
+              "text": " returns zero in error flag "
+            },
+            {
+              "type": "codeVoice",
+              "code": "IERR"
+            },
+            {
+              "type": "text",
+              "text": ". If "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vDSP_wiener"
+            },
+            {
+              "type": "text",
+              "text": " fails, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "IERR"
+            },
+            {
+              "type": "text",
+              "text": " indicates in which pass the failure occurred."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The solution, left in "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "F"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", can be used as a Wiener filter."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

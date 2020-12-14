@@ -1,0 +1,790 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Prompt the user to authorize access to the camera and microphone."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/bundleresources",
+        "doc://com.apple.documentation/documentation/bundleresources/information_property_list",
+        "doc://com.apple.documentation/documentation/bundleresources/information_property_list/protected_resources"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_macos",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3036311,
+  "kind": "article",
+  "metadata": {
+    "title": "Requesting Authorization for Media Capture on macOS",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Bundle Resources"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_macos",
+        "documentation/bundleresources/information_property_list/protected_resources/requesting_authorization_for_media_capture_on_macos"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_macos",
+        "documentation/bundleresources/information_property_list/protected_resources/requesting_authorization_for_media_capture_on_macos"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture": {
+      "title": "Cameras and Media Capture",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture",
+      "url": "/documentation/avfoundation/cameras_and_media_capture",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources": {
+      "title": "Bundle Resources",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources",
+      "url": "/documentation/bundleresources",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list": {
+      "title": "Information Property List",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list",
+      "url": "/documentation/bundleresources/information_property_list",
+      "type": "topic",
+      "kind": "article",
+      "role": "dictionarySymbol"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/protected_resources": {
+      "title": "Protected Resources",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/protected_resources",
+      "url": "/documentation/bundleresources/information_property_list/protected_resources",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nscamerausagedescription": {
+      "title": "NSCameraUsageDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nscamerausagedescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nscamerausagedescription"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsmicrophoneusagedescription": {
+      "title": "NSMicrophoneUsageDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsmicrophoneusagedescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nsmicrophoneusagedescription"
+    },
+    "link-media-3036658": {
+      "identifier": "link-media-3036658",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_macos#3036658"
+    },
+    "media-3036658": {
+      "identifier": "media-3036658",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 164
+          },
+          "url": "https://docs-assets.developer.apple.com/published/7fa51741c9/9ef10f56-6f0c-42d1-87df-0841abd24560.png"
+        }
+      ],
+      "alt": "Screenshot of an Info.plist file in Xcode with the required usage description keys.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice": {
+      "title": "AVCaptureDevice",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624613-authorizationstatusformediatype": {
+      "title": "authorizationStatusForMediaType:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624613-authorizationstatusformediatype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/1624613-authorizationstatusformediatype",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "authorizationStatusForMediaType:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avauthorizationstatus/avauthorizationstatusnotdetermined": {
+      "title": "AVAuthorizationStatusNotDetermined",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avauthorizationstatus/avauthorizationstatusnotdetermined",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avauthorizationstatus/avauthorizationstatusnotdetermined"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624584-requestaccessformediatype": {
+      "title": "requestAccessForMediaType:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624584-requestaccessformediatype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/1624584-requestaccessformediatype",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "requestAccessForMediaType:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_macos#3036313": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_macos#3036313",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_macos#3036313"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/photokit/phphotolibrary": {
+      "title": "PHPhotoLibrary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/photokit/phphotolibrary",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/photokit/phphotolibrary"
+    },
+    "doc://com.apple.documentation/documentation/photokit/phassetcreationrequest": {
+      "title": "PHAssetCreationRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/photokit/phassetcreationrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/photokit/phassetcreationrequest"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsphotolibraryusagedescription": {
+      "title": "NSPhotoLibraryUsageDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsphotolibraryusagedescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nsphotolibraryusagedescription"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos": {
+      "title": "Saving Captured Photos",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_macos#3036323": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_macos#3036323",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_macos#3036323"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_macos#3036324": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_macos#3036324",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_macos#3036324"
+    },
+    "link-media-3036659": {
+      "identifier": "link-media-3036659",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_macos#3036659"
+    },
+    "media-3036659": {
+      "identifier": "media-3036659",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 271
+          },
+          "url": "https://docs-assets.developer.apple.com/published/663cb677e7/3d0e288c-9d77-4523-b1ec-bf42bca85cf1.png"
+        }
+      ],
+      "alt": "Screenshot of macOS camera permission alert with app-specific message.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_ios": {
+      "title": "Requesting Authorization for Media Capture on iOS",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_ios",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_ios",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Respect user privacy by seeking permission to capture and store photos, audio, and video."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_macos": {
+      "title": "Requesting Authorization for Media Capture on macOS",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_macos",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_macos",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Prompt the user to authorize access to the camera and microphone."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_ios"
+      ],
+      "title": "User Privacy",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In macOS 10.14 and later, the user must explicitly grant permission for each app to access cameras and microphones. Before your app can use the capture system for the first time, macOS shows an alert asking the user to grant your app access to the camera, as shown below. macOS remembers the user’s response to this alert, so subsequent uses of the capture system don’t cause it to appear again. The user can change permission settings for your app in System Preferences > Security & Privacy. The request for authorization looks different from the alert UI in iOS."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3036659",
+              "metadata": {
+                "anchor": "3036659",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To make sure your app has permission before capturing media, follow the steps below."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure Your Camera and Microphone Apps",
+          "anchor": "3036312"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The information property list keys for Camera and Microphone in macOS operate the same way as they do in iOS. macOS 10.14 and later populates the static messages with these strings when the system asks for camera or microphone permission:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If your app uses device cameras, include the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nscamerausagedescription"
+                    },
+                    {
+                      "type": "text",
+                      "text": " key in your app’s "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Info.plist"
+                    },
+                    {
+                      "type": "text",
+                      "text": " file."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If your app uses device microphones, include the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsmicrophoneusagedescription"
+                    },
+                    {
+                      "type": "text",
+                      "text": " key in your app’s "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Info.plist"
+                    },
+                    {
+                      "type": "text",
+                      "text": " file."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For each key, provide a message that explains to the user why your app needs to capture media, so that the user can feel confident granting permission to your app."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3036658",
+              "metadata": {
+                "anchor": "3036658",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If the appropriate key is not present in your app’s "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "Info.plist"
+                },
+                {
+                  "type": "text",
+                  "text": " file when your app requests authorization or attempts to use a capture device, the system terminates your app. The Xcode debug console displays a message that explains the reason for the crash."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Verify and Request Authorization for Capture",
+          "anchor": "3036317"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Always test the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624613-authorizationstatusformediatype"
+            },
+            {
+              "type": "text",
+              "text": " method before setting up a capture session. If the user has not yet granted or denied capture permission, the authorization status is "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avauthorizationstatus/avauthorizationstatusnotdetermined"
+            },
+            {
+              "type": "text",
+              "text": ". In this case, use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624584-requestaccessformediatype"
+            },
+            {
+              "type": "text",
+              "text": " method to have macOS prompt the user: "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Request permission to access the camera and microphone.",
+            "switch ([AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo])",
+            "{",
+            "    case AVAuthorizationStatusAuthorized:",
+            "    {",
+            "        // The user has previously granted access to the camera.",
+            "        [self setupCaptureSession];",
+            "        break;",
+            "    }",
+            "    case AVAuthorizationStatusNotDetermined:",
+            "    {",
+            "        // The app hasn't yet asked the user for camera access.",
+            "        [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {",
+            "            if (granted) {",
+            "                [self setupCaptureSession];",
+            "            }",
+            "        }];",
+            "        break;",
+            "    }",
+            "    case AVAuthorizationStatusDenied:",
+            "    {",
+            "        // The user has previously denied access.",
+            "        return;",
+            "    }",
+            "    case AVAuthorizationStatusRestricted:",
+            "    {",
+            "        // The user can't grant access due to restrictions.",
+            "        return;",
+            "    }",
+            "}"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "3036313",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624584-requestaccessformediatype"
+            },
+            {
+              "type": "text",
+              "text": " method is asynchronous: Your app continues running while macOS shows the permission alert. When the user responds, the system calls your completion handler. If the completion handler’s success parameter is "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": ", you can proceed to set up and start a capture session."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Call "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/1624584-requestaccessformediatype"
+                },
+                {
+                  "type": "text",
+                  "text": " before starting capture, but only at a time that’s appropriate for your app. For example, if photo or video recording isn’t the main focus of your app, check for camera permission only when the user invokes your app’s camera-related features."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Request Authorization Before Saving Captured Media",
+          "anchor": "3036664"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After capturing photos or video, you may want to save them into the user’s Photos library. Accessing the Photos library also requires user permission (separate from camera and microphone permission). For most photo and video capture workflows (including Live Photos and RAW format capture), use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/photokit/phphotolibrary"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/photokit/phassetcreationrequest"
+            },
+            {
+              "type": "text",
+              "text": " classes. These classes require read/write access to the Photos library, so you must use the use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsphotolibraryusagedescription"
+            },
+            {
+              "type": "text",
+              "text": " key in your information property list to provide a message to the user when asking for access. For details, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Reset Authorization from Terminal",
+          "anchor": "3035841"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To reset the state of the user’s decision to grant or reject Microphone access so the prompt shows again, open Terminal and input the command:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "tccutil reset Microphone"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3036323",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To reset the authorization state for camera access, type:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "tccutil reset Camera"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3036324",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This command resets the access authorization settings for all apps, so other apps will prompt the user again. Use this tool to debug the appearance of your privacy justification strings and their localized versions."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "You can use "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "tccutil"
+                },
+                {
+                  "type": "text",
+                  "text": " to reset authorization access settings for other system services as well, such as AddressBook, Calendar, and Finder."
+                }
+              ]
+            }
+          ],
+          "style": "tip"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

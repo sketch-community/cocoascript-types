@@ -1,0 +1,2299 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A complete Metal or OpenGL shader program that replaces SceneKit's rendering of a geometry or material."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/scenekit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/scenekit/scnprogram",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1524226,
+  "kind": "symbol",
+  "metadata": {
+    "title": "SCNProgram",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "SceneKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "8.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.8",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      }
+    ],
+    "externalID": "c:objc(cs)SCNProgram",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/scenekit/scnprogram"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/scenekit/scnprogram"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/scenekit": {
+      "title": "SceneKit",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit",
+      "url": "/documentation/scenekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scngeometry": {
+      "title": "SCNGeometry",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometry",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scngeometry"
+    },
+    "devLink-1753300": {
+      "identifier": "devLink-1753300",
+      "type": "link",
+      "title": "Attribute Qualifiers to Locate Per-Vertex Inputs",
+      "url": "https://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/func-var-qual/func-var-qual.html#//apple_ref/doc/uid/TP40014364-CH4-SW11"
+    },
+    "devLink-1753265": {
+      "identifier": "devLink-1753265",
+      "type": "link",
+      "title": "Metal Shading Language Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram#2168219": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram#2168219",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/scenekit/scnprogram#2168219"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram#1965894": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram#1965894",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/scenekit/scnprogram#1965894",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "SceneKit Vertex Attribute Qualifiers for Metal Shaders"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemanticvertex": {
+      "title": "SCNGeometrySourceSemanticVertex",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemanticvertex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scngeometrysourcesemanticvertex"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemanticnormal": {
+      "title": "SCNGeometrySourceSemanticNormal",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemanticnormal",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scngeometrysourcesemanticnormal"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemanticcolor": {
+      "title": "SCNGeometrySourceSemanticColor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemanticcolor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scngeometrysourcesemanticcolor"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemanticboneindices": {
+      "title": "SCNGeometrySourceSemanticBoneIndices",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemanticboneindices",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scngeometrysourcesemanticboneindices"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemanticboneweights": {
+      "title": "SCNGeometrySourceSemanticBoneWeights",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemanticboneweights",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scngeometrysourcesemanticboneweights"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemantictexcoord": {
+      "title": "SCNGeometrySourceSemanticTexcoord",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemantictexcoord",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scngeometrysourcesemantictexcoord"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram#2168224": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram#2168224",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/scenekit/scnprogram#2168224"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram#2168227": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram#2168227",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/scenekit/scnprogram#2168227"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram#1943420": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram#1943420",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/scenekit/scnprogram#1943420",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Available Fields for Per-Node Shader Data"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram#2168229": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram#2168229",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/scenekit/scnprogram#2168229"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram#2168233": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram#2168233",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/scenekit/scnprogram#2168233"
+    },
+    "devLink-1737709": {
+      "identifier": "devLink-1737709",
+      "type": "link",
+      "title": "Key-value coding",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KeyValueCoding.html#//apple_ref/doc/uid/TP40008195-CH25"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1415969-setvalue": {
+      "title": "setValue:forKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1415969-setvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1415969-setvalue",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setValue:forKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdata": {
+      "title": "NSData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdata"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scntransaction": {
+      "title": "SCNTransaction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scntransaction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scntransaction"
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/caanimation": {
+      "title": "CAAnimation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/caanimation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/caanimation"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsvalue": {
+      "title": "NSValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsvalue"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram/1524047-handlebindingofbuffernamed": {
+      "title": "handleBindingOfBufferNamed:frequency:usingBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram/1524047-handlebindingofbuffernamed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnprogram/1524047-handlebindingofbuffernamed",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registers a block for SceneKit to call at render time for binding a Metal buffer to the shader program."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handleBindingOfBufferNamed:frequency:usingBlock:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnbufferstream": {
+      "title": "SCNBufferStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnbufferstream",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnbufferstream",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that manages a Metal buffer used by a custom shader program. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnbufferstream/1523175-writebytes": {
+      "title": "writeBytes:length:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnbufferstream/1523175-writebytes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnbufferstream/1523175-writebytes",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "writeBytes:length:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram/1522730-setsemantic": {
+      "title": "setSemantic:forSymbol:options:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram/1522730-setsemantic",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnprogram/1522730-setsemantic",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Associates a SceneKit semantic identifier with the specified GLSL vertex attribute or uniform variable."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setSemantic:forSymbol:options:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/capropertyanimation/1412534-animationwithkeypath": {
+      "title": "animationWithKeyPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/capropertyanimation/1412534-animationwithkeypath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/capropertyanimation/1412534-animationwithkeypath",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "animationWithKeyPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnshadable/1523063-handlebindingofsymbol": {
+      "title": "handleBindingOfSymbol:usingBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable/1523063-handlebindingofsymbol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnshadable/1523063-handlebindingofsymbol",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handleBindingOfSymbol:usingBlock:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram": {
+      "title": "SCNProgram",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnprogram",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A complete Metal or OpenGL shader program that replaces SceneKit's rendering of a geometry or material."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnshadable/1523689-program": {
+      "title": "program",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable/1523689-program",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnshadable/1523689-program"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnshadable/1523348-shadermodifiers": {
+      "title": "shaderModifiers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable/1523348-shadermodifiers",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnshadable/1523348-shadermodifiers"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnshadable": {
+      "title": "SCNShadable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnshadable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods for customizing SceneKit's rendering of geometry and materials using Metal or OpenGL shader programs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram/1522611-delegate": {
+      "title": "delegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram/1522611-delegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnprogram/1522611-delegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The delegate of the program object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram/1522799-vertexfunctionname": {
+      "title": "vertexFunctionName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram/1522799-vertexfunctionname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnprogram/1522799-vertexfunctionname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The name of the vertex shader function to load from a Metal shader library."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram/1524012-fragmentfunctionname": {
+      "title": "fragmentFunctionName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram/1524012-fragmentfunctionname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnprogram/1524012-fragmentfunctionname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The name of the fragment shader function to load from a Metal shader library."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram/1522891-vertexshader": {
+      "title": "vertexShader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram/1522891-vertexshader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnprogram/1522891-vertexshader",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "GLSL source code for the program’s vertex shader."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram/1523135-fragmentshader": {
+      "title": "fragmentShader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram/1523135-fragmentshader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnprogram/1523135-fragmentshader",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "GLSL source code for the program’s fragment shader."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnscenerenderer/1522616-renderingapi": {
+      "title": "renderingAPI",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscenerenderer/1522616-renderingapi",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnscenerenderer/1522616-renderingapi"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnview": {
+      "title": "SCNView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnview"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnrenderingapi/scnrenderingapimetal": {
+      "title": "SCNRenderingAPIMetal",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnrenderingapi/scnrenderingapimetal",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnrenderingapi/scnrenderingapimetal"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scntechnique": {
+      "title": "SCNTechnique",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scntechnique",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scntechnique",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A specification for augmenting or postprocessing SceneKit's rendering of a scene using additional drawing passes with custom Metal or OpenGL shaders."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nssecurecoding": {
+      "title": "NSSecureCoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nssecurecoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nssecurecoding"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscopying": {
+      "title": "NSCopying",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscopying",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscopying"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram/1565076-program": {
+      "title": "program",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram/1565076-program",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnprogram/1565076-program",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new program object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "program"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram/1524049-geometryshader": {
+      "title": "geometryShader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram/1524049-geometryshader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnprogram/1524049-geometryshader",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "GLSL source code for the program’s optional geometry shader."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram/1523852-tessellationcontrolshader": {
+      "title": "tessellationControlShader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram/1523852-tessellationcontrolshader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnprogram/1523852-tessellationcontrolshader",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "GLSL source code for the program’s optional tessellation control shader."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram/1523760-tessellationevaluationshader": {
+      "title": "tessellationEvaluationShader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram/1523760-tessellationevaluationshader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnprogram/1523760-tessellationevaluationshader",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "GLSL source code for the program’s optional tessellation evaluation shader."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogrammappingchannelkey": {
+      "title": "SCNProgramMappingChannelKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogrammappingchannelkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnprogrammappingchannelkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The mapping channel to be used for a texture coordinate semantic."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram/1523350-semanticforsymbol": {
+      "title": "semanticForSymbol:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram/1523350-semanticforsymbol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnprogram/1523350-semanticforsymbol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the SceneKit semantic identifiers associated with the specified GLSL vertex attribute or uniform variable."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "semanticForSymbol:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnmodeltransform": {
+      "title": "SCNModelTransform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnmodeltransform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnmodeltransform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A 4 x 4 matrix for transforming coordinates from model space to scene (or world) space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnmodelviewprojectiontransform": {
+      "title": "SCNModelViewProjectionTransform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnmodelviewprojectiontransform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnmodelviewprojectiontransform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A 4 x 4 matrix containing the concatenation of the Model, View, and Projection transformations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnmodelviewtransform": {
+      "title": "SCNModelViewTransform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnmodelviewtransform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnmodelviewtransform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A 4 x 4 matrix containing the concatenation of the Model and View transformations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnormaltransform": {
+      "title": "SCNNormalTransform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnormaltransform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnormaltransform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A 4 x 4 matrix for transforming surface normal vectors from model space to view (or eye) space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprojectiontransform": {
+      "title": "SCNProjectionTransform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprojectiontransform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnprojectiontransform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A 4 x 4 matrix for transforming coordinates from view (or eye) space to clip space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnviewtransform": {
+      "title": "SCNViewTransform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnviewtransform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnviewtransform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A 4 x 4 matrix for transforming coordinates from scene (or world) space to view (or eye) space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogramdelegate": {
+      "title": "SCNProgramDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogramdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnprogramdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface for tracking errors that occur when compiling shader source code."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram/1522844-opaque": {
+      "title": "opaque",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram/1522844-opaque",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnprogram/1522844-opaque",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether fragments rendered by the program are fully opaque."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnbufferfrequency": {
+      "title": "SCNBufferFrequency",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnbufferfrequency",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnbufferfrequency",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options for how often SceneKit should execute the binding handler you provide with the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram/1524047-handlebindingofbuffernamed"
+        },
+        {
+          "type": "text",
+          "text": " method."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnbufferbindingblock": {
+      "title": "SCNBufferBindingBlock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnbufferbindingblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnbufferbindingblock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A block SceneKit calls at render time for working with buffers in a Metal shader, used by the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram/1524047-handlebindingofbuffernamed"
+        },
+        {
+          "type": "text",
+          "text": " method."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram/1522934-library": {
+      "title": "library",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram/1522934-library",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnprogram/1522934-library",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The Metal shader library containing shader functions to be used by this program."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scntechniquesupport": {
+      "title": "SCNTechniqueSupport",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scntechniquesupport",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scntechniquesupport",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The common interface for SceneKit objects that support multipass rendering using "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/scenekit/scntechnique"
+        },
+        {
+          "type": "text",
+          "text": " objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnoderendererdelegate": {
+      "title": "SCNNodeRendererDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnoderendererdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnoderendererdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods you can implement to use your own custom Metal or OpenGL drawing code to render content for a node. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/postprocessing_a_scene_with_custom_symbols": {
+      "title": "Postprocessing a Scene With Custom Symbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/postprocessing_a_scene_with_custom_symbols",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/scenekit/postprocessing_a_scene_with_custom_symbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create visual effects in a scene by defining a rendering technique with custom symbols."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscopying",
+        "doc://com.apple.documentation/documentation/foundation/nssecurecoding"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating a Program",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnprogram/1565076-program"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Working with OpenGL Shader Source Code",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnprogram/1522891-vertexshader",
+        "doc://com.apple.documentation/documentation/scenekit/scnprogram/1523135-fragmentshader",
+        "doc://com.apple.documentation/documentation/scenekit/scnprogram/1524049-geometryshader",
+        "doc://com.apple.documentation/documentation/scenekit/scnprogram/1523852-tessellationcontrolshader",
+        "doc://com.apple.documentation/documentation/scenekit/scnprogram/1523760-tessellationevaluationshader"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Mapping GLSL Symbols to SceneKit Semantics",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnprogram/1522730-setsemantic",
+        "doc://com.apple.documentation/documentation/scenekit/scnprogrammappingchannelkey",
+        "doc://com.apple.documentation/documentation/scenekit/scnprogram/1523350-semanticforsymbol",
+        "doc://com.apple.documentation/documentation/scenekit/scnmodeltransform",
+        "doc://com.apple.documentation/documentation/scenekit/scnmodelviewprojectiontransform",
+        "doc://com.apple.documentation/documentation/scenekit/scnmodelviewtransform",
+        "doc://com.apple.documentation/documentation/scenekit/scnnormaltransform",
+        "doc://com.apple.documentation/documentation/scenekit/scnprojectiontransform",
+        "doc://com.apple.documentation/documentation/scenekit/scnviewtransform"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Providing a Delegate Object",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnprogram/1522611-delegate",
+        "doc://com.apple.documentation/documentation/scenekit/scnprogramdelegate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Opacity",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnprogram/1522844-opaque"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Providing Input for Metal Shaders",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnprogram/1524047-handlebindingofbuffernamed",
+        "doc://com.apple.documentation/documentation/scenekit/scnbufferfrequency",
+        "doc://com.apple.documentation/documentation/scenekit/scnbufferbindingblock"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Working With Metal Shaders",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnprogram/1522799-vertexfunctionname",
+        "doc://com.apple.documentation/documentation/scenekit/scnprogram/1524012-fragmentfunctionname",
+        "doc://com.apple.documentation/documentation/scenekit/scnprogram/1522934-library"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnshadable",
+        "doc://com.apple.documentation/documentation/scenekit/scnbufferstream",
+        "doc://com.apple.documentation/documentation/scenekit/scntechnique",
+        "doc://com.apple.documentation/documentation/scenekit/scntechniquesupport",
+        "doc://com.apple.documentation/documentation/scenekit/scnnoderendererdelegate",
+        "doc://com.apple.documentation/documentation/scenekit/postprocessing_a_scene_with_custom_symbols"
+      ],
+      "title": "Renderer Customization",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "SCNProgram"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You use an "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram"
+            },
+            {
+              "type": "text",
+              "text": " object to perform custom rendering using shader programs written in the Metal shading language or the OpenGL Shading Language (GLSL). A program object contains a vertex shader and a fragment shader. To use a program object for rendering, assign it to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable/1523689-program"
+            },
+            {
+              "type": "text",
+              "text": " property of a geometry or material."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use a program object when you want to completely replace SceneKit’s rendering. Your shaders take input from SceneKit and become responsible for all transform, lighting, and shading effects that you want to produce."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If instead you want to simply modify or extend SceneKit’s rendering, use the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable/1523348-shadermodifiers"
+                },
+                {
+                  "type": "text",
+                  "text": " property of a geometry or material to insert snippets of Metal or GLSL source code into SceneKit’s built-in shader programs. For details on creating and using shader modifiers, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable"
+                },
+                {
+                  "type": "text",
+                  "text": ". "
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To use a custom shader program in SceneKit, create an "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram"
+            },
+            {
+              "type": "text",
+              "text": " object and optionally specify its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram/1522611-delegate"
+            },
+            {
+              "type": "text",
+              "text": " object for handling errors. Next, provide shaders:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "To provide precompiled Metal shader functions, set the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram/1522799-vertexfunctionname"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram/1524012-fragmentfunctionname"
+                    },
+                    {
+                      "type": "text",
+                      "text": " properties. SceneKit loads the functions from a Metal shader library in your app’s bundle resources."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "To provide OpenGL or OpenGL ES shader source code, set the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram/1522891-vertexshader"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram/1523135-fragmentshader"
+                    },
+                    {
+                      "type": "text",
+                      "text": " properties."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Finally, assign your program object to the geometries or materials you want rendered using the shader program."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Rendering with Metal shaders requires that the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscenerenderer/1522616-renderingapi"
+            },
+            {
+              "type": "text",
+              "text": " property of your "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnview"
+            },
+            {
+              "type": "text",
+              "text": " object (or other renderer) be set to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnrenderingapi/scnrenderingapimetal"
+            },
+            {
+              "type": "text",
+              "text": ", which in turn requires that your app be running on Metal-capable hardware. If you provide both Metal and OpenGL shaders in the same "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram"
+            },
+            {
+              "type": "text",
+              "text": " object, SceneKit automatically selects the appropriate shaders to use when rendering, falling back to OpenGL or OpenGL ES shaders when Metal is not supported on the current hardware. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Providing Input to a Metal Shader",
+          "anchor": "1681698"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Metal shaders for use with SceneKit require an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "#include <SceneKit/scn_metal>"
+            },
+            {
+              "type": "text",
+              "text": " directive to gain access to SceneKit-specific symbols. Use these symbols to access the kinds of data listed below."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Vertex Attributes",
+          "anchor": "1681704"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To use vertex attributes provided by "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometry"
+            },
+            {
+              "type": "text",
+              "text": " objects in your shader program, declare those attributes in your Metal shader source code using attribute qualifiers (see "
+            },
+            {
+              "type": "link",
+              "title": "Attribute Qualifiers to Locate Per-Vertex Inputs",
+              "destination": "https://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/func-var-qual/func-var-qual.html#//apple_ref/doc/uid/TP40014364-CH4-SW11"
+            },
+            {
+              "type": "text",
+              "text": " in "
+            },
+            {
+              "type": "link",
+              "title": "Metal Shading Language Guide",
+              "destination": "https://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364"
+            },
+            {
+              "type": "text",
+              "text": ") and the constants listed in "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram#1965894"
+            },
+            {
+              "type": "text",
+              "text": ". For example, the partial shader below declares an input structure using the vertex position and normal attributes."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "#include <metal_stdlib>",
+            "using namespace metal;",
+            "#include <SceneKit/scn_metal>",
+            "typedef struct {",
+            "    float3 position [[ attribute(SCNVertexSemanticPosition) ]];",
+            "    float3 normal   [[ attribute(SCNVertexSemanticNormal) ]];",
+            "} MyVertexInput;"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2168219",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Metal Constant"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Definition"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "SCNVertexSemanticPosition"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The vertex position, provided by the geometry source for the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemanticvertex"
+                    },
+                    {
+                      "type": "text",
+                      "text": " semantic."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "SCNVertexSemanticNormal"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The surface normal vector at the vertex, provided by the geometry source for the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemanticnormal"
+                    },
+                    {
+                      "type": "text",
+                      "text": " semantic."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "SCNVertexSemanticTangent"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The surface-space tangent vector."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "SceneKit automatically infers this vector based on texture coordinates. To obtain a bitangent vector, take the cross product of the tangent vector and the surface normal vector, and scale the result by the w component of the tangent vector."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "SCNVertexSemanticColor"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The vertex color, provided by the geometry source for the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemanticcolor"
+                    },
+                    {
+                      "type": "text",
+                      "text": " semantic."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "SCNVertexSemanticSkinJoints"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Skeletal animation index information, provided by the geometry source for the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemanticboneindices"
+                    },
+                    {
+                      "type": "text",
+                      "text": " semantic."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "SCNVertexSemanticSkinWeights"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Skeletal animation weight information, provided by the geometry source for the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemanticboneweights"
+                    },
+                    {
+                      "type": "text",
+                      "text": " semantic."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "SCNVertexSemanticTexcoord0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Texture coordinates, provided by the first geometry source for the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemantictexcoord"
+                    },
+                    {
+                      "type": "text",
+                      "text": " semantic."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "SCNVertexSemanticTexcoord1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Texture coordinates, provided by the second geometry source for the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemantictexcoord"
+                    },
+                    {
+                      "type": "text",
+                      "text": " semantic."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "SCNVertexSemanticTexcoord2"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Texture coordinates, provided by the third geometry source for the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemantictexcoord"
+                    },
+                    {
+                      "type": "text",
+                      "text": " semantic."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "SCNVertexSemanticTexcoord3"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Texture coordinates, provided by the fourth geometry source for the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemantictexcoord"
+                    },
+                    {
+                      "type": "text",
+                      "text": " semantic."
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "1965894",
+            "title": "Table 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "SceneKit Vertex Attribute Qualifiers for Metal Shaders"
+              }
+            ]
+          }
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Frame-Constant Data",
+          "anchor": "1681710"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To use information from SceneKit that is constant for all invocations of your shader when rendering a single frame—such as view and projection matrices, fog parameters, and scene time—declare a parameter to your shader function whose type is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SCNSceneBuffer"
+            },
+            {
+              "type": "text",
+              "text": ", with an attribute qualifier binding it to buffer zero. For example, the shader function declaration below uses scene data in its second parameter."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "vertex MyVertexOutput myVertex(MyVertexInput in [[ stage_in ]],",
+            "                                constant SCNSceneBuffer& scn_frame [[buffer(0)]],",
+            "                                constant default_node_t& scn_node [[buffer(1)]])"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2168224",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your function can then access scene data from the fields in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SCNSceneBuffer"
+            },
+            {
+              "type": "text",
+              "text": " structure, outlined below."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "struct SCNSceneBuffer {",
+            "    float4x4    viewTransform;",
+            "    float4x4    inverseViewTransform; // view space to world space",
+            "    float4x4    projectionTransform;",
+            "    float4x4    viewProjectionTransform;",
+            "    float4x4    viewToCubeTransform; // view space to cube texture space (right-handed, y-axis-up)",
+            "    float4      ambientLightingColor;",
+            "    float4      fogColor;",
+            "    float3      fogParameters; // x: -1/(end-start) y: 1-start*x z: exponent",
+            "    float       time;     // system time elapsed since first render with this shader",
+            "    float       sinTime;  // precalculated sin(time)",
+            "    float       cosTime;  // precalculated cos(time)",
+            "    float       random01; // random value between 0.0 and 1.0",
+            "};"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2168227",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Per-Node Data",
+          "anchor": "1681714"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To use information from SceneKit that varies for each object being rendered with a shader—such as model and normal matrices—declare a parameter to your shader function with an attribute qualifier binding it to buffer one. For the type of this parameter, declare your own struct type containing any of the fields in "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram#1943420"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "float4x4 modelTransform;",
+            "float4x4 inverseModelTransform;",
+            "float4x4 modelViewTransform;",
+            "float4x4 inverseModelViewTransform;",
+            "float4x4 normalTransform; // Inverse transpose of modelViewTransform",
+            "float4x4 modelViewProjectionTransform;",
+            "float4x4 inverseModelViewProjectionTransform;",
+            "float2x3 boundingBox;",
+            "float2x3 worldBoundingBox;"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "1943420",
+            "title": "Listing 4",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Available Fields for Per-Node Shader Data"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, the partial shader below declares a struct with model and model-view-projection matrices and uses it in a vertex function."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "struct MyNodeBuffer {",
+            "    float4x4 modelTransform;",
+            "    float4x4 modelViewProjectionTransform;",
+            "};",
+            " ",
+            "vertex MyVertexOutput myVertex(MyVertexInput in [[ stage_in ]],",
+            "                                constant SCNSceneBuffer& scn_frame [[buffer(0)]],",
+            "                                constant MyNodeBuffer& scn_node [[buffer(1)]])"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2168229",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Custom Variables",
+          "anchor": "1681719"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To use custom input variables in a Metal shader, first declare those variables as input parameters to your Metal shader functions, using an attribute qualifier to bind to buffer 2 (or higher). Because these variables pass to your Metal shader in a buffer, you typically also define a data structure for your variables, as seen in the partial shader below."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "struct MyAccentColors {",
+            "    float4 primaryColor;",
+            "    float4 secondaryColor;",
+            "};",
+            " ",
+            "fragment half4 myFragmentShader(default_io in [[stage_in]],",
+            "                            constant MyAccentColors& colors [[buffer(2)]]) { ... }"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2168233",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "There are two options for providing data for your custom variables: manually and at render time. "
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "To make a single change to your custom variable data, use "
+                    },
+                    {
+                      "type": "link",
+                      "title": "Key-value coding",
+                      "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KeyValueCoding.html#//apple_ref/doc/uid/TP40008195-CH25"
+                    },
+                    {
+                      "type": "text",
+                      "text": ": Call the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1415969-setvalue"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method on the geometry or material to be rendered with your shader, passing an "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object containing your data structure as the value and the name of the corresponding shader function parameter as the key. Be aware of layout and alignment when encoding an entire structure as an "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object—for best results, use data types from the SIMD library (such as "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "vector_float4"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "matrix_float4x4"
+                    },
+                    {
+                      "type": "text",
+                      "text": "), because those types match the layout and alignment of the GPU data types used in a Metal shader."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "You can also animate such a change by calling the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1415969-setvalue"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method within an "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scntransaction"
+                    },
+                    {
+                      "type": "text",
+                      "text": " animation or by creating a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/quartzcore/caanimation"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object whose key is the shader function parameter name."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In either case, you can alternatively provide a value for a specific member of a structure by wrapping that value in an "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object and using the fully qualified name of that member as the key. For example, use "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "colors.primaryColor"
+                    },
+                    {
+                      "type": "text",
+                      "text": " as the key in the example above."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "To update custom variable data at render time, call the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram/1524047-handlebindingofbuffernamed"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method to register a block that SceneKit calls before rendering using your shader program. In the block, SceneKit provides an "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnbufferstream"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object, whose "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnbufferstream/1523175-writebytes"
+                    },
+                    {
+                      "type": "text",
+                      "text": " you can call to provide a new value for your data structure."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Providing Input to an OpenGL Shader",
+          "anchor": "1681725"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "inlineHead",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Vertex attributes."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " To use vertex attributes provided by "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometry"
+            },
+            {
+              "type": "text",
+              "text": " objects in your shader program, map SceneKit semantics to the input vertex attribute names declared in the shader. Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram/1522730-setsemantic"
+            },
+            {
+              "type": "text",
+              "text": " method and the constants listed in Geometry Semantic Identifiers."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "inlineHead",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Coordinate transformations."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " To use the coordinate transformations defined by the scene’s node hierarchy and point-of-view camera in your shader program, map SceneKit’s transform matrices to the uniform variable names declared in the shader. Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram/1522730-setsemantic"
+            },
+            {
+              "type": "text",
+              "text": " method and the constants listed in Rendering Transform Keys."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "inlineHead",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Custom uniform variables."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " To provide values for your own custom uniform variables declared in the shader, choose when and how you want to update these values. "
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "To update a value once, use "
+                    },
+                    {
+                      "type": "link",
+                      "title": "Key-value coding",
+                      "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KeyValueCoding.html#//apple_ref/doc/uid/TP40008195-CH25"
+                    },
+                    {
+                      "type": "text",
+                      "text": ": Call the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1415969-setvalue"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method, providing the uniform name from shader source code as the key and an appropriate type of data as the value.  To smoothly transition a one-time value change, call the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1415969-setvalue"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method inside an "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scntransaction"
+                    },
+                    {
+                      "type": "text",
+                      "text": " animation or create an animation object with the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/quartzcore/capropertyanimation/1412534-animationwithkeypath"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method, passing the uniform name as the key."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "To update a value every time SceneKit renders an object with your shader program, assign binding blocks using the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable/1523063-handlebindingofsymbol"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method of the geometry or material to be rendered with your custom program. Within a binding block you can execute OpenGL commands to bind shader uniforms or set any other state necessary for rendering."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

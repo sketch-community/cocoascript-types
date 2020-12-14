@@ -1,0 +1,514 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Customize your app’s audio playback capabilities by configuring its audio session and background modes."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/configuring_the_audio_playback_of_ios_and_tvos_apps",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3573391,
+  "kind": "article",
+  "metadata": {
+    "title": "Configuring the Audio Playback of iOS and tvOS Apps",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_playback_and_selection/configuring_the_audio_playback_of_ios_and_tvos_apps"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_playback_and_selection/configuring_the_audio_playback_of_ios_and_tvos_apps"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection": {
+      "title": "Media Playback and Selection",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
+      "url": "/documentation/avfoundation/media_playback_and_selection",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioncategoryplayback": {
+      "title": "AVAudioSessionCategoryPlayback",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioncategoryplayback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosessioncategoryplayback"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosession": {
+      "title": "AVAudioSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosession"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/configuring_the_audio_playback_of_ios_and_tvos_apps#3573396": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/configuring_the_audio_playback_of_ios_and_tvos_apps#3573396",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/configuring_the_audio_playback_of_ios_and_tvos_apps#3573396"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/1616627-setactive": {
+      "title": "setActive:withOptions:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/1616627-setactive",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosession/1616627-setactive",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setActive:withOptions:error:"
+        }
+      ]
+    },
+    "link-media-3576642": {
+      "identifier": "link-media-3576642",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/avfoundation/media_playback_and_selection/configuring_the_audio_playback_of_ios_and_tvos_apps#3576642"
+    },
+    "media-3576642": {
+      "identifier": "media-3576642",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 425,
+            "height": 214
+          },
+          "url": "https://docs-assets.developer.apple.com/published/0ae8d0f795/rendered2x-1586898717.png"
+        }
+      ],
+      "alt": "A screenshot showing the available background modes.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_macos": {
+      "title": "Creating a Basic Video Player (macOS)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_macos",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_macos",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a simple video playback app with built-in controls."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos": {
+      "title": "Creating a Basic Video Player (iOS and tvOS)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a simple video playback app with built-in controls."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/configuring_the_audio_playback_of_ios_and_tvos_apps": {
+      "title": "Configuring the Audio Playback of iOS and tvOS Apps",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/configuring_the_audio_playback_of_ios_and_tvos_apps",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/configuring_the_audio_playback_of_ios_and_tvos_apps",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Customize your app’s audio playback capabilities by configuring its audio session and background modes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/guidelines_for_apple_tv_4k_development": {
+      "title": "Guidelines for Apple TV 4K Development",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/guidelines_for_apple_tv_4k_development",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/guidelines_for_apple_tv_4k_development",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Follow these guidelines when developing for Apple TV 4K."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_macos",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/guidelines_for_apple_tv_4k_development"
+      ],
+      "title": "Essentials",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Most media playback apps for iOS and tvOS require additional configuration to enable the desired playback behavior. Performing this configuration ensures your app’s audio behavior works as expected, and enables advanced features like Airplay streaming and background audio playback."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure the Audio Session",
+          "anchor": "3573393"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An audio session acts as an intermediary between your app and the operating system—and in turn, the underlying audio hardware. You use an audio session to communicate to the operating system the nature of your app’s audio without detailing the specific behavior or required interactions with the audio hardware. Instead, you delegate the management of those details to the audio session, ensuring that the operating system can best manage the user’s audio experience."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "All iOS and tvOS apps have a default audio session that’s preconfigured as follows:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "When your app plays audio, it silences any other background audio."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "It supports audio playback, but disallows audio recording (audio recording isn’t supported in tvOS)."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In iOS, setting the Ring/Silent switch to silent mode silences your app’s audio."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In iOS, locking the device silences the app’s audio."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The default audio session provides useful behavior, but not always the behavior needed when building a media playback app. To add the needed behavior, you configure your app’s audio session category."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An audio session category defines the general audio behavior your app requires. AVFoundation defines several audio session categories that you can use, but most media playback apps require the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioncategoryplayback"
+            },
+            {
+              "type": "text",
+              "text": " category. This category indicates that audio playback is a central feature of your app. When you specify this category, your app’s audio continues with the Ring/Silent switch set to silent mode (iOS only). Enabling this category also allows your app to play background audio if you’re using the “Audio, AirPlay, and Picture in Picture” background mode."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession"
+            },
+            {
+              "type": "text",
+              "text": " object to configure your app’s audio session. "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession"
+            },
+            {
+              "type": "text",
+              "text": " is a singleton object you use to set the audio session category and other settings. You can interact with the audio session throughout your app’s life cycle, but it’s often useful to configure its category at app launch, as shown in the following example:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func application(_ application: UIApplication,",
+            "                 didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {",
+            "    ",
+            "    let audioSession = AVAudioSession.sharedInstance()",
+            "     do {",
+            "        try audioSession.setCategory(.playback)",
+            "     } catch {",
+            "         print(\"Setting category to AVAudioSessionCategoryPlayback failed.\")",
+            "     }",
+            "",
+            "    return true",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3573396",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To enable this category, activate the audio session using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/1616627-setactive"
+            },
+            {
+              "type": "text",
+              "text": " method."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "You can activate the audio session at any time after setting its category, but it’s generally preferable to defer this call until your app begins audio playback. Deferring the call ensures that you don’t prematurely interrupt any other background audio that may be in progress."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Setting the category is the minimal interaction you have with an audio session, but other configuration options and features are available. For more information, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Enable Background Audio",
+          "anchor": "3573394"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "iOS and tvOS apps require you to enable certain capabilities for some background operations. A common capability playback apps require is to play background audio. With this capability enabled, your app’s audio continues when users switch to another app or when they lock their iOS device. This capability is also required for enabling advanced playback features like AirPlay streaming and Picture in Picture playback in iOS."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The simplest way to configure these capabilities is by using Xcode. Select your app’s target in Xcode and select the Signing & Capabilities tab. Under the Capabilities tab, add the Background Modes capability and select the “Audio, AirPlay, and Picture in Picture” option under its list of background modes."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3576642",
+              "metadata": {
+                "anchor": "3576642",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With this mode enabled and your audio session configured, your app is ready to play background audio."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

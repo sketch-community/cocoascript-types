@@ -1,0 +1,631 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Learn how to import an identity from file."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2864288,
+  "kind": "article",
+  "metadata": {
+    "title": "Importing an Identity",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/certificate_key_and_trust_services/identities/importing_an_identity"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/certificate_key_and_trust_services/identities/importing_an_identity"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services": {
+      "title": "Certificate, Key, and Trust Services",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services",
+      "url": "/documentation/security/certificate_key_and_trust_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities": {
+      "title": "Identities",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities",
+      "url": "/documentation/security/certificate_key_and_trust_services/identities",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity#2864290": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity#2864290",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity#2864290"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity#2864291": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity#2864291",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity#2864291"
+    },
+    "doc://com.apple.documentation/documentation/security/1396915-secpkcs12import": {
+      "title": "SecPKCS12Import",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396915-secpkcs12import",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396915-secpkcs12import",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the identities and certificates in a PKCS #12-formatted blob."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity#2864292": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity#2864292",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity#2864292"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity#2864293": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity#2864293",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity#2864293"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecimportitemidentity": {
+      "title": "kSecImportItemIdentity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecimportitemidentity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecimportitemidentity"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecimportitemcertchain": {
+      "title": "kSecImportItemCertChain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecimportitemcertchain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecimportitemcertchain"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecimportitemtrust": {
+      "title": "kSecImportItemTrust",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecimportitemtrust",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecimportitemtrust"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecimportitemkeyid": {
+      "title": "kSecImportItemKeyID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecimportitemkeyid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecimportitemkeyid"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecimportitemlabel": {
+      "title": "kSecImportItemLabel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecimportitemlabel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecimportitemlabel"
+    },
+    "doc://com.apple.documentation/documentation/security/1396041-seccertificatecopysubjectsummary": {
+      "title": "SecCertificateCopySubjectSummary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396041-seccertificatecopysubjectsummary",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396041-seccertificatecopysubjectsummary"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity#2864294": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity#2864294",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity#2864294"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity#2864295": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity#2864295",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity#2864295"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/trust/evaluating_a_trust_and_parsing_the_result": {
+      "title": "Evaluating a Trust and Parsing the Result",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/trust/evaluating_a_trust_and_parsing_the_result",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/trust/evaluating_a_trust_and_parsing_the_result"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity": {
+      "title": "Importing an Identity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn how to import an identity from file."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/keychain_import_and_export_options": {
+      "title": "Keychain Import and Export Options",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/keychain_import_and_export_options",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/certificate_key_and_trust_services/identities/keychain_import_and_export_options",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use these constants when you pass dictionary-based arguments to import and export functions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/pkcs_12_import_item_keys": {
+      "title": "PKCS #12 Import Item Keys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/pkcs_12_import_item_keys",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/certificate_key_and_trust_services/identities/pkcs_12_import_item_keys",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Recognized the dictionary keys returned by an import operation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1396915-secpkcs12import",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/keychain_import_and_export_options",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/pkcs_12_import_item_keys"
+      ],
+      "title": "Identity Import",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because it contains a private key, an identity must be kept secret. Though you might store a certificate by itself in an unencrypted, DER-encoded file and pass it around freely, you typically wouldn’t store or transmit an identity this way. The PKCS #12 file format, on the other hand, provides a means to store sensitive cryptographic objects in a password-protected container."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you receive a PKCS #12 file (often with a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "p12"
+            },
+            {
+              "type": "text",
+              "text": " extension) on a Mac, the Keychain Access app handles it by default. If the file is password protected, the app first prompts for a password when you open it. The contents of the file are then stored in the most recently selected keychain. And although file might include a variety of different cryptographic objects, it’s often used simply to transmit an identity."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can also import a PKCS #12 file directly into your app using the certificate, key, and trust services API. This might be useful if you need to securely communicate a new identity to your app in the field. As a concrete example, suppose your app has fetched such a file from a secure website and stored it locally at a particular file URL. You begin by reading this file into a data object:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "NSURL *url = <# a URL #>;",
+            "NSData *data = [[NSData alloc] initWithContentsOfURL:url];"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2864290",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An identity is a secret that you guard closely by applying a strong password to the PKCS #12 data. In fact, the CKTS API won’t even import PKCS #12 data that lacks a password. In order to supply the password during import, you create an options dictionary with the password string:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "NSString* password = <# a password #>;",
+            "NSDictionary* options = @{ (id)kSecImportExportPassphrase : password };"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2864291",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Do not bundle passwords with your app in any form. Doing so is insecure, because no matter how carefully you try to obscure a password, a motivated attacker will find a way to mimic the operations you use to reveal it for your own purposes. Instead, prompt the user for a password when you need it, or read it from the secure storage offered by a keychain."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Then, use the data and the options in a call to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1396915-secpkcs12import"
+            },
+            {
+              "type": "text",
+              "text": " function:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "CFArrayRef rawItems = NULL;",
+            "OSStatus status = SecPKCS12Import((__bridge CFDataRef)data,",
+            "                                  (__bridge CFDictionaryRef)options,",
+            "                                  &rawItems);"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2864292",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because the PKCS #12 format allows for bundling multiple cryptographic objects together, this function populates an array object. Typically, you iterate over every object in the array, handling each one in turn. In this case, assume that you are interested in only the first item. If the import function returns no error, and if at least one array item exists, you extract that as the first item in the array, which is a dictionary:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "NSArray* items = (NSArray*)CFBridgingRelease(rawItems); // Transfer to ARC",
+            "NSDictionary* firstItem = nil;",
+            "if ((status == errSecSuccess) && ([items count]>0)) {",
+            "    firstItem = items[0];",
+            "}"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2864293",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Notice that in Objective-C, you first pass ownership of the array and its contents to Automatic Reference Counting (ARC), which handles releasing it later. In Swift, the system automatically takes ownership. Either way, this dictionary held by the first item may contain these keys:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/security/ksecimportitemidentity"
+                    },
+                    {
+                      "type": "text",
+                      "text": "—Value contains the certificate and private key wrapped together as an identity."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/security/ksecimportitemcertchain"
+                    },
+                    {
+                      "type": "text",
+                      "text": "—Value contains the chain of certificates relevant to evaluating the trust of the certificate contained in the identity."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/security/ksecimportitemtrust"
+                    },
+                    {
+                      "type": "text",
+                      "text": "—Value contains a trust that’s set up with all of the relevant intermediate certificates. The trust is not guaranteed to evaluate successfully."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/security/ksecimportitemkeyid"
+                    },
+                    {
+                      "type": "text",
+                      "text": "—Value contains a key ID that’s often the SHA-1 digest of the public key in the identity."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/security/ksecimportitemlabel"
+                    },
+                    {
+                      "type": "text",
+                      "text": "—Value contains an item label. This label is not guaranteed to be in any particular format but is typically the same string returned by the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/security/1396041-seccertificatecopysubjectsummary"
+                    },
+                    {
+                      "type": "text",
+                      "text": " function for the certificate embedded in the identity."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To get the identity object, use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecimportitemidentity"
+            },
+            {
+              "type": "text",
+              "text": " key:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "SecIdentityRef identity =",
+            "    (SecIdentityRef)CFBridgingRetain(firstItem[(id)kSecImportItemIdentity]);"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2864294",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can additionally read a trust object from the dictionary in a similar way, using the appropriate key. For example:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "SecTrustRef trust =",
+            "    (SecTrustRef)CFBridgingRetain(firstItem[(id)kSecImportItemTrust]);"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2864295",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/trust/evaluating_a_trust_and_parsing_the_result"
+            },
+            {
+              "type": "text",
+              "text": " for details on how to use the trust to evaluate the certificate."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "In macOS, when it succeeds, the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/1396915-secpkcs12import"
+                },
+                {
+                  "type": "text",
+                  "text": " function call automatically stores the extracted identity in the default keychain in addition to returning a reference to it as one of the items in the array of dictionaries."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,1025 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Combine two images by using blend modes to create a single output."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vimage"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_vimage_blend_modes",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3683262,
+  "kind": "article",
+  "metadata": {
+    "title": "Compositing Images with vImage Blend Modes",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/compositing_images_with_vimage_blend_modes",
+        "documentation/accelerate/vimage/compositing_images_with_vimage_blend_modes"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/compositing_images_with_vimage_blend_modes",
+        "documentation/accelerate/vimage/compositing_images_with_vimage_blend_modes"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage": {
+      "title": "vImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vimage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manipulate large images using the CPU’s vector processor."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1410672-vimagepremultipliedalphablendlig": {
+      "title": "vImagePremultipliedAlphaBlendLighten_RGBA8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1410672-vimagepremultipliedalphablendlig",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1410672-vimagepremultipliedalphablendlig"
+    },
+    "link-media-3685983": {
+      "identifier": "link-media-3685983",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/accelerate/compositing_images_with_vimage_blend_modes#3685983"
+    },
+    "media-3685983": {
+      "identifier": "media-3685983",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 485
+          },
+          "url": "https://docs-assets.developer.apple.com/published/6764dd45cc/rendered2x-1600340433.png"
+        }
+      ],
+      "alt": "Graphic showing the lighten blend mode composite operation.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1410644-vimagepremultipliedalphablenddar": {
+      "title": "vImagePremultipliedAlphaBlendDarken_RGBA8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1410644-vimagepremultipliedalphablenddar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1410644-vimagepremultipliedalphablenddar"
+    },
+    "link-media-3685980": {
+      "identifier": "link-media-3685980",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/accelerate/compositing_images_with_vimage_blend_modes#3685980"
+    },
+    "media-3685980": {
+      "identifier": "media-3685980",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 485
+          },
+          "url": "https://docs-assets.developer.apple.com/published/53e1c5bbfd/rendered2x-1600340439.png"
+        }
+      ],
+      "alt": "Graphic showing the darken blend mode composite operation.",
+      "title": "Figure 3"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1410729-vimagepremultipliedalphablendscr": {
+      "title": "vImagePremultipliedAlphaBlendScreen_RGBA8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1410729-vimagepremultipliedalphablendscr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1410729-vimagepremultipliedalphablendscr"
+    },
+    "link-media-3685981": {
+      "identifier": "link-media-3685981",
+      "type": "link",
+      "title": "Figure 4",
+      "url": "/documentation/accelerate/compositing_images_with_vimage_blend_modes#3685981"
+    },
+    "media-3685981": {
+      "identifier": "media-3685981",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 485
+          },
+          "url": "https://docs-assets.developer.apple.com/published/4540036551/rendered2x-1600340452.png"
+        }
+      ],
+      "alt": "Graphic showing the screen blend mode composite operation.",
+      "title": "Figure 4"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_vimage_blend_modes#3683476": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_vimage_blend_modes#3683476",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compositing_images_with_vimage_blend_modes#3683476"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_vimage_blend_modes#3683477": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_vimage_blend_modes#3683477",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compositing_images_with_vimage_blend_modes#3683477"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1410664-vimagepremultipliedalphablendmul": {
+      "title": "vImagePremultipliedAlphaBlendMultiply_RGBA8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1410664-vimagepremultipliedalphablendmul",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1410664-vimagepremultipliedalphablendmul"
+    },
+    "link-media-3685984": {
+      "identifier": "link-media-3685984",
+      "type": "link",
+      "title": "Figure 5",
+      "url": "/documentation/accelerate/compositing_images_with_vimage_blend_modes#3685984"
+    },
+    "media-3685984": {
+      "identifier": "media-3685984",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 485
+          },
+          "url": "https://docs-assets.developer.apple.com/published/21373f1a37/rendered2x-1600340445.png"
+        }
+      ],
+      "alt": "Graphic showing the multiply blend mode composite operation.",
+      "title": "Figure 5"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_vimage_blend_modes#3683480": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_vimage_blend_modes#3683480",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compositing_images_with_vimage_blend_modes#3683480"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1410692-vimagepremultiplydata_argb8888": {
+      "title": "vImagePremultiplyData_ARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1410692-vimagepremultiplydata_argb8888",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1410692-vimagepremultiplydata_argb8888"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_buffer": {
+      "title": "vImage_Buffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_buffer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_buffer"
+    },
+    "link-media-3685982": {
+      "identifier": "link-media-3685982",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/compositing_images_with_vimage_blend_modes#3685982"
+    },
+    "media-3685982": {
+      "identifier": "media-3685982",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 327
+          },
+          "url": "https://docs-assets.developer.apple.com/published/73153c969f/rendered2x-1600340426.png"
+        }
+      ],
+      "alt": "Two photographs used in compositing operations in this article. The first photograph is of a flower. The second photograph is separated into four quadrants containing white, gray, black, and content from the first photograph.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/alpha_compositing": {
+      "title": "Alpha Compositing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/alpha_compositing",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vimage/vimage_operations/alpha_compositing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Composite images together."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_format": {
+      "title": "Creating a Core Graphics Image Format",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_format",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/creating_a_core_graphics_image_format",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide descriptions of Core Graphics image formats for conversions to and from vImage."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/creating_and_populating_buffers_from_core_graphics_images": {
+      "title": "Creating and Populating Buffers from Core Graphics Images",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_and_populating_buffers_from_core_graphics_images",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/creating_and_populating_buffers_from_core_graphics_images",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initialize vImage buffers from Core Graphics images."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_from_a_vimage_buffer": {
+      "title": "Creating a Core Graphics Image from a vImage Buffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_from_a_vimage_buffer",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/creating_a_core_graphics_image_from_a_vimage_buffer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create displayable representations of vImage buffers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/building_a_basic_image-processing_workflow": {
+      "title": "Building a Basic Image-Processing Workflow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/building_a_basic_image-processing_workflow",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/building_a_basic_image-processing_workflow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resize an image with vImage."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_geometric_transforms_to_images": {
+      "title": "Applying Geometric Transforms to Images",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_geometric_transforms_to_images",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/applying_geometric_transforms_to_images",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reflect, shear, rotate, and scale image buffers using vImage."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending": {
+      "title": "Compositing Images with Alpha Blending",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/compositing_images_with_alpha_blending",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combine two images by using alpha blending to create a single output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_vimage_blend_modes": {
+      "title": "Compositing Images with vImage Blend Modes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_vimage_blend_modes",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/compositing_images_with_vimage_blend_modes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combine two images by using blend modes to create a single output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_regions_of_interest": {
+      "title": "Applying vImage Operations to Regions of Interest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_regions_of_interest",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/applying_vimage_operations_to_regions_of_interest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Limit the effect of vImage operations to rectangular regions of interest."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/optimizing_image-processing_performance": {
+      "title": "Optimizing Image-Processing Performance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/optimizing_image-processing_performance",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/optimizing_image-processing_performance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Improve your app's performance by converting image buffer formats from interleaved to planar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_format",
+        "doc://com.apple.documentation/documentation/accelerate/creating_and_populating_buffers_from_core_graphics_images",
+        "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_from_a_vimage_buffer",
+        "doc://com.apple.documentation/documentation/accelerate/building_a_basic_image-processing_workflow",
+        "doc://com.apple.documentation/documentation/accelerate/applying_geometric_transforms_to_images",
+        "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending",
+        "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_regions_of_interest",
+        "doc://com.apple.documentation/documentation/accelerate/optimizing_image-processing_performance",
+        "doc://com.apple.documentation/documentation/accelerate/vimage"
+      ],
+      "title": "Image Processing Essentials",
+      "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/alpha_compositing"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "vImage provides a suite of functions for compositing two source images into one output. These "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "blend mode"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " functions implement different algorithms to determine the output color. For example, the multiply blend mode sets each output pixel as the product of the two corresponding input pixels."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The blend mode functions work on 8-bit RGBA source images in premultiplied format. You can convert a nonpremultiplied buffer to premultiplied format by using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1410692-vimagepremultiplydata_argb8888"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The blend mode functions accept two "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_buffer"
+            },
+            {
+              "type": "text",
+              "text": " structures as the bottom and top layers of the compositing operation. The examples that follow use the image below on the left as the bottom layer and the image below on the right as the top layer."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3685982",
+              "metadata": {
+                "anchor": "3685982",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The top-layer source image consists of four sections:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The top-left quadrant is solid white ("
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "[255, 255, 255]"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The top-right quadrant is identical to the corresponding quadrant of the bottom image."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The bottom-left quadrant is solid mid-gray ("
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "[127, 127, 127]"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The bottom-right quadrant is solid black ("
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "[0, 0, 0]"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Both images are fully opaque."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Composite Images Using the Lighten Blend Mode",
+          "anchor": "3683268"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1410672-vimagepremultipliedalphablendlig"
+            },
+            {
+              "type": "text",
+              "text": " function to composite two layers using the lighten blend mode. You can use the lighten blend mode to apply an overall lightening effect to images."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The lighten blend mode sets each channel of the destination pixel as the lightest value for the corresponding channel of the two source layers. The following image shows the result of compositing using the lighten blend mode:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3685983",
+              "metadata": {
+                "anchor": "3685983",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The top-left quadrant in the result is white because no pixels in the bottom layer are brighter than the corresponding pixels in the top layer. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The bottom-left quadrant in the result looks washed out because the operation selects gray pixels from the top layer over corresponding dark pixels from the bottom layer."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Composite Images Using the Darken Blend Mode",
+          "anchor": "3683273"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1410644-vimagepremultipliedalphablenddar"
+            },
+            {
+              "type": "text",
+              "text": " function to composite two layers using the darken blend mode. You can use the darken blend mode to apply an overall darkening effect to images."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The darken blend mode sets each channel of the destination pixel as the darkest value for the corresponding channel of the two source layers. The following image shows the result of compositing using the darken blend mode:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3685980",
+              "metadata": {
+                "anchor": "3685980",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The bottom-right quadrant in the result is black because no pixels in the bottom layer are darker than the corresponding pixels in the top layer. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The bottom-left quadrant in the result looks darker than the corresponding quadrant in the bottom layer. This is because the operation selects gray pixels from the top layer over corresponding light pixels from the bottom layer."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Composite Images Using the Screen Blend Mode",
+          "anchor": "3683269"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1410729-vimagepremultipliedalphablendscr"
+            },
+            {
+              "type": "text",
+              "text": " function to composite two layers using the screen blend mode. You can use the screen blend mode to lighten images without affecting the darkest areas."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The screen blend mode sets the destination pixel as the inverted product of the inverted corresponding source pixels. The following image shows the result of compositing using the screen blend mode:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3685981",
+              "metadata": {
+                "anchor": "3685981",
+                "title": "Figure 4"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The bottom-right quadrant in the result is identical to the corresponding quadrant in the bottom layer because the operation multiplies each bottom-layer pixel value by "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1.0"
+            },
+            {
+              "type": "text",
+              "text": ". For example, if the source pixel value is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0.5"
+            },
+            {
+              "type": "text",
+              "text": ", the destination pixel value is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0.5"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "dest = 1 - (1 - 0.5) * (1 - 0.0) // dest = 0.5"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3683476",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The top-right quadrant in the result is brighter than the corresponding quadrant in the bottom layer. In this quadrant, the top-layer and bottom-layer pixel values are identical. For example, if the source pixel value is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0.5"
+            },
+            {
+              "type": "text",
+              "text": ", the destination pixel value is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0.75"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "dest = 1 - (1 - 0.5) * (1 - 0.5) // dest = 0.75"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3683477",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Composite Images Using the Multiply Blend Mode",
+          "anchor": "3683272"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1410664-vimagepremultipliedalphablendmul"
+            },
+            {
+              "type": "text",
+              "text": " function to composite two layers using the multiply blend mode. You can the use multiply blend mode to darken images without affecting the lightest areas."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The multiply blend mode sets the destination pixel as the product of the corresponding source pixels. The following image shows the result of compositing using the multiply blend mode:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3685984",
+              "metadata": {
+                "anchor": "3685984",
+                "title": "Figure 5"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The bottom-right quadrant in the result is black because the operation multiplies each bottom-layer pixel value by "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0.0"
+            },
+            {
+              "type": "text",
+              "text": " from the top layer."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The top-left quadrant in the result is identical to the corresponding quadrant in the bottom layer because the operation multiplies each bottom-layer pixel value by "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1.0"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The top-right quadrant in the result is darker than the corresponding quadrant in the bottom layer. In this quadrant, the top-layer and bottom-layer pixel values are identical. For example, if the source pixel value is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0.5"
+            },
+            {
+              "type": "text",
+              "text": ", the destination pixel value is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0.25"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "dest = 0.5 * 0.5 // dest = 0.25"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3683480",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

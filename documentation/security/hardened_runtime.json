@@ -1,0 +1,639 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Manage security protections and resource access for your macOS apps."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/bundleresources",
+        "doc://com.apple.documentation/documentation/bundleresources/entitlements"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/hardened_runtime",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3111184,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Hardened Runtime",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/hardened_runtime",
+        "documentation/bundleresources/entitlements/hardened_runtime"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/hardened_runtime",
+        "documentation/bundleresources/entitlements/hardened_runtime"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources": {
+      "title": "Bundle Resources",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources",
+      "url": "/documentation/bundleresources",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements": {
+      "title": "Entitlements",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements",
+      "url": "/documentation/bundleresources/entitlements",
+      "type": "topic",
+      "kind": "article",
+      "role": "dictionarySymbol"
+    },
+    "link-media-3330446": {
+      "identifier": "link-media-3330446",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/security/hardened_runtime#3330446"
+    },
+    "media-3330446": {
+      "identifier": "media-3330446",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 266
+          },
+          "url": "https://docs-assets.developer.apple.com/published/9cc7ab8862/e8fc0acf-47fe-4413-a9f7-4f6d037c92e5.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 266
+          },
+          "url": "https://docs-assets.developer.apple.com/published/5a817d82da/30f60cce-4a5b-43fb-9ef5-f90d1d089ff1.png"
+        }
+      ],
+      "alt": "Screenshot highlighting where to click to add a new capability in Xcode’s Signing & Capabilities tab.",
+      "title": "Figure 1"
+    },
+    "link-media-3330445": {
+      "identifier": "link-media-3330445",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/security/hardened_runtime#3330445"
+    },
+    "media-3330445": {
+      "identifier": "media-3330445",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 1360,
+            "height": 591
+          },
+          "url": "https://docs-assets.developer.apple.com/published/fd194cf11b/b2524508-0a5b-452e-898a-8eb252c2db4f.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 1360,
+            "height": 591
+          },
+          "url": "https://docs-assets.developer.apple.com/published/cdbc382435/883514e6-75c9-413f-8cc9-714755c8980b.png"
+        }
+      ],
+      "alt": "Screenshot of Xcode showing some of the entitlements used for exceptions to the Hardened Runtime.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/xcode/notarizing_macos_software_before_distribution": {
+      "title": "Notarizing macOS Software Before Distribution",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/xcode/notarizing_macos_software_before_distribution",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/xcode/notarizing_macos_software_before_distribution",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Give users even more confidence in your macOS software by submitting it to Apple for notarization."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_cs_allow-jit": {
+      "title": "Allow Execution of JIT-compiled Code Entitlement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_cs_allow-jit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/com_apple_security_cs_allow-jit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the app may create writable and executable memory using the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "MAP_JIT"
+        },
+        {
+          "type": "text",
+          "text": " flag."
+        }
+      ],
+      "titleStyle": "title",
+      "name": "com.apple.security.cs.allow-jit",
+      "ideTitle": "Allow Execution of JIT-compiled Code Entitlement"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_cs_allow-unsigned-executable-memory": {
+      "title": "Allow Unsigned Executable Memory Entitlement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_cs_allow-unsigned-executable-memory",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/com_apple_security_cs_allow-unsigned-executable-memory",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the app may create writable and executable memory without the restrictions imposed by using the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "MAP_JIT"
+        },
+        {
+          "type": "text",
+          "text": " flag."
+        }
+      ],
+      "titleStyle": "title",
+      "name": "com.apple.security.cs.allow-unsigned-executable-memory",
+      "ideTitle": "Allow Unsigned Executable Memory Entitlement"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_cs_allow-dyld-environment-variables": {
+      "title": "Allow DYLD Environment Variables Entitlement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_cs_allow-dyld-environment-variables",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/com_apple_security_cs_allow-dyld-environment-variables",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the app may be affected by dynamic linker environment variables, which you can use to inject code into your app’s process."
+        }
+      ],
+      "titleStyle": "title",
+      "name": "com.apple.security.cs.allow-dyld-environment-variables",
+      "ideTitle": "Allow DYLD Environment Variables Entitlement"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_cs_disable-library-validation": {
+      "title": "Disable Library Validation Entitlement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_cs_disable-library-validation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/com_apple_security_cs_disable-library-validation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the app may load arbitrary plug-ins or frameworks, without requiring code signing."
+        }
+      ],
+      "titleStyle": "title",
+      "name": "com.apple.security.cs.disable-library-validation",
+      "ideTitle": "Disable Library Validation Entitlement"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_cs_disable-executable-page-protection": {
+      "title": "Disable Executable Memory Protection Entitlement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_cs_disable-executable-page-protection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/com_apple_security_cs_disable-executable-page-protection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether to disable all code signing protections while launching an app, and during its execution."
+        }
+      ],
+      "titleStyle": "title",
+      "name": "com.apple.security.cs.disable-executable-page-protection",
+      "ideTitle": "Disable Executable Memory Protection Entitlement"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_cs_debugger": {
+      "title": "Debugging Tool Entitlement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_cs_debugger",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/com_apple_security_cs_debugger",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the app is a debugger and may attach to other processes or get task ports."
+        }
+      ],
+      "titleStyle": "title",
+      "name": "com.apple.security.cs.debugger",
+      "ideTitle": "Debugging Tool Entitlement"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_device_audio-input": {
+      "title": "Audio Input Entitlement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_device_audio-input",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/com_apple_security_device_audio-input",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the app may record audio using the built-in microphone and access audio input using Core Audio."
+        }
+      ],
+      "titleStyle": "title",
+      "name": "com.apple.security.device.audio-input",
+      "ideTitle": "Audio Input Entitlement"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_device_camera": {
+      "title": "Camera Entitlement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_device_camera",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/com_apple_security_device_camera",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the app may capture movies and still images using the built-in camera."
+        }
+      ],
+      "titleStyle": "title",
+      "name": "com.apple.security.device.camera",
+      "ideTitle": "Camera Entitlement"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_personal-information_location": {
+      "title": "Location Entitlement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_personal-information_location",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/com_apple_security_personal-information_location",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the app may access location information from Location Services."
+        }
+      ],
+      "titleStyle": "title",
+      "name": "com.apple.security.personal-information.location",
+      "ideTitle": "Location Entitlement"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_personal-information_addressbook": {
+      "title": "Address Book Entitlement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_personal-information_addressbook",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/com_apple_security_personal-information_addressbook",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the app may have read-write access to contacts in the user's address book."
+        }
+      ],
+      "titleStyle": "title",
+      "name": "com.apple.security.personal-information.addressbook",
+      "ideTitle": "Address Book Entitlement"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_personal-information_calendars": {
+      "title": "Calendars Entitlement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_personal-information_calendars",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/com_apple_security_personal-information_calendars",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the app may have read-write access to the user's calendar."
+        }
+      ],
+      "titleStyle": "title",
+      "name": "com.apple.security.personal-information.calendars",
+      "ideTitle": "Calendars Entitlement"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_personal-information_photos-library": {
+      "title": "Photos Library Entitlement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_personal-information_photos-library",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/com_apple_security_personal-information_photos-library",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the app has read-write access to the user's Photos library."
+        }
+      ],
+      "titleStyle": "title",
+      "name": "com.apple.security.personal-information.photos-library",
+      "ideTitle": "Photos Library Entitlement"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_automation_apple-events": {
+      "title": "Apple Events Entitlement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_automation_apple-events",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/com_apple_security_automation_apple-events",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the app may prompt the user for permission to send Apple events to other apps."
+        }
+      ],
+      "titleStyle": "title",
+      "name": "com.apple.security.automation.apple-events",
+      "ideTitle": "Apple Events Entitlement"
+    },
+    "doc://com.apple.documentation/documentation/security/code_signing_services": {
+      "title": "Code Signing Services",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/code_signing_services",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/code_signing_services",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Examine and validate signed code running on the system."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/preparing_your_app_to_work_with_pointer_authentication": {
+      "title": "Preparing Your App to Work with Pointer Authentication",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/preparing_your_app_to_work_with_pointer_authentication",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/preparing_your_app_to_work_with_pointer_authentication",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Test your app against the arm64e architecture to ensure that it works seamlessly with enhanced security features."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/app_sandbox": {
+      "title": "App Sandbox",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/app_sandbox",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/app_sandbox",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Restrict access to system resources and user data in macOS apps to contain damage if an app becomes compromised."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/hardened_runtime": {
+      "title": "Hardened Runtime",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/hardened_runtime",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/hardened_runtime",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage security protections and resource access for your macOS apps."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/disabling_and_enabling_system_integrity_protection": {
+      "title": "Disabling and Enabling System Integrity Protection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/disabling_and_enabling_system_integrity_protection",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/disabling_and_enabling_system_integrity_protection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Disable system protections only temporarily during development to test drivers, kernel extensions, and other low-level code."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/xcode/using_the_latest_code_signature_format": {
+      "title": "Using the Latest Code Signature Format",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/xcode/using_the_latest_code_signature_format",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/xcode/using_the_latest_code_signature_format",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Update legacy app code signatures to avoid a warning from iOS."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Runtime Exceptions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_cs_allow-jit",
+        "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_cs_allow-unsigned-executable-memory",
+        "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_cs_allow-dyld-environment-variables",
+        "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_cs_disable-library-validation",
+        "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_cs_disable-executable-page-protection",
+        "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_cs_debugger"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Resource Access",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_device_audio-input",
+        "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_device_camera",
+        "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_personal-information_location",
+        "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_personal-information_addressbook",
+        "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_personal-information_calendars",
+        "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_personal-information_photos-library",
+        "doc://com.apple.documentation/documentation/bundleresources/entitlements/com_apple_security_automation_apple-events"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/code_signing_services",
+        "doc://com.apple.documentation/documentation/xcode/notarizing_macos_software_before_distribution",
+        "doc://com.apple.documentation/documentation/security/preparing_your_app_to_work_with_pointer_authentication",
+        "doc://com.apple.documentation/documentation/security/app_sandbox",
+        "doc://com.apple.documentation/documentation/security/disabling_and_enabling_system_integrity_protection",
+        "doc://com.apple.documentation/documentation/xcode/using_the_latest_code_signature_format"
+      ],
+      "title": "Secure Code",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Hardened Runtime, along with System Integrity Protection (SIP), protects the runtime integrity of your software by preventing certain classes of exploits, like code injection, dynamically linked library (DLL) hijacking, and process memory space tampering. To enable the Hardened Runtime for your app, navigate in Xcode to your target’s Signing & Capabilities information and click the + button. In the window that appears, choose Hardened Runtime."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3330446",
+              "metadata": {
+                "anchor": "3330446",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Hardened Runtime doesn’t affect the operation of most apps, but it does disallow certain less common capabilities, like just-in-time (JIT) compilation. If your app relies on a capability that the Hardened Runtime restricts, add an entitlement to disable an individual protection. You add an entitlement by enabling one of the runtime exceptions or access permissions listed in Xcode. Make sure to use only the entitlements that are absolutely necessary for your app’s functionality."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3330445",
+              "metadata": {
+                "anchor": "3330445",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You add entitlements only to executables. Shared libraries, frameworks, and in-process plug-ins inherit the entitlements of their host executable. "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "To upload a macOS app to be notarized, you must enable the Hardened Runtime capability. For more information about notarization, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/xcode/notarizing_macos_software_before_distribution"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

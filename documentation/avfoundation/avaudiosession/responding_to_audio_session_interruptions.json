@@ -1,0 +1,527 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Observe audio session notifications to ensure that your app responds appropriately to interruptions."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiosession"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/responding_to_audio_session_interruptions",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2948855,
+  "kind": "article",
+  "metadata": {
+    "title": "Responding to Audio Session Interruptions",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/avaudiosession/responding_to_audio_session_interruptions"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/avaudiosession/responding_to_audio_session_interruptions"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing": {
+      "title": "Audio Playback, Recording, and Processing",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing",
+      "url": "/documentation/avfoundation/audio_playback_recording_and_processing",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosession": {
+      "title": "AVAudioSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosession"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioninterruptionnotification": {
+      "title": "AVAudioSessionInterruptionNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioninterruptionnotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosessioninterruptionnotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that’s posted when an audio interruption occurs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/responding_to_audio_session_interruptions#2948854": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/responding_to_audio_session_interruptions#2948854",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/avaudiosession/responding_to_audio_session_interruptions#2948854"
+    },
+    "doc://com.apple.documentation/documentation/foundation/notification": {
+      "title": "Notification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/notification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/notification"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioninterruptiontype": {
+      "title": "AVAudioSessionInterruptionType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioninterruptiontype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosessioninterruptiontype"
+    },
+    "doc://com.apple.documentation/documentation/foundation/notification/1779652-userinfo": {
+      "title": "userInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/notification/1779652-userinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/notification/1779652-userinfo"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/responding_to_audio_session_interruptions#2948860": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/responding_to_audio_session_interruptions#2948860",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/avaudiosession/responding_to_audio_session_interruptions#2948860"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioninterruptiontype/avaudiosessioninterruptiontypeended": {
+      "title": "AVAudioSessionInterruptionTypeEnded",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioninterruptiontype/avaudiosessioninterruptiontypeended",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosessioninterruptiontype/avaudiosessioninterruptiontypeended"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioninterruptionoptions": {
+      "title": "AVAudioSessionInterruptionOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioninterruptionoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosessioninterruptionoptions"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer": {
+      "title": "AVPlayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388846-rate": {
+      "title": "rate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388846-rate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1388846-rate"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/responding_to_audio_session_interruptions": {
+      "title": "Responding to Audio Session Interruptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/responding_to_audio_session_interruptions",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/avaudiosession/responding_to_audio_session_interruptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Observe audio session notifications to ensure that your app responds appropriately to interruptions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/responding_to_audio_session_route_changes": {
+      "title": "Responding to Audio Session Route Changes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/responding_to_audio_session_route_changes",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/avaudiosession/responding_to_audio_session_route_changes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Observe audio session notifications to ensure that your app responds appropriately to route changes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/1616458-interruption_flags": {
+      "title": "Interruption Flags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/1616458-interruption_flags",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/avfoundation/1616458-interruption_flags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that indicate the state of the audio session following an interruption."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionroutechangenotification": {
+      "title": "AVAudioSessionRouteChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionroutechangenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosessionroutechangenotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that’s posted when the system’s audio route changes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionsilencesecondaryaudiohintnotification": {
+      "title": "AVAudioSessionSilenceSecondaryAudioHintNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionsilencesecondaryaudiohintnotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosessionsilencesecondaryaudiohintnotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that’s posted when the primary audio from other applications starts and stops."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmediaserviceswerelostnotification": {
+      "title": "AVAudioSessionMediaServicesWereLostNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmediaserviceswerelostnotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosessionmediaserviceswerelostnotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that’s posted when the system terminates the media server."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmediaserviceswereresetnotification": {
+      "title": "AVAudioSessionMediaServicesWereResetNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmediaserviceswereresetnotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosessionmediaserviceswereresetnotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that’s posted when the media server restarts."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/responding_to_audio_session_route_changes",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioninterruptionnotification",
+        "doc://com.apple.documentation/documentation/avfoundation/1616458-interruption_flags",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionroutechangenotification",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionsilencesecondaryaudiohintnotification",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmediaserviceswerelostnotification",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmediaserviceswereresetnotification"
+      ],
+      "title": "Responding to Audio Session Notifications",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Interruptions are a common part of the iOS and watchOS user experiences. For example, consider the case of receiving a phone call while you’re watching a movie in the TV app on your iPhone. In this scenario, the movie’s audio fades out, playback pauses, and the sound of the call’s ringtone fades in. If you decline the call, control returns to the TV app, and playback begins again as the movie’s audio fades in."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "At the center of this behavior is your app’s audio session. As interruptions begin and end, the audio session notifies any registered observers so they can take appropriate action. For example, "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer"
+            },
+            {
+              "type": "text",
+              "text": " monitors your app’s audio session and automatically pauses and resumes playback in response to interruption events. You can observe these changes by key-value observing the player’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388846-rate"
+            },
+            {
+              "type": "text",
+              "text": " property and updating your user interface as needed when the player pauses and resumes playback."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Observe Interruptions",
+          "anchor": "2948856"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can directly observe interruption notifications posted by "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession"
+            },
+            {
+              "type": "text",
+              "text": ". This might be useful if you’d like to know if the system paused playback due to an interruption or another reason, such as a route change. To observe audio interruptions, begin by registering to observe notifications of type "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioninterruptionnotification"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func setupNotifications() {",
+            "    // Get the default notification center instance.",
+            "    let nc = NotificationCenter.default",
+            "    nc.addObserver(self,",
+            "                   selector: #selector(handleInterruption),",
+            "                   name: AVAudioSession.interruptionNotification,",
+            "                   object: nil)",
+            "}",
+            "",
+            "@objc func handleInterruption(notification: Notification) {",
+            "    // To be implemented.",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2948854",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Respond to Interruptions",
+          "anchor": "2948859"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The posted "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/notification"
+            },
+            {
+              "type": "text",
+              "text": " object contains a populated user-information dictionary providing the details of the interruption. You determine the type of interruption by retrieving the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioninterruptiontype"
+            },
+            {
+              "type": "text",
+              "text": " value from the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/notification/1779652-userinfo"
+            },
+            {
+              "type": "text",
+              "text": " dictionary. The interruption type indicates whether the interruption has begun or ended."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "@objc func handleInterruption(notification: Notification) {",
+            "    guard let userInfo = notification.userInfo,",
+            "        let typeValue = userInfo[AVAudioSessionInterruptionTypeKey] as? UInt,",
+            "        let type = AVAudioSession.InterruptionType(rawValue: typeValue) else {",
+            "            return",
+            "    }",
+            "",
+            "    // Switch over the interruption type.",
+            "    switch type {",
+            "",
+            "    case .began:",
+            "        // An interruption began. Update the UI as needed.",
+            "",
+            "    case .ended:",
+            "       // An interruption ended. Resume playback, if appropriate.",
+            "",
+            "        guard let optionsValue = userInfo[AVAudioSessionInterruptionOptionKey] as? UInt else { return }",
+            "        let options = AVAudioSession.InterruptionOptions(rawValue: optionsValue)",
+            "        if options.contains(.shouldResume) {",
+            "            // Interruption ended. Playback should resume.",
+            "        } else {",
+            "            // Interruption ended. Playback should not resume.",
+            "        }",
+            "",
+            "    default: ()",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2948860",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the interruption type is "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioninterruptiontype/avaudiosessioninterruptiontypeended"
+            },
+            {
+              "type": "text",
+              "text": ", the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/notification/1779652-userinfo"
+            },
+            {
+              "type": "text",
+              "text": " dictionary contains an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioninterruptionoptions"
+            },
+            {
+              "type": "text",
+              "text": " value, which you use to determine if playback should automatically resume."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

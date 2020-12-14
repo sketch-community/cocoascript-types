@@ -1,0 +1,694 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Create a simple video playback app with built-in controls."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2942069,
+  "kind": "article",
+  "metadata": {
+    "title": "Creating a Basic Video Player (iOS and tvOS)",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection": {
+      "title": "Media Playback and Selection",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
+      "url": "/documentation/avfoundation/media_playback_and_selection",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application": {
+      "title": "application:didFinishLaunchingWithOptions:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplicationdelegate/1622921-application",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "application:didFinishLaunchingWithOptions:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioncategoryplayback": {
+      "title": "AVAudioSessionCategoryPlayback",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioncategoryplayback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosessioncategoryplayback"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmodemovieplayback": {
+      "title": "AVAudioSessionModeMoviePlayback",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmodemovieplayback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosessionmodemovieplayback"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos#2943540": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos#2943540",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos#2943540"
+    },
+    "link-media-2943577": {
+      "identifier": "link-media-2943577",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos#2943577"
+    },
+    "media-2943577": {
+      "identifier": "media-2943577",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 416,
+            "height": 424
+          },
+          "url": "https://docs-assets.developer.apple.com/published/caa5f3bbe0/b6bef4e4-4c5a-4f73-8a5b-5c9f0a73681c.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 416,
+            "height": 424
+          },
+          "url": "https://docs-assets.developer.apple.com/published/1fda0a0d60/54f16e3d-7fdf-48f7-83ff-de37c7ce6503.png"
+        }
+      ],
+      "alt": "Xcode constraints window with the horizontal and vertical alignment options selected.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos#2943591": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos#2943591",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos#2943591"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/enabling_background_audio": {
+      "title": "Enabling Background Audio",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/enabling_background_audio",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/enabling_background_audio",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configure your app to continue playing audio when it goes into the background."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/playing_audio_from_a_video_asset_in_the_background": {
+      "title": "Playing Audio from a Video Asset in the Background",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/playing_audio_from_a_video_asset_in_the_background",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/playing_audio_from_a_video_asset_in_the_background",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Continue playing audio from a video asset when the video moves into the background."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/controlling_background_audio": {
+      "title": "Controlling Background Audio",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/controlling_background_audio",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/controlling_background_audio",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Support controlling background audio from the Control Center and iOS Lock screen."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_macos": {
+      "title": "Creating a Basic Video Player (macOS)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_macos",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_macos",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a simple video playback app with built-in controls."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos": {
+      "title": "Creating a Basic Video Player (iOS and tvOS)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a simple video playback app with built-in controls."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/configuring_the_audio_playback_of_ios_and_tvos_apps": {
+      "title": "Configuring the Audio Playback of iOS and tvOS Apps",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/configuring_the_audio_playback_of_ios_and_tvos_apps",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/configuring_the_audio_playback_of_ios_and_tvos_apps",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Customize your app’s audio playback capabilities by configuring its audio session and background modes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/guidelines_for_apple_tv_4k_development": {
+      "title": "Guidelines for Apple TV 4K Development",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/guidelines_for_apple_tv_4k_development",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/guidelines_for_apple_tv_4k_development",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Follow these guidelines when developing for Apple TV 4K."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Working with Background Audio",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/enabling_background_audio",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/playing_audio_from_a_video_asset_in_the_background",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/controlling_background_audio"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_macos",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/configuring_the_audio_playback_of_ios_and_tvos_apps",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/guidelines_for_apple_tv_4k_development"
+      ],
+      "title": "Essentials",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Using AVKit and AVFoundation, you can quickly create a simple video playback app."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Set Up the Audio Session",
+          "anchor": "2942070"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You use an audio session to communicate to the system how you intend to use audio in your app. The audio session acts as an intermediary between your app and the operating system—and, in turn, the underlying audio hardware. Configure the audio session to give your app the audio behavior expected of a media playback app."
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Use "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "import AVFoundation"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to add the AVFoundation framework to the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "AppDelegate.swift"
+                    },
+                    {
+                      "type": "text",
+                      "text": " class. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622921-application"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method, retrieve the shared instance of the audio session and set the app’s audio session category to "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioncategoryplayback"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and mode to "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmodemovieplayback"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {",
+            "    let audioSession = AVAudioSession.sharedInstance()",
+            "    do {",
+            "        try audioSession.setCategory(.playback, mode: .moviePlayback)",
+            "    }",
+            "    catch {",
+            "        print(\"Setting category to AVAudioSessionCategoryPlayback failed.\")",
+            "    }",
+            "    return true",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2943540",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Set Up and Configure the User Interface",
+          "anchor": "2943539"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After configuring your app’s audio session, you need to create the user interface for the player."
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Open the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Main.storyboard"
+                    },
+                    {
+                      "type": "text",
+                      "text": " file. In the Library’s search field, type "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "button"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to find the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Button"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Drag the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Button"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object into the View Controller Scene’s view and give it the title Play Video. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add alignment constraints to center the button both horizontally and vertically."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2943577",
+              "metadata": {
+                "anchor": "2943577",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Implement Playback Behavior",
+          "anchor": "2943590"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Now that you have created the user interface, it’s time to add the code required to play a video."
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In the Project Navigator, select the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Main.storyboard"
+                    },
+                    {
+                      "type": "text",
+                      "text": " file and open the assistant editor."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Control-drag from the Play Video button to the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "ViewController.swift"
+                    },
+                    {
+                      "type": "text",
+                      "text": " class to add a new "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "@IBAction"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method called "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "playVideo"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Close the assistant editor and select the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "ViewController.swift"
+                    },
+                    {
+                      "type": "text",
+                      "text": " class in the Project Navigator. Above the class definition, import the AVKit and AVFoundation frameworks."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "playVideo"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method, add the following implementation:"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "@IBAction func playVideo(_ sender: UIButton) {",
+            "    guard let url = URL(string: \"https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_adv_example_hevc/master.m3u8\") else {",
+            "        return",
+            "    }",
+            "    // Create an AVPlayer, passing it the HTTP Live Streaming URL.",
+            "    let player = AVPlayer(url: url)",
+            "",
+            "    // Create a new AVPlayerViewController and pass it a reference to the player.",
+            "    let controller = AVPlayerViewController()",
+            "    controller.player = player",
+            "",
+            "    // Modally present the player and call the player's play() method when complete.",
+            "    present(controller, animated: true) {",
+            "        player.play()",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2943591",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your app is complete, and you can run it in the Simulator or on your iOS or tvOS device."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

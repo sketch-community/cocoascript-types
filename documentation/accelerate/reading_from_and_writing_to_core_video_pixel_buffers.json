@@ -1,0 +1,941 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Transfer image data between Core Video pixel buffers and vImage buffers to integrate vImage operations into a Core Image workflow"
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vimage"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2948283,
+  "kind": "article",
+  "metadata": {
+    "title": "Reading From and Writing to Core Video Pixel Buffers",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "11.2",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.3",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers",
+        "documentation/accelerate/vimage/reading_from_and_writing_to_core_video_pixel_buffers"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers",
+        "documentation/accelerate/vimage/reading_from_and_writing_to_core_video_pixel_buffers"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage": {
+      "title": "vImage",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage",
+      "url": "/documentation/accelerate/vimage",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers#3561368": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers#3561368",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers#3561368"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers#3561370": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers#3561370",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers#3561370"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers#3561372": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers#3561372",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers#3561372"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers#3561374": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers#3561374",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers#3561374"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers#3561376": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers#3561376",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers#3561376"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers#3561378": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers#3561378",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers#3561378"
+    },
+    "link-media-3561366": {
+      "identifier": "link-media-3561366",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers#3561366"
+    },
+    "media-3561366": {
+      "identifier": "media-3561366",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 651,
+            "height": 252
+          },
+          "url": "https://docs-assets.developer.apple.com/published/79be1044fe/rendered2x-1584397914.png"
+        }
+      ],
+      "alt": "Photos showing original and equalized images.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers": {
+      "title": "Reading From and Writing to Core Video Pixel Buffers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Transfer image data between Core Video pixel buffers and vImage buffers to integrate vImage operations into a Core Image workflow"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers": {
+      "title": "Applying vImage Operations to Video Sample Buffers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use vImage’s convert-any-to-any function to perform real-time image processing of video frames streamed from your device’s camera."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage": {
+      "title": "Real-Time Video Effects with vImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/real-time_video_effects_with_vimage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use vImage to apply effects to a video feed in real time."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/core_video_interoperability": {
+      "title": "Core Video Interoperability",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/core_video_interoperability",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/core_video_interoperability",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Pass image data between Core Video and vImage."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/b17fb8f2e4/ReadingFromAndWritingToCoreVideoPixelBuffers.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/b17fb8f2e4/ReadingFromAndWritingToCoreVideoPixelBuffers.zip",
+      "checksum": "c2587ab1f4dc89897ba20407c1108d076677dfa2a5797b337c5b969ce359883d873171af38d9e6890abc82d2cf5203d0b572bf938068deb10833bf32945e1305",
+      "url": "https://docs-assets.developer.apple.com/published/b17fb8f2e4/ReadingFromAndWritingToCoreVideoPixelBuffers.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/b17fb8f2e4/ReadingFromAndWritingToCoreVideoPixelBuffers.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers",
+        "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage",
+        "doc://com.apple.documentation/documentation/accelerate/core_video_interoperability"
+      ],
+      "title": "Core Video Interoperation",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "vImage supports reading from and writing to Core Video pixel buffers. This sample implements a histogram equalization technique using vImage, then makes that technique accessible to Core Image workflows by sublassing "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CIImageProcessorKernel"
+            },
+            {
+              "type": "text",
+              "text": ". An image processor kernel uses Core Video pixel buffers for input and output, so you must convert vImage buffers to and from "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CVPixelBuffer"
+            },
+            {
+              "type": "text",
+              "text": " objects."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The example below shows an image before (on left) and after (on right) histogram equalization:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3561366",
+              "metadata": {
+                "anchor": "3561366",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample walks you through the steps for reading from and writing to Core Video pixel buffers:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Defining an equalization image processor kernel."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Creating the source buffer."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Creating the destination buffer."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Applying the histogram equalization."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Writing the equalization result to the output."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Applying the equalization operation to an image."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Define an Equalization Image Processor Kernel",
+          "anchor": "3561381"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "First, create the outline of your image processor kernel."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImage_CGImageFormat"
+            },
+            {
+              "type": "text",
+              "text": " structure that represents your image format; for example, an image that contains four 8-bit channels. The image processor kernel supports "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kCIFormatR8"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kCIFormatBGRA8"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kCIFormatRGBAh"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kCIFormatRGBAf"
+            },
+            {
+              "type": "text",
+              "text": " input and output formats. Override "
+            },
+            {
+              "type": "codeVoice",
+              "code": "outputFormat"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "formatForInput(at:)"
+            },
+            {
+              "type": "text",
+              "text": " to return "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kCIFormatBGRA8"
+            },
+            {
+              "type": "text",
+              "text": " to match the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "bitmapInfo"
+            },
+            {
+              "type": "text",
+              "text": " property of your format."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Equalization happens inside the processor kernel’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "process(with:arguments:output:)"
+            },
+            {
+              "type": "text",
+              "text": " function. The guard statement ensures that there is a valid input, and that both the input and output have a non-"
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": " Core Video pixel buffer."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This code shows the basic structure of your image processor kernel:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "class EqualizationImageProcessorKernel: CIImageProcessorKernel {",
+            "    ",
+            "    enum EqualizationImageProcessorError: Error {",
+            "        case equalizationOperationFailed",
+            "    }",
+            "    ",
+            "    static var format = vImage_CGImageFormat(",
+            "        bitsPerComponent: 8,",
+            "        bitsPerPixel: 32,",
+            "        colorSpace: nil,",
+            "        bitmapInfo: CGBitmapInfo(rawValue: CGImageAlphaInfo.last.rawValue),",
+            "        version: 0,",
+            "        decode: nil,",
+            "        renderingIntent: .defaultIntent)",
+            "    ",
+            "    override class var outputFormat: CIFormat {",
+            "        return CIFormat.BGRA8",
+            "    }",
+            "    ",
+            "    override class func formatForInput(at input: Int32) -> CIFormat {",
+            "        return CIFormat.BGRA8",
+            "    }",
+            "    ",
+            "    override class func process(with inputs: [CIImageProcessorInput]?,",
+            "                                arguments: [String: Any]?,",
+            "                                output: CIImageProcessorOutput) throws {",
+            "        ",
+            "        guard",
+            "            let input = inputs?.first,",
+            "            let inputPixelBuffer = input.pixelBuffer,",
+            "            let outputPixelBuffer = output.pixelBuffer else {",
+            "                return",
+            "        }"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3561368",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create the Source Buffer",
+          "anchor": "3561382"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create and populate the source vImage buffer with image data from the first input of the image processor kernel:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create a description of the input pixel buffer format with "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "vImageCVImageFormat_CreateWithCVPixelBuffer(_:)"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". This function returns an unmanaged object reference, and "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "takeRetainedValue()"
+                    },
+                    {
+                      "type": "text",
+                      "text": " returns a managed "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "vImageCVImageFormat"
+                    },
+                    {
+                      "type": "text",
+                      "text": " instance for use in step 3."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Set the color space of the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "vImageCVImageFormat"
+                    },
+                    {
+                      "type": "text",
+                      "text": " instance."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Initialize the source buffer and populate it with the image data from the input pixel buffer."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You’re responsible for releasing the buffer’s memory after you’re finished with it. To ensure that the buffer’s data is properly freed—even if the function exits early—the free function is deferred."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This code shows how to initialize the source buffer:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var sourceBuffer = vImage_Buffer()",
+            "",
+            "let inputCVImageFormat = vImageCVImageFormat_CreateWithCVPixelBuffer(inputPixelBuffer).takeRetainedValue()",
+            "vImageCVImageFormat_SetColorSpace(inputCVImageFormat,",
+            "                                  CGColorSpaceCreateDeviceRGB())",
+            "",
+            "var error = kvImageNoError",
+            "",
+            "error = vImageBuffer_InitWithCVPixelBuffer(&sourceBuffer,",
+            "                                           &format,",
+            "                                           inputPixelBuffer,",
+            "                                           inputCVImageFormat,",
+            "                                           nil,",
+            "                                           vImage_Flags(kvImageNoFlags))",
+            "",
+            "guard error == kvImageNoError else {",
+            "    throw EqualizationImageProcessorError.equalizationOperationFailed",
+            "}",
+            "defer {",
+            "    free(sourceBuffer.data)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3561370",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create the Destination Buffer",
+          "anchor": "3561383"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Creating the destination buffer is similar to creating the source buffer, with one exception: You don’t initialize the destination with the contents of a pixel buffer. Rather, you use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageBuffer_Init(_:_:_:_:_:)"
+            },
+            {
+              "type": "text",
+              "text": " to allocate the correct amount of memory for the image dimensions and number of bits per pixel."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows how to initialize the destination buffer:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var destinationBuffer = vImage_Buffer()",
+            "",
+            "error = vImageBuffer_Init(&destinationBuffer,",
+            "                          sourceBuffer.height,",
+            "                          sourceBuffer.width,",
+            "                          format.bitsPerPixel,",
+            "                          vImage_Flags(kvImageNoFlags))",
+            "",
+            "guard error == kvImageNoError else {",
+            "    throw EqualizationImageProcessorError.equalizationOperationFailed",
+            "}",
+            "defer {",
+            "    free(destinationBuffer.data)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3561372",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Apply Histogram Equalization",
+          "anchor": "3561384"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With the source and destination buffers initialized, you perform the histogram equalization operation. Equalization transforms an image so that it has a more uniform histogram, adding detail to low-contrast areas of an image."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because your image processor kernel consumes and produces images consisting of four 8-bit channels, use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageEqualization_ARGB8888(_:_:_:)"
+            },
+            {
+              "type": "text",
+              "text": " function. This function works equally well on all channel orderings; for example, RGBA or BGRA."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "error = vImageEqualization_ARGB8888(",
+            "    &sourceBuffer,",
+            "    &destinationBuffer,",
+            "    vImage_Flags(kvImageLeaveAlphaUnchanged))",
+            "",
+            "guard error == kvImageNoError else {",
+            "    throw EqualizationImageProcessorError.equalizationOperationFailed",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3561374",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Write the Equalization Result to the Output",
+          "anchor": "3561385"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With the destination buffer populated with the equalization result, you’re ready to write the destination buffer’s contents to the output pixel buffer. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageBuffer_CopyToCVPixelBuffer(_:_:_:_:_:_:)"
+            },
+            {
+              "type": "text",
+              "text": " function copies the contents of a vImage pixel buffer to a Core Video pixel buffer."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let outputCVImageFormat = vImageCVImageFormat_CreateWithCVPixelBuffer(outputPixelBuffer).takeRetainedValue()",
+            "vImageCVImageFormat_SetColorSpace(outputCVImageFormat,",
+            "                                  CGColorSpaceCreateDeviceRGB())",
+            "",
+            "error = vImageBuffer_CopyToCVPixelBuffer(&destinationBuffer,",
+            "                                         &format,",
+            "                                         outputPixelBuffer,",
+            "                                         outputCVImageFormat,",
+            "                                         nil,",
+            "                                         vImage_Flags(kvImageNoFlags))",
+            "",
+            "guard error == kvImageNoError else {",
+            "    throw EqualizationImageProcessorError.equalizationOperationFailed",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3561376",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Apply the Equalization Operation to an Image",
+          "anchor": "3561386"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Call the  "
+            },
+            {
+              "type": "codeVoice",
+              "code": "apply(withExtent:inputs:arguments:)"
+            },
+            {
+              "type": "text",
+              "text": " method to generate a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CIImage"
+            },
+            {
+              "type": "text",
+              "text": " instance based on the output of the processor’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "process(with:arguments:output:)"
+            },
+            {
+              "type": "text",
+              "text": " function. This code shows how you can display an image with a histogram equalization operation applied:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func applyFilter() {",
+            "    let image = #imageLiteral(resourceName: \"Flowers_2.jpg\")",
+            "    ",
+            "    if let ciImage = CIImage(image: image),",
+            "        let result = try? EqualizationImageProcessorKernel.apply(",
+            "            withExtent: ciImage.extent,",
+            "            inputs: [ciImage],",
+            "            arguments: nil) {",
+            "        imageView.image = UIImage(ciImage: result)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3561378",
+            "title": "Listing 6"
+          }
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

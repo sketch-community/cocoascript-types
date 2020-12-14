@@ -1,0 +1,216 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Use nodes to define the structure of a scene."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/scenekit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/scenekit/organizing_a_scene_with_nodes",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2874981,
+  "kind": "article",
+  "metadata": {
+    "title": "Organizing a Scene with Nodes ",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "SceneKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/scenekit/organizing_a_scene_with_nodes"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/scenekit/organizing_a_scene_with_nodes"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/scenekit": {
+      "title": "SceneKit",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit",
+      "url": "/documentation/scenekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "link-media-2929768": {
+      "identifier": "link-media-2929768",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/scenekit/organizing_a_scene_with_nodes#2929768"
+    },
+    "media-2929768": {
+      "identifier": "media-2929768",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 382,
+            "height": 332
+          },
+          "url": "https://docs-assets.developer.apple.com/published/a9d3c84003/03f7f401-5c21-4ac9-9c8c-e7640ec11d81.png"
+        }
+      ],
+      "alt": "Diagram of the SceneKit coordinate system: the positive x-axis points to the camera's right, the positive y-axis points up, and the positive z-axis points toward and behind the camera.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/organizing_a_scene_with_nodes": {
+      "title": "Organizing a Scene with Nodes ",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/organizing_a_scene_with_nodes",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/scenekit/organizing_a_scene_with_nodes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use nodes to define the structure of a scene."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode": {
+      "title": "SCNNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structural element of a scene graph, representing a position and transform in a 3D coordinate space, to which you can attach geometry, lights, cameras, or other displayable content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnreferencenode": {
+      "title": "SCNReferenceNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnreferencenode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnreferencenode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A scene graph node that serves as a placeholder for content to be loaded from a separate scene file. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode",
+        "doc://com.apple.documentation/documentation/scenekit/scnreferencenode"
+      ],
+      "title": "Scene Structure",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "SceneKit implements content as a hierarchical tree structure of nodes, also known as a "
+            },
+            {
+              "type": "newTerm",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "scene graph"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ". A scene consists of a root node, which defines a coordinate space for the world of the scene, and other nodes that populate the world with visible content. SceneKit displays scenes in a view, processing the scene graph and performing animations before efficiently rendering each frame on the GPU."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Before working with SceneKit, you should be familiar with basic graphics concepts such as coordinate systems and the mathematics of three-dimensional geometry. SceneKit uses a right-handed coordinate system where (by default) the direction of view is along the negative z-axis, as illustrated below."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2929768",
+              "metadata": {
+                "anchor": "2929768",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,739 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Maximizes with a region of interest within a PlanarF source image using an M x N kernel."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/morphology"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vimage",
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations",
+        "doc://com.apple.documentation/documentation/accelerate/morphology"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/1546665-vimagemax_planarf",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1546665,
+  "kind": "symbol",
+  "metadata": {
+    "title": "vImageMax_PlanarF",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "5.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.3",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@F@vImageMax_PlanarF",
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/1546665-vimagemax_planarf"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/1546665-vimagemax_planarf"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/morphology": {
+      "title": "Morphology",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/morphology",
+      "url": "/documentation/accelerate/morphology",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage": {
+      "title": "vImage",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage",
+      "url": "/documentation/accelerate/vimage",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations": {
+      "title": "vImage Operations",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations",
+      "url": "/documentation/accelerate/vimage/vimage_operations",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1578972-error_codes/kvimagenoerror": {
+      "title": "kvImageNoError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1578972-error_codes/kvimagenoerror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1578972-error_codes/kvimagenoerror"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/data_types_and_constants": {
+      "title": "Data Types and Constants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/data_types_and_constants",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vimage/data_types_and_constants"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagedonottile": {
+      "title": "kvImageDoNotTile",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagedonottile",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1578976-processing_flags/kvimagedonottile"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimageleavealphaunchanged": {
+      "title": "kvImageLeaveAlphaUnchanged",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimageleavealphaunchanged",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1578976-processing_flags/kvimageleavealphaunchanged"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_error": {
+      "title": "vImage_Error",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_error",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_error"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_buffer": {
+      "title": "vImage_Buffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_buffer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_buffer"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimagepixelcount": {
+      "title": "vImagePixelCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimagepixelcount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimagepixelcount"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_flags": {
+      "title": "vImage_Flags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_flags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_flags"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1545640-vimagemax_argbffff": {
+      "title": "vImageMax_ARGBFFFF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1545640-vimagemax_argbffff",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1545640-vimagemax_argbffff",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Maximizes a region of interest within an ARGBFFFF source image using an M x N kernel. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1546943-vimagemax_argb8888": {
+      "title": "vImageMax_ARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1546943-vimagemax_argb8888",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1546943-vimagemax_argb8888",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Maximizes a region of interest within an ARGB8888 source image using an M x N kernel.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1546665-vimagemax_planarf": {
+      "title": "vImageMax_PlanarF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1546665-vimagemax_planarf",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1546665-vimagemax_planarf",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Maximizes with a region of interest within a PlanarF source image using an M x N kernel."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1544630-vimagemax_planar8": {
+      "title": "vImageMax_Planar8",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1544630-vimagemax_planar8",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1544630-vimagemax_planar8",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Maximizes  a region of interest within a Planar8 source image using an M x N kernel. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/1545640-vimagemax_argbffff",
+        "doc://com.apple.documentation/documentation/accelerate/1546943-vimagemax_argb8888",
+        "doc://com.apple.documentation/documentation/accelerate/1544630-vimagemax_planar8"
+      ],
+      "title": "Maximizing an Object",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vImage_Error",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_error",
+              "text": "vImage_Error"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "vImageMax_PlanarF"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vImage_Buffer",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_buffer",
+              "text": "vImage_Buffer"
+            },
+            {
+              "kind": "text",
+              "text": " *src, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vImage_Buffer",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_buffer",
+              "text": "vImage_Buffer"
+            },
+            {
+              "kind": "text",
+              "text": " *dest, "
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " *tempBuffer, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vImagePixelCount",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimagepixelcount",
+              "text": "vImagePixelCount"
+            },
+            {
+              "kind": "text",
+              "text": " srcOffsetToROI_X, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vImagePixelCount",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimagepixelcount",
+              "text": "vImagePixelCount"
+            },
+            {
+              "kind": "text",
+              "text": " srcOffsetToROI_Y, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vImagePixelCount",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimagepixelcount",
+              "text": "vImagePixelCount"
+            },
+            {
+              "kind": "text",
+              "text": " kernel_height, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vImagePixelCount",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimagepixelcount",
+              "text": "vImagePixelCount"
+            },
+            {
+              "kind": "text",
+              "text": " kernel_width, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vImage_Flags",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_flags",
+              "text": "vImage_Flags"
+            },
+            {
+              "kind": "text",
+              "text": " flags);"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "src",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A pointer to a vImage buffer structure that contains data for the source image."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "dest",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A pointer to a vImage buffer data structure. You are responsible for filling out the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "height"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "width"
+                },
+                {
+                  "type": "text",
+                  "text": ", and "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "rowBytes"
+                },
+                {
+                  "type": "text",
+                  "text": " fields of this structure, and for allocating a data buffer of the appropriate size.  On return, the data buffer pointed to by this structure contains  the destination image data. When you no longer need the data buffer, you must deallocate the memory."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The size (number of rows and number of columns) of the destination buffer also specifies the size of the region of interest in the source buffer."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "tempBuffer",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A pointer to a temporary buffer. If you pass "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NULL"
+                },
+                {
+                  "type": "text",
+                  "text": ", the function allocates the buffer, then deallocates it before returning. Alternatively, you can allocate the buffer yourself, in which case you are responsible for deallocating it when you is no longer need it."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If you want to allocate the buffer yourself, see the Discussion for information on how to determine the minimum size that you must allocate."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "srcOffsetToROI_X",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The horizontal offset, in pixels, to the upper-left pixel of the region of interest within the source image."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "srcOffsetToROI_Y",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The vertical offset, in pixels, to the upper-left pixel of the region of interest within the source image."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "kernel_height",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The height of the kernel in pixels. This value must be odd."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "kernel_width",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The width of the kernel in pixels. This value must be odd."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "flags",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagedonottile"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Set the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimageleavealphaunchanged"
+                },
+                {
+                  "type": "text",
+                  "text": " flag to copy the alpha channel to the destination image unchanged."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1578972-error_codes/kvimagenoerror"
+            },
+            {
+              "type": "text",
+              "text": "; otherwise, one of the error codes described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/data_types_and_constants"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you want to allocate the memory for the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "tempBuffer"
+            },
+            {
+              "type": "text",
+              "text": " parameter yourself, call this function twice, as follows:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "To determine the minimum size for the temporary buffer, the first time you call this function pass the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "kvImageGetTempBufferSize"
+                    },
+                    {
+                      "type": "text",
+                      "text": " flag. Pass the same values for all other parameters that you intend to use in for the second call. The function returns the required minimum size, which should be a positive value. (A negative returned value indicates an error.) The "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "kvImageGetTempBufferSize"
+                    },
+                    {
+                      "type": "text",
+                      "text": " flag prevents the function from performing any processing other than to determine the minimum buffer size."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "After you allocate enough space for a buffer of the returned size, call the function a second time, passing a valid pointer in the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "tempBuffer"
+                    },
+                    {
+                      "type": "text",
+                      "text": " parameter. This time, do not pass the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "kvImageGetTempBufferSize"
+                    },
+                    {
+                      "type": "text",
+                      "text": " flag."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The morphological operation Max is a special case of the dilation operation. In the Max operation, all the elements of the kernel have the same value. The actual value does not matter; only the size of the kernel is significant. vImage optimizes this special case, so the Max function is considerably faster than the Dilate function called with a uniform kernel."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

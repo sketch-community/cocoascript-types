@@ -1,0 +1,606 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Combine certificates and cryptographic keys into identities."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2864149,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Identities",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/certificate_key_and_trust_services/identities"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/certificate_key_and_trust_services/identities"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services": {
+      "title": "Certificate, Key, and Trust Services",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services",
+      "url": "/documentation/security/certificate_key_and_trust_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/creating_an_identity": {
+      "title": "Creating an Identity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/creating_an_identity",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/identities/creating_an_identity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create an identity from a certificate and private key."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/storing_an_identity_in_the_keychain": {
+      "title": "Storing an Identity in the Keychain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/storing_an_identity_in_the_keychain",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/identities/storing_an_identity_in_the_keychain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Securely store an identity in the keychain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1401160-secidentitycreatewithcertificate": {
+      "title": "SecIdentityCreateWithCertificate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1401160-secidentitycreatewithcertificate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1401160-secidentitycreatewithcertificate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new identity for a certificate and its associated private key. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secidentityref": {
+      "title": "SecIdentityRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secidentityref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secidentityref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract Core Foundation-type object representing an identity."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1400269-secidentitygettypeid": {
+      "title": "SecIdentityGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1400269-secidentitygettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1400269-secidentitygettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the unique identifier of the opaque type to which an identity object belongs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity": {
+      "title": "Importing an Identity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn how to import an identity from file."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1396915-secpkcs12import": {
+      "title": "SecPKCS12Import",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396915-secpkcs12import",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396915-secpkcs12import",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the identities and certificates in a PKCS #12-formatted blob."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/keychain_import_and_export_options": {
+      "title": "Keychain Import and Export Options",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/keychain_import_and_export_options",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/certificate_key_and_trust_services/identities/keychain_import_and_export_options",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use these constants when you pass dictionary-based arguments to import and export functions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/pkcs_12_import_item_keys": {
+      "title": "PKCS #12 Import Item Keys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/pkcs_12_import_item_keys",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/certificate_key_and_trust_services/identities/pkcs_12_import_item_keys",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Recognized the dictionary keys returned by an import operation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/parsing_an_identity": {
+      "title": "Parsing an Identity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/parsing_an_identity",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/identities/parsing_an_identity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Extract the private key and certificate from an identity."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1401305-secidentitycopycertificate": {
+      "title": "SecIdentityCopyCertificate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1401305-secidentitycopycertificate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1401305-secidentitycopycertificate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves a certificate associated with an identity."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1392978-secidentitycopyprivatekey": {
+      "title": "SecIdentityCopyPrivateKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1392978-secidentitycopyprivatekey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1392978-secidentitycopyprivatekey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the private key associated with an identity."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1393646-secidentitycopysystemidentity": {
+      "title": "SecIdentityCopySystemIdentity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1393646-secidentitycopysystemidentity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1393646-secidentitycopysystemidentity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtains the system identity associated with a specified domain. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1398082-secidentitysetsystemidentity": {
+      "title": "SecIdentitySetSystemIdentity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1398082-secidentitysetsystemidentity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1398082-secidentitysetsystemidentity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Assigns the system identity to be associated with a specified domain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/system_identity_domains": {
+      "title": "System Identity Domains",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/system_identity_domains",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/certificate_key_and_trust_services/identities/system_identity_domains",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Set or obtain a system identity for domains."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1395862-secidentitysetpreferred": {
+      "title": "SecIdentitySetPreferred",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1395862-secidentitysetpreferred",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1395862-secidentitysetpreferred",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the identity that should be preferred for the specified name and key use."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1399556-secidentitycopypreferred": {
+      "title": "SecIdentityCopyPreferred",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1399556-secidentitycopypreferred",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1399556-secidentitycopypreferred",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the preferred identity for the specified name and key use."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1543662-secidentitycopypreference": {
+      "title": "SecIdentityCopyPreference",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1543662-secidentitycopypreference",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1543662-secidentitycopypreference",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the preferred identity for the specified name and key use."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1543664-secidentitysetpreference": {
+      "title": "SecIdentitySetPreference",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1543664-secidentitysetpreference",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1543664-secidentitysetpreference",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the preferred identity for the specified name and key use."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/secidentitysearchref": {
+      "title": "SecIdentitySearchRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secidentitysearchref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secidentitysearchref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Contains information about an identity search."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1396825-secidentitysearchcopynext": {
+      "title": "SecIdentitySearchCopyNext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396825-secidentitysearchcopynext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396825-secidentitysearchcopynext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Finds the next identity matching specified search criteria"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1396821-secidentitysearchcreate": {
+      "title": "SecIdentitySearchCreate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396821-secidentitysearchcreate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396821-secidentitysearchcreate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a search object for finding identities."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1396823-secidentitysearchgettypeid": {
+      "title": "SecIdentitySearchGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396823-secidentitysearchgettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396823-secidentitysearchgettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the unique identifier of the opaque type to which a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "SecIdentitySearch"
+        },
+        {
+          "type": "text",
+          "text": " object belongs."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/opaquesecidentityref": {
+      "title": "OpaqueSecIdentityRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/opaquesecidentityref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/opaquesecidentityref"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates": {
+      "title": "Certificates",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/certificate_key_and_trust_services/certificates",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage digital certificates."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys": {
+      "title": "Keys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Generate, store, and use cryptographic keys."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities": {
+      "title": "Identities",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/certificate_key_and_trust_services/identities",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combine certificates and cryptographic keys into identities."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/policies": {
+      "title": "Policies",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/policies",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/certificate_key_and_trust_services/policies",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtain policies for establishing trust."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/trust": {
+      "title": "Trust",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/trust",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/certificate_key_and_trust_services/trust",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Evaluate trust based on a given policy."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Essentials",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/creating_an_identity",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/storing_an_identity_in_the_keychain",
+        "doc://com.apple.documentation/documentation/security/1401160-secidentitycreatewithcertificate",
+        "doc://com.apple.documentation/documentation/security/secidentityref",
+        "doc://com.apple.documentation/documentation/security/1400269-secidentitygettypeid"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Identity Import",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/importing_an_identity",
+        "doc://com.apple.documentation/documentation/security/1396915-secpkcs12import",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/keychain_import_and_export_options",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/pkcs_12_import_item_keys"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Identity Components",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/parsing_an_identity",
+        "doc://com.apple.documentation/documentation/security/1401305-secidentitycopycertificate",
+        "doc://com.apple.documentation/documentation/security/1392978-secidentitycopyprivatekey"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "System Identities",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1393646-secidentitycopysystemidentity",
+        "doc://com.apple.documentation/documentation/security/1398082-secidentitysetsystemidentity",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities/system_identity_domains"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Identity Naming",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1395862-secidentitysetpreferred",
+        "doc://com.apple.documentation/documentation/security/1399556-secidentitycopypreferred",
+        "doc://com.apple.documentation/documentation/security/1543662-secidentitycopypreference",
+        "doc://com.apple.documentation/documentation/security/1543664-secidentitysetpreference"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Identity Search",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/secidentitysearchref",
+        "doc://com.apple.documentation/documentation/security/1396825-secidentitysearchcopynext",
+        "doc://com.apple.documentation/documentation/security/1396821-secidentitysearchcreate",
+        "doc://com.apple.documentation/documentation/security/1396823-secidentitysearchgettypeid"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Legacy Symbols",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/opaquesecidentityref"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/policies",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/trust"
+      ],
+      "title": "API Components",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An identity consists of a private key packaged with the certificate that contains and vouches for the corresponding public key. You use the certificate, key, and trust services API to create an identity from a private key and its certificate, or to import an identity from a password-protected PKCS #12 file. You then use the API to extract the key and certificate from the identity. You can also use the keychain services API to store the identity to or retrieve it from a keychain, much as you would the certificate or key by itself."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -366,13 +366,13 @@ declare namespace cocoascript {
    */
   interface CAMetalLayer extends CALayer {
     // doc://com.apple.documentation/documentation/quartzcore/cametallayer/1478163-device
-    device(): cocoascript.MTLDevice;
+    device(): any;
     setDevice(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cametallayer/3175021-preferreddevice
-    preferredDevice(): cocoascript.MTLDevice;
+    preferredDevice(): any;
     setPreferredDevice(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cametallayer/1478155-pixelformat
-    pixelFormat(): cocoascript.MTLPixelFormat;
+    pixelFormat(): any;
     setPixelFormat(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cametallayer/1478170-colorspace
     colorspace(): cocoascript.CGColorSpaceRef;
@@ -418,7 +418,7 @@ declare namespace cocoascript {
    */
   interface CAMetalDrawable extends MTLDrawable {
     // doc://com.apple.documentation/documentation/quartzcore/cametaldrawable/1478159-texture
-    texture(): cocoascript.MTLTexture;
+    texture(): any;
     setTexture(): void;
     // doc://com.apple.documentation/documentation/quartzcore/cametaldrawable/1478165-layer
     layer(): cocoascript.CAMetalLayer;
@@ -484,7 +484,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartzcore/carenderer/1519593-endframe
     endFrame():void;
     // doc://com.apple.documentation/documentation/quartzcore/carenderer/2998892-setdestination
-    setDestination(tex: cocoascript.MTLTexture):void;
+    setDestination(tex: any):void;
     //
     alloc():cocoascript.CARenderer;
     //
@@ -500,10 +500,10 @@ declare namespace cocoascript {
    */
   interface CATiledLayer extends CALayer {
     // doc://com.apple.documentation/documentation/quartzcore/catiledlayer/1522244-levelsofdetail
-    levelsOfDetail(): cocoascript.size_t;
+    levelsOfDetail(): any;
     setLevelsOfDetail(): void;
     // doc://com.apple.documentation/documentation/quartzcore/catiledlayer/1522099-levelsofdetailbias
-    levelsOfDetailBias(): cocoascript.size_t;
+    levelsOfDetailBias(): any;
     setLevelsOfDetailBias(): void;
     // doc://com.apple.documentation/documentation/quartzcore/catiledlayer/1522114-tilesize
     tileSize(): cocoascript.CGSize;
@@ -617,7 +617,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CATransform3D {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   /**
    * A representation of a single layout constraint between two layers.
    * doc://com.apple.documentation/documentation/quartzcore/caconstraint
@@ -702,7 +703,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartzcore/camediatimingfunction/1522235-initwithcontrolpoints
     initWithControlPoints(c1x: number):cocoascript.CAMediaTimingFunction;
     // doc://com.apple.documentation/documentation/quartzcore/camediatimingfunction/1522057-getcontrolpointatindex
-    getControlPointAtIndex_values(idx: cocoascript.size_t, ptr: number):void;
+    getControlPointAtIndex_values(idx: any, ptr: number):void;
     //
     alloc():cocoascript.CAMediaTimingFunction;
     //
@@ -1293,7 +1294,7 @@ declare namespace cocoascript {
    */
   interface CARemoteLayerClient extends NSObject {
     // doc://com.apple.documentation/documentation/quartzcore/caremotelayerclient/1418377-initwithserverport
-    initWithServerPort(port: cocoascript.mach_port_t):cocoascript.CARemoteLayerClient;
+    initWithServerPort(port: any):cocoascript.CARemoteLayerClient;
     // doc://com.apple.documentation/documentation/quartzcore/caremotelayerclient/1418375-clientid
     clientId(): number;
     setClientId(): void;
@@ -1316,7 +1317,7 @@ declare namespace cocoascript {
    */
   interface CARemoteLayerServer extends NSObject {
     // doc://com.apple.documentation/documentation/quartzcore/caremotelayerserver/1521922-serverport
-    serverPort(): cocoascript.mach_port_t;
+    serverPort(): any;
     setServerPort(): void;
     //
     alloc():cocoascript.CARemoteLayerServer;

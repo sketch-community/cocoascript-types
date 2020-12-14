@@ -1,0 +1,949 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Monitor key events during capture to provide feedback in your camera UI."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture",
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/tracking_photo_capture_progress",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2958913,
+  "kind": "article",
+  "metadata": {
+    "title": "Tracking Photo Capture Progress",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/tracking_photo_capture_progress"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/tracking_photo_capture_progress"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture": {
+      "title": "Cameras and Media Capture",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture",
+      "url": "/documentation/avfoundation/cameras_and_media_capture",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos": {
+      "title": "Capturing Still and Live Photos",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcaptureflashmode/avcaptureflashmodeauto": {
+      "title": "AVCaptureFlashModeAuto",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureflashmode/avcaptureflashmodeauto",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcaptureflashmode/avcaptureflashmodeauto"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778621-captureoutput": {
+      "title": "captureOutput:willBeginCaptureForResolvedSettings:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778621-captureoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotocapturedelegate/1778621-captureoutput",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "captureOutput:willBeginCaptureForResolvedSettings:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778625-captureoutput": {
+      "title": "captureOutput:willCapturePhotoForResolvedSettings:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778625-captureoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotocapturedelegate/1778625-captureoutput",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "captureOutput:willCapturePhotoForResolvedSettings:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778632-captureoutput": {
+      "title": "captureOutput:didCapturePhotoForResolvedSettings:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778632-captureoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotocapturedelegate/1778632-captureoutput",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "captureOutput:didCapturePhotoForResolvedSettings:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/2873949-captureoutput": {
+      "title": "captureOutput:didFinishProcessingPhoto:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/2873949-captureoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotocapturedelegate/2873949-captureoutput",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "captureOutput:didFinishProcessingPhoto:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto": {
+      "title": "AVCapturePhoto",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephoto"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2873906-photocount": {
+      "title": "photoCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2873906-photocount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephoto/2873906-photocount"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcaptureresolvedphotosettings/2873973-expectedphotocount": {
+      "title": "expectedPhotoCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureresolvedphotosettings/2873973-expectedphotocount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcaptureresolvedphotosettings/2873973-expectedphotocount"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos": {
+      "title": "Capturing and Saving Live Photos",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Capture Live Photos like those created in the system Camera app and save them to the Photos library."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778618-captureoutput": {
+      "title": "captureOutput:didFinishCaptureForResolvedSettings:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778618-captureoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotocapturedelegate/1778618-captureoutput",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "captureOutput:didFinishCaptureForResolvedSettings:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778637-captureoutput": {
+      "title": "captureOutput:didFinishProcessingLivePhotoToMovieFileAtURL:duration:photoDisplayTime:resolvedSettings:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778637-captureoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotocapturedelegate/1778637-captureoutput",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "captureOutput:didFinishProcessingLivePhotoToMovieFileAtURL:duration:photoDisplayTime:resolvedSettings:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/tracking_photo_capture_progress#2958914": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/tracking_photo_capture_progress#2958914",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/tracking_photo_capture_progress#2958914"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648765-capturephotowithsettings": {
+      "title": "capturePhotoWithSettings:delegate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648765-capturephotowithsettings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotooutput/1648765-capturephotowithsettings",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "capturePhotoWithSettings:delegate:"
+        }
+      ]
+    },
+    "link-media-2961961": {
+      "identifier": "link-media-2961961",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/tracking_photo_capture_progress#2961961"
+    },
+    "media-2961961": {
+      "identifier": "media-2961961",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 624,
+            "height": 252
+          },
+          "url": "https://docs-assets.developer.apple.com/published/3700c582cc/aa3686ea-ef3e-4bbd-946f-071cb995a25d.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 624,
+            "height": 252
+          },
+          "url": "https://docs-assets.developer.apple.com/published/80bdc655d8/f806e6c6-ac51-460e-93dd-fe846c481998.png"
+        }
+      ],
+      "alt": "Diagram of numbered photo capture process steps after calling capturePhoto().",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcaptureresolvedphotosettings": {
+      "title": "AVCaptureResolvedPhotoSettings",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureresolvedphotosettings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcaptureresolvedphotosettings"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcaptureresolvedphotosettings/1648656-uniqueid": {
+      "title": "uniqueID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureresolvedphotosettings/1648656-uniqueid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcaptureresolvedphotosettings/1648656-uniqueid"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/1648767-uniqueid": {
+      "title": "uniqueID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/1648767-uniqueid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotosettings/1648767-uniqueid"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings": {
+      "title": "AVCapturePhotoSettings",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotosettings"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos": {
+      "title": "Saving Captured Photos",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add the image and other data from a photo capture to the Photos library."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/tracking_photo_capture_progress": {
+      "title": "Tracking Photo Capture Progress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/tracking_photo_capture_progress",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/tracking_photo_capture_progress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Monitor key events during capture to provide feedback in your camera UI."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos",
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos"
+      ],
+      "title": "Next Steps",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Capturing a photo with an iOS device camera is a complex process involving physical camera mechanisms, image signal processing, the operating system, and your app. While it's possible for your app to ignore many stages of this process and simply wait for a final result, you can create a more responsive camera interface by monitoring each step."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After you call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648765-capturephotowithsettings"
+            },
+            {
+              "type": "text",
+              "text": ", your delegate object can follow along with five major steps in the process (or more, depending on your photo settings). Depending on your capture workflow and the capture UI you want to create, your delegate can handle some or all of these steps:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2961961",
+              "metadata": {
+                "anchor": "2961961",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Settings resolved"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Exposure started"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Exposure complete"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Result data delivery"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Capture complete"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The capture system provides an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureresolvedphotosettings"
+            },
+            {
+              "type": "text",
+              "text": " object at each step in this process. Because multiple captures can be in progress at the same time, each resolved photo settings object has a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureresolvedphotosettings/1648656-uniqueid"
+            },
+            {
+              "type": "text",
+              "text": " whose value matches the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/1648767-uniqueid"
+            },
+            {
+              "type": "text",
+              "text": " of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings"
+            },
+            {
+              "type": "text",
+              "text": " you used to take the photo."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Get Resolved Capture Settings",
+          "anchor": "2958912"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you specify the settings for a photo, some of the settings you choose can be automatic, left for the capture system to decide at precisely the moment of capture. For example, you can choose "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureflashmode/avcaptureflashmodeauto"
+            },
+            {
+              "type": "text",
+              "text": " flash mode, allowing the camera itself to determine based on scene lighting whether to fire the flash when exposing the photo."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Just before starting the exposure, the photo output calls your delegate's "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778621-captureoutput"
+            },
+            {
+              "type": "text",
+              "text": " method, whose "
+            },
+            {
+              "type": "codeVoice",
+              "code": "resolvedSettings"
+            },
+            {
+              "type": "text",
+              "text": " parameter tells you the actual settings for that capture. For example, if you chose "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureflashmode/avcaptureflashmodeauto"
+            },
+            {
+              "type": "text",
+              "text": " flash mode, the resolved settings object tells you whether the flash is in use for the current capture—you could use this information to show in your UI that the flash was used."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Handle Exposure Start",
+          "anchor": "2958916"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the exposure time begins, the photo output calls your delegate's "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778625-captureoutput"
+            },
+            {
+              "type": "text",
+              "text": " method. In traditional photography, this moment is equivalent to the opening of the camera shutter. The system also automatically plays a shutter sound at this time."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In your UI, you can respond to this method to display a shutter animation or some other indicator that the requested photo is being taken."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Handle Exposure End",
+          "anchor": "2958915"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The photo output calls your delegate's "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778632-captureoutput"
+            },
+            {
+              "type": "text",
+              "text": " method as soon as the exposure time completes. The system still needs time to process camera data before providing an image to your app, but you can use this moment to display in your UI that the exposure is complete. For example, you can simulate a shutter effect by hiding the camera preview in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "willCapturePhoto"
+            },
+            {
+              "type": "text",
+              "text": " method and showing it again in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "didCapturePhoto"
+            },
+            {
+              "type": "text",
+              "text": " method."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Handle Photo Results",
+          "anchor": "2958917"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the photo output has image data available for your app, it calls your delegate's "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/2873949-captureoutput"
+            },
+            {
+              "type": "text",
+              "text": " method. Depending on your photo settings, the photo output may call this method multiple times:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If you request bracketed capture, this method fires (at least) once for each exposure in the bracket, providing the image for that exposure."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If you request capture in both RAW and processed formats (such as HEIF/HEVC or JPEG), this method fires (at least) once for each format."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, if you request RAW+HEIF capture in a three-exposure bracket, the photo output calls your delegate's "
+            },
+            {
+              "type": "codeVoice",
+              "code": "didFinishProcessingPhoto"
+            },
+            {
+              "type": "text",
+              "text": " method six times (2 formats × 3 exposures), providing six "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto"
+            },
+            {
+              "type": "text",
+              "text": " objects. To keep track of multiple results, compare the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2873906-photocount"
+            },
+            {
+              "type": "text",
+              "text": " from each photo to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureresolvedphotosettings/2873973-expectedphotocount"
+            },
+            {
+              "type": "text",
+              "text": " of your resolved settings."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If you request Live Photo capture, additional delegate methods provide feedback on that process. See "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Clean Up When Capture Is Complete",
+          "anchor": "2958918"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When all of the system's work for a capture is complete, the photo output calls your delegate's "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778618-captureoutput"
+            },
+            {
+              "type": "text",
+              "text": " method. You can use this moment to finish your app's part of the capture process:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If your capture expects multiple results, cache those in your "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/2873949-captureoutput"
+                    },
+                    {
+                      "type": "text",
+                      "text": " (and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778637-captureoutput"
+                    },
+                    {
+                      "type": "text",
+                      "text": ") methods, then save results to local storage or add them to the Photos library in your "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "didFinishCapture"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If your capture process manages other resources, clean up those resources in your "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "didFinishCapture"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method. If you use a separate photo capture delegate object for each capture, this is a good time to remove any strong references to such objects."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The code below shows one way to manage multiple photo capture delegate objects:  "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "class PhotoCaptureProcessor: NSObject, AVCapturePhotoCaptureDelegate {",
+            "    var completionHandler: () -> () = {}",
+            "    func photoOutput(_ output: AVCapturePhotoOutput, didFinishCaptureFor resolvedSettings: AVCaptureResolvedPhotoSettings, error: Error?) {",
+            "        completionHandler()",
+            "    }",
+            "    // ... other delegate methods to handle capture results...",
+            "}",
+            "",
+            "// Keep a set of in-progress capture delegates.",
+            "var capturesInProgress = Set<PhotoCaptureProcessor>()",
+            "",
+            "func shootPhoto() {    ",
+            "    // Make a new capture delegate for each capture and add it to the set.",
+            "    let captureProcessor = PhotoCaptureProcessor()",
+            "    capturesInProgress.insert(captureProcessor)",
+            "    ",
+            "    // Schedule for the capture delegate to be removed from the set after capture.",
+            "    captureProcessor.completionHandler = { [weak self] in",
+            "        self?.capturesInProgress.remove(captureProcessor); return",
+            "    }",
+            "    ",
+            "    self.photoOutput.capturePhoto(with: self.settingsForNextPhoto(), delegate: captureProcessor)",
+            "}",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2958914",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

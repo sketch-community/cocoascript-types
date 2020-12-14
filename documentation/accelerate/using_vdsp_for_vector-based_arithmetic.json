@@ -1,0 +1,1132 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Increase the performance of common mathematical tasks with vDSP vector-vector and vector-scalar operations."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/using_vdsp_for_vector-based_arithmetic",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3112815,
+  "kind": "article",
+  "metadata": {
+    "title": "Using vDSP for Vector-based Arithmetic",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/using_vdsp_for_vector-based_arithmetic",
+        "documentation/accelerate/vdsp/using_vdsp_for_vector-based_arithmetic"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/using_vdsp_for_vector-based_arithmetic",
+        "documentation/accelerate/vdsp/using_vdsp_for_vector-based_arithmetic"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp": {
+      "title": "vDSP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vdsp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Perform basic arithmetic operations and common digital signal processing routines on large vectors."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/using_vdsp_for_vector-based_arithmetic#3113123": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/using_vdsp_for_vector-based_arithmetic#3113123",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/using_vdsp_for_vector-based_arithmetic#3113123"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/using_vdsp_for_vector-based_arithmetic#3113122": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/using_vdsp_for_vector-based_arithmetic#3113122",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/using_vdsp_for_vector-based_arithmetic#3113122"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/using_vdsp_for_vector-based_arithmetic#3290066": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/using_vdsp_for_vector-based_arithmetic#3290066",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/using_vdsp_for_vector-based_arithmetic#3290066"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/using_vdsp_for_vector-based_arithmetic#3112814": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/using_vdsp_for_vector-based_arithmetic#3112814",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/accelerate/using_vdsp_for_vector-based_arithmetic#3112814"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450275-vdsp_vsadd": {
+      "title": "vDSP_vsadd",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450275-vdsp_vsadd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450275-vdsp_vsadd"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449798-vdsp_vadd": {
+      "title": "vDSP_vadd",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449798-vdsp_vadd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449798-vdsp_vadd"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449900-vdsp_vsub": {
+      "title": "vDSP_vsub",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449900-vdsp_vsub",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449900-vdsp_vsub"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450020-vdsp_vsmul": {
+      "title": "vDSP_vsmul",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450020-vdsp_vsmul",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450020-vdsp_vsmul"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450344-vdsp_vmul": {
+      "title": "vDSP_vmul",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450344-vdsp_vmul",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450344-vdsp_vmul"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450680-vdsp_vsdiv": {
+      "title": "vDSP_vsdiv",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450680-vdsp_vsdiv",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450680-vdsp_vsdiv"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450412-vdsp_svdiv": {
+      "title": "vDSP_svdiv",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450412-vdsp_svdiv",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450412-vdsp_svdiv"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449781-vdsp_vaddsub": {
+      "title": "vDSP_vaddsub",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449781-vdsp_vaddsub",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449781-vdsp_vaddsub"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450243-vdsp_vdiv": {
+      "title": "vDSP_vdiv",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450243-vdsp_vdiv",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450243-vdsp_vdiv"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449773-vdsp_vasm": {
+      "title": "vDSP_vasm",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449773-vdsp_vasm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449773-vdsp_vasm"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450561-vdsp_vam": {
+      "title": "vDSP_vam",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450561-vdsp_vam",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450561-vdsp_vam"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450734-vdsp_vsbsm": {
+      "title": "vDSP_vsbsm",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450734-vdsp_vsbsm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450734-vdsp_vsbsm"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449914-vdsp_vsbm": {
+      "title": "vDSP_vsbm",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449914-vdsp_vsbm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449914-vdsp_vsbm"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450590-vdsp_vmsa": {
+      "title": "vDSP_vmsa",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450590-vdsp_vmsa",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450590-vdsp_vmsa"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450271-vdsp_vsma": {
+      "title": "vDSP_vsma",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450271-vdsp_vsma",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450271-vdsp_vsma"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450665-vdsp_vma": {
+      "title": "vDSP_vma",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450665-vdsp_vma",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450665-vdsp_vma"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450451-vdsp_vmsb": {
+      "title": "vDSP_vmsb",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450451-vdsp_vmsb",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450451-vdsp_vmsb"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450324-vdsp_vsmsma": {
+      "title": "vDSP_vsmsma",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450324-vdsp_vsmsma",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450324-vdsp_vsmsma"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450588-vdsp_vaam": {
+      "title": "vDSP_vaam",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450588-vdsp_vaam",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450588-vdsp_vaam"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450613-vdsp_vmmsb": {
+      "title": "vDSP_vmmsb",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450613-vdsp_vmmsb",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450613-vdsp_vmmsb"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449761-vdsp_vsbsbm": {
+      "title": "vDSP_vsbsbm",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449761-vdsp_vsbsbm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449761-vdsp_vsbsbm"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450277-vdsp_vasbm": {
+      "title": "vDSP_vasbm",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450277-vdsp_vasbm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450277-vdsp_vasbm"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/controlling_vdsp_operations_with_stride": {
+      "title": "Controlling vDSP Operations with Stride",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/controlling_vdsp_operations_with_stride",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/controlling_vdsp_operations_with_stride",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Operate selectively on the elements of a vector at regular intervals."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points": {
+      "title": "Use Linear Interpolation to Construct New Data Points",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Fill the gaps in arrays of numerical data using linear interpolation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/using_vdsp_for_vector-based_arithmetic": {
+      "title": "Using vDSP for Vector-based Arithmetic",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/using_vdsp_for_vector-based_arithmetic",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/using_vdsp_for_vector-based_arithmetic",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Increase the performance of common mathematical tasks with vDSP vector-vector and vector-scalar operations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/resampling_a_signal_with_decimation": {
+      "title": "Resampling a Signal with Decimation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/resampling_a_signal_with_decimation",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/resampling_a_signal_with_decimation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reduce the sample rate of a signal, by specifying a decimation factor and applying a custom antialiasing filter."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/controlling_vdsp_operations_with_stride",
+        "doc://com.apple.documentation/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points",
+        "doc://com.apple.documentation/documentation/accelerate/resampling_a_signal_with_decimation",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp"
+      ],
+      "title": "Signal Processing Essentials",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "vDSP provides a suite of general-purpose, high-performance arithmetic functions that are alternatives to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "for"
+            },
+            {
+              "type": "text",
+              "text": " loops and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "map"
+            },
+            {
+              "type": "text",
+              "text": " when applying operations on arrays of floating-point values."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, the following code multiplies the elementwise sum of two arrays by a scalar value:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let a: [Float] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",
+            "let b: [Float] = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]",
+            "let c: Float = 2",
+            "",
+            "let d = zip(a, b).map {",
+            "    ($0.0 + $0.1) * c",
+            "}",
+            "",
+            "// d = [22.0, 44.0, 66.0, 88.0, 110.0, 132.0, 154.0, 176.0, 198.0, 220.0]"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3113123",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The vDSP version of the same operation runs significantly faster:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var d = [Float](repeating: .nan, count: a.count)",
+            "",
+            "vDSP.multiply(addition: (a, b),",
+            "              c,",
+            "              result: &d)",
+            "",
+            "// d = [22.0, 44.0, 66.0, 88.0, 110.0, 132.0, 154.0, 176.0, 198.0, 220.0]"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3113122",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Many vDSP functions have a variant that returns the result, for example:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let a: [Float] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",
+            "let b: [Float] = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]",
+            "let c: Float = 2",
+            "",
+            "let d = vDSP.multiply(addition: (a, b),",
+            "                      c)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3290066",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following table summarizes the basic arithmetic functions available in vDSP. All functions are available in single- and double-precision variants."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the Operation column, a subscript (for example, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "a[i]"
+            },
+            {
+              "type": "text",
+              "text": ") indicates a vector, and no subscript (for example, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "a"
+            },
+            {
+              "type": "text",
+              "text": ") indicates a scalar value."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Operation"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Single-Precision Function"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "c[i] = a[i] + b"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450275-vdsp_vsadd"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "c[i] = a[i] + b[i]"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449798-vdsp_vadd"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "c[i] = a[i] - b[i]"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449900-vdsp_vsub"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "c[i] = a[i] * b"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450020-vdsp_vsmul"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "c[i] = a[i] * b[i]"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450344-vdsp_vmul"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "c[i] = a[i] / b"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450680-vdsp_vsdiv"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "c[i] = a / b[i]"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450412-vdsp_svdiv"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "o0[i] = i1[i] + i0[i]"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "o1[i] = i1[i] - i0[i]"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449781-vdsp_vaddsub"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "c[i] = a[i] / b[i]"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450243-vdsp_vdiv"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "d[i] = (a[i] + b[i]) * c"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449773-vdsp_vasm"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "d[i] = (a[i] + b[i]) * c[i]"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450561-vdsp_vam"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "d[i] = (a[i] - b[i]) * c"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450734-vdsp_vsbsm"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "d[i] = (a[i] - b[i]) * c[i]"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449914-vdsp_vsbm"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "d[i] = (a[i] * b[i]) + c"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450590-vdsp_vmsa"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "d[i] = (a[i] * b) + c[i]"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450271-vdsp_vsma"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "d[i] = (a[i] * b[i]) + c[i]"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450665-vdsp_vma"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "d[i] = (a[i] * b[i]) - c[i]"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450451-vdsp_vmsb"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "e[i] = (a[i] * b) + (c[i] * d)"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450324-vdsp_vsmsma"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "e[i] = (a[i] + b[i]) * (c[i] + d[i])"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450588-vdsp_vaam"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "e[i] = (a[i] * b[i]) - (c[i] * d[i])"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450613-vdsp_vmmsb"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "e[i] = (a[i] - b[i]) * (c[i] - d[i])"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449761-vdsp_vsbsbm"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "e[i] = (a[i] + b[i]) * (c[i] - d[i])"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450277-vdsp_vasbm"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "3112814",
+            "title": "Table 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

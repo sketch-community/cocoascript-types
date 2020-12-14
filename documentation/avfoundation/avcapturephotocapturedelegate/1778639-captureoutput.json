@@ -1,0 +1,773 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Provides the delegate a captured image in RAW format."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778639-captureoutput",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1778639,
+  "kind": "symbol",
+  "metadata": {
+    "title": "captureOutput:didFinishProcessingRawPhotoSampleBuffer:previewPhotoSampleBuffer:resolvedSettings:bracketSettings:error:",
+    "role": "symbol",
+    "roleHeading": "Instance Method",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "11.0",
+        "current": "14.3",
+        "deprecated": true
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "deprecatedAt": "13.0",
+        "current": "14.3",
+        "deprecated": true
+      }
+    ],
+    "externalID": "c:objc(pl)AVCapturePhotoCaptureDelegate(im)captureOutput:didFinishProcessingRawPhotoSampleBuffer:previewPhotoSampleBuffer:resolvedSettings:bracketSettings:error:",
+    "symbolKind": "intfm"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/avcapturephotocapturedelegate/1778639-captureoutput"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/avcapturephotocapturedelegate/1778639-photooutput"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture": {
+      "title": "Cameras and Media Capture",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture",
+      "url": "/documentation/avfoundation/cameras_and_media_capture",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate": {
+      "title": "AVCapturePhotoCaptureDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotocapturedelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods for monitoring progress and receiving results from a photo capture output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/2873949-captureoutput": {
+      "title": "captureOutput:didFinishProcessingPhoto:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/2873949-captureoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotocapturedelegate/2873949-captureoutput",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "captureOutput:didFinishProcessingPhoto:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/1648768-rawphotopixelformattype": {
+      "title": "rawPhotoPixelFormatType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/1648768-rawphotopixelformattype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotosettings/1648768-rawphotopixelformattype"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/1648696-previewphotoformat": {
+      "title": "previewPhotoFormat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/1648696-previewphotoformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotosettings/1648696-previewphotoformat"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/1648767-uniqueid": {
+      "title": "uniqueID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/1648767-uniqueid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotosettings/1648767-uniqueid"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotobracketsettings": {
+      "title": "AVCapturePhotoBracketSettings",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotobracketsettings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotobracketsettings"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778647-captureoutput": {
+      "title": "captureOutput:didFinishProcessingPhotoSampleBuffer:previewPhotoSampleBuffer:resolvedSettings:bracketSettings:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778647-captureoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotocapturedelegate/1778647-captureoutput",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides the delegate a captured image in a processed format (such as JPEG)."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "captureOutput:didFinishProcessingPhotoSampleBuffer:previewPhotoSampleBuffer:resolvedSettings:bracketSettings:error:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648765-capturephotowithsettings": {
+      "title": "capturePhotoWithSettings:delegate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648765-capturephotowithsettings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotooutput/1648765-capturephotowithsettings",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "capturePhotoWithSettings:delegate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput": {
+      "title": "AVCapturePhotoOutput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotooutput"
+    },
+    "doc://com.apple.documentation/documentation/coremedia/cmsamplebufferref": {
+      "title": "CMSampleBufferRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coremedia/cmsamplebufferref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coremedia/cmsamplebufferref"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcaptureresolvedphotosettings": {
+      "title": "AVCaptureResolvedPhotoSettings",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureresolvedphotosettings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcaptureresolvedphotosettings"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturebracketedstillimagesettings": {
+      "title": "AVCaptureBracketedStillImageSettings",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturebracketedstillimagesettings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturebracketedstillimagesettings"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nserror": {
+      "title": "NSError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nserror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nserror"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778639-captureoutput": {
+      "title": "captureOutput:didFinishProcessingRawPhotoSampleBuffer:previewPhotoSampleBuffer:resolvedSettings:bracketSettings:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778639-captureoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotocapturedelegate/1778639-captureoutput",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides the delegate a captured image in RAW format."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "captureOutput:didFinishProcessingRawPhotoSampleBuffer:previewPhotoSampleBuffer:resolvedSettings:bracketSettings:error:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "In iOS 11 and later, implement the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/2873949-captureoutput"
+        },
+        {
+          "type": "text",
+          "text": " method instead."
+        }
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778647-captureoutput"
+      ],
+      "title": "Receiving Capture Results (Deprecated)",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "text",
+              "text": "- ("
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "identifier",
+              "text": "captureOutput:"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)AVCapturePhotoOutput",
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput",
+              "text": "AVCapturePhotoOutput"
+            },
+            {
+              "kind": "text",
+              "text": " *"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "internalParam",
+              "text": "output"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "didFinishProcessingRawPhotoSampleBuffer:"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CMSampleBufferRef",
+              "identifier": "doc://com.apple.documentation/documentation/coremedia/cmsamplebufferref",
+              "text": "CMSampleBufferRef"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "internalParam",
+              "text": "rawSampleBuffer"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "previewPhotoSampleBuffer:"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CMSampleBufferRef",
+              "identifier": "doc://com.apple.documentation/documentation/coremedia/cmsamplebufferref",
+              "text": "CMSampleBufferRef"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "internalParam",
+              "text": "previewPhotoSampleBuffer"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "resolvedSettings:"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)AVCaptureResolvedPhotoSettings",
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureresolvedphotosettings",
+              "text": "AVCaptureResolvedPhotoSettings"
+            },
+            {
+              "kind": "text",
+              "text": " *"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "internalParam",
+              "text": "resolvedSettings"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "bracketSettings:"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)AVCaptureBracketedStillImageSettings",
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturebracketedstillimagesettings",
+              "text": "AVCaptureBracketedStillImageSettings"
+            },
+            {
+              "kind": "text",
+              "text": " *"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "internalParam",
+              "text": "bracketSettings"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "error:"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSError",
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nserror",
+              "text": "NSError"
+            },
+            {
+              "kind": "text",
+              "text": " *"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            },
+            {
+              "kind": "internalParam",
+              "text": "error"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "Mac Catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "captureOutput",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The photo output performing the capture."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "rawSampleBuffer",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A sample buffer containing the captured RAW image. The format of this buffer matches the format you requested for the RAW image (see the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/1648768-rawphotopixelformattype"
+                },
+                {
+                  "type": "text",
+                  "text": " property of your photo settings)."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If an error prevented successful capture, this parameter is "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "nil"
+                },
+                {
+                  "type": "text",
+                  "text": "—see the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "error"
+                },
+                {
+                  "type": "text",
+                  "text": " parameter for a description of the failure."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "previewSampleBuffer",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If you requested a thumbnail-sized version of the photo (with the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/1648696-previewphotoformat"
+                },
+                {
+                  "type": "text",
+                  "text": " property of your photo settings object), a sample buffer containing the thumbnail photo in the requested format. If you did not request preview delivery, or if an error prevented capture, this parameter is "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "nil"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "resolvedSettings",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "An object describing the settings used for this capture. Match this object’s "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/1648767-uniqueid"
+                },
+                {
+                  "type": "text",
+                  "text": " value to the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/1648767-uniqueid"
+                },
+                {
+                  "type": "text",
+                  "text": " property of the photo settings object you initiated capture with to determine which capture request this delegate call corresponds to. You can also use this object to find out which values the photo output has chosen for automatic settings."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "bracketSettings",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If you requested a bracketed capture of multiple images with a "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotobracketsettings"
+                },
+                {
+                  "type": "text",
+                  "text": ", a bracketed still image settings object describing which image in the bracket this delegate call corresponds to. If you did not request bracketed capture, this parameter is "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "nil"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "error",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If an the capture process could not proceed successfully, an error object describing the failure; otherwise, "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "nil"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use this method to receive the results of a RAW format capture. (If you request capture in both RAW and a processed format, the photo output calls both this method and the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778647-captureoutput"
+            },
+            {
+              "type": "text",
+              "text": " method.)"
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "You must implement either this method or the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/2873949-captureoutput"
+                },
+                {
+                  "type": "text",
+                  "text": " method if you request capture in a RAW format. The photo output validates this requirement when you call its "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648765-capturephotowithsettings"
+                },
+                {
+                  "type": "text",
+                  "text": " method; if your delegate does not implement the correct methods, the photo output raises an exception."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you request RAW format capture, the photo output calls this method once for each exposure in the capture request. If you request a single image capture, this method is called once. If you request a bracketed capture with multiple exposures, this method is called once for each exposure."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

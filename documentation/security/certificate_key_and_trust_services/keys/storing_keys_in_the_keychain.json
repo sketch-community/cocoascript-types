@@ -1,0 +1,714 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Store and access cryptographic keys in the keychain."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2864142,
+  "kind": "article",
+  "metadata": {
+    "title": "Storing Keys in the Keychain",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services": {
+      "title": "Certificate, Key, and Trust Services",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services",
+      "url": "/documentation/security/certificate_key_and_trust_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys": {
+      "title": "Keys",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys": {
+      "title": "Generating New Cryptographic Keys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain#2940895": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain#2940895",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain#2940895"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecclasskey": {
+      "title": "kSecClassKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecclasskey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecclasskey"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecclass": {
+      "title": "kSecClass",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecclass",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecclass"
+    },
+    "doc://com.apple.documentation/documentation/security/1401659-secitemadd": {
+      "title": "SecItemAdd",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1401659-secitemadd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1401659-secitemadd"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain#2940899": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain#2940899",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain#2940899"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain#2940892": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain#2940892",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain#2940892"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrkeytypersa": {
+      "title": "kSecAttrKeyTypeRSA",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeytypersa",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrkeytypersa"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys#2863927": {
+      "title": "Creating an Asymmetric Key Pair",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys#2863927",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys#2863927"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain#2940891": {
+      "title": "Refine the Search",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain#2940891",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain#2940891"
+    },
+    "doc://com.apple.documentation/documentation/security/1398306-secitemcopymatching": {
+      "title": "SecItemCopyMatching",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1398306-secitemcopymatching",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1398306-secitemcopymatching"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain#2940894": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain#2940894",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain#2940894"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecmatchlimit": {
+      "title": "kSecMatchLimit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecmatchlimit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecmatchlimit"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecmatchlimitall": {
+      "title": "kSecMatchLimitAll",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecmatchlimitall",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecmatchlimitall"
+    },
+    "doc://com.apple.documentation/documentation/security/1395547-secitemdelete": {
+      "title": "SecItemDelete",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1395547-secitemdelete",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1395547-secitemdelete"
+    },
+    "doc://com.apple.documentation/documentation/cryptokit": {
+      "title": "Apple CryptoKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cryptokit",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/cryptokit"
+    },
+    "doc://com.apple.documentation/documentation/cryptokit/storing_cryptokit_keys_in_the_keychain": {
+      "title": "Storing CryptoKit Keys in the Keychain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cryptokit/storing_cryptokit_keys_in_the_keychain",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/cryptokit/storing_cryptokit_keys_in_the_keychain"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/getting_an_existing_key": {
+      "title": "Getting an Existing Key",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/getting_an_existing_key",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/getting_an_existing_key",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn how to obtain an existing cryptographic key."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain": {
+      "title": "Storing Keys in the Keychain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Store and access cryptographic keys in the keychain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seckeyref": {
+      "title": "SecKeyRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seckeyref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seckeyref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that represents a cryptographic key."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1395190-seckeygettypeid": {
+      "title": "SecKeyGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1395190-seckeygettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1395190-seckeygettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the unique identifier of the opaque type to which a key object belongs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/getting_an_existing_key",
+        "doc://com.apple.documentation/documentation/security/seckeyref",
+        "doc://com.apple.documentation/documentation/security/1395190-seckeygettypeid"
+      ],
+      "title": "Essentials",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The keychain is the best place to store small secrets, like passwords and cryptographic keys. You use the functions of the keychain services API to add, retrieve, delete, or modify keychain items."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For information about storing cryptographic keys that you create with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cryptokit"
+            },
+            {
+              "type": "text",
+              "text": " framework, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cryptokit/storing_cryptokit_keys_in_the_keychain"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Query Dictionary",
+          "anchor": "2940889"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you generate keys yourself, as described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys"
+            },
+            {
+              "type": "text",
+              "text": ", you can store them in the keychain as an implicit part of that process. If you obtain a key by some other means, you can still store it in the keychain. To do this, begin by creating a query dictionary containing and describing the item:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "SecKeyRef key = <# a key #>;",
+            "NSData* tag = [@\"com.example.keys.mykey\" dataUsingEncoding:NSUTF8StringEncoding];",
+            "NSDictionary* addquery = @{ (id)kSecValueRef: (__bridge id)key,",
+            "                            (id)kSecClass: (id)kSecClassKey,",
+            "                            (id)kSecAttrApplicationTag: tag,",
+            "                           };"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2940895",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This query dictionary uses the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecclasskey"
+            },
+            {
+              "type": "text",
+              "text": " value for the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecclass"
+            },
+            {
+              "type": "text",
+              "text": " entry to indicate a key item (as opposed to a certificate, identity, or password). You also apply an application tag that lets you distinguish the key from others when later searching for it. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Store the Item",
+          "anchor": "2940898"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1401659-secitemadd"
+            },
+            {
+              "type": "text",
+              "text": " function to actually store the item:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "OSStatus status = SecItemAdd((__bridge CFDictionaryRef)addquery, NULL);",
+            "if (status != errSecSuccess) { <# Handle the error #> }",
+            "else                         { <# Use the key #> }"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2940899",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Retrieve the Item",
+          "anchor": "2940890"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you want to retrieve the key, you construct another query dictionary using the same application tag:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "NSDictionary *getquery = @{ (id)kSecClass: (id)kSecClassKey,",
+            "                            (id)kSecAttrApplicationTag: tag,",
+            "                            (id)kSecAttrKeyType: (id)kSecAttrKeyTypeRSA,",
+            "                            (id)kSecReturnRef: @YES,",
+            "                         };"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2940892",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The above dictionary indicates that the key should be of type "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeytypersa"
+            },
+            {
+              "type": "text",
+              "text": ", as in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys#2863927"
+            },
+            {
+              "type": "text",
+              "text": ", and that it should have the tag used in that example and above. The last line says that the retrieval should return a key reference (as opposed, for example, to the actual key data)."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "This is a simple query that doesn’t refine the search as much as you may need. For additional ways to do that, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain#2940891"
+                },
+                {
+                  "type": "text",
+                  "text": " below."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You use this query with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1398306-secitemcopymatching"
+            },
+            {
+              "type": "text",
+              "text": " function to execute a search and populate an empty reference that you supply:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "SecKeyRef key = NULL;",
+            "OSStatus status = SecItemCopyMatching((__bridge CFDictionaryRef)getquery,",
+            "                                      (CFTypeRef *)&key);",
+            "if (status!=errSecSuccess) { <# Handle the error #> }",
+            "else                       { <# Use the key #> }",
+            "\t ",
+            "if (key) { CFRelease(key); }  // After you are done with it"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2940894",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the call is successful, as indicated by the status result, you can then use the returned key reference to carry out cryptographic operations. In Objective-C, after you’re done with any keys that you retrieve this way, you’re responsible for freeing their memory. In Swift, the system manages the object’s memory."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Refine the Search",
+          "anchor": "2940891"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The query in the example above doesn’t restrict the search to a particular key class (public, private, or symmetric) or to any other key characteristic. It matches only for tag and type, returning a reference to the first successful match. Unless you use unique tags for all of your keys of a given type, you might not get the key you were looking for when you run the search. That's because only the first key that matches is returned, and that may or may not be the one you wanted."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "There are several ways to deal with this. For example, you can:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Widen the search."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " If you add the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/security/ksecmatchlimit"
+                    },
+                    {
+                      "type": "text",
+                      "text": " entry to the query dictionary with a value of "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/security/ksecmatchlimitall"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", instead of a single key reference, "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/security/1398306-secitemcopymatching"
+                    },
+                    {
+                      "type": "text",
+                      "text": " produces an array of key references, which you can inspect to find the key of interest."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Narrow the search."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " If you have other attributes that distinguish your keys, such as key size or key class, add the corresponding entries to the query dictionary before conducting the search."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Avoid reusing tags in the first place."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Before adding a key with a given tag and type (or whatever other distinguishing characteristic you have), read existing keys from the keychain with those same characteristics. If you find a potential duplicate, either reuse the original key and skip creating a new one, create the new key using a different tag, or delete the old key using the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/security/1395547-secitemdelete"
+                    },
+                    {
+                      "type": "text",
+                      "text": " function before adding a new one."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

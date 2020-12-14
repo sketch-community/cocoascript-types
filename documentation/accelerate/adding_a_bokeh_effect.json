@@ -1,0 +1,816 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Simulate a bokeh effect by applying dilation."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vimage"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/adding_a_bokeh_effect",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3021621,
+  "kind": "article",
+  "metadata": {
+    "title": "Adding a Bokeh Effect",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "12.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.3",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/adding_a_bokeh_effect",
+        "documentation/accelerate/vimage/adding_a_bokeh_effect"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/adding_a_bokeh_effect",
+        "documentation/accelerate/vimage/adding_a_bokeh_effect"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage": {
+      "title": "vImage",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage",
+      "url": "/documentation/accelerate/vimage",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/swift/uint8": {
+      "title": "UInt8",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/uint8",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/uint8"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/adding_a_bokeh_effect#3561944": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/adding_a_bokeh_effect#3561944",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/adding_a_bokeh_effect#3561944"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/adding_a_bokeh_effect#3561945": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/adding_a_bokeh_effect#3561945",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/adding_a_bokeh_effect#3561945"
+    },
+    "link-media-3561943": {
+      "identifier": "link-media-3561943",
+      "type": "link",
+      "title": "Figure 4",
+      "url": "/documentation/accelerate/adding_a_bokeh_effect#3561943"
+    },
+    "media-3561943": {
+      "identifier": "media-3561943",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 260
+          },
+          "url": "https://docs-assets.developer.apple.com/published/f7db5b2867/rendered2x-1584400123.png"
+        }
+      ],
+      "alt": "Diagram showing dilation kernel containing a hexagon formed of elements containing zeros surrounded by elements containing 255.",
+      "title": "Figure 4"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1545760-vimagedilate_argb8888": {
+      "title": "vImageDilate_ARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1545760-vimagedilate_argb8888",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1545760-vimagedilate_argb8888"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/adding_a_bokeh_effect#3561948": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/adding_a_bokeh_effect#3561948",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/adding_a_bokeh_effect#3561948"
+    },
+    "link-media-3561947": {
+      "identifier": "link-media-3561947",
+      "type": "link",
+      "title": "Figure 5",
+      "url": "/documentation/accelerate/adding_a_bokeh_effect#3561947"
+    },
+    "media-3561947": {
+      "identifier": "media-3561947",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 363
+          },
+          "url": "https://docs-assets.developer.apple.com/published/f0107ec2ce/rendered2x-1584400127.png"
+        }
+      ],
+      "alt": "Photograph dilated using a six-sided dilation kernel.",
+      "title": "Figure 5"
+    },
+    "link-media-3561950": {
+      "identifier": "link-media-3561950",
+      "type": "link",
+      "title": "Figure 6",
+      "url": "/documentation/accelerate/adding_a_bokeh_effect#3561950"
+    },
+    "media-3561950": {
+      "identifier": "media-3561950",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 60
+          },
+          "url": "https://docs-assets.developer.apple.com/published/850929968b/rendered2x-1584400131.png"
+        }
+      ],
+      "alt": "Formula used to describe the result of maximizing with a 3 by 3 kernel.",
+      "title": "Figure 6"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1546943-vimagemax_argb8888": {
+      "title": "vImageMax_ARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1546943-vimagemax_argb8888",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1546943-vimagemax_argb8888"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/adding_a_bokeh_effect#3561952": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/adding_a_bokeh_effect#3561952",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/adding_a_bokeh_effect#3561952"
+    },
+    "link-media-3561951": {
+      "identifier": "link-media-3561951",
+      "type": "link",
+      "title": "Figure 7",
+      "url": "/documentation/accelerate/adding_a_bokeh_effect#3561951"
+    },
+    "media-3561951": {
+      "identifier": "media-3561951",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 369
+          },
+          "url": "https://docs-assets.developer.apple.com/published/c3c0d241b8/rendered2x-1584400133.png"
+        }
+      ],
+      "alt": "Photograph maximized using a square kernel",
+      "title": "Figure 7"
+    },
+    "link-media-3561939": {
+      "identifier": "link-media-3561939",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/adding_a_bokeh_effect#3561939"
+    },
+    "media-3561939": {
+      "identifier": "media-3561939",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 362
+          },
+          "url": "https://docs-assets.developer.apple.com/published/93a9673fa8/rendered2x-1584400099.png"
+        }
+      ],
+      "alt": "Photograph dilated using a three-sided dilation kernel.",
+      "title": "Figure 1"
+    },
+    "link-media-3561940": {
+      "identifier": "link-media-3561940",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/accelerate/adding_a_bokeh_effect#3561940"
+    },
+    "media-3561940": {
+      "identifier": "media-3561940",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 309,
+            "height": 216
+          },
+          "url": "https://docs-assets.developer.apple.com/published/270da17608/rendered2x-1584400119.png"
+        }
+      ],
+      "alt": "Diagram showing a 3 by 3 dilation kernel centered over a source pixel, highlighting the new pixel value.",
+      "title": "Figure 2"
+    },
+    "link-media-3561941": {
+      "identifier": "link-media-3561941",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/accelerate/adding_a_bokeh_effect#3561941"
+    },
+    "media-3561941": {
+      "identifier": "media-3561941",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 60
+          },
+          "url": "https://docs-assets.developer.apple.com/published/37c65b22e4/rendered2x-1584400121.png"
+        }
+      ],
+      "alt": "Formula that describes the result of dilating with a 3 by 3 kernel.",
+      "title": "Figure 3"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/blurring_an_image": {
+      "title": "Blurring an Image",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/blurring_an_image",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/blurring_an_image",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Filter an image by convolving it with custom and high-speed kernels."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/adding_a_bokeh_effect": {
+      "title": "Adding a Bokeh Effect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/adding_a_bokeh_effect",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/adding_a_bokeh_effect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Simulate a bokeh effect by applying dilation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/convolution": {
+      "title": "Convolution",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/convolution",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/convolution",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Apply a convolution kernel to an image. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/morphology": {
+      "title": "Morphology",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/morphology",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/morphology",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Dilate and erode images. "
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/55db81c46d/AddingABokehEffect.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/55db81c46d/AddingABokehEffect.zip",
+      "checksum": "7ddcef63c68421c71c66bd497aafb78feb7e141f14dd2491d73f26b82cd719f2cef55806cb747d5b129e5be2f60afb0928e5ce126974a233af5c17c0de45adb8",
+      "url": "https://docs-assets.developer.apple.com/published/55db81c46d/AddingABokehEffect.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/55db81c46d/AddingABokehEffect.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/blurring_an_image",
+        "doc://com.apple.documentation/documentation/accelerate/convolution",
+        "doc://com.apple.documentation/documentation/accelerate/morphology"
+      ],
+      "title": "Convolution and Morphology",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To create a bokeh effect, where parts of an image that are out-of-focus adopt the shape of the lens’ aperture, this sample app dynamically generates a polygon-shaped kernel—also known as a "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "structuring element"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "—and applies a morphological operation to an image based on that kernel. The following sample shows a photograph dilated with a triangle-shaped kernel:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3561939",
+              "metadata": {
+                "anchor": "3561939",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Morphological operations are built on kernels that change the value of a pixel based on the intensity of its neighbors."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "There are two basic types of morphological operations:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Dilation, which expands bright areas of an image."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Erosion, which expands dark areas of an image."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Kernels are 1D or 2D grids of values that the morphological operation subtracts from a corresponding pixel value in the image. The final value of each transformed pixel is either the lightest (for dilation) or darkest (for erosion) result of each subtraction."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3561940",
+              "metadata": {
+                "anchor": "3561940",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following formula shows how a dilation operation calculates the value for the pixel at the center of the grid. The operation subtracts each of the nine kernel values from the image’s corresponding pixel and returns the maximum value."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3561941",
+              "metadata": {
+                "anchor": "3561941",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Generate the Structuring Element",
+          "anchor": "3561955"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "makeStructuringElement(ofRadius:withSides:)"
+            },
+            {
+              "type": "text",
+              "text": " method returns a kernel populated with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/uint8"
+            },
+            {
+              "type": "text",
+              "text": " values that’s suitable for use with an integer format image. For example, to create a hexagon-shaped bokeh effect, call the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "makeStructuringElement(ofRadius:withSides:)"
+            },
+            {
+              "type": "text",
+              "text": " method and set the number of sides to 6:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var numSides = 6"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3561944",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let kernel = ViewController.makeStructuringElement(ofRadius: radius,",
+            "                                                   withSides: numSides)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3561945",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kernel"
+            },
+            {
+              "type": "text",
+              "text": " contains the following values:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3561943",
+              "metadata": {
+                "anchor": "3561943",
+                "title": "Figure 4"
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Apply the Dilation",
+          "anchor": "3561956"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To apply the dilation to a vImage buffer, call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1545760-vimagedilate_argb8888"
+            },
+            {
+              "type": "text",
+              "text": ", passing the kernel returned by "
+            },
+            {
+              "type": "codeVoice",
+              "code": "makeStructuringElement(ofRadius:withSides:)"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let diameter = vImagePixelCount(radius * 2) + 1",
+            "",
+            "vImageDilate_ARGB8888(&sourceBuffer,",
+            "                      &destinationBuffer,",
+            "                      0, 0,",
+            "                      kernel,",
+            "                      diameter,",
+            "                      diameter,",
+            "                      vImage_Flags(kvImageNoFlags))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3561948",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, the destination buffer contains the dilation result:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3561947",
+              "metadata": {
+                "anchor": "3561947",
+                "title": "Figure 5"
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Maximize an Image",
+          "anchor": "3561957"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "vImage provides a maximize filter that returns the brightest pixel in an area covered by the kernel. The maximize filter applies dilation to the image using a kernel populated with a single value. vImage optimizes this special case—where all kernel values are the same—so that it is considerably faster than the dilate function with a uniform kernel."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following formula shows an image maximized by a 3 x 3 max kernel:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3561950",
+              "metadata": {
+                "anchor": "3561950",
+                "title": "Figure 6"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To maximize an image, call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1546943-vimagemax_argb8888"
+            },
+            {
+              "type": "text",
+              "text": ", by passing it the height and width of the kernel:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "vImageMax_ARGB8888(&sourceBuffer,",
+            "                   &destinationBuffer,",
+            "                   nil,",
+            "                   0, 0,",
+            "                   diameter,",
+            "                   diameter,",
+            "                   vImage_Flags(kvImageNoFlags))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3561952",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In this example, the kernel height and width are the same value. As a result, the bright areas of the image appear as large squares:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3561951",
+              "metadata": {
+                "anchor": "3561951",
+                "title": "Figure 7"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,1036 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Capture Live Photos like those created in the system Camera app and save them to the Photos library."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture",
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2958883,
+  "kind": "article",
+  "metadata": {
+    "title": "Capturing and Saving Live Photos",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture": {
+      "title": "Cameras and Media Capture",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture",
+      "url": "/documentation/avfoundation/cameras_and_media_capture",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos": {
+      "title": "Capturing Still and Live Photos",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos#2958885": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos#2958885",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos#2958885"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/setting_up_a_capture_session": {
+      "title": "Setting Up a Capture Session",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/setting_up_a_capture_session",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/setting_up_a_capture_session"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput": {
+      "title": "AVCapturePhotoOutput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotooutput"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos#2958893": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos#2958893",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos#2958893"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings": {
+      "title": "AVCapturePhotoSettings",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotosettings"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648765-capturephotowithsettings": {
+      "title": "capturePhotoWithSettings:delegate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648765-capturephotowithsettings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotooutput/1648765-capturephotowithsettings",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "capturePhotoWithSettings:delegate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos#2958886": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos#2958886",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos#2958886"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/2873949-captureoutput": {
+      "title": "captureOutput:didFinishProcessingPhoto:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/2873949-captureoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotocapturedelegate/2873949-captureoutput",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "captureOutput:didFinishProcessingPhoto:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto": {
+      "title": "AVCapturePhoto",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephoto"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos#2958894": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos#2958894",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos#2958894"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778637-captureoutput": {
+      "title": "captureOutput:didFinishProcessingLivePhotoToMovieFileAtURL:duration:photoDisplayTime:resolvedSettings:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778637-captureoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotocapturedelegate/1778637-captureoutput",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "captureOutput:didFinishProcessingLivePhotoToMovieFileAtURL:duration:photoDisplayTime:resolvedSettings:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos#2958895": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos#2958895",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos#2958895"
+    },
+    "doc://com.apple.documentation/documentation/photokit/phlivephoto": {
+      "title": "PHLivePhoto",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/photokit/phlivephoto",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/photokit/phlivephoto"
+    },
+    "doc://com.apple.documentation/documentation/photokit/phlivephotoview": {
+      "title": "PHLivePhotoView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/photokit/phlivephotoview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/photokit/phlivephotoview"
+    },
+    "doc://com.apple.documentation/documentation/photokit/phassetcreationrequest": {
+      "title": "PHAssetCreationRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/photokit/phassetcreationrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/photokit/phassetcreationrequest"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos": {
+      "title": "Saving Captured Photos",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add the image and other data from a photo capture to the Photos library."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/photokit/phphotolibrary": {
+      "title": "PHPhotoLibrary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/photokit/phphotolibrary",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/photokit/phphotolibrary"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos#2958890": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos#2958890",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos#2958890"
+    },
+    "doc://com.apple.documentation/documentation/photokit/phassetresourcecreationoptions/1622687-shouldmovefile": {
+      "title": "shouldMoveFile",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/photokit/phassetresourcecreationoptions/1622687-shouldmovefile",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/photokit/phassetresourcecreationoptions/1622687-shouldmovefile"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/tracking_photo_capture_progress": {
+      "title": "Tracking Photo Capture Progress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/tracking_photo_capture_progress",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/tracking_photo_capture_progress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Monitor key events during capture to provide feedback in your camera UI."
+        }
+      ]
+    },
+    "link-media-2961960": {
+      "identifier": "link-media-2961960",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos#2961960"
+    },
+    "media-2961960": {
+      "identifier": "media-2961960",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 822,
+            "height": 252
+          },
+          "url": "https://docs-assets.developer.apple.com/published/9f99a09a14/980a2aa4-4b42-4822-ba19-0ea3a9a0cd86.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 822,
+            "height": 252
+          },
+          "url": "https://docs-assets.developer.apple.com/published/c2d52c466f/71b9aeed-1cb2-476d-b383-22d65b0d810b.png"
+        }
+      ],
+      "alt": "Diagram of numbered Live Photo capture process steps after calling capturePhoto().",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778621-captureoutput": {
+      "title": "captureOutput:willBeginCaptureForResolvedSettings:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778621-captureoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotocapturedelegate/1778621-captureoutput",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "captureOutput:willBeginCaptureForResolvedSettings:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778658-captureoutput": {
+      "title": "captureOutput:didFinishRecordingLivePhotoMovieForEventualFileAtURL:resolvedSettings:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778658-captureoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotocapturedelegate/1778658-captureoutput",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "captureOutput:didFinishRecordingLivePhotoMovieForEventualFileAtURL:resolvedSettings:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos#2958892": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos#2958892",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos#2958892"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos": {
+      "title": "Capturing and Saving Live Photos",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Capture Live Photos like those created in the system Camera app and save them to the Photos library."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos",
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/tracking_photo_capture_progress"
+      ],
+      "title": "Next Steps",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A Live Photo is a picture that includes motion and sound from the moments just before and after its capture. Your app can capture and record Live Photos using the AVFoundation capture system and the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput"
+            },
+            {
+              "type": "text",
+              "text": " class."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If you’re not already familiar with capture sessions, input setup, and photo capture, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/setting_up_a_capture_session"
+                },
+                {
+                  "type": "text",
+                  "text": " and "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Enable Live Photo Capture",
+          "anchor": "2958891"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For a still photo your capture session needs only a video input, but a Live Photo includes sound, so you’ll need to also connect an audio capture device to your session: "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "enum CameraError: Error {",
+            "    case configurationFailed",
+            "    // ... additional error cases ...",
+            "}",
+            "",
+            "func configureSession() throws {",
+            "    captureSession.beginConfiguration()",
+            "    ",
+            "    // ... add camera input and photo output ...",
+            "    ",
+            "    guard let audioDevice = AVCaptureDevice.default(for: .audio),",
+            "          let audioDeviceInput = try? AVCaptureDeviceInput(device: audioDevice) else {",
+            "              throw CameraError.configurationFailed",
+            "    }",
+            "    ",
+            "    if captureSession.canAddInput(audioDeviceInput) {",
+            "        captureSession.addInput(audioDeviceInput)",
+            "    } else {",
+            "        throw CameraError.configurationFailed",
+            "    }",
+            "    ",
+            "    // ... configure photo output and start running ...",
+            "    ",
+            "    captureSession.commitConfiguration()",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2958885",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because you’re already using a built-in camera device for video (see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/setting_up_a_capture_session"
+            },
+            {
+              "type": "text",
+              "text": "), you can simply use the default audio capture device—the system automatically uses the best microphone configuration for the camera position. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Capturing Live Photos requires an internal reconfiguration of the capture pipeline, which takes time and interrupts any in-progress captures. Before shooting your first Live Photo, make sure you’ve configured the pipeline appropriately by enabling Live Photo capture on your "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput"
+            },
+            {
+              "type": "text",
+              "text": " object:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let photoOutput = AVCapturePhotoOutput()",
+            "",
+            "// Attempt to add the photo output to the session.",
+            "if captureSession.canAddOutput(photoOutput) {",
+            "    captureSession.sessionPreset = .photo",
+            "    captureSession.addOutput(photoOutput)",
+            "} else {",
+            "    throw CameraError.configurationFailed",
+            "}",
+            "",
+            "// Configure the photo output's behavior.",
+            "photoOutput.isHighResolutionCaptureEnabled = true",
+            "photoOutput.isLivePhotoCaptureEnabled = photoOutput.isLivePhotoCaptureSupported",
+            "",
+            "// Start the capture session.",
+            "captureSession.startRunning()"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2958893",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Capture a Live Photo",
+          "anchor": "2958884"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Once your photo output is ready for Live Photos, you can choose still image or Live Photo capture for each shot. To capture a Live Photo, create an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings"
+            },
+            {
+              "type": "text",
+              "text": " object, choosing the format for the still image portion of the Live Photo and providing a URL for writing the movie portion of the Live Photo. Then, call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648765-capturephotowithsettings"
+            },
+            {
+              "type": "text",
+              "text": " to trigger capture:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let photoSettings = AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecType.hevc])",
+            "photoSettings.livePhotoMovieFileURL = // output url",
+            "",
+            "// Shoot the Live Photo, using a custom class to handle capture delegate callbacks.",
+            "let captureProcessor = LivePhotoCaptureProcessor()",
+            "photoOutput.capturePhoto(with: photoSettings, delegate: captureProcessor)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2958886",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Handle Live Photo Results",
+          "anchor": "2958889"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A Live Photo appears to users in the Photos app as a single asset, but it’s actually composed of separate files: the primary still image, and a movie file containing motion and sound from the moments before and after. The capture system delivers these results separately, as soon as each becomes available."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/2873949-captureoutput"
+            },
+            {
+              "type": "text",
+              "text": " method delivers the still image portion of the Live Photo as an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto"
+            },
+            {
+              "type": "text",
+              "text": " object. Because you’ll need to save the still image and movie files together, it’s best to extract the image file data from the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto"
+            },
+            {
+              "type": "text",
+              "text": " and keep it until the movie file finishes recording, as shown below. (You can also use this method to indicate in your UI that the still image has been captured.)"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func photoOutput(_ output: AVCapturePhotoOutput,",
+            "                 didFinishProcessingPhoto photo: AVCapturePhoto,",
+            "                 error: Error?) {",
+            "    guard error != nil else {",
+            "        print(\"Error capturing Live Photo still: \\(error!)\");",
+            "        return",
+            "    }",
+            "    ",
+            "    // Get and process the captured image data.",
+            "    processImage(photo.fileDataRepresentation())",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2958894",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778637-captureoutput"
+            },
+            {
+              "type": "text",
+              "text": " method fires later, indicating that the URL you specified when triggering the capture now contains a complete movie file. Once you have both the still image and movie portions of your Live Photo, you can save them together: "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func photoOutput(_ output: AVCapturePhotoOutput,",
+            "                 didFinishProcessingLivePhotoToMovieFileAt outputFileURL: URL,",
+            "                 duration: CMTime,",
+            "                 photoDisplayTime: CMTime,",
+            "                 resolvedSettings: AVCaptureResolvedPhotoSettings,",
+            "                 error: Error?) {",
+            "    ",
+            "    guard error != nil else {",
+            "        print(\"Error capturing Live Photo movie: \\(error!)\");",
+            "        return",
+            "    }",
+            "    ",
+            "    guard let stillImageData = stillImageData else { return }",
+            "    ",
+            "    // Save Live Photo.",
+            "    saveLivePhotoToPhotosLibrary(stillImageData: stillImageData,",
+            "                                 livePhotoMovieURL: outputFileURL)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2958895",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "To display Live Photos after capture, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/photokit/phlivephoto"
+                },
+                {
+                  "type": "text",
+                  "text": " and "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/photokit/phlivephotoview"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Save a Live Photo to the Photos Library",
+          "anchor": "2958887"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/photokit/phassetcreationrequest"
+            },
+            {
+              "type": "text",
+              "text": " class to create a single Photos asset consisting of media from multiple files—in the case of a Live Photo, the still image and its paired video. As in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos"
+            },
+            {
+              "type": "text",
+              "text": ", you’ll need to wrap that request in a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/photokit/phphotolibrary"
+            },
+            {
+              "type": "text",
+              "text": " change block, and first make sure that your app has the user’s permission to access Photos. "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func saveLivePhotoToPhotosLibrary(stillImageData: Data, livePhotoMovieURL: URL) {    PHPhotoLibrary.requestAuthorization { status in",
+            "        guard status == .authorized else { return }",
+            "        ",
+            "        PHPhotoLibrary.shared().performChanges({",
+            "            // Add the captured photo's file data as the main resource for the Photos asset.",
+            "            let creationRequest = PHAssetCreationRequest.forAsset()",
+            "            creationRequest.addResource(with: .photo, data: stillImageData, options: nil)",
+            "            ",
+            "            // Add the movie file URL as the Live Photo's paired video resource.",
+            "            let options = PHAssetResourceCreationOptions()",
+            "            options.shouldMoveFile = true",
+            "            creationRequest.addResource(with: .pairedVideo, fileURL: livePhotoMovieURL, options: options)",
+            "        }) { success, error in",
+            "            // Handle completion.",
+            "        }",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2958890",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Use the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/photokit/phassetresourcecreationoptions/1622687-shouldmovefile"
+                },
+                {
+                  "type": "text",
+                  "text": " option so that iOS can transfer the movie file from your app’s sandbox to the system Photos library without an expensive data-copying operation."
+                }
+              ]
+            }
+          ],
+          "style": "tip"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Track Live Photo Progress",
+          "anchor": "2958888"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Capturing Live Photos adds two additional steps to the process shown in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/tracking_photo_capture_progress"
+            },
+            {
+              "type": "text",
+              "text": ": after delivery of the still photo result (step 4), the photo output notifies you of movie capture status (step 5) and delivers the movie result (step 6). (Final cleanup becomes step 7.)"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2961960",
+              "metadata": {
+                "anchor": "2961960",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user captures a Live Photo in the system Camera app, a \"Live\" indicator appears for a few seconds to let the user know that video and audio are still being recorded. To provide a similar interface in your app, implement these methods in your photo capture delegate:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778621-captureoutput"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method tells you that capture has started: implement this method to show a recording indicator."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778658-captureoutput"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method tells you that a Live Photo movie is no longer recording: implement this method to hide the indicator. (Note that the movie file is not yet available at this time.)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can have multiple Live Photo captures running at the same time, so it’s best to use these methods to keep track of the number of captures \"in flight\" and hide your indicator only when that number reaches zero:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "class LivePhotoCaptureProcessor: NSObject, AVCapturePhotoCaptureDelegate {",
+            "    // ... other PhotoCaptureDelegate methods and supporting properties ...",
+            "    ",
+            "    // A handler to call when Live Photo capture begins and ends.",
+            "    var livePhotoStatusHandler: (Bool) -> () = { _ in }",
+            "    ",
+            "    // A property for tracking in-progress captures and updating UI accordingly.",
+            "    var livePhotosInProgress = 0 {",
+            "        didSet {",
+            "            // Update the UI accordingly based on the value of this property",
+            "        }",
+            "    }",
+            "    ",
+            "    // Call the handler when PhotoCaptureDelegate methods indicate Live Photo capture is in progress.",
+            "    func photoOutput(_ output: AVCapturePhotoOutput,",
+            "                     willBeginCaptureFor resolvedSettings: AVCaptureResolvedPhotoSettings) {",
+            "        let capturingLivePhoto = (resolvedSettings.livePhotoMovieDimensions.width > 0 && resolvedSettings.livePhotoMovieDimensions.height > 0)",
+            "        livePhotoStatusHandler(capturingLivePhoto)",
+            "    }",
+            "    ",
+            "    func photoOutput(_ output: AVCapturePhotoOutput,",
+            "                     didFinishRecordingLivePhotoMovieForEventualFileAt outputFileURL: URL,",
+            "                     resolvedSettings: AVCaptureResolvedPhotoSettings) {",
+            "        livePhotoStatusHandler(false)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2958892",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,876 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Generate a depth image and attach it to your own image."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture",
+        "doc://com.apple.documentation/documentation/avfoundation/avdepthdata"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto",
+        "doc://com.apple.documentation/documentation/avfoundation/avdepthdata"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/avdepthdata/creating_auxiliary_depth_data_manually",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3036711,
+  "kind": "article",
+  "metadata": {
+    "title": "Creating Auxiliary Depth Data Manually",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/avdepthdata/creating_auxiliary_depth_data_manually"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/avdepthdata/creating_auxiliary_depth_data_manually"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture": {
+      "title": "Cameras and Media Capture",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture",
+      "url": "/documentation/avfoundation/cameras_and_media_capture",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avdepthdata": {
+      "title": "AVDepthData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avdepthdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avdepthdata"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto": {
+      "title": "AVCapturePhoto",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto",
+      "url": "/documentation/avfoundation/avcapturephoto",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/corevideo/cvpixelbuffer": {
+      "title": "CVPixelBuffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbuffer",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corevideo/cvpixelbuffer"
+    },
+    "doc://com.apple.documentation/documentation/corevideo/1457128-cvpixelbufferlockbaseaddress": {
+      "title": "CVPixelBufferLockBaseAddress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/1457128-cvpixelbufferlockbaseaddress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/1457128-cvpixelbufferlockbaseaddress"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfdataref": {
+      "title": "CFDataRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdataref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfdataref"
+    },
+    "doc://com.apple.documentation/documentation/imageio/kcgimageauxiliarydatainfodata": {
+      "title": "kCGImageAuxiliaryDataInfoData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/imageio/kcgimageauxiliarydatainfodata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/imageio/kcgimageauxiliarydatainfodata"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfdictionaryref": {
+      "title": "CFDictionaryRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdictionaryref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfdictionaryref"
+    },
+    "doc://com.apple.documentation/documentation/imageio/2875775-cgimagesourcecopyauxiliarydatain": {
+      "title": "CGImageSourceCopyAuxiliaryDataInfoAtIndex",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/imageio/2875775-cgimagesourcecopyauxiliarydatain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/imageio/2875775-cgimagesourcecopyauxiliarydatain"
+    },
+    "doc://com.apple.documentation/documentation/imageio/kcgimageauxiliarydatainfodatadescription": {
+      "title": "kCGImageAuxiliaryDataInfoDataDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/imageio/kcgimageauxiliarydatainfodatadescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/imageio/kcgimageauxiliarydatainfodatadescription"
+    },
+    "doc://com.apple.documentation/documentation/imageio/kcgimageauxiliarydatainfometadata": {
+      "title": "kCGImageAuxiliaryDataInfoMetadata",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/imageio/kcgimageauxiliarydatainfometadata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/imageio/kcgimageauxiliarydatainfometadata"
+    },
+    "doc://com.apple.documentation/documentation/imageio/cgimagemetadataref": {
+      "title": "CGImageMetadataRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/imageio/cgimagemetadataref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/imageio/cgimagemetadataref"
+    },
+    "doc://com.apple.documentation/documentation/imageio/kcgimagepropertypixelformat": {
+      "title": "kCGImagePropertyPixelFormat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/imageio/kcgimagepropertypixelformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/imageio/kcgimagepropertypixelformat"
+    },
+    "doc://com.apple.documentation/documentation/imageio/kcgimagepropertywidth": {
+      "title": "kCGImagePropertyWidth",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/imageio/kcgimagepropertywidth",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/imageio/kcgimagepropertywidth"
+    },
+    "doc://com.apple.documentation/documentation/imageio/kcgimagepropertyheight": {
+      "title": "kCGImagePropertyHeight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/imageio/kcgimagepropertyheight",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/imageio/kcgimagepropertyheight"
+    },
+    "doc://com.apple.documentation/documentation/imageio/kcgimagepropertybytesperrow": {
+      "title": "kCGImagePropertyBytesPerRow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/imageio/kcgimagepropertybytesperrow",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/imageio/kcgimagepropertybytesperrow"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avdepthdata/2881221-depthdatafromdictionaryrepresent": {
+      "title": "depthDataFromDictionaryRepresentation:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avdepthdata/2881221-depthdatafromdictionaryrepresent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avdepthdata/2881221-depthdatafromdictionaryrepresent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a depth data object from depth information such as that found in an image file."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "depthDataFromDictionaryRepresentation:error:"
+        }
+      ]
+    },
+    "devLink-1746840": {
+      "identifier": "devLink-1746840",
+      "type": "link",
+      "title": "Image IO Framework",
+      "url": "https://developer.apple.com/library/archive/releasenotes/General/WhatsNewIniOS/Articles/iOS6.html#//apple_ref/doc/uid/TP40011812-SW15"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avdepthdata/creating_auxiliary_depth_data_manually#3036816": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avdepthdata/creating_auxiliary_depth_data_manually#3036816",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/avdepthdata/creating_auxiliary_depth_data_manually#3036816"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avdepthdata/creating_auxiliary_depth_data_manually": {
+      "title": "Creating Auxiliary Depth Data Manually",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avdepthdata/creating_auxiliary_depth_data_manually",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/avdepthdata/creating_auxiliary_depth_data_manually",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Generate a depth image and attach it to your own image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avdepthdata/2873883-dictionaryrepresentationforauxil": {
+      "title": "dictionaryRepresentationForAuxiliaryDataType:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avdepthdata/2873883-dictionaryrepresentationforauxil",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avdepthdata/2873883-dictionaryrepresentationforauxil",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a dictionary representation of the depth data suitable for writing into an image file."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "dictionaryRepresentationForAuxiliaryDataType:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avdepthdata/2881221-depthdatafromdictionaryrepresent",
+        "doc://com.apple.documentation/documentation/avfoundation/avdepthdata/2873883-dictionaryrepresentationforauxil"
+      ],
+      "title": "Creating Depth Data",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "iOS Portrait Mode generates a depth map and attaches it to the image as auxiliary metadata, but for custom effects, you can generate your own auxiliary depth image, one not taken with iOS Portrait Mode or another depth-enabled capture device. This article shows you how to generate this map and attach it to your image."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Convert Pixel Values into a Compatible Floating-Point Format",
+          "anchor": "3036810"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The depth image is a single-component image that must be converted per-pixel from grayscale pixel values ("
+            },
+            {
+              "type": "codeVoice",
+              "code": "0 "
+            },
+            {
+              "type": "text",
+              "text": "= black to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1 "
+            },
+            {
+              "type": "text",
+              "text": "= white, zNear to zFar) to either depth (in meters) or disparity (in 1/meters). Then adjust these values to fit your desired floating-point format."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The supported pixel formats for disparity or depth images are:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "kCVPixelFormatType_DisparityFloat16 = 'hdis'"
+                    },
+                    {
+                      "type": "text",
+                      "text": ": An IEEE754-2008 binary16 (half float), describing the normalized shift when comparing two images. Units are 1/meters: (pixelShift / (pixelFocalLength * baselineInMeters))"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "kCVPixelFormatType_DisparityFloat32 = 'fdis'"
+                    },
+                    {
+                      "type": "text",
+                      "text": ": An IEEE754-2008 binary32 float, describing the normalized shift when comparing two images. Units are 1/meters: (pixelShift / (pixelFocalLength * baselineInMeters))"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "kCVPixelFormatType_DepthFloat16 = 'hdep'"
+                    },
+                    {
+                      "type": "text",
+                      "text": ": An IEEE754-2008 binary16 (half float), describing the depth (distance to an object) in meters"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "kCVPixelFormatType_DepthFloat32 = 'fdep'"
+                    },
+                    {
+                      "type": "text",
+                      "text": ": An IEEE754-2008 binary32 float, describing the depth (distance to an object) in meters"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Load the grayscale image into a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corevideo/cvpixelbuffer"
+            },
+            {
+              "type": "text",
+              "text": ". Load its base address, attained via "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corevideo/1457128-cvpixelbufferlockbaseaddress"
+            },
+            {
+              "type": "text",
+              "text": ", as data ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdataref"
+            },
+            {
+              "type": "text",
+              "text": ") and pass it as the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/imageio/kcgimageauxiliarydatainfodata"
+            },
+            {
+              "type": "text",
+              "text": " value into a dictionary ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdictionaryref"
+            },
+            {
+              "type": "text",
+              "text": "). "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Parse Metadata Dictionaries",
+          "anchor": "3036815"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The format of the dictionary is documented in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CGImageSource.h"
+            },
+            {
+              "type": "text",
+              "text": ". Access this dictionary with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/imageio/2875775-cgimagesourcecopyauxiliarydatain"
+            },
+            {
+              "type": "text",
+              "text": ". The dictionary supports JPEG, HEIF, and DNG images. The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdictionaryref"
+            },
+            {
+              "type": "text",
+              "text": " contains auxiliary data in the following format:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/imageio/kcgimageauxiliarydatainfodata"
+                    },
+                    {
+                      "type": "text",
+                      "text": " → Depth data ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdataref"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/imageio/kcgimageauxiliarydatainfodatadescription"
+                    },
+                    {
+                      "type": "text",
+                      "text": " → Depth data description ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdictionaryref"
+                    },
+                    {
+                      "type": "text",
+                      "text": ": See below for more details.)"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/imageio/kcgimageauxiliarydatainfometadata"
+                    },
+                    {
+                      "type": "text",
+                      "text": " → Optional metadata ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/imageio/cgimagemetadataref"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/imageio/2875775-cgimagesourcecopyauxiliarydatain"
+            },
+            {
+              "type": "text",
+              "text": " returns "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": " if the image doesn't contain "
+            },
+            {
+              "type": "codeVoice",
+              "code": "auxiliaryImageDataType"
+            },
+            {
+              "type": "text",
+              "text": " data."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The value for key "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/imageio/kcgimageauxiliarydatainfodatadescription"
+            },
+            {
+              "type": "text",
+              "text": " is a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfdictionaryref"
+            },
+            {
+              "type": "text",
+              "text": " that you populate to tell the image system how to interpret the depth map. It can contain the following depth data parameters:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/imageio/kcgimagepropertypixelformat"
+                    },
+                    {
+                      "type": "text",
+                      "text": " → One of the Core Video "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "CVPixelBuffer.h"
+                    },
+                    {
+                      "type": "text",
+                      "text": " depth or disparity formats"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/imageio/kcgimagepropertywidth"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/imageio/kcgimagepropertyheight"
+                    },
+                    {
+                      "type": "text",
+                      "text": " → Pixel dimensions"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/imageio/kcgimagepropertybytesperrow"
+                    },
+                    {
+                      "type": "text",
+                      "text": " → The number of bytes per row in the depth map"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Attach Your Custom Depth Map to an Image",
+          "anchor": "3036809"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Attach the depth or disparity dictionary to an image as follows: "
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avdepthdata"
+                    },
+                    {
+                      "type": "text",
+                      "text": " with "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avdepthdata/2881221-depthdatafromdictionaryrepresent"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", passing in the depth or disparity dictionary."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create the image destination."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create the image, using helper methods from the "
+                    },
+                    {
+                      "type": "link",
+                      "title": "Image IO Framework",
+                      "destination": "https://developer.apple.com/library/archive/releasenotes/General/WhatsNewIniOS/Articles/iOS6.html#//apple_ref/doc/uid/TP40011812-SW15"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Add an image to the destination.",
+            "CGImageDestinationAddImage(cgImageDestination, renderedCGImage, attachments)  ",
+            "",
+            "// Use AVDepthData to get the auxiliary data dictionary.         ",
+            "var auxDataType :NSString? ",
+            "let auxData = depthData.dictionaryRepresentation(forAuxiliaryDataType: &auxDataType)  ",
+            "",
+            "// Add auxiliary data to the image destination. ",
+            "CGImageDestinationAddAuxiliaryDataInfo(cgImageDestination, auxDataType!, auxData! as CFDictionary)  ",
+            "",
+            "if CGImageDestinationFinalize(cgImageDestination) {  ",
+            "\treturn data as Data",
+            "}  "
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3036816",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

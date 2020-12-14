@@ -1,0 +1,985 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Calculates a double-precision vector that’s inverted-clipped to the specified range."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp-snv"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/clipping_limit_and_threshold_operations"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241000-invertedclip",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 3241000,
+  "kind": "symbol",
+  "metadata": {
+    "title": "invertedClip(_:to:result:)",
+    "role": "symbol",
+    "roleHeading": "Generic Type Method",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.15",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "6.0",
+        "current": "7.2"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.0",
+        "current": "12.3"
+      }
+    ],
+    "externalID": "s:10Accelerate4vDSPO12invertedClip_2to6resultyx_SNySdGq_ztAA0A6BufferRzAA0a7MutableG0R_Sd7ElementRtzSdAJRt_r0_lFZ",
+    "symbolKind": "enumcm",
+    "fragments": [
+      {
+        "kind": "text",
+        "text": "static func "
+      },
+      {
+        "kind": "identifier",
+        "text": "invertedClip"
+      },
+      {
+        "kind": "text",
+        "text": "<U, V>(U, "
+      },
+      {
+        "kind": "identifier",
+        "text": "to"
+      },
+      {
+        "kind": "text",
+        "text": ": ClosedRange<Double>, "
+      },
+      {
+        "kind": "identifier",
+        "text": "result"
+      },
+      {
+        "kind": "text",
+        "text": ": inout V)"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/vdsp/3241000-invertedclip"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp": {
+      "title": "vDSP",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp",
+      "url": "/documentation/accelerate/vdsp",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp-snv": {
+      "title": "vDSP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp-snv",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp-snv",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An enumeration that acts as a namespace for Swift overlays to vDSP."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/clipping_limit_and_threshold_operations": {
+      "title": "Clipping, Limit, and Threshold Operations",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/clipping_limit_and_threshold_operations",
+      "url": "/documentation/accelerate/vdsp/clipping_limit_and_threshold_operations",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/swift/closedrange": {
+      "title": "ClosedRange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/closedrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/closedrange"
+    },
+    "doc://com.apple.documentation/documentation/swift/double": {
+      "title": "Double",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/double",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/double"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer": {
+      "title": "AccelerateBuffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/acceleratebuffer"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/acceleratemutablebuffer": {
+      "title": "AccelerateMutableBuffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratemutablebuffer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/acceleratemutablebuffer"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240862-clip": {
+      "title": "clip(_:to:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240862-clip",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3240862-clip",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the elements of a double-precision vector clipped to the specified range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "clip"
+        },
+        {
+          "kind": "text",
+          "text": "<U>(U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "to"
+        },
+        {
+          "kind": "text",
+          "text": ": ClosedRange<Double>) -> [Double]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240863-clip": {
+      "title": "clip(_:to:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240863-clip",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3240863-clip",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the elements of a single-precision vector clipped to the specified range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "clip"
+        },
+        {
+          "kind": "text",
+          "text": "<U>(U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "to"
+        },
+        {
+          "kind": "text",
+          "text": ": ClosedRange<Float>) -> [Float]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240864-clip": {
+      "title": "clip(_:to:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240864-clip",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3240864-clip",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the elements of a double-precision vector clipped to the specified range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "clip"
+        },
+        {
+          "kind": "text",
+          "text": "<U, V>(U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "to"
+        },
+        {
+          "kind": "text",
+          "text": ": ClosedRange<Double>, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240865-clip": {
+      "title": "clip(_:to:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240865-clip",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3240865-clip",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the elements of a single-precision vector clipped to the specified range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "clip"
+        },
+        {
+          "kind": "text",
+          "text": "<U, V>(U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "to"
+        },
+        {
+          "kind": "text",
+          "text": ": ClosedRange<Float>, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240998-invertedclip": {
+      "title": "invertedClip(_:to:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240998-invertedclip",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3240998-invertedclip",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a double-precision vector that’s inverted-clipped to the specified range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "invertedClip"
+        },
+        {
+          "kind": "text",
+          "text": "<U>(U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "to"
+        },
+        {
+          "kind": "text",
+          "text": ": ClosedRange<Double>) -> [Double]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240999-invertedclip": {
+      "title": "invertedClip(_:to:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240999-invertedclip",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3240999-invertedclip",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a single-precision vector that’s inverted-clipped to the specified range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "invertedClip"
+        },
+        {
+          "kind": "text",
+          "text": "<U>(U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "to"
+        },
+        {
+          "kind": "text",
+          "text": ": ClosedRange<Float>) -> [Float]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241000-invertedclip": {
+      "title": "invertedClip(_:to:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241000-invertedclip",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241000-invertedclip",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates a double-precision vector that’s inverted-clipped to the specified range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "invertedClip"
+        },
+        {
+          "kind": "text",
+          "text": "<U, V>(U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "to"
+        },
+        {
+          "kind": "text",
+          "text": ": ClosedRange<Double>, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241001-invertedclip": {
+      "title": "invertedClip(_:to:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241001-invertedclip",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241001-invertedclip",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates a single-precision vector that’s inverted-clipped to the specified range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "invertedClip"
+        },
+        {
+          "kind": "text",
+          "text": "<U, V>(U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "to"
+        },
+        {
+          "kind": "text",
+          "text": ": ClosedRange<Float>, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450071-vdsp_vclip": {
+      "title": "vDSP_vclip(_:_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450071-vdsp_vclip",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450071-vdsp_vclip",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the elements of a single-precision vector clipped to the specified range using the specified stride."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_vclip"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<Float>, vDSP_Stride, UnsafePointer<Float>, UnsafePointer<Float>, UnsafeMutablePointer<Float>, vDSP_Stride, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450285-vdsp_vclipd": {
+      "title": "vDSP_vclipD(_:_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450285-vdsp_vclipd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450285-vdsp_vclipd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the elements of a double-precision vector clipped to the specified range using the specified stride."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_vclipD"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<Double>, vDSP_Stride, UnsafePointer<Double>, UnsafePointer<Double>, UnsafeMutablePointer<Double>, vDSP_Stride, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450775-vdsp_vclipc": {
+      "title": "vDSP_vclipc(_:_:_:_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450775-vdsp_vclipc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450775-vdsp_vclipc",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates and counts the elements of a single-precision vector clipped to the specified range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_vclipc"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<Float>, vDSP_Stride, UnsafePointer<Float>, UnsafePointer<Float>, UnsafeMutablePointer<Float>, vDSP_Stride, vDSP_Length, UnsafeMutablePointer<vDSP_Length>, UnsafeMutablePointer<vDSP_Length>)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450162-vdsp_vclipcd": {
+      "title": "vDSP_vclipcD(_:_:_:_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450162-vdsp_vclipcd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450162-vdsp_vclipcd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates and counts the elements of a double-precision vector clipped to the specified range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_vclipcD"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<Double>, vDSP_Stride, UnsafePointer<Double>, UnsafePointer<Double>, UnsafeMutablePointer<Double>, vDSP_Stride, vDSP_Length, UnsafeMutablePointer<vDSP_Length>, UnsafeMutablePointer<vDSP_Length>)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450512-vdsp_viclip": {
+      "title": "vDSP_viclip(_:_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450512-vdsp_viclip",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450512-vdsp_viclip",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the elements of a single-precision vector inverted-clipped to the specified range using the specified stride."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_viclip"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<Float>, vDSP_Stride, UnsafePointer<Float>, UnsafePointer<Float>, UnsafeMutablePointer<Float>, vDSP_Stride, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450559-vdsp_viclipd": {
+      "title": "vDSP_viclipD(_:_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450559-vdsp_viclipd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450559-vdsp_viclipd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the elements of a double-precision vector inverted-clipped to the specified range using the specified stride."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_viclipD"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<Double>, vDSP_Stride, UnsafePointer<Double>, UnsafePointer<Double>, UnsafeMutablePointer<Double>, vDSP_Stride, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450030-vdsp_vthr": {
+      "title": "vDSP_vthr(_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450030-vdsp_vthr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450030-vdsp_vthr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates single-precision vector threshold to the specified range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_vthr"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<Float>, vDSP_Stride, UnsafePointer<Float>, UnsafeMutablePointer<Float>, vDSP_Stride, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450834-vdsp_vthrd": {
+      "title": "vDSP_vthrD(_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450834-vdsp_vthrd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450834-vdsp_vthrd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates double-precision vector threshold to the specified range."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_vthrD"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<Double>, vDSP_Stride, UnsafePointer<Double>, UnsafeMutablePointer<Double>, vDSP_Stride, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3240862-clip",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3240863-clip",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3240864-clip",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3240865-clip",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3240998-invertedclip",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3240999-invertedclip",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3241001-invertedclip",
+        "doc://com.apple.documentation/documentation/accelerate/1450071-vdsp_vclip",
+        "doc://com.apple.documentation/documentation/accelerate/1450285-vdsp_vclipd",
+        "doc://com.apple.documentation/documentation/accelerate/1450775-vdsp_vclipc",
+        "doc://com.apple.documentation/documentation/accelerate/1450162-vdsp_vclipcd",
+        "doc://com.apple.documentation/documentation/accelerate/1450512-vdsp_viclip",
+        "doc://com.apple.documentation/documentation/accelerate/1450559-vdsp_viclipd",
+        "doc://com.apple.documentation/documentation/accelerate/1450030-vdsp_vthr",
+        "doc://com.apple.documentation/documentation/accelerate/1450834-vdsp_vthrd"
+      ],
+      "title": "Clipping Operations",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "static"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "invertedClip"
+            },
+            {
+              "kind": "text",
+              "text": "<"
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO12invertedClip_2to6resultyx_SNySdGq_ztAA0A6BufferRzAA0a7MutableG0R_Sd7ElementRtzSdAJRt_r0_lFZ1UL_xmfp",
+              "text": "U"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO12invertedClip_2to6resultyx_SNySdGq_ztAA0A6BufferRzAA0a7MutableG0R_Sd7ElementRtzSdAJRt_r0_lFZ1VL_q_mfp",
+              "text": "V"
+            },
+            {
+              "kind": "text",
+              "text": ">("
+            },
+            {
+              "kind": "externalParam",
+              "text": "_"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "vector"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "text",
+              "text": "U"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "externalParam",
+              "text": "to"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "bounds"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:SN",
+              "identifier": "doc://com.apple.documentation/documentation/swift/closedrange",
+              "text": "ClosedRange"
+            },
+            {
+              "kind": "text",
+              "text": "<"
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Sd",
+              "identifier": "doc://com.apple.documentation/documentation/swift/double",
+              "text": "Double"
+            },
+            {
+              "kind": "text",
+              "text": ">"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "externalParam",
+              "text": "result"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "keyword",
+              "text": "inout"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "text",
+              "text": "V"
+            },
+            {
+              "kind": "text",
+              "text": ") "
+            },
+            {
+              "kind": "keyword",
+              "text": "where"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "text",
+              "text": "U : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate0A6BufferP",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer",
+              "text": "AccelerateBuffer"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "text",
+              "text": "V : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate0A13MutableBufferP",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratemutablebuffer",
+              "text": "AccelerateMutableBuffer"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "text",
+              "text": "U.Element == "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Sd",
+              "identifier": "doc://com.apple.documentation/documentation/swift/double",
+              "text": "Double"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "text",
+              "text": "V.Element == "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Sd",
+              "identifier": "doc://com.apple.documentation/documentation/swift/double",
+              "text": "Double"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

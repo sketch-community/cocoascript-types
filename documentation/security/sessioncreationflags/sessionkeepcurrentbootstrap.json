@@ -1,0 +1,218 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The caller has allocated sub-bootstrap."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/sessions",
+        "doc://com.apple.documentation/documentation/security/sessioncreationflags"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/sessioncreationflags/sessionkeepcurrentbootstrap",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1593383,
+  "kind": "symbol",
+  "metadata": {
+    "title": "sessionKeepCurrentBootstrap",
+    "role": "symbol",
+    "roleHeading": "Enumeration Case",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.3",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:@E@SessionCreationFlags@sessionKeepCurrentBootstrap",
+    "symbolKind": "econst"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/sessioncreationflags/sessionkeepcurrentbootstrap"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/sessioncreationflags/1593383-sessionkeepcurrentbootstrap"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/sessions": {
+      "title": "Sessions",
+      "identifier": "doc://com.apple.documentation/documentation/security/sessions",
+      "url": "/documentation/security/sessions",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/sessioncreationflags": {
+      "title": "SessionCreationFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sessioncreationflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sessioncreationflags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The flags that affect the creation of a security session."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1593378-sessioncreate": {
+      "title": "SessionCreate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1593378-sessioncreate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1593378-sessioncreate"
+    },
+    "doc://com.apple.documentation/documentation/security/sessioncreationflags/sessionkeepcurrentbootstrap": {
+      "title": "sessionKeepCurrentBootstrap",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sessioncreationflags/sessionkeepcurrentbootstrap",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sessioncreationflags/sessionkeepcurrentbootstrap",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The caller has allocated sub-bootstrap."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "identifier",
+              "text": "sessionKeepCurrentBootstrap"
+            },
+            {
+              "kind": "text",
+              "text": " = 0x8000"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you create a subset port on your own, you can force"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": " the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1593378-sessioncreate"
+            },
+            {
+              "type": "text",
+              "text": " function to use it by passing this flag in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "flags"
+            },
+            {
+              "type": "text",
+              "text": " parameter. However, you can't supersede a prior call that way; only a single "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1593378-sessioncreate"
+            },
+            {
+              "type": "text",
+              "text": " call is allowed for each session."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

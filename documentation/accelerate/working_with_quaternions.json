@@ -1,0 +1,1020 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Rotate points around the surface of a sphere, and interpolate between them."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/simd"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/working_with_quaternions",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2961598,
+  "kind": "article",
+  "metadata": {
+    "title": "Working with Quaternions",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/working_with_quaternions",
+        "documentation/accelerate/simd/working_with_quaternions"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/working_with_quaternions",
+        "documentation/accelerate/simd/working_with_quaternions"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/simd": {
+      "title": "simd",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/simd",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/simd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Perform computations on small vectors and matrices."
+        }
+      ]
+    },
+    "link-media-2970089": {
+      "identifier": "link-media-2970089",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/working_with_quaternions#2970089"
+    },
+    "media-2970089": {
+      "identifier": "media-2970089",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 846,
+            "height": 416
+          },
+          "url": "https://docs-assets.developer.apple.com/published/fc2d85b601/4889b8c7-e9bf-4e09-b6a1-8db9e10289dc.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 846,
+            "height": 416
+          },
+          "url": "https://docs-assets.developer.apple.com/published/3ef149e824/4aff75de-ec55-4bd0-a04f-ac5e92828f5e.png"
+        }
+      ],
+      "alt": "Image showing a point rotated over the surface of a sphere.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_quaternions#2961604": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_quaternions#2961604",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/working_with_quaternions#2961604"
+    },
+    "doc://com.apple.documentation/documentation/simd/simd_quatf/2914940-act": {
+      "title": "act(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/simd/simd_quatf/2914940-act",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/simd/simd_quatf/2914940-act"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_quaternions#2961603": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_quaternions#2961603",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/working_with_quaternions#2961603"
+    },
+    "link-media-2969367": {
+      "identifier": "link-media-2969367",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/accelerate/working_with_quaternions#2969367"
+    },
+    "media-2969367": {
+      "identifier": "media-2969367",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 888,
+            "height": 436
+          },
+          "url": "https://docs-assets.developer.apple.com/published/7ed4036790/2cd4eead-3a10-4706-aeb8-223a7069ba47.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 888,
+            "height": 436
+          },
+          "url": "https://docs-assets.developer.apple.com/published/883a914d59/33d5f06a-fbe4-42a6-9f31-e2b801e72514.png"
+        }
+      ],
+      "alt": "Image showing the shortest and longest arcs between points on a sphere.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_quaternions#2961609": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_quaternions#2961609",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/working_with_quaternions#2961609"
+    },
+    "doc://com.apple.documentation/documentation/simd/2867359-simd_slerp": {
+      "title": "simd_slerp",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/simd/2867359-simd_slerp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/simd/2867359-simd_slerp"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_quaternions#2961607": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_quaternions#2961607",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/working_with_quaternions#2961607"
+    },
+    "doc://com.apple.documentation/documentation/simd/2867366-simd_slerp_longest": {
+      "title": "simd_slerp_longest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/simd/2867366-simd_slerp_longest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/simd/2867366-simd_slerp_longest"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_quaternions#2961610": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_quaternions#2961610",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/working_with_quaternions#2961610"
+    },
+    "doc://com.apple.documentation/documentation/simd/2867378-simd_spline": {
+      "title": "simd_spline",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/simd/2867378-simd_spline",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/simd/2867378-simd_spline"
+    },
+    "link-media-2969368": {
+      "identifier": "link-media-2969368",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/accelerate/working_with_quaternions#2969368"
+    },
+    "media-2969368": {
+      "identifier": "media-2969368",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 888,
+            "height": 436
+          },
+          "url": "https://docs-assets.developer.apple.com/published/947ceebccf/cd34bae3-463f-4469-86eb-83f86932042b.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 888,
+            "height": 436
+          },
+          "url": "https://docs-assets.developer.apple.com/published/fe7f1e410b/6f2e98f0-0306-4f5c-b112-7bc83f23c56f.png"
+        }
+      ],
+      "alt": "Image showing a spline passing through multiple points on a sphere.",
+      "title": "Figure 3"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_quaternions#2961611": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_quaternions#2961611",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/working_with_quaternions#2961611"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_quaternions#2961599": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_quaternions#2961599",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/working_with_quaternions#2961599"
+    },
+    "doc://com.apple.documentation/documentation/simd/simd_quatd/2914353-length": {
+      "title": "length",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/simd/simd_quatd/2914353-length",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/simd/simd_quatd/2914353-length"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_quaternions#2961605": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_quaternions#2961605",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/working_with_quaternions#2961605"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_vectors": {
+      "title": "Working with Vectors",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_vectors",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/working_with_vectors",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use vectors to calculate geometric values, calculate dot products and cross products, and interpolate between values. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_matrices": {
+      "title": "Working with Matrices",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_matrices",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/working_with_matrices",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Solve simultaneous equations and transform points in space.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_quaternions": {
+      "title": "Working with Quaternions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_quaternions",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/working_with_quaternions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Rotate points around the surface of a sphere, and interpolate between them."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/rotating_a_cube_by_transforming_its_vertices": {
+      "title": "Rotating a Cube by Transforming Its Vertices",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/rotating_a_cube_by_transforming_its_vertices",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/rotating_a_cube_by_transforming_its_vertices",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Rotate a cube through a series of keyframes using quaternion interpolation to transition between them."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/working_with_vectors",
+        "doc://com.apple.documentation/documentation/accelerate/working_with_matrices",
+        "doc://com.apple.documentation/documentation/accelerate/rotating_a_cube_by_transforming_its_vertices",
+        "doc://com.apple.documentation/documentation/accelerate/simd"
+      ],
+      "title": "Vectors, Matrices, and Quaternions",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Quaternions are defined by a scalar ("
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "real"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ") part, and three imaginary parts collectively called the "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "vector"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " part. Quaternions are often used in graphics programming as a compact representation of the rotation of an object in three dimensions."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The length of a quaternion is the square root of the sum of the squares of its components. For example, consider a quaternion specified by the following code:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let ix = 1.0",
+            "let iy = 4.0",
+            "let iz = 8.0",
+            "let r = 9.0",
+            "",
+            "let q = simd_quatd(ix: ix, iy: iy, iz: iz, r: r)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2961599",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The length of the quaternion can be calculated manually with "
+            },
+            {
+              "type": "codeVoice",
+              "code": "sqrt(ix*ix + iy*iy + iz*iz + r*r)"
+            },
+            {
+              "type": "text",
+              "text": ", or more simply accessed through its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/simd/simd_quatd/2914353-length"
+            },
+            {
+              "type": "text",
+              "text": " property. Quaternions with a length of one are called "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "unit quaternions"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " and can represent rotations in 3D space. You can easily convert a nonunit quaternion representing a rotation into a unit quaternion by normalizing its axes. The following code shows "
+            },
+            {
+              "type": "codeVoice",
+              "code": "q1"
+            },
+            {
+              "type": "text",
+              "text": ", which contains rotations around all three axes with a length greater than 1, and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "q2"
+            },
+            {
+              "type": "text",
+              "text": ", which contains the same rotation but has a length of 1 and is, therefore, suitable for applying a rotation to a 3D coordinate:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let axis = simd_double3(x: -2,",
+            "                        y: 1,",
+            "                        z: 0.5)",
+            "",
+            "// `q1` length = 2.29128",
+            "let q1 = simd_quatd(angle: .pi,",
+            "                    axis: axis)",
+            "",
+            "// `q2` length = 1",
+            "let q2 = simd_quatd(angle: .pi,",
+            "                    axis: simd_normalize(axis))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2961605",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Quaternions have some advantages over matrices. For example, they're smaller: A 3 x 3 matrix of floats is 48 bytes, and a single-precision quaternion is 16 bytes. They also can offer better performance: Although a single rotation using a quaternion is a little slower than one using a matrix, when combining actions, quaternions can be up to 30% faster. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following examples show a few common uses of quaternions."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Rotate a Point Around a Sphere",
+          "anchor": "2961602"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following illustration shows a point, defined by "
+            },
+            {
+              "type": "codeVoice",
+              "code": "originVector"
+            },
+            {
+              "type": "text",
+              "text": ", rotated over the surface of a sphere by 60º about the x axis.  "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2970089",
+              "metadata": {
+                "anchor": "2970089",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To apply this rotation, you define the vector to be rotated and the quaternion that represents the rotation:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func degreesToRadians(_ degrees: Float) -> Float {",
+            "    return degrees * .pi / 180",
+            "}",
+            "",
+            "let originVector = simd_float3(x: 0, y: 0, z: 1)",
+            "",
+            "let quaternion = simd_quatf(angle: degreesToRadians(-60),",
+            "                            axis: simd_float3(x: 1,",
+            "                                              y: 0,",
+            "                                              z: 0))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2961604",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The rotation of the vector by a quaternion is known as an "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "action"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "; to apply the rotation to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "originVector"
+            },
+            {
+              "type": "text",
+              "text": ", you call the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/simd/simd_quatf/2914940-act"
+            },
+            {
+              "type": "text",
+              "text": " method:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let rotatedVector = quaternion.act(originVector)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2961603",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "rotatedVector"
+            },
+            {
+              "type": "text",
+              "text": " is now at the position of the blue point in the illustration above. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Interpolate Between Two Points on a Sphere",
+          "anchor": "2961597"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "One of the advantages quaternions have over matrices when representing rotations is that they simplify interpolation between rotated coordinates."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following image shows the spherical linear interpolation along the shortest arc between "
+            },
+            {
+              "type": "codeVoice",
+              "code": "q0"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "q1"
+            },
+            {
+              "type": "text",
+              "text": ", and along the longest arc between "
+            },
+            {
+              "type": "codeVoice",
+              "code": "q1"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "q2"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2969367",
+              "metadata": {
+                "anchor": "2969367",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows how the three points are defined in the preceding image:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let origin = simd_float3(0, 0, 1)",
+            "",
+            "let q0 = simd_quatf(angle: .pi / 6,",
+            "                    axis: simd_normalize(simd_float3(x: 0,",
+            "                                                     y: -1,",
+            "                                                     z: 0)))",
+            "let u0 = simd_act(q0, origin)",
+            "",
+            "let q1 = simd_quatf(angle: .pi / 6,",
+            "                    axis: simd_normalize(simd_float3(x: -1,",
+            "                                                     y: 1,",
+            "                                                     z: 0)))",
+            "let u1 = simd_act(q1, origin)",
+            "",
+            "let q2 = simd_quatf(angle: .pi / 20,",
+            "                    axis: simd_normalize(simd_float3(x: 1,",
+            "                                                     y: 0,",
+            "                                                     z: -1)))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2961609",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/simd/2867359-simd_slerp"
+            },
+            {
+              "type": "text",
+              "text": " function linearly interpolates along the shortest arc between two quaternions. The following code calls "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/simd/2867359-simd_slerp"
+            },
+            {
+              "type": "text",
+              "text": " with small increments to its "
+            },
+            {
+              "type": "codeVoice",
+              "code": "t"
+            },
+            {
+              "type": "text",
+              "text": " parameter, adding a line segment at each interpolated value to build the short arc between "
+            },
+            {
+              "type": "codeVoice",
+              "code": "q0"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "q1"
+            },
+            {
+              "type": "text",
+              "text": " shown in the preceding image:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "for t: Float in stride(from: 0, to: 1, by: 0.001) {",
+            "    let q = simd_slerp(q0, q1, t)",
+            "    // code to add line segment at `q.act(origin)`",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2961607",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/simd/2867366-simd_slerp_longest"
+            },
+            {
+              "type": "text",
+              "text": " function linearly interpolates along the longest arc between two quaternions. The following code calls "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/simd/2867366-simd_slerp_longest"
+            },
+            {
+              "type": "text",
+              "text": " with small increments to its "
+            },
+            {
+              "type": "codeVoice",
+              "code": "t"
+            },
+            {
+              "type": "text",
+              "text": " parameter, adding a line segment at each interpolated value to build the long arc between "
+            },
+            {
+              "type": "codeVoice",
+              "code": "q1"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "q2"
+            },
+            {
+              "type": "text",
+              "text": " shown in the preceding image: "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "for t: Float in stride(from: 0, to: 1, by: 0.001) {",
+            "    let q = simd_slerp_longest(q1, q2, t)",
+            "    // code to add line segment at `q.act(origin)`",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2961610",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Interpolate Between Multiple Points on a Sphere",
+          "anchor": "2961596"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To interpolate between multiple quaternions that define positions on the surface of a sphere, the simd library provides the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/simd/2867378-simd_spline"
+            },
+            {
+              "type": "text",
+              "text": " function."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following image illustrates a series of quaternions that define positions on the surface of a sphere, shown as points, and a line that shows the smooth interpolation between them."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2969368",
+              "metadata": {
+                "anchor": "2969368",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Much like "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/simd/2867359-simd_slerp"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/simd/2867378-simd_spline"
+            },
+            {
+              "type": "text",
+              "text": " accepts the two quaternions to interpolate between, but also requires the surrounding two quaternions. Given an array of quaternions named "
+            },
+            {
+              "type": "codeVoice",
+              "code": "rotations"
+            },
+            {
+              "type": "text",
+              "text": ", the following code iterates over each element, adding a line segment at each interpolated value to build the smooth line shown in the preceding image:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let rotations: [simd_quatf] = ...",
+            "",
+            "for i in 1 ... rotations.count - 3 {",
+            "    for t: Float in stride(from: 0, to: 1, by: 0.001) {",
+            "        let q = simd_spline(rotations[i - 1],",
+            "                            rotations[i],",
+            "                            rotations[i + 1],",
+            "                            rotations[i + 2],",
+            "                            t)",
+            "        // code to add line segment at `q.act(origin)`",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2961611",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

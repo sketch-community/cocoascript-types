@@ -1,0 +1,984 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Use Accelerate’s discrete cosine transform to remove noise from a signal."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/discrete_cosine_transforms"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/discrete_cosine_transforms"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2983563,
+  "kind": "article",
+  "metadata": {
+    "title": "Signal Extraction from Noise",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.0",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/signal_extraction_from_noise",
+        "documentation/accelerate/discrete_cosine_transforms/signal_extraction_from_noise",
+        "documentation/accelerate/vdsp/discrete_cosine_transforms/signal_extraction_from_noise"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/signal_extraction_from_noise",
+        "documentation/accelerate/discrete_cosine_transforms/signal_extraction_from_noise",
+        "documentation/accelerate/vdsp/discrete_cosine_transforms/signal_extraction_from_noise"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/discrete_cosine_transforms": {
+      "title": "Discrete Cosine Transforms",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/discrete_cosine_transforms",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/discrete_cosine_transforms",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Transform vectors of temporal and spatial domain real values to the frequency domain, and vice versa."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp": {
+      "title": "vDSP",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp",
+      "url": "/documentation/accelerate/vdsp",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise#3283101": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise#3283101",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/signal_extraction_from_noise#3283101"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise#3283102": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise#3283102",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/signal_extraction_from_noise#3283102"
+    },
+    "link-media-3283099": {
+      "identifier": "link-media-3283099",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/signal_extraction_from_noise#3283099"
+    },
+    "media-3283099": {
+      "identifier": "media-3283099",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 190
+          },
+          "url": "https://docs-assets.developer.apple.com/published/81684a1a62/fdbbed95-288f-4090-b11c-e44d0b03b2e7.png"
+        }
+      ],
+      "alt": "Graphic showing smooth signal waveform.",
+      "title": "Figure 1"
+    },
+    "link-media-3283100": {
+      "identifier": "link-media-3283100",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/accelerate/signal_extraction_from_noise#3283100"
+    },
+    "media-3283100": {
+      "identifier": "media-3283100",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 231
+          },
+          "url": "https://docs-assets.developer.apple.com/published/5ce23c2fb8/53b2de44-b2a5-43f9-8219-81b54b7014b2.png"
+        }
+      ],
+      "alt": "Graphic showing jagged noisy signal waveform.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise#3283104": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise#3283104",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/signal_extraction_from_noise#3283104"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise#3283105": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise#3283105",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/signal_extraction_from_noise#3283105"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/dct/3240710-transform": {
+      "title": "transform(_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/dct/3240710-transform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/dct/3240710-transform"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise#3283109": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise#3283109",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/signal_extraction_from_noise#3283109"
+    },
+    "link-media-3283107": {
+      "identifier": "link-media-3283107",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/accelerate/signal_extraction_from_noise#3283107"
+    },
+    "media-3283107": {
+      "identifier": "media-3283107",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 217
+          },
+          "url": "https://docs-assets.developer.apple.com/published/5a4c525895/fe15eb3f-7e05-4390-8c5f-1fdd76c59e02.png"
+        }
+      ],
+      "alt": "Graphic showing frequency domain representation of signal consisting of five peaks.",
+      "title": "Figure 3"
+    },
+    "link-media-3283108": {
+      "identifier": "link-media-3283108",
+      "type": "link",
+      "title": "Figure 4",
+      "url": "/documentation/accelerate/signal_extraction_from_noise#3283108"
+    },
+    "media-3283108": {
+      "identifier": "media-3283108",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 219
+          },
+          "url": "https://docs-assets.developer.apple.com/published/7ffaf64f59/17372da8-01a0-460c-90ca-808887235f82.png"
+        }
+      ],
+      "alt": "Graphic showing frequency domain representation of noisy signal consisting of many small peaks.",
+      "title": "Figure 4"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241147-threshold": {
+      "title": "threshold(_:to:with:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241147-threshold",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241147-threshold"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise#3283111": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise#3283111",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/signal_extraction_from_noise#3283111"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise#3283113": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise#3283113",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/signal_extraction_from_noise#3283113"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise#3283114": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise#3283114",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/signal_extraction_from_noise#3283114"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240936-divide": {
+      "title": "divide(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240936-divide",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3240936-divide"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise#3283115": {
+      "title": "Listing 9",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise#3283115",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/signal_extraction_from_noise#3283115"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave": {
+      "title": "Finding the Component Frequencies in a Composite Sine Wave",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use 1D fast Fourier transform to compute the frequency components of a signal."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/performing_fourier_transforms_on_interleaved-complex_data": {
+      "title": "Performing Fourier Transforms on Interleaved-Complex Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/performing_fourier_transforms_on_interleaved-complex_data",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/performing_fourier_transforms_on_interleaved-complex_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Optimize fast Fourier transform (FFT) performance with vDSP’s fixed-length interleaved FFT routines."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/using_windowing_with_discrete_fourier_transforms": {
+      "title": "Using Windowing with Discrete Fourier Transforms",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/using_windowing_with_discrete_fourier_transforms",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/using_windowing_with_discrete_fourier_transforms",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Multiply signal data by window sequence values to reduce spectral leakage."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise": {
+      "title": "Signal Extraction from Noise",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/signal_extraction_from_noise",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use Accelerate’s discrete cosine transform to remove noise from a signal."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/performing_fourier_transforms_on_multiple_signals": {
+      "title": "Performing Fourier Transforms on Multiple Signals",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/performing_fourier_transforms_on_multiple_signals",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/performing_fourier_transforms_on_multiple_signals",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use Accelerate’s multiple-signal fast Fourier transform (FFT) functions to transform multiple signals with a single function call."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/halftone_descreening_with_2d_fast_fourier_transform": {
+      "title": "Halftone Descreening with 2D Fast Fourier Transform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/halftone_descreening_with_2d_fast_fourier_transform",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/halftone_descreening_with_2d_fast_fourier_transform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reduce or remove periodic artifacts from images."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/fast_fourier_transforms": {
+      "title": "Fast Fourier Transforms",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/fast_fourier_transforms",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/fast_fourier_transforms",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Transform vectors and matrices of temporal and spatial domain complex values to the frequency domain, and vice versa."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/discrete_fourier_transforms": {
+      "title": "Discrete Fourier Transforms",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/discrete_fourier_transforms",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/discrete_fourier_transforms",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Transform vectors of temporal and spatial domain complex values to the frequency domain, and vice versa."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/7f0f8c95d4/SignalExtractionFromNoise.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/7f0f8c95d4/SignalExtractionFromNoise.zip",
+      "checksum": "446d26d12fdfff236ec156e3048aa08e65fa2cae9b96aa4ca21a1f3e6cb5a2937ece374448afd9a67b4328e84364bf3a843fe48d8c698e32235dfedf00e6ea5a",
+      "url": "https://docs-assets.developer.apple.com/published/7f0f8c95d4/SignalExtractionFromNoise.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/7f0f8c95d4/SignalExtractionFromNoise.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave",
+        "doc://com.apple.documentation/documentation/accelerate/performing_fourier_transforms_on_interleaved-complex_data",
+        "doc://com.apple.documentation/documentation/accelerate/using_windowing_with_discrete_fourier_transforms",
+        "doc://com.apple.documentation/documentation/accelerate/performing_fourier_transforms_on_multiple_signals",
+        "doc://com.apple.documentation/documentation/accelerate/halftone_descreening_with_2d_fast_fourier_transform",
+        "doc://com.apple.documentation/documentation/accelerate/fast_fourier_transforms",
+        "doc://com.apple.documentation/documentation/accelerate/discrete_fourier_transforms",
+        "doc://com.apple.documentation/documentation/accelerate/discrete_cosine_transforms"
+      ],
+      "title": "Fourier and Cosine Transforms",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Accelerate’s vDSP module provides functions to perform discrete and fast Fourier transforms (FFTs) on 1D vectors and 2D matrices containing complex numbers. If you want to perform a similar transform on a vector of real numbers, vDSP includes discrete cosine transforms (DCTs)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "FFTs and DCTs decompose a signal into its frequency components (known as the "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "frequency domain"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " representation of the signal), and the inverse transform rebuilds a signal from the frequency components."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "By zeroing low-amplitude data, such as noise, from the frequency domain data, you can reconstruct a signal, leaving only its dominant frequencies. Meaningful signals that you’re trying to isolate tend to have their energy packed at a few frequencies. Noise, however, has its energy more uniformly spread across the frequency spectrum (that’s what makes it noise). If you zero out low-amplitude frequency components, you can eliminate much of the noise from the spectrum."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample walks you through the steps for extracting a signal from noise:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Creating a signal from composite cosine waves and adding random noise to it"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Performing a forward DCT on the signal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Zeroing the frequency domain data where the value is less than a specified threshold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Rebuilding the signal from the frequency domain data using an inverse DCT"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Generate the Test Signal",
+          "anchor": "3283118"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Build the test signal from a series of cosine waves, stored as 1024 samples in an array of single-precision values:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "lazy var noisySignal = ViewController.signal(noiseAmount: noiseAmount,",
+            "                                             numSamples: numSamples)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3283101",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The signal function generates a sample at each data point:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "static func signal(noiseAmount: Float,",
+            "                   numSamples: Int) -> [Float] {",
+            "    ",
+            "    let tau = Float.pi * 2",
+            "    ",
+            "    return (0 ..< numSamples).map { i in",
+            "        let phase = Float(i) / Float(numSamples) * tau",
+            "        ",
+            "        var signal = cos(phase * 1) * 1.0",
+            "        signal += cos(phase * 2) * 0.8",
+            "        signal += cos(phase * 4) * 0.4",
+            "        signal += cos(phase * 8) * 0.8",
+            "        signal += cos(phase * 16) * 1.0",
+            "        signal += cos(phase * 32) * 0.8",
+            "        ",
+            "        return signal + .random(in: -1...1) * noiseAmount",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3283102",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The values generated by this code return a signal like the one in the image below:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3283099",
+              "metadata": {
+                "anchor": "3283099",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Adding noise to the signal makes it unrecognizable, and it’s impossible to hear the original tones:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3283100",
+              "metadata": {
+                "anchor": "3283100",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Prepare the DCT Setups",
+          "anchor": "3283119"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create setup objects that contain all the information required to perform the forward and inverse DCT operations. Creating these setup objects can be expensive, so do it only once—for example, when your app is starting—and reuse them."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The forward transform is a type II DCT:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let forwardDCTSetup = vDSP.DCT(count: numSamples,",
+            "                               transformType: vDSP.DCTTransformType.II)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3283104",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The inverse transform is a type III DCT:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let inverseDCTSetup = vDSP.DCT(count: numSamples,",
+            "                               transformType: vDSP.DCTTransformType.III)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3283105",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Perform the DCT",
+          "anchor": "3283120"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/dct/3240710-transform"
+            },
+            {
+              "type": "text",
+              "text": " function to perform the DCT. This function requires the array containing the source signal and returns the frequency domain data:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "",
+            "var forwardDCT = forwardDCTSetup!.transform(noisySignal)",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3283109",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following visualization of the frequency domain data shows the component cosine parts. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "cos(phase * 1) * 1.0"
+            },
+            {
+              "type": "text",
+              "text": " component is on the left, and  "
+            },
+            {
+              "type": "codeVoice",
+              "code": "cos(phase * 16) * 1.0"
+            },
+            {
+              "type": "text",
+              "text": " is on the right:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3283107",
+              "metadata": {
+                "anchor": "3283107",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The frequency domain visualization of the noisy signal shows the dominant frequencies with the noise spread evenly throughout the frequency range. The sample zeroes the low-amplitude data to generate the noise-free signal."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3283108",
+              "metadata": {
+                "anchor": "3283108",
+                "title": "Figure 4"
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Apply a Threshold to the Amplitude Data",
+          "anchor": "3283121"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Remove the noise from the signal by zeroing all values in the frequency domain data that are below a specified threshold."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241147-threshold"
+            },
+            {
+              "type": "text",
+              "text": " function sets all values in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "forwardDCT"
+            },
+            {
+              "type": "text",
+              "text": " array that fall below the threshold to 0:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "vDSP.threshold(forwardDCT,",
+            "               to: threshold,",
+            "               with: .zeroFill,",
+            "               result: &forwardDCT)",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3283111",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Recreate the Signal",
+          "anchor": "3283122"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use an inverse DCT to generate a new signal using the cleaned-up frequency domain data:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "lazy var inverseDCT = [Float](repeating: 0,",
+            "                              count: numSamples)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3283113",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var inverseDCT = inverseDCTSetup!.transform(forwardDCT)",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3283114",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Now scale the inverse DCT. The scaling factor for the forward transform is 2, and the scaling factor for the inverse transform is the number of samples (in this case, 1024). Use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240936-divide"
+            },
+            {
+              "type": "text",
+              "text": " to divide the inverse DCT result by "
+            },
+            {
+              "type": "codeVoice",
+              "code": "count / 2"
+            },
+            {
+              "type": "text",
+              "text": " to return a signal with the correct amplitude."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let divisor = Float(numSamples / 2)",
+            "",
+            "vDSP.divide(inverseDCT,",
+            "            divisor,",
+            "            result: &inverseDCT)",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3283115",
+            "title": "Listing 9"
+          }
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,800 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Computes an approximation to the definite integral of a function on a specified interval."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/quadrature"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/1642331-quadrature_integrate",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1642331,
+  "kind": "symbol",
+  "metadata": {
+    "title": "quadrature_integrate",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "10.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.12",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "10.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "3.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@F@quadrature_integrate",
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/1642331-quadrature_integrate"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/1642331-quadrature_integrate"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/quadrature": {
+      "title": "Quadrature",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/quadrature",
+      "url": "/documentation/accelerate/quadrature",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/kernel/size_t": {
+      "title": "size_t",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/kernel/size_t",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/kernel/size_t"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1642331-quadrature_integrate": {
+      "title": "quadrature_integrate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1642331-quadrature_integrate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1642331-quadrature_integrate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Computes an approximation to the definite integral of a function on a specified interval."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "double"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "quadrature_integrate"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@quadrature_integrate_function",
+              "text": "quadrature_integrate_function"
+            },
+            {
+              "kind": "text",
+              "text": " *__f, "
+            },
+            {
+              "kind": "keyword",
+              "text": "double"
+            },
+            {
+              "kind": "text",
+              "text": " __a, "
+            },
+            {
+              "kind": "keyword",
+              "text": "double"
+            },
+            {
+              "kind": "text",
+              "text": " __b, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@quadrature_integrate_options",
+              "text": "quadrature_integrate_options"
+            },
+            {
+              "kind": "text",
+              "text": " *options, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@quadrature_status",
+              "text": "quadrature_status"
+            },
+            {
+              "kind": "text",
+              "text": " *status, "
+            },
+            {
+              "kind": "keyword",
+              "text": "double"
+            },
+            {
+              "kind": "text",
+              "text": " *abs_error, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@size_t",
+              "identifier": "doc://com.apple.documentation/documentation/kernel/size_t",
+              "text": "size_t"
+            },
+            {
+              "kind": "text",
+              "text": " workspace_size, "
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " *"
+            },
+            {
+              "kind": "typeIdentifier",
+              "text": "restrict"
+            },
+            {
+              "kind": "text",
+              "text": " workspace);"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "__f",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Pointer to a struct of type "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "quadrature_integrate_function"
+                },
+                {
+                  "type": "text",
+                  "text": ", defined in "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "integration.h"
+                },
+                {
+                  "type": "text",
+                  "text": ". The struct contains a pointer to the integration callback described in the previous chapter, and a pointer that will be passed as the first parameter to the integration callback"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__a",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Value of type "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "double"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": " for the first bound of the integration interval; need not be <= "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "__b"
+                },
+                {
+                  "type": "text",
+                  "text": ". If the chosen algorithm is QAGS, this may be "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "+INFINITY"
+                },
+                {
+                  "type": "text",
+                  "text": " or "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "-INFINITY"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__b",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Value of type "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "double"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": " for the second bound of the integration interval; need not be >= "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "__a"
+                },
+                {
+                  "type": "text",
+                  "text": ". If the chosen algorithm is QAGS, this may be "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "+INFINITY"
+                },
+                {
+                  "type": "text",
+                  "text": " or "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "-INFINITY"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "options",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Pointer to a struct of type "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "quadrature_integrate_options"
+                },
+                {
+                  "type": "text",
+                  "text": ", defined in "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "integration.h"
+                },
+                {
+                  "type": "text",
+                  "text": ". The integration options control the logic of the integration as described in the previous chapter."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "status",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Pointer to a variable of type "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "quadrature_status"
+                },
+                {
+                  "type": "text",
+                  "text": ", an enum type defined in "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "Quadrature.h"
+                },
+                {
+                  "type": "text",
+                  "text": ", or "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NULL"
+                },
+                {
+                  "type": "text",
+                  "text": ". If not "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NULL"
+                },
+                {
+                  "type": "text",
+                  "text": ", the variable will contain the status of the integration after the function returns. The defined values for the status are given below under “Return value.”"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "abs_error",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Pointer to a variable of type "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "double"
+                },
+                {
+                  "type": "text",
+                  "text": ", or "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NULL"
+                },
+                {
+                  "type": "text",
+                  "text": ". If not "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NULL"
+                },
+                {
+                  "type": "text",
+                  "text": ", the variable will contain the estimated absolute error in the result after the function returns."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "workspace_size",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Value of type "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "size_t"
+                },
+                {
+                  "type": "text",
+                  "text": "; the size of the workspace you are supplying. Ignored if you are not supplying a workspace."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "workspace",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Pointer to a workspace area you have allocated, or NULL."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The function returns the result of the quadrature operation, of type "
+            },
+            {
+              "type": "codeVoice",
+              "code": "double"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "It also stores the status in the variable whose address was passed as the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "status"
+            },
+            {
+              "type": "text",
+              "text": " parameter. The defined status constants are:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "QUADRATURE_SUCCESS"
+                    },
+                    {
+                      "type": "text",
+                      "text": " = 0: Success."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "QUADRATURE_ERROR"
+                    },
+                    {
+                      "type": "text",
+                      "text": " = -1: Generic error."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "QUADRATURE_INVALID_ARG_ERROR"
+                    },
+                    {
+                      "type": "text",
+                      "text": " = -2: Invalid argument."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "QUADRATURE_ALLOC_ERROR"
+                    },
+                    {
+                      "type": "text",
+                      "text": " = -3: Memory allocation failed."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "QUADRATURE_INTERNAL_ERROR"
+                    },
+                    {
+                      "type": "text",
+                      "text": " = -99: This is a bug in the Quadrature code, please file a bug report."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "QUADRATURE_INTEGRATE_MAX_EVAL_ERROR"
+                    },
+                    {
+                      "type": "text",
+                      "text": " = -101: The requested accuracy limit could not be reached with the allowed number of evals/subdivisions."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "QUADRATURE_INTEGRATE_BAD_BEHAVIOUR_ERROR"
+                    },
+                    {
+                      "type": "text",
+                      "text": " = -102: Extremely bad integrand behavior, or excessive roundoff error occurs at some points of the integration interval."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On success, the absolute difference between the result "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "S"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " and the mathematically exact definite integral is assumed to be less than max(abs_tolerance, rel_tolerance * abs("
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "S"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "))."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The integration algorithms will identify "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "most"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " cases of divergence, slow convergence, and bad behavior, and report an error. You should always check the returned status and absolute error before assuming that the result is valid."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

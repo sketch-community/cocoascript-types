@@ -1,0 +1,764 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Respond to changes in a player's playback state."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_playback_state",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2948352,
+  "kind": "article",
+  "metadata": {
+    "title": "Observing Playback State",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_playback_and_selection/observing_playback_state"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_playback_and_selection/observing_playback_state"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection": {
+      "title": "Media Playback and Selection",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
+      "url": "/documentation/avfoundation/media_playback_and_selection",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389493-status": {
+      "title": "status",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389493-status",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/1389493-status"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemstatus/avplayeritemstatusunknown": {
+      "title": "AVPlayerItemStatusUnknown",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemstatus/avplayeritemstatusunknown",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritemstatus/avplayeritemstatusunknown"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemstatus/avplayeritemstatusreadytoplay": {
+      "title": "AVPlayerItemStatusReadyToPlay",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemstatus/avplayeritemstatusreadytoplay",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritemstatus/avplayeritemstatusreadytoplay"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_playback_state#2948354": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_playback_state#2948354",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/observing_playback_state#2948354"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioplayer/1386886-preparetoplay": {
+      "title": "prepareToPlay",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioplayer/1386886-preparetoplay",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioplayer/1386886-preparetoplay",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "prepareToPlay"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1412787-addobserver": {
+      "title": "addObserver:forKeyPath:options:context:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1412787-addobserver",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1412787-addobserver",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addObserver:forKeyPath:options:context:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1416553-observevalueforkeypath": {
+      "title": "observeValueForKeyPath:ofObject:change:context:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1416553-observevalueforkeypath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1416553-observevalueforkeypath",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "observeValueForKeyPath:ofObject:change:context:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_playback_state#2948350": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_playback_state#2948350",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/observing_playback_state#2948350"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemstatus/avplayeritemstatusfailed": {
+      "title": "AVPlayerItemStatusFailed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemstatus/avplayeritemstatusfailed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritemstatus/avplayeritemstatusfailed"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389185-error": {
+      "title": "error",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389185-error",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/1389185-error"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer": {
+      "title": "AVPlayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that provides the interface to control the player’s transport behavior."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem": {
+      "title": "AVPlayerItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to model the timing and presentation state of an asset played by the player."
+        }
+      ]
+    },
+    "devLink-1696481": {
+      "identifier": "devLink-1696481",
+      "type": "link",
+      "title": "Key-Value Observing Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/seeking_through_media": {
+      "title": "Seeking Through Media",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/seeking_through_media",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/seeking_through_media",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Seek or scrub across a media item to quickly access a specific time point."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_playback_state": {
+      "title": "Observing Playback State",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_playback_state",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/observing_playback_state",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Respond to changes in a player's playback state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_the_playback_time": {
+      "title": "Observing the Playback Time",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_the_playback_time",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/observing_the_playback_time",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Observe the playback time for an asset in order to update the player's state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers": {
+      "title": "Presenting Chapter Markers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add chapter markers to enable users to quickly navigate your content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls": {
+      "title": "Creating a Movie Player App with Basic Playback Controls",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Play movies using a custom interface that implements simple playback functionality."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack": {
+      "title": "AVPlayerItemTrack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritemtrack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to modify the presentation state of an asset track being presented by a player."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer": {
+      "title": "AVPlayerLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayerlayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that manages a player’s visual output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer": {
+      "title": "AVQueuePlayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avqueueplayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A player used to play a number of items in sequence."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper": {
+      "title": "AVPlayerLooper",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayerlooper",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that simplifies the playing of looping media content using a queue player."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsynchronizedlayer": {
+      "title": "AVSynchronizedLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsynchronizedlayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsynchronizedlayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to synchronize with a specific player item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs": {
+      "title": "Player Item Outputs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/avfoundation/media_playback_and_selection/player_item_outputs",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Objects that provide access to the content of a player item’s tracks."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/seeking_through_media",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_the_playback_time",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer",
+        "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper",
+        "doc://com.apple.documentation/documentation/avfoundation/avsynchronizedlayer",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs"
+      ],
+      "title": "Media Playback",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem"
+            },
+            {
+              "type": "text",
+              "text": " are dynamic objects whose states change frequently. A simple way to observe and respond to these state changes is to use key-value observing (KVO). With KVO, an object can register to observe another object’s state. When the observed object’s state changes, the observer is notified with details of the state change. (For more information about KVO, see "
+            },
+            {
+              "type": "link",
+              "title": "Key-Value Observing Programming Guide",
+              "destination": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i"
+            },
+            {
+              "type": "text",
+              "text": ".)"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Observe the Player's State",
+          "anchor": "2948353"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "One of the most important "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVPlayerItem"
+            },
+            {
+              "type": "text",
+              "text": " properties to observe is "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389493-status"
+            },
+            {
+              "type": "text",
+              "text": ". This property indicates whether the player item is ready for playback and generally available for use. When you first create a player item, its "
+            },
+            {
+              "type": "codeVoice",
+              "code": "status"
+            },
+            {
+              "type": "text",
+              "text": " value is "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemstatus/avplayeritemstatusunknown"
+            },
+            {
+              "type": "text",
+              "text": ", meaning its media hasn’t been loaded or been enqueued for playback. When you associate a player item with "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVPlayer"
+            },
+            {
+              "type": "text",
+              "text": ", it immediately begins enqueuing the item’s media and preparing it for playback. The player item becomes ready for use when the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "status"
+            },
+            {
+              "type": "text",
+              "text": " value changes to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemstatus/avplayeritemstatusreadytoplay"
+            },
+            {
+              "type": "text",
+              "text": ". The following example shows how you can observe this state change:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let url: URL = // Asset URL",
+            "var asset: AVAsset!",
+            "var player: AVPlayer!",
+            "var playerItem: AVPlayerItem!",
+            "",
+            "// Key-value observing context",
+            "private var playerItemContext = 0",
+            "",
+            "let requiredAssetKeys = [",
+            "    \"playable\",",
+            "    \"hasProtectedContent\"",
+            "]",
+            "",
+            "func prepareToPlay() {",
+            "    // Create the asset to play",
+            "    asset = AVAsset(url: url)",
+            "",
+            "    // Create a new AVPlayerItem with the asset and an",
+            "    // array of asset keys to be automatically loaded",
+            "    playerItem = AVPlayerItem(asset: asset,",
+            "                              automaticallyLoadedAssetKeys: requiredAssetKeys)",
+            "",
+            "    // Register as an observer of the player item's status property",
+            "    playerItem.addObserver(self,",
+            "                           forKeyPath: #keyPath(AVPlayerItem.status),",
+            "                           options: [.old, .new],",
+            "                           context: &playerItemContext)",
+            "    ",
+            "    // Associate the player item with the player",
+            "    player = AVPlayer(playerItem: playerItem)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2948354",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioplayer/1386886-preparetoplay"
+            },
+            {
+              "type": "text",
+              "text": " method registers to observe the player item’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "status"
+            },
+            {
+              "type": "text",
+              "text": " property using the  "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1412787-addobserver"
+            },
+            {
+              "type": "text",
+              "text": " method. Call this method before associating the player item with the player to make sure you capture all state changes to the item’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "status"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Respond to a State Change",
+          "anchor": "2948355"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To be notified of state changes, you implement the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1416553-observevalueforkeypath"
+            },
+            {
+              "type": "text",
+              "text": " method. This method is invoked whenever the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "status"
+            },
+            {
+              "type": "text",
+              "text": " value changes, giving you the chance to take some action:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func observeValue(forKeyPath keyPath: String?,",
+            "                           of object: Any?,",
+            "                           change: [NSKeyValueChangeKey : Any]?,",
+            "                           context: UnsafeMutableRawPointer?) {",
+            "",
+            "    // Only handle observations for the playerItemContext",
+            "    guard context == &playerItemContext else {",
+            "        super.observeValue(forKeyPath: keyPath,",
+            "                           of: object,",
+            "                           change: change,",
+            "                           context: context)",
+            "        return",
+            "    }",
+            "",
+            "    if keyPath == #keyPath(AVPlayerItem.status) {",
+            "        let status: AVPlayerItemStatus",
+            "        if let statusNumber = change?[.newKey] as? NSNumber {",
+            "            status = AVPlayerItemStatus(rawValue: statusNumber.intValue)!",
+            "        } else {",
+            "            status = .unknown",
+            "        }",
+            "",
+            "        // Switch over status value",
+            "        switch status {",
+            "        case .readyToPlay:",
+            "            // Player item is ready to play.",
+            "        case .failed:",
+            "            // Player item failed. See error.",
+            "        case .unknown:",
+            "            // Player item is not yet ready.",
+            "        }",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2948350",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The example retrieves the new "
+            },
+            {
+              "type": "codeVoice",
+              "code": "status"
+            },
+            {
+              "type": "text",
+              "text": " value from the change dictionary and switches over its value. If the player item’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "status"
+            },
+            {
+              "type": "text",
+              "text": " value is "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemstatus/avplayeritemstatusreadytoplay"
+            },
+            {
+              "type": "text",
+              "text": ", then it’s ready for use. If a problem is encountered while attempting to load the player item’s media, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "status"
+            },
+            {
+              "type": "text",
+              "text": " value is "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemstatus/avplayeritemstatusfailed"
+            },
+            {
+              "type": "text",
+              "text": ". If a failure occurred, you can retrieve the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NSError"
+            },
+            {
+              "type": "text",
+              "text": " object providing the details of the failure by querying the player item’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389185-error"
+            },
+            {
+              "type": "text",
+              "text": " property."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

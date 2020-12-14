@@ -1,0 +1,1241 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Play HTTP Live Streams and preserve streams on disk for offline play back."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2993888,
+  "kind": "article",
+  "metadata": {
+    "title": "Using AVFoundation to Play and Persist HTTP Live Streams",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "11.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "10.0",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection": {
+      "title": "Media Playback and Selection",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
+      "url": "/documentation/avfoundation/media_playback_and_selection",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avurlasset": {
+      "title": "AVURLAsset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avurlasset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avurlasset"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer": {
+      "title": "AVPlayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem": {
+      "title": "AVPlayerItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389493-status": {
+      "title": "status",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389493-status",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/1389493-status"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1385974-playable": {
+      "title": "playable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1385974-playable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1385974-playable"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387569-currentitem": {
+      "title": "currentItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387569-currentitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1387569-currentitem"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams#3016942": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams#3016942",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams#3016942"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams#3016943": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams#3016943",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams#3016943"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams#3016944": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams#3016944",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams#3016944"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmediaselection": {
+      "title": "AVMediaSelection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediaselection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmediaselection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams#3016946": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams#3016946",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams#3016946"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/1411591-cancel": {
+      "title": "cancel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/1411591-cancel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsessiontask/1411591-cancel",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "cancel"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams#3016948": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams#3016948",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams#3016948"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1413590-removeitematurl": {
+      "title": "removeItemAtURL:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1413590-removeitematurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsfilemanager/1413590-removeitematurl",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeItemAtURL:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams#3016950": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams#3016950",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams#3016950"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemaccesslog": {
+      "title": "AVPlayerItemAccessLog",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemaccesslog",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritemaccesslog"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemaccesslogevent": {
+      "title": "AVPlayerItemAccessLogEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemaccesslogevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritemaccesslogevent"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams#3016952": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams#3016952",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams#3016952"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaggregateassetdownloadtask": {
+      "title": "AVAggregateAssetDownloadTask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaggregateassetdownloadtask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaggregateassetdownloadtask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A single task that downloads multiple media selections for a single asset."
+        }
+      ]
+    },
+    "link-3003066": {
+      "title": "FairPlay Streaming Server SDK",
+      "type": "topic",
+      "identifier": "link-3003066",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/streaming/fps/"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams": {
+      "title": "Using AVFoundation to Play and Persist HTTP Live Streams",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/avfoundation/media_playback_and_selection/using_avfoundation_to_play_and_persist_http_live_streams",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Play HTTP Live Streams and preserve streams on disk for offline play back."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession": {
+      "title": "AVAssetDownloadURLSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetdownloadurlsession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A URL session used to support the creation and execution of asset download tasks."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtask": {
+      "title": "AVAssetDownloadTask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetdownloadtask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A session used to download HTTP Live Streaming assets."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetcache": {
+      "title": "AVAssetCache",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetcache",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetcache",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to inspect the state of an asset’s locally cached media data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanager": {
+      "title": "AVAssetDownloadStorageManager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanager",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetdownloadstoragemanager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A manager of policies used to automatically purge downloaded assets."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanagementpolicy": {
+      "title": "AVAssetDownloadStorageManagementPolicy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanagementpolicy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetdownloadstoragemanagementpolicy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of properties that defines a policy to automatically purge downloaded assets."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutableassetdownloadstoragemanagementpolicy": {
+      "title": "AVMutableAssetDownloadStorageManagementPolicy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutableassetdownloadstoragemanagementpolicy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutableassetdownloadstoragemanagementpolicy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mutable set of properties that defines a policy to automatically purge downloaded assets."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/afd368269f/UsingAVFoundationToPlayAndPersistHTTPLiveStreams.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/afd368269f/UsingAVFoundationToPlayAndPersistHTTPLiveStreams.zip",
+      "checksum": "ab3c321cac1df471d6dbd8569d46f83514a95e79868e9225edf50abc6cbed3a1d4931ce23c27857d8ccfb1034ffe5fabb11975c0bb431ced80bd3ce797be806d",
+      "url": "https://docs-assets.developer.apple.com/published/afd368269f/UsingAVFoundationToPlayAndPersistHTTPLiveStreams.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/afd368269f/UsingAVFoundationToPlayAndPersistHTTPLiveStreams.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadurlsession",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadtask",
+        "doc://com.apple.documentation/documentation/avfoundation/avaggregateassetdownloadtask",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetcache",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanager",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetdownloadstoragemanagementpolicy",
+        "doc://com.apple.documentation/documentation/avfoundation/avmutableassetdownloadstoragemanagementpolicy"
+      ],
+      "title": "Offline Playback",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample provides a catalog of HTTP Live Streams (HLS) that you can play by tapping the row in the table corresponding to the stream. To manage the download of an HLS stream, tap the accessory button associated with the stream in the row in the table. Tapping the accessory button causes a transition to a new view controller which provides an interface to initiate a download, cancel an already running download, or delete a downloaded HLS stream from the device."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample creates and initializes an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaggregateassetdownloadtask"
+            },
+            {
+              "type": "text",
+              "text": " for the download of an HLS stream. Only the default media selections for each of the asset’s media selection groups are downloaded (these are indicated in the HLS playlist "
+            },
+            {
+              "type": "codeVoice",
+              "code": "EXT-X-MEDIA"
+            },
+            {
+              "type": "text",
+              "text": " tags by a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "DEFAULT"
+            },
+            {
+              "type": "text",
+              "text": " attribute of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "YES"
+            },
+            {
+              "type": "text",
+              "text": ")."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "NOTE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "This sample does not support saving FairPlay Streaming (FPS) content. For a version of the sample that demonstrates how to download FPS content, see "
+                    },
+                    {
+                      "type": "link",
+                      "title": "FairPlay Streaming Server SDK",
+                      "destination": "https://developer.apple.com/streaming/fps/"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Play an HTTP Live Stream",
+          "anchor": "3016956"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "AssetListTableViewController"
+            },
+            {
+              "type": "text",
+              "text": " is the main user interface of this sample. It provides a list of the assets the sample can play, download, cancel download, and delete. "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AssetListManager"
+            },
+            {
+              "type": "text",
+              "text": " provides a list of assets to present in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AssetListTableViewController"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "AssetPlaybackManager"
+            },
+            {
+              "type": "text",
+              "text": " is responsible for playing downloaded assets, and it uses key-value observing (KVO) to monitor playback-related changes to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avurlasset"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem"
+            },
+            {
+              "type": "text",
+              "text": " objects it manages. A player item’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389493-status"
+            },
+            {
+              "type": "text",
+              "text": " emits a KVO change notification when its status changes. The app monitors these changes and initiates playback when the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "status"
+            },
+            {
+              "type": "text",
+              "text": " property indicates the player item is ready to play. The app observes the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVURLAsset"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1385974-playable"
+            },
+            {
+              "type": "text",
+              "text": " property to determine whether an AVPlayer can play the contents of the asset in a manner that meets user expectations. The app also observes the player "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387569-currentitem"
+            },
+            {
+              "type": "text",
+              "text": " property to access the player item created for a given stream."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "StreamListManager"
+            },
+            {
+              "type": "text",
+              "text": " class manages loading and reading the contents of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Streams.plist"
+            },
+            {
+              "type": "text",
+              "text": " file in the app bundle."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To play an item, tap one of the rows in the table. Tapping the item causes a transition to a new view controller. As part of that transition, the table view creates an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AssetPlaybackManager"
+            },
+            {
+              "type": "text",
+              "text": " and assigns the appropriate asset to it, as shown in the following example:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func prepare(for segue: UIStoryboardSegue, sender: Any?) {",
+            "    super.prepare(for: segue, sender: sender)",
+            "",
+            "    if segue.identifier == AssetListTableViewController.presentPlayerViewControllerSegueID {",
+            "        guard let cell = sender as? AssetListTableViewCell,",
+            "            let playerViewControler = segue.destination as? AVPlayerViewController else { return }",
+            "",
+            "        /*",
+            "         Grab a reference for the destinationViewController to use in later delegate callbacks from",
+            "         AssetPlaybackManager.",
+            "         */",
+            "        playerViewController = playerViewControler",
+            "",
+            "        // Load the new Asset to playback into AssetPlaybackManager.",
+            "        AssetPlaybackManager.sharedManager.setAssetForPlayback(cell.asset)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3016942",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Assigning an asset to the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AssetPlaybackManager"
+            },
+            {
+              "type": "text",
+              "text": " causes it to create an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVPlayerItem"
+            },
+            {
+              "type": "text",
+              "text": " for the asset, removing any previous asset in the process:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "private var asset: Asset? {",
+            "    willSet {",
+            "        /// Remove any previous KVO observer.",
+            "        guard let urlAssetObserver = urlAssetObserver else { return }",
+            "        ",
+            "        urlAssetObserver.invalidate()",
+            "    }",
+            "    ",
+            "    didSet {",
+            "        if let asset = asset {",
+            "            urlAssetObserver = asset.urlAsset.observe(\\AVURLAsset.isPlayable, options: [.new, .initial]) { [weak self] (urlAsset, _) in",
+            "                guard let strongSelf = self, urlAsset.isPlayable == true else { return }",
+            "                ",
+            "                strongSelf.playerItem = AVPlayerItem(asset: urlAsset)",
+            "                strongSelf.player.replaceCurrentItem(with: strongSelf.playerItem)",
+            "            }",
+            "        } else {",
+            "            playerItem = nil",
+            "            player.replaceCurrentItem(with: nil)",
+            "            readyForPlayback = false",
+            "        }",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3016943",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AssetPlaybackManager"
+            },
+            {
+              "type": "text",
+              "text": " uses KVO to monitor the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVPlayerItem"
+            },
+            {
+              "type": "text",
+              "text": " object’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "status"
+            },
+            {
+              "type": "text",
+              "text": ", and initiates playback when the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "status"
+            },
+            {
+              "type": "text",
+              "text": " becomes ready to play:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "playerItemObserver = playerItem?.observe(\\AVPlayerItem.status, options: [.new, .initial]) { [weak self] (item, _) in",
+            "    guard let strongSelf = self else { return }",
+            "    ",
+            "    if item.status == .readyToPlay {",
+            "        if !strongSelf.readyForPlayback {",
+            "            strongSelf.readyForPlayback = true",
+            "            strongSelf.delegate?.streamPlaybackManager(strongSelf, playerReadyToPlay: strongSelf.player)",
+            "        }",
+            "    } else if item.status == .failed {",
+            "        let error = item.error",
+            "        ",
+            "        print(\"Error: \\(String(describing: error?.localizedDescription))\")",
+            "    }"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3016944",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Download an HTTP Live Stream",
+          "anchor": "3016957"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "AssetPersistenceManager"
+            },
+            {
+              "type": "text",
+              "text": " is the main class in this sample that demonstrates how to manage downloading HLS streams. It includes methods for starting and canceling downloads, deleting existing assets from the user’s device, and monitoring the download."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user initiates a download by tapping the accessory button in the corresponding stream’s table view cell, an instance of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AssetPersistenceManager"
+            },
+            {
+              "type": "text",
+              "text": " calls the following function to create an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVAggregateAssetDownloadTask"
+            },
+            {
+              "type": "text",
+              "text": " object to download multiple "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediaselection"
+            },
+            {
+              "type": "text",
+              "text": " for the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avurlasset"
+            },
+            {
+              "type": "text",
+              "text": " of the HLS stream:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func downloadStream(for asset: Asset) {",
+            "",
+            "    // Get the default media selections for the asset's media selection groups.",
+            "    let preferredMediaSelection = asset.urlAsset.preferredMediaSelection",
+            "",
+            "    /*",
+            "     Creates and initializes an AVAggregateAssetDownloadTask to download multiple AVMediaSelections",
+            "     on an AVURLAsset.",
+            "     ",
+            "     For the initial download, we ask the URLSession for an AVAssetDownloadTask with a minimum bitrate",
+            "     corresponding with one of the lower bitrate variants in the asset.",
+            "     */",
+            "    guard let task =",
+            "        assetDownloadURLSession.aggregateAssetDownloadTask(with: asset.urlAsset,",
+            "                                                           mediaSelections: [preferredMediaSelection],",
+            "                                                           assetTitle: asset.stream.name,",
+            "                                                           assetArtworkData: nil,",
+            "                                                           options:",
+            "            [AVAssetDownloadTaskMinimumRequiredMediaBitrateKey: 265_000]) else { return }",
+            "",
+            "    // To better track the AVAssetDownloadTask, set the taskDescription to something unique for the sample.",
+            "    task.taskDescription = asset.stream.name",
+            "",
+            "    activeDownloadsMap[task] = asset",
+            "",
+            "    task.resume()",
+            "",
+            "    var userInfo = [String: Any]()",
+            "    userInfo[Asset.Keys.name] = asset.stream.name",
+            "    userInfo[Asset.Keys.downloadState] = Asset.DownloadState.downloading.rawValue",
+            "    userInfo[Asset.Keys.downloadSelectionDisplayName] = displayNamesForSelectedMediaOptions(preferredMediaSelection)",
+            "",
+            "    NotificationCenter.default.post(name: .AssetDownloadStateChanged, object: nil, userInfo: userInfo)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3016946",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "strong",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "NOTE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "You cannot save a live HLS stream while it is in progress. If you try to save a live HLS stream, the system throws an exception. Only Video On Demand (VOD) streams support offline playback."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Cancel an HTTP Live Stream",
+          "anchor": "3016958"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Tap the accessory button in the corresponding stream’s table view cell to reveal the accessory view, then tap Cancel to stop downloading the stream. The following function in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AssetPersistenceManager"
+            },
+            {
+              "type": "text",
+              "text": " cancels the download by calling the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "URLSessionTask"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsessiontask/1411591-cancel"
+            },
+            {
+              "type": "text",
+              "text": " method."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func cancelDownload(for asset: Asset) {",
+            "    var task: AVAggregateAssetDownloadTask?",
+            "",
+            "    for (taskKey, assetVal) in activeDownloadsMap where asset == assetVal {",
+            "        task = taskKey",
+            "        break",
+            "    }",
+            "",
+            "    task?.cancel()",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3016948",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Remove an HTTP Live Stream from Disk",
+          "anchor": "3016959"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Tap the accessory button in the corresponding stream’s table view cell to reveal the accessory view, then tap Delete to delete the downloaded stream file. The following function in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AssetPersistenceManager"
+            },
+            {
+              "type": "text",
+              "text": " removes a downloaded stream on the device. First the asset URL corresponding to the file on the device is identified, then the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "FileManager"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsfilemanager/1413590-removeitematurl"
+            },
+            {
+              "type": "text",
+              "text": " method is called to remove the downloaded stream at the specified URL."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func deleteAsset(_ asset: Asset) {",
+            "    let userDefaults = UserDefaults.standard",
+            "",
+            "    do {",
+            "        if let localFileLocation = localAssetForStream(withName: asset.stream.name)?.urlAsset.url {",
+            "            try FileManager.default.removeItem(at: localFileLocation)",
+            "",
+            "            userDefaults.removeObject(forKey: asset.stream.name)",
+            "",
+            "            var userInfo = [String: Any]()",
+            "            userInfo[Asset.Keys.name] = asset.stream.name",
+            "            userInfo[Asset.Keys.downloadState] = Asset.DownloadState.notDownloaded.rawValue",
+            "",
+            "            NotificationCenter.default.post(name: .AssetDownloadStateChanged, object: nil,",
+            "                                            userInfo: userInfo)",
+            "        }",
+            "    } catch {",
+            "        print(\"An error occured deleting the file: \\(error)\")",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3016950",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Measure Playback Performance",
+          "anchor": "3016960"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "PerfMeasurements"
+            },
+            {
+              "type": "text",
+              "text": " contains utility code to measure key performance indicators (KPI) during streaming playback. This code makes use of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemaccesslog"
+            },
+            {
+              "type": "text",
+              "text": " for many of its calculations. An "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVPlayerItemAccessLog"
+            },
+            {
+              "type": "text",
+              "text": " object accumulates key metrics about network playback and presents them as a collection of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemaccesslogevent"
+            },
+            {
+              "type": "text",
+              "text": " instances. Each event instance collates the data that relates to each uninterrupted period of playback."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "strong",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "NOTE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "You can view the various performance indicators in the console during playback."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, here’s the code to calculate the total time spent playing the stream, obtained from the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVPlayerItemAccessLog"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var totalDurationWatched: Double {",
+            "    // Compute total duration watched by iterating through the AccessLog events.",
+            "    var totalDurationWatched = 0.0",
+            "    if accessLog != nil && !accessLog!.events.isEmpty {",
+            "        for event in accessLog!.events where event.durationWatched > 0 {",
+            "                totalDurationWatched += event.durationWatched",
+            "        }",
+            "    }",
+            "    return totalDurationWatched",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3016952",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,1253 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Use vImage’s convert-any-to-any function to perform real-time image processing of video frames streamed from your device’s camera."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vimage"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2948282,
+  "kind": "article",
+  "metadata": {
+    "title": "Applying vImage Operations to Video Sample Buffers",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "11.2",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.3",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/applying_vimage_operations_to_video_sample_buffers",
+        "documentation/accelerate/vimage/applying_vimage_operations_to_video_sample_buffers"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/applying_vimage_operations_to_video_sample_buffers",
+        "documentation/accelerate/vimage/applying_vimage_operations_to_video_sample_buffers"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage": {
+      "title": "vImage",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage",
+      "url": "/documentation/accelerate/vimage",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-2940860": {
+      "title": "Still and Video Media Capture",
+      "type": "section",
+      "identifier": "link-2940860",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/04_MediaCapture.html#//apple_ref/doc/uid/TP40010188-CH5-SW2"
+    },
+    "link-2955471": {
+      "title": "AVFoundation Programming Guide",
+      "type": "section",
+      "identifier": "link-2955471",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/00_Introduction.html#//apple_ref/doc/uid/TP40010188-CH1-SW3"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570197": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570197",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570197"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570198": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570198",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570198"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570200": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570200",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570200"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570202": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570202",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570202"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570204": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570204",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570204"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570206": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570206",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570206"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570208": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570208",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570208"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570210": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570210",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570210"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570212": {
+      "title": "Listing 9",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570212",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570212"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570214": {
+      "title": "Listing 10",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570214",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570214"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570216": {
+      "title": "Listing 11",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570216",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570216"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturesession": {
+      "title": "AVCaptureSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturesession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturesession"
+    },
+    "link-media-3570195": {
+      "identifier": "link-media-3570195",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers#3570195"
+    },
+    "media-3570195": {
+      "identifier": "media-3570195",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 987,
+            "height": 500
+          },
+          "url": "https://docs-assets.developer.apple.com/published/dd61266343/rendered2x-1584567806.png"
+        }
+      ],
+      "alt": "Photos showing an image separated into luminance and chrominance channels.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers": {
+      "title": "Reading From and Writing to Core Video Pixel Buffers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Transfer image data between Core Video pixel buffers and vImage buffers to integrate vImage operations into a Core Image workflow"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers": {
+      "title": "Applying vImage Operations to Video Sample Buffers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/applying_vimage_operations_to_video_sample_buffers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use vImage’s convert-any-to-any function to perform real-time image processing of video frames streamed from your device’s camera."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage": {
+      "title": "Real-Time Video Effects with vImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/real-time_video_effects_with_vimage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use vImage to apply effects to a video feed in real time."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/core_video_interoperability": {
+      "title": "Core Video Interoperability",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/core_video_interoperability",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/core_video_interoperability",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Pass image data between Core Video and vImage."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/679b266cb5/ApplyingVImageOperationsToVideoSampleBuffers.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/679b266cb5/ApplyingVImageOperationsToVideoSampleBuffers.zip",
+      "checksum": "11b53e71623f25564c58354bdb9afcd66bb61513e5b423ebe6acefb0f818de2e577bf49c25b2e4e23c43562c0eecf534c44b830910ab3527229d63175ee7839a",
+      "url": "https://docs-assets.developer.apple.com/published/679b266cb5/ApplyingVImageOperationsToVideoSampleBuffers.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/679b266cb5/ApplyingVImageOperationsToVideoSampleBuffers.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/reading_from_and_writing_to_core_video_pixel_buffers",
+        "doc://com.apple.documentation/documentation/accelerate/real-time_video_effects_with_vimage",
+        "doc://com.apple.documentation/documentation/accelerate/core_video_interoperability"
+      ],
+      "title": "Core Video Interoperation",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can combine vImage operations with AVFoundation to process individual video frames in real time. This sample describes how to use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageConvert_AnyToAny(_:_:_:_:_:)"
+            },
+            {
+              "type": "text",
+              "text": " function to create a single RGB image from the separate luminance (Y) and two-channel chrominance (CbCr) channels provided by an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturesession"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The example below shows how an image (top) is split into luminance (bottom left), Cb chrominance (bottom middle), and Cr chrominance (bottom right) channels:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3570195",
+              "metadata": {
+                "anchor": "3570195",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample walks you through the steps for applying a histogram equalization operation to a video sample buffer:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Configuring AVFoundation."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Defining reusable variables."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Creating a converter."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Creating source vImage buffers."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Initializing a destination buffer."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Converting the video frame to an ARGB8888 image."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Applying a histogram equalization operation to the destination image."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Creating a displayable "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "UIImage"
+                    },
+                    {
+                      "type": "text",
+                      "text": " from the destination buffer."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure AVFoundation",
+          "anchor": "3570219"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For a complete discussion of how to manage the capture from a device such as a camera, see "
+            },
+            {
+              "type": "link",
+              "title": "Still and Video Media Capture",
+              "destination": "https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/04_MediaCapture.html#//apple_ref/doc/uid/TP40010188-CH5-SW2"
+            },
+            {
+              "type": "text",
+              "text": " in the "
+            },
+            {
+              "type": "link",
+              "title": "AVFoundation Programming Guide",
+              "destination": "https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/00_Introduction.html#//apple_ref/doc/uid/TP40010188-CH1-SW3"
+            },
+            {
+              "type": "text",
+              "text": ". For this sample, use this code to configure and start running a session:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let captureSession = AVCaptureSession()",
+            "",
+            "func configureSession() {",
+            "    captureSession.sessionPreset = AVCaptureSession.Preset.photo",
+            "    ",
+            "    guard let backCamera = AVCaptureDevice.default(for: .video) else {",
+            "            statusLabel.text = \"Can't create default camera.\"",
+            "            return",
+            "    }",
+            "    ",
+            "    do {",
+            "        let input = try AVCaptureDeviceInput(device: backCamera)",
+            "        captureSession.addInput(input)",
+            "    } catch {",
+            "        statusLabel.text = \"Can't create AVCaptureDeviceInput.\"",
+            "        return",
+            "    }",
+            "    ",
+            "    let videoOutput = AVCaptureVideoDataOutput()",
+            "    ",
+            "    let dataOutputQueue = DispatchQueue(label: \"video data queue\",",
+            "                                        qos: .userInitiated,",
+            "                                        attributes: [],",
+            "                                        autoreleaseFrequency: .workItem)",
+            "    ",
+            "    videoOutput.setSampleBufferDelegate(self,",
+            "                                        queue: dataOutputQueue)",
+            "    ",
+            "    if captureSession.canAddOutput(videoOutput) {",
+            "        captureSession.addOutput(videoOutput)",
+            "        captureSession.startRunning()",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570197",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After the capture session starts running, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "captureOutput(_:didOutput:from:)"
+            },
+            {
+              "type": "text",
+              "text": " is called for each new "
+            },
+            {
+              "type": "codeVoice",
+              "code": "videoOutput"
+            },
+            {
+              "type": "text",
+              "text": " frame. Before you pass the pixel buffer (which contains the image data for the video frame) to vImage for processing, lock it to ensure that your processing code has exclusive access. When you’re finished with the pixel buffer, you can unlock it."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func captureOutput(_ output: AVCaptureOutput,",
+            "                   didOutput sampleBuffer: CMSampleBuffer,",
+            "                   from connection: AVCaptureConnection) {",
+            "    ",
+            "    guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {",
+            "        return",
+            "    }",
+            "    ",
+            "    CVPixelBufferLockBaseAddress(pixelBuffer,",
+            "                                 CVPixelBufferLockFlags.readOnly)",
+            "    ",
+            "    displayEqualizedPixelBuffer(pixelBuffer: pixelBuffer)",
+            "    ",
+            "    CVPixelBufferUnlockBaseAddress(pixelBuffer,",
+            "                                   CVPixelBufferLockFlags.readOnly)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570198",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Define Reusable Variables",
+          "anchor": "3570220"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Reusing vImage buffers is especially important when working with video. If you try to reallocate and zero-fill the buffers with each frame, you’re likely to experience performance issues. To enable buffer reuse, declare them outside of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "captureOutput(_:didOutput:from:)"
+            },
+            {
+              "type": "text",
+              "text": " method of the sample buffer’s delegate. (The same is true for the converter that defines the source and destination types for the convert-any-to-any function.)"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var converter: vImageConverter?",
+            "",
+            "var sourceBuffers = [vImage_Buffer]()",
+            "var destinationBuffer = vImage_Buffer()"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570200",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Core Video-to-Core Graphics Converter",
+          "anchor": "3570221"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "vImage’s convert-any-to-any function requires a converter that describes the source and destination formats. In this example, you’re converting from a Core Video pixel buffer to a Core Graphics image, so you use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageConverter_CreateForCVToCGImageFormat(_:_:_:_:_:)"
+            },
+            {
+              "type": "text",
+              "text": " function to create a converter. You derive the source Core Video image format from the pixel buffer with "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageCVImageFormat_CreateWithCVPixelBuffer(_:)"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var error = kvImageNoError",
+            "",
+            "if converter == nil {",
+            "    let cvImageFormat = vImageCVImageFormat_CreateWithCVPixelBuffer(pixelBuffer).takeRetainedValue()",
+            "    ",
+            "    vImageCVImageFormat_SetColorSpace(cvImageFormat,",
+            "                                      CGColorSpaceCreateDeviceRGB())",
+            "    ",
+            "    vImageCVImageFormat_SetChromaSiting(cvImageFormat,",
+            "                                        kCVImageBufferChromaLocation_Center)",
+            "    ",
+            "    guard",
+            "        let unmanagedConverter = vImageConverter_CreateForCVToCGImageFormat(",
+            "            cvImageFormat,",
+            "            &cgImageFormat,",
+            "            nil,",
+            "            vImage_Flags(kvImagePrintDiagnosticsToConsole),",
+            "            &error),",
+            "        error == kvImageNoError else {",
+            "            print(\"vImageConverter_CreateForCVToCGImageFormat error:\", error)",
+            "            return",
+            "    }",
+            "    ",
+            "    converter = unmanagedConverter.takeRetainedValue()",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570202",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the error passed to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageConverter_CreateForCVToCGImageFormat(_:_:_:_:_:)"
+            },
+            {
+              "type": "text",
+              "text": " remains "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kvImageNoError"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "unmanagedConverter"
+            },
+            {
+              "type": "text",
+              "text": " isn’t "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": ", and you can force unwrap it using "
+            },
+            {
+              "type": "codeVoice",
+              "code": "!"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create and Reuse the Source Buffers",
+          "anchor": "3570222"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The converter may require more than one source or destination buffer. The number of buffers required by a converter is returned by "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageConverter_GetNumberOfSourceBuffers(_:)"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageConverter_GetNumberOfDestinationBuffers(_:)"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In this example, the converter requires two source buffers that represent separate luminance and chrominance planes. Because "
+            },
+            {
+              "type": "codeVoice",
+              "code": "sourceBuffers"
+            },
+            {
+              "type": "text",
+              "text": " is initialized as an empty array, the following code creates the correct number of buffers for the converter on the first pass of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "captureOutput(_:didOutput:from:)"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "if sourceBuffers.isEmpty {",
+            "    let numberOfSourceBuffers = Int(vImageConverter_GetNumberOfSourceBuffers(converter!))",
+            "    sourceBuffers = [vImage_Buffer](repeating: vImage_Buffer(),",
+            "                                    count: numberOfSourceBuffers)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570204",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can query the type and order of the buffers required by a converter by using the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageConverter_GetSourceBufferOrder(_:)"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageConverter_GetDestinationBufferOrder(_:)"
+            },
+            {
+              "type": "text",
+              "text": " functions. In this example, the source buffer order is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "[kvImageBufferTypeCode_Luminance, kvImageBufferTypeCode_Chroma]"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Initialize the Source Buffers",
+          "anchor": "3570223"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageBuffer_InitForCopyFromCVPixelBuffer(_:_:_:_:)"
+            },
+            {
+              "type": "text",
+              "text": " function accepts the array of source buffers and initializes them in the correct order for conversion. You must pass the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kvImageNoAllocate"
+            },
+            {
+              "type": "text",
+              "text": " flag so that the function initializes the buffers to read from the locked pixel buffer."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "error = vImageBuffer_InitForCopyFromCVPixelBuffer(",
+            "    &sourceBuffers,",
+            "    converter!,",
+            "    pixelBuffer,",
+            "    vImage_Flags(kvImageNoAllocate))",
+            "",
+            "guard error == kvImageNoError else {",
+            "    return",
+            "}",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570206",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Initialize the Destination Buffer",
+          "anchor": "3570224"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Query the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "data"
+            },
+            {
+              "type": "text",
+              "text": " property of the destination buffer you instantiated earlier, to find out if it needs to be initialized. The destination buffer will contain the RGB image after conversion. This code initializes "
+            },
+            {
+              "type": "codeVoice",
+              "code": "destinationBuffer"
+            },
+            {
+              "type": "text",
+              "text": " on the first pass and sets its size to match the luminance plane of the pixel buffer:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "if destinationBuffer.data == nil {",
+            "    error = vImageBuffer_Init(&destinationBuffer,",
+            "                              UInt(CVPixelBufferGetHeightOfPlane(pixelBuffer, 0)),",
+            "                              UInt(CVPixelBufferGetWidthOfPlane(pixelBuffer, 0)),",
+            "                              cgImageFormat.bitsPerPixel,",
+            "                              vImage_Flags(kvImageNoFlags))",
+            "    ",
+            "    guard error == kvImageNoError else {",
+            "        return",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570208",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Note that the luminance and chrominance planes aren’t necessarily the same size. "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Chroma subsampling"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " saves bandwidth by implementing a lower resolution for chroma information. For example, a 2732 x 2048 pixel buffer can have a chroma plane that’s 1366 x 1024."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Convert YpCbCr Planes to RGB",
+          "anchor": "3570225"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With the converter, source buffers, and destination buffer prepared, you’re ready to convert the luminance and chrominance buffers in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "sourceBuffers"
+            },
+            {
+              "type": "text",
+              "text": " to the single RGB buffer, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "destinationBuffer"
+            },
+            {
+              "type": "text",
+              "text": ". The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageConvert_AnyToAny(_:_:_:_:_:)"
+            },
+            {
+              "type": "text",
+              "text": " function requires the converter and buffers, populating the destination buffer with the conversion result:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "error = vImageConvert_AnyToAny(converter!,",
+            "                               &sourceBuffers,",
+            "                               &destinationBuffer,",
+            "                               nil,",
+            "                               vImage_Flags(kvImageNoFlags))",
+            "",
+            "guard error == kvImageNoError else {",
+            "    return",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570210",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Apply an Operation to the RGB Image",
+          "anchor": "3570226"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The destination buffer now contains an RGB representation of the video frame, and you can apply vImage operations to it. In this example, a histogram equalization transforms the image so that it has a more uniform histogram, adding detail to low-contrast areas of an image."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "error = vImageEqualization_ARGB8888(&destinationBuffer,",
+            "                                    &destinationBuffer,",
+            "                                    vImage_Flags(kvImageLeaveAlphaUnchanged))",
+            "",
+            "guard error == kvImageNoError else {",
+            "    return",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570212",
+            "title": "Listing 9"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Display the Result",
+          "anchor": "3570227"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To display the scaled image to the user, create a Core Graphics image from "
+            },
+            {
+              "type": "codeVoice",
+              "code": "destinationBuffer"
+            },
+            {
+              "type": "text",
+              "text": ", and initialize a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIImage"
+            },
+            {
+              "type": "text",
+              "text": " instance from that. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageCreateCGImageFromBuffer(_:_:_:_:_:_:)"
+            },
+            {
+              "type": "text",
+              "text": " function returns an unmanaged "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CGImage"
+            },
+            {
+              "type": "text",
+              "text": " instance based on the supplied buffer and the same format you used earlier."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because "
+            },
+            {
+              "type": "codeVoice",
+              "code": "captureOutput(_:didOutput:from:)"
+            },
+            {
+              "type": "text",
+              "text": " runs in a background thread, you must dispatch the call to update the image view to the main thread."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let cgImage = vImageCreateCGImageFromBuffer(",
+            "    &destinationBuffer,",
+            "    &cgImageFormat,",
+            "    nil,",
+            "    nil,",
+            "    vImage_Flags(kvImageNoFlags),",
+            "    &error)",
+            "",
+            "if let cgImage = cgImage, error == kvImageNoError {",
+            "    DispatchQueue.main.async {",
+            "        self.statusLabel.text = \"\"",
+            "        self.imageView.image = UIImage(cgImage: cgImage.takeRetainedValue())",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570214",
+            "title": "Listing 10"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Free the Buffer Memory",
+          "anchor": "3570228"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After you’re finished with the destination buffer, it’s important that you free the memory allocated to it, as shown here for the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "deinit"
+            },
+            {
+              "type": "text",
+              "text": " function:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "deinit {",
+            "    free(destinationBuffer.data)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570216",
+            "title": "Listing 11"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because the source buffers were initialized with the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kvImageNoAllocate"
+            },
+            {
+              "type": "text",
+              "text": " flag, you don’t need to free their data."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

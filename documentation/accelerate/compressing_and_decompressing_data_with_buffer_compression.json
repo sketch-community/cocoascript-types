@@ -1,0 +1,822 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Compress a string, write it to the file system, and decompress the same file using buffer compression."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/compression"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3034640,
+  "kind": "article",
+  "metadata": {
+    "title": "Compressing and Decompressing Data with Buffer Compression",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Compression"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression",
+        "documentation/compression/compressing_and_decompressing_data_with_buffer_compression"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression",
+        "documentation/compression/compressing_and_decompressing_data_with_buffer_compression"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/compression": {
+      "title": "Compression",
+      "identifier": "doc://com.apple.documentation/documentation/compression",
+      "url": "/documentation/compression",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034635": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034635",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034635"
+    },
+    "doc://com.apple.documentation/documentation/kernel/uint8": {
+      "title": "UInt8",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/kernel/uint8",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/kernel/uint8"
+    },
+    "doc://com.apple.documentation/documentation/swift/unsafemutablepointer": {
+      "title": "UnsafeMutablePointer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/unsafemutablepointer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/unsafemutablepointer"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034634": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034634",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034634"
+    },
+    "doc://com.apple.documentation/documentation/compression/compression_algorithm/compression_lzfse": {
+      "title": "COMPRESSION_LZFSE",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/compression/compression_algorithm/compression_lzfse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/compression/compression_algorithm/compression_lzfse"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3039572": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3039572",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3039572"
+    },
+    "doc://com.apple.documentation/documentation/compression/compression_algorithm/compression_zlib": {
+      "title": "COMPRESSION_ZLIB",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/compression/compression_algorithm/compression_zlib",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/compression/compression_algorithm/compression_zlib"
+    },
+    "doc://com.apple.documentation/documentation/compression/compression_algorithm": {
+      "title": "compression_algorithm",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/compression/compression_algorithm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/compression/compression_algorithm"
+    },
+    "doc://com.apple.documentation/documentation/compression/1480986-compression_encode_buffer": {
+      "title": "compression_encode_buffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/compression/1480986-compression_encode_buffer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/compression/1480986-compression_encode_buffer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Compresses the contents of a source buffer into a destination buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034638": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034638",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034638"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034637": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034637",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034637"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034651": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034651",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034651"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034647": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034647",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034647"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034652": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034652",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034652"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034653": {
+      "title": "Listing 9",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034653",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034653"
+    },
+    "doc://com.apple.documentation/documentation/compression/1481000-compression_decode_buffer": {
+      "title": "compression_decode_buffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/compression/1481000-compression_decode_buffer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/compression/1481000-compression_decode_buffer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Decompresses the contents of a source buffer into a destination buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/swift/string/1641523-init": {
+      "title": "init(cString:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/string/1641523-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/string/1641523-init"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034690": {
+      "title": "Listing 10",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034690",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression#3034690"
+    },
+    "doc://com.apple.documentation/documentation/swift/string": {
+      "title": "String",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/string",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/string"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression": {
+      "title": "Compressing and Decompressing Data with Buffer Compression",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/compressing_and_decompressing_data_with_buffer_compression",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Compress a string, write it to the file system, and decompress the same file using buffer compression."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/compression/1480984-compression_encode_scratch_buffe": {
+      "title": "compression_encode_scratch_buffer_size",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/compression/1480984-compression_encode_scratch_buffe",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/compression/1480984-compression_encode_scratch_buffe",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the required compression scratch buffer size for the selected algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/compression/1480993-compression_decode_scratch_buffe": {
+      "title": "compression_decode_scratch_buffer_size",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/compression/1480993-compression_decode_scratch_buffe",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/compression/1480993-compression_decode_scratch_buffe",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the required decompression scratch buffer size for the selected algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/compression/1480984-compression_encode_scratch_buffe",
+        "doc://com.apple.documentation/documentation/compression/1480986-compression_encode_buffer",
+        "doc://com.apple.documentation/documentation/compression/1480993-compression_decode_scratch_buffe",
+        "doc://com.apple.documentation/documentation/compression/1481000-compression_decode_buffer"
+      ],
+      "title": "Single-Step Compression",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In this article, you'll learn how to compress and decompress a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/string"
+            },
+            {
+              "type": "text",
+              "text": " instance."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create the Source Data",
+          "anchor": "3034633"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Typically, your app would dynamically generate the source data that it compresses, but for this example, the source data is a hard-coded string:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let sourceString = \"\"\"",
+            "    Lorem ipsum dolor sit amet consectetur adipiscing elit mi",
+            "    nibh ornare proin blandit diam ridiculus, faucibus mus",
+            "    dui eu vehicula nam donec dictumst sed vivamus bibendum",
+            "    aliquet efficitur. Felis imperdiet sodales dictum morbi",
+            "    vivamus augue dis duis aliquet velit ullamcorper porttitor,",
+            "    lobortis dapibus hac purus aliquam natoque iaculis blandit",
+            "    montes nunc pretium.",
+            "    \"\"\"",
+            "",
+            "var sourceBuffer = Array(sourceString.utf8)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3034635",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "sourceBuffer"
+            },
+            {
+              "type": "text",
+              "text": " is an array of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/kernel/uint8"
+            },
+            {
+              "type": "text",
+              "text": " values containing the UTF-8 representation of the source string."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create the Destination Buffer",
+          "anchor": "3034636"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/unsafemutablepointer"
+            },
+            {
+              "type": "text",
+              "text": " structure and allocate it with a capacity of the source string's "
+            },
+            {
+              "type": "codeVoice",
+              "code": "count"
+            },
+            {
+              "type": "text",
+              "text": " to receive the encoded data:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let destinationBuffer = UnsafeMutablePointer<UInt8>.allocate(capacity: sourceString.count)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3034634",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Select a Compression Algorithm",
+          "anchor": "3039571"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If speed and compression ratio are important, use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/compression/compression_algorithm/compression_lzfse"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let algorithm = COMPRESSION_LZFSE"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3039572",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you require interoperability with non-Apple devices, use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/compression/compression_algorithm/compression_zlib"
+            },
+            {
+              "type": "text",
+              "text": " instead. For more information about other compression algorithms, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/compression/compression_algorithm"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Compress the Data",
+          "anchor": "3034639"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/compression/1480986-compression_encode_buffer"
+            },
+            {
+              "type": "text",
+              "text": " function compresses the data, writing the result to the destination buffer and returning the size of the encoded data: "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let compressedSize = compression_encode_buffer(destinationBuffer, sourceString.count,",
+            "                                               &sourceBuffer, sourceString.count,",
+            "                                               nil,",
+            "                                               algorithm)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3034638",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When working with small files, the compression may fail and "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/compression/1480986-compression_encode_buffer"
+            },
+            {
+              "type": "text",
+              "text": " returns "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "if compressedSize == 0 {",
+            "    fatalError(\"Encoding failed.\")",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3034637",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You may elect to handle this situation differently, for example, by displaying a warning to the user that the compression failed. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Write the Encoded Data to a File",
+          "anchor": "3034649"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code writes the encoded data to a file in the the app's temporary directory on macOS:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let encodedFileName = \"stringEncoded.LZFSE\"",
+            "",
+            "let tempDirURL = NSURL(fileURLWithPath: NSTemporaryDirectory())",
+            "",
+            "guard",
+            "    let encodedFileURL = tempDirURL.appendingPathComponent(encodedFileName) else {",
+            "        return",
+            "}",
+            "",
+            "FileManager.default.createFile(atPath: encodedFileURL.path,",
+            "                               contents: nil,",
+            "                               attributes: nil)",
+            "",
+            "guard let destinationFileHandle = try? FileHandle(forWritingTo: encodedFileURL) else {",
+            "    print(\"destinationFileHandle fail.\")",
+            "    return",
+            "}",
+            "",
+            "let encodedData = NSData(bytesNoCopy: destinationBuffer,",
+            "                         length: compressedSize)",
+            "",
+            "destinationFileHandle.write(encodedData as Data)",
+            "destinationFileHandle.closeFile()"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3034651",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Read the Encoded Data from a File",
+          "anchor": "3034650"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To read the encoded file, create a file handle for reading for the encoded file's URL:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard",
+            "    let encodedFileHandle = try? FileHandle(forReadingFrom: encodedFileURL) else {",
+            "        print(\"encodedFileHandle fail.\")",
+            "        return",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3034647",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the file handle to read the entire encoded data and populate "
+            },
+            {
+              "type": "codeVoice",
+              "code": "encodedSourceData"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let encodedSourceData = encodedFileHandle.readDataToEndOfFile()"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3034652",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Decompress the Data",
+          "anchor": "3034648"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Allocate memory to contain the decoded data. Typically, the encoded payload would be part of a larger structure containing additional metadata such as the uncompressed size, and you'd use that to define the buffer capacity. However, for this example, allocate 8 MB:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let decodedCapacity = 8_000_000",
+            "let decodedDestinationBuffer = UnsafeMutablePointer<UInt8>.allocate(capacity: decodedCapacity)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3034653",
+            "title": "Listing 9"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/compression/1481000-compression_decode_buffer"
+            },
+            {
+              "type": "text",
+              "text": " to decode the raw bytes of the encoded source data, writing the result to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "decodedDestinationBuffer"
+            },
+            {
+              "type": "text",
+              "text": ". You can create a string from the destination buffer using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/string/1641523-init"
+            },
+            {
+              "type": "text",
+              "text": " initializer:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let decodedString: String = encodedSourceData.withUnsafeBytes { encodedSourceBuffer in",
+            "    let typedPointer = encodedSourceBuffer.bindMemory(to: UInt8.self)",
+            "    let decodedCharCount = compression_decode_buffer(decodedDestinationBuffer, decodedCapacity,",
+            "                                                     typedPointer.baseAddress!, encodedSourceData.count,",
+            "                                                     nil,",
+            "                                                     algorithm)",
+            "    ",
+            "    print(\"Buffer decompressedCharCount\", decodedCharCount)",
+            "    ",
+            "    return String(cString: decodedDestinationBuffer)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3034690",
+            "title": "Listing 10"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/compression/1481000-compression_decode_buffer"
+            },
+            {
+              "type": "text",
+              "text": " function returns the size of the decoded data. If the decompression fails, the size returned is zero. This may indicate that the memory allocated to the destination buffer is insufficient and you should switch to the stream API or retry with a larger buffer."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

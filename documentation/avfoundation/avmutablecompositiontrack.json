@@ -1,0 +1,674 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A mutable track in a composition object that you use to insert, remove, and scale track segments without affecting their low-level representation."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_composition_and_editing"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1390393,
+  "kind": "symbol",
+  "metadata": {
+    "title": "AVMutableCompositionTrack",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "4.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.7",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)AVMutableCompositionTrack",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/avmutablecompositiontrack"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/avmutablecompositiontrack"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_composition_and_editing": {
+      "title": "Media Composition and Editing",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_composition_and_editing",
+      "url": "/documentation/avfoundation/media_composition_and_editing",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcompositiontrack": {
+      "title": "AVCompositionTrack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcompositiontrack",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcompositiontrack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A track in a composition object, consisting of a media type, a track identifier, and track segments."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1390321-segments": {
+      "title": "segments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1390321-segments",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecompositiontrack/1390321-segments",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The track segments from a composition track."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388746-validatetracksegments": {
+      "title": "validateTrackSegments:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388746-validatetracksegments",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecompositiontrack/1388746-validatetracksegments",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether a given array of track segments conform to the timing rules for a composition track."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "validateTrackSegments:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/3334926-enabled": {
+      "title": "enabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/3334926-enabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecompositiontrack/3334926-enabled"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1387192-languagecode": {
+      "title": "languageCode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1387192-languagecode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecompositiontrack/1387192-languagecode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The language associated with the track, as an ISO 639-2/T language code."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388866-extendedlanguagetag": {
+      "title": "extendedLanguageTag",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388866-extendedlanguagetag",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecompositiontrack/1388866-extendedlanguagetag",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The language tag associated with the track, as an RFC 4646 language tag."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1389030-naturaltimescale": {
+      "title": "naturalTimeScale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1389030-naturaltimescale",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecompositiontrack/1389030-naturaltimescale",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The time scale in which time values for the track can be operated upon without extraneous numerical conversion."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388304-preferredtransform": {
+      "title": "preferredTransform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388304-preferredtransform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecompositiontrack/1388304-preferredtransform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The preferred transformation of the visual media data for display purposes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388649-preferredvolume": {
+      "title": "preferredVolume",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388649-preferredvolume",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecompositiontrack/1388649-preferredvolume",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The preferred volume of the audible media data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/3180005-replaceformatdescription": {
+      "title": "replaceFormatDescription:withFormatDescription:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/3180005-replaceformatdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecompositiontrack/3180005-replaceformatdescription",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "replaceFormatDescription:withFormatDescription:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/3013764-addtrackassociationtotrack": {
+      "title": "addTrackAssociationToTrack:type:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/3013764-addtrackassociationtotrack",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecompositiontrack/3013764-addtrackassociationtotrack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Establishes a track association of a specific type between two tracks."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addTrackAssociationToTrack:type:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/3013765-removetrackassociationtotrack": {
+      "title": "removeTrackAssociationToTrack:type:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/3013765-removetrackassociationtotrack",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecompositiontrack/3013765-removetrackassociationtotrack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes a specific association type between two tracks."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeTrackAssociationToTrack:type:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avtrackassociationtype": {
+      "title": "AVTrackAssociationType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avtrackassociationtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avtrackassociationtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that define the possible track association types."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1389483-insertemptytimerange": {
+      "title": "insertEmptyTimeRange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1389483-insertemptytimerange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecompositiontrack/1389483-insertemptytimerange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds or extends an empty time range within the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "insertEmptyTimeRange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1390691-inserttimerange": {
+      "title": "insertTimeRange:ofTrack:atTime:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1390691-inserttimerange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecompositiontrack/1390691-inserttimerange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts a time range of a source track into a track of a composition."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "insertTimeRange:ofTrack:atTime:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388629-inserttimeranges": {
+      "title": "insertTimeRanges:ofTracks:atTime:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388629-inserttimeranges",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecompositiontrack/1388629-inserttimeranges",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inserts the time ranges of multiple source tracks into a track of a composition."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "insertTimeRanges:ofTracks:atTime:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1386048-removetimerange": {
+      "title": "removeTimeRange:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1386048-removetimerange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecompositiontrack/1386048-removetimerange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes a specified time range from the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeTimeRange:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388212-scaletimerange": {
+      "title": "scaleTimeRange:toDuration:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388212-scaletimerange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecompositiontrack/1388212-scaletimerange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the duration of a time range in the receiver."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "scaleTimeRange:toDuration:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcomposition": {
+      "title": "AVComposition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcomposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcomposition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that combines media data from multiple file-based sources to present or process media data from multiple sources."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcompositiontracksegment": {
+      "title": "AVCompositionTrackSegment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcompositiontracksegment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcompositiontracksegment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A segment of a track, consisting of a URL, a track identifier, and a time mapping from the source track to the composition track."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition": {
+      "title": "AVMutableComposition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecomposition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mutable object used to create a new composition from existing assets."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack": {
+      "title": "AVMutableCompositionTrack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecompositiontrack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mutable track in a composition object that you use to insert, remove, and scale track segments without affecting their low-level representation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcompositiontrack"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Configuring Track Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/3334926-enabled",
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1387192-languagecode",
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388866-extendedlanguagetag",
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1389030-naturaltimescale",
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388304-preferredtransform",
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388649-preferredvolume"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Format Descriptions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/3180005-replaceformatdescription"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Associating Tracks",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/3013764-addtrackassociationtotrack",
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/3013765-removetrackassociationtotrack",
+        "doc://com.apple.documentation/documentation/avfoundation/avtrackassociationtype"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Time Ranges",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1389483-insertemptytimerange",
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1390691-inserttimerange",
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388629-inserttimeranges",
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1386048-removetimerange",
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388212-scaletimerange",
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1390321-segments"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Validating Segments",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388746-validatetracksegments"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcomposition",
+        "doc://com.apple.documentation/documentation/avfoundation/avcompositiontrack",
+        "doc://com.apple.documentation/documentation/avfoundation/avcompositiontracksegment",
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition"
+      ],
+      "title": "Media Composition",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "AVMutableCompositionTrack"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)AVCompositionTrack",
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcompositiontrack",
+              "text": "AVCompositionTrack"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcompositiontrack"
+            },
+            {
+              "type": "text",
+              "text": " defines constraints for the temporal alignment of the track segments. If you set the array of track segments in a mutable composition (see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1390321-segments"
+            },
+            {
+              "type": "text",
+              "text": "), you can test whether the segments meet the constraints using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack/1388746-validatetracksegments"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

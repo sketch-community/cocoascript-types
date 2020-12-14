@@ -1,0 +1,523 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Solves the equation "
+    },
+    {
+      "type": "emphasis",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Subfactor * X = B"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": " in place for the matrix of single-precision values "
+    },
+    {
+      "type": "emphasis",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "X"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/subfactor_multiplication_and_solve_functions"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/2881916-sparsesolve",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2881916,
+  "kind": "symbol",
+  "metadata": {
+    "title": "SparseSolve",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "11.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.13",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "11.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "4.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@F@SparseSolve#$@SA@SparseOpaqueSubfactor_Float#$@SA@DenseMatrix_Float#",
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/2881916-sparsesolve"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/2881916-sparsesolve"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers": {
+      "title": "Sparse Solvers",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
+      "url": "/documentation/accelerate/sparse_solvers",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving": {
+      "title": "Advanced Functions for Sparse Solving",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
+      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/subfactor_multiplication_and_solve_functions": {
+      "title": "Subfactor Multiplication and Solve Functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/subfactor_multiplication_and_solve_functions",
+      "url": "/documentation/accelerate/sparse_solvers/advanced_functions_for_sparse_solving/subfactor_multiplication_and_solve_functions",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2881897-sparsecreatesubfactor": {
+      "title": "SparseCreateSubfactor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2881897-sparsecreatesubfactor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2881897-sparsecreatesubfactor"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparseopaquesubfactor_float": {
+      "title": "SparseOpaqueSubfactor_Float",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquesubfactor_float",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparseopaquesubfactor_float"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/densematrix_float": {
+      "title": "DenseMatrix_Float",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/densematrix_float",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/densematrix_float"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2881908-sparsesolve": {
+      "title": "SparseSolve",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2881908-sparsesolve",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2881908-sparsesolve",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Solves the equation "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Subfactor * X = B"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": " in place for the matrix of double-precision values "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "X"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2881916-sparsesolve": {
+      "title": "SparseSolve",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2881916-sparsesolve",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2881916-sparsesolve",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Solves the equation "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Subfactor * X = B"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": " in place for the matrix of single-precision values "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "X"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2881901-sparsesolve": {
+      "title": "SparseSolve",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2881901-sparsesolve",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2881901-sparsesolve",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Solves the equation "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Subfactor * X = B"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": " for the matrix of double-precision values "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "X"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2881914-sparsesolve": {
+      "title": "SparseSolve",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2881914-sparsesolve",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2881914-sparsesolve",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Solves the equation "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Subfactor * X = B"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": " for the matrix of single-precision values "
+        },
+        {
+          "type": "emphasis",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "X"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/2881908-sparsesolve",
+        "doc://com.apple.documentation/documentation/accelerate/2881901-sparsesolve",
+        "doc://com.apple.documentation/documentation/accelerate/2881914-sparsesolve"
+      ],
+      "title": "Matrix Solve Functions",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "SparseSolve"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@SparseOpaqueSubfactor_Float",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquesubfactor_float",
+              "text": "SparseOpaqueSubfactor_Float"
+            },
+            {
+              "kind": "text",
+              "text": " Subfactor, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@DenseMatrix_Float",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/densematrix_float",
+              "text": "DenseMatrix_Float"
+            },
+            {
+              "kind": "text",
+              "text": " XB);"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "Subfactor",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Subfactor"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": " in "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Subfactor"
+                    }
+                  ]
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": " * X = B"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": ", as returned by "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/accelerate/2881897-sparsecreatesubfactor"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "XB",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "On input, the matrix "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "B"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": ". On return it is overwritten with the matrix "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "X"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,2175 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An object that provides the interface to control the player’s transport behavior."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/avplayer",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1387511,
+  "kind": "symbol",
+  "metadata": {
+    "title": "AVPlayer",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "4.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.7",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)AVPlayer",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/avplayer"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/avplayer"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection": {
+      "title": "Media Playback and Selection",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
+      "url": "/documentation/avfoundation/media_playback_and_selection",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1390806-replacecurrentitemwithplayeritem": {
+      "title": "replaceCurrentItemWithPlayerItem:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1390806-replacecurrentitemwithplayeritem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1390806-replacecurrentitemwithplayeritem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Replaces the current player item with a new player item."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "replaceCurrentItemWithPlayerItem:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer": {
+      "title": "AVQueuePlayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avqueueplayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A player used to play a number of items in sequence."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer": {
+      "title": "AVPlayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that provides the interface to control the player’s transport behavior."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset": {
+      "title": "AVAsset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem": {
+      "title": "AVPlayerItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to model the timing and presentation state of an asset played by the player."
+        }
+      ]
+    },
+    "devLink-1737690": {
+      "identifier": "devLink-1737690",
+      "type": "link",
+      "title": "Key-value observing",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KVO.html#//apple_ref/doc/uid/TP40008195-CH16"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387569-currentitem": {
+      "title": "currentItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387569-currentitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1387569-currentitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The player’s current player item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388846-rate": {
+      "title": "rate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388846-rate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1388846-rate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The current playback rate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1416553-observevalueforkeypath": {
+      "title": "observeValueForKeyPath:ofObject:change:context:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1416553-observevalueforkeypath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1416553-observevalueforkeypath",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "observeValueForKeyPath:ofObject:change:context:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1385829-addperiodictimeobserverforinterv": {
+      "title": "addPeriodicTimeObserverForInterval:queue:usingBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1385829-addperiodictimeobserverforinterv",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1385829-addperiodictimeobserverforinterv",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Requests the periodic invocation of a given block during playback to report changing time."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addPeriodicTimeObserverForInterval:queue:usingBlock:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388027-addboundarytimeobserverfortimes": {
+      "title": "addBoundaryTimeObserverForTimes:queue:usingBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388027-addboundarytimeobserverfortimes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1388027-addboundarytimeobserverfortimes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Requests the invocation of a block when specified times are traversed during normal playback."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addBoundaryTimeObserverForTimes:queue:usingBlock:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avkit/avplayerviewcontroller": {
+      "title": "AVPlayerViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avkit/avplayerviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avkit/avplayerviewcontroller"
+    },
+    "doc://com.apple.documentation/documentation/avkit/avplayerview": {
+      "title": "AVPlayerView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avkit/avplayerview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avkit/avplayerview"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer": {
+      "title": "AVPlayerLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayerlayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that manages a player’s visual output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsynchronizedlayer": {
+      "title": "AVSynchronizedLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsynchronizedlayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsynchronizedlayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to synchronize with a specific player item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1385706-initwithurl": {
+      "title": "initWithURL:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1385706-initwithurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1385706-initwithurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new player to play a single audiovisual resource referenced by a given URL."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithURL:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1538409-playerwithurl": {
+      "title": "playerWithURL:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1538409-playerwithurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1538409-playerwithurl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new player to play a single audiovisual resource referenced by a given URL."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "playerWithURL:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387104-initwithplayeritem": {
+      "title": "initWithPlayerItem:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387104-initwithplayeritem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1387104-initwithplayeritem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new player to play the specified player item."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithPlayerItem:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1538390-playerwithplayeritem": {
+      "title": "playerWithPlayerItem:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1538390-playerwithplayeritem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1538390-playerwithplayeritem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new player initialized to play the specified player item."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "playerWithPlayerItem:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388096-status": {
+      "title": "status",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388096-status",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1388096-status",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A status that indicates whether the player can be used for playback."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayerstatus": {
+      "title": "AVPlayerStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerstatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayerstatus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Status values that indicate whether a player can successfully play media."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387764-error": {
+      "title": "error",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387764-error",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1387764-error",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The error that caused the failure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386726-play": {
+      "title": "play",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386726-play",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1386726-play",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Begins playback of the current item."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "play"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387895-pause": {
+      "title": "pause",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387895-pause",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1387895-pause",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Pauses playback of the current item."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "pause"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1385953-seektotime": {
+      "title": "seekToTime:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1385953-seektotime",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1385953-seektotime",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the current playback time to the specified time."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "seekToTime:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387018-seektotime": {
+      "title": "seekToTime:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387018-seektotime",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1387018-seektotime",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the current playback time to the specified time and executes the specified block when the seek operation completes or is interrupted."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "seekToTime:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387741-seektotime": {
+      "title": "seekToTime:toleranceBefore:toleranceAfter:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387741-seektotime",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1387741-seektotime",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the current playback time within a specified time bound."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "seekToTime:toleranceBefore:toleranceAfter:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388493-seektotime": {
+      "title": "seekToTime:toleranceBefore:toleranceAfter:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388493-seektotime",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1388493-seektotime",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the current playback time within a specified time bound and invokes the specified block when the seek operation completes or is interrupted."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "seekToTime:toleranceBefore:toleranceAfter:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386114-seektodate": {
+      "title": "seekToDate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386114-seektodate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1386114-seektodate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the current playback time to the time specified by the date object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "seekToDate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386108-seektodate": {
+      "title": "seekToDate:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386108-seektodate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1386108-seektodate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the current playback time to the specified time and executes the specified block when the seek operation completes or is interrupted."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "seekToDate:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1390404-currenttime": {
+      "title": "currentTime",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1390404-currenttime",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1390404-currenttime",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the current time of the current player item."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "currentTime"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387552-removetimeobserver": {
+      "title": "removeTimeObserver:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387552-removetimeobserver",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1387552-removetimeobserver",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Cancels a previously registered periodic or boundary time observer."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeTimeObserver:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387376-actionatitemend": {
+      "title": "actionAtItemEnd",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387376-actionatitemend",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1387376-actionatitemend",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The action to perform when the current player item has finished playing."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeractionatitemend": {
+      "title": "AVPlayerActionAtItemEnd",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeractionatitemend",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeractionatitemend",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The actions a player can take when it finishes playing."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387178-appliesmediaselectioncriteriaaut": {
+      "title": "appliesMediaSelectionCriteriaAutomatically",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387178-appliesmediaselectioncriteriaaut",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1387178-appliesmediaselectioncriteriaaut",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the receiver should apply the current selection criteria automatically to player items."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387825-mediaselectioncriteriaformediach": {
+      "title": "mediaSelectionCriteriaForMediaCharacteristic:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387825-mediaselectioncriteriaformediach",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1387825-mediaselectioncriteriaformediach",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the automatic selection criteria for media items with the specified media characteristic."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "mediaSelectionCriteriaForMediaCharacteristic:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1390563-setmediaselectioncriteria": {
+      "title": "setMediaSelectionCriteria:forMediaCharacteristic:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1390563-setmediaselectioncriteria",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1390563-setmediaselectioncriteria",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Applies automatic selection criteria for media that has the specified media characteristic."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setMediaSelectionCriteria:forMediaCharacteristic:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386458-closedcaptiondisplayenabled": {
+      "title": "closedCaptionDisplayEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386458-closedcaptiondisplayenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1386458-closedcaptiondisplayenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the player uses closed captioning."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1390127-volume": {
+      "title": "volume",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1390127-volume",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1390127-volume",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The audio playback volume for the player."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387544-muted": {
+      "title": "muted",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387544-muted",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1387544-muted",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the audio output of the player is muted."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387441-allowsexternalplayback": {
+      "title": "allowsExternalPlayback",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387441-allowsexternalplayback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1387441-allowsexternalplayback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the player allows switching to external playback mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388982-externalplaybackactive": {
+      "title": "externalPlaybackActive",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388982-externalplaybackactive",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1388982-externalplaybackactive",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the player is currently playing video in external playback mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1624255-usesexternalplaybackwhileexterna": {
+      "title": "usesExternalPlaybackWhileExternalScreenIsActive",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1624255-usesexternalplaybackwhileexterna",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1624255-usesexternalplaybackwhileexterna",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the player should automatically switch to external playback mode while the external screen mode is active."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1624251-externalplaybackvideogravity": {
+      "title": "externalPlaybackVideoGravity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1624251-externalplaybackvideogravity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1624251-externalplaybackvideogravity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The video gravity of the player for external playback mode only."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avlayervideogravity": {
+      "title": "AVLayerVideoGravity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avlayervideogravity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avlayervideogravity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that defines how the video is displayed within a layer’s bounds rectangle."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/2990522-preventsdisplaysleepduringvideop": {
+      "title": "preventsDisplaySleepDuringVideoPlayback",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/2990522-preventsdisplaysleepduringvideop",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/2990522-preventsdisplaysleepduringvideop",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether video playback prevents display and device sleep."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1643482-automaticallywaitstominimizestal": {
+      "title": "automaticallyWaitsToMinimizeStalling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1643482-automaticallywaitstominimizestal",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1643482-automaticallywaitstominimizestal",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the player should automatically delay playback in order to minimize stalling."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1643486-reasonforwaitingtoplay": {
+      "title": "reasonForWaitingToPlay",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1643486-reasonforwaitingtoplay",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1643486-reasonforwaitingtoplay",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The reason the player is currently waiting for playback to begin or resume."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayerwaitingreason": {
+      "title": "AVPlayerWaitingReason",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerwaitingreason",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayerwaitingreason",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The reasons the player is waiting begin or resume playback."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1643485-timecontrolstatus": {
+      "title": "timeControlStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1643485-timecontrolstatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1643485-timecontrolstatus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A status that indicates whether playback is currently in progress, paused indefinitely, or suspended while waiting for appropriate network conditions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayertimecontrolstatus": {
+      "title": "AVPlayerTimeControlStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayertimecontrolstatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayertimecontrolstatus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The player statuses indicating a playback rate change."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1643480-playimmediatelyatrate": {
+      "title": "playImmediatelyAtRate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1643480-playimmediatelyatrate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1643480-playimmediatelyatrate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Plays the available media data immediately, at the specified rate."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "playImmediatelyAtRate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1624254-outputobscuredduetoinsufficiente": {
+      "title": "outputObscuredDueToInsufficientExternalProtection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1624254-outputobscuredduetoinsufficiente",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1624254-outputobscuredduetoinsufficiente",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether output is being obscured because of insufficient external protection."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/3365978-eligibleforhdrplayback": {
+      "title": "eligibleForHDRPlayback",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/3365978-eligibleforhdrplayback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/3365978-eligibleforhdrplayback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the current device can present content to an HDR display."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/2936889-availablehdrmodes": {
+      "title": "availableHDRModes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/2936889-availablehdrmodes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/2936889-availablehdrmodes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The HDR modes that are available for playback."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayerhdrmode": {
+      "title": "AVPlayerHDRMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerhdrmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayerhdrmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A bitfield type that specifies an HDR mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayereligibleforhdrplaybackdidchangenotification": {
+      "title": "AVPlayerEligibleForHDRPlaybackDidChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayereligibleforhdrplaybackdidchangenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayereligibleforhdrplaybackdidchangenotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that’s posted whenever HDR playback eligibility changes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat": {
+      "title": "allowedAudioSpatializationFormats",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed": {
+      "title": "audioSpatializationAllowed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed",
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386591-setrate": {
+      "title": "setRate:time:atHostTime:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386591-setrate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1386591-setrate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Synchronizes the playback rate and time of the current item with an external source. "
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setRate:time:atHostTime:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1389712-prerollatrate": {
+      "title": "prerollAtRate:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1389712-prerollatrate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1389712-prerollatrate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Begins loading media data to prime the media pipelines for playback."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "prerollAtRate:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388260-cancelpendingprerolls": {
+      "title": "cancelPendingPrerolls",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388260-cancelpendingprerolls",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1388260-cancelpendingprerolls",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Cancels any pending preroll requests and invokes the corresponding completion handlers if present."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "cancelPendingPrerolls"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387066-masterclock": {
+      "title": "masterClock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387066-masterclock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1387066-masterclock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The host clock used for item time bases."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1390717-audiooutputdeviceuniqueid": {
+      "title": "audioOutputDeviceUniqueID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1390717-audiooutputdeviceuniqueid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1390717-audiooutputdeviceuniqueid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies the unique ID of the Core Audio output device used to play audio."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/2942616-preferredvideodecodergpuregistry": {
+      "title": "preferredVideoDecoderGPURegistryID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/2942616-preferredvideodecodergpuregistry",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/2942616-preferredvideodecodergpuregistry",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The registry identifier for the GPU used for video decoding."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1624258-allowsairplayvideo": {
+      "title": "allowsAirPlayVideo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1624258-allowsairplayvideo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1624258-allowsairplayvideo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates whether the player allows AirPlay video playback."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1624259-airplayvideoactive": {
+      "title": "airPlayVideoActive",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1624259-airplayvideoactive",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1624259-airplayvideoactive",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates whether the player is currently playing video through AirPlay."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1624256-usesairplayvideowhileairplayscre": {
+      "title": "usesAirPlayVideoWhileAirPlayScreenIsActive",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1624256-usesairplayvideowhileairplayscre",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1624256-usesairplayvideowhileairplayscre",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates whether the player should automatically switch to AirPlay Video while AirPlay Screen is active in order to play video content, switching back to AirPlay Screen as soon as playback is done."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/seeking_through_media": {
+      "title": "Seeking Through Media",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/seeking_through_media",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/seeking_through_media",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Seek or scrub across a media item to quickly access a specific time point."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_playback_state": {
+      "title": "Observing Playback State",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_playback_state",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/observing_playback_state",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Respond to changes in a player's playback state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_the_playback_time": {
+      "title": "Observing the Playback Time",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_the_playback_time",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/observing_the_playback_time",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Observe the playback time for an asset in order to update the player's state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers": {
+      "title": "Presenting Chapter Markers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add chapter markers to enable users to quickly navigate your content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls": {
+      "title": "Creating a Movie Player App with Basic Playback Controls",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Play movies using a custom interface that implements simple playback functionality."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack": {
+      "title": "AVPlayerItemTrack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritemtrack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to modify the presentation state of an asset track being presented by a player."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper": {
+      "title": "AVPlayerLooper",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayerlooper",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that simplifies the playing of looping media content using a queue player."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs": {
+      "title": "Player Item Outputs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/avfoundation/media_playback_and_selection/player_item_outputs",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Objects that provide access to the content of a player item’s tracks."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating a Player",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1385706-initwithurl",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1538409-playerwithurl",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387104-initwithplayeritem",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1538390-playerwithplayeritem"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Determining Player Status",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388096-status",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayerstatus",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387764-error"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing the Current Player Item",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387569-currentitem",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1390806-replacecurrentitemwithplayeritem"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Controlling Playback",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386726-play",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387895-pause",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388846-rate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Seeking Through Media",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1385953-seektotime",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387018-seektotime",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387741-seektotime",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388493-seektotime",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386114-seektodate",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386108-seektodate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Observing Player Time",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1390404-currenttime",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1385829-addperiodictimeobserverforinterv",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388027-addboundarytimeobserverfortimes",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387552-removetimeobserver"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Responding When Playback Ends",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387376-actionatitemend",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeractionatitemend"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring Media Selection Criteria Settings",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387178-appliesmediaselectioncriteriaaut",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387825-mediaselectioncriteriaformediach",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1390563-setmediaselectioncriteria"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Displaying Closed Captions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386458-closedcaptiondisplayenabled"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Audio Output",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1390127-volume",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387544-muted"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing External Playback",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387441-allowsexternalplayback",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388982-externalplaybackactive",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1624255-usesexternalplaybackwhileexterna",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1624251-externalplaybackvideogravity",
+        "doc://com.apple.documentation/documentation/avfoundation/avlayervideogravity"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring Display Sleep Settings",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/2990522-preventsdisplaysleepduringvideop"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring Automatic Waiting Behavior",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1643482-automaticallywaitstominimizestal",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1643486-reasonforwaitingtoplay",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayerwaitingreason",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1643485-timecontrolstatus",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayertimecontrolstatus",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1643480-playimmediatelyatrate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Determining Content Protections",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1624254-outputobscuredduetoinsufficiente"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Determining HDR Playback Eligibility",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/3365978-eligibleforhdrplayback",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/2936889-availablehdrmodes",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayerhdrmode",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayereligibleforhdrplaybackdidchangenotification"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Determining Audio Spatialization Settings",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3601108-allowedaudiospatializationformat",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/3237174-audiospatializationallowed"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Synchronizing Multiple Players",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386591-setrate",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1389712-prerollatrate",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388260-cancelpendingprerolls",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387066-masterclock"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The advanced synchronization and rate control methods in this section are currently only supported for file-based media and are not supported for media served using HTTP Live Streaming."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring Audio and Video Devices",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1390717-audiooutputdeviceuniqueid",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/2942616-preferredvideodecodergpuregistry"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring AirPlay Behavior",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1624258-allowsairplayvideo",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1624259-airplayvideoactive",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer/1624256-usesairplayvideowhileairplayscre"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/seeking_through_media",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_playback_state",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_the_playback_time",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer",
+        "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper",
+        "doc://com.apple.documentation/documentation/avfoundation/avsynchronizedlayer",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs"
+      ],
+      "title": "Media Playback",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "AVPlayer"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVPlayer"
+            },
+            {
+              "type": "text",
+              "text": " is a controller object used to manage the playback and timing of a media asset. You can use an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVPlayer"
+            },
+            {
+              "type": "text",
+              "text": " to play local and remote file-based media, such as QuickTime movies and MP3 audio files, as well as audiovisual media served using HTTP Live Streaming."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "AVPlayer"
+            },
+            {
+              "type": "text",
+              "text": " is for playing a single media asset at a time. You can reuse the player instance to play additional media assets using its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1390806-replacecurrentitemwithplayeritem"
+            },
+            {
+              "type": "text",
+              "text": " method, but it manages the playback of only a single media asset at a time. The framework also provides a subclass of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVPlayer"
+            },
+            {
+              "type": "text",
+              "text": ", called "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer"
+            },
+            {
+              "type": "text",
+              "text": ", you use to create and manage the queuing of media assets played sequentially."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You use an "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer"
+            },
+            {
+              "type": "text",
+              "text": " to play media assets, which AVFoundation models using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset"
+            },
+            {
+              "type": "text",
+              "text": " class. "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset"
+            },
+            {
+              "type": "text",
+              "text": " only models the "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "static"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " aspects of the media, such as its duration or creation date, and on its own, is unsuitable for playback with an "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer"
+            },
+            {
+              "type": "text",
+              "text": ". To play an asset, you need to create an instance of its "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "dynamic"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " counterpart found in "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem"
+            },
+            {
+              "type": "text",
+              "text": ". This object models the timing and presentation state of an asset played by an instance of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer"
+            },
+            {
+              "type": "text",
+              "text": ". See the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem"
+            },
+            {
+              "type": "text",
+              "text": " reference for more details."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer"
+            },
+            {
+              "type": "text",
+              "text": " is a dynamic object whose state continuously changes. There are two approaches you can use to observe a player’s state:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "General State Observations:"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " You can use "
+                    },
+                    {
+                      "type": "link",
+                      "title": "Key-value observing",
+                      "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KVO.html#//apple_ref/doc/uid/TP40008195-CH16"
+                    },
+                    {
+                      "type": "text",
+                      "text": " (KVO) to observe state changes to many of the player’s dynamic properties, such as its "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387569-currentitem"
+                    },
+                    {
+                      "type": "text",
+                      "text": " or its playback "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388846-rate"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". You should register and unregister for KVO change notifications on the main thread. This avoids the possibility of receiving a partial notification when making a change on another thread. AVFoundation invokes "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1416553-observevalueforkeypath"
+                    },
+                    {
+                      "type": "text",
+                      "text": " on the main thread, even when making the change operation on another thread."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Timed State Observations:"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " KVO works well for general state observations, but isn’t intended for observing continuously changing state like the player’s time. "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer"
+                    },
+                    {
+                      "type": "text",
+                      "text": " provides two methods to observe time changes:"
+                    }
+                  ]
+                },
+                {
+                  "type": "unorderedList",
+                  "items": [
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1385829-addperiodictimeobserverforinterv"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388027-addboundarytimeobserverfortimes"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "These methods let you observe time changes either periodically or by boundary, respectively. As changes occur, invoke the callback block or closure you supply to these methods to give you the opportunity to take some action such as updating the state of your player’s user interface."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem"
+            },
+            {
+              "type": "text",
+              "text": " are nonvisual objects, meaning that on their own they are unable to present an asset’s video onscreen. You have two primary approaches you can use to present your video content onscreen:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "AVKit:"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " The best way to present your video content is with the AVKit framework’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avkit/avplayerviewcontroller"
+                    },
+                    {
+                      "type": "text",
+                      "text": " class in iOS and tvOS, or the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avkit/avplayerview"
+                    },
+                    {
+                      "type": "text",
+                      "text": " class in macOS. These classes present the video content, along with playback controls and other media features giving you a full-featured playback experience."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "AVPlayerLayer:"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " When building a custom interface for your player, use "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". The player layer can be set as a view’s backing layer or can be added directly to the layer hierarchy. Unlike "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/avkit/avplayerview"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/avkit/avplayerviewcontroller"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", a player layer doesn’t present any playback controls—it presents the visual content onscreen. It’s up to you to build the playback transport controls to play, pause, and seek through the media."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Alongside the visual content presented with AVKit or "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer"
+            },
+            {
+              "type": "text",
+              "text": ", you can also present animated content synchronized with the player’s timing using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsynchronizedlayer"
+            },
+            {
+              "type": "text",
+              "text": ". Use the synchronized layer to confer the current player timing onto its layer subtree. You can use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsynchronizedlayer"
+            },
+            {
+              "type": "text",
+              "text": " to build custom effects in Core Animation, such as animated lower thirds or video transitions, and have them play in sync with the timing of the player’s current "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "External Playback Mode",
+          "anchor": "1668782"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "External playback mode is when video data is sent to an external device such as Apple TV via AirPlay, or the mini-connector-based HDMI/VGA adapters for full-screen playback at its original fidelity."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In \"external screen\" mode (also known as mirroring and second display), the host device renders the video data. The host device recompresses and transfers the rendered video to the external device, and the external device decompresses and displays the video."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "External playback properties affect AirPlay Video playback and are the replacement for the deprecated AirPlay support properties."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

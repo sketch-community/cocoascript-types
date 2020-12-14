@@ -1,0 +1,870 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": " Range and clamping information for Y'CbCr pixel formats."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/conversion"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vimage",
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations",
+        "doc://com.apple.documentation/documentation/accelerate/conversion"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1544311,
+  "kind": "symbol",
+  "metadata": {
+    "title": "vImage_YpCbCrPixelRange",
+    "role": "symbol",
+    "roleHeading": "Structure",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "8.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.10",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "4.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@T@vImage_YpCbCrPixelRange",
+    "symbolKind": "struct"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/vimage_ypcbcrpixelrange"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/vimage_ypcbcrpixelrange"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/conversion": {
+      "title": "Conversion",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/conversion",
+      "url": "/documentation/accelerate/conversion",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage": {
+      "title": "vImage",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage",
+      "url": "/documentation/accelerate/vimage",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations": {
+      "title": "vImage Operations",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations",
+      "url": "/documentation/accelerate/vimage/vimage_operations",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange#2936137": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange#2936137",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/vimage_ypcbcrpixelrange#2936137"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange/1545208-yp_bias": {
+      "title": "Yp_bias",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange/1545208-yp_bias",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_ypcbcrpixelrange/1545208-yp_bias",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The encoding for "
+        },
+        {
+          "type": "codeVoice",
+          "code": "Y' = 0.0"
+        },
+        {
+          "type": "text",
+          "text": " for this video format (varies by bit depth)."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange/1546815-cbcr_bias": {
+      "title": "CbCr_bias",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange/1546815-cbcr_bias",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_ypcbcrpixelrange/1546815-cbcr_bias",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The encoding for "
+        },
+        {
+          "type": "codeVoice",
+          "code": "{Cb, Cr} = 0.0"
+        },
+        {
+          "type": "text",
+          "text": " for this video format."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange/1546412-yprangemax": {
+      "title": "YpRangeMax",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange/1546412-yprangemax",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_ypcbcrpixelrange/1546412-yprangemax",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The encoding for "
+        },
+        {
+          "type": "codeVoice",
+          "code": "Y' = 1.0"
+        },
+        {
+          "type": "text",
+          "text": " for this video format."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange/1545330-cbcrrangemax": {
+      "title": "CbCrRangeMax",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange/1545330-cbcrrangemax",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_ypcbcrpixelrange/1545330-cbcrrangemax",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The encoding for "
+        },
+        {
+          "type": "codeVoice",
+          "code": "{Cb, Cr} = 0.5"
+        },
+        {
+          "type": "text",
+          "text": " for this video format."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange/1545930-ypmax": {
+      "title": "YpMax",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange/1545930-ypmax",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_ypcbcrpixelrange/1545930-ypmax",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The encoding for the maximum allowed Y' value. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange/1546553-ypmin": {
+      "title": "YpMin",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange/1546553-ypmin",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_ypcbcrpixelrange/1546553-ypmin",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The encoding of the minimum allowed Y' value. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange/1546973-cbcrmax": {
+      "title": "CbCrMax",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange/1546973-cbcrmax",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_ypcbcrpixelrange/1546973-cbcrmax",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The encoding of the maximum allowed"
+        },
+        {
+          "type": "codeVoice",
+          "code": " {Cb, Cr}"
+        },
+        {
+          "type": "text",
+          "text": " value. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange/1544471-cbcrmin": {
+      "title": "CbCrMin",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange/1544471-cbcrmin",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_ypcbcrpixelrange/1544471-cbcrmin",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The encoding of the minimum allowed"
+        },
+        {
+          "type": "codeVoice",
+          "code": " {Cb, Cr}"
+        },
+        {
+          "type": "text",
+          "text": " value. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/conversion/understanding_ypcbcr_image_formats": {
+      "title": "Understanding YpCbCr Image Formats",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/conversion/understanding_ypcbcr_image_formats",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/conversion/understanding_ypcbcr_image_formats"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533193-vimageconvert_420yp8_cb8_cr8toar": {
+      "title": "vImageConvert_420Yp8_Cb8_Cr8ToARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533193-vimageconvert_420yp8_cb8_cr8toar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533193-vimageconvert_420yp8_cb8_cr8toar",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a YUV 420Yp8_Cb8_Cr8 format image to an ARGB8888 format image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533095-vimageconvert_420yp8_cbcr8toargb": {
+      "title": "vImageConvert_420Yp8_CbCr8ToARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533095-vimageconvert_420yp8_cbcr8toargb",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533095-vimageconvert_420yp8_cbcr8toargb",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a YUV 420Yp8_CbCr8 format image to an ARGB8888 format image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533259-vimageconvert_422cbypcryp16toarg": {
+      "title": "vImageConvert_422CbYpCrYp16ToARGB16U",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533259-vimageconvert_422cbypcryp16toarg",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533259-vimageconvert_422cbypcryp16toarg",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a YUV 422CbYpCrYp16 format image to an ARGB16U format image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533015-vimageconvert_422cbypcryp16toarg": {
+      "title": "vImageConvert_422CbYpCrYp16ToARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533015-vimageconvert_422cbypcryp16toarg",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533015-vimageconvert_422cbypcryp16toarg",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a YUV 422CbYpCrYp16 format image to an ARGB8888 format image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533199-vimageconvert_422cbypcryp8_aa8to": {
+      "title": "vImageConvert_422CbYpCrYp8_AA8ToARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533199-vimageconvert_422cbypcryp8_aa8to",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533199-vimageconvert_422cbypcryp8_aa8to",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a YUV 422CbYpCrYp8_AA8 format image to an ARGB8888 format image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533032-vimageconvert_422cbypcryp8toargb": {
+      "title": "vImageConvert_422CbYpCrYp8ToARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533032-vimageconvert_422cbypcryp8toargb",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533032-vimageconvert_422cbypcryp8toargb",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a YUV 422CbYpCrYp8 format image to an ARGB8888 format image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533202-vimageconvert_422crypcbypcbypcby": {
+      "title": "vImageConvert_422CrYpCbYpCbYpCbYpCrYpCrYp10ToARGB16Q12",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533202-vimageconvert_422crypcbypcbypcby",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533202-vimageconvert_422crypcbypcbypcby",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a YUV 422CrYpCbYpCbYpCbYpCrYpCrYp10 format image to an ARGB16Q12 format image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533291-vimageconvert_422crypcbypcbypcby": {
+      "title": "vImageConvert_422CrYpCbYpCbYpCbYpCrYpCrYp10ToARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533291-vimageconvert_422crypcbypcbypcby",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533291-vimageconvert_422crypcbypcbypcby",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a YUV 422CrYpCbYpCbYpCbYpCrYpCrYp10 format image to an ARGB8888 format image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533275-vimageconvert_422ypcbypcr8toargb": {
+      "title": "vImageConvert_422YpCbYpCr8ToARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533275-vimageconvert_422ypcbypcr8toargb",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533275-vimageconvert_422ypcbypcr8toargb",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a YUV 422YpCbYpCr8 format image to an ARGB8888 format image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533143-vimageconvert_444aypcbcr16toargb": {
+      "title": "vImageConvert_444AYpCbCr16ToARGB16U",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533143-vimageconvert_444aypcbcr16toargb",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533143-vimageconvert_444aypcbcr16toargb",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a YUV 444AYpCbCr16 format image to an ARGB16U format image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533083-vimageconvert_444aypcbcr16toargb": {
+      "title": "vImageConvert_444AYpCbCr16ToARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533083-vimageconvert_444aypcbcr16toargb",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533083-vimageconvert_444aypcbcr16toargb",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a YUV 444AYpCbCr16 format image to an ARGB8888 format image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533218-vimageconvert_444aypcbcr8toargb8": {
+      "title": "vImageConvert_444AYpCbCr8ToARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533218-vimageconvert_444aypcbcr8toargb8",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533218-vimageconvert_444aypcbcr8toargb8",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a YUV 444AYpCbCr8 format image to an ARGB8888 format image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533186-vimageconvert_444cbypcra8toargb8": {
+      "title": "vImageConvert_444CbYpCrA8ToARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533186-vimageconvert_444cbypcra8toargb8",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533186-vimageconvert_444cbypcra8toargb8",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a YUV 444CbYpCrA8 format image to an ARGB8888 format image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533197-vimageconvert_444crypcb10toargb8": {
+      "title": "vImageConvert_444CrYpCb10ToARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533197-vimageconvert_444crypcb10toargb8",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533197-vimageconvert_444crypcb10toargb8",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a YUV 444CrYpCb10 format image to an ARGB8888 format image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533066-vimageconvert_444crypcb8toargb88": {
+      "title": "vImageConvert_444CrYpCb8ToARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533066-vimageconvert_444crypcb8toargb88",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533066-vimageconvert_444crypcb8toargb88",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a YUV 444CrYpCb8 format image to an ARGB8888 format image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533056-vimageconvert_444crypcb10toargb1": {
+      "title": "vImageConvert_444CrYpCb10ToARGB16Q12",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533056-vimageconvert_444crypcb10toargb1",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533056-vimageconvert_444crypcb10toargb1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a YUV 444CrYpCb10 format image to an ARGB16Q12 format image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533189-vimageconvert_ypcbcrtoargb_gener": {
+      "title": "vImageConvert_YpCbCrToARGB_GenerateConversion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533189-vimageconvert_ypcbcrtoargb_gener",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533189-vimageconvert_ypcbcrtoargb_gener",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Generates the conversion from YpCbCr to ARGB pixel format."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimageypcbcrtype": {
+      "title": "vImageYpCbCrType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimageypcbcrtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimageypcbcrtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants indicating the encoding of a YUV image format type to be used with RGB / Y'CbCr conversions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimageargbtype": {
+      "title": "vImageARGBType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimageargbtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimageargbtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants indicating the encoding of an ARGB image format type to be used with RGB / Y'CbCr conversions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrtoargbmatrix": {
+      "title": "vImage_YpCbCrToARGBMatrix",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrtoargbmatrix",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_ypcbcrtoargbmatrix",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A 3 x 3 matrix for converting Y'CbCr signals to RGB."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrtoargb": {
+      "title": "vImage_YpCbCrToARGB",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrtoargb",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_ypcbcrtoargb",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An opaque representation of a 3 x 3 matrix for converting Y'CbCr signals to RGB."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange": {
+      "title": "vImage_YpCbCrPixelRange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_ypcbcrpixelrange",
+      "abstract": [
+        {
+          "type": "text",
+          "text": " Range and clamping information for Y'CbCr pixel formats."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Pixel Range Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange/1545208-yp_bias",
+        "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange/1546815-cbcr_bias",
+        "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange/1546412-yprangemax",
+        "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange/1545330-cbcrrangemax",
+        "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange/1545930-ypmax",
+        "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange/1546553-ypmin",
+        "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange/1546973-cbcrmax",
+        "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrpixelrange/1544471-cbcrmin"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/conversion/understanding_ypcbcr_image_formats",
+        "doc://com.apple.documentation/documentation/accelerate/1533193-vimageconvert_420yp8_cb8_cr8toar",
+        "doc://com.apple.documentation/documentation/accelerate/1533095-vimageconvert_420yp8_cbcr8toargb",
+        "doc://com.apple.documentation/documentation/accelerate/1533259-vimageconvert_422cbypcryp16toarg",
+        "doc://com.apple.documentation/documentation/accelerate/1533015-vimageconvert_422cbypcryp16toarg",
+        "doc://com.apple.documentation/documentation/accelerate/1533199-vimageconvert_422cbypcryp8_aa8to",
+        "doc://com.apple.documentation/documentation/accelerate/1533032-vimageconvert_422cbypcryp8toargb",
+        "doc://com.apple.documentation/documentation/accelerate/1533202-vimageconvert_422crypcbypcbypcby",
+        "doc://com.apple.documentation/documentation/accelerate/1533291-vimageconvert_422crypcbypcbypcby",
+        "doc://com.apple.documentation/documentation/accelerate/1533275-vimageconvert_422ypcbypcr8toargb",
+        "doc://com.apple.documentation/documentation/accelerate/1533143-vimageconvert_444aypcbcr16toargb",
+        "doc://com.apple.documentation/documentation/accelerate/1533083-vimageconvert_444aypcbcr16toargb",
+        "doc://com.apple.documentation/documentation/accelerate/1533218-vimageconvert_444aypcbcr8toargb8",
+        "doc://com.apple.documentation/documentation/accelerate/1533186-vimageconvert_444cbypcra8toargb8",
+        "doc://com.apple.documentation/documentation/accelerate/1533197-vimageconvert_444crypcb10toargb8",
+        "doc://com.apple.documentation/documentation/accelerate/1533066-vimageconvert_444crypcb8toargb88",
+        "doc://com.apple.documentation/documentation/accelerate/1533056-vimageconvert_444crypcb10toargb1",
+        "doc://com.apple.documentation/documentation/accelerate/1533189-vimageconvert_ypcbcrtoargb_gener",
+        "doc://com.apple.documentation/documentation/accelerate/vimageypcbcrtype",
+        "doc://com.apple.documentation/documentation/accelerate/vimageargbtype",
+        "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrtoargbmatrix",
+        "doc://com.apple.documentation/documentation/accelerate/vimage_ypcbcrtoargb"
+      ],
+      "title": "Converting from YUV Formats",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "typedef"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "struct"
+            },
+            {
+              "kind": "text",
+              "text": " vImage_YpCbCrPixelRange {"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    ..."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "} "
+            },
+            {
+              "kind": "identifier",
+              "text": "vImage_YpCbCrPixelRange"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Y'CbCr formats frequently don't use the entire representable range available to them to represent image data. While a "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "full range"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " video format does use the entire range, a "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "video range"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " format often leaves the extrema unused, except perhaps to represent values outside of the standard "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Y'=[0,1]"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CbCr = [-0.5,0.5]"
+            },
+            {
+              "type": "text",
+              "text": " range. For example, an 8-bit video range format typically uses the range "
+            },
+            {
+              "type": "codeVoice",
+              "code": "[16,235]"
+            },
+            {
+              "type": "text",
+              "text": " for Y' and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "[16,240]"
+            },
+            {
+              "type": "text",
+              "text": " for Cb and Cr."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows examples of typical Y'CbCr pixel ranges:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// video range 8-bit, unclamped",
+            "let pixelRange = vImage_YpCbCrPixelRange(Yp_bias: 16,",
+            "                                         CbCr_bias: 128,",
+            "                                         YpRangeMax: 235,",
+            "                                         CbCrRangeMax: 240,",
+            "                                         YpMax: 255,",
+            "                                         YpMin: 0,",
+            "                                         CbCrMax: 255,",
+            "                                         CbCrMin: 1)",
+            "",
+            " // video range 8-bit, clamped to video range",
+            "let pixelRange = vImage_YpCbCrPixelRange(Yp_bias: 16,",
+            "                                         CbCr_bias: 128,",
+            "                                         YpRangeMax: 265,",
+            "                                         CbCrRangeMax: 240,",
+            "                                         YpMax: 235,",
+            "                                         YpMin: 16,",
+            "                                         CbCrMax: 240,",
+            "                                         CbCrMin: 16)",
+            "        ",
+            "// full range 8-bit, clamped to full range",
+            "let pixelRange = vImage_YpCbCrPixelRange(Yp_bias: 0,",
+            "                                         CbCr_bias: 128,",
+            "                                         YpRangeMax: 255,",
+            "                                         CbCrRangeMax: 255,",
+            "                                         YpMax: 255,",
+            "                                         YpMin: 1,",
+            "                                         CbCrMax: 255,",
+            "                                         CbCrMin: 0)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2936137",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The bias is the prebias for YUV -> RGB and postbias for RGB -> YUV."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

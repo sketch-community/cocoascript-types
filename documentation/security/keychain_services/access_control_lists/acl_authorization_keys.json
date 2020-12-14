@@ -1,0 +1,562 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The operations an access control list entry applies to."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/keychain_services",
+        "doc://com.apple.documentation/documentation/security/keychain_services/access_control_lists"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/keychain_services/access_control_lists/acl_authorization_keys",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1664065,
+  "kind": "symbol",
+  "metadata": {
+    "title": "ACL Authorization Keys",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/keychain_services/access_control_lists/acl_authorization_keys"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/keychain_services/access_control_lists/acl_authorization_keys"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services": {
+      "title": "Keychain Services",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services",
+      "url": "/documentation/security/keychain_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/access_control_lists": {
+      "title": "Access Control Lists",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/access_control_lists",
+      "url": "/documentation/security/keychain_services/access_control_lists",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecaclauthorizationany": {
+      "title": "kSecACLAuthorizationAny",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationany",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecaclauthorizationany",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "No restrictions. This ACL entry applies to all operations available to the caller."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecaclauthorizationlogin": {
+      "title": "kSecACLAuthorizationLogin",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationlogin",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecaclauthorizationlogin",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use for a CSP (smart card) login."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecaclauthorizationgenkey": {
+      "title": "kSecACLAuthorizationGenKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationgenkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecaclauthorizationgenkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Generate a key."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecaclauthorizationdelete": {
+      "title": "kSecACLAuthorizationDelete",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationdelete",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecaclauthorizationdelete",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Delete this item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecaclauthorizationexportwrapped": {
+      "title": "kSecACLAuthorizationExportWrapped",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationexportwrapped",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecaclauthorizationexportwrapped",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Export a wrapped (that is, encrypted) key. This tag is checked on the key being exported; in addition, the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CSSM_ACL_AUTHORIZATION_ENCRYPT"
+        },
+        {
+          "type": "text",
+          "text": " tag is checked for any key used in the wrapping operation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecaclauthorizationexportclear": {
+      "title": "kSecACLAuthorizationExportClear",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationexportclear",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecaclauthorizationexportclear",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Export an unencrypted key."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecaclauthorizationimportwrapped": {
+      "title": "kSecACLAuthorizationImportWrapped",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationimportwrapped",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecaclauthorizationimportwrapped",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Import an encrypted key. This tag is checked on the key being imported; in addition, the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CSSM_ACL_AUTHORIZATION_DECRYPT"
+        },
+        {
+          "type": "text",
+          "text": " tag is checked for any key used in the unwrapping operation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecaclauthorizationimportclear": {
+      "title": "kSecACLAuthorizationImportClear",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationimportclear",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecaclauthorizationimportclear",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Import an unencrypted key."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecaclauthorizationsign": {
+      "title": "kSecACLAuthorizationSign",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationsign",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecaclauthorizationsign",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Digitally sign data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecaclauthorizationencrypt": {
+      "title": "kSecACLAuthorizationEncrypt",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationencrypt",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecaclauthorizationencrypt",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Encrypt data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecaclauthorizationdecrypt": {
+      "title": "kSecACLAuthorizationDecrypt",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationdecrypt",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecaclauthorizationdecrypt",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Decrypt data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecaclauthorizationmac": {
+      "title": "kSecACLAuthorizationMAC",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationmac",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecaclauthorizationmac",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create or verify a message authentication code. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecaclauthorizationderive": {
+      "title": "kSecACLAuthorizationDerive",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationderive",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecaclauthorizationderive",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Derive a new key from another key."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecaclauthorizationkeychaincreate": {
+      "title": "kSecACLAuthorizationKeychainCreate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationkeychaincreate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecaclauthorizationkeychaincreate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a new keychain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecaclauthorizationkeychaindelete": {
+      "title": "kSecACLAuthorizationKeychainDelete",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationkeychaindelete",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecaclauthorizationkeychaindelete",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Delete a keychain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecaclauthorizationkeychainitemread": {
+      "title": "kSecACLAuthorizationKeychainItemRead",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationkeychainitemread",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecaclauthorizationkeychainitemread",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Read an item from a keychain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecaclauthorizationkeychainiteminsert": {
+      "title": "kSecACLAuthorizationKeychainItemInsert",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationkeychainiteminsert",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecaclauthorizationkeychainiteminsert",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Insert an item into a keychain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecaclauthorizationkeychainitemmodify": {
+      "title": "kSecACLAuthorizationKeychainItemModify",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationkeychainitemmodify",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecaclauthorizationkeychainitemmodify",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Modify an item in a keychain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecaclauthorizationkeychainitemdelete": {
+      "title": "kSecACLAuthorizationKeychainItemDelete",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationkeychainitemdelete",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecaclauthorizationkeychainitemdelete",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Delete an item from a keychain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecaclauthorizationchangeacl": {
+      "title": "kSecACLAuthorizationChangeACL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationchangeacl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecaclauthorizationchangeacl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Change an access control list entry. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecaclauthorizationchangeowner": {
+      "title": "kSecACLAuthorizationChangeOwner",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationchangeowner",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecaclauthorizationchangeowner",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "For internal system use only. Use the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CSSM_ACL_AUTHORIZATION_CHANGE_ACL"
+        },
+        {
+          "type": "text",
+          "text": " tag for changes to owner ACL entries."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecaclauthorizationintegrity": {
+      "title": "kSecACLAuthorizationIntegrity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationintegrity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecaclauthorizationintegrity"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecaclauthorizationpartitionid": {
+      "title": "kSecACLAuthorizationPartitionID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationpartitionid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecaclauthorizationpartitionid"
+    },
+    "doc://com.apple.documentation/documentation/security/1402295-secaclcreatewithsimplecontents": {
+      "title": "SecACLCreateWithSimpleContents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1402295-secaclcreatewithsimplecontents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1402295-secaclcreatewithsimplecontents",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new ACL entry with the given characteristics, and adds it to an access instance."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1398788-secaclremove": {
+      "title": "SecACLRemove",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1398788-secaclremove",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1398788-secaclremove",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes the specified ACL entry from the access instance that contains it."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/access_control_lists/acl_authorization_keys": {
+      "title": "ACL Authorization Keys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/access_control_lists/acl_authorization_keys",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/keychain_services/access_control_lists/acl_authorization_keys",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The operations an access control list entry applies to."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seckeychainpromptselector": {
+      "title": "SecKeychainPromptSelector",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seckeychainpromptselector",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seckeychainpromptselector",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Bits that define when a keychain should require a passphrase."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secaclref": {
+      "title": "SecACLRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secaclref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secaclref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An opaque type that represents information about an ACL entry."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1401537-secaclgettypeid": {
+      "title": "SecACLGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1401537-secaclgettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1401537-secaclgettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the unique identifier of the opaque type to which an ACL entry belongs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/ksecaclauthorizationany",
+        "doc://com.apple.documentation/documentation/security/ksecaclauthorizationlogin",
+        "doc://com.apple.documentation/documentation/security/ksecaclauthorizationgenkey",
+        "doc://com.apple.documentation/documentation/security/ksecaclauthorizationdelete",
+        "doc://com.apple.documentation/documentation/security/ksecaclauthorizationexportwrapped",
+        "doc://com.apple.documentation/documentation/security/ksecaclauthorizationexportclear",
+        "doc://com.apple.documentation/documentation/security/ksecaclauthorizationimportwrapped",
+        "doc://com.apple.documentation/documentation/security/ksecaclauthorizationimportclear",
+        "doc://com.apple.documentation/documentation/security/ksecaclauthorizationsign",
+        "doc://com.apple.documentation/documentation/security/ksecaclauthorizationencrypt",
+        "doc://com.apple.documentation/documentation/security/ksecaclauthorizationdecrypt",
+        "doc://com.apple.documentation/documentation/security/ksecaclauthorizationmac",
+        "doc://com.apple.documentation/documentation/security/ksecaclauthorizationderive",
+        "doc://com.apple.documentation/documentation/security/ksecaclauthorizationkeychaincreate",
+        "doc://com.apple.documentation/documentation/security/ksecaclauthorizationkeychaindelete",
+        "doc://com.apple.documentation/documentation/security/ksecaclauthorizationkeychainitemread",
+        "doc://com.apple.documentation/documentation/security/ksecaclauthorizationkeychainiteminsert",
+        "doc://com.apple.documentation/documentation/security/ksecaclauthorizationkeychainitemmodify",
+        "doc://com.apple.documentation/documentation/security/ksecaclauthorizationkeychainitemdelete",
+        "doc://com.apple.documentation/documentation/security/ksecaclauthorizationchangeacl",
+        "doc://com.apple.documentation/documentation/security/ksecaclauthorizationchangeowner",
+        "doc://com.apple.documentation/documentation/security/ksecaclauthorizationintegrity",
+        "doc://com.apple.documentation/documentation/security/ksecaclauthorizationpartitionid"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1402295-secaclcreatewithsimplecontents",
+        "doc://com.apple.documentation/documentation/security/1398788-secaclremove",
+        "doc://com.apple.documentation/documentation/security/seckeychainpromptselector",
+        "doc://com.apple.documentation/documentation/security/secaclref",
+        "doc://com.apple.documentation/documentation/security/1401537-secaclgettypeid"
+      ],
+      "title": "Access Control List Entries",
+      "generated": true
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,592 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Retrieve and filter all of the metadata associated with an asset."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/retrieving_media_metadata",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2948340,
+  "kind": "article",
+  "metadata": {
+    "title": "Retrieving Media Metadata",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_assets_and_metadata/retrieving_media_metadata"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_assets_and_metadata/retrieving_media_metadata"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata": {
+      "title": "Media Assets and Metadata",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata",
+      "url": "/documentation/avfoundation/media_assets_and_metadata",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1385823-availablemetadataformats": {
+      "title": "availableMetadataFormats",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1385823-availablemetadataformats",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1385823-availablemetadataformats"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1387759-metadataforformat": {
+      "title": "metadataForFormat:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1387759-metadataforformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1387759-metadataforformat",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "metadataForFormat:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/retrieving_media_metadata#2948342": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/retrieving_media_metadata#2948342",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/retrieving_media_metadata#2948342"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/retrieving_media_metadata#2948349": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/retrieving_media_metadata#2948349",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/retrieving_media_metadata#2948349"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem": {
+      "title": "AVMetadataItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A metadata item associated with an audiovisual asset or one of its tracks."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscopying": {
+      "title": "NSCopying",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscopying",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscopying"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1390846-stringvalue": {
+      "title": "stringValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1390846-stringvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataitem/1390846-stringvalue"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1390681-numbervalue": {
+      "title": "numberValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1390681-numbervalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataitem/1390681-numbervalue"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1385563-datevalue": {
+      "title": "dateValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1385563-datevalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataitem/1385563-datevalue"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1387641-datavalue": {
+      "title": "dataValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1387641-datavalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataitem/1387641-datavalue"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/retrieving_media_metadata#2948344": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/retrieving_media_metadata#2948344",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/retrieving_media_metadata#2948344"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset": {
+      "title": "AVAsset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/retrieving_media_metadata": {
+      "title": "Retrieving Media Metadata",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/retrieving_media_metadata",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/retrieving_media_metadata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieve and filter all of the metadata associated with an asset."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem": {
+      "title": "AVMutableMetadataItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablemetadataitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mutable metadata item associated with an audiovisual asset or with one of its tracks."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataformat": {
+      "title": "AVMetadataFormat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that defines a metadata format."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitemfilter": {
+      "title": "AVMetadataItemFilter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitemfilter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataitemfilter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that filters selected information from a metadata item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitemvaluerequest": {
+      "title": "AVMetadataItemValueRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitemvaluerequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataitemvaluerequest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to respond to a request to load the value of a metadata item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem",
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablemetadataitem",
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataformat",
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataitemfilter",
+        "doc://com.apple.documentation/documentation/avfoundation/avmetadataitemvaluerequest"
+      ],
+      "title": "Metadata",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Media container formats store descriptive metadata about their media. As a developer, it’s often challenging to work with metadata, because each container format has its own unique metadata format. You typically need a low-level understanding of the format to read and write a container’s metadata, but AVFoundation simplifies working with metadata through the use of its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem"
+            },
+            {
+              "type": "text",
+              "text": " class."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In its most basic form, an instance of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem"
+            },
+            {
+              "type": "text",
+              "text": " is a key-value pair representing a single metadata value such as a movie’s title or an album’s artwork. In the same way that "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset"
+            },
+            {
+              "type": "text",
+              "text": " provides a normalized view of your media, "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem"
+            },
+            {
+              "type": "text",
+              "text": " provides a normalized view of its associated metadata."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Load the Asset's Metadata",
+          "anchor": "2948339"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You determine what metadata formats an asset contains by calling its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1385823-availablemetadataformats"
+            },
+            {
+              "type": "text",
+              "text": " property. This property returns an array of string identifiers for each metadata format it contains. You then use its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1387759-metadataforformat"
+            },
+            {
+              "type": "text",
+              "text": " method to retrieve format-specific metadata values by passing it an appropriate format identifier, as shown below:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let url = Bundle.main.url(forResource: \"audio\", withExtension: \"m4a\")!",
+            "let asset = AVAsset(url: url)",
+            "let formatsKey = \"availableMetadataFormats\"",
+            "",
+            "asset.loadValuesAsynchronously(forKeys: [formatsKey]) {",
+            "    var error: NSError? = nil",
+            "    let status = asset.statusOfValue(forKey: formatsKey, error: &error)",
+            "    if status == .loaded {",
+            "        for format in asset.availableMetadataFormats {",
+            "            let metadata = asset.metadata(forFormat: format)",
+            "            // process format-specific metadata collection",
+            "        }",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2948342",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Filter the Metadata Collection",
+          "anchor": "2948347"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After you’ve retrieved a collection of metadata, the next step is to find the specific values of interest within it. You use the various class methods of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVMetadataItem"
+            },
+            {
+              "type": "text",
+              "text": " to filter metadata collections down to a discrete set of values."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The easiest way to find specific metadata items is to filter by identifier, which groups a key space and key into a single unit. The following example shows how to retrieve the title item from the common key space:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Get the previously loaded common metadata.",
+            "let metadata = asset.commonMetadata",
+            "let titleID = AVMetadataIdentifier.commonIdentifierTitle",
+            "let titleItems = AVMetadataItem.metadataItems(from: metadata,",
+            "                                              filteredByIdentifier: titleID)",
+            "guard let item = titleItems.first else { return }",
+            "// Process the title item."
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2948349",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The filtering methods of "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem"
+                },
+                {
+                  "type": "text",
+                  "text": " return collections of items instead of a single instance. In many cases, the returned collection contains a single element, but if the media contains localized metadata or if you’re retrieving data from the common key space and the same value exists in multiple key spaces, a distinct value matching each locale or key space is returned."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Find Specific Values",
+          "anchor": "2948348"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After you’ve retrieved a specific metadata item, the next step is to call its value property. The value returned is an object type adopting the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nscopying"
+            },
+            {
+              "type": "text",
+              "text": " protocols. You can manually cast the value to the appropriate type, but it’s safer and easier to use the metadata item’s type coercion properties. You can use its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1390846-stringvalue"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1390681-numbervalue"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1385563-datevalue"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem/1387641-datavalue"
+            },
+            {
+              "type": "text",
+              "text": " properties to coerce the value to the appropriate type. For instance, the following example shows how you retrieve the artwork associated with an iTunes music track:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// The collection of common metadata",
+            "let metadata = asset.commonMetadata",
+            "",
+            "// Filter metadata to find the asset's artwork",
+            "let artworkItems = AVMetadataItem.metadataItems(from: metadata,",
+            "                                                filteredByIdentifier: .commonIdentifierArtwork)",
+            "",
+            "if let artworkItem = artworkItems.first {",
+            "    // Coerce the value to a Data value using its dataValue property",
+            "    if let imageData = artworkItem.dataValue {",
+            "        let image = UIImage(data: imageData)",
+            "        // Process the image.",
+            "    } else {",
+            "        // No image data was found.",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2948344",
+            "title": "Listing 3"
+          }
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,866 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A class that represents a buffer of audio data with a format. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing",
+        "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine",
+        "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/avaudioformat",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1387670,
+  "kind": "symbol",
+  "metadata": {
+    "title": "AVAudioFormat",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "8.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.10",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)AVAudioFormat",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/avaudioformat"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/avaudioformat"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing": {
+      "title": "Audio Playback, Recording, and Processing",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing",
+      "url": "/documentation/avfoundation/audio_playback_recording_and_processing",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine": {
+      "title": "AVAudioEngine",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine",
+      "url": "/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats": {
+      "title": "Audio Settings and Formats",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats",
+      "url": "/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/coremedia/cmaudioformatdescriptionref": {
+      "title": "CMAudioFormatDescriptionRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coremedia/cmaudioformatdescriptionref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coremedia/cmaudioformatdescriptionref"
+    },
+    "doc://com.apple.documentation/documentation/coreaudiotypes/audiostreambasicdescription": {
+      "title": "AudioStreamBasicDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreaudiotypes/audiostreambasicdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreaudiotypes/audiostreambasicdescription"
+    },
+    "doc://com.apple.documentation/documentation/coreaudiotypes/audiochannellayout": {
+      "title": "AudioChannelLayout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreaudiotypes/audiochannellayout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreaudiotypes/audiochannellayout"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioplayer": {
+      "title": "AVAudioPlayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioplayer"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiorecorder": {
+      "title": "AVAudioRecorder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiorecorder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiorecorder"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nssecurecoding": {
+      "title": "NSSecureCoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nssecurecoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nssecurecoding"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1388426-initstandardformatwithsamplerate": {
+      "title": "initStandardFormatWithSampleRate:channelLayout:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1388426-initstandardformatwithsamplerate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioformat/1388426-initstandardformatwithsamplerate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a newly allocated audio format instance as a deinterleaved float with the specified sample rate and channel layout."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initStandardFormatWithSampleRate:channelLayout:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1390416-initstandardformatwithsamplerate": {
+      "title": "initStandardFormatWithSampleRate:channels:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1390416-initstandardformatwithsamplerate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioformat/1390416-initstandardformatwithsamplerate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a newly allocated audio format instance with the specified sample rate and channel count."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initStandardFormatWithSampleRate:channels:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1390591-initwithcommonformat": {
+      "title": "initWithCommonFormat:sampleRate:channels:interleaved:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1390591-initwithcommonformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioformat/1390591-initwithcommonformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a newly allocated audio format instance"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithCommonFormat:sampleRate:channels:interleaved:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1389361-initwithcommonformat": {
+      "title": "initWithCommonFormat:sampleRate:interleaved:channelLayout:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1389361-initwithcommonformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioformat/1389361-initwithcommonformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a newly allocated audio format instance with the specified auto format, sample rate, interleaved format and channel layout."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithCommonFormat:sampleRate:interleaved:channelLayout:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1387931-initwithsettings": {
+      "title": "initWithSettings:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1387931-initwithsettings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioformat/1387931-initwithsettings",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a newly allocated audio format instance using a settings dictionary."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithSettings:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1390106-initwithstreamdescription": {
+      "title": "initWithStreamDescription:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1390106-initwithstreamdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioformat/1390106-initwithstreamdescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a newly allocated audio format instance from a stream description."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithStreamDescription:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1389347-initwithstreamdescription": {
+      "title": "initWithStreamDescription:channelLayout:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1389347-initwithstreamdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioformat/1389347-initwithstreamdescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a newly allocated audio format instance from a stream description and channel layout."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithStreamDescription:channelLayout:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1387465-initwithcmaudioformatdescription": {
+      "title": "initWithCMAudioFormatDescription:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1387465-initwithcmaudioformatdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioformat/1387465-initwithcmaudioformatdescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a newly allocated audio format instance from a Core Media audio format description."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithCMAudioFormatDescription:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1386843-streamdescription": {
+      "title": "streamDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1386843-streamdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioformat/1386843-streamdescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The audio stream description."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1385683-isequal": {
+      "title": "isEqual:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1385683-isequal",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioformat/1385683-isequal",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value that indicates whether the audio format instance and a given object have identical format settings."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "isEqual:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1386831-channelcount": {
+      "title": "channelCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1386831-channelcount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioformat/1386831-channelcount",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number of channels of audio data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1390671-channellayout": {
+      "title": "channelLayout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1390671-channellayout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioformat/1390671-channellayout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The underlying audio channel layout."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1387814-samplerate": {
+      "title": "sampleRate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1387814-samplerate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioformat/1387814-samplerate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The audio format sampling rate in hertz."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1387467-formatdescription": {
+      "title": "formatDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1387467-formatdescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioformat/1387467-formatdescription",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The audio format description as a  "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coremedia/cmaudioformatdescriptionref"
+        },
+        {
+          "type": "text",
+          "text": ", for use with Core Media APIs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1387347-standard": {
+      "title": "standard",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1387347-standard",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioformat/1387347-standard",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the format is deinterleaved native-endian float."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1389340-interleaved": {
+      "title": "interleaved",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1389340-interleaved",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioformat/1389340-interleaved",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that describes whether the samples are interleaved."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1389455-commonformat": {
+      "title": "commonFormat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1389455-commonformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioformat/1389455-commonformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The common format identifier."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1386904-settings": {
+      "title": "settings",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1386904-settings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioformat/1386904-settings",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The format represented as a dictionary with keys from "
+        },
+        {
+          "type": "codeVoice",
+          "code": "AVAudioSettings"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1639892-magiccookie": {
+      "title": "magicCookie",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1639892-magiccookie",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioformat/1639892-magiccookie",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that contains metadata required by encoders and decoders."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiocommonformat": {
+      "title": "AVAudioCommonFormat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiocommonformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiocommonformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "These constants describe the common audio formats."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioformat": {
+      "title": "AVAudioFormat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A class that represents a buffer of audio data with a format. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiochannellayout": {
+      "title": "AVAudioChannelLayout",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiochannellayout",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiochannellayout",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The roles of a set of audio channels."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avchannellayoutkey": {
+      "title": "AVChannelLayoutKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avchannellayoutkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avchannellayoutkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The corresponding value is an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "NSData"
+        },
+        {
+          "type": "text",
+          "text": " object containing an "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/coreaudiotypes/audiochannellayout"
+        },
+        {
+          "type": "text",
+          "text": " structure."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats/linear_pcm_format_settings": {
+      "title": "Linear PCM Format Settings",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats/linear_pcm_format_settings",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats/linear_pcm_format_settings",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Apply audio settings to linear PCM audio formats."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioplayer/general_audio_format_settings": {
+      "title": "General Audio Format Settings",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioplayer/general_audio_format_settings",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/avfoundation/avaudioplayer/general_audio_format_settings",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Audio settings that apply to all audio formats handled by the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioplayer"
+        },
+        {
+          "type": "text",
+          "text": " and "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiorecorder"
+        },
+        {
+          "type": "text",
+          "text": " classes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nssecurecoding"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating a New Audio Format Representation",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1388426-initstandardformatwithsamplerate",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1390416-initstandardformatwithsamplerate",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1390591-initwithcommonformat",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1389361-initwithcommonformat",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1387931-initwithsettings",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1390106-initwithstreamdescription",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1389347-initwithstreamdescription",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1387465-initwithcmaudioformatdescription"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting the Audio Stream Description",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1386843-streamdescription"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Comparing Instances",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1385683-isequal"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Audio Format Values",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1386831-channelcount",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1390671-channellayout",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1387814-samplerate",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1387467-formatdescription"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Determining the Audio Format",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1387347-standard",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1389340-interleaved",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1389455-commonformat",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1386904-settings",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioformat/1639892-magiccookie"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiocommonformat"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiochannellayout",
+        "doc://com.apple.documentation/documentation/avfoundation/avchannellayoutkey",
+        "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats/linear_pcm_format_settings",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioplayer/general_audio_format_settings"
+      ],
+      "title": "Formats",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "AVAudioFormat"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Instances of this class are immutable."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This class wraps a Core Audio "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreaudiotypes/audiostreambasicdescription"
+            },
+            {
+              "type": "text",
+              "text": " structure, with convenience initializers and accessors for common formats, including Core Audio’s standard deinterleaved, 32-bit floating-point format."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

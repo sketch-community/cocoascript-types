@@ -1,0 +1,424 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The constants that indicate the status of the signature and signer information in a signed message."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/cryptographic_message_syntax_services"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/cmssignerstatus",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1401682,
+  "kind": "symbol",
+  "metadata": {
+    "title": "CMSSignerStatus",
+    "role": "symbol",
+    "roleHeading": "Enumeration",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.5",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:@T@CMSSignerStatus",
+    "symbolKind": "enum"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/cmssignerstatus"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/cmssignerstatus"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/cryptographic_message_syntax_services": {
+      "title": "Cryptographic Message Syntax Services",
+      "identifier": "doc://com.apple.documentation/documentation/security/cryptographic_message_syntax_services",
+      "url": "/documentation/security/cryptographic_message_syntax_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/1402067-cmsdecodersetdetachedcontent": {
+      "title": "CMSDecoderSetDetachedContent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1402067-cmsdecodersetdetachedcontent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1402067-cmsdecodersetdetachedcontent"
+    },
+    "doc://com.apple.documentation/documentation/security/1396762-cmsdecodercopysignerstatus": {
+      "title": "CMSDecoderCopySignerStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396762-cmsdecodercopysignerstatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396762-cmsdecodercopysignerstatus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtains the status of a CMS message's signature."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/cmssignerstatus/kcmssignerunsigned": {
+      "title": "kCMSSignerUnsigned",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/cmssignerstatus/kcmssignerunsigned",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/cmssignerstatus/kcmssignerunsigned",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The message was not signed."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/cmssignerstatus/kcmssignervalid": {
+      "title": "kCMSSignerValid",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/cmssignerstatus/kcmssignervalid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/cmssignerstatus/kcmssignervalid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The message was signed and both the signature and the signer certificate have been verified."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/cmssignerstatus/kcmssignerneedsdetachedcontent": {
+      "title": "kCMSSignerNeedsDetachedContent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/cmssignerstatus/kcmssignerneedsdetachedcontent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/cmssignerstatus/kcmssignerneedsdetachedcontent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The message was signed but has detached content. You must call the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/security/1402067-cmsdecodersetdetachedcontent"
+        },
+        {
+          "type": "text",
+          "text": " function before ascertaining the signature status."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/cmssignerstatus/kcmssignerinvalidsignature": {
+      "title": "kCMSSignerInvalidSignature",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/cmssignerstatus/kcmssignerinvalidsignature",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/cmssignerstatus/kcmssignerinvalidsignature",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The message was signed but the signature is invalid."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/cmssignerstatus/kcmssignerinvalidcert": {
+      "title": "kCMSSignerInvalidCert",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/cmssignerstatus/kcmssignerinvalidcert",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/cmssignerstatus/kcmssignerinvalidcert",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The message was signed but the signer's certificate could not be verified."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/cmssignerstatus/kcmssignerinvalidindex": {
+      "title": "kCMSSignerInvalidIndex",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/cmssignerstatus/kcmssignerinvalidindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/cmssignerstatus/kcmssignerinvalidindex",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The specified value for the signer index ("
+        },
+        {
+          "type": "codeVoice",
+          "code": "signerIndex"
+        },
+        {
+          "type": "text",
+          "text": " parameter) is greater than the number of signers of the message minus one ("
+        },
+        {
+          "type": "codeVoice",
+          "code": "signerIndex > (numSigners – 1)"
+        },
+        {
+          "type": "text",
+          "text": ")."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1392933-cmsdecodersetsearchkeychain": {
+      "title": "CMSDecoderSetSearchKeychain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1392933-cmsdecodersetsearchkeychain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1392933-cmsdecodersetsearchkeychain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies the keychains to search for intermediate certificates to be used in verifying a signed message's signer certificates."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1395297-cmsdecodergetnumsigners": {
+      "title": "CMSDecoderGetNumSigners",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1395297-cmsdecodergetnumsigners",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1395297-cmsdecodergetnumsigners",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtains the number of signers of a message."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1400778-cmsdecodercopysigneremailaddress": {
+      "title": "CMSDecoderCopySignerEmailAddress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1400778-cmsdecodercopysigneremailaddress",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1400778-cmsdecodercopysigneremailaddress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtains the email address of the specified signer of a CMS message."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1398566-cmsdecodercopysignercert": {
+      "title": "CMSDecoderCopySignerCert",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1398566-cmsdecodercopysignercert",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1398566-cmsdecodercopysignercert",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtains the certificate of the specified signer of a CMS message."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/cmssignerstatus": {
+      "title": "CMSSignerStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/cmssignerstatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/cmssignerstatus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The constants that indicate the status of the signature and signer information in a signed message."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/cmssignerstatus/kcmssignerunsigned",
+        "doc://com.apple.documentation/documentation/security/cmssignerstatus/kcmssignervalid",
+        "doc://com.apple.documentation/documentation/security/cmssignerstatus/kcmssignerneedsdetachedcontent",
+        "doc://com.apple.documentation/documentation/security/cmssignerstatus/kcmssignerinvalidsignature",
+        "doc://com.apple.documentation/documentation/security/cmssignerstatus/kcmssignerinvalidcert",
+        "doc://com.apple.documentation/documentation/security/cmssignerstatus/kcmssignerinvalidindex"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1392933-cmsdecodersetsearchkeychain",
+        "doc://com.apple.documentation/documentation/security/1395297-cmsdecodergetnumsigners",
+        "doc://com.apple.documentation/documentation/security/1400778-cmsdecodercopysigneremailaddress",
+        "doc://com.apple.documentation/documentation/security/1398566-cmsdecodercopysignercert",
+        "doc://com.apple.documentation/documentation/security/1396762-cmsdecodercopysignerstatus"
+      ],
+      "title": "Signature Verification",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "typedef"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "enum"
+            },
+            {
+              "kind": "text",
+              "text": " CMSSignerStatus : "
+            },
+            {
+              "kind": "keyword",
+              "text": "uint32_t"
+            },
+            {
+              "kind": "text",
+              "text": " {"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    ..."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "} "
+            },
+            {
+              "kind": "identifier",
+              "text": "CMSSignerStatus"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "These are obtained using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1396762-cmsdecodercopysignerstatus"
+            },
+            {
+              "type": "text",
+              "text": " function."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

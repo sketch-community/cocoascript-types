@@ -1,0 +1,949 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Convolves a region of interest within a Planar16U source image by a seperable kernel."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/convolution"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vimage",
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations",
+        "doc://com.apple.documentation/documentation/accelerate/convolution"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/3546605-vimagesepconvolve_planar16u",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3546605,
+  "kind": "symbol",
+  "metadata": {
+    "title": "vImageSepConvolve_Planar16U",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "14.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "11.0",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "14.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "14.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "7.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@F@vImageSepConvolve_Planar16U",
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/3546605-vimagesepconvolve_planar16u"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/3546605-vimagesepconvolve_planar16u"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/convolution": {
+      "title": "Convolution",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/convolution",
+      "url": "/documentation/accelerate/convolution",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage": {
+      "title": "vImage",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage",
+      "url": "/documentation/accelerate/vimage",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations": {
+      "title": "vImage Operations",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations",
+      "url": "/documentation/accelerate/vimage/vimage_operations",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-media-3591855": {
+      "identifier": "link-media-3591855",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/3546605-vimagesepconvolve_planar16u#3591855"
+    },
+    "media-3591855": {
+      "identifier": "media-3591855",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 84
+          },
+          "url": "https://docs-assets.developer.apple.com/published/e7f35aacec/original-1585663372.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 84
+          },
+          "url": "https://docs-assets.developer.apple.com/published/4113b1f5e7/rendered2x-1585663375.png"
+        }
+      ],
+      "alt": "Matrix multiplication that describes the column matrix that contains the values one, two, one multiplied by the row matrix that contains the values minus one, zero, one. The result is a square matrix that contains the values minus one, zero, one, minus two, zero, two, minus one, zero, one.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/3546605-vimagesepconvolve_planar16u#3591848": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/3546605-vimagesepconvolve_planar16u#3591848",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/3546605-vimagesepconvolve_planar16u#3591848"
+    },
+    "link-media-3591850": {
+      "identifier": "link-media-3591850",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/accelerate/3546605-vimagesepconvolve_planar16u#3591850"
+    },
+    "media-3591850": {
+      "identifier": "media-3591850",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 257
+          },
+          "url": "https://docs-assets.developer.apple.com/published/95c8182eb4/original-1587977315.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 257
+          },
+          "url": "https://docs-assets.developer.apple.com/published/713313e380/rendered2x-1587977320.png"
+        }
+      ],
+      "alt": "An image of some buildings before and after applying an edge detection filter.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagecopyinplace": {
+      "title": "kvImageCopyInPlace",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagecopyinplace",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1578976-processing_flags/kvimagecopyinplace"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagetruncatekernel": {
+      "title": "kvImageTruncateKernel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagetruncatekernel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1578976-processing_flags/kvimagetruncatekernel"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagebackgroundcolorfill": {
+      "title": "kvImageBackgroundColorFill",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagebackgroundcolorfill",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1578976-processing_flags/kvimagebackgroundcolorfill"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimageedgeextend": {
+      "title": "kvImageEdgeExtend",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimageedgeextend",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1578976-processing_flags/kvimageedgeextend"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagedonottile": {
+      "title": "kvImageDoNotTile",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagedonottile",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1578976-processing_flags/kvimagedonottile"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_error": {
+      "title": "vImage_Error",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_error",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_error"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_buffer": {
+      "title": "vImage_Buffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_buffer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_buffer"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimagepixelcount": {
+      "title": "vImagePixelCount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimagepixelcount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimagepixelcount"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_flags": {
+      "title": "vImage_Flags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_flags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_flags"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/3546608-vimagesepconvolve_planarf": {
+      "title": "vImageSepConvolve_PlanarF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/3546608-vimagesepconvolve_planarf",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/3546608-vimagesepconvolve_planarf",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convolves a region of interest within a PlanarF source image by a seperable kernel."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/3546606-vimagesepconvolve_planar8": {
+      "title": "vImageSepConvolve_Planar8",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/3546606-vimagesepconvolve_planar8",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/3546606-vimagesepconvolve_planar8",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convolves a region of interest within a Planar8 source image by a seperable kernel."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/3546605-vimagesepconvolve_planar16u": {
+      "title": "vImageSepConvolve_Planar16U",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/3546605-vimagesepconvolve_planar16u",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/3546605-vimagesepconvolve_planar16u",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convolves a region of interest within a Planar16U source image by a seperable kernel."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/3546607-vimagesepconvolve_planar8to16u": {
+      "title": "vImageSepConvolve_Planar8to16U",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/3546607-vimagesepconvolve_planar8to16u",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/3546607-vimagesepconvolve_planar8to16u",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convolves a region of interest within a Planar8 source image by a seperable kernel, writing the result to a Planat16U destination."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/3546608-vimagesepconvolve_planarf",
+        "doc://com.apple.documentation/documentation/accelerate/3546606-vimagesepconvolve_planar8",
+        "doc://com.apple.documentation/documentation/accelerate/3546607-vimagesepconvolve_planar8to16u"
+      ],
+      "title": "Convolving With Separable Filter Kernels",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vImage_Error",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_error",
+              "text": "vImage_Error"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "vImageSepConvolve_Planar16U"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vImage_Buffer",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_buffer",
+              "text": "vImage_Buffer"
+            },
+            {
+              "kind": "text",
+              "text": " *src, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vImage_Buffer",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_buffer",
+              "text": "vImage_Buffer"
+            },
+            {
+              "kind": "text",
+              "text": " *dest, "
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " *tempBuffer, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vImagePixelCount",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimagepixelcount",
+              "text": "vImagePixelCount"
+            },
+            {
+              "kind": "text",
+              "text": " srcOffsetToROI_X, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vImagePixelCount",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimagepixelcount",
+              "text": "vImagePixelCount"
+            },
+            {
+              "kind": "text",
+              "text": " srcOffsetToROI_Y, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "float"
+            },
+            {
+              "kind": "text",
+              "text": " *kernelX, "
+            },
+            {
+              "kind": "keyword",
+              "text": "uint32_t"
+            },
+            {
+              "kind": "text",
+              "text": " kernelX_width, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "float"
+            },
+            {
+              "kind": "text",
+              "text": " *kernelY, "
+            },
+            {
+              "kind": "keyword",
+              "text": "uint32_t"
+            },
+            {
+              "kind": "text",
+              "text": " kernelY_width, "
+            },
+            {
+              "kind": "keyword",
+              "text": "float"
+            },
+            {
+              "kind": "text",
+              "text": " bias, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@Pixel_16U",
+              "identifier": "symbol-1544579",
+              "text": "Pixel_16U"
+            },
+            {
+              "kind": "text",
+              "text": " backgroundColor, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vImage_Flags",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_flags",
+              "text": "vImage_Flags"
+            },
+            {
+              "kind": "text",
+              "text": " flags);"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "src",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A pointer to a vImage buffer structure that contains data for the source image."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "dest",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A pointer to a vImage buffer data structure. You’re responsible for filling out the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "height"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "width"
+                },
+                {
+                  "type": "text",
+                  "text": ", and "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "rowBytes"
+                },
+                {
+                  "type": "text",
+                  "text": " fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer to which this structure points contains the destination image data. When you no longer need the data buffer, you must deallocate the memory. The size dimensions of the destination buffer also specifies the size of the region of interest in the source buffer."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "tempBuffer",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A pointer to a temporary buffer. If you pass "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NULL"
+                },
+                {
+                  "type": "text",
+                  "text": ", the function allocates the buffer, then deallocates it before returning. Alternatively, you can allocate the buffer yourself, in which case you’re responsible for deallocating it when you no longer need it."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "srcOffsetToROI_X",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The horizontal offset, in pixels, to the upper-left pixel of the region of interest within the source image."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "srcOffsetToROI_Y",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The vertical offset, in pixels, to the upper-left pixel of the region of interest within the source image."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "kernelX",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A pointer to the 1D horizontal weights."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "kernelX_width",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The number of elements in the horizontal weights array."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "kernelY ",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A pointer to the 1D vertical weights."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "kernelY_width  ",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The number of elements in the vertical weights array."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "bias",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The value to add to each element in the convolution result, before performing any clipping."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "backgroundColor",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A background color. If you supply a color, you must also set the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "kvImageBackgroundColorFill"
+                },
+                {
+                  "type": "text",
+                  "text": " flag, otherwise the function ignores the color."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "flags",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The options to use when performing the convolution operation. You must set exactly one of the following flags to specify how vImage handles pixel locations beyond the edge of the source image: "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagecopyinplace"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagetruncatekernel"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagebackgroundcolorfill"
+                },
+                {
+                  "type": "text",
+                  "text": ", or "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimageedgeextend"
+                },
+                {
+                  "type": "text",
+                  "text": ". "
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If your code implements its own tiling or its own multithreading, pass "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagedonottile"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A separable convolution applies two separate 1D filters along the rows and columns of an image in succession. This allows for a faster implementation compared to applying the corresponding 2D convolution filter."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An example of separable convolution is the edge-detection Sobel filter, for approximating the image gradient. The Sobel filter is the outer product of the averaging filter, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "[1, 2, 1]"
+            },
+            {
+              "type": "text",
+              "text": ", and the differentiation filter, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "[-1, 0, 1]"
+            },
+            {
+              "type": "text",
+              "text": ". For the image x-derivative, this results in the general 2D filter:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3591855",
+              "metadata": {
+                "anchor": "3591855",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Note that the differentiation filter produces a result that contains, on average, half of the destination values having a negative value. Add a bias of 128 to allow the operation to represent values in the range "
+            },
+            {
+              "type": "codeVoice",
+              "code": "-1...1"
+            },
+            {
+              "type": "text",
+              "text": " as unsigned 8-bit integer destination pixels. For example, the operation represents a result of -1 as 0 in the destination, and represents a result of 1 as 255 in the destination."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows how to apply the averaging and differentiation components of the Sobel filter to an 8-bit planar buffer:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let kernelX: [Float] = [1, 2, 1]",
+            "let kernelY: [Float] = [-1, 0, 1]",
+            "let bias = Float(128)",
+            "let backgroundColor = Pixel_16U(0)",
+            "",
+            "// `planarSourceBuffer` contains the source image.",
+            "// `destinationBuffer` is the destination buffer, initialized by `vImageBuffer_Init`.",
+            "",
+            "let error = vImageSepConvolve_Planar8(&planarSourceBuffer,",
+            "                                      &destinationBuffer,",
+            "                                      nil,",
+            "                                      0, 0,",
+            "                                      kernelX, UInt32(kernelX.count),",
+            "                                      kernelY, UInt32(kernelY.count),",
+            "                                      bias,",
+            "                                      backgroundColor,",
+            "                                      vImage_Flags(kvImageBackgroundColorFill))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3591848",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following image shows two photographs, with the original image on the left, and the image after applying the Sobel filter on the right:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3591850",
+              "metadata": {
+                "anchor": "3591850",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

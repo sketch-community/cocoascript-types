@@ -1,0 +1,2950 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Capture photos with depth data and record video using the front and rear iPhone and iPad cameras."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3017158,
+  "kind": "article",
+  "metadata": {
+    "title": "AVCam: Building a Camera App",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.1",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture": {
+      "title": "Cameras and Media Capture",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture",
+      "url": "/documentation/avfoundation/cameras_and_media_capture",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturesession": {
+      "title": "AVCaptureSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturesession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturesession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that manages capture activity and coordinates the flow of data from input devices to capture outputs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403218": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403218",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403218"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview": {
+      "title": "UIView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturevideopreviewlayer": {
+      "title": "AVCaptureVideoPreviewLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideopreviewlayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturevideopreviewlayer"
+    },
+    "link-media-3403217": {
+      "identifier": "link-media-3403217",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403217"
+    },
+    "media-3403217": {
+      "identifier": "media-3403217",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 542,
+            "height": 200
+          },
+          "url": "https://docs-assets.developer.apple.com/published/03c342d2de/641b82d0-4d99-4c1e-bce5-dcfc135d094c.png"
+        }
+      ],
+      "alt": "A diagram of the AVCam app’s architecture, including input devices and capture output in relation to the main capture session.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/calayer": {
+      "title": "CALayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/calayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/calayer"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403219": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403219",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403219"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/setting_up_a_capture_session": {
+      "title": "Setting Up a Capture Session",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/setting_up_a_capture_session",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/setting_up_a_capture_session",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configure input devices, output media, preview views, and basic settings before capturing photos or video."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice": {
+      "title": "AVCaptureDevice",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avauthorizationstatus": {
+      "title": "AVAuthorizationStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avauthorizationstatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avauthorizationstatus"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_ios": {
+      "title": "Requesting Authorization for Media Capture on iOS",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_ios",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_ios"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403222": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403222",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403222"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403223": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403223",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403223"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturesessionwasinterruptednotification": {
+      "title": "AVCaptureSessionWasInterruptedNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturesessionwasinterruptednotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturesessionwasinterruptednotification"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403225": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403225",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403225"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403226": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403226",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403226"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403227": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403227",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403227"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403228": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403228",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403228"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturesystempressurestate": {
+      "title": "AVCaptureSystemPressureState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturesystempressurestate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturesystempressurestate"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403229": {
+      "title": "Listing 9",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403229",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403229"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403231": {
+      "title": "Listing 10",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403231",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403231"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings": {
+      "title": "AVCapturePhotoSettings",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotosettings"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403232": {
+      "title": "Listing 11",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403232",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403232"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648765-capturephotowithsettings": {
+      "title": "capturePhotoWithSettings:delegate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648765-capturephotowithsettings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotooutput/1648765-capturephotowithsettings",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "capturePhotoWithSettings:delegate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403233": {
+      "title": "Listing 12",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403233",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403233"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate": {
+      "title": "AVCapturePhotoCaptureDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotocapturedelegate"
+    },
+    "link-media-3403235": {
+      "identifier": "link-media-3403235",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403235"
+    },
+    "media-3403235": {
+      "identifier": "media-3403235",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 582,
+            "height": 310
+          },
+          "url": "https://docs-assets.developer.apple.com/published/9682e6da8f/ddbcc979-3cd8-4f5d-a9b3-2b8b155c65e4.png"
+        }
+      ],
+      "alt": "A timeline of delegate callbacks for still photo capture.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778621-captureoutput": {
+      "title": "captureOutput:willBeginCaptureForResolvedSettings:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778621-captureoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotocapturedelegate/1778621-captureoutput",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "captureOutput:willBeginCaptureForResolvedSettings:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcaptureresolvedphotosettings/1648781-livephotomoviedimensions": {
+      "title": "livePhotoMovieDimensions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureresolvedphotosettings/1648781-livephotomoviedimensions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcaptureresolvedphotosettings/1648781-livephotomoviedimensions"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403236": {
+      "title": "Listing 13",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403236",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403236"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778625-captureoutput": {
+      "title": "captureOutput:willCapturePhotoForResolvedSettings:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778625-captureoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotocapturedelegate/1778625-captureoutput",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "captureOutput:willCapturePhotoForResolvedSettings:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403237": {
+      "title": "Listing 14",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403237",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403237"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/2873949-captureoutput": {
+      "title": "captureOutput:didFinishProcessingPhoto:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/2873949-captureoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotocapturedelegate/2873949-captureoutput",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "captureOutput:didFinishProcessingPhoto:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403238": {
+      "title": "Listing 15",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403238",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403238"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778618-captureoutput": {
+      "title": "captureOutput:didFinishCaptureForResolvedSettings:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778618-captureoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotocapturedelegate/1778618-captureoutput",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "captureOutput:didFinishCaptureForResolvedSettings:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403239": {
+      "title": "Listing 16",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403239",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403239"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/tracking_photo_capture_progress": {
+      "title": "Tracking Photo Capture Progress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/tracking_photo_capture_progress",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/tracking_photo_capture_progress"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/1648681-livephotomoviefileurl": {
+      "title": "livePhotoMovieFileURL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/1648681-livephotomoviefileurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotosettings/1648681-livephotomoviefileurl"
+    },
+    "link-media-3403241": {
+      "identifier": "link-media-3403241",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403241"
+    },
+    "media-3403241": {
+      "identifier": "media-3403241",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 640,
+            "height": 374
+          },
+          "url": "https://docs-assets.developer.apple.com/published/b286f39fa5/02d45702-e78f-4e15-9603-fa1f97f53d3e.png"
+        }
+      ],
+      "alt": "A timeline of delegate callbacks for Live Photo capture.",
+      "title": "Figure 3"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778658-captureoutput": {
+      "title": "captureOutput:didFinishRecordingLivePhotoMovieForEventualFileAtURL:resolvedSettings:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778658-captureoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotocapturedelegate/1778658-captureoutput",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "captureOutput:didFinishRecordingLivePhotoMovieForEventualFileAtURL:resolvedSettings:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403242": {
+      "title": "Listing 17",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403242",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403242"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778637-captureoutput": {
+      "title": "captureOutput:didFinishProcessingLivePhotoToMovieFileAtURL:duration:photoDisplayTime:resolvedSettings:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778637-captureoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotocapturedelegate/1778637-captureoutput",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "captureOutput:didFinishProcessingLivePhotoToMovieFileAtURL:duration:photoDisplayTime:resolvedSettings:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403243": {
+      "title": "Listing 18",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403243",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403243"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos": {
+      "title": "Capturing Still and Live Photos",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403245": {
+      "title": "Listing 19",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403245",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403245"
+    },
+    "doc://com.apple.documentation/documentation/imageio": {
+      "title": "Image I/O",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/imageio",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/imageio"
+    },
+    "doc://com.apple.documentation/documentation/imageio/kcgimageauxiliarydatatypeportraiteffectsmatte": {
+      "title": "kCGImageAuxiliaryDataTypePortraitEffectsMatte",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/imageio/kcgimageauxiliarydatatypeportraiteffectsmatte",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/imageio/kcgimageauxiliarydatatypeportraiteffectsmatte"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403246": {
+      "title": "Listing 20",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403246",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403246"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_photos_with_depth": {
+      "title": "Capturing Photos with Depth",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_photos_with_depth",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_photos_with_depth"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsemanticsegmentationmattetypehair": {
+      "title": "AVSemanticSegmentationMatteTypeHair",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsemanticsegmentationmattetypehair",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsemanticsegmentationmattetypehair"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsemanticsegmentationmattetypeskin": {
+      "title": "AVSemanticSegmentationMatteTypeSkin",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsemanticsegmentationmattetypeskin",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsemanticsegmentationmattetypeskin"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsemanticsegmentationmattetypeteeth": {
+      "title": "AVSemanticSegmentationMatteTypeTeeth",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsemanticsegmentationmattetypeteeth",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsemanticsegmentationmattetypeteeth"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403248": {
+      "title": "Listing 21",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403248",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403248"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/3153009-semanticsegmentationmattefortype": {
+      "title": "semanticSegmentationMatteForType:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/3153009-semanticsegmentationmattefortype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephoto/3153009-semanticsegmentationmattefortype",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "semanticSegmentationMatteForType:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsemanticsegmentationmatte": {
+      "title": "AVSemanticSegmentationMatte",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsemanticsegmentationmatte",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsemanticsegmentationmatte"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403249": {
+      "title": "Listing 22",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403249",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403249"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturefileoutputrecordingdelegate/1390612-captureoutput": {
+      "title": "captureOutput:didFinishRecordingToOutputFileAtURL:fromConnections:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturefileoutputrecordingdelegate/1390612-captureoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturefileoutputrecordingdelegate/1390612-captureoutput",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "captureOutput:didFinishRecordingToOutputFileAtURL:fromConnections:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403251": {
+      "title": "Listing 23",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403251",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403251"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403254": {
+      "title": "Listing 24",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403254",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403254"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturefileoutput/1387224-startrecordingtooutputfileurl": {
+      "title": "startRecordingToOutputFileURL:recordingDelegate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturefileoutput/1387224-startrecordingtooutputfileurl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturefileoutput/1387224-startrecordingtooutputfileurl",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "startRecordingToOutputFileURL:recordingDelegate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403255": {
+      "title": "Listing 25",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403255",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403255"
+    },
+    "link-media-3403253": {
+      "identifier": "link-media-3403253",
+      "type": "link",
+      "title": "Figure 4",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403253"
+    },
+    "media-3403253": {
+      "identifier": "media-3403253",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 474,
+            "height": 252
+          },
+          "url": "https://docs-assets.developer.apple.com/published/34d5e13600/d8182f05-4771-4990-90b9-a1ea564f7413.png"
+        }
+      ],
+      "alt": "A timeline of delegate callbacks for movie recording.",
+      "title": "Figure 4"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturefileoutputrecordingdelegate": {
+      "title": "AVCaptureFileOutputRecordingDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturefileoutputrecordingdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturefileoutputrecordingdelegate"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturefileoutputrecordingdelegate/1387301-captureoutput": {
+      "title": "captureOutput:didStartRecordingToOutputFileAtURL:fromConnections:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturefileoutputrecordingdelegate/1387301-captureoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturefileoutputrecordingdelegate/1387301-captureoutput",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "captureOutput:didStartRecordingToOutputFileAtURL:fromConnections:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403256": {
+      "title": "Listing 26",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403256",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403256"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403257": {
+      "title": "Listing 27",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403257",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403257"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiapplication/1622970-endbackgroundtask": {
+      "title": "endBackgroundTask:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622970-endbackgroundtask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiapplication/1622970-endbackgroundtask",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "endBackgroundTask:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403258": {
+      "title": "Listing 28",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403258",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403258"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403260": {
+      "title": "Listing 29",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403260",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app#3403260"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app": {
+      "title": "AVCam: Building a Camera App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Capture photos with depth data and record video using the front and rear iPhone and iPad cameras."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avmulticampip_capturing_from_multiple_cameras": {
+      "title": "AVMultiCamPiP: Capturing from Multiple Cameras",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avmulticampip_capturing_from_multiple_cameras",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avmulticampip_capturing_from_multiple_cameras",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Simultaneously record the output from the front and back cameras into a single movie file by using a multi-camera capture session."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturemulticamsession": {
+      "title": "AVCaptureMultiCamSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturemulticamsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturemulticamsession",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A capture session that supports simultaneous capture from multiple inputs of the same media type."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/47f352ce81/AVCamBuildingACameraApp.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/47f352ce81/AVCamBuildingACameraApp.zip",
+      "checksum": "1ae6e2fd818200820129266545df415154824dffa84d79c7c5264b4a6cf7228120466d834426801b5bbcaaa49616b126f9a3d377c0072e1165979aa74900eeea",
+      "url": "https://docs-assets.developer.apple.com/published/47f352ce81/AVCamBuildingACameraApp.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/47f352ce81/AVCamBuildingACameraApp.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/setting_up_a_capture_session",
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avmulticampip_capturing_from_multiple_cameras",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturesession",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturemulticamsession"
+      ],
+      "title": "Capture Sessions",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The iOS Camera app allows you to capture photos and movies from both the front and rear cameras. Depending on your device, the Camera app also supports the still capture of depth data, portrait effects matte, and Live Photos."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample code project, AVCam, shows you how to implement these capture features in your own camera app. It leverages basic functionality of the built-in front and rear iPhone and iPad cameras."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "To use AVCam, you need an iOS device running iOS 13 or later. Because Xcode doesn’t have access to the device camera, this sample won’t work in Simulator. AVCam hides buttons for modes that the current device doesn’t support, such as portrait effects matte delivery on an iPhone 7 Plus."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure a Capture Session",
+          "anchor": "3403263"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturesession"
+            },
+            {
+              "type": "text",
+              "text": " accepts input data from capture devices like the camera and microphone. After receiving the input, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVCaptureSession"
+            },
+            {
+              "type": "text",
+              "text": " marshals that data to appropriate outputs for processing, eventually resulting in a movie file or still photo. After configuring the capture session’s inputs and outputs, you tell it to start—and later stop—capture."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "private let session = AVCaptureSession()"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403218",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "AVCam selects the rear camera by default and configures a camera capture session to stream content to a video preview view. "
+            },
+            {
+              "type": "codeVoice",
+              "code": "PreviewView"
+            },
+            {
+              "type": "text",
+              "text": " is a custom "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiview"
+            },
+            {
+              "type": "text",
+              "text": " subclass backed by an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideopreviewlayer"
+            },
+            {
+              "type": "text",
+              "text": ". AVFoundation doesn’t have a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "PreviewView"
+            },
+            {
+              "type": "text",
+              "text": " class, but the sample code creates one to facilitate session management."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following diagram shows how the session manages input devices and capture output:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3403217",
+              "metadata": {
+                "anchor": "3403217",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Delegate any interaction with the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVCaptureSession"
+            },
+            {
+              "type": "text",
+              "text": "—including its inputs and outputs—to a dedicated serial dispatch queue ("
+            },
+            {
+              "type": "codeVoice",
+              "code": "sessionQueue"
+            },
+            {
+              "type": "text",
+              "text": "), so that the interaction doesn’t block the main queue. Perform any configuration involving changes to a session’s topology or disruptions to its running video stream on a separate dispatch queue, since session configuration always blocks execution of other tasks until the queue processes the change. Similarly, the sample code dispatches other tasks—such as resuming an interrupted session, toggling capture modes, switching cameras, and writing media to a file—to the session queue, so that their processing doesn’t block or delay user interaction with the app."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In contrast, the code dispatches tasks that affect the UI (such as updating the preview view) to the main queue, because "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVCaptureVideoPreviewLayer"
+            },
+            {
+              "type": "text",
+              "text": ", a subclass of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/quartzcore/calayer"
+            },
+            {
+              "type": "text",
+              "text": ", is the backing layer for the sample’s preview view. You must manipulate "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIView"
+            },
+            {
+              "type": "text",
+              "text": " subclasses on the main thread for them to show up in a timely, interactive fashion."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In "
+            },
+            {
+              "type": "codeVoice",
+              "code": "viewDidLoad"
+            },
+            {
+              "type": "text",
+              "text": ", AVCam creates a session and assigns it to the preview view:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "previewView.session = session"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403219",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about configuring image capture sessions, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/setting_up_a_capture_session"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Request Authorization for Access to Input Devices",
+          "anchor": "3403264"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Once you configure the session, it is ready to accept input. Each "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice"
+            },
+            {
+              "type": "text",
+              "text": "—whether a camera or a mic—requires the user to authorize access. AVFoundation enumerates the authorization state using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avauthorizationstatus"
+            },
+            {
+              "type": "text",
+              "text": ", which informs the app whether the user has restricted or denied access to a capture device."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about preparing your app’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": " for custom authorization requests, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/requesting_authorization_for_media_capture_on_ios"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Switch Between the Rear- and Front-Facing Cameras",
+          "anchor": "3403265"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "changeCamera"
+            },
+            {
+              "type": "text",
+              "text": " method handles switching between cameras when the user taps a button in the UI. It uses a discovery session, which lists available device types in order of preference, and accepts the first device in its "
+            },
+            {
+              "type": "codeVoice",
+              "code": "devices"
+            },
+            {
+              "type": "text",
+              "text": " array. For example, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "videoDeviceDiscoverySession"
+            },
+            {
+              "type": "text",
+              "text": " in AVCam queries the device on which the app is running for available input devices. Furthermore, if a user’s device has a broken camera, it won’t be available in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "devices"
+            },
+            {
+              "type": "text",
+              "text": " array."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "switch currentPosition {",
+            "case .unspecified, .front:",
+            "    preferredPosition = .back",
+            "    preferredDeviceType = .builtInDualCamera",
+            "    ",
+            "case .back:",
+            "    preferredPosition = .front",
+            "    preferredDeviceType = .builtInTrueDepthCamera",
+            "    ",
+            "@unknown default:",
+            "    print(\"Unknown capture position. Defaulting to back, dual-camera.\")",
+            "    preferredPosition = .back",
+            "    preferredDeviceType = .builtInDualCamera",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403222",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the discovery session finds a camera in the proper position, it removes the previous input from the capture session and adds the new camera as an input."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Remove the existing device input first, because AVCaptureSession doesn't support",
+            "// simultaneous use of the rear and front cameras.",
+            "self.session.removeInput(self.videoDeviceInput)",
+            "",
+            "if self.session.canAddInput(videoDeviceInput) {",
+            "    NotificationCenter.default.removeObserver(self, name: .AVCaptureDeviceSubjectAreaDidChange, object: currentVideoDevice)",
+            "    NotificationCenter.default.addObserver(self, selector: #selector(self.subjectAreaDidChange), name: .AVCaptureDeviceSubjectAreaDidChange, object: videoDeviceInput.device)",
+            "    ",
+            "    self.session.addInput(videoDeviceInput)",
+            "    self.videoDeviceInput = videoDeviceInput",
+            "} else {",
+            "    self.session.addInput(self.videoDeviceInput)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403223",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Handle Interruptions and Errors",
+          "anchor": "3403266"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Interruptions such as phone calls, notifications from other apps, and music playback may occur during a capture session. Handle these interruptions by adding observers to listen for "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturesessionwasinterruptednotification"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "NotificationCenter.default.addObserver(self,",
+            "                                       selector: #selector(sessionWasInterrupted),",
+            "                                       name: .AVCaptureSessionWasInterrupted,",
+            "                                       object: session)",
+            "NotificationCenter.default.addObserver(self,",
+            "                                       selector: #selector(sessionInterruptionEnded),",
+            "                                       name: .AVCaptureSessionInterruptionEnded,",
+            "                                       object: session)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403225",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When AVCam receives an interruption notification, it can pause or suspend the session with an option to resume activity when the interruption ends. AVCam registers "
+            },
+            {
+              "type": "codeVoice",
+              "code": "sessionWasInterrupted"
+            },
+            {
+              "type": "text",
+              "text": " as a handler for receiving notifications, to inform the user when there’s an interruption to the capture session:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "if reason == .audioDeviceInUseByAnotherClient || reason == .videoDeviceInUseByAnotherClient {",
+            "    showResumeButton = true",
+            "} else if reason == .videoDeviceNotAvailableWithMultipleForegroundApps {",
+            "    // Fade-in a label to inform the user that the camera is unavailable.",
+            "    cameraUnavailableLabel.alpha = 0",
+            "    cameraUnavailableLabel.isHidden = false",
+            "    UIView.animate(withDuration: 0.25) {",
+            "        self.cameraUnavailableLabel.alpha = 1",
+            "    }",
+            "} else if reason == .videoDeviceNotAvailableDueToSystemPressure {",
+            "    print(\"Session stopped running due to shutdown system pressure level.\")",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403226",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The camera view controller observes "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVCaptureSessionRuntimeError"
+            },
+            {
+              "type": "text",
+              "text": " to receive a notification when an error occurs:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "NotificationCenter.default.addObserver(self,",
+            "                                       selector: #selector(sessionRuntimeError),",
+            "                                       name: .AVCaptureSessionRuntimeError,",
+            "                                       object: session)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403227",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When a runtime error occurs, restart the capture session:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// If media services were reset, and the last start succeeded, restart the session.",
+            "if error.code == .mediaServicesWereReset {",
+            "    sessionQueue.async {",
+            "        if self.isSessionRunning {",
+            "            self.session.startRunning()",
+            "            self.isSessionRunning = self.session.isRunning",
+            "        } else {",
+            "            DispatchQueue.main.async {",
+            "                self.resumeButton.isHidden = false",
+            "            }",
+            "        }",
+            "    }",
+            "} else {",
+            "    resumeButton.isHidden = false",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403228",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The capture session may also stop if the device sustains system pressure, such as overheating. The camera won’t degrade capture quality or drop frames on its own; if it reaches a critical point, the camera stops working, or the device shuts off. To avoid surprising your users, you may want your app to manually lower the frame rate, turn off depth, or modulate performance based on feedback from "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturesystempressurestate"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let pressureLevel = systemPressureState.level",
+            "if pressureLevel == .serious || pressureLevel == .critical {",
+            "    if self.movieFileOutput == nil || self.movieFileOutput?.isRecording == false {",
+            "        do {",
+            "            try self.videoDeviceInput.device.lockForConfiguration()",
+            "            print(\"WARNING: Reached elevated system pressure level: \\(pressureLevel). Throttling frame rate.\")",
+            "            self.videoDeviceInput.device.activeVideoMinFrameDuration = CMTime(value: 1, timescale: 20)",
+            "            self.videoDeviceInput.device.activeVideoMaxFrameDuration = CMTime(value: 1, timescale: 15)",
+            "            self.videoDeviceInput.device.unlockForConfiguration()",
+            "        } catch {",
+            "            print(\"Could not lock device for configuration: \\(error)\")",
+            "        }",
+            "    }",
+            "} else if pressureLevel == .shutdown {",
+            "    print(\"Session stopped running due to shutdown system pressure level.\")",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403229",
+            "title": "Listing 9"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Capture a Photo",
+          "anchor": "3403267"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Taking a photo happens on the session queue. The process begins by updating the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVCapturePhotoOutput"
+            },
+            {
+              "type": "text",
+              "text": " connection to match the video orientation of the video preview layer. This enables the camera to accurately capture what the user sees onscreen:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "if let photoOutputConnection = self.photoOutput.connection(with: .video) {",
+            "    photoOutputConnection.videoOrientation = videoPreviewLayerOrientation!",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403231",
+            "title": "Listing 10"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After aligning the outputs, AVCam proceeds to create "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings"
+            },
+            {
+              "type": "text",
+              "text": " to configure capture parameters such as focus, flash, and resolution:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var photoSettings = AVCapturePhotoSettings()",
+            "",
+            "// Capture HEIF photos when supported. Enable auto-flash and high-resolution photos.",
+            "if  self.photoOutput.availablePhotoCodecTypes.contains(.hevc) {",
+            "    photoSettings = AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecType.hevc])",
+            "}",
+            "",
+            "if self.videoDeviceInput.device.isFlashAvailable {",
+            "    photoSettings.flashMode = .auto",
+            "}",
+            "",
+            "photoSettings.isHighResolutionPhotoEnabled = true",
+            "if !photoSettings.__availablePreviewPhotoPixelFormatTypes.isEmpty {",
+            "    photoSettings.previewPhotoFormat = [kCVPixelBufferPixelFormatTypeKey as String: photoSettings.__availablePreviewPhotoPixelFormatTypes.first!]",
+            "}",
+            "// Live Photo capture is not supported in movie mode.",
+            "if self.livePhotoMode == .on && self.photoOutput.isLivePhotoCaptureSupported {",
+            "    let livePhotoMovieFileName = NSUUID().uuidString",
+            "    let livePhotoMovieFilePath = (NSTemporaryDirectory() as NSString).appendingPathComponent((livePhotoMovieFileName as NSString).appendingPathExtension(\"mov\")!)",
+            "    photoSettings.livePhotoMovieFileURL = URL(fileURLWithPath: livePhotoMovieFilePath)",
+            "}",
+            "",
+            "photoSettings.isDepthDataDeliveryEnabled = (self.depthDataDeliveryMode == .on",
+            "    && self.photoOutput.isDepthDataDeliveryEnabled)",
+            "",
+            "photoSettings.isPortraitEffectsMatteDeliveryEnabled = (self.portraitEffectsMatteDeliveryMode == .on",
+            "    && self.photoOutput.isPortraitEffectsMatteDeliveryEnabled)",
+            "",
+            "if photoSettings.isDepthDataDeliveryEnabled {",
+            "    if !self.photoOutput.availableSemanticSegmentationMatteTypes.isEmpty {",
+            "        photoSettings.enabledSemanticSegmentationMatteTypes = self.selectedSemanticSegmentationMatteTypes",
+            "    }",
+            "}",
+            "",
+            "photoSettings.photoQualityPrioritization = self.photoQualityPrioritizationMode"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403232",
+            "title": "Listing 11"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample uses a separate object, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "PhotoCaptureProcessor"
+            },
+            {
+              "type": "text",
+              "text": ", for the photo capture delegate to isolate each capture life cycle. This clear separation of capture cycles is necessary for Live Photos, where a single capture cycle may involve the capture of several frames."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each time the user presses the central shutter button, AVCam captures a photo with the previously configured settings by calling "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648765-capturephotowithsettings"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "self.photoOutput.capturePhoto(with: photoSettings, delegate: photoCaptureProcessor)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403233",
+            "title": "Listing 12"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "capturePhoto"
+            },
+            {
+              "type": "text",
+              "text": " method accepts two parameters:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "An "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "AVCapturePhotoSettings"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object that encapsulates the settings your user configures through the app, such as exposure, flash, focus, and torch."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A delegate that conforms to the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate"
+                    },
+                    {
+                      "type": "text",
+                      "text": " protocol, to respond to subsequent callbacks that the system delivers during photo capture."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Once the app calls "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput/1648765-capturephotowithsettings"
+            },
+            {
+              "type": "text",
+              "text": ", the process for starting photography is over. From that point forward, operations on that individual photo capture happens in delegate callbacks."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Track Results Through a Photo Capture Delegate",
+          "anchor": "3403268"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The  method "
+            },
+            {
+              "type": "codeVoice",
+              "code": "capturePhoto"
+            },
+            {
+              "type": "text",
+              "text": " only begins the process of taking a photo. The rest of the process happens in delegate methods that the app implements."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3403235",
+              "metadata": {
+                "anchor": "3403235",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778621-captureoutput"
+                    },
+                    {
+                      "type": "text",
+                      "text": " arrives first, as soon as you call "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "capturePhoto"
+                    },
+                    {
+                      "type": "text",
+                      "text": ". The resolved settings represent the actual settings that the camera will apply for the upcoming photo. AVCam uses this method only for behavior specific to Live Photos. AVCam tries to tell if the photo is a Live Photo by checking its "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcaptureresolvedphotosettings/1648781-livephotomoviedimensions"
+                    },
+                    {
+                      "type": "text",
+                      "text": " size; if the photo is a Live Photo, AVCam increments a count to track Live Photos in progress:"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "self.sessionQueue.async {",
+            "    if capturing {",
+            "        self.inProgressLivePhotoCapturesCount += 1",
+            "    } else {",
+            "        self.inProgressLivePhotoCapturesCount -= 1",
+            "    }",
+            "    ",
+            "    let inProgressLivePhotoCapturesCount = self.inProgressLivePhotoCapturesCount",
+            "    DispatchQueue.main.async {",
+            "        if inProgressLivePhotoCapturesCount > 0 {",
+            "            self.capturingLivePhotoLabel.isHidden = false",
+            "        } else if inProgressLivePhotoCapturesCount == 0 {",
+            "            self.capturingLivePhotoLabel.isHidden = true",
+            "        } else {",
+            "            print(\"Error: In progress Live Photo capture count is less than 0.\")",
+            "        }",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403236",
+            "title": "Listing 13"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778625-captureoutput"
+                    },
+                    {
+                      "type": "text",
+                      "text": " arrives right after the system plays the shutter sound. AVCam uses this opportunity to flash the screen, alerting to the user that the camera captured a photo. The sample code implements this flash by animating the preview view layer’s "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "opacity"
+                    },
+                    {
+                      "type": "text",
+                      "text": " from "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "0"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "1"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Flash the screen to signal that AVCam took a photo.",
+            "DispatchQueue.main.async {",
+            "    self.previewView.videoPreviewLayer.opacity = 0",
+            "    UIView.animate(withDuration: 0.25) {",
+            "        self.previewView.videoPreviewLayer.opacity = 1",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403237",
+            "title": "Listing 14"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/2873949-captureoutput"
+                    },
+                    {
+                      "type": "text",
+                      "text": " arrives when the system finishes processing depth data and a portrait effects matte. AVCam checks for a portrait effects matte and depth metadata at this stage:"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// A portrait effects matte gets generated only if AVFoundation detects a face.",
+            "if var portraitEffectsMatte = photo.portraitEffectsMatte {",
+            "    if let orientation = photo.metadata[ String(kCGImagePropertyOrientation) ] as? UInt32 {",
+            "        portraitEffectsMatte = portraitEffectsMatte.applyingExifOrientation(CGImagePropertyOrientation(rawValue: orientation)!)",
+            "    }",
+            "    let portraitEffectsMattePixelBuffer = portraitEffectsMatte.mattingImage",
+            "    let portraitEffectsMatteImage = CIImage( cvImageBuffer: portraitEffectsMattePixelBuffer, options: [ .auxiliaryPortraitEffectsMatte: true ] )"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403238",
+            "title": "Listing 15"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778618-captureoutput"
+                    },
+                    {
+                      "type": "text",
+                      "text": " is the final callback, marking the end of capture for a single photo. AVCam cleans up its delegate and settings so they don’t remain for subsequent photo captures:"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "self.sessionQueue.async {",
+            "    self.inProgressPhotoCaptureDelegates[photoCaptureProcessor.requestedPhotoSettings.uniqueID] = nil",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403239",
+            "title": "Listing 16"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can apply other visual effects in this delegate method, such as animating a preview thumbnail of the captured photo."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about tracking photo progress through delegate callbacks, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/tracking_photo_capture_progress"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Capture Live Photos",
+          "anchor": "3403269"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you enable capture of Live Photos, the camera takes one still image and a short movie around the moment of capture. The app triggers Live Photo capture the same way as still photo capture: through a single call to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "capturePhotoWithSettings"
+            },
+            {
+              "type": "text",
+              "text": ", where you pass the URL for the Live Photos short video through the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings/1648681-livephotomoviefileurl"
+            },
+            {
+              "type": "text",
+              "text": " property. You can enable Live Photos at the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVCapturePhotoOutput"
+            },
+            {
+              "type": "text",
+              "text": " level, or you can configure Live Photos at the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVCapturePhotoSettings"
+            },
+            {
+              "type": "text",
+              "text": " level on a per-capture basis."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Since Live Photo capture creates a short movie file, AVCam must express where to save the movie file as a URL. Also, because Live Photo captures can overlap, the code must keep track of the number of in-progress Live Photo captures to ensure that the Live Photo label stays visible during these captures. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "photoOutput(_:willBeginCaptureFor:)"
+            },
+            {
+              "type": "text",
+              "text": " delegate method in the previous section implements this tracking counter."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3403241",
+              "metadata": {
+                "anchor": "3403241",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778658-captureoutput"
+                    },
+                    {
+                      "type": "text",
+                      "text": " fires when recording of the short movie ends. AVCam dismisses the Live badge here. Because the camera has finished recording the short movie, AVCam executes the Live Photo handler decrementing the completion counter:"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "livePhotoCaptureHandler(false)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403242",
+            "title": "Listing 17"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotocapturedelegate/1778637-captureoutput"
+                    },
+                    {
+                      "type": "text",
+                      "text": " fires last, indicating that the movie is fully written to disk and is ready for consumption. AVCam uses this opportunity to display any capture errors and redirect the saved file URL to its final output location:"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "if error != nil {",
+            "    print(\"Error processing Live Photo companion movie: \\(String(describing: error))\")",
+            "    return",
+            "}",
+            "livePhotoCompanionMovieURL = outputFileURL"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403243",
+            "title": "Listing 18"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about incorporating Live Photo capture into your app, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Capture Depth Data and Portrait Effects Matte",
+          "anchor": "3403270"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Using "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVCapturePhotoOutput"
+            },
+            {
+              "type": "text",
+              "text": ", AVCam queries the capture device to see whether its configuration can deliver depth data and a portrait effects matte to still images. If the input device supports either of these modes, and you enable them in the capture settings, the camera attaches depth and portrait effects matte as auxiliary metadata on a per-photo request basis. If the device supports delivery of depth data, portrait effects matte, or Live Photos, the app shows a button, used to toggle the settings for enabling or disabling the feature."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "           if self.photoOutput.isDepthDataDeliverySupported {",
+            "               self.photoOutput.isDepthDataDeliveryEnabled = true",
+            "               ",
+            "               DispatchQueue.main.async {",
+            "                   self.depthDataDeliveryButton.isEnabled = true",
+            "               }",
+            "           }",
+            "           ",
+            "           if self.photoOutput.isPortraitEffectsMatteDeliverySupported {",
+            "               self.photoOutput.isPortraitEffectsMatteDeliveryEnabled = true",
+            "               ",
+            "               DispatchQueue.main.async {",
+            "                   self.portraitEffectsMatteDeliveryButton.isEnabled = true",
+            "               }",
+            "           }",
+            "           ",
+            "           if !self.photoOutput.availableSemanticSegmentationMatteTypes.isEmpty {",
+            "self.photoOutput.enabledSemanticSegmentationMatteTypes = self.photoOutput.availableSemanticSegmentationMatteTypes",
+            "               self.selectedSemanticSegmentationMatteTypes = self.photoOutput.availableSemanticSegmentationMatteTypes",
+            "               ",
+            "               DispatchQueue.main.async {",
+            "                   self.semanticSegmentationMatteDeliveryButton.isEnabled = (self.depthDataDeliveryMode == .on) ? true : false",
+            "               }",
+            "           }",
+            "           ",
+            "           DispatchQueue.main.async {",
+            "               self.livePhotoModeButton.isHidden = false",
+            "               self.depthDataDeliveryButton.isHidden = false",
+            "               self.portraitEffectsMatteDeliveryButton.isHidden = false",
+            "               self.semanticSegmentationMatteDeliveryButton.isHidden = false",
+            "               self.photoQualityPrioritizationSegControl.isHidden = false",
+            "               self.photoQualityPrioritizationSegControl.isEnabled = true",
+            "           }"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403245",
+            "title": "Listing 19"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The camera stores depth and portrait effects matte metadata as auxiliary images, discoverable and addressable through the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/imageio"
+            },
+            {
+              "type": "text",
+              "text": " API. AVCam accesses this metadata by searching for an auxiliary image of type "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/imageio/kcgimageauxiliarydatatypeportraiteffectsmatte"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "if var portraitEffectsMatte = photo.portraitEffectsMatte {",
+            "    if let orientation = photo.metadata[String(kCGImagePropertyOrientation)] as? UInt32 {",
+            "        portraitEffectsMatte = portraitEffectsMatte.applyingExifOrientation(CGImagePropertyOrientation(rawValue: orientation)!)",
+            "    }",
+            "    let portraitEffectsMattePixelBuffer = portraitEffectsMatte.mattingImage"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403246",
+            "title": "Listing 20"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about depth data capture, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_photos_with_depth"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Capture Semantic Segmentation Mattes",
+          "anchor": "3403271"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Using "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVCapturePhotoOutput"
+            },
+            {
+              "type": "text",
+              "text": ", AVCam also lets you capture semantic segmentation mattes, which segment a person’s hair, skin, and teeth into distinct matte images. The ability to capture these auxiliary images along with your primary photo simplifies applying photo effects, such as changing a person’s hair color or brightening their smile."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You enable the capture of these auxiliary images by setting the photo output’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "enabledSemanticSegmentationMatteTypes"
+            },
+            {
+              "type": "text",
+              "text": " property to your preferred values ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsemanticsegmentationmattetypehair"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsemanticsegmentationmattetypeskin"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsemanticsegmentationmattetypeteeth"
+            },
+            {
+              "type": "text",
+              "text": "). To capture all supported types, set this property to match the photo output’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "availableSemanticSegmentationMatteTypes"
+            },
+            {
+              "type": "text",
+              "text": " property."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Capture all available semantic segmentation matte types.",
+            "photoOutput.enabledSemanticSegmentationMatteTypes = ",
+            "    photoOutput.availableSemanticSegmentationMatteTypes"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403248",
+            "title": "Listing 21"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the photo output finishes capturing a photo, you retrieve the associated segmentation matte images by querying the photo’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/3153009-semanticsegmentationmattefortype"
+            },
+            {
+              "type": "text",
+              "text": " method. This method returns an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsemanticsegmentationmatte"
+            },
+            {
+              "type": "text",
+              "text": " that contains the matte image and additional metadata that you can use when processing the image. The sample app adds the semantic segmentation matte image’s data to an array so you can write it to the user’s photo library."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Find the semantic segmentation matte image for the specified type.",
+            "guard var segmentationMatte = photo.semanticSegmentationMatte(for: ssmType) else { return }",
+            "",
+            "// Retrieve the photo orientation and apply it to the matte image.",
+            "if let orientation = photo.metadata[String(kCGImagePropertyOrientation)] as? UInt32,",
+            "    let exifOrientation = CGImagePropertyOrientation(rawValue: orientation) {",
+            "    // Apply the Exif orientation to the matte image.",
+            "    segmentationMatte = segmentationMatte.applyingExifOrientation(exifOrientation)",
+            "}",
+            "",
+            "var imageOption: CIImageOption!",
+            "",
+            "// Switch on the AVSemanticSegmentationMatteType value.",
+            "switch ssmType {",
+            "case .hair:",
+            "    imageOption = .auxiliarySemanticSegmentationHairMatte",
+            "case .skin:",
+            "    imageOption = .auxiliarySemanticSegmentationSkinMatte",
+            "case .teeth:",
+            "    imageOption = .auxiliarySemanticSegmentationTeethMatte",
+            "default:",
+            "    print(\"This semantic segmentation type is not supported!\")",
+            "    return",
+            "}",
+            "",
+            "guard let perceptualColorSpace = CGColorSpace(name: CGColorSpace.sRGB) else { return }",
+            "",
+            "// Create a new CIImage from the matte's underlying CVPixelBuffer.",
+            "let ciImage = CIImage( cvImageBuffer: segmentationMatte.mattingImage,",
+            "                       options: [imageOption: true,",
+            "                                 .colorSpace: perceptualColorSpace])",
+            "",
+            "// Get the HEIF representation of this image.",
+            "guard let imageData = context.heifRepresentation(of: ciImage,",
+            "                                                 format: .RGBA8,",
+            "                                                 colorSpace: perceptualColorSpace,",
+            "                                                 options: [.depthImage: ciImage]) else { return }",
+            "",
+            "// Add the image data to the SSM data array for writing to the photo library.",
+            "semanticSegmentationMatteDataArray.append(imageData)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403249",
+            "title": "Listing 22"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Save Photos to the User’s Photo Library",
+          "anchor": "3403272"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Before you can save an image or movie to the user’s photo library, you must first request access to that library. The process for requesting write authorization mirrors capture device authorization: show an alert with text that you provide in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Info.plist"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "AVCam checks for authorization in the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturefileoutputrecordingdelegate/1390612-captureoutput"
+            },
+            {
+              "type": "text",
+              "text": " callback method, which is where the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVCaptureOutput"
+            },
+            {
+              "type": "text",
+              "text": " provides media data to save as output."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "PHPhotoLibrary.requestAuthorization { status in"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403251",
+            "title": "Listing 23"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about requesting access to the user’s photo library, see "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Requesting Authorization to Access Photos"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Record Movie Files",
+          "anchor": "3403273"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "AVCam supports video capture by querying and adding input devices with the "
+            },
+            {
+              "type": "codeVoice",
+              "code": ".video"
+            },
+            {
+              "type": "text",
+              "text": " qualifier. The app defaults to the rear dual camera, but, if the device doesn’t have a dual camera, the app defaults to the wide-angle camera."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "if let dualCameraDevice = AVCaptureDevice.default(.builtInDualCamera, for: .video, position: .back) {",
+            "    defaultVideoDevice = dualCameraDevice",
+            "} else if let backCameraDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back) {",
+            "    // If a rear dual camera is not available, default to the rear wide angle camera.",
+            "    defaultVideoDevice = backCameraDevice",
+            "} else if let frontCameraDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front) {",
+            "    // If the rear wide angle camera isn't available, default to the front wide angle camera.",
+            "    defaultVideoDevice = frontCameraDevice",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403254",
+            "title": "Listing 24"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Instead of passing settings to the system as with still photography, pass an output URL like in Live Photos. The delegate callbacks provide the same URL, so your app doesn’t need to store it in an intermediate variable."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Once the user taps Record to begin capture, AVCam calls "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturefileoutput/1387224-startrecordingtooutputfileurl"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "movieFileOutput.startRecording(to: URL(fileURLWithPath: outputFilePath), recordingDelegate: self)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403255",
+            "title": "Listing 25"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Just like "
+            },
+            {
+              "type": "codeVoice",
+              "code": "capturePhoto"
+            },
+            {
+              "type": "text",
+              "text": " triggered delegate callbacks for still capture, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "startRecording"
+            },
+            {
+              "type": "text",
+              "text": " triggers a series of delegate callbacks for movie recording."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3403253",
+              "metadata": {
+                "anchor": "3403253",
+                "title": "Figure 4"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Track the progress of the movie recording through the delegate callback chain. Instead of implementing "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVCapturePhotoCaptureDelegate"
+            },
+            {
+              "type": "text",
+              "text": ", implement "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturefileoutputrecordingdelegate"
+            },
+            {
+              "type": "text",
+              "text": ". Since the movie-recording delegate callbacks require interaction with the capture session, AVCam makes "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CameraViewController"
+            },
+            {
+              "type": "text",
+              "text": " the delegate instead of creating a separate delegate object."
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturefileoutputrecordingdelegate/1387301-captureoutput"
+                    },
+                    {
+                      "type": "text",
+                      "text": " fires when the file output starts writing data to a file. AVCam uses this opportunity to change the Record button to a Stop button:"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "DispatchQueue.main.async {",
+            "    self.recordButton.isEnabled = true",
+            "    self.recordButton.setImage(#imageLiteral(resourceName: \"CaptureStop\"), for: [])",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403256",
+            "title": "Listing 26"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturefileoutputrecordingdelegate/1390612-captureoutput"
+                    },
+                    {
+                      "type": "text",
+                      "text": " fires last, indicating that the movie is fully written to disk and is ready for consumption. AVCam takes this chance to move the temporarily saved movie from the given URL to the user’s photo library or the app’s documents folder:"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "PHPhotoLibrary.shared().performChanges({",
+            "    let options = PHAssetResourceCreationOptions()",
+            "    options.shouldMoveFile = true",
+            "    let creationRequest = PHAssetCreationRequest.forAsset()",
+            "    creationRequest.addResource(with: .video, fileURL: outputFileURL, options: options)",
+            "}, completionHandler: { success, error in",
+            "    if !success {",
+            "        print(\"AVCam couldn't save the movie to your photo library: \\(String(describing: error))\")",
+            "    }",
+            "    cleanup()",
+            "}",
+            ")"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403257",
+            "title": "Listing 27"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the event that AVCam goes into the background—such as when the user accepts an incoming phone call—the app must ask permission from the user to continue recording. AVCam requests time from the system to perform this saving through a background task. This background task ensures that there is enough time to write the file to the photo library, even when AVCam recedes to the background. To conclude background execution, AVCam calls "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiapplication/1622970-endbackgroundtask"
+            },
+            {
+              "type": "text",
+              "text": " in  "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturefileoutputrecordingdelegate/1390612-captureoutput"
+            },
+            {
+              "type": "text",
+              "text": " after saving the recorded file."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "self.backgroundRecordingID = UIApplication.shared.beginBackgroundTask(expirationHandler: nil)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403258",
+            "title": "Listing 28"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Take Photos While Recording a Movie",
+          "anchor": "3403274"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Like the iOS Camera app, AVCam can take photos while also capturing a movie. AVCam captures such photos at the same resolution as the video."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let movieFileOutput = AVCaptureMovieFileOutput()",
+            "",
+            "if self.session.canAddOutput(movieFileOutput) {",
+            "    self.session.beginConfiguration()",
+            "    self.session.addOutput(movieFileOutput)",
+            "    self.session.sessionPreset = .high",
+            "    if let connection = movieFileOutput.connection(with: .video) {",
+            "        if connection.isVideoStabilizationSupported {",
+            "            connection.preferredVideoStabilizationMode = .auto",
+            "        }",
+            "    }",
+            "    self.session.commitConfiguration()",
+            "    ",
+            "    DispatchQueue.main.async {",
+            "        captureModeControl.isEnabled = true",
+            "    }",
+            "    ",
+            "    self.movieFileOutput = movieFileOutput",
+            "    ",
+            "    DispatchQueue.main.async {",
+            "        self.recordButton.isEnabled = true",
+            "        ",
+            "        /*",
+            "         For photo captures during movie recording, Speed quality photo processing is prioritized",
+            "         to avoid frame drops during recording.",
+            "         */",
+            "        self.photoQualityPrioritizationSegControl.selectedSegmentIndex = 0",
+            "        self.photoQualityPrioritizationSegControl.sendActions(for: UIControl.Event.valueChanged)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403260",
+            "title": "Listing 29"
+          }
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

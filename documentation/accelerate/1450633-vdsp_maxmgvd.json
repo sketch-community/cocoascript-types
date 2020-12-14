@@ -1,0 +1,572 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Calculates the maximum magnitude in a double-precision vector."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/vector_extrema_calculation"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/1450633-vdsp_maxmgvd",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1450633,
+  "kind": "symbol",
+  "metadata": {
+    "title": "vDSP_maxmgvD",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "4.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.4",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@F@vDSP_maxmgvD",
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/1450633-vdsp_maxmgvd"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/1450633-vdsp_maxmgvd"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp": {
+      "title": "vDSP",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp",
+      "url": "/documentation/accelerate/vdsp",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/vector_extrema_calculation": {
+      "title": "Vector Extrema Calculation",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/vector_extrema_calculation",
+      "url": "/documentation/accelerate/vdsp/vector_extrema_calculation",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-media-3226695": {
+      "identifier": "link-media-3226695",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/1450633-vdsp_maxmgvd#3226695"
+    },
+    "media-3226695": {
+      "identifier": "media-3226695",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 328,
+            "height": 173
+          },
+          "url": "https://docs-assets.developer.apple.com/published/79f0a5e9ed/400c762f-b136-47ab-bdf1-ade2cf2763c7.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 328,
+            "height": 173
+          },
+          "url": "https://docs-assets.developer.apple.com/published/bc8c9aceda/9997d1e5-1da8-4603-9168-199bc11da259.png"
+        }
+      ],
+      "alt": "A diagram showing the operation of the vDSP_maxmgv function. There are three rows. The top row represents the input, vector A. The second row represents the maximum magnitude value operation. The bottom row represents the output, vector C. The diagram has connecting lines from the input vectors to the operation and from the operation to the output vector indicating the relationships between the input and output.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450633-vdsp_maxmgvd#3226705": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450633-vdsp_maxmgvd#3226705",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/1450633-vdsp_maxmgvd#3226705"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_stride": {
+      "title": "vDSP_Stride",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_stride",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_stride"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_length": {
+      "title": "vDSP_Length",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_length",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_length"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450621-vdsp_maxv": {
+      "title": "vDSP_maxv",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450621-vdsp_maxv",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450621-vdsp_maxv",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the maximum value in a single-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449854-vdsp_maxvd": {
+      "title": "vDSP_maxvD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449854-vdsp_maxvd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449854-vdsp_maxvd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the maximum value in a double-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450814-vdsp_maxvi": {
+      "title": "vDSP_maxvi",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450814-vdsp_maxvi",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450814-vdsp_maxvi",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the maximum value and corresponding index in a single-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449682-vdsp_maxvid": {
+      "title": "vDSP_maxviD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449682-vdsp_maxvid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449682-vdsp_maxvid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the maximum value and corresponding index in a double-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449986-vdsp_maxmgv": {
+      "title": "vDSP_maxmgv",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449986-vdsp_maxmgv",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449986-vdsp_maxmgv",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the maximum magnitude in a single-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450633-vdsp_maxmgvd": {
+      "title": "vDSP_maxmgvD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450633-vdsp_maxmgvd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450633-vdsp_maxmgvd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the maximum magnitude in a double-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450576-vdsp_maxmgvi": {
+      "title": "vDSP_maxmgvi",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450576-vdsp_maxmgvi",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450576-vdsp_maxmgvi",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the maximum magnitude and corresponding index in a single-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450249-vdsp_maxmgvid": {
+      "title": "vDSP_maxmgviD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450249-vdsp_maxmgvid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450249-vdsp_maxmgvid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the maximum magnitude and corresponding index in a double-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/1450621-vdsp_maxv",
+        "doc://com.apple.documentation/documentation/accelerate/1449854-vdsp_maxvd",
+        "doc://com.apple.documentation/documentation/accelerate/1450814-vdsp_maxvi",
+        "doc://com.apple.documentation/documentation/accelerate/1449682-vdsp_maxvid",
+        "doc://com.apple.documentation/documentation/accelerate/1449986-vdsp_maxmgv",
+        "doc://com.apple.documentation/documentation/accelerate/1450576-vdsp_maxmgvi",
+        "doc://com.apple.documentation/documentation/accelerate/1450249-vdsp_maxmgvid"
+      ],
+      "title": "Maximum Calculation",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "vDSP_maxmgvD"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "double"
+            },
+            {
+              "kind": "text",
+              "text": " *__A, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vDSP_Stride",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_stride",
+              "text": "vDSP_Stride"
+            },
+            {
+              "kind": "text",
+              "text": " __IA, "
+            },
+            {
+              "kind": "keyword",
+              "text": "double"
+            },
+            {
+              "kind": "text",
+              "text": " *__C, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vDSP_Length",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_length",
+              "text": "vDSP_Length"
+            },
+            {
+              "kind": "text",
+              "text": " __N);"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "__A",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Double-precision real input vector."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__I",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Stride for "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__C",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Output scalar"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__N",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The number of elements to process. If "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "N"
+                },
+                {
+                  "type": "text",
+                  "text": " is zero ("
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "0"
+                },
+                {
+                  "type": "text",
+                  "text": "), this function returns "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "-INFINITY"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This function calculates the maximum magnitude of the first "
+            },
+            {
+              "type": "codeVoice",
+              "code": "N"
+            },
+            {
+              "type": "text",
+              "text": " elements of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "A"
+            },
+            {
+              "type": "text",
+              "text": " and writes the result to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "C"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3226695",
+              "metadata": {
+                "anchor": "3226695",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The operation is: "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "*C = -INFINITY;",
+            "for (n = 0; n < N; ++n)",
+            "    if (*C < |A[n*I]|)",
+            "        *C = |A[n*I]|;"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3226705",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

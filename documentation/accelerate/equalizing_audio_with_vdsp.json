@@ -1,0 +1,1387 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Change the frequency response of an audio signal."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/discrete_cosine_transforms"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/biquadratic_iir_filters"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/multichannel_biquadratic_iir_filters"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/discrete_cosine_transforms"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/biquadratic_iir_filters"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3080731,
+  "kind": "article",
+  "metadata": {
+    "title": "Equalizing Audio with vDSP",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "12.0",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/equalizing_audio_with_vdsp",
+        "documentation/accelerate/biquadratic_iir_filters/equalizing_audio_with_vdsp",
+        "documentation/accelerate/discrete_cosine_transforms/equalizing_audio_with_vdsp",
+        "documentation/accelerate/vdsp/biquadratic_iir_filters/equalizing_audio_with_vdsp",
+        "documentation/accelerate/vdsp/discrete_cosine_transforms/equalizing_audio_with_vdsp",
+        "documentation/accelerate/vdsp/multichannel_biquadratic_iir_filters/equalizing_audio_with_vdsp"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/equalizing_audio_with_vdsp",
+        "documentation/accelerate/biquadratic_iir_filters/equalizing_audio_with_vdsp",
+        "documentation/accelerate/discrete_cosine_transforms/equalizing_audio_with_vdsp",
+        "documentation/accelerate/vdsp/biquadratic_iir_filters/equalizing_audio_with_vdsp",
+        "documentation/accelerate/vdsp/discrete_cosine_transforms/equalizing_audio_with_vdsp",
+        "documentation/accelerate/vdsp/multichannel_biquadratic_iir_filters/equalizing_audio_with_vdsp"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/discrete_cosine_transforms": {
+      "title": "Discrete Cosine Transforms",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/discrete_cosine_transforms",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/discrete_cosine_transforms",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Transform vectors of temporal and spatial domain real values to the frequency domain, and vice versa."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/biquadratic_iir_filters": {
+      "title": "Biquadratic IIR Filters",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/biquadratic_iir_filters",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/biquadratic_iir_filters",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Apply biquadratic filters to single- and multi-channel data. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp": {
+      "title": "vDSP",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp",
+      "url": "/documentation/accelerate/vdsp",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/multichannel_biquadratic_iir_filters": {
+      "title": "Multichannel Biquadratic IIR Filters",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/multichannel_biquadratic_iir_filters",
+      "url": "/documentation/accelerate/vdsp/multichannel_biquadratic_iir_filters",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687599": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687599",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/equalizing_audio_with_vdsp#3687599"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/avfoundation"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetreader": {
+      "title": "AVAssetReader",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetreader",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetreader"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetreadertrackoutput": {
+      "title": "AVAssetReaderTrackOutput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetreadertrackoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetreadertrackoutput"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1389233-naturaltimescale": {
+      "title": "naturalTimeScale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1389233-naturaltimescale",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassettrack/1389233-naturaltimescale"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687601": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687601",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/equalizing_audio_with_vdsp#3687601"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687602": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687602",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/equalizing_audio_with_vdsp#3687602"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687603": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687603",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/equalizing_audio_with_vdsp#3687603"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioengine": {
+      "title": "AVAudioEngine",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioengine",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioengine"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/building_a_signal_generator": {
+      "title": "Building a Signal Generator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/building_a_signal_generator",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/building_a_signal_generator"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687606": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687606",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/equalizing_audio_with_vdsp#3687606"
+    },
+    "link-media-3687605": {
+      "identifier": "link-media-3687605",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/accelerate/equalizing_audio_with_vdsp#3687605"
+    },
+    "media-3687605": {
+      "identifier": "media-3687605",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 332
+          },
+          "url": "https://docs-assets.developer.apple.com/published/2d62962edc/rendered2x-1599753167.png"
+        }
+      ],
+      "alt": "Diagram showing a frequency domain audio signal and a band stop filter. Where the band stop filter values are zero, the frequency domain data is zero. Where the band stop filter values are one, the frequency domain data is unchanged.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687608": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687608",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/equalizing_audio_with_vdsp#3687608"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687609": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687609",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/equalizing_audio_with_vdsp#3687609"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687611": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687611",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/equalizing_audio_with_vdsp#3687611"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240936-divide": {
+      "title": "divide(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240936-divide",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3240936-divide"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687612": {
+      "title": "Listing 9",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687612",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/equalizing_audio_with_vdsp#3687612"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687614": {
+      "title": "Listing 10",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687614",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/equalizing_audio_with_vdsp#3687614"
+    },
+    "link-media-3687616": {
+      "identifier": "link-media-3687616",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/accelerate/equalizing_audio_with_vdsp#3687616"
+    },
+    "media-3687616": {
+      "identifier": "media-3687616",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 86
+          },
+          "url": "https://docs-assets.developer.apple.com/published/e45bd4f66d/rendered2x-1591954625.png"
+        }
+      ],
+      "alt": "General formula that describes mathematically the transfer function used by the vDSP Library for biquadratic filtering. Cap H open parentheses z close parentheses equals b sub zero, plus b sub 1 times z to the power of minus one, plus b sub 2 times z to the power of minus two, over one plus a sub 1 times z to the power of minus one plus a sub 2 times z to the power of minus 2.",
+      "title": "Figure 3"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687617": {
+      "title": "Listing 11",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687617",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/equalizing_audio_with_vdsp#3687617"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687618": {
+      "title": "Listing 12",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687618",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/equalizing_audio_with_vdsp#3687618"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/biquad/3240705-apply": {
+      "title": "apply(input:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/biquad/3240705-apply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/biquad/3240705-apply"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687620": {
+      "title": "Listing 13",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp#3687620",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/equalizing_audio_with_vdsp#3687620"
+    },
+    "link-media-3687597": {
+      "identifier": "link-media-3687597",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/equalizing_audio_with_vdsp#3687597"
+    },
+    "media-3687597": {
+      "identifier": "media-3687597",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 409
+          },
+          "url": "https://docs-assets.developer.apple.com/published/fe52bb6ceb/rendered2x-1591954619.png"
+        }
+      ],
+      "alt": "Diagram showing a frequency domain audio signal with no equalization filter applied.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp": {
+      "title": "Equalizing Audio with vDSP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/equalizing_audio_with_vdsp",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/equalizing_audio_with_vdsp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Change the frequency response of an audio signal."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/9e340a1b65/EqualizingAudioWithVDSP.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/9e340a1b65/EqualizingAudioWithVDSP.zip",
+      "checksum": "5367ea4aadd1822dcf4e099a1cacfcafa1046eaa3a505d720e5bea75f04c42f982f3f8919ed3577578b31b33352db1a7d19e4fd56738b600d25e1708ad441559",
+      "url": "https://docs-assets.developer.apple.com/published/9e340a1b65/EqualizingAudioWithVDSP.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/9e340a1b65/EqualizingAudioWithVDSP.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/biquadratic_iir_filters",
+        "doc://com.apple.documentation/documentation/accelerate/discrete_cosine_transforms"
+      ],
+      "title": "Audio Processing",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can use vDSP functions to shape the output of an audio signal; for example, boosting or cutting the bass or treble of a music track."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample plays a drum loop and offers a range of equalization presets using two approaches:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Discrete cosine transform-based (DCT) equalizations that explicitly zero specific parts of the audio spectrum."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Biquadratic filter-based equalizations that use a set of coefficients to change the frequency response based on the ratio of two quadratic functions."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you first launch the app, the drum loop plays without any filters applied. The app displays the frequency domain representation of the drum loop, illustrated below, and a segmented control that switches between the equalization presets."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3687597",
+              "metadata": {
+                "anchor": "3687597",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Before exploring the code, try building and running the app to familiarize yourself with the effect of the different equalizations on the drum loop."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Generate the Audio Samples",
+          "anchor": "3687623"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample includes an audio resource, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Rhythm.aif"
+            },
+            {
+              "type": "text",
+              "text": ", that contains a drum loop. Use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "getAudioSamples(forResource:withExtension:)"
+            },
+            {
+              "type": "text",
+              "text": " function to generate an array of single-precision values from the drum loop:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let samples: (naturalTimeScale: Int32, data: [Float]) = {",
+            "    guard let samples = AudioUtilities.getAudioSamples(",
+            "        forResource: \"Rhythm\",",
+            "        withExtension: \"aif\") else {",
+            "            fatalError(\"Unable to parse the audio resource.\")",
+            "    }",
+            "    ",
+            "    return samples",
+            "}()"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3687599",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "samples"
+            },
+            {
+              "type": "text",
+              "text": " array contains single-precision values that represent the entire content of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Rhythm.aif"
+            },
+            {
+              "type": "text",
+              "text": ". To learn more about the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation"
+            },
+            {
+              "type": "text",
+              "text": " classes used to generate the samples, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetreader"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetreadertrackoutput"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure Audio Playback",
+          "anchor": "3687624"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample app’s view controller conforms to the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SignalProvider"
+            },
+            {
+              "type": "text",
+              "text": " protocol by vending an array of single-precision values that represent audio data. Create an instance of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SignalGenerator"
+            },
+            {
+              "type": "text",
+              "text": " and specify the view controller as the signal provider, and specify the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1389233-naturaltimescale"
+            },
+            {
+              "type": "text",
+              "text": " of the audio asset as the sample rate."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "lazy var signalGenerator = SignalGenerator(signalProvider: self,",
+            "                                           sampleRate: samples.naturalTimeScale)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3687601",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Call "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SignalGenerator.start()"
+            },
+            {
+              "type": "text",
+              "text": " to start the signal generator."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "try? signalGenerator.start()"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3687602",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, the signal generator repeatedly calls the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "getSignal()"
+            },
+            {
+              "type": "text",
+              "text": " function and renders the returned data as audio. For each call, return a page of length "
+            },
+            {
+              "type": "codeVoice",
+              "code": "sampleCount"
+            },
+            {
+              "type": "text",
+              "text": "  from "
+            },
+            {
+              "type": "codeVoice",
+              "code": "samples"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let start = pageNumber * sampleCount",
+            "let end = (pageNumber + 1) * sampleCount",
+            "",
+            "let page = Array(samples.data[start ..< end])",
+            "",
+            "pageNumber += 1",
+            "",
+            "if (pageNumber + 1) * sampleCount >= samples.data.count {",
+            "    pageNumber = 0",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3687603",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample can render the audio unaltered by returning "
+            },
+            {
+              "type": "codeVoice",
+              "code": "page"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To learn more about using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioengine"
+            },
+            {
+              "type": "text",
+              "text": " to render audio, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/building_a_signal_generator"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Define DCT-Based Equalization Filters",
+          "anchor": "3687625"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample includes four DCT-based equalization presets:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Low-Pass blocks high frequencies (treble)."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "High-Pass blocks low frequencies (bass)."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Band-Stop blocks mid-range frequencies."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Band-Pass allows only mid-range frequencies."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample implements the presets as arrays of single-precision values between zero and one. To apply the equalization, multiply the frequency-domain data by the values in each preset array. For example, the following code creates the band-stop filter by returning an array mainly filled with ones, apart from elements 300-380 that are filled with zeros."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "static let dctBandStop: [Float] = {",
+            "    return interpolatedVectorFrom(magnitudes:  [1,   1,   0,   0,   1,    1],",
+            "                                  indices:     [0, 290, 300, 380, 390, 1024],",
+            "                                  count: sampleCount)",
+            "}()",
+            "",
+            "static func interpolatedVectorFrom(magnitudes: [Float],",
+            "                                   indices: [Float],",
+            "                                   count: Int) -> [Float] {",
+            "    assert(magnitudes.count == indices.count,",
+            "           \"`magnitudes.count` must equal `indices.count`.\")",
+            "    ",
+            "    var c = [Float](repeating: 0,",
+            "                    count: count)",
+            "    ",
+            "    let stride = vDSP_Stride(1)",
+            "    ",
+            "    vDSP_vgenp(magnitudes, stride,",
+            "               indices, stride,",
+            "               &c, stride,",
+            "               vDSP_Length(count),",
+            "               vDSP_Length(magnitudes.count))",
+            "    ",
+            "    return c",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3687606",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following image visualizes the effect of the band-stop filter that blocks mid-range frequencies. The darker, blue line represents the frequency-domain audio data, and the red line represents the values in the band-stop filter:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3687605",
+              "metadata": {
+                "anchor": "3687605",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Prepare the DCT Setups",
+          "anchor": "3687626"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create setup objects that contain all the information required to perform the forward and inverse DCT operations. Creating these setup objects can be expensive, so do it only once—for example, when starting your app—and reuse the objects as needed."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The forward transform is a type II DCT:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let forwardDCT = vDSP.DCT(count: sampleCount,",
+            "                          transformType: .II)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3687608",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The inverse transform is a type III DCT:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let inverseDCT = vDSP.DCT(count: sampleCount,",
+            "                          transformType: .III)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3687609",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Equalize the Audio with DCT",
+          "anchor": "3687627"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To equalize the audio using a DCT-based filter, perform these steps as demonstrated in the code that follows."
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Apply a forward transform to the signal data (time-domain). This generates the frequency-domain representation."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Multiply the frequency-domain by the filter values."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Apply an inverse transform to the multiplied data. This generates the time-domain representation."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func apply(dctMultiplier: [Float], toInput input: [Float]) -> [Float] {",
+            "    // Perform forward DCT.",
+            "    forwardDCT?.transform(input,",
+            "                          result: &forwardDCT_PreProcessed)",
+            "    // Multiply frequency-domain data by `dctMultiplier`.",
+            "    vDSP.multiply(dctMultiplier,",
+            "                  forwardDCT_PreProcessed,",
+            "                  result: &forwardDCT_PostProcessed)",
+            "    ",
+            "    // Perform inverse DCT.",
+            "    inverseDCT?.transform(forwardDCT_PostProcessed,",
+            "                          result: &inverseDCT_Result)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3687611",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Scale the result. The scaling factor for the forward transform is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "2"
+            },
+            {
+              "type": "text",
+              "text": ", and the scaling factor for the inverse transform is the number of samples (in this case, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1024"
+            },
+            {
+              "type": "text",
+              "text": "). Use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240936-divide"
+            },
+            {
+              "type": "text",
+              "text": " to divide the inverse DCT result by "
+            },
+            {
+              "type": "codeVoice",
+              "code": "sampleCount / 2"
+            },
+            {
+              "type": "text",
+              "text": ", and return the result of the divide operation:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "    vDSP.divide(inverseDCT_Result,",
+            "                Float(sampleCount / 2),",
+            "                result: &inverseDCT_Result)",
+            "    ",
+            "    return inverseDCT_Result",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3687612",
+            "title": "Listing 9"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The app passes the result of the divide operation to the signal generator, and your device plays the DCT-based filtered drum loop."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Declare the Biquad Structure",
+          "anchor": "3687628"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Declare a structure to apply biquadratic filtering:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var biquadFilter: vDSP.Biquad<Float>?"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3687614",
+            "title": "Listing 10"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Define Biquadratic-Based Equalization Filters",
+          "anchor": "3687629"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample includes two biquadratic-based equalization presets:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Low-Pass blocks high frequencies (treble)."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "High-Pass blocks low frequencies (bass)."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Define a biquadratic filter by declaring a set of coefficients that plug in to the following formula:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3687616",
+              "metadata": {
+                "anchor": "3687616",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code defines the coefficients for a low-pass filter (that reduces high frequencies):"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "static let biquadLowPass: [Double] = {",
+            "    let b0 = 0.0001",
+            "    let b1 = 0.001",
+            "    let b2 = 0.0005",
+            "    let a1 = -1.979",
+            "    let a2 = 0.98",
+            "",
+            "    return [b0, b1, b2, a1, a2]",
+            "}()"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3687617",
+            "title": "Listing 11"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When either the low- or high-pass biquad filter is selected, the corresponding coefficients are used to instantiate "
+            },
+            {
+              "type": "codeVoice",
+              "code": "biquadFilter"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "switch mode {",
+            "case .biquadLowPass:",
+            "    biquadFilter = vDSP.Biquad(coefficients: EqualizationFilters.biquadLowPass,",
+            "                               channelCount: 1,",
+            "                               sectionCount: 1,",
+            "                               ofType: Float.self)",
+            "case .biquadHighPass:",
+            "    biquadFilter = vDSP.Biquad(coefficients: EqualizationFilters.biquadHighPass,",
+            "                               channelCount: 1,",
+            "                               sectionCount: 1,",
+            "                               ofType: Float.self)",
+            "default:",
+            "    break",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3687618",
+            "title": "Listing 12"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Equalize the Audio with Biquadratic Filters",
+          "anchor": "3687630"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/biquad/3240705-apply"
+            },
+            {
+              "type": "text",
+              "text": " function to apply a biquadratic filtering structure to the audio signal based on the selected coefficients (such as "
+            },
+            {
+              "type": "codeVoice",
+              "code": "biquadLowPass"
+            },
+            {
+              "type": "text",
+              "text": " defined earlier):"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func apply(toInput input: [Float]) -> [Float] {",
+            "    return biquadFilter!.apply(input: input)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3687620",
+            "title": "Listing 13"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The app passes the result of the biquadratic filter apply function to the signal generator and your device plays the biquadratic-based filtered drum loop."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

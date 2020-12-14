@@ -1,0 +1,660 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Adds a single-precision complex vector to the product of two single-precision complex vectors."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/complex_basic_arithmetic"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/1449940-vdsp_zvma",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1449940,
+  "kind": "symbol",
+  "metadata": {
+    "title": "vDSP_zvma",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "7.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.9",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@F@vDSP_zvma",
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/1449940-vdsp_zvma"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/1449940-vdsp_zvma"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp": {
+      "title": "vDSP",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp",
+      "url": "/documentation/accelerate/vdsp",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/complex_basic_arithmetic": {
+      "title": "Complex Basic Arithmetic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/complex_basic_arithmetic",
+      "url": "/documentation/accelerate/vdsp/complex_basic_arithmetic",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-media-3110565": {
+      "identifier": "link-media-3110565",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/1449940-vdsp_zvma#3110565"
+    },
+    "media-3110565": {
+      "identifier": "media-3110565",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 328,
+            "height": 235
+          },
+          "url": "https://docs-assets.developer.apple.com/published/bd9ddb9b49/6c1f1fa3-bc58-466c-913f-9dd9eea13cad.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 328,
+            "height": 235
+          },
+          "url": "https://docs-assets.developer.apple.com/published/6deaee1edc/966d3cc0-7e33-45ba-a1ec-2e4032171852.png"
+        }
+      ],
+      "alt": "A diagram showing the operation of the vDSP_zvma function. There are five rows. The top two rows represents the first two inputs, vector A and vector B. The third row represents the intermediate result of the first two inputs. The forth row represents the third input, vector C. The bottom row represents the output, vector D. The diagram has connecting lines from the input vectors to the output vector indicating the relationships between the inputs and output.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449940-vdsp_zvma#3108864": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449940-vdsp_zvma#3108864",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/1449940-vdsp_zvma#3108864"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/dspsplitcomplex": {
+      "title": "DSPSplitComplex",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/dspsplitcomplex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/dspsplitcomplex"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_stride": {
+      "title": "vDSP_Stride",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_stride",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_stride"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_length": {
+      "title": "vDSP_Length",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_length",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_length"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449940-vdsp_zvma": {
+      "title": "vDSP_zvma",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449940-vdsp_zvma",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449940-vdsp_zvma",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a single-precision complex vector to the product of two single-precision complex vectors."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449721-vdsp_zvmad": {
+      "title": "vDSP_zvmaD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449721-vdsp_zvmad",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449721-vdsp_zvmad",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a double-precision complex vector to the product of two double-precision complex vectors."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/1449721-vdsp_zvmad"
+      ],
+      "title": "Ternary Multiply-Add Operations",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "vDSP_zvma"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@DSPSplitComplex",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/dspsplitcomplex",
+              "text": "DSPSplitComplex"
+            },
+            {
+              "kind": "text",
+              "text": " *__A, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vDSP_Stride",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_stride",
+              "text": "vDSP_Stride"
+            },
+            {
+              "kind": "text",
+              "text": " __IA, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@DSPSplitComplex",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/dspsplitcomplex",
+              "text": "DSPSplitComplex"
+            },
+            {
+              "kind": "text",
+              "text": " *__B, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vDSP_Stride",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_stride",
+              "text": "vDSP_Stride"
+            },
+            {
+              "kind": "text",
+              "text": " __IB, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@DSPSplitComplex",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/dspsplitcomplex",
+              "text": "DSPSplitComplex"
+            },
+            {
+              "kind": "text",
+              "text": " *__C, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vDSP_Stride",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_stride",
+              "text": "vDSP_Stride"
+            },
+            {
+              "kind": "text",
+              "text": " __IC, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@DSPSplitComplex",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/dspsplitcomplex",
+              "text": "DSPSplitComplex"
+            },
+            {
+              "kind": "text",
+              "text": " *__D, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vDSP_Stride",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_stride",
+              "text": "vDSP_Stride"
+            },
+            {
+              "kind": "text",
+              "text": " __ID, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vDSP_Length",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_length",
+              "text": "vDSP_Length"
+            },
+            {
+              "kind": "text",
+              "text": " __N);"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "__A",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Single-precision complex input vector."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__IA",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Stride for the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "A"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__B",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Single-precision complex input vector."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__IB",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Stride for "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "B"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__C",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Single-precision complex input vector."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__IC",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Stride for "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "C"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__D",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Single-precision complex output vector."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__ID",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Stride for "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "D"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__N",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Number of elements to process in each of the input and output vectors."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This function multiplies the first "
+            },
+            {
+              "type": "codeVoice",
+              "code": "N"
+            },
+            {
+              "type": "text",
+              "text": " complex elements of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "A"
+            },
+            {
+              "type": "text",
+              "text": " by the corresponding complex elements of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "B"
+            },
+            {
+              "type": "text",
+              "text": ", adds each product to the corresponding value in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "C"
+            },
+            {
+              "type": "text",
+              "text": ", and writes the result to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "D"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3110565",
+              "metadata": {
+                "anchor": "3110565",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The operation is:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            " for (n = 0; n < N; ++n)",
+            "    D[n] = A[n] * B[n] + C[n];"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3108864",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

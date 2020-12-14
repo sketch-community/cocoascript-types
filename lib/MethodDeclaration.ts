@@ -26,7 +26,7 @@ export class MethodDeclaration {
     let index = 0;
     const method = new MethodDeclaration(id, interfaceDecl);
     while (index < tokens.length) {
-      if ((tokens[index].kind === 'typeIdentifier' && tokens[index].identifier) || tokens[index].kind === 'keyword') {
+      if ((tokens[index].kind === 'typeIdentifier' && tokens[index].preciseIdentifier) || tokens[index].kind === 'keyword') {
         method.returnType = tokens[index].text;
       }
       if (tokens[index].kind === 'identifier') {

@@ -1,0 +1,817 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An abstract class for an audio generation, processing, or I/O block."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing",
+        "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/avaudionode",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1389644,
+  "kind": "symbol",
+  "metadata": {
+    "title": "AVAudioNode",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "8.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.10",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)AVAudioNode",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/avaudionode"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/avaudionode"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing": {
+      "title": "Audio Playback, Recording, and Processing",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing",
+      "url": "/documentation/avfoundation/audio_playback_recording_and_processing",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine": {
+      "title": "AVAudioEngine",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine",
+      "url": "/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioengine": {
+      "title": "AVAudioEngine",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioengine",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioengine",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A group of connected audio node objects used to generate and process audio signals and perform audio input and output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiomixernode": {
+      "title": "AVAudioMixerNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiomixernode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiomixernode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A node that mixes its inputs to a single output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiooutputnode": {
+      "title": "AVAudioOutputNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiooutputnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiooutputnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "This class represents an audio node that connects to the system’s audio output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/audiotoolbox/auaudiounit": {
+      "title": "AUAudioUnit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/audiotoolbox/auaudiounit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/audiotoolbox/auaudiounit"
+    },
+    "doc://com.apple.documentation/documentation/audiotoolbox/audiounit": {
+      "title": "AudioUnit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/audiotoolbox/audiounit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/audiotoolbox/audiounit"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudionode": {
+      "title": "AVAudioNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudionode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudionode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract class for an audio generation, processing, or I/O block."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1390147-inputformatforbus": {
+      "title": "inputFormatForBus:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1390147-inputformatforbus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudionode/1390147-inputformatforbus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the input format for the specified bus."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "inputFormatForBus:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1387710-nameforinputbus": {
+      "title": "nameForInputBus:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1387710-nameforinputbus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudionode/1387710-nameforinputbus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the name of an input bus."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "nameForInputBus:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1390585-numberofinputs": {
+      "title": "numberOfInputs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1390585-numberofinputs",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudionode/1390585-numberofinputs",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number of input busses for the node."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1389195-outputformatforbus": {
+      "title": "outputFormatForBus:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1389195-outputformatforbus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudionode/1389195-outputformatforbus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the output format for the specified bus."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "outputFormatForBus:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1390811-nameforoutputbus": {
+      "title": "nameForOutputBus:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1390811-nameforoutputbus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudionode/1390811-nameforoutputbus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the name of the output bus."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "nameForOutputBus:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1385916-numberofoutputs": {
+      "title": "numberOfOutputs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1385916-numberofoutputs",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudionode/1385916-numberofoutputs",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The number of output busses for the node."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1387122-installtaponbus": {
+      "title": "installTapOnBus:bufferSize:format:block:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1387122-installtaponbus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudionode/1387122-installtaponbus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Installs an audio tap on the bus to record, monitor, and observe the output of the node."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "installTapOnBus:bufferSize:format:block:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1388717-removetaponbus": {
+      "title": "removeTapOnBus:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1388717-removetaponbus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudionode/1388717-removetaponbus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes an audio tap on a bus."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeTapOnBus:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1386896-engine": {
+      "title": "engine",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1386896-engine",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudionode/1386896-engine",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The audio engine of the node."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1385978-lastrendertime": {
+      "title": "lastRenderTime",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1385978-lastrendertime",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudionode/1385978-lastrendertime",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The time for which the node most recently rendered."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudionode/2866396-auaudiounit": {
+      "title": "AUAudioUnit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudionode/2866396-auaudiounit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudionode/2866396-auaudiounit",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/audiotoolbox/auaudiounit"
+        },
+        {
+          "type": "text",
+          "text": " object wrapping or underlying the implementation's "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/audiotoolbox/audiounit"
+        },
+        {
+          "type": "text",
+          "text": " instance."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudionode/2875482-latency": {
+      "title": "latency",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudionode/2875482-latency",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudionode/2875482-latency",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The processing latency of the node, in seconds."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudionode/2875483-outputpresentationlatency": {
+      "title": "outputPresentationLatency",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudionode/2875483-outputpresentationlatency",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudionode/2875483-outputpresentationlatency",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The maximum render pipeline latency downstream of the node, in seconds."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1385976-reset": {
+      "title": "reset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1385976-reset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudionode/1385976-reset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Clear a unit's previous processing state."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "reset"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudionodetapblock": {
+      "title": "AVAudioNodeTapBlock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudionodetapblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudionodetapblock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The block that receives copies of the output of an "
+        },
+        {
+          "type": "codeVoice",
+          "code": "AVAudioNode"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudionodecompletionhandler": {
+      "title": "AVAudioNodeCompletionHandler",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudionodecompletionhandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudionodecompletionhandler",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A general callback handler."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudionodebus": {
+      "title": "AVAudioNodeBus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudionodebus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudionodebus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The index of a bus on an "
+        },
+        {
+          "type": "reference",
+          "isActive": false,
+          "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudionode"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioionode": {
+      "title": "AVAudioIONode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioionode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioionode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The base class for nodes that connect to the system's audio input or output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioinputnode": {
+      "title": "AVAudioInputNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioinputnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioinputnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A node that connects to the system’s audio input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiomixing": {
+      "title": "AVAudioMixing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiomixing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiomixing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Properties that are applicable to the input bus of a mixer node."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Configuring an Input Format Bus",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1390147-inputformatforbus",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1387710-nameforinputbus",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1390585-numberofinputs"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Creating and Output Format Bus",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1389195-outputformatforbus",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1390811-nameforoutputbus",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1385916-numberofoutputs"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Installing and Removing An Audio Tap",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1387122-installtaponbus",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1388717-removetaponbus"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting the Audio Engine for the Node",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1386896-engine"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting the Latest Node Render Time",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1385978-lastrendertime"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Getting Audio Node Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avaudionode/2866396-auaudiounit",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudionode/2875482-latency",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudionode/2875483-outputpresentationlatency"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Resetting the Audio Node",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avaudionode/1385976-reset"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avaudionodetapblock",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudionodecompletionhandler",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudionodebus"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioengine",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioionode",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioinputnode",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiooutputnode",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiomixernode",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiomixing"
+      ],
+      "title": "Essentials",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "AVAudioNode"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioengine"
+            },
+            {
+              "type": "text",
+              "text": " objects contain instances of various "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVAudioNode"
+            },
+            {
+              "type": "text",
+              "text": " subclasses. This base class provides certain common functionality."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Nodes have input and output busses, which can be thought of as connection points. For example, an effect typically has one input bus and one output bus. A mixer typically has multiple input busses and one output bus."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Busses have formats, expressed in terms of sample rate and channel count. When making connections between nodes, often the format must match exactly. However, there are exceptions such as the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiomixernode"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiooutputnode"
+            },
+            {
+              "type": "text",
+              "text": " classes."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Nodes do not currently provide useful functionality until attached to an engine."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

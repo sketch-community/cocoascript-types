@@ -1,0 +1,1408 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Use vectors to calculate geometric values, calculate dot products and cross products, and interpolate between values. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/simd"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/working_with_vectors",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2961595,
+  "kind": "article",
+  "metadata": {
+    "title": "Working with Vectors",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/working_with_vectors",
+        "documentation/accelerate/simd/working_with_vectors"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/working_with_vectors",
+        "documentation/accelerate/simd/working_with_vectors"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/simd": {
+      "title": "simd",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/simd",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/simd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Perform computations on small vectors and matrices."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2960064": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2960064",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/working_with_vectors#2960064"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2960062": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2960062",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/working_with_vectors#2960062"
+    },
+    "doc://com.apple.documentation/documentation/simd/2919006-simd_length": {
+      "title": "simd_length",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/simd/2919006-simd_length",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/simd/2919006-simd_length"
+    },
+    "link-media-2972222": {
+      "identifier": "link-media-2972222",
+      "type": "link",
+      "title": "Figure 4",
+      "url": "/documentation/accelerate/working_with_vectors#2972222"
+    },
+    "media-2972222": {
+      "identifier": "media-2972222",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 548,
+            "height": 506
+          },
+          "url": "https://docs-assets.developer.apple.com/published/ce5867da4b/1e629ea4-3958-4d7b-9cf0-843df90cb633.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 548,
+            "height": 506
+          },
+          "url": "https://docs-assets.developer.apple.com/published/eb31c34422/7787cf51-f816-4882-a8fd-bdc0970b58ec.png"
+        }
+      ],
+      "alt": "Illustration showing how the length of vector A, at coordinates 4, 3, is calculated using the Pythagorean theorem.",
+      "title": "Figure 4"
+    },
+    "doc://com.apple.documentation/documentation/simd/2873827-simd_distance": {
+      "title": "simd_distance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/simd/2873827-simd_distance",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/simd/2873827-simd_distance"
+    },
+    "link-media-2970190": {
+      "identifier": "link-media-2970190",
+      "type": "link",
+      "title": "Figure 5",
+      "url": "/documentation/accelerate/working_with_vectors#2970190"
+    },
+    "media-2970190": {
+      "identifier": "media-2970190",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 434,
+            "height": 396
+          },
+          "url": "https://docs-assets.developer.apple.com/published/cd0e7d4858/1d021044-6cee-4b33-bdae-2dc8d7ab401f.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 434,
+            "height": 396
+          },
+          "url": "https://docs-assets.developer.apple.com/published/88e427a4a5/39645e2f-ba6f-4925-a6f1-e930057e359f.png"
+        }
+      ],
+      "alt": "Illustration showing how the distance between vector A, at coordinates 3, 2, and vector B, at 7, 5, is calculated using the Pythagorean theorem.",
+      "title": "Figure 5"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2970196": {
+      "title": "Listing 14",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2970196",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/working_with_vectors#2970196"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2970193": {
+      "title": "Listing 15",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2970193",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/working_with_vectors#2970193"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2970218": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2970218",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/working_with_vectors#2970218"
+    },
+    "doc://com.apple.documentation/documentation/simd/2896637-simd_reflect": {
+      "title": "simd_reflect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/simd/2896637-simd_reflect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/simd/2896637-simd_reflect"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2970223": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2970223",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/working_with_vectors#2970223"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2970212": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2970212",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/working_with_vectors#2970212"
+    },
+    "link-media-2969455": {
+      "identifier": "link-media-2969455",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/working_with_vectors#2969455"
+    },
+    "media-2969455": {
+      "identifier": "media-2969455",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 600,
+            "height": 394
+          },
+          "url": "https://docs-assets.developer.apple.com/published/392d2ee21a/3f00ca72-f9d0-4eae-b824-cb2ca2dbf54d.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 600,
+            "height": 394
+          },
+          "url": "https://docs-assets.developer.apple.com/published/873dab5946/3d9fec84-3dc4-41bc-b236-5174260c26d7.png"
+        }
+      ],
+      "alt": "Image showing incident, reflected, and refracted rays and a normal, and their relationship to an object surface.",
+      "title": "Figure 1"
+    },
+    "link-media-2969400": {
+      "identifier": "link-media-2969400",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/accelerate/working_with_vectors#2969400"
+    },
+    "media-2969400": {
+      "identifier": "media-2969400",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 888,
+            "height": 436
+          },
+          "url": "https://docs-assets.developer.apple.com/published/84480dbec0/f27ee2b1-ee67-4631-9c4d-5a0a89bc9539.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 888,
+            "height": 436
+          },
+          "url": "https://docs-assets.developer.apple.com/published/d1f2f3ea44/d7c3f423-d74b-46c9-8b70-4cb73be85c51.png"
+        }
+      ],
+      "alt": "Illustration showing a triangle in 3D and its normal.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2969408": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2969408",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/working_with_vectors#2969408"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2969409": {
+      "title": "Listing 9",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2969409",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/working_with_vectors#2969409"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2969410": {
+      "title": "Listing 10",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2969410",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/working_with_vectors#2969410"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2970234": {
+      "title": "Listing 11",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2970234",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/working_with_vectors#2970234"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2970229": {
+      "title": "Listing 12",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2970229",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/working_with_vectors#2970229"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2970227": {
+      "title": "Listing 13",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2970227",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/working_with_vectors#2970227"
+    },
+    "doc://com.apple.documentation/documentation/spritekit/skaction/1417666-timingfunction": {
+      "title": "timingFunction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/spritekit/skaction/1417666-timingfunction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/spritekit/skaction/1417666-timingfunction"
+    },
+    "link-media-2969414": {
+      "identifier": "link-media-2969414",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/accelerate/working_with_vectors#2969414"
+    },
+    "media-2969414": {
+      "identifier": "media-2969414",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 342,
+            "height": 138
+          },
+          "url": "https://docs-assets.developer.apple.com/published/a59b0ae282/eaf76513-b214-4103-9f4a-844ec73d8d5b.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 342,
+            "height": 138
+          },
+          "url": "https://docs-assets.developer.apple.com/published/de759ad6a0/cc1b6c49-fb75-42b2-9bb5-4ca91ee946de.png"
+        }
+      ],
+      "alt": "Illustration showing linear and smooth interpolation between scalar values.",
+      "title": "Figure 3"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2961592": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2961592",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/working_with_vectors#2961592"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2961594": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_vectors#2961594",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/working_with_vectors#2961594"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_vectors": {
+      "title": "Working with Vectors",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_vectors",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/working_with_vectors",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use vectors to calculate geometric values, calculate dot products and cross products, and interpolate between values. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_matrices": {
+      "title": "Working with Matrices",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_matrices",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/working_with_matrices",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Solve simultaneous equations and transform points in space.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/working_with_quaternions": {
+      "title": "Working with Quaternions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/working_with_quaternions",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/working_with_quaternions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Rotate points around the surface of a sphere, and interpolate between them."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/rotating_a_cube_by_transforming_its_vertices": {
+      "title": "Rotating a Cube by Transforming Its Vertices",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/rotating_a_cube_by_transforming_its_vertices",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/rotating_a_cube_by_transforming_its_vertices",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Rotate a cube through a series of keyframes using quaternion interpolation to transition between them."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/working_with_matrices",
+        "doc://com.apple.documentation/documentation/accelerate/working_with_quaternions",
+        "doc://com.apple.documentation/documentation/accelerate/rotating_a_cube_by_transforming_its_vertices",
+        "doc://com.apple.documentation/documentation/accelerate/simd"
+      ],
+      "title": "Vectors, Matrices, and Quaternions",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A vector is comparable to a fixed-length array containing integer or floating-point values. The simd library provides support for "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "small vectors"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", that is, vectors that contain up to eight double-precision or sixteen single-precision values. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can use vectors to represent data such as color (with the elements containing values for red, green, blue, and alpha), or position (with the elements containing values for coordinates in 2D or 3D space). "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can use the simd library to apply a single instruction to each element in the vector. For example, consider two vectors, each containing four elements:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let a = simd_float4(x: 2, y: 4, z: 5, w: 8)",
+            "let b = simd_float4(x: 5, y: 6, z: 7, w: 8)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2961592",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can easily find, for example, the elementwise sum of the two vectors by using the + operator:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let c = a + b    // c = (7.0, 10.0, 12.0, 16.0)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2961594",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following examples show a few common uses of vectors."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Calculate Luminance",
+          "anchor": "2960063"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can calculate the luminance of a color by multiplying each of its red, green, and blue color channels by a certain coefficient, and adding the three products together—creating a grayscale representation of the color. The following code uses the Rec. 709 luma coefficients for the color-to-grayscale conversion. Without the simd library, you could implement this calculation using the following code:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func lumaForColor(red: Float, green: Float, blue: Float) -> Float {",
+            "    let luma = (red * 0.2126) +",
+            "               (green * 0.7152) +",
+            "               (blue * 0.0722)",
+            "    ",
+            "    return luma",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2960064",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The simd library simplifies this code by treating the color and the coefficients as vectors, and returning the dot product (the sum of the elementwise products) of the vectors:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let rec709Luma = simd_float3(0.2126, 0.7152, 0.0722)",
+            "",
+            "func lumaForColor(red: Float, green: Float, blue: Float) -> Float {",
+            "    let luma = simd_dot(rec709Luma,",
+            "                        simd_float3(red, green, blue))",
+            "    ",
+            "    return luma",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2960062",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Calculate Length and Distance",
+          "anchor": "2960186"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Calculating the distance between two points using the Pythagorean theorem is a common task in games and graphics programming. The simd library provides functions for calculating length and distance in two, three, and four dimensions."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Calculate Length",
+          "anchor": "2970197"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The length functions, for example, "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/simd/2919006-simd_length"
+            },
+            {
+              "type": "text",
+              "text": ", return the length of a vector. The following illustration shows how the length of a vector, "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", is calculated as the square root of the sum of the squares of its two values."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2972222",
+              "metadata": {
+                "anchor": "2972222",
+                "title": "Figure 4"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Calculate Distance",
+          "anchor": "2970192"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The distance functions, for example, "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/simd/2873827-simd_distance"
+            },
+            {
+              "type": "text",
+              "text": ", return the distance between two vectors:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2970190",
+              "metadata": {
+                "anchor": "2970190",
+                "title": "Figure 5"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows how the length function returns the same value as the distance function if one of the vectors contains all zeros:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let a = simd_float2(x: 3, y: 4)",
+            "let b = simd_float2(x: 0, y: 0)",
+            "",
+            "// Both distance and length = 5",
+            "let dist = simd_distance(a, b)",
+            "let len = simd_length(a)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2970196",
+            "title": "Listing 14"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Compare Distances",
+          "anchor": "2970191"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because the distance and length functions both calculate the square root of the sum of the squares of the vectors, they can be computationally expensive. If you don't need the exact value—for example, if you're comparing the relative lengths of two vectors—simd provides functions that return the square of the distance and the length. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows how you can determine which of the two vectors defined above is closer to a third vector, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "target"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let target = simd_float2(x: 5, y: 2)",
+            "",
+            "if simd_distance_squared(a, target) < simd_distance_squared(b, target) {",
+            "    // `a` is closest to `target`",
+            "} else {",
+            "    // `b` is closest to `target`",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2970193",
+            "title": "Listing 15"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Calculate Reflection and Refraction Vectors",
+          "anchor": "2962330"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The simd library provides functions for calculating vectors that describe reflections and refractions in two-, three-, and four-dimensional space. The image below shows:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "An "
+                    },
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "incident ray"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": ", described by the vector "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "simd_double2(x: 1.5, y: -1)"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", traveling toward the center of the image."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A "
+                    },
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": ", described by the vector "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "simd_double2(x: 0, y: 1)"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", that's perpendicular to the interface between the two media. "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The "
+                    },
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "reflected ray"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": ", computed by simd, traveling away from the center of the image."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The "
+                    },
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "refracted ray"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": ", computed by simd, traveling away from the center of the image."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2969455",
+              "metadata": {
+                "anchor": "2969455",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Normalize Vectors",
+          "anchor": "2970219"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You normalize the vectors (calculate a vector with the same direction as the original, but with a length of 1) passed to the reflect and refract functions to achieve the correct results. Given the values above, the following code defines normalized vectors for the incident ray and normal:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let incident = simd_normalize(simd_double2(x: 1.5, y: -1))",
+            "let normal = simd_normalize(simd_double2(x: 0, y: 1))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2970218",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Calculate Reflection",
+          "anchor": "2970209"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You get the reflected vector with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/simd/2896637-simd_reflect"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let reflected = simd_reflect(incident, normal)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2970223",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Calculate Refraction",
+          "anchor": "2970211"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For the refraction function, you pass an additional parameter ("
+            },
+            {
+              "type": "codeVoice",
+              "code": "eta"
+            },
+            {
+              "type": "text",
+              "text": ") that models the index of refraction for physical materials:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let air = 1.0       // refractive index for air",
+            "let glass = 1.5     // refractive index for glass",
+            "let refracted = simd_refract(incident, normal, air / glass)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2970212",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Calculate the Normal of a Triangle",
+          "anchor": "2969399"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The normal of a triangle in 3D space is the vector perpendicular to its surface. You can use the simd library's cross product function to calculate the normal of a triangle. This is a common task in 3D graphics programming and is used when calculating the shading of surfaces. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the image below, the triangle's normal is shown as a red line that's perpendicular to the surface of the triangle."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2969400",
+              "metadata": {
+                "anchor": "2969400",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code defines the three vertices of the triangle:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let vertex1 = simd_float3(-1.5, 0.5, 0)",
+            "let vertex2 = simd_float3(1, 0, 3)",
+            "let vertex3 = simd_float3(0.5, -0.5, -1.5)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2969408",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your first step in calculating the normal of the triangle is to create two vectors defined by the difference between the vertices—representing two sides of the triangle:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let vector1 = vertex2 - vertex3",
+            "let vector2 = vertex2 - vertex1"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2969409",
+            "title": "Listing 9"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "simd_cross"
+            },
+            {
+              "type": "text",
+              "text": " function returns the vector that's perpendicular to the two vectors you pass it. In this example, the returned vector is the normal of the triangle. Because the normal represents a direction, you can normalize the value to get a unit vector:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let normal = simd_normalize(simd_cross(vector1, vector2)) "
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2969410",
+            "title": "Listing 10"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Interpolate Between Values",
+          "anchor": "2960081"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Interpolation adds new, intermediate data points between known values. The simd library provides functions to linearly and smoothly interpolate between scalar and vector values. Smooth interpolation is commonly used in animation, and you can, for example, use the functions described below to define the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/spritekit/skaction/1417666-timingfunction"
+            },
+            {
+              "type": "text",
+              "text": " of a SpriteKit action."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following illustration shows how linear interpolation creates a straight line between boundary values (the straight blue line), and how smooth interpolation eases in and out between boundary values (the curved pink line):"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2969414",
+              "metadata": {
+                "anchor": "2969414",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Linearly Interpolate",
+          "anchor": "2970228"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Linear interpolation is provided by the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "simd_mix"
+            },
+            {
+              "type": "text",
+              "text": " function. The first two parameters specify the range, and the third parameter specifies the normalized (between "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1"
+            },
+            {
+              "type": "text",
+              "text": ") position in the range. The following code shows how to populate an array with 1024 elements. The first element in the array has a value of -100, and the last element of the array has a value of 100. Intermediate elements linearly interpolate between the first and last values:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let linear: [Float] = stride(from: 0.0, to: 1.0, by: 1 / 1024).map { x in",
+            "    return simd_mix(-100, 100, x)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2970234",
+            "title": "Listing 11"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Smoothly Interpolate",
+          "anchor": "2970233"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Smooth interpolation is provided by the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "simd_smoothstep"
+            },
+            {
+              "type": "text",
+              "text": " function. This function uses Hermite interpolation based on the following code:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "simd_double4 simd_smoothstep(simd_double4 edge0, simd_double4 edge1, simd_double4 x) {",
+            "  simd_double4 t = simd_clamp((x - edge0)/(edge1 - edge0), 0, 1);",
+            "  return t*t*(3 - 2*t);",
+            "}"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2970229",
+            "title": "Listing 12"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The first two parameters specify the range, and the third parameter specifies the position in the range. Unlike the mix function, the position isn't normalized, but the return value is. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows how to populate an array with 1024 elements. The first element in the array has a value of 0, and the last element of the array has a value of 1. Intermediate elements smoothly interpolate between the first and last values:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let smooth: [Float] = (-512 ..< 512).map { x in",
+            "    return simd_smoothstep(-512, 512, Float(x))",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2970227",
+            "title": "Listing 13"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

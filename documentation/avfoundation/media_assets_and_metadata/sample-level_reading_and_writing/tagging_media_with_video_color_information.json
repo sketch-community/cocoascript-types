@@ -1,0 +1,1525 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Inspect and set video color space information when writing and transcoding media."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata",
+        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3666066,
+  "kind": "article",
+  "metadata": {
+    "title": "Tagging Media with Video Color Information",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata": {
+      "title": "Media Assets and Metadata",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata",
+      "url": "/documentation/avfoundation/media_assets_and_metadata",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing": {
+      "title": "Sample-level Reading and Writing",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-3677437": {
+      "title": "QuickTime File Format",
+      "type": "topic",
+      "identifier": "link-3677437",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/library/archive/documentation/QuickTime/QTFF/QTFFChap3/qtff3.html"
+    },
+    "link-3677850": {
+      "title": "Uncompressed Y´CbCr Video in QuickTime Files",
+      "type": "section",
+      "identifier": "link-3677850",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/library/archive/technotes/tn2162/_index.html#//apple_ref/doc/uid/DTS40013070-CH1-TNTAG10"
+    },
+    "link-3684862": {
+      "title": "ISO/IEC 23001-8:2016",
+      "type": "topic",
+      "identifier": "link-3684862",
+      "kind": "article",
+      "role": "link",
+      "url": "https://www.iso.org/standard/69661.html"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput": {
+      "title": "AVAssetWriterInput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A writer used to append media samples to a single track of an asset writer's output file."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avvideocolorpropertieskey": {
+      "title": "AVVideoColorPropertiesKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocolorpropertieskey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avvideocolorpropertieskey"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings/setting_color_properties_for_a_specific_resolution": {
+      "title": "Setting Color Properties for a Specific Resolution",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings/setting_color_properties_for_a_specific_resolution",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/avassetwriterinput/video_settings/setting_color_properties_for_a_specific_resolution"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information#3667275": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information#3667275",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information#3667275"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1643234-colorprimaries": {
+      "title": "colorPrimaries",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1643234-colorprimaries",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablevideocomposition/1643234-colorprimaries"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1643237-colortransferfunction": {
+      "title": "colorTransferFunction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1643237-colortransferfunction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablevideocomposition/1643237-colortransferfunction"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1643231-colorycbcrmatrix": {
+      "title": "colorYCbCrMatrix",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1643231-colorycbcrmatrix",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablevideocomposition/1643231-colorycbcrmatrix"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avvideotransferfunctionkey": {
+      "title": "AVVideoTransferFunctionKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideotransferfunctionkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avvideotransferfunctionkey"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avvideoycbcrmatrixkey": {
+      "title": "AVVideoYCbCrMatrixKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideoycbcrmatrixkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avvideoycbcrmatrixkey"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information#3667284": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information#3667284",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information#3667284"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information#3667282": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information#3667282",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information#3667282"
+    },
+    "doc://com.apple.documentation/documentation/coremedia/cmformatdescription": {
+      "title": "CMFormatDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coremedia/cmformatdescription",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/coremedia/cmformatdescription"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassettrack": {
+      "title": "AVAssetTrack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassettrack"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1386694-formatdescriptions": {
+      "title": "formatDescriptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1386694-formatdescriptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassettrack/1386694-formatdescriptions"
+    },
+    "doc://com.apple.documentation/documentation/corevideo/kcvimagebuffercolorprimarieskey": {
+      "title": "kCVImageBufferColorPrimariesKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corevideo/kcvimagebuffercolorprimarieskey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corevideo/kcvimagebuffercolorprimarieskey"
+    },
+    "doc://com.apple.documentation/documentation/coremedia/kcmformatdescriptioncolorprimaries_itu_r_709_2": {
+      "title": "kCMFormatDescriptionColorPrimaries_ITU_R_709_2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coremedia/kcmformatdescriptioncolorprimaries_itu_r_709_2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coremedia/kcmformatdescriptioncolorprimaries_itu_r_709_2"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information#3672163": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information#3672163",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information#3672163"
+    },
+    "link-media-3677441": {
+      "identifier": "link-media-3677441",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information#3677441"
+    },
+    "media-3677441": {
+      "identifier": "media-3677441",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 394,
+            "height": 284
+          },
+          "url": "https://docs-assets.developer.apple.com/published/e9c5d05173/rendered2x-1597509599.png"
+        }
+      ],
+      "alt": "Screenshot of the Inspector window in the QuickTime Player app with an arrow pointing to the Format information for a video.",
+      "title": "Figure 1"
+    },
+    "link-media-3677442": {
+      "identifier": "link-media-3677442",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information#3677442"
+    },
+    "media-3677442": {
+      "identifier": "media-3677442",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 263,
+            "height": 94
+          },
+          "url": "https://docs-assets.developer.apple.com/published/840bd0415d/rendered2x-1597509597.png"
+        }
+      ],
+      "alt": "Screenshot of Finder’s Info window with an arrow pointing to the “Color profile” information in the More Info section.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicuseswidegamutcolorspace": {
+      "title": "AVMediaCharacteristicUsesWideGamutColorSpace",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicuseswidegamutcolorspace",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmediacharacteristicuseswidegamutcolorspace"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information#3667298": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information#3667298",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information#3667298"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetreaderoutput": {
+      "title": "AVAssetReaderOutput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetreaderoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetreaderoutput"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avvideoallowwidecolorkey": {
+      "title": "AVVideoAllowWideColorKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideoallowwidecolorkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avvideoallowwidecolorkey"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information#3667296": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information#3667296",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information#3667296"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1643657-supportswidecolorsourceframes": {
+      "title": "supportsWideColorSourceFrames",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1643657-supportswidecolorsourceframes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avvideocompositing/1643657-supportswidecolorsourceframes"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information#3667283": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information#3667283",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information#3667283"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/writing_fragmented_mpeg-4_files_for_http_live_streaming": {
+      "title": "Writing Fragmented MPEG-4 Files for HTTP Live Streaming",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/writing_fragmented_mpeg-4_files_for_http_live_streaming",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/writing_fragmented_mpeg-4_files_for_http_live_streaming",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information": {
+      "title": "Tagging Media with Video Color Information",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inspect and set video color space information when writing and transcoding media."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter": {
+      "title": "AVAssetWriter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to write media data to a new file of a specified audiovisual container type."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate": {
+      "title": "AVAssetWriterDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A delegate protocol that defines the methods to implement to be an asset writer delegate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor": {
+      "title": "AVAssetWriterInputPixelBufferAdaptor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinputpixelbufferadaptor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A buffer used to append video samples packaged as pixel buffers to a single asset writer input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor": {
+      "title": "AVAssetWriterInputMetadataAdaptor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinputmetadataadaptor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that defines an interface for writing metadata packaged as timed metadata groups into a single asset writer input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup": {
+      "title": "AVAssetWriterInputGroup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinputgroup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A group of tracks in a mutually exclusive relationship."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/writing_fragmented_mpeg-4_files_for_http_live_streaming",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup"
+      ],
+      "title": "Media Writing",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Media files may contain video color space information tags that describe the video media. The system’s color management uses these video color tags to ensure a consistent color appearance across all environments. You can retrieve and inspect the color information tags from your media, and specify new tags when writing and transcoding media. You can also detect wide color media to prevent clamping of the media to a smaller gamut color space."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Video Tags Describe Key Video Parameters",
+          "anchor": "3666068"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For historical reasons, color scientists defined many permutations of broadcast video color spaces. As a result, you should "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "tag"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " your media files with color information that describes the video media. If you don’t, the untagged media content might not match your intentions across all the different configurations and environments your customers encounter."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The term "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "tagging"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": " refers to optional color space information parameters in the media that describe the content. The tags describe video colorimetry in a simplified way."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This color information tagging mechanism supports three key video parameters:"
+            }
+          ]
+        },
+        {
+          "type": "termList",
+          "items": [
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "text",
+                    "text": "Color Primaries"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "An index into a table specifying the CIE 1931 xy chromaticity coordinates of the white point and the red, green, and blue primaries. The table of primaries specifies the white point and the red, green, and blue primary color points for a video system. "
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "termList",
+          "items": [
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "text",
+                    "text": "Transfer Function"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Defines an index into a table specifying the nonlinear transfer function coefficients that translate between RGB color space values and Y´CbCr values. The table of transfer function coefficients specifies the nonlinear function coefficients that translate between the stored Y´CbCr values and a video capture or display system."
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "termList",
+          "items": [
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "text",
+                    "text": "Conversion Matrix"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "An index into a table specifying the transformation matrix coefficients that translate between RGB color space values and Y´CbCr values. The table of matrixes specifies the matrix for the translation."
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Each represents indices, not actual values. The "
+                },
+                {
+                  "type": "link",
+                  "title": "QuickTime File Format",
+                  "destination": "https://developer.apple.com/library/archive/documentation/QuickTime/QTFF/QTFFChap3/qtff3.html"
+                },
+                {
+                  "type": "text",
+                  "text": " and "
+                },
+                {
+                  "type": "link",
+                  "title": "Uncompressed Y´CbCr Video in QuickTime Files",
+                  "destination": "https://developer.apple.com/library/archive/technotes/tn2162/_index.html#//apple_ref/doc/uid/DTS40013070-CH1-TNTAG10"
+                },
+                {
+                  "type": "text",
+                  "text": " describe these indices in the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "‘colr’"
+                },
+                {
+                  "type": "text",
+                  "text": " extension of type "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "‘nclc’"
+                },
+                {
+                  "type": "text",
+                  "text": ". "
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "ColorSync uses these video parameters to generate one of the following video color spaces:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "SD (SMPTE-C)"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "HD (Rec. 709)"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "P3 (D65)"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "UHD (Rec. 2020)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "link",
+              "title": "ISO/IEC 23001-8:2016",
+              "destination": "https://www.iso.org/standard/69661.html"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Coding-Independent Code Points"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " defines these standard tag numbers."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Tag Your Video Using Asset Writer",
+          "anchor": "3667279"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you initialize an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput"
+            },
+            {
+              "type": "text",
+              "text": " object, you can optionally specify a dictionary that contains the settings for encoding the media that you append to the output. The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocolorpropertieskey"
+            },
+            {
+              "type": "text",
+              "text": " is a dictionary that contains properties specifying video color (see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput/video_settings/setting_color_properties_for_a_specific_resolution"
+            },
+            {
+              "type": "text",
+              "text": " for the details). Set this key in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVAssetWriterInput"
+            },
+            {
+              "type": "text",
+              "text": " output settings dictionary to override the tagging of color properties in the video. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the video color properties key is present in the output settings, the writer tags the output as follows:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If the source buffers don’t have color property tags, the asset writer tags the output according to the video color properties."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If the source buffers also have color property tags, the writer (if necessary) color-converts the source buffers to match the video color properties. The writer also tags the output according to the video color properties."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you don’t intend to override the color property tags in your video, don’t set a value for the video color properties key. If the video color properties key isn’t present in the output settings, the framework tags the output as follows:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If the source buffers have color property tags, the writer tags the output according to the source buffer color properties."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If the source buffers don’t have color property tags, the writer doesn’t tag the output with any color properties."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following example code specifies the Rec. 709 output color space for the video color properties key in the output settings:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let writer = <# Your AVAssetWriter object #>",
+            "",
+            "let colorPropertySettings = [AVVideoColorPrimariesKey: AVVideoColorPrimaries_ITU_R_709_2, AVVideoYCbCrMatrixKey: AVVideoTransferFunction_ITU_R_709_2, AVVideoTransferFunctionKey: AVVideoYCbCrMatrix_ITU_R_709_2]",
+            "let compressionSettings = [AVVideoCodecKey : AVVideoCodecType.h264, AVVideoWidthKey : 1920, AVVideoHeightKey : 1080, AVVideoColorPropertiesKey: colorPropertySettings] as [String : Any]",
+            "",
+            "let input = AVAssetWriterInput(mediaType: .video, outputSettings: compressionSettings)",
+            "",
+            "writer.add(input)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3667275",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Specify Color Space Information for Your Video Composition",
+          "anchor": "3667277"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You configure video compositions with color space information using analogous properties. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You designate a working color space for the entire video composition using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1643234-colorprimaries"
+            },
+            {
+              "type": "text",
+              "text": " property. Set the transfer function using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1643237-colortransferfunction"
+            },
+            {
+              "type": "text",
+              "text": " key, and the Y’CbCr matrix using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablevideocomposition/1643231-colorycbcrmatrix"
+            },
+            {
+              "type": "text",
+              "text": " key. Specify values suitable for the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVVideoColorPrimariesKey"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideotransferfunctionkey"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideoycbcrmatrixkey"
+            },
+            {
+              "type": "text",
+              "text": " keys, respectively."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Here’s a code example:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let videoComposition = AVMutableVideoComposition() ",
+            "videoComposition.colorPrimaries = AVVideoColorPrimaries_P3_D65 ",
+            "videoComposition.colorTransferFunction = AVVideoTransferFunction_ITU_R_709_2 ",
+            "videoComposition.colorYCbCrMatrix = AVVideoYCbCrMatrix_ITU_R_709_2",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3667284",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The default value for the above properties is "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "nil"
+                },
+                {
+                  "type": "text",
+                  "text": ". When the value of a property is "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "nil"
+                },
+                {
+                  "type": "text",
+                  "text": ", the system adopts and propogates the source’s value."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Tag Your Core Video Buffers with Color Space Information",
+          "anchor": "3667281"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you generate Core Video source buffers for rendering (for example, using a pixel buffer pool in Metal), you should tag them with color information."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You explicitly set the color space tags in the dictionary of attachments of the buffer as shown in the example below:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "CVBufferSetAttachment(pixelBuffer, kCVImageBufferColorPrimariesKey, kCVImageBufferColorPrimaries_P3_D65, kCVAttachmentMode_ShouldPropagate)",
+            "CVBufferSetAttachment(pixelBuffer, kCVImageBufferTransferFunctionKey, kCVImageBufferTransferFunction_ITU_R_709_2, kCVAttachmentMode_ShouldPropagate)",
+            "CVBufferSetAttachment(pixelBuffer, kCVImageBufferYCbCrMatrixKey, kCVImageBufferYCbCrMatrix_ITU_R_709_2, kCVAttachmentMode_ShouldPropagate)",
+            "writerAdaptor.append(pixelBuffer, withPresentationTime: PTS)",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3667282",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Get Your Media’s Color Space Information",
+          "anchor": "3667293"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You access the low-level details about an asset’s video track media using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coremedia/cmformatdescription"
+            },
+            {
+              "type": "text",
+              "text": ". A "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CMFormatDescriptionRef"
+            },
+            {
+              "type": "text",
+              "text": " object describes the media of a particular type (audio, video, and so on). You get the format descriptions for the asset track’s media sample references using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack/1386694-formatdescriptions"
+            },
+            {
+              "type": "text",
+              "text": " property. Look in the format description for the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corevideo/kcvimagebuffercolorprimarieskey"
+            },
+            {
+              "type": "text",
+              "text": " extension key that defines the color properties of the media. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CMFormatDescription.h"
+            },
+            {
+              "type": "text",
+              "text": " header defines the color primary key values."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Here’s an example that checks for the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coremedia/kcmformatdescriptioncolorprimaries_itu_r_709_2"
+            },
+            {
+              "type": "text",
+              "text": " color primary key value in the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corevideo/kcvimagebuffercolorprimarieskey"
+            },
+            {
+              "type": "text",
+              "text": " extension:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let asset = <# Your AVAsset #>",
+            "self.asset.tracks(withMediaType: .video).forEach { assetTracks in",
+            "    ",
+            "    let formatDescriptions =",
+            "        assetTracks.formatDescriptions as! [CMFormatDescription]",
+            "    for (_, formatDesc) in formatDescriptions.enumerated() {",
+            "        ",
+            "        guard let colorPrimaries =",
+            "            CMFormatDescriptionGetExtension(formatDesc, extensionKey: kCMFormatDescriptionExtension_ColorPrimaries) else {",
+            "                return",
+            "        }",
+            "        ",
+            "        if CFGetTypeID(colorPrimaries) == CFStringGetTypeID() {",
+            "            ",
+            "            let result =",
+            "                CFStringCompareWithOptions((colorPrimaries as! CFString),",
+            "                    kCMFormatDescriptionColorPrimaries_ITU_R_709_2,",
+            "                    CFRangeMake(0, CFStringGetLength((colorPrimaries as! CFString))),",
+            "                    CFStringCompareFlags.compareCaseInsensitive)",
+            "            // Is the color primary Rec. 709?",
+            "            if result == CFComparisonResult.compareEqualTo {",
+            "                // Your code here to process Rec. 709.",
+            "            }",
+            "        }",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3672163",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "View Your Media’s Color Information ",
+          "anchor": "3677439"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can use the Show Movie Inspector command in the macOS QuickTime Player app to view the color space information for the video media in a file. Open the file in the app and choose Window > Show Movie Inspector. The Inspector window displays the color information and other details about the video media."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3677441",
+              "metadata": {
+                "anchor": "3677441",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Finder Get Info command also shows the color information for the video media in a file. Select a file in the Finder and choose File > Get Info. The More Info section contains the color profile information."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3677442",
+              "metadata": {
+                "anchor": "3677442",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Detect Wide Color Tags in Your Media",
+          "anchor": "3667294"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicuseswidegamutcolorspace"
+            },
+            {
+              "type": "text",
+              "text": " media characteristic indicates that the video track contains color primaries wider than Rec. 709 that the system can’t accurately represent. A wide color space, such as P3 D65, contains additional dynamic range that may benefit from special treatment when compositing in your workflow. You should exercise care to avoid clamping the colors back to the Rec. 709 space. If you don’t, it’s generally best to stay within the Rec. 709 space for your processing."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Here’s an example:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let asset = <# Your AVAsset #>",
+            "let wideGamutTracks = asset.tracks( withMediaCharacteristic:AVMediaCharacteristicUsesWideGamutColorSpace)",
+            "if wideGamutTracks.count > 0 {",
+            "    // Use wide color aware processing.",
+            "} else { ",
+            "    // Use Rec 709 processing.",
+            "} "
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3667298",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Preserve Wide Color in Your Media",
+          "anchor": "3667297"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Set the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetreaderoutput"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideoallowwidecolorkey"
+            },
+            {
+              "type": "text",
+              "text": " property to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "true"
+            },
+            {
+              "type": "text",
+              "text": " to receive buffers in their original color space. The default value ("
+            },
+            {
+              "type": "codeVoice",
+              "code": "false"
+            },
+            {
+              "type": "text",
+              "text": ") permits implicit color conversions to a nonwide gamut color space."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let allowWideColorSettings = [AVVideoAllowWideColorKey:true]",
+            "let readerOutput = AVAssetReaderOutput(outputSettings:allowWideColorSettings) "
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3667296",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Support Wide Color in Custom Video Compositors",
+          "anchor": "3667280"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You implement the optional "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avvideocompositing/1643657-supportswidecolorsourceframes"
+            },
+            {
+              "type": "text",
+              "text": " property and return "
+            },
+            {
+              "type": "codeVoice",
+              "code": "true"
+            },
+            {
+              "type": "text",
+              "text": " to indicate your custom video compositor handles frames that contain wide color properties. In this case, the compositor examines and honors color space tags on every single source frame buffer."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "class MyCustomVideoCompositor : AVVideoCompositing { ",
+            "   // ...",
+            "   var supportsWideColorSourceFrames: Boolean  { return true }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3667283",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

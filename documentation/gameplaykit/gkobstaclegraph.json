@@ -1,0 +1,864 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A navigation graph for 2D game worlds that creates a minimal network for precise pathfinding around obstacles."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/gameplaykit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1501108,
+  "kind": "symbol",
+  "metadata": {
+    "title": "GKObstacleGraph",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "GameplayKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.11",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      }
+    ],
+    "externalID": "c:objc(cs)GKObstacleGraph",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/gameplaykit/gkobstaclegraph"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/gameplaykit/gkobstaclegraph"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/gameplaykit": {
+      "title": "GameplayKit",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit",
+      "url": "/documentation/gameplaykit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkobstacle": {
+      "title": "GKObstacle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstacle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkobstacle"
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode2d": {
+      "title": "GKGraphNode2D",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode2d",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgraphnode2d",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A node in a navigation graph, associated with a point in continuous 2D space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgraph": {
+      "title": "GKGraph",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraph",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgraph",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A collection of nodes that describes the navigability of a game world and provides "
+        },
+        {
+          "type": "newTerm",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "pathfinding"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": " methods to search for routes through that space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkmeshgraph": {
+      "title": "GKMeshGraph",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkmeshgraph",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkmeshgraph",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A navigation graph for 2D game worlds that creates a space-filling network for smooth pathfinding around obstacles."
+        }
+      ]
+    },
+    "devLink-1757327": {
+      "identifier": "devLink-1757327",
+      "type": "link",
+      "title": "Pathfinding",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/Pathfinding.html#//apple_ref/doc/uid/TP40015172-CH3"
+    },
+    "devLink-1757291": {
+      "identifier": "devLink-1757291",
+      "type": "link",
+      "title": "GameplayKit Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172"
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1640694-initwithobstacles": {
+      "title": "initWithObstacles:bufferRadius:nodeClass:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1640694-initwithobstacles",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkobstaclegraph/1640694-initwithobstacles",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a graph with the specified list of obstacles, using the specified node class."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithObstacles:bufferRadius:nodeClass:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1644731-graphwithobstacles": {
+      "title": "graphWithObstacles:bufferRadius:nodeClass:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1644731-graphwithobstacles",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkobstaclegraph/1644731-graphwithobstacles",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a graph with the specified list of obstacles, using the specified node class."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "graphWithObstacles:bufferRadius:nodeClass:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501299-initwithobstacles": {
+      "title": "initWithObstacles:bufferRadius:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501299-initwithobstacles",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkobstaclegraph/1501299-initwithobstacles",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a graph with the specified list of obstacles."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithObstacles:bufferRadius:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1556417-graphwithobstacles": {
+      "title": "graphWithObstacles:bufferRadius:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1556417-graphwithobstacles",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkobstaclegraph/1556417-graphwithobstacles",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a graph with the specified list of obstacles."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "graphWithObstacles:bufferRadius:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501213-obstacles": {
+      "title": "obstacles",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501213-obstacles",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkobstaclegraph/1501213-obstacles",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The list of obstacle objects in the graph, each of which describes a polygon-shaped impassable area."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501073-addobstacles": {
+      "title": "addObstacles:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501073-addobstacles",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkobstaclegraph/1501073-addobstacles",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds new obstacles to the graph."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addObstacles:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501058-removeobstacles": {
+      "title": "removeObstacles:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501058-removeobstacles",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkobstaclegraph/1501058-removeobstacles",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes the specified obstacle from the graph."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeObstacles:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501297-removeallobstacles": {
+      "title": "removeAllObstacles",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501297-removeallobstacles",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkobstaclegraph/1501297-removeallobstacles",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes all obstacles from the graph."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeAllObstacles"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501285-nodesforobstacle": {
+      "title": "nodesForObstacle:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501285-nodesforobstacle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkobstaclegraph/1501285-nodesforobstacle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the group of nodes corresponding to an obstacle in the graph."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "nodesForObstacle:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501129-connectnodeusingobstacles": {
+      "title": "connectNodeUsingObstacles:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501129-connectnodeusingobstacles",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkobstaclegraph/1501129-connectnodeusingobstacles",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds the specified node to the graph, connecting it to its nearest neighbors without creating connections that pass through obstacles or their buffer regions."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "connectNodeUsingObstacles:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501075-connectnodeusingobstacles": {
+      "title": "connectNodeUsingObstacles:ignoringObstacles:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501075-connectnodeusingobstacles",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkobstaclegraph/1501075-connectnodeusingobstacles",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds the specified node to the graph, connecting it to its nearest neighbors while ignoring the area occupied by the specified obstacles."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "connectNodeUsingObstacles:ignoringObstacles:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501220-connectnodeusingobstacles": {
+      "title": "connectNodeUsingObstacles:ignoringBufferRadiusOfObstacles:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501220-connectnodeusingobstacles",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkobstaclegraph/1501220-connectnodeusingobstacles",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds the specified node to the graph, connecting it to its nearest neighbors while ignoring the buffer regions around the specified obstacles."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "connectNodeUsingObstacles:ignoringBufferRadiusOfObstacles:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501119-bufferradius": {
+      "title": "bufferRadius",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501119-bufferradius",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkobstaclegraph/1501119-bufferradius",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The distance from obstacle edges that should also be considered impassable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501060-lockconnectionfromnode": {
+      "title": "lockConnectionFromNode:toNode:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501060-lockconnectionfromnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkobstaclegraph/1501060-lockconnectionfromnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Prevents the specified nodes from being disconnected due to the addition of obstacles."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "lockConnectionFromNode:toNode:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501093-unlockconnectionfromnode": {
+      "title": "unlockConnectionFromNode:toNode:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501093-unlockconnectionfromnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkobstaclegraph/1501093-unlockconnectionfromnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Allows the specified nodes to be disconnected due to the addition of obstacles."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "unlockConnectionFromNode:toNode:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501126-isconnectionlockedfromnode": {
+      "title": "isConnectionLockedFromNode:toNode:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501126-isconnectionlockedfromnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkobstaclegraph/1501126-isconnectionlockedfromnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether the specified nodes are protected from disconnection due to the addition of obstacles."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "isConnectionLockedFromNode:toNode:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1640659-classforgenericargumentatindex": {
+      "title": "classForGenericArgumentAtIndex:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1640659-classforgenericargumentatindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkobstaclegraph/1640659-classforgenericargumentatindex",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "classForGenericArgumentAtIndex:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph": {
+      "title": "GKObstacleGraph",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkobstaclegraph",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A navigation graph for 2D game worlds that creates a minimal network for precise pathfinding around obstacles."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgridgraph": {
+      "title": "GKGridGraph",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgridgraph",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgridgraph",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A navigation graph for 2D game worlds where movement is constrained to an integer grid."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode": {
+      "title": "GKGraphNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgraphnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A single node in a navigation graph for use in pathfinding."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode3d": {
+      "title": "GKGraphNode3D",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode3d",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgraphnode3d",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A node in a navigation graph, associated with a point in continuous 3D space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgridgraphnode": {
+      "title": "GKGridGraphNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgridgraphnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgridgraphnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A node in a navigation graph, associated with a position on a discrete two-dimensional grid."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgraph"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating a Graph",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1640694-initwithobstacles",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1644731-graphwithobstacles",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501299-initwithobstacles",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1556417-graphwithobstacles"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Working with Obstacles",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501213-obstacles",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501073-addobstacles",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501058-removeobstacles",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501297-removeallobstacles",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501285-nodesforobstacle"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Working with Nodes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501129-connectnodeusingobstacles",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501075-connectnodeusingobstacles",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501220-connectnodeusingobstacles",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501119-bufferradius"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Locking Node Connections",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501060-lockconnectionfromnode",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501093-unlockconnectionfromnode",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501126-isconnectionlockedfromnode"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1640659-classforgenericargumentatindex"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgraph",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkmeshgraph",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgridgraph",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode2d",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode3d",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgridgraphnode"
+      ],
+      "title": "Pathfinding",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "GKObstacleGraph"
+            },
+            {
+              "kind": "text",
+              "text": "<"
+            },
+            {
+              "kind": "keyword",
+              "text": "__covariant"
+            },
+            {
+              "kind": "text",
+              "text": " NodeType> : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)GKGraph",
+              "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraph",
+              "text": "GKGraph"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You create an obstacle graph with a collection of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstacle"
+            },
+            {
+              "type": "text",
+              "text": " objects. To use the graph for pathfinding, you add "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode2d"
+            },
+            {
+              "type": "text",
+              "text": " objects representing points of interest (such as the current position of a game character and the location it needs to find a route to). Then use methods of the superclass "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraph"
+            },
+            {
+              "type": "text",
+              "text": " to find routes through the graph."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Unlike the related "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkmeshgraph"
+            },
+            {
+              "type": "text",
+              "text": " class, an obstacle graph creates a minimal network of graph nodes, resulting in paths that are efficient but not smooth."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To learn more about graphs and pathfinding, see "
+            },
+            {
+              "type": "link",
+              "title": "Pathfinding",
+              "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/Pathfinding.html#//apple_ref/doc/uid/TP40015172-CH3"
+            },
+            {
+              "type": "text",
+              "text": " in "
+            },
+            {
+              "type": "link",
+              "title": "GameplayKit Programming Guide",
+              "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

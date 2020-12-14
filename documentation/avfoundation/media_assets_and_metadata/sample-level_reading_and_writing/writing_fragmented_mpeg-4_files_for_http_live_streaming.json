@@ -1,0 +1,414 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata",
+        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/writing_fragmented_mpeg-4_files_for_http_live_streaming",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3608161,
+  "kind": "article",
+  "metadata": {
+    "title": "Writing Fragmented MPEG-4 Files for HTTP Live Streaming",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "11.0",
+        "current": "11.1"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "12.0",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/writing_fragmented_mpeg-4_files_for_http_live_streaming"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/writing_fragmented_mpeg-4_files_for_http_live_streaming"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata": {
+      "title": "Media Assets and Metadata",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata",
+      "url": "/documentation/avfoundation/media_assets_and_metadata",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing": {
+      "title": "Sample-level Reading and Writing",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-3636094": {
+      "title": "10011: Authoring Fragmented MPEG-4 with AVAssetWriter",
+      "type": "topic",
+      "identifier": "link-3636094",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/videos/play/wwdc2020/10011"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/writing_fragmented_mpeg-4_files_for_http_live_streaming": {
+      "title": "Writing Fragmented MPEG-4 Files for HTTP Live Streaming",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/writing_fragmented_mpeg-4_files_for_http_live_streaming",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/writing_fragmented_mpeg-4_files_for_http_live_streaming",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information": {
+      "title": "Tagging Media with Video Color Information",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Inspect and set video color space information when writing and transcoding media."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriter": {
+      "title": "AVAssetWriter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to write media data to a new file of a specified audiovisual container type."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate": {
+      "title": "AVAssetWriterDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A delegate protocol that defines the methods to implement to be an asset writer delegate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput": {
+      "title": "AVAssetWriterInput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A writer used to append media samples to a single track of an asset writer's output file."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor": {
+      "title": "AVAssetWriterInputPixelBufferAdaptor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinputpixelbufferadaptor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A buffer used to append video samples packaged as pixel buffers to a single asset writer input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor": {
+      "title": "AVAssetWriterInputMetadataAdaptor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinputmetadataadaptor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that defines an interface for writing metadata packaged as timed metadata groups into a single asset writer input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup": {
+      "title": "AVAssetWriterInputGroup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassetwriterinputgroup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A group of tracks in a mutually exclusive relationship."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/4c5556112d/WritingFragmentedMPEG4FilesForHTTPLiveStreaming.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/4c5556112d/WritingFragmentedMPEG4FilesForHTTPLiveStreaming.zip",
+      "checksum": "9ace1f1d0a2390bfadd9ae92e85543388cbb243c797197fa43ff9f0c3645e3b1fa25a4fd1c608844ca39137f3ff35960fa74ee4d87c50696eeb54f0f354a1aba",
+      "url": "https://docs-assets.developer.apple.com/published/4c5556112d/WritingFragmentedMPEG4FilesForHTTPLiveStreaming.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/4c5556112d/WritingFragmentedMPEG4FilesForHTTPLiveStreaming.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/media_assets_and_metadata/sample-level_reading_and_writing/tagging_media_with_video_color_information",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriter",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterdelegate",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinput",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputpixelbufferadaptor",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmetadataadaptor",
+        "doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputgroup"
+      ],
+      "title": "Media Writing",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "This sample code project is associated with WWDC20 session "
+                },
+                {
+                  "type": "link",
+                  "title": "10011: Authoring Fragmented MPEG-4 with AVAssetWriter",
+                  "destination": "https://developer.apple.com/videos/play/wwdc2020/10011"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure the Sample Code Project",
+          "anchor": "3684305"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Before you run the sample code project in Xcode:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Edit the shared scheme called "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "fmp4Writer"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Open the Run action."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Replace the "
+                    },
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "<path to movie file on disk>"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " argument with the path to a movie file on your local hard drive."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Replace the "
+                    },
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "<path to output directory>"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " argument  with your desired output directory; for example "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "~/Desktop/fmp4writer/"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

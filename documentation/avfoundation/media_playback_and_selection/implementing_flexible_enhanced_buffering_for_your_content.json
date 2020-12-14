@@ -1,0 +1,465 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Configure your app for flexible enhanced buffering to stream content faster to your AirPlay-enabled device."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_flexible_enhanced_buffering_for_your_content",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2928991,
+  "kind": "article",
+  "metadata": {
+    "title": "Implementing Flexible Enhanced Buffering for Your Content",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_playback_and_selection/implementing_flexible_enhanced_buffering_for_your_content"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_playback_and_selection/implementing_flexible_enhanced_buffering_for_your_content"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection": {
+      "title": "Media Playback and Selection",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
+      "url": "/documentation/avfoundation/media_playback_and_selection",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer": {
+      "title": "AVSampleBufferRenderSynchronizer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplebufferrendersynchronizer"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer": {
+      "title": "AVSampleBufferAudioRenderer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplebufferaudiorenderer"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_flexible_enhanced_buffering_for_your_content#2929283": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_flexible_enhanced_buffering_for_your_content#2929283",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/implementing_flexible_enhanced_buffering_for_your_content#2929283",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Instantiate AVSampleBufferRenderSynchronizer and AVSampleBufferAudioRenderer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_flexible_enhanced_buffering_for_your_content#2929284": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_flexible_enhanced_buffering_for_your_content#2929284",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/implementing_flexible_enhanced_buffering_for_your_content#2929284",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add the AVSampleBufferAudioRenderer to the AVSampleBufferRenderSynchronizer. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_flexible_enhanced_buffering_for_your_content#2929285": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_flexible_enhanced_buffering_for_your_content#2929285",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/implementing_flexible_enhanced_buffering_for_your_content#2929285",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Set the synchronizer's rate to 1."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_flexible_enhanced_buffering_for_your_content#2929281": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_flexible_enhanced_buffering_for_your_content#2929281",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/implementing_flexible_enhanced_buffering_for_your_content#2929281",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Give audio data to the renderer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/getting_airplay_2_into_your_app": {
+      "title": "Getting AirPlay 2 into Your App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/getting_airplay_2_into_your_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/getting_airplay_2_into_your_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Set up your app to use AirPlay 2 to send content wirelessly. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_simple_enhanced_buffering_for_your_content": {
+      "title": "Implementing Simple Enhanced Buffering for Your Content",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_simple_enhanced_buffering_for_your_content",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/implementing_simple_enhanced_buffering_for_your_content",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configure your app for simple enhanced buffering to stream content faster to your AirPlay-enabled device."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_flexible_enhanced_buffering_for_your_content": {
+      "title": "Implementing Flexible Enhanced Buffering for Your Content",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_flexible_enhanced_buffering_for_your_content",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/implementing_flexible_enhanced_buffering_for_your_content",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configure your app for flexible enhanced buffering to stream content faster to your AirPlay-enabled device."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/getting_airplay_2_into_your_app",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_simple_enhanced_buffering_for_your_content"
+      ],
+      "title": "AirPlay",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you’re working with content that requires flexibility with buffering, use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer"
+            },
+            {
+              "type": "text",
+              "text": " classes."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Enabling flexible enhanced buffering is a four-step process:"
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Establish the Media Timeline and Audio Renderer",
+          "anchor": "2929263"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Instantiate "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer"
+            },
+            {
+              "type": "text",
+              "text": " objects:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "private let audioRenderer = AVSampleBufferAudioRenderer()",
+            "private let renderSynchronizer = AVSampleBufferRenderSynchronizer()"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2929283",
+            "title": "Listing 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Instantiate AVSampleBufferRenderSynchronizer and AVSampleBufferAudioRenderer."
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Tell the Audio Renderer to follow the Media Timeline",
+          "anchor": "2929264"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Add the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer"
+            },
+            {
+              "type": "text",
+              "text": " to the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "renderSynchronizer.addRenderer(audioRenderer)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2929284",
+            "title": "Listing 2",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Add the AVSampleBufferAudioRenderer to the AVSampleBufferRenderSynchronizer. "
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Start Playback",
+          "anchor": "2929265"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Set the synchronizer's rate to 1:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "serializationQueue.async {",
+            "    if self.automaticFlushObserver == nil {",
+            "        self.automaticFlushObserver = NotificationCenter.default.addObserver(forName: .AVSampleBufferAudioRendererWasFlushedAutomatically, object: self.audioRenderer, queue: nil) { notification in",
+            "            print(\"Got notification: \\(notification)\")",
+            "            self.advance(to: self.currentItem, at: self.currentItemCurrentTime)",
+            "        }",
+            "    }",
+            "    self.ensureSampleBufferSource()",
+            "    self.renderSynchronizer.rate = 1.0",
+            "    self.noteRateChanged()",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2929285",
+            "title": "Listing 3",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Set the synchronizer's rate to 1."
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Give Audio Data to the Renderer",
+          "anchor": "2929266"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Give the renderer some audio data and register for callbacks for when the renderer is ready for more:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "self.audioRenderer.requestMediaDataWhenReady(on: serializationQueue) { [weak self] in",
+            "    guard let strongSelf = self else { return }",
+            "    let audioRenderer = strongSelf.audioRenderer",
+            "    while audioRenderer.isReadyForMoreMediaData {",
+            "        let sampleBuffer = strongSelf.nextSampleBuffer() // nil means \"end of data\"",
+            "        if let sampleBuffer = sampleBuffer {",
+            "            audioRenderer.enqueue(sampleBuffer)",
+            "        } else {",
+            "            // Make sure to tell the renderer to not expect any more audio data, else it will invoke the closure again",
+            "            audioRenderer.stopRequestingMediaData()",
+            "            break",
+            "        }",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2929281",
+            "title": "Listing 4",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Give audio data to the renderer."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

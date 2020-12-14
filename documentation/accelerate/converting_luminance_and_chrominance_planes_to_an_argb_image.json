@@ -1,0 +1,778 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Create a displayable ARGB image from the luminance and chrominance information supplied by your device’s camera."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vimage"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2948281,
+  "kind": "article",
+  "metadata": {
+    "title": "Converting Luminance and Chrominance Planes to an ARGB Image",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "11.2",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.3",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image",
+        "documentation/accelerate/vimage/converting_luminance_and_chrominance_planes_to_an_argb_image"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image",
+        "documentation/accelerate/vimage/converting_luminance_and_chrominance_planes_to_an_argb_image"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage": {
+      "title": "vImage",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage",
+      "url": "/documentation/accelerate/vimage",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image#3561919": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image#3561919",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image#3561919"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image#3561921": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image#3561921",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image#3561921"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image#3561923": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image#3561923",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image#3561923"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image#3561925": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image#3561925",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image#3561925"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image#3561927": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image#3561927",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image#3561927"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image#3561929": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image#3561929",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image#3561929"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/building_a_basic_conversion_workflow": {
+      "title": "Building a Basic Conversion Workflow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/building_a_basic_conversion_workflow",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/building_a_basic_conversion_workflow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn the fundamentals of the convert-any-to-any function by converting a CMYK image to an RGB image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale": {
+      "title": "Converting Color Images to Grayscale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/converting_color_images_to_grayscale",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convert a color image to grayscale using matrix multiplication."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_color_transforms_to_images_with_a_multidimensional_lookup_table": {
+      "title": "Applying Color Transforms to Images with a Multidimensional Lookup Table",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_color_transforms_to_images_with_a_multidimensional_lookup_table",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/applying_color_transforms_to_images_with_a_multidimensional_lookup_table",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a multidimensional lookup table to convert RGB images to CMYK."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing": {
+      "title": "Standardizing Arbitrary Image Formats for Processing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convert assets with disparate color spaces and bit depths to a standard working format for applying vImage operations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image": {
+      "title": "Converting Luminance and Chrominance Planes to an ARGB Image",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a displayable ARGB image from the luminance and chrominance information supplied by your device’s camera."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/conversion": {
+      "title": "Conversion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/conversion",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/conversion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convert an image to a different format."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/be9343f372/ConvertingLuminanceAndChrominancePlanesToAnARGBImage.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/be9343f372/ConvertingLuminanceAndChrominancePlanesToAnARGBImage.zip",
+      "checksum": "54df4783831535b3abd3d33389e3300ccb36840601c9eeb6f3bf6833db73601dc480b7edf70b7951afa713b5685a81675839eb78db9bd2898955d6ac744b4390",
+      "url": "https://docs-assets.developer.apple.com/published/be9343f372/ConvertingLuminanceAndChrominancePlanesToAnARGBImage.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/be9343f372/ConvertingLuminanceAndChrominancePlanesToAnARGBImage.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/building_a_basic_conversion_workflow",
+        "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale",
+        "doc://com.apple.documentation/documentation/accelerate/applying_color_transforms_to_images_with_a_multidimensional_lookup_table",
+        "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing",
+        "doc://com.apple.documentation/documentation/accelerate/conversion"
+      ],
+      "title": "Conversion Between Image Formats",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As an alternative to the technique discussed in "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Applying vImage Operations to Video Sample Buffers"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", vImage provides lower-level functions for creating RGB images from the separate luminance and chrominance planes provided by an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVCaptureSession"
+            },
+            {
+              "type": "text",
+              "text": " instance. These functions offer better performance and more granular configuration than the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageConvert_AnyToAny"
+            },
+            {
+              "type": "text",
+              "text": " function."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample walks you through the steps for converting separate luminance and chrominance planes to an ARGB image:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Configuring YpCbCr-to-ARGB Information."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Defining the vImage destination buffer."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Initializing the source buffers."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Initializing the destination buffer."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Converting the Yp and CbCr planes to ARGB."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Displaying the result."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure YpCbCr-to-ARGB Information",
+          "anchor": "3561932"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageConvert_YpCbCrToARGB_GenerateConversion(_:_:_:_:_:_:)"
+            },
+            {
+              "type": "text",
+              "text": " function generates the information required to convert the luminance and chrominance planes to a single ARGB image. You supply it with a matrix containing the coefficients for the conversion and, in this example, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kvImage_YpCbCrToARGBMatrix_ITU_R_601_4"
+            },
+            {
+              "type": "text",
+              "text": " contains the conversion matrix from ITU-R Recommendation BT.601-4."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows how to populate "
+            },
+            {
+              "type": "codeVoice",
+              "code": "infoYpCbCrToARGB"
+            },
+            {
+              "type": "text",
+              "text": " with the required conversion information for 8-bit pixels, clamped to a video range. An 8-bit video range format typically uses the range "
+            },
+            {
+              "type": "codeVoice",
+              "code": "[16,235]"
+            },
+            {
+              "type": "text",
+              "text": " for luminance and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "[16,240]"
+            },
+            {
+              "type": "text",
+              "text": " for chrominance."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var infoYpCbCrToARGB = vImage_YpCbCrToARGB()",
+            "",
+            "func configureYpCbCrToARGBInfo() -> vImage_Error {",
+            "    var pixelRange = vImage_YpCbCrPixelRange(Yp_bias: 16,",
+            "                                             CbCr_bias: 128,",
+            "                                             YpRangeMax: 235,",
+            "                                             CbCrRangeMax: 240,",
+            "                                             YpMax: 235,",
+            "                                             YpMin: 16,",
+            "                                             CbCrMax: 240,",
+            "                                             CbCrMin: 16)",
+            "    ",
+            "    let error = vImageConvert_YpCbCrToARGB_GenerateConversion(",
+            "        kvImage_YpCbCrToARGBMatrix_ITU_R_601_4!,",
+            "        &pixelRange,",
+            "        &infoYpCbCrToARGB,",
+            "        kvImage422CbYpCrYp8,",
+            "        kvImageARGB8888,",
+            "        vImage_Flags(kvImageNoFlags))",
+            "    ",
+            "    return error",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3561919",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Define the vImage Destination Buffer",
+          "anchor": "3561933"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To avoid reinitializing the destination RGB buffer for every video frame, declare it as a class member rather than declaring it inside the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "captureOutput(_:didOutput:from:)"
+            },
+            {
+              "type": "text",
+              "text": " method of the sample buffer delegate:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var destinationBuffer = vImage_Buffer()"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3561921",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Initialize the Source Buffers from Pixel Buffer Planes",
+          "anchor": "3561934"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The source luminance and chrominance vImage buffers are initialized directly from the two planes of the pixel buffer. The first plane contains luminance information and the second plane contains chrominance information."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the following code to query pixel buffer properties for each plane and initialize your source buffers:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let lumaBaseAddress = CVPixelBufferGetBaseAddressOfPlane(pixelBuffer, 0)",
+            "let lumaWidth = CVPixelBufferGetWidthOfPlane(pixelBuffer, 0)",
+            "let lumaHeight = CVPixelBufferGetHeightOfPlane(pixelBuffer, 0)",
+            "let lumaRowBytes = CVPixelBufferGetBytesPerRowOfPlane(pixelBuffer, 0)",
+            "",
+            "var sourceLumaBuffer = vImage_Buffer(data: lumaBaseAddress,",
+            "                                     height: vImagePixelCount(lumaHeight),",
+            "                                     width: vImagePixelCount(lumaWidth),",
+            "                                     rowBytes: lumaRowBytes)",
+            "",
+            "let chromaBaseAddress = CVPixelBufferGetBaseAddressOfPlane(pixelBuffer, 1)",
+            "let chromaWidth = CVPixelBufferGetWidthOfPlane(pixelBuffer, 1)",
+            "let chromaHeight = CVPixelBufferGetHeightOfPlane(pixelBuffer, 1)",
+            "let chromaRowBytes = CVPixelBufferGetBytesPerRowOfPlane(pixelBuffer, 1)",
+            "",
+            "var sourceChromaBuffer = vImage_Buffer(data: chromaBaseAddress,",
+            "                                       height: vImagePixelCount(chromaHeight),",
+            "                                       width: vImagePixelCount(chromaWidth),",
+            "                                       rowBytes: chromaRowBytes)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3561923",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Initialize the Destination Buffer",
+          "anchor": "3561935"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Query the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "data"
+            },
+            {
+              "type": "text",
+              "text": " property of the destination buffer you instantiated earlier, to find out if it needs to be initialized. The destination buffer will contain the RGB image after conversion. This code initializes "
+            },
+            {
+              "type": "codeVoice",
+              "code": "destinationBuffer"
+            },
+            {
+              "type": "text",
+              "text": " on the first pass and sets its size to match the luminance plane of the pixel buffer:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var error = kvImageNoError",
+            "if destinationBuffer.data == nil {",
+            "    error = vImageBuffer_Init(&destinationBuffer,",
+            "                              sourceLumaBuffer.height,",
+            "                              sourceLumaBuffer.width,",
+            "                              cgImageFormat.bitsPerPixel,",
+            "                              vImage_Flags(kvImageNoFlags))",
+            "    ",
+            "    guard error == kvImageNoError else {",
+            "        return",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3561925",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Convert Yp and CbCr Planes to ARGB",
+          "anchor": "3561936"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With the conversion information, destination buffers, and source buffers initialized, you’re ready to convert the two source buffers to the destination buffer by using the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageConvert_420Yp8_CbCr8ToARGB8888(_:_:_:_:_:_:_:)"
+            },
+            {
+              "type": "text",
+              "text": " function:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "error = vImageConvert_420Yp8_CbCr8ToARGB8888(&sourceLumaBuffer,",
+            "                                             &sourceChromaBuffer,",
+            "                                             &destinationBuffer,",
+            "                                             &infoYpCbCrToARGB,",
+            "                                             nil,",
+            "                                             255,",
+            "                                             vImage_Flags(kvImagePrintDiagnosticsToConsole))",
+            "",
+            "guard error == kvImageNoError else {",
+            "    return",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3561927",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Display the Result",
+          "anchor": "3561937"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To display the ARGB image to the user, create a Core Graphics image from "
+            },
+            {
+              "type": "codeVoice",
+              "code": "destinationBuffer"
+            },
+            {
+              "type": "text",
+              "text": ", and initialize a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIImage"
+            },
+            {
+              "type": "text",
+              "text": " instance from that. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageCreateCGImageFromBuffer(_:_:_:_:_:_:)"
+            },
+            {
+              "type": "text",
+              "text": " function returns an unmanaged "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CGImage"
+            },
+            {
+              "type": "text",
+              "text": " instance based on the supplied buffer and the same format you used earlier."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because "
+            },
+            {
+              "type": "codeVoice",
+              "code": "captureOutput(_:didOutput:from:)"
+            },
+            {
+              "type": "text",
+              "text": " runs in a background thread, you must dispatch the call to update the image view to the main thread."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let cgImage = vImageCreateCGImageFromBuffer(&destinationBuffer,",
+            "                                            &cgImageFormat,",
+            "                                            nil,",
+            "                                            nil,",
+            "                                            vImage_Flags(kvImageNoFlags),",
+            "                                            &error)",
+            "",
+            "if let cgImage = cgImage, error == kvImageNoError {",
+            "    DispatchQueue.main.async {",
+            "        self.imageView.image = UIImage(cgImage: cgImage.takeRetainedValue())",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3561929",
+            "title": "Listing 6"
+          }
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

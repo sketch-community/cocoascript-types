@@ -1,0 +1,933 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Perform asymmetric and symmetric encryption and decryption using cryptographic keys."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2864049,
+  "kind": "article",
+  "metadata": {
+    "title": "Using Keys for Encryption",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services": {
+      "title": "Certificate, Key, and Trust Services",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services",
+      "url": "/documentation/security/certificate_key_and_trust_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys": {
+      "title": "Keys",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/getting_an_existing_key": {
+      "title": "Getting an Existing Key",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/getting_an_existing_key",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/getting_an_existing_key"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys#2863927": {
+      "title": "Creating an Asymmetric Key Pair",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys#2863927",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys#2863927"
+    },
+    "doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsaencryptionoaepsha512": {
+      "title": "kSecKeyAlgorithmRSAEncryptionOAEPSHA512",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsaencryptionoaepsha512",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/kseckeyalgorithmrsaencryptionoaepsha512"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864050": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864050",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864050"
+    },
+    "doc://com.apple.documentation/documentation/security/seckeyoperationtype/kseckeyoperationtypeencrypt": {
+      "title": "kSecKeyOperationTypeEncrypt",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seckeyoperationtype/kseckeyoperationtypeencrypt",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seckeyoperationtype/kseckeyoperationtypeencrypt"
+    },
+    "doc://com.apple.documentation/documentation/security/1644057-seckeyisalgorithmsupported": {
+      "title": "SecKeyIsAlgorithmSupported",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1644057-seckeyisalgorithmsupported",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1644057-seckeyisalgorithmsupported"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864088": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864088",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864088"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrcanencrypt": {
+      "title": "kSecAttrCanEncrypt",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrcanencrypt",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrcanencrypt"
+    },
+    "doc://com.apple.documentation/documentation/security/1394222-seckeygetblocksize": {
+      "title": "SecKeyGetBlockSize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1394222-seckeygetblocksize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1394222-seckeygetblocksize"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864089": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864089",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864089"
+    },
+    "doc://com.apple.documentation/documentation/security/1643957-seckeycreateencrypteddata": {
+      "title": "SecKeyCreateEncryptedData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1643957-seckeycreateencrypteddata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1643957-seckeycreateencrypteddata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Encrypts a block of data using a public key and specified algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864090": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864090",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864090"
+    },
+    "doc://com.apple.documentation/documentation/foundation/1587932-cfbridgingrelease": {
+      "title": "CFBridgingRelease",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/1587932-cfbridgingrelease",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/1587932-cfbridgingrelease"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cferror": {
+      "title": "CFError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cferror",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/corefoundation/cferror"
+    },
+    "doc://com.apple.documentation/documentation/swift/error": {
+      "title": "Error",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/error",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/error"
+    },
+    "doc://com.apple.documentation/documentation/security/seckeyoperationtype/kseckeyoperationtypedecrypt": {
+      "title": "kSecKeyOperationTypeDecrypt",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seckeyoperationtype/kseckeyoperationtypedecrypt",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seckeyoperationtype/kseckeyoperationtypedecrypt"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864093": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864093",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864093"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864094": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864094",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864094"
+    },
+    "doc://com.apple.documentation/documentation/security/1644043-seckeycreatedecrypteddata": {
+      "title": "SecKeyCreateDecryptedData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1644043-seckeycreatedecrypteddata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1644043-seckeycreatedecrypteddata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Decrypts a block of data using a private key and specified algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864095": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864095",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864095"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys": {
+      "title": "Generating New Cryptographic Keys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864048": {
+      "title": "Use Asymmetric Encryption",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864048",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864048"
+    },
+    "doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsaencryptionoaepsha512aesgcm": {
+      "title": "kSecKeyAlgorithmRSAEncryptionOAEPSHA512AESGCM",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsaencryptionoaepsha512aesgcm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/kseckeyalgorithmrsaencryptionoaepsha512aesgcm"
+    },
+    "doc://com.apple.documentation/documentation/security/kseckeyalgorithmeciesencryptioncofactorx963sha256aesgcm": {
+      "title": "kSecKeyAlgorithmECIESEncryptionCofactorX963SHA256AESGCM",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/kseckeyalgorithmeciesencryptioncofactorx963sha256aesgcm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/kseckeyalgorithmeciesencryptioncofactorx963sha256aesgcm"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption": {
+      "title": "Using Keys for Encryption",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Perform asymmetric and symmetric encryption and decryption using cryptographic keys."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1643957-seckeycreateencrypteddata",
+        "doc://com.apple.documentation/documentation/security/1644043-seckeycreatedecrypteddata"
+      ],
+      "title": "Encryption",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Cryptography enables secure data exchange through an untrusted channel. One important component of this activity is encryption. A transmitter encodes data on one side of a link, rendering it gibberish to anyone without the key to decode it. The data then passes through the channel—exposed to the world, but meaningless to all but the intended receiver. That receiver, the only holder of the decryption key, reverses the encryption process to reveal the original message."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As with cryptographic keys, there are two main types of encryption:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Asymmetric."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Asymmetric encryption doesn’t require a shared secret. On the other hand, it’s computationally expensive and works only on small, discrete blocks of data. Therefore, it’s most suitable for small transfers when sender and receiver have no established relationship."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Symmetric."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Symmetric encryption is good for bulk data transfer because it’s computationally efficient and operates on streams of data. But it works only when the transmitter and the receiver share a secret key. So you typically rely on some other technique, such as asymmetric encryption or the Diffie-Hellman key exchange, to share a key and establish a session."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use Asymmetric Encryption",
+          "anchor": "2864048"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To perform asymmetric encryption, a transmitter encrypts its data with a public key. Only the holder of the matching private key can then decrypt the obscured message. You begin by obtaining a public key that corresponds to your intended recipient’s private key. Depending on the situation, you might read it from your keychain or from a certificate, or you might use one of the other methods described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/getting_an_existing_key"
+            },
+            {
+              "type": "text",
+              "text": ". However you obtain the key, the kind of encryption you can perform depends on the key itself."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, consider a 2048-bit RSA key pair, like the one generated in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys#2863927"
+            },
+            {
+              "type": "text",
+              "text": ". Either using a signed certificate or some other trusted (but not necessarily secure) channel, the receiver transfers the public key to the transmitter. The transmitter and receiver then negotiate an appropriate encryption algorithm (or rely on a prearranged one) corresponding to the capabilities of the key pair. In this case, suppose you choose this "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsaencryptionoaepsha512"
+            },
+            {
+              "type": "text",
+              "text": " algorithm:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "SecKeyRef publicKey = <# a key #>;  // E.g., from a signed cert",
+            "SecKeyAlgorithm algorithm = kSecKeyAlgorithmRSAEncryptionOAEPSHA512;"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2864050",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This setting specifies RSA encryption, employing the Optimal Asymmetric Encryption Padding (OAEP) scheme using SHA512 hashing. The selected algorithm must suit the key’s capabilities. But rather than trust that the key works with the algorithm, you can explicitly test for compatibility with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/seckeyoperationtype/kseckeyoperationtypeencrypt"
+            },
+            {
+              "type": "text",
+              "text": " operation, using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1644057-seckeyisalgorithmsupported"
+            },
+            {
+              "type": "text",
+              "text": " function:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "BOOL canEncrypt = SecKeyIsAlgorithmSupported(publicKey,",
+            "                                             kSecKeyOperationTypeEncrypt,",
+            "                                             algorithm);"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2864088",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This call might return false if the key were not actually of type RSA or if the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "publicKey"
+            },
+            {
+              "type": "text",
+              "text": " reference actually referred to a private key (despite its name). Private keys typically have the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecattrcanencrypt"
+            },
+            {
+              "type": "text",
+              "text": " attribute set false, marking them ineligible for encryption."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As an additional check before encrypting, because asymmetric encryption restricts the length of the data that you can encrypt, verify that the data is short enough. For this particular algorithm, the plain text data must be 130 bytes smaller than the key’s block size, as reported by "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1394222-seckeygetblocksize"
+            },
+            {
+              "type": "text",
+              "text": ". You therefore further condition the proceedings on a length test:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "NSData* plainText = <# Data to encrypt #>;",
+            "canEncrypt &= ([plainText length] < (SecKeyGetBlockSize(publicKey)-130));"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2864089",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Finally, you conduct the encryption with a call to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1643957-seckeycreateencrypteddata"
+            },
+            {
+              "type": "text",
+              "text": " function:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "NSData* cipherText = nil;",
+            "if (canEncrypt) {",
+            "    CFErrorRef error = NULL;",
+            "    cipherText = (NSData*)CFBridgingRelease(      // ARC takes ownership",
+            "                     SecKeyCreateEncryptedData(publicKey,",
+            "                                               algorithm,",
+            "                                               (__bridge CFDataRef)plainText,",
+            "                                               &error));",
+            "    if (!cipherText) {",
+            "        NSError *err = CFBridgingRelease(error);  // ARC takes ownership",
+            "        // Handle the error. . .",
+            "    }",
+            "}"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2864090",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Despite the pretests, something may still go wrong with the encryption call. When it does, the function returns "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nil"
+            },
+            {
+              "type": "text",
+              "text": " cipher text and produces an error object that indicates the cause of failure. In Objective-C, you transfer ownership of the error object to Automatic Reference Counting (ARC) with a call to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/1587932-cfbridgingrelease"
+            },
+            {
+              "type": "text",
+              "text": " and handle the error. In Swift, you convert the optional, unmanaged "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cferror"
+            },
+            {
+              "type": "text",
+              "text": " to a managed "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/error"
+            },
+            {
+              "type": "text",
+              "text": " and throw it."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Assuming that the encryption succeeds, you send the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "cipherText"
+            },
+            {
+              "type": "text",
+              "text": " data object to the receiver through the channel. The receiver then uses its private key to decrypt the data. As described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/getting_an_existing_key"
+            },
+            {
+              "type": "text",
+              "text": ", you’ll typically get a reference to your private key from either the keychain or an identity (which might itself be stored in the keychain). You can again test the key for its suitability, using the same algorithm as before, but for the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/seckeyoperationtype/kseckeyoperationtypedecrypt"
+            },
+            {
+              "type": "text",
+              "text": " operation:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "SecKeyRef privateKey = <# a key #>;  // From keychain or identity",
+            "BOOL canDecrypt = SecKeyIsAlgorithmSupported(privateKey,",
+            "                                             kSecKeyOperationTypeDecrypt,",
+            "                                             algorithm);"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2864093",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can again test the length, though in this case, the cipher text should be the same length as the key’s block size, because that’s what the encryption operation should have produced:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "canDecrypt &= ([cipherText length] == SecKeyGetBlockSize(privateKey));"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2864094",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With the tests out of the way, the decryption proceeds much like the encryption, only now with a call to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1644043-seckeycreatedecrypteddata"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "NSData* clearText = nil;",
+            "if (canDecrypt) {",
+            "    CFErrorRef error = NULL;",
+            "    clearText = (NSData*)CFBridgingRelease(       // ARC takes ownership",
+            "                     SecKeyCreateDecryptedData(privateKey,",
+            "                                               algorithm,",
+            "                                               (__bridge CFDataRef)cipherText,",
+            "                                               &error));",
+            "    if (!clearText) {",
+            "        NSError *err = CFBridgingRelease(error);  // ARC takes ownership",
+            "        // Handle the error. . .",
+            "    }",
+            "}"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2864095",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As before, you handle a failure and the corresponding error object, if applicable. If the call succeeds, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "clearText"
+            },
+            {
+              "type": "text",
+              "text": " object exactly matches the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "plainText"
+            },
+            {
+              "type": "text",
+              "text": " object from the transmitter."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use Symmetric Encryption",
+          "anchor": "2864047"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the sender and receiver share a single, secret key, they can perform symmetric encryption, in which the same key both encrypts and decrypts the message. Even though the operations in this case are computationally efficient, initially sharing the key poses its own challenge. For that reason, you’ll usually want to use another method, such as asymmetric encryption, to exchange a symmetric key at the time you begin communicating."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In fact, the certificate, key, and trust services API provides a simple way to accomplish this. You follow all of the steps outlined in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption#2864048"
+            },
+            {
+              "type": "text",
+              "text": ", with only the following adjustments:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Change the algorithm."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " When you choose an algorithm of "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/security/kseckeyalgorithmrsaencryptionoaepsha512aesgcm"
+                    },
+                    {
+                      "type": "text",
+                      "text": " or one of the other symmetric encryption algorithms, the encryption and decryption function calls change their behavior."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Omit the length checks at both the transmitter and receiver."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Because the input data is encrypted by the AES session key, that data is no longer restricted to a particular length. Similarly, the block of encrypted data is no longer expected to be the key’s block size. In fact, it’s the key’s block size plus the (variable) length of the encrypted data plus 16 bytes."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On the encryption side, instead of simply padding and encoding the given block of data with the key, the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1643957-seckeycreateencrypteddata"
+            },
+            {
+              "type": "text",
+              "text": " function first generates a random Advanced Encryption Standard (AES) session key. It uses this key to encrypt the input data, and then RSA encrypts the AES key using the input public key you provide. It finally assembles the RSA encrypted session key, the AES encrypted data, and a 16-byte AES-GCM tag into a block of data that it returns to you."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On the decryption side, the process is reversed. The function decrypts the AES session key using the private key you provide as input and then uses that to decrypt the data."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you use elliptic curve keys, then use one of the elliptic curve algorithms, such as "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/kseckeyalgorithmeciesencryptioncofactorx963sha256aesgcm"
+            },
+            {
+              "type": "text",
+              "text": ". The precise details of this key exchange are different, compared with the RSA exchange described above. Still, the effective behavior you see as a consumer of the API is the same."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With these small changes, you switch from asymmetric encryption to symmetric encryption supported by asymmetric encryption. You can now efficiently transmit arbitrarily large blocks of encrypted data."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

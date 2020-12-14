@@ -1,13 +1,14 @@
 declare namespace cocoascript {
   interface IconRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/aeeventclass
-  type AEEventClass = cocoascript.FourCharCode;
+  type AEEventClass = any;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/aeeventid
-  type AEEventID = cocoascript.FourCharCode;
+  type AEEventID = any;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/appleevent
@@ -16,7 +17,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface AEDesc {
   }
-}// doc://com.apple.documentation/documentation/coreservices/klsquarantineagentnamekey
+}
+// doc://com.apple.documentation/documentation/coreservices/klsquarantineagentnamekey
 declare const kLSQuarantineAgentNameKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/klsquarantineagentbundleidentifierkey
 declare const kLSQuarantineAgentBundleIdentifierKey: cocoascript.CFStringRef;
@@ -50,7 +52,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/aekeyword
-  type AEKeyword = cocoascript.FourCharCode;
+  type AEKeyword = any;
 }
 // doc://com.apple.documentation/documentation/coreservices/1413055-mdquerygetresultatindex
 declare const MDQueryGetResultAtIndex: cocoascript.CFIndex;
@@ -69,10 +71,12 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface MDQueryBatchingParams {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MDQueryRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/mdqueryoptionflags
   type MDQueryOptionFlags = number;
 }
@@ -86,25 +90,29 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/iconservicesusageflags
-  type IconServicesUsageFlags = cocoascript.UInt32;
+  type IconServicesUsageFlags = number;
 }
 declare namespace cocoascript {
   interface FSRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/1443170-aearraydata
   type AEArrayData = cocoascript.union;
 }
 declare namespace cocoascript {
   interface AEBuildError {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface AEKeyDesc {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface AERemoteProcessResolverContext {
   }
-}// doc://com.apple.documentation/documentation/coreservices/kaeremoteprocessnamekey
+}
+// doc://com.apple.documentation/documentation/coreservices/kaeremoteprocessnamekey
 declare const kAERemoteProcessNameKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kaeremoteprocessprocessidkey
 declare const kAERemoteProcessProcessIDKey: cocoascript.CFStringRef;
@@ -114,7 +122,7 @@ declare const kAERemoteProcessURLKey: cocoascript.CFStringRef;
 declare const kAERemoteProcessUserIDKey: cocoascript.CFStringRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/oslaccessorprocptr
-  type OSLAccessorProcPtr = cocoascript.SRefCon;
+  type OSLAccessorProcPtr = any;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/oslaccessorupp
@@ -130,7 +138,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/oslcompareprocptr
-  type OSLCompareProcPtr = cocoascript.Boolean;
+  type OSLCompareProcPtr = boolean;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/oslcompareupp
@@ -190,7 +198,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/aebuilderrorcode
-  type AEBuildErrorCode = cocoascript.UInt32;
+  type AEBuildErrorCode = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/aecoercedescprocptr
@@ -215,7 +223,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface AEDataStorageType {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/aedesclist
   type AEDescList = cocoascript.AEDesc;
 }
@@ -225,7 +234,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/aedisposeexternalprocptr
-  type AEDisposeExternalProcPtr = cocoascript.SRefCon;
+  type AEDisposeExternalProcPtr = any;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/aedisposeexternalupp
@@ -233,7 +242,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/aeeventhandlerprocptr
-  type AEEventHandlerProcPtr = cocoascript.SRefCon;
+  type AEEventHandlerProcPtr = any;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/aeeventhandlerupp
@@ -250,7 +259,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface AERemoteProcessResolverRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/aesendmode
   type AESendMode = cocoascript.SInt32;
 }
@@ -261,7 +271,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface AEStreamRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/afpserversignature
   type AFPServerSignature = cocoascript.UInt8;
 }
@@ -340,7 +351,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface AreaID {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/audiorecordingchunkptr
   type AudioRecordingChunkPtr = cocoascript.AudioRecordingChunk;
 }
@@ -355,10 +367,12 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CSIdentityRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CSIdentityAuthorityRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/csidentityclass
   type CSIdentityClass = cocoascript.CFIndex;
 }
@@ -369,7 +383,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CSIdentityQueryRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/csidentityqueryevent
   type CSIdentityQueryEvent = cocoascript.CFIndex;
 }
@@ -400,7 +415,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface Collection {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/collectionexceptionprocptr
   type CollectionExceptionProcPtr = cocoascript.OSErr;
 }
@@ -418,7 +434,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/collectiontag
-  type CollectionTag = cocoascript.FourCharCode;
+  type CollectionTag = any;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/commenttype
@@ -534,7 +550,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/fnmessage
-  type FNMessage = cocoascript.UInt32;
+  type FNMessage = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/fnsubscriptionprocptr
@@ -543,7 +559,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface FNSubscriptionRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/fnsubscriptionupp
   type FNSubscriptionUPP = cocoascript.FNSubscriptionProcPtr;
 }
@@ -554,13 +571,14 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface FPUInformation {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/folderclass
-  type FolderClass = cocoascript.OSType;
+  type FolderClass = any;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/folderdescflags
-  type FolderDescFlags = cocoascript.UInt32;
+  type FolderDescFlags = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/folderdescptr
@@ -568,7 +586,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/folderlocation
-  type FolderLocation = cocoascript.OSType;
+  type FolderLocation = any;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/foldermanagernotificationprocptr
@@ -584,7 +602,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/foldertype
-  type FolderType = cocoascript.OSType;
+  type FolderType = any;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/formatclass
@@ -604,7 +622,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/hfscatalognodeid
-  type HFSCatalogNodeID = cocoascript.UInt32;
+  type HFSCatalogNodeID = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/iocompletionprocptr
@@ -668,7 +686,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/kcauthtype
-  type KCAuthType = cocoascript.FourCharCode;
+  type KCAuthType = any;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/kccallbackprocptr
@@ -680,11 +698,11 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/kccertaddoptions
-  type KCCertAddOptions = cocoascript.UInt32;
+  type KCCertAddOptions = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/kccertsearchoptions
-  type KCCertSearchOptions = cocoascript.UInt32;
+  type KCCertSearchOptions = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/kcevent
@@ -696,11 +714,11 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/kcitemattr
-  type KCItemAttr = cocoascript.FourCharCode;
+  type KCItemAttr = any;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/kcitemclass
-  type KCItemClass = cocoascript.FourCharCode;
+  type KCItemClass = any;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/kcitemref
@@ -708,7 +726,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/kcprotocoltype
-  type KCProtocolType = cocoascript.FourCharCode;
+  type KCProtocolType = any;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/kcpublickeyhash
@@ -733,16 +751,18 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface LSSharedFileListRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/lssharedfilelistchangedprocptr
   type LSSharedFileListChangedProcPtr = void;
 }
 declare namespace cocoascript {
   interface LSSharedFileListItemRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/lssharedfilelistresolutionflags
-  type LSSharedFileListResolutionFlags = cocoascript.UInt32;
+  type LSSharedFileListResolutionFlags = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/localdatetimehandle
@@ -754,24 +774,25 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/localenamemask
-  type LocaleNameMask = cocoascript.UInt32;
+  type LocaleNameMask = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/localeoperationclass
-  type LocaleOperationClass = cocoascript.FourCharCode;
+  type LocaleOperationClass = any;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/localeoperationvariant
-  type LocaleOperationVariant = cocoascript.FourCharCode;
+  type LocaleOperationVariant = any;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/localepartmask
-  type LocalePartMask = cocoascript.UInt32;
+  type LocalePartMask = number;
 }
 declare namespace cocoascript {
   interface LocaleRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/longdatefield
   type LongDateField = cocoascript.SInt8;
 }
@@ -782,7 +803,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface MDLabelRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/mididatachunkptr
   type MIDIDataChunkPtr = cocoascript.MIDIDataChunk;
 }
@@ -793,7 +815,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface MachineInformation {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/markerchunkptr
   type MarkerChunkPtr = cocoascript.MarkerChunk;
 }
@@ -876,7 +899,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface RegisterInformation {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/registeredcomponentinstancerecordptr
   type RegisteredComponentInstanceRecordPtr = cocoascript.RegisteredComponentInstanceRecord;
 }
@@ -914,7 +938,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/resourceendianfilterptr
-  type ResourceEndianFilterPtr = cocoascript.Boolean;
+  type ResourceEndianFilterPtr = boolean;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/resourceindex
@@ -942,7 +966,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/routingflags
-  type RoutingFlags = cocoascript.UInt32;
+  type RoutingFlags = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/routingresourcehandle
@@ -1046,7 +1070,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/threadoptions
-  type ThreadOptions = cocoascript.UInt32;
+  type ThreadOptions = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/threadschedulerprocptr
@@ -1066,7 +1090,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/threadstyle
-  type ThreadStyle = cocoascript.UInt32;
+  type ThreadStyle = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/threadswitchprocptr
@@ -1139,7 +1163,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface UCTypeSelectRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/utcdatetimehandle
   type UTCDateTimeHandle = cocoascript.UTCDateTimePtr;
 }
@@ -1150,7 +1175,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface VectorInformation {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/volmountinfoptr
   type VolMountInfoPtr = cocoascript.VolMountInfoHeader;
 }
@@ -1160,7 +1186,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/volumetype
-  type VolumeType = cocoascript.OSType;
+  type VolumeType = any;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/xlibexportedsymbolhashslot
@@ -1265,7 +1291,8 @@ declare const kMDLabelRemovedNotification: cocoascript.CFStringRef;
 declare namespace cocoascript {
   interface MDItemRef {
   }
-}// doc://com.apple.documentation/documentation/coreservices/kmdquerydidfinishnotification
+}
+// doc://com.apple.documentation/documentation/coreservices/kmdquerydidfinishnotification
 declare const kMDQueryDidFinishNotification: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmdquerydidupdatenotification
 declare const kMDQueryDidUpdateNotification: cocoascript.CFStringRef;
@@ -1294,17 +1321,18 @@ declare const kMDQueryResultContentRelevance: cocoascript.CFStringRef;
 declare namespace cocoascript {
   interface DCSDictionaryRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/fseventstreamcallback
   type FSEventStreamCallback = cocoascript.FSEventStreamEventId;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/fseventstreamcreateflags
-  type FSEventStreamCreateFlags = cocoascript.UInt32;
+  type FSEventStreamCreateFlags = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/fseventstreameventflags
-  type FSEventStreamEventFlags = cocoascript.UInt32;
+  type FSEventStreamEventFlags = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/fseventstreameventid
@@ -1313,10 +1341,12 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface FSEventStreamRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface LSLaunchURLSpec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/lsrolesmask
   type LSRolesMask = cocoascript.OptionBits;
 }
@@ -1363,32 +1393,38 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface SKIndexDocumentIteratorRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface SKIndexRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface SKSearchRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface SKSummaryRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/skdocumentid
   type SKDocumentID = cocoascript.CFIndex;
 }
 declare namespace cocoascript {
   interface SKSearchResultsRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface SKSearchGroupRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/skdocumentindexstate
   type SKDocumentIndexState = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/sksearchoptions
-  type SKSearchOptions = cocoascript.UInt32;
+  type SKSearchOptions = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/skindextype
@@ -1401,10 +1437,12 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CSIdentityClientContext {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CSIdentityQueryClientContext {
   }
-}// doc://com.apple.documentation/documentation/coreservices/kcsidentityerrordomain
+}
+// doc://com.apple.documentation/documentation/coreservices/kcsidentityerrordomain
 declare const kCSIdentityErrorDomain: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kcsidentitygenerateposixname
 declare const kCSIdentityGeneratePosixName: cocoascript.CFStringRef;
@@ -1431,7 +1469,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface WSMethodInvocationRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/wsmethodinvocationserializationprocptr
   type WSMethodInvocationSerializationProcPtr = void;
 }
@@ -1442,20 +1481,24 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface WSProtocolHandlerRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/wsprotocolhandlerserializationprocptr
   type WSProtocolHandlerSerializationProcPtr = void;
 }
 declare namespace cocoascript {
   interface IconFamilyResource {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface UCKeyboardLayout {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FSSpec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/fsaliasfilterprocptr
   type FSAliasFilterProcPtr = cocoascript.Ptr;
 }
@@ -1466,12 +1509,14 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface AliasRecord {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FSAliasInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/fsaliasinfobitmap
-  type FSAliasInfoBitmap = cocoascript.UInt32;
+  type FSAliasInfoBitmap = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/componentmpworkfunctionprocptr
@@ -1488,42 +1533,52 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface ComponentAliasResource {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface ComponentDescription {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/componentfunctionupp
   type ComponentFunctionUPP = cocoascript.UniversalProcPtr;
 }
 declare namespace cocoascript {
   interface ComponentInstanceRecord {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface ComponentMPWorkFunctionHeaderRecord {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/componentmpworkfunctionupp
   type ComponentMPWorkFunctionUPP = cocoascript.ComponentMPWorkFunctionProcPtr;
 }
 declare namespace cocoascript {
   interface ComponentParameters {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface ComponentPlatformInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface ComponentPlatformInfoArray {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface ComponentRecord {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface ComponentResource {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface ComponentResourceExtension {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/componentresult
   type ComponentResult = cocoascript.SInt32;
 }
@@ -1534,75 +1589,96 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface ExtComponentResource {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/getmissingcomponentresourceupp
   type GetMissingComponentResourceUPP = cocoascript.GetMissingComponentResourceProcPtr;
 }
 declare namespace cocoascript {
   interface RegisteredComponentInstanceRecord {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface RegisteredComponentRecord {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface ResourceSpec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/cscomponentsthreadmode
-  type CSComponentsThreadMode = cocoascript.UInt32;
+  type CSComponentsThreadMode = number;
 }
 declare namespace cocoascript {
   interface AFPAlternateAddress {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface AFPTagData {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface AFPVolMountInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface AFPXVolMountInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FSCatalogBulkParam {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FSCatalogInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FSFileOperationClientContext {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FSForkCBInfoParam {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FSForkIOParam {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FSForkInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FSPermissionInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FSRangeLockParam {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FSRefForkIOParam {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FSRefParam {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FSSearchParams {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FSVolumeInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FSVolumeInfoParam {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/fsaliasinfoptr
   type FSAliasInfoPtr = cocoascript.FSAliasInfo;
 }
@@ -1616,7 +1692,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/fscataloginfobitmap
-  type FSCatalogInfoBitmap = cocoascript.UInt32;
+  type FSCatalogInfoBitmap = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/fscataloginfoptr
@@ -1624,14 +1700,15 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/fsejectstatus
-  type FSEjectStatus = cocoascript.UInt32;
+  type FSEjectStatus = number;
 }
 declare namespace cocoascript {
   interface FSFileOperationRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/fsfileoperationstage
-  type FSFileOperationStage = cocoascript.UInt32;
+  type FSFileOperationStage = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/fsfileoperationstatusprocptr
@@ -1640,7 +1717,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface FSFileSecurityRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/fsforkcbinfoparamptr
   type FSForkCBInfoParamPtr = cocoascript.FSForkCBInfoParam;
 }
@@ -1663,13 +1741,14 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface FSIterator {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/fsiteratorflags
   type FSIteratorFlags = cocoascript.OptionBits;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/fsmountstatus
-  type FSMountStatus = cocoascript.UInt32;
+  type FSMountStatus = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/fspathfileoperationstatusprocptr
@@ -1709,7 +1788,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/fsunmountstatus
-  type FSUnmountStatus = cocoascript.UInt32;
+  type FSUnmountStatus = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/fsvolumeejectprocptr
@@ -1721,7 +1800,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/fsvolumeinfobitmap
-  type FSVolumeInfoBitmap = cocoascript.UInt32;
+  type FSVolumeInfoBitmap = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/fsvolumeinfoparamptr
@@ -1742,7 +1821,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface FSVolumeOperation {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/fsvolumerefnum
   type FSVolumeRefNum = cocoascript.SInt16;
 }
@@ -1865,34 +1945,44 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface TECEncodingPairRec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TECEncodingPairs {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TECEncodingPairsRec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TECEncodingsListRec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TECInternetNameRec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TECInternetNamesRec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TECLocaleListToEncodingListRec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TECLocaleToEncodingsListRec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TECSubTextEncodingRec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TECSubTextEncodingsRec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/constscriptcoderunptr
   type ConstScriptCodeRunPtr = cocoascript.ScriptCodeRun;
 }
@@ -1923,77 +2013,92 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface ScriptCodeRun {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TECBufferContextRec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TECConversionInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TECConverterContextRec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TECInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TECObjectRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TECPluginDispatchTable {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/tecpluginsig
-  type TECPluginSig = cocoascript.OSType;
+  type TECPluginSig = any;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/tecpluginsignature
-  type TECPluginSignature = cocoascript.OSType;
+  type TECPluginSignature = any;
 }
 declare namespace cocoascript {
   interface TECPluginStateRec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/tecpluginversion
-  type TECPluginVersion = cocoascript.UInt32;
+  type TECPluginVersion = number;
 }
 declare namespace cocoascript {
   interface TECSnifferContextRec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TECSnifferObjectRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/textencoding
-  type TextEncoding = cocoascript.UInt32;
+  type TextEncoding = number;
 }
 declare namespace cocoascript {
   interface TextEncodingRun {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/textencodingvariant
-  type TextEncodingVariant = cocoascript.UInt32;
+  type TextEncodingVariant = number;
 }
 declare namespace cocoascript {
   interface TextToUnicodeInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/unichararrayoffset
   type UniCharArrayOffset = number;
 }
 declare namespace cocoascript {
   interface UnicodeMapping {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/unicodetotextfallbackupp
   type UnicodeToTextFallbackUPP = cocoascript.UnicodeToTextFallbackProcPtr;
 }
 declare namespace cocoascript {
   interface UnicodeToTextInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface UnicodeToTextRunInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/tecencodingpairshandle
   type TECEncodingPairsHandle = cocoascript.TECEncodingPairsPtr;
 }
@@ -2019,7 +2124,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/tecinternetnameusagemask
-  type TECInternetNameUsageMask = cocoascript.UInt32;
+  type TECInternetNameUsageMask = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/tecinternetnameshandle
@@ -2051,15 +2156,15 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/textencodingbase
-  type TextEncodingBase = cocoascript.UInt32;
+  type TextEncodingBase = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/textencodingformat
-  type TextEncodingFormat = cocoascript.UInt32;
+  type TextEncodingFormat = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/textencodingnameselector
-  type TextEncodingNameSelector = cocoascript.UInt32;
+  type TextEncodingNameSelector = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/uccharpropertytype
@@ -2067,7 +2172,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/uccharpropertyvalue
-  type UCCharPropertyValue = cocoascript.UInt32;
+  type UCCharPropertyValue = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/unicodemapversion
@@ -2083,7 +2188,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/debugcomponentcallbackprocptr
-  type DebugComponentCallbackProcPtr = cocoascript.Boolean;
+  type DebugComponentCallbackProcPtr = boolean;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/debugcomponentcallbackupp
@@ -2136,98 +2241,120 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface MPAddressSpaceID {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MPAddressSpaceInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MPAreaID {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MPCoherenceID {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MPConsoleID {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MPCpuID {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MPCriticalRegionID {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MPCriticalRegionInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/mpeventflags
-  type MPEventFlags = cocoascript.UInt32;
+  type MPEventFlags = number;
 }
 declare namespace cocoascript {
   interface MPEventID {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MPEventInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/mpexceptionkind
-  type MPExceptionKind = cocoascript.UInt32;
+  type MPExceptionKind = number;
 }
 declare namespace cocoascript {
   interface MPNotificationID {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MPNotificationInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MPOpaqueID {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/mpopaqueidclass
-  type MPOpaqueIDClass = cocoascript.UInt32;
+  type MPOpaqueIDClass = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/mppagesizeclass
-  type MPPageSizeClass = cocoascript.UInt32;
+  type MPPageSizeClass = number;
 }
 declare namespace cocoascript {
   interface MPProcessID {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MPQueueID {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MPQueueInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/mpsemaphorecount
   type MPSemaphoreCount = cocoascript.ItemCount;
 }
 declare namespace cocoascript {
   interface MPSemaphoreID {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MPSemaphoreInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MPTaskID {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MPTaskInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MPTaskInfoVersion2 {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/mptaskstatekind
-  type MPTaskStateKind = cocoascript.UInt32;
+  type MPTaskStateKind = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/mptaskweight
-  type MPTaskWeight = cocoascript.UInt32;
+  type MPTaskWeight = number;
 }
 declare namespace cocoascript {
   interface MPTimerID {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/taskstorageindex
   type TaskStorageIndex = cocoascript.ItemCount;
 }
@@ -2237,7 +2364,7 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/mpdebuggerlevel
-  type MPDebuggerLevel = cocoascript.UInt32;
+  type MPDebuggerLevel = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/mpremotecontext
@@ -2252,92 +2379,114 @@ declare const pi: cocoascript.double_t;
 declare namespace cocoascript {
   interface PEFContainerHeader {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface PEFExportedSymbol {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface PEFExportedSymbolHashSlot {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface PEFExportedSymbolKey {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface PEFImportedLibrary {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface PEFImportedSymbol {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface PEFLoaderInfoHeader {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface PEFLoaderRelocationHeader {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface PEFSectionHeader {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface PEFSplitHashWord {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CollatorRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TextBreakLocatorRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/uccollationvalue
-  type UCCollationValue = cocoascript.UInt32;
+  type UCCollationValue = number;
 }
 declare namespace cocoascript {
   interface UCKeyboardTypeHeader {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/uckeycharseq
   type UCKeyCharSeq = cocoascript.UInt16;
 }
 declare namespace cocoascript {
   interface UCKeyLayoutFeatureInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface UCKeyModifiersToTableNum {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/uckeyoutput
   type UCKeyOutput = cocoascript.UInt16;
 }
 declare namespace cocoascript {
   interface UCKeySequenceDataIndex {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface UCKeyStateEntryRange {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface UCKeyStateEntryTerminal {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface UCKeyStateRecord {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface UCKeyStateRecordsIndex {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface UCKeyStateTerminators {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface UCKeyToCharTableIndex {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/uccollateoptions
-  type UCCollateOptions = cocoascript.UInt32;
+  type UCCollateOptions = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/uctextbreakoptions
-  type UCTextBreakOptions = cocoascript.UInt32;
+  type UCTextBreakOptions = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/uctextbreaktype
-  type UCTextBreakType = cocoascript.UInt32;
+  type UCTextBreakType = number;
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/unichararrayhandle
@@ -2366,326 +2515,430 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface BigEndianLong {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BigEndianUnsignedLong {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BigEndianShort {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BigEndianUnsignedShort {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BigEndianFixed {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BigEndianUnsignedFixed {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface AIFFLoop {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface AVLTreeStruct {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface ApplicationSpecificChunk {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface AudioRecordingChunk {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BigEndianOSType {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface BigEndianUInt32 {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CatPositionRec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface ChunkHeader {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface Comment {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CommentsChunk {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CommonChunk {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface ContainerChunk {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CustomBadgeResource {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface DInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface DXInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface DateCacheRecord {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface DateTimeRec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface DeferredTask {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface ExceptionInformation {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface ExceptionInformationPowerPC {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface ExtCommonChunk {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface ExtendedFileInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface ExtendedFolderInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FPUInformationIntel64 {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FPUInformationPowerPC {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FSEventStreamContext {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FVector {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FXInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FileInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FolderDesc {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FolderInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FolderRouting {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface FormatVersionChunk {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface GetVolParmsInfoBuffer {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface IconFamilyElement {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface InstrumentChunk {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface Intl0Rec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface Intl1Rec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface IntlText {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface Itl1ExtRec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface Itl4Rec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface Itl5Record {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface ItlbExtRecord {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface ItlbRecord {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface ItlcRecord {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface KCCallbackInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface LocalDateTime {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface LocaleAndVariant {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MIDIDataChunk {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MachineInformationIntel64 {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MachineInformationPowerPC {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MachineLocation {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface Marker {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MarkerChunk {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MemoryExceptionInformation {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MixedModeStateRecord {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface NItl4Rec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface NumFormatString {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface NumberParts {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface OffPair {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface OffsetArray {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface QElem {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface QHdr {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface RegisterInformationIntel64 {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface RegisterInformationPowerPC {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface RoutineDescriptor {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface RoutineRecord {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface RoutingResourceEntry {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface RuleBasedTrslRecord {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface SchedulerInfoRec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface SleepQRec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface SoundDataChunk {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TMTask {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TScriptingSizeResource {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TableDirectoryRecord {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TextChunk {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TextEncodingRec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TextRange {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TextRangeArray {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TogglePB {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TokenBlock {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface TokenRec {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface UTCDateTime {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface UntokenTable {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface VectorInformationIntel64 {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface VectorInformationPowerPC {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface VolMountInfoHeader {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface VolumeMountInfoHeader {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface WSClientContext {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface WideCharArr {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface WritingCode {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface XLibContainerHeader {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface XLibExportedSymbol {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface ccntTokenRecord {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface decform {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface decimal {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/wstypeid
   type WSTypeID = number;
 }
 // doc://com.apple.documentation/documentation/coreservices/1517787-getmacosstatuscommentstring
-declare const GetMacOSStatusCommentString: cocoascript.OSStatus;
+declare const GetMacOSStatusCommentString: any;
 // doc://com.apple.documentation/documentation/coreservices/1517786-getmacosstatuserrorstring
-declare const GetMacOSStatusErrorString: cocoascript.OSStatus;
+declare const GetMacOSStatusErrorString: any;
 // doc://com.apple.documentation/documentation/coreservices/lslaunchurlspec/1445136-passthruparams
 declare const passThruParams: cocoascript.AEDesc;
 declare namespace cocoascript {
   interface LSItemInfoRecord {
   }
-}// doc://com.apple.documentation/documentation/coreservices/klsitemcontenttype
+}
+// doc://com.apple.documentation/documentation/coreservices/klsitemcontenttype
 declare const kLSItemContentType: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/klsitemfiletype
 declare const kLSItemFileType: cocoascript.CFStringRef;
@@ -2706,10 +2959,12 @@ declare const kLSItemExtensionIsHidden: cocoascript.CFStringRef;
 declare namespace cocoascript {
   interface LSApplicationParameters {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface LSLaunchFSRefSpec {
   }
-}// doc://com.apple.documentation/documentation/coreservices/klsitemquarantineproperties
+}
+// doc://com.apple.documentation/documentation/coreservices/klsitemquarantineproperties
 declare const kLSItemQuarantineProperties: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kskmintermlength
 declare const kSKMinTermLength: cocoascript.CFStringRef;

@@ -1,0 +1,1039 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Use separate coordinate format arrays to create sparse matrices."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/conversion_from_other_formats"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/creating_a_sparse_matrix_from_coordinate_format_arrays",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2875010,
+  "kind": "article",
+  "metadata": {
+    "title": "Creating a Sparse Matrix from Coordinate Format Arrays",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/creating_a_sparse_matrix_from_coordinate_format_arrays",
+        "documentation/accelerate/sparse_solvers/conversion_from_other_formats/creating_a_sparse_matrix_from_coordinate_format_arrays"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/creating_a_sparse_matrix_from_coordinate_format_arrays",
+        "documentation/accelerate/sparse_solvers/conversion_from_other_formats/creating_a_sparse_matrix_from_coordinate_format_arrays"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers": {
+      "title": "Sparse Solvers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/sparse_solvers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Solve systems of equations where the coefficient matrix is sparse. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/conversion_from_other_formats": {
+      "title": "Conversion from Other Formats",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/conversion_from_other_formats",
+      "url": "/documentation/accelerate/sparse_solvers/conversion_from_other_formats",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-media-2887076": {
+      "identifier": "link-media-2887076",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/creating_a_sparse_matrix_from_coordinate_format_arrays#2887076"
+    },
+    "media-2887076": {
+      "identifier": "media-2887076",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 193,
+            "height": 93
+          },
+          "url": "https://docs-assets.developer.apple.com/published/67710ae997/818cbdb0-293d-4785-8058-d9c86222a360.png"
+        }
+      ],
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/creating_a_sparse_matrix_from_coordinate_format_arrays#2880950": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_a_sparse_matrix_from_coordinate_format_arrays#2880950",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/creating_a_sparse_matrix_from_coordinate_format_arrays#2880950"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/creating_a_sparse_matrix_from_coordinate_format_arrays#2880951": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_a_sparse_matrix_from_coordinate_format_arrays#2880951",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/creating_a_sparse_matrix_from_coordinate_format_arrays#2880951"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t/2868065-kind": {
+      "title": "kind",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t/2868065-kind",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparseattributes_t/2868065-kind"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparsekind_t/sparsetriangular": {
+      "title": "SparseTriangular",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsekind_t/sparsetriangular",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsekind_t/sparsetriangular"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparsekind_t/sparseunittriangular": {
+      "title": "SparseUnitTriangular",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsekind_t/sparseunittriangular",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsekind_t/sparseunittriangular"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparsekind_t/sparsesymmetric": {
+      "title": "SparseSymmetric",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsekind_t/sparsesymmetric",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsekind_t/sparsesymmetric"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2865546-sparseconvertfromcoordinate": {
+      "title": "SparseConvertFromCoordinate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2865546-sparseconvertfromcoordinate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2865546-sparseconvertfromcoordinate"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2875484-sparseconvertfromcoordinate": {
+      "title": "SparseConvertFromCoordinate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2875484-sparseconvertfromcoordinate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2875484-sparseconvertfromcoordinate"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2868248-sparseconvertfromcoordinate": {
+      "title": "SparseConvertFromCoordinate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2868248-sparseconvertfromcoordinate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2868248-sparseconvertfromcoordinate"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2868028-sparseconvertfromcoordinate": {
+      "title": "SparseConvertFromCoordinate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2868028-sparseconvertfromcoordinate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2868028-sparseconvertfromcoordinate"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/creating_sparse_matrices": {
+      "title": "Creating Sparse Matrices",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_sparse_matrices",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/creating_sparse_matrices",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create sparse matrices for factorization and solving systems."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods": {
+      "title": "Implementing Iterative Methods",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/implementing_iterative_methods",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use iterative methods to solve large problems faster and with a lower memory overhead than with direct methods.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_direct_methods": {
+      "title": "Solving Systems Using Direct Methods",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_direct_methods",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/solving_systems_using_direct_methods",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use direct methods to solve systems of equations where the coefficient matrix is sparse."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_iterative_methods": {
+      "title": "Solving Systems Using Iterative Methods",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_iterative_methods",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/solving_systems_using_iterative_methods",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use iterative methods to solve systems of equations where the coefficient matrix is sparse. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/creating_a_sparse_matrix_from_coordinate_format_arrays": {
+      "title": "Creating a Sparse Matrix from Coordinate Format Arrays",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_a_sparse_matrix_from_coordinate_format_arrays",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/creating_a_sparse_matrix_from_coordinate_format_arrays",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use separate coordinate format arrays to create sparse matrices."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/creating_sparse_matrices",
+        "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods",
+        "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_direct_methods",
+        "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_iterative_methods",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers"
+      ],
+      "title": "Sparse Matrices",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In some cases—for example, if you are reading matrix values from a file—you may find it easier to create sparse matrix objects from coordinate format arrays. This approach requires three separate arrays: one containing the column indexes, another containing the row indexes, and a third containing the values. Each array contains the same number of items."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create the Sparse Matrix",
+          "anchor": "2880949"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following is an example of a symmetric sparse matrix:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2887076",
+              "metadata": {
+                "anchor": "2887076",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because this sparse matrix is symmetric, you can define it with the arrays shown below that describe its lower triangle. For example, the value "
+            },
+            {
+              "type": "codeVoice",
+              "code": "9.5"
+            },
+            {
+              "type": "text",
+              "text": " is in row 2, column 2."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "int row[] =       { 0,   1,   3,    1,    2,   3,   2,   3};",
+            "int column[] =    { 0,   0,   0,    1,    1,   1,   2,   3};",
+            "double values[] = {10.0, 1.0, 2.5, 12.0, -0.3, 1.1, 9.5, 6.0};"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2880950",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "attributes"
+            },
+            {
+              "type": "text",
+              "text": " parameter, you can specify that the matrix is symmetric and the items in the values array are derived from the lower triangle."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This code defines the attributes and creates the sparse matrix instance:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "SparseAttributes_t attributes = {",
+            "    .triangle = SparseLowerTriangle,",
+            "    .kind = SparseSymmetric",
+            "};",
+            " ",
+            "int row[] =       { 0,   1,   3,    1,    2,   3,   2,   3};",
+            "int column[] =    { 0,   0,   0,    1,    1,   1,   2,   3};",
+            "double values[] = {10.0, 1.0, 2.5, 12.0, -0.3, 1.1, 9.5, 6.0};",
+            " ",
+            "long blockCount = 8;",
+            "UInt8 blockSize = 1;",
+            " ",
+            "SparseMatrix_Double A = SparseConvertFromCoordinate(4, 4,",
+            "                                                    blockCount, blockSize,",
+            "                                                    attributes,",
+            "                                                    row, column,",
+            "                                                    values);"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2880951",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Invalid and Duplicate Entries",
+          "anchor": "2882589"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The block element is ignored and is not included in the returned matrix if the coordinates "
+            },
+            {
+              "type": "codeVoice",
+              "code": "(row[i], column[i])"
+            },
+            {
+              "type": "text",
+              "text": " are invalid, meaning either of the following is true:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "They lie outside the ranges "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "0..<rowCount"
+                    },
+                    {
+                      "type": "text",
+                      "text": " or "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "0..<columnCount"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", respectively"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t/2868065-kind"
+                    },
+                    {
+                      "type": "text",
+                      "text": " is "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsekind_t/sparsetriangular"
+                    },
+                    {
+                      "type": "text",
+                      "text": " or "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsekind_t/sparseunittriangular"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", and the coordinates lie in the wrong triangle"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t/2868065-kind"
+            },
+            {
+              "type": "text",
+              "text": " is "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsekind_t/sparsesymmetric"
+            },
+            {
+              "type": "text",
+              "text": ", any entries in the wrong triangle are transposed and summed into the block at "
+            },
+            {
+              "type": "codeVoice",
+              "code": "(column[i], row[i])"
+            },
+            {
+              "type": "text",
+              "text": " if one is present."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In all cases, if any duplicate coordinates are present, the elements are summed and replaced with a single entry."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The coordinate-conversion functions support block matrices, that is, those with a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "blockSize"
+            },
+            {
+              "type": "text",
+              "text": " greater than 1. The matrix described has "
+            },
+            {
+              "type": "codeVoice",
+              "code": "rowCount * blockSize"
+            },
+            {
+              "type": "text",
+              "text": " rows and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "columnCount * blockSize"
+            },
+            {
+              "type": "text",
+              "text": " columns. For each "
+            },
+            {
+              "type": "codeVoice",
+              "code": "i in 0..<blockCount"
+            },
+            {
+              "type": "text",
+              "text": ", there is a structurally nonzero block at block position "
+            },
+            {
+              "type": "codeVoice",
+              "code": "(row[i], column[i])"
+            },
+            {
+              "type": "text",
+              "text": " with numerical values "
+            },
+            {
+              "type": "codeVoice",
+              "code": "data[i * blockSize * blockSize:(i + 1) * blockSize * blockSize - 1]"
+            },
+            {
+              "type": "text",
+              "text": ". The block's values are interpreted as the elements of a dense column-major matrix with "
+            },
+            {
+              "type": "codeVoice",
+              "code": "blockSize"
+            },
+            {
+              "type": "text",
+              "text": " rows and columns."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "There are two variants of each converter. One variant allocates its own workspace internally and also allocates space for the resulting sparse matrix. The other requires you to pass storage for the new matrix and a separate workspace for precise control over allocations."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Convert Block Matrices",
+          "anchor": "2882593"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The block element is ignored and is not included in the returned matrix if the coordinates "
+            },
+            {
+              "type": "codeVoice",
+              "code": "(row[i], column[i])"
+            },
+            {
+              "type": "text",
+              "text": " are invalid, meaning either of the following is true:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "They lie outside the ranges "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "0..<rowCount"
+                    },
+                    {
+                      "type": "text",
+                      "text": " or "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "0..<columnCount"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", respectively"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t/2868065-kind"
+                    },
+                    {
+                      "type": "text",
+                      "text": " is "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsekind_t/sparsetriangular"
+                    },
+                    {
+                      "type": "text",
+                      "text": " or "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsekind_t/sparseunittriangular"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", and the coordinates lie in the wrong triangle"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseattributes_t/2868065-kind"
+            },
+            {
+              "type": "text",
+              "text": " is "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsekind_t/sparsesymmetric"
+            },
+            {
+              "type": "text",
+              "text": ", any entries in the wrong triangle are transposed and summed into the block at "
+            },
+            {
+              "type": "codeVoice",
+              "code": "(column[i], row[i])"
+            },
+            {
+              "type": "text",
+              "text": " if one is present."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In all cases, if any duplicate coordinates are present, the elements are summed and replaced with a single entry."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The coordinate-conversion functions support block matrices, that is, those with a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "blockSize"
+            },
+            {
+              "type": "text",
+              "text": " greater than 1. The matrix described has "
+            },
+            {
+              "type": "codeVoice",
+              "code": "rowCount * blockSize"
+            },
+            {
+              "type": "text",
+              "text": " rows and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "columnCount * blockSize"
+            },
+            {
+              "type": "text",
+              "text": " columns. For each "
+            },
+            {
+              "type": "codeVoice",
+              "code": "i in 0..<blockCount"
+            },
+            {
+              "type": "text",
+              "text": ", there is a structurally nonzero block at block position "
+            },
+            {
+              "type": "codeVoice",
+              "code": "(row[i], column[i])"
+            },
+            {
+              "type": "text",
+              "text": " with numerical values "
+            },
+            {
+              "type": "codeVoice",
+              "code": "data[i * blockSize * blockSize:(i + 1) * blockSize * blockSize - 1]"
+            },
+            {
+              "type": "text",
+              "text": ". The block's values are interpreted as the elements of a dense column-major matrix with "
+            },
+            {
+              "type": "codeVoice",
+              "code": "blockSize"
+            },
+            {
+              "type": "text",
+              "text": " rows and columns."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Supply a User-Defined Workspace",
+          "anchor": "2882594"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "There are two variants of each converter. One variant allocates its own workspace internally and also allocates space for the resulting sparse matrix:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/2865546-sparseconvertfromcoordinate"
+                    },
+                    {
+                      "type": "text",
+                      "text": " for double-precision, floating-point values"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/2875484-sparseconvertfromcoordinate"
+                    },
+                    {
+                      "type": "text",
+                      "text": " for single-precision, floating-point values"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The other requires you to pass storage for the new matrix and a separate workspace for precise control over allocations:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/2868248-sparseconvertfromcoordinate"
+                    },
+                    {
+                      "type": "text",
+                      "text": " for double-precision, floating-point values"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/2868028-sparseconvertfromcoordinate"
+                    },
+                    {
+                      "type": "text",
+                      "text": " for single-precision, floating-point values"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

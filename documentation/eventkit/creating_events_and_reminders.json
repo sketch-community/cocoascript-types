@@ -1,0 +1,1189 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Create and modify events and reminders in a user's database."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/eventkit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/eventkit/creating_events_and_reminders",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2952774,
+  "kind": "article",
+  "metadata": {
+    "title": "Creating Events and Reminders",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "EventKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/eventkit/creating_events_and_reminders"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/eventkit/creating_events_and_reminders"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/eventkit": {
+      "title": "EventKit",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit",
+      "url": "/documentation/eventkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekeventstore": {
+      "title": "EKEventStore",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekeventstore"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507295-saveevent": {
+      "title": "saveEvent:span:commit:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507295-saveevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekeventstore/1507295-saveevent",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "saveEvent:span:commit:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507469-removeevent": {
+      "title": "removeEvent:span:commit:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507469-removeevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekeventstore/1507469-removeevent",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeEvent:span:commit:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekspan/ekspanfutureevents": {
+      "title": "EKSpanFutureEvents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekspan/ekspanfutureevents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekspan/ekspanfutureevents"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507424-commit": {
+      "title": "commit:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507424-commit",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekeventstore/1507424-commit",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "commit:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekevent/1507483-eventwitheventstore": {
+      "title": "eventWithEventStore:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekevent/1507483-eventwitheventstore",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekevent/1507483-eventwitheventstore",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "eventWithEventStore:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekevent": {
+      "title": "EKEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A class that represents an event added to a calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekcalendar/1507487-title": {
+      "title": "title",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekcalendar/1507487-title",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekcalendar/1507487-title"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekevent/1507372-startdate": {
+      "title": "startDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekevent/1507372-startdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekevent/1507372-startdate"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekevent/1507121-enddate": {
+      "title": "endDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekevent/1507121-enddate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekevent/1507121-enddate"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507169-calendar": {
+      "title": "calendar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507169-calendar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekcalendaritem/1507169-calendar"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507211-alarms": {
+      "title": "alarms",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507211-alarms",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekcalendaritem/1507211-alarms"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/setting_an_alarm": {
+      "title": "Setting an Alarm",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/setting_an_alarm",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/eventkit/setting_an_alarm"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/creating_a_recurring_event": {
+      "title": "Creating a Recurring Event",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/creating_a_recurring_event",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/eventkit/creating_a_recurring_event"
+    },
+    "doc://com.apple.documentation/documentation/eventkitui": {
+      "title": "EventKit UI",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkitui",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/eventkitui"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507181-savereminder": {
+      "title": "saveReminder:commit:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507181-savereminder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekeventstore/1507181-savereminder",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "saveReminder:commit:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507108-removereminder": {
+      "title": "removeReminder:commit:error:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507108-removereminder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekeventstore/1507108-removereminder",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeReminder:commit:error:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1623680-calendars": {
+      "title": "calendars",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1623680-calendars",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekeventstore/1623680-calendars"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekreminder/1507558-startdatecomponents": {
+      "title": "startDateComponents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekreminder/1507558-startdatecomponents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekreminder/1507558-startdatecomponents"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekreminder/1507383-duedatecomponents": {
+      "title": "dueDateComponents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekreminder/1507383-duedatecomponents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekreminder/1507383-duedatecomponents"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekreminder/1507286-completiondate": {
+      "title": "completionDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekreminder/1507286-completiondate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekreminder/1507286-completiondate"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekreminder": {
+      "title": "EKReminder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekreminder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekreminder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A class that represents a reminder added to a calendar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem": {
+      "title": "EKCalendarItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekcalendaritem"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507397-addalarm": {
+      "title": "addAlarm:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507397-addalarm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekcalendaritem/1507397-addalarm",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addAlarm:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507256-addrecurrencerule": {
+      "title": "addRecurrenceRule:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507256-addrecurrencerule",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekcalendaritem/1507256-addrecurrencerule",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addRecurrenceRule:"
+        }
+      ]
+    },
+    "link-2980545": {
+      "title": "NSRemindersUsageDescription",
+      "type": "section",
+      "identifier": "link-2980545",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW16"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekreminder/1507429-reminderwitheventstore": {
+      "title": "reminderWithEventStore:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekreminder/1507429-reminderwitheventstore",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekreminder/1507429-reminderwitheventstore",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "reminderWithEventStore:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507305-title": {
+      "title": "title",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507305-title",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/eventkit/ekcalendaritem/1507305-title"
+    },
+    "doc://com.apple.documentation/documentation/eventkit/creating_events_and_reminders": {
+      "title": "Creating Events and Reminders",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/creating_events_and_reminders",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/eventkit/creating_events_and_reminders",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create and modify events and reminders in a user's database."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/retrieving_events_and_reminders": {
+      "title": "Retrieving Events and Reminders",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/retrieving_events_and_reminders",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/eventkit/retrieving_events_and_reminders",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Fetch events and reminders from the Calendar database."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/updating_with_notifications": {
+      "title": "Updating with Notifications",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/updating_with_notifications",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/eventkit/updating_with_notifications",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Register to be notified about changes and keep your app up to date."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders": {
+      "title": "Managing Location-Based Reminders",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/eventkit/managing_location-based_reminders",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add, fetch, complete, remove, and sort location-based reminders in your app."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/eventkit/retrieving_events_and_reminders",
+        "doc://com.apple.documentation/documentation/eventkit/updating_with_notifications",
+        "doc://com.apple.documentation/documentation/eventkit/managing_location-based_reminders",
+        "doc://com.apple.documentation/documentation/eventkit/ekevent",
+        "doc://com.apple.documentation/documentation/eventkit/ekreminder"
+      ],
+      "title": "Events and Reminders",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Once you have permission to access a user's Calendar and Reminder data, you can create, display, and edit events and reminders."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create Events",
+          "anchor": "2952855"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create a new event with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekevent/1507483-eventwitheventstore"
+            },
+            {
+              "type": "text",
+              "text": " method of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekevent"
+            },
+            {
+              "type": "text",
+              "text": " class."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can edit the details of a new event or an event you previously fetched from the Calendar database by setting the event’s corresponding properties. Some of the details you can edit include:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The event’s title with the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekcalendar/1507487-title"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The event’s start and end dates with the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekevent/1507372-startdate"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekevent/1507121-enddate"
+                    },
+                    {
+                      "type": "text",
+                      "text": " properties."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The calendar with which the event is associated with the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507169-calendar"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The alarms associated with the event with the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507211-alarms"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property (see \""
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/eventkit/setting_an_alarm"
+                    },
+                    {
+                      "type": "text",
+                      "text": "\" for more details)."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The event’s recurrence rule, if it is a repeating event, with the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "recurrenceRules"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property (see \""
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/eventkit/creating_a_recurring_event"
+                    },
+                    {
+                      "type": "text",
+                      "text": "\" for more details)."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "In iOS, you have the option of letting users modify event data with the event view controllers provided in the EventKit UI framework. For information on how to use these event view controllers, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/eventkitui"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Save and Delete Events",
+          "anchor": "2976099"
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If your app modifies a user’s Calendar database, it must get confirmation from the user before doing so. An app should never modify the Calendar database without specific instruction from the user."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Save your changes to the Calendar database with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore"
+            },
+            {
+              "type": "text",
+              "text": " method "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507295-saveevent"
+            },
+            {
+              "type": "text",
+              "text": ". If you want to remove an event from the Calendar database, use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "EKEventStore"
+            },
+            {
+              "type": "text",
+              "text": " method "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507469-removeevent"
+            },
+            {
+              "type": "text",
+              "text": ". Whether you are saving or removing an event, implementing the respective method automatically syncs your changes with the calendar the event belongs to (CalDAV, Exchange, and so on)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you are saving a recurring event, your changes can apply to all future occurrences of the event by specifying "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekspan/ekspanfutureevents"
+            },
+            {
+              "type": "text",
+              "text": " for the span parameter of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507295-saveevent"
+            },
+            {
+              "type": "text",
+              "text": " method. Likewise, you can remove all future occurrences of an event by specifying "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekspan/ekspanfutureevents"
+            },
+            {
+              "type": "text",
+              "text": " for the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "span"
+            },
+            {
+              "type": "text",
+              "text": " parameter of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507469-removeevent"
+            },
+            {
+              "type": "text",
+              "text": " method."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If you pass "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NO"
+                },
+                {
+                  "type": "text",
+                  "text": " to the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "commit"
+                },
+                {
+                  "type": "text",
+                  "text": " parameter, make sure that you later invoke the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507424-commit"
+                },
+                {
+                  "type": "text",
+                  "text": " method to permanently save your changes."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create Reminders",
+          "anchor": "2952859"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Reminders are tasks that may be tied to a specific time or location. They are similar to calendar events, but can be marked complete and may not necessarily span an exact period of time."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekreminder"
+            },
+            {
+              "type": "text",
+              "text": " inherits from "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem"
+            },
+            {
+              "type": "text",
+              "text": ", you can perform the same methods on a reminder as you would on an event, such as adding an alarm with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507397-addalarm"
+            },
+            {
+              "type": "text",
+              "text": " or setting a recurrence rule with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507256-addrecurrencerule"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If your iOS app links on macOS and you need to access Reminders data, be sure to include the "
+                },
+                {
+                  "type": "link",
+                  "title": "NSRemindersUsageDescription",
+                  "destination": "https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW16"
+                },
+                {
+                  "type": "text",
+                  "text": " key in your "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "Info.plist"
+                },
+                {
+                  "type": "text",
+                  "text": " file."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can create reminders using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekreminder/1507429-reminderwitheventstore"
+            },
+            {
+              "type": "text",
+              "text": " class method. The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507305-title"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekcalendaritem/1507169-calendar"
+            },
+            {
+              "type": "text",
+              "text": " properties are required. The calendar for a reminder is the list with which it is grouped."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Like events, reminders can trigger time-based or location-based alarms to alert the user of a certain task. Read \""
+            },
+            {
+              "type": "codeVoice",
+              "code": "Setting an Alarm"
+            },
+            {
+              "type": "text",
+              "text": "\" for more information on how to attach alarms to calendar items."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Save and Delete Reminders",
+          "anchor": "2952857"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To save a reminder to the Calendar database, call the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507181-savereminder"
+            },
+            {
+              "type": "codeVoice",
+              "code": " "
+            },
+            {
+              "type": "text",
+              "text": "method. To remove an event, call the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507108-removereminder"
+            },
+            {
+              "type": "text",
+              "text": " method. The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekcalendar/1507487-title"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1623680-calendars"
+            },
+            {
+              "type": "text",
+              "text": " properties must explicitly be set before you save the reminder."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Just like when saving or removing events, make sure that if you pass "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "NO"
+                },
+                {
+                  "type": "text",
+                  "text": " to the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "commit"
+                },
+                {
+                  "type": "text",
+                  "text": " parameter, you later invoke the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/eventkit/ekeventstore/1507424-commit"
+                },
+                {
+                  "type": "text",
+                  "text": " method to save your changes."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Edit Reminders",
+          "anchor": "2952858"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To associate a start date or due date with a reminder, use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekreminder/1507558-startdatecomponents"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekreminder/1507383-duedatecomponents"
+            },
+            {
+              "type": "text",
+              "text": " properties. To complete a reminder, set the completed property to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "YES"
+            },
+            {
+              "type": "text",
+              "text": ", which automatically sets "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/eventkit/ekreminder/1507286-completiondate"
+            },
+            {
+              "type": "text",
+              "text": " to the current date."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If your app modifies a user’s Calendar database, it must get confirmation from the user before doing so. An app should never modify the Calendar database without specific instruction from the user."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

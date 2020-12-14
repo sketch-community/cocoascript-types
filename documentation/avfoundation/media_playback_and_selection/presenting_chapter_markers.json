@@ -1,0 +1,631 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Add chapter markers to enable users to quickly navigate your content."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2948815,
+  "kind": "article",
+  "metadata": {
+    "title": "Presenting Chapter Markers",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection": {
+      "title": "Media Playback and Selection",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
+      "url": "/documentation/avfoundation/media_playback_and_selection",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1390909-chaptermetadatagroupsbestmatchin": {
+      "title": "chapterMetadataGroupsBestMatchingPreferredLanguages:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1390909-chaptermetadatagroupsbestmatchin",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1390909-chaptermetadatagroupsbestmatchin",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "chapterMetadataGroupsBestMatchingPreferredLanguages:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1388966-chaptermetadatagroupswithtitlelo": {
+      "title": "chapterMetadataGroupsWithTitleLocale:containingItemsWithCommonKeys:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1388966-chaptermetadatagroupswithtitlelo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1388966-chaptermetadatagroupswithtitlelo",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "chapterMetadataGroupsWithTitleLocale:containingItemsWithCommonKeys:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset/1388228-availablechapterlocales": {
+      "title": "availableChapterLocales",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1388228-availablechapterlocales",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset/1388228-availablechapterlocales"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers#2948814": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers#2948814",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers#2948814"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avtimedmetadatagroup": {
+      "title": "AVTimedMetadataGroup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avtimedmetadatagroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avtimedmetadatagroup"
+    },
+    "doc://com.apple.documentation/documentation/coremedia/cmtimerange": {
+      "title": "CMTimeRange",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coremedia/cmtimerange",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coremedia/cmtimerange"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem": {
+      "title": "AVMetadataItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmetadataitem"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers#2948817": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers#2948817",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers#2948817"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer": {
+      "title": "AVPlayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that provides the interface to control the player’s transport behavior."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1385953-seektotime": {
+      "title": "seekToTime:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1385953-seektotime",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1385953-seektotime",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "seekToTime:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avkit/avplayerviewcontroller": {
+      "title": "AVPlayerViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avkit/avplayerviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avkit/avplayerviewcontroller"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/seeking_through_media": {
+      "title": "Seeking Through Media",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/seeking_through_media",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/seeking_through_media",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Seek or scrub across a media item to quickly access a specific time point."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_playback_state": {
+      "title": "Observing Playback State",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_playback_state",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/observing_playback_state",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Respond to changes in a player's playback state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_the_playback_time": {
+      "title": "Observing the Playback Time",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_the_playback_time",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/observing_the_playback_time",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Observe the playback time for an asset in order to update the player's state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers": {
+      "title": "Presenting Chapter Markers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add chapter markers to enable users to quickly navigate your content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls": {
+      "title": "Creating a Movie Player App with Basic Playback Controls",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Play movies using a custom interface that implements simple playback functionality."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem": {
+      "title": "AVPlayerItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to model the timing and presentation state of an asset played by the player."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack": {
+      "title": "AVPlayerItemTrack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritemtrack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to modify the presentation state of an asset track being presented by a player."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer": {
+      "title": "AVPlayerLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayerlayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that manages a player’s visual output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer": {
+      "title": "AVQueuePlayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avqueueplayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A player used to play a number of items in sequence."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper": {
+      "title": "AVPlayerLooper",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayerlooper",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that simplifies the playing of looping media content using a queue player."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsynchronizedlayer": {
+      "title": "AVSynchronizedLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsynchronizedlayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsynchronizedlayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to synchronize with a specific player item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs": {
+      "title": "Player Item Outputs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/avfoundation/media_playback_and_selection/player_item_outputs",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Objects that provide access to the content of a player item’s tracks."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/seeking_through_media",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_playback_state",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_the_playback_time",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer",
+        "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper",
+        "doc://com.apple.documentation/documentation/avfoundation/avsynchronizedlayer",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs"
+      ],
+      "title": "Media Playback",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Chapter markers enable users to quickly navigate your content. "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avkit/avplayerviewcontroller"
+            },
+            {
+              "type": "text",
+              "text": " automatically presents a chapter-selection interface if it finds chapter markers in the currently played asset. You can also directly retrieve this data whenever you want to create your own custom chapter-selection interface."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Retrieve the Timed Metadata",
+          "anchor": "2948816"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Chapter markers are a type of timed metadata that apply only to ranges of time within the asset’s timeline. You retrieve an asset’s chapter metadata using either the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1390909-chaptermetadatagroupsbestmatchin"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1388966-chaptermetadatagroupswithtitlelo"
+            },
+            {
+              "type": "text",
+              "text": " methods. These methods become callable without blocking after you asynchronously load the value of the asset’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset/1388228-availablechapterlocales"
+            },
+            {
+              "type": "text",
+              "text": " key."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let asset = AVAsset(url: <# Asset URL #>)",
+            "let chapterLocalesKey = \"availableChapterLocales\"",
+            " ",
+            "asset.loadValuesAsynchronously(forKeys: [chapterLocalesKey]) {",
+            "    var error: NSError?",
+            "    let status = asset.statusOfValue(forKey: chapterLocalesKey, error: &error)",
+            "    if status == .loaded {",
+            "        let languages = Locale.preferredLanguages",
+            "        let chapterMetadata = asset.chapterMetadataGroups(bestMatchingPreferredLanguages: languages)",
+            "        // Process chapter metadata.",
+            "    }",
+            "    else {",
+            "        // Handle other status cases.",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2948814",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Convert Timed Metadata into Chapter Data",
+          "anchor": "2948818"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The value returned from the methods described above is an array of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avtimedmetadatagroup"
+            },
+            {
+              "type": "text",
+              "text": " objects, each representing an individual chapter marker. An "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avtimedmetadatagroup"
+            },
+            {
+              "type": "text",
+              "text": " object contains a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coremedia/cmtimerange"
+            },
+            {
+              "type": "text",
+              "text": ", defining the time range to which its metadata applies, an array of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmetadataitem"
+            },
+            {
+              "type": "text",
+              "text": " objects representing the chapter’s title, and optionally, its thumbnail image. The following example shows how to convert the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avtimedmetadatagroup"
+            },
+            {
+              "type": "text",
+              "text": " data into an array of custom model objects, called "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Chapter"
+            },
+            {
+              "type": "text",
+              "text": ", to pass to the app’s view layer."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func convertTimedMetadataGroupsToChapters(groups: [AVTimedMetadataGroup]) -> [Chapter] {",
+            "    return groups.map { group in",
+            "        // Retrieve the title metadata items.",
+            "        let titleItems = AVMetadataItem.metadataItems(from: group.items,",
+            "                                                      filteredByIdentifier: .commonIdentifierTitle)",
+            "",
+            "        // Retrieve the artwork metadata items.",
+            "        let artworkItems = AVMetadataItem.metadataItems(from: group.items,",
+            "                                                        filteredByIdentifier: .commonIdentifierArtwork)",
+            "",
+            "        var title = \"Default Title\"",
+            "        var image = UIImage(named: \"placeholder\")!",
+            "",
+            "        if let titleValue = titleItems.first?.stringValue {",
+            "            title = titleValue",
+            "        }",
+            "",
+            "        if let imgData = artworkItems.first?.dataValue, let imageValue = UIImage(data: imgData) {",
+            "            image = imageValue",
+            "        }",
+            "",
+            "        return Chapter(time: group.timeRange.start, title: title, image: image)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2948817",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With the relevant data converted, you can build a chapter-selection interface and use the time value of the chapter object to seek the current presentation using an "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer"
+            },
+            {
+              "type": "text",
+              "text": " object’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1385953-seektotime"
+            },
+            {
+              "type": "text",
+              "text": " method."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

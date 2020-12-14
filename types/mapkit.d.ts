@@ -810,13 +810,16 @@ declare const MKOverlayView: cocoascript.MKOverlayView;
 declare namespace cocoascript {
   interface MKMapPoint {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MKMapSize {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface MKMapRect {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/mapkit/mkmaptype
   type MKMapType = cocoascript.NSUInteger;
 }
@@ -1212,7 +1215,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface MKCoordinateRegion {
   }
-}// doc://com.apple.documentation/documentation/mapkit/mkpointsofinterestrequestmaxradius
+}
+// doc://com.apple.documentation/documentation/mapkit/mkpointsofinterestrequestmaxradius
 declare const MKPointsOfInterestRequestMaxRadius: cocoascript.CLLocationDistance;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleterresulttype
@@ -1247,7 +1251,8 @@ declare const MKLocalSearchCompletion: cocoascript.MKLocalSearchCompletion;
 declare namespace cocoascript {
   interface MKCoordinateSpan {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   /**
    * A utility object that converts between a geographic distance and a string-based expression of that distance.
    * doc://com.apple.documentation/documentation/mapkit/mkdistanceformatter

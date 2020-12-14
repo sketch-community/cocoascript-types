@@ -1,0 +1,760 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Establish Secure Sockets Layer (SSL) sessions to facilitate secure communication between client and server."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/secure_transport"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/secure_transport/using_the_secure_socket_layer_for_network_communication",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2870694,
+  "kind": "article",
+  "metadata": {
+    "title": "Using the Secure Socket Layer for Network Communication",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/secure_transport/using_the_secure_socket_layer_for_network_communication"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/secure_transport/using_the_secure_socket_layer_for_network_communication"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/secure_transport": {
+      "title": "Secure Transport",
+      "identifier": "doc://com.apple.documentation/documentation/security/secure_transport",
+      "url": "/documentation/security/secure_transport",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/1400161-sslhandshake": {
+      "title": "SSLHandshake",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1400161-sslhandshake",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1400161-sslhandshake"
+    },
+    "doc://com.apple.documentation/documentation/security/1397869-sslclose": {
+      "title": "SSLClose",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1397869-sslclose",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1397869-sslclose"
+    },
+    "doc://com.apple.documentation/documentation/security/1393063-sslcreatecontext": {
+      "title": "SSLCreateContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1393063-sslcreatecontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1393063-sslcreatecontext"
+    },
+    "doc://com.apple.documentation/documentation/security/sslwritefunc": {
+      "title": "SSLWriteFunc",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sslwritefunc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sslwritefunc"
+    },
+    "doc://com.apple.documentation/documentation/security/sslreadfunc": {
+      "title": "SSLReadFunc",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sslreadfunc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sslreadfunc"
+    },
+    "doc://com.apple.documentation/documentation/security/1396081-sslsetiofuncs": {
+      "title": "SSLSetIOFuncs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396081-sslsetiofuncs",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396081-sslsetiofuncs"
+    },
+    "doc://com.apple.documentation/documentation/cfnetwork": {
+      "title": "CFNetwork",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cfnetwork",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/cfnetwork"
+    },
+    "doc://com.apple.documentation/documentation/security/1398843-sslsetconnection": {
+      "title": "SSLSetConnection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1398843-sslsetconnection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1398843-sslsetconnection"
+    },
+    "doc://com.apple.documentation/documentation/security/1393047-sslsetpeerdomainname": {
+      "title": "SSLSetPeerDomainName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1393047-sslsetpeerdomainname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1393047-sslsetpeerdomainname"
+    },
+    "doc://com.apple.documentation/documentation/security/1392400-sslsetcertificate": {
+      "title": "SSLSetCertificate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1392400-sslsetcertificate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1392400-sslsetcertificate"
+    },
+    "doc://com.apple.documentation/documentation/security/1400864-sslwrite": {
+      "title": "SSLWrite",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1400864-sslwrite",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1400864-sslwrite"
+    },
+    "doc://com.apple.documentation/documentation/security/1394324-sslread": {
+      "title": "SSLRead",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1394324-sslread",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1394324-sslread"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1521153-cfrelease": {
+      "title": "CFRelease",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1521153-cfrelease",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1521153-cfrelease"
+    },
+    "devLink-1720248": {
+      "identifier": "devLink-1720248",
+      "type": "link",
+      "title": "CFNetwork Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/Networking/Conceptual/CFNetwork/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001132"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services": {
+      "title": "Certificate, Key, and Trust Services",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/certificate_key_and_trust_services"
+    },
+    "doc://com.apple.documentation/documentation/security/secure_transport/using_the_secure_socket_layer_for_network_communication": {
+      "title": "Using the Secure Socket Layer for Network Communication",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secure_transport/using_the_secure_socket_layer_for_network_communication",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/secure_transport/using_the_secure_socket_layer_for_network_communication",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Establish Secure Sockets Layer (SSL) sessions to facilitate secure communication between client and server."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following terms are used in this discussion: "
+            }
+          ]
+        },
+        {
+          "type": "termList",
+          "items": [
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "text",
+                    "text": "Client"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "The initiator of an SSL session. The canonical example of a client is a web browser communicating with an HTTPS URL."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "text",
+                    "text": "Server"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "An entity that accepts requests for SSL sessions made by clients. An example is a secure web server."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "text",
+                    "text": "SSLSession"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "An entity whose existence is bounded by calls to the functions "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/security/1400161-sslhandshake"
+                      },
+                      {
+                        "type": "text",
+                        "text": " and "
+                      },
+                      {
+                        "type": "reference",
+                        "isActive": true,
+                        "identifier": "doc://com.apple.documentation/documentation/security/1397869-sslclose"
+                      },
+                      {
+                        "type": "text",
+                        "text": ". An active session is in some state between these two calls, inclusive."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "text",
+                    "text": "SSLSessionContext"
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "The state associated with one session. A session context cannot be reused for multiple sessions."
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Most applications need only a few of the functions in this API, which are normally called in the following sequence:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Prepare for a session"
+                    }
+                  ]
+                },
+                {
+                  "type": "unorderedList",
+                  "items": [
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "Call "
+                            },
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/security/1393063-sslcreatecontext"
+                            },
+                            {
+                              "type": "text",
+                              "text": " to create a new SSL session context."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "Write the "
+                            },
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/security/sslwritefunc"
+                            },
+                            {
+                              "type": "text",
+                              "text": " and "
+                            },
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/security/sslreadfunc"
+                            },
+                            {
+                              "type": "text",
+                              "text": " I/O functions and register them with Secure Transport by calling the "
+                            },
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/security/1396081-sslsetiofuncs"
+                            },
+                            {
+                              "type": "text",
+                              "text": " function."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "Establish a connection using "
+                            },
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/cfnetwork"
+                            },
+                            {
+                              "type": "text",
+                              "text": ", BSD Sockets, or Open Transport. Then call "
+                            },
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/security/1398843-sslsetconnection"
+                            },
+                            {
+                              "type": "text",
+                              "text": " to specify the connection to which the SSL session context applies."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "Call "
+                            },
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/security/1393047-sslsetpeerdomainname"
+                            },
+                            {
+                              "type": "text",
+                              "text": " to specify the fully-qualified domain name of the peer to which you want to connect (optional but highly recommended)."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "Call "
+                            },
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/security/1392400-sslsetcertificate"
+                            },
+                            {
+                              "type": "text",
+                              "text": " to specify the certificate to be used in authentication (required for server side, optional for client)."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Start a session"
+                    }
+                  ]
+                },
+                {
+                  "type": "unorderedList",
+                  "items": [
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "Call "
+                            },
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/security/1400161-sslhandshake"
+                            },
+                            {
+                              "type": "text",
+                              "text": " to perform the SSL handshake and establish a secure session. "
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Maintain a session"
+                    }
+                  ]
+                },
+                {
+                  "type": "unorderedList",
+                  "items": [
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "To transfer data over the secure session, Secure Transport calls your "
+                            },
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/security/1400864-sslwrite"
+                            },
+                            {
+                              "type": "text",
+                              "text": " and "
+                            },
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/security/1394324-sslread"
+                            },
+                            {
+                              "type": "text",
+                              "text": " functions as needed."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "End a session"
+                    }
+                  ]
+                },
+                {
+                  "type": "unorderedList",
+                  "items": [
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "Call "
+                            },
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/security/1397869-sslclose"
+                            },
+                            {
+                              "type": "text",
+                              "text": " to close the secure session."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "Close the connection and dispose of the connection reference."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "Release the SSL session context by calling "
+                            },
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1521153-cfrelease"
+                            },
+                            {
+                              "type": "text",
+                              "text": "."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "If you called "
+                            },
+                            {
+                              "type": "codeVoice",
+                              "code": "SSLGetPeerCertificates"
+                            },
+                            {
+                              "type": "text",
+                              "text": " to obtain any certificates, call "
+                            },
+                            {
+                              "type": "reference",
+                              "isActive": true,
+                              "identifier": "doc://com.apple.documentation/documentation/corefoundation/1521153-cfrelease"
+                            },
+                            {
+                              "type": "text",
+                              "text": " to release the certificate reference objects."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In many cases, it is easier to use the CFNetwork API than Secure Transport to implement a simple connection to a secure (HTTPS) URL. See "
+            },
+            {
+              "type": "link",
+              "title": "CFNetwork Programming Guide",
+              "destination": "https://developer.apple.com/library/archive/documentation/Networking/Conceptual/CFNetwork/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001132"
+            },
+            {
+              "type": "text",
+              "text": " for documentation of the CFNetwork API and the CFNetworkHTTPDownload sample code for an example of code that downloads data from a URL. If you specify an HTTPS URL, this routine automatically uses Secure Transport to encrypt the data stream."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For functions to manage and evaluate certificates, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

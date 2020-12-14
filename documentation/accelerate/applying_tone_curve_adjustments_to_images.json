@@ -1,0 +1,918 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Use the vImage library’s polynomial transform to apply tone curve adjustments to images."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/transform"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vimage",
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations",
+        "doc://com.apple.documentation/documentation/accelerate/transform"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/applying_tone_curve_adjustments_to_images",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3698924,
+  "kind": "article",
+  "metadata": {
+    "title": "Applying Tone Curve Adjustments to Images",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "11.0",
+        "current": "11.1"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "12.0",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/applying_tone_curve_adjustments_to_images",
+        "documentation/accelerate/transform/applying_tone_curve_adjustments_to_images",
+        "documentation/accelerate/vimage/vimage_operations/transform/applying_tone_curve_adjustments_to_images"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/applying_tone_curve_adjustments_to_images",
+        "documentation/accelerate/transform/applying_tone_curve_adjustments_to_images",
+        "documentation/accelerate/vimage/vimage_operations/transform/applying_tone_curve_adjustments_to_images"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/transform": {
+      "title": "Transform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/transform",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/transform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Apply color transformations to images. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage": {
+      "title": "vImage",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage",
+      "url": "/documentation/accelerate/vimage",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations": {
+      "title": "vImage Operations",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations",
+      "url": "/documentation/accelerate/vimage/vimage_operations",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_buffer": {
+      "title": "vImage_Buffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_buffer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_buffer"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_tone_curve_adjustments_to_images#3703005": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_tone_curve_adjustments_to_images#3703005",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/applying_tone_curve_adjustments_to_images#3703005"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/optimizing_image-processing_performance": {
+      "title": "Optimizing Image-Processing Performance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/optimizing_image-processing_performance",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/optimizing_image-processing_performance"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241090-ramp": {
+      "title": "ramp(withInitialValue:increment:count:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241090-ramp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241090-ramp"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_tone_curve_adjustments_to_images#3703008": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_tone_curve_adjustments_to_images#3703008",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/applying_tone_curve_adjustments_to_images#3703008"
+    },
+    "link-media-3703007": {
+      "identifier": "link-media-3703007",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/accelerate/applying_tone_curve_adjustments_to_images#3703007"
+    },
+    "media-3703007": {
+      "identifier": "media-3703007",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 667,
+            "height": 290
+          },
+          "url": "https://docs-assets.developer.apple.com/published/7892e64de0/rendered2x-1606898988.png"
+        }
+      ],
+      "alt": "Screenshot showing the sample code app with the original unadjusted photograph on the left, and the three linear tone controls on the right for the red, green, and blue channels.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_tone_curve_adjustments_to_images#3703010": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_tone_curve_adjustments_to_images#3703010",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/applying_tone_curve_adjustments_to_images#3703010"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1546813-vimagepiecewisepolynomial_planar": {
+      "title": "vImagePiecewisePolynomial_PlanarF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1546813-vimagepiecewisepolynomial_planar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1546813-vimagepiecewisepolynomial_planar"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_tone_curve_adjustments_to_images#3703011": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_tone_curve_adjustments_to_images#3703011",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/applying_tone_curve_adjustments_to_images#3703011"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533216-vimageconvert_planarftoargb8888": {
+      "title": "vImageConvert_PlanarFToARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533216-vimageconvert_planarftoargb8888",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533216-vimageconvert_planarftoargb8888"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240957-evaluatepolynomial": {
+      "title": "evaluatePolynomial(usingCoefficients:withVariables:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240957-evaluatepolynomial",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3240957-evaluatepolynomial"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpathref": {
+      "title": "CGPathRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpathref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgpathref"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_tone_curve_adjustments_to_images#3703013": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_tone_curve_adjustments_to_images#3703013",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/applying_tone_curve_adjustments_to_images#3703013"
+    },
+    "link-3699119": {
+      "title": "Curves adjustment",
+      "type": "topic",
+      "identifier": "link-3699119",
+      "kind": "article",
+      "role": "link",
+      "url": "https://support.apple.com/en-gb/guide/photos/pht7875d6b19/5.0/mac/10.15"
+    },
+    "link-3699120": {
+      "title": "Mac Photos",
+      "type": "topic",
+      "identifier": "link-3699120",
+      "kind": "article",
+      "role": "link",
+      "url": "https://www.apple.com/uk/macos/photos/"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method": {
+      "title": "Finding an Interpolating Polynomial Using the Vandermonde Method",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240956-evaluatepolynomial": {
+      "title": "evaluatePolynomial(usingCoefficients:withVariables:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240956-evaluatepolynomial",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3240956-evaluatepolynomial"
+    },
+    "link-media-3703003": {
+      "identifier": "link-media-3703003",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/applying_tone_curve_adjustments_to_images#3703003"
+    },
+    "media-3703003": {
+      "identifier": "media-3703003",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 659,
+            "height": 377
+          },
+          "url": "https://docs-assets.developer.apple.com/published/6eb0e9805f/rendered2x-1606898981.png"
+        }
+      ],
+      "alt": "Screenshot showing the sample code app with the transformed photograph on the left after adjustment, and the three tone curve controls on the right for the red, green, and blue channels.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/adjusting_the_brightness_and_contrast_of_an_image": {
+      "title": "Adjusting the Brightness and Contrast of an Image",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/adjusting_the_brightness_and_contrast_of_an_image",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/adjusting_the_brightness_and_contrast_of_an_image",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use a gamma function to apply a linear or exponential curve."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_tone_curve_adjustments_to_images": {
+      "title": "Applying Tone Curve Adjustments to Images",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_tone_curve_adjustments_to_images",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/applying_tone_curve_adjustments_to_images",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use the vImage library’s polynomial transform to apply tone curve adjustments to images."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/specifying_histograms_with_vimage": {
+      "title": "Specifying Histograms with vImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/specifying_histograms_with_vimage",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/specifying_histograms_with_vimage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculate the histogram of one image and apply it to a second image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/histogram": {
+      "title": "Histogram",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/histogram",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/histogram",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculate and or manipulate an image's histogram."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/45294c9183/ApplyingToneCurveAdjustmentsToImages.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/45294c9183/ApplyingToneCurveAdjustmentsToImages.zip",
+      "checksum": "6269a4d2e42417892cfa01da13b0577aab017c01e34e37d141cd0a21f706bee3c42093b11e2dcffc7fb202e738b19fb2ec2636224ab24acc48d34d3edcd7ebf1",
+      "url": "https://docs-assets.developer.apple.com/published/45294c9183/ApplyingToneCurveAdjustmentsToImages.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/45294c9183/ApplyingToneCurveAdjustmentsToImages.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/adjusting_the_brightness_and_contrast_of_an_image",
+        "doc://com.apple.documentation/documentation/accelerate/specifying_histograms_with_vimage",
+        "doc://com.apple.documentation/documentation/accelerate/transform",
+        "doc://com.apple.documentation/documentation/accelerate/histogram"
+      ],
+      "title": "Color and Tone Adjustment",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The vImage library provides a suite of functions for applying polynomials to images. The results of these functions are similar to the "
+            },
+            {
+              "type": "link",
+              "title": "Curves adjustment",
+              "destination": "https://support.apple.com/en-gb/guide/photos/pht7875d6b19/5.0/mac/10.15"
+            },
+            {
+              "type": "text",
+              "text": " tool in the "
+            },
+            {
+              "type": "link",
+              "title": "Mac Photos",
+              "destination": "https://www.apple.com/uk/macos/photos/"
+            },
+            {
+              "type": "text",
+              "text": " app. You can use the polynomial adjustment functions to adjust the overall look of a photo, change the look of specific colors (red, green, and blue), and adjust settings for the black point, midtones, and white point."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample code project calculates the polynomial coefficients that create the tone curve from a set of values that the user defines using control handles in the user interface. The technique that calculates the coefficients is the Vandermonde Method. To learn more about this technique, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To generate the smooth curves in the user interface, the app passes the same coefficients that the vImage polynomial transform function uses to the vDSP "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240956-evaluatepolynomial"
+            },
+            {
+              "type": "text",
+              "text": " function."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following image shows the sample code project’s app. The circles on the curves are the control handles that the user can drag vertically, and the image changes to show the effect of the polynomial transform."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3703003",
+              "metadata": {
+                "anchor": "3703003",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Convert the Interleaved Source Image to Planar Buffers",
+          "anchor": "3703016"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample code project accepts source images that are interleaved RGBA, 8-bit format. Because the vImage polynomial transform functions work on planar buffers, the code creates four planar buffers that contain the separate red, green, blue, and alpha channels."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After creating "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_buffer"
+            },
+            {
+              "type": "text",
+              "text": " structures that represent the source image and source planar buffers, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "populatePlanarSourceBuffers()"
+            },
+            {
+              "type": "text",
+              "text": " function copies the interleaved image to the planar buffers."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func populatePlanarSourceBuffers() {",
+            "    var maxFloats: [Float] = [255, 255, 255, 255]",
+            "    var minFloats: [Float] = [0, 0, 0, 0]",
+            "    ",
+            "    vImageConvert_ARGB8888toPlanarF(&sourceImageBuffer,",
+            "                                    &planarRedSourceBuffer,",
+            "                                    &planarGreenSourceBuffer,",
+            "                                    &planarBlueSourceBuffer,",
+            "                                    &planarAlphaBuffer,",
+            "                                    &maxFloats, &minFloats,",
+            "                                    vImage_Flags(kvImageNoFlags))",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3703005",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To learn more about working with planar buffers in vImage, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/optimizing_image-processing_performance"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create Default Curve Control Points",
+          "anchor": "3703017"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample code project defines five data points for each color channel that control the tone curve. By default, these form a linear ramp from 0 to 255. The code uses "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241090-ramp"
+            },
+            {
+              "type": "text",
+              "text": " to populate the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "redValues"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "greenValues"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "blueValues"
+            },
+            {
+              "type": "text",
+              "text": " arrays. The following shows the code that populates the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "greenValues"
+            },
+            {
+              "type": "text",
+              "text": " array:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "greenValues = vDSP.ramp(in: 0 ... 255,",
+            "                        count: PolynomialTransformer.count)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3703008",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the sample code app first launches, the default values form a linear tone curve that renders as a stright line in the user interface."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3703007",
+              "metadata": {
+                "anchor": "3703007",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The default control points create an output image that’s identical to the input image. That is, for each pixel value, the transformed value is equal to the input value."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Apply the Polynomial Transform",
+          "anchor": "3703018"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user adjusts the control points in the user interface, a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "didSet"
+            },
+            {
+              "type": "text",
+              "text": " property observer applies the polynomial to the corresponding planar buffer. For example, the following shows the code for the green values:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "@Published var greenCoefficients = [Float](repeating: 0,",
+            "                                           count: PolynomialTransformer.count)",
+            "",
+            "@Published var greenValues: [Double]! {",
+            "    didSet {",
+            "        applyPolynomial(values: greenValues,",
+            "                        source: &planarGreenSourceBuffer,",
+            "                        coefficientsDestination: &greenCoefficients,",
+            "                        destination: &planarGreenDestinationBuffer)",
+            "        ",
+            "        displayPlanarDestinationBuffers()",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3703010",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "applyPolynomial()"
+            },
+            {
+              "type": "text",
+              "text": " function calls "
+            },
+            {
+              "type": "codeVoice",
+              "code": "calculateCoefficients()"
+            },
+            {
+              "type": "text",
+              "text": " to calculate the coefficients using the Vandermode Method. It then passes the coefficients to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1546813-vimagepiecewisepolynomial_planar"
+            },
+            {
+              "type": "text",
+              "text": ". The vImage polynomial function effectively creates a polynomial curve from the specified coefficients and uses that as the tone curve: for each point on the curve, the horizontal position represents the input value, and the vertical position represents the output value."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func applyPolynomial(values: [Double],",
+            "                     source: inout vImage_Buffer,",
+            "                     coefficientsDestination: inout [Float],",
+            "                     destination: inout vImage_Buffer) {",
+            "    ",
+            "    coefficientsDestination = calculateCoefficients(values: values).map {",
+            "        return Float($0)",
+            "    }",
+            "",
+            "    coefficientsDestination.withUnsafeBufferPointer { coefficientsPtr in",
+            "        var coefficientsBaseAddress = coefficientsPtr.baseAddress",
+            "        vImagePiecewisePolynomial_PlanarF(&source,",
+            "                                          &destination,",
+            "                                          &coefficientsBaseAddress,",
+            "                                          [-.infinity, .infinity],",
+            "                                          UInt32(coefficientsDestination.count - 1),",
+            "                                          0,",
+            "                                          vImage_Flags(kvImageNoFlags))",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3703011",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After the transform, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "displayPlanarDestinationBuffers()"
+            },
+            {
+              "type": "text",
+              "text": " function calls "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1533216-vimageconvert_planarftoargb8888"
+            },
+            {
+              "type": "text",
+              "text": " to generate an interleaved image that the sample code displays in the user interface."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Display the Tone Curve in the User Interface",
+          "anchor": "3703019"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "PolynomialEditor"
+            },
+            {
+              "type": "text",
+              "text": " class uses the coefficients that the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "applyPolynomial()"
+            },
+            {
+              "type": "text",
+              "text": " function computes to render a representation of the response curve."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "updatePath()"
+            },
+            {
+              "type": "text",
+              "text": " function calls "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240957-evaluatepolynomial"
+            },
+            {
+              "type": "text",
+              "text": " to build a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpathref"
+            },
+            {
+              "type": "text",
+              "text": " instance that the editor uses to render a smooth curve in the user interface."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "static func updatePath(path: inout Path,",
+            "                       size: CGSize,",
+            "                       coefficients: [Float]) {",
+            "    ",
+            "    let polynomialResult = [Float](unsafeUninitializedCapacity: ramp.count) {",
+            "        buffer, initializedCount in",
+            "        ",
+            "        vDSP.evaluatePolynomial(usingCoefficients: coefficients.reversed(),",
+            "                                withVariables: ramp,",
+            "                                result: &buffer)",
+            "        ",
+            "        vDSP.clip(buffer,",
+            "                  to: 0 ... 255,",
+            "                  result: &buffer)",
+            "        ",
+            "        initializedCount = ramp.count",
+            "    }",
+            "",
+            "    let cgPath = CGMutablePath()",
+            "    let hScale = size.width / 256",
+            "    let points: [CGPoint] = polynomialResult.enumerated().map {",
+            "        CGPoint(x: CGFloat($0.offset) * hScale,",
+            "                y: size.height - (size.height * CGFloat($0.element) / 255))",
+            "    }",
+            "    ",
+            "    cgPath.addLines(between: points)",
+            "    ",
+            "    path = Path(cgPath)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3703013",
+            "title": "Listing 1"
+          }
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

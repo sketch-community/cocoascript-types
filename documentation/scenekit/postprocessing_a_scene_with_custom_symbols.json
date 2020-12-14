@@ -1,0 +1,771 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Create visual effects in a scene by defining a rendering technique with custom symbols."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/scenekit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/scenekit/postprocessing_a_scene_with_custom_symbols",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3130921,
+  "kind": "article",
+  "metadata": {
+    "title": "Postprocessing a Scene With Custom Symbols",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "SceneKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "12.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "12.0",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/scenekit/postprocessing_a_scene_with_custom_symbols"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/scenekit/postprocessing_a_scene_with_custom_symbols"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/scenekit": {
+      "title": "SceneKit",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit",
+      "url": "/documentation/scenekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/postprocessing_a_scene_with_custom_symbols#3692626": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/postprocessing_a_scene_with_custom_symbols#3692626",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/scenekit/postprocessing_a_scene_with_custom_symbols#3692626"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/postprocessing_a_scene_with_custom_symbols#3692627": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/postprocessing_a_scene_with_custom_symbols#3692627",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/scenekit/postprocessing_a_scene_with_custom_symbols#3692627"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1415969-setvalue": {
+      "title": "setValue:forKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1415969-setvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1415969-setvalue",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setValue:forKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scntechnique": {
+      "title": "SCNTechnique",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scntechnique",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scntechnique",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A specification for augmenting or postprocessing SceneKit's rendering of a scene using additional drawing passes with custom Metal or OpenGL shaders."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnscenerendererdelegate/1522937-renderer": {
+      "title": "renderer:updateAtTime:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscenerendererdelegate/1522937-renderer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnscenerendererdelegate/1522937-renderer",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "renderer:updateAtTime:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnscenerendererdelegate": {
+      "title": "SCNSceneRendererDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscenerendererdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnscenerendererdelegate"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnshadable": {
+      "title": "SCNShadable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnshadable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods for customizing SceneKit's rendering of geometry and materials using Metal or OpenGL shader programs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/postprocessing_a_scene_with_custom_symbols#3692630": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/postprocessing_a_scene_with_custom_symbols#3692630",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/scenekit/postprocessing_a_scene_with_custom_symbols#3692630"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/postprocessing_a_scene_with_custom_symbols#3692631": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/postprocessing_a_scene_with_custom_symbols#3692631",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/scenekit/postprocessing_a_scene_with_custom_symbols#3692631"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram": {
+      "title": "SCNProgram",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnprogram",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A complete Metal or OpenGL shader program that replaces SceneKit's rendering of a geometry or material."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnbufferstream": {
+      "title": "SCNBufferStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnbufferstream",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnbufferstream",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that manages a Metal buffer used by a custom shader program. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scntechniquesupport": {
+      "title": "SCNTechniqueSupport",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scntechniquesupport",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scntechniquesupport",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The common interface for SceneKit objects that support multipass rendering using "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/scenekit/scntechnique"
+        },
+        {
+          "type": "text",
+          "text": " objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnoderendererdelegate": {
+      "title": "SCNNodeRendererDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnoderendererdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnoderendererdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods you can implement to use your own custom Metal or OpenGL drawing code to render content for a node. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/postprocessing_a_scene_with_custom_symbols": {
+      "title": "Postprocessing a Scene With Custom Symbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/postprocessing_a_scene_with_custom_symbols",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/scenekit/postprocessing_a_scene_with_custom_symbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create visual effects in a scene by defining a rendering technique with custom symbols."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/7ae40a9673/PostprocessingASceneWithCustomSymbols.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/7ae40a9673/PostprocessingASceneWithCustomSymbols.zip",
+      "checksum": "a58becfe554aebd3ed585abadf81acf2c6e8d00db80e6a97ec2e73195d150faaa3a6d8cde0651b65d9a0fadb479e9640c502979ddde989faee63347744d997a5",
+      "url": "https://docs-assets.developer.apple.com/published/7ae40a9673/PostprocessingASceneWithCustomSymbols.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/7ae40a9673/PostprocessingASceneWithCustomSymbols.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnshadable",
+        "doc://com.apple.documentation/documentation/scenekit/scnprogram",
+        "doc://com.apple.documentation/documentation/scenekit/scnbufferstream",
+        "doc://com.apple.documentation/documentation/scenekit/scntechnique",
+        "doc://com.apple.documentation/documentation/scenekit/scntechniquesupport",
+        "doc://com.apple.documentation/documentation/scenekit/scnnoderendererdelegate"
+      ],
+      "title": "Renderer Customization",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Games and 3D apps are often distinguishable because of unique visual effects.  Many games offer settings where users can select filters which change the visual aesthetic of a game.  For example, a user might select a grayscale filter to achieve a grittier feeling, or a pixelation filter make the game retro."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample app uses an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scntechnique"
+            },
+            {
+              "type": "text",
+              "text": " with custom symbols to create a user-adjustable color filter for the scene. The sample app binds values for each custom symbol to the Metal shader used by the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scntechnique"
+            },
+            {
+              "type": "text",
+              "text": ". The Metal shader accesses the bound values to produce the color filter effect in the scene.  See the “Defining a Technique” section of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scntechnique"
+            },
+            {
+              "type": "text",
+              "text": " documentation for detailed information about the steps required to define a technique."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure the Sample Code Project",
+          "anchor": "3692634"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The scene used in this project is configured entirely within the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "max.scn"
+            },
+            {
+              "type": "text",
+              "text": " file."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Define the Postprocess Rendering Technique",
+          "anchor": "3692635"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample uses custom symbols as input to the fragment function in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MyShaders.metal"
+            },
+            {
+              "type": "text",
+              "text": ". The technique defines the custom symbols used by the fragment function:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "symbols"
+                    },
+                    {
+                      "type": "text",
+                      "text": " dictionary defines the custom symbols used by the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "inputs"
+                    },
+                    {
+                      "type": "text",
+                      "text": " dictionary of each pass. Each custom symbol specifies a "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "type"
+                    },
+                    {
+                      "type": "text",
+                      "text": " using the GLSL type that logically maps to the corresponding Metal type."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "    \"symbols\": [",
+            "        \"color_weights_symbol\": [",
+            "            \"type\": \"vec3\"",
+            "        ],",
+            "        \"time_symbol\": [",
+            "            \"type\": \"float\"",
+            "        ]",
+            "    ],"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3692626",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In this sample, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "color_weights_symbol"
+            },
+            {
+              "type": "text",
+              "text": " has a type of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vec3"
+            },
+            {
+              "type": "text",
+              "text": ", even though it’s a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "float3"
+            },
+            {
+              "type": "text",
+              "text": " in the Metal shaders."
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "inputs"
+                    },
+                    {
+                      "type": "text",
+                      "text": " dictionary of each pass associates each custom symbol with the corresponding field in Metal."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "    \"inputs\": [",
+            "        \"color\": \"COLOR\",",
+            "        \"color_weights\": \"color_weights_symbol\",",
+            "        \"time\": \"time_symbol\"",
+            "    ],"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3692627",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample app’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MyTechnique"
+            },
+            {
+              "type": "text",
+              "text": " class defines the naming pairs like so:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "\"color_weights\": \"color_weights_symbol\""
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the key-value pair above, the key, on the left, is the name of the symbol as defined in the shader, and the value, on the right, is the name of the symbol as defined in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "symbols"
+            },
+            {
+              "type": "text",
+              "text": " dictionary of the technique."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Bind a Value to Each Custom Symbol",
+          "anchor": "3692636"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To bind values to the custom symbols, the sample project uses the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1415969-setvalue"
+            },
+            {
+              "type": "text",
+              "text": " method of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scntechnique"
+            },
+            {
+              "type": "text",
+              "text": ".  Once bound, the values are available in the Metal shading program."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscenerendererdelegate/1522937-renderer"
+            },
+            {
+              "type": "text",
+              "text": " method of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscenerendererdelegate"
+            },
+            {
+              "type": "text",
+              "text": " binds the time value every frame, as the current system time changes. By contrast, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "setColor"
+            },
+            {
+              "type": "text",
+              "text": " method only binds the color values when the user changes a slider value."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Value bindings use the logical type that corresponds with the Metal type. For example, custom symbols defined in the technique with a type of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vec3"
+            },
+            {
+              "type": "text",
+              "text": ", with a type of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "float3"
+            },
+            {
+              "type": "text",
+              "text": " in the shader, use a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SCNVector3"
+            },
+            {
+              "type": "text",
+              "text": " value when bound. Reference the table on the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable"
+            },
+            {
+              "type": "text",
+              "text": " page of the documentation to identify corresponding types between GLSL, Metal, and Swift."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Access Your Custom Symbols in Metal",
+          "anchor": "3692637"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample declares the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Symbols"
+            },
+            {
+              "type": "text",
+              "text": " struct as a constant input and assigns it to buffer index 0 of the fragment shader in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MyShaders.metal"
+            },
+            {
+              "type": "text",
+              "text": ".  The name of the struct, and the buffer index it is assigned to is flexible.  SceneKit binds the values solely based on the names of the fields in the struct.  The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Symbols"
+            },
+            {
+              "type": "text",
+              "text": " struct defined in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MyShaders.metal"
+            },
+            {
+              "type": "text",
+              "text": " contains a field for each custom symbol."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "struct Symbols {",
+            "    float3 color_weights;",
+            "    float time;",
+            "};"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3692630",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "fragment half4 myFragmentShader(VertexOut in [[stage_in]],",
+            "                                constant Symbols &symbols [[buffer(0)]],",
+            "                                texture2d<half, access::sample> color [[texture(0)]]) { ... }"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3692631",
+            "title": "Listing 4"
+          }
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

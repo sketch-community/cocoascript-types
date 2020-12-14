@@ -1,0 +1,1553 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Filter an image by convolving it with custom and high-speed kernels."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vimage"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/blurring_an_image",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3021418,
+  "kind": "article",
+  "metadata": {
+    "title": "Blurring an Image",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "14.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "12.0",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/blurring_an_image",
+        "documentation/accelerate/vimage/blurring_an_image"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/blurring_an_image",
+        "documentation/accelerate/vimage/blurring_an_image"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage": {
+      "title": "vImage",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage",
+      "url": "/documentation/accelerate/vimage",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-media-3570754": {
+      "identifier": "link-media-3570754",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/accelerate/blurring_an_image#3570754"
+    },
+    "media-3570754": {
+      "identifier": "media-3570754",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 63
+          },
+          "url": "https://docs-assets.developer.apple.com/published/10f1640f53/f6b667d2-0839-48cf-971c-9ca4d698a05f.png"
+        }
+      ],
+      "alt": "Formula that describes the result of convolving with a box blur kernel.",
+      "title": "Figure 3"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/blurring_an_image#3570756": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/blurring_an_image#3570756",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/blurring_an_image#3570756"
+    },
+    "link-media-3570755": {
+      "identifier": "link-media-3570755",
+      "type": "link",
+      "title": "Figure 4",
+      "url": "/documentation/accelerate/blurring_an_image#3570755"
+    },
+    "media-3570755": {
+      "identifier": "media-3570755",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 433
+          },
+          "url": "https://docs-assets.developer.apple.com/published/7b9a8ab79d/172e897e-9dce-4271-8b13-d03528f402b6.png"
+        }
+      ],
+      "alt": "Photograph blurred using a 2D kernel based on a Hann window.",
+      "title": "Figure 4"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/blurring_an_image#3570757": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/blurring_an_image#3570757",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/blurring_an_image#3570757"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1515923-vimageconvolve_argb8888": {
+      "title": "vImageConvolve_ARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1515923-vimageconvolve_argb8888",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1515923-vimageconvolve_argb8888"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/blurring_an_image#3570758": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/blurring_an_image#3570758",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/blurring_an_image#3570758"
+    },
+    "link-media-3570760": {
+      "identifier": "link-media-3570760",
+      "type": "link",
+      "title": "Figure 5",
+      "url": "/documentation/accelerate/blurring_an_image#3570760"
+    },
+    "media-3570760": {
+      "identifier": "media-3570760",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 165
+          },
+          "url": "https://docs-assets.developer.apple.com/published/1236960933/87261148-f945-44ca-b7b6-91be9c8664cc.png"
+        }
+      ],
+      "alt": "Formula that shows the outer product of a 7 by 1 vector and a 1 by 7 vector is the 7 by 7 matrixdescribed in the previous section.",
+      "title": "Figure 5"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/blurring_an_image#3570761": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/blurring_an_image#3570761",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/blurring_an_image#3570761"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/optimizing_image-processing_performance": {
+      "title": "Optimizing Image-Processing Performance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/optimizing_image-processing_performance",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/optimizing_image-processing_performance"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/blurring_an_image#3570762": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/blurring_an_image#3570762",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/blurring_an_image#3570762"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/blurring_an_image#3570763": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/blurring_an_image#3570763",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/blurring_an_image#3570763"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/blurring_an_image#3570764": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/blurring_an_image#3570764",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/blurring_an_image#3570764"
+    },
+    "link-media-3570766": {
+      "identifier": "link-media-3570766",
+      "type": "link",
+      "title": "Figure 6",
+      "url": "/documentation/accelerate/blurring_an_image#3570766"
+    },
+    "media-3570766": {
+      "identifier": "media-3570766",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 162,
+            "height": 181
+          },
+          "url": "https://docs-assets.developer.apple.com/published/aa40c34b77/c0b09a04-4beb-45d7-8c66-57aa15147b80.png"
+        }
+      ],
+      "alt": "Diagram showing how a box filter samples pixels in a surrounding rectangle.",
+      "title": "Figure 6"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/blurring_an_image#3570770": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/blurring_an_image#3570770",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/blurring_an_image#3570770"
+    },
+    "link-media-3570767": {
+      "identifier": "link-media-3570767",
+      "type": "link",
+      "title": "Figure 7",
+      "url": "/documentation/accelerate/blurring_an_image#3570767"
+    },
+    "media-3570767": {
+      "identifier": "media-3570767",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 438
+          },
+          "url": "https://docs-assets.developer.apple.com/published/a20c903b4e/0e9e0563-50dd-4f87-9535-0f75416a488b.png"
+        }
+      ],
+      "alt": "Photograph blurred using a box filter.",
+      "title": "Figure 7"
+    },
+    "link-media-3570768": {
+      "identifier": "link-media-3570768",
+      "type": "link",
+      "title": "Figure 8",
+      "url": "/documentation/accelerate/blurring_an_image#3570768"
+    },
+    "media-3570768": {
+      "identifier": "media-3570768",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 162,
+            "height": 181
+          },
+          "url": "https://docs-assets.developer.apple.com/published/75b5e9cf33/0195ebe1-d95e-4ca8-911c-b36b92e9b9f8.png"
+        }
+      ],
+      "alt": "Diagram showing how a tent filter samples pixels in a surrounding circle.",
+      "title": "Figure 8"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/blurring_an_image#3570771": {
+      "title": "Listing 9",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/blurring_an_image#3570771",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/blurring_an_image#3570771"
+    },
+    "link-media-3570769": {
+      "identifier": "link-media-3570769",
+      "type": "link",
+      "title": "Figure 9",
+      "url": "/documentation/accelerate/blurring_an_image#3570769"
+    },
+    "media-3570769": {
+      "identifier": "media-3570769",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 431
+          },
+          "url": "https://docs-assets.developer.apple.com/published/2154fc1edf/d8e3bf2a-9d65-4fae-a562-662bb7d999d2.png"
+        }
+      ],
+      "alt": "Photograph blurred using a tent filter.",
+      "title": "Figure 9"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagetruncatekernel": {
+      "title": "kvImageTruncateKernel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagetruncatekernel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1578976-processing_flags/kvimagetruncatekernel"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1515930-vimageconvolvemultikernel_argb88": {
+      "title": "vImageConvolveMultiKernel_ARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1515930-vimageconvolvemultikernel_argb88",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1515930-vimageconvolvemultikernel_argb88"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1515931-vimageconvolvemultikernel_argbff": {
+      "title": "vImageConvolveMultiKernel_ARGBFFFF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1515931-vimageconvolvemultikernel_argbff",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1515931-vimageconvolvemultikernel_argbff"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/blurring_an_image#3570775": {
+      "title": "Listing 10",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/blurring_an_image#3570775",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/blurring_an_image#3570775"
+    },
+    "link-media-3570773": {
+      "identifier": "link-media-3570773",
+      "type": "link",
+      "title": "Figure 10",
+      "url": "/documentation/accelerate/blurring_an_image#3570773"
+    },
+    "media-3570773": {
+      "identifier": "media-3570773",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 256
+          },
+          "url": "https://docs-assets.developer.apple.com/published/f607d6f270/ecd3dc5b-f569-4934-a48b-212d41e19ae5.png"
+        }
+      ],
+      "alt": "Diagram showing three kernels containing decreasing circles filled with ones surrounded by zeros.",
+      "title": "Figure 10"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/blurring_an_image#3570776": {
+      "title": "Listing 11",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/blurring_an_image#3570776",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/blurring_an_image#3570776"
+    },
+    "link-media-3570774": {
+      "identifier": "link-media-3570774",
+      "type": "link",
+      "title": "Figure 11",
+      "url": "/documentation/accelerate/blurring_an_image#3570774"
+    },
+    "media-3570774": {
+      "identifier": "media-3570774",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 432
+          },
+          "url": "https://docs-assets.developer.apple.com/published/c104167a86/2be46148-582e-4a80-9763-be12fc29d4b3.png"
+        }
+      ],
+      "alt": "Photograph blurred using multiple-kernel convolution.",
+      "title": "Figure 11"
+    },
+    "link-media-3570751": {
+      "identifier": "link-media-3570751",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/blurring_an_image#3570751"
+    },
+    "media-3570751": {
+      "identifier": "media-3570751",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 384,
+            "height": 281
+          },
+          "url": "https://docs-assets.developer.apple.com/published/09348c5368/a55b1477-4f79-4221-8aa1-ab3ae9f01f89.png"
+        }
+      ],
+      "alt": "Diagram showing a 3 by 3 convolution kernel centered over a source pixel, highlighting the new pixel value.",
+      "title": "Figure 1"
+    },
+    "link-media-3570752": {
+      "identifier": "link-media-3570752",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/accelerate/blurring_an_image#3570752"
+    },
+    "media-3570752": {
+      "identifier": "media-3570752",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 75
+          },
+          "url": "https://docs-assets.developer.apple.com/published/0ba54ed4a3/3abacc20-ea86-4864-a9b4-821ab23b32b8.png"
+        }
+      ],
+      "alt": "Formula that describes the result of convolving with an identity kernel.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/blurring_an_image": {
+      "title": "Blurring an Image",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/blurring_an_image",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/blurring_an_image",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Filter an image by convolving it with custom and high-speed kernels."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/adding_a_bokeh_effect": {
+      "title": "Adding a Bokeh Effect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/adding_a_bokeh_effect",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/adding_a_bokeh_effect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Simulate a bokeh effect by applying dilation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/convolution": {
+      "title": "Convolution",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/convolution",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/convolution",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Apply a convolution kernel to an image. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/morphology": {
+      "title": "Morphology",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/morphology",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/morphology",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Dilate and erode images. "
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/689bed720e/BlurringAnImage.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/689bed720e/BlurringAnImage.zip",
+      "checksum": "97f8539b29c14935f896a3b9275dc1114ebbfc1c114cfe057a3af8c7f4751f0f60691c8a0e9c77501c59e6b82624ed4af6ffe75e842fa9a8519d16643b7c6a69",
+      "url": "https://docs-assets.developer.apple.com/published/689bed720e/BlurringAnImage.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/689bed720e/BlurringAnImage.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/adding_a_bokeh_effect",
+        "doc://com.apple.documentation/documentation/accelerate/convolution",
+        "doc://com.apple.documentation/documentation/accelerate/morphology"
+      ],
+      "title": "Convolution and Morphology",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample code project uses a variety of convolution techniques to blur images with custom kernels and built-in high-speed kernels. Convolution is a common image processing technique that changes the value of a pixel based on the values of its surrounding pixels. Many common image filters, such as blurring, detecting edges, sharpening, and embossing, are based on convolution."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Convolution operations are built on "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "kernels"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ". Kernels are 1D or 2D grids of numbers that indicate the influence of a pixel’s neighbors on its final value. To calculate the value of each transformed pixel, add the products of each surrounding pixel value with the corresponding kernel value. During a convolution operation, the kernel passes over every pixel in the image, repeating this procedure, and applies the effect to the entire image."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3570751",
+              "metadata": {
+                "anchor": "3570751",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Kernels don’t need to have the same height and width and can be 1D (that is, either the height or the width is one) or 2D (that is, both the height and the width are greater than one). When transforming a pixel, both dimensions must be odd numbers to center the kernel over the pixel."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The simplest kernel, known as an "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "identity kernel"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", contains a single value: 1. The following formula shows the result when you apply the kernel to the central value in a grid of nine values. Here, you multiply the pixel by the central value in the convolution kernel, and then multiply the surrounding pixel values by zero. The sum of these values is 0.5:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3570752",
+              "metadata": {
+                "anchor": "3570752",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An image remains unchanged when convolved by an identity kernel."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Blur an Image with a 2D Kernel",
+          "anchor": "3570779"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A box blur kernel returns the average value of the neighboring pixels. In this example, the kernel contains nine values and the result is the sum of 1 / 9 multiplied by each of the pixel values:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3570754",
+              "metadata": {
+                "anchor": "3570754",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Note that the sum of the values in the convolution kernel above is 1—that is, the kernel is "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "normalized"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ". If the sum of the values is greater than 1, the resulting image is brighter than the source; if the sum is less that 1, the resulting image is darker than the source."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A more complex blurring kernel varies the influence of pixels based on their distance from the center of the kernel and yields a smoother blurring effect. The following kernel (based on a Hann window), is suitable for use with an integer format (for example, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ARGB8888"
+            },
+            {
+              "type": "text",
+              "text": ") convolution:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let kernel2D: [Int16] = [",
+            "    0,    0,    0,      0,      0,      0,      0,",
+            "    0,    2025, 6120,   8145,   6120,   2025,   0,",
+            "    0,    6120, 18496,  24616,  18496,  6120,   0,",
+            "    0,    8145, 24616,  32761,  24616,  8145,   0,",
+            "    0,    6120, 18496,  24616,  18496,  6120,   0,",
+            "    0,    2025, 6120,   8145,   6120,   2025,   0,",
+            "    0,    0,    0,      0,      0,      0,      0",
+            "]"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570756",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The example below shows the result of blurring an image using "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kernel2D"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3570755",
+              "metadata": {
+                "anchor": "3570755",
+                "title": "Figure 4"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You pass kernels as arrays of integers to the integer format convolution filters. To normalize an integer kernel, you pass a divisor to the function that is the sum of the elements of the kernel:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let divisor = kernel2D.map { Int32($0) }.reduce(0, +)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570757",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following example shows how you can use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1515923-vimageconvolve_argb8888"
+            },
+            {
+              "type": "text",
+              "text": " to perform a convolution and populate a destination buffer with the result. Note that in addition to passing the kernel, you also pass the kernel’s height and width specified by "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kernelLength"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "vImageConvolve_ARGB8888(&sourceBuffer,",
+            "                        &destinationBuffer,",
+            "                        nil,",
+            "                        0, 0,",
+            "                        &kernel2D,",
+            "                        UInt32(kernelLength),",
+            "                        UInt32(kernelLength),",
+            "                        divisor,",
+            "                        nil,",
+            "                        vImage_Flags(kvImageEdgeExtend))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570758",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Blur an Image with a Separable Kernel",
+          "anchor": "3570780"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kernel2D"
+            },
+            {
+              "type": "text",
+              "text": " kernel described in the previous section is "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "separable"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "; that is, it is the "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "outer product"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " of a 1D horizontal kernel and a 1D vertical kernel. A seperable kernel allows you to split the 2D convolution into two 1D passes, resulting in faster processing times. The following formula shows the two vectors that form "
+            },
+            {
+              "type": "codeVoice",
+              "code": "kernel2D"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3570760",
+              "metadata": {
+                "anchor": "3570760",
+                "title": "Figure 5"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The separable convolution functions in vImage work on planar buffers. Use the following code to create planar source and destination buffers, and convert the interleaved source image to planar:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let componentCount = format.componentCount",
+            "",
+            "var argbSourcePlanarBuffers: [vImage_Buffer] = (0 ..< componentCount).map { _ in",
+            "    guard let buffer = try? vImage_Buffer(width: Int(sourceBuffer.width),",
+            "                                          height: Int(sourceBuffer.height),",
+            "                                          bitsPerPixel: format.bitsPerComponent) else {",
+            "                                            fatalError(\"Error creating source buffers.\")",
+            "    }",
+            "    ",
+            "    return buffer",
+            "}",
+            "",
+            "var argbDestinationPlanarBuffers: [vImage_Buffer] = (0 ..< componentCount).map { _ in",
+            "    guard let buffer = try? vImage_Buffer(width: Int(sourceBuffer.width),",
+            "                                          height: Int(sourceBuffer.height),",
+            "                                          bitsPerPixel: format.bitsPerComponent) else {",
+            "                                            fatalError(\"Error creating destination buffers.\")",
+            "    }",
+            "    ",
+            "    return buffer",
+            "}",
+            "",
+            "vImageConvert_ARGB8888toPlanar8(&sourceBuffer,",
+            "                                &argbSourcePlanarBuffers[0],",
+            "                                &argbSourcePlanarBuffers[1],",
+            "                                &argbSourcePlanarBuffers[2],",
+            "                                &argbSourcePlanarBuffers[3],",
+            "                                vImage_Flags(kvImageNoFlags))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570761",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To learn more about working with planar buffers, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/optimizing_image-processing_performance"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To avoid the overhead of applying convolution to the image’s alpha channel, use the following code to calculate the index of the alpha channel and copy alpha information to the corresponding destination buffer:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let alphaIndex: Int?",
+            "",
+            "let littleEndian = cgImage.byteOrderInfo == .order16Little ||",
+            "                   cgImage.byteOrderInfo == .order32Little",
+            "",
+            "switch cgImage.alphaInfo {",
+            "    case .first, .noneSkipFirst, .premultipliedFirst:",
+            "        alphaIndex = littleEndian ? componentCount - 1 : 0",
+            "    case .last, .noneSkipLast, .premultipliedLast:",
+            "        alphaIndex = littleEndian ? 0 : componentCount - 1",
+            "    default:",
+            "        alphaIndex = nil",
+            "}",
+            "",
+            "if let alphaIndex = alphaIndex {",
+            "    do {",
+            "        try argbSourcePlanarBuffers[alphaIndex].copy(destinationBuffer: &argbDestinationPlanarBuffers[alphaIndex],",
+            "                                                     pixelSize: 1)",
+            "    } catch {",
+            "        fatalError(\"Error copying alpha buffer: \\(error.localizedDescription).\")",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570762",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You declare this 1D kernel with the following code:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let kernel1D: [Float] = [0, 45, 136, 181, 136, 45, 0]"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570763",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Note that the kernel for the separable convolution uses single-precision values. This allows for increased precision compared to the 2D integer convolution functions."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To apply a blur using a pair of 1D kernels, call "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageSepConvolve_Planar8"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Separable convolution pass.",
+            " for index in 0 ..< componentCount where index != alphaIndex {",
+            "    vImageSepConvolve_Planar8(&argbSourcePlanarBuffers[index],",
+            "                              &argbDestinationPlanarBuffers[index],",
+            "                              nil,",
+            "                              0, 0,",
+            "                              kernel1D, UInt32(kernel1D.count),",
+            "                              kernel1D, UInt32(kernel1D.count),",
+            "                              0, 0,",
+            "                              vImage_Flags(kvImageEdgeExtend))",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570764",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The increase in speed from using two 1D kernels instead of a single 2D kernel is significant. For each pixel, the 2D pass requires "
+            },
+            {
+              "type": "codeVoice",
+              "code": "M * N"
+            },
+            {
+              "type": "text",
+              "text": " (where "
+            },
+            {
+              "type": "codeVoice",
+              "code": "M"
+            },
+            {
+              "type": "text",
+              "text": " is the number of rows and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "N"
+            },
+            {
+              "type": "text",
+              "text": " is the number of columns) multiplications and additions, but each 1D pass only requires "
+            },
+            {
+              "type": "codeVoice",
+              "code": "M + N"
+            },
+            {
+              "type": "text",
+              "text": " multiplications and additions."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Blur an Image with High-Speed Kernels",
+          "anchor": "3570781"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "vImage provides two high-speed blurring convolutions for 8-bit images: a box filter and a tent filter. These blurs are equivalent to convolving with standard kernels, but you don’t need to supply the kernel. These functions are typically faster than performing an equivalent convolution with custom kernels."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The box filter returns the average pixel value in a rectangular region surrounding the transformed pixel."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3570766",
+              "metadata": {
+                "anchor": "3570766",
+                "title": "Figure 6"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You call "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageBoxConvolve_ARGB8888"
+            },
+            {
+              "type": "text",
+              "text": " to apply a box filter to an image:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "vImageBoxConvolve_ARGB8888(&sourceBuffer,",
+            "                           &destinationBuffer,",
+            "                           nil,",
+            "                           0, 0,",
+            "                           UInt32(kernelLength),",
+            "                           UInt32(kernelLength),",
+            "                           nil,",
+            "                           vImage_Flags(kvImageEdgeExtend))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570770",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Although the box filter is the fastest blur, the following example shows how it suffers from rectangular artifacts:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3570767",
+              "metadata": {
+                "anchor": "3570767",
+                "title": "Figure 7"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The tent filter returns the weighted average of pixel values in a circular region surrounding the pixel being transformed. Weighted average means that the influence of pixels on the result decreases the further they are away from the transformed pixel."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3570768",
+              "metadata": {
+                "anchor": "3570768",
+                "title": "Figure 8"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You call "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageTentConvolve_ARGB8888"
+            },
+            {
+              "type": "text",
+              "text": " to apply a tent filter to an image:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "vImageTentConvolve_ARGB8888(&sourceBuffer,",
+            "                            &destinationBuffer,",
+            "                            nil,",
+            "                            0, 0,",
+            "                            UInt32(kernelLength),",
+            "                            UInt32(kernelLength),",
+            "                            nil,",
+            "                            vImage_Flags(kvImageEdgeExtend))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570771",
+            "title": "Listing 9"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following example shows the result of a tent filter. The result is a smoother blur, at the expense of being slightly slower to execute than the box filter."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3570769",
+              "metadata": {
+                "anchor": "3570769",
+                "title": "Figure 9"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Note that passing the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagetruncatekernel"
+            },
+            {
+              "type": "text",
+              "text": " flag to the high-speed kernels can significantly impact their performance. You should only pass this flag if you need vImage to restrict calculations to the portion of the kernel overlapping the image."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Blur an Image with Multiple Kernels",
+          "anchor": "3570782"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "vImage allows you to apply multiple kernels in a single convolution. The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1515930-vimageconvolvemultikernel_argb88"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1515931-vimageconvolvemultikernel_argbff"
+            },
+            {
+              "type": "text",
+              "text": " functions make it possible for you to specify four separate kernels—one for each channel in the image."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When using multiple kernels to apply image filters, you can operate on the red, green, blue, and alpha channels individually. For example, you can use multiple-kernel convolutions to resample the color channels of an image differently to compensate for the positioning of RGB phosphors on the screen. Since each of the four kernels can operate on a single channel, the vImage multiple-kernel convolution functions are available only the interleaved image formats, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ARGB8888"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ARGBFFFF"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The four kernels you provide to the convolution filters need to be the same size, but you can pad them with zeros to simulate smaller kernels. vImage is able to optimize individual passes, effectively croppping the zero-padding."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code creates an array of four kernels, each containing a central circle of ones of decreasing size:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let radius = kernelLength / 2",
+            "let diameter = (radius * 2) + 1",
+            "",
+            "let kernels: [[Int16]] = (1 ... 4).map { index in",
+            "    var kernel = [Int16](repeating: 0,",
+            "                         count: diameter * diameter)",
+            "    ",
+            "    for x in 0 ..< diameter {",
+            "        for y in 0 ..< diameter {",
+            "            if hypot(Float(radius - x), Float(radius - y)) < Float(radius / index) {",
+            "                kernel[y * diameter + x] = 1",
+            "            }",
+            "        }",
+            "    }",
+            "    ",
+            "    return kernel",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570775",
+            "title": "Listing 10"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, with a kernel length of 17, the first three kernels created by the code above contain the following values:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3570773",
+              "metadata": {
+                "anchor": "3570773",
+                "title": "Figure 10"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1515930-vimageconvolvemultikernel_argb88"
+            },
+            {
+              "type": "text",
+              "text": " performs the convolution:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var divisors = kernels.map { return Int32($0.reduce(0, +)) }",
+            "var biases: [Int32] = [0, 0, 0, 0]",
+            "var backgroundColor: UInt8 = 0",
+            "",
+            "kernels[0].withUnsafeBufferPointer { zeroPtr in",
+            "    kernels[1].withUnsafeBufferPointer { onePtr in",
+            "        kernels[2].withUnsafeBufferPointer { twoPtr in",
+            "            kernels[3].withUnsafeBufferPointer { threePtr in",
+            "                ",
+            "                var kernels = [zeroPtr.baseAddress, onePtr.baseAddress,",
+            "                               twoPtr.baseAddress, threePtr.baseAddress]",
+            "                ",
+            "                _ = kernels.withUnsafeMutableBufferPointer { kernelsPtr in",
+            "                    vImageConvolveMultiKernel_ARGB8888(&sourceBuffer,",
+            "                                                       &destinationBuffer,",
+            "                                                       nil,",
+            "                                                       0, 0,",
+            "                                                       kernelsPtr.baseAddress!,",
+            "                                                       UInt32(diameter), UInt32(diameter),",
+            "                                                       &divisors,",
+            "                                                       &biases,",
+            "                                                       &backgroundColor,",
+            "                                                       vImage_Flags(kvImageEdgeExtend))",
+            "                }",
+            "            }",
+            "        }",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3570776",
+            "title": "Listing 11"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The example below shows the result of the multiple-kernel convolution. Note the color fringing effect from applying different kernels to the different color channels."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3570774",
+              "metadata": {
+                "anchor": "3570774",
+                "title": "Figure 11"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

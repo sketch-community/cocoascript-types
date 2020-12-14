@@ -1,0 +1,763 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Creates a new access instance associated with a given protected keychain item."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/keychain_services",
+        "doc://com.apple.documentation/documentation/security/keychain_services/access_control_lists"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/1393522-secaccesscreate",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1393522,
+  "kind": "symbol",
+  "metadata": {
+    "title": "SecAccessCreate",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.2",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:@F@SecAccessCreate",
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/1393522-secaccesscreate"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/1393522-secaccesscreate"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services": {
+      "title": "Keychain Services",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services",
+      "url": "/documentation/security/keychain_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/access_control_lists": {
+      "title": "Access Control Lists",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/access_control_lists",
+      "url": "/documentation/security/keychain_services/access_control_lists",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/sectrustedapplicationref": {
+      "title": "SecTrustedApplicationRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sectrustedapplicationref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sectrustedapplicationref"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/1521153-cfrelease": {
+      "title": "CFRelease",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/1521153-cfrelease",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/1521153-cfrelease"
+    },
+    "doc://com.apple.documentation/documentation/security/1542001-security_framework_result_codes/errsecsuccess": {
+      "title": "errSecSuccess",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1542001-security_framework_result_codes/errsecsuccess",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1542001-security_framework_result_codes/errsecsuccess"
+    },
+    "doc://com.apple.documentation/documentation/security/1542001-security_framework_result_codes": {
+      "title": "Security Framework Result Codes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1542001-security_framework_result_codes",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/security/1542001-security_framework_result_codes"
+    },
+    "doc://com.apple.documentation/documentation/security/1398213-secaccesscopyacllist": {
+      "title": "SecAccessCopyACLList",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1398213-secaccesscopyacllist",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1398213-secaccesscopyacllist"
+    },
+    "doc://com.apple.documentation/documentation/security/1400997-secaclsetcontents": {
+      "title": "SecACLSetContents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1400997-secaclsetcontents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1400997-secaclsetcontents"
+    },
+    "doc://com.apple.documentation/documentation/security/1392184-secaclupdateauthorizations": {
+      "title": "SecACLUpdateAuthorizations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1392184-secaclupdateauthorizations",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1392184-secaclupdateauthorizations"
+    },
+    "doc://com.apple.documentation/documentation/security/1402295-secaclcreatewithsimplecontents": {
+      "title": "SecACLCreateWithSimpleContents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1402295-secaclcreatewithsimplecontents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1402295-secaclcreatewithsimplecontents"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattraccess": {
+      "title": "kSecAttrAccess",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccess",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattraccess"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items": {
+      "title": "Keychain Items",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/keychain_services/keychain_items"
+    },
+    "link-media-2983147": {
+      "identifier": "link-media-2983147",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/security/1393522-secaccesscreate#2983147"
+    },
+    "media-2983147": {
+      "identifier": "media-2983147",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 278,
+            "height": 472
+          },
+          "url": "https://docs-assets.developer.apple.com/published/49802d9391/7e7b4540-0011-4870-a7a4-e8c8a3f0967c.png"
+        }
+      ],
+      "alt": "Diagram showing the contents of the default access instance, including three entries, each with specific operations and trusted apps.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecaclauthorizationchangeacl": {
+      "title": "kSecACLAuthorizationChangeACL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationchangeacl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecaclauthorizationchangeacl"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfstringref": {
+      "title": "CFStringRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfstringref"
+    },
+    "doc://com.apple.documentation/documentation/corefoundation/cfarrayref": {
+      "title": "CFArrayRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfarrayref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/corefoundation/cfarrayref"
+    },
+    "doc://com.apple.documentation/documentation/security/secaccessref": {
+      "title": "SecAccessRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secaccessref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secaccessref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An opaque type that identifies a keychain item’s access information."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1393522-secaccesscreate": {
+      "title": "SecAccessCreate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1393522-secaccesscreate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1393522-secaccesscreate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new access instance associated with a given protected keychain item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1395706-secaccesscreatewithownerandacl": {
+      "title": "SecAccessCreateWithOwnerAndACL",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1395706-secaccesscreatewithownerandacl",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1395706-secaccesscreatewithownerandacl",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new access instance using the owner and ACL entries you provide."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secaccessownertype": {
+      "title": "SecAccessOwnerType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secaccessownertype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secaccessownertype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type for flags that enable you to configure ACL ownership."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1521098-secaccessownertype_values": {
+      "title": "SecAccessOwnerType Values",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1521098-secaccessownertype_values",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/security/1521098-secaccessownertype_values",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Flags that enable you to configure ACL ownership."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1401931-secaccessgettypeid": {
+      "title": "SecAccessGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1401931-secaccessgettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1401931-secaccessgettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the unique identifier of the opaque type to which an access instance belongs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1395706-secaccesscreatewithownerandacl",
+        "doc://com.apple.documentation/documentation/security/secaccessownertype",
+        "doc://com.apple.documentation/documentation/security/1521098-secaccessownertype_values",
+        "doc://com.apple.documentation/documentation/security/secaccessref",
+        "doc://com.apple.documentation/documentation/security/1401931-secaccessgettypeid"
+      ],
+      "title": "Access Creation",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@OSStatus",
+              "identifier": "symbol-1480124",
+              "text": "OSStatus"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "SecAccessCreate"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CFStringRef",
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfstringref",
+              "text": "CFStringRef"
+            },
+            {
+              "kind": "text",
+              "text": " descriptor, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@CFArrayRef",
+              "identifier": "doc://com.apple.documentation/documentation/corefoundation/cfarrayref",
+              "text": "CFArrayRef"
+            },
+            {
+              "kind": "text",
+              "text": " trustedlist, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@SecAccessRef",
+              "identifier": "doc://com.apple.documentation/documentation/security/secaccessref",
+              "text": "SecAccessRef"
+            },
+            {
+              "kind": "text",
+              "text": "  "
+            },
+            {
+              "kind": "keyword",
+              "text": "_Nullable"
+            },
+            {
+              "kind": "text",
+              "text": " *accessRef);"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "descriptor",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The name of the keychain item as it should appear in security dialogs, such as when an untrusted app tries to gain access to the item and the system prompts the user for permission. Use a name that gives users enough information to make a decision about this item. If you only store one item, a simple description like \"Server password\" might be sufficient. If you store many similar items, you might need to be more specific."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "This isn’t necessarily the name that appears in the Keychain Access app."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "trustedlist",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "An array of "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/sectrustedapplicationref"
+                },
+                {
+                  "type": "text",
+                  "text": " instances specifying which apps should be allowed to access the item for restricted operations without triggering confirmation dialogs."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Use "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "nil"
+                },
+                {
+                  "type": "text",
+                  "text": " to trust only the calling app. Use an empty array to indicate no apps are trusted. "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "accessRef",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "On return, points to the new access instance. Call "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/corefoundation/1521153-cfrelease"
+                },
+                {
+                  "type": "text",
+                  "text": " to release this instance when you are finished using it."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1542001-security_framework_result_codes/errsecsuccess"
+            },
+            {
+              "type": "text",
+              "text": " on success, or another status result on failure. See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1542001-security_framework_result_codes"
+            },
+            {
+              "type": "text",
+              "text": " for all possible status results."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use this method to create a default access instance containing three ACL entries. If you don't explicitly create and set an access instance when you create a protected keychain item, keychain services uses a default access like this one."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2983147",
+              "metadata": {
+                "anchor": "2983147",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Owner entry."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Determines who can modify the access instance, because it contains the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/security/ksecaclauthorizationchangeacl"
+                    },
+                    {
+                      "type": "text",
+                      "text": " authorization. The owner entry’s list of trusted apps is empty, so the user is always prompted for permission if someone tries to change the access instance. All access instances must have exactly one owner entry, so this item can’t be removed, although you can modify it."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Safe entry."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Applies to operations not considered secure, namely encrypting data. This ACL entry trusts all apps by default, because its array of trusted apps is set to "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "nil"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Restricted entry."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Applies to operations that are considered sensitive, such as decrypting, signing, deriving keys, and exporting keys. The method applies the list of apps given in the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "trustedlist"
+                    },
+                    {
+                      "type": "text",
+                      "text": " parameter to this entry. If you set "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "trustedlist"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "nil"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", the list of trusted apps contains only the calling app."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Retrieving and Modifying ACL Entries",
+          "anchor": "3000658"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After you (or keychain services) create the access instance, you can retrieve all its ACL entries using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1398213-secaccesscopyacllist"
+            },
+            {
+              "type": "text",
+              "text": " method. You can then modify any of these entries using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1400997-secaclsetcontents"
+            },
+            {
+              "type": "text",
+              "text": " method, or modify the operations for which an ACL entry is used using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1392184-secaclupdateauthorizations"
+            },
+            {
+              "type": "text",
+              "text": " method. You can also create additional ACL entries using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1402295-secaclcreatewithsimplecontents"
+            },
+            {
+              "type": "text",
+              "text": " method. Because an ACL is always associated with an access instance, when you modify an entry or create a new one, you’re implicitly modifying the access instance as well."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You then apply the fully configured access instance to a keychain item by setting it as the item’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccess"
+            },
+            {
+              "type": "text",
+              "text": " attribute. See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items"
+            },
+            {
+              "type": "text",
+              "text": " for details about creating and modifying keychain items."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

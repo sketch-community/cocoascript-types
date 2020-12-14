@@ -1,0 +1,232 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The descriptor of the input weights."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/bnns",
+        "doc://com.apple.documentation/documentation/accelerate/bnnslstmgatedescriptor"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/bnnslstmgatedescriptor/3546833-iw_desc",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3546833,
+  "kind": "symbol",
+  "metadata": {
+    "title": "iw_desc",
+    "role": "symbol",
+    "roleHeading": "Instance Property",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "14.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "11.0",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "14.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "14.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "7.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@SA@BNNSLSTMGateDescriptor@FI@iw_desc",
+    "symbolKind": "structp"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/bnnslstmgatedescriptor/3546833-iw_desc"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/bnnslstmgatedescriptor/3546833-iw_desc"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnns": {
+      "title": "BNNS",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnns",
+      "url": "/documentation/accelerate/bnns",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnslstmgatedescriptor": {
+      "title": "BNNSLSTMGateDescriptor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnslstmgatedescriptor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnslstmgatedescriptor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that describes a long short-term memory (LSTM) gate layer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsndarraydescriptor": {
+      "title": "BNNSNDArrayDescriptor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsndarraydescriptor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsndarraydescriptor"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@BNNSNDArrayDescriptor",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsndarraydescriptor",
+              "text": "BNNSNDArrayDescriptor"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "iw_desc"
+            },
+            {
+              "kind": "text",
+              "text": "[2];"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Weights are ordered as "
+            },
+            {
+              "type": "codeVoice",
+              "code": "[num_layers][num_directions][hidden_size][input_size]"
+            },
+            {
+              "type": "text",
+              "text": " (C style multi array notation)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "iw_desc"
+            },
+            {
+              "type": "text",
+              "text": " is duplicated for the case where "
+            },
+            {
+              "type": "codeVoice",
+              "code": "num_layers > 1 && input_size != hidden_size"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

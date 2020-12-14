@@ -1,0 +1,791 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Specifies the attributes for a key item in a keychain."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/keychain_services",
+        "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1495743,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Keychain Item Attribute Constants For Keys",
+    "role": "containerSymbol",
+    "roleHeading": "Enumeration",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.4",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:@Ea@kSecKeyKeyClass",
+    "symbolKind": "enum"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/1495743-keychain_item_attribute_constant"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/keychain_services/keychain_items/1495743-keychain_item_attribute_constant"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services": {
+      "title": "Keychain Services",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services",
+      "url": "/documentation/security/keychain_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items": {
+      "title": "Keychain Items",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/keychain_services/keychain_items"
+    },
+    "doc://com.apple.documentation/documentation/security/secitemattr": {
+      "title": "SecItemAttr",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secitemattr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secitemattr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies a keychain item’s attributes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items#1658658": {
+      "title": "Adding Keychain Items",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items#1658658",
+      "kind": "article",
+      "role": "task",
+      "url": "/documentation/security/keychain_services/keychain_items#1658658"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items#1662299": {
+      "title": "Keychain Item Search",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items#1662299",
+      "kind": "article",
+      "role": "task",
+      "url": "/documentation/security/keychain_services/keychain_items#1662299"
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeykeyclass": {
+      "title": "kSecKeyKeyClass",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeykeyclass",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeykeyclass",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type uint32 ("
+        },
+        {
+          "type": "codeVoice",
+          "code": "CSSM_KEYCLASS"
+        },
+        {
+          "type": "text",
+          "text": "); value is one of "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CSSM_KEYCLASS_PUBLIC_KEY"
+        },
+        {
+          "type": "text",
+          "text": ", "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CSSM_KEYCLASS_PRIVATE_KEY"
+        },
+        {
+          "type": "text",
+          "text": " or "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CSSM_KEYCLASS_SESSION_KEY"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyprintname": {
+      "title": "kSecKeyPrintName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyprintname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeyprintname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type blob; human readable name of the key. Same as "
+        },
+        {
+          "type": "codeVoice",
+          "code": "kSecLabelItemAttr"
+        },
+        {
+          "type": "text",
+          "text": " for typical keychain items."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyalias": {
+      "title": "kSecKeyAlias",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyalias",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeyalias",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type blob; currently unused."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeypermanent": {
+      "title": "kSecKeyPermanent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeypermanent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeypermanent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type uint32; value is nonzero. This key is permanent (stored in some keychain) and is always "
+        },
+        {
+          "type": "codeVoice",
+          "code": "1"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyprivate": {
+      "title": "kSecKeyPrivate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyprivate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeyprivate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type uint32; value is nonzero. This key is protected by a user login, a password, or both."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeymodifiable": {
+      "title": "kSecKeyModifiable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeymodifiable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeymodifiable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type uint32; value is nonzero. Attributes of this key can be modified."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeylabel": {
+      "title": "kSecKeyLabel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeylabel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeylabel"
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyapplicationtag": {
+      "title": "kSecKeyApplicationTag",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyapplicationtag",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeyapplicationtag",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type blob; currently unused."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeykeycreator": {
+      "title": "kSecKeyKeyCreator",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeykeycreator",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeykeycreator",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type data. The data points to a "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CSSM_GUID"
+        },
+        {
+          "type": "text",
+          "text": " structure representing the module ID of the CSP owning this key."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeykeytype": {
+      "title": "kSecKeyKeyType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeykeytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeykeytype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type uint32; value is a CSSM algorithm ("
+        },
+        {
+          "type": "codeVoice",
+          "code": "CSSM_ALGORITHMS"
+        },
+        {
+          "type": "text",
+          "text": ") representing the algorithm associated with this key."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeykeysizeinbits": {
+      "title": "kSecKeyKeySizeInBits",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeykeysizeinbits",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeykeysizeinbits",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type uint32; value is the number of bits in this key."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyeffectivekeysize": {
+      "title": "kSecKeyEffectiveKeySize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyeffectivekeysize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeyeffectivekeysize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type uint32; value is the effective number of bits in this key.  For example, a DES key has a key size in bits ("
+        },
+        {
+          "type": "codeVoice",
+          "code": "kSecKeyKeySizeInBits"
+        },
+        {
+          "type": "text",
+          "text": ") of 64 but a value for "
+        },
+        {
+          "type": "codeVoice",
+          "code": "kSecKeyEffectiveKeySize"
+        },
+        {
+          "type": "text",
+          "text": " of 56."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeystartdate": {
+      "title": "kSecKeyStartDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeystartdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeystartdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CSSM_DATE"
+        },
+        {
+          "type": "text",
+          "text": ".  Earliest date at which this key may be used.  If the value is all zeros or not present, no restriction applies."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyenddate": {
+      "title": "kSecKeyEndDate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyenddate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeyenddate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CSSM_DATE"
+        },
+        {
+          "type": "text",
+          "text": ".  Latest date at which this key may be used.  If the value is all zeros or not present, no restriction applies."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeysensitive": {
+      "title": "kSecKeySensitive",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeysensitive",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeysensitive",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type uint32; value is nonzero. This key cannot be wrapped with "
+        },
+        {
+          "type": "codeVoice",
+          "code": "CSSM_ALGID_NONE"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyalwayssensitive": {
+      "title": "kSecKeyAlwaysSensitive",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyalwayssensitive",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeyalwayssensitive",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type uint32; value is nonzero. This key has always been marked sensitive."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyextractable": {
+      "title": "kSecKeyExtractable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyextractable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeyextractable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type uint32; value is nonzero. This key can be wrapped."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyneverextractable": {
+      "title": "kSecKeyNeverExtractable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyneverextractable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeyneverextractable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type uint32; value is nonzero. This key was never marked extractable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyencrypt": {
+      "title": "kSecKeyEncrypt",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyencrypt",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeyencrypt",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type uint32; value is nonzero. This key can be used in an encrypt operation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeydecrypt": {
+      "title": "kSecKeyDecrypt",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeydecrypt",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeydecrypt",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type uint32; value is nonzero. This key can be used in a decrypt operation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyderive": {
+      "title": "kSecKeyDerive",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyderive",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeyderive",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type uint32; value is nonzero. This key can be used in a key derivation operation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeysign": {
+      "title": "kSecKeySign",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeysign",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeysign",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type uint32, value is nonzero. This key can be used in a sign operation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyverify": {
+      "title": "kSecKeyVerify",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyverify",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeyverify",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type uint32, value is nonzero. This key can be used in a verify operation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeysignrecover": {
+      "title": "kSecKeySignRecover",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeysignrecover",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeysignrecover",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type uint32."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyverifyrecover": {
+      "title": "kSecKeyVerifyRecover",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyverifyrecover",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeyverifyrecover",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type uint32. This key can unwrap other keys."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeywrap": {
+      "title": "kSecKeyWrap",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeywrap",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeywrap",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type uint32; value is nonzero. This key can wrap other keys."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyunwrap": {
+      "title": "kSecKeyUnwrap",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyunwrap",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant/kseckeyunwrap",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Type uint32; value is nonzero. This key can unwrap other keys."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1392372-seckeychainattributeinfoforitemi": {
+      "title": "SecKeychainAttributeInfoForItemID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1392372-seckeychainattributeinfoforitemi",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1392372-seckeychainattributeinfoforitemi",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtains tags for all possible attributes of a given item class."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1400217-seckeychainfreeattributeinfo": {
+      "title": "SecKeychainFreeAttributeInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1400217-seckeychainfreeattributeinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1400217-seckeychainfreeattributeinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Releases the memory acquired by calling the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "SecKeychainAttributeInfoForItemID"
+        },
+        {
+          "type": "text",
+          "text": " function."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seckeychainattributeinfo": {
+      "title": "SecKeychainAttributeInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seckeychainattributeinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seckeychainattributeinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that represents an attribute."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant": {
+      "title": "Keychain Item Attribute Constants For Keys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/security/1495743-keychain_item_attribute_constant",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies the attributes for a key item in a keychain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secafpserversignature": {
+      "title": "SecAFPServerSignature",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secafpserversignature",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secafpserversignature",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Represents a 16-byte Apple File Protocol server signature block."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeykeyclass",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyprintname",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyalias",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeypermanent",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyprivate",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeymodifiable",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeylabel",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyapplicationtag",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeykeycreator",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeykeytype",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeykeysizeinbits",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyeffectivekeysize",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeystartdate",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyenddate",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeysensitive",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyalwayssensitive",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyextractable",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyneverextractable",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyencrypt",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeydecrypt",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyderive",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeysign",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyverify",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeysignrecover",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyverifyrecover",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeywrap",
+        "doc://com.apple.documentation/documentation/security/1495743-keychain_item_attribute_constant/kseckeyunwrap"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1392372-seckeychainattributeinfoforitemi",
+        "doc://com.apple.documentation/documentation/security/1400217-seckeychainfreeattributeinfo",
+        "doc://com.apple.documentation/documentation/security/seckeychainattributeinfo",
+        "doc://com.apple.documentation/documentation/security/secitemattr",
+        "doc://com.apple.documentation/documentation/security/secafpserversignature"
+      ],
+      "title": "Legacy Attribute Info",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "enum"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "keyword",
+              "text": "int"
+            },
+            {
+              "kind": "text",
+              "text": " {"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    ..."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "};"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

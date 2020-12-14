@@ -13,7 +13,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1571947-dealloc
     dealloc():void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1418863-methodforselector
-    methodForSelector(aSelector: cocoascript.SEL):void;
+    methodForSelector(aSelector: cocoascript.SEL):any;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1571960-methodsignatureforselector
     methodSignatureForSelector(aSelector: cocoascript.SEL):cocoascript.NSMethodSignature;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1409224-autocontentaccessingproxy
@@ -74,7 +74,7 @@ declare namespace cocoascript {
     toOneRelationshipKeys(): cocoascript.NSString;
     setToOneRelationshipKeys(): void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1413991-classcode
-    classCode(): cocoascript.FourCharCode;
+    classCode(): any;
     setClassCode(): void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1411337-classname
     className(): cocoascript.NSString;
@@ -237,7 +237,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1402908-prepareforinterfacebuilder
     prepareForInterfaceBuilder():void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1438175-provideimagedata
-    provideImageData_bytesPerRow_origin__size__userInfo(data: void, rowbytes: cocoascript.size_t, x: cocoascript.size_t, y: cocoascript.size_t, width: cocoascript.size_t, height: cocoascript.size_t, info: cocoascript.NSObject):void;
+    provideImageData_bytesPerRow_origin__size__userInfo(data: void, rowbytes: any, x: any, y: any, width: any, height: any, info: cocoascript.NSObject):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1504951-quartzfiltermanager
     quartzFilterManager_didAddFilter(sender: cocoascript.QuartzFilterManager, filter: cocoascript.QuartzFilter):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1503494-quartzfiltermanager
@@ -247,9 +247,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1503484-quartzfiltermanager
     quartzFilterManager_didSelectFilter(sender: cocoascript.QuartzFilterManager, filter: cocoascript.QuartzFilter):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1430075-readlinkqualityfordevicecomplete
-    readLinkQualityForDeviceComplete_device_info_error(controller: cocoascript.NSObject, device: cocoascript.IOBluetoothDevice, info: cocoascript.BluetoothHCILinkQualityInfo, error: cocoascript.IOReturn):void;
+    readLinkQualityForDeviceComplete_device_info_error(controller: cocoascript.NSObject, device: cocoascript.IOBluetoothDevice, info: cocoascript.BluetoothHCILinkQualityInfo, error: any):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1428399-readrssifordevicecomplete
-    readRSSIForDeviceComplete_device_info_error(controller: cocoascript.NSObject, device: cocoascript.IOBluetoothDevice, info: cocoascript.BluetoothHCIRSSIInfo, error: cocoascript.IOReturn):void;
+    readRSSIForDeviceComplete_device_info_error(controller: cocoascript.NSObject, device: cocoascript.IOBluetoothDevice, info: cocoascript.BluetoothHCIRSSIInfo, error: any):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1503501-saveoptions
     saveOptions_shouldShowUTType(saveOptions: cocoascript.IKSaveOptions, utType: cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1411300-shouldenableactionforperson
@@ -437,10 +437,12 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface id {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface Class {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   /**
    * doc://com.apple.documentation/documentation/objectivec/protocol
    */
@@ -484,22 +486,28 @@ declare const property_getAttributes: cocoascript.objc_property_t;
 declare namespace cocoascript {
   interface Method {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface Ivar {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface Category {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface objc_property_t {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface SEL {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface objc_property_attribute_t {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/objectivec/bool
   type BOOL = boolean;
 }
@@ -526,13 +534,16 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface NXHashState {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface NXHashTable {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface NXHashTablePrototype {
   }
-}// doc://com.apple.documentation/documentation/objectivec/nxptrprototype
+}
+// doc://com.apple.documentation/documentation/objectivec/nxptrprototype
 declare const NXPtrPrototype: cocoascript.NXHashTablePrototype;
 // doc://com.apple.documentation/documentation/objectivec/nxptrstructkeyprototype
 declare const NXPtrStructKeyPrototype: cocoascript.NXHashTablePrototype;

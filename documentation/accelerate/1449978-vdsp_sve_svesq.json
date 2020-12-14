@@ -1,0 +1,680 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Calculates the sum of values and the sum of squares in a single-precision vector."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/vector_summation"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/1449978-vdsp_sve_svesq",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1449978,
+  "kind": "symbol",
+  "metadata": {
+    "title": "vDSP_sve_svesq",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "6.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.8",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@F@vDSP_sve_svesq",
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/1449978-vdsp_sve_svesq"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/1449978-vdsp_sve_svesq"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp": {
+      "title": "vDSP",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp",
+      "url": "/documentation/accelerate/vdsp",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/vector_summation": {
+      "title": "Vector Summation",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/vector_summation",
+      "url": "/documentation/accelerate/vdsp/vector_summation",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-media-3111276": {
+      "identifier": "link-media-3111276",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/1449978-vdsp_sve_svesq#3111276"
+    },
+    "media-3111276": {
+      "identifier": "media-3111276",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 328,
+            "height": 173
+          },
+          "url": "https://docs-assets.developer.apple.com/published/1b107d6a30/d6b90cec-57bf-4bb2-89c0-a96ed7d3d2e7.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 328,
+            "height": 173
+          },
+          "url": "https://docs-assets.developer.apple.com/published/7d47a62767/76401862-7c25-4288-92ff-4e7b94821c8f.png"
+        }
+      ],
+      "alt": "A diagram showing the operation of the vDSP_sve_svesq function. There are three rows. The top row represents the input, vector A. The second row represents the summation operations. The bottom row represents the output, vector C. The diagram has connecting lines from the input vectors to the operation and from the operation to the output vector indicating the relationships between the input and output.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449978-vdsp_sve_svesq#3110170": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449978-vdsp_sve_svesq#3110170",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/1449978-vdsp_sve_svesq#3110170"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449978-vdsp_sve_svesq": {
+      "title": "vDSP_sve_svesq",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449978-vdsp_sve_svesq",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449978-vdsp_sve_svesq",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the sum of values and the sum of squares in a single-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449978-vdsp_sve_svesq#3110171": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449978-vdsp_sve_svesq#3110171",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/1449978-vdsp_sve_svesq#3110171"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_stride": {
+      "title": "vDSP_Stride",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_stride",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_stride"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_length": {
+      "title": "vDSP_Length",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_length",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_length"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449701-vdsp_sve": {
+      "title": "vDSP_sve",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449701-vdsp_sve",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449701-vdsp_sve",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the sum of values in a single-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450567-vdsp_sved": {
+      "title": "vDSP_sveD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450567-vdsp_sved",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450567-vdsp_sved",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the sum of values in a double-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450055-vdsp_svemg": {
+      "title": "vDSP_svemg",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450055-vdsp_svemg",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450055-vdsp_svemg",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the sum of magnitudes in a single-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450856-vdsp_svemgd": {
+      "title": "vDSP_svemgD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450856-vdsp_svemgd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450856-vdsp_svemgd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the sum of magnitudes in a double-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450392-vdsp_svesq": {
+      "title": "vDSP_svesq",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450392-vdsp_svesq",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450392-vdsp_svesq",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the sum of squares in a single-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450012-vdsp_svesqd": {
+      "title": "vDSP_svesqD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450012-vdsp_svesqd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450012-vdsp_svesqd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the sum of squares in a double-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450682-vdsp_sve_svesqd": {
+      "title": "vDSP_sve_svesqD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450682-vdsp_sve_svesqd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450682-vdsp_sve_svesqd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the sum of values and the sum of squares in a double-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450006-vdsp_svs": {
+      "title": "vDSP_svs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450006-vdsp_svs",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450006-vdsp_svs",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the sum of signed squares in a single-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450862-vdsp_svsd": {
+      "title": "vDSP_svsD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450862-vdsp_svsd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450862-vdsp_svsd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the sum of signed squares in a double-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/1449701-vdsp_sve",
+        "doc://com.apple.documentation/documentation/accelerate/1450567-vdsp_sved",
+        "doc://com.apple.documentation/documentation/accelerate/1450055-vdsp_svemg",
+        "doc://com.apple.documentation/documentation/accelerate/1450856-vdsp_svemgd",
+        "doc://com.apple.documentation/documentation/accelerate/1450392-vdsp_svesq",
+        "doc://com.apple.documentation/documentation/accelerate/1450012-vdsp_svesqd",
+        "doc://com.apple.documentation/documentation/accelerate/1450682-vdsp_sve_svesqd",
+        "doc://com.apple.documentation/documentation/accelerate/1450006-vdsp_svs",
+        "doc://com.apple.documentation/documentation/accelerate/1450862-vdsp_svsd"
+      ],
+      "title": "Vector Summation",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "vDSP_sve_svesq"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "float"
+            },
+            {
+              "kind": "text",
+              "text": " *__A, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vDSP_Stride",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_stride",
+              "text": "vDSP_Stride"
+            },
+            {
+              "kind": "text",
+              "text": " __IA, "
+            },
+            {
+              "kind": "keyword",
+              "text": "float"
+            },
+            {
+              "kind": "text",
+              "text": " *__Sum, "
+            },
+            {
+              "kind": "keyword",
+              "text": "float"
+            },
+            {
+              "kind": "text",
+              "text": " *__SumOfSquares, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vDSP_Length",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_length",
+              "text": "vDSP_Length"
+            },
+            {
+              "kind": "text",
+              "text": " __N);"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "__A",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Single-precision input vector."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__IA",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Stride for the input vector."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__Sum",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Single-precision sum (scalar) of the elements of "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "A"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__SumOfSquares",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Single-precision sum (scalar) of the squares of the elements of "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "A"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__N",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Number of elements in "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "A"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This function calculates the sum of values and the sum of squares of the first "
+            },
+            {
+              "type": "codeVoice",
+              "code": "N"
+            },
+            {
+              "type": "text",
+              "text": " elements of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "A"
+            },
+            {
+              "type": "text",
+              "text": " and writes the result to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Sum"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SumOfSquares"
+            },
+            {
+              "type": "text",
+              "text": " respectively:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3111276",
+              "metadata": {
+                "anchor": "3111276",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The operation is: "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "Sum          = sum(A[n],      0 <= n < N);",
+            "SumOfSquares = sum(A[n] ** 2, 0 <= n < N);"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3110170",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows an example of using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1449978-vdsp_sve_svesq"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let stride = vDSP_Stride(1)",
+            "",
+            "let a: [Float] = [-1.5, 2.25, 3.6,",
+            "                  0.2, -0.1, -4.3]",
+            "let n = vDSP_Length(a.count)",
+            "",
+            "var sum: Float = .nan",
+            "var sumOfSquares: Float = .nan",
+            "",
+            "vDSP_sve_svesq(a,",
+            "               stride,",
+            "               &sum,",
+            "               &sumOfSquares,",
+            "               n)",
+            "",
+            "// Prints \"sum 0.1500 sum of squares 38.8125\"",
+            "print(String(format: \"sum %.4f\", sum),",
+            "      String(format: \"sum of squares %.4f\", sumOfSquares))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3110171",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

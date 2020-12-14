@@ -1,0 +1,457 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Configure your app for simple enhanced buffering to stream content faster to your AirPlay-enabled device."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_simple_enhanced_buffering_for_your_content",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2928996,
+  "kind": "article",
+  "metadata": {
+    "title": "Implementing Simple Enhanced Buffering for Your Content",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_playback_and_selection/implementing_simple_enhanced_buffering_for_your_content"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_playback_and_selection/implementing_simple_enhanced_buffering_for_your_content"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection": {
+      "title": "Media Playback and Selection",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
+      "url": "/documentation/avfoundation/media_playback_and_selection",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer": {
+      "title": "AVPlayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer": {
+      "title": "AVQueuePlayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avqueueplayer"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_simple_enhanced_buffering_for_your_content#2929302": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_simple_enhanced_buffering_for_your_content#2929302",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/implementing_simple_enhanced_buffering_for_your_content#2929302",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Instantiate an AVPlayer or AVQueuePlayer object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset": {
+      "title": "AVAsset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem": {
+      "title": "AVPlayerItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_simple_enhanced_buffering_for_your_content#2929303": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_simple_enhanced_buffering_for_your_content#2929303",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/implementing_simple_enhanced_buffering_for_your_content#2929303",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Wrap the URL in an AVAsset object, and wrap that AVAsset object in an AVPlayerItem object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_simple_enhanced_buffering_for_your_content#2929308": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_simple_enhanced_buffering_for_your_content#2929308",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/implementing_simple_enhanced_buffering_for_your_content#2929308",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Give this AVPlayerItem object to the AVQueuePlayer object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/getting_airplay_2_into_your_app": {
+      "title": "Getting AirPlay 2 into Your App",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/getting_airplay_2_into_your_app",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/getting_airplay_2_into_your_app",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Set up your app to use AirPlay 2 to send content wirelessly. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_simple_enhanced_buffering_for_your_content": {
+      "title": "Implementing Simple Enhanced Buffering for Your Content",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_simple_enhanced_buffering_for_your_content",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/implementing_simple_enhanced_buffering_for_your_content",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configure your app for simple enhanced buffering to stream content faster to your AirPlay-enabled device."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_flexible_enhanced_buffering_for_your_content": {
+      "title": "Implementing Flexible Enhanced Buffering for Your Content",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_flexible_enhanced_buffering_for_your_content",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/implementing_flexible_enhanced_buffering_for_your_content",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configure your app for flexible enhanced buffering to stream content faster to your AirPlay-enabled device."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/getting_airplay_2_into_your_app",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/implementing_flexible_enhanced_buffering_for_your_content"
+      ],
+      "title": "AirPlay",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer"
+            },
+            {
+              "type": "text",
+              "text": " classes provide the simplest way to enhance buffering for your content with AirPlay 2."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To do simple enhanced buffering, complete this 4 step process. "
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Instantiate an "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer"
+                    },
+                    {
+                      "type": "text",
+                      "text": " or "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object."
+                    }
+                  ]
+                },
+                {
+                  "type": "codeListing",
+                  "code": [
+                    "let player = AVQueuePlayer()"
+                  ],
+                  "syntax": "swift",
+                  "metadata": {
+                    "anchor": "2929302",
+                    "title": "Listing 1",
+                    "abstract": [
+                      {
+                        "type": "text",
+                        "text": "Instantiate an AVPlayer or AVQueuePlayer object."
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Identify a URL that points to local or cloud content that you want to play."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Wrap the URL in an "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object, and wrap that "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object in an "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object:"
+                    }
+                  ]
+                },
+                {
+                  "type": "codeListing",
+                  "code": [
+                    "let url = URL(string: \"http://www.examplecontenturl.com\")",
+                    "let asset = AVAsset(url: url)",
+                    "let item = AVPlayerItem(asset: asset)"
+                  ],
+                  "syntax": "swift",
+                  "metadata": {
+                    "anchor": "2929303",
+                    "title": "Listing 2",
+                    "abstract": [
+                      {
+                        "type": "text",
+                        "text": "Wrap the URL in an AVAsset object, and wrap that AVAsset object in an AVPlayerItem object."
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Give this "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object to the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object:"
+                    }
+                  ]
+                },
+                {
+                  "type": "codeListing",
+                  "code": [
+                    "player.insert(item, after: nil)"
+                  ],
+                  "syntax": "swift",
+                  "metadata": {
+                    "anchor": "2929308",
+                    "title": "Listing 3",
+                    "abstract": [
+                      {
+                        "type": "text",
+                        "text": "Give this AVPlayerItem object to the AVQueuePlayer object."
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Start playback."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

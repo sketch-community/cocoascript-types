@@ -1,0 +1,935 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Create and manage entire keychains in macOS."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/keychain_services"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/keychain_services/keychains",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2864466,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Keychains",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/keychain_services/keychains"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/keychain_services/keychains"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services": {
+      "title": "Keychain Services",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services",
+      "url": "/documentation/security/keychain_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/1401214-seckeychaincreate": {
+      "title": "SecKeychainCreate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1401214-seckeychaincreate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1401214-seckeychaincreate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an empty keychain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1395206-seckeychaindelete": {
+      "title": "SecKeychainDelete",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1395206-seckeychaindelete",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1395206-seckeychaindelete",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deletes one or more keychains from the default keychain search list, and removes the keychain itself if it is a file."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seckeychainref": {
+      "title": "SecKeychainRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seckeychainref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seckeychainref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An opaque type that represents a keychain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1400796-seckeychaingettypeid": {
+      "title": "SecKeychainGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1400796-seckeychaingettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1400796-seckeychaingettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the unique identifier of the opaque type to which a keychain object belongs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1402180-seckeychainlock": {
+      "title": "SecKeychainLock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1402180-seckeychainlock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1402180-seckeychainlock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Locks a keychain. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1397368-seckeychainlockall": {
+      "title": "SecKeychainLockAll",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1397368-seckeychainlockall",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1397368-seckeychainlockall",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Locks all keychains belonging to the current user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1400341-seckeychainunlock": {
+      "title": "SecKeychainUnlock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1400341-seckeychainunlock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1400341-seckeychainunlock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Unlocks a keychain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1393109-seckeychainsetsettings": {
+      "title": "SecKeychainSetSettings",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1393109-seckeychainsetsettings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1393109-seckeychainsetsettings",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the settings of a keychain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1395746-seckeychaincopysettings": {
+      "title": "SecKeychainCopySettings",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1395746-seckeychaincopysettings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1395746-seckeychaincopysettings",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtains a keychain’s settings."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seckeychainsettings": {
+      "title": "SecKeychainSettings",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seckeychainsettings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seckeychainsettings",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that contains information about keychain settings."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/sec_keychain_settings_vers1": {
+      "title": "SEC_KEYCHAIN_SETTINGS_VERS1",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sec_keychain_settings_vers1",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sec_keychain_settings_vers1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Defines the keychain settings version."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1393890-seckeychaingetversion": {
+      "title": "SecKeychainGetVersion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1393890-seckeychaingetversion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1393890-seckeychaingetversion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines the version of keychain services installed on the user’s system."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1396431-seckeychainopen": {
+      "title": "SecKeychainOpen",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396431-seckeychainopen",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396431-seckeychainopen",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Opens a keychain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1393097-seckeychainsetdefault": {
+      "title": "SecKeychainSetDefault",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1393097-seckeychainsetdefault",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1393097-seckeychainsetdefault",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the default keychain. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1400743-seckeychaincopydefault": {
+      "title": "SecKeychainCopyDefault",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1400743-seckeychaincopydefault",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1400743-seckeychaincopydefault",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves a pointer to the default keychain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1401073-seckeychaingetpath": {
+      "title": "SecKeychainGetPath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1401073-seckeychaingetpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1401073-seckeychaingetpath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines the path of a keychain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1399085-seckeychaingetstatus": {
+      "title": "SecKeychainGetStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1399085-seckeychaingetstatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1399085-seckeychaingetstatus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves status information of a keychain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seckeychainstatus": {
+      "title": "SecKeychainStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seckeychainstatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seckeychainstatus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that defines the current status of a keychain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1536090-seckeychainstatus_values": {
+      "title": "SecKeychainStatus Values",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1536090-seckeychainstatus_values",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/security/1536090-seckeychainstatus_values",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Valid values for the keychain status type."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1397619-seckeychainsetsearchlist": {
+      "title": "SecKeychainSetSearchList",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1397619-seckeychainsetsearchlist",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1397619-seckeychainsetsearchlist",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies the list of keychains to use in the default keychain search list."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1402440-seckeychaincopysearchlist": {
+      "title": "SecKeychainCopySearchList",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1402440-seckeychaincopysearchlist",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1402440-seckeychaincopysearchlist",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves a keychain search list."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seckeychainsearchref": {
+      "title": "SecKeychainSearchRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seckeychainsearchref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seckeychainsearchref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An opaque type that contains information about a keychain search."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1515364-seckeychainsearchgettypeid": {
+      "title": "SecKeychainSearchGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1515364-seckeychainsearchgettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1515364-seckeychainsearchgettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the unique identifier of the opaque type to which a keychain search object belongs."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1515366-seckeychainsearchcreatefromattri": {
+      "title": "SecKeychainSearchCreateFromAttributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1515366-seckeychainsearchcreatefromattri",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1515366-seckeychainsearchcreatefromattri",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a search object matching a list of zero or more attributes."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1515362-seckeychainsearchcopynext": {
+      "title": "SecKeychainSearchCopyNext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1515362-seckeychainsearchcopynext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1515362-seckeychainsearchcopynext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Finds the next keychain item matching the given search criteria."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1396453-seckeychainsetuserinteractionall": {
+      "title": "SecKeychainSetUserInteractionAllowed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396453-seckeychainsetuserinteractionall",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396453-seckeychainsetuserinteractionall",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enables or disables the user interface for keychain services functions that automatically display a user interface."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1393621-seckeychaingetuserinteractionall": {
+      "title": "SecKeychainGetUserInteractionAllowed",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1393621-seckeychaingetuserinteractionall",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1393621-seckeychaingetuserinteractionall",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates whether keychain services functions that normally display a user interaction are allowed to do so."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1394998-seckeychainaddcallback": {
+      "title": "SecKeychainAddCallback",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1394998-seckeychainaddcallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1394998-seckeychainaddcallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Registers your keychain event callback function."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1398240-seckeychainremovecallback": {
+      "title": "SecKeychainRemoveCallback",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1398240-seckeychainremovecallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1398240-seckeychainremovecallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Unregisters your keychain event callback function."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seckeychaincallback": {
+      "title": "SecKeychainCallback",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seckeychaincallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seckeychaincallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A customized callback function that keychain services call when a keychain event has occurred."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seckeychaincallbackinfo": {
+      "title": "SecKeychainCallbackInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seckeychaincallbackinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seckeychaincallbackinfo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Information about a keychain event that keychain services deliver to your app via a callback function. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seckeychainevent": {
+      "title": "SecKeychainEvent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seckeychainevent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seckeychainevent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The list of keychain events that can trigger a callback."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seckeychaineventmask": {
+      "title": "SecKeychainEventMask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seckeychaineventmask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seckeychaineventmask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Bit masks corresponding to the events that can trigger a keychain callback."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1397034-seckeychaingetpreferencedomain": {
+      "title": "SecKeychainGetPreferenceDomain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1397034-seckeychaingetpreferencedomain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1397034-seckeychaingetpreferencedomain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the current keychain preference domain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1392084-seckeychainsetpreferencedomain": {
+      "title": "SecKeychainSetPreferenceDomain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1392084-seckeychainsetpreferencedomain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1392084-seckeychainsetpreferencedomain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the keychain preference domain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1401993-seckeychaincopydomaindefault": {
+      "title": "SecKeychainCopyDomainDefault",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1401993-seckeychaincopydomaindefault",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1401993-seckeychaincopydomaindefault",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the default keychain from a specified preference domain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1398802-seckeychainsetdomaindefault": {
+      "title": "SecKeychainSetDomainDefault",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1398802-seckeychainsetdomaindefault",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1398802-seckeychainsetdomaindefault",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the default keychain for a specified preference domain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1396688-seckeychaincopydomainsearchlist": {
+      "title": "SecKeychainCopyDomainSearchList",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396688-seckeychaincopydomainsearchlist",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396688-seckeychaincopydomainsearchlist",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the keychain search list for a specified preference domain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1398572-seckeychainsetdomainsearchlist": {
+      "title": "SecKeychainSetDomainSearchList",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1398572-seckeychainsetdomainsearchlist",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1398572-seckeychainsetdomainsearchlist",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the keychain search list for a specified preference domain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secpreferencesdomain": {
+      "title": "SecPreferencesDomain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secpreferencesdomain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secpreferencesdomain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The keychain preference domains."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1392434-seckeychainsetaccess": {
+      "title": "SecKeychainSetAccess",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1392434-seckeychainsetaccess",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1392434-seckeychainsetaccess",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the application access for a keychain."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1394733-seckeychaincopyaccess": {
+      "title": "SecKeychainCopyAccess",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1394733-seckeychaincopyaccess",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1394733-seckeychaincopyaccess",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the application access of a keychain. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1536084-seckeychaingetcsphandle": {
+      "title": "SecKeychainGetCSPHandle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1536084-seckeychaingetcsphandle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1536084-seckeychaingetcsphandle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the CSSM CSP handle for the given keychain object."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1536077-seckeychaingetdldbhandle": {
+      "title": "SecKeychainGetDLDBHandle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1536077-seckeychaingetdldbhandle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1536077-seckeychaingetdldbhandle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the CSSM database handle for a given keychain object."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1415616-seckeychainitemgetdldbhandle": {
+      "title": "SecKeychainItemGetDLDBHandle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1415616-seckeychainitemgetdldbhandle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1415616-seckeychainitemgetdldbhandle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the CSSM database handle for a given keychain item object."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1415615-seckeychainitemgetuniquerecordid": {
+      "title": "SecKeychainItemGetUniqueRecordID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1415615-seckeychainitemgetuniquerecordid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1415615-seckeychainitemgetuniquerecordid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a CSSM unique record for the given keychain item object."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items": {
+      "title": "Keychain Items",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/keychain_services/keychain_items",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Embed confidential information in items that you store in a keychain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychains": {
+      "title": "Keychains",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychains",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/keychain_services/keychains",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create and manage entire keychains in macOS."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/access_control_lists": {
+      "title": "Access Control Lists",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/access_control_lists",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/keychain_services/access_control_lists",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Control which apps have access to keychain items in macOS."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creation and Deletion",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1401214-seckeychaincreate",
+        "doc://com.apple.documentation/documentation/security/1395206-seckeychaindelete",
+        "doc://com.apple.documentation/documentation/security/seckeychainref",
+        "doc://com.apple.documentation/documentation/security/1400796-seckeychaingettypeid"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Locking and Unlocking",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1402180-seckeychainlock",
+        "doc://com.apple.documentation/documentation/security/1397368-seckeychainlockall",
+        "doc://com.apple.documentation/documentation/security/1400341-seckeychainunlock"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Settings",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1393109-seckeychainsetsettings",
+        "doc://com.apple.documentation/documentation/security/1395746-seckeychaincopysettings",
+        "doc://com.apple.documentation/documentation/security/seckeychainsettings",
+        "doc://com.apple.documentation/documentation/security/sec_keychain_settings_vers1"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Keychain Management",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1393890-seckeychaingetversion",
+        "doc://com.apple.documentation/documentation/security/1396431-seckeychainopen",
+        "doc://com.apple.documentation/documentation/security/1393097-seckeychainsetdefault",
+        "doc://com.apple.documentation/documentation/security/1400743-seckeychaincopydefault",
+        "doc://com.apple.documentation/documentation/security/1401073-seckeychaingetpath",
+        "doc://com.apple.documentation/documentation/security/1399085-seckeychaingetstatus",
+        "doc://com.apple.documentation/documentation/security/seckeychainstatus",
+        "doc://com.apple.documentation/documentation/security/1536090-seckeychainstatus_values"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Search",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1397619-seckeychainsetsearchlist",
+        "doc://com.apple.documentation/documentation/security/1402440-seckeychaincopysearchlist",
+        "doc://com.apple.documentation/documentation/security/seckeychainsearchref",
+        "doc://com.apple.documentation/documentation/security/1515364-seckeychainsearchgettypeid",
+        "doc://com.apple.documentation/documentation/security/1515366-seckeychainsearchcreatefromattri",
+        "doc://com.apple.documentation/documentation/security/1515362-seckeychainsearchcopynext"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "User Interaction",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1396453-seckeychainsetuserinteractionall",
+        "doc://com.apple.documentation/documentation/security/1393621-seckeychaingetuserinteractionall"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Callbacks",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1394998-seckeychainaddcallback",
+        "doc://com.apple.documentation/documentation/security/1398240-seckeychainremovecallback",
+        "doc://com.apple.documentation/documentation/security/seckeychaincallback",
+        "doc://com.apple.documentation/documentation/security/seckeychaincallbackinfo",
+        "doc://com.apple.documentation/documentation/security/seckeychainevent",
+        "doc://com.apple.documentation/documentation/security/seckeychaineventmask"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Preference Domains",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1397034-seckeychaingetpreferencedomain",
+        "doc://com.apple.documentation/documentation/security/1392084-seckeychainsetpreferencedomain",
+        "doc://com.apple.documentation/documentation/security/1401993-seckeychaincopydomaindefault",
+        "doc://com.apple.documentation/documentation/security/1398802-seckeychainsetdomaindefault",
+        "doc://com.apple.documentation/documentation/security/1396688-seckeychaincopydomainsearchlist",
+        "doc://com.apple.documentation/documentation/security/1398572-seckeychainsetdomainsearchlist",
+        "doc://com.apple.documentation/documentation/security/secpreferencesdomain"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Access",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1392434-seckeychainsetaccess",
+        "doc://com.apple.documentation/documentation/security/1394733-seckeychaincopyaccess"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Legacy Symbols",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1536084-seckeychaingetcsphandle",
+        "doc://com.apple.documentation/documentation/security/1536077-seckeychaingetdldbhandle",
+        "doc://com.apple.documentation/documentation/security/1415616-seckeychainitemgetdldbhandle",
+        "doc://com.apple.documentation/documentation/security/1415615-seckeychainitemgetuniquerecordid"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items",
+        "doc://com.apple.documentation/documentation/security/keychain_services/access_control_lists"
+      ],
+      "title": "API Components",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In iOS, apps have access to a single keychain (which logically encompasses the iCloud keychain). This keychain is automatically unlocked when the user unlocks the device and then locked when the device is locked. An app can access only its own keychain items, or those shared with a group to which the app belongs. It can't manage the keychain container itself."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In macOS, however, the system supports an arbitrary number of keychains. You typically rely on the user to manage these with the Keychain Access app and work implicitly with the default keychain, much as you would in iOS. Nevertheless, the keychain services API does provide functions that you can use to manipulate keychains directly. For example, you can create and manage a keychain that is private to your app. On the other hand, robust access control mechanisms typically make this unnecessary for anything other than an app trying to replicate the keychain access utility."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

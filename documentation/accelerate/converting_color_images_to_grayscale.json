@@ -1,0 +1,788 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Convert a color image to grayscale using matrix multiplication."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vimage"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3021746,
+  "kind": "article",
+  "metadata": {
+    "title": "Converting Color Images to Grayscale",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.0",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/converting_color_images_to_grayscale",
+        "documentation/accelerate/vimage/converting_color_images_to_grayscale"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/converting_color_images_to_grayscale",
+        "documentation/accelerate/vimage/converting_color_images_to_grayscale"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage": {
+      "title": "vImage",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage",
+      "url": "/documentation/accelerate/vimage",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-media-3283259": {
+      "identifier": "link-media-3283259",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/converting_color_images_to_grayscale#3283259"
+    },
+    "media-3283259": {
+      "identifier": "media-3283259",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 41
+          },
+          "url": "https://docs-assets.developer.apple.com/published/e936959d0d/bac54119-d5dd-41e1-8cc2-f5eb364eecff.png"
+        }
+      ],
+      "alt": "Rec. 709 color to luma formula",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale#3283260": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale#3283260",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/converting_color_images_to_grayscale#3283260"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale#3283262": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale#3283262",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/converting_color_images_to_grayscale#3283262"
+    },
+    "doc://com.apple.documentation/documentation/swift/int32": {
+      "title": "Int32",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/int32",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/int32"
+    },
+    "doc://com.apple.documentation/documentation/swift/float": {
+      "title": "Float",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/float",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/float"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale#3283264": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale#3283264",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/converting_color_images_to_grayscale#3283264"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgimageref": {
+      "title": "CGImageRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgimageref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgimageref"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale#3283267": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale#3283267",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/converting_color_images_to_grayscale#3283267"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_buffer/3241529-createcgimage": {
+      "title": "createCGImage(format:flags:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_buffer/3241529-createcgimage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_buffer/3241529-createcgimage"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale#3283268": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale#3283268",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/converting_color_images_to_grayscale#3283268"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale#3283269": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale#3283269",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/converting_color_images_to_grayscale#3283269"
+    },
+    "link-media-3283266": {
+      "identifier": "link-media-3283266",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/accelerate/converting_color_images_to_grayscale#3283266"
+    },
+    "media-3283266": {
+      "identifier": "media-3283266",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 366
+          },
+          "url": "https://docs-assets.developer.apple.com/published/e2059090a8/94cf973b-12a8-43bf-a4af-549b8660bcee.png"
+        }
+      ],
+      "alt": "Grayscale photograph.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1546979-vimagematrixmultiply_argb8888top": {
+      "title": "vImageMatrixMultiply_ARGB8888ToPlanar8",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1546979-vimagematrixmultiply_argb8888top",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1546979-vimagematrixmultiply_argb8888top"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1546678-vimagematrixmultiply_argbfffftop": {
+      "title": "vImageMatrixMultiply_ARGBFFFFToPlanarF",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1546678-vimagematrixmultiply_argbfffftop",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1546678-vimagematrixmultiply_argbfffftop"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale#3283257": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale#3283257",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/converting_color_images_to_grayscale#3283257"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/building_a_basic_conversion_workflow": {
+      "title": "Building a Basic Conversion Workflow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/building_a_basic_conversion_workflow",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/building_a_basic_conversion_workflow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn the fundamentals of the convert-any-to-any function by converting a CMYK image to an RGB image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale": {
+      "title": "Converting Color Images to Grayscale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/converting_color_images_to_grayscale",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convert a color image to grayscale using matrix multiplication."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_color_transforms_to_images_with_a_multidimensional_lookup_table": {
+      "title": "Applying Color Transforms to Images with a Multidimensional Lookup Table",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_color_transforms_to_images_with_a_multidimensional_lookup_table",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/applying_color_transforms_to_images_with_a_multidimensional_lookup_table",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a multidimensional lookup table to convert RGB images to CMYK."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing": {
+      "title": "Standardizing Arbitrary Image Formats for Processing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convert assets with disparate color spaces and bit depths to a standard working format for applying vImage operations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image": {
+      "title": "Converting Luminance and Chrominance Planes to an ARGB Image",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a displayable ARGB image from the luminance and chrominance information supplied by your device’s camera."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/conversion": {
+      "title": "Conversion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/conversion",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/conversion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convert an image to a different format."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/15f1e27091/ConvertingColorImagesToGrayscale.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/15f1e27091/ConvertingColorImagesToGrayscale.zip",
+      "checksum": "d904a47a9a0dfdd1e226ccf11b01f3fa3c1bbe32a322621860792cc7f601325bc41c7b7a7e6b3bf8910ff277b1b6fef9ab2cc5b7b387f9b9d5db85a9dbbee595",
+      "url": "https://docs-assets.developer.apple.com/published/15f1e27091/ConvertingColorImagesToGrayscale.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/15f1e27091/ConvertingColorImagesToGrayscale.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/building_a_basic_conversion_workflow",
+        "doc://com.apple.documentation/documentation/accelerate/applying_color_transforms_to_images_with_a_multidimensional_lookup_table",
+        "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing",
+        "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image",
+        "doc://com.apple.documentation/documentation/accelerate/conversion"
+      ],
+      "title": "Conversion Between Image Formats",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In this sample code project, you’ll convert a 3-channel 8-bit ARGB image to a 1-channel grayscale image by using a matrix of coefficients that define the color conversion."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "vImage provides matrix multiplication operations that offer functionality analogous to the dot product (that is, returning the sum of the products of the corresponding elements in two vectors). "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1546979-vimagematrixmultiply_argb8888top"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1546678-vimagematrixmultiply_argbfffftop"
+            },
+            {
+              "type": "text",
+              "text": " multiply each channel of an interleaved image with a value in a matrix and return the sum of the multiplications to a planar image."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following shows how "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageMatrixMultiply_ARGB8888ToPlanar8"
+            },
+            {
+              "type": "text",
+              "text": " calculates the result for each pixel:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let p = (sourcePixels[index].a + preBias.a) * matrix.a +",
+            "        (sourcePixels[index].r + preBias.r) * matrix.r +",
+            "        (sourcePixels[index].g + preBias.g) * matrix.g +",
+            "        (sourcePixels[index].b + preBias.b) * matrix.b",
+            "",
+            "let destinationPixels[index] = (p + postBias) / divisor"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3283257",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Define the Coefficient Values",
+          "anchor": "3283272"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Luma coefficients model an eye’s response to red, green, and blue light. The following formula shows the Rec. 709 luma coefficients for the color-to-grayscale conversion, and it calculates luminance. In the formula, "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Y"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " represents the luminance of the red, green, and blue values:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3283259",
+              "metadata": {
+                "anchor": "3283259",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following shows how you declare the luma coefficients:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let redCoefficient: Float = 0.2126",
+            "let greenCoefficient: Float = 0.7152",
+            "let blueCoefficient: Float = 0.0722"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3283260",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Define the Coefficients Matrix",
+          "anchor": "3283273"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "vImageMatrixMultiply_ARGB8888ToPlanar8"
+            },
+            {
+              "type": "text",
+              "text": " accepts integer values for the matrix; multiply each fractional coefficient in the matrix by "
+            },
+            {
+              "type": "codeVoice",
+              "code": "divisor"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let divisor: Int32 = 0x1000",
+            "let fDivisor = Float(divisor)",
+            "",
+            "var coefficientsMatrix = [",
+            "    Int16(redCoefficient * fDivisor),",
+            "    Int16(greenCoefficient * fDivisor),",
+            "    Int16(blueCoefficient * fDivisor)",
+            "]"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3283262",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The matrix multiply function requires an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/int32"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "codeVoice",
+              "code": "divisor"
+            },
+            {
+              "type": "text",
+              "text": ", but the coefficients are "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/float"
+            },
+            {
+              "type": "text",
+              "text": " values. To simplify the matrix initialization, declare and use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "fDivisor"
+            },
+            {
+              "type": "text",
+              "text": " to multiply each coefficients by the divisor."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Perform the Matrix Multiply",
+          "anchor": "3283274"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The color-to-grayscale calculation is the sum of the products of each color value and its corresponding coefficient, so define pre- and post-bias as zero. Call "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageMatrixMultiply_ARGB8888ToPlanar8"
+            },
+            {
+              "type": "text",
+              "text": " to perform the matrix multiplication:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let preBias: [Int16] = [0, 0, 0, 0]",
+            "let postBias: Int32 = 0",
+            "",
+            "vImageMatrixMultiply_ARGB8888ToPlanar8(&sourceBuffer,",
+            "                                       &destinationBuffer,",
+            "                                       &coefficientsMatrix,",
+            "                                       divisor,",
+            "                                       preBias,",
+            "                                       postBias,",
+            "                                       vImage_Flags(kvImageNoFlags))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3283264",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "destinationBuffer"
+            },
+            {
+              "type": "text",
+              "text": " contains a grayscale representation of your original image."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Grayscale Core Graphics Image",
+          "anchor": "3283275"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Finally, you can create a 1-channel grayscale "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgimageref"
+            },
+            {
+              "type": "text",
+              "text": " instance from the destination buffer. The image format contains 8 bits per component and 8 bits per pixel. A single channel format has the same number of bits per pixel as bits per component."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard let monoFormat = vImage_CGImageFormat(",
+            "    bitsPerComponent: 8,",
+            "    bitsPerPixel: 8,",
+            "    colorSpace: CGColorSpaceCreateDeviceGray(),",
+            "    bitmapInfo: CGBitmapInfo(rawValue: CGImageAlphaInfo.none.rawValue),",
+            "    renderingIntent: .defaultIntent) else {",
+            "        return",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3283267",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To create the image, pass the destination buffer and grayscale format to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_buffer/3241529-createcgimage"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let result = try? destinationBuffer.createCGImage(format: monoFormat)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3283268",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "result"
+            },
+            {
+              "type": "text",
+              "text": " contains a single-channel image that you can, for example, use to instantiate a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIImage"
+            },
+            {
+              "type": "text",
+              "text": " instance and display onscreen:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "if let result = result {",
+            "    imageView.image = UIImage(cgImage: result)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3283269",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3283266",
+              "metadata": {
+                "anchor": "3283266",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,918 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Play movies using a custom interface that implements simple playback functionality."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3330133,
+  "kind": "article",
+  "metadata": {
+    "title": "Creating a Movie Player App with Basic Playback Controls",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "10.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.3",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/avfoundation"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection": {
+      "title": "Media Playback and Selection",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
+      "url": "/documentation/avfoundation/media_playback_and_selection",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388846-rate": {
+      "title": "rate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388846-rate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1388846-rate"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387895-pause": {
+      "title": "pause",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387895-pause",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1387895-pause",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "pause"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls#3537241": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls#3537241",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls#3537241"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls#3537242": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls#3537242",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls#3537242"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389096-canplayfastforward": {
+      "title": "canPlayFastForward",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389096-canplayfastforward",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/1389096-canplayfastforward"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1385591-canplayreverse": {
+      "title": "canPlayReverse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1385591-canplayreverse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/1385591-canplayreverse"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1390598-canplayslowreverse": {
+      "title": "canPlaySlowReverse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1390598-canplayslowreverse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/1390598-canplayslowreverse"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1390493-canplayfastreverse": {
+      "title": "canPlayFastReverse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1390493-canplayfastreverse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem/1390493-canplayfastreverse"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1643485-timecontrolstatus": {
+      "title": "timeControlStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1643485-timecontrolstatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1643485-timecontrolstatus"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386726-play": {
+      "title": "play",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386726-play",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1386726-play",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "play"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer": {
+      "title": "AVPlayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that provides the interface to control the player’s transport behavior."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1385953-seektotime": {
+      "title": "seekToTime:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1385953-seektotime",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1385953-seektotime",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "seekToTime:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls#3537245": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls#3537245",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls#3537245"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls#3537246": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls#3537246",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls#3537246"
+    },
+    "doc://com.apple.documentation/documentation/avkit": {
+      "title": "AVKit",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avkit",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/avkit"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/seeking_through_media": {
+      "title": "Seeking Through Media",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/seeking_through_media",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/seeking_through_media",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Seek or scrub across a media item to quickly access a specific time point."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_playback_state": {
+      "title": "Observing Playback State",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_playback_state",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/observing_playback_state",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Respond to changes in a player's playback state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_the_playback_time": {
+      "title": "Observing the Playback Time",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_the_playback_time",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/observing_the_playback_time",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Observe the playback time for an asset in order to update the player's state."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers": {
+      "title": "Presenting Chapter Markers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add chapter markers to enable users to quickly navigate your content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls": {
+      "title": "Creating a Movie Player App with Basic Playback Controls",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_movie_player_app_with_basic_playback_controls",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Play movies using a custom interface that implements simple playback functionality."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritem": {
+      "title": "AVPlayerItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to model the timing and presentation state of an asset played by the player."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack": {
+      "title": "AVPlayerItemTrack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayeritemtrack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to modify the presentation state of an asset track being presented by a player."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer": {
+      "title": "AVPlayerLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayerlayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that manages a player’s visual output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer": {
+      "title": "AVQueuePlayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avqueueplayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A player used to play a number of items in sequence."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper": {
+      "title": "AVPlayerLooper",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayerlooper",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that simplifies the playing of looping media content using a queue player."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsynchronizedlayer": {
+      "title": "AVSynchronizedLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsynchronizedlayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsynchronizedlayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to synchronize with a specific player item."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs": {
+      "title": "Player Item Outputs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/avfoundation/media_playback_and_selection/player_item_outputs",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Objects that provide access to the content of a player item’s tracks."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/de370ea6ae/CreatingAMoviePlayerAppWithBasicPlaybackControls.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/de370ea6ae/CreatingAMoviePlayerAppWithBasicPlaybackControls.zip",
+      "checksum": "a8f0aaa48fafcf6fbc674f02f48312b3e3135dd1cf075733240f981bed37c7e8a03b6101149e23fb04dacedc8b61d2e8d2550f9693ca184e71e9504ecdd3604b",
+      "url": "https://docs-assets.developer.apple.com/published/de370ea6ae/CreatingAMoviePlayerAppWithBasicPlaybackControls.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/de370ea6ae/CreatingAMoviePlayerAppWithBasicPlaybackControls.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/seeking_through_media",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_playback_state",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/observing_the_playback_time",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/presenting_chapter_markers",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayer",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritem",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrack",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayerlayer",
+        "doc://com.apple.documentation/documentation/avfoundation/avqueueplayer",
+        "doc://com.apple.documentation/documentation/avfoundation/avplayerlooper",
+        "doc://com.apple.documentation/documentation/avfoundation/avsynchronizedlayer",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/player_item_outputs"
+      ],
+      "title": "Media Playback",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample shows how to create a simple movie playback app using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation"
+            },
+            {
+              "type": "text",
+              "text": " framework (not "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avkit"
+            },
+            {
+              "type": "text",
+              "text": "). The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation"
+            },
+            {
+              "type": "text",
+              "text": " objects that manage a player’s visual output don’t present any playback controls. Use the sample to build your own playback controls that implement the functionality to play, pause, fast forward, rewind, and scrub through movies."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Play a Movie in Fast Forward or Reverse",
+          "anchor": "3537249"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You set the player’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388846-rate"
+            },
+            {
+              "type": "text",
+              "text": " property to change the rate of playback. A value of 1.0 plays the movie at its natural rate. Setting the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "rate"
+            },
+            {
+              "type": "text",
+              "text": " to 0.0 is the same as pausing playback using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387895-pause"
+            },
+            {
+              "type": "text",
+              "text": " method. Set the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388846-rate"
+            },
+            {
+              "type": "text",
+              "text": " property to a number greater than 1.0 to fast forward, and to a number less than 0.0 to reverse."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In this sample, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "playFastForward"
+            },
+            {
+              "type": "text",
+              "text": " method adds as much as 2.0 to the current player "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388846-rate"
+            },
+            {
+              "type": "text",
+              "text": " property, up to a maximum "
+            },
+            {
+              "type": "codeVoice",
+              "code": "rate"
+            },
+            {
+              "type": "text",
+              "text": " value of 2.0, when the user taps the Fast Forward button in the UI."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Play fast forward no faster than 2.0.",
+            "player.rate = min(player.rate + 2.0, 2.0)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3537241",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "playReverse"
+            },
+            {
+              "type": "text",
+              "text": " method subtracts as much as 2.0 from the current player "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388846-rate"
+            },
+            {
+              "type": "text",
+              "text": " property, down to a minimum "
+            },
+            {
+              "type": "codeVoice",
+              "code": "rate"
+            },
+            {
+              "type": "text",
+              "text": " value of –2.0, when the user taps the Play Reverse button in the UI."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Reverse no faster than -2.0.",
+            "player.rate = max(player.rate - 2.0, -2.0)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3537242",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You determine whether the player item supports fast forward playback by using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1389096-canplayfastforward"
+            },
+            {
+              "type": "text",
+              "text": " property. Similarly, you determine the type of reverse play supported by using:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1385591-canplayreverse"
+                    },
+                    {
+                      "type": "text",
+                      "text": " — Supports a rate value of –1.0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1390598-canplayslowreverse"
+                    },
+                    {
+                      "type": "text",
+                      "text": " — Supports rate values from 0.0 to –1.0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayeritem/1390493-canplayfastreverse"
+                    },
+                    {
+                      "type": "text",
+                      "text": " — Supports rate values less than –1.0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "setupPlayerObservers"
+            },
+            {
+              "type": "text",
+              "text": " method in this sample defines key-value observers on the player and player item properties. These observers enable or disable the fast forward and reverse buttons in the UI based on the reported values of the observed properties."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Play a Movie at its Natural Rate",
+          "anchor": "3537250"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "togglePlay"
+            },
+            {
+              "type": "text",
+              "text": " method toggles the playback state of the movie when the user taps the Play button in the UI. It first uses the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1643485-timecontrolstatus"
+            },
+            {
+              "type": "text",
+              "text": " property to determine whether playback is in progress or paused. If the player is paused, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "togglePlay"
+            },
+            {
+              "type": "text",
+              "text": " method initiates playback of the movie at its natural rate (1.0) by invoking the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1386726-play"
+            },
+            {
+              "type": "text",
+              "text": " method. If the player is already playing, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "togglePlay"
+            },
+            {
+              "type": "text",
+              "text": " method pauses playback by invoking the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1387895-pause"
+            },
+            {
+              "type": "text",
+              "text": " method."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Perform Movie Scrubbing",
+          "anchor": "3537251"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To handle movie scrubbing, this sample defines the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "timeSliderDidChange"
+            },
+            {
+              "type": "text",
+              "text": " action method on a slider control in the UI. Adjusting the slider control calls this method, which then sets the player time to the new value using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer"
+            },
+            {
+              "type": "text",
+              "text": "  "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1385953-seektotime"
+            },
+            {
+              "type": "text",
+              "text": " method. The video corresponding to the new time is then rendered in the view."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "@IBAction func timeSliderDidChange(_ sender: UISlider) {",
+            "    let newTime = CMTime(seconds: Double(sender.value), preferredTimescale: 600)",
+            "    player.seek(to: newTime, toleranceBefore: .zero, toleranceAfter: .zero)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3537245",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample also adds a periodic time observer to the player. The observer requests the periodic invocation of a given block during playback to report the current time of the player. The observer invokes the block periodically at the interval specified, interpreted according to the timeline of the current player item. The observer also invokes the block whenever time jumps — for example, during movie scrubbing — and whenever playback starts or stops."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The code in the observer updates the movie’s current time value, displayed by the time slider control in the UI, and keeps it in sync with the movie playback."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "timeObserverToken = player.addPeriodicTimeObserver(forInterval: interval,",
+            "                                                   queue: .main) { [unowned self] time in",
+            "    let timeElapsed = Float(time.seconds)",
+            "    self.timeSlider.value = timeElapsed",
+            "    self.startTimeLabel.text = self.createTimeString(time: timeElapsed)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3537246",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

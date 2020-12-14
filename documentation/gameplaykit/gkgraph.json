@@ -1,0 +1,937 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A collection of nodes that describes the navigability of a game world and provides "
+    },
+    {
+      "type": "newTerm",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "pathfinding"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": " methods to search for routes through that space."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/gameplaykit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/gameplaykit/gkgraph",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1501082,
+  "kind": "symbol",
+  "metadata": {
+    "title": "GKGraph",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "GameplayKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.11",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      }
+    ],
+    "externalID": "c:objc(cs)GKGraph",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/gameplaykit/gkgraph"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/gameplaykit/gkgraph"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/gameplaykit": {
+      "title": "GameplayKit",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit",
+      "url": "/documentation/gameplaykit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgraph": {
+      "title": "GKGraph",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraph",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgraph",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A collection of nodes that describes the navigability of a game world and provides "
+        },
+        {
+          "type": "newTerm",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "pathfinding"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": " methods to search for routes through that space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgridgraph": {
+      "title": "GKGridGraph",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgridgraph",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgridgraph",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A navigation graph for 2D game worlds where movement is constrained to an integer grid."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph": {
+      "title": "GKObstacleGraph",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkobstaclegraph",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A navigation graph for 2D game worlds that creates a minimal network for precise pathfinding around obstacles."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkmeshgraph": {
+      "title": "GKMeshGraph",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkmeshgraph",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkmeshgraph",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A navigation graph for 2D game worlds that creates a space-filling network for smooth pathfinding around obstacles."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode": {
+      "title": "GKGraphNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgraphnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A single node in a navigation graph for use in pathfinding."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgridgraphnode": {
+      "title": "GKGridGraphNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgridgraphnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgridgraphnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A node in a navigation graph, associated with a position on a discrete two-dimensional grid."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkpolygonobstacle": {
+      "title": "GKPolygonObstacle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkpolygonobstacle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkpolygonobstacle"
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode2d": {
+      "title": "GKGraphNode2D",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode2d",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgraphnode2d",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A node in a navigation graph, associated with a point in continuous 2D space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgraph/1501152-connectnodetolowestcostnode": {
+      "title": "connectNodeToLowestCostNode:bidirectional:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraph/1501152-connectnodetolowestcostnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgraph/1501152-connectnodetolowestcostnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a node to the graph, connecting it to the node already in the graph for which the connection has the lowest cost."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "connectNodeToLowestCostNode:bidirectional:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501129-connectnodeusingobstacles": {
+      "title": "connectNodeUsingObstacles:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501129-connectnodeusingobstacles",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkobstaclegraph/1501129-connectnodeusingobstacles",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "connectNodeUsingObstacles:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgridgraph/1501192-connectnodetoadjacentnodes": {
+      "title": "connectNodeToAdjacentNodes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgridgraph/1501192-connectnodetoadjacentnodes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgridgraph/1501192-connectnodetoadjacentnodes",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "connectNodeToAdjacentNodes:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgraph/1501270-findpathfromnode": {
+      "title": "findPathFromNode:toNode:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraph/1501270-findpathfromnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgraph/1501270-findpathfromnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Computes and returns a sequence of nodes that represents the shortest traversal of the graph between the specified nodes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "findPathFromNode:toNode:"
+        }
+      ]
+    },
+    "devLink-1757327": {
+      "identifier": "devLink-1757327",
+      "type": "link",
+      "title": "Pathfinding",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/Pathfinding.html#//apple_ref/doc/uid/TP40015172-CH3"
+    },
+    "devLink-1757291": {
+      "identifier": "devLink-1757291",
+      "type": "link",
+      "title": "GameplayKit Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nssecurecoding": {
+      "title": "NSSecureCoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nssecurecoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nssecurecoding"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscopying": {
+      "title": "NSCopying",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscopying",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscopying"
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgraph/1501315-initwithnodes": {
+      "title": "initWithNodes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraph/1501315-initwithnodes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgraph/1501315-initwithnodes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a graph with the specified list of nodes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithNodes:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgraph/1556415-graphwithnodes": {
+      "title": "graphWithNodes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraph/1556415-graphwithnodes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgraph/1556415-graphwithnodes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a graph with the specified list of nodes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "graphWithNodes:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgraph/1501040-addnodes": {
+      "title": "addNodes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraph/1501040-addnodes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgraph/1501040-addnodes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds the specified nodes to the graph."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addNodes:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgraph/1501303-removenodes": {
+      "title": "removeNodes:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraph/1501303-removenodes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgraph/1501303-removenodes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes the specified nodes from the graph."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeNodes:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgraph/1501223-nodes": {
+      "title": "nodes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraph/1501223-nodes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgraph/1501223-nodes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The list of nodes in the graph."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode3d": {
+      "title": "GKGraphNode3D",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode3d",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgraphnode3d",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A node in a navigation graph, associated with a point in continuous 3D space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscopying",
+        "doc://com.apple.documentation/documentation/foundation/nssecurecoding"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating a Graph",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgraph/1501315-initwithnodes",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgraph/1556415-graphwithnodes"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Working with Nodes in a Graph",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgraph/1501040-addnodes",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgraph/1501152-connectnodetolowestcostnode",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgraph/1501303-removenodes",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgraph/1501223-nodes"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Pathfinding with a Graph",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgraph/1501270-findpathfromnode"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkmeshgraph",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgridgraph",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode2d",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode3d",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgridgraphnode"
+      ],
+      "title": "Pathfinding",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "GKGraph"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Individual nodes in a graph represent discrete locations that a character or other object in your game can occupy, and the connections between adjacent nodes represent the ability of a game entity to travel from one location to another. Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraph"
+            },
+            {
+              "type": "text",
+              "text": " class to create a general graph, or the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgridgraph"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph"
+            },
+            {
+              "type": "text",
+              "text": ", or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkmeshgraph"
+            },
+            {
+              "type": "text",
+              "text": " subclass to generate specialized graphs that contain more information about the geometry of your game world."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each set of graph and node classes can generate graphs for different kinds of spaces:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The base classes "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraph"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode"
+                    },
+                    {
+                      "type": "text",
+                      "text": " contain functionality general to all graphs and nodes. You can also use these classes on their own to construct graphs that contain no geometry information. This option is useful for games where the connections between spaces are more important than their physical locations, such as board games."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Use the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgridgraph"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgridgraphnode"
+                    },
+                    {
+                      "type": "text",
+                      "text": " classes to describe game worlds that constrain movement to an integer grid, such as tactical role-playing games."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Use the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph"
+                    },
+                    {
+                      "type": "text",
+                      "text": " or "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkmeshgraph"
+                    },
+                    {
+                      "type": "text",
+                      "text": " class to describe 2D game worlds that allow continuous movement in open spaces that are interrupted by impassable obstacles ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkpolygonobstacle"
+                    },
+                    {
+                      "type": "text",
+                      "text": " objects). Obstacle graphs automatically generate nodes containing 2D point information ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode2d"
+                    },
+                    {
+                      "type": "text",
+                      "text": " objects), and you can also add your own such nodes representing locations of interest."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The graphs modeled by this class are always "
+            },
+            {
+              "type": "newTerm",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "directed"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "—that is, a connection between two nodes describes one direction of travel between them. To enable travel between two nodes in either direction, you must create a connection in each direction. You can choose to connect both directions at once with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraph/1501152-connectnodetolowestcostnode"
+            },
+            {
+              "type": "text",
+              "text": " method (for graphs) or the addConnection:bidirectional: method (for nodes)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Using a graph for pathfinding typically involves three major steps:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create a graph once (for example, when initializing a game level class) with static information about your game world."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "When you need to find a route between points, connect temporary nodes to the graph at those points. Use the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraph/1501152-connectnodetolowestcostnode"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method to connect nodes using their own geometry information, or the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph/1501129-connectnodeusingobstacles"
+                    },
+                    {
+                      "type": "text",
+                      "text": " or "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgridgraph/1501192-connectnodetoadjacentnodes"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method to use the additional constraints of obstacle and grid graphs."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Call the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraph/1501270-findpathfromnode"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method to find a route between locations in the graph. This method returns an array of graph nodes, starting with the requested start point of the path, and proceeding to adjacent nodes in order until it reaches the requested end point. Use the geometry information contained in each node to make use of the route—for example, in a SpriteKit game you might create a sequence of move actions to move a character from point to point along the path."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The temporary nodes you created for finding a path typically have little usefulness after a path has been found. Remove those nodes before reusing the graph for future searches."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To learn more about graphs and pathfinding, see "
+            },
+            {
+              "type": "link",
+              "title": "Pathfinding",
+              "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/Pathfinding.html#//apple_ref/doc/uid/TP40015172-CH3"
+            },
+            {
+              "type": "text",
+              "text": " in "
+            },
+            {
+              "type": "link",
+              "title": "GameplayKit Programming Guide",
+              "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

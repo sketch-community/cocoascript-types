@@ -1,0 +1,843 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Returns a gathered copy of the specified single-precision vector using a vector that defines the indices to keep."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp-snv"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/compression_and_gathering_functions"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/vdsp/3600621-gather",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 3600621,
+  "kind": "symbol",
+  "metadata": {
+    "title": "gather(_:indices:)",
+    "role": "symbol",
+    "roleHeading": "Generic Type Method",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "14.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "11.0",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "14.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "14.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "7.0",
+        "current": "7.2"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "12.0",
+        "current": "12.3"
+      }
+    ],
+    "externalID": "s:10Accelerate4vDSPO6gather_7indicesSaySfGx_q_tAA0A6BufferRzAaGR_Sf7ElementRtzSuAHRt_r0_lFZ",
+    "symbolKind": "enumcm",
+    "fragments": [
+      {
+        "kind": "text",
+        "text": "static func "
+      },
+      {
+        "kind": "identifier",
+        "text": "gather"
+      },
+      {
+        "kind": "text",
+        "text": "<T, U>(T, "
+      },
+      {
+        "kind": "identifier",
+        "text": "indices"
+      },
+      {
+        "kind": "text",
+        "text": ": U) -> [Float]"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/vdsp/3600621-gather"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp": {
+      "title": "vDSP",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp",
+      "url": "/documentation/accelerate/vdsp",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp-snv": {
+      "title": "vDSP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp-snv",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp-snv",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An enumeration that acts as a namespace for Swift overlays to vDSP."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/compression_and_gathering_functions": {
+      "title": "Compression and Gathering Functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/compression_and_gathering_functions",
+      "url": "/documentation/accelerate/vdsp/compression_and_gathering_functions",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3600621-gather#3681482": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3600621-gather#3681482",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/vdsp/3600621-gather#3681482"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449749-vdsp_vgathr": {
+      "title": "vDSP_vgathr(_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449749-vdsp_vgathr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449749-vdsp_vgathr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gathers a single-precision vector using the specified 1-based indices."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_vgathr"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<Float>, UnsafePointer<vDSP_Length>, vDSP_Stride, UnsafeMutablePointer<Float>, vDSP_Stride, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/swift/float": {
+      "title": "Float",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/float",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/float"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer": {
+      "title": "AccelerateBuffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/acceleratebuffer"
+    },
+    "doc://com.apple.documentation/documentation/swift/uint": {
+      "title": "UInt",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/uint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/uint"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3600620-gather": {
+      "title": "gather(_:indices:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3600620-gather",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3600620-gather",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a gathered copy of the specified double-precision vector using a vector that defines the indices to keep."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "gather"
+        },
+        {
+          "kind": "text",
+          "text": "<T, U>(T, "
+        },
+        {
+          "kind": "identifier",
+          "text": "indices"
+        },
+        {
+          "kind": "text",
+          "text": ": U) -> [Double]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3600621-gather": {
+      "title": "gather(_:indices:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3600621-gather",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3600621-gather",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a gathered copy of the specified single-precision vector using a vector that defines the indices to keep."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "gather"
+        },
+        {
+          "kind": "text",
+          "text": "<T, U>(T, "
+        },
+        {
+          "kind": "identifier",
+          "text": "indices"
+        },
+        {
+          "kind": "text",
+          "text": ": U) -> [Float]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3600622-gather": {
+      "title": "gather(_:indices:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3600622-gather",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3600622-gather",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gathers the specified double-precision vector using a vector that defines the indices to keep."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "gather"
+        },
+        {
+          "kind": "text",
+          "text": "<T, U, V>(T, "
+        },
+        {
+          "kind": "identifier",
+          "text": "indices"
+        },
+        {
+          "kind": "text",
+          "text": ": U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3600623-gather": {
+      "title": "gather(_:indices:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3600623-gather",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3600623-gather",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gathers the specified single-precision vector using a vector that defines the indices to keep."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "gather"
+        },
+        {
+          "kind": "text",
+          "text": "<T, U, V>(T, "
+        },
+        {
+          "kind": "identifier",
+          "text": "indices"
+        },
+        {
+          "kind": "text",
+          "text": ": U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449921-vdsp_vgathrd": {
+      "title": "vDSP_vgathrD(_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449921-vdsp_vgathrd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449921-vdsp_vgathrd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gathers a double-precision vector using the specified 1-based indices."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_vgathrD"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<Double>, UnsafePointer<vDSP_Length>, vDSP_Stride, UnsafeMutablePointer<Double>, vDSP_Stride, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450261-vdsp_vgathra": {
+      "title": "vDSP_vgathra(_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450261-vdsp_vgathra",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450261-vdsp_vgathra",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gathers a single-precision vector using the specified pointers."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_vgathra"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafeMutablePointer<UnsafePointer<Float>>, vDSP_Stride, UnsafeMutablePointer<Float>, vDSP_Stride, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449865-vdsp_vgathrad": {
+      "title": "vDSP_vgathraD(_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449865-vdsp_vgathrad",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449865-vdsp_vgathrad",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gathers a single-precision vector using the specified pointers."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_vgathraD"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafeMutablePointer<UnsafePointer<Double>>, vDSP_Stride, UnsafeMutablePointer<Double>, vDSP_Stride, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449792-vdsp_vindex": {
+      "title": "vDSP_vindex(_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449792-vdsp_vindex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449792-vdsp_vindex",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gathers a single-precision vector using the specified 0-based indices."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_vindex"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<Float>, UnsafePointer<Float>, vDSP_Stride, UnsafeMutablePointer<Float>, vDSP_Stride, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449958-vdsp_vindexd": {
+      "title": "vDSP_vindexD(_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449958-vdsp_vindexd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449958-vdsp_vindexd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gathers a double-precision vector using the specified 0-based indices."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_vindexD"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<Double>, UnsafePointer<Double>, vDSP_Stride, UnsafeMutablePointer<Double>, vDSP_Stride, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3600620-gather",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3600622-gather",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3600623-gather",
+        "doc://com.apple.documentation/documentation/accelerate/1449749-vdsp_vgathr",
+        "doc://com.apple.documentation/documentation/accelerate/1449921-vdsp_vgathrd",
+        "doc://com.apple.documentation/documentation/accelerate/1450261-vdsp_vgathra",
+        "doc://com.apple.documentation/documentation/accelerate/1449865-vdsp_vgathrad",
+        "doc://com.apple.documentation/documentation/accelerate/1449792-vdsp_vindex",
+        "doc://com.apple.documentation/documentation/accelerate/1449958-vdsp_vindexd"
+      ],
+      "title": "Single-Vector Gathering Functions",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "static"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "gather"
+            },
+            {
+              "kind": "text",
+              "text": "<"
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO6gather_7indicesSaySfGx_q_tAA0A6BufferRzAaGR_Sf7ElementRtzSuAHRt_r0_lFZ1TL_xmfp",
+              "text": "T"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO6gather_7indicesSaySfGx_q_tAA0A6BufferRzAaGR_Sf7ElementRtzSuAHRt_r0_lFZ1UL_q_mfp",
+              "text": "U"
+            },
+            {
+              "kind": "text",
+              "text": ">("
+            },
+            {
+              "kind": "externalParam",
+              "text": "_"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "vector"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "text",
+              "text": "T"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "externalParam",
+              "text": "indices"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "text",
+              "text": "U"
+            },
+            {
+              "kind": "text",
+              "text": ") -> "
+            },
+            {
+              "kind": "text",
+              "text": "["
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Sf",
+              "identifier": "doc://com.apple.documentation/documentation/swift/float",
+              "text": "Float"
+            },
+            {
+              "kind": "text",
+              "text": "]"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "where"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "text",
+              "text": "T : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate0A6BufferP",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer",
+              "text": "AccelerateBuffer"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "text",
+              "text": "U : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate0A6BufferP",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer",
+              "text": "AccelerateBuffer"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "text",
+              "text": "T.Element == "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Sf",
+              "identifier": "doc://com.apple.documentation/documentation/swift/float",
+              "text": "Float"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "text",
+              "text": "U.Element == "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Su",
+              "identifier": "doc://com.apple.documentation/documentation/swift/uint",
+              "text": "UInt"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "swift"
+      ],
+      "parameters": [
+        {
+          "name": "vector",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The source vector that the function gathers."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "indices",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The vector that contains the 1-based indices."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The result of the gather operation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows an example of gathering the values in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "source"
+            },
+            {
+              "type": "text",
+              "text": " using the values in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "indices"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let source: [Float] = [10, 20,",
+            "                        30, 40,",
+            "                        50, 60,",
+            "                        70, 80]",
+            "",
+            "let indices: [UInt] = [1, 3, 5, 7]",
+            "",
+            "let destination = vDSP.gather(source,",
+            "                              indices: indices)",
+            "",
+            "// Prints \"[10.0, 30.0, 50.0, 70.0]\".",
+            "print(destination)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3681482",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

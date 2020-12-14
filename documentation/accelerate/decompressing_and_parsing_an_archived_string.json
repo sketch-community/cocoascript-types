@@ -1,0 +1,790 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Recreate a string from an archive file."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/applearchive"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/decompressing_and_parsing_an_archived_string",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3633129,
+  "kind": "article",
+  "metadata": {
+    "title": "Decompressing and Parsing an Archived String",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Apple Archive"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/decompressing_and_parsing_an_archived_string",
+        "documentation/applearchive/decompressing_and_parsing_an_archived_string"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/decompressing_and_parsing_an_archived_string",
+        "documentation/applearchive/decompressing_and_parsing_an_archived_string"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/applearchive": {
+      "title": "Apple Archive",
+      "identifier": "doc://com.apple.documentation/documentation/applearchive",
+      "url": "/documentation/applearchive",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/system/filepath": {
+      "title": "FilePath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/system/filepath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/system/filepath"
+    },
+    "link-3633147": {
+      "title": "Configure App Sandbox",
+      "type": "section",
+      "identifier": "link-3633147",
+      "kind": "article",
+      "role": "link",
+      "url": "https://help.apple.com/xcode/mac/current/#/devbd04af149"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/decompressing_and_parsing_an_archived_string#3633130": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/decompressing_and_parsing_an_archived_string#3633130",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/decompressing_and_parsing_an_archived_string#3633130"
+    },
+    "doc://com.apple.documentation/documentation/applearchive/archivebytestream": {
+      "title": "ArchiveByteStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/applearchive/archivebytestream",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/applearchive/archivebytestream"
+    },
+    "doc://com.apple.documentation/documentation/applearchive/archivebytestream/3588505-filestream": {
+      "title": "fileStream(path:mode:options:permissions:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/applearchive/archivebytestream/3588505-filestream",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/applearchive/archivebytestream/3588505-filestream"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/decompressing_and_parsing_an_archived_string#3633133": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/decompressing_and_parsing_an_archived_string#3633133",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/decompressing_and_parsing_an_archived_string#3633133"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/decompressing_and_parsing_an_archived_string#3633128": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/decompressing_and_parsing_an_archived_string#3633128",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/decompressing_and_parsing_an_archived_string#3633128"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/decompressing_and_parsing_an_archived_string#3633135": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/decompressing_and_parsing_an_archived_string#3633135",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/decompressing_and_parsing_an_archived_string#3633135"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_saving_a_string_to_the_file_system#3633111": {
+      "title": "Define the Archive Header",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_saving_a_string_to_the_file_system#3633111",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/accelerate/compressing_and_saving_a_string_to_the_file_system#3633111"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/decompressing_and_parsing_an_archived_string#3633131": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/decompressing_and_parsing_an_archived_string#3633131",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/decompressing_and_parsing_an_archived_string#3633131"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_and_saving_a_string_to_the_file_system": {
+      "title": "Compressing and Saving a String to the File System",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_saving_a_string_to_the_file_system",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/compressing_and_saving_a_string_to_the_file_system",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Compress the contents of a Unicode string and store the result on the file system."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/swift/unsafemutablerawbufferpointer": {
+      "title": "UnsafeMutableRawBufferPointer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/unsafemutablerawbufferpointer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/unsafemutablerawbufferpointer"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/decompressing_and_parsing_an_archived_string#3633136": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/decompressing_and_parsing_an_archived_string#3633136",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/decompressing_and_parsing_an_archived_string#3633136"
+    },
+    "doc://com.apple.documentation/documentation/applearchive/archivestream/3589310-readblob": {
+      "title": "readBlob(key:into:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/applearchive/archivestream/3589310-readblob",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/applearchive/archivestream/3589310-readblob"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/decompressing_and_parsing_an_archived_string#3633137": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/decompressing_and_parsing_an_archived_string#3633137",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/decompressing_and_parsing_an_archived_string#3633137"
+    },
+    "doc://com.apple.documentation/documentation/swift/cchar": {
+      "title": "CChar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/cchar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/cchar"
+    },
+    "doc://com.apple.documentation/documentation/swift/string/1641523-init": {
+      "title": "init(cString:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/string/1641523-init",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/string/1641523-init"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/decompressing_and_parsing_an_archived_string#3633138": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/decompressing_and_parsing_an_archived_string#3633138",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/decompressing_and_parsing_an_archived_string#3633138"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_single_files": {
+      "title": "Compressing Single Files",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_single_files",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/compressing_single_files",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Compress a single file and store the result on the file system."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/decompressing_single_files": {
+      "title": "Decompressing Single Files",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/decompressing_single_files",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/decompressing_single_files",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Recreate a single file from a compressed file."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compressing_file_system_directories": {
+      "title": "Compressing File System Directories",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_file_system_directories",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/compressing_file_system_directories",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Compress the contents of an entire directory and store the result on the file system."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/decompressing_and_extracting_an_archived_directory": {
+      "title": "Decompressing and Extracting an Archived Directory",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/decompressing_and_extracting_an_archived_directory",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/decompressing_and_extracting_an_archived_directory",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Recreate an entire file system directory from an archive file."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/decompressing_and_parsing_an_archived_string": {
+      "title": "Decompressing and Parsing an Archived String",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/decompressing_and_parsing_an_archived_string",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/decompressing_and_parsing_an_archived_string",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Recreate a string from an archive file."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/compressing_single_files",
+        "doc://com.apple.documentation/documentation/accelerate/decompressing_single_files",
+        "doc://com.apple.documentation/documentation/accelerate/compressing_file_system_directories",
+        "doc://com.apple.documentation/documentation/accelerate/decompressing_and_extracting_an_archived_directory",
+        "doc://com.apple.documentation/documentation/accelerate/compressing_and_saving_a_string_to_the_file_system"
+      ],
+      "title": "AppleArchive Essentials",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In this article, you’ll learn how to use AppleArchive to decompress and parse a previously compressed string."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The code below decompresses and parses the file generated using the steps explained in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_saving_a_string_to_the_file_system"
+            },
+            {
+              "type": "text",
+              "text": ". The operation obtains the contents of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "DAT"
+            },
+            {
+              "type": "text",
+              "text": " blob for the first file in the archive and creates a string from that data."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Specify the Compressed File Path",
+          "anchor": "3633126"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/system/filepath"
+            },
+            {
+              "type": "text",
+              "text": " structure that specifies the file name and location of the AppleArchive file that stores the compressed data. You must add read and write file access to the Downloads folder in the Signing and Capabilities pane. To learn more about configuring the App Sandbox, see "
+            },
+            {
+              "type": "link",
+              "title": "Configure App Sandbox",
+              "destination": "https://help.apple.com/xcode/mac/current/#/devbd04af149"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code creates a file path to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "lorem.aar"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let archiveFileName = \"lorem.aar\"",
+            "",
+            "let archiveFilePath: FilePath = { ",
+            "    guard let downloadURL = FileManager.default.urls(for: .downloadsDirectory,",
+            "                                                     in: .userDomainMask).first,",
+            "          let archiveFilePath = FilePath(downloadURL.appendingPathComponent(archiveFileName)) else {",
+            "        fatalError(\"Unable to create archive file path.\")",
+            "    }",
+            "    ",
+            "    return archiveFilePath",
+            "}()"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3633130",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create the File Stream to Read the Source Archive",
+          "anchor": "3633132"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/applearchive/archivebytestream"
+            },
+            {
+              "type": "text",
+              "text": " class provides static factory methods that create streams for different functions. In this case, use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/applearchive/archivebytestream/3588505-filestream"
+            },
+            {
+              "type": "text",
+              "text": " to create a byte stream that reads the source file:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard let readFileStream = ArchiveByteStream.fileStream(",
+            "        path: archiveFilePath,",
+            "        mode: .readOnly,",
+            "        options: [ ],",
+            "        permissions: FilePermissions(rawValue: 0o644)) else {",
+            "    print(\"can't create reading file stream\")",
+            "    return",
+            "}",
+            "defer {",
+            "    try? readFileStream.close()",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3633133",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create the Decompression Stream",
+          "anchor": "3633134"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create the decompression stream. Specify the file-reading stream as the input stream that provides the compressed data:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard let decompressStream = ArchiveByteStream.decompressionStream(",
+            "        readingFrom: readFileStream) else {",
+            "    return",
+            "}",
+            "defer {",
+            "    try? decompressStream.close()",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3633128",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create the Decoding Stream",
+          "anchor": "3633127"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create a decoding stream that provides archive elements from the raw, decompressed data:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard let decodeStream = ArchiveStream.decodeStream(",
+            "        readingFrom: decompressStream) else {",
+            "    return",
+            "}",
+            "defer {",
+            "    try? decodeStream.close()",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3633135",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Derive the Size of the Uncompressed String",
+          "anchor": "3633125"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the size of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "DAT"
+            },
+            {
+              "type": "text",
+              "text": " blob field that you specified in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/compressing_and_saving_a_string_to_the_file_system#3633111"
+            },
+            {
+              "type": "text",
+              "text": " to create a buffer to receive the uncompressed data. To access the size, read the DAT field of the decode stream’s header:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard",
+            "    let header = try? decodeStream.readHeader(),",
+            "    let datField = header.field(forKey: ArchiveHeader.FieldKey(\"DAT\")) else {",
+            "    return",
+            "}",
+            "",
+            "let byteCount: UInt64",
+            "",
+            "switch datField {",
+            "    case .blob(_, let size, _):",
+            "        byteCount = size",
+            "    default:",
+            "        byteCount = 0",
+            "}",
+            "",
+            "guard byteCount != 0 else {",
+            "    return",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3633131",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Decompress the Archived String",
+          "anchor": "3633140"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/unsafemutablerawbufferpointer"
+            },
+            {
+              "type": "text",
+              "text": " structure and allocate to it it the size of the original string to receive the decompressed data:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let rawBufferPtr = UnsafeMutableRawBufferPointer.allocate(",
+            "        byteCount: Int(byteCount),",
+            "        alignment: MemoryLayout<UTF8>.alignment)",
+            "",
+            "defer {",
+            "    rawBufferPtr.deallocate()",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3633136",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/applearchive/archivestream/3589310-readblob"
+            },
+            {
+              "type": "text",
+              "text": " to read the decompressed data from the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "DAT"
+            },
+            {
+              "type": "text",
+              "text": " field and write it to the raw buffer pointer. The decode stream parses its input from the decompression stream that, in turn, decompresses its input from the AppleArchive file supplied by the file stream."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "do {",
+            "    try decodeStream.readBlob(key: ArchiveHeader.FieldKey(\"DAT\"),",
+            "                              into: rawBufferPtr)",
+            "} catch {",
+            "    print(\"Unable to read from stream into `rawBufferPtr`.\")",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3633137",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a String from the Raw Buffer Pointer",
+          "anchor": "3633139"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create a string from the raw buffer pointer by creating a typed pointer that’s bound to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/cchar"
+            },
+            {
+              "type": "text",
+              "text": ", and use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/swift/string/1641523-init"
+            },
+            {
+              "type": "text",
+              "text": " to initialize the new string:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let typedPtr = rawBufferPtr.bindMemory(to: CChar.self)",
+            "",
+            "let decompressedString = String(cString: typedPtr.baseAddress!)",
+            "",
+            "print(decompressedString)",
+            "",
+            "// prints:",
+            "// Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum vestibulum est. Cras rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed quis tortor. Donec non ipsum. Mauris condimentum, odio nec porta tristique, ante neque malesuada massa, in dignissim eros velit at tellus. Donec et risus in ligula eleifend consectetur. Donec volutpat eleifend augue. Integer gravida sodales leo. Nunc vehicula neque ac erat. Vivamus non nisl. Fusce ac magna. Suspendisse euismod libero eget mauris.",
+            "// [...]"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3633138",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

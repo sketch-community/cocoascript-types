@@ -1,0 +1,522 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The interface implemented by the Security Server."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/authorization_plug-ins"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/authorizationcallbacks",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1543139,
+  "kind": "symbol",
+  "metadata": {
+    "title": "AuthorizationCallbacks",
+    "role": "symbol",
+    "roleHeading": "Structure",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.4",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:@T@AuthorizationCallbacks",
+    "symbolKind": "struct"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/authorizationcallbacks"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/authorization_plug-ins": {
+      "title": "Authorization Plug-ins",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorization_plug-ins",
+      "url": "/documentation/security/authorization_plug-ins",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/1543160-authorizationplugincreate": {
+      "title": "AuthorizationPluginCreate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1543160-authorizationplugincreate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1543160-authorizationplugincreate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes the plug-in and exchanges interfaces with the authorization engine."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543162-setresult": {
+      "title": "SetResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543162-setresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationcallbacks/1543162-setresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the result of an authorization operation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543178-requestinterrupt": {
+      "title": "RequestInterrupt",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543178-requestinterrupt",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationcallbacks/1543178-requestinterrupt",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Requests the authorization engine to interrupt the currently active authorization mechanism."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543132-diddeactivate": {
+      "title": "DidDeactivate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543132-diddeactivate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationcallbacks/1543132-diddeactivate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reports the successful deactivation of an authorization mechanism."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543168-getcontextvalue": {
+      "title": "GetContextValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543168-getcontextvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationcallbacks/1543168-getcontextvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reads a value collected during authorization."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543148-setcontextvalue": {
+      "title": "SetContextValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543148-setcontextvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationcallbacks/1543148-setcontextvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Stores data collected during authorization as a key-value pair."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationcallbacks/3143660-removecontextvalue": {
+      "title": "RemoveContextValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationcallbacks/3143660-removecontextvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationcallbacks/3143660-removecontextvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes a value collected during authorization."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543198-gethintvalue": {
+      "title": "GetHintValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543198-gethintvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationcallbacks/1543198-gethintvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reads a value stored by the plug-in authorization mechanism."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543176-getimmutablehintvalue": {
+      "title": "GetImmutableHintValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543176-getimmutablehintvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationcallbacks/1543176-getimmutablehintvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reads an immutable value stored by the plug-in authorization mechanism."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543189-sethintvalue": {
+      "title": "SetHintValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543189-sethintvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationcallbacks/1543189-sethintvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Stores data needed during authorization as a key-value pair."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationcallbacks/3143661-removehintvalue": {
+      "title": "RemoveHintValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationcallbacks/3143661-removehintvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationcallbacks/3143661-removehintvalue",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes a value stored by the plug-in authorization mechanism."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543192-getarguments": {
+      "title": "GetArguments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543192-getarguments",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationcallbacks/1543192-getarguments",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reads the arguments for this authorization mechanism from the authorization policy database."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543185-getsessionid": {
+      "title": "GetSessionId",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543185-getsessionid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationcallbacks/1543185-getsessionid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reads the session ID."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationcallbacks/2921469-getlacontext": {
+      "title": "GetLAContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationcallbacks/2921469-getlacontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationcallbacks/2921469-getlacontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constructs a local authentication context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationcallbacks/2921470-gettokenidentities": {
+      "title": "GetTokenIdentities",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationcallbacks/2921470-gettokenidentities",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationcallbacks/2921470-gettokenidentities",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns an array of identities available on tokens."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationcallbacks/2947929-gettktokenwatcher": {
+      "title": "GetTKTokenWatcher",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationcallbacks/2947929-gettktokenwatcher",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationcallbacks/2947929-gettktokenwatcher",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constructs a token watcher."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543143-version": {
+      "title": "version",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543143-version",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationcallbacks/1543143-version",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The engine callback version."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationpluginref": {
+      "title": "AuthorizationPluginRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationpluginref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationpluginref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A handle passed by the plug-in to the authorization engine when the plug-in is initiated."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationcallbacks": {
+      "title": "AuthorizationCallbacks",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationcallbacks",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationcallbacks",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface implemented by the Security Server."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1543130-authorizationcallbacks_version": {
+      "title": "AuthorizationCallbacks Version",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1543130-authorizationcallbacks_version",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/security/1543130-authorizationcallbacks_version",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The version of the interface implemented by the authorization engine."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationplugininterface": {
+      "title": "AuthorizationPluginInterface",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationplugininterface",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationplugininterface",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface that must be implemented by your plug-in."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1543154-authorizationplugininterface_ver": {
+      "title": "AuthorizationPluginInterface Version",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1543154-authorizationplugininterface_ver",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/security/1543154-authorizationplugininterface_ver",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The version of the interface implemented by the plug-in."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Instance Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543162-setresult",
+        "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543178-requestinterrupt",
+        "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543132-diddeactivate",
+        "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543168-getcontextvalue",
+        "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543148-setcontextvalue",
+        "doc://com.apple.documentation/documentation/security/authorizationcallbacks/3143660-removecontextvalue",
+        "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543198-gethintvalue",
+        "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543176-getimmutablehintvalue",
+        "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543189-sethintvalue",
+        "doc://com.apple.documentation/documentation/security/authorizationcallbacks/3143661-removehintvalue",
+        "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543192-getarguments",
+        "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543185-getsessionid",
+        "doc://com.apple.documentation/documentation/security/authorizationcallbacks/2921469-getlacontext",
+        "doc://com.apple.documentation/documentation/security/authorizationcallbacks/2921470-gettokenidentities",
+        "doc://com.apple.documentation/documentation/security/authorizationcallbacks/2947929-gettktokenwatcher",
+        "doc://com.apple.documentation/documentation/security/authorizationcallbacks/1543143-version"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1543160-authorizationplugincreate",
+        "doc://com.apple.documentation/documentation/security/authorizationpluginref",
+        "doc://com.apple.documentation/documentation/security/1543130-authorizationcallbacks_version",
+        "doc://com.apple.documentation/documentation/security/authorizationplugininterface",
+        "doc://com.apple.documentation/documentation/security/1543154-authorizationplugininterface_ver"
+      ],
+      "title": "Creating a Plug-in",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "typedef"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "struct"
+            },
+            {
+              "kind": "text",
+              "text": " AuthorizationCallbacks {"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    ..."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "} "
+            },
+            {
+              "kind": "identifier",
+              "text": "AuthorizationCallbacks"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This structure declares the functions that your authorization plug-in uses to communicate with the authorization engine. These functions are passed to your plug-in through the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1543160-authorizationplugincreate"
+            },
+            {
+              "type": "text",
+              "text": " function."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

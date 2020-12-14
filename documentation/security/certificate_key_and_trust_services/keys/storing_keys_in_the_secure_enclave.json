@@ -1,0 +1,796 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Create an extra layer of security for your private keys."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_secure_enclave",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2864125,
+  "kind": "article",
+  "metadata": {
+    "title": "Storing Keys in the Secure Enclave",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_secure_enclave"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_secure_enclave"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services": {
+      "title": "Certificate, Key, and Trust Services",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services",
+      "url": "/documentation/security/certificate_key_and_trust_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys": {
+      "title": "Keys",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/1394452-secaccesscontrolcreatewithflags": {
+      "title": "SecAccessControlCreateWithFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1394452-secaccesscontrolcreatewithflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1394452-secaccesscontrolcreatewithflags"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_secure_enclave#2930476": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_secure_enclave#2930476",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_secure_enclave#2930476"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattraccessiblewhenunlockedthisdeviceonly": {
+      "title": "kSecAttrAccessibleWhenUnlockedThisDeviceOnly",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccessiblewhenunlockedthisdeviceonly",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattraccessiblewhenunlockedthisdeviceonly"
+    },
+    "doc://com.apple.documentation/documentation/security/secaccesscontrolcreateflags/ksecaccesscontrolprivatekeyusage": {
+      "title": "kSecAccessControlPrivateKeyUsage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secaccesscontrolcreateflags/ksecaccesscontrolprivatekeyusage",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secaccesscontrolcreateflags/ksecaccesscontrolprivatekeyusage"
+    },
+    "doc://com.apple.documentation/documentation/security/secaccesscontrolcreateflags/ksecaccesscontroltouchidany": {
+      "title": "kSecAccessControlTouchIDAny",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secaccesscontrolcreateflags/ksecaccesscontroltouchidany",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secaccesscontrolcreateflags/ksecaccesscontroltouchidany"
+    },
+    "doc://com.apple.documentation/documentation/security/secaccesscontrolcreateflags": {
+      "title": "SecAccessControlCreateFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secaccesscontrolcreateflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secaccesscontrolcreateflags"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_secure_enclave#2930478": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_secure_enclave#2930478",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_secure_enclave#2930478"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys#2863927": {
+      "title": "Creating an Asymmetric Key Pair",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys#2863927",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys#2863927"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrtokenid": {
+      "title": "kSecAttrTokenID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrtokenid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrtokenid"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrtokenidsecureenclave": {
+      "title": "kSecAttrTokenIDSecureEnclave",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrtokenidsecureenclave",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrtokenidsecureenclave"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys": {
+      "title": "Generating New Cryptographic Keys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create both asymmetric and symmetric cryptographic keys."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1823694-seckeycreaterandomkey": {
+      "title": "SecKeyCreateRandomKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1823694-seckeycreaterandomkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1823694-seckeycreaterandomkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Generates a new private/public key pair."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_secure_enclave#2930480": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_secure_enclave#2930480",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_secure_enclave#2930480"
+    },
+    "doc://com.apple.documentation/documentation/security/1643774-seckeycopypublickey": {
+      "title": "SecKeyCopyPublicKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1643774-seckeycopypublickey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1643774-seckeycopypublickey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the public key associated with the given private key."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/getting_an_existing_key": {
+      "title": "Getting an Existing Key",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/getting_an_existing_key",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/getting_an_existing_key"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_secure_enclave#2930482": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_secure_enclave#2930482",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_secure_enclave#2930482"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain": {
+      "title": "Storing Keys in the Keychain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/signing_and_verifying": {
+      "title": "Signing and Verifying",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/signing_and_verifying",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/signing_and_verifying"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption": {
+      "title": "Using Keys for Encryption",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption"
+    },
+    "doc://com.apple.documentation/documentation/security/kseckeyalgorithmeciesencryptioncofactorx963sha256aesgcm": {
+      "title": "kSecKeyAlgorithmECIESEncryptionCofactorX963SHA256AESGCM",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/kseckeyalgorithmeciesencryptioncofactorx963sha256aesgcm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/kseckeyalgorithmeciesencryptioncofactorx963sha256aesgcm"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_secure_enclave": {
+      "title": "Storing Keys in the Secure Enclave",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_secure_enclave",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_secure_enclave",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create an extra layer of security for your private keys."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/key_generation_attributes": {
+      "title": "Key Generation Attributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/key_generation_attributes",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/key_generation_attributes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use attribute dictionary keys during cryptographic key generation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys",
+        "doc://com.apple.documentation/documentation/security/1823694-seckeycreaterandomkey",
+        "doc://com.apple.documentation/documentation/security/1643774-seckeycopypublickey",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/key_generation_attributes"
+      ],
+      "title": "Key Generation",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Keeping a private key in a keychain is a great way to secure it. The key data is encrypted on disk and accessible only to your app or the apps you authorize. However, to use the key, you must briefly copy a plain-text version of it into system memory. While this presents a reasonably small attack surface, there’s still the chance that if your app is compromised, the key could also become compromised. As an added layer of protection, you can store a private key in the Secure Enclave."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Secure Enclave is a hardware-based key manager that’s isolated from the main processor to provide an extra layer of security. When you store a private key in the Secure Enclave, you never actually handle the key, making it difficult for the key to become compromised. Instead, you instruct the Secure Enclave to create the key, securely store it, and perform operations with it. You receive only the output of these operations, such as encrypted data or a cryptographic signature verification outcome."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The benefits of the Secure Enclave are balanced against a few restrictions. In particular, the Secure Enclave:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Is a hardware feature of the Apple A7 or later A-series processor. Only iOS devices with one of these processors or a MacBook Pro with the Touch Bar and Touch ID support this feature."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Stores only 256-bit elliptic curve private keys. These keys can only be used for creating and verifying cryptographic signatures, or for elliptic curve Diffie-Hellman key exchange (and by extension, symmetric encryption)."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Can’t import preexisting keys. You must create keys directly inside the Secure Enclave. Not having a mechanism to transfer key data into or out of the Secure Enclave is fundamental to its security."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The steps required to create a private key in the Secure Enclave (and its corresponding public key outside the Secure Enclave) are similar to those for creating a key pair in the usual way, as described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys"
+            },
+            {
+              "type": "text",
+              "text": ". The following sections highlight the differences."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Specify Access Control",
+          "anchor": "2930473"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You start by using an attribute dictionary to describe the key, but in this case, one of the attributes is an access control object. Use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1394452-secaccesscontrolcreatewithflags"
+            },
+            {
+              "type": "text",
+              "text": " to create a suitable object:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "SecAccessControlRef access =",
+            "    SecAccessControlCreateWithFlags(kCFAllocatorDefault,",
+            "                                    kSecAttrAccessibleWhenUnlockedThisDeviceOnly,",
+            "                                    kSecAccessControlPrivateKeyUsage,",
+            "                                    NULL);   // Ignore error"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2930476",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This particular object includes a protection parameter of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccessiblewhenunlockedthisdeviceonly"
+            },
+            {
+              "type": "text",
+              "text": ". As a result, the associated keychain item is only accessible on the device that created it (a feature that’s also inherent to using the Secure Enclave), and only when the device is unlocked. Other less restrictive options are possible, but this option is generally preferred unless your app operates in the background."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A critical aspect of this access control object is its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/secaccesscontrolcreateflags/ksecaccesscontrolprivatekeyusage"
+            },
+            {
+              "type": "text",
+              "text": " flag. This flag indicates that the private key should be available for use in signing and verification operations inside the Secure Enclave. Without the flag, key generation still succeeds, but signing operations that attempt to use it fail."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You could also combine the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/secaccesscontrolcreateflags/ksecaccesscontrolprivatekeyusage"
+            },
+            {
+              "type": "text",
+              "text": " flag with other flags, using a bitwise "
+            },
+            {
+              "type": "codeVoice",
+              "code": "OR"
+            },
+            {
+              "type": "text",
+              "text": " to obtain additional protection for your key. For example, if you include the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/secaccesscontrolcreateflags/ksecaccesscontroltouchidany"
+            },
+            {
+              "type": "text",
+              "text": " flag, you instruct the system to make the key available only when the system can authenticate the user with Touch ID (or a fallback passcode). See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/secaccesscontrolcreateflags"
+            },
+            {
+              "type": "text",
+              "text": " for the complete list of available flags."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Assemble the Attributes",
+          "anchor": "2930477"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Using the access control object, you then create an attribute dictionary:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "NSDictionary* attributes =",
+            "  @{ (id)kSecAttrKeyType:             (id)kSecAttrKeyTypeECSECPrimeRandom,",
+            "     (id)kSecAttrKeySizeInBits:       @256,",
+            "     (id)kSecAttrTokenID:             (id)kSecAttrTokenIDSecureEnclave,",
+            "     (id)kSecPrivateKeyAttrs:",
+            "       @{ (id)kSecAttrIsPermanent:    @YES,",
+            "          (id)kSecAttrApplicationTag: <# a tag #>,",
+            "          (id)kSecAttrAccessControl:  (__bridge id)access,",
+            "        },",
+            "   };"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2930478",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The attribute dictionary above is structurally similar to the one described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys#2863927"
+            },
+            {
+              "type": "text",
+              "text": ". In particular, it indicates that the private key should be stored in the keychain and tagged for later retrieval. However, it differs in a few critical ways:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "A new attribute, "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrtokenid"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", with the value "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrtokenidsecureenclave"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", indicates that the generation operation should take place inside the Secure Enclave."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The type and size attributes reflect that Secure Enclave only stores 256-bit elliptic curve keys."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The private key attribute dictionary includes the access control object generated in the previous step to indicate how the key can be used."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create A Key Pair",
+          "anchor": "2930479"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With the attributes dictionary in hand, you create the key pair just as you do outside the Secure Enclave, with a call to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1823694-seckeycreaterandomkey"
+            },
+            {
+              "type": "text",
+              "text": " function:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "CFErrorRef error = NULL;",
+            "SecKeyRef privateKey = SecKeyCreateRandomKey((__bridge CFDictionaryRef)attributes,",
+            "                                             &error);",
+            "if (!privateKey) {",
+            "    NSError *err = CFBridgingRelease(error);  // ARC takes ownership",
+            "    // Handle the error. . .",
+            "}",
+            ""
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2930480",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Notice that you still receive a reference to the private key object, even though it’s stored in the Secure Enclave. The private key is logically part of the keychain, and you can later obtain a reference to it in the usual way. But because its backing storage is physically part of the Secure Enclave, you can never inspect the key’s data."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use the Secured Key",
+          "anchor": "2930481"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In most respects, key management proceeds as usual. You rely on the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1643774-seckeycopypublickey"
+            },
+            {
+              "type": "text",
+              "text": " function to obtain the public key from the private key, as described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/getting_an_existing_key"
+            },
+            {
+              "type": "text",
+              "text": ". You handle and release errors in the usual way. And while Swift manages the memory for you, in Objective-C, after you’re done with any generated items, you release their memory:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "if (privateKey) { CFRelease(privateKey); }",
+            "if (access)     { CFRelease(access);     }"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2930482",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you want to retrieve the key, you do it in the usual way, as described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain"
+            },
+            {
+              "type": "text",
+              "text": ". You also use the key to sign a block of code exactly as you would normally, as described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/signing_and_verifying"
+            },
+            {
+              "type": "text",
+              "text": ". Alternatively, you can use the key for encryption, as described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption"
+            },
+            {
+              "type": "text",
+              "text": " and in particular, for symmetric encryption using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/kseckeyalgorithmeciesencryptioncofactorx963sha256aesgcm"
+            },
+            {
+              "type": "text",
+              "text": " algorithm. Note that in these cases, you’re restricted to the elliptic curve algorithms because the Secure Enclave holds only elliptic curve keys."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

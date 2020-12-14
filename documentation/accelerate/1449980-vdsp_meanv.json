@@ -1,0 +1,653 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Calculates the mean value in a single-precision vector."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/vector_average_calculation"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/1449980-vdsp_meanv",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1449980,
+  "kind": "symbol",
+  "metadata": {
+    "title": "vDSP_meanv",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "4.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.4",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@F@vDSP_meanv",
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/1449980-vdsp_meanv"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/1449980-vdsp_meanv"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp": {
+      "title": "vDSP",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp",
+      "url": "/documentation/accelerate/vdsp",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/vector_average_calculation": {
+      "title": "Vector Average Calculation",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/vector_average_calculation",
+      "url": "/documentation/accelerate/vdsp/vector_average_calculation",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-media-3110585": {
+      "identifier": "link-media-3110585",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/1449980-vdsp_meanv#3110585"
+    },
+    "media-3110585": {
+      "identifier": "media-3110585",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 328,
+            "height": 173
+          },
+          "url": "https://docs-assets.developer.apple.com/published/2abb77a49a/4176ce8f-3092-4ea4-a4b8-741c7cad8d0e.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 328,
+            "height": 173
+          },
+          "url": "https://docs-assets.developer.apple.com/published/5a96dd08d1/e557d223-8d5f-4554-bdb8-d0faaff17c1e.png"
+        }
+      ],
+      "alt": "A diagram showing the operation of the vDSP_meanv function. There are three rows. The top row represents the input, vector A. The second row represents the averaging operation. The bottom row represents the output, vector C. The diagram has connecting lines from the input vectors to the operation and from the operation to the output vector indicating the relationships between the input and output.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449980-vdsp_meanv#3110120": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449980-vdsp_meanv#3110120",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/1449980-vdsp_meanv#3110120"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449980-vdsp_meanv": {
+      "title": "vDSP_meanv",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449980-vdsp_meanv",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449980-vdsp_meanv",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the mean value in a single-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449980-vdsp_meanv#3110123": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449980-vdsp_meanv#3110123",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/1449980-vdsp_meanv#3110123"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_stride": {
+      "title": "vDSP_Stride",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_stride",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_stride"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_length": {
+      "title": "vDSP_Length",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_length",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_length"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449784-vdsp_meanvd": {
+      "title": "vDSP_meanvD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449784-vdsp_meanvd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449784-vdsp_meanvd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the mean value in a double-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449731-vdsp_meamgv": {
+      "title": "vDSP_meamgv",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449731-vdsp_meamgv",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449731-vdsp_meamgv",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the mean of magnitudes in a single-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450214-vdsp_meamgvd": {
+      "title": "vDSP_meamgvD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450214-vdsp_meamgvd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450214-vdsp_meamgvd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the mean of magnitudes in a double-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450014-vdsp_measqv": {
+      "title": "vDSP_measqv",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450014-vdsp_measqv",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450014-vdsp_measqv",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the mean of squares in a single-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450463-vdsp_measqvd": {
+      "title": "vDSP_measqvD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450463-vdsp_measqvd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450463-vdsp_measqvd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the mean of squares in a double-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449849-vdsp_mvessq": {
+      "title": "vDSP_mvessq",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449849-vdsp_mvessq",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449849-vdsp_mvessq",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the mean of signed squares in a single-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449753-vdsp_mvessqd": {
+      "title": "vDSP_mvessqD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449753-vdsp_mvessqd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449753-vdsp_mvessqd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the mean of signed squares in a double-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450655-vdsp_rmsqv": {
+      "title": "vDSP_rmsqv",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450655-vdsp_rmsqv",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450655-vdsp_rmsqv",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the root mean square of a single-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449917-vdsp_rmsqvd": {
+      "title": "vDSP_rmsqvD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449917-vdsp_rmsqvd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449917-vdsp_rmsqvd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the root mean square of a double-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/1449784-vdsp_meanvd",
+        "doc://com.apple.documentation/documentation/accelerate/1449731-vdsp_meamgv",
+        "doc://com.apple.documentation/documentation/accelerate/1450214-vdsp_meamgvd",
+        "doc://com.apple.documentation/documentation/accelerate/1450014-vdsp_measqv",
+        "doc://com.apple.documentation/documentation/accelerate/1450463-vdsp_measqvd",
+        "doc://com.apple.documentation/documentation/accelerate/1449849-vdsp_mvessq",
+        "doc://com.apple.documentation/documentation/accelerate/1449753-vdsp_mvessqd",
+        "doc://com.apple.documentation/documentation/accelerate/1450655-vdsp_rmsqv",
+        "doc://com.apple.documentation/documentation/accelerate/1449917-vdsp_rmsqvd"
+      ],
+      "title": "Mean Calculation",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "vDSP_meanv"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "float"
+            },
+            {
+              "kind": "text",
+              "text": " *__A, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vDSP_Stride",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_stride",
+              "text": "vDSP_Stride"
+            },
+            {
+              "kind": "text",
+              "text": " __IA, "
+            },
+            {
+              "kind": "keyword",
+              "text": "float"
+            },
+            {
+              "kind": "text",
+              "text": " *__C, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vDSP_Length",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_length",
+              "text": "vDSP_Length"
+            },
+            {
+              "kind": "text",
+              "text": " __N);"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "__A",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Single-precision real input vector."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__I",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Stride for "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "A"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__C",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Output scalar."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__N",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The number of elements to process. If "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "N"
+                },
+                {
+                  "type": "text",
+                  "text": " is zero ("
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "0"
+                },
+                {
+                  "type": "text",
+                  "text": "), this function returns "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "-INFINITY"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This function calculates the mean value of the first "
+            },
+            {
+              "type": "codeVoice",
+              "code": "N"
+            },
+            {
+              "type": "text",
+              "text": " elements of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "A"
+            },
+            {
+              "type": "text",
+              "text": " and writes the result to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "C"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3110585",
+              "metadata": {
+                "anchor": "3110585",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The operation is: "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "C[0] = sum(A[n], 0 <= n < N) / N;"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3110120",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows an example of using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1449980-vdsp_meanv"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let stride = vDSP_Stride(1)",
+            "",
+            "let a: [Float] = [-1.5, 2.25, 3.6,",
+            "                  0.2, -0.1, -4.3]",
+            "let n = vDSP_Length(a.count)",
+            "",
+            "var c: Float = .nan",
+            "",
+            "vDSP_meanv(a,",
+            "           stride,",
+            "           &c,",
+            "           n)",
+            "",
+            "print(String(format: \"mean %.4f\", c)) // Prints \"mean 0.0250\""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3110123",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

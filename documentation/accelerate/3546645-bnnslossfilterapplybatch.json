@@ -1,0 +1,680 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Applies a loss filter to a set of input objects, writing the result to a set of output objects."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/bnns"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/3546645-bnnslossfilterapplybatch",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3546645,
+  "kind": "symbol",
+  "metadata": {
+    "title": "BNNSLossFilterApplyBatch",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "14.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "11.0",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "14.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "14.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "7.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@F@BNNSLossFilterApplyBatch",
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/3546645-bnnslossfilterapplybatch"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/3546645-bnnslossfilterapplybatch"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnns": {
+      "title": "BNNS",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnns",
+      "url": "/documentation/accelerate/bnns",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnslossfunction/bnnslossfunctionyolo": {
+      "title": "BNNSLossFunctionYolo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnslossfunction/bnnslossfunctionyolo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnslossfunction/bnnslossfunctionyolo"
+    },
+    "doc://com.apple.documentation/documentation/kernel/size_t": {
+      "title": "size_t",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/kernel/size_t",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/kernel/size_t"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsndarraydescriptor": {
+      "title": "BNNSNDArrayDescriptor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsndarraydescriptor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsndarraydescriptor"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnslossfunction": {
+      "title": "BNNSLossFunction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnslossfunction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnslossfunction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that describe loss functions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnslossreductionfunction": {
+      "title": "BNNSLossReductionFunction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnslossreductionfunction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnslossreductionfunction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that describe reduction functions used by a loss layer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnslayerparameterslossbase": {
+      "title": "BNNSLayerParametersLossBase",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnslayerparameterslossbase",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnslayerparameterslossbase",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that contains the parameters of a loss layer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnslayerparameterslosshuber": {
+      "title": "BNNSLayerParametersLossHuber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnslayerparameterslosshuber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnslayerparameterslosshuber",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that contains the parameters of a Huber loss layer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnslayerparameterslosssigmoidcrossentropy": {
+      "title": "BNNSLayerParametersLossSigmoidCrossEntropy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnslayerparameterslosssigmoidcrossentropy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnslayerparameterslosssigmoidcrossentropy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that contains the parameters of a sigmoid cross entropy loss layer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnslayerparameterslosssoftmaxcrossentropy": {
+      "title": "BNNSLayerParametersLossSoftmaxCrossEntropy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnslayerparameterslosssoftmaxcrossentropy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnslayerparameterslosssoftmaxcrossentropy",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that contains the parameters of a softmax cross entropy loss layer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnslayerparameterslossyolo": {
+      "title": "BNNSLayerParametersLossYolo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnslayerparameterslossyolo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnslayerparameterslossyolo",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure that contains the parameters of a You Only Look Once (YOLO) loss layer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/3546632-bnnsfiltercreatelayerloss": {
+      "title": "BNNSFilterCreateLayerLoss",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/3546632-bnnsfiltercreatelayerloss",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/3546632-bnnsfiltercreatelayerloss",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a new loss layer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/3546645-bnnslossfilterapplybatch": {
+      "title": "BNNSLossFilterApplyBatch",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/3546645-bnnslossfilterapplybatch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/3546645-bnnslossfilterapplybatch",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Applies a loss filter to a set of input objects, writing the result to a set of output objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/3546644-bnnslossfilterapplybackwardbatch": {
+      "title": "BNNSLossFilterApplyBackwardBatch",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/3546644-bnnslossfilterapplybackwardbatch",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/3546644-bnnslossfilterapplybackwardbatch",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Applies a loss filter backward to generate gradients."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/bnnslossfunction",
+        "doc://com.apple.documentation/documentation/accelerate/bnnslossreductionfunction",
+        "doc://com.apple.documentation/documentation/accelerate/bnnslayerparameterslossbase",
+        "doc://com.apple.documentation/documentation/accelerate/bnnslayerparameterslosshuber",
+        "doc://com.apple.documentation/documentation/accelerate/bnnslayerparameterslosssigmoidcrossentropy",
+        "doc://com.apple.documentation/documentation/accelerate/bnnslayerparameterslosssoftmaxcrossentropy",
+        "doc://com.apple.documentation/documentation/accelerate/bnnslayerparameterslossyolo",
+        "doc://com.apple.documentation/documentation/accelerate/3546632-bnnsfiltercreatelayerloss",
+        "doc://com.apple.documentation/documentation/accelerate/3546644-bnnslossfilterapplybackwardbatch"
+      ],
+      "title": "Loss Layers",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "int"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "BNNSLossFilterApplyBatch"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " *filter, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@size_t",
+              "identifier": "doc://com.apple.documentation/documentation/kernel/size_t",
+              "text": "size_t"
+            },
+            {
+              "kind": "text",
+              "text": " batch_size, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " *in, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@size_t",
+              "identifier": "doc://com.apple.documentation/documentation/kernel/size_t",
+              "text": "size_t"
+            },
+            {
+              "kind": "text",
+              "text": " in_stride, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " *labels, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@size_t",
+              "identifier": "doc://com.apple.documentation/documentation/kernel/size_t",
+              "text": "size_t"
+            },
+            {
+              "kind": "text",
+              "text": " labels_stride, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " *weights, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@size_t",
+              "identifier": "doc://com.apple.documentation/documentation/kernel/size_t",
+              "text": "size_t"
+            },
+            {
+              "kind": "text",
+              "text": " weights_size, "
+            },
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " *out, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@BNNSNDArrayDescriptor",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsndarraydescriptor",
+              "text": "BNNSNDArrayDescriptor"
+            },
+            {
+              "kind": "text",
+              "text": " *in_delta, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@size_t",
+              "identifier": "doc://com.apple.documentation/documentation/kernel/size_t",
+              "text": "size_t"
+            },
+            {
+              "kind": "text",
+              "text": " in_delta_stride);"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "filter  ",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The filter to apply."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "batch_size  ",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The number of input-output pairs."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "in  ",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Pointer to the input data."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "in_stride  ",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Increment, in values, between inputs."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "labels ",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Pointer to the labels data."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "labels_stride  ",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Increment, in values, between labels."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "weights  ",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Pointer to the weights data."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "weights_size  ",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Increment, in values, between weights."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "out  ",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Pointer to the output data."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "in_delta   ",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The descriptor of the input delta."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "in_delta_stride    ",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Increment, in values, between input delta objects."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The weights size must be one of: 0 (for no weights), 1 (for weight broadcast), "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "batch_size"
+                },
+                {
+                  "type": "text",
+                  "text": ", or "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "batch_size * input_width"
+                },
+                {
+                  "type": "text",
+                  "text": " (for different weight for each class and each sample in the batch) for all loss functions except "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnslossfunction/bnnslossfunctionyolo"
+                },
+                {
+                  "type": "text",
+                  "text": ". Use specific weight factors for YOLO loss."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

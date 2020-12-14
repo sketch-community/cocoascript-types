@@ -1,0 +1,1343 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Enforce secure network links in your app by relying on App Transport Security."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/preventing_insecure_network_connections",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3138033,
+  "kind": "article",
+  "metadata": {
+    "title": "Preventing Insecure Network Connections",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/preventing_insecure_network_connections"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/preventing_insecure_network_connections"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system": {
+      "title": "URL Loading System",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/foundation/url_loading_system"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsurlsession": {
+      "title": "NSURLSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsurlsession"
+    },
+    "doc://com.apple.documentation/documentation/security/preventing_insecure_network_connections#3138516": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/preventing_insecure_network_connections#3138516",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/preventing_insecure_network_connections#3138516"
+    },
+    "doc://com.apple.documentation/documentation/network": {
+      "title": "Network",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/network",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/network"
+    },
+    "doc://com.apple.documentation/documentation/cfnetwork": {
+      "title": "CFNetwork",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/cfnetwork",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/cfnetwork"
+    },
+    "link-3138616": {
+      "title": "Lists of available trusted root certificates in iOS",
+      "type": "topic",
+      "identifier": "link-3138616",
+      "kind": "article",
+      "role": "link",
+      "url": "https://support.apple.com/en-us/HT204132"
+    },
+    "doc://com.apple.documentation/documentation/foundation/url_loading_system/handling_an_authentication_challenge/performing_manual_server_trust_authentication": {
+      "title": "Performing Manual Server Trust Authentication",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/handling_an_authentication_challenge/performing_manual_server_trust_authentication",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/foundation/url_loading_system/handling_an_authentication_challenge/performing_manual_server_trust_authentication"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsapptransportsecurity": {
+      "title": "NSAppTransportSecurity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsapptransportsecurity",
+      "kind": "symbol",
+      "role": "dictionarySymbol",
+      "url": "/documentation/bundleresources/information_property_list/nsapptransportsecurity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A description of changes made to the default security for HTTP connections."
+        }
+      ],
+      "titleStyle": "symbol",
+      "name": "NSAppTransportSecurity",
+      "ideTitle": "App Transport Security Settings",
+      "fragments": [
+        {
+          "kind": "label",
+          "text": "property list key "
+        },
+        {
+          "kind": "identifier",
+          "text": "NSAppTransportSecurity"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list": {
+      "title": "Information Property List",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list",
+      "kind": "symbol",
+      "role": "dictionarySymbol",
+      "url": "/documentation/bundleresources/information_property_list"
+    },
+    "doc://com.apple.documentation/documentation/security/preventing_insecure_network_connections#3138483": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/preventing_insecure_network_connections#3138483",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/preventing_insecure_network_connections#3138483"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsapptransportsecurity/nsexceptiondomains": {
+      "title": "NSExceptionDomains",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsapptransportsecurity/nsexceptiondomains",
+      "kind": "symbol",
+      "role": "dictionarySymbol",
+      "url": "/documentation/bundleresources/information_property_list/nsapptransportsecurity/nsexceptiondomains"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsapptransportsecurity/nsallowsarbitraryloads": {
+      "title": "NSAllowsArbitraryLoads",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsapptransportsecurity/nsallowsarbitraryloads",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nsapptransportsecurity/nsallowsarbitraryloads"
+    },
+    "link-media-3138689": {
+      "identifier": "link-media-3138689",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/security/preventing_insecure_network_connections#3138689"
+    },
+    "media-3138689": {
+      "identifier": "media-3138689",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 116
+          },
+          "url": "https://docs-assets.developer.apple.com/published/3c99e66d6e/2a725598-fc24-43e8-9531-0f2685ddcb10.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 116
+          },
+          "url": "https://docs-assets.developer.apple.com/published/43be1b95ad/9e5795e8-ebd1-454c-b645-f6ee74da8c15.png"
+        }
+      ],
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsapptransportsecurity/nsallowsarbitraryloadsinwebcontent": {
+      "title": "NSAllowsArbitraryLoadsInWebContent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsapptransportsecurity/nsallowsarbitraryloadsinwebcontent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nsapptransportsecurity/nsallowsarbitraryloadsinwebcontent"
+    },
+    "doc://com.apple.documentation/documentation/webkit/wkwebview": {
+      "title": "WKWebView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/webkit/wkwebview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/webkit/wkwebview"
+    },
+    "link-media-3138691": {
+      "identifier": "link-media-3138691",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/security/preventing_insecure_network_connections#3138691"
+    },
+    "media-3138691": {
+      "identifier": "media-3138691",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 113
+          },
+          "url": "https://docs-assets.developer.apple.com/published/9f18617689/02ea58b5-9e03-44ce-8885-9559c3f086ba.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 113
+          },
+          "url": "https://docs-assets.developer.apple.com/published/225e9130b6/4dc69d0e-6850-4082-8783-7f29d563ebc1.png"
+        }
+      ],
+      "title": "Figure 3"
+    },
+    "doc://com.apple.documentation/documentation/security/preventing_insecure_network_connections/nsapptransportsecurity/nsexceptiondomains#3141618": {
+      "title": "NSExceptionAllowsInsecureHTTPLoads",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/preventing_insecure_network_connections/nsapptransportsecurity/nsexceptiondomains#3141618",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/security/preventing_insecure_network_connections/nsapptransportsecurity/nsexceptiondomains#3141618"
+    },
+    "link-media-3138690": {
+      "identifier": "link-media-3138690",
+      "type": "link",
+      "title": "Figure 4",
+      "url": "/documentation/security/preventing_insecure_network_connections#3138690"
+    },
+    "media-3138690": {
+      "identifier": "media-3138690",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 150
+          },
+          "url": "https://docs-assets.developer.apple.com/published/da5f3332d5/1c4d0b44-8fa5-4975-a883-a1732caa5264.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 150
+          },
+          "url": "https://docs-assets.developer.apple.com/published/0b340ba0dd/de49c701-e5f0-47dd-a998-e559abefba45.png"
+        }
+      ],
+      "title": "Figure 4"
+    },
+    "doc://com.apple.documentation/documentation/security/preventing_insecure_network_connections/identifying_the_source_of_blocked_connections": {
+      "title": "Identifying the Source of Blocked Connections",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/preventing_insecure_network_connections/identifying_the_source_of_blocked_connections",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/preventing_insecure_network_connections/identifying_the_source_of_blocked_connections",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Figure out why App Transport Security denies a network connection."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsapptransportsecurity/nsallowsarbitraryloadsformedia": {
+      "title": "NSAllowsArbitraryLoadsForMedia",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsapptransportsecurity/nsallowsarbitraryloadsformedia",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/information_property_list/nsapptransportsecurity/nsallowsarbitraryloadsformedia"
+    },
+    "doc://com.apple.documentation/documentation/security/preventing_insecure_network_connections/nsapptransportsecurity/nsexceptiondomains#3141615": {
+      "title": "NSExceptionMinimumTLSVersion",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/preventing_insecure_network_connections/nsapptransportsecurity/nsexceptiondomains#3141615",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/security/preventing_insecure_network_connections/nsapptransportsecurity/nsexceptiondomains#3141615"
+    },
+    "link-media-3162039": {
+      "identifier": "link-media-3162039",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/security/preventing_insecure_network_connections#3162039"
+    },
+    "media-3162039": {
+      "identifier": "media-3162039",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 647,
+            "height": 137
+          },
+          "url": "https://docs-assets.developer.apple.com/published/976449b9da/207dc80e-7940-442f-97dc-dec58432b19a.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 647,
+            "height": 137
+          },
+          "url": "https://docs-assets.developer.apple.com/published/1fa254dd31/4a6a9118-c1a5-4fa7-9817-354e63194c74.png"
+        }
+      ],
+      "alt": "Diagram showing how ATS blocks insecure connections, but lets secure traffic flow between your app and the network.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services": {
+      "title": "Keychain Services",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/keychain_services",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Securely store small chunks of data on behalf of the user."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/preventing_insecure_network_connections": {
+      "title": "Preventing Insecure Network Connections",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/preventing_insecure_network_connections",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/preventing_insecure_network_connections",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enforce secure network links in your app by relying on App Transport Security."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Evaluation",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/preventing_insecure_network_connections/identifying_the_source_of_blocked_connections"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Exceptions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsapptransportsecurity"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/keychain_services"
+      ],
+      "title": "Secure Data",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On Apple platforms, a networking security feature called App Transport Security (ATS) improves privacy and data integrity for all apps and app extensions. It does this by requiring that network connections made by your app are secured by the Transport Layer Security (TLS) protocol using reliable certificates and ciphers. ATS blocks connections that don’t meet minimum security requirements."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3162039",
+              "metadata": {
+                "anchor": "3162039",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "ATS operates by default for apps linked against the iOS 9.0 or macOS 10.11 SDKs or later. In cases where you need to connect to a server that isn’t fully secure—and that you can’t reconfigure to make more secure—you can add exceptions to loosen some of the ATS requirements."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "If you link your app against an SDK older than iOS 9.0 or macOS 10.11, ATS is disabled no matter which version of the operating system your app runs on."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Prefer High-Level Frameworks in Your App",
+          "anchor": "3138037"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The system enforces ATS when you use the standard "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system"
+            },
+            {
+              "type": "text",
+              "text": ". Instances of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession"
+            },
+            {
+              "type": "text",
+              "text": " automatically negotiate the most secure connection available from the server. The only action your app must take is to use secure URLs, like those beginning with "
+            },
+            {
+              "type": "codeVoice",
+              "code": "https"
+            },
+            {
+              "type": "text",
+              "text": ". Otherwise, ATS denies the connection and prints a console message:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "App Transport Security has blocked a cleartext HTTP (http://) resource",
+            "load since it is insecure. Temporary exceptions can be configured via",
+            "your app's Info.plist file."
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3138516",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "ATS doesn’t apply to calls your app makes to lower-level networking interfaces like the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/network"
+            },
+            {
+              "type": "text",
+              "text": " framework or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/cfnetwork"
+            },
+            {
+              "type": "text",
+              "text": ". In these cases, you take responsibility for ensuring the security of the connection. You can construct a secure connection this way, but mistakes are both easy to make and costly. It’s typically safest to rely on the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system"
+            },
+            {
+              "type": "text",
+              "text": " instead."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Ensure the Network Server Meets Minimum Requirements",
+          "anchor": "3138464"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A secure server establishes its identity using an X.509 digital certificate. A connecting client examines this certificate to perform default server trust evaluation, which includes checking that the certificate:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Has an intact digital signature, showing that the certificate hasn’t been tampered with."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Isn’t expired."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Has a name that matches the server’s DNS name."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Is signed by another valid certificate, which is in turned signed by another, and so on back to a trusted anchor certificate, which must be issued by a Certificate Authority (CA). The anchor certificate must be part of the client operating system, as indicated in "
+                    },
+                    {
+                      "type": "link",
+                      "title": "Lists of available trusted root certificates in iOS",
+                      "destination": "https://support.apple.com/en-us/HT204132"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", or be installed on the client by the user or a system administrator."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "ATS requires all of these things, and then provides extended security checks:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The server certificate must be signed with either a Rivest-Shamir-Adleman (RSA) key of at least 2048 bits, or an Elliptic-Curve Cryptography (ECC) key of at least 256 bits."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The certificate must use the Secure Hash Algorithm 2 (SHA-2) with a digest length, sometimes called a "
+                    },
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "fingerprint"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": ", of at least 256 bits (that is, SHA-256 or greater)."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The connection must use Transport Layer Security (TLS) protocol version 1.2 or later."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Data must be exchanged using either the AES-128 or the AES-256 symmetric cipher."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The link must support perfect forward secrecy (PFS) through Elliptic Curve Diffie-Hellman Ephemeral (ECDHE) key exchange."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/nsurlsession"
+                },
+                {
+                  "type": "text",
+                  "text": " automatically handles server trust evaluation for you, but enables you to customize the process, for example to extend trust to a self-signed certificate embedded in your app, or to bypass certificate expiry. When ATS is enabled, you can no longer loosen trust evaluation requirements that way, but you can still tighten them—for example, to implement certificate pinning. For more information, see "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/foundation/url_loading_system/handling_an_authentication_challenge/performing_manual_server_trust_authentication"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure Exceptions Only When Needed; Prefer Server Fixes",
+          "anchor": "3138482"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "ATS disallows a connection if the server fails to meet one of the security checks discussed in the previous section. Your best response is to update the server. If you can’t do that for some reason, you can specify exceptions in your app to disable one or more aspects of ATS."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "It’s always better to fix the server when faced with an ATS failure. Exceptions reduce the security of your app. Some also require justification when submitting an app to the App Store, as described in the next section."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You configure ATS exceptions by providing a dictionary as the value for the optional "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsapptransportsecurity"
+            },
+            {
+              "type": "text",
+              "text": " key in your app’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list"
+            },
+            {
+              "type": "text",
+              "text": " file. The dictionary has the following structure, where all keys are optional:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "NSAppTransportSecurity : Dictionary {",
+            "    NSAllowsArbitraryLoads : Boolean",
+            "    NSAllowsArbitraryLoadsForMedia : Boolean",
+            "    NSAllowsArbitraryLoadsInWebContent : Boolean",
+            "    NSAllowsLocalNetworking : Boolean",
+            "    NSExceptionDomains : Dictionary {",
+            "        <domain-name-string> : Dictionary {",
+            "            NSIncludesSubdomains : Boolean",
+            "            NSExceptionAllowsInsecureHTTPLoads : Boolean",
+            "            NSExceptionMinimumTLSVersion : String",
+            "            NSExceptionRequiresForwardSecrecy : Boolean",
+            "            NSRequiresCertificateTransparency : Boolean",
+            "        }",
+            "    }",
+            "}"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3138483",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Keys at the first level of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsapptransportsecurity"
+            },
+            {
+              "type": "text",
+              "text": " dictionary apply to connections made to any domain not specifically called out in the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsapptransportsecurity/nsexceptiondomains"
+            },
+            {
+              "type": "text",
+              "text": " sub-dictionary. For example, by setting "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsapptransportsecurity/nsallowsarbitraryloads"
+            },
+            {
+              "type": "text",
+              "text": " set to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "YES"
+            },
+            {
+              "type": "text",
+              "text": ", you completely disable ATS for all network connections:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3138689",
+              "metadata": {
+                "anchor": "3138689",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Depending on your use case, you can provide narrower exceptions. For example, by setting "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsapptransportsecurity/nsallowsarbitraryloadsinwebcontent"
+            },
+            {
+              "type": "text",
+              "text": " to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "YES"
+            },
+            {
+              "type": "text",
+              "text": ", you can disable ATS restrictions on calls made from within web views, like instances of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/webkit/wkwebview"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3138691",
+              "metadata": {
+                "anchor": "3138691",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You might only need to limit your ATS exception to a single domain. For example, if you need to access the insecure server "
+            },
+            {
+              "type": "codeVoice",
+              "code": "http://example.com"
+            },
+            {
+              "type": "text",
+              "text": ", you can still maintain all the benefits of ATS for other domains by setting the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/preventing_insecure_network_connections/nsapptransportsecurity/nsexceptiondomains#3141618"
+            },
+            {
+              "type": "text",
+              "text": " to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "YES"
+            },
+            {
+              "type": "text",
+              "text": " in the domain-specific sub-dictionary:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3138690",
+              "metadata": {
+                "anchor": "3138690",
+                "title": "Figure 4"
+              }
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Global exceptions don’t apply to any domains that you add to the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsapptransportsecurity/nsexceptiondomains"
+                },
+                {
+                  "type": "text",
+                  "text": " dictionary. So you can invert the previous example—allowing insecure traffic on all domains "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "except"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": " "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "example.com"
+                },
+                {
+                  "type": "text",
+                  "text": "—by placing "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsapptransportsecurity/nsallowsarbitraryloads"
+                },
+                {
+                  "type": "text",
+                  "text": " at the top level, and including an empty "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "example.com"
+                },
+                {
+                  "type": "text",
+                  "text": " dictionary as an exception domain."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nscurl"
+            },
+            {
+              "type": "text",
+              "text": " command line tool to connect to a server using different combinations of ATS exceptions. This helps you quickly narrow down the source of any ATS failures you have and figure out what exceptions you need. See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/preventing_insecure_network_connections/identifying_the_source_of_blocked_connections"
+            },
+            {
+              "type": "text",
+              "text": " for details."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Provide Justification for Exceptions",
+          "anchor": "3138036"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Adding certain ATS exceptions to your app’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list"
+            },
+            {
+              "type": "text",
+              "text": " file requires you to provide justification, and might trigger additional App Store review for your app. Exceptions that require justification are:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Arbitrary connection exceptions ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsapptransportsecurity/nsallowsarbitraryloads"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Media streaming exceptions ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsapptransportsecurity/nsallowsarbitraryloadsformedia"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Web content loads ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/bundleresources/information_property_list/nsapptransportsecurity/nsallowsarbitraryloadsinwebcontent"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Per-domain nonsecure connections ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/security/preventing_insecure_network_connections/nsapptransportsecurity/nsexceptiondomains#3141618"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Per-domain minimum TLS version ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/security/preventing_insecure_network_connections/nsapptransportsecurity/nsexceptiondomains#3141615"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Some examples of justifications eligible for consideration are:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The app must connect to a server managed by another entity that doesn’t support secure connections."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The app must support connecting to devices that cannot be upgraded to use secure connections, and that must be accessed using public host names."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The app must display embedded web content from a variety of sources, but can’t use a class supported by the web content exception."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The app loads media content that is encrypted and that contains no personalized information."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When submitting your app to the App Store, provide sufficient information for the App Store to determine why your app cannot make secure connections by default."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Always look for a way to avoid using exceptions as a first recourse. If you must use an exception, make it as limited in scope as possible."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

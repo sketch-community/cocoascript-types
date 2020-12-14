@@ -1,0 +1,997 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Convert assets with disparate color spaces and bit depths to a standard working format for applying vImage operations."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vimage"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2948284,
+  "kind": "article",
+  "metadata": {
+    "title": "Standardizing Arbitrary Image Formats for Processing",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.3",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/standardizing_arbitrary_image_formats_for_processing",
+        "documentation/accelerate/vimage/standardizing_arbitrary_image_formats_for_processing"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/standardizing_arbitrary_image_formats_for_processing",
+        "documentation/accelerate/vimage/standardizing_arbitrary_image_formats_for_processing"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage": {
+      "title": "vImage",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage",
+      "url": "/documentation/accelerate/vimage",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing#3524283": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing#3524283",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing#3524283"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_format": {
+      "title": "Creating a Core Graphics Image Format",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_format",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/creating_a_core_graphics_image_format"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing#3524285": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing#3524285",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing#3524285"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_buffer/3241530-free": {
+      "title": "free()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_buffer/3241530-free",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_buffer/3241530-free"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing#3524287": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing#3524287",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing#3524287"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimageconverter/3241523-make": {
+      "title": "make(sourceFormat:destinationFormat:flags:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimageconverter/3241523-make",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimageconverter/3241523-make"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimageconverter/3241519-convert": {
+      "title": "convert(source:destination:flags:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimageconverter/3241519-convert",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimageconverter/3241519-convert"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing#3524289": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing#3524289",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing#3524289"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1515935-vimagetentconvolve_argb8888": {
+      "title": "vImageTentConvolve_ARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1515935-vimagetentconvolve_argb8888",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1515935-vimagetentconvolve_argb8888"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing#3524291": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing#3524291",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing#3524291"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing#3524293": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing#3524293",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing#3524293"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing#3524295": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing#3524295",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing#3524295"
+    },
+    "link-media-3524281": {
+      "identifier": "link-media-3524281",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing#3524281"
+    },
+    "media-3524281": {
+      "identifier": "media-3524281",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 264
+          },
+          "url": "https://docs-assets.developer.apple.com/published/8cab4c1bb9/2cbc7c7e-a782-48ee-9edb-5cccd5498597.png"
+        }
+      ],
+      "alt": "Photos showing the original image and a blurred version of the same image.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/building_a_basic_conversion_workflow": {
+      "title": "Building a Basic Conversion Workflow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/building_a_basic_conversion_workflow",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/building_a_basic_conversion_workflow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn the fundamentals of the convert-any-to-any function by converting a CMYK image to an RGB image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale": {
+      "title": "Converting Color Images to Grayscale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/converting_color_images_to_grayscale",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convert a color image to grayscale using matrix multiplication."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_color_transforms_to_images_with_a_multidimensional_lookup_table": {
+      "title": "Applying Color Transforms to Images with a Multidimensional Lookup Table",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_color_transforms_to_images_with_a_multidimensional_lookup_table",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/applying_color_transforms_to_images_with_a_multidimensional_lookup_table",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a multidimensional lookup table to convert RGB images to CMYK."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing": {
+      "title": "Standardizing Arbitrary Image Formats for Processing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convert assets with disparate color spaces and bit depths to a standard working format for applying vImage operations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image": {
+      "title": "Converting Luminance and Chrominance Planes to an ARGB Image",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a displayable ARGB image from the luminance and chrominance information supplied by your device’s camera."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/conversion": {
+      "title": "Conversion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/conversion",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/conversion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convert an image to a different format."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/7c7852997b/StandardizingArbitraryImageFormatsForProcessing.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/7c7852997b/StandardizingArbitraryImageFormatsForProcessing.zip",
+      "checksum": "771798bb773141500f29ce1444243e3836e1511b9336f487cc6b42bd8ebe9580ea953052adb1fce789c429900faf67220cc94b02590a6f1b701ff6687717d572",
+      "url": "https://docs-assets.developer.apple.com/published/7c7852997b/StandardizingArbitraryImageFormatsForProcessing.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/7c7852997b/StandardizingArbitraryImageFormatsForProcessing.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/building_a_basic_conversion_workflow",
+        "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale",
+        "doc://com.apple.documentation/documentation/accelerate/applying_color_transforms_to_images_with_a_multidimensional_lookup_table",
+        "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image",
+        "doc://com.apple.documentation/documentation/accelerate/conversion"
+      ],
+      "title": "Conversion Between Image Formats",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To apply a vImage operation to an image, you must know its "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "bit depth"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " (the number of bits required to represent each pixel) and its "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "color space"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " (the number and organization of the color channels the image contains). For example, to apply an affine transform to a 32-bit image, you call "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageAffineWarp_ARGBFFFF(_:_:_:_:_:_:)"
+            },
+            {
+              "type": "text",
+              "text": ". To apply the same transform to an 8-bit image, you call "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageAffineWarp_ARGB8888(_:_:_:_:_:_:)"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "vImage’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageConvert_AnyToAny(_:_:_:_:_:)"
+            },
+            {
+              "type": "text",
+              "text": " function helps solve this issue by enabling you to dynamically create converters based on the properties of a source image. By converting all source assets to a standardized working format, you need only one operation."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample uses a vImage tent filter to apply a blur to  "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIImage"
+            },
+            {
+              "type": "text",
+              "text": " objects of arbitrary formats. Because a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIImage"
+            },
+            {
+              "type": "text",
+              "text": " object can contain image data in many formats and color spaces, this implementation converts all input to 8-bit ARGB format before processing."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The example below shows an original 16-bit CMYK image on the left, and the same image converted to 8-bit ARGB and blurred on the right."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3524281",
+              "metadata": {
+                "anchor": "3524281",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample walks you through the steps for applying a blur to an image of any format:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Implementing the blurring function."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Creating the source and destination image formats."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Creating the source and destination buffers."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Performing the conversion."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Applying the blur operation."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Returning the blurred result."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Using the blurring function."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Implement the Blurring Function",
+          "anchor": "3524298"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The code to apply a blur to a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIImage"
+            },
+            {
+              "type": "text",
+              "text": " instance with an arbitrary image format is implemented in  "
+            },
+            {
+              "type": "codeVoice",
+              "code": "blurImage(_:blurWidth:blurHeight:)"
+            },
+            {
+              "type": "text",
+              "text": ". This function accepts three parameters: the image to blur, and the width and height (in pixels) of the blur:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func blurImage(_ sourceImage: UIImage,",
+            "               blurWidth: UInt32,",
+            "               blurHeight: UInt32) -> UIImage? {"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3524283",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create the Source and Destination Image Formats",
+          "anchor": "3524299"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To learn how to create a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImage_CGImageFormat"
+            },
+            {
+              "type": "text",
+              "text": " structure from properties derived from the source image, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_format"
+            },
+            {
+              "type": "text",
+              "text": ". The properties of the source format are derived from source image. The properties of the destination format are hard coded to match the convolution operation used later in the function:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard",
+            "    let cgImage = sourceImage.cgImage,",
+            "    let sourceImageFormat = vImage_CGImageFormat(cgImage: cgImage),",
+            "    let rgbDestinationImageFormat = vImage_CGImageFormat(",
+            "        bitsPerComponent: 8,",
+            "        bitsPerPixel: 32,",
+            "        colorSpace: CGColorSpaceCreateDeviceRGB(),",
+            "        bitmapInfo: CGBitmapInfo(rawValue: CGImageAlphaInfo.first.rawValue),",
+            "        renderingIntent: .defaultIntent) else {",
+            "            print(\"Unable to initialize cgImage or colorSpace.\")",
+            "            return nil",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3524285",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create the Source and Destination Buffers",
+          "anchor": "3524300"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With the source and destination image formats defined, you create and initialize a buffer containing the source image, and a buffer that will contain the 8-bit, ARGB conversion of the source image. Be sure to free the memory allocated to these buffers when you’re finished working with them by using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_buffer/3241530-free"
+            },
+            {
+              "type": "text",
+              "text": " function. Because "
+            },
+            {
+              "type": "codeVoice",
+              "code": "blurImage(_:blurWidth:blurHeight:)"
+            },
+            {
+              "type": "text",
+              "text": " may exit early, defer both of these free calls to ensure that they’re always called."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard",
+            "    let sourceBuffer = try? vImage_Buffer(cgImage: cgImage),",
+            "    var rgbDestinationBuffer = try? vImage_Buffer(width: Int(sourceBuffer.width),",
+            "                                                  height: Int(sourceBuffer.height),",
+            "                                                  bitsPerPixel: rgbDestinationImageFormat.bitsPerPixel) else {",
+            "                                                    fatalError(\"Error initializing source and destination buffers.\")",
+            "}",
+            "",
+            "defer {",
+            "    sourceBuffer.free()",
+            "    rgbDestinationBuffer.free()",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3524287",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Perform the Conversion",
+          "anchor": "3524301"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the source and destination formats to create a converter using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimageconverter/3241523-make"
+            },
+            {
+              "type": "text",
+              "text": " function. The converter’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimageconverter/3241519-convert"
+            },
+            {
+              "type": "text",
+              "text": " function performs the conversion."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "do {",
+            "    let toRgbConverter = try vImageConverter.make(sourceFormat: sourceImageFormat,",
+            "                                                  destinationFormat: rgbDestinationImageFormat)",
+            "    ",
+            "    try toRgbConverter.convert(source: sourceBuffer,",
+            "                               destination: &rgbDestinationBuffer)",
+            "} catch {",
+            "    fatalError(error.localizedDescription)",
+            "}",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3524289",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, your destination buffer contains the image in 8-bit ARGB color space."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Apply the Blur Operation",
+          "anchor": "3524302"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create a blurred version of the converted image using vImage’s tent filter. This filter calculates a weighted average of pixels within a surrounding grid, known as a kernel, with a size specified by the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "blurWidth"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "blurHeight"
+            },
+            {
+              "type": "text",
+              "text": " parameters. The tent filter uses a fast algorithm that’s suited for real-time applications."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create a buffer to receive the tent filter’s result using the same technique that you used for the other buffers. Be sure to free the buffer’s memory when the you’re finished using it."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The width and height values passed to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1515935-vimagetentconvolve_argb8888"
+            },
+            {
+              "type": "text",
+              "text": " must be odd so that the center of the kernel aligns with each pixel. To guarantee that the kernel sizes passed to the convolve function are odd, calculate "
+            },
+            {
+              "type": "codeVoice",
+              "code": "oddWidth"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "oddHeight"
+            },
+            {
+              "type": "text",
+              "text": " to add one to any even values passed into the function."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard var blurResultBuffer = try? vImage_Buffer(width: Int(sourceBuffer.width),",
+            "                                                height: Int(sourceBuffer.height),",
+            "                                                bitsPerPixel: rgbDestinationImageFormat.bitsPerPixel) else {",
+            "                                                    fatalError(\"Error creating blur result buffer.\")",
+            "}",
+            "",
+            "defer {",
+            "    blurResultBuffer.free()",
+            "}",
+            "",
+            "let oddWidth = blurWidth % 2 == 0 ? blurWidth + 1 : blurWidth",
+            "let oddHeight = blurHeight % 2 == 0 ? blurHeight + 1 : blurHeight",
+            "",
+            "let error = vImageTentConvolve_ARGB8888(&rgbDestinationBuffer,",
+            "                                        &blurResultBuffer,",
+            "                                        nil,",
+            "                                        0, 0,",
+            "                                        oddHeight, oddWidth,",
+            "                                        nil,",
+            "                                        vImage_Flags(kvImageEdgeExtend))",
+            "",
+            "guard error == kvImageNoError else {",
+            "    print(\"Error in vImageTentConvolve_ARGB8888.\")",
+            "    return nil",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3524291",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Return the Blurred Result",
+          "anchor": "3524303"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageTentConvolve_ARGB8888(_:_:_:_:_:_:_:_:_:)"
+            },
+            {
+              "type": "text",
+              "text": " has completed, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "blurResultBuffer"
+            },
+            {
+              "type": "text",
+              "text": " contains a blurred version of the original image. Your function creates a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CGImage"
+            },
+            {
+              "type": "text",
+              "text": " representation from the blurred result and returns a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UIImage"
+            },
+            {
+              "type": "text",
+              "text": " instance from that."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "if let cgImage = try? blurResultBuffer.createCGImage(format: rgbDestinationImageFormat) {",
+            "    return UIImage(cgImage: cgImage)",
+            "} else {",
+            "    return nil",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3524293",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use the Blurring Function",
+          "anchor": "3524304"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This code shows an example usage of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "blurImage(_:blurWidth:blurHeight:)"
+            },
+            {
+              "type": "text",
+              "text": " function:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let flowers = #imageLiteral(resourceName: \"Flowers_2.jpg\")",
+            "",
+            "imageView.image = blurImage(flowers,",
+            "                            blurWidth: 48,",
+            "                            blurHeight: 48)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3524295",
+            "title": "Listing 7"
+          }
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

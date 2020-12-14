@@ -1,0 +1,578 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Computes a forward or inverse out-of-place, single-precision complex FFT using a temporary buffer."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/fast_fourier_transforms",
+        "doc://com.apple.documentation/documentation/accelerate/fast_fourier_transforms/out-of-place_functions_for_1d_complex_fft"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/fast_fourier_transforms",
+        "doc://com.apple.documentation/documentation/accelerate/fast_fourier_transforms/out-of-place_functions_for_1d_complex_fft"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/1450812-vdsp_fft_zopt",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1450812,
+  "kind": "symbol",
+  "metadata": {
+    "title": "vDSP_fft_zopt",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "4.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@F@vDSP_fft_zopt",
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/1450812-vdsp_fft_zopt"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/1450812-vdsp_fft_zopt"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/fast_fourier_transforms": {
+      "title": "Fast Fourier Transforms",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/fast_fourier_transforms",
+      "url": "/documentation/accelerate/fast_fourier_transforms",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/fast_fourier_transforms/out-of-place_functions_for_1d_complex_fft": {
+      "title": "Out-of-Place Functions for 1D Complex FFT",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/fast_fourier_transforms/out-of-place_functions_for_1d_complex_fft",
+      "url": "/documentation/accelerate/fast_fourier_transforms/out-of-place_functions_for_1d_complex_fft",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp": {
+      "title": "vDSP",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp",
+      "url": "/documentation/accelerate/vdsp",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/kernel/1645049-anonymous/kfftdirection_forward": {
+      "title": "kFFTDirection_Forward",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/kernel/1645049-anonymous/kfftdirection_forward",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/kernel/1645049-anonymous/kfftdirection_forward"
+    },
+    "doc://com.apple.documentation/documentation/kernel/1645049-anonymous/kfftdirection_inverse": {
+      "title": "kFFTDirection_Inverse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/kernel/1645049-anonymous/kfftdirection_inverse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/kernel/1645049-anonymous/kfftdirection_inverse"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/fftsetup": {
+      "title": "FFTSetup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/fftsetup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/fftsetup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/dspsplitcomplex": {
+      "title": "DSPSplitComplex",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/dspsplitcomplex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/dspsplitcomplex"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_stride": {
+      "title": "vDSP_Stride",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_stride",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_stride"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_length": {
+      "title": "vDSP_Length",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_length",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_length"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/fftdirection": {
+      "title": "FFTDirection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/fftdirection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/fftdirection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450812-vdsp_fft_zopt": {
+      "title": "vDSP_fft_zopt",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450812-vdsp_fft_zopt",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450812-vdsp_fft_zopt",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Computes a forward or inverse out-of-place, single-precision complex FFT using a temporary buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450447-vdsp_fft_zoptd": {
+      "title": "vDSP_fft_zoptD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450447-vdsp_fft_zoptd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450447-vdsp_fft_zoptd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Computes a forward or inverse out-of-place, double-precision complex FFT using a temporary buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/1450447-vdsp_fft_zoptd"
+      ],
+      "title": "Out-of-Place FFT Functions with Temporary Buffer",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "vDSP_fft_zopt"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@FFTSetup",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/fftsetup",
+              "text": "FFTSetup"
+            },
+            {
+              "kind": "text",
+              "text": " __Setup, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@DSPSplitComplex",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/dspsplitcomplex",
+              "text": "DSPSplitComplex"
+            },
+            {
+              "kind": "text",
+              "text": " *__A, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vDSP_Stride",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_stride",
+              "text": "vDSP_Stride"
+            },
+            {
+              "kind": "text",
+              "text": " __IA, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@DSPSplitComplex",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/dspsplitcomplex",
+              "text": "DSPSplitComplex"
+            },
+            {
+              "kind": "text",
+              "text": " *__C, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vDSP_Stride",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_stride",
+              "text": "vDSP_Stride"
+            },
+            {
+              "kind": "text",
+              "text": " __IC, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@DSPSplitComplex",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/dspsplitcomplex",
+              "text": "DSPSplitComplex"
+            },
+            {
+              "kind": "text",
+              "text": " *__Buffer, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vDSP_Length",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_length",
+              "text": "vDSP_Length"
+            },
+            {
+              "kind": "text",
+              "text": " __Log2N, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@FFTDirection",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/fftdirection",
+              "text": "FFTDirection"
+            },
+            {
+              "kind": "text",
+              "text": " __Direction);"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "__Setup",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The FFT setup structure for this transform. The setup’s structure "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "Log2N"
+                },
+                {
+                  "type": "text",
+                  "text": " must be greater than or equal to this function’s "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "Log2N"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__A",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A pointer to the input data."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__IA",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The stride between the elements in "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "A"
+                },
+                {
+                  "type": "text",
+                  "text": ", set to 1 for best performance."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__C",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A pointer to the output data."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__IC",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The stride between the elements in "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "C"
+                },
+                {
+                  "type": "text",
+                  "text": ", set to 1 for best performance."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__Buffer",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A temporary vector that the operation uses for storing interim results. The real and imaginary parts of the buffer must both contain the lesser of "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "2"
+                },
+                {
+                  "type": "superscript",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Log2N"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": " elements or 16,384 bytes. For best performance, the buffer addresses must be 16-byte aligned or better."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__Log2N",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The base 2 exponent of the number of elements to process. For example, to process 1024 elements, specify 10 for parameter "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "Log2N"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__Direction",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A flag that specifies the transform direction. Pass "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/kernel/1645049-anonymous/kfftdirection_forward"
+                },
+                {
+                  "type": "text",
+                  "text": " to transform from the time domain to the frequency domain. Pass "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/kernel/1645049-anonymous/kfftdirection_inverse"
+                },
+                {
+                  "type": "text",
+                  "text": " to transform from the frequency domain to the time domain."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

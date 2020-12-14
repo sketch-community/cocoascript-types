@@ -1725,7 +1725,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/spritekit/skmutabletexture/1397883-initwithsize
     initWithSize(size: cocoascript.CGSize):cocoascript.SKMutableTexture;
     // doc://com.apple.documentation/documentation/spritekit/skmutabletexture/1397881-modifypixeldatawithblock
-    modifyPixelDataWithBlock(block: cocoascript.size_t):void;
+    modifyPixelDataWithBlock(block: any):void;
     //
     alloc():cocoascript.SKMutableTexture;
     //
@@ -1895,9 +1895,9 @@ declare namespace cocoascript {
     scene(): cocoascript.SKScene;
     setScene(): void;
     // doc://com.apple.documentation/documentation/spritekit/skrenderer/2866073-renderwithviewport
-    renderWithViewport_commandBuffer_renderPassDescriptor(viewport: cocoascript.CGRect, commandBuffer: cocoascript.MTLCommandBuffer, renderPassDescriptor: cocoascript.MTLRenderPassDescriptor):void;
+    renderWithViewport_commandBuffer_renderPassDescriptor(viewport: cocoascript.CGRect, commandBuffer: any, renderPassDescriptor: any):void;
     // doc://com.apple.documentation/documentation/spritekit/skrenderer/2866083-renderwithviewport
-    renderWithViewport_renderCommandEncoder_renderPassDescriptor_commandQueue(viewport: cocoascript.CGRect, renderCommandEncoder: cocoascript.MTLRenderCommandEncoder, renderPassDescriptor: cocoascript.MTLRenderPassDescriptor, commandQueue: cocoascript.MTLCommandQueue):void;
+    renderWithViewport_renderCommandEncoder_renderPassDescriptor_commandQueue(viewport: cocoascript.CGRect, renderCommandEncoder: any, renderPassDescriptor: any, commandQueue: any):void;
     // doc://com.apple.documentation/documentation/spritekit/skrenderer/2866080-updateattime
     updateAtTime(currentTime: cocoascript.NSTimeInterval):void;
     // doc://com.apple.documentation/documentation/spritekit/skrenderer/2866074-ignoressiblingorder
@@ -2099,10 +2099,10 @@ declare namespace cocoascript {
     viewportSize(): cocoascript.CGSize;
     setViewportSize(): void;
     // doc://com.apple.documentation/documentation/spritekit/sk3dnode/1519834-scnscene
-    scnScene(): cocoascript.SCNScene;
+    scnScene(): any;
     setScnScene(): void;
     // doc://com.apple.documentation/documentation/spritekit/sk3dnode/1519786-pointofview
-    pointOfView(): cocoascript.SCNNode;
+    pointOfView(): any;
     setPointOfView(): void;
     // doc://com.apple.documentation/documentation/spritekit/sk3dnode/1519676-autoenablesdefaultlighting
     autoenablesDefaultLighting(): cocoascript.BOOL;
@@ -2117,7 +2117,7 @@ declare namespace cocoascript {
     sceneTime(): cocoascript.NSTimeInterval;
     setSceneTime(): void;
     // doc://com.apple.documentation/documentation/spritekit/sk3dnode/1519782-hittest
-    hitTest_options(point: cocoascript.CGPoint, options: cocoascript.SK3DNode):cocoascript.SCNHitTestResult;
+    hitTest_options(point: cocoascript.CGPoint, options: cocoascript.SK3DNode):any;
     // doc://com.apple.documentation/documentation/spritekit/sk3dnode/1520400-projectpoint
     projectPoint(point: cocoascript.vector_float3):cocoascript.vector_float3;
     // doc://com.apple.documentation/documentation/spritekit/sk3dnode/1520024-unprojectpoint
@@ -2144,5 +2144,5 @@ declare namespace cocoascript {
 }
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/spritekit/vector_float3
-  type vector_float3 = cocoascript.ext_vector_type;
+  type vector_float3 = any;
 }

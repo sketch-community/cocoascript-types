@@ -1,0 +1,1514 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Construct an audio player to play your custom audio data, and optionally take advantage of the advanced features of AirPlay 2."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3163407,
+  "kind": "article",
+  "metadata": {
+    "title": "Playing Custom Audio with Your Own Player",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "12.1",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.4",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection": {
+      "title": "Media Playback and Selection",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
+      "url": "/documentation/avfoundation/media_playback_and_selection",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionroutesharingpolicy/avaudiosessionroutesharingpolicylongform": {
+      "title": "AVAudioSessionRouteSharingPolicyLongForm",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionroutesharingpolicy/avaudiosessionroutesharingpolicylongform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosessionroutesharingpolicy/avaudiosessionroutesharingpolicylongform"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player#3559500": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player#3559500",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player#3559500"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player#3559503": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player#3559503",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player#3559503"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player#3559504": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player#3559504",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player#3559504"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player#3559505": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player#3559505",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player#3559505"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player#3559506": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player#3559506",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player#3559506"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player#3559510": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player#3559510",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player#3559510"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer": {
+      "title": "AVSampleBufferAudioRenderer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplebufferaudiorenderer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to decompress audio and play compressed or uncompressed audio."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer": {
+      "title": "AVSampleBufferRenderSynchronizer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplebufferrendersynchronizer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object used to synchronize multiple queued sample buffers to a single timeline."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosession": {
+      "title": "AVAudioSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosession"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player": {
+      "title": "Playing Custom Audio with Your Own Player",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/avfoundation/media_playback_and_selection/playing_custom_audio_with_your_own_player",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Construct an audio player to play your custom audio data, and optionally take advantage of the advanced features of AirPlay 2."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avqueuedsamplebufferrendering": {
+      "title": "AVQueuedSampleBufferRendering",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avqueuedsamplebufferrendering",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avqueuedsamplebufferrendering",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods you can implement to enqueue sample buffers for presentation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferdisplaylayer": {
+      "title": "AVSampleBufferDisplayLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferdisplaylayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsamplebufferdisplaylayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that displays compressed or uncompressed video frames."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/eba6a9f410/PlayingCustomAudioWithYourOwnPlayer.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/eba6a9f410/PlayingCustomAudioWithYourOwnPlayer.zip",
+      "checksum": "e7b5c714890fbe30b1031d694e71c032ed6189c5e0c89b0dcd5a988485030c7b925c13908d80db871aa9f6a1f313815b863d93348771c156c972fc7867529040",
+      "url": "https://docs-assets.developer.apple.com/published/eba6a9f410/PlayingCustomAudioWithYourOwnPlayer.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/eba6a9f410/PlayingCustomAudioWithYourOwnPlayer.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer",
+        "doc://com.apple.documentation/documentation/avfoundation/avqueuedsamplebufferrendering",
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferdisplaylayer",
+        "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer"
+      ],
+      "title": "Sample Buffer Rendering",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample code project builds a robust audio player from the ground up, using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferaudiorenderer"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizer"
+            },
+            {
+              "type": "text",
+              "text": " classes to manage enqueuing and playback of audio that you provide. The player uses a playlist of playable items, and allows the user to edit the contents of the playlist while playback is in progress."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The example app also uses "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession"
+            },
+            {
+              "type": "text",
+              "text": " to indicate that it plays long-form audio content — music, audiobooks, podcasts, or other content that a user will listen to over a substantial period of time. This allows the player to benefit from AirPlay 2. When the app plays to a compatible device such as HomePod, AirPlay 2 dramatically improves playback reliability and performance, and enables advanced features such as multiroom playback."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Specify Long-Form Audio",
+          "anchor": "3559515"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To use AirPlay 2 for playback to compatible output devices, configure your audio session with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionroutesharingpolicy/avaudiosessionroutesharingpolicylongform"
+            },
+            {
+              "type": "text",
+              "text": " route-sharing policy. Typically, you do this once when your app starts up:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "do {",
+            "    try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, policy: .longForm)",
+            "} catch {",
+            "    print(\"Failed to set audio session route sharing policy: \\(error)\")",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3559500",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": ".longForm"
+            },
+            {
+              "type": "text",
+              "text": " route-sharing policy is a hint to the system that your audio content is suitable for extended listening sessions. As a side effect, it also allows your audio to benefit from AirPlay 2 for extended buffering and improved responsiveness to commands."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can choose not to configure your audio as long form if your content is not intended to displace playback of long-form content from apps such as Apple Music, iTunes, or Podcasts."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "codeVoice",
+                  "code": ".longForm"
+                },
+                {
+                  "type": "text",
+                  "text": " is renamed to "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": ".longFormAudio"
+                },
+                {
+                  "type": "text",
+                  "text": " in iOS 13 and above."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Provide Audio Content",
+          "anchor": "3559516"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For your custom audio player, start by deciding how you want to identify content to the player. One way is to manage a playlist, a persistent list of playable items. Alternatively, use a temporary queue of items, a single item, or a continuous stream of audio that has no distinct identity as a separate item."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample app demonstrates the use of a playlist, each item representing a single music track. The player has public APIs that app code can use to manipulate the contents and order of the playlist, and start and stop playback. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SampleBufferPlayer"
+            },
+            {
+              "type": "text",
+              "text": " class implements these APIs."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Internally, your player should contain logic to enqueue buffers in advance of their scheduled playback time, and to handle transitions between items."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In this example project, a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SampleBufferSerializer"
+            },
+            {
+              "type": "text",
+              "text": " object provides the enqueuing logic, using "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SampleBufferItem"
+            },
+            {
+              "type": "text",
+              "text": " objects to wrap playable items and provide audio buffers on request. "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SampleBufferItem"
+            },
+            {
+              "type": "text",
+              "text": " objects use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SampleBufferSource"
+            },
+            {
+              "type": "text",
+              "text": " objects to provide the basic audio data."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "These classes are discussed in more detail in the following sections."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Manage Your Playlist",
+          "anchor": "3559517"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SampleBufferPlayer"
+            },
+            {
+              "type": "text",
+              "text": " to manage a playlist through a private "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Playlist"
+            },
+            {
+              "type": "text",
+              "text": " structure:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "private struct Playlist {",
+            "    ",
+            "    // Items in the playlist.",
+            "    var items: [SampleBufferItem] = []",
+            "    ",
+            "    // The current item index, or nil if the player is stopped.",
+            "    var currentIndex: Int?",
+            "    ",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3559503",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "currentItemIndex"
+            },
+            {
+              "type": "text",
+              "text": " member represents the current state of the player. It indicates which element of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "items"
+            },
+            {
+              "type": "text",
+              "text": " array is the currently playing item, and implies a corresponding player state."
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "currentItemIndex"
+                    },
+                    {
+                      "type": "text",
+                      "text": " is "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "nil"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", there is no current item, and the player is in a stopped state."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "currentItemIndex"
+                    },
+                    {
+                      "type": "text",
+                      "text": " is not "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "nil"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", it is a valid index into the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "items"
+                    },
+                    {
+                      "type": "text",
+                      "text": " array, and the player is in a playing or paused state."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A number of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SampleBufferPlayer"
+            },
+            {
+              "type": "text",
+              "text": " methods manage the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Playlist"
+            },
+            {
+              "type": "text",
+              "text": ". For example, you use an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "insertItem"
+            },
+            {
+              "type": "text",
+              "text": " method to insert an item into the queue:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func insertItem(_ newItem: PlaylistItem, at index: Int) {",
+            "    ",
+            "    playbackSerializer.printLog(component: .player, message: \"inserting item at playlist#\\(index)\")",
+            "    atomicitySemaphore.wait()",
+            "    defer { atomicitySemaphore.signal() }",
+            "",
+            "    playlist.items.insert(playbackSerializer.sampleBufferItem(playlistItem: newItem, fromOffset: .zero), at: index)",
+            "    ",
+            "    // Adjust the current index, if necessary.",
+            "    if let currentIndex = playlist.currentIndex, index <= currentIndex {",
+            "        playlist.currentIndex = currentIndex + 1",
+            "    }",
+            "",
+            "    // Let the current item continue playing.",
+            "    continueWithCurrentItems()",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3559504",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "All methods of  "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "SampleBufferPlayer"
+                },
+                {
+                  "type": "text",
+                  "text": " that modify the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "Playlist"
+                },
+                {
+                  "type": "text",
+                  "text": " must do so in a thread-safe manner. In this example implementation, a "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "DispatchSemaphore"
+                },
+                {
+                  "type": "text",
+                  "text": " guarantees that only one method modifies the state at a time. Such methods issue a semaphore "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "wait"
+                },
+                {
+                  "type": "text",
+                  "text": " on entry, then use a "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "defer"
+                },
+                {
+                  "type": "text",
+                  "text": " statement to guarantee a matching semaphore "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "signal"
+                },
+                {
+                  "type": "text",
+                  "text": " on exit."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In general, all of the public methods of  "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SampleBufferPlayer"
+            },
+            {
+              "type": "text",
+              "text": " end up invoking one of these helper methods: "
+            },
+            {
+              "type": "codeVoice",
+              "code": "restartWithItems(fromIndex:atOffset:)"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "continueWithCurrentItems()"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "restartWithItems(fromIndex:atOffset:)"
+            },
+            {
+              "type": "text",
+              "text": " method forces playback of the currently playing item (if any) to stop before playback restarts with a new list of items:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "private func restartWithItems(fromIndex proposedIndex: Int?, atOffset offset: CMTime) {",
+            "    ",
+            "    // Stop the player if there is no current item.",
+            "    guard let currentIndex = proposedIndex,",
+            "        (0 ..< playlist.items.count).contains(currentIndex) else { stopCurrentItems(); return }",
+            "    ",
+            "    // Start playing the requested items.",
+            "    playlist.currentIndex = currentIndex",
+            "    let playbackItems = Array(playlist.items [currentIndex ..< playlist.items.count])",
+            "    ",
+            "    playbackSerializer.restartQueue(with: playbackItems, atOffset: offset)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3559505",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "continueWithCurrentItems()"
+            },
+            {
+              "type": "text",
+              "text": " method allows the currently playing item to continue to play, followed by a new list of items that will play after the current item finishes:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "private func continueWithCurrentItems() {",
+            "",
+            "    // Stop the player if there's actually nothing to play.",
+            "    guard let currentIndex = playlist.currentIndex else { stopCurrentItems(); return }",
+            "",
+            "    // Continue playing with a list of items to play starting from the current item.",
+            "    let playbackItems = Array(playlist.items [currentIndex ..< playlist.items.count])",
+            "    ",
+            "    playbackSerializer.continueQueue(with: playbackItems)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3559506",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Both methods begin by checking that the player state isn’t “stopped.” They then construct a queue of items to play — which may consist of fewer items than the entire playlist — and pass the queue to a corresponding method in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SampleBufferSerializer"
+            },
+            {
+              "type": "text",
+              "text": " class. This transfer of control takes place on a serial "
+            },
+            {
+              "type": "codeVoice",
+              "code": "DispatchQueue"
+            },
+            {
+              "type": "text",
+              "text": ", so that the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SampleBufferSerializer"
+            },
+            {
+              "type": "text",
+              "text": " object handles one action at a time."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Schedule Playback",
+          "anchor": "3559518"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Once the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SampleBufferSerializer"
+            },
+            {
+              "type": "text",
+              "text": " object receives a queue of items to play, it proceeds with the dual tasks of translating the items into a sequence of sample buffers containing audio data, and enqueuing the buffers for rendering. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SampleBufferSerializer"
+            },
+            {
+              "type": "text",
+              "text": " causes an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVSampleBufferRenderSynchronizer"
+            },
+            {
+              "type": "text",
+              "text": " object to play audio at the correct time, and an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVSampleBufferAudioRenderer"
+            },
+            {
+              "type": "text",
+              "text": " object to render enqueued audio sample buffers in time for playback."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "codeVoice",
+                  "code": "SampleBufferSerializer"
+                },
+                {
+                  "type": "text",
+                  "text": " invokes all of its internal methods via a serial "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "DispatchQueue"
+                },
+                {
+                  "type": "text",
+                  "text": ". This ensures that changes to instance properties during each method invocation are thread-safe."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The most important "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SampleBufferSerializer"
+            },
+            {
+              "type": "text",
+              "text": " methods are the two methods it uses to accept control from the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SampleBufferPlayer"
+            },
+            {
+              "type": "text",
+              "text": " object: "
+            },
+            {
+              "type": "codeVoice",
+              "code": "restartPlayback(with:atOffset:)"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "continuePlayback(with:)"
+            },
+            {
+              "type": "text",
+              "text": ". Both methods take, as their first parameter, a queue of items to play in order. The methods differ in the way they handle the item that was previously playing, if any."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "restartPlayback(with:atOffset:)"
+            },
+            {
+              "type": "text",
+              "text": " method stops any current playback, which means that the audio renderer can simply flush all enqueued buffers, and restart enqueuing from the first provided item."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "By contrast, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "continuePlayback(with:)"
+            },
+            {
+              "type": "text",
+              "text": " attempts to let the current playback continue, and allow enqueued buffers to remain enqueued, as far as possible. It does this by examining its new list of items, and finding items that match items that have already been scheduled. It can then do a partial flush of the audio renderer, starting from the playback time of the first nonmatching item, and resume enqueuing sample buffers from that point."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The time-based partial flush uses asynchronous API with a completion handler. Upon completion, enqueuing actually restarts in an additional method, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "finishContinuePlayback(with:didFlush:)"
+            },
+            {
+              "type": "text",
+              "text": ". This division into a pair of methods is an implementation detail."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Enqueue Buffers",
+          "anchor": "3559519"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As it converts its list of items into a sequence of sample buffers, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SampleBufferSerializer"
+            },
+            {
+              "type": "text",
+              "text": " must enqueue the buffers to an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVSampleBufferAudioRenderer"
+            },
+            {
+              "type": "text",
+              "text": " object. Control of enqueuing relies on the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "requestMediaDataWhenReady(on:using:)"
+            },
+            {
+              "type": "text",
+              "text": " method of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVSampleBufferAudioRenderer"
+            },
+            {
+              "type": "text",
+              "text": ", which takes a closure parameter that the renderer invokes whenever it is ready for more sample buffers."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For a single playlist item, the sequence of events is straightforward, but when there are multiple playlist items, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SampleBufferSerializer"
+            },
+            {
+              "type": "text",
+              "text": " may need to enqueue sample buffers from a second (or subsequent) item before the first item finishes playing. That means, usually, that enqueuing of sample buffers takes place well in advance of the playback time of those buffers. This happens as follows:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The serializer queues sample buffers as early as possible, when requested by the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "AVSampleBufferAudioRenderer"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "After enqueuing the last sample buffer of a playlist item, the serializer places a boundary observer on the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "AVSampleBufferRenderSynchronizer"
+                    },
+                    {
+                      "type": "text",
+                      "text": " timeline, at the expected ending playback time of that item."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "When the boundary observer fires, playback of that item is complete. The serializer discards the item, removes the boundary observer, updates the current item in the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "SampleBufferPlayer"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", and generates a notification that is used to update the current item display in the UI. It also places a periodic observer on the timeline, which fires every 0.1 seconds, to generate future timing notifications for updating the playback time display in the UI."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "This process of placing boundary observers, and removing them when they fire, repeats as each item finishes enqueuing its buffers."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the implementation, the important methods are "
+            },
+            {
+              "type": "codeVoice",
+              "code": "provideMoreMediaData()"
+            },
+            {
+              "type": "text",
+              "text": ", which enqueues sample buffers and places boundary observers, and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "updateCurrentPlayerItem(at:)"
+            },
+            {
+              "type": "text",
+              "text": ", which the boundary observer invokes to handle the transition between items."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Retrieve Sample Buffers",
+          "anchor": "3559520"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SampleBufferItem"
+            },
+            {
+              "type": "text",
+              "text": " object provides the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SampleBufferSerializer"
+            },
+            {
+              "type": "text",
+              "text": " with a sequence of audio sample buffers for a playback item:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Try to read from a sample buffer source.",
+            "let source = sampleBufferSource!",
+            "let sampleBuffer = try source.nextSampleBuffer()",
+            "",
+            "// Keep track of the actual duration of this source.",
+            "endOffset = source.nextSampleOffset",
+            "",
+            "return sampleBuffer"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3559510",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SampleBufferItem"
+            },
+            {
+              "type": "text",
+              "text": " object also manages state associated with the playback item. This includes a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "uniqueID"
+            },
+            {
+              "type": "text",
+              "text": " property that identifies the item uniquely within the playlist, even when items share the same underlying "
+            },
+            {
+              "type": "codeVoice",
+              "code": "PlaylistItem"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "It also includes an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "endOffset"
+            },
+            {
+              "type": "text",
+              "text": " property, which is the time — relative to the start of the item — when playback of buffers enqueued so far will end. This value is important for determining the placement of the boundary observers described in the previous section, on the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVSampleBufferRenderSynchronizer"
+            },
+            {
+              "type": "text",
+              "text": " timeline."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SampleBufferItem"
+            },
+            {
+              "type": "text",
+              "text": " object keeps a reference to the source of its audio data while the data is being enqueued. The audio data source is represented by a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SampleBufferSource"
+            },
+            {
+              "type": "text",
+              "text": ", which is an object that you customize for your audio data."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As soon as all data for the item is enqueued, the item can discard its data source object, allowing the system to reclaim its resources (files and memory, for example)."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Provide Your Data Source",
+          "anchor": "3559521"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Ultimately, you will need to provide custom data source code to fetch your custom audio data and package it into "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CMSampleBuffer"
+            },
+            {
+              "type": "text",
+              "text": " objects that can be passed to the audio renderer."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In this example project, a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SampleBufferSource"
+            },
+            {
+              "type": "text",
+              "text": " object serves as the data source. It simply reads data from an audio file stored within the app bundle."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The class also contains helper methods that convert an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVAudioBuffer"
+            },
+            {
+              "type": "text",
+              "text": " to a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CMSampleBuffer"
+            },
+            {
+              "type": "text",
+              "text": ", which is the required type for data passed to the audio renderer."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure Logging",
+          "anchor": "3559522"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The player and serializer implementations contain detailed, formatted logging of their actions. The logging output can be crucial to understanding the behavior of the code during development and testing."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "By default, logging suppresses messages about the enqueuing of specific sample buffers, to avoid flooding the console. If desired, you can enable those messages by setting "
+            },
+            {
+              "type": "codeVoice",
+              "code": "shouldLogEnqueuerMessages"
+            },
+            {
+              "type": "text",
+              "text": " to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "true"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

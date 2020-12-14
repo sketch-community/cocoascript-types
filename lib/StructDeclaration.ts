@@ -25,7 +25,7 @@ export class StructDeclaration {
     const code = new CodeGenerator();
     code.namespace(() => {
       code.interface(this.name);
-    });
+    }).appendLine();
     return code.toString();
   }
 }

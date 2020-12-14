@@ -1,0 +1,1562 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "The physics simulation attributes attached to a scene graph node. "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/scenekit",
+        "doc://com.apple.documentation/documentation/scenekit/physics_simulation"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1514759,
+  "kind": "symbol",
+  "metadata": {
+    "title": "SCNPhysicsBody",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "SceneKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "8.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.10",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.1",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)SCNPhysicsBody",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/scenekit/scnphysicsbody"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/scenekit/scnphysicsbody"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/scenekit": {
+      "title": "SceneKit",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit",
+      "url": "/documentation/scenekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/physics_simulation": {
+      "title": "Physics Simulation",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/physics_simulation",
+      "url": "/documentation/scenekit/physics_simulation",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody": {
+      "title": "SCNPhysicsBody",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The physics simulation attributes attached to a scene graph node. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514787-type": {
+      "title": "type",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514787-type",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514787-type",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A constant that determines how the physics body responds to forces and collisions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514789-physicsshape": {
+      "title": "physicsShape",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514789-physicsshape",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514789-physicsshape",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that defines the solid volume of the physics body for use in collision detection."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsshape": {
+      "title": "SCNPhysicsShape",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsshape",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsshape",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstraction of a physics body’s solid volume for tuning collision detection."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514776-kinematicbody": {
+      "title": "kinematicBody",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514776-kinematicbody",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514776-kinematicbody",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a physics body that is unaffected by forces or collisions but that can cause collisions affecting other bodies when moved."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "kinematicBody"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody#1654996": {
+      "title": "Defining How Forces Affect a Physics Body",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody#1654996",
+      "kind": "article",
+      "role": "task",
+      "url": "/documentation/scenekit/scnphysicsbody#1654996"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514768-categorybitmask": {
+      "title": "categoryBitMask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514768-categorybitmask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514768-categorybitmask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mask that defines which categories this physics body belongs to."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514772-collisionbitmask": {
+      "title": "collisionBitMask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514772-collisionbitmask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514772-collisionbitmask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mask that defines which categories of physics bodies can collide with this physics body."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicscollisioncategory": {
+      "title": "SCNPhysicsCollisionCategory",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicscollisioncategory",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicscollisioncategory",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Default values for a physics body’s "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514768-categorybitmask"
+        },
+        {
+          "type": "text",
+          "text": " and "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514772-collisionbitmask"
+        },
+        {
+          "type": "text",
+          "text": " properties."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514746-contacttestbitmask": {
+      "title": "contactTestBitMask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514746-contacttestbitmask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514746-contacttestbitmask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mask that defines which categories of bodies cause intersection notifications with this physics body."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicscontactdelegate": {
+      "title": "SCNPhysicsContactDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicscontactdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicscontactdelegate"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield": {
+      "title": "SCNPhysicsField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfield"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbehavior": {
+      "title": "SCNPhysicsBehavior",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbehavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbehavior"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnscene/1522643-physicsworld": {
+      "title": "physicsWorld",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscene/1522643-physicsworld",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnscene/1522643-physicsworld"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsworld": {
+      "title": "SCNPhysicsWorld",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsworld",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsworld"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnscenerendererdelegate": {
+      "title": "SCNSceneRendererDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscenerendererdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnscenerendererdelegate"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode": {
+      "title": "SCNNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1408030-presentationnode": {
+      "title": "presentationNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408030-presentationnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1408030-presentationnode"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407964-transform": {
+      "title": "transform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407964-transform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407964-transform"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1408026-position": {
+      "title": "position",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408026-position",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1408026-position"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1408034-rotation": {
+      "title": "rotation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408034-rotation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1408034-rotation"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody#2168209": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody#2168209",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/scenekit/scnphysicsbody#2168209"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407988-physicsbody": {
+      "title": "physicsBody",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407988-physicsbody",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407988-physicsbody"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nssecurecoding": {
+      "title": "NSSecureCoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nssecurecoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nssecurecoding"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscopying": {
+      "title": "NSCopying",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscopying",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscopying"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514797-bodywithtype": {
+      "title": "bodyWithType:shape:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514797-bodywithtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514797-bodywithtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a physics body with the specified type and shape."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "bodyWithType:shape:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514791-staticbody": {
+      "title": "staticBody",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514791-staticbody",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514791-staticbody",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a physics body that is unaffected by forces or collisions and that cannot move."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "staticBody"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514766-dynamicbody": {
+      "title": "dynamicBody",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514766-dynamicbody",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514766-dynamicbody",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a physics body that can be affected by forces and collisions."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "dynamicBody"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbodytype": {
+      "title": "SCNPhysicsBodyType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbodytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbodytype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that determine how a physics body interacts with forces and other bodies, used by the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514787-type"
+        },
+        {
+          "type": "text",
+          "text": " property and when creating a physics body."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514753-velocityfactor": {
+      "title": "velocityFactor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514753-velocityfactor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514753-velocityfactor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A multiplier affecting how SceneKit applies translations computed by the physics simulation to the node containing the physics body."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514748-angularvelocityfactor": {
+      "title": "angularVelocityFactor",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514748-angularvelocityfactor",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514748-angularvelocityfactor",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A multiplier affecting how SceneKit applies rotations computed by the physics simulation to the node containing the physics body."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514738-affectedbygravity": {
+      "title": "affectedByGravity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514738-affectedbygravity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514738-affectedbygravity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines whether the constant gravity of a scene accelerates the body."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514755-mass": {
+      "title": "mass",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514755-mass",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514755-mass",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The mass of the body, in kilograms."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514786-charge": {
+      "title": "charge",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514786-charge",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514786-charge",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The electric charge of the body, in coulombs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514794-friction": {
+      "title": "friction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514794-friction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514794-friction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The body’s resistance to sliding motion."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514737-rollingfriction": {
+      "title": "rollingFriction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514737-rollingfriction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514737-rollingfriction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The body’s resistance to rolling motion."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514740-restitution": {
+      "title": "restitution",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514740-restitution",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514740-restitution",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A factor that determines how much kinetic energy the body loses or gains in collisions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514763-damping": {
+      "title": "damping",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514763-damping",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514763-damping",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A factor that reduces the body’s linear velocity."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514792-angulardamping": {
+      "title": "angularDamping",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514792-angulardamping",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514792-angulardamping",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A factor that reduces the body’s angular velocity."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514777-momentofinertia": {
+      "title": "momentOfInertia",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514777-momentofinertia",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514777-momentofinertia",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The body’s moment of inertia, expressed in the local coordinate system of the node that contains the body."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514761-usesdefaultmomentofinertia": {
+      "title": "usesDefaultMomentOfInertia",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514761-usesdefaultmomentofinertia",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514761-usesdefaultmomentofinertia",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines whether SceneKit automatically calculates the body’s moment of inertia or allows setting a custom value."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/3013742-centerofmassoffset": {
+      "title": "centerOfMassOffset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/3013742-centerofmassoffset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/3013742-centerofmassoffset",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The position of the body’s center of mass relative to its local coordinate origin."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/3013743-continuouscollisiondetectionthre": {
+      "title": "continuousCollisionDetectionThreshold",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/3013743-continuouscollisiondetectionthre",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/3013743-continuouscollisiondetectionthre",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The minimum distance the body must travel for SceneKit to apply a more precise (but more costly) algorithm to detect contacts with other bodies."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514801-applyforce": {
+      "title": "applyForce:impulse:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514801-applyforce",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514801-applyforce",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Applies a force or impulse to the body at its center of mass."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "applyForce:impulse:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514750-applyforce": {
+      "title": "applyForce:atPosition:impulse:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514750-applyforce",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514750-applyforce",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Applies a force or impulse to the body at a specific point."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "applyForce:atPosition:impulse:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514752-applytorque": {
+      "title": "applyTorque:impulse:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514752-applytorque",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514752-applytorque",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Applies a net torque or a change in angular momentum to the body."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "applyTorque:impulse:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514735-clearallforces": {
+      "title": "clearAllForces",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514735-clearallforces",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514735-clearallforces",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Cancels all continuous forces and torques acting on the physics body during the current simulation step."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "clearAllForces"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514757-velocity": {
+      "title": "velocity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514757-velocity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514757-velocity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A vector describing both the current speed (in meters per second) and direction of motion of the physics body."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514770-angularvelocity": {
+      "title": "angularVelocity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514770-angularvelocity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514770-angularvelocity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A vector describing both the current rotation axis and rotational speed (in radians per second) of the physics body."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514795-isresting": {
+      "title": "isResting",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514795-isresting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514795-isresting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the physics body is at rest."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514742-allowsresting": {
+      "title": "allowsResting",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514742-allowsresting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514742-allowsresting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that specifies whether SceneKit can automatically mark the physics body at rest."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/3013745-setresting": {
+      "title": "setResting:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/3013745-setresting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/3013745-setresting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Tells SceneKit whether to treat the body as currently being in motion."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setResting:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514782-resettransform": {
+      "title": "resetTransform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514782-resettransform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/1514782-resettransform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Updates the position and orientation of a body in the physics simulation to match that of the node to which the body is attached."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "resetTransform"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/3022237-angularrestingthreshold": {
+      "title": "angularRestingThreshold",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/3022237-angularrestingthreshold",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/3022237-angularrestingthreshold"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/3022238-linearrestingthreshold": {
+      "title": "linearRestingThreshold",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/3022238-linearrestingthreshold",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody/3022238-linearrestingthreshold"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscopying",
+        "doc://com.apple.documentation/documentation/foundation/nssecurecoding"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating Physics Bodies",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514797-bodywithtype",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514791-staticbody",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514766-dynamicbody",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514776-kinematicbody"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Defining How Forces Affect a Physics Body",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514789-physicsshape",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514787-type",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbodytype",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514753-velocityfactor",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514748-angularvelocityfactor",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514738-affectedbygravity"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Defining a Body’s Physical Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514755-mass",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514786-charge",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514794-friction",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514737-rollingfriction",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514740-restitution",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514763-damping",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514792-angulardamping",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514777-momentofinertia",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514761-usesdefaultmomentofinertia",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/3013742-centerofmassoffset"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Working with Contacts and Collisions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514768-categorybitmask",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514746-contacttestbitmask",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514772-collisionbitmask",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicscollisioncategory",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/3013743-continuouscollisiondetectionthre"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Applying Forces, Impulses, and Torques",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514801-applyforce",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514750-applyforce",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514752-applytorque",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514735-clearallforces"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Interacting with Bodies in Motion",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514757-velocity",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514770-angularvelocity"
+      ],
+      "abstract": []
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Defining When a Body Can Move",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514795-isresting",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514742-allowsresting",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/3013745-setresting"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Synchronizing a Physics Body with its Node",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514782-resettransform"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Instance Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/3022237-angularrestingthreshold",
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/3022238-linearrestingthreshold"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnphysicsshape"
+      ],
+      "title": "Physics Bodies",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "SCNPhysicsBody"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When SceneKit prepares to render a new frame, it performs physics calculations on physics bodies attached to nodes in the scene. These calculations include gravity, friction, and collisions with other bodies. You can also apply your own forces and impulses to a body. After SceneKit completes these calculations, it updates the positions and orientations of the node objects before rendering the frame."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To add physics to a node, create and configure an "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody"
+            },
+            {
+              "type": "text",
+              "text": " object and then assign it to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407988-physicsbody"
+            },
+            {
+              "type": "text",
+              "text": " property of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode"
+            },
+            {
+              "type": "text",
+              "text": " object. A physics body must be associated with a node object before you apply forces or impulses to it."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "A Body’s Physical Characteristics",
+          "anchor": "1654903"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody"
+            },
+            {
+              "type": "text",
+              "text": " class defines the physical characteristics for the body when it is simulated by the scene. Three properties are most important for physics simulation:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514787-type"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property, which determines how the body interacts with forces and other bodies in the simulation. "
+                    },
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Static"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " bodies are unaffected by forces and collisions and cannot move. "
+                    },
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Dynamic"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " bodies are affected by forces and collisions with other body types. "
+                    },
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Kinematic"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " bodies are not affected by forces or collisions, but by moving them directly you can cause collisions that affect dynamic bodies."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514789-physicsshape"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property, which defines the three-dimensional form of the body for collision detection purposes. Physics simulations run faster when using simple shapes instead of the fine detail of a node’s visible geometry. Typically, you set a body’s physics shape to a bounding box, sphere, or primitive shape that roughly matches its node’s visible content. For details on creating physics shapes, see "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsshape"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514776-kinematicbody"
+                    },
+                    {
+                      "type": "text",
+                      "text": " property. Applying a force or torque to a dynamic body results in an acceleration (or angular acceleration) proportional to its mass."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "All values in SceneKit’s physics simulation use the International System of Units (SI): The unit of mass is the kilogram; the units of force, impulse, and torque are the newton, newton-second, and newton-meter; and the unit of distance for node positions and sizes is the meter. Note that you need not attempt to provide realistic values for physical quantities—use whatever values produce the behavior or gameplay you’re looking for."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For a dynamic body, you can control how the body is affected by forces or collisions. See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody#1654996"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Defining a Body’s Category and Collisions",
+          "anchor": "1654913"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you design a game that uses physics, you define the different categories of physics objects that appear in the scene. You define different categories of physics bodies for the behaviors your want for your app. A body can be assigned to as many of these categories as you want. In addition to declaring its own categories, a physics body also declares which categories of bodies it interacts with."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514768-categorybitmask"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514772-collisionbitmask"
+            },
+            {
+              "type": "text",
+              "text": " properties to define an object’s collision behavior. The constants listed in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicscollisioncategory"
+            },
+            {
+              "type": "text",
+              "text": " provide default values for these properties. In addition, with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody/1514746-contacttestbitmask"
+            },
+            {
+              "type": "text",
+              "text": " property you can define interactions where a pair of bodies generates contact messages (see the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicscontactdelegate"
+            },
+            {
+              "type": "text",
+              "text": " protocol) without the bodies being affected by the collision."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Related Physics Classes",
+          "anchor": "1654934"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Physics fields create forces that affect all bodies in an area, such as vortices and gravitational attraction. For details and a list of available field types, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can add higher-level behaviors that control interactions between multiple bodies, such as joints and wheeled vehicles. For details and a list of available behaviors, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbehavior"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A scene’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscene/1522643-physicsworld"
+            },
+            {
+              "type": "text",
+              "text": " property holds an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsworld"
+            },
+            {
+              "type": "text",
+              "text": " object that manages physics characteristics that affect the entire scene."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Physics and the Rendering Loop",
+          "anchor": "1845029"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "SceneKit evaluates its physics simulation as part of the rendering loop described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscenerendererdelegate"
+            },
+            {
+              "type": "text",
+              "text": ". On each pass through this loop, SceneKit determines the state of all nodes with attached physics bodies, and simulates the effects of physics on those bodies for one time step—for example, by updating the position or rotation of a body based on its velocity and angular velocity. After simulating physics, SceneKit applies the results of the physics simulation to the scene for display."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because you can animate SceneKit content not only through physics, but also through actions and implicitly and explicitly defined animations, SceneKit applies the results of physics simulation not to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode"
+            },
+            {
+              "type": "text",
+              "text": " objects in your scene, but to each node’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408030-presentationnode"
+            },
+            {
+              "type": "text",
+              "text": " object that represents its currently displayed state. As such, changing properties of a node that are affected by physics  requires special consideration."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you change the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407964-transform"
+            },
+            {
+              "type": "text",
+              "text": " value—or any of the other properties that are components of the transform, such as "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408026-position"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408034-rotation"
+            },
+            {
+              "type": "text",
+              "text": "—of a node affected by physics, SceneKit resets the physics simulation for that node. If you want to change only one component of the transform, while leaving the others at their physics-simulated values, copy the presentation node’s transform before making changes, as shown below:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Copy the presentation node's transform to the model node.",
+            "node.transform = node.presentationNode.transform;",
+            "// Change one component of the new transform",
+            "node.eulerAngles = SCNVector3Make(node.eulerAngles.x, node.eulerAngles.y, newRollValue);"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2168209",
+            "title": "Listing 1"
+          }
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,588 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Add the image and other data from a photo capture to the Photos library."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture",
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2958878,
+  "kind": "article",
+  "metadata": {
+    "title": "Saving Captured Photos",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture": {
+      "title": "Cameras and Media Capture",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture",
+      "url": "/documentation/avfoundation/cameras_and_media_capture",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos": {
+      "title": "Capturing Still and Live Photos",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "devLink-1695148": {
+      "identifier": "devLink-1695148",
+      "type": "link",
+      "title": "NSPhotoLibraryUsageDescription",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/plist/info/NSPhotoLibraryUsageDescription"
+    },
+    "doc://com.apple.documentation/documentation/photokit/phphotolibrary": {
+      "title": "PHPhotoLibrary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/photokit/phphotolibrary",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/photokit/phphotolibrary"
+    },
+    "doc://com.apple.documentation/documentation/photokit/phphotolibrary/1620736-requestauthorization": {
+      "title": "requestAuthorization:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/photokit/phphotolibrary/1620736-requestauthorization",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/photokit/phphotolibrary/1620736-requestauthorization",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "requestAuthorization:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos#2958882": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos#2958882",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos#2958882"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto": {
+      "title": "AVCapturePhoto",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephoto"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2873919-filedatarepresentation": {
+      "title": "fileDataRepresentation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2873919-filedatarepresentation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephoto/2873919-filedatarepresentation",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "fileDataRepresentation"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/photokit/phassetcreationrequest": {
+      "title": "PHAssetCreationRequest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/photokit/phassetcreationrequest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/photokit/phassetcreationrequest"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos#2958879": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos#2958879",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos#2958879"
+    },
+    "doc://com.apple.documentation/documentation/photokit/phphotolibrary/1620743-performchanges": {
+      "title": "performChanges:completionHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/photokit/phphotolibrary/1620743-performchanges",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/photokit/phphotolibrary/1620743-performchanges",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "performChanges:completionHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput": {
+      "title": "AVCapturePhotoOutput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotooutput"
+    },
+    "doc://com.apple.documentation/documentation/foundation/data": {
+      "title": "Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/data",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/data"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings": {
+      "title": "AVCapturePhotoSettings",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturephotosettings"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos": {
+      "title": "Saving Captured Photos",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/saving_captured_photos",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add the image and other data from a photo capture to the Photos library."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/tracking_photo_capture_progress": {
+      "title": "Tracking Photo Capture Progress",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/tracking_photo_capture_progress",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/tracking_photo_capture_progress",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Monitor key events during capture to provide feedback in your camera UI."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos": {
+      "title": "Capturing and Saving Live Photos",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Capture Live Photos like those created in the system Camera app and save them to the Photos library."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/tracking_photo_capture_progress",
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_still_and_live_photos/capturing_and_saving_live_photos"
+      ],
+      "title": "Next Steps",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you complete a photo capture with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotooutput"
+            },
+            {
+              "type": "text",
+              "text": ", you receive an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto"
+            },
+            {
+              "type": "text",
+              "text": " object that contains not only the still image data, but also camera metadata and any auxiliary images you requested in the capture (like thumbnails or depth maps). You can retrieve these types of data individually from the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto"
+            },
+            {
+              "type": "text",
+              "text": ", or simply call its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2873919-filedatarepresentation"
+            },
+            {
+              "type": "text",
+              "text": " method to get a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/data"
+            },
+            {
+              "type": "text",
+              "text": " object ready for writing to disk, using the codec and file format you requested for that photo in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephotosettings"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Typically, after capturing a photo you'll want to add that data to the user's Photos library; you can do so using the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Photos"
+            },
+            {
+              "type": "text",
+              "text": " framework."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Request Permission to Use the Photos Library",
+          "anchor": "2958880"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Just as iOS protects user privacy by requiring user permission to access cameras and microphones, the system also requires the user to grant your app access to the Photos library. To get permission for your app:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Configure your Info.plist file. Include the "
+                    },
+                    {
+                      "type": "link",
+                      "title": "NSPhotoLibraryUsageDescription",
+                      "destination": "https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/plist/info/NSPhotoLibraryUsageDescription"
+                    },
+                    {
+                      "type": "text",
+                      "text": " key in your app’s Info.plist file. The value for this key is a message to be displayed to the user in the system alert asking for Photos library access. Use this message to explain to the user why your app needs such access."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Verify or request authorization. Use the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/photokit/phphotolibrary"
+                    },
+                    {
+                      "type": "text",
+                      "text": " "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/photokit/phphotolibrary/1620736-requestauthorization"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method to ensure that iOS shows the alert asking for Photos library access at a time that’s appropriate for your app—for example, when the user first opens your app's camera feature. (Don't wait until after the user takes their first photo, as the permission alert interrupts their ability to take multiple photos.) "
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The code below shows a simple workflow for verifying access:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "PHPhotoLibrary.requestAuthorization { status in",
+            "    guard status == .authorized else { return }",
+            "    ",
+            "    // Use PHPhotoLibrary.shared().performChanges(...) to add assets.",
+            "}",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2958882",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use a Creation Request to Add a Photo Asset",
+          "anchor": "2958881"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturephoto/2873919-filedatarepresentation"
+            },
+            {
+              "type": "text",
+              "text": " method packages all image data, auxiliary image data, and metadata from the photo capture into a single data object ready for writing to disk. To add that data to the Photos library, use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/photokit/phphotolibrary"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/photokit/phassetcreationrequest"
+            },
+            {
+              "type": "text",
+              "text": " classes: "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {",
+            "    guard error == nil else { print(\"Error capturing photo: \\(error!)\"); return }",
+            "",
+            "    PHPhotoLibrary.requestAuthorization { status in",
+            "        guard status == .authorized else { return }",
+            "        ",
+            "        PHPhotoLibrary.shared().performChanges({",
+            "            // Add the captured photo's file data as the main resource for the Photos asset.",
+            "            let creationRequest = PHAssetCreationRequest.forAsset()",
+            "            creationRequest.addResource(with: .photo, data: photo.fileDataRepresentation()!, options: nil)",
+            "        }, completionHandler: self.handlePhotoLibraryError)",
+            "    }",
+            "}",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2958879",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/photokit/phphotolibrary/1620743-performchanges"
+                },
+                {
+                  "type": "text",
+                  "text": " block can make multiple changes to the Photos library in one atomic update. For example, you can add a newly created asset to an album. Or, if you perform a bracketed capture, you can accumulate multiple "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "didFinishProcessingPhoto"
+                },
+                {
+                  "type": "text",
+                  "text": " results and save them to the Photos library together. For details, see the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "Photos"
+                },
+                {
+                  "type": "text",
+                  "text": " documentation."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

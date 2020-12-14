@@ -1,0 +1,1171 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Operate selectively on the elements of a vector at regular intervals."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/controlling_vdsp_operations_with_stride",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3042181,
+  "kind": "article",
+  "metadata": {
+    "title": "Controlling vDSP Operations with Stride",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/controlling_vdsp_operations_with_stride",
+        "documentation/accelerate/vdsp/controlling_vdsp_operations_with_stride"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/controlling_vdsp_operations_with_stride",
+        "documentation/accelerate/vdsp/controlling_vdsp_operations_with_stride"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp": {
+      "title": "vDSP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vdsp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Perform basic arithmetic operations and common digital signal processing routines on large vectors."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450388-vdsp_ctoz": {
+      "title": "vDSP_ctoz",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450388-vdsp_ctoz",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450388-vdsp_ctoz"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450059-vdsp_ztoc": {
+      "title": "vDSP_ztoc",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450059-vdsp_ztoc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450059-vdsp_ztoc"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449798-vdsp_vadd": {
+      "title": "vDSP_vadd",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449798-vdsp_vadd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449798-vdsp_vadd"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/controlling_vdsp_operations_with_stride#3071836": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/controlling_vdsp_operations_with_stride#3071836",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/controlling_vdsp_operations_with_stride#3071836"
+    },
+    "link-media-3080000": {
+      "identifier": "link-media-3080000",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/controlling_vdsp_operations_with_stride#3080000"
+    },
+    "media-3080000": {
+      "identifier": "media-3080000",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 616,
+            "height": 139
+          },
+          "url": "https://docs-assets.developer.apple.com/published/9b7341241b/f8e01a16-1bb9-461b-8221-79f0a5b7d527.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 616,
+            "height": 139
+          },
+          "url": "https://docs-assets.developer.apple.com/published/915f6129c4/ff9ab6f0-de02-4609-bc79-9dd720d9734f.png"
+        }
+      ],
+      "alt": "A diagram how stride affects the operation of the vDSP_vadd function. There are three rows. The top row represents the first input, vector A, which has a stride of one. The second row represents the second input, vector B, which has a stride of one. The bottom row represents the output, vector C, which has a stride of one. The diagram has connecting lines from the input vectors to the output vector indicating the relationships between the inputs and output.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/controlling_vdsp_operations_with_stride#3071835": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/controlling_vdsp_operations_with_stride#3071835",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/controlling_vdsp_operations_with_stride#3071835"
+    },
+    "link-media-3178478": {
+      "identifier": "link-media-3178478",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/accelerate/controlling_vdsp_operations_with_stride#3178478"
+    },
+    "media-3178478": {
+      "identifier": "media-3178478",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 616,
+            "height": 185
+          },
+          "url": "https://docs-assets.developer.apple.com/published/69db570cad/3420e74d-d701-41d1-9b03-bb6db6b8cdf0.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 616,
+            "height": 185
+          },
+          "url": "https://docs-assets.developer.apple.com/published/1e463b41d7/2d0d31ee-1867-4492-a941-15a8637d7abe.png"
+        }
+      ],
+      "alt": "A diagram how stride affects the operation of the vDSP_vadd function. There are three rows. The top row represents the first input, vector A, which has a stride of one. The second row represents the second input, vector B, which has a stride of three. The bottom row represents the output, vector C, which has a stride of one. The diagram has connecting lines from the input vectors to the output vector indicating the relationships between the inputs and output.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/controlling_vdsp_operations_with_stride#3071808": {
+      "title": "Use a Non-Unit Stride on Inputs",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/controlling_vdsp_operations_with_stride#3071808",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/accelerate/controlling_vdsp_operations_with_stride#3071808"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/controlling_vdsp_operations_with_stride#3071809": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/controlling_vdsp_operations_with_stride#3071809",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/controlling_vdsp_operations_with_stride#3071809"
+    },
+    "link-media-3079999": {
+      "identifier": "link-media-3079999",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/accelerate/controlling_vdsp_operations_with_stride#3079999"
+    },
+    "media-3079999": {
+      "identifier": "media-3079999",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 616,
+            "height": 206
+          },
+          "url": "https://docs-assets.developer.apple.com/published/6089340e37/27161f8a-be4c-425f-a7c8-7b9acf5e4256.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 616,
+            "height": 206
+          },
+          "url": "https://docs-assets.developer.apple.com/published/5d61d08ea9/1032337c-2abf-4325-bee1-0f25b1f0bdcc.png"
+        }
+      ],
+      "alt": "A diagram how stride affects the operation of the vDSP_vadd function. There are three rows. The top row represents the first input, vector A, which has a stride of two. The second row represents the second input, vector B, which has a stride of one. The bottom row represents the output, vector C, which has a stride of three. The diagram has connecting lines from the input vectors to the output vector indicating the relationships between the inputs and output.",
+      "title": "Figure 3"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450516-vdsp_conv": {
+      "title": "vDSP_conv",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450516-vdsp_conv",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450516-vdsp_conv"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/controlling_vdsp_operations_with_stride#3071822": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/controlling_vdsp_operations_with_stride#3071822",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/controlling_vdsp_operations_with_stride#3071822"
+    },
+    "link-media-3080245": {
+      "identifier": "link-media-3080245",
+      "type": "link",
+      "title": "Figure 4",
+      "url": "/documentation/accelerate/controlling_vdsp_operations_with_stride#3080245"
+    },
+    "media-3080245": {
+      "identifier": "media-3080245",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 622,
+            "height": 307
+          },
+          "url": "https://docs-assets.developer.apple.com/published/b986af542e/6f8e145e-c820-4466-b80c-7167c833fc86.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 622,
+            "height": 307
+          },
+          "url": "https://docs-assets.developer.apple.com/published/51bac19e92/e790cacd-9aad-43d3-ba19-1b08f6674b3d.png"
+        }
+      ],
+      "alt": "A diagram how stride affects the operation of the vDSP_vadd function. There are three rows. The top row represents the first input, vector A, which has a stride of minus one. The second row represents the second input, vector B, which has a stride of one. The bottom row represents the output, vector C, which has a stride of one. The diagram has connecting lines from the input vectors to the output vector indicating the relationships between the inputs and output.",
+      "title": "Figure 4"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/dspsplitcomplex": {
+      "title": "DSPSplitComplex",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/dspsplitcomplex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/dspsplitcomplex"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/dspcomplex": {
+      "title": "DSPComplex",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/dspcomplex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/dspcomplex"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/controlling_vdsp_operations_with_stride#3178480": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/controlling_vdsp_operations_with_stride#3178480",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/controlling_vdsp_operations_with_stride#3178480"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/controlling_vdsp_operations_with_stride#3178479": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/controlling_vdsp_operations_with_stride#3178479",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/controlling_vdsp_operations_with_stride#3178479"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/controlling_vdsp_operations_with_stride": {
+      "title": "Controlling vDSP Operations with Stride",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/controlling_vdsp_operations_with_stride",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/controlling_vdsp_operations_with_stride",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Operate selectively on the elements of a vector at regular intervals."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points": {
+      "title": "Use Linear Interpolation to Construct New Data Points",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Fill the gaps in arrays of numerical data using linear interpolation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/using_vdsp_for_vector-based_arithmetic": {
+      "title": "Using vDSP for Vector-based Arithmetic",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/using_vdsp_for_vector-based_arithmetic",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/using_vdsp_for_vector-based_arithmetic",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Increase the performance of common mathematical tasks with vDSP vector-vector and vector-scalar operations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/resampling_a_signal_with_decimation": {
+      "title": "Resampling a Signal with Decimation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/resampling_a_signal_with_decimation",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/resampling_a_signal_with_decimation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reduce the sample rate of a signal, by specifying a decimation factor and applying a custom antialiasing filter."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points",
+        "doc://com.apple.documentation/documentation/accelerate/using_vdsp_for_vector-based_arithmetic",
+        "doc://com.apple.documentation/documentation/accelerate/resampling_a_signal_with_decimation",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp"
+      ],
+      "title": "Signal Processing Essentials",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Many functions in vDSP provide support for specifying a "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "stride"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " (that is, the distance between the elements that functions read from or write to) for a particular vector. For example, if you want to access consecutive elements, use a stride of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1"
+            },
+            {
+              "type": "text",
+              "text": " (referred to as a "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "unit stride"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "). If you want to access every third element, for example to work with the red channel in interleaved RGB data, use a stride of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "3"
+            },
+            {
+              "type": "text",
+              "text": ". If you want to access every second element, for example to work with a single audio channel in interleaved stereo audio data, use a stride of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "2"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Typically, you use a unit stride. However, when you're copying the contents of an interleaved complex vector using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1450388-vdsp_ctoz"
+            },
+            {
+              "type": "text",
+              "text": ", use a stride of 2. Use other strides to, for example, operate along a column of a matrix, where the stride is the number of elements per row."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use a Unit Stride for Best Performance",
+          "anchor": "3071805"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For most of the functions in vDSP, you'll obtain the best performance when the stride is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1"
+            },
+            {
+              "type": "text",
+              "text": ". Any other stride value generally prevents the use of vectorized code, greatly reducing both performance and energy efficiency."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The major exception to this limitation is in functions that support the use of interleaved complex data, such as "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1450388-vdsp_ctoz"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1450059-vdsp_ztoc"
+            },
+            {
+              "type": "text",
+              "text": ". In these, the stride should be "
+            },
+            {
+              "type": "codeVoice",
+              "code": "2"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Set the Stride for Each Vector Independently",
+          "anchor": "3071804"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following shows how you use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1449798-vdsp_vadd"
+            },
+            {
+              "type": "text",
+              "text": " to add each element in array "
+            },
+            {
+              "type": "codeVoice",
+              "code": "a"
+            },
+            {
+              "type": "text",
+              "text": " to the corresponding element in array "
+            },
+            {
+              "type": "codeVoice",
+              "code": "b"
+            },
+            {
+              "type": "text",
+              "text": ", and write the result to array "
+            },
+            {
+              "type": "codeVoice",
+              "code": "c"
+            },
+            {
+              "type": "text",
+              "text": ". Note that the stride used for each array is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let strideA = vDSP_Stride(1)",
+            "let strideB = vDSP_Stride(1)",
+            "let strideC = vDSP_Stride(1)",
+            "",
+            "let a: [Float] = [10, 20, 30, 40, 50, 60, 70, 80]",
+            "let b: [Float] = [ 1,  2,  3,  4,  5,  6,  7,  8]",
+            "",
+            "let n = vDSP_Length(a.count)",
+            "",
+            "var c = [Float](repeating: .nan,",
+            "                count: a.count)",
+            "",
+            "vDSP_vadd(a, strideA,",
+            "          b, strideB,",
+            "          &c, strideC,",
+            "          n)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3071836",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In this example, the result is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "[11.0, 22.0, 33.0, 44.0, 55.0, 66.0, 77.0, 88.0]"
+            },
+            {
+              "type": "text",
+              "text": ": "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3080000",
+              "metadata": {
+                "anchor": "3080000",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use a Non-Unit Stride on Inputs",
+          "anchor": "3071808"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A non-unit stride allows you to, for example, access a particular color channel in interleaved RGB data. If you change "
+            },
+            {
+              "type": "codeVoice",
+              "code": "strideB"
+            },
+            {
+              "type": "text",
+              "text": " to 3, the operation adds the first, fourth, and seventh items (representing the red channel if array "
+            },
+            {
+              "type": "codeVoice",
+              "code": "b"
+            },
+            {
+              "type": "text",
+              "text": " contains interleaved RGB values) from array "
+            },
+            {
+              "type": "codeVoice",
+              "code": "b"
+            },
+            {
+              "type": "text",
+              "text": " to the first, second, and third items in array "
+            },
+            {
+              "type": "codeVoice",
+              "code": "a"
+            },
+            {
+              "type": "text",
+              "text": ", respectively: "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let strideA = vDSP_Stride(1)",
+            "let strideB = vDSP_Stride(3)",
+            "let strideC = vDSP_Stride(1)",
+            "...",
+            "let n = vDSP_Length(3)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3071835",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3178478",
+              "metadata": {
+                "anchor": "3178478",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Note that vDSP operations will always read "
+            },
+            {
+              "type": "codeVoice",
+              "code": "n"
+            },
+            {
+              "type": "text",
+              "text": " elements. Therefore, your arrays require at least "
+            },
+            {
+              "type": "codeVoice",
+              "code": "(n - 1) * stride + 1"
+            },
+            {
+              "type": "text",
+              "text": " elements."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use a Non-Unit Stride on Output",
+          "anchor": "3071806"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you change array "
+            },
+            {
+              "type": "codeVoice",
+              "code": "c"
+            },
+            {
+              "type": "text",
+              "text": "'s stride to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "3"
+            },
+            {
+              "type": "text",
+              "text": ", the calculation writes the result to its first, fourth, and seventh items. Using the example of interleaved RGB data discussed in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/controlling_vdsp_operations_with_stride#3071808"
+            },
+            {
+              "type": "text",
+              "text": ", this approach would write the result of an operation to only the red channel. The following example defines the stride for the input array, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "a"
+            },
+            {
+              "type": "text",
+              "text": ",  as "
+            },
+            {
+              "type": "codeVoice",
+              "code": "2"
+            },
+            {
+              "type": "text",
+              "text": ", so the operation uses the first, third, and fifth elements: "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let strideA = vDSP_Stride(2)",
+            "let strideB = vDSP_Stride(1)",
+            "let strideC = vDSP_Stride(3)",
+            "...",
+            "let n = vDSP_Length(3)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3071809",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3079999",
+              "metadata": {
+                "anchor": "3079999",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use a Negative Stride",
+          "anchor": "3071807"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use a negative stride to access a vector in reverse order, for example, define the stride as "
+            },
+            {
+              "type": "codeVoice",
+              "code": "−1"
+            },
+            {
+              "type": "text",
+              "text": " when convolving with a filter using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1450516-vdsp_conv"
+            },
+            {
+              "type": "text",
+              "text": "). "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To use a negative stride, pass the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1449798-vdsp_vadd"
+            },
+            {
+              "type": "text",
+              "text": " function a pointer to the address of the last element in the array. The following shows the Swift code required to effectively reverse "
+            },
+            {
+              "type": "codeVoice",
+              "code": "a"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let strideA = vDSP_Stride(-1)",
+            "let strideB = vDSP_Stride(1)",
+            "let strideC = vDSP_Stride(1)",
+            "...",
+            "a.withUnsafeBufferPointer { buffer in",
+            "    vDSP_vadd(buffer.baseAddress! + buffer.count - 1, strideA,",
+            "              b, strideB,",
+            "              &c, strideC,",
+            "              n)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3071822",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The result of adding "
+            },
+            {
+              "type": "codeVoice",
+              "code": "a"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "b"
+            },
+            {
+              "type": "text",
+              "text": " with a stride of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "-1"
+            },
+            {
+              "type": "text",
+              "text": " for a is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "[81.0, 72.0, 63.0, 54.0, 45.0, 36.0, 27.0, 18.0]"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3080245",
+              "metadata": {
+                "anchor": "3080245",
+                "title": "Figure 4"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use a Stride of 2 for Interleaved Complex Data",
+          "anchor": "3071849"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With interleaved complex data, vDSP stores alternating real and imaginary components consecutively. Use a stride of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "2"
+            },
+            {
+              "type": "text",
+              "text": " for interleaved complex data, counting the individual component elements rather than counting complex numbers."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, use the following code to copy the contents of a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/dspsplitcomplex"
+            },
+            {
+              "type": "text",
+              "text": " structure to an array of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/dspcomplex"
+            },
+            {
+              "type": "text",
+              "text": " values:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var real: [Float] = [10, 20, 30, 40, 50, 60, 70, 80]",
+            "var imag: [Float] = [ 1,  2,  3,  4,  5,  6,  7,  8]",
+            "",
+            "let n = real.count",
+            "",
+            "var complex = [DSPComplex](repeating: DSPComplex(),",
+            "                           count: n)",
+            "",
+            "real.withUnsafeMutableBufferPointer { realPtr in",
+            "    imag.withUnsafeMutableBufferPointer { imagPtr in",
+            "        ",
+            "        var splitComplex = DSPSplitComplex(realp: realPtr.baseAddress!,",
+            "                                           imagp: imagPtr.baseAddress!)",
+            "        ",
+            "        let strideSplitComplex = vDSP_Stride(1)",
+            "        let strideComplex = vDSP_Stride(2)",
+            "        ",
+            "        vDSP_ztoc(&splitComplex, strideSplitComplex,",
+            "                  &complex, strideComplex,",
+            "                  vDSP_Length(n))",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3178480",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "complex"
+            },
+            {
+              "type": "text",
+              "text": " contains the pairs "
+            },
+            {
+              "type": "codeVoice",
+              "code": "[10.0 1.0], [20.0 2.0], [30.0 3.0] ... [80.0 8.0]"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Conversely, use the following code to copy the values of an array of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/dspcomplex"
+            },
+            {
+              "type": "text",
+              "text": " values to a "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/dspsplitcomplex"
+            },
+            {
+              "type": "text",
+              "text": " structure:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            " vDSP_ctoz(&complex, strideComplex,",
+            "           &splitComplex, strideSplitComplex,",
+            "           vDSP_Length(n))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3178479",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

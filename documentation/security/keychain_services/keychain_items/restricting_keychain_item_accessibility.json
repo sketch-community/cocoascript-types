@@ -1,0 +1,908 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Set the conditions under which an app can access a keychain item such as a password."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/keychain_services",
+        "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/keychain_services",
+        "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items",
+        "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/using_the_keychain_to_manage_user_secrets"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/restricting_keychain_item_accessibility",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2972445,
+  "kind": "article",
+  "metadata": {
+    "title": "Restricting Keychain Item Accessibility",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/keychain_services/keychain_items/restricting_keychain_item_accessibility",
+        "documentation/security/keychain_services/keychain_items/using_the_keychain_to_manage_user_secrets/restricting_keychain_item_accessibility"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/keychain_services/keychain_items/restricting_keychain_item_accessibility",
+        "documentation/security/keychain_services/keychain_items/using_the_keychain_to_manage_user_secrets/restricting_keychain_item_accessibility"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services": {
+      "title": "Keychain Services",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services",
+      "url": "/documentation/security/keychain_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items": {
+      "title": "Keychain Items",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items",
+      "url": "/documentation/security/keychain_services/keychain_items",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/using_the_keychain_to_manage_user_secrets": {
+      "title": "Using the Keychain to Manage User Secrets",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/using_the_keychain_to_manage_user_secrets",
+      "url": "/documentation/security/keychain_services/keychain_items/using_the_keychain_to_manage_user_secrets",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattraccessible": {
+      "title": "kSecAttrAccessible",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccessible",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattraccessible"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/adding_a_password_to_the_keychain": {
+      "title": "Adding a Password to the Keychain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/adding_a_password_to_the_keychain",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/keychain_services/keychain_items/adding_a_password_to_the_keychain"
+    },
+    "link-media-2982468": {
+      "identifier": "link-media-2982468",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/security/keychain_services/keychain_items/restricting_keychain_item_accessibility#2982468"
+    },
+    "media-2982468": {
+      "identifier": "media-2982468",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 432,
+            "height": 216
+          },
+          "url": "https://docs-assets.developer.apple.com/published/f2704434bf/5e0b5204-2777-4606-9360-99cd7258657c.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 432,
+            "height": 216
+          },
+          "url": "https://docs-assets.developer.apple.com/published/f3e8a395b7/8d491249-982f-49b1-a87b-23b175778012.png"
+        }
+      ],
+      "alt": "Block diagram showing the components of a keychain item, including both data and attributes, highlighting the accessibility attribute.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/item_attribute_keys_and_values#1679100": {
+      "title": "Accessibility Values",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/item_attribute_keys_and_values#1679100",
+      "kind": "article",
+      "role": "task",
+      "url": "/documentation/security/keychain_services/keychain_items/item_attribute_keys_and_values#1679100"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/restricting_keychain_item_accessibility#2975278": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/restricting_keychain_item_accessibility#2975278",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/keychain_services/keychain_items/restricting_keychain_item_accessibility#2975278"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattraccessiblewhenpasscodesetthisdeviceonly": {
+      "title": "kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccessiblewhenpasscodesetthisdeviceonly",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattraccessiblewhenpasscodesetthisdeviceonly"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/item_attribute_keys_and_values": {
+      "title": "Item Attribute Keys and Values",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/item_attribute_keys_and_values",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/keychain_services/keychain_items/item_attribute_keys_and_values"
+    },
+    "doc://com.apple.documentation/documentation/security/secaccesscontrolref": {
+      "title": "SecAccessControlRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secaccesscontrolref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secaccesscontrolref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An opaque type that contains information about how a keychain item may be used."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattraccesscontrol": {
+      "title": "kSecAttrAccessControl",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccesscontrol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattraccesscontrol"
+    },
+    "link-media-2982464": {
+      "identifier": "link-media-2982464",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/security/keychain_services/keychain_items/restricting_keychain_item_accessibility#2982464"
+    },
+    "media-2982464": {
+      "identifier": "media-2982464",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 432,
+            "height": 282
+          },
+          "url": "https://docs-assets.developer.apple.com/published/5a661b760e/0a114eb8-b6e7-4961-86dd-b571ee02c9fb.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 432,
+            "height": 282
+          },
+          "url": "https://docs-assets.developer.apple.com/published/b6ddee8926/3a4efd20-75ea-4c84-8466-3e3fc35ba8c4.png"
+        }
+      ],
+      "alt": "Block diagram showing the components of a keychain item, including both data and attributes, highlighting the access control attribute.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/security/1394452-secaccesscontrolcreatewithflags": {
+      "title": "SecAccessControlCreateWithFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1394452-secaccesscontrolcreatewithflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1394452-secaccesscontrolcreatewithflags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new access control object with the specified protection type and flags."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/restricting_keychain_item_accessibility#2975300": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/restricting_keychain_item_accessibility#2975300",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/keychain_services/keychain_items/restricting_keychain_item_accessibility#2975300"
+    },
+    "doc://com.apple.documentation/documentation/security/secaccesscontrolcreateflags": {
+      "title": "SecAccessControlCreateFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secaccesscontrolcreateflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secaccesscontrolcreateflags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Access control constants that dictate how a keychain item may be used."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secaccesscontrolcreateflags/ksecaccesscontroluserpresence": {
+      "title": "kSecAccessControlUserPresence",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secaccesscontrolcreateflags/ksecaccesscontroluserpresence",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secaccesscontrolcreateflags/ksecaccesscontroluserpresence"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/restricting_keychain_item_accessibility#2975329": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/restricting_keychain_item_accessibility#2975329",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/keychain_services/keychain_items/restricting_keychain_item_accessibility#2975329"
+    },
+    "doc://com.apple.documentation/documentation/security/secaccesscontrolcreateflags/ksecaccesscontrolapplicationpassword": {
+      "title": "kSecAccessControlApplicationPassword",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secaccesscontrolcreateflags/ksecaccesscontrolapplicationpassword",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/secaccesscontrolcreateflags/ksecaccesscontrolapplicationpassword"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/restricting_keychain_item_accessibility#2975301": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/restricting_keychain_item_accessibility#2975301",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/keychain_services/keychain_items/restricting_keychain_item_accessibility#2975301"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/sharing_access_to_keychain_items_among_a_collection_of_apps": {
+      "title": "Sharing Access to Keychain Items Among a Collection of Apps",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/sharing_access_to_keychain_items_among_a_collection_of_apps",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/keychain_services/keychain_items/sharing_access_to_keychain_items_among_a_collection_of_apps",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enable apps to share keychain items with each other by adding the apps to an access group."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/bundleresources/entitlements/keychain-access-groups": {
+      "title": "Keychain Access Groups Entitlement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/bundleresources/entitlements/keychain-access-groups",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/bundleresources/entitlements/keychain-access-groups",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The identifiers for the keychain groups that the app may share items with."
+        }
+      ],
+      "titleStyle": "title",
+      "name": "keychain-access-groups",
+      "ideTitle": "Keychain Access Groups Entitlement"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/restricting_keychain_item_accessibility": {
+      "title": "Restricting Keychain Item Accessibility",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/restricting_keychain_item_accessibility",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/keychain_services/keychain_items/restricting_keychain_item_accessibility",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Set the conditions under which an app can access a keychain item such as a password."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1395487-secaccesscontrolgettypeid": {
+      "title": "SecAccessControlGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1395487-secaccesscontrolgettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1395487-secaccesscontrolgettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the unique identifier of the opaque type to which a keychain item access control object belongs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/sharing_access_to_keychain_items_among_a_collection_of_apps",
+        "doc://com.apple.documentation/documentation/bundleresources/entitlements/keychain-access-groups",
+        "doc://com.apple.documentation/documentation/security/1394452-secaccesscontrolcreatewithflags",
+        "doc://com.apple.documentation/documentation/security/secaccesscontrolcreateflags",
+        "doc://com.apple.documentation/documentation/security/secaccesscontrolref",
+        "doc://com.apple.documentation/documentation/security/1395487-secaccesscontrolgettypeid"
+      ],
+      "title": "Keychain Item Access",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you use keychain services to store user secrets, the framework’s default behavior provides a reasonable trade-off between security and accessibility. However, in some cases, you might want to make different choices."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, by default, you can only access keychain items when the device is unlocked. However, a device not protected by a passcode is always unlocked, so you might want to restrict access further and insist that an item can only be accessed from a device protected by a passcode. Alternatively, you can relax access restrictions to be able to access an item from a background process when the device is locked."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Keychain services offers ways to manage the accessibility of individual keychain items according the state of the device, combined with inputs from the user."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Control Access Based on Device State",
+          "anchor": "2974972"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You control an app’s access to a keychain item relative to the state of a device by setting the item’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccessible"
+            },
+            {
+              "type": "text",
+              "text": " attribute when you create the item. See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/adding_a_password_to_the_keychain"
+            },
+            {
+              "type": "text",
+              "text": " for a general discussion of how to create an item. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2982468",
+              "metadata": {
+                "anchor": "2982468",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Choose a value for the accessibility attribute from the list under the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/item_attribute_keys_and_values#1679100"
+            },
+            {
+              "type": "text",
+              "text": " topic. For example, a query dictionary used to create an item that replicates the default accessibility would be:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var query: [String: Any] = [kSecClass as String: kSecClassInternetPassword,",
+            "                            kSecAttrAccount as String: account,",
+            "                            kSecAttrServer as String: server,",
+            "                            kSecAttrAccessible as String: kSecAttrAccessibleWhenUnlocked,",
+            "                            kSecValueData as String: password]"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2975278",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccessible"
+            },
+            {
+              "type": "text",
+              "text": " attribute enables you to control item availability relative to the lock state of the device. It also lets you specify eligibility for restoration to a new device. If the attribute ends with the string "
+            },
+            {
+              "type": "codeVoice",
+              "code": "ThisDeviceOnly"
+            },
+            {
+              "type": "text",
+              "text": ", the item can be restored to the same device that created a backup, but it isn’t migrated when restoring another device’s backup data."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In order of decreasing restrictiveness, the choices are:"
+            }
+          ]
+        },
+        {
+          "type": "termList",
+          "items": [
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "strong",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "When Passcode Set"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "If the user hasn’t set a passcode, you can’t store an item with this setting. If the user removes the passcode from a device, any items with this setting are automatically deleted from the keychain. You can only access items with this setting if the device is unlocked. Use this setting if your app only needs access to items while running in the foreground."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "strong",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "When Unlocked"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Items with this setting are only accessible when the device is unlocked. A device without a passcode is considered to always be unlocked. This is the default accessibility when you don’t otherwise specify a setting."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "strong",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "After First Unlock"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "This condition becomes true once the user unlocks the device for the first time after a restart, or if the device does not have a passcode. It remains true until the device restarts again. Use this level of accessibility when your app needs to access the item while running in the background."
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "term": {
+                "inlineContent": [
+                  {
+                    "type": "strong",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "Always"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "definition": {
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "The item is always accessible, regardless of the locked state of the device. This option isn’t recommended."
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Always use the most restrictive option that makes sense for your app. For extremely sensitive data that you never want stored in iCloud, you might choose "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccessiblewhenpasscodesetthisdeviceonly"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Demand User Presence",
+          "anchor": "2974973"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Allowing access only when the device is unlocked (the default) may not be secure enough in all cases. If your app provides direct control over a bank account, you can check for the presence of the authorized user at the very last minute before retrieving login credentials from the keychain. This helps secure the account even if the user hands the device in an unlocked state to someone else."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Impose this restriction by supplying a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/secaccesscontrolref"
+            },
+            {
+              "type": "text",
+              "text": " instance as the value for the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccesscontrol"
+            },
+            {
+              "type": "text",
+              "text": " attribute when creating a keychain item."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2982464",
+              "metadata": {
+                "anchor": "2982464",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create the access control instance with a call to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1394452-secaccesscontrolcreatewithflags"
+            },
+            {
+              "type": "text",
+              "text": " method:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var error: NSError?",
+            "let access = SecAccessControlCreateWithFlags(NULL,  // Use the default allocator.",
+            "                                             kSecAttrAccessibleWhenUnlocked,",
+            "                                             kSecAccessControlUserPresence,",
+            "                                             &error);"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2975300",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This method takes two distinct access control inputs. The first is an accessibility setting of the same kind you can alternatively set directly with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccessible"
+            },
+            {
+              "type": "text",
+              "text": " attribute, as described in the previous section. You don’t need to set the accessible attribute directly if you set it as part of the access control attribute instead."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The second input is an access control flag that’s the bitwise "
+            },
+            {
+              "type": "codeVoice",
+              "code": "OR"
+            },
+            {
+              "type": "text",
+              "text": " of one or more options given in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/secaccesscontrolcreateflags"
+            },
+            {
+              "type": "text",
+              "text": ". You use these options to require the user to demonstrate their presence. You can specifically require biometrics—like Touch ID or Face ID—or a passcode, but you typically use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/secaccesscontrolcreateflags/ksecaccesscontroluserpresence"
+            },
+            {
+              "type": "text",
+              "text": " option, as shown in the preceding code snippet, to let the system choose a mechanism, depending on the current situation."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After preparing the access control instance, include it in the add query:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var query: [String: Any] = [kSecClass as String: kSecClassInternetPassword,",
+            "                            kSecAttrAccount as String: account,",
+            "                            kSecAttrServer as String: server,",
+            "                            kSecAttrAccessControl as String: access,",
+            "                            kSecValueData as String: password]"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2975329",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Require a Password",
+          "anchor": "2975214"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In addition to requiring a particular device state and user presence, you can require an application-specific password. This is distinct from the passcode that unlocks the device: It specifically guards a particular keychain item."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Do this by including the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/secaccesscontrolcreateflags/ksecaccesscontrolapplicationpassword"
+            },
+            {
+              "type": "text",
+              "text": " option when defining access control flags:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let access = SecAccessControlCreateWithFlags(NULL,  // Use the default allocator.",
+            "                                             kSecAttrAccessibleWhenPasscodeSet,",
+            "                                             kSecAccessControlBiometryAny",
+            "                                               | kSecAccessControlApplicationPassword,",
+            "                                             &error);"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2975301",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you add this flag, the system prompts the user for a password when creating the item, and then again before retrieving it. The item can only be retrieved if the user successfully enters the password, independent of satisfying any other conditions."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

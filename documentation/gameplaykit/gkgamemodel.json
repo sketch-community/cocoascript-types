@@ -1,0 +1,837 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Implement this protocol to describe your gameplay model so that a strategist object can plan game moves."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/gameplaykit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1490269,
+  "kind": "symbol",
+  "metadata": {
+    "title": "GKGameModel",
+    "role": "symbol",
+    "roleHeading": "Protocol",
+    "modules": [
+      {
+        "name": "GameplayKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.11",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      }
+    ],
+    "externalID": "c:objc(pl)GKGameModel",
+    "symbolKind": "intf"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/gameplaykit/gkgamemodel"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/gameplaykit/gkgamemodel"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/gameplaykit": {
+      "title": "GameplayKit",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit",
+      "url": "/documentation/gameplaykit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490281-scoreforplayer": {
+      "title": "scoreForPlayer:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490281-scoreforplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgamemodel/1490281-scoreforplayer",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a number rating the desirability of the game model’s current state from the perspective of the specified player."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "scoreForPlayer:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkstrategist": {
+      "title": "GKStrategist",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkstrategist",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkstrategist",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A general interface for objects that provide artificial intelligence for use in turn-based (and similar) games."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodelplayer": {
+      "title": "GKGameModelPlayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodelplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgamemodelplayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Implement this protocol to describe a player in your turn-based game so that a strategist object can plan game moves."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodelupdate": {
+      "title": "GKGameModelUpdate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodelupdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgamemodelupdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Implement this protocol to describe a move in your turn-based game so that a strategist object can plan game moves."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490288-gamemodelupdatesforplayer": {
+      "title": "gameModelUpdatesForPlayer:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490288-gamemodelupdatesforplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgamemodel/1490288-gamemodelupdatesforplayer",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the set of moves available to the specified player."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "gameModelUpdatesForPlayer:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490267-setgamemodel": {
+      "title": "setGameModel:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490267-setgamemodel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgamemodel/1490267-setgamemodel",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the game model’s internal state to that of the specified game model."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setGameModel:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490278-applygamemodelupdate": {
+      "title": "applyGameModelUpdate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490278-applygamemodelupdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgamemodel/1490278-applygamemodelupdate",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Updates the internal state of the game model to reflect the specified changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "applyGameModelUpdate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490271-iswinforplayer": {
+      "title": "isWinForPlayer:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490271-iswinforplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgamemodel/1490271-iswinforplayer",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether the current state of the game model reflects a win for the specified player."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "isWinForPlayer:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490286-islossforplayer": {
+      "title": "isLossForPlayer:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490286-islossforplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgamemodel/1490286-islossforplayer",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a Boolean value indicating whether the specified player has lost the game."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "isLossForPlayer:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscopying/1410311-copywithzone": {
+      "title": "copyWithZone:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscopying/1410311-copywithzone",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscopying/1410311-copywithzone",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "copyWithZone:"
+        }
+      ]
+    },
+    "devLink-1757309": {
+      "identifier": "devLink-1757309",
+      "type": "link",
+      "title": "The Minmax Strategist",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/Minmax.html#//apple_ref/doc/uid/TP40015172-CH2"
+    },
+    "devLink-1757291": {
+      "identifier": "devLink-1757291",
+      "type": "link",
+      "title": "GameplayKit Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscopying": {
+      "title": "NSCopying",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscopying",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscopying"
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490287-players": {
+      "title": "players",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490287-players",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgamemodel/1490287-players",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The players currently in the game."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490293-activeplayer": {
+      "title": "activePlayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490293-activeplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgamemodel/1490293-activeplayer",
+      "required": true,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The player whose turn it currently is in the game."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490276-unapplygamemodelupdate": {
+      "title": "unapplyGameModelUpdate:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490276-unapplygamemodelupdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgamemodel/1490276-unapplygamemodelupdate",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Updates the internal state of the game model to remove the effect of the specified changes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "unapplyGameModelUpdate:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/game_model_score_limits": {
+      "title": "Game Model Score Limits",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/game_model_score_limits",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/gameplaykit/gkgamemodel/game_model_score_limits",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Limits to values returned by the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490281-scoreforplayer"
+        },
+        {
+          "type": "text",
+          "text": " method."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkminmaxstrategist": {
+      "title": "GKMinmaxStrategist",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkminmaxstrategist",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkminmaxstrategist",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An AI that chooses moves in turn-based games using a "
+        },
+        {
+          "type": "newTerm",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "deterministic"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": " strategy."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkmontecarlostrategist": {
+      "title": "GKMonteCarloStrategist",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkmontecarlostrategist",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkmontecarlostrategist",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An AI that chooses moves in turn-based games using a "
+        },
+        {
+          "type": "newTerm",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "probabilistic"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": " strategy."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel": {
+      "title": "GKGameModel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgamemodel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Implement this protocol to describe your gameplay model so that a strategist object can plan game moves."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscopying",
+        "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Keeping Track of Players",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490287-players",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490293-activeplayer"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Evaluating a Game Model",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490288-gamemodelupdatesforplayer",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490281-scoreforplayer",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490286-islossforplayer",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490271-iswinforplayer"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Modifying a Game Model",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490278-applygamemodelupdate",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490276-unapplygamemodelupdate",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490267-setgamemodel"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/game_model_score_limits"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkstrategist",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkminmaxstrategist",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkmontecarlostrategist",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodelplayer",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodelupdate"
+      ],
+      "title": "Strategists",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@protocol"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "GKGameModel"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You adopt this protocol to describe the gameplay of your turn-based game for use by a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkstrategist"
+            },
+            {
+              "type": "text",
+              "text": " object. The strategist uses your game model class (that is, the class you create to adopt this protocol), along with other custom classes you create (adopting the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodelplayer"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodelupdate"
+            },
+            {
+              "type": "text",
+              "text": " protocols), to find optimal moves. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "GameplayKit relies on your game model class for several parts of its strategy algorithm."
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "inlineHead",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Identifying possible changes to the game state."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Your "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490288-gamemodelupdatesforplayer"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method and your move class (a custom class implementing the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodelupdate"
+                    },
+                    {
+                      "type": "text",
+                      "text": " protocol) describe the set of moves available during a given player’s turn."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "inlineHead",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Simulating future moves on a copy of the game."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Your "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490267-setgamemodel"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method allows GameplayKit to work with a separate instance of the game model—that is, not the one representing the actual game in play—and your "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490278-applygamemodelupdate"
+                    },
+                    {
+                      "type": "text",
+                      "text": " uses the information in your move class to perform hypothetical moves on that separate copy of the game."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "inlineHead",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Rating the desirability of possible future states of the game."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Each time GameplayKit performs a hypothetical move in its copy of the game model, it calls your "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490271-iswinforplayer"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490286-islossforplayer"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", or "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490281-scoreforplayer"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method to evaluate that state of the game from the perspective of a particular player."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you use a strategist to plan moves in your game, it uses your game model to combine these parts into a strategy: By identifying, performing, and rating the success of possible future moves, the strategist can choose a move most likely to result in a future win. This process involves using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nscopying/1410311-copywithzone"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel/1490267-setgamemodel"
+            },
+            {
+              "type": "text",
+              "text": " methods to evaluate many possible states of a game model—for best results, ensure that your game model class contains only the information critical to describing your game and that it can copy that state quickly."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about describing your gameplay model and using a strategist, see "
+            },
+            {
+              "type": "link",
+              "title": "The Minmax Strategist",
+              "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/Minmax.html#//apple_ref/doc/uid/TP40015172-CH2"
+            },
+            {
+              "type": "text",
+              "text": " in "
+            },
+            {
+              "type": "link",
+              "title": "GameplayKit Programming Guide",
+              "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

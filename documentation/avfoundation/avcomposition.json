@@ -1,0 +1,606 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An object that combines media data from multiple file-based sources to present or process media data from multiple sources."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_composition_and_editing"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/avcomposition",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1386210,
+  "kind": "symbol",
+  "metadata": {
+    "title": "AVComposition",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "4.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.7",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)AVComposition",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/avcomposition"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/avcomposition"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_composition_and_editing": {
+      "title": "Media Composition and Editing",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_composition_and_editing",
+      "url": "/documentation/avfoundation/media_composition_and_editing",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcompositiontrack": {
+      "title": "AVCompositionTrack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcompositiontrack",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcompositiontrack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A track in a composition object, consisting of a media type, a track identifier, and track segments."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcompositiontracksegment": {
+      "title": "AVCompositionTrackSegment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcompositiontracksegment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcompositiontracksegment",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A segment of a track, consisting of a URL, a track identifier, and a time mapping from the source track to the composition track."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcompositiontrack/1387267-segments": {
+      "title": "segments",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcompositiontrack/1387267-segments",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcompositiontrack/1387267-segments"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition": {
+      "title": "AVMutableComposition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecomposition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mutable object used to create a new composition from existing assets."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack": {
+      "title": "AVMutableCompositionTrack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avmutablecompositiontrack",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mutable track in a composition object that you use to insert, remove, and scale track segments without affecting their low-level representation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avasset": {
+      "title": "AVAsset",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avasset"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avassettrack": {
+      "title": "AVAssetTrack",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avassettrack"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsmutablecopying": {
+      "title": "NSMutableCopying",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsmutablecopying",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsmutablecopying"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcomposition/1387080-urlassetinitializationoptions": {
+      "title": "URLAssetInitializationOptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcomposition/1387080-urlassetinitializationoptions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcomposition/1387080-urlassetinitializationoptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The initialization options for the creation of URL assets by the receiver."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcomposition/1390165-tracks": {
+      "title": "tracks",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcomposition/1390165-tracks",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcomposition/1390165-tracks",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of composition track objects contained by the composition."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcomposition/1388473-trackwithtrackid": {
+      "title": "trackWithTrackID:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcomposition/1388473-trackwithtrackid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcomposition/1388473-trackwithtrackid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides a composition track associated with the specified track ID."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "trackWithTrackID:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcomposition/1387525-trackswithmediacharacteristic": {
+      "title": "tracksWithMediaCharacteristic:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcomposition/1387525-trackswithmediacharacteristic",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcomposition/1387525-trackswithmediacharacteristic",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides the composition tracks of the specified media characteristic associated with an asset."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tracksWithMediaCharacteristic:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcomposition/1386534-trackswithmediatype": {
+      "title": "tracksWithMediaType:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcomposition/1386534-trackswithmediatype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcomposition/1386534-trackswithmediatype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides the composition tracks of the specified media type associated with an asset."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "tracksWithMediaType:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcomposition/1387247-naturalsize": {
+      "title": "naturalSize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcomposition/1387247-naturalsize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcomposition/1387247-naturalsize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The authored size of the visual portion of the composition."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcomposition": {
+      "title": "AVComposition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcomposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcomposition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that combines media data from multiple file-based sources to present or process media data from multiple sources."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avasset"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nsmutablecopying"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Accessing Initialization Options",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcomposition/1387080-urlassetinitializationoptions"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Accessing Tracks",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcomposition/1390165-tracks",
+        "doc://com.apple.documentation/documentation/avfoundation/avcomposition/1388473-trackwithtrackid",
+        "doc://com.apple.documentation/documentation/avfoundation/avcomposition/1387525-trackswithmediacharacteristic",
+        "doc://com.apple.documentation/documentation/avfoundation/avcomposition/1386534-trackswithmediatype"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Determining the Visual Dimensions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcomposition/1387247-naturalsize"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avcompositiontrack",
+        "doc://com.apple.documentation/documentation/avfoundation/avcompositiontracksegment",
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition",
+        "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack"
+      ],
+      "title": "Media Composition",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "AVComposition"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)AVAsset",
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset",
+              "text": "AVAsset"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "At its top-level, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "AVComposition"
+            },
+            {
+              "type": "text",
+              "text": " is a collection of tracks, each presenting media of a specific media type, e.g. audio or video, according to a timeline. Each track is represented by an instance of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcompositiontrack"
+            },
+            {
+              "type": "text",
+              "text": ". Each track is comprised of an array of track segments, represented by instances of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcompositiontracksegment"
+            },
+            {
+              "type": "text",
+              "text": ". Each segment presents a portion of the media data stored in a source container, specified by URL, a track identifier, and a time mapping. The URL specifies the source container, and the track identifier indicates the track of the source container to be presented. All file-based audiovisual assets are eligible to be combined, regardless of container type."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The time mapping specifies the temporal range of the source track that's to be presented and also specifies the temporal range of its presentation in the composition track. If the durations of the source and destination ranges of the time mapping are the same, the media data for the segment will be presented at its natural rate. Otherwise, the segment will be presented at a rate equal to the ratio "
+            },
+            {
+              "type": "codeVoice",
+              "code": "source.duration / target.duration"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can access the track segments of a track using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcompositiontrack/1387267-segments"
+            },
+            {
+              "type": "text",
+              "text": " property (an array of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcompositiontracksegment"
+            },
+            {
+              "type": "text",
+              "text": " objects) of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcompositiontrack"
+            },
+            {
+              "type": "text",
+              "text": ". The collection of tracks with media type information for each, and each with its array of track segments (URL, track identifier, and time mapping), form a complete low-level representation of a composition. This representation can be written out by clients in any convenient form, and subsequently the composition can be reconstituted by instantiating a new "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition"
+            },
+            {
+              "type": "text",
+              "text": " with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack"
+            },
+            {
+              "type": "text",
+              "text": " objects of the appropriate media type, each with its "
+            },
+            {
+              "type": "codeVoice",
+              "code": "segments"
+            },
+            {
+              "type": "text",
+              "text": " property set according to the stored array of URL, track identifier, and time mapping."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A higher-level interface for constructing compositions is also presented by "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecomposition"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avmutablecompositiontrack"
+            },
+            {
+              "type": "text",
+              "text": ", offering insertion, removal, and scaling operations without direct manipulation of the trackSegment arrays of composition tracks. This interface makes use of higher-level constructs such as "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avasset"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avassettrack"
+            },
+            {
+              "type": "text",
+              "text": ", allowing the client to make use of the same references to candidate sources that it would have created in order to inspect or preview them prior to inclusion in a composition."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

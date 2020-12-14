@@ -1,0 +1,1529 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Architect and organize your game logic. Incorporate common gameplay behaviors such as random number generation, artificial intelligence, pathfinding, and agent behavior."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/gameplaykit",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1612648,
+  "kind": "symbol",
+  "metadata": {
+    "title": "GameplayKit",
+    "role": "collection",
+    "roleHeading": "Framework",
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.11",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/gameplaykit"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/gameplaykit"
+      ]
+    }
+  ],
+  "references": {
+    "devLink-1757291": {
+      "identifier": "devLink-1757291",
+      "type": "link",
+      "title": "GameplayKit Programming Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172"
+    },
+    "devLink-1764319": {
+      "identifier": "devLink-1764319",
+      "type": "link",
+      "title": "Boxes: GameplayKit Entity-Component Basics",
+      "url": "https://developer.apple.com/library/archive/samplecode/Boxes_GamePlayKit/Introduction/Intro.html#//apple_ref/doc/uid/TP40016459"
+    },
+    "devLink-1764332": {
+      "identifier": "devLink-1764332",
+      "type": "link",
+      "title": "Dispenser: GameplayKit State Machine Basics",
+      "url": "https://developer.apple.com/library/archive/samplecode/Dispenser_GameplayKit/Introduction/Intro.html#//apple_ref/doc/uid/TP40016460"
+    },
+    "devLink-1764348": {
+      "identifier": "devLink-1764348",
+      "type": "link",
+      "title": "Pathfinder: GameplayKit Pathfinding Basics",
+      "url": "https://developer.apple.com/library/archive/samplecode/Pathfinder_GameplayKit/Introduction/Intro.html#//apple_ref/doc/uid/TP40016461"
+    },
+    "devLink-1758967": {
+      "identifier": "devLink-1758967",
+      "type": "link",
+      "title": "AgentsCatalog: Using the Agents System in GameplayKit",
+      "url": "https://developer.apple.com/library/archive/samplecode/AgentsCatalog/Introduction/Intro.html#//apple_ref/doc/uid/TP40016141"
+    },
+    "devLink-1759000": {
+      "identifier": "devLink-1759000",
+      "type": "link",
+      "title": "FourInARow: Using the GameplayKit Minmax Strategist for Opponent AI",
+      "url": "https://developer.apple.com/library/archive/samplecode/FourInARow/Introduction/Intro.html#//apple_ref/doc/uid/TP40016142"
+    },
+    "devLink-1757395": {
+      "identifier": "devLink-1757395",
+      "type": "link",
+      "title": "DemoBots: Building a Cross Platform Game with SpriteKit and GameplayKit",
+      "url": "https://developer.apple.com/library/archive/samplecode/DemoBots/Introduction/Intro.html#//apple_ref/doc/uid/TP40015179"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nspredicate": {
+      "title": "NSPredicate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nspredicate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nspredicate"
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkentity": {
+      "title": "GKEntity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkentity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkentity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object relevant to gameplay, with functionality entirely provided by a collection of component objects. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkcomponent": {
+      "title": "GKComponent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkcomponent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkcomponent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The abstract superclass for creating objects that add specific gameplay functionality to an entity."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkcomponentsystem": {
+      "title": "GKComponentSystem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkcomponentsystem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkcomponentsystem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manages periodic update messages for all component objects of a specified class."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkstate": {
+      "title": "GKState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The abstract superclass for defining state-specific logic as part of a state machine."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkstatemachine": {
+      "title": "GKStateMachine",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkstatemachine",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkstatemachine",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A finite-state machine—a collection of state objects that each define logic for a particular state of gameplay and rules for transitioning between states. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkquadtree": {
+      "title": "GKQuadtree",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkquadtree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkquadtree",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A data structure for organizing objects based on their locations in a two-dimensional space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkquadtreenode": {
+      "title": "GKQuadtreeNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkquadtreenode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkquadtreenode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A helper class for managing the objects you organize in a quadtree."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkoctree": {
+      "title": "GKOctree",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkoctree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkoctree",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A data structure for organizing objects based on their locations in a three-dimensional space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkoctreenode": {
+      "title": "GKOctreeNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkoctreenode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkoctreenode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A helper class for managing the objects you organize in an octree."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkrtree": {
+      "title": "GKRTree",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkrtree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkrtree",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A data structure that adaptively organizes objects based on their locations in a two-dimensional space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkstrategist": {
+      "title": "GKStrategist",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkstrategist",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkstrategist",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A general interface for objects that provide artificial intelligence for use in turn-based (and similar) games."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkminmaxstrategist": {
+      "title": "GKMinmaxStrategist",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkminmaxstrategist",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkminmaxstrategist",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An AI that chooses moves in turn-based games using a "
+        },
+        {
+          "type": "newTerm",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "deterministic"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": " strategy."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkmontecarlostrategist": {
+      "title": "GKMonteCarloStrategist",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkmontecarlostrategist",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkmontecarlostrategist",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An AI that chooses moves in turn-based games using a "
+        },
+        {
+          "type": "newTerm",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "probabilistic"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": " strategy."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel": {
+      "title": "GKGameModel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgamemodel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Implement this protocol to describe your gameplay model so that a strategist object can plan game moves."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodelplayer": {
+      "title": "GKGameModelPlayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodelplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgamemodelplayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Implement this protocol to describe a player in your turn-based game so that a strategist object can plan game moves."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodelupdate": {
+      "title": "GKGameModelUpdate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodelupdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgamemodelupdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Implement this protocol to describe a move in your turn-based game so that a strategist object can plan game moves."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkdecisiontree": {
+      "title": "GKDecisionTree",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkdecisiontree",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkdecisiontree",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A data structure that models a set of specific questions, their possible answers, and the actions that follow from a series of answers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkdecisionnode": {
+      "title": "GKDecisionNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkdecisionnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkdecisionnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A node for use in manually creating decision trees, representing a specific question and possible answers, or an action that follows from answering other questions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgraph": {
+      "title": "GKGraph",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraph",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgraph",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A collection of nodes that describes the navigability of a game world and provides "
+        },
+        {
+          "type": "newTerm",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "pathfinding"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": " methods to search for routes through that space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph": {
+      "title": "GKObstacleGraph",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkobstaclegraph",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A navigation graph for 2D game worlds that creates a minimal network for precise pathfinding around obstacles."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkmeshgraph": {
+      "title": "GKMeshGraph",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkmeshgraph",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkmeshgraph",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A navigation graph for 2D game worlds that creates a space-filling network for smooth pathfinding around obstacles."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgridgraph": {
+      "title": "GKGridGraph",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgridgraph",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgridgraph",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A navigation graph for 2D game worlds where movement is constrained to an integer grid."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode": {
+      "title": "GKGraphNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgraphnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A single node in a navigation graph for use in pathfinding."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode2d": {
+      "title": "GKGraphNode2D",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode2d",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgraphnode2d",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A node in a navigation graph, associated with a point in continuous 2D space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode3d": {
+      "title": "GKGraphNode3D",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode3d",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgraphnode3d",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A node in a navigation graph, associated with a point in continuous 3D space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgridgraphnode": {
+      "title": "GKGridGraphNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgridgraphnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgridgraphnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A node in a navigation graph, associated with a position on a discrete two-dimensional grid."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkagent": {
+      "title": "GKAgent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkagent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkagent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A component that moves a game entity according to a set of goals and realistic constraints."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkagent2d": {
+      "title": "GKAgent2D",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkagent2d",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkagent2d",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An agent that operates in a two-dimensional space. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkagent3d": {
+      "title": "GKAgent3D",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkagent3d",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkagent3d",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An agent that operates in a three-dimensional space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgoal": {
+      "title": "GKGoal",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgoal",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgoal",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An influence that motivates the movement of one or more agents."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkbehavior": {
+      "title": "GKBehavior",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkbehavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkbehavior",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of goals that together influence the movement of an agent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkcompositebehavior": {
+      "title": "GKCompositeBehavior",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkcompositebehavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkcompositebehavior",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of behaviors, each of which is a set of goals, that together influence the movement of an agent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkpath": {
+      "title": "GKPath",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkpath",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkpath",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A polygonal path that can be followed by an agent."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkagentdelegate": {
+      "title": "GKAgentDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkagentdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkagentdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Implement this protocol to synchronize the state of an agent with its visual representation in your game."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkobstacle": {
+      "title": "GKObstacle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkobstacle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkobstacle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The abstract base class for objects representing impassable areas in a game world."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkcircleobstacle": {
+      "title": "GKCircleObstacle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkcircleobstacle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkcircleobstacle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A circular impassable area to be avoided by agents."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gksphereobstacle": {
+      "title": "GKSphereObstacle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gksphereobstacle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gksphereobstacle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A spherical impassable volume to be avoided by agents."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkpolygonobstacle": {
+      "title": "GKPolygonObstacle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkpolygonobstacle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkpolygonobstacle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A polygon-shaped impassable area in a 2D game world. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gknoisesource": {
+      "title": "GKNoiseSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gknoisesource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gknoisesource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The abstract superclass for procedural noise generators."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gknoise": {
+      "title": "GKNoise",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gknoise",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gknoise",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A representation of procedural noise, generated by a noise source, that you can use to process, transform, or combine noise."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gknoisemap": {
+      "title": "GKNoiseMap",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gknoisemap",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gknoisemap",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A sample of procedural noise data from which you can read noise values directly or create noise textures."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkcoherentnoisesource": {
+      "title": "GKCoherentNoiseSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkcoherentnoisesource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkcoherentnoisesource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The abstract superclass for procedural noise generators that create coherent noise."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkbillownoisesource": {
+      "title": "GKBillowNoiseSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkbillownoisesource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkbillownoisesource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A procedural noise generator whose output is a type of fractal coherent noise with smooth features."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkperlinnoisesource": {
+      "title": "GKPerlinNoiseSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkperlinnoisesource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkperlinnoisesource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A procedural noise generator whose output is a type of fractal coherent noise resembling natural phenomena such as clouds and terrain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkridgednoisesource": {
+      "title": "GKRidgedNoiseSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkridgednoisesource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkridgednoisesource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A procedural noise generator whose output is a type of multifractal coherent noise with sharply defined features."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkvoronoinoisesource": {
+      "title": "GKVoronoiNoiseSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkvoronoinoisesource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkvoronoinoisesource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A procedural noise generator whose output (also called Worley noise or cellular noise) divides space into discrete cells surrounding random seed points."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkcylindersnoisesource": {
+      "title": "GKCylindersNoiseSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkcylindersnoisesource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkcylindersnoisesource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A procedural noise generator whose output is a 3D field of concentric cylindrical shells."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkspheresnoisesource": {
+      "title": "GKSpheresNoiseSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkspheresnoisesource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkspheresnoisesource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A procedural noise generator whose output is a 3D field of concentric spherical shells."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkcheckerboardnoisesource": {
+      "title": "GKCheckerboardNoiseSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkcheckerboardnoisesource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkcheckerboardnoisesource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A procedural noise generator whose output is an alternating square pattern."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkconstantnoisesource": {
+      "title": "GKConstantNoiseSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkconstantnoisesource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkconstantnoisesource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A procedural noise generator that outputs a field of a single constant value."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkrandom": {
+      "title": "GKRandom",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkrandom",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkrandom",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The common interface for all randomization classes in (or usable with) GameplayKit."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkrandomsource": {
+      "title": "GKRandomSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkrandomsource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkrandomsource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The superclass for all basic randomization classes in GameplayKit."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkarc4randomsource": {
+      "title": "GKARC4RandomSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkarc4randomsource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkarc4randomsource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A basic random number generator implementing the ARC4 algorithm, which is suitable for most gameplay mechanics. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gklinearcongruentialrandomsource": {
+      "title": "GKLinearCongruentialRandomSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gklinearcongruentialrandomsource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gklinearcongruentialrandomsource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A basic random number generator implementing the linear congruential generator algorithm, which is faster but less random than the default random source."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkmersennetwisterrandomsource": {
+      "title": "GKMersenneTwisterRandomSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkmersennetwisterrandomsource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkmersennetwisterrandomsource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A basic random number generator implementing the Mersenne Twister algorithm, which is more random, but slower than the default random source."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkrandomdistribution": {
+      "title": "GKRandomDistribution",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkrandomdistribution",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkrandomdistribution",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A generator for random numbers that fall within a specific range and that exhibit a specific distribution over multiple samplings."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkgaussiandistribution": {
+      "title": "GKGaussianDistribution",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkgaussiandistribution",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkgaussiandistribution",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A generator for random numbers that follow a "
+        },
+        {
+          "type": "newTerm",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Gaussian distribution"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": " (also known as a "
+        },
+        {
+          "type": "newTerm",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "normal distribution"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": ") across multiple samplings."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkshuffleddistribution": {
+      "title": "GKShuffledDistribution",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkshuffleddistribution",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkshuffleddistribution",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A generator for random numbers that are uniformly distributed across many samplings, but where short sequences of similar values are unlikely. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkrule": {
+      "title": "GKRule",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkrule",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkrule",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A rule to be used in the context of a rule system, with a predicate to be tested and an action to be executed when the test succeeds."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gknspredicaterule": {
+      "title": "GKNSPredicateRule",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gknspredicaterule",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gknspredicaterule",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A rule for use in a rule system that uses a Foundation "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/foundation/nspredicate"
+        },
+        {
+          "type": "text",
+          "text": " object to evaluate itself."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkrulesystem": {
+      "title": "GKRuleSystem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkrulesystem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkrulesystem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of rules, together with a context for evaluating them and interpreting results, for use in constructing data-driven logic or fuzzy logic systems."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkscene": {
+      "title": "GKScene",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkscene",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkscene",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A container for associating GameplayKit objects with a SpriteKit scene."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkscenerootnodetype": {
+      "title": "GKSceneRootNodeType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkscenerootnodetype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkscenerootnodetype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Identifies scene classes from other frameworks that support embedded GameplayKit information. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gksknodecomponent": {
+      "title": "GKSKNodeComponent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gksknodecomponent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gksknodecomponent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A component that manages a SpriteKit node."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gameplaykit_constants": {
+      "title": "GameplayKit Constants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gameplaykit_constants",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/gameplaykit/gameplaykit_constants"
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gameplaykit_structures": {
+      "title": "GameplayKit Structures",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gameplaykit_structures",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/gameplaykit/gameplaykit_structures"
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gameplaykit_enumerations": {
+      "title": "GameplayKit Enumerations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gameplaykit_enumerations",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/gameplaykit/gameplaykit_enumerations"
+    },
+    "doc://com.apple.documentation/documentation/gameplaykit/gkscnnodecomponent": {
+      "title": "GKSCNNodeComponent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/gameplaykit/gkscnnodecomponent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/gameplaykit/gkscnnodecomponent"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Entities and Components",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkentity",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkcomponent",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkcomponentsystem"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A general architecture for designing composable, reusable gameplay logic."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "State Machines",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkstate",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkstatemachine"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A modular system for defining state-dependent gameplay logic."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Spatial Partitioning",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkquadtree",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkquadtreenode",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkoctree",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkoctreenode",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkrtree"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Data structures that organize the objects in a game world for quick searching by position or proximity."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Strategists",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkstrategist",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkminmaxstrategist",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkmontecarlostrategist",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodel",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodelplayer",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgamemodelupdate"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A form of AI for planning moves in turn-based games. Describe your gameplay by creating classes that adopt the game model protocols, then use those classes with a strategist object to create AI players or suggest moves."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Decision Trees",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkdecisiontree",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkdecisionnode"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Define a series of questions and possible answers leading to a final action, or automatically build a predictive model based on data your provide."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Pathfinding",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgraph",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkobstaclegraph",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkmeshgraph",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgridgraph",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode2d",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgraphnode3d",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgridgraphnode"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create graphs that model the navigability of your game world, allowing GameplayKit to plan optimal routes for game characters to follow."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Agents, Goals, and Behaviors",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkagent",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkagent2d",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkagent3d",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgoal",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkbehavior",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkcompositebehavior",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkpath",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkagentdelegate"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add autonomous movement to characters and other game objects by combining high-level goals such as moving to a target, following a path, or avoiding obstacles."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Obstacles",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkobstacle",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkcircleobstacle",
+        "doc://com.apple.documentation/documentation/gameplaykit/gksphereobstacle",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkpolygonobstacle"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Classes that model impassable areas in a game world, for use with Pathfinding and Agents."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Procedural Noise",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gknoisesource",
+        "doc://com.apple.documentation/documentation/gameplaykit/gknoise",
+        "doc://com.apple.documentation/documentation/gameplaykit/gknoisemap",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkcoherentnoisesource",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkbillownoisesource",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkperlinnoisesource",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkridgednoisesource",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkvoronoinoisesource",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkcylindersnoisesource",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkspheresnoisesource",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkcheckerboardnoisesource",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkconstantnoisesource"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Generate fields of coherent random noise, then use them to create texture images resembling natural phenomena such as clouds or wood grain, build procedural game worlds of unlimited size, and more."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Randomization",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkrandom",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkrandomsource",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkarc4randomsource",
+        "doc://com.apple.documentation/documentation/gameplaykit/gklinearcongruentialrandomsource",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkmersennetwisterrandomsource",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkrandomdistribution",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkgaussiandistribution",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkshuffleddistribution"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Robust, flexible implementations of standard algorithms that let you add unpredictability to gameplay without compromising testability."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Rule Systems",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkrule",
+        "doc://com.apple.documentation/documentation/gameplaykit/gknspredicaterule",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkrulesystem"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Separate game design from executable code to speed up your gameplay development cycle, or implement fuzzy logic reasoning to add realistic behavior to your game."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Xcode and SpriteKit Integration",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkscene",
+        "doc://com.apple.documentation/documentation/gameplaykit/gkscenerootnodetype",
+        "doc://com.apple.documentation/documentation/gameplaykit/gksknodecomponent"
+      ],
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Classes and protocols to support easy creation and editing of GameplayKit features with the SpriteKit scene editor in Xcode."
+        }
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Reference",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gameplaykit_constants",
+        "doc://com.apple.documentation/documentation/gameplaykit/gameplaykit_structures",
+        "doc://com.apple.documentation/documentation/gameplaykit/gameplaykit_enumerations"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Classes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/gameplaykit/gkscnnodecomponent"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "GameplayKit is an object-oriented framework that provides foundational tools and technologies for building games. GameplayKit includes tools for designing games with functional, reusable architecture, as well as technologies for building and enhancing gameplay features such as character movement and opponent behavior."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Getting Started with GameplayKit",
+          "anchor": "1844767"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "GameplayKit covers many aspects of game design and development. For deeper discussions of the game design patterns you can leverage with GameplayKit, along with tutorials that illustrate building games with GameplayKit features, see "
+            },
+            {
+              "type": "link",
+              "title": "GameplayKit Programming Guide",
+              "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Related Sample Code",
+          "anchor": "1844768"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To experiment with GameplayKit in action, see these sample code projects:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "link",
+                      "title": "Boxes: GameplayKit Entity-Component Basics",
+                      "destination": "https://developer.apple.com/library/archive/samplecode/Boxes_GamePlayKit/Introduction/Intro.html#//apple_ref/doc/uid/TP40016459"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "link",
+                      "title": "Dispenser: GameplayKit State Machine Basics",
+                      "destination": "https://developer.apple.com/library/archive/samplecode/Dispenser_GameplayKit/Introduction/Intro.html#//apple_ref/doc/uid/TP40016460"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "link",
+                      "title": "Pathfinder: GameplayKit Pathfinding Basics",
+                      "destination": "https://developer.apple.com/library/archive/samplecode/Pathfinder_GameplayKit/Introduction/Intro.html#//apple_ref/doc/uid/TP40016461"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "link",
+                      "title": "AgentsCatalog: Using the Agents System in GameplayKit",
+                      "destination": "https://developer.apple.com/library/archive/samplecode/AgentsCatalog/Introduction/Intro.html#//apple_ref/doc/uid/TP40016141"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "link",
+                      "title": "FourInARow: Using the GameplayKit Minmax Strategist for Opponent AI",
+                      "destination": "https://developer.apple.com/library/archive/samplecode/FourInARow/Introduction/Intro.html#//apple_ref/doc/uid/TP40016142"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "link",
+                      "title": "DemoBots: Building a Cross Platform Game with SpriteKit and GameplayKit",
+                      "destination": "https://developer.apple.com/library/archive/samplecode/DemoBots/Introduction/Intro.html#//apple_ref/doc/uid/TP40015179"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

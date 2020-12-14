@@ -1,0 +1,502 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A protocol that defines functions for biquadratic filtering."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/vdsp_protocols"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadfunctions",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 3241157,
+  "kind": "symbol",
+  "metadata": {
+    "title": "vDSP_BiquadFunctions",
+    "role": "symbol",
+    "roleHeading": "Protocol",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.15",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "6.0",
+        "current": "7.2"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.0",
+        "current": "12.3"
+      }
+    ],
+    "externalID": "s:10Accelerate20vDSP_BiquadFunctionsP",
+    "symbolKind": "intf",
+    "fragments": [
+      {
+        "kind": "text",
+        "text": "protocol "
+      },
+      {
+        "kind": "identifier",
+        "text": "vDSP_BiquadFunctions"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/vdsp_biquadfunctions"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp": {
+      "title": "vDSP",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp",
+      "url": "/documentation/accelerate/vdsp",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/vdsp_protocols": {
+      "title": "vDSP Protocols",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/vdsp_protocols",
+      "url": "/documentation/accelerate/vdsp/vdsp_protocols",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/vectorizabledouble": {
+      "title": "vDSP.VectorizableDouble",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/vectorizabledouble",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/vectorizabledouble"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/vectorizablefloat": {
+      "title": "vDSP.VectorizableFloat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/vectorizablefloat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/vectorizablefloat"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadfunctions/3241158-scalar": {
+      "title": "Scalar",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadfunctions/3241158-scalar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_biquadfunctions/3241158-scalar",
+      "required": true,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "associatedtype "
+        },
+        {
+          "kind": "identifier",
+          "text": "Scalar"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadfunctions/3241159-applymulti": {
+      "title": "applyMulti(setup:pInputs:pOutputs:count:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadfunctions/3241159-applymulti",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_biquadfunctions/3241159-applymulti",
+      "required": true,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "applyMulti"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "setup"
+        },
+        {
+          "kind": "text",
+          "text": ": vDSP_biquadm_SetupD, "
+        },
+        {
+          "kind": "identifier",
+          "text": "pInputs"
+        },
+        {
+          "kind": "text",
+          "text": ": UnsafeMutablePointer<UnsafePointer<Self.Scalar>>, "
+        },
+        {
+          "kind": "identifier",
+          "text": "pOutputs"
+        },
+        {
+          "kind": "text",
+          "text": ": UnsafeMutablePointer<UnsafeMutablePointer<Self.Scalar>>, "
+        },
+        {
+          "kind": "identifier",
+          "text": "count"
+        },
+        {
+          "kind": "text",
+          "text": ": vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadfunctions/3241160-applysingle": {
+      "title": "applySingle(source:destination:delays:setup:sectionCount:count:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadfunctions/3241160-applysingle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_biquadfunctions/3241160-applysingle",
+      "required": true,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "applySingle"
+        },
+        {
+          "kind": "text",
+          "text": "<U, V>("
+        },
+        {
+          "kind": "identifier",
+          "text": "source"
+        },
+        {
+          "kind": "text",
+          "text": ": U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "destination"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V, "
+        },
+        {
+          "kind": "identifier",
+          "text": "delays"
+        },
+        {
+          "kind": "text",
+          "text": ": UnsafeMutablePointer<Self.Scalar>, "
+        },
+        {
+          "kind": "identifier",
+          "text": "setup"
+        },
+        {
+          "kind": "text",
+          "text": ": vDSP_biquad_Setup, "
+        },
+        {
+          "kind": "identifier",
+          "text": "sectionCount"
+        },
+        {
+          "kind": "text",
+          "text": ": vDSP_Length, "
+        },
+        {
+          "kind": "identifier",
+          "text": "count"
+        },
+        {
+          "kind": "text",
+          "text": ": vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadfunctions/3241161-destroysetup": {
+      "title": "destroySetup(channelCount:biquadSetup:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadfunctions/3241161-destroysetup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_biquadfunctions/3241161-destroysetup",
+      "required": true,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "destroySetup"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "channelCount"
+        },
+        {
+          "kind": "text",
+          "text": ": UInt, "
+        },
+        {
+          "kind": "identifier",
+          "text": "biquadSetup"
+        },
+        {
+          "kind": "text",
+          "text": ": OpaquePointer)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadfunctions/3241162-makebiquadsetup": {
+      "title": "makeBiquadSetup(channelCount:coefficients:sectionCount:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadfunctions/3241162-makebiquadsetup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_biquadfunctions/3241162-makebiquadsetup",
+      "required": true,
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "makeBiquadSetup"
+        },
+        {
+          "kind": "text",
+          "text": "("
+        },
+        {
+          "kind": "identifier",
+          "text": "channelCount"
+        },
+        {
+          "kind": "text",
+          "text": ": vDSP_Length, "
+        },
+        {
+          "kind": "identifier",
+          "text": "coefficients"
+        },
+        {
+          "kind": "text",
+          "text": ": [Double], "
+        },
+        {
+          "kind": "identifier",
+          "text": "sectionCount"
+        },
+        {
+          "kind": "text",
+          "text": ": vDSP_Length) -> OpaquePointer?"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadfunctions": {
+      "title": "vDSP_BiquadFunctions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadfunctions",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_biquadfunctions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol that defines functions for biquadratic filtering."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "protocol "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_BiquadFunctions"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_floatingpointbiquadfilterable": {
+      "title": "vDSP_FloatingPointBiquadFilterable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_floatingpointbiquadfilterable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_floatingpointbiquadfilterable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Types that support biquadratic filtering."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "protocol "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_FloatingPointBiquadFilterable"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Conforming Types",
+      "type": "conformingTypes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/vectorizabledouble",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/vectorizablefloat"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Associated Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadfunctions/3241158-scalar"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Type Methods",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadfunctions/3241159-applymulti",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadfunctions/3241160-applysingle",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadfunctions/3241161-destroysetup",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp_biquadfunctions/3241162-makebiquadsetup"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/vdsp_floatingpointbiquadfilterable"
+      ],
+      "title": "Biquadratic Filtering",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "protocol"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "vDSP_BiquadFunctions"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

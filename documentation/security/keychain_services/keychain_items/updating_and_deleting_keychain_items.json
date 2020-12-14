@@ -1,0 +1,497 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Modify items in the keychain when the user’s data changes."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/keychain_services",
+        "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/keychain_services",
+        "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items",
+        "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/using_the_keychain_to_manage_user_secrets"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/updating_and_deleting_keychain_items",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2922079,
+  "kind": "article",
+  "metadata": {
+    "title": "Updating and Deleting Keychain Items",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/keychain_services/keychain_items/updating_and_deleting_keychain_items",
+        "documentation/security/keychain_services/keychain_items/using_the_keychain_to_manage_user_secrets/updating_and_deleting_keychain_items"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/keychain_services/keychain_items/updating_and_deleting_keychain_items",
+        "documentation/security/keychain_services/keychain_items/using_the_keychain_to_manage_user_secrets/updating_and_deleting_keychain_items"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services": {
+      "title": "Keychain Services",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services",
+      "url": "/documentation/security/keychain_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items": {
+      "title": "Keychain Items",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items",
+      "url": "/documentation/security/keychain_services/keychain_items",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/using_the_keychain_to_manage_user_secrets": {
+      "title": "Using the Keychain to Manage User Secrets",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/using_the_keychain_to_manage_user_secrets",
+      "url": "/documentation/security/keychain_services/keychain_items/using_the_keychain_to_manage_user_secrets",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/security/1398306-secitemcopymatching": {
+      "title": "SecItemCopyMatching",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1398306-secitemcopymatching",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1398306-secitemcopymatching"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/updating_and_deleting_keychain_items#2922085": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/updating_and_deleting_keychain_items#2922085",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/keychain_services/keychain_items/updating_and_deleting_keychain_items#2922085"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecvaluedata": {
+      "title": "kSecValueData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecvaluedata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecvaluedata"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattraccount": {
+      "title": "kSecAttrAccount",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccount",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattraccount"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/updating_and_deleting_keychain_items#2922086": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/updating_and_deleting_keychain_items#2922086",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/keychain_services/keychain_items/updating_and_deleting_keychain_items#2922086"
+    },
+    "doc://com.apple.documentation/documentation/security/1393617-secitemupdate": {
+      "title": "SecItemUpdate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1393617-secitemupdate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1393617-secitemupdate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Modifies items that match a search query."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/updating_and_deleting_keychain_items#2922084": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/updating_and_deleting_keychain_items#2922084",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/keychain_services/keychain_items/updating_and_deleting_keychain_items#2922084"
+    },
+    "doc://com.apple.documentation/documentation/security/1395547-secitemdelete": {
+      "title": "SecItemDelete",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1395547-secitemdelete",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1395547-secitemdelete",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deletes items that match a search query."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/updating_and_deleting_keychain_items#2922087": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/updating_and_deleting_keychain_items#2922087",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/keychain_services/keychain_items/updating_and_deleting_keychain_items#2922087"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecmatchitemlist": {
+      "title": "kSecMatchItemList",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecmatchitemlist",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecmatchitemlist"
+    },
+    "doc://com.apple.documentation/documentation/security/1401659-secitemadd": {
+      "title": "SecItemAdd",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1401659-secitemadd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1401659-secitemadd"
+    },
+    "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/updating_and_deleting_keychain_items": {
+      "title": "Updating and Deleting Keychain Items",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/keychain_services/keychain_items/updating_and_deleting_keychain_items",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/keychain_services/keychain_items/updating_and_deleting_keychain_items",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Modify items in the keychain when the user’s data changes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1393617-secitemupdate",
+        "doc://com.apple.documentation/documentation/security/1395547-secitemdelete"
+      ],
+      "title": "Keychain Item Modification",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If, outside the flow of your app, the user changes a password that your app stores in the keychain, you may discover the change only when authentication with that password fails. In response, your app prompts the user for the new credentials and updates the keychain to reflect the change."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "During this process, if you try to store the new set of credentials using a call to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1401659-secitemadd"
+            },
+            {
+              "type": "text",
+              "text": " function, you may find that the operation fails. With primary attributes the same as an existing item, the new item can’t coexist with the old one in the keychain. Even if a primary attribute (such as the user name) does change and the add operation succeeds, you end up cluttering the keychain with old, abandoned items. These may be hard to distinguish from the one you actually need. To avoid these problems, update the existing item instead."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Prepare a Search Query and New Attributes",
+          "anchor": "2922081"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To update keychain items, you first need to find them. So an update begins with an implicit search just like the one explicitly performed by the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1398306-secitemcopymatching"
+            },
+            {
+              "type": "text",
+              "text": " function. To control this implicit search, just as for the explicit search, you create a query dictionary:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let query: [String: Any] = [kSecClass as String: kSecClassInternetPassword,",
+            "                            kSecAttrServer as String: server]"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2922085",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This particular query indicates a search for an Internet password associated with your "
+            },
+            {
+              "type": "codeVoice",
+              "code": "server"
+            },
+            {
+              "type": "text",
+              "text": ". Be aware that this matches (and also updates) any such passwords that you’ve stored. If you’re using the keychain for other storage, you may need to further qualify this search to ensure that you only affect the item of interest. Because you’re not retrieving the data, there’s no need to specify a return type."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In addition to supplying the search query, you supply a second dictionary to describe your desired changes. You can provide new item data, such as for changing a stored password, using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecvaluedata"
+            },
+            {
+              "type": "text",
+              "text": " key. And you can change an item’s attributes—for example, updating the account by using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecattraccount"
+            },
+            {
+              "type": "text",
+              "text": " key:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let account = credentials.username",
+            "let password = credentials.password.data(using: String.Encoding.utf8)!",
+            "let attributes: [String: Any] = [kSecAttrAccount as String: account,",
+            "                                 kSecValueData as String: password]"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2922086",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You provide the user name and password given by the user, passed through a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "C"
+            },
+            {
+              "type": "codeVoice",
+              "code": "redentials"
+            },
+            {
+              "type": "text",
+              "text": " instance. It’s OK if the user name happens to be the same as the existing value and only the password data changes."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Execute an Update",
+          "anchor": "2922083"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Using the search query and the new attributes, call the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1393617-secitemupdate"
+            },
+            {
+              "type": "text",
+              "text": " function:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let status = SecItemUpdate(query as CFDictionary, attributes as CFDictionary)",
+            "guard status != errSecItemNotFound else { throw KeychainError.noPassword }",
+            "guard status == errSecSuccess else { throw KeychainError.unhandledError(status: status) }"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2922084",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Make sure you test the status returned by the call and handle any failure. When successful, the call modifies all matching items according to the attributes you provide."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Delete Items That You No Longer Need",
+          "anchor": "2922082"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the user decides to log out of your server from within your app, you’ll want to remove the password item from the keychain as part of that process. Deleting an item is very much like updating it, except that it only requires the query dictionary. You can use the same query defined earlier, this time with a call to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1395547-secitemdelete"
+            },
+            {
+              "type": "text",
+              "text": " function:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let status = SecItemDelete(query as CFDictionary)",
+            "guard status == errSecSuccess || status == errSecItemNotFound else { throw KeychainError.unhandledError(status: status) }"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2922087",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "By default, keychain services deletes all keychain items that match the search parameters. If you want to delete a specific item that you already have a reference or persistent reference to, add that to the search dictionary as the value for the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecmatchitemlist"
+            },
+            {
+              "type": "text",
+              "text": " key. In this way, you limit the deletion to only the specified item."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

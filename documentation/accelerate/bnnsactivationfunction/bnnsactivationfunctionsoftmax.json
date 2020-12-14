@@ -1,0 +1,1194 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An activation function that returns the softmax function of its input."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/bnns",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftmax",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2873625,
+  "kind": "symbol",
+  "metadata": {
+    "title": "BNNSActivationFunctionSoftmax",
+    "role": "symbol",
+    "roleHeading": "Enumeration Case",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "11.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.13",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "11.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "4.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@EA@BNNSActivationFunction@BNNSActivationFunctionSoftmax",
+    "symbolKind": "econst"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftmax"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnns": {
+      "title": "BNNS",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnns",
+      "url": "/documentation/accelerate/bnns",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction": {
+      "title": "BNNSActivationFunction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that describe activation functions."
+        }
+      ]
+    },
+    "link-media-3401551": {
+      "identifier": "link-media-3401551",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftmax#3401551"
+    },
+    "media-3401551": {
+      "identifier": "media-3401551",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 136
+          },
+          "url": "https://docs-assets.developer.apple.com/published/c927394d3e/e8ce414f-c955-425f-b980-5cf7e61f2891.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 136
+          },
+          "url": "https://docs-assets.developer.apple.com/published/c2185dfdcf/0ab139bc-3ff6-49d2-8b36-dcc98ef31102.png"
+        }
+      ],
+      "alt": "General formula that describes mathematically the softmax activation function. s open bracket x sub i close bracket equals  the exponential of x sub i over summation from j equals one to n times the exponential of x sub j.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftmax#3402484": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftmax#3402484",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftmax#3402484"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftmax#3402486": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftmax#3402486",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftmax#3402486"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftmax#3402485": {
+      "title": "Table 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftmax#3402485",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftmax#3402485"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionabs": {
+      "title": "BNNSActivationFunctionAbs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionabs",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionabs",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns the absolute value of its input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctioncelu": {
+      "title": "BNNSActivationFunctionCELU",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctioncelu",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctioncelu",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that evaluates the continuously differentiable exponential linear units (CELU) on its input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionclamp": {
+      "title": "BNNSActivationFunctionClamp",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionclamp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionclamp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns its input clamped to the specified range."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionclampedleakyrectifiedlinear": {
+      "title": "BNNSActivationFunctionClampedLeakyRectifiedLinear",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionclampedleakyrectifiedlinear",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionclampedleakyrectifiedlinear",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns its input clamped to beta when that is greater than or equal to zero, otherwise it returns its input multiplied by alpha clamped to beta."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionelu": {
+      "title": "BNNSActivationFunctionELU",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionelu",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionelu",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that evaluates the exponential linear units (ELU) on its input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiongeluapproximation": {
+      "title": "BNNSActivationFunctionGELUApproximation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiongeluapproximation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiongeluapproximation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that evaluates the Gaussian error linear units (GELU) approximation on its input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiongeluapproximation2": {
+      "title": "BNNSActivationFunctionGELUApproximation2",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiongeluapproximation2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiongeluapproximation2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that provides a fast evaluation of the Gaussian error linear units (GELU) approximation on its input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiongumbel": {
+      "title": "BNNSActivationFunctionGumbel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiongumbel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiongumbel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns random numbers from the Gumbel distribution."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiongumbelmax": {
+      "title": "BNNSActivationFunctionGumbelMax",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiongumbelmax",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiongumbelmax",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns random numbers from the Gumbel distribution."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionhardshrink": {
+      "title": "BNNSActivationFunctionHardShrink",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionhardshrink",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionhardshrink",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns zero when the absolute input is less than alpha, otherwise it returns its input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionhardsigmoid": {
+      "title": "BNNSActivationFunctionHardSigmoid",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionhardsigmoid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionhardsigmoid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns the hard sigmoid function of its input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionidentity": {
+      "title": "BNNSActivationFunctionIdentity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionidentity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionidentity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns its input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionleakyrectifiedlinear": {
+      "title": "BNNSActivationFunctionLeakyRectifiedLinear",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionleakyrectifiedlinear",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionleakyrectifiedlinear",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns its input when that is greater than or equal to zero, otherwise it returns its input multiplied by a specified value."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionintegerlinearsaturate": {
+      "title": "BNNSActivationFunctionIntegerLinearSaturate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionintegerlinearsaturate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionintegerlinearsaturate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns an arithmetic shift, preserving sign."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionintegerlinearsaturateperchannel": {
+      "title": "BNNSActivationFunctionIntegerLinearSaturatePerChannel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionintegerlinearsaturateperchannel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionintegerlinearsaturateperchannel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns an arithmetic shift, preserving sign for each channel."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionlinearwithbias": {
+      "title": "BNNSActivationFunctionLinearWithBias",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionlinearwithbias",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionlinearwithbias",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns its input multiplied by a scale and added to a bias."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionlogsigmoid": {
+      "title": "BNNSActivationFunctionLogSigmoid",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionlogsigmoid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionlogsigmoid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns the logarithm of the sigmoid function of its input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionlogsoftmax": {
+      "title": "BNNSActivationFunctionLogSoftmax",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionlogsoftmax",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionlogsoftmax",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns the logarithm of the softmax function of its input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionlinear": {
+      "title": "BNNSActivationFunctionLinear",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionlinear",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionlinear",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns its input multiplied by a specified value."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionpreluperchannel": {
+      "title": "BNNSActivationFunctionPReLUPerChannel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionpreluperchannel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionpreluperchannel",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function provides per-channel alpha values to Leaky Rectified Linear."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionrectifiedlinear": {
+      "title": "BNNSActivationFunctionRectifiedLinear",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionrectifiedlinear",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionrectifiedlinear",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns its input when that is greater than or equal to zero, otherwise it returns zero."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionscaledtanh": {
+      "title": "BNNSActivationFunctionScaledTanh",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionscaledtanh",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionscaledtanh",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns the scaled hyperbolic tangent of its input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionselu": {
+      "title": "BNNSActivationFunctionSELU",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionselu",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionselu",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that evaluates the scaled exponential linear units (SELU) on its input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsigmoid": {
+      "title": "BNNSActivationFunctionSigmoid",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsigmoid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsigmoid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns the sigmoid function of its input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftmax": {
+      "title": "BNNSActivationFunctionSoftmax",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftmax",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftmax",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns the softmax function of its input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftshrink": {
+      "title": "BNNSActivationFunctionSoftShrink",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftshrink",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftshrink",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns zero when the absolute input is less than alpha, otherwise it returns its input minus alpha."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftplus": {
+      "title": "BNNSActivationFunctionSoftplus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftplus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftplus",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns the softplus function of its input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftsign": {
+      "title": "BNNSActivationFunctionSoftsign",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftsign",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftsign",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns the softsign function of its input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiontanh": {
+      "title": "BNNSActivationFunctionTanh",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiontanh",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiontanh",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns the hyperbolic tangent of its input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiontanhshrink": {
+      "title": "BNNSActivationFunctionTanhShrink",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiontanhshrink",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiontanhshrink",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns its input minus the hyperbolic tangent of its input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionthreshold": {
+      "title": "BNNSActivationFunctionThreshold",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionthreshold",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionthreshold",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An activation function that returns beta if its input is less than a specified threshold, otherwise it returns its input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionabs",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctioncelu",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionclamp",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionclampedleakyrectifiedlinear",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionelu",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiongeluapproximation",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiongeluapproximation2",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiongumbel",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiongumbelmax",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionhardshrink",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionhardsigmoid",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionidentity",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionleakyrectifiedlinear",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionintegerlinearsaturate",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionintegerlinearsaturateperchannel",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionlinearwithbias",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionlogsigmoid",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionlogsoftmax",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionlinear",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionpreluperchannel",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionrectifiedlinear",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionscaledtanh",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionselu",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsigmoid",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftshrink",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftplus",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionsoftsign",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiontanh",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctiontanhshrink",
+        "doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction/bnnsactivationfunctionthreshold"
+      ],
+      "title": "Activation Functions",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "identifier",
+              "text": "BNNSActivationFunctionSoftmax"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This constant defines an activation function that returns values using the following formula:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3401551",
+              "metadata": {
+                "anchor": "3401551",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The softmax function transforms a vector of real numbers into a vector of probabilities. Each probability in the result is in the range 0...1, and the sum of the probabilities is 1. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows how to apply the softmax function to a vector that contains seven elements:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let inputs: [Float] = [3, 5, 1, 6, 2, 1, 4]",
+            "let count = inputs.count",
+            "var outputs = [Float](repeating: 0,",
+            "                      count: count)",
+            "",
+            "var inDescription = BNNSVectorDescriptor(size: count,",
+            "                                         data_type: .float)",
+            "var outDescription = BNNSVectorDescriptor(size: count,",
+            "                                          data_type: .float)",
+            "var activation = BNNSActivation(function: .softmax)",
+            "var filterParameters = BNNSFilterParameters()",
+            "",
+            "let activationLayer = BNNSFilterCreateVectorActivationLayer(&inDescription,",
+            "                                                            &outDescription,",
+            "                                                            &activation,",
+            "                                                            &filterParameters)",
+            "",
+            "BNNSFilterApply(activationLayer, inputs, &outputs)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3402484",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, the softmax function calculates the following values:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Inputs"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Outputs"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "3.0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0.031415492"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "5.0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0.23213086"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "1.0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0.004251625"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "6.0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0.63099706"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "2.0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0.011557114"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "1.0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0.004251625"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "4.0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0.08539616"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "3402486",
+            "title": "Table 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Changing the fourth element in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "inputs"
+            },
+            {
+              "type": "text",
+              "text": " to 10 increases its probability to almost 1.0:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Inputs"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Outputs"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "3.0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0.00090221845"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "5.0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0.0066665425"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "1.0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0.00012210199"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "10.0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0.98940265"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "2.0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0.00033190762"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "1.0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0.00012210199"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "4.0"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "0.002452484"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "3402485",
+            "title": "Table 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

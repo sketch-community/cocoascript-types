@@ -6795,17 +6795,20 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface UIOffset {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface UIEdgeInsets {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/uiaxis
   type UIAxis = cocoascript.NSUInteger;
 }
 declare namespace cocoascript {
   interface NSDirectionalEdgeInsets {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/uikit/nsdirectionalrectedge
   type NSDirectionalRectEdge = cocoascript.NSUInteger;
 }
@@ -18943,7 +18946,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface UIFloatRange {
   }
-}// doc://com.apple.documentation/documentation/uikit/uipageviewcontrolleroptioninterpagespacingkey
+}
+// doc://com.apple.documentation/documentation/uikit/uipageviewcontrolleroptioninterpagespacingkey
 declare const UIPageViewControllerOptionInterPageSpacingKey: cocoascript.UIPageViewControllerOptionsKey;
 // doc://com.apple.documentation/documentation/uikit/uipageviewcontrolleroptionspinelocationkey
 declare const UIPageViewControllerOptionSpineLocationKey: cocoascript.UIPageViewControllerOptionsKey;

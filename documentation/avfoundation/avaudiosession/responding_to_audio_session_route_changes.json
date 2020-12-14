@@ -1,0 +1,581 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Observe audio session notifications to ensure that your app responds appropriately to route changes."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiosession"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/responding_to_audio_session_route_changes",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2948861,
+  "kind": "article",
+  "metadata": {
+    "title": "Responding to Audio Session Route Changes",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/avaudiosession/responding_to_audio_session_route_changes"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/avaudiosession/responding_to_audio_session_route_changes"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing": {
+      "title": "Audio Playback, Recording, and Processing",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing",
+      "url": "/documentation/avfoundation/audio_playback_recording_and_processing",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosession": {
+      "title": "AVAudioSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosession"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionroutechangenotification": {
+      "title": "AVAudioSessionRouteChangeNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionroutechangenotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosessionroutechangenotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that’s posted when the system’s audio route changes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/responding_to_audio_session_route_changes#2948864": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/responding_to_audio_session_route_changes#2948864",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/avaudiosession/responding_to_audio_session_route_changes#2948864"
+    },
+    "doc://com.apple.documentation/documentation/foundation/notification": {
+      "title": "Notification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/notification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/notification"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionroutechangereason": {
+      "title": "AVAudioSessionRouteChangeReason",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionroutechangereason",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosessionroutechangereason"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionroutechangereason/avaudiosessionroutechangereasonnewdeviceavailable": {
+      "title": "AVAudioSessionRouteChangeReasonNewDeviceAvailable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionroutechangereason/avaudiosessionroutechangereasonnewdeviceavailable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosessionroutechangereason/avaudiosessionroutechangereasonnewdeviceavailable"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionroutechangereason/avaudiosessionroutechangereasonolddeviceunavailable": {
+      "title": "AVAudioSessionRouteChangeReasonOldDeviceUnavailable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionroutechangereason/avaudiosessionroutechangereasonolddeviceunavailable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosessionroutechangereason/avaudiosessionroutechangereasonolddeviceunavailable"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/1616453-currentroute": {
+      "title": "currentRoute",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/1616453-currentroute",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosession/1616453-currentroute"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionroutedescription": {
+      "title": "AVAudioSessionRouteDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionroutedescription",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosessionroutedescription"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/responding_to_audio_session_route_changes#2948865": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/responding_to_audio_session_route_changes#2948865",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/avaudiosession/responding_to_audio_session_route_changes#2948865"
+    },
+    "devLink-1734411": {
+      "identifier": "devLink-1734411",
+      "type": "link",
+      "title": "iOS Human Interface Guidelines",
+      "url": "https://developer.apple.com/ios/human-interface-guidelines/"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer": {
+      "title": "AVPlayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388846-rate": {
+      "title": "rate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388846-rate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avplayer/1388846-rate"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/responding_to_audio_session_interruptions": {
+      "title": "Responding to Audio Session Interruptions",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/responding_to_audio_session_interruptions",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/avaudiosession/responding_to_audio_session_interruptions",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Observe audio session notifications to ensure that your app responds appropriately to interruptions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/responding_to_audio_session_route_changes": {
+      "title": "Responding to Audio Session Route Changes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/responding_to_audio_session_route_changes",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/avaudiosession/responding_to_audio_session_route_changes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Observe audio session notifications to ensure that your app responds appropriately to route changes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioninterruptionnotification": {
+      "title": "AVAudioSessionInterruptionNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioninterruptionnotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosessioninterruptionnotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that’s posted when an audio interruption occurs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/1616458-interruption_flags": {
+      "title": "Interruption Flags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/1616458-interruption_flags",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/avfoundation/1616458-interruption_flags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants that indicate the state of the audio session following an interruption."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionsilencesecondaryaudiohintnotification": {
+      "title": "AVAudioSessionSilenceSecondaryAudioHintNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionsilencesecondaryaudiohintnotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosessionsilencesecondaryaudiohintnotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that’s posted when the primary audio from other applications starts and stops."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmediaserviceswerelostnotification": {
+      "title": "AVAudioSessionMediaServicesWereLostNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmediaserviceswerelostnotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosessionmediaserviceswerelostnotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that’s posted when the system terminates the media server."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmediaserviceswereresetnotification": {
+      "title": "AVAudioSessionMediaServicesWereResetNotification",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmediaserviceswereresetnotification",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosessionmediaserviceswereresetnotification",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A notification that’s posted when the media server restarts."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/responding_to_audio_session_interruptions",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiosessioninterruptionnotification",
+        "doc://com.apple.documentation/documentation/avfoundation/1616458-interruption_flags",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionroutechangenotification",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionsilencesecondaryaudiohintnotification",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmediaserviceswerelostnotification",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmediaserviceswereresetnotification"
+      ],
+      "title": "Responding to Audio Session Notifications",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An important responsibility of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession"
+            },
+            {
+              "type": "text",
+              "text": " is managing audio route changes. A route change occurs when the system adds or removes an audio input or output. Route changes occur for several reasons, including a user plugging in a pair of headphones, connecting a Bluetooth LE headset, or unplugging a USB audio interface. When these changes occur, the audio session reroutes audio signals accordingly and broadcasts a notification containing the details of the change to any registered observers."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An important behavior related to route changes occurs when a user plugs in or removes a pair of headphones (see Audio in "
+            },
+            {
+              "type": "link",
+              "title": "iOS Human Interface Guidelines",
+              "destination": "https://developer.apple.com/ios/human-interface-guidelines/"
+            },
+            {
+              "type": "text",
+              "text": "). When users connect a pair of wired or wireless headphones, they’re implicitly indicating that audio playback should continue, but privately. They expect an app that’s currently playing media to continue playing without pause. However, when users "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "disconnect"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " their headphones, they don’t want to automatically share what they’re listening to with others. Applications should respect this implicit privacy request and automatically pause playback when users disconnect their headphones."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer"
+                },
+                {
+                  "type": "text",
+                  "text": " monitors your app’s audio session and responds appropriately to route changes. When users connect headphones, playback continues as expected. When they disconnect their headphones, playback is automatically paused. To observe this player behavior, key-value observe the player’s "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/avfoundation/avplayer/1388846-rate"
+                },
+                {
+                  "type": "text",
+                  "text": " property so that you can update your user interface as the player pauses playback."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Observe Route Changes",
+          "anchor": "2948863"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can directly observe route change notifications posted by the audio session. This might be useful if you want the system to notify you when a user connects headphones so you can present an icon or message in the player interface. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To observe audio route changes, begin by registering to observe notifications of type "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionroutechangenotification"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func setupNotifications() {",
+            "    // Get the default notification center instance.",
+            "    let nc = NotificationCenter.default",
+            "    nc.addObserver(self,",
+            "                   selector: #selector(handleRouteChange),",
+            "                   name: AVAudioSession.routeChangeNotification,",
+            "                   object: nil)",
+            "}",
+            "",
+            "@objc func handleRouteChange(notification: Notification) {",
+            "    // To be implemented.",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2948864",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Respond to Route Changes",
+          "anchor": "2948866"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The posted "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/notification"
+            },
+            {
+              "type": "text",
+              "text": " object contains a populated user-information dictionary providing the details of the route change. Determine the reason for this change by retrieving the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionroutechangereason"
+            },
+            {
+              "type": "text",
+              "text": " value from the dictionary. When a user connects a new device, the reason is "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionroutechangereason/avaudiosessionroutechangereasonnewdeviceavailable"
+            },
+            {
+              "type": "text",
+              "text": ", and when a user removes a device, the reason is "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionroutechangereason/avaudiosessionroutechangereasonolddeviceunavailable"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When a new device becomes available, you ask the audio session for its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosession/1616453-currentroute"
+            },
+            {
+              "type": "text",
+              "text": " to determine where the audio output is currently routed. This query returns an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosessionroutedescription"
+            },
+            {
+              "type": "text",
+              "text": " object that lists all of the audio session’s inputs and outputs. When the user removes a device, you retrieve the route description for the previous route from the user-information dictionary. In both cases, you query the route description for its outputs, which returns an array of port description objects providing the details of the audio output routes."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "@objc func handleRouteChange(notification: Notification) {",
+            "    guard let userInfo = notification.userInfo,",
+            "        let reasonValue = userInfo[AVAudioSessionRouteChangeReasonKey] as? UInt,",
+            "        let reason = AVAudioSession.RouteChangeReason(rawValue: reasonValue) else {",
+            "            return",
+            "    }",
+            "    ",
+            "    // Switch over the route change reason.",
+            "    switch reason {",
+            "",
+            "    case .newDeviceAvailable: // New device found.",
+            "        let session = AVAudioSession.sharedInstance()",
+            "        headphonesConnected = hasHeadphones(in: session.currentRoute)",
+            "    ",
+            "    case .oldDeviceUnavailable: // Old device removed.",
+            "        if let previousRoute =",
+            "            userInfo[AVAudioSessionRouteChangePreviousRouteKey] as? AVAudioSessionRouteDescription {",
+            "            headphonesConnected = hasHeadphones(in: previousRoute)",
+            "        }",
+            "    ",
+            "    default: ()",
+            "    }",
+            "}",
+            "",
+            "func hasHeadphones(in routeDescription: AVAudioSessionRouteDescription) -> Bool {",
+            "    // Filter the outputs to only those with a port type of headphones.",
+            "    return !routeDescription.outputs.filter({$0.portType == .headphones}).isEmpty",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2948865",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,0 +1,514 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Multiplies a matrix by a scalar and then by a vector, and adds the resulting vector to a second vector."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/veclib",
+        "doc://com.apple.documentation/documentation/accelerate/veclib/vectorops"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/1545176-vsgemx",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1545176,
+  "kind": "symbol",
+  "metadata": {
+    "title": "vSgemx",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.0",
+        "deprecatedAt": "10.14",
+        "current": "11.1",
+        "deprecated": true
+      }
+    ],
+    "externalID": "c:@F@vSgemx",
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/1545176-vsgemx"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/1545176-vsgemx"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/veclib": {
+      "title": "vecLib",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/veclib",
+      "url": "/documentation/accelerate/veclib",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/veclib/vectorops": {
+      "title": "vectorOps",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/veclib/vectorops",
+      "url": "/documentation/accelerate/veclib/vectorops",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/kernel/vfloat": {
+      "title": "vFloat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/kernel/vfloat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/kernel/vfloat"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1546073-vsgemv": {
+      "title": "vSgemv",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1546073-vsgemv",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1546073-vsgemv",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Multiplies a vector by a scalar. Multiplies a matrix by another scalar, then by a second vector, and adds the resulting vector to the first vector. This function can also perform the calculation with the transpose of the original matrix instead of the matrix itself. A selector parameter determines whether the transpose is used."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1545176-vsgemx": {
+      "title": "vSgemx",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1545176-vsgemx",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1545176-vsgemx",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Multiplies a matrix by a scalar and then by a vector, and adds the resulting vector to a second vector."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1546641-vsgemtx": {
+      "title": "vSgemtx",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1546641-vsgemtx",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1546641-vsgemtx",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Forms the transpose of a matrix, multiplies it by a scalar and then by a vector, and adds the resulting vector to a second vector."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/1546073-vsgemv",
+        "doc://com.apple.documentation/documentation/accelerate/1546641-vsgemtx"
+      ],
+      "title": "Matrix-Vector Linear Algebra Functions (from vectorOps.h)",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "vSgemx"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "keyword",
+              "text": "int32_t"
+            },
+            {
+              "kind": "text",
+              "text": " m, "
+            },
+            {
+              "kind": "keyword",
+              "text": "int32_t"
+            },
+            {
+              "kind": "text",
+              "text": " n, "
+            },
+            {
+              "kind": "keyword",
+              "text": "float"
+            },
+            {
+              "kind": "text",
+              "text": " alpha, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vFloat",
+              "identifier": "doc://com.apple.documentation/documentation/kernel/vfloat",
+              "text": "vFloat"
+            },
+            {
+              "kind": "text",
+              "text": " *a, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vFloat",
+              "identifier": "doc://com.apple.documentation/documentation/kernel/vfloat",
+              "text": "vFloat"
+            },
+            {
+              "kind": "text",
+              "text": " *x, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vFloat",
+              "identifier": "doc://com.apple.documentation/documentation/kernel/vfloat",
+              "text": "vFloat"
+            },
+            {
+              "kind": "text",
+              "text": " *y);"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "m",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "number of rows in "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "a"
+                },
+                {
+                  "type": "text",
+                  "text": ", and the length of vector "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "y"
+                },
+                {
+                  "type": "text",
+                  "text": "; must be a multiple of 4."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "n",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "number of columns in "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "a"
+                },
+                {
+                  "type": "text",
+                  "text": ", and the length of vector "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "x"
+                },
+                {
+                  "type": "text",
+                  "text": "; must be a multiple of 4."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "alpha",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "scalar multiplier for matrix "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "a"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "a",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "codeVoice",
+                  "code": "m"
+                },
+                {
+                  "type": "text",
+                  "text": " by "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "n"
+                },
+                {
+                  "type": "text",
+                  "text": " matrix with elements of type "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "float"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "x",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "vector with elements of type "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "float"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "y",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "destination vector with "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "n"
+                },
+                {
+                  "type": "text",
+                  "text": " elements of type "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "float"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Matrix "
+            },
+            {
+              "type": "codeVoice",
+              "code": "a"
+            },
+            {
+              "type": "text",
+              "text": " is multiplied by "
+            },
+            {
+              "type": "codeVoice",
+              "code": "alpha"
+            },
+            {
+              "type": "text",
+              "text": " and then by vector "
+            },
+            {
+              "type": "codeVoice",
+              "code": "x"
+            },
+            {
+              "type": "text",
+              "text": "; the resulting vector is added to vector "
+            },
+            {
+              "type": "codeVoice",
+              "code": "y"
+            },
+            {
+              "type": "text",
+              "text": ", and the results are stored in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "y"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

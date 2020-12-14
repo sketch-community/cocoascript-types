@@ -1,0 +1,1774 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Secure network communication using standardized transport layer security mechanisms."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/secure_transport",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1654508,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Secure Transport",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/secure_transport"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/secure_transport"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/sslconnectionref": {
+      "title": "SSLConnectionRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sslconnectionref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sslconnectionref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A pointer to an opaque I/O connection object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/network": {
+      "title": "Network",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/network",
+      "kind": "article",
+      "role": "collection",
+      "url": "/documentation/network"
+    },
+    "doc://com.apple.documentation/documentation/security/secure_transport/using_the_secure_socket_layer_for_network_communication": {
+      "title": "Using the Secure Socket Layer for Network Communication",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secure_transport/using_the_secure_socket_layer_for_network_communication",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/secure_transport/using_the_secure_socket_layer_for_network_communication",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Establish Secure Sockets Layer (SSL) sessions to facilitate secure communication between client and server."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1393063-sslcreatecontext": {
+      "title": "SSLCreateContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1393063-sslcreatecontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1393063-sslcreatecontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Allocates and returns a new context."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/sslprotocolside": {
+      "title": "SSLProtocolSide",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sslprotocolside",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sslprotocolside",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The flags that indicate whether a context is for the server or client side of a connection."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/sslconnectiontype": {
+      "title": "SSLConnectionType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sslconnectiontype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sslconnectiontype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The flags that indicate whether a context is to be used for streaming or datagram-based communication."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/sslcontextref": {
+      "title": "SSLContextRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sslcontextref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sslcontextref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An opaque type that represents an SSL session context object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1398165-sslcontextgettypeid": {
+      "title": "SSLContextGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1398165-sslcontextgettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1398165-sslcontextgettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the Core Foundation type ID for context objects."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1399173-sslsetsessionoption": {
+      "title": "SSLSetSessionOption",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1399173-sslsetsessionoption",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1399173-sslsetsessionoption",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies options for a specific session."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1392604-sslgetsessionoption": {
+      "title": "SSLGetSessionOption",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1392604-sslgetsessionoption",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1392604-sslgetsessionoption",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates the current setting of Secure Sockets Layer (SSL) session options."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/sslsessionoption": {
+      "title": "SSLSessionOption",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sslsessionoption",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sslsessionoption",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The options that can be set for an SSL session."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1396081-sslsetiofuncs": {
+      "title": "SSLSetIOFuncs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396081-sslsetiofuncs",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396081-sslsetiofuncs",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies callback functions that perform the network I/O operations."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/sslreadfunc": {
+      "title": "SSLReadFunc",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sslreadfunc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sslreadfunc",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A pointer to a customized read function that secure transport calls to read data from the connection."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/sslwritefunc": {
+      "title": "SSLWriteFunc",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sslwritefunc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sslwritefunc",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A pointer to a customized write function that secure transport calls to write data to the connection."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1638095-sslsetsessionconfig": {
+      "title": "SSLSetSessionConfig",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1638095-sslsetsessionconfig",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1638095-sslsetsessionconfig",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets a predefined configuration for the Secure Sockets Layer (SSL) session."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1397567-sslsetclientsideauthenticate": {
+      "title": "SSLSetClientSideAuthenticate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1397567-sslsetclientsideauthenticate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1397567-sslsetclientsideauthenticate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies the requirements for client-side authentication."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/secure_transport/sslconfig": {
+      "title": "SSLConfig",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secure_transport/sslconfig",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/secure_transport/sslconfig",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use these constants to configure Transport Layer Security (TLS) sessions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/sslauthenticate": {
+      "title": "SSLAuthenticate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sslauthenticate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sslauthenticate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The flags that represent the requirements for client-side authentication."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1398843-sslsetconnection": {
+      "title": "SSLSetConnection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1398843-sslsetconnection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1398843-sslsetconnection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies an I/O connection for a specific session."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1397993-sslgetconnection": {
+      "title": "SSLGetConnection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1397993-sslgetconnection",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1397993-sslgetconnection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves an I/O connection—such as a socket or endpoint—for a specific session."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1400161-sslhandshake": {
+      "title": "SSLHandshake",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1400161-sslhandshake",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1400161-sslhandshake",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs the SSL handshake."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1638073-sslrehandshake": {
+      "title": "SSLReHandshake",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1638073-sslrehandshake",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1638073-sslrehandshake",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Requests renegotiation of the SSL handshake. Server only. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1397869-sslclose": {
+      "title": "SSLClose",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1397869-sslclose",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1397869-sslclose",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Terminates the current SSL session."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1400006-sslsetpeerid": {
+      "title": "SSLSetPeerID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1400006-sslsetpeerid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1400006-sslsetpeerid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies data that is sufficient to uniquely identify the peer of the current session."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1395882-sslgetpeerid": {
+      "title": "SSLGetPeerID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1395882-sslgetpeerid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1395882-sslgetpeerid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the current peer ID data."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1393517-sslgetsessionstate": {
+      "title": "SSLGetSessionState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1393517-sslgetsessionstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1393517-sslgetsessionstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the state of an SSL session."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/sslsessionstate": {
+      "title": "SSLSessionState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sslsessionstate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sslsessionstate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The flags that represent the state of an SSL session."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/2867331-sslseterror": {
+      "title": "SSLSetError",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/2867331-sslseterror",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/2867331-sslseterror",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the status of a session context."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1394324-sslread": {
+      "title": "SSLRead",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1394324-sslread",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1394324-sslread",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs a normal application-level read operation."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1394958-sslgetbufferedreadsize": {
+      "title": "SSLGetBufferedReadSize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1394958-sslgetbufferedreadsize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1394958-sslgetbufferedreadsize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines how much data is available to be read."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1400864-sslwrite": {
+      "title": "SSLWrite",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1400864-sslwrite",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1400864-sslwrite",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs a typical application-level write operation."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1401259-sslgetdatagramwritesize": {
+      "title": "SSLGetDatagramWriteSize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1401259-sslgetdatagramwritesize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1401259-sslgetdatagramwritesize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provides the largest packet that the OS guarantees it can send without fragmentation."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1399678-sslgetmaxdatagramrecordsize": {
+      "title": "SSLGetMaxDatagramRecordSize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1399678-sslgetmaxdatagramrecordsize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1399678-sslgetmaxdatagramrecordsize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtains the maximum datagram record size allowed by the application for a given context."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1394978-sslsetmaxdatagramrecordsize": {
+      "title": "SSLSetMaxDatagramRecordSize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1394978-sslsetmaxdatagramrecordsize",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1394978-sslsetmaxdatagramrecordsize",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the maximum datagram record size allowed by the application for a given context."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1398936-sslsetdatagramhellocookie": {
+      "title": "SSLSetDatagramHelloCookie",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1398936-sslsetdatagramhellocookie",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1398936-sslsetdatagramhellocookie",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the cookie value used in the Datagram Transport Layer Security (DTLS) hello message."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1393047-sslsetpeerdomainname": {
+      "title": "SSLSetPeerDomainName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1393047-sslsetpeerdomainname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1393047-sslsetpeerdomainname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies the fully qualified domain name of the peer."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1398086-sslgetpeerdomainnamelength": {
+      "title": "SSLGetPeerDomainNameLength",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1398086-sslgetpeerdomainnamelength",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1398086-sslgetpeerdomainnamelength",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines the length of a previously set peer domain name. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1400295-sslgetpeerdomainname": {
+      "title": "SSLGetPeerDomainName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1400295-sslgetpeerdomainname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1400295-sslgetpeerdomainname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the peer domain name specified previously. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1845288-sslcopyrequestedpeername": {
+      "title": "SSLCopyRequestedPeerName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1845288-sslcopyrequestedpeername",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1845288-sslcopyrequestedpeername",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines the buffer size needed for the peer domain name."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1845290-sslcopyrequestedpeernamelength": {
+      "title": "SSLCopyRequestedPeerNameLength",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1845290-sslcopyrequestedpeernamelength",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1845290-sslcopyrequestedpeernamelength",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtains the hostname specified by the client in the ServerName extension (SNI). Server only."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1393798-sslsetprotocolversionmax": {
+      "title": "SSLSetProtocolVersionMax",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1393798-sslsetprotocolversionmax",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1393798-sslsetprotocolversionmax",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the maximum protocol version allowed by the application for a given SSL context."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1398139-sslsetprotocolversionmin": {
+      "title": "SSLSetProtocolVersionMin",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1398139-sslsetprotocolversionmin",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1398139-sslsetprotocolversionmin",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the minimum protocol version allowed by the application for a given SSL context."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1396167-sslgetprotocolversionmax": {
+      "title": "SSLGetProtocolVersionMax",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396167-sslgetprotocolversionmax",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396167-sslgetprotocolversionmax",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the maximum protocol version allowed by the application for a given SSL context."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1395690-sslgetprotocolversionmin": {
+      "title": "SSLGetProtocolVersionMin",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1395690-sslgetprotocolversionmin",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1395690-sslgetprotocolversionmin",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the minimum protocol version allowed by the application for a given SSL context."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1397382-sslgetnegotiatedprotocolversion": {
+      "title": "SSLGetNegotiatedProtocolVersion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1397382-sslgetnegotiatedprotocolversion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1397382-sslgetnegotiatedprotocolversion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtains the negotiated protocol version of the active session. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/tls_protocol_version_t": {
+      "title": "tls_protocol_version_t",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/tls_protocol_version_t",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/tls_protocol_version_t",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The collection of supported TLS and DTLS versions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/sslprotocol": {
+      "title": "SSLProtocol",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sslprotocol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sslprotocol",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An enumeration of valid SSL protocol versions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/2867328-sslcopyalpnprotocols": {
+      "title": "SSLCopyALPNProtocols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/2867328-sslcopyalpnprotocols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/2867328-sslcopyalpnprotocols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the list of supported application layer protocols."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/2867327-sslsetalpnprotocols": {
+      "title": "SSLSetALPNProtocols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/2867327-sslsetalpnprotocols",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/2867327-sslsetalpnprotocols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the list of supported applicaiton layer protocols."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1402304-sslgetnumbersupportedciphers": {
+      "title": "SSLGetNumberSupportedCiphers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1402304-sslgetnumbersupportedciphers",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1402304-sslgetnumbersupportedciphers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines the number of cipher suites supported. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1395230-sslgetsupportedciphers": {
+      "title": "SSLGetSupportedCiphers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1395230-sslgetsupportedciphers",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1395230-sslgetsupportedciphers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines the values of the supported cipher suites."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1397188-sslsetenabledciphers": {
+      "title": "SSLSetEnabledCiphers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1397188-sslsetenabledciphers",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1397188-sslsetenabledciphers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies a restricted set of SSL cipher suites to be enabled by the current SSL session context."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1399570-sslgetnumberenabledciphers": {
+      "title": "SSLGetNumberEnabledCiphers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1399570-sslgetnumberenabledciphers",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1399570-sslgetnumberenabledciphers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines the number of cipher suites currently enabled."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1399101-sslgetenabledciphers": {
+      "title": "SSLGetEnabledCiphers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1399101-sslgetenabledciphers",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1399101-sslgetenabledciphers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines which SSL cipher suites are currently enabled."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1394448-sslgetnegotiatedcipher": {
+      "title": "SSLGetNegotiatedCipher",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1394448-sslgetnegotiatedcipher",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1394448-sslgetnegotiatedcipher",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the cipher suite negotiated for this session."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1392524-sslsetdiffiehellmanparams": {
+      "title": "SSLSetDiffieHellmanParams",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1392524-sslsetdiffiehellmanparams",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1392524-sslsetdiffiehellmanparams",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies Diffie-Hellman parameters for a given context."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1399892-sslgetdiffiehellmanparams": {
+      "title": "SSLGetDiffieHellmanParams",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1399892-sslgetdiffiehellmanparams",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1399892-sslgetdiffiehellmanparams",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the Diffie-Hellman parameters for a given context. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/tls_ciphersuite_group_t": {
+      "title": "tls_ciphersuite_group_t",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/tls_ciphersuite_group_t",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/tls_ciphersuite_group_t",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Groups that collect ciphersuites of comparable security properties."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/tls_ciphersuite_t": {
+      "title": "tls_ciphersuite_t",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/tls_ciphersuite_t",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/tls_ciphersuite_t",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The collection of valid ciphersuites."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/sslciphersuite": {
+      "title": "SSLCipherSuite",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sslciphersuite",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sslciphersuite",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A type for storing cipher suite values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/sslciphersuitegroup": {
+      "title": "SSLCiphersuiteGroup",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sslciphersuitegroup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sslciphersuitegroup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mechanism for grouping related cipher suites."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1550981-ssl_cipher_suite_values": {
+      "title": "SSL Cipher Suite Values",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1550981-ssl_cipher_suite_values",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/security/1550981-ssl_cipher_suite_values",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Recognize the set of valid SSL cipher suite values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1396770-sslsetcertificateauthorities": {
+      "title": "SSLSetCertificateAuthorities",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396770-sslsetcertificateauthorities",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396770-sslsetcertificateauthorities",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds one or more certificates to a server's list of certification authorities (CAs) acceptable for client authentication. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1401971-sslcopycertificateauthorities": {
+      "title": "SSLCopyCertificateAuthorities",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1401971-sslcopycertificateauthorities",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1401971-sslcopycertificateauthorities",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the current list of certification authorities."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1400906-ssladddistinguishedname": {
+      "title": "SSLAddDistinguishedName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1400906-ssladddistinguishedname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1400906-ssladddistinguishedname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a DER-encoded distinguished name to a list of acceptable names to be specified in requests for client certificates."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1398461-sslcopydistinguishednames": {
+      "title": "SSLCopyDistinguishedNames",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1398461-sslcopydistinguishednames",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1398461-sslcopydistinguishednames",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the distinguished names of acceptable certification authorities."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1392400-sslsetcertificate": {
+      "title": "SSLSetCertificate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1392400-sslsetcertificate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1392400-sslsetcertificate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies this connection’s certificate or certificates."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1396612-sslgetclientcertificatestate": {
+      "title": "SSLGetClientCertificateState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396612-sslgetclientcertificatestate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396612-sslgetclientcertificatestate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the exchange status of the client certificate."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1397674-sslcopypeertrust": {
+      "title": "SSLCopyPeerTrust",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1397674-sslcopypeertrust",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1397674-sslcopypeertrust",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves a trust management object for the certificate used by a session. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/sslclientcertificatestate": {
+      "title": "SSLClientCertificateState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sslclientcertificatestate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sslclientcertificatestate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An enumeration of the states of client certificate exchange."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/2867329-sslsetocspresponse": {
+      "title": "SSLSetOCSPResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/2867329-sslsetocspresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/2867329-sslsetocspresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the OCSP response for the given SSL session."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/2867325-sslsetsessionticketsenabled": {
+      "title": "SSLSetSessionTicketsEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/2867325-sslsetsessionticketsenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/2867325-sslsetsessionticketsenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enables or disables session ticket resumption."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1503828-secure_transport_result_codes": {
+      "title": "Secure Transport Result Codes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1503828-secure_transport_result_codes",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/security/1503828-secure_transport_result_codes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Recognize result codes specific to the secure transport API."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1503793-sslnewcontext": {
+      "title": "SSLNewContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1503793-sslnewcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1503793-sslnewcontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a new Secure Sockets Layer (SSL) session context."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1503799-ssldisposecontext": {
+      "title": "SSLDisposeContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1503799-ssldisposecontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1503799-ssldisposecontext",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Disposes of a Secure Sockets Layer (SSL) session context."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1503754-sslsetprotocolversionenabled": {
+      "title": "SSLSetProtocolVersionEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1503754-sslsetprotocolversionenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1503754-sslsetprotocolversionenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the allowed Secure Sockets Layer (SSL) protocol versions."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1503767-sslgetprotocolversionenabled": {
+      "title": "SSLGetProtocolVersionEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1503767-sslgetprotocolversionenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1503767-sslgetprotocolversionenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the enabled status of a given protocol."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1503756-sslsetrsablinding": {
+      "title": "SSLSetRsaBlinding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1503756-sslsetrsablinding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1503756-sslsetrsablinding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enables or disables RSA blinding."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1503742-sslgetrsablinding": {
+      "title": "SSLGetRsaBlinding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1503742-sslgetrsablinding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1503742-sslgetrsablinding",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtains a value indicating whether RSA blinding is enabled."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1503760-sslsetprotocolversion": {
+      "title": "SSLSetProtocolVersion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1503760-sslsetprotocolversion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1503760-sslsetprotocolversion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the SSL protocol version."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1503847-sslgetprotocolversion": {
+      "title": "SSLGetProtocolVersion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1503847-sslgetprotocolversion",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1503847-sslgetprotocolversion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the SSL protocol version. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1503848-sslsetallowsanyroot": {
+      "title": "SSLSetAllowsAnyRoot",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1503848-sslsetallowsanyroot",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1503848-sslsetallowsanyroot",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies whether root certificates from unrecognized certification authorities are allowed."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1503841-sslgetallowsanyroot": {
+      "title": "SSLGetAllowsAnyRoot",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1503841-sslgetallowsanyroot",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1503841-sslgetallowsanyroot",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtains a value specifying whether an unknown root is allowed."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1503782-sslsetallowsexpiredroots": {
+      "title": "SSLSetAllowsExpiredRoots",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1503782-sslsetallowsexpiredroots",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1503782-sslsetallowsexpiredroots",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies whether expired root certificates are allowed."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1503740-sslgetallowsexpiredroots": {
+      "title": "SSLGetAllowsExpiredRoots",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1503740-sslgetallowsexpiredroots",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1503740-sslgetallowsexpiredroots",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the value indicating whether expired roots are allowed."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1503776-sslsettrustedroots": {
+      "title": "SSLSetTrustedRoots",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1503776-sslsettrustedroots",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1503776-sslsettrustedroots",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Augments or replaces the default set of trusted root certificates for this session."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1503838-sslcopytrustedroots": {
+      "title": "SSLCopyTrustedRoots",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1503838-sslcopytrustedroots",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1503838-sslcopytrustedroots",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the current list of trusted root certificates."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1503738-sslsetallowsexpiredcerts": {
+      "title": "SSLSetAllowsExpiredCerts",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1503738-sslsetallowsexpiredcerts",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1503738-sslsetallowsexpiredcerts",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies whether certificate expiration times are ignored."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1503806-sslgetallowsexpiredcerts": {
+      "title": "SSLGetAllowsExpiredCerts",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1503806-sslgetallowsexpiredcerts",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1503806-sslgetallowsexpiredcerts",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the value specifying whether expired certificates are allowed."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1503735-sslsetenablecertverify": {
+      "title": "SSLSetEnableCertVerify",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1503735-sslsetenablecertverify",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1503735-sslsetenablecertverify",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enables or disables peer certificate chain validation."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1503774-sslgetenablecertverify": {
+      "title": "SSLGetEnableCertVerify",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1503774-sslgetenablecertverify",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1503774-sslgetenablecertverify",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Determines whether peer certificate chain validation is currently enabled."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1398098-sslsetencryptioncertificate": {
+      "title": "SSLSetEncryptionCertificate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1398098-sslsetencryptioncertificate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1398098-sslsetencryptioncertificate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies the encryption certificates used for this connection."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1503748-sslcopypeercertificates": {
+      "title": "SSLCopyPeerCertificates",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1503748-sslcopypeercertificates",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1503748-sslcopypeercertificates",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves a peer certificate and its certificate chain. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/common_security_services_manager": {
+      "title": "Common Security Services Manager",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/common_security_services_manager",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/common_security_services_manager",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of open source modules underpinning the legacy implementation of the Security framework."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secure_transport": {
+      "title": "Secure Transport",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secure_transport",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/secure_transport",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Secure network communication using standardized transport layer security mechanisms."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/secure_download": {
+      "title": "Secure Download",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/secure_download",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/secure_download",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Implement Apple's Secure Download System in macOS."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "First Steps",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/secure_transport/using_the_secure_socket_layer_for_network_communication"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Session Context",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1393063-sslcreatecontext",
+        "doc://com.apple.documentation/documentation/security/sslprotocolside",
+        "doc://com.apple.documentation/documentation/security/sslconnectiontype",
+        "doc://com.apple.documentation/documentation/security/sslcontextref",
+        "doc://com.apple.documentation/documentation/security/1398165-sslcontextgettypeid"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Context Options",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1399173-sslsetsessionoption",
+        "doc://com.apple.documentation/documentation/security/1392604-sslgetsessionoption",
+        "doc://com.apple.documentation/documentation/security/sslsessionoption"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Context Callbacks",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1396081-sslsetiofuncs",
+        "doc://com.apple.documentation/documentation/security/sslreadfunc",
+        "doc://com.apple.documentation/documentation/security/sslwritefunc"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Session Configuration",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1638095-sslsetsessionconfig",
+        "doc://com.apple.documentation/documentation/security/1397567-sslsetclientsideauthenticate",
+        "doc://com.apple.documentation/documentation/security/secure_transport/sslconfig",
+        "doc://com.apple.documentation/documentation/security/sslauthenticate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "I/O Connections",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1398843-sslsetconnection",
+        "doc://com.apple.documentation/documentation/security/1397993-sslgetconnection",
+        "doc://com.apple.documentation/documentation/security/sslconnectionref"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Session State",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1400161-sslhandshake",
+        "doc://com.apple.documentation/documentation/security/1638073-sslrehandshake",
+        "doc://com.apple.documentation/documentation/security/1397869-sslclose",
+        "doc://com.apple.documentation/documentation/security/1400006-sslsetpeerid",
+        "doc://com.apple.documentation/documentation/security/1395882-sslgetpeerid",
+        "doc://com.apple.documentation/documentation/security/1393517-sslgetsessionstate",
+        "doc://com.apple.documentation/documentation/security/sslsessionstate",
+        "doc://com.apple.documentation/documentation/security/2867331-sslseterror"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Read Operations",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1394324-sslread",
+        "doc://com.apple.documentation/documentation/security/1394958-sslgetbufferedreadsize"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Write Operations",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1400864-sslwrite",
+        "doc://com.apple.documentation/documentation/security/1401259-sslgetdatagramwritesize",
+        "doc://com.apple.documentation/documentation/security/1399678-sslgetmaxdatagramrecordsize",
+        "doc://com.apple.documentation/documentation/security/1394978-sslsetmaxdatagramrecordsize",
+        "doc://com.apple.documentation/documentation/security/1398936-sslsetdatagramhellocookie"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "The Peer Domain Name",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1393047-sslsetpeerdomainname",
+        "doc://com.apple.documentation/documentation/security/1398086-sslgetpeerdomainnamelength",
+        "doc://com.apple.documentation/documentation/security/1400295-sslgetpeerdomainname",
+        "doc://com.apple.documentation/documentation/security/1845288-sslcopyrequestedpeername",
+        "doc://com.apple.documentation/documentation/security/1845290-sslcopyrequestedpeernamelength"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Versions",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1393798-sslsetprotocolversionmax",
+        "doc://com.apple.documentation/documentation/security/1398139-sslsetprotocolversionmin",
+        "doc://com.apple.documentation/documentation/security/1396167-sslgetprotocolversionmax",
+        "doc://com.apple.documentation/documentation/security/1395690-sslgetprotocolversionmin",
+        "doc://com.apple.documentation/documentation/security/1397382-sslgetnegotiatedprotocolversion",
+        "doc://com.apple.documentation/documentation/security/tls_protocol_version_t",
+        "doc://com.apple.documentation/documentation/security/sslprotocol"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Application Layer Protocols",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/2867328-sslcopyalpnprotocols",
+        "doc://com.apple.documentation/documentation/security/2867327-sslsetalpnprotocols"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Ciphers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1402304-sslgetnumbersupportedciphers",
+        "doc://com.apple.documentation/documentation/security/1395230-sslgetsupportedciphers",
+        "doc://com.apple.documentation/documentation/security/1397188-sslsetenabledciphers",
+        "doc://com.apple.documentation/documentation/security/1399570-sslgetnumberenabledciphers",
+        "doc://com.apple.documentation/documentation/security/1399101-sslgetenabledciphers",
+        "doc://com.apple.documentation/documentation/security/1394448-sslgetnegotiatedcipher",
+        "doc://com.apple.documentation/documentation/security/1392524-sslsetdiffiehellmanparams",
+        "doc://com.apple.documentation/documentation/security/1399892-sslgetdiffiehellmanparams",
+        "doc://com.apple.documentation/documentation/security/tls_ciphersuite_group_t",
+        "doc://com.apple.documentation/documentation/security/tls_ciphersuite_t",
+        "doc://com.apple.documentation/documentation/security/sslciphersuite",
+        "doc://com.apple.documentation/documentation/security/sslciphersuitegroup",
+        "doc://com.apple.documentation/documentation/security/1550981-ssl_cipher_suite_values"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Root Certificates",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1396770-sslsetcertificateauthorities",
+        "doc://com.apple.documentation/documentation/security/1401971-sslcopycertificateauthorities"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Authentication",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1400906-ssladddistinguishedname",
+        "doc://com.apple.documentation/documentation/security/1398461-sslcopydistinguishednames",
+        "doc://com.apple.documentation/documentation/security/1392400-sslsetcertificate",
+        "doc://com.apple.documentation/documentation/security/1396612-sslgetclientcertificatestate",
+        "doc://com.apple.documentation/documentation/security/1397674-sslcopypeertrust",
+        "doc://com.apple.documentation/documentation/security/sslclientcertificatestate",
+        "doc://com.apple.documentation/documentation/security/2867329-sslsetocspresponse",
+        "doc://com.apple.documentation/documentation/security/2867325-sslsetsessionticketsenabled"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Result Codes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1503828-secure_transport_result_codes"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Legacy Operations",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1503793-sslnewcontext",
+        "doc://com.apple.documentation/documentation/security/1503799-ssldisposecontext",
+        "doc://com.apple.documentation/documentation/security/1503754-sslsetprotocolversionenabled",
+        "doc://com.apple.documentation/documentation/security/1503767-sslgetprotocolversionenabled",
+        "doc://com.apple.documentation/documentation/security/1503756-sslsetrsablinding",
+        "doc://com.apple.documentation/documentation/security/1503742-sslgetrsablinding",
+        "doc://com.apple.documentation/documentation/security/1503760-sslsetprotocolversion",
+        "doc://com.apple.documentation/documentation/security/1503847-sslgetprotocolversion",
+        "doc://com.apple.documentation/documentation/security/1503848-sslsetallowsanyroot",
+        "doc://com.apple.documentation/documentation/security/1503841-sslgetallowsanyroot",
+        "doc://com.apple.documentation/documentation/security/1503782-sslsetallowsexpiredroots",
+        "doc://com.apple.documentation/documentation/security/1503740-sslgetallowsexpiredroots",
+        "doc://com.apple.documentation/documentation/security/1503776-sslsettrustedroots",
+        "doc://com.apple.documentation/documentation/security/1503838-sslcopytrustedroots",
+        "doc://com.apple.documentation/documentation/security/1503738-sslsetallowsexpiredcerts",
+        "doc://com.apple.documentation/documentation/security/1503806-sslgetallowsexpiredcerts",
+        "doc://com.apple.documentation/documentation/security/1503735-sslsetenablecertverify",
+        "doc://com.apple.documentation/documentation/security/1503774-sslgetenablecertverify",
+        "doc://com.apple.documentation/documentation/security/1398098-sslsetencryptioncertificate",
+        "doc://com.apple.documentation/documentation/security/1503748-sslcopypeercertificates"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/common_security_services_manager",
+        "doc://com.apple.documentation/documentation/security/secure_download"
+      ],
+      "title": "Legacy Interfaces",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Security.SecureTransport"
+            },
+            {
+              "type": "text",
+              "text": " API gives you access to Apple's implementation of Secure Sockets Layer version 3.0 (SSLv3), Transport Layer Security (TLS) versions 1.0 through 1.2, and Datagram Transport Layer Security (DTLS) version 1.0."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This API imposes no transport layer dependencies. You can use it with BSD Sockets and other protocols. To use this API, you provide callback functions to perform I/O on the underlying network connections. You are also responsible for setting up raw network connections. You pass in an opaque reference to the underlying (connected) entity at the start of an SSL session in the form of an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/sslconnectionref"
+            },
+            {
+              "type": "text",
+              "text": " object. "
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "This API is considered legacy. Use the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/network"
+                },
+                {
+                  "type": "text",
+                  "text": " framework instead."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

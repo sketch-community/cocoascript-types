@@ -1,0 +1,1345 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Multiply signal data by window sequence values to reduce spectral leakage."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/vector_generation"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/using_windowing_with_discrete_fourier_transforms",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3369210,
+  "kind": "article",
+  "metadata": {
+    "title": "Using Windowing with Discrete Fourier Transforms",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/using_windowing_with_discrete_fourier_transforms",
+        "documentation/accelerate/vdsp/vector_generation/using_windowing_with_discrete_fourier_transforms"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/using_windowing_with_discrete_fourier_transforms",
+        "documentation/accelerate/vdsp/vector_generation/using_windowing_with_discrete_fourier_transforms"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp": {
+      "title": "vDSP",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp",
+      "url": "/documentation/accelerate/vdsp",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/vector_generation": {
+      "title": "Vector Generation",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/vector_generation",
+      "url": "/documentation/accelerate/vdsp/vector_generation",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3370194": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3370194",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3370194"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3369220": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3369220",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3369220"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3370133": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3370133",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3370133"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave": {
+      "title": "Finding the Component Frequencies in a Composite Sine Wave",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use 1D fast Fourier transform to compute the frequency components of a signal."
+        }
+      ]
+    },
+    "link-media-3375140": {
+      "identifier": "link-media-3375140",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3375140"
+    },
+    "media-3375140": {
+      "identifier": "media-3375140",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 183
+          },
+          "url": "https://docs-assets.developer.apple.com/published/61d3f97183/685f330a-88f2-4c27-8bc9-008437df5f43.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 183
+          },
+          "url": "https://docs-assets.developer.apple.com/published/1991e6db2b/1bfce1d1-091c-4c60-9da3-e6cd6721fdaf.png"
+        }
+      ],
+      "alt": "Diagram showing a square wave wrapped around a cylinder. The signal's endpoints meet.",
+      "title": "Figure 1"
+    },
+    "link-media-3375147": {
+      "identifier": "link-media-3375147",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3375147"
+    },
+    "media-3375147": {
+      "identifier": "media-3375147",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 168
+          },
+          "url": "https://docs-assets.developer.apple.com/published/1ab555b5d4/fb953a74-4ef5-4144-8831-3a677fa4fadf.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 168
+          },
+          "url": "https://docs-assets.developer.apple.com/published/029ebeb03c/677a86b5-77a9-4710-9967-9b0a98f05113.png"
+        }
+      ],
+      "alt": "Diagram showing a square wave and its frequency domain representation. The frequency domain consists of 25 discrete peaks that represent the 25 component sine waves.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3369219": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3369219",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3369219"
+    },
+    "link-media-3375141": {
+      "identifier": "link-media-3375141",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3375141"
+    },
+    "media-3375141": {
+      "identifier": "media-3375141",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 183
+          },
+          "url": "https://docs-assets.developer.apple.com/published/5151c12045/f2e5e702-a937-4149-ae5c-ae3895b4ab84.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 183
+          },
+          "url": "https://docs-assets.developer.apple.com/published/744eda6a76/2b7db312-5d39-40e2-959c-6024ff047fd7.png"
+        }
+      ],
+      "alt": "Diagram showing a square wave wrapped around a cylinder. The signal's endpoints do not meet.",
+      "title": "Figure 3"
+    },
+    "link-media-3375145": {
+      "identifier": "link-media-3375145",
+      "type": "link",
+      "title": "Figure 4",
+      "url": "/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3375145"
+    },
+    "media-3375145": {
+      "identifier": "media-3375145",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 168
+          },
+          "url": "https://docs-assets.developer.apple.com/published/c710a7252e/17785969-fe34-4aac-8c6b-de37890b4b35.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 168
+          },
+          "url": "https://docs-assets.developer.apple.com/published/8954d18eff/efac1a6d-293a-43fd-9db9-084a7771eebc.png"
+        }
+      ],
+      "alt": "Diagram showing a square wave and its frequency domain representation. The frequency domain peaks are smeared across the component frequencies.",
+      "title": "Figure 4"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241156-window": {
+      "title": "window(ofType:usingSequence:count:isHalfWindow:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241156-window",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241156-window"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3369218": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3369218",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3369218"
+    },
+    "link-media-3375148": {
+      "identifier": "link-media-3375148",
+      "type": "link",
+      "title": "Figure 5",
+      "url": "/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3375148"
+    },
+    "media-3375148": {
+      "identifier": "media-3375148",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 168
+          },
+          "url": "https://docs-assets.developer.apple.com/published/b46875ded7/868e3c28-bde2-48b4-84d1-2b82349ba1a6.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 168
+          },
+          "url": "https://docs-assets.developer.apple.com/published/8ca144a5fc/64a9a95b-8a87-4760-8e82-5aa35911eaf6.png"
+        }
+      ],
+      "alt": "Diagram showing a square wave and its frequency domain representation. The square wave is tapered toward the boundaries and the smearing of frequencies is reduced.",
+      "title": "Figure 5"
+    },
+    "link-media-3379482": {
+      "identifier": "link-media-3379482",
+      "type": "link",
+      "title": "Figure 6",
+      "url": "/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3379482"
+    },
+    "media-3379482": {
+      "identifier": "media-3379482",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 722,
+            "height": 371
+          },
+          "url": "https://docs-assets.developer.apple.com/published/c7ec9a10c1/9457868a-c30a-4c8d-b3b0-a72cdd0578f8.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 722,
+            "height": 371
+          },
+          "url": "https://docs-assets.developer.apple.com/published/43b6d89690/6b8ebbc0-e13b-4e9c-aebf-44b55cf77f8e.png"
+        }
+      ],
+      "alt": "Diagram showing the curves generated by Hamming, Hann, and Blackman window functions.",
+      "title": "Figure 6"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3374378": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3374378",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3374378"
+    },
+    "link-media-3375146": {
+      "identifier": "link-media-3375146",
+      "type": "link",
+      "title": "Figure 7",
+      "url": "/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3375146"
+    },
+    "media-3375146": {
+      "identifier": "media-3375146",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 168
+          },
+          "url": "https://docs-assets.developer.apple.com/published/8c1a4414fb/1ba3960c-adde-4676-8d90-d480b6f1eccb.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 168
+          },
+          "url": "https://docs-assets.developer.apple.com/published/086733d729/87c81c1b-b7e3-4efe-b890-500103fb8261.png"
+        }
+      ],
+      "alt": "Diagram showing a sine wave and its frequency domain representation. The frequency domain representation shows a main central peak that's surrounded by peaks that decrease toward the edges.",
+      "title": "Figure 7"
+    },
+    "link-media-3375143": {
+      "identifier": "link-media-3375143",
+      "type": "link",
+      "title": "Figure 8",
+      "url": "/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3375143"
+    },
+    "media-3375143": {
+      "identifier": "media-3375143",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 168
+          },
+          "url": "https://docs-assets.developer.apple.com/published/ea0c0a64e0/993506b2-ff2d-4ff2-af78-009f21f2428a.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 168
+          },
+          "url": "https://docs-assets.developer.apple.com/published/c7584e647f/03938dd4-6f4c-495f-9b78-d8ab77ea2ab9.png"
+        }
+      ],
+      "alt": "Diagram showing a sine wave and its frequency domain representation. The signal tapers toward zero at the edges. The frequency domain representation shows a main central peak that's surrounded by peaks that rapidly decrease toward the edges.",
+      "title": "Figure 8"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/windowsequence/hamming": {
+      "title": "vDSP.WindowSequence.hamming",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/windowsequence/hamming",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/windowsequence/hamming"
+    },
+    "link-media-3375142": {
+      "identifier": "link-media-3375142",
+      "type": "link",
+      "title": "Figure 9",
+      "url": "/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3375142"
+    },
+    "media-3375142": {
+      "identifier": "media-3375142",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 168
+          },
+          "url": "https://docs-assets.developer.apple.com/published/d1b5c7470e/24752fb5-dff7-4e07-a27f-6552efcc88bb.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 168
+          },
+          "url": "https://docs-assets.developer.apple.com/published/fa427df0aa/88c9c6ce-0859-4c53-9d9f-de28b16ec76d.png"
+        }
+      ],
+      "alt": "Diagram showing a sine wave and its frequency domain representation. The signal tapers toward zero at the edges. The frequency domain representation shows a main central peak that's surrounded by peaks that rapidly decrease toward the edges.",
+      "title": "Figure 9"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/windowsequence/blackman": {
+      "title": "vDSP.WindowSequence.blackman",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/windowsequence/blackman",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/windowsequence/blackman"
+    },
+    "link-media-3375144": {
+      "identifier": "link-media-3375144",
+      "type": "link",
+      "title": "Figure 10",
+      "url": "/documentation/accelerate/using_windowing_with_discrete_fourier_transforms#3375144"
+    },
+    "media-3375144": {
+      "identifier": "media-3375144",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 168
+          },
+          "url": "https://docs-assets.developer.apple.com/published/4cfcb5f008/d76cd29c-e315-4a80-8c20-ecda1817dd88.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 168
+          },
+          "url": "https://docs-assets.developer.apple.com/published/afd8404551/4a099764-c356-4355-bd01-b8b1fad42d28.png"
+        }
+      ],
+      "alt": "Diagram showing a sine wave and its frequency domain representation. The signal tapers toward zero at the edges. The frequency domain representation shows a main central peak that's surrounded by peaks that rapidly decrease toward the edges.",
+      "title": "Figure 10"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/performing_fourier_transforms_on_interleaved-complex_data": {
+      "title": "Performing Fourier Transforms on Interleaved-Complex Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/performing_fourier_transforms_on_interleaved-complex_data",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/performing_fourier_transforms_on_interleaved-complex_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Optimize fast Fourier transform (FFT) performance with vDSP’s fixed-length interleaved FFT routines."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/using_windowing_with_discrete_fourier_transforms": {
+      "title": "Using Windowing with Discrete Fourier Transforms",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/using_windowing_with_discrete_fourier_transforms",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/using_windowing_with_discrete_fourier_transforms",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Multiply signal data by window sequence values to reduce spectral leakage."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise": {
+      "title": "Signal Extraction from Noise",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/signal_extraction_from_noise",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use Accelerate’s discrete cosine transform to remove noise from a signal."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/performing_fourier_transforms_on_multiple_signals": {
+      "title": "Performing Fourier Transforms on Multiple Signals",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/performing_fourier_transforms_on_multiple_signals",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/performing_fourier_transforms_on_multiple_signals",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use Accelerate’s multiple-signal fast Fourier transform (FFT) functions to transform multiple signals with a single function call."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/halftone_descreening_with_2d_fast_fourier_transform": {
+      "title": "Halftone Descreening with 2D Fast Fourier Transform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/halftone_descreening_with_2d_fast_fourier_transform",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/halftone_descreening_with_2d_fast_fourier_transform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reduce or remove periodic artifacts from images."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/fast_fourier_transforms": {
+      "title": "Fast Fourier Transforms",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/fast_fourier_transforms",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/fast_fourier_transforms",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Transform vectors and matrices of temporal and spatial domain complex values to the frequency domain, and vice versa."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/discrete_fourier_transforms": {
+      "title": "Discrete Fourier Transforms",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/discrete_fourier_transforms",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/discrete_fourier_transforms",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Transform vectors of temporal and spatial domain complex values to the frequency domain, and vice versa."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/discrete_cosine_transforms": {
+      "title": "Discrete Cosine Transforms",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/discrete_cosine_transforms",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/discrete_cosine_transforms",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Transform vectors of temporal and spatial domain real values to the frequency domain, and vice versa."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave",
+        "doc://com.apple.documentation/documentation/accelerate/performing_fourier_transforms_on_interleaved-complex_data",
+        "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise",
+        "doc://com.apple.documentation/documentation/accelerate/performing_fourier_transforms_on_multiple_signals",
+        "doc://com.apple.documentation/documentation/accelerate/halftone_descreening_with_2d_fast_fourier_transform",
+        "doc://com.apple.documentation/documentation/accelerate/fast_fourier_transforms",
+        "doc://com.apple.documentation/documentation/accelerate/discrete_fourier_transforms",
+        "doc://com.apple.documentation/documentation/accelerate/discrete_cosine_transforms"
+      ],
+      "title": "Fourier and Cosine Transforms",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Discrete Fourier and cosine transforms, which decompose a signal into its component frequencies and recreate a signal from a component frequency representation, work over vectors of specific lengths. For example, if you're analyzing audio data, you may be supplied with pages of 1024 samples. Discrete Fourier and cosine transforms can accurately approximate the component frequencies that have an integer number of periods, that is, signals where the start and end points join to form a continuous waveform. However, with noninteger period signals, where the endpoints don't meet, the discontinuities appear as false frequency components in a forward transform. This smearing of data is called spectral leakage."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Here you'll learn an approach to reduce spectral leakage when performing transforms over data that includes noninteger period signals. "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Windowing"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " multiplies a signal by a vector that represents a smooth curve with boundary values of zero or near zero. This technique ensures the endpoints of a signal meet and reduces the discontinuities."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The signal data used here is synthesized from a series of sine waves. In a real-world app, you will most likely acquire signal data from a sensor such as as a microphone."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Synthesize a Test Signal",
+          "anchor": "3370193"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the following function to generate a composite sine wave from a supplied array of component frequencies and amplitudes:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "static func synthesizeSignal(frequencyAmplitudePairs: [(f: Float, a: Float)],",
+            "                             count: Int) -> [Float] {",
+            "    ",
+            "    let tau: Float = .pi * 2",
+            "    let signal: [Float] = (0 ..< count).map { index in",
+            "        frequencyAmplitudePairs.reduce(0) { accumulator, frequenciesAmplitudePair in",
+            "            let normalizedIndex = Float(index) / Float(count)",
+            "            return accumulator + sin(normalizedIndex * frequenciesAmplitudePair.f * tau) * frequenciesAmplitudePair.a",
+            "        }",
+            "    }",
+            "    ",
+            "    return signal",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3370194",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Signal with an Integer Number of Periods",
+          "anchor": "3369214"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows a Fourier series approximation of a square wave built from a series of sine waves. Each component sine wave has an integer number of periods over the length of the data:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let n = 2048",
+            "",
+            "let baseFrequency: Float = 5",
+            "",
+            "let frequencyAmplitudePairs = stride(from: 1, to: 50, by: 2).map { i in",
+            "    return(f: baseFrequency * Float(i), a: (1 / Float(i)))",
+            "}",
+            "",
+            "var signal = synthesizeSignal(frequencyAmplitudePairs: frequencyAmplitudePairs,",
+            "                              count: n)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3369220",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the vDSP fast Fourier transform (FFT) to compute the component frequencies of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "signal"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let count = n / 2",
+            "var realParts = [Float](repeating: 0,",
+            "                        count: count)",
+            "var imagParts = [Float](repeating: 0,",
+            "                        count: count)",
+            "",
+            "realParts.withUnsafeMutableBufferPointer { realPtr in",
+            "    imagParts.withUnsafeMutableBufferPointer { imagPtr in",
+            "        ",
+            "        var complexSignal = DSPSplitComplex(realp: realPtr.baseAddress!,",
+            "                                            imagp: imagPtr.baseAddress!)",
+            "               ",
+            "        signal.withUnsafeBytes {",
+            "            vDSP.convert(interleavedComplexVector: [DSPComplex]($0.bindMemory(to: DSPComplex.self)),",
+            "                         toSplitComplexVector: &complexSignal)",
+            "        }",
+            "        ",
+            "        let log2n = vDSP_Length(log2(Float(n)))",
+            "        let fft = vDSP.FFT(log2n: log2n,",
+            "                           radix: .radix2,",
+            "                           ofType: DSPSplitComplex.self)",
+            "        ",
+            "        fft?.forward(input: complexSignal,",
+            "                     output: &complexSignal)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3370133",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To learn more about computing the frequency components of a signal, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The FFT treats the data set as a single period of a continuous signal. The following visualization wraps the signal around a virtual cylinder to illustrate how the FFT interprets the data, and this figure also shows that the endpoints meet:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3375140",
+              "metadata": {
+                "anchor": "3375140",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following illustration shows a representation of the signal, in blue, and uses yellow to highlight the imaginary parts, that is, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "imagParts"
+            },
+            {
+              "type": "text",
+              "text": " array, of the result of the forward FFT:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3375147",
+              "metadata": {
+                "anchor": "3375147",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The visualizations of the forward FFT data in this article have all been transformed to improve visibility. Each visualization is actually the square root of the absolute value of each element of "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "imagParts"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The FFT result clearly shows that the signal is composed of 25 sine waves, represented as spikes in the graph."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Signal with Noninteger Number of Periods",
+          "anchor": "3369212"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code is subtly different from the previous listing. The code defines noninteger periods, of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "5.75"
+            },
+            {
+              "type": "text",
+              "text": ", of the component sine waves:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let n = 2048",
+            "",
+            "let baseFrequency: Float = 5.75",
+            "",
+            "let frequencyAmplitudePairs = stride(from: 1, to: 50, by: 2).map { i in",
+            "    return(f: baseFrequency * Float(i), a: (1 / Float(i)))",
+            "}",
+            "",
+            "var signal = synthesizeSignal(frequencyAmplitudePairs: frequencyAmplitudePairs,",
+            "                              count: n)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3369219",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following visualization wraps the noninteger period signal around a virtual cylinder and shows the endpoint discontinuities:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3375141",
+              "metadata": {
+                "anchor": "3375141",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The image below shows the results of a transform of this data: the results shows additional, intermediate values that are a result of spectral leakage:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3375145",
+              "metadata": {
+                "anchor": "3375145",
+                "title": "Figure 4"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Windowed Signal with Noninteger Number of Periods",
+          "anchor": "3369213"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows the same noninteger period signal, but in this example, you multiply the signal by the result of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241156-window"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let n = 2048",
+            "",
+            "let baseFrequency: Float = 5.75",
+            "",
+            "let frequencyAmplitudePairs = stride(from: 1, to: 50, by: 2).map { i in",
+            "    return(f: baseFrequency * Float(i), a: (1 / Float(i)))",
+            "}",
+            "",
+            "var signal = synthesizeSignal(frequencyAmplitudePairs: frequencyAmplitudePairs,",
+            "                              count: n)",
+            " ",
+            "let window = vDSP.window(ofType: Float.self,",
+            "                         usingSequence: .hanningDenormalized,",
+            "                         count: n, ",
+            "                         isHalfWindow: false)",
+            "",
+            "signal = vDSP.multiply(signal, window)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3369218",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The illustration below shows the windowed signal in blue, with its boundaries tapered toward zero, and the transformed version with reduced spectral leakage in yellow:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3375148",
+              "metadata": {
+                "anchor": "3375148",
+                "title": "Figure 5"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Select Window Sequence",
+          "anchor": "3369791"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "vDSP provides functions for generating three different windows:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3379482",
+              "metadata": {
+                "anchor": "3379482",
+                "title": "Figure 6"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Sine Wave with Noninteger Period",
+          "anchor": "3374382"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To understand the different effects of the different windows provided by vDSP, create a single composed of a signal sine wave with a noninteger period:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let frequencyAmplitudePairs = [(f: Float(32.25), a: Float(1))]"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3374378",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The illustration below shows the sine wave and the forward FFT result. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3375146",
+              "metadata": {
+                "anchor": "3375146",
+                "title": "Figure 7"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Spectral leakage is apparent throughout the rendered FFT result."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Reduce Spectral Leakage Using a Hann Window",
+          "anchor": "3374377"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "All the above examples have used the Hann window sequence. This is a great-general purpose window that reduces spectral leakage in most cases as illustrated below. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3375143",
+              "metadata": {
+                "anchor": "3375143",
+                "title": "Figure 8"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Reduce Spectral Leakage Using a Hamming Window",
+          "anchor": "3374379"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Hamming window, created by passing "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/windowsequence/hamming"
+            },
+            {
+              "type": "text",
+              "text": " to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241156-window"
+            },
+            {
+              "type": "text",
+              "text": " function, unlike the Hann window, doesn't reach zero at its boundaries."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The figure below shows the result of multiplying a signal by a Hamming window: high values around the base frequency in the forward FFT are tighter than the Hann-windowed result, but there is low-level spectral leakage across the entire forward FFT. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3375142",
+              "metadata": {
+                "anchor": "3375142",
+                "title": "Figure 9"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The narrower main peak of the Hamming-windowed result provides better discrimination of component sine waves with close frequencies. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Reduce Spectral Leakage Using a Blackman Window",
+          "anchor": "3374384"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Blackman window, created with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/windowsequence/blackman"
+            },
+            {
+              "type": "text",
+              "text": ", does a better job of reducing spectral leakage away from the main frequency compared to Hann and Hamming, but has a wider main peak than Hann."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3375144",
+              "metadata": {
+                "anchor": "3375144",
+                "title": "Figure 10"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

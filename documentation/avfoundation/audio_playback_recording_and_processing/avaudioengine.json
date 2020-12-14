@@ -1,0 +1,633 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Perform advanced realtime and offline audio processing."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3643930,
+  "kind": "symbol",
+  "metadata": {
+    "title": "AVAudioEngine",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing": {
+      "title": "Audio Playback, Recording, and Processing",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing",
+      "url": "/documentation/avfoundation/audio_playback_recording_and_processing",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioengine": {
+      "title": "AVAudioEngine",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioengine",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioengine",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A group of connected audio node objects used to generate and process audio signals and perform audio input and output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudionode": {
+      "title": "AVAudioNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudionode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudionode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract class for an audio generation, processing, or I/O block."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioionode": {
+      "title": "AVAudioIONode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioionode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioionode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The base class for nodes that connect to the system's audio input or output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioinputnode": {
+      "title": "AVAudioInputNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioinputnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioinputnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A node that connects to the system’s audio input."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiooutputnode": {
+      "title": "AVAudioOutputNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiooutputnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiooutputnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "This class represents an audio node that connects to the system’s audio output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiomixernode": {
+      "title": "AVAudioMixerNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiomixernode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiomixernode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A node that mixes its inputs to a single output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiomixing": {
+      "title": "AVAudioMixing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiomixing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiomixing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Properties that are applicable to the input bus of a mixer node."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioplayernode": {
+      "title": "AVAudioPlayerNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioplayernode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioplayernode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A class that plays buffers or segments of audio files."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosequencer": {
+      "title": "AVAudioSequencer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosequencer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosequencer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A collection of MIDI events organized into multiple music tracks, plus a player to play back the events."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiounitsampler": {
+      "title": "AVAudioUnitSampler",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiounitsampler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiounitsampler",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A class that encapsulates Apple's Sampler Audio Unit. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiounitmidiinstrument": {
+      "title": "AVAudioUnitMIDIInstrument",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiounitmidiinstrument",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiounitmidiinstrument",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract class representing music devices or remote instruments."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_units": {
+      "title": "Audio Units",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_units",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_units",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Perform realtime signal processing of audio files and streams."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioenvironmentnode": {
+      "title": "AVAudioEnvironmentNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioenvironmentnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioenvironmentnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mixer node that simulates a 3D audio environment. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioenvironmentreverbparameters": {
+      "title": "AVAudioEnvironmentReverbParameters",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioenvironmentreverbparameters",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioenvironmentreverbparameters",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A class that encapsulates the parameters that you use to control the reverb of the environment node class."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioenvironmentdistanceattenuationparameters": {
+      "title": "AVAudioEnvironmentDistanceAttenuationParameters",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioenvironmentdistanceattenuationparameters",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioenvironmentdistanceattenuationparameters",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A class that specifies the attenuation distance, the gradual loss in audio intensity, and other characteristics."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioenvironmentoutputtype": {
+      "title": "AVAudioEnvironmentOutputType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioenvironmentoutputtype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioenvironmentoutputtype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The output hardware types to use with an automatically selected rendering algorithm."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudio3dmixing": {
+      "title": "AVAudio3DMixing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudio3dmixing",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudio3dmixing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A protocol defining 3D mixing properties. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudio3dmixingsourcemode": {
+      "title": "AVAudio3DMixingSourceMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudio3dmixingsourcemode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudio3dmixingsourcemode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The source modes for the input bus of the audio environment node."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudio3dmixingpointsourceinheadmode": {
+      "title": "AVAudio3DMixingPointSourceInHeadMode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudio3dmixingpointsourceinheadmode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudio3dmixingpointsourceinheadmode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The in-head modes for a point source."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudio3dpoint": {
+      "title": "AVAudio3DPoint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudio3dpoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudio3dpoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure representing a point in 3D space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudio3dvector": {
+      "title": "AVAudio3DVector",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudio3dvector",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudio3dvector",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure representing a vector in 3D space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudio3dangularorientation": {
+      "title": "AVAudio3DAngularOrientation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudio3dangularorientation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudio3dangularorientation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure representing the angular orientation of the listener in 3D space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudio3dvectororientation": {
+      "title": "AVAudio3DVectorOrientation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudio3dvectororientation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudio3dvectororientation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structure representing two orthogonal vectors that describe the orientation of the listener in 3D space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats": {
+      "title": "AVAudioSpatializationFormats",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiospatializationformats"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosourcenode": {
+      "title": "AVAudioSourceNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosourcenode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosourcenode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A node that supplies audio data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiosinknode": {
+      "title": "AVAudioSinkNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiosinknode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiosinknode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A node that receives audio data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/performing_offline_audio_processing": {
+      "title": "Performing Offline Audio Processing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/performing_offline_audio_processing",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/performing_offline_audio_processing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add offline audio processing features to your app by enabling offline manual rendering mode."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudioconverter": {
+      "title": "AVAudioConverter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudioconverter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudioconverter",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A class that converts streams of audio between various formats."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiofile": {
+      "title": "AVAudioFile",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiofile",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiofile",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An audio file that can be opened for reading or writing."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiobuffer": {
+      "title": "AVAudioBuffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiobuffer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiobuffer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A buffer of audio data and its format."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avaudiotime": {
+      "title": "AVAudioTime",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avaudiotime",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avaudiotime",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A class used by the audio engine to represent time. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats": {
+      "title": "Audio Settings and Formats",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Define audio data with these constants and classes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine": {
+      "title": "AVAudioEngine",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Perform advanced realtime and offline audio processing."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Essentials",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioengine",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudionode",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioionode",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioinputnode",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiooutputnode",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiomixernode",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiomixing"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Playback",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioplayernode",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiosequencer",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiounitsampler",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiounitmidiinstrument"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Audio Units",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_units"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Spatial Audio",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioenvironmentnode",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioenvironmentreverbparameters",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioenvironmentdistanceattenuationparameters",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioenvironmentoutputtype",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudio3dmixing",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudio3dmixingsourcemode",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudio3dmixingpointsourceinheadmode",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudio3dpoint",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudio3dvector",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudio3dangularorientation",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudio3dvectororientation",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiospatializationformats"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Audio Rendering",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiosourcenode",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiosinknode"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Audio Conversion",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/performing_offline_audio_processing",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudioconverter"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Supporting Data Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiofile",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiobuffer",
+        "doc://com.apple.documentation/documentation/avfoundation/avaudiotime",
+        "doc://com.apple.documentation/documentation/avfoundation/audio_playback_recording_and_processing/avaudioengine/audio_settings_and_formats"
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

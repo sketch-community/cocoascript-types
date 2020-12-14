@@ -1,0 +1,578 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Initializes the plug-in and exchanges interfaces with the authorization engine."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/authorization_plug-ins"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/1543160-authorizationplugincreate",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1543160,
+  "kind": "symbol",
+  "metadata": {
+    "title": "AuthorizationPluginCreate",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.4",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:@F@AuthorizationPluginCreate",
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/1543160-authorizationplugincreate"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/authorization_plug-ins": {
+      "title": "Authorization Plug-ins",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorization_plug-ins",
+      "url": "/documentation/security/authorization_plug-ins",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationcallbacks": {
+      "title": "AuthorizationCallbacks",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationcallbacks",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationcallbacks",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface implemented by the Security Server."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationplugininterface/1543181-mechanismcreate": {
+      "title": "MechanismCreate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationplugininterface/1543181-mechanismcreate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationplugininterface/1543181-mechanismcreate"
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationplugininterface/1543156-mechanismdestroy": {
+      "title": "MechanismDestroy",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationplugininterface/1543156-mechanismdestroy",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationplugininterface/1543156-mechanismdestroy"
+    },
+    "doc://com.apple.documentation/documentation/security/1540004-authorization_services_result_co/errauthorizationsuccess": {
+      "title": "errAuthorizationSuccess",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1540004-authorization_services_result_co/errauthorizationsuccess",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1540004-authorization_services_result_co/errauthorizationsuccess"
+    },
+    "doc://com.apple.documentation/documentation/security/1540004-authorization_services_result_co/errauthorizationinternal": {
+      "title": "errAuthorizationInternal",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1540004-authorization_services_result_co/errauthorizationinternal",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1540004-authorization_services_result_co/errauthorizationinternal"
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationplugininterface": {
+      "title": "AuthorizationPluginInterface",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationplugininterface",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationplugininterface",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The interface that must be implemented by your plug-in."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindow/1419179-canbecomevisiblewithoutlogin": {
+      "title": "canBecomeVisibleWithoutLogin",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419179-canbecomevisiblewithoutlogin",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindow/1419179-canbecomevisiblewithoutlogin"
+    },
+    "doc://com.apple.documentation/documentation/appkit/nswindow": {
+      "title": "NSWindow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/appkit/nswindow"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/security/authorizationpluginref": {
+      "title": "AuthorizationPluginRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/authorizationpluginref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/authorizationpluginref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A handle passed by the plug-in to the authorization engine when the plug-in is initiated."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1543160-authorizationplugincreate": {
+      "title": "AuthorizationPluginCreate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1543160-authorizationplugincreate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1543160-authorizationplugincreate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes the plug-in and exchanges interfaces with the authorization engine."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1543130-authorizationcallbacks_version": {
+      "title": "AuthorizationCallbacks Version",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1543130-authorizationcallbacks_version",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/security/1543130-authorizationcallbacks_version",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The version of the interface implemented by the authorization engine."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1543154-authorizationplugininterface_ver": {
+      "title": "AuthorizationPluginInterface Version",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1543154-authorizationplugininterface_ver",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/security/1543154-authorizationplugininterface_ver",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The version of the interface implemented by the plug-in."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/authorizationpluginref",
+        "doc://com.apple.documentation/documentation/security/authorizationcallbacks",
+        "doc://com.apple.documentation/documentation/security/1543130-authorizationcallbacks_version",
+        "doc://com.apple.documentation/documentation/security/authorizationplugininterface",
+        "doc://com.apple.documentation/documentation/security/1543154-authorizationplugininterface_ver"
+      ],
+      "title": "Creating a Plug-in",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@OSStatus",
+              "identifier": "symbol-1480124",
+              "text": "OSStatus"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "AuthorizationPluginCreate"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@AuthorizationCallbacks",
+              "identifier": "doc://com.apple.documentation/documentation/security/authorizationcallbacks",
+              "text": "AuthorizationCallbacks"
+            },
+            {
+              "kind": "text",
+              "text": " *callbacks, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@AuthorizationPluginRef",
+              "identifier": "doc://com.apple.documentation/documentation/security/authorizationpluginref",
+              "text": "AuthorizationPluginRef"
+            },
+            {
+              "kind": "text",
+              "text": "  "
+            },
+            {
+              "kind": "keyword",
+              "text": "_Nullable"
+            },
+            {
+              "kind": "text",
+              "text": " *outPlugin, "
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@AuthorizationPluginInterface",
+              "identifier": "doc://com.apple.documentation/documentation/security/authorizationplugininterface",
+              "text": "AuthorizationPluginInterface"
+            },
+            {
+              "kind": "text",
+              "text": " * "
+            },
+            {
+              "kind": "keyword",
+              "text": "_Nullable"
+            },
+            {
+              "kind": "text",
+              "text": " *outPluginInterface);"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "callbacks",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A pointer to an "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/authorizationcallbacks"
+                },
+                {
+                  "type": "text",
+                  "text": " structure containing entry points to the Security Server."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "outPlugin",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "On input, a pointer that you can assign, on output, to a reference value that you define. The authorization engine passes this reference back to you in any subsequent calls to your functions "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "outPluginInterface->MechanismCreate"
+                },
+                {
+                  "type": "text",
+                  "text": " ("
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/authorizationplugininterface/1543181-mechanismcreate"
+                },
+                {
+                  "type": "text",
+                  "text": ") and "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "outPluginInterface->PluginDestroy"
+                },
+                {
+                  "type": "text",
+                  "text": " ("
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/authorizationplugininterface/1543156-mechanismdestroy"
+                },
+                {
+                  "type": "text",
+                  "text": ") so that you can identify the instance of the plug-in affected."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "outPluginInterface",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "On input, a pointer that you assign, on output, to a structure containing entry points in the plug-in. This structure remains valid until the authorization engine calls "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "outPluginInterface->PluginDestroy"
+                },
+                {
+                  "type": "text",
+                  "text": ". "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A result code. Returns "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1540004-authorization_services_result_co/errauthorizationsuccess"
+            },
+            {
+              "type": "text",
+              "text": " (no error) if the function completes successfully and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1540004-authorization_services_result_co/errauthorizationinternal"
+            },
+            {
+              "type": "text",
+              "text": " (Security Server internal error) if any error occurs."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This function is the main entry point to the plug-in. The authorization engine calls this function only once. The plug-in receives an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/authorizationcallbacks"
+            },
+            {
+              "type": "text",
+              "text": " structure containing the entry points to the Security Server’s functions and returns an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/authorizationplugininterface"
+            },
+            {
+              "type": "text",
+              "text": " structure containing the entry points to all of the plug-in’s routines. Both of these structures contain version numbers. The authorization engine matches the version of its interface to the version in your plug-in’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/authorizationplugininterface"
+            },
+            {
+              "type": "text",
+              "text": " structure in order to ensure that older plug-ins will continue to function correctly after the Security Server is updated."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If your plug-in is running in macOS 10.5 or later and displays a window before the user has logged in, ensure you set the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow/1419179-canbecomevisiblewithoutlogin"
+            },
+            {
+              "type": "text",
+              "text": " property of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/appkit/nswindow"
+            },
+            {
+              "type": "text",
+              "text": " to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Authorization plug-ins that put up a GUI or otherwise connect to the window server cannot run as privileged. Note that running GUI code as root is a bad idea in general, because GUI code links in many libraries, any of which could contain security vulnerabilities."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

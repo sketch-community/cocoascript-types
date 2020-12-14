@@ -1,0 +1,970 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Returns the single-precision dot product of two vectors."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp-snv"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/dot_product_calculation"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240949-dot",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 3240949,
+  "kind": "symbol",
+  "metadata": {
+    "title": "dot(_:_:)",
+    "role": "symbol",
+    "roleHeading": "Generic Type Method",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.15",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "6.0",
+        "current": "7.2"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.0",
+        "current": "12.3"
+      }
+    ],
+    "externalID": "s:10Accelerate4vDSPO3dotySfx_xtAA0A6BufferRzSf7ElementRtzlFZ",
+    "symbolKind": "enumcm",
+    "fragments": [
+      {
+        "kind": "text",
+        "text": "static func "
+      },
+      {
+        "kind": "identifier",
+        "text": "dot"
+      },
+      {
+        "kind": "text",
+        "text": "<U>(U, U) -> Float"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/vdsp/3240949-dot"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp": {
+      "title": "vDSP",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp",
+      "url": "/documentation/accelerate/vdsp",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp-snv": {
+      "title": "vDSP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp-snv",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp-snv",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An enumeration that acts as a namespace for Swift overlays to vDSP."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/dot_product_calculation": {
+      "title": "Dot Product Calculation",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/dot_product_calculation",
+      "url": "/documentation/accelerate/vdsp/dot_product_calculation",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240949-dot": {
+      "title": "dot(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240949-dot",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3240949-dot",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the single-precision dot product of two vectors."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "dot"
+        },
+        {
+          "kind": "text",
+          "text": "<U>(U, U) -> Float"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240949-dot#3511167": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240949-dot#3511167",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/vdsp/3240949-dot#3511167"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240949-dot#3511166": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240949-dot#3511166",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/vdsp/3240949-dot#3511166"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240949-dot#3511169": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240949-dot#3511169",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/vdsp/3240949-dot#3511169"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450313-vdsp_dotpr": {
+      "title": "vDSP_dotpr(_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450313-vdsp_dotpr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450313-vdsp_dotpr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the dot product of a single-precision vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_dotpr"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<Float>, vDSP_Stride, UnsafePointer<Float>, vDSP_Stride, UnsafeMutablePointer<Float>, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/swift/float": {
+      "title": "Float",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/float",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/float"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer": {
+      "title": "AccelerateBuffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/acceleratebuffer"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240948-dot": {
+      "title": "dot(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240948-dot",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3240948-dot",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the double-precision dot product of two vectors."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "dot"
+        },
+        {
+          "kind": "text",
+          "text": "<U>(U, U) -> Double"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450330-vdsp_dotprd": {
+      "title": "vDSP_dotprD(_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450330-vdsp_dotprd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450330-vdsp_dotprd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the dot product of a double-precision vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_dotprD"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<Double>, vDSP_Stride, UnsafePointer<Double>, vDSP_Stride, UnsafeMutablePointer<Double>, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449796-vdsp_dotpr_s1_15": {
+      "title": "vDSP_dotpr_s1_15(_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449796-vdsp_dotpr_s1_15",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449796-vdsp_dotpr_s1_15",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the dot product of a fixed-point 1.15 format vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_dotpr_s1_15"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<Int16>, vDSP_Stride, UnsafePointer<Int16>, vDSP_Stride, UnsafeMutablePointer<Int16>, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450480-vdsp_dotpr_s8_24": {
+      "title": "vDSP_dotpr_s8_24(_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450480-vdsp_dotpr_s8_24",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450480-vdsp_dotpr_s8_24",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the dot product of a fixed-point 8.24 format vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_dotpr_s8_24"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<Int32>, vDSP_Stride, UnsafePointer<Int32>, vDSP_Stride, UnsafeMutablePointer<Int32>, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450752-vdsp_dotpr2": {
+      "title": "vDSP_dotpr2(_:_:_:_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450752-vdsp_dotpr2",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450752-vdsp_dotpr2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the dot product of a single-precision stereo vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_dotpr2"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<Float>, vDSP_Stride, UnsafePointer<Float>, vDSP_Stride, UnsafePointer<Float>, vDSP_Stride, UnsafeMutablePointer<Float>, UnsafeMutablePointer<Float>, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450152-vdsp_dotpr2d": {
+      "title": "vDSP_dotpr2D(_:_:_:_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450152-vdsp_dotpr2d",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450152-vdsp_dotpr2d",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the dot product of a double-precision stereo vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_dotpr2D"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<Double>, vDSP_Stride, UnsafePointer<Double>, vDSP_Stride, UnsafePointer<Double>, vDSP_Stride, UnsafeMutablePointer<Double>, UnsafeMutablePointer<Double>, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449919-vdsp_dotpr2_s1_15": {
+      "title": "vDSP_dotpr2_s1_15(_:_:_:_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449919-vdsp_dotpr2_s1_15",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449919-vdsp_dotpr2_s1_15",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the dot product of a fixed-point 1.15 format, stereo vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_dotpr2_s1_15"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<Int16>, vDSP_Stride, UnsafePointer<Int16>, vDSP_Stride, UnsafePointer<Int16>, vDSP_Stride, UnsafeMutablePointer<Int16>, UnsafeMutablePointer<Int16>, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449663-vdsp_dotpr2_s8_24": {
+      "title": "vDSP_dotpr2_s8_24(_:_:_:_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449663-vdsp_dotpr2_s8_24",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449663-vdsp_dotpr2_s8_24",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the dot product of a fixed-point 8.24 format, stereo vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_dotpr2_s8_24"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<Int32>, vDSP_Stride, UnsafePointer<Int32>, vDSP_Stride, UnsafePointer<Int32>, vDSP_Stride, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450701-vdsp_zdotpr": {
+      "title": "vDSP_zdotpr(_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450701-vdsp_zdotpr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450701-vdsp_zdotpr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the complex dot product of two single-precision complex vectors."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_zdotpr"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<DSPSplitComplex>, vDSP_Stride, UnsafePointer<DSPSplitComplex>, vDSP_Stride, UnsafePointer<DSPSplitComplex>, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450740-vdsp_zdotprd": {
+      "title": "vDSP_zdotprD(_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450740-vdsp_zdotprd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450740-vdsp_zdotprd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the complex dot product of two double-precision complex vectors."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_zdotprD"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<DSPDoubleSplitComplex>, vDSP_Stride, UnsafePointer<DSPDoubleSplitComplex>, vDSP_Stride, UnsafePointer<DSPDoubleSplitComplex>, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450063-vdsp_zidotpr": {
+      "title": "vDSP_zidotpr(_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450063-vdsp_zidotpr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450063-vdsp_zidotpr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the inner (conjugate) product of a single-precision complex vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_zidotpr"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<DSPSplitComplex>, vDSP_Stride, UnsafePointer<DSPSplitComplex>, vDSP_Stride, UnsafePointer<DSPSplitComplex>, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450309-vdsp_zidotprd": {
+      "title": "vDSP_zidotprD(_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450309-vdsp_zidotprd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450309-vdsp_zidotprd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the inner (conjugate) product of a double-precision complex vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_zidotprD"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<DSPDoubleSplitComplex>, vDSP_Stride, UnsafePointer<DSPDoubleSplitComplex>, vDSP_Stride, UnsafePointer<DSPDoubleSplitComplex>, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450544-vdsp_zrdotpr": {
+      "title": "vDSP_zrdotpr(_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450544-vdsp_zrdotpr",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450544-vdsp_zrdotpr",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the dot product of a single-precision complex-real vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_zrdotpr"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<DSPSplitComplex>, vDSP_Stride, UnsafePointer<Float>, vDSP_Stride, UnsafePointer<DSPSplitComplex>, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450394-vdsp_zrdotprd": {
+      "title": "vDSP_zrdotprD(_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450394-vdsp_zrdotprd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450394-vdsp_zrdotprd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the dot product of a double-precision complex-real vector."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_zrdotprD"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<DSPDoubleSplitComplex>, vDSP_Stride, UnsafePointer<Double>, vDSP_Stride, UnsafePointer<DSPDoubleSplitComplex>, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3240948-dot",
+        "doc://com.apple.documentation/documentation/accelerate/1450313-vdsp_dotpr",
+        "doc://com.apple.documentation/documentation/accelerate/1450330-vdsp_dotprd",
+        "doc://com.apple.documentation/documentation/accelerate/1449796-vdsp_dotpr_s1_15",
+        "doc://com.apple.documentation/documentation/accelerate/1450480-vdsp_dotpr_s8_24",
+        "doc://com.apple.documentation/documentation/accelerate/1450752-vdsp_dotpr2",
+        "doc://com.apple.documentation/documentation/accelerate/1450152-vdsp_dotpr2d",
+        "doc://com.apple.documentation/documentation/accelerate/1449919-vdsp_dotpr2_s1_15",
+        "doc://com.apple.documentation/documentation/accelerate/1449663-vdsp_dotpr2_s8_24",
+        "doc://com.apple.documentation/documentation/accelerate/1450701-vdsp_zdotpr",
+        "doc://com.apple.documentation/documentation/accelerate/1450740-vdsp_zdotprd",
+        "doc://com.apple.documentation/documentation/accelerate/1450063-vdsp_zidotpr",
+        "doc://com.apple.documentation/documentation/accelerate/1450309-vdsp_zidotprd",
+        "doc://com.apple.documentation/documentation/accelerate/1450544-vdsp_zrdotpr",
+        "doc://com.apple.documentation/documentation/accelerate/1450394-vdsp_zrdotprd"
+      ],
+      "title": "Dot Product Calculation ",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "static"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "dot"
+            },
+            {
+              "kind": "text",
+              "text": "<"
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO3dotySfx_xtAA0A6BufferRzSf7ElementRtzlFZ1UL_xmfp",
+              "text": "U"
+            },
+            {
+              "kind": "text",
+              "text": ">("
+            },
+            {
+              "kind": "externalParam",
+              "text": "_"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "vectorA"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "text",
+              "text": "U"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "externalParam",
+              "text": "_"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "vectorB"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "text",
+              "text": "U"
+            },
+            {
+              "kind": "text",
+              "text": ") -> "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Sf",
+              "identifier": "doc://com.apple.documentation/documentation/swift/float",
+              "text": "Float"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "where"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "text",
+              "text": "U : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate0A6BufferP",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer",
+              "text": "AccelerateBuffer"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "text",
+              "text": "U.Element == "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Sf",
+              "identifier": "doc://com.apple.documentation/documentation/swift/float",
+              "text": "Float"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "swift"
+      ],
+      "parameters": [
+        {
+          "name": "vectorA",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The first vector of the dot product."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "vectorB",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The second vector of the dot product."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The single- and double-precision "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240949-dot"
+            },
+            {
+              "type": "text",
+              "text": " functions calculate the dot product of two vectors, using the following operation:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "C[0] = sum(A[n] * B[n], 0 <= n < N);"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "3511167",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following example shows how you calculate the luminosity of a color using the Rec. 709 luma coefficients for the color-to-grayscale conversion. Array "
+            },
+            {
+              "type": "codeVoice",
+              "code": "a"
+            },
+            {
+              "type": "text",
+              "text": " defines the color, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0xDa70D6"
+            },
+            {
+              "type": "text",
+              "text": ", and array "
+            },
+            {
+              "type": "codeVoice",
+              "code": "b"
+            },
+            {
+              "type": "text",
+              "text": " defines the coefficients:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let a: [Float] = [0xDA, 0x70, 0xD6]",
+            "let b: [Float] = [0.2126, 0.7152, 0.0722]"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3511166",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Passing these values to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240949-dot"
+            },
+            {
+              "type": "text",
+              "text": " returns the luminosity:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let result = vDSP.dot(a, b)",
+            "",
+            "print(result)   // Prints \"141.9\""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3511169",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

@@ -1,49 +1,64 @@
 declare namespace cocoascript {
   interface CFAttributedStringRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFMutableAttributedStringRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFURLRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFUUIDRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFStringRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFBundleRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFNumberRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFBooleanRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFDateRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFDataRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFArrayRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFDictionaryRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFMutableDictionaryRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFErrorRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFRunLoopTimerRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cftimeinterval
   type CFTimeInterval = number;
 }
@@ -54,47 +69,58 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFMutableStringRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfindex
   type CFIndex = number;
 }
 declare namespace cocoascript {
   interface CFSetRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFLocaleRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfbundlerefnum
   type CFBundleRefNum = number;
 }
 declare namespace cocoascript {
   interface CFNullRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFTimeZoneRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFCalendarRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFMutableCharacterSetRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFCharacterSetRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFFileSecurityRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFReadStreamRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFWriteStreamRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfstringencoding
-  type CFStringEncoding = cocoascript.UInt32;
+  type CFStringEncoding = number;
 }
 // doc://com.apple.documentation/documentation/corefoundation/kcfnull
 declare const kCFNull: cocoascript.CFNullRef;
@@ -123,13 +149,16 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFArrayCallBacks {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFMutableArrayRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFMutableSetRef {
   }
-}// doc://com.apple.documentation/documentation/corefoundation/1516757-cfdictionarygetvalue
+}
+// doc://com.apple.documentation/documentation/corefoundation/1516757-cfdictionarygetvalue
 declare const CFDictionaryGetValue: void;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfdictionaryapplierfunction
@@ -158,20 +187,24 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFDictionaryKeyCallBacks {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFDictionaryValueCallBacks {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cftypeid
   type CFTypeID = number;
 }
 declare namespace cocoascript {
   interface CFMachPortRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFRunLoopSourceRef {
   }
-}// doc://com.apple.documentation/documentation/corefoundation/kcfcopystringdictionarykeycallbacks
+}
+// doc://com.apple.documentation/documentation/corefoundation/kcfcopystringdictionarykeycallbacks
 declare const kCFCopyStringDictionaryKeyCallBacks: cocoascript.CFDictionaryKeyCallBacks;
 // doc://com.apple.documentation/documentation/corefoundation/kcftypedictionaryvaluecallbacks
 declare const kCFTypeDictionaryValueCallBacks: cocoascript.CFDictionaryValueCallBacks;
@@ -180,10 +213,12 @@ declare const kCFAllocatorDefault: cocoascript.CFAllocatorRef;
 declare namespace cocoascript {
   interface CFAllocatorRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFRange {
   }
-}// doc://com.apple.documentation/documentation/corefoundation/1520426-cfsetgetvalue
+}
+// doc://com.apple.documentation/documentation/corefoundation/1520426-cfsetgetvalue
 declare const CFSetGetValue: void;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfsetapplierfunction
@@ -212,10 +247,12 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFSetCallBacks {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFBagRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfabsolutetime
   type CFAbsoluteTime = cocoascript.CFTimeInterval;
 }
@@ -244,7 +281,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFUUIDBytes {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfoptionflags
   type CFOptionFlags = number;
 }
@@ -265,7 +303,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFStringInlineBuffer {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfstringbuiltinencodings
   type CFStringBuiltInEncodings = cocoascript.CFStringEncoding;
 }
@@ -276,7 +315,8 @@ declare const kCFBundleDevelopmentRegionKey: cocoascript.CFStringRef;
 declare namespace cocoascript {
   interface CFPlugInRef {
   }
-}// doc://com.apple.documentation/documentation/corefoundation/kcfbundleinfodictionaryversionkey
+}
+// doc://com.apple.documentation/documentation/corefoundation/kcfbundleinfodictionaryversionkey
 declare const kCFBundleInfoDictionaryVersionKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfbundleexecutablekey
 declare const kCFBundleExecutableKey: cocoascript.CFStringRef;
@@ -317,7 +357,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFAllocatorContext {
   }
-}// doc://com.apple.documentation/documentation/corefoundation/1469280-cfbaggetvalue
+}
+// doc://com.apple.documentation/documentation/corefoundation/1469280-cfbaggetvalue
 declare const CFBagGetValue: void;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfbagapplierfunction
@@ -346,7 +387,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFBagCallBacks {
   }
-}// doc://com.apple.documentation/documentation/corefoundation/1509325-cfbinaryheapgetminimum
+}
+// doc://com.apple.documentation/documentation/corefoundation/1509325-cfbinaryheapgetminimum
 declare const CFBinaryHeapGetMinimum: cocoascript.CFBinaryHeapRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfbinaryheapapplierfunction
@@ -355,20 +397,24 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFBinaryHeapCallBacks {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFBinaryHeapCompareContext {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFBinaryHeapRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfbit
-  type CFBit = cocoascript.UInt32;
+  type CFBit = number;
 }
 declare namespace cocoascript {
   interface CFBitVectorRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfcalendarunit
   type CFCalendarUnit = cocoascript.CFOptionFlags;
 }
@@ -389,7 +435,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFDateFormatterRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cffiledescriptornativedescriptor
   type CFFileDescriptorNativeDescriptor = number;
 }
@@ -400,10 +447,12 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFFileDescriptorContext {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFFileDescriptorRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cflocalelanguagedirection
   type CFLocaleLanguageDirection = cocoascript.CFIndex;
 }
@@ -418,7 +467,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFMachPortContext {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfmessageportcallback
   type CFMessagePortCallBack = void;
 }
@@ -429,19 +479,24 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFMessagePortContext {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFMessagePortRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFMutableBagRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFMutableBitVectorRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFMutableDataRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfstringnormalizationform
   type CFStringNormalizationForm = cocoascript.CFIndex;
 }
@@ -452,7 +507,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFNotificationCenterRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfnotificationsuspensionbehavior
   type CFNotificationSuspensionBehavior = cocoascript.CFIndex;
 }
@@ -475,7 +531,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFNumberFormatterRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfnumberformatterroundingmode
   type CFNumberFormatterRoundingMode = cocoascript.CFIndex;
 }
@@ -502,7 +559,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFPlugInInstanceRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfpropertylistref
   type CFPropertyListRef = cocoascript.CFTypeRef;
 }
@@ -523,58 +581,68 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFStreamClientContext {
   }
-}// doc://com.apple.documentation/documentation/corefoundation/kcfrunloopdefaultmode
+}
+// doc://com.apple.documentation/documentation/corefoundation/kcfrunloopdefaultmode
 declare const kCFRunLoopDefaultMode: cocoascript.CFRunLoopMode;
 // doc://com.apple.documentation/documentation/corefoundation/kcfrunloopcommonmodes
 declare const kCFRunLoopCommonModes: cocoascript.CFRunLoopMode;
 declare namespace cocoascript {
   interface CFRunLoopRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfrunloopobservercallback
   type CFRunLoopObserverCallBack = void;
 }
 declare namespace cocoascript {
   interface CFRunLoopObserverContext {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFRunLoopObserverRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfrunloopactivity
   type CFRunLoopActivity = cocoascript.CFOptionFlags;
 }
 declare namespace cocoascript {
   interface CFRunLoopSourceContext {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFRunLoopSourceContext1 {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfrunlooptimercallback
   type CFRunLoopTimerCallBack = void;
 }
 declare namespace cocoascript {
   interface CFRunLoopTimerContext {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfsocketcallback
   type CFSocketCallBack = void;
 }
 declare namespace cocoascript {
   interface CFSocketContext {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfsocketnativehandle
   type CFSocketNativeHandle = number;
 }
 declare namespace cocoascript {
   interface CFSocketRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFSocketSignature {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfsocketcallbacktype
   type CFSocketCallBackType = cocoascript.CFOptionFlags;
 }
@@ -585,7 +653,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFStringTokenizerRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfstringtokenizertokentype
   type CFStringTokenizerTokenType = cocoascript.CFOptionFlags;
 }
@@ -596,7 +665,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFTreeContext {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cftreeapplierfunction
   type CFTreeApplierFunction = void;
 }
@@ -615,7 +685,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFTreeRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfhashcode
   type CFHashCode = number;
 }
@@ -626,7 +697,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFUserNotificationRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfwritestreamclientcallback
   type CFWriteStreamClientCallBack = void;
 }
@@ -639,41 +711,52 @@ declare const CFXMLNodeGetInfoPtr: cocoascript.CFXMLNodeRef;
 declare namespace cocoascript {
   interface CFXMLAttributeDeclarationInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFXMLAttributeListDeclarationInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFXMLDocumentInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFXMLDocumentTypeInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFXMLElementInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFXMLElementTypeDeclarationInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFXMLEntityInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFXMLEntityReferenceInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFXMLExternalID {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfxmlnoderef
   type CFXMLNodeRef = cocoascript.__CFXMLNode;
 }
 declare namespace cocoascript {
   interface CFXMLNotationInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFXMLProcessingInstructionInfo {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfxmlentitytypecode
   type CFXMLEntityTypeCode = cocoascript.CFIndex;
 }
@@ -712,13 +795,16 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFXMLParserCallBacks {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFXMLParserContext {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFXMLParserRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfxmlparserstatuscode
   type CFXMLParserStatusCode = cocoascript.CFIndex;
 }
@@ -734,6 +820,8 @@ declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfrunloopmode
   type CFRunLoopMode = cocoascript.CFStringRef;
 }
+// doc://com.apple.documentation/documentation/corefoundation/kcfbooleantrue
+declare const kCFBooleanTrue: cocoascript.CFBooleanRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfstringtransformtolatin
 declare const kCFStringTransformToLatin: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfstringtransformlatinarabic
@@ -777,10 +865,12 @@ declare const kCFTypeDictionaryKeyCallBacks: cocoascript.CFDictionaryKeyCallBack
 declare namespace cocoascript {
   interface CFGregorianDate {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFGregorianUnits {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfgregorianunitflags
   type CFGregorianUnitFlags = cocoascript.CFOptionFlags;
 }
@@ -791,10 +881,12 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFSwappedFloat32 {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface CFSwappedFloat64 {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfbyteorder
   type CFByteOrder = cocoascript.CFIndex;
 }
@@ -805,7 +897,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFStreamError {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfstreamstatus
   type CFStreamStatus = cocoascript.CFIndex;
 }
@@ -820,7 +913,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface CFURLEnumeratorRef {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cffilesecurityclearoptions
   type CFFileSecurityClearOptions = cocoascript.CFOptionFlags;
 }
@@ -1166,8 +1260,6 @@ declare const kCFStringBinaryHeapCallBacks: cocoascript.CFBinaryHeapCallBacks;
 declare const retain: void;
 // doc://com.apple.documentation/documentation/corefoundation/cfbinaryheapcomparecontext/1509313-retain
 declare const retain: void;
-// doc://com.apple.documentation/documentation/corefoundation/kcfbooleantrue
-declare const kCFBooleanTrue: cocoascript.CFBooleanRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfbooleanfalse
 declare const kCFBooleanFalse: cocoascript.CFBooleanRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformatterislenient

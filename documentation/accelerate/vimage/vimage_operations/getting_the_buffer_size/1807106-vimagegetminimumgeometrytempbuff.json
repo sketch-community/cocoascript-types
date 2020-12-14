@@ -1,0 +1,392 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Returns the minimum size, in bytes, for the temporary buffer needed by a high-level geometry function."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vimage",
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations",
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/getting_the_buffer_size"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/getting_the_buffer_size/1807106-vimagegetminimumgeometrytempbuff",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1807106,
+  "kind": "symbol",
+  "metadata": {
+    "title": "vImageGetMinimumGeometryTempBufferSize",
+    "role": "pseudoSymbol",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/vimage/vimage_operations/getting_the_buffer_size/1807106-vimagegetminimumgeometrytempbuff"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage": {
+      "title": "vImage",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage",
+      "url": "/documentation/accelerate/vimage",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations": {
+      "title": "vImage Operations",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations",
+      "url": "/documentation/accelerate/vimage/vimage_operations",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/getting_the_buffer_size": {
+      "title": "Getting the Buffer Size",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/getting_the_buffer_size",
+      "url": "/documentation/accelerate/vimage/vimage_operations/getting_the_buffer_size",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/getting_the_buffer_size/1807106-vimagegetminimumgeometrytempbuff": {
+      "title": "vImageGetMinimumGeometryTempBufferSize",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/getting_the_buffer_size/1807106-vimagegetminimumgeometrytempbuff",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/accelerate/vimage/vimage_operations/getting_the_buffer_size/1807106-vimagegetminimumgeometrytempbuff",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the minimum size, in bytes, for the temporary buffer needed by a high-level geometry function."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use the "
+        },
+        {
+          "type": "codeVoice",
+          "code": "kvImageGetTempBufferSize"
+        },
+        {
+          "type": "text",
+          "text": " flag with the appropriate geometry function instead of calling this function."
+        }
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "text",
+              "text": "size_t vImageGetMinimumGeometryTempBufferSize ("
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   const vImage_Buffer *src,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   const vImage_Buffer *dest,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   vImage_Flags flags,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   size_t bytesPerPixel"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": ");"
+            }
+          ],
+          "platforms": []
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "src",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A pointer to a vImage buffer structure that  you plan to pass to the geometry function."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "dest",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A pointer to a vImage buffer structure that  you plan to pass to the geometry function. You must set the fields of this structure yourself, and allocate memory for its data.  When you are done with the buffer structure, you must deallocate the memory."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "flags",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The flags that you plan to pass to the geometry function."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "bytesPerPixel",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The number of bytes in a pixel. Make sure to pass the value appropriate for the format of the pixel."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The minimum size, in bytes, of the temporary buffer."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This function does not depend on the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "data"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "rowBytes"
+            },
+            {
+              "type": "text",
+              "text": " fields of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "src"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "dest"
+            },
+            {
+              "type": "text",
+              "text": " parameters; it only uses the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "height"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "width"
+            },
+            {
+              "type": "text",
+              "text": " fields from those parameters. If the size of the images you are processing stay the same, then the required size of the buffer will also stay the same. More specifically, if, between two calls to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageGetMinimumGeometryTempBufferSize"
+            },
+            {
+              "type": "text",
+              "text": ", the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "height"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "width"
+            },
+            {
+              "type": "text",
+              "text": " of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "src"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "dest"
+            },
+            {
+              "type": "text",
+              "text": " parameters do not increase, and the and the other parameters remain the same, then the result of the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageGetMinimumGeometryTempBufferSize"
+            },
+            {
+              "type": "text",
+              "text": " will not increase. This makes it easy to reuse the same temporary buffer when you are processing a number of images of the same size, as in tiling. "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

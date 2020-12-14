@@ -1,0 +1,997 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Improve your app's performance by converting image buffer formats from interleaved to planar."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vimage"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/optimizing_image-processing_performance",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3022588,
+  "kind": "article",
+  "metadata": {
+    "title": "Optimizing Image-Processing Performance",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/optimizing_image-processing_performance",
+        "documentation/accelerate/vimage/optimizing_image-processing_performance"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/optimizing_image-processing_performance",
+        "documentation/accelerate/vimage/optimizing_image-processing_performance"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage": {
+      "title": "vImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vimage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manipulate large images using the CPU’s vector processor."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/optimizing_image_processing_performance#3023855": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/optimizing_image_processing_performance#3023855",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/optimizing_image_processing_performance#3023855"
+    },
+    "doc://com.apple.documentation/documentation/os/logging": {
+      "title": "Logging",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/os/logging",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/os/logging"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_cgimageformat": {
+      "title": "vImage_CGImageFormat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_cgimageformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_cgimageformat"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_format": {
+      "title": "Creating a Core Graphics Image Format",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_format",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/creating_a_core_graphics_image_format",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide descriptions of Core Graphics image formats for conversions to and from vImage."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/optimizing_image_processing_performance#3022792": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/optimizing_image_processing_performance#3022792",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/optimizing_image_processing_performance#3022792"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_cgimageformat/1399086-bitspercomponent": {
+      "title": "bitsPerComponent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_cgimageformat/1399086-bitspercomponent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_cgimageformat/1399086-bitspercomponent"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/optimizing_image_processing_performance#3022793": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/optimizing_image_processing_performance#3022793",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/optimizing_image_processing_performance#3022793"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533144-vimageconvert_argb8888toplanar8": {
+      "title": "vImageConvert_ARGB8888toPlanar8",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533144-vimageconvert_argb8888toplanar8",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533144-vimageconvert_argb8888toplanar8"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/optimizing_image_processing_performance#3022794": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/optimizing_image_processing_performance#3022794",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/optimizing_image_processing_performance#3022794"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/optimizing_image_processing_performance#3022797": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/optimizing_image_processing_performance#3022797",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/optimizing_image_processing_performance#3022797"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/1455401-cgimagegetalphainfo": {
+      "title": "CGImageGetAlphaInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455401-cgimagegetalphainfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/1455401-cgimagegetalphainfo"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/optimizing_image_processing_performance#3022798": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/optimizing_image_processing_performance#3022798",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/optimizing_image_processing_performance#3022798"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/optimizing_image_processing_performance#3022800": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/optimizing_image_processing_performance#3022800",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/optimizing_image_processing_performance#3022800"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533167-vimagetablelookup_planar8": {
+      "title": "vImageTableLookUp_Planar8",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533167-vimagetablelookup_planar8",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533167-vimagetablelookup_planar8"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/optimizing_image_processing_performance#3022801": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/optimizing_image_processing_performance#3022801",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/optimizing_image_processing_performance#3022801"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/optimizing_image_processing_performance#3022804": {
+      "title": "Listing 9",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/optimizing_image_processing_performance#3022804",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/optimizing_image_processing_performance#3022804"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533134-vimageconvert_planar8toargb8888": {
+      "title": "vImageConvert_Planar8toARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533134-vimageconvert_planar8toargb8888",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533134-vimageconvert_planar8toargb8888"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/optimizing_image_processing_performance#3022803": {
+      "title": "Listing 10",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/optimizing_image_processing_performance#3022803",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/optimizing_image_processing_performance#3022803"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/optimizing_image_processing_performance#3022806": {
+      "title": "Listing 11",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/optimizing_image_processing_performance#3022806",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/optimizing_image_processing_performance#3022806"
+    },
+    "link-media-3023512": {
+      "identifier": "link-media-3023512",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/optimizing_image_processing_performance#3023512"
+    },
+    "media-3023512": {
+      "identifier": "media-3023512",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 545,
+            "height": 196
+          },
+          "url": "https://docs-assets.developer.apple.com/published/e40ce36123/f86e3e74-05f0-4987-82f3-767dbcb9d412.png"
+        }
+      ],
+      "alt": "Diagram showing how the color information for each pixel in an image is stored in interleaved and planar buffers.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/creating_and_populating_buffers_from_core_graphics_images": {
+      "title": "Creating and Populating Buffers from Core Graphics Images",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_and_populating_buffers_from_core_graphics_images",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/creating_and_populating_buffers_from_core_graphics_images",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initialize vImage buffers from Core Graphics images."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_from_a_vimage_buffer": {
+      "title": "Creating a Core Graphics Image from a vImage Buffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_from_a_vimage_buffer",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/creating_a_core_graphics_image_from_a_vimage_buffer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create displayable representations of vImage buffers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/building_a_basic_image-processing_workflow": {
+      "title": "Building a Basic Image-Processing Workflow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/building_a_basic_image-processing_workflow",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/building_a_basic_image-processing_workflow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resize an image with vImage."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_geometric_transforms_to_images": {
+      "title": "Applying Geometric Transforms to Images",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_geometric_transforms_to_images",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/applying_geometric_transforms_to_images",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reflect, shear, rotate, and scale image buffers using vImage."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending": {
+      "title": "Compositing Images with Alpha Blending",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/compositing_images_with_alpha_blending",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combine two images by using alpha blending to create a single output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_vimage_blend_modes": {
+      "title": "Compositing Images with vImage Blend Modes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_vimage_blend_modes",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/compositing_images_with_vimage_blend_modes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combine two images by using blend modes to create a single output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_regions_of_interest": {
+      "title": "Applying vImage Operations to Regions of Interest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_regions_of_interest",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/applying_vimage_operations_to_regions_of_interest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Limit the effect of vImage operations to rectangular regions of interest."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/optimizing_image-processing_performance": {
+      "title": "Optimizing Image-Processing Performance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/optimizing_image-processing_performance",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/optimizing_image-processing_performance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Improve your app's performance by converting image buffer formats from interleaved to planar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_format",
+        "doc://com.apple.documentation/documentation/accelerate/creating_and_populating_buffers_from_core_graphics_images",
+        "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_from_a_vimage_buffer",
+        "doc://com.apple.documentation/documentation/accelerate/building_a_basic_image-processing_workflow",
+        "doc://com.apple.documentation/documentation/accelerate/applying_geometric_transforms_to_images",
+        "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending",
+        "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_vimage_blend_modes",
+        "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_regions_of_interest",
+        "doc://com.apple.documentation/documentation/accelerate/vimage"
+      ],
+      "title": "Image Processing Essentials",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "vImage operates on two image buffer formats:  "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "strong",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Interleaved."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " Stores each pixel's color data consecutively in a single buffer. For example, the data that describes a 4-channel image (red, green, blue, and alpha) would be stored as RGBARGBARGBA…"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "strong",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Planar."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " Stores each color channel in separate buffers. For example, a 4-channel image would be stored as four individual buffers containing red, green, blue, and alpha data."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3023512",
+              "metadata": {
+                "anchor": "3023512",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because many vImage functions operate on a single color channel at a time—by converting an interleaved buffer to planar buffers—you can often improve your app's performance by doing this conversion manually. However, most vImage functions are available in both the interleaved and planar variants, so before you do the conversion, try both to see which works better in your context. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In some cases, you may not want to apply a vImage operation to all four channels of an image. For example, you may know beforehand that the alpha channel is irrelevant in the images that you’re dealing with, or perhaps all of your images are grayscale and you only need to operate on one channel. Using planar formats makes it possible to isolate and work with only the channels you need."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Review Interleaved Performance",
+          "anchor": "3023854"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Typically, your source imagery is in interleaved format and your default option will be to use the interleaved variant of a vImage function. For example, the following code populates an interleaved 8-bit ARGB destination buffer with the result of a table lookup transformation on an 8-bit ARGB source buffer:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var lookUpTable = (0...255).map {",
+            "    return Pixel_8(($0 / 75) * 75)",
+            "}",
+            "",
+            "vImageTableLookUp_ARGB8888(&sourceBuffer,",
+            "                           &destinationBuffer,",
+            "                           nil,",
+            "                           &lookUpTable,",
+            "                           &lookUpTable,",
+            "                           &lookUpTable,",
+            "                           vImage_Flags(kvImageNoFlags))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3023855",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For information on logging CPU performance, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/os/logging"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Convert an Interleaved Source Buffer to Planar Buffers",
+          "anchor": "3022595"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "First create a planar buffer for each color component of the source image you want to work with. The following code interrogates "
+            },
+            {
+              "type": "codeVoice",
+              "code": "format"
+            },
+            {
+              "type": "text",
+              "text": "—the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_cgimageformat"
+            },
+            {
+              "type": "text",
+              "text": " structure that represents the source image format—to calculate the number of components. (To learn more about Core Graphics image formats, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_format"
+            },
+            {
+              "type": "text",
+              "text": ".)"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let componentCount = format.componentCount"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3022792",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can now create an array of initialized buffers for each color component. Note that each planar buffer's "
+            },
+            {
+              "type": "codeVoice",
+              "code": "pixelBits"
+            },
+            {
+              "type": "text",
+              "text": " value is set to the source image's "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_cgimageformat/1399086-bitspercomponent"
+            },
+            {
+              "type": "text",
+              "text": " value."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var argbSourcePlanarBuffers: [vImage_Buffer] = (0 ..< componentCount).map { _ in",
+            "    guard let buffer = try? vImage_Buffer(width: Int(sourceBuffer.width),",
+            "                                          height: Int(sourceBuffer.height),",
+            "                                          bitsPerPixel: format.bitsPerComponent) else {",
+            "                                            fatalError(\"Error creating source buffers.\")",
+            "    }",
+            "    ",
+            "    return buffer",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3022793",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Assuming your source image contains four 8-bit channels, the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1533144-vimageconvert_argb8888toplanar8"
+            },
+            {
+              "type": "text",
+              "text": " function populates the planar buffers with the contents of the interleaved source image:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "vImageConvert_ARGB8888toPlanar8(&sourceBuffer,",
+            "                                &argbSourcePlanarBuffers[0],",
+            "                                &argbSourcePlanarBuffers[1],",
+            "                                &argbSourcePlanarBuffers[2],",
+            "                                &argbSourcePlanarBuffers[3],",
+            "                                vImage_Flags(kvImageNoFlags))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3022794",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Initialize the Destination Planar Buffers",
+          "anchor": "3022594"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Creating the destination buffers is similar to creating the source buffers:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var argbDestinationPlanarBuffers: [vImage_Buffer] = (0 ..< componentCount).map { _ in",
+            "    guard let buffer = try? vImage_Buffer(width: Int(sourceBuffer.width),",
+            "                                          height: Int(sourceBuffer.height),",
+            "                                          bitsPerPixel: format.bitsPerComponent) else {",
+            "                                            fatalError(\"Error creating destination buffers.\")",
+            "    }",
+            "    ",
+            "    return buffer",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3022797",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Derive the Alpha Channel Index",
+          "anchor": "3022593"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because you don't want to apply the lookup table transform to the alpha channel, you need to derive the index of the alpha channel from the source image's "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/1455401-cgimagegetalphainfo"
+            },
+            {
+              "type": "text",
+              "text": " property. The following code populates the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "alphaIndex"
+            },
+            {
+              "type": "text",
+              "text": " variable with the index of the alpha channel:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let alphaIndex: Int?",
+            "",
+            "let littleEndian = cgImage.byteOrderInfo == .order16Little ||",
+            "                   cgImage.byteOrderInfo == .order32Little",
+            "",
+            "switch cgImage.alphaInfo {",
+            "    case .first, .noneSkipFirst, .premultipliedFirst:",
+            "        alphaIndex = littleEndian ? componentCount - 1 : 0",
+            "    case .last, .noneSkipLast, .premultipliedLast:",
+            "        alphaIndex = littleEndian ? 0 : componentCount - 1",
+            "    default:",
+            "        alphaIndex = nil",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3022798",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": " "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Copy the Source Alpha to the Destination Alpha",
+          "anchor": "3022799"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "alphaIndex"
+            },
+            {
+              "type": "text",
+              "text": " value to copy the alpha information directly from the appropriate source buffer to the appropriate destination buffer:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "if let alphaIndex = alphaIndex {",
+            "    do {",
+            "        try argbSourcePlanarBuffers[alphaIndex].copy(destinationBuffer: &argbDestinationPlanarBuffers[alphaIndex],",
+            "                                                     pixelSize: Int(format.bitsPerPixel) / 8)",
+            "    } catch {",
+            "        fatalError(\"Error copying alpha buffer: \\(error.localizedDescription).\")",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3022800",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": " "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Apply the Lookup Table to the Planar Buffers",
+          "anchor": "3022592"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To apply the lookup table transform to the color planar buffers, execute "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1533167-vimagetablelookup_planar8"
+            },
+            {
+              "type": "text",
+              "text": " on each one:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "for index in 0 ..< componentCount where index != alphaIndex {",
+            "    vImageTableLookUp_Planar8(&argbSourcePlanarBuffers[index],",
+            "                              &argbDestinationPlanarBuffers[index],",
+            "                              &lookUpTable,",
+            "                              vImage_Flags(kvImageNoFlags))",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3022801",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Convert the Planar Buffers Back to an Interleaved Buffer",
+          "anchor": "3022591"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With the planar buffers populated with the transform operation results, you're ready to convert the buffers back to an interleaved image. Create an interleaved destination buffer that matches the source buffer:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard var destinationBuffer = try? vImage_Buffer(width: Int(sourceBuffer.width),",
+            "                                                 height: Int(sourceBuffer.height),",
+            "                                                 bitsPerPixel: format.bitsPerPixel) else {",
+            "                                                    fatalError(\"Error creating destination buffers.\")",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3022804",
+            "title": "Listing 9"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1533134-vimageconvert_planar8toargb8888"
+            },
+            {
+              "type": "text",
+              "text": " function interleaves the four planar buffers, writing the results to the destination buffer:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "vImageConvert_Planar8toARGB8888(&argbDestinationPlanarBuffers[0],",
+            "                                &argbDestinationPlanarBuffers[1],",
+            "                                &argbDestinationPlanarBuffers[2],",
+            "                                &argbDestinationPlanarBuffers[3],",
+            "                                &destinationBuffer,",
+            "                                vImage_Flags(kvImageNoFlags))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3022803",
+            "title": "Listing 10"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Free the Buffer Memory",
+          "anchor": "3022805"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After you’re finished working with the buffers, it’s important that you free the memory allocated to them:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "destinationBuffer.free()",
+            "for buffer in argbSourcePlanarBuffers {",
+            "    buffer.free()",
+            "}",
+            "for buffer in argbDestinationPlanarBuffers {",
+            "    buffer.free()",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3022806",
+            "title": "Listing 11"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

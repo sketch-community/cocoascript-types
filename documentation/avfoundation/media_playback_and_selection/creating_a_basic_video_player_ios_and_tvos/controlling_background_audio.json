@@ -1,0 +1,485 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Support controlling background audio from the Control Center and iOS Lock screen."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/controlling_background_audio",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2948851,
+  "kind": "article",
+  "metadata": {
+    "title": "Controlling Background Audio",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/controlling_background_audio"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/controlling_background_audio"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection": {
+      "title": "Media Playback and Selection",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
+      "url": "/documentation/avfoundation/media_playback_and_selection",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos": {
+      "title": "Creating a Basic Video Player (iOS and tvOS)",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos",
+      "type": "topic",
+      "kind": "article",
+      "role": "article"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/controlling_background_audio#2948850": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/controlling_background_audio#2948850",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/controlling_background_audio#2948850"
+    },
+    "doc://com.apple.documentation/documentation/mediaplayer/mpremotecommandcenter/1619000-playcommand": {
+      "title": "playCommand",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mediaplayer/mpremotecommandcenter/1619000-playcommand",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mediaplayer/mpremotecommandcenter/1619000-playcommand"
+    },
+    "doc://com.apple.documentation/documentation/mediaplayer/mpremotecommandcenter/1618979-pausecommand": {
+      "title": "pauseCommand",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mediaplayer/mpremotecommandcenter/1618979-pausecommand",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mediaplayer/mpremotecommandcenter/1618979-pausecommand"
+    },
+    "doc://com.apple.documentation/documentation/mediaplayer/mpremotecommand/1622910-addtargetwithhandler": {
+      "title": "addTargetWithHandler:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mediaplayer/mpremotecommand/1622910-addtargetwithhandler",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mediaplayer/mpremotecommand/1622910-addtargetwithhandler",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addTargetWithHandler:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/mediaplayer/mpremotecommandhandlerstatus": {
+      "title": "MPRemoteCommandHandlerStatus",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mediaplayer/mpremotecommandhandlerstatus",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mediaplayer/mpremotecommandhandlerstatus"
+    },
+    "doc://com.apple.documentation/documentation/mediaplayer/mpmediaitem": {
+      "title": "MPMediaItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mediaplayer/mpmediaitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mediaplayer/mpmediaitem"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/controlling_background_audio#2948853": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/controlling_background_audio#2948853",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/controlling_background_audio#2948853"
+    },
+    "doc://com.apple.documentation/documentation/mediaplayer/mpnowplayinginfocenter/1615903-nowplayinginfo": {
+      "title": "nowPlayingInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mediaplayer/mpnowplayinginfocenter/1615903-nowplayinginfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mediaplayer/mpnowplayinginfocenter/1615903-nowplayinginfo"
+    },
+    "doc://com.apple.documentation/documentation/mediaplayer/mpremotecommandcenter": {
+      "title": "MPRemoteCommandCenter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mediaplayer/mpremotecommandcenter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mediaplayer/mpremotecommandcenter"
+    },
+    "doc://com.apple.documentation/documentation/mediaplayer/mpnowplayinginfocenter": {
+      "title": "MPNowPlayingInfoCenter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/mediaplayer/mpnowplayinginfocenter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/mediaplayer/mpnowplayinginfocenter"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/enabling_background_audio": {
+      "title": "Enabling Background Audio",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/enabling_background_audio",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/enabling_background_audio",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Configure your app to continue playing audio when it goes into the background."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/playing_audio_from_a_video_asset_in_the_background": {
+      "title": "Playing Audio from a Video Asset in the Background",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/playing_audio_from_a_video_asset_in_the_background",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/playing_audio_from_a_video_asset_in_the_background",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Continue playing audio from a video asset when the video moves into the background."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/controlling_background_audio": {
+      "title": "Controlling Background Audio",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/controlling_background_audio",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/controlling_background_audio",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Support controlling background audio from the Control Center and iOS Lock screen."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/enabling_background_audio",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/playing_audio_from_a_video_asset_in_the_background"
+      ],
+      "title": "Working with Background Audio",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If your app plays audio in the background, support remotely controlling playback both in Control Center and from the iOS Lock screen. Along with controlling playback, also provide meaningful information in these interfaces about what’s currently playing. To implement this functionality, you use the Media Player framework’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mediaplayer/mpremotecommandcenter"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mediaplayer/mpnowplayinginfocenter"
+            },
+            {
+              "type": "text",
+              "text": " classes."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Configure the Remote Command Handlers",
+          "anchor": "2948852"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MPRemoteCommandCenter"
+            },
+            {
+              "type": "text",
+              "text": " class configures objects used for handling remote-control events sent by external accessories and system transport controls. It defines a variety of commands in the form of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MPRemoteCommand"
+            },
+            {
+              "type": "text",
+              "text": " objects to which you can attach custom event handlers to control playback in your app. For instance, to remotely control your app’s play and pause behaviors, you get a reference to the shared command center and provide handlers for the appropriate commands."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func setupRemoteTransportControls() {",
+            "    // Get the shared MPRemoteCommandCenter",
+            "    let commandCenter = MPRemoteCommandCenter.shared()",
+            "",
+            "    // Add handler for Play Command",
+            "    commandCenter.playCommand.addTarget { [unowned self] event in",
+            "        if self.player.rate == 0.0 {",
+            "            self.player.play()",
+            "            return .success",
+            "        }",
+            "        return .commandFailed",
+            "    }",
+            "",
+            "    // Add handler for Pause Command",
+            "    commandCenter.pauseCommand.addTarget { [unowned self] event in",
+            "        if self.player.rate == 1.0 {",
+            "            self.player.pause()",
+            "            return .success",
+            "        }",
+            "        return .commandFailed",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2948850",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The preceding example shows how to add handlers for the command center’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mediaplayer/mpremotecommandcenter/1619000-playcommand"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mediaplayer/mpremotecommandcenter/1618979-pausecommand"
+            },
+            {
+              "type": "text",
+              "text": " using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mediaplayer/mpremotecommand/1622910-addtargetwithhandler"
+            },
+            {
+              "type": "text",
+              "text": " method. The callback block you give to this method requires that you return a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mediaplayer/mpremotecommandhandlerstatus"
+            },
+            {
+              "type": "text",
+              "text": " value, indicating whether the command succeeded or failed."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Provide Display Metadata",
+          "anchor": "2948849"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After you’ve configured your remote command handlers, the next step is to provide metadata to display on the iOS Lock screen and in Control Center’s transport area. You provide a dictionary of metadata using the keys defined by "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mediaplayer/mpmediaitem"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MPNowPlayingInfoCenter"
+            },
+            {
+              "type": "text",
+              "text": " and set that dictionary on the default instance of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MPNowPlayingInfoCenter"
+            },
+            {
+              "type": "text",
+              "text": ". The following example shows you how to set a title and artwork for the currently presented media, along with playback timing values:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func setupNowPlaying() {",
+            "    // Define Now Playing Info",
+            "    var nowPlayingInfo = [String : Any]()",
+            "    nowPlayingInfo[MPMediaItemPropertyTitle] = \"My Movie\"",
+            "",
+            "    if let image = UIImage(named: \"lockscreen\") {",
+            "        nowPlayingInfo[MPMediaItemPropertyArtwork] =",
+            "            MPMediaItemArtwork(boundsSize: image.size) { size in",
+            "                return image",
+            "        }",
+            "    }",
+            "    nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] = playerItem.currentTime().seconds",
+            "    nowPlayingInfo[MPMediaItemPropertyPlaybackDuration] = playerItem.asset.duration.seconds",
+            "    nowPlayingInfo[MPNowPlayingInfoPropertyPlaybackRate] = player.rate",
+            "",
+            "    // Set the metadata",
+            "    MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2948853",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This example passes dynamic timing as part of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/mediaplayer/mpnowplayinginfocenter/1615903-nowplayinginfo"
+            },
+            {
+              "type": "text",
+              "text": " dictionary, which allows you to present player timing and progress in the remote-control interfaces. When doing so, provide an up-to-date snapshot of this timing as your app enters the background. You can also update the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "nowPlayingInfo"
+            },
+            {
+              "type": "text",
+              "text": " while your app is in the background, if media information or timing changes significantly."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

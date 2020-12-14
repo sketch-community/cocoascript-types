@@ -1,0 +1,1106 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Combine two images by using alpha blending to create a single output."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vimage"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3686198,
+  "kind": "article",
+  "metadata": {
+    "title": "Compositing Images with Alpha Blending",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/compositing_images_with_alpha_blending",
+        "documentation/accelerate/vimage/compositing_images_with_alpha_blending"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/compositing_images_with_alpha_blending",
+        "documentation/accelerate/vimage/compositing_images_with_alpha_blending"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage": {
+      "title": "vImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vimage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manipulate large images using the CPU’s vector processor."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1410657-vimagepremultipliedalphablend_ar": {
+      "title": "vImagePremultipliedAlphaBlend_ARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1410657-vimagepremultipliedalphablend_ar",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1410657-vimagepremultipliedalphablend_ar"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgimageref": {
+      "title": "CGImageRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgimageref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgimageref"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending#3686482": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending#3686482",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compositing_images_with_alpha_blending#3686482"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending#3686483": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending#3686483",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compositing_images_with_alpha_blending#3686483"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending#3686484": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending#3686484",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compositing_images_with_alpha_blending#3686484"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending#3698719": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending#3698719",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compositing_images_with_alpha_blending#3698719"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending#3686481": {
+      "title": "Perform an Alpha Composite",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending#3686481",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/accelerate/compositing_images_with_alpha_blending#3686481"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending#3686489": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending#3686489",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compositing_images_with_alpha_blending#3686489"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1410696-vimagepremultipliedconstalphable": {
+      "title": "vImagePremultipliedConstAlphaBlend_ARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1410696-vimagepremultipliedconstalphable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1410696-vimagepremultipliedconstalphable"
+    },
+    "link-media-3686488": {
+      "identifier": "link-media-3686488",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/accelerate/compositing_images_with_alpha_blending#3686488"
+    },
+    "media-3686488": {
+      "identifier": "media-3686488",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 320
+          },
+          "url": "https://docs-assets.developer.apple.com/published/eb5b1a6d8d/rendered2x-1600699477.png"
+        }
+      ],
+      "alt": "A photograph of a skyscraper composited against a rusty metal texture. The metal texture is partially visible through the skyscraper image.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1533120-vimageoverwritechannels_argb8888": {
+      "title": "vImageOverwriteChannels_ARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1533120-vimageoverwritechannels_argb8888",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1533120-vimageoverwritechannels_argb8888"
+    },
+    "link-media-3702587": {
+      "identifier": "link-media-3702587",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/accelerate/compositing_images_with_alpha_blending#3702587"
+    },
+    "media-3702587": {
+      "identifier": "media-3702587",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 424
+          },
+          "url": "https://docs-assets.developer.apple.com/published/d80f24a383/rendered2x-1606811774.png"
+        }
+      ],
+      "alt": "A photograph of a skyscraper with a radial gradient, and a rusty metal texture. The radial gradient is white at its center, and black at its edges. The images are composited together so the the skyscraper is visible at the center of the result, and the rusty metal texture is visible at the edge of the result.",
+      "title": "Figure 3"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending#3686480": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending#3686480",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compositing_images_with_alpha_blending#3686480"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending#3686485": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending#3686485",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compositing_images_with_alpha_blending#3686485"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending#3686479": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending#3686479",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/compositing_images_with_alpha_blending#3686479"
+    },
+    "link-media-3696647": {
+      "identifier": "link-media-3696647",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/compositing_images_with_alpha_blending#3696647"
+    },
+    "media-3696647": {
+      "identifier": "media-3696647",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 472
+          },
+          "url": "https://docs-assets.developer.apple.com/published/8e0c7d27da/rendered2x-1603974051.png"
+        }
+      ],
+      "alt": "Two photographs used in compositing operations in this article. The first photograph is of a skyscraper against a transparent background. The second photograph is of a rusty metal texture. A third image shows the skyscraper composited over the texture.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_format": {
+      "title": "Creating a Core Graphics Image Format",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_format",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/creating_a_core_graphics_image_format",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide descriptions of Core Graphics image formats for conversions to and from vImage."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/creating_and_populating_buffers_from_core_graphics_images": {
+      "title": "Creating and Populating Buffers from Core Graphics Images",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_and_populating_buffers_from_core_graphics_images",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/creating_and_populating_buffers_from_core_graphics_images",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initialize vImage buffers from Core Graphics images."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_from_a_vimage_buffer": {
+      "title": "Creating a Core Graphics Image from a vImage Buffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_from_a_vimage_buffer",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/creating_a_core_graphics_image_from_a_vimage_buffer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create displayable representations of vImage buffers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/building_a_basic_image-processing_workflow": {
+      "title": "Building a Basic Image-Processing Workflow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/building_a_basic_image-processing_workflow",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/building_a_basic_image-processing_workflow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resize an image with vImage."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_geometric_transforms_to_images": {
+      "title": "Applying Geometric Transforms to Images",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_geometric_transforms_to_images",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/applying_geometric_transforms_to_images",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reflect, shear, rotate, and scale image buffers using vImage."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending": {
+      "title": "Compositing Images with Alpha Blending",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/compositing_images_with_alpha_blending",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combine two images by using alpha blending to create a single output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_vimage_blend_modes": {
+      "title": "Compositing Images with vImage Blend Modes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_vimage_blend_modes",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/compositing_images_with_vimage_blend_modes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combine two images by using blend modes to create a single output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_regions_of_interest": {
+      "title": "Applying vImage Operations to Regions of Interest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_regions_of_interest",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/applying_vimage_operations_to_regions_of_interest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Limit the effect of vImage operations to rectangular regions of interest."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/optimizing_image-processing_performance": {
+      "title": "Optimizing Image-Processing Performance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/optimizing_image-processing_performance",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/optimizing_image-processing_performance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Improve your app's performance by converting image buffer formats from interleaved to planar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_format",
+        "doc://com.apple.documentation/documentation/accelerate/creating_and_populating_buffers_from_core_graphics_images",
+        "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_from_a_vimage_buffer",
+        "doc://com.apple.documentation/documentation/accelerate/building_a_basic_image-processing_workflow",
+        "doc://com.apple.documentation/documentation/accelerate/applying_geometric_transforms_to_images",
+        "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_vimage_blend_modes",
+        "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_regions_of_interest",
+        "doc://com.apple.documentation/documentation/accelerate/optimizing_image-processing_performance",
+        "doc://com.apple.documentation/documentation/accelerate/vimage"
+      ],
+      "title": "Image Processing Essentials",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "vImage provides a suite of functions for compositing two source images into one output. "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Alpha blending"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " uses the alpha value of each pixel in the top layer to determine the visibility of the bottom layer."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following shows the alpha composite of an image of a building with a transparent background over an image of a texture. The transparent part of the building image has an alpha of zero, indicating the background layer is fully visible."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3696647",
+              "metadata": {
+                "anchor": "3696647",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Perform an Alpha Composite",
+          "anchor": "3686481"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1410657-vimagepremultipliedalphablend_ar"
+            },
+            {
+              "type": "text",
+              "text": " function to blend two images when the top image contains alpha information (for example, when compositing text over a photograph). The images that you pass to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1410657-vimagepremultipliedalphablend_ar"
+            },
+            {
+              "type": "text",
+              "text": " must have the premultiplied alpha information in the first channel."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following function performs an alpha composite of two "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgimageref"
+            },
+            {
+              "type": "text",
+              "text": " instances and returns the result as a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgimageref"
+            },
+            {
+              "type": "text",
+              "text": " instance:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func alphaComposite(topImage: CGImage, bottomImage: CGImage) -> CGImage? {",
+            "    // Create source and destination vImage buffers.",
+            "    guard",
+            "        let topImageBuffer = try? vImage_Buffer(cgImage: topImage),",
+            "        let bottomImageBuffer = try? vImage_Buffer(cgImage: bottomImage),",
+            "        var destinationImageBuffer = try? vImage_Buffer(size: topImageBuffer.size,",
+            "                                                        bitsPerPixel: 8 * 4)",
+            "    else {",
+            "        return nil",
+            "    }",
+            "    ",
+            "    defer {",
+            "        topImageBuffer.free()",
+            "        bottomImageBuffer.free()",
+            "        destinationImageBuffer.free()",
+            "    }",
+            "",
+            "    withUnsafePointer(to: topImageBuffer) { topPtr in",
+            "        withUnsafePointer(to: bottomImageBuffer) { bottomPtr in",
+            "            ",
+            "            // Ensure the bottom image and top image are ARGB.",
+            "            convertToARGB(bottomPtr, alphaInfo: bottomImage.alphaInfo)",
+            "            convertToARGB(topPtr, alphaInfo: topImage.alphaInfo)",
+            "            ",
+            "            // Ensure the top layer is premultiplied.",
+            "            premultiply(topPtr, alphaInfo: topImage.alphaInfo)",
+            "",
+            "            // Perform the composite operation.",
+            "            vImagePremultipliedAlphaBlend_ARGB8888(topPtr,",
+            "                                                   bottomPtr,",
+            "                                                   &destinationImageBuffer,",
+            "                                                   vImage_Flags(kvImageNoFlags))",
+            "        }",
+            "    }",
+            "    ",
+            "    if let destinationFormat = vImage_CGImageFormat(",
+            "        bitsPerComponent: 8,",
+            "        bitsPerPixel: 8 * 4,",
+            "        colorSpace: CGColorSpaceCreateDeviceRGB(),",
+            "        bitmapInfo: CGBitmapInfo(rawValue: CGImageAlphaInfo.first.rawValue)) {",
+            "        return try? destinationImageBuffer.createCGImage(format: destinationFormat)",
+            "    }",
+            "    return nil",
+            "}",
+            ""
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3686482",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because the blending function "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1410657-vimagepremultipliedalphablend_ar"
+            },
+            {
+              "type": "text",
+              "text": " requires the source buffers ordered with the alpha channel first, the code calls "
+            },
+            {
+              "type": "codeVoice",
+              "code": "convertToARGB(_:alphaInfo:)"
+            },
+            {
+              "type": "text",
+              "text": " to ensure the correct ordering. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "convertToARGB(_:alphaInfo:)"
+            },
+            {
+              "type": "text",
+              "text": " function checks the channel ordering from the source image’s alpha information and permutes the channels if the ordering isn’t alpha first."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func convertToARGB(_ buffer: UnsafePointer<vImage_Buffer>,",
+            "                   alphaInfo: CGImageAlphaInfo) {",
+            "    ",
+            "    let alphaLasts = [ CGImageAlphaInfo.last,",
+            "                       CGImageAlphaInfo.premultipliedLast,",
+            "                       CGImageAlphaInfo.noneSkipLast ]",
+            "    ",
+            "    if alphaLasts.contains(alphaInfo) {",
+            "        vImagePermuteChannels_ARGB8888(buffer,",
+            "                                       buffer,",
+            "                                       [3, 0, 1, 2],",
+            "                                       vImage_Flags(kvImageNoFlags))",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3686483",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "premultiply(_:alphaInfo:)"
+            },
+            {
+              "type": "text",
+              "text": " function uses a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgimageref"
+            },
+            {
+              "type": "text",
+              "text": " instance’s alpha information to determine whether an image contains premultiplied alpha. This function ensures that the top layer that the function passes to the composite operation contains premultiplied pixels."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func premultiply(_ buffer: UnsafePointer<vImage_Buffer>,",
+            "                 alphaInfo: CGImageAlphaInfo) {",
+            "    ",
+            "    let premultiplieds = [ CGImageAlphaInfo.premultipliedFirst,",
+            "                           CGImageAlphaInfo.premultipliedLast ]",
+            "    ",
+            "    if !premultiplieds.contains(alphaInfo) {",
+            "        vImagePremultiplyData_ARGB8888(buffer,",
+            "                                       buffer,",
+            "                                       vImage_Flags(kvImageNoFlags))",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3686484",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Perform an Alpha Composite with a Single Alpha Value",
+          "anchor": "3686487"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "vImage provides functions to perform an alpha composite using a single alpha value. The functions apply the constant alpha value you supply combined with the top image’s existing alpha to the top layer’s color channels and alpha channels. For each pixel, the constant alpha functions perform the following operation:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "destColor = (srcTopColor * constAlpha * 255  + (255*255 - srcTopAlpha * constAlpha) * srcBottomColor + 127*255) / (255*255);",
+            "destAlpha =  (srcTopAlpha * constAlpha * 255 + (255*255 - srcTopAlpha * constAlpha) * srcBottomAlpha + 127*255 ) / (255*255);"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3698719",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To perform an alpha composite with a constant alpha, replace the call to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1410657-vimagepremultipliedalphablend_ar"
+            },
+            {
+              "type": "text",
+              "text": " in the code listing in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending#3686481"
+            },
+            {
+              "type": "text",
+              "text": " with the following code:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Perform the composite operation.",
+            "vImagePremultipliedConstAlphaBlend_ARGB8888(topPtr,",
+            "                                            Pixel_8(191),",
+            "                                            bottomPtr,",
+            "                                            &destinationImageBuffer,",
+            "                                            vImage_Flags(kvImageNoFlags))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3686489",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following image shows the result of compositing with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1410696-vimagepremultipliedconstalphable"
+            },
+            {
+              "type": "text",
+              "text": " using a constant alpha with a value of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "191"
+            },
+            {
+              "type": "text",
+              "text": ". The background of the building remains transparent, but the parts of the image that were originally opaque now show some of the lower layer."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3686488",
+              "metadata": {
+                "anchor": "3686488",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Perform an Alpha Composite with an Overwritten Alpha Channel",
+          "anchor": "3686477"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1533120-vimageoverwritechannels_argb8888"
+            },
+            {
+              "type": "text",
+              "text": " function to overwrite an image’s alpha channel. The following shows an example of setting a radial gradient as the alpha channel of an image to produce a vignette style blend:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3702587",
+              "metadata": {
+                "anchor": "3702587",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1533120-vimageoverwritechannels_argb8888"
+            },
+            {
+              "type": "text",
+              "text": " function requires buffers with unpremultiplied alpha."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "radialComposite(topImage:bottomImage:)"
+            },
+            {
+              "type": "text",
+              "text": " function performs an alpha composite of two "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgimageref"
+            },
+            {
+              "type": "text",
+              "text": " instances with a procedural radial gradient:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func radialComposite(topImage: CGImage,",
+            "                     bottomImage: CGImage) -> CGImage? {",
+            "    // Create source and destination vImage buffers.",
+            "    guard",
+            "        let topImageBuffer = try? vImage_Buffer(cgImage: topImage),",
+            "        let bottomImageBuffer = try? vImage_Buffer(cgImage: bottomImage),",
+            "        var gradientImageBuffer = try? vImage_Buffer(size: topImageBuffer.size,",
+            "                                                     bitsPerPixel: 8),",
+            "        var destinationImageBuffer = try? vImage_Buffer(size: topImageBuffer.size,",
+            "                                                        bitsPerPixel: 8 * 4)",
+            "    else {",
+            "        return nil",
+            "    }",
+            "    ",
+            "    defer {",
+            "        topImageBuffer.free()",
+            "        bottomImageBuffer.free()",
+            "        gradientImageBuffer.free()",
+            "        destinationImageBuffer.free()",
+            "    }",
+            "    ",
+            "    withUnsafePointer(to: topImageBuffer) { topPtr in",
+            "        withUnsafePointer(to: bottomImageBuffer) { bottomPtr in",
+            "            ",
+            "            // Ensure the top image and the bottom image are ARGB.",
+            "            convertToARGB(topPtr, alphaInfo: topImage.alphaInfo)",
+            "            convertToARGB(bottomPtr, alphaInfo: bottomImage.alphaInfo)",
+            "            ",
+            "            // Populate `gradientImageBuffer` with a radial gradient.",
+            "            makeRadialGradient(&gradientImageBuffer)",
+            "            ",
+            "            // Unpremultiply before overwrite if required.",
+            "            unpremultiply(topPtr, alphaInfo: topImage.alphaInfo)",
+            "            ",
+            "            // Overwrite the top layers's alpha channel with the radial gradient.",
+            "            vImageOverwriteChannels_ARGB8888(&gradientImageBuffer,",
+            "                                             topPtr, topPtr,",
+            "                                             0x8,",
+            "                                             vImage_Flags(kvImageNoFlags))",
+            "            ",
+            "            // Premultiply the top layer.",
+            "            vImagePremultiplyData_ARGB8888(topPtr, topPtr,",
+            "                                           vImage_Flags(kvImageNoFlags))",
+            "            ",
+            "            // Perform the alpha blend of the top layer over the bottom layer.",
+            "            vImagePremultipliedAlphaBlend_ARGB8888(topPtr,",
+            "                                                   bottomPtr,",
+            "                                                   &destinationImageBuffer,",
+            "                                                   vImage_Flags(kvImageNoFlags))",
+            "        }",
+            "    }",
+            "    ",
+            "    if let destinationFormat = vImage_CGImageFormat(",
+            "        bitsPerComponent: 8,",
+            "        bitsPerPixel: 8 * 4,",
+            "        colorSpace: CGColorSpaceCreateDeviceRGB(),",
+            "        bitmapInfo: CGBitmapInfo(rawValue: CGImageAlphaInfo.first.rawValue)) {",
+            "        return try? destinationImageBuffer.createCGImage(format: destinationFormat)",
+            "    }",
+            "    return nil",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3686480",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The code calls "
+            },
+            {
+              "type": "codeVoice",
+              "code": "unpremultiply(_:alphaInfo:)"
+            },
+            {
+              "type": "text",
+              "text": " to unpremultiply an image if its alpha information indicates it contains premultiplied pixels."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func unpremultiply(_ buffer: UnsafePointer<vImage_Buffer>,",
+            "                   alphaInfo: CGImageAlphaInfo) {",
+            "    ",
+            "    let premultiplieds = [ CGImageAlphaInfo.premultipliedFirst,",
+            "                           CGImageAlphaInfo.premultipliedLast ]",
+            "    ",
+            "    if premultiplieds.contains(alphaInfo) {",
+            "        vImageUnpremultiplyData_ARGB8888(buffer,",
+            "                                         buffer,",
+            "                                         vImage_Flags(kvImageNoFlags))",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3686485",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "radialComposite(topImage:bottomImage:)"
+            },
+            {
+              "type": "text",
+              "text": " function calls "
+            },
+            {
+              "type": "codeVoice",
+              "code": "makeRadialGradient(_:)"
+            },
+            {
+              "type": "text",
+              "text": " to populate the gradient buffer with a radial gradient. The code generates the radial gradient by multiplying a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "height * 1"
+            },
+            {
+              "type": "text",
+              "text": " matrix by a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1 * width"
+            },
+            {
+              "type": "text",
+              "text": " matrix. Both factors contain values that follow a bell-shaped curve."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func makeRadialGradient(_ destination: inout vImage_Buffer) {",
+            "    let width = Int(destination.size.width)",
+            "    let height = Int(destination.size.height)",
+            "    ",
+            "    var gradientValues = [Float](unsafeUninitializedCapacity: width * height) {",
+            "        buffer, initializedCount in",
+            "        ",
+            "        let verticalWindow = vDSP.window(ofType: Float.self,",
+            "                                         usingSequence: .hanningDenormalized,",
+            "                                         count: height,",
+            "                                         isHalfWindow: false)",
+            "        ",
+            "        let horizontalWindow = vDSP.window(ofType: Float.self,",
+            "                                           usingSequence: .hanningDenormalized,",
+            "                                           count: width,",
+            "                                           isHalfWindow: false)",
+            "        ",
+            "        vDSP_mmul(verticalWindow, 1,",
+            "                  horizontalWindow, 1,",
+            "                  buffer.baseAddress!, 1,",
+            "                  vDSP_Length(height),",
+            "                  vDSP_Length(width), 1)",
+            "        ",
+            "        initializedCount = width * height",
+            "    }.map {",
+            "        return Pixel_8($0 * Float(Pixel_8.max))",
+            "    }",
+            "    ",
+            "    gradientValues.withUnsafeMutableBufferPointer { gradientPtr in",
+            "        let gradientBuffer = vImage_Buffer(data: gradientPtr.baseAddress,",
+            "                                           height: vImagePixelCount(height),",
+            "                                           width: vImagePixelCount(width),",
+            "                                           rowBytes: width)",
+            "        ",
+            "        try? gradientBuffer.copy(destinationBuffer: &destination,",
+            "                                 pixelSize: 1)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3686479",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

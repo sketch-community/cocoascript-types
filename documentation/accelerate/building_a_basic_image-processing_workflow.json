@@ -1,0 +1,731 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Resize an image with vImage."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vimage"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/building_a_basic_image-processing_workflow",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2940829,
+  "kind": "article",
+  "metadata": {
+    "title": "Building a Basic Image-Processing Workflow",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/building_a_basic_image-processing_workflow",
+        "documentation/accelerate/vimage/building_a_basic_image-processing_workflow"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/building_a_basic_image-processing_workflow",
+        "documentation/accelerate/vimage/building_a_basic_image-processing_workflow"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage": {
+      "title": "vImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vimage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manipulate large images using the CPU’s vector processor."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_format": {
+      "title": "Creating a Core Graphics Image Format",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_format",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/creating_a_core_graphics_image_format",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Provide descriptions of Core Graphics image formats for conversions to and from vImage."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/creating_and_populating_buffers_from_core_graphics_images": {
+      "title": "Creating and Populating Buffers from Core Graphics Images",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_and_populating_buffers_from_core_graphics_images",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/creating_and_populating_buffers_from_core_graphics_images",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initialize vImage buffers from Core Graphics images."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/building_a_basic_image-processing_workflow#2943398": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/building_a_basic_image-processing_workflow#2943398",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/building_a_basic_image-processing_workflow#2943398"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_cgimageformat/1399030-bitmapinfo": {
+      "title": "bitmapInfo",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_cgimageformat/1399030-bitmapinfo",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_cgimageformat/1399030-bitmapinfo"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgimagealphainfo/kcgimagealphapremultipliedfirst": {
+      "title": "kCGImageAlphaPremultipliedFirst",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgimagealphainfo/kcgimagealphapremultipliedfirst",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgimagealphainfo/kcgimagealphapremultipliedfirst"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgimagealphainfo/kcgimagealphapremultipliedlast": {
+      "title": "kCGImageAlphaPremultipliedLast",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgimagealphainfo/kcgimagealphapremultipliedlast",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgimagealphainfo/kcgimagealphapremultipliedlast"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/building_a_basic_image-processing_workflow#2941461": {
+      "title": "Avoid Artifacts by Unpremultiplying",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/building_a_basic_image-processing_workflow#2941461",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/accelerate/building_a_basic_image-processing_workflow#2941461"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1509266-vimagescale_argb8888": {
+      "title": "vImageScale_ARGB8888",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1509266-vimagescale_argb8888",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1509266-vimagescale_argb8888"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/building_a_basic_image-processing_workflow#2941493": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/building_a_basic_image-processing_workflow#2941493",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/building_a_basic_image-processing_workflow#2941493"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagehighqualityresampling": {
+      "title": "kvImageHighQualityResampling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagehighqualityresampling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1578976-processing_flags/kvimagehighqualityresampling"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagenoflags": {
+      "title": "kvImageNoFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagenoflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1578976-processing_flags/kvimagenoflags"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_from_a_vimage_buffer": {
+      "title": "Creating a Core Graphics Image from a vImage Buffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_from_a_vimage_buffer",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/creating_a_core_graphics_image_from_a_vimage_buffer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create displayable representations of vImage buffers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/building_a_basic_image-processing_workflow#2953433": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/building_a_basic_image-processing_workflow#2953433",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/building_a_basic_image-processing_workflow#2953433"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/building_a_basic_image-processing_workflow#2941530": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/building_a_basic_image-processing_workflow#2941530",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/building_a_basic_image-processing_workflow#2941530"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_buffer": {
+      "title": "vImage_Buffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_buffer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_buffer"
+    },
+    "link-media-2953430": {
+      "identifier": "link-media-2953430",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/building_a_basic_image-processing_workflow#2953430"
+    },
+    "media-2953430": {
+      "identifier": "media-2953430",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 320,
+            "height": 146
+          },
+          "url": "https://docs-assets.developer.apple.com/published/eaf07e35e9/e0b05672-d091-417a-9371-26dc6546ed86.png"
+        }
+      ],
+      "alt": "Photos showing the original image and the resized image.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/building_a_basic_image-processing_workflow": {
+      "title": "Building a Basic Image-Processing Workflow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/building_a_basic_image-processing_workflow",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/building_a_basic_image-processing_workflow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Resize an image with vImage."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_geometric_transforms_to_images": {
+      "title": "Applying Geometric Transforms to Images",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_geometric_transforms_to_images",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/applying_geometric_transforms_to_images",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reflect, shear, rotate, and scale image buffers using vImage."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending": {
+      "title": "Compositing Images with Alpha Blending",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/compositing_images_with_alpha_blending",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combine two images by using alpha blending to create a single output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_vimage_blend_modes": {
+      "title": "Compositing Images with vImage Blend Modes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_vimage_blend_modes",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/compositing_images_with_vimage_blend_modes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combine two images by using blend modes to create a single output."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_regions_of_interest": {
+      "title": "Applying vImage Operations to Regions of Interest",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_regions_of_interest",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/applying_vimage_operations_to_regions_of_interest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Limit the effect of vImage operations to rectangular regions of interest."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/optimizing_image-processing_performance": {
+      "title": "Optimizing Image-Processing Performance",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/optimizing_image-processing_performance",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/optimizing_image-processing_performance",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Improve your app's performance by converting image buffer formats from interleaved to planar."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_format",
+        "doc://com.apple.documentation/documentation/accelerate/creating_and_populating_buffers_from_core_graphics_images",
+        "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_from_a_vimage_buffer",
+        "doc://com.apple.documentation/documentation/accelerate/applying_geometric_transforms_to_images",
+        "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_alpha_blending",
+        "doc://com.apple.documentation/documentation/accelerate/compositing_images_with_vimage_blend_modes",
+        "doc://com.apple.documentation/documentation/accelerate/applying_vimage_operations_to_regions_of_interest",
+        "doc://com.apple.documentation/documentation/accelerate/optimizing_image-processing_performance",
+        "doc://com.apple.documentation/documentation/accelerate/vimage"
+      ],
+      "title": "Image Processing Essentials",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "vImage provides fast and accurate high-level functions for image manipulation; for example, compositing, convolution, and histogram operations. It operates on common image formats through "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_buffer"
+            },
+            {
+              "type": "text",
+              "text": " structures. vImage buffers describe the size of an image and the number of bytes in each row, and point to the image pixel data. Buffers are initialized from Core Graphics images, Core Video pixel buffers, or raw pixel data. The pixel data a buffer points to can be used to create a new Core Graphics image or can be copied into a Core Video pixel buffer. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the simplest workflow, you convert an image to a vImage buffer, apply an operation to the buffer, and convert the buffer back to an image. In this example, the width and height of the result are one-third of the original:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2953430",
+              "metadata": {
+                "anchor": "2953430",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Initialize an Image Format and vImage Buffers",
+          "anchor": "2943397"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To learn about initializing the buffers you'll need to perform a scaling operation, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_format"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_and_populating_buffers_from_core_graphics_images"
+            },
+            {
+              "type": "text",
+              "text": ". In this example, you'll need the image format and buffers discussed in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_and_populating_buffers_from_core_graphics_images"
+            },
+            {
+              "type": "text",
+              "text": ". However, you'll use the following code to initialize a destination buffer with a height and width that are a quarter of the source dimensions."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let destinationHeight = Int(CGFloat(sourceBuffer.height) * 0.25)",
+            "let destinationWidth = Int(CGFloat(sourceBuffer.width) * 0.25)",
+            "",
+            "guard var destinationBuffer = try? vImage_Buffer(width: destinationWidth,",
+            "                                                 height: destinationHeight,",
+            "                                                 bitsPerPixel: format.bitsPerPixel) else {",
+            "                                                    return nil",
+            "}",
+            "",
+            "defer {",
+            "    destinationBuffer.free()",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2943398",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Apply the Scale Operation",
+          "anchor": "2941458"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you're rescaling an image with premultiplied alpha (that is, with a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_cgimageformat/1399030-bitmapinfo"
+            },
+            {
+              "type": "text",
+              "text": " value with "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgimagealphainfo/kcgimagealphapremultipliedfirst"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgimagealphainfo/kcgimagealphapremultipliedlast"
+            },
+            {
+              "type": "text",
+              "text": "), before you apply the scale operation, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/building_a_basic_image-processing_workflow#2941461"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Otherwise, with the source and destination buffers properly initialized, you're ready to perform the scaling operation. Because your format contains four 8-bit channels, you use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1509266-vimagescale_argb8888"
+            },
+            {
+              "type": "text",
+              "text": " function. This function works equally well on all channel orderings; for example, RGBA or BGRA."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "error = vImageScale_ARGB8888(&sourceBuffer,",
+            "                             &destinationBuffer,",
+            "                             nil,",
+            "                             vImage_Flags(kvImageHighQualityResampling))",
+            "        ",
+            "guard error == kvImageNoError else {",
+            "    fatalError(\"Error in vImageScale_ARGB8888: \\(error)\")",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2941493",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagehighqualityresampling"
+            },
+            {
+              "type": "text",
+              "text": " flag uses a high-quality Lanzcos 5 x 5 resampling filter. If you require faster scaling, pass "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1578976-processing_flags/kvimagenoflags"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "destinationBuffer"
+            },
+            {
+              "type": "text",
+              "text": " now contains the scaled version of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "sourceBuffer"
+            },
+            {
+              "type": "text",
+              "text": ". To learn how to display the scaled result to your user, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_from_a_vimage_buffer"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After you've finished with the source and destination buffers, it's important that you free the memory allocated to them:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "sourceBuffer.free()",
+            "destinationBuffer.free()"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2953433",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Avoid Artifacts by Unpremultiplying",
+          "anchor": "2941461"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you're rescaling an image with premultiplied alpha, you may see artifacts in high-frequency regions of the image. To avoid this situation, unpremultiply the image data—that is, remove the premultiplied alpha value from the image data—before the scaling operation, and premultiply the scaled result."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This code shows the additional operations required, with  error handling removed for brevity:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "error = vImageUnpremultiplyData_ARGB8888(&sourceBuffer,",
+            "                                         &sourceBuffer,",
+            "                                         vImage_Flags(kvImageNoFlags))",
+            " ",
+            "error = vImageScale_ARGB8888(&sourceBuffer,",
+            "                             &destinationBuffer,",
+            "                             nil,",
+            "                             vImage_Flags(kvImageHighQualityResampling))",
+            " ",
+            "error = vImagePremultiplyData_ARGB8888(&destinationBuffer,",
+            "                                       &destinationBuffer,",
+            "                                       vImage_Flags(kvImageNoFlags))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2941530",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

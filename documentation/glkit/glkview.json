@@ -1,0 +1,887 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A default implementation for views that draw their content using OpenGL ES."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/glkit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/glkit/glkview",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1615615,
+  "kind": "symbol",
+  "metadata": {
+    "title": "GLKView",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "GLKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "5.0",
+        "deprecatedAt": "12.0",
+        "current": "14.3",
+        "deprecated": true
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "deprecatedAt": "12.0",
+        "current": "14.3",
+        "deprecated": true
+      }
+    ],
+    "externalID": "c:objc(cs)GLKView",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/glkit/glkview"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/glkit/glkview"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/glkit": {
+      "title": "GLKit",
+      "identifier": "doc://com.apple.documentation/documentation/glkit",
+      "url": "/documentation/glkit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/glkit/glkview": {
+      "title": "GLKView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/glkit/glkview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/glkit/glkview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A default implementation for views that draw their content using OpenGL ES."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/glkit/glkviewdelegate": {
+      "title": "GLKViewDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/glkit/glkviewdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/glkit/glkviewdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Drawing callback methods for use with a "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/glkit/glkview"
+        },
+        {
+          "type": "text",
+          "text": " object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/glkit/glkview/1615587-drawablecolorformat": {
+      "title": "drawableColorFormat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/glkit/glkview/1615587-drawablecolorformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/glkit/glkview/1615587-drawablecolorformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The format of the color renderbuffer."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/glkit/glkview/1615583-drawabledepthformat": {
+      "title": "drawableDepthFormat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/glkit/glkview/1615583-drawabledepthformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/glkit/glkview/1615583-drawabledepthformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The format of the depth renderbuffer"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/glkit/glkview/1615605-drawablestencilformat": {
+      "title": "drawableStencilFormat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/glkit/glkview/1615605-drawablestencilformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/glkit/glkview/1615605-drawablestencilformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The format of the stencil renderbuffer."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/glkit/glkview/1615601-drawablemultisample": {
+      "title": "drawableMultisample",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/glkit/glkview/1615601-drawablemultisample",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/glkit/glkview/1615601-drawablemultisample",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The format of the multisampling buffer."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview": {
+      "title": "UIView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview/1622529-drawrect": {
+      "title": "drawRect:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622529-drawrect",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview/1622529-drawrect",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "drawRect:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/opengles/eaglcontext": {
+      "title": "EAGLContext",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/opengles/eaglcontext",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/opengles/eaglcontext"
+    },
+    "doc://com.apple.documentation/documentation/glkit/glkviewcontroller": {
+      "title": "GLKViewController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/glkit/glkviewcontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/glkit/glkviewcontroller",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A view controller that manages an OpenGL ES rendering loop."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscoding": {
+      "title": "NSCoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscoding"
+    },
+    "doc://com.apple.documentation/documentation/glkit/glkview/1615609-initwithframe": {
+      "title": "initWithFrame:context:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/glkit/glkview/1615609-initwithframe",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/glkit/glkview/1615609-initwithframe",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Initializes a new view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "initWithFrame:context:"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/glkit/glkview/1615557-delegate": {
+      "title": "delegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/glkit/glkview/1615557-delegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/glkit/glkview/1615557-delegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The view’s delegate."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/glkit/glkview/1615559-drawableheight": {
+      "title": "drawableHeight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/glkit/glkview/1615559-drawableheight",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/glkit/glkview/1615559-drawableheight",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The height, in pixels, of the underlying framebuffer object."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/glkit/glkview/1615591-drawablewidth": {
+      "title": "drawableWidth",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/glkit/glkview/1615591-drawablewidth",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/glkit/glkview/1615591-drawablewidth",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The width, in pixels, of the underlying framebuffer object."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/glkit/glkview/1615597-context": {
+      "title": "context",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/glkit/glkview/1615597-context",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/glkit/glkview/1615597-context",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The OpenGL ES context used when drawing the view’s contents."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/glkit/glkview/1615593-binddrawable": {
+      "title": "bindDrawable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/glkit/glkview/1615593-binddrawable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/glkit/glkview/1615593-binddrawable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Binds the underlying framebuffer object to OpenGL ES."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "bindDrawable"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/glkit/glkview/1615561-enablesetneedsdisplay": {
+      "title": "enableSetNeedsDisplay",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/glkit/glkview/1615561-enablesetneedsdisplay",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/glkit/glkview/1615561-enablesetneedsdisplay",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that indicates whether the view responds to messages that invalidate the view’s contents."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/glkit/glkview/1615571-display": {
+      "title": "display",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/glkit/glkview/1615571-display",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/glkit/glkview/1615571-display",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Redraws the view’s contents immediately."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "display"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/glkit/glkview/1615562-snapshot": {
+      "title": "snapshot",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/glkit/glkview/1615562-snapshot",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/glkit/glkview/1615562-snapshot",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Draws the contents of the view and returns them as a new image object."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/glkit/glkview/1615569-deletedrawable": {
+      "title": "deleteDrawable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/glkit/glkview/1615569-deletedrawable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/glkit/glkview/1615569-deletedrawable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Deletes the drawable object associated with the view."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "deleteDrawable"
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/glkit/glkviewdrawablecolorformat": {
+      "title": "GLKViewDrawableColorFormat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/glkit/glkviewdrawablecolorformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/glkit/glkviewdrawablecolorformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The format of the color renderbuffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/glkit/glkviewdrawabledepthformat": {
+      "title": "GLKViewDrawableDepthFormat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/glkit/glkviewdrawabledepthformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/glkit/glkviewdrawabledepthformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The format of the depth renderbuffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/glkit/glkviewdrawablestencilformat": {
+      "title": "GLKViewDrawableStencilFormat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/glkit/glkviewdrawablestencilformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/glkit/glkviewdrawablestencilformat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The format of the stencil renderbuffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/glkit/glkviewdrawablemultisample": {
+      "title": "GLKViewDrawableMultisample",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/glkit/glkviewdrawablemultisample",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/glkit/glkviewdrawablemultisample",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The format of the multisampling buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/glkit/glkviewcontrollerdelegate": {
+      "title": "GLKViewControllerDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/glkit/glkviewcontrollerdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/glkit/glkviewcontrollerdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Rendering loop callback methods for use with a "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/glkit/glkviewcontroller"
+        },
+        {
+          "type": "text",
+          "text": " object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/uikit/uiview"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscoding"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Initializing the View",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/glkit/glkview/1615609-initwithframe"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Delegate",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/glkit/glkview/1615557-delegate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Configuring the Framebuffer Object",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/glkit/glkview/1615587-drawablecolorformat",
+        "doc://com.apple.documentation/documentation/glkit/glkview/1615583-drawabledepthformat",
+        "doc://com.apple.documentation/documentation/glkit/glkview/1615605-drawablestencilformat",
+        "doc://com.apple.documentation/documentation/glkit/glkview/1615601-drawablemultisample"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Read-only Framebuffer Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/glkit/glkview/1615559-drawableheight",
+        "doc://com.apple.documentation/documentation/glkit/glkview/1615591-drawablewidth"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Drawing Your View’s Contents",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/glkit/glkview/1615597-context",
+        "doc://com.apple.documentation/documentation/glkit/glkview/1615593-binddrawable",
+        "doc://com.apple.documentation/documentation/glkit/glkview/1615561-enablesetneedsdisplay",
+        "doc://com.apple.documentation/documentation/glkit/glkview/1615571-display",
+        "doc://com.apple.documentation/documentation/glkit/glkview/1615562-snapshot"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Deleting the View’s Underlying Framebuffer Object",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/glkit/glkview/1615569-deletedrawable"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/glkit/glkviewdrawablecolorformat",
+        "doc://com.apple.documentation/documentation/glkit/glkviewdrawabledepthformat",
+        "doc://com.apple.documentation/documentation/glkit/glkviewdrawablestencilformat",
+        "doc://com.apple.documentation/documentation/glkit/glkviewdrawablemultisample"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/glkit/glkviewdelegate",
+        "doc://com.apple.documentation/documentation/glkit/glkviewcontroller",
+        "doc://com.apple.documentation/documentation/glkit/glkviewcontrollerdelegate"
+      ],
+      "title": "OpenGL ES View Rendering",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "GLKView"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)UIView",
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiview",
+              "text": "UIView"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "tvOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/glkit/glkview"
+            },
+            {
+              "type": "text",
+              "text": " class simplifies the effort required to create an OpenGL ES application by  directly managing a framebuffer object on your behalf; your application simply needs to draw into the framebuffer when the contents need to be updated."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To use this class in your application, create a new "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/glkit/glkview"
+            },
+            {
+              "type": "text",
+              "text": " object and provide it an OpenGL ES context. Then, modify the view’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/glkit/glkview/1615587-drawablecolorformat"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/glkit/glkview/1615583-drawabledepthformat"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/glkit/glkview/1615605-drawablestencilformat"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/glkit/glkview/1615601-drawablemultisample"
+            },
+            {
+              "type": "text",
+              "text": " properties to configure the format of the drawable’s framebuffer object. After this, the view automatically creates or updates the framebuffer object whenever the view must be redrawn. A "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/glkit/glkview"
+            },
+            {
+              "type": "text",
+              "text": " object uses the regular view drawing cycle for a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiview"
+            },
+            {
+              "type": "text",
+              "text": " object, calling its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622529-drawrect"
+            },
+            {
+              "type": "text",
+              "text": " method whenever the contents of the view need to be updated. Before calling its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622529-drawrect"
+            },
+            {
+              "type": "text",
+              "text": " method, the view makes its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/opengles/eaglcontext"
+            },
+            {
+              "type": "text",
+              "text": " object the current OpenGL ES context and binds its framebuffer object to the OpenGL ES context as the target for rendering commands. Your application’s implementation of the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiview/1622529-drawrect"
+            },
+            {
+              "type": "text",
+              "text": " method should call one or more OpenGL ES functions to render an image into the framebuffer object. Then, the view resolves any multisampling that you may have enabled and delivers the finished results."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Your drawing method should only modify the contents of the framebuffer object. Never attempt to read the pixel information from the underlying framebuffer object, modify or dispose of the framebuffer object, or read its other properties by calling OpenGL ES functions. Instead, rely on the properties and methods provided by the "
+                },
+                {
+                  "type": "reference",
+                  "isActive": false,
+                  "identifier": "doc://com.apple.documentation/documentation/glkit/glkview"
+                },
+                {
+                  "type": "text",
+                  "text": " class."
+                }
+              ]
+            }
+          ],
+          "style": "important"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/glkit/glkview"
+            },
+            {
+              "type": "text",
+              "text": " class can be used in conjunction with a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/glkit/glkviewcontroller"
+            },
+            {
+              "type": "text",
+              "text": " object to create an animation rendering loop that redraws the contents of the view at a specified frame rate."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Subclassing Notes",
+          "anchor": "1676841"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Typically, there is no need to subclass the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/glkit/glkview"
+            },
+            {
+              "type": "text",
+              "text": " class. Instead, provide a delegate object to draw the view’s contents. See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/glkit/glkviewdelegate"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

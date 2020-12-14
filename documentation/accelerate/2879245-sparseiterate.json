@@ -1,0 +1,1554 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Performs a single iteration of the specified iterative method for double-precision matrices, applying a preconditioner."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterate_functions"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/2879245-sparseiterate",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 2879245,
+  "kind": "symbol",
+  "metadata": {
+    "title": "SparseIterate(_:_:_:_:_:_:_:_:_:)",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "11.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.13",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "11.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "4.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@F@SparseIterate#$@SA@SparseIterativeMethod#I#*1b#*v#BFv(#b#$@E@CBLAS_TRANSPOSE#$@SA@DenseMatrix_Double#S6_)#S6_#S6_#S6_#$@SA@SparseOpaquePreconditioner_Double#",
+    "symbolKind": "func",
+    "fragments": [
+      {
+        "kind": "text",
+        "text": "func "
+      },
+      {
+        "kind": "identifier",
+        "text": "SparseIterate"
+      },
+      {
+        "kind": "text",
+        "text": "(SparseIterativeMethod, Int32, UnsafePointer<Bool>, UnsafeMutableRawPointer, (Bool, CBLAS_TRANSPOSE, DenseMatrix_Double, DenseMatrix_Double) -> Void, DenseMatrix_Double, DenseMatrix_Double, DenseMatrix_Double, SparseOpaquePreconditioner_Double)"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/2879245-sparseiterate"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers": {
+      "title": "Sparse Solvers",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
+      "url": "/documentation/accelerate/sparse_solvers",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterate_functions": {
+      "title": "Sparse Iterate Functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers/sparse_iterate_functions",
+      "url": "/documentation/accelerate/sparse_solvers/sparse_iterate_functions",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2873619-sparseconjugategradient": {
+      "title": "SparseConjugateGradient()",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2873619-sparseconjugategradient",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2873619-sparseconjugategradient"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparselsmroptions/2875478-maxiterations": {
+      "title": "maxIterations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparselsmroptions/2875478-maxiterations",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparselsmroptions/2875478-maxiterations"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparselsmroptions/2875473-atol": {
+      "title": "atol",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparselsmroptions/2875473-atol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparselsmroptions/2875473-atol"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparselsmroptions/2875468-rtol": {
+      "title": "rtol",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparselsmroptions/2875468-rtol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparselsmroptions/2875468-rtol"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2873610-sparsegetstatesize_double": {
+      "title": "SparseGetStateSize_Double(_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2873610-sparsegetstatesize_double",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2873610-sparsegetstatesize_double",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the size, in bytes, required for a call to the double-precision sparse iterate method."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "SparseGetStateSize_Double"
+        },
+        {
+          "kind": "text",
+          "text": "(SparseIterativeMethod, Bool, Int32, Int32, Int32) -> Int"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparseiterativemethod": {
+      "title": "SparseIterativeMethod",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseiterativemethod",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparseiterativemethod"
+    },
+    "doc://com.apple.documentation/documentation/swift/int32": {
+      "title": "Int32",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/int32",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/int32"
+    },
+    "doc://com.apple.documentation/documentation/swift/unsafepointer": {
+      "title": "UnsafePointer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/unsafepointer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/unsafepointer"
+    },
+    "doc://com.apple.documentation/documentation/swift/bool": {
+      "title": "Bool",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/bool",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/bool"
+    },
+    "doc://com.apple.documentation/documentation/swift/unsafemutablerawpointer": {
+      "title": "UnsafeMutableRawPointer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/unsafemutablerawpointer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/unsafemutablerawpointer"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/densematrix_double": {
+      "title": "DenseMatrix_Double",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/densematrix_double",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/densematrix_double"
+    },
+    "doc://com.apple.documentation/documentation/swift/void": {
+      "title": "Void",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/void",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/void"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparseopaquepreconditioner_double": {
+      "title": "SparseOpaquePreconditioner_Double",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquepreconditioner_double",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparseopaquepreconditioner_double"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2873555-sparsegetstatesize_float": {
+      "title": "SparseGetStateSize_Float(_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2873555-sparsegetstatesize_float",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2873555-sparsegetstatesize_float",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the size, in bytes, required for a call to the single-precision sparse iterate method"
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "SparseGetStateSize_Float"
+        },
+        {
+          "kind": "text",
+          "text": "(SparseIterativeMethod, Bool, Int32, Int32, Int32) -> Int"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2879256-sparseiterate": {
+      "title": "SparseIterate(_:_:_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2879256-sparseiterate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2879256-sparseiterate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs a single iteration of the specified iterative method for double-precision matrices."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "SparseIterate"
+        },
+        {
+          "kind": "text",
+          "text": "(SparseIterativeMethod, Int32, UnsafePointer<Bool>, UnsafeMutableRawPointer, (Bool, CBLAS_TRANSPOSE, DenseMatrix_Double, DenseMatrix_Double) -> Void, DenseMatrix_Double, DenseMatrix_Double, DenseMatrix_Double)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2879236-sparseiterate": {
+      "title": "SparseIterate(_:_:_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2879236-sparseiterate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2879236-sparseiterate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs a single iteration of the specified iterative method for single-precision matrices."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "SparseIterate"
+        },
+        {
+          "kind": "text",
+          "text": "(SparseIterativeMethod, Int32, UnsafePointer<Bool>, UnsafeMutableRawPointer, (Bool, CBLAS_TRANSPOSE, DenseMatrix_Float, DenseMatrix_Float) -> Void, DenseMatrix_Float, DenseMatrix_Float, DenseMatrix_Float)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2879245-sparseiterate": {
+      "title": "SparseIterate(_:_:_:_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2879245-sparseiterate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2879245-sparseiterate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs a single iteration of the specified iterative method for double-precision matrices, applying a preconditioner."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "SparseIterate"
+        },
+        {
+          "kind": "text",
+          "text": "(SparseIterativeMethod, Int32, UnsafePointer<Bool>, UnsafeMutableRawPointer, (Bool, CBLAS_TRANSPOSE, DenseMatrix_Double, DenseMatrix_Double) -> Void, DenseMatrix_Double, DenseMatrix_Double, DenseMatrix_Double, SparseOpaquePreconditioner_Double)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2879247-sparseiterate": {
+      "title": "SparseIterate(_:_:_:_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2879247-sparseiterate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2879247-sparseiterate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs a single iteration of the specified iterative method for single-precision matrices, applying a preconditioner."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "SparseIterate"
+        },
+        {
+          "kind": "text",
+          "text": "(SparseIterativeMethod, Int32, UnsafePointer<Bool>, UnsafeMutableRawPointer, (Bool, CBLAS_TRANSPOSE, DenseMatrix_Float, DenseMatrix_Float) -> Void, DenseMatrix_Float, DenseMatrix_Float, DenseMatrix_Float, SparseOpaquePreconditioner_Float)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/2873610-sparsegetstatesize_double",
+        "doc://com.apple.documentation/documentation/accelerate/2873555-sparsegetstatesize_float",
+        "doc://com.apple.documentation/documentation/accelerate/2879256-sparseiterate",
+        "doc://com.apple.documentation/documentation/accelerate/2879236-sparseiterate",
+        "doc://com.apple.documentation/documentation/accelerate/2879247-sparseiterate"
+      ],
+      "title": "Sparse Iterate",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "SparseIterate"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "externalParam",
+              "text": "_"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "method"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@SA@SparseIterativeMethod",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseiterativemethod",
+              "text": "SparseIterativeMethod"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "externalParam",
+              "text": "_"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "iteration"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:s5Int32V",
+              "identifier": "doc://com.apple.documentation/documentation/swift/int32",
+              "text": "Int32"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "externalParam",
+              "text": "_"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "converged"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:SP",
+              "identifier": "doc://com.apple.documentation/documentation/swift/unsafepointer",
+              "text": "UnsafePointer"
+            },
+            {
+              "kind": "text",
+              "text": "<"
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Sb",
+              "identifier": "doc://com.apple.documentation/documentation/swift/bool",
+              "text": "Bool"
+            },
+            {
+              "kind": "text",
+              "text": ">"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "externalParam",
+              "text": "_"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "state"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Sv",
+              "identifier": "doc://com.apple.documentation/documentation/swift/unsafemutablerawpointer",
+              "text": "UnsafeMutableRawPointer"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "externalParam",
+              "text": "_"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "ApplyOperator"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "keyword",
+              "text": "@escaping"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Sb",
+              "identifier": "doc://com.apple.documentation/documentation/swift/bool",
+              "text": "Bool"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@E@CBLAS_TRANSPOSE",
+              "text": "CBLAS_TRANSPOSE"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@SA@DenseMatrix_Double",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/densematrix_double",
+              "text": "DenseMatrix_Double"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@SA@DenseMatrix_Double",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/densematrix_double",
+              "text": "DenseMatrix_Double"
+            },
+            {
+              "kind": "text",
+              "text": ") -> "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:s4Voida",
+              "identifier": "doc://com.apple.documentation/documentation/swift/void",
+              "text": "Void"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "externalParam",
+              "text": "_"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "B"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@SA@DenseMatrix_Double",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/densematrix_double",
+              "text": "DenseMatrix_Double"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "externalParam",
+              "text": "_"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "R"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@SA@DenseMatrix_Double",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/densematrix_double",
+              "text": "DenseMatrix_Double"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "externalParam",
+              "text": "_"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "X"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@SA@DenseMatrix_Double",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/densematrix_double",
+              "text": "DenseMatrix_Double"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "externalParam",
+              "text": "_"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "Preconditioner"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@SA@SparseOpaquePreconditioner_Double",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquepreconditioner_double",
+              "text": "SparseOpaquePreconditioner_Double"
+            },
+            {
+              "kind": "text",
+              "text": ")"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "swift"
+      ],
+      "parameters": [
+        {
+          "name": "method",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Iterative method specification, for example, the return value of "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/accelerate/2873619-sparseconjugategradient"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Note that the options related to convergence testing (for example, "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/accelerate/sparselsmroptions/2875478-maxiterations"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/accelerate/sparselsmroptions/2875473-atol"
+                },
+                {
+                  "type": "text",
+                  "text": ", "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/accelerate/sparselsmroptions/2875468-rtol"
+                },
+                {
+                  "type": "text",
+                  "text": ") are ignored because convergence tests must be performed by the user."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "iteration",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The current iteration number, starting from "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "0"
+                },
+                {
+                  "type": "text",
+                  "text": ". If "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "iteration<0"
+                },
+                {
+                  "type": "text",
+                  "text": ", then the current iteration is finalized, and the value of "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "X"
+                },
+                {
+                  "type": "text",
+                  "text": " is updated (note that this may force some methods to restart, slowing convergence)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "converged",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Convergence status of each right-hand-side. "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "converged[j] = true"
+                },
+                {
+                  "type": "text",
+                  "text": " indicates that the vector stored as column "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "j"
+                },
+                {
+                  "type": "text",
+                  "text": " of "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "X"
+                },
+                {
+                  "type": "text",
+                  "text": " has converged, and it should be ignored in this iteration."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "state",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A pointer to a state-space of size "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/accelerate/2873610-sparsegetstatesize_double"
+                },
+                {
+                  "type": "text",
+                  "text": ". It must not be altered by the user between iterations, but may be safely discarded after the final call to "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "SparseIterate"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ApplyOperator",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The apply operator block to run. The block takes the following parameters:"
+                }
+              ]
+            },
+            {
+              "type": "termList",
+              "items": [
+                {
+                  "term": {
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "accumulate"
+                      }
+                    ]
+                  },
+                  "definition": {
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "inlineContent": [
+                          {
+                            "type": "text",
+                            "text": "Indicates whether to perform "
+                          },
+                          {
+                            "type": "codeVoice",
+                            "code": "y += op(A)x"
+                          },
+                          {
+                            "type": "text",
+                            "text": " (if "
+                          },
+                          {
+                            "type": "codeVoice",
+                            "code": "true"
+                          },
+                          {
+                            "type": "text",
+                            "text": ") or "
+                          },
+                          {
+                            "type": "codeVoice",
+                            "code": "y = op(A)x"
+                          },
+                          {
+                            "type": "text",
+                            "text": " (if "
+                          },
+                          {
+                            "type": "codeVoice",
+                            "code": "false"
+                          },
+                          {
+                            "type": "text",
+                            "text": ")."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "term": {
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "trans"
+                      }
+                    ]
+                  },
+                  "definition": {
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "inlineContent": [
+                          {
+                            "type": "text",
+                            "text": "Indicates whether "
+                          },
+                          {
+                            "type": "codeVoice",
+                            "code": "op(A)"
+                          },
+                          {
+                            "type": "text",
+                            "text": " is the application of "
+                          },
+                          {
+                            "type": "emphasis",
+                            "inlineContent": [
+                              {
+                                "type": "text",
+                                "text": "A"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "text",
+                            "text": "  if "
+                          },
+                          {
+                            "type": "codeVoice",
+                            "code": "CblasNoTrans"
+                          },
+                          {
+                            "type": "text",
+                            "text": " or "
+                          },
+                          {
+                            "type": "emphasis",
+                            "inlineContent": [
+                              {
+                                "type": "text",
+                                "text": "Aᵀ"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "text",
+                            "text": " if "
+                          },
+                          {
+                            "type": "codeVoice",
+                            "code": "CblasTrans"
+                          },
+                          {
+                            "type": "text",
+                            "text": "."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "term": {
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "x"
+                      }
+                    ]
+                  },
+                  "definition": {
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "inlineContent": [
+                          {
+                            "type": "text",
+                            "text": "The vector to multiply."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "term": {
+                    "inlineContent": [
+                      {
+                        "type": "text",
+                        "text": "y"
+                      }
+                    ]
+                  },
+                  "definition": {
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "inlineContent": [
+                          {
+                            "type": "text",
+                            "text": "The vector in which to accumulate or store the result."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "B",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The right-hand-sides to solve for."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "R",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Residual estimate. On entry with "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "iteration = 0"
+                },
+                {
+                  "type": "text",
+                  "text": ", it must hold the residuals "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "b-Ax"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": " (equal to "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "B"
+                },
+                {
+                  "type": "text",
+                  "text": " if "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "X = 0"
+                },
+                {
+                  "type": "text",
+                  "text": "). On return from each call with "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "iteration >= 0"
+                },
+                {
+                  "type": "text",
+                  "text": ", the first entries of each vector contain various estimates of norms to be used in convergence testing."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "For CG and GMRES:"
+                }
+              ]
+            },
+            {
+              "type": "unorderedList",
+              "items": [
+                {
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "inlineContent": [
+                        {
+                          "type": "codeVoice",
+                          "code": "R(0,j)"
+                        },
+                        {
+                          "type": "text",
+                          "text": " holds an estimate of "
+                        },
+                        {
+                          "type": "emphasis",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "‖ b-Ax ‖₂ "
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "text": "for the "
+                        },
+                        {
+                          "type": "codeVoice",
+                          "code": "j"
+                        },
+                        {
+                          "type": "text",
+                          "text": "-th right-hand-side."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "For LSMR:"
+                }
+              ]
+            },
+            {
+              "type": "unorderedList",
+              "items": [
+                {
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "inlineContent": [
+                        {
+                          "type": "codeVoice",
+                          "code": "R(0,j)"
+                        },
+                        {
+                          "type": "text",
+                          "text": " holds an estimate of "
+                        },
+                        {
+                          "type": "emphasis",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "‖ Aᵀ(b-Ax) ‖₂"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "text": " for the "
+                        },
+                        {
+                          "type": "codeVoice",
+                          "code": "j"
+                        },
+                        {
+                          "type": "text",
+                          "text": "-th right-hand-side."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "inlineContent": [
+                        {
+                          "type": "codeVoice",
+                          "code": "R(1,j)"
+                        },
+                        {
+                          "type": "text",
+                          "text": " holds an estimate of "
+                        },
+                        {
+                          "type": "emphasis",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "‖ b-Ax ‖₂"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "text": " for the "
+                        },
+                        {
+                          "type": "codeVoice",
+                          "code": "j"
+                        },
+                        {
+                          "type": "text",
+                          "text": "-th right-hand-side."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "inlineContent": [
+                        {
+                          "type": "codeVoice",
+                          "code": "R(2,j)"
+                        },
+                        {
+                          "type": "text",
+                          "text": " holds an estimate of "
+                        },
+                        {
+                          "type": "emphasis",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "‖ A ‖ꜰ"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "text": ", the Frobenius norm of "
+                        },
+                        {
+                          "type": "emphasis",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "A"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "text": ", estimated using calculations related to the "
+                        },
+                        {
+                          "type": "codeVoice",
+                          "code": "j"
+                        },
+                        {
+                          "type": "text",
+                          "text": "-th right-hand-side."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "inlineContent": [
+                        {
+                          "type": "codeVoice",
+                          "code": "R(3,j)"
+                        },
+                        {
+                          "type": "text",
+                          "text": " holds an estimate of "
+                        },
+                        {
+                          "type": "emphasis",
+                          "inlineContent": [
+                            {
+                              "type": "text",
+                              "text": "cond(A)"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "text": ", the condition number of A, estimated using calculations related to the "
+                        },
+                        {
+                          "type": "codeVoice",
+                          "code": "j"
+                        },
+                        {
+                          "type": "text",
+                          "text": "-th right-hand-side."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": []
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Other entries of "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "R"
+                },
+                {
+                  "type": "text",
+                  "text": " may be used by the routine as a workspace. On return from a call with "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "iteration < 0"
+                },
+                {
+                  "type": "text",
+                  "text": ", the exact residual vector "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "b-Ax"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": " is returned."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "X",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The current estimate of the solution vectors "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "X"
+                },
+                {
+                  "type": "text",
+                  "text": ". "
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "On entry with "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "iteration = 0"
+                },
+                {
+                  "type": "text",
+                  "text": ", this should be an initial estimate for the solution. If no good estimate is available, use "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "X = 0.0"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Depending on the method used, "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "X"
+                },
+                {
+                  "type": "text",
+                  "text": " may not be updated at each iteration. The user should make a call with "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "iteration < 0"
+                },
+                {
+                  "type": "text",
+                  "text": " once convergence has been achieved to bring "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "X"
+                },
+                {
+                  "type": "text",
+                  "text": " up to date."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Preconditioner",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Preconditioner to apply."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

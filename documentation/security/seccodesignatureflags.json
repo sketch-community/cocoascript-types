@@ -1,0 +1,519 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Specify option flags that can be embedded in a code signature during signing and that govern the use of the signature."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/code_signing_services"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/seccodesignatureflags",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1393845,
+  "kind": "symbol",
+  "metadata": {
+    "title": "SecCodeSignatureFlags",
+    "role": "symbol",
+    "roleHeading": "Enumeration",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "macOS",
+        "introducedAt": "10.6",
+        "current": "11.1"
+      }
+    ],
+    "externalID": "c:@T@SecCodeSignatureFlags",
+    "symbolKind": "enum"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/seccodesignatureflags"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/seccodesignatureflags"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/code_signing_services": {
+      "title": "Code Signing Services",
+      "identifier": "doc://com.apple.documentation/documentation/security/code_signing_services",
+      "url": "/documentation/security/code_signing_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/seccodestatus/kseccodestatushard": {
+      "title": "kSecCodeStatusHard",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seccodestatus/kseccodestatushard",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seccodestatus/kseccodestatushard"
+    },
+    "doc://com.apple.documentation/documentation/security/seccodestatus/kseccodestatuskill": {
+      "title": "kSecCodeStatusKill",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seccodestatus/kseccodestatuskill",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seccodestatus/kseccodestatuskill"
+    },
+    "doc://com.apple.documentation/documentation/security/seccsflags/kseccsconsiderexpiration": {
+      "title": "kSecCSConsiderExpiration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seccsflags/kseccsconsiderexpiration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seccsflags/kseccsconsiderexpiration"
+    },
+    "doc://com.apple.documentation/documentation/security/kseccodeinfoflags": {
+      "title": "kSecCodeInfoFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/kseccodeinfoflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/kseccodeinfoflags"
+    },
+    "doc://com.apple.documentation/documentation/security/code_signing_services/signing_information_dictionary_keys": {
+      "title": "Signing Information Dictionary Keys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/code_signing_services/signing_information_dictionary_keys",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/code_signing_services/signing_information_dictionary_keys",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use these keys from the information dictionary when you retrieve information from a code signature."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignaturehost": {
+      "title": "kSecCodeSignatureHost",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignaturehost",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seccodesignatureflags/kseccodesignaturehost",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "May host guest code."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignatureadhoc": {
+      "title": "kSecCodeSignatureAdhoc",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignatureadhoc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seccodesignatureflags/kseccodesignatureadhoc",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Must be used without a signing identity."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignatureforcehard": {
+      "title": "kSecCodeSignatureForceHard",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignatureforcehard",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seccodesignatureflags/kseccodesignatureforcehard",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Always set the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/security/seccodestatus/kseccodestatushard"
+        },
+        {
+          "type": "text",
+          "text": " status flag on launch."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignatureforcekill": {
+      "title": "kSecCodeSignatureForceKill",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignatureforcekill",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seccodesignatureflags/kseccodesignatureforcekill",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Always set the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/security/seccodestatus/kseccodestatuskill"
+        },
+        {
+          "type": "text",
+          "text": " status flag on launch."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignatureforceexpiration": {
+      "title": "kSecCodeSignatureForceExpiration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignatureforceexpiration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seccodesignatureflags/kseccodesignatureforceexpiration",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Always set the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/security/seccsflags/kseccsconsiderexpiration"
+        },
+        {
+          "type": "text",
+          "text": " flag when validating the code."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignatureenforcement": {
+      "title": "kSecCodeSignatureEnforcement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignatureenforcement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seccodesignatureflags/kseccodesignatureenforcement",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enforce code signing."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignaturelibraryvalidation": {
+      "title": "kSecCodeSignatureLibraryValidation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignaturelibraryvalidation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seccodesignatureflags/kseccodesignaturelibraryvalidation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Require library validation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignaturerestrict": {
+      "title": "kSecCodeSignatureRestrict",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignaturerestrict",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seccodesignatureflags/kseccodesignaturerestrict",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Restrict dyld loading."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignatureruntime": {
+      "title": "kSecCodeSignatureRuntime",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignatureruntime",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seccodesignatureflags/kseccodesignatureruntime",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Apply runtime hardening policies as required by the hardened runtime version."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignaturelinkersigned": {
+      "title": "kSecCodeSignatureLinkerSigned",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignaturelinkersigned",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seccodesignatureflags/kseccodesignaturelinkersigned"
+    },
+    "doc://com.apple.documentation/documentation/security/1395809-seccodecopysigninginformation": {
+      "title": "SecCodeCopySigningInformation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1395809-seccodecopysigninginformation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1395809-seccodecopysigninginformation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves various pieces of information from a code signature."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1569509-code_signing_information_flags": {
+      "title": "Code Signing Information Flags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1569509-code_signing_information_flags",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/security/1569509-code_signing_information_flags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use these supplemental flags to retrieve signing information."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seccodesignatureflags": {
+      "title": "SecCodeSignatureFlags",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seccodesignatureflags",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seccodesignatureflags",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specify option flags that can be embedded in a code signature during signing and that govern the use of the signature."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seccsdigestalgorithm": {
+      "title": "SecCSDigestAlgorithm",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seccsdigestalgorithm",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seccsdigestalgorithm",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The list of digest algorithms available for code signatures."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignaturehost",
+        "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignatureadhoc",
+        "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignatureforcehard",
+        "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignatureforcekill",
+        "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignatureforceexpiration",
+        "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignatureenforcement",
+        "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignaturelibraryvalidation",
+        "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignaturerestrict",
+        "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignatureruntime"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Type Properties",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/seccodesignatureflags/kseccodesignaturelinkersigned"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1395809-seccodecopysigninginformation",
+        "doc://com.apple.documentation/documentation/security/1569509-code_signing_information_flags",
+        "doc://com.apple.documentation/documentation/security/code_signing_services/signing_information_dictionary_keys",
+        "doc://com.apple.documentation/documentation/security/seccsdigestalgorithm"
+      ],
+      "title": "Code Signatures",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "typedef"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "enum"
+            },
+            {
+              "kind": "text",
+              "text": " SecCodeSignatureFlags : "
+            },
+            {
+              "kind": "keyword",
+              "text": "uint32_t"
+            },
+            {
+              "kind": "text",
+              "text": " {"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    ..."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "} "
+            },
+            {
+              "kind": "identifier",
+              "text": "SecCodeSignatureFlags"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "macOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Some of these flags can be set through the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "codesign(1)"
+            },
+            {
+              "type": "text",
+              "text": " command’s "
+            },
+            {
+              "type": "codeVoice",
+              "code": "--options"
+            },
+            {
+              "type": "text",
+              "text": " argument and some are set implicitly based on signing circumstances. The flags here appear as the value associated with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/kseccodeinfoflags"
+            },
+            {
+              "type": "text",
+              "text": " key in the signing information dictionary. See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/code_signing_services/signing_information_dictionary_keys"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

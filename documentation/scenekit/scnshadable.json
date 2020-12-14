@@ -1,0 +1,2289 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Methods for customizing SceneKit's rendering of geometry and materials using Metal or OpenGL shader programs."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/scenekit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/scenekit/scnshadable",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1522599,
+  "kind": "symbol",
+  "metadata": {
+    "title": "SCNShadable",
+    "role": "symbol",
+    "roleHeading": "Protocol",
+    "modules": [
+      {
+        "name": "SceneKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "8.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.9",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "3.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(pl)SCNShadable",
+    "symbolKind": "intf"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/scenekit/scnshadable"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/scenekit/scnshadable"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/scenekit": {
+      "title": "SceneKit",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit",
+      "url": "/documentation/scenekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram": {
+      "title": "SCNProgram",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnprogram",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A complete Metal or OpenGL shader program that replaces SceneKit's rendering of a geometry or material."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnshadable#1655077": {
+      "title": "Handling Parameters in Custom OpenGL Shader Programs",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable#1655077",
+      "kind": "article",
+      "role": "task",
+      "url": "/documentation/scenekit/scnshadable#1655077"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnshadable#2168231": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable#2168231",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/scenekit/scnshadable#2168231"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnshadable#1654904": {
+      "title": "Providing Custom Inputs to a Shader Modifier",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable#1654904",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/scenekit/scnshadable#1654904"
+    },
+    "devLink-1737709": {
+      "identifier": "devLink-1737709",
+      "type": "link",
+      "title": "Key-value coding",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KeyValueCoding.html#//apple_ref/doc/uid/TP40008195-CH25"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnmaterial": {
+      "title": "SCNMaterial",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnmaterial",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnmaterial"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scngeometry": {
+      "title": "SCNGeometry",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometry",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scngeometry"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scntransaction": {
+      "title": "SCNTransaction",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scntransaction",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scntransaction"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnanimatable": {
+      "title": "SCNAnimatable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnanimatable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnanimatable"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnshadable#2168235": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable#2168235",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/scenekit/scnshadable#2168235"
+    },
+    "devLink-1737690": {
+      "identifier": "devLink-1737690",
+      "type": "link",
+      "title": "Key-value observing",
+      "url": "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KVO.html#//apple_ref/doc/uid/TP40008195-CH16"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1415969-setvalue": {
+      "title": "setValue:forKey:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1415969-setvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1415969-setvalue",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setValue:forKey:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject/1418139-setvalue": {
+      "title": "setValue:forKeyPath:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1418139-setvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject/1418139-setvalue",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setValue:forKeyPath:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsnumber": {
+      "title": "NSNumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsnumber"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsvalue": {
+      "title": "NSValue",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsvalue"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnmaterialproperty": {
+      "title": "SCNMaterialProperty",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnmaterialproperty",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnmaterialproperty"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnshadable#2168238": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable#2168238",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/scenekit/scnshadable#2168238"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsinteger": {
+      "title": "NSInteger",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsinteger",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsinteger"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgfloat": {
+      "title": "CGFloat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgfloat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgfloat"
+    },
+    "doc://com.apple.documentation/documentation/coregraphics/cgpoint": {
+      "title": "CGPoint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coregraphics/cgpoint"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnvector3": {
+      "title": "SCNVector3",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnvector3",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnvector3"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnvector4": {
+      "title": "SCNVector4",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnvector4",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnvector4"
+    },
+    "doc://com.apple.documentation/documentation/quartzcore/catransform3d": {
+      "title": "CATransform3D",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/quartzcore/catransform3d",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/quartzcore/catransform3d"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnshadable#2168241": {
+      "title": "Table 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable#2168241",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/scenekit/scnshadable#2168241"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnmaterialproperty/1395372-contents": {
+      "title": "contents",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnmaterialproperty/1395372-contents",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnmaterialproperty/1395372-contents"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnshadable/1523348-shadermodifiers": {
+      "title": "shaderModifiers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable/1523348-shadermodifiers",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnshadable/1523348-shadermodifiers",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A dictionary of GLSL source code snippets for customizing the shader programs provided by SceneKit."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnshadermodifierentrypointgeometry": {
+      "title": "SCNShaderModifierEntryPointGeometry",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadermodifierentrypointgeometry",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnshadermodifierentrypointgeometry"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnshadermodifierentrypointsurface": {
+      "title": "SCNShaderModifierEntryPointSurface",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadermodifierentrypointsurface",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnshadermodifierentrypointsurface"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnshadermodifierentrypointlightingmodel": {
+      "title": "SCNShaderModifierEntryPointLightingModel",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadermodifierentrypointlightingmodel",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnshadermodifierentrypointlightingmodel"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnshadermodifierentrypointfragment": {
+      "title": "SCNShaderModifierEntryPointFragment",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadermodifierentrypointfragment",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnshadermodifierentrypointfragment"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scntechnique": {
+      "title": "SCNTechnique",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scntechnique",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scntechnique",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A specification for augmenting or postprocessing SceneKit's rendering of a scene using additional drawing passes with custom Metal or OpenGL shaders."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/1418956-nsobject"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnshadable/1523689-program": {
+      "title": "program",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable/1523689-program",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnshadable/1523689-program",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A program used when rendering the object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnshadable/1523063-handlebindingofsymbol": {
+      "title": "handleBindingOfSymbol:usingBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable/1523063-handlebindingofsymbol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnshadable/1523063-handlebindingofsymbol",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies a block to be called before rendering with programs with the specified GLSL uniform variable or attribute name."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handleBindingOfSymbol:usingBlock:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnshadable/1522783-handleunbindingofsymbol": {
+      "title": "handleUnbindingOfSymbol:usingBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable/1522783-handleunbindingofsymbol",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnshadable/1522783-handleunbindingofsymbol",
+      "required": false,
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies a block to be called after rendering with programs with the specified GLSL uniform variable or attribute name."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "handleUnbindingOfSymbol:usingBlock:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnbindingblock": {
+      "title": "SCNBindingBlock",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnbindingblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnbindingblock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The signature for a block called for binding or unbinding a GLSL symbol in a custom program."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnshadermodifierentrypoint": {
+      "title": "SCNShaderModifierEntryPoint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadermodifierentrypoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnshadermodifierentrypoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Keys for the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable/1523348-shadermodifiers"
+        },
+        {
+          "type": "text",
+          "text": " dictionary, each corresponding to an entry point in SceneKit’s shader programs where you can attach a custom GPU shader code snippet."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnshadable": {
+      "title": "SCNShadable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnshadable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods for customizing SceneKit's rendering of geometry and materials using Metal or OpenGL shader programs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnbufferstream": {
+      "title": "SCNBufferStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnbufferstream",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnbufferstream",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that manages a Metal buffer used by a custom shader program. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scntechniquesupport": {
+      "title": "SCNTechniqueSupport",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scntechniquesupport",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scntechniquesupport",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The common interface for SceneKit objects that support multipass rendering using "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/scenekit/scntechnique"
+        },
+        {
+          "type": "text",
+          "text": " objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnoderendererdelegate": {
+      "title": "SCNNodeRendererDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnoderendererdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnoderendererdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods you can implement to use your own custom Metal or OpenGL drawing code to render content for a node. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/postprocessing_a_scene_with_custom_symbols": {
+      "title": "Postprocessing a Scene With Custom Symbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/postprocessing_a_scene_with_custom_symbols",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/scenekit/postprocessing_a_scene_with_custom_symbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create visual effects in a scene by defining a rendering technique with custom symbols."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/1418956-nsobject"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforming Types",
+      "type": "conformingTypes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scngeometry",
+        "doc://com.apple.documentation/documentation/scenekit/scnmaterial"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Assigning a Custom Shader Program",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnshadable/1523689-program"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Customizing SceneKit’s Shader Programs",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnshadable/1523348-shadermodifiers"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Handling Parameters in Custom OpenGL Shader Programs",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnshadable/1523063-handlebindingofsymbol",
+        "doc://com.apple.documentation/documentation/scenekit/scnshadable/1522783-handleunbindingofsymbol"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnbindingblock",
+        "doc://com.apple.documentation/documentation/scenekit/scnshadermodifierentrypoint"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnprogram",
+        "doc://com.apple.documentation/documentation/scenekit/scnbufferstream",
+        "doc://com.apple.documentation/documentation/scenekit/scntechnique",
+        "doc://com.apple.documentation/documentation/scenekit/scntechniquesupport",
+        "doc://com.apple.documentation/documentation/scenekit/scnnoderendererdelegate",
+        "doc://com.apple.documentation/documentation/scenekit/postprocessing_a_scene_with_custom_symbols"
+      ],
+      "title": "Renderer Customization",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@protocol"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "SCNShadable"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "SceneKit provides two ways to integrate custom GPU shader programs into the rendering of your scene: program objects and shader modifiers. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use Program Objects to Replace SceneKit Shading",
+          "anchor": "1654784"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For complete control of the vertex and fragment shaders used to render an object, assign an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram"
+            },
+            {
+              "type": "text",
+              "text": " instance to the object’s program property. A custom program completely replaces all other rendering parameters, including material settings. Your custom program takes inputs from SceneKit and is responsible for all transform, lighting, and shading effects you want it to produce. For details on custom programs, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When you specify a custom program, you can provide handler blocks that SceneKit calls at render time to update the values of custom variables in your shaders. See the methods in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable#1655077"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use Shader Modifiers to Extend SceneKit Shading",
+          "anchor": "1654834"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Shader modifiers are an alternative to entirely replacing SceneKit’s shaders with your own. You can use shader modifiers to, for example:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Parametrically deform the surface of a geometry"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Simulate realistic surfaces with complex material properties"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add artistic lighting effects such as cartoon-style shading"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create special effects by post-processing pixels after SceneKit’s shading is complete"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A shader modifier is a snippet of source code in the Metal shader language or OpenGL Shader Language (GLSL) that SceneKit injects into its own shader programs at a defined entry point. Because your shader modifiers are additions to SceneKit’s shader program, using shader modifiers leaves SceneKit’s rendering system intact. That is, you can still use material properties, lighting models, and camera effects to affect the rendered image."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You attach a snippet to a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometry"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnmaterial"
+            },
+            {
+              "type": "text",
+              "text": " object using its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable/1523348-shadermodifiers"
+            },
+            {
+              "type": "text",
+              "text": " property, associating it with an entry point corresponding to the stage of SceneKit’s shader program that it modifies: geometry, surface, lighting, or fragment. Each entry point defines a context for the associated snippet, with input variables providing SceneKit’s rendering parameters in that stage and output variables that the snippet writes its results to. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For definitions of each entry point and its inputs and outputs, see "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Shader Modifier Entry Point Keys"
+            },
+            {
+              "type": "text",
+              "text": ". SceneKit inserts your shader modifiers into its shader program a specific order:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadermodifierentrypointgeometry"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadermodifierentrypointsurface"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadermodifierentrypointlightingmodel"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadermodifierentrypointfragment"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can use the structures defined by earlier entry points in later entry points. For example, a snippet associated with the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadermodifierentrypointfragment"
+            },
+            {
+              "type": "text",
+              "text": " entry point can read from the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "_surface"
+            },
+            {
+              "type": "text",
+              "text": " structure defined by the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadermodifierentrypointsurface"
+            },
+            {
+              "type": "text",
+              "text": " entry point."
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Writing a Shader Modifier Snippet",
+          "anchor": "1654865"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The code you provide for a shader modifier must be organized in a specific structure, as illustrated in the example below:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// 1. Custom variable declarations (optional)",
+            "// For Metal, a pragma directive and one custom variable on each line:",
+            "#pragma arguments",
+            "float intensity;",
+            "// For OpenGL, a separate uniform declaration for each custom variable",
+            "uniform float intensity;",
+            " ",
+            "// 2. Custom global functions (optional)",
+            "vec2 sincos(float t) { return vec2(sin(t), cos(t)); }",
+            " ",
+            "// 3. Pragma directives (optional)",
+            "#pragma transparent",
+            "#pragma body",
+            " ",
+            "// 4. Code snippet",
+            "_geometry.position.xy = sincos(u_time);",
+            "_geometry.position.z = intensity;"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2168231",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Custom variables declarations."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " You can provide your own inputs to a shader modifier by declaring custom variables. Because the syntax differs between Metal and OpenGL shaders, you must include both declarations for your shader modifier to be usable with both rendering technologies. To pass values into custom variables at render time, see "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable#1654904"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Custom global functions."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " If your shader modifier benefits from factoring common code into functions, place their definitions here. If you include custom functions in your snippet, you must place the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "#pragma body"
+                    },
+                    {
+                      "type": "text",
+                      "text": " directive between your function definitions and the main body of the snippet."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Pragma directives."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " As noted above, the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "#pragma body"
+                    },
+                    {
+                      "type": "text",
+                      "text": " directive separates custom function definitions from the main body of the snippet. If the snippet contains no function definitions, you may omit this directive."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "By default, SceneKit automatically uses material properties to determine whether an object should be rendered with partial transparency and uses this information to optimize rendering performance. Use the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "#pragma transparent"
+                    },
+                    {
+                      "type": "text",
+                      "text": " or "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "#pragma opaque"
+                    },
+                    {
+                      "type": "text",
+                      "text": " directive to override SceneKit’s setting."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "strong",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Code Snippet."
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " Place the main body of your shader modifier code at the end of the code snippet."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "One shader modifier snippet affects both Metal and OpenGL (or OpenGL ES) rendering—SceneKit automatically translates GLSL syntax to Metal shader syntax before inserting your code snippet into its own shader program. (For some simple shader modifiers, SceneKit can insert the same code snippet into either shader language without translation.)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Providing Custom Inputs to a Shader Modifier",
+          "anchor": "1654904"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can also declare custom uniform variables in your shader modifier snippet. You provide values for custom uniform variables using "
+            },
+            {
+              "type": "link",
+              "title": "Key-value coding",
+              "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KeyValueCoding.html#//apple_ref/doc/uid/TP40008195-CH25"
+            },
+            {
+              "type": "text",
+              "text": ". For each uniform variable you declare in a shader modifier attached to an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnmaterial"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometry"
+            },
+            {
+              "type": "text",
+              "text": " object, SceneKit observes a key with the same name on that object. When you set a new value, SceneKit automatically binds that value to the corresponding uniform location in the shader program. If you animate a change to the value implicitly (with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scntransaction"
+            },
+            {
+              "type": "text",
+              "text": " class) or explicitly (with the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnanimatable"
+            },
+            {
+              "type": "text",
+              "text": " protocol), SceneKit interpolates intermediate values and binds them to the uniform for each frame of the animation. For example, the following code animates the fading of a material from full color to grayscale:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// Set up the shader modifier with a custom uniform.",
+            "myMaterial.shaderModifiers = @{ SCNShaderModifierEntryPointFragment :",
+            "    @\"uniform float mixLevel = 0.0;\"",
+            "    \"vec3 gray = vec3(dot(vec3(0.3, 0.59, 0.11), _output.color.rgb));\"",
+            "    \"_output.color = mix(_output.color, vec4(gray, 1.0), mixLevel);\" };",
+            " ",
+            "// Later, animate a change to the uniform.",
+            "[SCNTransaction begin];",
+            "{",
+            "    [myMaterial setValue:@1.0 forKeyPath:@\"mixLevel\"];",
+            "}",
+            "[SCNTransaction commit];"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2168235",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because SceneKit binds values to shader variables using "
+            },
+            {
+              "type": "link",
+              "title": "Key-value observing",
+              "destination": "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KVO.html#//apple_ref/doc/uid/TP40008195-CH16"
+            },
+            {
+              "type": "text",
+              "text": ", you can provide values in several ways. If you set a value using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1415969-setvalue"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject/1418139-setvalue"
+            },
+            {
+              "type": "text",
+              "text": " method, or set a target value for a keypath animation, the value must be contained in an Objective-C object. For uniforms of scalar types, you can assign an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
+            },
+            {
+              "type": "text",
+              "text": " object as a value. Assigning a uniform of a vector or matrix type requires an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue"
+            },
+            {
+              "type": "text",
+              "text": " object containing data of the appropriate type. You can also bind textures to texture samplers using "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnmaterialproperty"
+            },
+            {
+              "type": "text",
+              "text": " objects."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Alternatively, you can create an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnmaterial"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometry"
+            },
+            {
+              "type": "text",
+              "text": " subclass for your custom shadable object and declare properties whose names match those of the uniform variables in your shader. When you assign a value to the property, SceneKit automatically binds it to the corresponding uniform in the shader program. In this case, your properties can use primitive or structure types appropriate to the corresponding Metal or GLSL variables."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The table below lists the Objective-C types for each shading language data type:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "GLSL data types"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Metal data types"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Objective-C type"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "int"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "int"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue"
+                    },
+                    {
+                      "type": "text",
+                      "text": " ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsinteger"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "int"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "float"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "float"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsnumber"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue"
+                    },
+                    {
+                      "type": "text",
+                      "text": " ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgfloat"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "float"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "double"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "vec2"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "float2"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue"
+                    },
+                    {
+                      "type": "text",
+                      "text": " ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/coregraphics/cgpoint"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "vec3"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "float3"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue"
+                    },
+                    {
+                      "type": "text",
+                      "text": " ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnvector3"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "vec4"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "float4"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue"
+                    },
+                    {
+                      "type": "text",
+                      "text": " ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnvector4"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "mat4"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "mat4x4"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "float4x4"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/foundation/nsvalue"
+                    },
+                    {
+                      "type": "text",
+                      "text": " ("
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/quartzcore/catransform3d"
+                    },
+                    {
+                      "type": "text",
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "sampler2D"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "samplerCube"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "sampler"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnmaterialproperty"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "2168238",
+            "title": "Table 1"
+          }
+        },
+        {
+          "level": 4,
+          "type": "heading",
+          "text": "Using Inputs Provided by SceneKit",
+          "anchor": "1654950"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "SceneKit declares the following uniform variables containing global rendering parameters:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Identifier"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "GLSL Type"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Description"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "u_time"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "float"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The current system time (in seconds) since SceneKit started rendering with the shader."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "u_boundingBox"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "mat32"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The bounding box of the geometry being rendered, in model space."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "u_boundingBox[0].xyz"
+                    },
+                    {
+                      "type": "text",
+                      "text": " is the minimum corner of the bounding box and "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "u_boundingBox[1].xyz"
+                    },
+                    {
+                      "type": "text",
+                      "text": " is the maximum corner."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "u_modelTransform"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "u_viewTransform"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "u_projectionTransform"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "u_normalTransform"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "u_modelViewTransform"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "u_modelViewProjectionTransform"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "mat4"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The transform matrices used for converting vertex positions and normals between model, world, view, and clip coordinate spaces."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "For detailed definitions, see Rendering Transform Keys."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "u_inverseModelTransform"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "u_inverseViewTransform"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "u_inverseProjectionTransform"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "u_inverseModelViewTransform"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "u_inverseModelViewProjectionTransform"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "mat4"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The inverse matrices corresponding to each transform."
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "u_diffuseTexture"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "u_ambientTexture"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "u_specularTexture"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "u_normalTexture"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "u_reflectiveTexture"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "u_emissionTexture"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "u_transparentTexture"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "u_multiplyTexture"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "sampler2D"
+                    },
+                    {
+                      "type": "text",
+                      "text": " or "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "samplerCube"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The texture contents of the corresponding material property. Declared only if the material property’s "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnmaterialproperty/1395372-contents"
+                    },
+                    {
+                      "type": "text",
+                      "text": " object provides a texture image."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "The GLSL type of the uniform variable depends on whether the contents are a 2D image or cube map."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "For details on materials, see "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnmaterial"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "2168241",
+            "title": "Table 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Shader modifiers may contain any legal Metal shader or GLSL code, with the exception that SceneKit reserves for its own use all identifier names with the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "u_"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "codeVoice",
+              "code": "a_"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "v_"
+            },
+            {
+              "type": "text",
+              "text": " prefixes."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

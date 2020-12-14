@@ -1,0 +1,668 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Apply image manipulation operations to vImage buffers."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vimage"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2948683,
+  "kind": "symbol",
+  "metadata": {
+    "title": "vImage Operations",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/vimage/vimage_operations"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/vimage/vimage_operations"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage": {
+      "title": "vImage",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage",
+      "url": "/documentation/accelerate/vimage",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/alpha_compositing": {
+      "title": "Alpha Compositing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/alpha_compositing",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vimage/vimage_operations/alpha_compositing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Composite images together."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/clipping_data": {
+      "title": "Clipping Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/clipping_data",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vimage/vimage_operations/clipping_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Clip the pixel values of an image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/conversion": {
+      "title": "Conversion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/conversion",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/conversion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convert an image to a different format."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/convolution": {
+      "title": "Convolution",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/convolution",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/convolution",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Apply a convolution kernel to an image. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/decompression_filtering": {
+      "title": "Decompression Filtering",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/decompression_filtering",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vimage/vimage_operations/decompression_filtering",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Filter data prior to decompression."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/extracting_channels": {
+      "title": "Extracting Channels",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/extracting_channels",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vimage/vimage_operations/extracting_channels",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Extract one channel from a four-channel interleaved buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/filling_buffers": {
+      "title": "Filling Buffers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/filling_buffers",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vimage/vimage_operations/filling_buffers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Fill a buffer with a specified color."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/flattening_data": {
+      "title": "Flattening Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/flattening_data",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vimage/vimage_operations/flattening_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Perform an alpha composite of a four-channel image over a solid background color."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/resampling_in_vimage": {
+      "title": "Resampling in vImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/resampling_in_vimage",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/resampling_in_vimage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn how vImage resamples image data during geometric operations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/affine_transforms": {
+      "title": "Affine Transforms",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/affine_transforms",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vimage/vimage_operations/affine_transforms",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Translate, rotate, and scale images."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/image_reflection": {
+      "title": "Image Reflection",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/image_reflection",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vimage/vimage_operations/image_reflection",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reflect images horizontally and vertically."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/image_shearing": {
+      "title": "Image Shearing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/image_shearing",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/image_shearing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Shear images horizontally and vertically."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/image_rotation": {
+      "title": "Image Rotation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/image_rotation",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vimage/vimage_operations/image_rotation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Rotate images by arbitrary angles or by multiples of 90 degrees."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/image_scaling": {
+      "title": "Image Scaling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/image_scaling",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vimage/vimage_operations/image_scaling",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Scale interlaced and planar images."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/getting_the_buffer_size": {
+      "title": "Getting the Buffer Size",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/getting_the_buffer_size",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vimage/vimage_operations/getting_the_buffer_size",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculate the size of the temporary buffer needed by a high-level geometry functions."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/histogram": {
+      "title": "Histogram",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/histogram",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/histogram",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculate and or manipulate an image's histogram."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/morphology": {
+      "title": "Morphology",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/morphology",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/morphology",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Dilate and erode images. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/overwriting_channels": {
+      "title": "Overwriting Channels",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/overwriting_channels",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vimage/vimage_operations/overwriting_channels",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Overwrite the channels of a buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/permuting_channels": {
+      "title": "Permuting Channels",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/permuting_channels",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vimage/vimage_operations/permuting_channels",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reorder the channels in an image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/swapping_bytes": {
+      "title": "Swapping Bytes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/swapping_bytes",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vimage/vimage_operations/swapping_bytes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Byte swap a buffer."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/transform": {
+      "title": "Transform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/transform",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/transform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Apply color transformations to images. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/transforming_using_table_lookups": {
+      "title": "Transforming Using Table Lookups",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/transforming_using_table_lookups",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vimage/vimage_operations/transforming_using_table_lookups",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Transform an image by substituting pixel values with pixel values provided by lookup tables."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/adjusting_the_brightness_and_contrast_of_an_image": {
+      "title": "Adjusting the Brightness and Contrast of an Image",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/adjusting_the_brightness_and_contrast_of_an_image",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/adjusting_the_brightness_and_contrast_of_an_image",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use a gamma function to apply a linear or exponential curve."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/blurring_an_image": {
+      "title": "Blurring an Image",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/blurring_an_image",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/blurring_an_image",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Filter an image by convolving it with custom and high-speed kernels."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/adding_a_bokeh_effect": {
+      "title": "Adding a Bokeh Effect",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/adding_a_bokeh_effect",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/adding_a_bokeh_effect",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Simulate a bokeh effect by applying dilation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale": {
+      "title": "Converting Color Images to Grayscale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/converting_color_images_to_grayscale",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convert a color image to grayscale using matrix multiplication."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing": {
+      "title": "Standardizing Arbitrary Image Formats for Processing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convert assets with disparate color spaces and bit depths to a standard working format for applying vImage operations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/specifying_histograms_with_vimage": {
+      "title": "Specifying Histograms with vImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/specifying_histograms_with_vimage",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/specifying_histograms_with_vimage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculate the histogram of one image and apply it to a second image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/reducing_artifacts_in_resampled_images": {
+      "title": "Reducing Artifacts in Resampled Images",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/reducing_artifacts_in_resampled_images",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/reducing_artifacts_in_resampled_images",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Avoid ringing effects introduced by the default Lanczos algorithm when scaling an image by using a custom resampling filter."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations": {
+      "title": "vImage Operations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vimage/vimage_operations",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Apply image manipulation operations to vImage buffers."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Alpha Compositing",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/alpha_compositing"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Clipping Data",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/clipping_data"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Conversion",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/conversion"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Convolution",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/convolution"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Decompression Filtering",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/decompression_filtering"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Extracting Channels ",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/extracting_channels"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Filling Buffers",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/filling_buffers"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Flattening Data",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/flattening_data"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Geometry",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/resampling_in_vimage",
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/affine_transforms",
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/image_reflection",
+        "doc://com.apple.documentation/documentation/accelerate/image_shearing",
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/image_rotation",
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/image_scaling",
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/getting_the_buffer_size"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Histogram",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/histogram"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Morphology",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/morphology"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Overwriting Channels",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/overwriting_channels"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Permuting Channels",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/permuting_channels"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Swapping Bytes",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/swapping_bytes"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Transform",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/transform"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Transforming Using Table Lookups",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations/transforming_using_table_lookups"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/adjusting_the_brightness_and_contrast_of_an_image",
+        "doc://com.apple.documentation/documentation/accelerate/blurring_an_image",
+        "doc://com.apple.documentation/documentation/accelerate/adding_a_bokeh_effect",
+        "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale",
+        "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing",
+        "doc://com.apple.documentation/documentation/accelerate/specifying_histograms_with_vimage",
+        "doc://com.apple.documentation/documentation/accelerate/reducing_artifacts_in_resampled_images"
+      ],
+      "title": "vImage Operations",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Perform conversions, convolutions, geometric transformations, histogram operations, morphological transformations, and compositing to images."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

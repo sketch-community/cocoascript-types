@@ -1,0 +1,455 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Create a simple video playback app with built-in controls."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_macos",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2943572,
+  "kind": "article",
+  "metadata": {
+    "title": "Creating a Basic Video Player (macOS)",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_macos"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_macos"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection": {
+      "title": "Media Playback and Selection",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection",
+      "url": "/documentation/avfoundation/media_playback_and_selection",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-media-2943573": {
+      "identifier": "link-media-2943573",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_macos#2943573"
+    },
+    "media-2943573": {
+      "identifier": "media-2943573",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 416,
+            "height": 566
+          },
+          "url": "https://docs-assets.developer.apple.com/published/947418efa5/c9c942ab-f2d1-420b-b21e-61f10e891767.png"
+        },
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 416,
+            "height": 566
+          },
+          "url": "https://docs-assets.developer.apple.com/published/7638e40284/d4d11f4a-d962-43a8-b40a-bcdba934585a.png"
+        }
+      ],
+      "alt": "Xcode constraints window with pinning and aspect ratio options added.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_macos#2943575": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_macos#2943575",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_macos#2943575"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_macos": {
+      "title": "Creating a Basic Video Player (macOS)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_macos",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_macos",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a simple video playback app with built-in controls."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos": {
+      "title": "Creating a Basic Video Player (iOS and tvOS)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a simple video playback app with built-in controls."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/configuring_the_audio_playback_of_ios_and_tvos_apps": {
+      "title": "Configuring the Audio Playback of iOS and tvOS Apps",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/configuring_the_audio_playback_of_ios_and_tvos_apps",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/configuring_the_audio_playback_of_ios_and_tvos_apps",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Customize your app’s audio playback capabilities by configuring its audio session and background modes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/guidelines_for_apple_tv_4k_development": {
+      "title": "Guidelines for Apple TV 4K Development",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/guidelines_for_apple_tv_4k_development",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/media_playback_and_selection/guidelines_for_apple_tv_4k_development",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Follow these guidelines when developing for Apple TV 4K."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/configuring_the_audio_playback_of_ios_and_tvos_apps",
+        "doc://com.apple.documentation/documentation/avfoundation/media_playback_and_selection/guidelines_for_apple_tv_4k_development"
+      ],
+      "title": "Essentials",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Using AVKit and AVFoundation, you can quickly create a simple video playback app."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Set Up and Configure the User Interface",
+          "anchor": "2943578"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Begin by creating the user interface for the player."
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Open the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Main.storyboard"
+                    },
+                    {
+                      "type": "text",
+                      "text": " file and drag an AVKit player view object onto the storyboard."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add pinning constraints to the player view to pin it to its superview’s edges and maintain its aspect ratio, as shown in "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "link-media-2943573"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Select the player view. In the Attributes inspector, change the Controls Style selection to Floating. This style presents controls matching the ones found in the QuickTime Player app."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2943573",
+              "metadata": {
+                "anchor": "2943573",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Implement Playback Behavior",
+          "anchor": "2943574"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Now that you’ve created the user interface, it’s time to add the code required to play a video."
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Open the assistant editor from the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "Main.storyboard"
+                    },
+                    {
+                      "type": "text",
+                      "text": " file, Control-drag the player view object to the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "ViewController.swift"
+                    },
+                    {
+                      "type": "text",
+                      "text": " class, and add a new "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "@IBOutlet"
+                    },
+                    {
+                      "type": "text",
+                      "text": " called "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "playerView"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Add the AVKit and AVFoundation frameworks to the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "ViewController.swift"
+                    },
+                    {
+                      "type": "text",
+                      "text": " class."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "In the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "viewDidLoad"
+                    },
+                    {
+                      "type": "text",
+                      "text": " method, add the following code:"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "override func viewDidLoad() {",
+            "    super.viewDidLoad()",
+            "    guard let url = URL(string: \"https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8\") else {",
+            "        return",
+            "    }",
+            "    // Create a new AVPlayer and associate it with the player view",
+            "    let player = AVPlayer(url: url)",
+            "    playerView.player = player",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2943575",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Your app is complete, and you can build and run it on your macOS device."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

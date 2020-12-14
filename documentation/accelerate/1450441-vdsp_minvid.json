@@ -1,0 +1,638 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Calculates the minimum value and corresponding index in a double-precision vector."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/vector_extrema_calculation"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/1450441-vdsp_minvid",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1450441,
+  "kind": "symbol",
+  "metadata": {
+    "title": "vDSP_minviD",
+    "role": "symbol",
+    "roleHeading": "Function",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "4.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.4",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@F@vDSP_minviD",
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/1450441-vdsp_minvid"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/1450441-vdsp_minvid"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp": {
+      "title": "vDSP",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp",
+      "url": "/documentation/accelerate/vdsp",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/vector_extrema_calculation": {
+      "title": "Vector Extrema Calculation",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/vector_extrema_calculation",
+      "url": "/documentation/accelerate/vdsp/vector_extrema_calculation",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-media-3226689": {
+      "identifier": "link-media-3226689",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/1450441-vdsp_minvid#3226689"
+    },
+    "media-3226689": {
+      "identifier": "media-3226689",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 328,
+            "height": 173
+          },
+          "url": "https://docs-assets.developer.apple.com/published/c115d9ffa0/61bc95bb-1bb1-49f4-9e89-6edc3c7ac382.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 328,
+            "height": 173
+          },
+          "url": "https://docs-assets.developer.apple.com/published/4b5b1320bd/ecc1829f-9f36-47ce-a44d-9aa2019feb13.png"
+        }
+      ],
+      "alt": "A diagram showing the operation of the vDSP_minvi function. There are three rows. The top row represents the input, vector A. The second row represents the minimum value operation. The bottom row represents the output, vector C. The diagram has connecting lines from the input vectors to the operation and from the operation to the output vector indicating the relationships between the input and output.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450441-vdsp_minvid#3226697": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450441-vdsp_minvid#3226697",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/1450441-vdsp_minvid#3226697"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_stride": {
+      "title": "vDSP_Stride",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_stride",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_stride"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp_length": {
+      "title": "vDSP_Length",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_length",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp_length"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450267-vdsp_minv": {
+      "title": "vDSP_minv",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450267-vdsp_minv",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450267-vdsp_minv",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the minimum value in a single-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450663-vdsp_minvd": {
+      "title": "vDSP_minvD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450663-vdsp_minvd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450663-vdsp_minvd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the minimum value in a double-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449875-vdsp_minvi": {
+      "title": "vDSP_minvi",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449875-vdsp_minvi",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449875-vdsp_minvi",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the minimum value and corresponding index in a single-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450441-vdsp_minvid": {
+      "title": "vDSP_minviD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450441-vdsp_minvid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450441-vdsp_minvid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the minimum value and corresponding index in a double-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449786-vdsp_minmgv": {
+      "title": "vDSP_minmgv",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449786-vdsp_minmgv",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449786-vdsp_minmgv",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the minimum magnitude in a single-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449830-vdsp_minmgvd": {
+      "title": "vDSP_minmgvD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449830-vdsp_minmgvd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449830-vdsp_minmgvd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the minimum magnitude in a double-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449814-vdsp_minmgvi": {
+      "title": "vDSP_minmgvi",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449814-vdsp_minmgvi",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449814-vdsp_minmgvi",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the minimum magnitude and corresponding index in a single-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450843-vdsp_minmgvid": {
+      "title": "vDSP_minmgviD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450843-vdsp_minmgvid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450843-vdsp_minmgvid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculates the minimum magnitude and corresponding index in a double-precision vector."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/1450267-vdsp_minv",
+        "doc://com.apple.documentation/documentation/accelerate/1450663-vdsp_minvd",
+        "doc://com.apple.documentation/documentation/accelerate/1449875-vdsp_minvi",
+        "doc://com.apple.documentation/documentation/accelerate/1449786-vdsp_minmgv",
+        "doc://com.apple.documentation/documentation/accelerate/1449830-vdsp_minmgvd",
+        "doc://com.apple.documentation/documentation/accelerate/1449814-vdsp_minmgvi",
+        "doc://com.apple.documentation/documentation/accelerate/1450843-vdsp_minmgvid"
+      ],
+      "title": "Minimum Calculation",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "void"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "vDSP_minviD"
+            },
+            {
+              "kind": "text",
+              "text": "("
+            },
+            {
+              "kind": "keyword",
+              "text": "const"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "double"
+            },
+            {
+              "kind": "text",
+              "text": " *__A, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vDSP_Stride",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_stride",
+              "text": "vDSP_Stride"
+            },
+            {
+              "kind": "text",
+              "text": " __IA, "
+            },
+            {
+              "kind": "keyword",
+              "text": "double"
+            },
+            {
+              "kind": "text",
+              "text": " *__C, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vDSP_Length",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_length",
+              "text": "vDSP_Length"
+            },
+            {
+              "kind": "text",
+              "text": " *__I, "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:@T@vDSP_Length",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp_length",
+              "text": "vDSP_Length"
+            },
+            {
+              "kind": "text",
+              "text": " __N);"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "__A",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Double-precision real input vector."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__I",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Stride for "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "A"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__C",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Output scalar."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__IC",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Output scalar index."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "__N",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The number of elements to process. If "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "N"
+                },
+                {
+                  "type": "text",
+                  "text": " is zero ("
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "0"
+                },
+                {
+                  "type": "text",
+                  "text": "), this function returns "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "-INFINITY in C"
+                },
+                {
+                  "type": "text",
+                  "text": ", and the value in "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "IC"
+                },
+                {
+                  "type": "text",
+                  "text": " is undefined."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This function calculates the minimum value and its corresponding index of the first "
+            },
+            {
+              "type": "codeVoice",
+              "code": "N"
+            },
+            {
+              "type": "text",
+              "text": " elements of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "A"
+            },
+            {
+              "type": "text",
+              "text": " and writes the results to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "C"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "IC"
+            },
+            {
+              "type": "text",
+              "text": " respectively:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3226689",
+              "metadata": {
+                "anchor": "3226689",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The index is the actual array index, not the pre-stride index. If vector "
+            },
+            {
+              "type": "codeVoice",
+              "code": "A"
+            },
+            {
+              "type": "text",
+              "text": " contains more than one instance of the minimum value, IC contains the index of the first instance."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The operation is: "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "*C = INFINITY;",
+            "for (n = 0; n < N; ++n)",
+            "{",
+            "    if (*C > A[n * I])",
+            "    {",
+            "        *C = A[n * I];",
+            "        *IC = n * I;",
+            "    }",
+            "}"
+          ],
+          "syntax": "other",
+          "metadata": {
+            "anchor": "3226697",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

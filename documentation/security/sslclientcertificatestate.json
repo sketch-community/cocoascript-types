@@ -1,0 +1,412 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "An enumeration of the states of client certificate exchange."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/secure_transport"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/sslclientcertificatestate",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1398450,
+  "kind": "symbol",
+  "metadata": {
+    "title": "SSLClientCertificateState",
+    "role": "symbol",
+    "roleHeading": "Enumeration",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "5.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.2",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:@T@SSLClientCertificateState",
+    "symbolKind": "enum"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/sslclientcertificatestate"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/sslclientcertificatestate"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/secure_transport": {
+      "title": "Secure Transport",
+      "identifier": "doc://com.apple.documentation/documentation/security/secure_transport",
+      "url": "/documentation/security/secure_transport",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/sslclientcertificatestate/ksslclientcertnone": {
+      "title": "kSSLClientCertNone",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sslclientcertificatestate/ksslclientcertnone",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sslclientcertificatestate/ksslclientcertnone",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates that the server hasn’t asked for a certificate and that the client hasn’t sent one."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/sslclientcertificatestate/ksslclientcertrequested": {
+      "title": "kSSLClientCertRequested",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sslclientcertificatestate/ksslclientcertrequested",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sslclientcertificatestate/ksslclientcertrequested",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates that the server has asked for a certificate, but the client has not sent it."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/sslclientcertificatestate/ksslclientcertsent": {
+      "title": "kSSLClientCertSent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sslclientcertificatestate/ksslclientcertsent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sslclientcertificatestate/ksslclientcertsent",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates that the server asked for a certificate, the client sent one, and the server validated it. The application can inspect the certificate using the function "
+        },
+        {
+          "type": "codeVoice",
+          "code": "SSLGetPeerCertificates"
+        },
+        {
+          "type": "text",
+          "text": ". "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/sslclientcertificatestate/ksslclientcertrejected": {
+      "title": "kSSLClientCertRejected",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sslclientcertificatestate/ksslclientcertrejected",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sslclientcertificatestate/ksslclientcertrejected",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Indicates that the client sent a certificate but the certificate failed validation. This value is seen only on the server side. The server application can inspect the certificate using the function "
+        },
+        {
+          "type": "codeVoice",
+          "code": "SSLGetPeerCertificates"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1400906-ssladddistinguishedname": {
+      "title": "SSLAddDistinguishedName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1400906-ssladddistinguishedname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1400906-ssladddistinguishedname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a DER-encoded distinguished name to a list of acceptable names to be specified in requests for client certificates."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1398461-sslcopydistinguishednames": {
+      "title": "SSLCopyDistinguishedNames",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1398461-sslcopydistinguishednames",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1398461-sslcopydistinguishednames",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the distinguished names of acceptable certification authorities."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1392400-sslsetcertificate": {
+      "title": "SSLSetCertificate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1392400-sslsetcertificate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1392400-sslsetcertificate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Specifies this connection’s certificate or certificates."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1396612-sslgetclientcertificatestate": {
+      "title": "SSLGetClientCertificateState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396612-sslgetclientcertificatestate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396612-sslgetclientcertificatestate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the exchange status of the client certificate."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1397674-sslcopypeertrust": {
+      "title": "SSLCopyPeerTrust",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1397674-sslcopypeertrust",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1397674-sslcopypeertrust",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves a trust management object for the certificate used by a session. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/sslclientcertificatestate": {
+      "title": "SSLClientCertificateState",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sslclientcertificatestate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sslclientcertificatestate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An enumeration of the states of client certificate exchange."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/2867329-sslsetocspresponse": {
+      "title": "SSLSetOCSPResponse",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/2867329-sslsetocspresponse",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/2867329-sslsetocspresponse",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the OCSP response for the given SSL session."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/2867325-sslsetsessionticketsenabled": {
+      "title": "SSLSetSessionTicketsEnabled",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/2867325-sslsetsessionticketsenabled",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/2867325-sslsetsessionticketsenabled",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Enables or disables session ticket resumption."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/sslclientcertificatestate/ksslclientcertnone",
+        "doc://com.apple.documentation/documentation/security/sslclientcertificatestate/ksslclientcertrequested",
+        "doc://com.apple.documentation/documentation/security/sslclientcertificatestate/ksslclientcertsent",
+        "doc://com.apple.documentation/documentation/security/sslclientcertificatestate/ksslclientcertrejected"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1400906-ssladddistinguishedname",
+        "doc://com.apple.documentation/documentation/security/1398461-sslcopydistinguishednames",
+        "doc://com.apple.documentation/documentation/security/1392400-sslsetcertificate",
+        "doc://com.apple.documentation/documentation/security/1396612-sslgetclientcertificatestate",
+        "doc://com.apple.documentation/documentation/security/1397674-sslcopypeertrust",
+        "doc://com.apple.documentation/documentation/security/2867329-sslsetocspresponse",
+        "doc://com.apple.documentation/documentation/security/2867325-sslsetsessionticketsenabled"
+      ],
+      "title": "Authentication",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "typedef"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "enum"
+            },
+            {
+              "kind": "text",
+              "text": " SSLClientCertificateState : "
+            },
+            {
+              "kind": "keyword",
+              "text": "int"
+            },
+            {
+              "kind": "text",
+              "text": " {"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "    ..."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "} "
+            },
+            {
+              "kind": "identifier",
+              "text": "SSLClientCertificateState"
+            },
+            {
+              "kind": "text",
+              "text": ";"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

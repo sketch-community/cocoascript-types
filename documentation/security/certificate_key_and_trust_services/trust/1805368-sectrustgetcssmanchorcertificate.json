@@ -1,0 +1,577 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Retrieves the CSSM anchor certificates."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/trust"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/trust/1805368-sectrustgetcssmanchorcertificate",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1805368,
+  "kind": "symbol",
+  "metadata": {
+    "title": "SecTrustGetCSSMAnchorCertificates",
+    "role": "pseudoSymbol",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ],
+    "symbolKind": "func"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/certificate_key_and_trust_services/trust/1805368-sectrustgetcssmanchorcertificate"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services": {
+      "title": "Certificate, Key, and Trust Services",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services",
+      "url": "/documentation/security/certificate_key_and_trust_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/trust": {
+      "title": "Trust",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/trust",
+      "url": "/documentation/security/certificate_key_and_trust_services/trust",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/1401507-sectrustcopyanchorcertificates": {
+      "title": "SecTrustCopyAnchorCertificates",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1401507-sectrustcopyanchorcertificates",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1401507-sectrustcopyanchorcertificates",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the anchor (root) certificates stored by macOS. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1396098-sectrustsetanchorcertificates": {
+      "title": "SecTrustSetAnchorCertificates",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396098-sectrustsetanchorcertificates",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396098-sectrustsetanchorcertificates",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the anchor certificates used when evaluating a trust management object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1542001-security_framework_result_codes": {
+      "title": "Security Framework Result Codes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1542001-security_framework_result_codes",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/security/1542001-security_framework_result_codes"
+    },
+    "doc://com.apple.documentation/documentation/security/1394363-sectrustevaluate": {
+      "title": "SecTrustEvaluate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1394363-sectrustevaluate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1394363-sectrustevaluate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Evaluates trust for the specified certificate and policies."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1400632-sectrustevaluateasync": {
+      "title": "SecTrustEvaluateAsync",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1400632-sectrustevaluateasync",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1400632-sectrustevaluateasync",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Evaluates a trust object asynchronously on the specified dispatch queue."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/sectrustcallback": {
+      "title": "SecTrustCallback",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sectrustcallback",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sectrustcallback",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A block called with the results of an asynchronous trust evaluation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/sectrustusersetting": {
+      "title": "SecTrustUserSetting",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/sectrustusersetting",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/sectrustusersetting",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Represents user-specified trust settings."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/trust/1805395-sectrustsetusertrust": {
+      "title": "SecTrustSetUserTrust",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/trust/1805395-sectrustsetusertrust",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/security/certificate_key_and_trust_services/trust/1805395-sectrustsetusertrust",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the user-specified trust settings of a certificate and policy. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1524326-sectrustsetparameters": {
+      "title": "SecTrustSetParameters",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1524326-sectrustsetparameters",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1524326-sectrustsetparameters",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the action and action data for a trust management object. "
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1395644-sectrustsetkeychains": {
+      "title": "SecTrustSetKeychains",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1395644-sectrustsetkeychains",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1395644-sectrustsetkeychains",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the keychains searched for intermediate certificates when evaluating a trust management object."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/trust/1805368-sectrustgetcssmanchorcertificate": {
+      "title": "SecTrustGetCSSMAnchorCertificates",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/trust/1805368-sectrustgetcssmanchorcertificate",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/security/certificate_key_and_trust_services/trust/1805368-sectrustgetcssmanchorcertificate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the CSSM anchor certificates."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1524311-sectrustgetcssmresult": {
+      "title": "SecTrustGetCssmResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1524311-sectrustgetcssmresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1524311-sectrustgetcssmresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the CSSM trust result."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1524327-sectrustgetcssmresultcode": {
+      "title": "SecTrustGetCssmResultCode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1524327-sectrustgetcssmresultcode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1524327-sectrustgetcssmresultcode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the CSSM result code from the most recent trust evaluation for a trust management object."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/trust/1805379-sectrustgetusertrust": {
+      "title": "SecTrustGetUserTrust",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/trust/1805379-sectrustgetusertrust",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/security/certificate_key_and_trust_services/trust/1805379-sectrustgetusertrust",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the user-specified trust setting for a certificate and policy."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1524309-sectrustgettphandle": {
+      "title": "SecTrustGetTPHandle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1524309-sectrustgettphandle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1524309-sectrustgettphandle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the trust policy handle."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1524331-sectrustgetresult": {
+      "title": "SecTrustGetResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1524331-sectrustgetresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1524331-sectrustgetresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves details on the outcome of a call to the function "
+        },
+        {
+          "type": "codeVoice",
+          "code": "SecTrustEvaluate"
+        },
+        {
+          "type": "text",
+          "text": "."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "deprecationSummary": [
+    {
+      "type": "paragraph",
+      "inlineContent": [
+        {
+          "type": "text",
+          "text": "Use the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/security/1401507-sectrustcopyanchorcertificates"
+        },
+        {
+          "type": "text",
+          "text": " function for new development instead."
+        }
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1394363-sectrustevaluate",
+        "doc://com.apple.documentation/documentation/security/1400632-sectrustevaluateasync",
+        "doc://com.apple.documentation/documentation/security/sectrustcallback",
+        "doc://com.apple.documentation/documentation/security/sectrustusersetting",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/trust/1805395-sectrustsetusertrust",
+        "doc://com.apple.documentation/documentation/security/1524326-sectrustsetparameters",
+        "doc://com.apple.documentation/documentation/security/1395644-sectrustsetkeychains",
+        "doc://com.apple.documentation/documentation/security/1524311-sectrustgetcssmresult",
+        "doc://com.apple.documentation/documentation/security/1524327-sectrustgetcssmresultcode",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/trust/1805379-sectrustgetusertrust",
+        "doc://com.apple.documentation/documentation/security/1524309-sectrustgettphandle",
+        "doc://com.apple.documentation/documentation/security/1524331-sectrustgetresult"
+      ],
+      "title": "Legacy Symbols",
+      "generated": true
+    },
+    {
+      "title": "Related Documentation",
+      "generated": false,
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1396098-sectrustsetanchorcertificates",
+        "doc://com.apple.documentation/documentation/security/1401507-sectrustcopyanchorcertificates"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "text",
+              "text": "OSStatus SecTrustGetCSSMAnchorCertificates ("
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   const CSSM_DATA **cssmAnchors,"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "   uint32 *cssmAnchorCount"
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": ");"
+            }
+          ],
+          "platforms": []
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "occ"
+      ],
+      "parameters": [
+        {
+          "name": "cssmAnchors",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "On return, points to an array of anchor certificates. This array is allocated by the system; you should not deallocate it. This data is not guaranteed to remain valid indefinitely; you should retrieve the data immediately and either pass it to other functions or copy it for future use."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "cssmAnchorCount",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "On return, points to the number of "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "CSSM_DATA"
+                },
+                {
+                  "type": "text",
+                  "text": " structures returned in the "
+                },
+                {
+                  "type": "codeVoice",
+                  "code": "cssmAnchors"
+                },
+                {
+                  "type": "text",
+                  "text": " parameter."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "return_value",
+          "level": 2,
+          "text": "Return Value",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A result code. See "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1542001-security_framework_result_codes"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This function returns the certificates in the system’s store of anchor certificates (see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1396098-sectrustsetanchorcertificates"
+            },
+            {
+              "type": "text",
+              "text": ". You can use the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CSSM_DATA"
+            },
+            {
+              "type": "text",
+              "text": " structures returned by this function as input to functions in the CSSM API. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "It is safe to call this function concurrently on two or more threads as long as it is not used to get values from a trust management object that is simultaneously being changed by another function. For example, you can call this function on two threads at the same time, but not if you are simultaneously calling the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1396098-sectrustsetanchorcertificates"
+            },
+            {
+              "type": "text",
+              "text": " function for the same trust management object on another thread. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Special Considerations",
+          "anchor": "1819529"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Calls to the underlying CSSM API are deprecated. To get references to the anchor certificates in a form appropriate for calls to the Certificate, Key, and Trust API, use the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1401507-sectrustcopyanchorcertificates"
+            },
+            {
+              "type": "text",
+              "text": " function instead."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

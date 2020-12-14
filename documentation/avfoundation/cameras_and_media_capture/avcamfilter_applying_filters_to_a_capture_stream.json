@@ -1,0 +1,1373 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Render a capture stream with rose-colored filtering and depth effects."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/avfoundation",
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3017160,
+  "kind": "article",
+  "metadata": {
+    "title": "AVCamFilter: Applying Filters to a Capture Stream",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "AVFoundation"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "12.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.0",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/avfoundation": {
+      "title": "AVFoundation",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation",
+      "url": "/documentation/avfoundation",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture": {
+      "title": "Cameras and Media Capture",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture",
+      "url": "/documentation/avfoundation/cameras_and_media_capture",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/metalkit/mtkview": {
+      "title": "MTKView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/metalkit/mtkview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/metalkit/mtkview"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uiview": {
+      "title": "UIView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uiview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uiview"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturevideopreviewlayer": {
+      "title": "AVCaptureVideoPreviewLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideopreviewlayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturevideopreviewlayer"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturesession": {
+      "title": "AVCaptureSession",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturesession",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturesession"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240457": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240457",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240457"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240459": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240459",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240459"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240460": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240460",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240460"
+    },
+    "doc://com.apple.documentation/documentation/coreimage/cifilter": {
+      "title": "CIFilter",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/coreimage/cifilter",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/coreimage/cifilter"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240462": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240462",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240462"
+    },
+    "link-3040134": {
+      "title": "Core Image Filter Reference",
+      "type": "section",
+      "identifier": "link-3040134",
+      "kind": "article",
+      "role": "link",
+      "url": "https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/filter/ci/CIColorMatrix"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240463": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240463",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240463"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240464": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240464",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240464"
+    },
+    "doc://com.apple.documentation/documentation/metal/mtlcomputecommandencoder": {
+      "title": "MTLComputeCommandEncoder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/metal/mtlcomputecommandencoder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/metal/mtlcomputecommandencoder"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240466": {
+      "title": "Listing 7",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240466",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240466"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240467": {
+      "title": "Listing 8",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240467",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240467"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240468": {
+      "title": "Listing 9",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240468",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240468"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedepthdataoutputdelegate": {
+      "title": "AVCaptureDepthDataOutputDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedepthdataoutputdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedepthdataoutputdelegate"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedepthdataoutputdelegate/2873866-depthdataoutput": {
+      "title": "depthDataOutput:didOutputDepthData:timestamp:connection:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedepthdataoutputdelegate/2873866-depthdataoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedepthdataoutputdelegate/2873866-depthdataoutput",
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "depthDataOutput:didOutputDepthData:timestamp:connection:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240470": {
+      "title": "Listing 10",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240470",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240470"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240471": {
+      "title": "Listing 11",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240471",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240471"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedepthdataoutput": {
+      "title": "AVCaptureDepthDataOutput",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedepthdataoutput",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedepthdataoutput",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A capture output that records scene depth information on compatible camera devices."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240473": {
+      "title": "Listing 12",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240473",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240473"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/2968215-activedepthdataminframeduration": {
+      "title": "activeDepthDataMinFrameDuration",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/2968215-activedepthdataminframeduration",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avcapturedevice/2968215-activedepthdataminframeduration"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240475": {
+      "title": "Listing 13",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240475",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240475"
+    },
+    "link-media-3240454": {
+      "identifier": "link-media-3240454",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream#3240454"
+    },
+    "media-3240454": {
+      "identifier": "media-3240454",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 644,
+            "height": 610
+          },
+          "url": "https://docs-assets.developer.apple.com/published/464ce930c9/f0fd6f19-f381-4c97-900f-50c804b9ac2d.png"
+        }
+      ],
+      "alt": "Screenshots of AVCamFilter with the rose-colored filter applied to the camera preview.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_photos_with_depth": {
+      "title": "Capturing Photos with Depth",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_photos_with_depth",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/capturing_photos_with_depth",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Get a depth map with a photo to create effects like the system camera’s Portrait mode (on compatible devices)."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream": {
+      "title": "AVCamFilter: Applying Filters to a Capture Stream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/avcamfilter_applying_filters_to_a_capture_stream",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Render a capture stream with rose-colored filtering and depth effects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/streaming_depth_data_from_the_truedepth_camera": {
+      "title": "Streaming Depth Data from the TrueDepth Camera",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/streaming_depth_data_from_the_truedepth_camera",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/avfoundation/cameras_and_media_capture/streaming_depth_data_from_the_truedepth_camera",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Visualize depth data in 2D and 3D from the TrueDepth camera."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avdepthdata": {
+      "title": "AVDepthData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avdepthdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avdepthdata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A container for per-pixel distance or disparity information captured by compatible camera devices."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avportraiteffectsmatte": {
+      "title": "AVPortraitEffectsMatte",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avportraiteffectsmatte",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avportraiteffectsmatte",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An auxiliary image used to separate foreground from background with high resolution."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/avfoundation/avsemanticsegmentationmatte": {
+      "title": "AVSemanticSegmentationMatte",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/avfoundation/avsemanticsegmentationmatte",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/avfoundation/avsemanticsegmentationmatte",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that wraps a matting image for a particular semantic segmentation."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/0546975d49/AVCamFilterApplyingFiltersToACaptureStream.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/0546975d49/AVCamFilterApplyingFiltersToACaptureStream.zip",
+      "checksum": "9160fde2aea4e136a823eb739f2a262b884e119a4fb7934be960348a2970646a32270c1bfeaeb738c11fe3dcc7d70c46c3f884f289fbab7e48836af5bbb8cbb8",
+      "url": "https://docs-assets.developer.apple.com/published/0546975d49/AVCamFilterApplyingFiltersToACaptureStream.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/0546975d49/AVCamFilterApplyingFiltersToACaptureStream.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/capturing_photos_with_depth",
+        "doc://com.apple.documentation/documentation/avfoundation/cameras_and_media_capture/streaming_depth_data_from_the_truedepth_camera",
+        "doc://com.apple.documentation/documentation/avfoundation/avcapturedepthdataoutput",
+        "doc://com.apple.documentation/documentation/avfoundation/avdepthdata",
+        "doc://com.apple.documentation/documentation/avfoundation/avportraiteffectsmatte",
+        "doc://com.apple.documentation/documentation/avfoundation/avsemanticsegmentationmatte"
+      ],
+      "title": "Depth Data Capture",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "AVCamFilter is a sample camera app that takes photos with filtered effects. It shows the user a live preview of the scene with the effect rendered on top."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3240454",
+              "metadata": {
+                "anchor": "3240454",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This sample shows you how to apply a filter with a rose-colored lens using Core Image and Metal. It also shows how to render depth and a smoothened depth effect on top of the capture stream using a grayscale filter. Finally, AVCamFilter allows the user to modulate the frame rate and the effect through sliders."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Getting Started",
+          "anchor": "3240478"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Build and run AVCamFilter on a device running iOS 12 or later. This sample won’t work in Simulator. Also, because Metal won’t compile on Simulator, set the build target and schema to a device, or “Generic iOS Device,” before building. The depth effect also won’t show on devices that don’t support depth capture, such as the iPhone 6S and before."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Show the Camera Preview in a Metal View",
+          "anchor": "3240479"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "AVCamFilter uses "
+            },
+            {
+              "type": "codeVoice",
+              "code": "PreviewMetalView"
+            },
+            {
+              "type": "text",
+              "text": ", a custom subclass of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/metalkit/mtkview"
+            },
+            {
+              "type": "text",
+              "text": ", instead of a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/uikit/uiview"
+            },
+            {
+              "type": "text",
+              "text": " as its preview view, because the standard "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturevideopreviewlayer"
+            },
+            {
+              "type": "text",
+              "text": " gets its frames directly from the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturesession"
+            },
+            {
+              "type": "text",
+              "text": ", with no opportunity for the app to apply effects to those frames. By subclassing "
+            },
+            {
+              "type": "codeVoice",
+              "code": "MTKView"
+            },
+            {
+              "type": "text",
+              "text": ", AVCamFilter can apply the rose-colored filter and depth grayscale filter before rendering each frame."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "PreviewMetalView"
+            },
+            {
+              "type": "text",
+              "text": " defines its rendering behavior in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "draw"
+            },
+            {
+              "type": "text",
+              "text": ". It creates a Metal texture from the image buffer, so it can transform and render that texture to the image:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let width = CVPixelBufferGetWidth(previewPixelBuffer)",
+            "let height = CVPixelBufferGetHeight(previewPixelBuffer)",
+            "",
+            "if textureCache == nil {",
+            "    createTextureCache()",
+            "}",
+            "var cvTextureOut: CVMetalTexture?",
+            "CVMetalTextureCacheCreateTextureFromImage(kCFAllocatorDefault,",
+            "                                          textureCache!,",
+            "                                          previewPixelBuffer,",
+            "                                          nil,",
+            "                                          .bgra8Unorm,",
+            "                                          width,",
+            "                                          height,",
+            "                                          0,",
+            "                                          &cvTextureOut)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3240457",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Filter Renderer",
+          "anchor": "3240480"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The custom "
+            },
+            {
+              "type": "codeVoice",
+              "code": "FilterRenderer"
+            },
+            {
+              "type": "text",
+              "text": " class serves as the parent for all rendering classes, such as the rose-colored filter and the grayscale converter. "
+            },
+            {
+              "type": "codeVoice",
+              "code": "RosyMetalRenderer"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "DepthToGrayscaleConverter"
+            },
+            {
+              "type": "text",
+              "text": " are both subclasses of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "FilterRenderer"
+            },
+            {
+              "type": "text",
+              "text": " which provide specific filtering functionality."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "FilterRenderer"
+            },
+            {
+              "type": "text",
+              "text": " encapsulates all the resources and functions necessary to render an effect to the image. For example, it allocates a pool of output buffers for rendering:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var pixelBuffers = [CVPixelBuffer]()",
+            "var error: CVReturn = kCVReturnSuccess",
+            "let auxAttributes = [kCVPixelBufferPoolAllocationThresholdKey as String: allocationThreshold] as NSDictionary",
+            "var pixelBuffer: CVPixelBuffer?",
+            "while error == kCVReturnSuccess {",
+            "    error = CVPixelBufferPoolCreatePixelBufferWithAuxAttributes(kCFAllocatorDefault, pool, auxAttributes, &pixelBuffer)",
+            "    if let pixelBuffer = pixelBuffer {",
+            "        pixelBuffers.append(pixelBuffer)",
+            "    }",
+            "    pixelBuffer = nil",
+            "}",
+            "pixelBuffers.removeAll()"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3240459",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "FilterRenderer"
+            },
+            {
+              "type": "text",
+              "text": " also maintains a retained buffer count to tell renderers how many buffers it can hold at one time. This hint prepares the renderer to size and preallocate its pool before beginning to render the scene:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "func prepare(with inputFormatDescription: CMFormatDescription, outputRetainedBufferCountHint: Int)",
+            "",
+            "// Release resources.",
+            "func reset()",
+            "",
+            "// The format description of the output pixel buffers.",
+            "var outputFormatDescription: CMFormatDescription? { get }",
+            "",
+            "// The format description of the input pixel buffers.",
+            "var inputFormatDescription: CMFormatDescription? { get }",
+            "",
+            "// Render the pixel buffer.",
+            "func render(pixelBuffer: CVPixelBuffer) -> CVPixelBuffer?"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3240460",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Apply a Rose-Colored Filter",
+          "anchor": "3240481"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "AVCamFilter applies a rose-colored filter on top of the camera stream in two ways:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "RosyCIRenderer"
+                    },
+                    {
+                      "type": "text",
+                      "text": " applies a Core Image "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "CIColorMatrix"
+                    },
+                    {
+                      "type": "text",
+                      "text": " filter to the input buffer."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "RosyMetalRenderer"
+                    },
+                    {
+                      "type": "text",
+                      "text": " creates a Metal texture from the image buffer and applies the shader in "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "RosyEffect.metal"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Both approaches run on the GPU for optimal performance. Because the Core Image approach doesn’t require GPU command queues, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "RosyCIRenderer"
+            },
+            {
+              "type": "text",
+              "text": " involves less direct manipulation of the GPU than its Metal counterpart and chains more seamlessly with other Core Image filters. Unlike the Metal function, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "RosyCIRenderer"
+            },
+            {
+              "type": "text",
+              "text": " requires the creation and application of a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/coreimage/cifilter"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "ciContext = CIContext()",
+            "rosyFilter = CIFilter(name: \"CIColorMatrix\")",
+            "rosyFilter!.setValue(CIVector(x: 0, y: 0, z: 0, w: 0), forKey: \"inputGVector\")"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3240462",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CIColorMatrix"
+            },
+            {
+              "type": "text",
+              "text": ", see the "
+            },
+            {
+              "type": "link",
+              "title": "Core Image Filter Reference",
+              "destination": "https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/filter/ci/CIColorMatrix"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In the Metal approach, AVCamFilter sets up a command queue and thread groups to do the rendering:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard let inputTexture = makeTextureFromCVPixelBuffer(pixelBuffer: pixelBuffer, textureFormat: .bgra8Unorm),",
+            "    let outputTexture = makeTextureFromCVPixelBuffer(pixelBuffer: outputPixelBuffer, textureFormat: .bgra8Unorm) else {",
+            "        return nil",
+            "}",
+            "",
+            "// Set up command queue, buffer, and encoder.",
+            "guard let commandQueue = commandQueue,",
+            "    let commandBuffer = commandQueue.makeCommandBuffer(),",
+            "    let commandEncoder = commandBuffer.makeComputeCommandEncoder() else {",
+            "        print(\"Failed to create a Metal command queue.\")",
+            "        CVMetalTextureCacheFlush(textureCache!, 0)",
+            "        return nil",
+            "}",
+            "",
+            "commandEncoder.label = \"Rosy Metal\"",
+            "commandEncoder.setComputePipelineState(computePipelineState!)",
+            "commandEncoder.setTexture(inputTexture, index: 0)",
+            "commandEncoder.setTexture(outputTexture, index: 1)",
+            "",
+            "// Set up the thread groups.",
+            "let width = computePipelineState!.threadExecutionWidth",
+            "let height = computePipelineState!.maxTotalThreadsPerThreadgroup / width",
+            "let threadsPerThreadgroup = MTLSizeMake(width, height, 1)",
+            "let threadgroupsPerGrid = MTLSize(width: (inputTexture.width + width - 1) / width,",
+            "                                  height: (inputTexture.height + height - 1) / height,",
+            "                                  depth: 1)",
+            "commandEncoder.dispatchThreadgroups(threadgroupsPerGrid, threadsPerThreadgroup: threadsPerThreadgroup)",
+            "",
+            "commandEncoder.endEncoding()",
+            "commandBuffer.commit()"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3240463",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The function, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "RosyEffect.metal"
+            },
+            {
+              "type": "text",
+              "text": ", sets the output color of a pixel to its input color, so most of the image content remains the same, resulting in a transparent effect. However, the kernel excludes the green component, giving the image a rose-colored appearance:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "kernel void rosyEffect(texture2d<half, access::read>  inputTexture  [[ texture(0) ]],",
+            "   texture2d<half, access::write> outputTexture [[ texture(1) ]],",
+            "   uint2 gid [[thread_position_in_grid]])",
+            "{",
+            "    // Don't read or write outside of the texture.",
+            "    if ((gid.x >= inputTexture.get_width()) || (gid.y >= inputTexture.get_height())) {",
+            "        return;",
+            "    }",
+            "",
+            "    half4 inputColor = inputTexture.read(gid);",
+            "",
+            "    // Set the output color to the input color, excluding the green component.",
+            "    half4 outputColor = half4(inputColor.r, 0.0, inputColor.b, 1.0);",
+            "",
+            "    outputTexture.write(outputColor, gid);",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3240464",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more information about setting up a Metal compute command encoder, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/metal/mtlcomputecommandencoder"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Vary the Mix Factor",
+          "anchor": "3240482"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the user tweaks the “MixFactor” slider, AVCamFilter modulates the intensity of the filter’s mixture:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "dataOutputQueue.async {",
+            "    self.videoDepthMixer.mixFactor = mixFactor",
+            "}",
+            "processingQueue.async {",
+            "    self.photoDepthMixer.mixFactor = mixFactor",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3240466",
+            "title": "Listing 7"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The sample accomplishes this in code by setting the mix parameter in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "VideoMixer.swift"
+            },
+            {
+              "type": "text",
+              "text": ". This helper class marshals mixing commands in a command queue, buffer, and encoder. When the mix factor changes, the rendering pipeline pulls in those changes by varying the bytes in a rendered fragment:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var parameters = MixerParameters(mixFactor: mixFactor)",
+            "",
+            "commandEncoder.label = \"Video Mixer\"",
+            "commandEncoder.setRenderPipelineState(renderPipelineState!)",
+            "commandEncoder.setVertexBuffer(fullRangeVertexBuffer, offset: 0, index: 0)",
+            "commandEncoder.setFragmentTexture(inputTexture0, index: 0)",
+            "commandEncoder.setFragmentTexture(inputTexture1, index: 1)",
+            "commandEncoder.setFragmentSamplerState(sampler, index: 0)",
+            "commandEncoder.setFragmentBytes(UnsafeMutableRawPointer(&parameters), length: MemoryLayout<MixerParameters>.size, index: 0)",
+            "commandEncoder.drawPrimitives(type: .triangleStrip, vertexStart: 0, vertexCount: 4)",
+            "commandEncoder.endEncoding()"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3240467",
+            "title": "Listing 8"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Metal function, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "Mixer.metal"
+            },
+            {
+              "type": "text",
+              "text": ", specifies the mixing operation for each fragment:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "fragment half4 fragmentMixer( VertexIO        inputFragment    [[ stage_in ]],",
+            "                              texture2d<half> mixerInput0      [[ texture(0) ]],",
+            "                              texture2d<half> mixerInput1      [[ texture(1) ]],",
+            "                              const device    mixerParameters& mixerParameters [[ buffer(0) ]],",
+            "                              sampler         samplr           [[ sampler(0) ]])",
+            "{",
+            "    half4 input0 = mixerInput0.sample(samplr, inputFragment.textureCoord);",
+            "    half4 input1 = mixerInput1.sample(samplr, inputFragment.textureCoord);",
+            "",
+            "    half4 output = mix(input0, input1, half(mixerParameters.mixFactor));",
+            "",
+            "    return output;",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3240468",
+            "title": "Listing 9"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Stream Depth Data",
+          "anchor": "3240483"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "AVCamFilter streams depth data in addition to RGB video by maintaining buffers dedicated to depth information. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CameraViewController"
+            },
+            {
+              "type": "text",
+              "text": " refreshes these buffers by adhering to the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedepthdataoutputdelegate"
+            },
+            {
+              "type": "text",
+              "text": " protocol and implementing the delegate method "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedepthdataoutputdelegate/2873866-depthdataoutput"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var depthFormatDescription: CMFormatDescription?",
+            "CMVideoFormatDescriptionCreateForImageBuffer(allocator: kCFAllocatorDefault,",
+            "                                             imageBuffer: depthData.depthDataMap,",
+            "                                             formatDescriptionOut: &depthFormatDescription)",
+            "if let unwrappedDepthFormatDescription = depthFormatDescription {",
+            "    videoDepthConverter.prepare(with: unwrappedDepthFormatDescription, outputRetainedBufferCountHint: 2)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3240470",
+            "title": "Listing 10"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "outputRetainedBufferCountHint"
+            },
+            {
+              "type": "text",
+              "text": " is the number of pixel buffers the renderer retains as it draws the scene. AVCamFilter’s depth converter preallocates its buffers with an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "outputRetainedBufferCountHint"
+            },
+            {
+              "type": "text",
+              "text": " of 2 frames of latency to cover the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "dispatch_async"
+            },
+            {
+              "type": "text",
+              "text": " call."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "DepthToGrayscaleConverter"
+            },
+            {
+              "type": "text",
+              "text": " class converts depth values to grayscale pixels in the preview. Like the rose-colored filter, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "DepthToGrayscaleConverter"
+            },
+            {
+              "type": "text",
+              "text": " relies on a Metal function, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "DepthToGrayscale.metal"
+            },
+            {
+              "type": "text",
+              "text": ", to perform texture transformations:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "kernel void depthToGrayscale(texture2d<float, access::read> inputTexture   [[ texture(0) ]],",
+            "                 texture2d<float, access::write> outputTexture [[ texture(1) ]],",
+            "                             constant converterParameters& converterParameters [[ buffer(0) ]],",
+            "                             uint2 gid [[ thread_position_in_grid ]])",
+            "{",
+            "    // Don't read or write outside of the texture.",
+            "    if ((gid.x >= inputTexture.get_width()) || (gid.y >= inputTexture.get_height())) {",
+            "        return;",
+            "    }",
+            "",
+            "    float depth = inputTexture.read(gid).x;",
+            "",
+            "    // Normalize the value between 0 and 1.",
+            "    depth = (depth - converterParameters.offset) / (converterParameters.range);",
+            "",
+            "    float4 outputColor = float4(float3(depth), 1.0);",
+            "",
+            "    outputTexture.write(outputColor, gid);",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3240471",
+            "title": "Listing 11"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Smooth Depth Data",
+          "anchor": "3240484"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Without smoothing, the depth data in each frame may have gaps or holes. Smoothing the depth data reduces the effect of frame-to-frame discrepancies by interpolating previous and subsequent frames to fill in the holes. To achieve this smoothing in code, set a parameter on "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedepthdataoutput"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "sessionQueue.async {",
+            "    self.depthDataOutput.isFilteringEnabled = smoothingEnabled",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3240473",
+            "title": "Listing 12"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Modulate Frame Rate",
+          "anchor": "3240485"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "AVCamFilter also shows how to change the frame rate at which the camera delivers depth data. When the user moves the “FPS” (frames per second) slider, the app converts this user-facing representation of frame rate to its inverse, frame duration, for setting the video device’s  "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/avfoundation/avcapturedevice/2968215-activedepthdataminframeduration"
+            },
+            {
+              "type": "text",
+              "text": " accordingly:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "try self.videoInput.device.lockForConfiguration()",
+            "self.videoInput.device.activeDepthDataMinFrameDuration = duration",
+            "self.videoInput.device.unlockForConfiguration()"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3240475",
+            "title": "Listing 13"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Changing the frame rate allows the user to control how fast the app refreshes the live stream. For example, a user who cares less about the granularity of depth information may lower the frame rate of depth data while maintaining a high RGB frame rate."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

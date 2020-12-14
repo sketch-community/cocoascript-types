@@ -1,0 +1,2771 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "A structural element of a scene graph, representing a position and transform in a 3D coordinate space, to which you can attach geometry, lights, cameras, or other displayable content."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/scenekit"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/scenekit/scnnode",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1408038,
+  "kind": "symbol",
+  "metadata": {
+    "title": "SCNNode",
+    "role": "symbol",
+    "roleHeading": "Class",
+    "modules": [
+      {
+        "name": "SceneKit"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "8.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.8",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "2.0",
+        "current": "7.2"
+      }
+    ],
+    "externalID": "c:objc(cs)SCNNode",
+    "symbolKind": "cl"
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/scenekit/scnnode"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/scenekit/scnnode"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/scenekit": {
+      "title": "SceneKit",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit",
+      "url": "/documentation/scenekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode#1655182": {
+      "title": "Managing the Node Hierarchy",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode#1655182",
+      "kind": "article",
+      "role": "task",
+      "url": "/documentation/scenekit/scnnode#1655182"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode#1655236": {
+      "title": "Searching the Node Hierarchy",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode#1655236",
+      "kind": "article",
+      "role": "task",
+      "url": "/documentation/scenekit/scnnode#1655236"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnscene/1524029-rootnode": {
+      "title": "rootNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscene/1524029-rootnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnscene/1524029-rootnode"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1408026-position": {
+      "title": "position",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408026-position",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1408026-position",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The translation applied to the node. Animatable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1408034-rotation": {
+      "title": "rotation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408034-rotation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1408034-rotation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The node’s orientation, expressed as a rotation angle about an axis. Animatable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1408050-scale": {
+      "title": "scale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408050-scale",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1408050-scale",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The scale factor applied to the node. Animatable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407964-transform": {
+      "title": "transform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407964-transform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407964-transform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The transform applied to the node relative to its parent. Animatable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scngeometry": {
+      "title": "SCNGeometry",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometry",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scngeometry"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnmaterial": {
+      "title": "SCNMaterial",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnmaterial",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnmaterial"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnlight": {
+      "title": "SCNLight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnlight",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnlight"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scncamera": {
+      "title": "SCNCamera",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scncamera",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scncamera"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody": {
+      "title": "SCNPhysicsBody",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsbody"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield": {
+      "title": "SCNPhysicsField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnphysicsfield"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnparticlesystem": {
+      "title": "SCNParticleSystem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnparticlesystem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnparticlesystem"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode": {
+      "title": "SCNNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structural element of a scene graph, representing a position and transform in a 3D coordinate space, to which you can attach geometry, lights, cameras, or other displayable content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1690499-movabilityhint": {
+      "title": "movabilityHint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1690499-movabilityhint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1690499-movabilityhint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A value that indicates how SceneKit should handle the node when rendering movement-related effects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/objectivec/nsobject": {
+      "title": "NSObject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/nsobject"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnanimatable": {
+      "title": "SCNAnimatable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnanimatable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnanimatable"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnboundingvolume": {
+      "title": "SCNBoundingVolume",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnboundingvolume",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnboundingvolume",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods common to the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode"
+        },
+        {
+          "type": "text",
+          "text": " and "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometry"
+        },
+        {
+          "type": "text",
+          "text": " classes for measuring location and size. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnactionable": {
+      "title": "SCNActionable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnactionable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnactionable"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nssecurecoding": {
+      "title": "NSSecureCoding",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nssecurecoding",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nssecurecoding"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nscopying": {
+      "title": "NSCopying",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nscopying",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nscopying"
+    },
+    "doc://com.apple.documentation/documentation/uikit/uifocusitem": {
+      "title": "UIFocusItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/uikit/uifocusitem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/uikit/uifocusitem"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407972-node": {
+      "title": "node",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407972-node",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407972-node",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns a node object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "node"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1408020-nodewithgeometry": {
+      "title": "nodeWithGeometry:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408020-nodewithgeometry",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1408020-nodewithgeometry",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates and returns a node object with the specified geometry attached."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "nodeWithGeometry:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1419841-nodewithmdlobject": {
+      "title": "nodeWithMDLObject:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1419841-nodewithmdlobject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1419841-nodewithmdlobject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a node from the specified Model I/O object."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "+ "
+        },
+        {
+          "kind": "identifier",
+          "text": "nodeWithMDLObject:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881843-simdtransform": {
+      "title": "simdTransform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881843-simdtransform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881843-simdtransform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The transform applied to the node relative to its parent. Animatable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881846-simdposition": {
+      "title": "simdPosition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881846-simdposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881846-simdposition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The translation applied to the node. Animatable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881845-simdrotation": {
+      "title": "simdRotation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881845-simdrotation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881845-simdrotation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The node’s orientation, expressed as a rotation angle about an axis. Animatable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881859-simdeulerangles": {
+      "title": "simdEulerAngles",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881859-simdeulerangles",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881859-simdeulerangles",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The node’s orientation, expressed as pitch, yaw, and roll angles in radians. Animatable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881854-simdorientation": {
+      "title": "simdOrientation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881854-simdorientation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881854-simdorientation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The node’s orientation, expressed as a quaternion. Animatable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881847-simdscale": {
+      "title": "simdScale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881847-simdscale",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881847-simdscale",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The scale factor applied to the node. Animatable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881849-simdpivot": {
+      "title": "simdPivot",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881849-simdpivot",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881849-simdpivot",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The pivot point for the node’s position, rotation, and scale. Animatable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1408014-name": {
+      "title": "name",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408014-name",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1408014-name",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A name associated with the node."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1408004-light": {
+      "title": "light",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408004-light",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1408004-light",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The light attached to the node."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407976-camera": {
+      "title": "camera",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407976-camera",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407976-camera",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The camera attached to the node."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407966-geometry": {
+      "title": "geometry",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407966-geometry",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407966-geometry",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The geometry attached to the node."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1408022-morpher": {
+      "title": "morpher",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408022-morpher",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1408022-morpher",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The morpher object responsible for blending the node’s geometry."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407953-skinner": {
+      "title": "skinner",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407953-skinner",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407953-skinner",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The skinner object responsible for skeletal animations of node’s contents."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407994-categorybitmask": {
+      "title": "categoryBitMask",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407994-categorybitmask",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407994-categorybitmask",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A mask that defines which categories the node belongs to."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1408016-constraints": {
+      "title": "constraints",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408016-constraints",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1408016-constraints",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A list of constraints affecting the node’s transformation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1408030-presentationnode": {
+      "title": "presentationNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408030-presentationnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1408030-presentationnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A node object representing the state of the node as it currently appears onscreen."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407962-paused": {
+      "title": "paused",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407962-paused",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407962-paused",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines whether to run actions and animations attached to the node and its child nodes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407967-hidden": {
+      "title": "hidden",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407967-hidden",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407967-hidden",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines the visibility of the node’s contents. Animatable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1408010-opacity": {
+      "title": "opacity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408010-opacity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1408010-opacity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The opacity value of the node. Animatable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407978-renderingorder": {
+      "title": "renderingOrder",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407978-renderingorder",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407978-renderingorder",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The order the node’s content is drawn in relative to that of other nodes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407955-castsshadow": {
+      "title": "castsShadow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407955-castsshadow",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407955-castsshadow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Boolean value that determines whether SceneKit renders the node’s contents into shadow maps."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnmovabilityhint": {
+      "title": "SCNMovabilityHint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnmovabilityhint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnmovabilityhint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Values that inform SceneKit’s rendering for movement-related effects, used by the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1690499-movabilityhint"
+        },
+        {
+          "type": "text",
+          "text": " property."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407968-parentnode": {
+      "title": "parentNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407968-parentnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407968-parentnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The node’s parent in the scene graph hierarchy."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407984-childnodes": {
+      "title": "childNodes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407984-childnodes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407984-childnodes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of the node’s children in the scene graph hierarchy."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407974-addchildnode": {
+      "title": "addChildNode:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407974-addchildnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407974-addchildnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a node to the node’s array of children."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addChildNode:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407958-insertchildnode": {
+      "title": "insertChildNode:atIndex:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407958-insertchildnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407958-insertchildnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a node to the node’s array of children at a specified index."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "insertChildNode:atIndex:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407991-removefromparentnode": {
+      "title": "removeFromParentNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407991-removefromparentnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407991-removefromparentnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes the node from its parent’s array of child nodes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeFromParentNode"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1408002-replacechildnode": {
+      "title": "replaceChildNode:with:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408002-replacechildnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1408002-replacechildnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes a child from the node’s array of children and inserts another node in its place."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "replaceChildNode:with:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407982-childnodespassingtest": {
+      "title": "childNodesPassingTest:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407982-childnodespassingtest",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407982-childnodespassingtest",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns all nodes in the node’s child node subtree that satisfy the test applied by a block."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "childNodesPassingTest:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407951-childnodewithname": {
+      "title": "childNodeWithName:recursively:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407951-childnodewithname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407951-childnodewithname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the first node in the node’s child node subtree with the specified name."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "childNodeWithName:recursively:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1408032-enumeratechildnodesusingblock": {
+      "title": "enumerateChildNodesUsingBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408032-enumeratechildnodesusingblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1408032-enumeratechildnodesusingblock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Executes the specified block for each of the node’s child and descendant nodes."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "enumerateChildNodesUsingBlock:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1642248-enumeratehierarchyusingblock": {
+      "title": "enumerateHierarchyUsingBlock:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1642248-enumeratehierarchyusingblock",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1642248-enumeratehierarchyusingblock",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Executes the specified block for each of the node’s child and descendant nodes, as well as for the node itself."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "enumerateHierarchyUsingBlock:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407949-filters": {
+      "title": "filters",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407949-filters",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407949-filters",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An array of Core Image filters to be applied to the rendered contents of the node."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1408012-rendererdelegate": {
+      "title": "rendererDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408012-rendererdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1408012-rendererdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object responsible for rendering custom contents for the node using Metal or OpenGL."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407988-physicsbody": {
+      "title": "physicsBody",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407988-physicsbody",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407988-physicsbody",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The physics body associated with the node."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1408006-physicsfield": {
+      "title": "physicsField",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408006-physicsfield",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1408006-physicsfield",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The physics field associated with the node."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1523123-addparticlesystem": {
+      "title": "addParticleSystem:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1523123-addparticlesystem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1523123-addparticlesystem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Attaches a particle system to the node."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addParticleSystem:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1522705-particlesystems": {
+      "title": "particleSystems",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1522705-particlesystems",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1522705-particlesystems",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The particle systems attached to the node."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1524014-removeparticlesystem": {
+      "title": "removeParticleSystem:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1524014-removeparticlesystem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1524014-removeparticlesystem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes a particle system attached to the node."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeParticleSystem:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1522801-removeallparticlesystems": {
+      "title": "removeAllParticleSystems",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1522801-removeallparticlesystems",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1522801-removeallparticlesystems",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes any particle systems directly attached to the node."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeAllParticleSystems"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1523464-addaudioplayer": {
+      "title": "addAudioPlayer:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1523464-addaudioplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1523464-addaudioplayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds the specified auto player to the node and begins playback."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "addAudioPlayer:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1523244-audioplayers": {
+      "title": "audioPlayers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1523244-audioplayers",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1523244-audioplayers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The audio players currently attached to the node."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1522767-removeaudioplayer": {
+      "title": "removeAudioPlayer:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1522767-removeaudioplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1522767-removeaudioplayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes the specified audio player from the node, stopping playback."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeAudioPlayer:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1523570-removeallaudioplayers": {
+      "title": "removeAllAudioPlayers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1523570-removeallaudioplayers",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1523570-removeallaudioplayers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Removes all audio players attached to the node, stopping playback."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "removeAllAudioPlayers"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1408046-clone": {
+      "title": "clone",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408046-clone",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1408046-clone",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a copy of the node and its children."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "clone"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407960-flattenedclone": {
+      "title": "flattenedClone",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407960-flattenedclone",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407960-flattenedclone",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates an optimized copy of the node and its children."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "flattenedClone"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407998-hittestwithsegmentfrompoint": {
+      "title": "hitTestWithSegmentFromPoint:toPoint:options:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407998-hittestwithsegmentfrompoint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407998-hittestwithsegmentfrompoint",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Searches the node’s child node subtree for objects intersecting a line segment between two specified points."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "hitTestWithSegmentFromPoint:toPoint:options:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnhittestoption": {
+      "title": "SCNHitTestOption",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnhittestoption",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnhittestoption",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options affecting the behavior of SceneKit hit-testing methods."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881861-simdrotateby": {
+      "title": "simdRotateBy:aroundTarget:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881861-simdrotateby",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881861-simdrotateby",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the node's position and orientation, relative to its current transform, through a rotation around the specified point in scene space."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "simdRotateBy:aroundTarget:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881858-simdlocaltranslateby": {
+      "title": "simdLocalTranslateBy:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881858-simdlocaltranslateby",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881858-simdlocaltranslateby",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the node's position relative to its current position."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "simdLocalTranslateBy:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881844-simdlocalrotateby": {
+      "title": "simdLocalRotateBy:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881844-simdlocalrotateby",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881844-simdlocalrotateby",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the node's orientation relative to its current orientation."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "simdLocalRotateBy:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881870-simdlookat": {
+      "title": "simdLookAt:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881870-simdlookat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881870-simdlookat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the node's orientation so that its local forward vector points toward the specified location."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "simdLookAt:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881848-simdlookat": {
+      "title": "simdLookAt:up:localFront:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881848-simdlookat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881848-simdlookat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the node's orientation so that the specified forward vector points toward the specified location."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "simdLookAt:up:localFront:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881851-simdlocalright": {
+      "title": "simdLocalRight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881851-simdlocalright",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881851-simdlocalright",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The direction SceneKit treats as \"right\" in local space for all nodes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881872-simdlocalup": {
+      "title": "simdLocalUp",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881872-simdlocalup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881872-simdlocalup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The direction SceneKit treats as \"up\" in local space for all nodes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881864-simdlocalfront": {
+      "title": "simdLocalFront",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881864-simdlocalfront",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881864-simdlocalfront",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The unit vector SceneKit treats as \"forward\" in local space for all nodes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881857-simdworldright": {
+      "title": "simdWorldRight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881857-simdworldright",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881857-simdworldright",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The \"right\" (+X) direction vector relative to the node, expressed in world space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881867-simdworldup": {
+      "title": "simdWorldUp",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881867-simdworldup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881867-simdworldup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The \"up\" (+Y) direction vector relative to the node, expressed in world space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881863-simdworldfront": {
+      "title": "simdWorldFront",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881863-simdworldfront",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881863-simdworldfront",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The \"forward\" (-Z) direction vector relative to the node, expressed in world space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881868-simdworldtransform": {
+      "title": "simdWorldTransform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881868-simdworldtransform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881868-simdworldtransform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The world transform applied to the node."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881865-simdworldorientation": {
+      "title": "simdWorldOrientation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881865-simdworldorientation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881865-simdworldorientation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The node's orientation relative to the scene's world coordinate space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881856-simdworldposition": {
+      "title": "simdWorldPosition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881856-simdworldposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881856-simdworldposition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The node's position relative to the scene's world coordinate space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881852-simdconvertposition": {
+      "title": "simdConvertPosition:fromNode:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881852-simdconvertposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881852-simdconvertposition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a position to the node’s local coordinate space from that of another node."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "simdConvertPosition:fromNode:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881869-simdconvertposition": {
+      "title": "simdConvertPosition:toNode:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881869-simdconvertposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881869-simdconvertposition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a position from the node’s local coordinate space to that of another node."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "simdConvertPosition:toNode:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881866-simdconverttransform": {
+      "title": "simdConvertTransform:fromNode:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881866-simdconverttransform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881866-simdconverttransform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a transform to the node’s local coordinate space from that of another node."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "simdConvertTransform:fromNode:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881855-simdconverttransform": {
+      "title": "simdConvertTransform:toNode:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881855-simdconverttransform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881855-simdconverttransform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a transform from the node’s local coordinate space to that of another node."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "simdConvertTransform:toNode:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881842-simdconvertvector": {
+      "title": "simdConvertVector:fromNode:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881842-simdconvertvector",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881842-simdconvertvector",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a direction vector to the node’s local coordinate space from that of another node."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "simdConvertVector:fromNode:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881850-simdconvertvector": {
+      "title": "simdConvertVector:toNode:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881850-simdconvertvector",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881850-simdconvertvector",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a direction vector from the node’s local coordinate space to that of another node."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "simdConvertVector:toNode:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2881853-focusbehavior": {
+      "title": "focusBehavior",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2881853-focusbehavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2881853-focusbehavior",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The focus behavior for a node."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnodefocusbehavior": {
+      "title": "SCNNodeFocusBehavior",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnodefocusbehavior",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnodefocusbehavior",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Options for the focusable states of a SceneKit node. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2873004-entity": {
+      "title": "entity",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2873004-entity",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2873004-entity",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The GameplayKit entity this node represents."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407980-eulerangles": {
+      "title": "eulerAngles",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407980-eulerangles",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407980-eulerangles",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The node’s orientation, expressed as pitch, yaw, and roll angles in radians. Animatable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1408048-orientation": {
+      "title": "orientation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408048-orientation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1408048-orientation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The node’s orientation, expressed as a quaternion. Animatable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1408044-pivot": {
+      "title": "pivot",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408044-pivot",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1408044-pivot",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The pivot point for the node’s position, rotation, and scale. Animatable."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2867399-rotateby": {
+      "title": "rotateBy:aroundTarget:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2867399-rotateby",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2867399-rotateby",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the node's position and orientation, relative to its current transform, through a rotation around the specified point in scene space."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "rotateBy:aroundTarget:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2867383-localtranslateby": {
+      "title": "localTranslateBy:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2867383-localtranslateby",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2867383-localtranslateby",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the node's position relative to its current position."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "localTranslateBy:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2867398-localrotateby": {
+      "title": "localRotateBy:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2867398-localrotateby",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2867398-localrotateby",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the node's orientation relative to its current orientation."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "localRotateBy:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2867394-lookat": {
+      "title": "lookAt:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2867394-lookat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2867394-lookat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the node's orientation so that its local forward vector points toward the specified location."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "lookAt:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2867396-lookat": {
+      "title": "lookAt:up:localFront:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2867396-lookat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2867396-lookat",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Changes the node's orientation so that the specified forward vector points toward the specified location."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "lookAt:up:localFront:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2867400-localright": {
+      "title": "localRight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2867400-localright",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2867400-localright",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The direction SceneKit treats as \"right\" in local space for all nodes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2867386-localup": {
+      "title": "localUp",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2867386-localup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2867386-localup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The direction SceneKit treats as \"up\" in local space for all nodes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2867393-localfront": {
+      "title": "localFront",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2867393-localfront",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2867393-localfront",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The unit vector SceneKit treats as \"forward\" in local space for all nodes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2867404-worldright": {
+      "title": "worldRight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2867404-worldright",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2867404-worldright",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The \"right\" (+X) direction vector relative to the node, expressed in world space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2867395-worldup": {
+      "title": "worldUp",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2867395-worldup",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2867395-worldup",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The \"up\" (+Y) direction vector relative to the node, expressed in world space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2867392-worldfront": {
+      "title": "worldFront",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2867392-worldfront",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2867392-worldfront",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The \"forward\" (-Z) direction vector relative to the node, expressed in world space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407970-worldtransform": {
+      "title": "worldTransform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407970-worldtransform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407970-worldtransform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The world transform applied to the node."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2867401-setworldtransform": {
+      "title": "setWorldTransform:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2867401-setworldtransform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2867401-setworldtransform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the world transform applied to the node."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "setWorldTransform:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2867402-worldorientation": {
+      "title": "worldOrientation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2867402-worldorientation",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2867402-worldorientation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The node's orientation relative to the scene's world coordinate space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2867405-worldposition": {
+      "title": "worldPosition",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2867405-worldposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2867405-worldposition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The node's position relative to the scene's world coordinate space."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1408018-convertposition": {
+      "title": "convertPosition:fromNode:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408018-convertposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1408018-convertposition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a position to the node’s local coordinate space from that of another node."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "convertPosition:fromNode:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407990-convertposition": {
+      "title": "convertPosition:toNode:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407990-convertposition",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407990-convertposition",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a position from the node’s local coordinate space to that of another node."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "convertPosition:toNode:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407996-converttransform": {
+      "title": "convertTransform:fromNode:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407996-converttransform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407996-converttransform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a transform to the node’s local coordinate space from that of another node."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "convertTransform:fromNode:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1407986-converttransform": {
+      "title": "convertTransform:toNode:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407986-converttransform",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1407986-converttransform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a transform from the node’s local coordinate space to that of another node."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "convertTransform:toNode:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2867403-convertvector": {
+      "title": "convertVector:fromNode:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2867403-convertvector",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2867403-convertvector",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a direction vector to the node’s local coordinate space from that of another node."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "convertVector:fromNode:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/2867397-convertvector": {
+      "title": "convertVector:toNode:",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/2867397-convertvector",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/2867397-convertvector",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Converts a direction vector from the node’s local coordinate space to that of another node."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "- "
+        },
+        {
+          "kind": "identifier",
+          "text": "convertVector:toNode:"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/organizing_a_scene_with_nodes": {
+      "title": "Organizing a Scene with Nodes ",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/organizing_a_scene_with_nodes",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/scenekit/organizing_a_scene_with_nodes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use nodes to define the structure of a scene."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnreferencenode": {
+      "title": "SCNReferenceNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnreferencenode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnreferencenode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A scene graph node that serves as a placeholder for content to be loaded from a separate scene file. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "relationshipsSections": [
+    {
+      "kind": "relationships",
+      "title": "Inherits From",
+      "type": "inheritsFrom",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/objectivec/nsobject"
+      ]
+    },
+    {
+      "kind": "relationships",
+      "title": "Conforms To",
+      "type": "conformsTo",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/foundation/nscopying",
+        "doc://com.apple.documentation/documentation/foundation/nssecurecoding",
+        "doc://com.apple.documentation/documentation/scenekit/scnactionable",
+        "doc://com.apple.documentation/documentation/scenekit/scnanimatable",
+        "doc://com.apple.documentation/documentation/scenekit/scnboundingvolume",
+        "doc://com.apple.documentation/documentation/uikit/uifocusitem"
+      ]
+    }
+  ],
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Creating a Node",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407972-node",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1408020-nodewithgeometry",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1419841-nodewithmdlobject"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing the Node's Transform",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881843-simdtransform",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881846-simdposition",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881845-simdrotation",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881859-simdeulerangles",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881854-simdorientation",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881847-simdscale",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881849-simdpivot"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Node Content",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1408014-name",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1408004-light",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407976-camera",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407966-geometry",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1408022-morpher",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407953-skinner",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407994-categorybitmask",
+        "doc://com.apple.documentation/documentation/scenekit/scnboundingvolume"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Constraining Node Behavior",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1408016-constraints"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Working with Node Animation",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1408030-presentationnode",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407962-paused"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Modifying the Node Visibility",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407967-hidden",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1408010-opacity",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407978-renderingorder",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407955-castsshadow",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1690499-movabilityhint",
+        "doc://com.apple.documentation/documentation/scenekit/scnmovabilityhint"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing the Node Hierarchy",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407968-parentnode",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407984-childnodes",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407974-addchildnode",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407958-insertchildnode",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407991-removefromparentnode",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1408002-replacechildnode"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Searching the Node Hierarchy",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407982-childnodespassingtest",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407951-childnodewithname",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1408032-enumeratechildnodesusingblock",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1642248-enumeratehierarchyusingblock"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Customizing Node Rendering",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407949-filters",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1408012-rendererdelegate"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Adding Physics to a Node",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407988-physicsbody",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1408006-physicsfield"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Working with Particle Systems",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1523123-addparticlesystem",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1522705-particlesystems",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1524014-removeparticlesystem",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1522801-removeallparticlesystems"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Working with Positional Audio",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1523464-addaudioplayer",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1523244-audioplayers",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1522767-removeaudioplayer",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1523570-removeallaudioplayers"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Copying a Node",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1408046-clone",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407960-flattenedclone"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Hit-Testing",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407998-hittestwithsegmentfrompoint",
+        "doc://com.apple.documentation/documentation/scenekit/scnhittestoption"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Performing Node-Relative Operations",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881861-simdrotateby",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881858-simdlocaltranslateby",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881844-simdlocalrotateby",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881870-simdlookat",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881848-simdlookat"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Calculating Node-Relative Transforms",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881851-simdlocalright",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881872-simdlocalup",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881864-simdlocalfront",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881857-simdworldright",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881867-simdworldup",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881863-simdworldfront"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Transforms in World Space",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881868-simdworldtransform",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881865-simdworldorientation",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881856-simdworldposition"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Converting Between Coordinate Spaces",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881852-simdconvertposition",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881869-simdconvertposition",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881866-simdconverttransform",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881855-simdconverttransform",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881842-simdconvertvector",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881850-simdconvertvector"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Handling UI Focus",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2881853-focusbehavior",
+        "doc://com.apple.documentation/documentation/scenekit/scnnodefocusbehavior"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Working with GameplayKit",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2873004-entity"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing the Node’s Transform (SceneKit Types)",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407964-transform",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1408026-position",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1408034-rotation",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407980-eulerangles",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1408048-orientation",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1408050-scale",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1408044-pivot"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Performing Node-Relative Operations (SceneKit Types)",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2867399-rotateby",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2867383-localtranslateby",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2867398-localrotateby",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2867394-lookat",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2867396-lookat"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Calculating Node-Relative Transforms (SceneKit Types)",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2867400-localright",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2867386-localup",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2867393-localfront",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2867404-worldright",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2867395-worldup",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2867392-worldfront"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Managing Transforms in World Space (SceneKit Types)",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407970-worldtransform",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2867401-setworldtransform",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2867402-worldorientation",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2867405-worldposition"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Converting Between Coordinate Spaces (SceneKit Types)",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1408018-convertposition",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407990-convertposition",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407996-converttransform",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/1407986-converttransform",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2867403-convertvector",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode/2867397-convertvector"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/organizing_a_scene_with_nodes",
+        "doc://com.apple.documentation/documentation/scenekit/scnreferencenode"
+      ],
+      "title": "Scene Structure",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "occ"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "@interface"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "SCNNode"
+            },
+            {
+              "kind": "text",
+              "text": " : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "c:objc(cs)NSObject",
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/nsobject",
+              "text": "NSObject"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode"
+            },
+            {
+              "type": "text",
+              "text": " object by itself has no visible content when the scene containing it is rendered—it represents only a coordinate space transform (position, orientation, and scale) relative to its parent node. To construct a scene, you use a hierarchy of nodes to create its structure, then add lights, cameras, and geometry to nodes to create visible content."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Nodes Determine the Structure of a Scene",
+          "anchor": "1654929"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The hierarchy of nodes, or "
+            },
+            {
+              "type": "strong",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "scene graph"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", in a scene defines both the organization of its contents and your ability to present and manipulate those contents using SceneKit. You may create a node hierarchy programmatically using SceneKit, load one from a file created using 3D authoring tools, or combine the two approaches. SceneKit provides many utilities for organizing and searching the scene graph—for details, see the methods in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode#1655182"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode#1655236"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscene/1524029-rootnode"
+            },
+            {
+              "type": "text",
+              "text": " object in a scene defines the coordinate system of the world rendered by SceneKit. Each child node you add to this root node creates its own coordinate system, which is in turn inherited by its own children. You determine the transformation between coordinate systems using the node’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408026-position"
+            },
+            {
+              "type": "text",
+              "text": ", "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408034-rotation"
+            },
+            {
+              "type": "text",
+              "text": ", and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408050-scale"
+            },
+            {
+              "type": "text",
+              "text": " properties properties (or directly using its "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1407964-transform"
+            },
+            {
+              "type": "text",
+              "text": " property)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You use a hierarchy of nodes and transformations to model the contents of your scene in a way that suits the needs of your app. For example, if your app presents an animated view of a solar system, you can construct a node hierarchy that models celestial bodies relative to one another: Each planet can be a node, with its orbit and its current position in that orbit defined in the coordinate system of the sun. A planet node defines its own coordinate space, useful both for specifying the planet’s rotation and the orbits of its moons (each of which is a child node of its planet). With this scene hierarchy, you can easily add realistic animation to the scene—animating both the revolution of a moon around its planet and the planet around the sun will combine the animations so that the moon follows the planet."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "A Node’s Attachments Define Visual Content and Behavior",
+          "anchor": "1654943"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The node hierarchy determines the spatial and logical structure of a scene, but not its visible contents. You add 2D and 3D objects to a scene by attaching "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometry"
+            },
+            {
+              "type": "text",
+              "text": " objects to nodes. (Geometries, in turn, have attached "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnmaterial"
+            },
+            {
+              "type": "text",
+              "text": " objects that determine their appearance.) To shade the geometries in a scene with light and shadow effects, add nodes with attached "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnlight"
+            },
+            {
+              "type": "text",
+              "text": " objects. To control the viewpoint from which the scene appears when rendered, add nodes with attached "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scncamera"
+            },
+            {
+              "type": "text",
+              "text": " objects."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To add physics-based behaviors and special effects to SceneKit content, use other types of node attachments. For example, an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsbody"
+            },
+            {
+              "type": "text",
+              "text": " object defines a node’s characteristics for physics simulation, and an "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnphysicsfield"
+            },
+            {
+              "type": "text",
+              "text": " object applies forces to physics bodies in an area around the node. An "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnparticlesystem"
+            },
+            {
+              "type": "text",
+              "text": " object attached to a node renders particle effects such as fire, rain, or falling leaves in the space defined by a node."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To improve performance, SceneKit can share attachments between multiple nodes. For example, in a racing game that includes many identical cars, the scene graph would contain many nodes—one to position and animate each car—but all car nodes would reference the same geometry object."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

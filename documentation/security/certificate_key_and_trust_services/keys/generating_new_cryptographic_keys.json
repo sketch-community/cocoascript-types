@@ -1,0 +1,704 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Create both asymmetric and symmetric cryptographic keys."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2863923,
+  "kind": "article",
+  "metadata": {
+    "title": "Generating New Cryptographic Keys",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services": {
+      "title": "Certificate, Key, and Trust Services",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services",
+      "url": "/documentation/security/certificate_key_and_trust_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys": {
+      "title": "Keys",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys#2863926": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys#2863926",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys#2863926"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrkeytype": {
+      "title": "kSecAttrKeyType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeytype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrkeytype"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrkeysizeinbits": {
+      "title": "kSecAttrKeySizeInBits",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeysizeinbits",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrkeysizeinbits"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecprivatekeyattrs": {
+      "title": "kSecPrivateKeyAttrs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecprivatekeyattrs",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecprivatekeyattrs"
+    },
+    "doc://com.apple.documentation/documentation/objectivec/yes": {
+      "title": "YES",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/objectivec/yes",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/objectivec/yes"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrispermanent": {
+      "title": "kSecAttrIsPermanent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrispermanent",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrispermanent"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecattrapplicationtag": {
+      "title": "kSecAttrApplicationTag",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecattrapplicationtag",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecattrapplicationtag"
+    },
+    "doc://com.apple.documentation/documentation/foundation/nsdata": {
+      "title": "NSData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/foundation/nsdata"
+    },
+    "doc://com.apple.documentation/documentation/security/ksecpublickeyattrs": {
+      "title": "kSecPublicKeyAttrs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/ksecpublickeyattrs",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/ksecpublickeyattrs"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/key_generation_attributes": {
+      "title": "Key Generation Attributes",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/key_generation_attributes",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/key_generation_attributes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use attribute dictionary keys during cryptographic key generation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1395547-secitemdelete": {
+      "title": "SecItemDelete",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1395547-secitemdelete",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1395547-secitemdelete"
+    },
+    "doc://com.apple.documentation/documentation/security/1823694-seckeycreaterandomkey": {
+      "title": "SecKeyCreateRandomKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1823694-seckeycreaterandomkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1823694-seckeycreaterandomkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Generates a new private/public key pair."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys#2863928": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys#2863928",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys#2863928"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain": {
+      "title": "Storing Keys in the Keychain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain"
+    },
+    "doc://com.apple.documentation/documentation/security/1643774-seckeycopypublickey": {
+      "title": "SecKeyCopyPublicKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1643774-seckeycopypublickey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1643774-seckeycopypublickey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Gets the public key associated with the given private key."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys#2863929": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys#2863929",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys#2863929"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys#2863930": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys#2863930",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys#2863930"
+    },
+    "doc://com.apple.documentation/documentation/security/1643957-seckeycreateencrypteddata": {
+      "title": "SecKeyCreateEncryptedData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1643957-seckeycreateencrypteddata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1643957-seckeycreateencrypteddata"
+    },
+    "doc://com.apple.documentation/documentation/security/1644043-seckeycreatedecrypteddata": {
+      "title": "SecKeyCreateDecryptedData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1644043-seckeycreatedecrypteddata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1644043-seckeycreatedecrypteddata"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption": {
+      "title": "Using Keys for Encryption",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/getting_an_existing_key": {
+      "title": "Getting an Existing Key",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/getting_an_existing_key",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/getting_an_existing_key"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys": {
+      "title": "Generating New Cryptographic Keys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/generating_new_cryptographic_keys",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create both asymmetric and symmetric cryptographic keys."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_secure_enclave": {
+      "title": "Storing Keys in the Secure Enclave",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_secure_enclave",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_secure_enclave",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create an extra layer of security for your private keys."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_secure_enclave",
+        "doc://com.apple.documentation/documentation/security/1823694-seckeycreaterandomkey",
+        "doc://com.apple.documentation/documentation/security/1643774-seckeycopypublickey",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/key_generation_attributes"
+      ],
+      "title": "Key Generation",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Very often, you retrieve a key from an identity, a certificate, or the keychain, or with some other method described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/getting_an_existing_key"
+            },
+            {
+              "type": "text",
+              "text": ". Sometimes, however, you need to create your own keys."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Creating an Asymmetric Key Pair",
+          "anchor": "2863927"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "An asymmetric cryptographic key pair is composed of a public and a private key that are generated together. You distribute the public key freely, but you keep the private key secret. One or both may be stored in a keychain for safekeeping."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You create an asymmetric key pair by first creating an attributes dictionary:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "NSData* tag = [@\"com.example.keys.mykey\" dataUsingEncoding:NSUTF8StringEncoding];",
+            "NSDictionary* attributes =",
+            "    @{ (id)kSecAttrKeyType:               (id)kSecAttrKeyTypeRSA,",
+            "       (id)kSecAttrKeySizeInBits:         @2048,",
+            "       (id)kSecPrivateKeyAttrs:",
+            "           @{ (id)kSecAttrIsPermanent:    @YES,",
+            "              (id)kSecAttrApplicationTag: tag,",
+            "              },",
+            "     };"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2863926",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "At a minimum, you specify the type and size of keys to create using the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeytype"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecattrkeysizeinbits"
+            },
+            {
+              "type": "text",
+              "text": " parameters, respectively. The above example indicates 2048-bit RSA keys, though other options are available."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You then optionally add a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecprivatekeyattrs"
+            },
+            {
+              "type": "text",
+              "text": " parameter with a subdictionary that characterizes the private key. By assigning a value of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/objectivec/yes"
+            },
+            {
+              "type": "text",
+              "text": " to the private key’s "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecattrispermanent"
+            },
+            {
+              "type": "text",
+              "text": " attribute, you store it in the default keychain while creating it. You also specify the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecattrapplicationtag"
+            },
+            {
+              "type": "text",
+              "text": " attribute with a unique "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/foundation/nsdata"
+            },
+            {
+              "type": "text",
+              "text": " value so that you can find and retrieve it from the keychain later. The tag data is constructed from a string, using reverse DNS notation, though any unique tag will do."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You could add a "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/ksecpublickeyattrs"
+            },
+            {
+              "type": "text",
+              "text": " attribute to the attributes dictionary, specifying a distinct tag and keychain storage for the public key. However, it’s typically easier to store only the private key and then generate the public key from it when needed. That way you don’t need to keep track of another tag or clutter your keychain."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For a complete list of available key attributes, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/key_generation_attributes"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Be sure that you don’t generate multiple, identically tagged keys. These are difficult to tell apart during retrieval, unless they differ in some other, searchable characteristic. Instead, use a unique tag for each key generation operation, or delete old keys with a given tag using "
+                },
+                {
+                  "type": "reference",
+                  "isActive": true,
+                  "identifier": "doc://com.apple.documentation/documentation/security/1395547-secitemdelete"
+                },
+                {
+                  "type": "text",
+                  "text": " before creating a new one with that tag."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You then call the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1823694-seckeycreaterandomkey"
+            },
+            {
+              "type": "text",
+              "text": " function with the attributes dictionary:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "CFErrorRef error = NULL;",
+            "SecKeyRef privateKey = SecKeyCreateRandomKey((__bridge CFDictionaryRef)attributes,",
+            "                                             &error);",
+            "if (!privateKey) {",
+            "    NSError *err = CFBridgingRelease(error);  // ARC takes ownership",
+            "    // Handle the error. . .",
+            "}"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2863928",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the function fails to create a key, as indicated by a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NULL"
+            },
+            {
+              "type": "text",
+              "text": " return value, it fills in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "error"
+            },
+            {
+              "type": "text",
+              "text": " parameter to indicate the reason for failure. Otherwise, the key reference points to a new private key that’s ready for use. The key is also stored in the default keychain, from where you can read it later, as described in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain"
+            },
+            {
+              "type": "text",
+              "text": ". If you need the corresponding public key (now or later), call the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1643774-seckeycopypublickey"
+            },
+            {
+              "type": "text",
+              "text": " function with the private key reference:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "SecKeyRef publicKey = SecKeyCopyPublicKey(privateKey);"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2863929",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In Objective-C, when you’re done with these key references, however you obtained them, you are responsible for releasing the associated memory:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "if (publicKey)  { CFRelease(publicKey);  }",
+            "if (privateKey) { CFRelease(privateKey); }"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2863930",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Creating a Symmetric Key",
+          "anchor": "2863931"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Asymmetric key cryptography is useful because it enables secure communication between two players who don’t share a secret ahead of time. However, it’s not ideal for bulk data transfer, because it’s computationally expensive and because it operates on small, fixed-sized chunks of data. Symmetric key cryptography, on the other hand, is computationally efficient. It allows you to handle data streams of arbitrary length but requires that both sender and receiver, and no one else, know the secret key."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To get the best of both worlds, you often use asymmetric cryptography to communicate a symmetric cryptographic key that you then use for bulk data transfer. When you do this with the certificate, key, and trust services API, you don’t explicitly create the symmetric key yourself. Instead, you call "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1643957-seckeycreateencrypteddata"
+            },
+            {
+              "type": "text",
+              "text": " to create a symmetric key for you. This function creates the symmetric key, uses it to encrypt your data, and then encrypts the key itself with the public key that you provide. It then packages all of this data together and returns it to you. You then transmit it to a receiver, who uses the corresponding private key in a call to "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/1644043-seckeycreatedecrypteddata"
+            },
+            {
+              "type": "text",
+              "text": " to reverse the operation. For more details, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys/using_keys_for_encryption"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

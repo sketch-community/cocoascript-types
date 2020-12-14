@@ -1,0 +1,245 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Metadata describing the unit of measurement used in a scene file, used with the "
+    },
+    {
+      "type": "reference",
+      "isActive": true,
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscenesourceassetunitkey"
+    },
+    {
+      "type": "text",
+      "text": " key."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/scenekit",
+        "doc://com.apple.documentation/documentation/scenekit/scnscenesource"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/scenekit/scnscenesource/unit_dictionary_keys",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1655219,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Unit Dictionary Keys",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "SceneKit"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/scenekit/scnscenesource/unit_dictionary_keys"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/scenekit/scnscenesource/unit_dictionary_keys"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/scenekit": {
+      "title": "SceneKit",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit",
+      "url": "/documentation/scenekit",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnscenesource": {
+      "title": "SCNSceneSource",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscenesource",
+      "url": "/documentation/scenekit/scnscenesource",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "symbol"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnscenesourceassetunitkey": {
+      "title": "SCNSceneSourceAssetUnitKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscenesourceassetunitkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnscenesourceassetunitkey"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnscenesourceassetunitnamekey": {
+      "title": "SCNSceneSourceAssetUnitNameKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscenesourceassetunitnamekey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnscenesourceassetunitnamekey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The name of the unit used in the scene file."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnscenesourceassetunitmeterkey": {
+      "title": "SCNSceneSourceAssetUnitMeterKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscenesourceassetunitmeterkey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnscenesourceassetunitmeterkey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The conversion factor from the unit used in the scene file to the SI meter."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode/1408050-scale": {
+      "title": "scale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408050-scale",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode/1408050-scale"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Constants",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnscenesourceassetunitnamekey",
+        "doc://com.apple.documentation/documentation/scenekit/scnscenesourceassetunitmeterkey"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "By default, units of measurement for SceneKit are entirely arbitrary. A geometry’s vertex data is defined in whatever unit system and coordinate space is convenient for its author. The nodes in a scene each define their own space as is convenient for organizing the scene’s contents, and the camera that views a scene and the renderer that draws it determine the correspondence between the scene’s world and the pixels on a display."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Nevertheless, it can be useful for authors of 3D assets to establish a unit scale for the art they create. A scene file can identify the intended unit of measure for the world space their contents are defined in. If you load assets from multiple sources and combine them in a single scene, you can use the units specified in each source to determine how to scale each asset in the combined scene. When working with units from a scene file, the arbitrary unit of distance that SceneKit’s world space corresponds to the meter defined in the International System of Units (SI)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For example, one scene file might contain geometry representing a vehicle, having no designated unit but designed on a scale where one unit equals one meter. Another scene file might contain geometry representing a person, with a designated unit of US—the unit dictionary for the scene file contains the string "
+            },
+            {
+              "type": "codeVoice",
+              "code": "inch"
+            },
+            {
+              "type": "text",
+              "text": " for the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscenesourceassetunitnamekey"
+            },
+            {
+              "type": "text",
+              "text": " key, and the number "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0.0254"
+            },
+            {
+              "type": "text",
+              "text": " for the "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscenesourceassetunitmeterkey"
+            },
+            {
+              "type": "text",
+              "text": " key. To place these objects together in the same scene at appropriate sizes, set the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode/1408050-scale"
+            },
+            {
+              "type": "text",
+              "text": " property of the node containing the person geometry to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0.0254"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

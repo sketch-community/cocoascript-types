@@ -1,0 +1,1397 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Use LAPACK to solve a linear system and find an interpolating polynomial to construct new points between a series of known data points."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3521009,
+  "kind": "article",
+  "metadata": {
+    "title": "Finding an Interpolating Polynomial Using the Vandermonde Method",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521016": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521016",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521016"
+    },
+    "link-media-3521355": {
+      "identifier": "link-media-3521355",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521355"
+    },
+    "media-3521355": {
+      "identifier": "media-3521355",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 252,
+            "height": 250
+          },
+          "url": "https://docs-assets.developer.apple.com/published/d563b07737/72d681b3-0e0e-4eb8-9674-1ce24dda71f0.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 252,
+            "height": 250
+          },
+          "url": "https://docs-assets.developer.apple.com/published/8cd430c1c1/f187eed4-dcd6-4b5f-8b37-57a7cf09e272.png"
+        }
+      ],
+      "alt": "Equation that shows the form of a 5 x 5 Vandermonde matrix. Each row corresponds to an element in the source vector, x, raised to the power of 0, 1, 2, 3, and 4.",
+      "title": "Figure 2"
+    },
+    "link-media-3521356": {
+      "identifier": "link-media-3521356",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521356"
+    },
+    "media-3521356": {
+      "identifier": "media-3521356",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 167,
+            "height": 250
+          },
+          "url": "https://docs-assets.developer.apple.com/published/a3d8d4519f/0ba1b220-c746-4cd5-864d-dcb28c9286ab.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 167,
+            "height": 250
+          },
+          "url": "https://docs-assets.developer.apple.com/published/6847191596/22645e7a-cf13-4c19-930e-8dda0b1cf2f5.png"
+        }
+      ],
+      "alt": "Equation that shows a 5 row matrix containing the values 0, 10, 1, -2, 2, 3, 3, -10, 4, 16.",
+      "title": "Figure 3"
+    },
+    "link-media-3521354": {
+      "identifier": "link-media-3521354",
+      "type": "link",
+      "title": "Figure 4",
+      "url": "/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521354"
+    },
+    "media-3521354": {
+      "identifier": "media-3521354",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 353,
+            "height": 250
+          },
+          "url": "https://docs-assets.developer.apple.com/published/3b21757e26/98d094f5-b86f-4462-adc6-eefd56eda5c8.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 353,
+            "height": 250
+          },
+          "url": "https://docs-assets.developer.apple.com/published/81fdbf53c6/42db35e9-0a58-4775-a734-e4e48c7b787c.png"
+        }
+      ],
+      "alt": "Equation that shows the derived Vandermonde matrix.",
+      "title": "Figure 4"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521017": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521017",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521017"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521012": {
+      "title": "Create a Vandermonde Matrix",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521012",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521012"
+    },
+    "link-media-3521363": {
+      "identifier": "link-media-3521363",
+      "type": "link",
+      "title": "Figure 5",
+      "url": "/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521363"
+    },
+    "media-3521363": {
+      "identifier": "media-3521363",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 592,
+            "height": 242
+          },
+          "url": "https://docs-assets.developer.apple.com/published/6e8d39bb59/cadb2013-9bb6-40ce-895f-582491df1d93.png"
+        }
+      ],
+      "alt": "Equation that shows Ax=b.",
+      "title": "Figure 5"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521011": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521011",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521011"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521019": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521019",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521019"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240955-evaluatepolynomial": {
+      "title": "evaluatePolynomial(usingCoefficients:withVariables:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240955-evaluatepolynomial",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3240955-evaluatepolynomial"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521365": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521365",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521365"
+    },
+    "link-media-3521367": {
+      "identifier": "link-media-3521367",
+      "type": "link",
+      "title": "Figure 6",
+      "url": "/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521367"
+    },
+    "media-3521367": {
+      "identifier": "media-3521367",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 1344,
+            "height": 250
+          },
+          "url": "https://docs-assets.developer.apple.com/published/0d0cbf2c01/e0755757-9413-4ec4-b720-3554495ff15a.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 1344,
+            "height": 250
+          },
+          "url": "https://docs-assets.developer.apple.com/published/423092962a/671879b4-8c9f-4e7c-a404-b91b4ae3f793.png"
+        }
+      ],
+      "alt": "Equation that shows the polynomial evaluation for the coefficients five, six, and seven, and the variables one, two, and three.",
+      "title": "Figure 6"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3241088-ramp": {
+      "title": "ramp(in:count:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241088-ramp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3241088-ramp"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521014": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521014",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521014"
+    },
+    "link-media-3521370": {
+      "identifier": "link-media-3521370",
+      "type": "link",
+      "title": "Figure 7",
+      "url": "/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521370"
+    },
+    "media-3521370": {
+      "identifier": "media-3521370",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 325
+          },
+          "url": "https://docs-assets.developer.apple.com/published/e90cff1ddf/f834e101-0cba-47ee-b134-a184642e5de1.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 325
+          },
+          "url": "https://docs-assets.developer.apple.com/published/2493129af4/cee8ab35-0617-405a-9fa6-7a2683885116.png"
+        }
+      ],
+      "alt": "Diagram showing a series of dots, that indicate known data points, joined by a continuous curve, that indicates interpolated values.",
+      "title": "Figure 7"
+    },
+    "link-media-3521008": {
+      "identifier": "link-media-3521008",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521008"
+    },
+    "media-3521008": {
+      "identifier": "media-3521008",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 325
+          },
+          "url": "https://docs-assets.developer.apple.com/published/795dc7064d/15cafc31-160b-4bd5-b9f2-13ea1f6b752e.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 325
+          },
+          "url": "https://docs-assets.developer.apple.com/published/21bac61a18/1b5cc211-e60c-47a0-873e-7122d3708f09.png"
+        }
+      ],
+      "alt": "Diagram showing a series of dots, that indicate known data points, joined by a continuous curve, that indicates interpolated values.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method": {
+      "title": "Finding an Interpolating Polynomial Using the Vandermonde Method",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use LAPACK to solve a linear system and find an interpolating polynomial to construct new points between a series of known data points."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/blas": {
+      "title": "BLAS",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/blas",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/blas",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Apple’s implementation of the Basic Linear Algebra Subprograms (BLAS)."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/blas"
+      ],
+      "title": "Linear Algebra",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This article demonstrates how you can generate a continuous curve that passes through a small set of points by computing an "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "interpolating polynomial"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ". A polynomial is the sum of a series of terms constructed from variables, coefficients, and exponents (for example, "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "6x³ + 7x²"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", where "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "6"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "7"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " and the coefficients, and "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "x"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " is the variable); and an interpolating polynomial fills in the gaps between the supplied variables and coeefficients."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For any number of data points, there is a unique interpolating polynomial of order (that is, the largest exponent) which is the number of data points minus one. However, for large numbers of data points, this solution can become numerically unstable."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The image below shows five known points, as white dots, and the values generated by evaluating the found interpolating polynomial, as a red line:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3521008",
+              "metadata": {
+                "anchor": "3521008",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The code in this article determines the polynomial coefficients using a Vandermonde matrix based on the x-components of the known points. The coefficients are the solution to "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Ax=b"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", where "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " is the Vandermonde matrix and "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "b"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " is a vector of the y-components of the known points. You'll use LAPACK to solve "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Ax=b"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ". LAPACK is an acronym for Linear Algebra Package and is a standard software library for numerical linear algebra."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Generate Known Data",
+          "anchor": "3521010"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create an array containing five two-element vectors that describe the known data points between which the code will interpolate. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In a real-world app, you will most likely acquire data points from an external source such a meteorological or financial data source. For this example, specify x-components that are evenly distributed between 0 and 1023, and generate random y-components:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "import simd",
+            "",
+            "let points: [simd_double2] = [",
+            "    simd_double2(0,    Double.random(in: -10...10)),",
+            "    simd_double2(256,  Double.random(in: -10...10)),",
+            "    simd_double2(512,  Double.random(in: -10...10)),",
+            "    simd_double2(768,  Double.random(in: -10...10)),",
+            "    simd_double2(1023, Double.random(in: -10...10)),",
+            "    ]"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3521016",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create a Vandermonde Matrix",
+          "anchor": "3521012"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Constuct a Vandermonde matrix where the rows are defined by the elements in a source vector that are successively raised to each integer power up to the the source vector's element count, minus one. For example, in the case of a five-element source vector, "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "x"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", the Vandermonde matrix is of the form:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3521355",
+              "metadata": {
+                "anchor": "3521355",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Vandermonde matrix used in this article derives from the x-components of the points you're interpolating. For example, given the following points:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3521356",
+              "metadata": {
+                "anchor": "3521356",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The resulting Vandermonde matrix contains the following values:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3521354",
+              "metadata": {
+                "anchor": "3521354",
+                "title": "Figure 4"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code constructs a Vandermonde matrix from the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "points"
+            },
+            {
+              "type": "text",
+              "text": " array:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "import Accelerate",
+            "",
+            "let exponents = (0 ..< points.count).map {",
+            "    return Double($0)",
+            "}",
+            "",
+            "let vandermonde: [[Double]] = points.map { point in",
+            "    let bases = [Double](repeating: point.x,",
+            "                         count: points.count)",
+            "    return vForce.pow(bases: bases,",
+            "                      exponents: exponents)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3521017",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Calculate Coefficients",
+          "anchor": "3521013"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The coefficients for the polynomial are the solution to "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Ax=b"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", where "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " is the Vandermonde matrix and "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "b"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " is the y-components of the known points. For example, using the matrix created in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/finding_an_interpolating_polynomial_using_the_vandermonde_method#3521012"
+            },
+            {
+              "type": "text",
+              "text": ", the coefficients are the "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "x"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " in the following:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3521363",
+              "metadata": {
+                "anchor": "3521363",
+                "title": "Figure 5"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create the function "
+            },
+            {
+              "type": "codeVoice",
+              "code": "solveLinearSystem(a:a_rowCount:a_columnCount:b:b_count:)"
+            },
+            {
+              "type": "text",
+              "text": " to encapsulate the LAPACK routines that solve "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Ax=b"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ". Note that LAPACK overwrites "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "b"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " with the solution vector, "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "x"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ": "
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let coefficients: [Double] = {",
+            "    var a = vandermonde.flatMap{ $0 }",
+            "    var b = points.map{ $0.y }",
+            "    ",
+            "    do {",
+            "        try ViewController.solveLinearSystem(a: &a,",
+            "                                             a_rowCount: points.count,",
+            "                                             a_columnCount: points.count,",
+            "                                             b: &b,",
+            "                                             b_count: points.count)",
+            "    } catch {",
+            "        fatalError(\"Unable to solve linear system.\")",
+            "    }",
+            "    ",
+            "    vDSP.reverse(&b)",
+            "    ",
+            "    return b",
+            "}()"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3521011",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "coefficients"
+            },
+            {
+              "type": "text",
+              "text": " contains the polynomial coefficients."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Use LAPACK to Solve Linear System",
+          "anchor": "3521018"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use the LAPACK "
+            },
+            {
+              "type": "codeVoice",
+              "code": "dgels"
+            },
+            {
+              "type": "text",
+              "text": " routine to perform the solve. The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "dgels"
+            },
+            {
+              "type": "text",
+              "text": " name derives from "
+            },
+            {
+              "type": "strong",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "d"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "ouble-precision, "
+            },
+            {
+              "type": "strong",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "ge"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "neral-matrix, "
+            },
+            {
+              "type": "strong",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "l"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "east-"
+            },
+            {
+              "type": "strong",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "s"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "quares. "
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "By default, LAPACK expects matrices in column-major format. Specify transpose to support the row-major Vandermonde matrix."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Define constants used by LAPACK routines."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Pass "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "-1"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "LWORK"
+                    },
+                    {
+                      "type": "text",
+                      "text": " parameter of "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "dgels_ "
+                    },
+                    {
+                      "type": "text",
+                      "text": "to calculate the optimal size for the workspace array."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create the workspace array based on the workspace query result."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Perform the solve by passing the workspace array size to the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "LWORK"
+                    },
+                    {
+                      "type": "text",
+                      "text": " parameter of "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "dgels_"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "static func solveLinearSystem(a: inout [Double],",
+            "                              a_rowCount: Int, a_columnCount: Int,",
+            "                              b: inout [Double],",
+            "                              b_count: Int) throws {",
+            "    ",
+            "    var info = Int32(0)",
+            "    ",
+            "    // 1: Specify transpose.",
+            "    var trans = Int8(\"T\".utf8.first!)",
+            "    ",
+            "    // 2: Define constants.",
+            "    var m = __CLPK_integer(a_rowCount)",
+            "    var n = __CLPK_integer(a_columnCount)",
+            "    var lda = __CLPK_integer(a_rowCount)",
+            "    var nrhs = __CLPK_integer(1) // assumes `b` is a column matrix",
+            "    var ldb = __CLPK_integer(b_count)",
+            "    ",
+            "    // 3: Workspace query.",
+            "    var workDimension = Double(0)",
+            "    var minusOne = Int32(-1)",
+            "    ",
+            "    dgels_(&trans, &m, &n,",
+            "           &nrhs,",
+            "           &a, &lda,",
+            "           &b, &ldb,",
+            "           &workDimension, &minusOne,",
+            "           &info)",
+            "    ",
+            "    if info != 0 {",
+            "        throw LAPACKError.internalError",
+            "    }",
+            "    ",
+            "    // 4: Create workspace.",
+            "    var lwork = Int32(workDimension)",
+            "    var workspace = [Double](repeating: 0,",
+            "                             count: Int(workDimension))",
+            "    ",
+            "    // 5: Solve linear system.",
+            "    dgels_(&trans, &m, &n,",
+            "           &nrhs,",
+            "           &a, &lda,",
+            "           &b, &ldb,",
+            "           &workspace, &lwork,",
+            "           &info)",
+            "    ",
+            "    if info < 0 {",
+            "        throw LAPACKError.parameterHasIllegalValue(parameterIndex: abs(Int(info)))",
+            "    } else if info > 0 {",
+            "        throw LAPACKError.diagonalElementOfTriangularFactorIsZero(index: Int(info))",
+            "    }",
+            "}",
+            "",
+            "public enum LAPACKError: Swift.Error {",
+            "    case internalError",
+            "    case parameterHasIllegalValue(parameterIndex: Int)",
+            "    case diagonalElementOfTriangularFactorIsZero(index: Int)",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3521019",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Evaluate the Polynomial",
+          "anchor": "3521015"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The vDSP "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240955-evaluatepolynomial"
+            },
+            {
+              "type": "text",
+              "text": " function evaluates a polynomial. For example, the following code evaluates a simple polynomial that consists of three variables and three coefficients:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let coefficients: [Float] = [5, 6, 7] ",
+            "let variables: [Float] = [1, 2, 3]  ",
+            "",
+            "var c = [Float](repeating: .nan,",
+            "                count: variables.count)",
+            "",
+            "let result = vDSP.evaluatePolynomial(usingCoefficients: coefficients,",
+            "                                     withVariables: variables)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3521365",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "result"
+            },
+            {
+              "type": "text",
+              "text": " contains "
+            },
+            {
+              "type": "codeVoice",
+              "code": "[18.0, 39.0, 70.0]"
+            },
+            {
+              "type": "text",
+              "text": " by performing the following:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3521367",
+              "metadata": {
+                "anchor": "3521367",
+                "title": "Figure 6"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Note that the number of elements returned by the polynomial evaluation is the same as the number of elements in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "variables"
+            },
+            {
+              "type": "text",
+              "text": " array."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To create an interpolation result that contains 1024 elements, use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3241088-ramp"
+            },
+            {
+              "type": "text",
+              "text": " to create the variables:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let ramp = vDSP.ramp(withInitialValue: 0,",
+            "                     increment: Double(1),",
+            "                     count: 1024)",
+            "",
+            "let polynomialResult = vDSP.evaluatePolynomial(usingCoefficients: coefficients,",
+            "                                               withVariables: ramp)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3521014",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "polynomialResult"
+            },
+            {
+              "type": "text",
+              "text": " contains 1024 elements with the indices corresponding the the x-components, and the values corresponding to the interpolated y-components:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3521370",
+              "metadata": {
+                "anchor": "3521370",
+                "title": "Figure 7"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

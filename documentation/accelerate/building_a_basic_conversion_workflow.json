@@ -1,0 +1,556 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Learn the fundamentals of the convert-any-to-any function by converting a CMYK image to an RGB image."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/conversion"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vimage",
+        "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations",
+        "doc://com.apple.documentation/documentation/accelerate/conversion"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/building_a_basic_conversion_workflow",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2950493,
+  "kind": "article",
+  "metadata": {
+    "title": "Building a Basic Conversion Workflow",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/building_a_basic_conversion_workflow",
+        "documentation/accelerate/conversion/building_a_basic_conversion_workflow",
+        "documentation/accelerate/vimage/vimage_operations/conversion/building_a_basic_conversion_workflow"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/building_a_basic_conversion_workflow",
+        "documentation/accelerate/conversion/building_a_basic_conversion_workflow",
+        "documentation/accelerate/vimage/vimage_operations/conversion/building_a_basic_conversion_workflow"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/conversion": {
+      "title": "Conversion",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/conversion",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/conversion",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convert an image to a different format."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage": {
+      "title": "vImage",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage",
+      "url": "/documentation/accelerate/vimage",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations": {
+      "title": "vImage Operations",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage/vimage_operations",
+      "url": "/documentation/accelerate/vimage/vimage_operations",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage_cgimageformat": {
+      "title": "vImage_CGImageFormat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_cgimageformat",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimage_cgimageformat"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimagecvimageformatref": {
+      "title": "vImageCVImageFormatRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimagecvimageformatref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vimagecvimageformatref"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1399114-vimageconverter_createwithcgimag": {
+      "title": "vImageConverter_CreateWithCGImageFormat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1399114-vimageconverter_createwithcgimag",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1399114-vimageconverter_createwithcgimag"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1498241-vimageconverter_createforcgtocvi": {
+      "title": "vImageConverter_CreateForCGToCVImageFormat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1498241-vimageconverter_createforcgtocvi",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1498241-vimageconverter_createforcgtocvi"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1498254-vimageconverter_createforcvtocgi": {
+      "title": "vImageConverter_CreateForCVToCGImageFormat",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1498254-vimageconverter_createforcvtocgi",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1498254-vimageconverter_createforcvtocgi"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1399124-vimageconverter_getnumberofsourc": {
+      "title": "vImageConverter_GetNumberOfSourceBuffers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1399124-vimageconverter_getnumberofsourc",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1399124-vimageconverter_getnumberofsourc"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1399100-vimageconverter_getnumberofdesti": {
+      "title": "vImageConverter_GetNumberOfDestinationBuffers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1399100-vimageconverter_getnumberofdesti",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1399100-vimageconverter_getnumberofdesti"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1399134-vimageconvert_anytoany": {
+      "title": "vImageConvert_AnyToAny",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1399134-vimageconvert_anytoany",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1399134-vimageconvert_anytoany"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/building_a_basic_conversion_workflow#2950494": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/building_a_basic_conversion_workflow#2950494",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/building_a_basic_conversion_workflow#2950494"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/building_a_basic_conversion_workflow": {
+      "title": "Building a Basic Conversion Workflow",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/building_a_basic_conversion_workflow",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/building_a_basic_conversion_workflow",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn the fundamentals of the convert-any-to-any function by converting a CMYK image to an RGB image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale": {
+      "title": "Converting Color Images to Grayscale",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/converting_color_images_to_grayscale",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convert a color image to grayscale using matrix multiplication."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_color_transforms_to_images_with_a_multidimensional_lookup_table": {
+      "title": "Applying Color Transforms to Images with a Multidimensional Lookup Table",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_color_transforms_to_images_with_a_multidimensional_lookup_table",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/applying_color_transforms_to_images_with_a_multidimensional_lookup_table",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a multidimensional lookup table to convert RGB images to CMYK."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing": {
+      "title": "Standardizing Arbitrary Image Formats for Processing",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Convert assets with disparate color spaces and bit depths to a standard working format for applying vImage operations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image": {
+      "title": "Converting Luminance and Chrominance Planes to an ARGB Image",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create a displayable ARGB image from the luminance and chrominance information supplied by your device’s camera."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/converting_color_images_to_grayscale",
+        "doc://com.apple.documentation/documentation/accelerate/applying_color_transforms_to_images_with_a_multidimensional_lookup_table",
+        "doc://com.apple.documentation/documentation/accelerate/standardizing_arbitrary_image_formats_for_processing",
+        "doc://com.apple.documentation/documentation/accelerate/converting_luminance_and_chrominance_planes_to_an_argb_image",
+        "doc://com.apple.documentation/documentation/accelerate/conversion"
+      ],
+      "title": "Conversion Between Image Formats",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In summary, the steps for using the convert-any-to-any function are:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create either a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_cgimageformat"
+                    },
+                    {
+                      "type": "text",
+                      "text": " or a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimagecvimageformatref"
+                    },
+                    {
+                      "type": "text",
+                      "text": " that describes the source image format."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create either a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage_cgimageformat"
+                    },
+                    {
+                      "type": "text",
+                      "text": " or a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimagecvimageformatref"
+                    },
+                    {
+                      "type": "text",
+                      "text": " that describes the destination image format."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create a converter based on the source and destination formats using "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1399114-vimageconverter_createwithcgimag"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1498241-vimageconverter_createforcgtocvi"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", or "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1498254-vimageconverter_createforcvtocgi"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Verify the number of source buffers matches the value returned by "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1399124-vimageconverter_getnumberofsourc"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create and initialize the number of destination buffers specified by "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1399100-vimageconverter_getnumberofdesti"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Call "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1399134-vimageconvert_anytoany"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to convert the source pixels to the destination image format and copy to the destination buffers."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows how to convert a 16-bit-per-channel CMYK image to an 8-bit-per-channel ARGB image using the steps described above."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "// 1: Create a format that describes the source image.",
+            "var cmykSourceImageFormat = vImage_CGImageFormat(",
+            "    bitsPerComponent: 16,",
+            "    bitsPerPixel: 64,",
+            "    colorSpace: Unmanaged.passRetained(CGColorSpaceCreateDeviceCMYK()),",
+            "    bitmapInfo: CGBitmapInfo(rawValue: CGImageAlphaInfo.none.rawValue),",
+            "    version: 0,",
+            "    decode: nil,",
+            "    renderingIntent: .defaultIntent)",
+            "",
+            "// 2: Create a format that describes the destination image.",
+            "var rgbDestinationImageFormat = vImage_CGImageFormat(",
+            "    bitsPerComponent: 8,",
+            "    bitsPerPixel: 32,",
+            "    colorSpace: nil,",
+            "    bitmapInfo: CGBitmapInfo(rawValue: CGImageAlphaInfo.first.rawValue),",
+            "    version: 0,",
+            "    decode: nil,",
+            "    renderingIntent: .defaultIntent)",
+            "",
+            "// 3: Create a converter based on the source and destination formats.",
+            "let cmykToRgbUnmanagedConverter = vImageConverter_CreateWithCGImageFormat(",
+            "    &cmykSourceImageFormat,",
+            "    &rgbDestinationImageFormat,",
+            "    nil,",
+            "    vImage_Flags(kvImagePrintDiagnosticsToConsole),",
+            "    nil)",
+            "",
+            "guard let cmykToRgbConverter = cmykToRgbUnmanagedConverter?.takeRetainedValue() else {",
+            "    return",
+            "}",
+            "",
+            "// 4: Verify the number of source and destination buffers.",
+            "assert(vImageConverter_GetNumberOfSourceBuffers(cmykToRgbConverter) == 1,",
+            "       \"Number of source buffers should be 1.\")",
+            "assert(vImageConverter_GetNumberOfDestinationBuffers(cmykToRgbConverter) == 1,",
+            "       \"Number of destination buffers should be 1.\")",
+            "",
+            "// 5: Create and initialize the destination buffer.",
+            "// Assumes `cmykSourceBuffer` exists and contains 16-bit-per-channel CMYK image data.",
+            "var rgbDestinationBuffer = vImage_Buffer()",
+            "vImageBuffer_Init(&rgbDestinationBuffer,",
+            "                  cmykSourceBuffer.height,",
+            "                  cmykSourceBuffer.width,",
+            "                  rgbDestinationImageFormat.bitsPerPixel,",
+            "                  vImage_Flags(kvImageNoFlags))",
+            "",
+            "// 6: Call convert-any-to-any.",
+            "vImageConvert_AnyToAny(",
+            "    cmykToRgbConverter,",
+            "    &cmykSourceBuffer,",
+            "    &rgbDestinationBuffer,",
+            "    nil,",
+            "    vImage_Flags(kvImagePrintDiagnosticsToConsole))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "2950494",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

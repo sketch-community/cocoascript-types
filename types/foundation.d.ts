@@ -792,7 +792,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1416131-seteventhandler
     setEventHandler_andSelector_forEventClass_andEventID(handler: cocoascript.NSAppleEventManager, handleEventSelector: cocoascript.SEL, eventClass: cocoascript.AEEventClass, eventID: cocoascript.AEEventID):void;
     // doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1409260-dispatchrawappleevent
-    dispatchRawAppleEvent_withRawReply_handlerRefCon(theAppleEvent: cocoascript.AppleEvent, theReply: cocoascript.AppleEvent, handlerRefCon: cocoascript.SRefCon):void;
+    dispatchRawAppleEvent_withRawReply_handlerRefCon(theAppleEvent: cocoascript.AppleEvent, theReply: cocoascript.AppleEvent, handlerRefCon: any):cocoascript.OSErr;
     // doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1410477-appleeventforsuspensionid
     appleEventForSuspensionID(suspensionID: cocoascript.NSAppleEventManagerSuspensionID):cocoascript.NSAppleEventDescriptor;
     // doc://com.apple.documentation/documentation/foundation/nsappleeventmanager/1414690-currentappleevent
@@ -1961,9 +1961,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsdictionary/1415329-filesystemnumber
     fileSystemNumber():cocoascript.NSInteger;
     // doc://com.apple.documentation/documentation/foundation/nsdictionary/1417215-filehfstypecode
-    fileHFSTypeCode():void;
+    fileHFSTypeCode():any;
     // doc://com.apple.documentation/documentation/foundation/nsdictionary/1415065-filehfscreatorcode
-    fileHFSCreatorCode():void;
+    fileHFSCreatorCode():any;
     // doc://com.apple.documentation/documentation/foundation/nsdictionary/1410799-description
     description(): cocoascript.NSString;
     setDescription(): void;
@@ -2505,7 +2505,8 @@ declare const NSPredicate: cocoascript.NSPredicate;
 declare namespace cocoascript {
   interface NSEdgeInsets {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   /**
    * A protocol that enables encoding and decoding in a manner that is robust against object substitution attacks.
    * doc://com.apple.documentation/documentation/foundation/nssecurecoding
@@ -3123,7 +3124,8 @@ declare const NSSet: cocoascript.NSSet;
 declare namespace cocoascript {
   interface NSRange {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nstextcheckingtypes
   type NSTextCheckingTypes = number;
 }
@@ -3304,10 +3306,10 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsscriptcommanddescription/1410038-initwithsuitename
     initWithSuiteName_commandName_dictionary(suiteName: cocoascript.NSString, commandName: cocoascript.NSString, commandDeclaration: cocoascript.NSDictionary):cocoascript.NSScriptCommandDescription;
     // doc://com.apple.documentation/documentation/foundation/nsscriptcommanddescription/1416191-appleeventclasscode
-    appleEventClassCode(): cocoascript.FourCharCode;
+    appleEventClassCode(): any;
     setAppleEventClassCode(): void;
     // doc://com.apple.documentation/documentation/foundation/nsscriptcommanddescription/1408972-appleeventcode
-    appleEventCode(): cocoascript.FourCharCode;
+    appleEventCode(): any;
     setAppleEventCode(): void;
     // doc://com.apple.documentation/documentation/foundation/nsscriptcommanddescription/1417478-commandclassname
     commandClassName(): cocoascript.NSString;
@@ -3319,7 +3321,7 @@ declare namespace cocoascript {
     suiteName(): cocoascript.NSString;
     setSuiteName(): void;
     // doc://com.apple.documentation/documentation/foundation/nsscriptcommanddescription/1414752-appleeventcodeforargumentwithnam
-    appleEventCodeForArgumentWithName(argumentName: cocoascript.NSString):void;
+    appleEventCodeForArgumentWithName(argumentName: cocoascript.NSString):any;
     // doc://com.apple.documentation/documentation/foundation/nsscriptcommanddescription/1409125-argumentnames
     argumentNames(): cocoascript.NSString;
     setArgumentNames(): void;
@@ -3328,7 +3330,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsscriptcommanddescription/1416163-typeforargumentwithname
     typeForArgumentWithName(argumentName: cocoascript.NSString):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsscriptcommanddescription/1408166-appleeventcodeforreturntype
-    appleEventCodeForReturnType(): cocoascript.FourCharCode;
+    appleEventCodeForReturnType(): any;
     setAppleEventCodeForReturnType(): void;
     // doc://com.apple.documentation/documentation/foundation/nsscriptcommanddescription/1410754-returntype
     returnType(): cocoascript.NSString;
@@ -4267,7 +4269,7 @@ declare namespace cocoascript {
     aeDesc(): cocoascript.AEDesc;
     setAeDesc(): void;
     // doc://com.apple.documentation/documentation/foundation/nsappleeventdescriptor/1412412-booleanvalue
-    booleanValue(): cocoascript.Boolean;
+    booleanValue(): boolean;
     setBooleanValue(): void;
     // doc://com.apple.documentation/documentation/foundation/nsappleeventdescriptor/1416286-coercetodescriptortype
     coerceToDescriptorType(descriptorType: cocoascript.DescType):cocoascript.NSAppleEventDescriptor;
@@ -4278,7 +4280,7 @@ declare namespace cocoascript {
     descriptorType(): cocoascript.DescType;
     setDescriptorType(): void;
     // doc://com.apple.documentation/documentation/foundation/nsappleeventdescriptor/1408039-enumcodevalue
-    enumCodeValue(): cocoascript.OSType;
+    enumCodeValue(): any;
     setEnumCodeValue(): void;
     // doc://com.apple.documentation/documentation/foundation/nsappleeventdescriptor/1407270-int32value
     int32Value(): cocoascript.SInt32;
@@ -4290,7 +4292,7 @@ declare namespace cocoascript {
     stringValue(): cocoascript.NSString;
     setStringValue(): void;
     // doc://com.apple.documentation/documentation/foundation/nsappleeventdescriptor/1409662-typecodevalue
-    typeCodeValue(): cocoascript.OSType;
+    typeCodeValue(): any;
     setTypeCodeValue(): void;
     // doc://com.apple.documentation/documentation/foundation/nsappleeventdescriptor/1408027-descriptoratindex
     descriptorAtIndex(index: cocoascript.NSInteger):cocoascript.NSAppleEventDescriptor;
@@ -5107,7 +5109,7 @@ declare const NSOpenStepRootDirectory: void;
 // doc://com.apple.documentation/documentation/foundation/nsfilemanagerunmountdissentingprocessidentifiererrorkey
 declare const NSFileManagerUnmountDissentingProcessIdentifierErrorKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/foundation/1412112-nsfiletypeforhfstypecode
-declare const NSFileTypeForHFSTypeCode: cocoascript.OSType;
+declare const NSFileTypeForHFSTypeCode: any;
 // doc://com.apple.documentation/documentation/foundation/1415466-nshfstypecodefromfiletype
 declare const NSHFSTypeCodeFromFileType: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/foundation/1414326-nshfstypeoffile
@@ -7974,7 +7976,8 @@ declare const NSMetadataUbiquitousSharedItemRoleParticipant: cocoascript.NSStrin
 declare namespace cocoascript {
   interface NSDecimal {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   /**
    * An object for representing and performing arithmetic on base-10 numbers.
    * doc://com.apple.documentation/documentation/foundation/nsdecimalnumber
@@ -8805,7 +8808,8 @@ declare const NSAutoreleasePool: cocoascript.NSAutoreleasePool;
 declare namespace cocoascript {
   interface NSZone {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsxmlparserexternalentityresolvingpolicy
   type NSXMLParserExternalEntityResolvingPolicy = cocoascript.NSUInteger;
 }
@@ -11364,26 +11368,26 @@ declare namespace cocoascript {
    */
   interface NSScriptSuiteRegistry extends NSObject {
     // doc://com.apple.documentation/documentation/foundation/nsscriptsuiteregistry/1415178-suiteforappleeventcode
-    suiteForAppleEventCode(appleEventCode: cocoascript.FourCharCode):cocoascript.NSString;
+    suiteForAppleEventCode(appleEventCode: any):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsscriptsuiteregistry/1414452-suitenames
     suiteNames(): cocoascript.NSString;
     setSuiteNames(): void;
     // doc://com.apple.documentation/documentation/foundation/nsscriptsuiteregistry/1414328-classdescriptionsinsuite
     classDescriptionsInSuite(suiteName: cocoascript.NSString):cocoascript.NSScriptClassDescription;
     // doc://com.apple.documentation/documentation/foundation/nsscriptsuiteregistry/1411184-classdescriptionwithappleeventco
-    classDescriptionWithAppleEventCode(appleEventCode: cocoascript.FourCharCode):cocoascript.NSScriptClassDescription;
+    classDescriptionWithAppleEventCode(appleEventCode: any):cocoascript.NSScriptClassDescription;
     // doc://com.apple.documentation/documentation/foundation/nsscriptsuiteregistry/1412869-registerclassdescription
     registerClassDescription(classDescription: cocoascript.NSScriptClassDescription):void;
     // doc://com.apple.documentation/documentation/foundation/nsscriptsuiteregistry/1416396-commanddescriptionsinsuite
     commandDescriptionsInSuite(suiteName: cocoascript.NSString):cocoascript.NSScriptCommandDescription;
     // doc://com.apple.documentation/documentation/foundation/nsscriptsuiteregistry/1416734-commanddescriptionwithappleevent
-    commandDescriptionWithAppleEventClass_andAppleEventCode(appleEventClassCode: cocoascript.FourCharCode, appleEventIDCode: cocoascript.FourCharCode):cocoascript.NSScriptCommandDescription;
+    commandDescriptionWithAppleEventClass_andAppleEventCode(appleEventClassCode: any, appleEventIDCode: any):cocoascript.NSScriptCommandDescription;
     // doc://com.apple.documentation/documentation/foundation/nsscriptsuiteregistry/1408858-registercommanddescription
     registerCommandDescription(commandDescription: cocoascript.NSScriptCommandDescription):void;
     // doc://com.apple.documentation/documentation/foundation/nsscriptsuiteregistry/1409186-aeteresource
     aeteResource(languageName: cocoascript.NSString):cocoascript.NSData;
     // doc://com.apple.documentation/documentation/foundation/nsscriptsuiteregistry/1412492-appleeventcodeforsuite
-    appleEventCodeForSuite(suiteName: cocoascript.NSString):void;
+    appleEventCodeForSuite(suiteName: cocoascript.NSString):any;
     // doc://com.apple.documentation/documentation/foundation/nsscriptsuiteregistry/1414868-bundleforsuite
     bundleForSuite(suiteName: cocoascript.NSString):cocoascript.NSBundle;
     // doc://com.apple.documentation/documentation/foundation/nsscriptsuiteregistry/1413397-loadsuitewithdictionary
@@ -11426,12 +11430,12 @@ declare namespace cocoascript {
     suiteName(): cocoascript.NSString;
     setSuiteName(): void;
     // doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1414920-appleeventcode
-    appleEventCode(): cocoascript.FourCharCode;
+    appleEventCode(): any;
     setAppleEventCode(): void;
     // doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1414657-appleeventcodeforkey
-    appleEventCodeForKey(key: cocoascript.NSString):void;
+    appleEventCodeForKey(key: cocoascript.NSString):any;
     // doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1411166-matchesappleeventcode
-    matchesAppleEventCode(appleEventCode: cocoascript.FourCharCode):cocoascript.BOOL;
+    matchesAppleEventCode(appleEventCode: any):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1413542-hasorderedtomanyrelationshipfork
     hasOrderedToManyRelationshipForKey(key: cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1407574-haspropertyforkey
@@ -11443,7 +11447,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1547649-isreadonlykey
     isReadOnlyKey(key: cocoascript.NSString):cocoascript.BOOL;
     // doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1415315-keywithappleeventcode
-    keyWithAppleEventCode(appleEventCode: cocoascript.FourCharCode):cocoascript.NSString;
+    keyWithAppleEventCode(appleEventCode: any):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1417186-typeforkey
     typeForKey(key: cocoascript.NSString):cocoascript.NSString;
     // doc://com.apple.documentation/documentation/foundation/nsscriptclassdescription/1409327-selectorforcommand
@@ -13826,7 +13830,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface NSAffineTransformStruct {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   /**
    * An abstract class whose subclasses enumerate collections of objects, such as arrays and dictionaries.
    * doc://com.apple.documentation/documentation/foundation/nsenumerator
@@ -14210,7 +14215,8 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface NSOperatingSystemVersion {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/foundation/nsactivityoptions
   type NSActivityOptions = number;
 }
@@ -14399,7 +14405,8 @@ declare const NSFileHandleReadCompletionNotification: cocoascript.NSNotification
 declare namespace cocoascript {
   interface NSFastEnumerationState {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   /**
    * doc://com.apple.documentation/documentation/foundation/nsorderedcollectionchange
    */
@@ -14962,13 +14969,16 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface NSMapTableKeyCallBacks {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface NSMapEnumerator {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface NSMapTableValueCallBacks {
   }
-}// doc://com.apple.documentation/documentation/foundation/nsintegermapkeycallbacks
+}
+// doc://com.apple.documentation/documentation/foundation/nsintegermapkeycallbacks
 declare const NSIntegerMapKeyCallBacks: cocoascript.NSMapTableKeyCallBacks;
 // doc://com.apple.documentation/documentation/foundation/nsintmapkeycallbacks
 declare const NSIntMapKeyCallBacks: cocoascript.NSMapTableKeyCallBacks;
@@ -15031,10 +15041,12 @@ declare const NSHashTableWeakMemory: cocoascript.NSPointerFunctionsOptions;
 declare namespace cocoascript {
   interface NSHashEnumerator {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface NSHashTableCallBacks {
   }
-}// doc://com.apple.documentation/documentation/foundation/nsintegerhashcallbacks
+}
+// doc://com.apple.documentation/documentation/foundation/nsintegerhashcallbacks
 declare const NSIntegerHashCallBacks: cocoascript.NSHashTableCallBacks;
 // doc://com.apple.documentation/documentation/foundation/nsinthashcallbacks
 declare const NSIntHashCallBacks: cocoascript.NSHashTableCallBacks;
@@ -15065,10 +15077,12 @@ declare namespace cocoascript {
 declare namespace cocoascript {
   interface NSSwappedDouble {
   }
-}declare namespace cocoascript {
+}
+declare namespace cocoascript {
   interface NSSwappedFloat {
   }
-}// doc://com.apple.documentation/documentation/foundation/nsprogressfiletotalcountkey
+}
+// doc://com.apple.documentation/documentation/foundation/nsprogressfiletotalcountkey
 declare const NSProgressFileTotalCountKey: cocoascript.NSProgressUserInfoKey;
 // doc://com.apple.documentation/documentation/foundation/nsprogressfilecompletedcountkey
 declare const NSProgressFileCompletedCountKey: cocoascript.NSProgressUserInfoKey;

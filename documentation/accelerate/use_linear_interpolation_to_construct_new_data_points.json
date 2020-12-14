@@ -1,0 +1,1521 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Fill the gaps in arrays of numerical data using linear interpolation."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/linear_interpolation_functions"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3122537,
+  "kind": "article",
+  "metadata": {
+    "title": "Use Linear Interpolation to Construct New Data Points",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/use_linear_interpolation_to_construct_new_data_points",
+        "documentation/accelerate/vdsp/linear_interpolation_functions/use_linear_interpolation_to_construct_new_data_points"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/use_linear_interpolation_to_construct_new_data_points",
+        "documentation/accelerate/vdsp/linear_interpolation_functions/use_linear_interpolation_to_construct_new_data_points"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp": {
+      "title": "vDSP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/vdsp",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Perform basic arithmetic operations and common digital signal processing routines on large vectors."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/linear_interpolation_functions": {
+      "title": "Linear Interpolation Functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/linear_interpolation_functions",
+      "url": "/documentation/accelerate/vdsp/linear_interpolation_functions",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122538": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122538",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122538"
+    },
+    "link-media-3122542": {
+      "identifier": "link-media-3122542",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122542"
+    },
+    "media-3122542": {
+      "identifier": "media-3122542",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 325
+          },
+          "url": "https://docs-assets.developer.apple.com/published/b578e7e1e5/ebea21e3-0328-41fc-9738-31f27db97b84.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 325
+          },
+          "url": "https://docs-assets.developer.apple.com/published/b8f7bc99a6/53ce8972-144c-4769-9528-4dc1aa326435.png"
+        }
+      ],
+      "alt": "Diagram showing a plot of the data points formed by the corresponding elements in vectors values and indices. ",
+      "title": "Figure 2",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A plot of the data points formed by the corresponding elements in "
+        },
+        {
+          "type": "codeVoice",
+          "code": "values"
+        },
+        {
+          "type": "text",
+          "text": " and "
+        },
+        {
+          "type": "codeVoice",
+          "code": "indices"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122547": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122547",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122547"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449771-vdsp_vgenp": {
+      "title": "vDSP_vgenp",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449771-vdsp_vgenp",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449771-vdsp_vgenp"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450645-vdsp_vgenpd": {
+      "title": "vDSP_vgenpD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450645-vdsp_vgenpd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450645-vdsp_vgenpd"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122544": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122544",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122544"
+    },
+    "link-media-3122764": {
+      "identifier": "link-media-3122764",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122764"
+    },
+    "media-3122764": {
+      "identifier": "media-3122764",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 325
+          },
+          "url": "https://docs-assets.developer.apple.com/published/1324d39882/313890cd-13f1-4b42-b342-df12d621e50d.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 325
+          },
+          "url": "https://docs-assets.developer.apple.com/published/469cf6cc41/66c195ce-7ee6-45d6-b82b-89cdefe848da.png"
+        }
+      ],
+      "alt": "Diagram showing the known values as small circles joined together by a series of lines that represent the interpolation result.",
+      "title": "Figure 3",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A plot of data points generated by linear interpolation"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449775-vdsp_vlint": {
+      "title": "vDSP_vlint",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449775-vdsp_vlint",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449775-vdsp_vlint"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449733-vdsp_vlintd": {
+      "title": "vDSP_vlintD",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449733-vdsp_vlintd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449733-vdsp_vlintd"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1449703-vdsp_vgen": {
+      "title": "vDSP_vgen",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449703-vdsp_vgen",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1449703-vdsp_vgen"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122545": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122545",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122545"
+    },
+    "link-media-3122765": {
+      "identifier": "link-media-3122765",
+      "type": "link",
+      "title": "Figure 4",
+      "url": "/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122765"
+    },
+    "media-3122765": {
+      "identifier": "media-3122765",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 325
+          },
+          "url": "https://docs-assets.developer.apple.com/published/491d7b42a8/61f6f6c6-75f3-4496-858d-5c19f73dd00c.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 325
+          },
+          "url": "https://docs-assets.developer.apple.com/published/9bbc168bce/619f95be-c8b7-4851-a6f4-d7d4ec9c44cd.png"
+        }
+      ],
+      "alt": "Diagram showing the linear ramp result as a line from the bottom left to the top right. ",
+      "title": "Figure 4",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A plot of the values in "
+        },
+        {
+          "type": "codeVoice",
+          "code": "control"
+        },
+        {
+          "type": "text",
+          "text": " generated with a linear ramp"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122533": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122533",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122533"
+    },
+    "link-media-3122535": {
+      "identifier": "link-media-3122535",
+      "type": "link",
+      "title": "Figure 5",
+      "url": "/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122535"
+    },
+    "media-3122535": {
+      "identifier": "media-3122535",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 325
+          },
+          "url": "https://docs-assets.developer.apple.com/published/1324d39882/313890cd-13f1-4b42-b342-df12d621e50d.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 325
+          },
+          "url": "https://docs-assets.developer.apple.com/published/469cf6cc41/66c195ce-7ee6-45d6-b82b-89cdefe848da.png"
+        }
+      ],
+      "alt": "Diagram showing the known values as small circles joined together by a series of lines that represent the interpolation result.",
+      "title": "Figure 5",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A plot of the linearly interpolated values  based on a linear ramp"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/simd/2873939-simd_smoothstep": {
+      "title": "simd_smoothstep",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/simd/2873939-simd_smoothstep",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/simd/2873939-simd_smoothstep"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122534": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122534",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122534"
+    },
+    "link-media-3122763": {
+      "identifier": "link-media-3122763",
+      "type": "link",
+      "title": "Figure 6",
+      "url": "/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122763"
+    },
+    "media-3122763": {
+      "identifier": "media-3122763",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 325
+          },
+          "url": "https://docs-assets.developer.apple.com/published/f64cebecef/823c5875-a026-4e92-9ac9-8f51cd09c9b5.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 325
+          },
+          "url": "https://docs-assets.developer.apple.com/published/b691123391/bf8e2562-8ced-46be-9acd-a252dcefc918.png"
+        }
+      ],
+      "alt": "Diagram showing the smoothed ramp result as a line from the bottom left to the top right. The line flattens near the circles that indicate the index positions.",
+      "title": "Figure 6",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A plot of the values in control generated with smooth step"
+        }
+      ]
+    },
+    "link-media-3122543": {
+      "identifier": "link-media-3122543",
+      "type": "link",
+      "title": "Figure 7",
+      "url": "/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122543"
+    },
+    "media-3122543": {
+      "identifier": "media-3122543",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 325
+          },
+          "url": "https://docs-assets.developer.apple.com/published/a5f49aa315/46242feb-27e4-4c1a-8237-9413854b7de4.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 325
+          },
+          "url": "https://docs-assets.developer.apple.com/published/89ea702b75/1e5236e1-fba0-4210-a791-2943f172906e.png"
+        }
+      ],
+      "alt": "Diagram showing the known values as small circles joined together by a series of curves that represent the interpolation result.",
+      "title": "Figure 7",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A plot of the linearly interpolated values based on smooth step"
+        }
+      ]
+    },
+    "link-media-3122762": {
+      "identifier": "link-media-3122762",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points#3122762"
+    },
+    "media-3122762": {
+      "identifier": "media-3122762",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 704,
+            "height": 363
+          },
+          "url": "https://docs-assets.developer.apple.com/published/cece1af57b/259d5180-9ff7-4f06-8dae-35710c0f8056.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 704,
+            "height": 363
+          },
+          "url": "https://docs-assets.developer.apple.com/published/9d7ec5df6f/aa9b2b49-0b99-4211-a3db-a9d5efb61240.png"
+        }
+      ],
+      "alt": "Diagram showing two known data points connected by a straight line. A point on the line represents an interpolated value.",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A linearly interpolated value between values "
+        },
+        {
+          "type": "codeVoice",
+          "code": "1"
+        },
+        {
+          "type": "text",
+          "text": " and "
+        },
+        {
+          "type": "codeVoice",
+          "code": "2"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/controlling_vdsp_operations_with_stride": {
+      "title": "Controlling vDSP Operations with Stride",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/controlling_vdsp_operations_with_stride",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/controlling_vdsp_operations_with_stride",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Operate selectively on the elements of a vector at regular intervals."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points": {
+      "title": "Use Linear Interpolation to Construct New Data Points",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/use_linear_interpolation_to_construct_new_data_points",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Fill the gaps in arrays of numerical data using linear interpolation."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/using_vdsp_for_vector-based_arithmetic": {
+      "title": "Using vDSP for Vector-based Arithmetic",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/using_vdsp_for_vector-based_arithmetic",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/using_vdsp_for_vector-based_arithmetic",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Increase the performance of common mathematical tasks with vDSP vector-vector and vector-scalar operations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/resampling_a_signal_with_decimation": {
+      "title": "Resampling a Signal with Decimation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/resampling_a_signal_with_decimation",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/resampling_a_signal_with_decimation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reduce the sample rate of a signal, by specifying a decimation factor and applying a custom antialiasing filter."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/controlling_vdsp_operations_with_stride",
+        "doc://com.apple.documentation/documentation/accelerate/using_vdsp_for_vector-based_arithmetic",
+        "doc://com.apple.documentation/documentation/accelerate/resampling_a_signal_with_decimation",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp"
+      ],
+      "title": "Signal Processing Essentials",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Linear interpolation is a method of calculating intermediate data between known values by conceptually drawing a straight line between two adjacent known values. An interpolated value is any point along that line. You use linear interpolation to, for example, draw graphs or animate between keyframes. "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "link-media-3122762"
+            },
+            {
+              "type": "text",
+              "text": " shows an example interpolated value between two points."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3122762",
+              "metadata": {
+                "anchor": "3122762",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "A linearly interpolated value between values "
+                  },
+                  {
+                    "type": "codeVoice",
+                    "code": "1"
+                  },
+                  {
+                    "type": "text",
+                    "text": " and "
+                  },
+                  {
+                    "type": "codeVoice",
+                    "code": "2"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "vDSP provides two functions to linearly interpolate between the elements in an array. "
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449771-vdsp_vgenp"
+                    },
+                    {
+                      "type": "text",
+                      "text": " provides a simple interface for generating interpolated data."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/1449775-vdsp_vlint"
+                    },
+                    {
+                      "type": "text",
+                      "text": " provides fine control over the interpolation."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This article discusses both functions to draw a continuous line graph based on a set of discrete data points."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create the Data",
+          "anchor": "3122540"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In this example, you'll interpolate the data represented by two arrays, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "values"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "indices"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let values: [Float] = [50,  90,  55,  10,  40,  85,  65,  15,  30,   80]",
+            "let indices: [Float] = [0, 113, 227, 341, 455, 568, 682, 796, 910, 1024]"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3122538",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Each array consists of 10 elements. A pair of corresponding elements in the two arrays defines a single point in the diagram as follows:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Elements in the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "values"
+                    },
+                    {
+                      "type": "text",
+                      "text": " array denote the vertical position."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Elements in the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "indices"
+                    },
+                    {
+                      "type": "text",
+                      "text": " array denote the horizontal position."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3122542",
+              "metadata": {
+                "anchor": "3122542",
+                "title": "Figure 2",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "A plot of the data points formed by the corresponding elements in "
+                  },
+                  {
+                    "type": "codeVoice",
+                    "code": "values"
+                  },
+                  {
+                    "type": "text",
+                    "text": " and "
+                  },
+                  {
+                    "type": "codeVoice",
+                    "code": "indices"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Define Common Fundamental Constants",
+          "anchor": "3122548"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When defining the constants used to plot the points, this example uses "
+            },
+            {
+              "type": "codeVoice",
+              "code": "n"
+            },
+            {
+              "type": "text",
+              "text": " as the number of elements in the interpolation result, and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "stride"
+            },
+            {
+              "type": "text",
+              "text": " as the stride for all arrays."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let n = vDSP_Length(1024)",
+            "let stride = vDSP_Stride(1)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3122547",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Generate a Vector by Interpolation",
+          "anchor": "3122539"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1449771-vdsp_vgenp"
+            },
+            {
+              "type": "text",
+              "text": " function (and its double-precision equivalent, "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1450645-vdsp_vgenpd"
+            },
+            {
+              "type": "text",
+              "text": ") accepts the values and indices arrays and an empty array to receive the interpolation result:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var result = [Float](repeating: 0,",
+            "                       count: Int(n))",
+            "",
+            "vDSP_vgenp(values, stride,",
+            "           indices, stride,",
+            "           &result, stride,",
+            "           n,",
+            "           vDSP_Length(values.count))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3122544",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "result"
+            },
+            {
+              "type": "text",
+              "text": " contains the interpolated values. "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "link-media-3122764"
+            },
+            {
+              "type": "text",
+              "text": " shows the values in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "result"
+            },
+            {
+              "type": "text",
+              "text": " as a line between the known values described by the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "values"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "indices"
+            },
+            {
+              "type": "text",
+              "text": " arrays:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3122764",
+              "metadata": {
+                "anchor": "3122764",
+                "title": "Figure 3",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "A plot of data points generated by linear interpolation"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Interpolate With Fine Control",
+          "anchor": "3122546"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1449775-vdsp_vlint"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1449733-vdsp_vlintd"
+            },
+            {
+              "type": "text",
+              "text": ") functions require an "
+            },
+            {
+              "type": "codeVoice",
+              "code": "indices"
+            },
+            {
+              "type": "text",
+              "text": " array that includes fractional parts. The fractional parts define the interpolation between the pair of values in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "values"
+            },
+            {
+              "type": "text",
+              "text": " array starting at the index defined by the integer part."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1449703-vdsp_vgen"
+            },
+            {
+              "type": "text",
+              "text": " to generate a linear ramp from "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0"
+            },
+            {
+              "type": "text",
+              "text": " to the number of elements in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "values"
+            },
+            {
+              "type": "text",
+              "text": ", minus 1:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var base: Float = 0",
+            "var end = Float(values.count - 1)",
+            "var control = [Float](repeating: 0,",
+            "                      count: Int(n))",
+            "",
+            "vDSP_vgen(&base,",
+            "          &end,",
+            "          &control, stride,",
+            "          n)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3122545",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "control"
+            },
+            {
+              "type": "text",
+              "text": " contains:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "        [0]\tFloat\t0.0000"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "        [1]\tFloat\t0.0087"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "        [2]\tFloat\t0.0175"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "        ..."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "        [1021]\tFloat\t8.9824"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "        [1022]\tFloat\t8.9912"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "        [1023]\tFloat\t9.0000"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "link-media-3122765"
+            },
+            {
+              "type": "text",
+              "text": " shows a visualization of the values in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "control"
+            },
+            {
+              "type": "text",
+              "text": " with small circles indicating each integer index. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3122765",
+              "metadata": {
+                "anchor": "3122765",
+                "title": "Figure 4",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "A plot of the values in "
+                  },
+                  {
+                    "type": "codeVoice",
+                    "code": "control"
+                  },
+                  {
+                    "type": "text",
+                    "text": " generated with a linear ramp"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "With the control values defined, call "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1449775-vdsp_vlint"
+            },
+            {
+              "type": "text",
+              "text": " to calculate the interpolated values:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var result = [Float](repeating: 0,",
+            "                     count: Int(n))",
+            "",
+            "vDSP_vlint(values,",
+            "           control, stride,",
+            "           &result, stride,",
+            "           n,",
+            "           vDSP_Length(values.count))"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3122533",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "result"
+            },
+            {
+              "type": "text",
+              "text": " contains the interpolated values. "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "link-media-3122535"
+            },
+            {
+              "type": "text",
+              "text": " shows the values in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "result"
+            },
+            {
+              "type": "text",
+              "text": " as a line between the known values described by the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "values"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "indices"
+            },
+            {
+              "type": "text",
+              "text": " arrays."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3122535",
+              "metadata": {
+                "anchor": "3122535",
+                "title": "Figure 5",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "A plot of the linearly interpolated values  based on a linear ramp"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The result of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1449775-vdsp_vlint"
+            },
+            {
+              "type": "text",
+              "text": " is equal to the result of "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1449771-vdsp_vgenp"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add Smoothing to the Interpolation Result",
+          "anchor": "3122541"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can change the way that you generate the control array to alter the interpolated result. For example, you may want to smooth the joins in a line graph or add easing to an animation. The following code uses "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/simd/2873939-simd_smoothstep"
+            },
+            {
+              "type": "text",
+              "text": " to smooth the fractional parts of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "control"
+            },
+            {
+              "type": "text",
+              "text": " near the increments to the integer parts:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let denominator = Float(n) / Float(values.count - 1)",
+            "",
+            "let control: [Float] = (0 ... n).map {",
+            "    let x = Float($0) / denominator",
+            "    return floor(x) + simd_smoothstep(0, 1, simd_fract(x))",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3122534",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "link-media-3122763"
+            },
+            {
+              "type": "text",
+              "text": " shows a visualization of the values in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "control"
+            },
+            {
+              "type": "text",
+              "text": " with small circles indicating each integer index."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3122763",
+              "metadata": {
+                "anchor": "3122763",
+                "title": "Figure 6",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "A plot of the values in control generated with smooth step"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Using the same call to "
+            },
+            {
+              "type": "reference",
+              "isActive": false,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/1449775-vdsp_vlint"
+            },
+            {
+              "type": "text",
+              "text": " as above, the result, as shown in "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "link-media-3122543"
+            },
+            {
+              "type": "text",
+              "text": ",  shows a smoother transition between the known values."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3122543",
+              "metadata": {
+                "anchor": "3122543",
+                "title": "Figure 7",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "A plot of the linearly interpolated values based on smooth step"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

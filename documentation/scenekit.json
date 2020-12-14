@@ -1,0 +1,830 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Create 3D games and add 3D content to apps using high-level scene descriptions. Easily add animations, physics simulation, particle effects, and realistic physically based rendering."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/scenekit",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1613384,
+  "kind": "symbol",
+  "metadata": {
+    "title": "SceneKit",
+    "role": "collection",
+    "roleHeading": "Framework",
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "8.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "10.8",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "9.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "3.0",
+        "current": "7.2"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/scenekit"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/scenekit"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/scenekit/scnview": {
+      "title": "SCNView",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnview",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnview",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A view for displaying 3D SceneKit content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnlayer": {
+      "title": "SCNLayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnlayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnlayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A Core Animation layer that renders a SceneKit scene as its content."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnrenderer": {
+      "title": "SCNRenderer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnrenderer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnrenderer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A renderer for displaying a SceneKit scene in an existing Metal workflow or OpenGL context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scntechnique": {
+      "title": "SCNTechnique",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scntechnique",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scntechnique",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A specification for augmenting or postprocessing SceneKit's rendering of a scene using additional drawing passes with custom Metal or OpenGL shaders."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnscene": {
+      "title": "SCNScene",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscene",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnscene",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A container for the node hierarchy and global properties that together form a displayable 3D scene."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/organizing_a_scene_with_nodes": {
+      "title": "Organizing a Scene with Nodes ",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/organizing_a_scene_with_nodes",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/scenekit/organizing_a_scene_with_nodes",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use nodes to define the structure of a scene."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnode": {
+      "title": "SCNNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A structural element of a scene graph, representing a position and transform in a 3D coordinate space, to which you can attach geometry, lights, cameras, or other displayable content."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnreferencenode": {
+      "title": "SCNReferenceNode",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnreferencenode",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnreferencenode",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A scene graph node that serves as a placeholder for content to be loaded from a separate scene file. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnscenerenderer": {
+      "title": "SCNSceneRenderer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscenerenderer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnscenerenderer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods and properties common to the "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/scenekit/scnview"
+        },
+        {
+          "type": "text",
+          "text": ", "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/scenekit/scnlayer"
+        },
+        {
+          "type": "text",
+          "text": ", and "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/scenekit/scnrenderer"
+        },
+        {
+          "type": "text",
+          "text": " classes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnscenerendererdelegate": {
+      "title": "SCNSceneRendererDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscenerendererdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnscenerendererdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods your app can implement to participate in SceneKit’s animation loop or perform additional rendering. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnhittestresult": {
+      "title": "SCNHitTestResult",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnhittestresult",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnhittestresult",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Information about the result of a scene-space or view-space search for scene elements."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnlight": {
+      "title": "SCNLight",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnlight",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnlight",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A light source that can be attached to a node to illuminate the scene."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scncamera": {
+      "title": "SCNCamera",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scncamera",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scncamera",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of camera attributes that can be attached to a node to provide a point of view for displaying the scene."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnmaterial": {
+      "title": "SCNMaterial",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnmaterial",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnmaterial",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A set of shading attributes that define the appearance of a geometry's surface when rendered."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnmaterialproperty": {
+      "title": "SCNMaterialProperty",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnmaterialproperty",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnmaterialproperty",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A container for the color or texture of one of a material’s visual properties. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scngeometry": {
+      "title": "SCNGeometry",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometry",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scngeometry",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A three-dimensional shape (also called a model or mesh) that can be displayed in a scene, with attached materials that define its appearance."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scngeometrysource": {
+      "title": "SCNGeometrySource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometrysource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scngeometrysource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A container for vertex data forming part of the definition for a three-dimensional object, or geometry."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scngeometryelement": {
+      "title": "SCNGeometryElement",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scngeometryelement",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scngeometryelement",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A container for index data describing how vertices connect to define a three-dimensional object, or geometry."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/built-in_geometry_types": {
+      "title": "Built-in Geometry Types",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/built-in_geometry_types",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/scenekit/built-in_geometry_types",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Basic shapes—such as spheres, boxes, and planes—and features for generating 3D objects from 2D text and Bézier curves."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/animation": {
+      "title": "Animation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/animation",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/scenekit/animation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create declarative animations that move elements of a scene in predetermined ways, or manage animations imported with external authoring tools."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/constraints": {
+      "title": "Constraints",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/constraints",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/scenekit/constraints",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Automatically adjust the position or orientation of a node based on specified rules."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnskinner": {
+      "title": "SCNSkinner",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnskinner",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnskinner",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that manages the relationship between skeletal animations and the nodes and geometries they animate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnmorpher": {
+      "title": "SCNMorpher",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnmorpher",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnmorpher",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that manages smooth transitions between a node's base geometry and one or more target geometries."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/physics_simulation": {
+      "title": "Physics Simulation",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/physics_simulation",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/scenekit/physics_simulation",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Add dynamic behaviors to scene elements; detect contacts and collisions; simulate realistic effects like gravity, springs, and vehicles."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnparticlesystem": {
+      "title": "SCNParticleSystem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnparticlesystem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnparticlesystem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that animates and renders a system of small image sprites using a high-level simulation whose general behavior you specify."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnparticlepropertycontroller": {
+      "title": "SCNParticlePropertyController",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnparticlepropertycontroller",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnparticlepropertycontroller",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An animation for a single property of the individual particles rendered by a particle system."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaudiosource": {
+      "title": "SCNAudioSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaudiosource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaudiosource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A simple, reusable audio source—music or sound effects loaded from a file—for use in positional audio playback."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnaudioplayer": {
+      "title": "SCNAudioPlayer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnaudioplayer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnaudioplayer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A controller for playback of a positional audio source in a SceneKit scene."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnshadable": {
+      "title": "SCNShadable",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnshadable",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnshadable",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods for customizing SceneKit's rendering of geometry and materials using Metal or OpenGL shader programs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnprogram": {
+      "title": "SCNProgram",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnprogram",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnprogram",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "A complete Metal or OpenGL shader program that replaces SceneKit's rendering of a geometry or material."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnbufferstream": {
+      "title": "SCNBufferStream",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnbufferstream",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnbufferstream",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that manages a Metal buffer used by a custom shader program. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scntechniquesupport": {
+      "title": "SCNTechniqueSupport",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scntechniquesupport",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scntechniquesupport",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "The common interface for SceneKit objects that support multipass rendering using "
+        },
+        {
+          "type": "reference",
+          "isActive": true,
+          "identifier": "doc://com.apple.documentation/documentation/scenekit/scntechnique"
+        },
+        {
+          "type": "text",
+          "text": " objects."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnnoderendererdelegate": {
+      "title": "SCNNodeRendererDelegate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnnoderendererdelegate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnnoderendererdelegate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Methods you can implement to use your own custom Metal or OpenGL drawing code to render content for a node. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/postprocessing_a_scene_with_custom_symbols": {
+      "title": "Postprocessing a Scene With Custom Symbols",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/postprocessing_a_scene_with_custom_symbols",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/scenekit/postprocessing_a_scene_with_custom_symbols",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create visual effects in a scene by defining a rendering technique with custom symbols."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scnscenesource": {
+      "title": "SCNSceneSource",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scnscenesource",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/scnscenesource",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An object that manages the data-reading tasks associated with loading scene contents from a file or data."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/1524164-scnexportjavascriptmodule": {
+      "title": "SCNExportJavaScriptModule",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/1524164-scnexportjavascriptmodule",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/scenekit/1524164-scnexportjavascriptmodule",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Makes SceneKit classes and global constants available to the specified JavaScript context."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scenekit_3d_data_types": {
+      "title": "SceneKit 3D Data Types",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scenekit_3d_data_types",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/scenekit/scenekit_3d_data_types",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "SceneKit-specific vectors, matrices, and related functions and operations."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scenekit_enumerations": {
+      "title": "SceneKit Enumerations",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scenekit_enumerations",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/scenekit/scenekit_enumerations"
+    },
+    "doc://com.apple.documentation/documentation/scenekit/scenekit_constants": {
+      "title": "SceneKit Constants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/scenekit/scenekit_constants",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/scenekit/scenekit_constants",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Constants used throughout the SceneKit framework."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "diffAvailability": {
+    "major": {
+      "change": "modified",
+      "platform": "Xcode",
+      "versions": [
+        "12.0 beta 5",
+        "12.3 Release Candidate"
+      ]
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "First Steps",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnscene",
+        "doc://com.apple.documentation/documentation/scenekit/scnview"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Scene Structure",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/organizing_a_scene_with_nodes",
+        "doc://com.apple.documentation/documentation/scenekit/scnnode",
+        "doc://com.apple.documentation/documentation/scenekit/scnreferencenode"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Display and Interactivity",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnscenerenderer",
+        "doc://com.apple.documentation/documentation/scenekit/scnscenerendererdelegate",
+        "doc://com.apple.documentation/documentation/scenekit/scnlayer",
+        "doc://com.apple.documentation/documentation/scenekit/scnrenderer",
+        "doc://com.apple.documentation/documentation/scenekit/scnhittestresult"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Lighting, Cameras, and Shading",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnlight",
+        "doc://com.apple.documentation/documentation/scenekit/scncamera",
+        "doc://com.apple.documentation/documentation/scenekit/scnmaterial",
+        "doc://com.apple.documentation/documentation/scenekit/scnmaterialproperty"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Geometry",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scngeometry",
+        "doc://com.apple.documentation/documentation/scenekit/scngeometrysource",
+        "doc://com.apple.documentation/documentation/scenekit/scngeometryelement",
+        "doc://com.apple.documentation/documentation/scenekit/built-in_geometry_types"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Animation and Constraints",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/animation",
+        "doc://com.apple.documentation/documentation/scenekit/constraints",
+        "doc://com.apple.documentation/documentation/scenekit/scnskinner",
+        "doc://com.apple.documentation/documentation/scenekit/scnmorpher"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Physics",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/physics_simulation"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Particle Systems",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnparticlesystem",
+        "doc://com.apple.documentation/documentation/scenekit/scnparticlepropertycontroller"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Audio",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnaudiosource",
+        "doc://com.apple.documentation/documentation/scenekit/scnaudioplayer"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Renderer Customization",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnshadable",
+        "doc://com.apple.documentation/documentation/scenekit/scnprogram",
+        "doc://com.apple.documentation/documentation/scenekit/scnbufferstream",
+        "doc://com.apple.documentation/documentation/scenekit/scntechnique",
+        "doc://com.apple.documentation/documentation/scenekit/scntechniquesupport",
+        "doc://com.apple.documentation/documentation/scenekit/scnnoderendererdelegate",
+        "doc://com.apple.documentation/documentation/scenekit/postprocessing_a_scene_with_custom_symbols"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Scene Asset Import",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scnscenesource"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "JavaScript",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/1524164-scnexportjavascriptmodule"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "SceneKit Data Types",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scenekit_3d_data_types"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Reference",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/scenekit/scenekit_enumerations",
+        "doc://com.apple.documentation/documentation/scenekit/scenekit_constants"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "SceneKit combines a high-performance rendering engine with a descriptive API for import, manipulation, and rendering of 3D assets. Unlike lower-level APIs such as Metal and OpenGL that require you to implement in precise detail the rendering algorithms that display a scene, SceneKit requires only descriptions of your scene’s contents and the actions or animations you want it to perform."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

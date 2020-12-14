@@ -1,0 +1,780 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Computes the result of a tapered merge between two single-precision vectors."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp-snv"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/copying_element_swapping_and_merging_functions"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/vdsp/3600637-taperedmerge",
+    "interfaceLanguage": "swift"
+  },
+  "legacy_identifier": 3600637,
+  "kind": "symbol",
+  "metadata": {
+    "title": "taperedMerge(_:_:result:)",
+    "role": "symbol",
+    "roleHeading": "Generic Type Method",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "14.0",
+        "current": "14.3"
+      },
+      {
+        "name": "macOS",
+        "introducedAt": "11.0",
+        "current": "11.1"
+      },
+      {
+        "name": "Mac Catalyst",
+        "introducedAt": "14.0",
+        "current": "14.3"
+      },
+      {
+        "name": "tvOS",
+        "introducedAt": "14.0",
+        "current": "14.3"
+      },
+      {
+        "name": "watchOS",
+        "introducedAt": "7.0",
+        "current": "7.2"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "12.0",
+        "current": "12.3"
+      }
+    ],
+    "externalID": "s:10Accelerate4vDSPO12taperedMerge__6resultyx_q_q0_ztAA0A6BufferRzAaFR_AA0a7MutableF0R0_Sf7ElementRtzSfAHRt_SfAHRt0_r1_lFZ",
+    "symbolKind": "enumcm",
+    "fragments": [
+      {
+        "kind": "text",
+        "text": "static func "
+      },
+      {
+        "kind": "identifier",
+        "text": "taperedMerge"
+      },
+      {
+        "kind": "text",
+        "text": "<T, U, V>(T, U, "
+      },
+      {
+        "kind": "identifier",
+        "text": "result"
+      },
+      {
+        "kind": "text",
+        "text": ": inout V)"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/vdsp/3600637-taperedmerge"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp": {
+      "title": "vDSP",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp",
+      "url": "/documentation/accelerate/vdsp",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp-snv": {
+      "title": "vDSP",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp-snv",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp-snv",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An enumeration that acts as a namespace for Swift overlays to vDSP."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/copying_element_swapping_and_merging_functions": {
+      "title": "Copying, Element Swapping, and Merging Functions",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/copying_element_swapping_and_merging_functions",
+      "url": "/documentation/accelerate/vdsp/copying_element_swapping_and_merging_functions",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3600637-taperedmerge#3681544": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3600637-taperedmerge#3681544",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/vdsp/3600637-taperedmerge#3681544"
+    },
+    "link-media-3681543": {
+      "identifier": "link-media-3681543",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/vdsp/3600637-taperedmerge#3681543"
+    },
+    "media-3681543": {
+      "identifier": "media-3681543",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 325
+          },
+          "url": "https://docs-assets.developer.apple.com/published/a08eaeca25/rendered2x-1598976598.png"
+        }
+      ],
+      "alt": "Graphic showing the tapered merge from a high-frequency sine wave to a low-frequency sine wave.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450175-vdsp_vtmergd": {
+      "title": "vDSP_vtmergD(_:_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450175-vdsp_vtmergd",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450175-vdsp_vtmergd",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs a tapered merge between two double-precision vectors."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_vtmergD"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<Double>, vDSP_Stride, UnsafePointer<Double>, vDSP_Stride, UnsafeMutablePointer<Double>, vDSP_Stride, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer": {
+      "title": "AccelerateBuffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/acceleratebuffer"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/acceleratemutablebuffer": {
+      "title": "AccelerateMutableBuffer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratemutablebuffer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/acceleratemutablebuffer"
+    },
+    "doc://com.apple.documentation/documentation/swift/float": {
+      "title": "Float",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/swift/float",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/swift/float"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3600634-taperedmerge": {
+      "title": "taperedMerge(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3600634-taperedmerge",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3600634-taperedmerge",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the result of a tapered merge between two double-precision vectors."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "taperedMerge"
+        },
+        {
+          "kind": "text",
+          "text": "<T, U>(T, U) -> [Double]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3600635-taperedmerge": {
+      "title": "taperedMerge(_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3600635-taperedmerge",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3600635-taperedmerge",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the result of a tapered merge between two single-precision vectors."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "taperedMerge"
+        },
+        {
+          "kind": "text",
+          "text": "<T, U>(T, U) -> [Float]"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3600636-taperedmerge": {
+      "title": "taperedMerge(_:_:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3600636-taperedmerge",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3600636-taperedmerge",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Computes the result of a tapered merge between two double-precision vectors."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "taperedMerge"
+        },
+        {
+          "kind": "text",
+          "text": "<T, U, V>(T, U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3600637-taperedmerge": {
+      "title": "taperedMerge(_:_:result:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3600637-taperedmerge",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3600637-taperedmerge",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Computes the result of a tapered merge between two single-precision vectors."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "static func "
+        },
+        {
+          "kind": "identifier",
+          "text": "taperedMerge"
+        },
+        {
+          "kind": "text",
+          "text": "<T, U, V>(T, U, "
+        },
+        {
+          "kind": "identifier",
+          "text": "result"
+        },
+        {
+          "kind": "text",
+          "text": ": inout V)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1450140-vdsp_vtmerg": {
+      "title": "vDSP_vtmerg(_:_:_:_:_:_:_:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1450140-vdsp_vtmerg",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1450140-vdsp_vtmerg",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Performs a tapered merge between two single-precision vectors."
+        }
+      ],
+      "fragments": [
+        {
+          "kind": "text",
+          "text": "func "
+        },
+        {
+          "kind": "identifier",
+          "text": "vDSP_vtmerg"
+        },
+        {
+          "kind": "text",
+          "text": "(UnsafePointer<Float>, vDSP_Stride, UnsafePointer<Float>, vDSP_Stride, UnsafeMutablePointer<Float>, vDSP_Stride, vDSP_Length)"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3600634-taperedmerge",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3600635-taperedmerge",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp/3600636-taperedmerge",
+        "doc://com.apple.documentation/documentation/accelerate/1450140-vdsp_vtmerg",
+        "doc://com.apple.documentation/documentation/accelerate/1450175-vdsp_vtmergd"
+      ],
+      "title": "Vector-to-Vector Merging Functions",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "declarations",
+      "declarations": [
+        {
+          "languages": [
+            "swift"
+          ],
+          "tokens": [
+            {
+              "kind": "keyword",
+              "text": "static"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "keyword",
+              "text": "func"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "identifier",
+              "text": "taperedMerge"
+            },
+            {
+              "kind": "text",
+              "text": "<"
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO12taperedMerge__6resultyx_q_q0_ztAA0A6BufferRzAaFR_AA0a7MutableF0R0_Sf7ElementRtzSfAHRt_SfAHRt0_r1_lFZ1TL_xmfp",
+              "text": "T"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO12taperedMerge__6resultyx_q_q0_ztAA0A6BufferRzAaFR_AA0a7MutableF0R0_Sf7ElementRtzSfAHRt_SfAHRt0_r1_lFZ1UL_q_mfp",
+              "text": "U"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate4vDSPO12taperedMerge__6resultyx_q_q0_ztAA0A6BufferRzAaFR_AA0a7MutableF0R0_Sf7ElementRtzSfAHRt_SfAHRt0_r1_lFZ1VL_q0_mfp",
+              "text": "V"
+            },
+            {
+              "kind": "text",
+              "text": ">("
+            },
+            {
+              "kind": "externalParam",
+              "text": "_"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "vectorA"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "text",
+              "text": "T"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "externalParam",
+              "text": "_"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "internalParam",
+              "text": "vectorB"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "text",
+              "text": "U"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "externalParam",
+              "text": "result"
+            },
+            {
+              "kind": "text",
+              "text": ": "
+            },
+            {
+              "kind": "keyword",
+              "text": "inout"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "text",
+              "text": "V"
+            },
+            {
+              "kind": "text",
+              "text": ") "
+            },
+            {
+              "kind": "keyword",
+              "text": "where"
+            },
+            {
+              "kind": "text",
+              "text": " "
+            },
+            {
+              "kind": "text",
+              "text": "T : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate0A6BufferP",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer",
+              "text": "AccelerateBuffer"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "text",
+              "text": "U : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate0A6BufferP",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratebuffer",
+              "text": "AccelerateBuffer"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "text",
+              "text": "V : "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:10Accelerate0A13MutableBufferP",
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/acceleratemutablebuffer",
+              "text": "AccelerateMutableBuffer"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "text",
+              "text": "T.Element == "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Sf",
+              "identifier": "doc://com.apple.documentation/documentation/swift/float",
+              "text": "Float"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "text",
+              "text": "U.Element == "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Sf",
+              "identifier": "doc://com.apple.documentation/documentation/swift/float",
+              "text": "Float"
+            },
+            {
+              "kind": "text",
+              "text": ", "
+            },
+            {
+              "kind": "text",
+              "text": "V.Element == "
+            },
+            {
+              "kind": "typeIdentifier",
+              "preciseIdentifier": "s:Sf",
+              "identifier": "doc://com.apple.documentation/documentation/swift/float",
+              "text": "Float"
+            }
+          ],
+          "platforms": [
+            "iOS",
+            "macOS",
+            "Mac Catalyst",
+            "tvOS",
+            "watchOS"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "parameters",
+      "languages": [
+        "swift"
+      ],
+      "parameters": [
+        {
+          "name": "vectorA",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The first vector to merge."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "vectorB",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The second vector to merge."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "result",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "The destination vector that receives the result."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "discussion",
+          "level": 2,
+          "text": "Discussion",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows how to perform a tapered merge between two vectors that contain values representing sine waves at different frequencies:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let count = 1024",
+            "",
+            "let vectorA: [Float] = (0 ..< count).map {",
+            "    return sin(Float($0) * 0.4)",
+            "}",
+            "",
+            "let vectorB: [Float] = (0 ..< count).map {",
+            "    return sin(Float($0) * 0.025)",
+            "}",
+            "",
+            "let tapered = [Float](unsafeUninitializedCapacity: count) {",
+            "    buffer, initializedCount in",
+            "    ",
+            "    vDSP.taperedMerge(vectorA, vectorB,",
+            "                      result: &buffer)",
+            "    ",
+            "    initializedCount = count",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3681544",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following image shows the result of the tapered merge in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "tapered"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3681543",
+              "metadata": {
+                "anchor": "3681543",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

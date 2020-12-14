@@ -1,0 +1,1457 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Use iterative methods to solve large problems faster and with a lower memory overhead than with direct methods.  "
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2877651,
+  "kind": "article",
+  "metadata": {
+    "title": "Implementing Iterative Methods",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/implementing_iterative_methods",
+        "documentation/accelerate/sparse_solvers/implementing_iterative_methods"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/implementing_iterative_methods",
+        "documentation/accelerate/sparse_solvers/implementing_iterative_methods"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparse_solvers": {
+      "title": "Sparse Solvers",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparse_solvers",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/sparse_solvers",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Solve systems of equations where the coefficient matrix is sparse. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods#2880920": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods#2880920",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/implementing_iterative_methods#2880920"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods#2882585": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods#2882585",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/implementing_iterative_methods#2882585"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t": {
+      "title": "SparsePreconditioner_t",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsepreconditioner_t"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods#2882583": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods#2882583",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/implementing_iterative_methods#2882583"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods#2882587": {
+      "title": "Table 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods#2882587",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/accelerate/implementing_iterative_methods#2882587"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods#2882586": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods#2882586",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/implementing_iterative_methods#2882586"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t/sparsepreconditioneruser": {
+      "title": "SparsePreconditionerUser",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t/sparsepreconditioneruser",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsepreconditioner_t/sparsepreconditioneruser"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparseopaquepreconditioner_double/2873532-mem": {
+      "title": "mem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquepreconditioner_double/2873532-mem",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparseopaquepreconditioner_double/2873532-mem"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparseopaquepreconditioner_double/2873624-apply": {
+      "title": "apply",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquepreconditioner_double/2873624-apply",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparseopaquepreconditioner_double/2873624-apply"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods#2882584": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods#2882584",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/implementing_iterative_methods#2882584"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/2879245-sparseiterate": {
+      "title": "SparseIterate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/2879245-sparseiterate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/2879245-sparseiterate"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t/sparsepreconditionerdiagonal": {
+      "title": "SparsePreconditionerDiagonal",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t/sparsepreconditionerdiagonal",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsepreconditioner_t/sparsepreconditionerdiagonal"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t/sparsepreconditionerdiagscaling": {
+      "title": "SparsePreconditionerDiagScaling",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t/sparsepreconditionerdiagscaling",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/sparsepreconditioner_t/sparsepreconditionerdiagscaling"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods#2877653": {
+      "title": "Table 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods#2877653",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/accelerate/implementing_iterative_methods#2877653",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Direct versus iterative methods"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods#2877654": {
+      "title": "Table 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods#2877654",
+      "kind": "article",
+      "role": "table",
+      "url": "/documentation/accelerate/implementing_iterative_methods#2877654",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Iterative methods provided by the Accelerate framework"
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/creating_sparse_matrices": {
+      "title": "Creating Sparse Matrices",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_sparse_matrices",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/creating_sparse_matrices",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Create sparse matrices for factorization and solving systems."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods": {
+      "title": "Implementing Iterative Methods",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/implementing_iterative_methods",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use iterative methods to solve large problems faster and with a lower memory overhead than with direct methods.  "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_direct_methods": {
+      "title": "Solving Systems Using Direct Methods",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_direct_methods",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/solving_systems_using_direct_methods",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use direct methods to solve systems of equations where the coefficient matrix is sparse."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_iterative_methods": {
+      "title": "Solving Systems Using Iterative Methods",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_iterative_methods",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/solving_systems_using_iterative_methods",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use iterative methods to solve systems of equations where the coefficient matrix is sparse. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/creating_a_sparse_matrix_from_coordinate_format_arrays": {
+      "title": "Creating a Sparse Matrix from Coordinate Format Arrays",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_a_sparse_matrix_from_coordinate_format_arrays",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/creating_a_sparse_matrix_from_coordinate_format_arrays",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use separate coordinate format arrays to create sparse matrices."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/creating_sparse_matrices",
+        "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_direct_methods",
+        "doc://com.apple.documentation/documentation/accelerate/solving_systems_using_iterative_methods",
+        "doc://com.apple.documentation/documentation/accelerate/creating_a_sparse_matrix_from_coordinate_format_arrays",
+        "doc://com.apple.documentation/documentation/accelerate/sparse_solvers"
+      ],
+      "title": "Sparse Matrices",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In addition to direct methods, Sparse Solvers in the Accelerate framework offers iterative methods for solving systems of equations. "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods#2877653"
+            },
+            {
+              "type": "text",
+              "text": " summarizes the differences between the two approaches."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "both",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": []
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Direct methods"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Iterative methods"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Ease of Use"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Simple"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Complex"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Accuracy"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Machine precision"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Square root of machine precision"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Speed"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Fast for small problems"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Quite fast for larger problems"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Fastest for large problems, but only with a suitable problem-specific preconditioner"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Memory Requirements"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "High"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Low"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "2877653",
+            "title": "Table 1",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Direct versus iterative methods"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In contrast to direct methods, iterative methods provide a way for expert users to find approximate solutions faster and using less memory than with direct methods. Iterative methods can also be used when forming the explicit matrix is prohibitively expensive, but performing matrix-vector multiplications can be done efficiently. However, to achieve these gains, problem-specific knowledge is required to select an appropriate preconditioner (an operator that approximates the inverse of "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "). It's best to try a direct method before trying to use iterative methods."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "As the name suggests, an iterative method generates a series of solutions that converge to the true solution. The iteration can be stopped as soon as the solution is sufficiently close to the answer. In most cases, the iteration stagnates before reaching the exact solution, due to the limits of numerical accuracy inherent in floating-point arithmetic. In fact, some algorithms may fail to converge in finite time even in exact arithmetic."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/implementing_iterative_methods#2877654"
+            },
+            {
+              "type": "text",
+              "text": " lists the methods provided by the Accelerate framework for solving different classes of problems."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Ax = b"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "A"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " positive definite"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Ax = b "
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "A"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " symmetric indefinite"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "A"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " square unsymmetric"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "min_x ‖ Ax - b ‖"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "₂"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "A"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " square"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "A"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "text": " rectangular"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Conjugate gradient (CG)"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "DQGMRES"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "LSMR"
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": []
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "GMRES"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": []
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": []
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "FGMRES"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": []
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "2877654",
+            "title": "Table 2",
+            "abstract": [
+              {
+                "type": "text",
+                "text": "Iterative methods provided by the Accelerate framework"
+              }
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Implement an Iterative Method",
+          "anchor": "2880915"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In general, the solution call to solve "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "AX = B"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " has the following form:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "SparseSolve(SparseMETHOD(), A, B, X);"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2880920",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "where "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SparseMETHOD"
+            },
+            {
+              "type": "text",
+              "text": " is one of the methods from the table above."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "SparseMETHOD()"
+            },
+            {
+              "type": "text",
+              "text": " optionally takes a structure of options as an argument. See method-specific documentation to find out what these options are."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Add an Optional Preconditioner",
+          "anchor": "2882581"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Optionally, a preconditioner may be supplied:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "SparseSolve(SparseMETHOD(), B, X, P, A);"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2882585",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "codeVoice",
+              "code": "P"
+            },
+            {
+              "type": "text",
+              "text": " can be either a specific enumerated type ("
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t"
+            },
+            {
+              "type": "text",
+              "text": ") of preconditioner derived from the matrix "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", or a general preconditioner object containing a function pointer."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If the matrix "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " is not available explicitly, you can pass a block that performs the operation "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "y = op(A)x + beta y"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", where "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "op(A)"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " is "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A"
+                }
+              ]
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "ᵀ"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "beta"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "0.0"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1.0"
+            },
+            {
+              "type": "text",
+              "text": ", signaled by the Boolean parameter "
+            },
+            {
+              "type": "codeVoice",
+              "code": "accumulate"
+            },
+            {
+              "type": "text",
+              "text": ". For example, passing the sparse matrix "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "A"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " is equivalent to the following call:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "SparseSolve( SparseMETHOD(), B, X, ",
+            "    ^void(bool accumulate, enum CBLAS_TRANSPOSE trans, ",
+            "          DenseMatrix X, DenseMatrix Y) {",
+            "        if(accumulate) {",
+            "            if(trans==CblasNoTrans) ",
+            "                SparseMultiplyAdd(A, X, Y);",
+            "            else                    ",
+            "                SparseMultiplyAdd(SparseGetTranspose(A), X, Y);",
+            "        } else {",
+            "            if(trans==CblasNoTrans)",
+            "                SparseMultiply(A, X, Y);",
+            "            else                    ",
+            "                SparseMultiply(SparseGetTranspose(A), X, Y);",
+            "        }",
+            "    } );"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2882583",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Accelerate framework offers the following preconditioners that may be effective for some problems:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "header": "row",
+          "rows": [
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "Ax = b"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "emphasis",
+                      "inlineContent": [
+                        {
+                          "type": "text",
+                          "text": "minₓ ‖ Ax - b ‖₂"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t/sparsepreconditionerdiagonal"
+                    },
+                    {
+                      "type": "text",
+                      "text": " (Diagonal (Jacobi))"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t/sparsepreconditionerdiagscaling"
+                    },
+                    {
+                      "type": "text",
+                      "text": " (Diagonal scaling)"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          "metadata": {
+            "anchor": "2882587",
+            "title": "Table 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because preconditioning is often essential to convergence, accuracy, and performance, be sure to refer to the documentation for "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t"
+            },
+            {
+              "type": "text",
+              "text": " to find a suitable preconditioner for the particular problem. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A preconditioner "
+            },
+            {
+              "type": "codeVoice",
+              "code": "P"
+            },
+            {
+              "type": "text",
+              "text": " is provided as a struct:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "typedef struct {",
+            "  SparsePreconditioner_t type;",
+            "  void *mem;",
+            "  void (*apply) (void *mem, enum CBLAS_TRANSPOSE trans, DenseMatrix_Double X, DenseMatrix_Double Y);",
+            "} SparseOpaquePreconditioner_Double;"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2882586",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For user-provided preconditioners, the type must be "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t/sparsepreconditioneruser"
+            },
+            {
+              "type": "text",
+              "text": ". The member "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquepreconditioner_double/2873532-mem"
+            },
+            {
+              "type": "text",
+              "text": " is passed without modification as the first argument of "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/sparseopaquepreconditioner_double/2873624-apply"
+            },
+            {
+              "type": "text",
+              "text": "(). The argument trans is either "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CblasNoTrans"
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "codeVoice",
+              "code": "CblasTrans"
+            },
+            {
+              "type": "text",
+              "text": ", indicating whether to perform the operation "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Y = PX"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " or "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Y = P"
+                }
+              ]
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "ᵀ"
+                }
+              ]
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "X"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " respectively."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can get a structure of this form for a preconditioner provided by the Accelerate framework with the following code:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "__auto_type P = SparseCreatePreconditioner(type, A);"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2882584",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In this case, you must release memory through a call to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "SparseRelease(_:)"
+            },
+            {
+              "type": "text",
+              "text": " once the preconditioner is no longer required."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "If you need to perform your own convergence tests, or you otherwise wish to single-step the iteration, the routine "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/2879245-sparseiterate"
+            },
+            {
+              "type": "text",
+              "text": " is provided. Because this routine is intended for expert users only, only the block form, with or without a struct-based preconditioner, is provided. Note that the solution "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "X"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " may not be available on all iterations, and you should explicitly finalize the iteration with a call using a negative first argument before attempting to use the solution."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

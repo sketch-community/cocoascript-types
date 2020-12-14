@@ -1,0 +1,1144 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Approximates the definite integral of a function over a finite or infinite interval."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/quadrature",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 1849872,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Quadrature",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/quadrature"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/quadrature"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/quadrature#2008742": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/quadrature#2008742",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/quadrature#2008742"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/quadrature#2008743": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/quadrature#2008743",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/quadrature#2008743"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/quadrature#1884147": {
+      "title": "Integrators",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/quadrature#1884147",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/accelerate/quadrature#1884147"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/quadrature#1884148": {
+      "title": "Providing a Workspace",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/quadrature#1884148",
+      "kind": "article",
+      "role": "subsection",
+      "url": "/documentation/accelerate/quadrature#1884148"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/quadrature-smu": {
+      "title": "Quadrature",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/quadrature-smu",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/quadrature-smu"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/1642331-quadrature_integrate": {
+      "title": "quadrature_integrate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/1642331-quadrature_integrate",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/1642331-quadrature_integrate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Computes an approximation to the definite integral of a function on a specified interval."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/quadrature": {
+      "title": "Quadrature",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/quadrature",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/quadrature",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Approximates the definite integral of a function over a finite or infinite interval."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Quadrature",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/1642331-quadrature_integrate"
+      ]
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Quadrature provides an approximation of the definite integral of a function, over a finite or infinite interval."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Quadrature"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " is a historic term for determining the area under a curve. Often, this was done by breaking the area into smaller shapes, whose area could be easily calculated (such as rectangles), and summing these smaller areas to obtain an approximate result."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "In modern terms this process is called "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "definite integration"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ". The Accelerate framework’s Quadrature functionality provides an approximation of the definite integral of a function, over a finite or infinite interval, performed by evaluating the function at a series of points within the interval. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Quadrature library provides a Swift-only API, based on the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/quadrature-smu"
+            },
+            {
+              "type": "text",
+              "text": " structure, and both Swift and Objective-C APIs. For the latter, the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "quadrature_integrate()"
+            },
+            {
+              "type": "text",
+              "text": " function performs this calculation using any one of three algorithms described in the "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/quadrature#1884147"
+            },
+            {
+              "type": "text",
+              "text": " section below."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "The Integration Callback",
+          "anchor": "2008751"
+        },
+        {
+          "type": "aside",
+          "content": [
+            {
+              "type": "paragraph",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "To avoid confusion over the word "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "function"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": ", this document refers to the mathematical function that is to be integrated as the "
+                },
+                {
+                  "type": "emphasis",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "integrand"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ],
+          "style": "note",
+          "name": "Note"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To represent the integrand, use a C function of the following type, defined in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "integration.h"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "typedef void (*quadrature_function_array)(void * _Null_unspecified __arg,",
+            "                                          size_t __n,",
+            "                                          const double *__x,",
+            "                                          double *__y",
+            ");"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2008742",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "This function is the "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "integration callback"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ". This is a function that processes values in an input array, and produces corresponding result values in an output array; the function should not do anything else, and it must return "
+            },
+            {
+              "type": "codeVoice",
+              "code": "void"
+            },
+            {
+              "type": "text",
+              "text": ". The input values are "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "x"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " values within the interval over which the integrand is being integrated, and the output values are the corresponding  values "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "y = integrand(x)"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " at those points."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "There are two other parameters: a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "void*"
+            },
+            {
+              "type": "text",
+              "text": " pointer "
+            },
+            {
+              "type": "codeVoice",
+              "code": "arg"
+            },
+            {
+              "type": "text",
+              "text": ", that you will supply at call time, and a size for the arrays (for details, consult the header file "
+            },
+            {
+              "type": "codeVoice",
+              "code": "integration.h"
+            },
+            {
+              "type": "text",
+              "text": "). The pointer "
+            },
+            {
+              "type": "codeVoice",
+              "code": "arg"
+            },
+            {
+              "type": "text",
+              "text": " is available in case you need to reference some outside object from inside your callback; however if your callback only needs the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "x"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "y"
+            },
+            {
+              "type": "text",
+              "text": " arguments, you can ignore "
+            },
+            {
+              "type": "codeVoice",
+              "code": "arg"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "When the integration callback has been defined, you can package it in a struct of type "
+            },
+            {
+              "type": "codeVoice",
+              "code": "quadrature_integrate_function"
+            },
+            {
+              "type": "text",
+              "text": ", defined in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "integration.h"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "quadrature_integrate_function f;",
+            "f.fun = integrationCB;",
+            "f.fun_arg = myArg;"
+          ],
+          "syntax": "occ",
+          "metadata": {
+            "anchor": "2008743",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "where "
+            },
+            {
+              "type": "codeVoice",
+              "code": "integrationCB"
+            },
+            {
+              "type": "text",
+              "text": " is the integration callback and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "myArg"
+            },
+            {
+              "type": "text",
+              "text": " is a "
+            },
+            {
+              "type": "codeVoice",
+              "code": "void*"
+            },
+            {
+              "type": "text",
+              "text": " pointer value to be passed to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "integrationCB"
+            },
+            {
+              "type": "text",
+              "text": " as the first parameter, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "arg"
+            },
+            {
+              "type": "text",
+              "text": ". If the integration callback has been written to ignore this value, just pass "
+            },
+            {
+              "type": "codeVoice",
+              "code": "NULL"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The struct "
+            },
+            {
+              "type": "codeVoice",
+              "code": "f"
+            },
+            {
+              "type": "text",
+              "text": " can now be passed as the first argument to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "quadrature_integrate()"
+            },
+            {
+              "type": "text",
+              "text": ", which will supply the input and output arrays, fill the input array with "
+            },
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "x"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " values, and perform the integration by calling "
+            },
+            {
+              "type": "codeVoice",
+              "code": "integrationCB"
+            },
+            {
+              "type": "text",
+              "text": " as many times as necessary. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Integration Options",
+          "anchor": "2008753"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Options that control the logic of the integration are specified as fields of a struct of type "
+            },
+            {
+              "type": "codeVoice",
+              "code": "quadrature_integrate_options"
+            },
+            {
+              "type": "text",
+              "text": ", defined in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "integration.h"
+            },
+            {
+              "type": "text",
+              "text": ". The fields are interpreted as follows:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "integrator"
+                    },
+                    {
+                      "type": "text",
+                      "text": ": A constant that identifies one of three available integration algorithms (see the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/quadrature#1884147"
+                    },
+                    {
+                      "type": "text",
+                      "text": " section below):"
+                    }
+                  ]
+                },
+                {
+                  "type": "unorderedList",
+                  "items": [
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "codeVoice",
+                              "code": "QUADRATURE_INTEGRATE_QNG"
+                            },
+                            {
+                              "type": "text",
+                              "text": " selects the QNG algorithm."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "codeVoice",
+                              "code": "QUADRATURE_INTEGRATE_QAG"
+                            },
+                            {
+                              "type": "text",
+                              "text": " selects the QAG algorithm."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "inlineContent": [
+                            {
+                              "type": "codeVoice",
+                              "code": "QUADRATURE_INTEGRATE_QAGS"
+                            },
+                            {
+                              "type": "text",
+                              "text": " selects the QAGS algorithm."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "abs_tolerance"
+                    },
+                    {
+                      "type": "text",
+                      "text": ": A value of type "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "double"
+                    },
+                    {
+                      "type": "text",
+                      "text": "; requested absolute tolerance on the result."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "rel_tolerance"
+                    },
+                    {
+                      "type": "text",
+                      "text": ": A value of type "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "double"
+                    },
+                    {
+                      "type": "text",
+                      "text": "; requested relative tolerance on the result."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "qag_points_per_interval"
+                    },
+                    {
+                      "type": "text",
+                      "text": ": Number of points per subinterval. Used by the QAG integrator only; other integrators ignore this value. Can be 0, 15, 21, 31, 41, 51, 61. 0 maps to the default 21."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "codeVoice",
+                      "code": "max_intervals"
+                    },
+                    {
+                      "type": "text",
+                      "text": ": When you do not provide a workspace (see the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/quadrature#1884148"
+                    },
+                    {
+                      "type": "text",
+                      "text": " section below), this is the maximum number of subintervals in the subdivision used by QAG and QAGS integrators. "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "max_intervals"
+                    },
+                    {
+                      "type": "text",
+                      "text": " is ignored by QAG and QAGS if you provide a workspace, and always ignored by QNG."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Integrators",
+          "anchor": "1884147"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Quadrature has three different integrators available to perform the integration, called QNG, QAG, and QAGS. Each integrator is a specific implementation of an algorithm of the same name. The algorithms are all variants of the well-known Gauss-Kronrod method, and their integrators are C ports of the corresponding routines in the QUADPACK library:"
+            }
+          ]
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "QNG is a simple nonadaptive automatic integrator using Gauss-Kronrod-Patterson quadrature coefficients. It evaluates 21, 43, or 87 points in the interval until the requested accuracy is reached."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "QAG is globally adaptive – it divides the integration interval into a number of subintervals depending on the memory available and/or the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "max_intervals"
+                    },
+                    {
+                      "type": "text",
+                      "text": " option (see the "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/quadrature#1884148"
+                    },
+                    {
+                      "type": "text",
+                      "text": " section below). In each interval it uses 0, 15, 21, 31, 41, 51, or 61 points depending on the "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "qag_points_per_interval"
+                    },
+                    {
+                      "type": "text",
+                      "text": " option."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "QAGS is globally adaptive and permits infinite bounds on the integration interval. Within each subinterval it uses 21 points if both bounds are finite, or 15 if one or both bounds are infinite. The algorithm is accelerated by Peter Wynn’s epsilon algorithm. If at least one of the interval bounds is infinite, this is equivalent to the QUADPACK QAGI routine. Otherwise, this is equivalent to the QUADPACK QAGS routine."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To select an integrator for a particular integrand, the following decision tree is recommended:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "strong",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Integration over a finite region"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If performance is not a concern and you don’t know much about the specifics of the problem, use QAGS."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Otherwise, if the integrand is smooth, use QNG – or QAG if the requested tolerance couldn't be reached with QNG."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Otherwise, if there are discontinuities or singularities of the integrand or of its derivative, and you know where they are, split the integration range at these points and analyze each subinterval."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Otherwise, if the integrand has end point singularities, use QAGS."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Otherwise, if the integrand has an oscillatory behavior of nonspecific type, and no singularities, use QAG with 61 points per interval."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Otherwise, use QAGS."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "strong",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Integration over an infinite region"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "If the integrand decays rapidly toward zero, truncate the interval and use the finite interval decision tree."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Otherwise, if you are not constrained by computer time, and do not wish to analyze the problem further, use QAGS."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Otherwise, if the integrand has a non-smooth behavior in the range, and you know where it occurs, split off these regions and use the appropriate finite range routines to integrate over them. Then begin this tree again to handle the remainder of the region."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Otherwise, truncation of the interval, or application of a suitable transformation for reducing the problem to a finite range may be possible."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Providing a Workspace",
+          "anchor": "1884148"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Optionally, you may allocate a memory area as workspace for quadrature. This is not a requirement and you should generally not provide a workspace unless you need precise control over memory usage. The QAG and QAGS algorithms require a workspace and will automatically allocate it if you do not provide one; the size of the automatically allocated workspace will depend on the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "max_intervals"
+            },
+            {
+              "type": "text",
+              "text": " option. The QNG algorithm does not require a workspace."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "By allocating the workspace yourself, you have control over the amount of memory used; there is a tradeoff between memory usage and performance."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The QAG algorithm requires, for a given number of subintervals, at least that number times "
+            },
+            {
+              "type": "codeVoice",
+              "code": "QUADRATURE_INTEGRATE_QAG_WORKSPACE_PER_INTERVAL"
+            },
+            {
+              "type": "text",
+              "text": " bytes in the workspace. If you provide more memory, the algorithm will be able to use more subintervals."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The QAGS algorithm requires, for a given number of subintervals, at least that number times "
+            },
+            {
+              "type": "codeVoice",
+              "code": "QUADRATURE_INTEGRATE_QAGS_WORKSPACE_PER_INTERVAL"
+            },
+            {
+              "type": "text",
+              "text": " bytes in the workspace. If you provide more memory, the algorithm will be able to use more subintervals."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

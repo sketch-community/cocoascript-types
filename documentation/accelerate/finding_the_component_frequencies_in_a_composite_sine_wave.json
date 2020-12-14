@@ -1,0 +1,1219 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Use 1D fast Fourier transform to compute the frequency components of a signal."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/fast_fourier_transforms"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vdsp",
+        "doc://com.apple.documentation/documentation/accelerate/fast_fourier_transforms"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 3074124,
+  "kind": "article",
+  "metadata": {
+    "title": "Finding the Component Frequencies in a Composite Sine Wave",
+    "role": "article",
+    "roleHeading": "Article",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave",
+        "documentation/accelerate/fast_fourier_transforms/finding_the_component_frequencies_in_a_composite_sine_wave",
+        "documentation/accelerate/vdsp/fast_fourier_transforms/finding_the_component_frequencies_in_a_composite_sine_wave"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave",
+        "documentation/accelerate/fast_fourier_transforms/finding_the_component_frequencies_in_a_composite_sine_wave",
+        "documentation/accelerate/vdsp/fast_fourier_transforms/finding_the_component_frequencies_in_a_composite_sine_wave"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/fast_fourier_transforms": {
+      "title": "Fast Fourier Transforms",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/fast_fourier_transforms",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/fast_fourier_transforms",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Transform vectors and matrices of temporal and spatial domain complex values to the frequency domain, and vice versa."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp": {
+      "title": "vDSP",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp",
+      "url": "/documentation/accelerate/vdsp",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave#3074129": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave#3074129",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave#3074129"
+    },
+    "link-media-3080651": {
+      "identifier": "link-media-3080651",
+      "type": "link",
+      "title": "Figure 2",
+      "url": "/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave#3080651"
+    },
+    "media-3080651": {
+      "identifier": "media-3080651",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 325
+          },
+          "url": "https://docs-assets.developer.apple.com/published/b18d17cf0e/8690ccb7-111c-45d2-9219-2f52b3335045.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 325
+          },
+          "url": "https://docs-assets.developer.apple.com/published/0f83f618c1/688a5b6a-7d14-440e-af42-964b0e4f39b8.png"
+        }
+      ],
+      "alt": "Diagram showing a plot of the orignal signal in the time domain.",
+      "title": "Figure 2"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave#3074134": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave#3074134",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave#3074134"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave#3403286": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave#3403286",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave#3403286"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/dspsplitcomplex": {
+      "title": "DSPSplitComplex",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/dspsplitcomplex",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/dspsplitcomplex"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vdsp/3240871-convert": {
+      "title": "convert(interleavedComplexVector:toSplitComplexVector:)",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240871-convert",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/accelerate/vdsp/3240871-convert"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave#3403295": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave#3403295",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave#3403295"
+    },
+    "link-media-3080649": {
+      "identifier": "link-media-3080649",
+      "type": "link",
+      "title": "Figure 3",
+      "url": "/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave#3080649"
+    },
+    "media-3080649": {
+      "identifier": "media-3080649",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 325
+          },
+          "url": "https://docs-assets.developer.apple.com/published/025110b5d9/1c24caa9-7d90-4acf-bfe5-9c556cdbda5e.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 325
+          },
+          "url": "https://docs-assets.developer.apple.com/published/8538ac7da1/6a4996cf-9ebc-49a5-bf36-1dbd294b913d.png"
+        }
+      ],
+      "alt": "Diagram showing a plot of the orignal signal in the frequency domain.",
+      "title": "Figure 3"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave#3074135": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave#3074135",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave#3074135"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave#3403297": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave#3403297",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave#3403297"
+    },
+    "link-media-3080734": {
+      "identifier": "link-media-3080734",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave#3080734"
+    },
+    "media-3080734": {
+      "identifier": "media-3080734",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "1x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 165
+          },
+          "url": "https://docs-assets.developer.apple.com/published/fd95b22b8e/af0936c6-2d75-4ce3-87e9-f4e6749e893f.png"
+        },
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 680,
+            "height": 165
+          },
+          "url": "https://docs-assets.developer.apple.com/published/5d0dfe2ac8/42e950ce-04a3-4b3d-bfbd-d62b8b86462c.png"
+        }
+      ],
+      "alt": "Diagram showing, on the left, a plot of the original signal, and, on the right, a plot of the component frequencies as a series of vertical lines.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave": {
+      "title": "Finding the Component Frequencies in a Composite Sine Wave",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/finding_the_component_frequencies_in_a_composite_sine_wave",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use 1D fast Fourier transform to compute the frequency components of a signal."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/performing_fourier_transforms_on_interleaved-complex_data": {
+      "title": "Performing Fourier Transforms on Interleaved-Complex Data",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/performing_fourier_transforms_on_interleaved-complex_data",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/performing_fourier_transforms_on_interleaved-complex_data",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Optimize fast Fourier transform (FFT) performance with vDSP’s fixed-length interleaved FFT routines."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/using_windowing_with_discrete_fourier_transforms": {
+      "title": "Using Windowing with Discrete Fourier Transforms",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/using_windowing_with_discrete_fourier_transforms",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/using_windowing_with_discrete_fourier_transforms",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Multiply signal data by window sequence values to reduce spectral leakage."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise": {
+      "title": "Signal Extraction from Noise",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/signal_extraction_from_noise",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use Accelerate’s discrete cosine transform to remove noise from a signal."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/performing_fourier_transforms_on_multiple_signals": {
+      "title": "Performing Fourier Transforms on Multiple Signals",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/performing_fourier_transforms_on_multiple_signals",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/performing_fourier_transforms_on_multiple_signals",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use Accelerate’s multiple-signal fast Fourier transform (FFT) functions to transform multiple signals with a single function call."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/halftone_descreening_with_2d_fast_fourier_transform": {
+      "title": "Halftone Descreening with 2D Fast Fourier Transform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/halftone_descreening_with_2d_fast_fourier_transform",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/halftone_descreening_with_2d_fast_fourier_transform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Reduce or remove periodic artifacts from images."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/discrete_fourier_transforms": {
+      "title": "Discrete Fourier Transforms",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/discrete_fourier_transforms",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/discrete_fourier_transforms",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Transform vectors of temporal and spatial domain complex values to the frequency domain, and vice versa."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/discrete_cosine_transforms": {
+      "title": "Discrete Cosine Transforms",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/discrete_cosine_transforms",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/discrete_cosine_transforms",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Transform vectors of temporal and spatial domain real values to the frequency domain, and vice versa."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/performing_fourier_transforms_on_interleaved-complex_data",
+        "doc://com.apple.documentation/documentation/accelerate/using_windowing_with_discrete_fourier_transforms",
+        "doc://com.apple.documentation/documentation/accelerate/signal_extraction_from_noise",
+        "doc://com.apple.documentation/documentation/accelerate/performing_fourier_transforms_on_multiple_signals",
+        "doc://com.apple.documentation/documentation/accelerate/halftone_descreening_with_2d_fast_fourier_transform",
+        "doc://com.apple.documentation/documentation/accelerate/fast_fourier_transforms",
+        "doc://com.apple.documentation/documentation/accelerate/discrete_fourier_transforms",
+        "doc://com.apple.documentation/documentation/accelerate/discrete_cosine_transforms"
+      ],
+      "title": "Fourier and Cosine Transforms",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Accelerate’s vDSP module provides functions to perform 1D fast Fourier transforms (FFTs) on vectors of data, such as audio signals. The following shows an input signal (at left), and its frequency domain equivalent (at right) after transforming the signal with a forward FFT."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3080734",
+              "metadata": {
+                "anchor": "3080734",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can inspect the frequency-domain data of a forward FFT to compute the individual sine wave components of a composite wave. The technique described here is applicable in many digital signal processing applications; for example, finding the dominant frequencies in a dual-tone multi-frequency (DTMF) signal or removing noise from a signal. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You'll learn how to create a composite sine wave, perform a forward FFT, inspect the result to find its components, and perfom an inverse FFT to recreate the original signal. "
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create the Composite Signal",
+          "anchor": "3074132"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Start by creating an array to generate a signal. You’ll need to populate an array of single-precision values using the sums of a series of sine waves. You define the frequencies as the number of cycles per "
+            },
+            {
+              "type": "codeVoice",
+              "code": "n"
+            },
+            {
+              "type": "text",
+              "text": ". The highest measureable frequency, known as the Nyquist frequency, is the element with index "
+            },
+            {
+              "type": "codeVoice",
+              "code": "n/2"
+            },
+            {
+              "type": "text",
+              "text": ", which is "
+            },
+            {
+              "type": "codeVoice",
+              "code": "1023"
+            },
+            {
+              "type": "text",
+              "text": " in a zero-based array that contains "
+            },
+            {
+              "type": "codeVoice",
+              "code": "2048"
+            },
+            {
+              "type": "text",
+              "text": " elements."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following creates the array, called "
+            },
+            {
+              "type": "codeVoice",
+              "code": "signal"
+            },
+            {
+              "type": "text",
+              "text": ", that contains 10 component sine waves:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let n = vDSP_Length(2048)",
+            "",
+            "let frequencies: [Float] = [1, 5, 25, 30, 75, 100,",
+            "                            300, 500, 512, 1023]",
+            "",
+            "let tau: Float = .pi * 2",
+            "let signal: [Float] = (0 ... n).map { index in",
+            "    frequencies.reduce(0) { accumulator, frequency in",
+            "        let normalizedIndex = Float(index) / Float(n)",
+            "        return accumulator + sin(normalizedIndex * frequency * tau)",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3074129",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following image is a visualization of composite sine waves in "
+            },
+            {
+              "type": "codeVoice",
+              "code": "signal"
+            },
+            {
+              "type": "text",
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3080651",
+              "metadata": {
+                "anchor": "3080651",
+                "title": "Figure 2"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create the FFT Setup",
+          "anchor": "3074131"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Create a setup object that contains a precalculated weights array of complex exponentials required to perform the FFT operations. The vaues in the weights array simplify the FFT calculation. Creating this setup object can be expensive, so do it only once; for example, when starting your app. After creating the setup object, you can reuse it later, as needed."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code creates a setup object suitable for performing forward and inverse 1D FFTs on a signal containing "
+            },
+            {
+              "type": "codeVoice",
+              "code": "n"
+            },
+            {
+              "type": "text",
+              "text": " elements:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let log2n = vDSP_Length(log2(Float(n)))",
+            "",
+            "guard let fftSetUp = vDSP.FFT(log2n: log2n,",
+            "                              radix: .radix2,",
+            "                              ofType: DSPSplitComplex.self) else {",
+            "                                fatalError(\"Can't create FFT Setup.\")",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3074134",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You can use this setup object for similarly sized smaller FFTs. However, using a weights array built for an FFT that processes a large number of elements can degrade performance for an FFT that processes a significantly smaller number of elements. "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create the Source and Destination Arrays for the Forward FFT",
+          "anchor": "3403287"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The FFT operates on complex numbers, that is numbers that contain a real part and an imaginary part. Create two arrays—one for the real parts and one for the imaginary parts—for the input and output to the FFT operation:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let halfN = Int(n / 2)",
+            "        ",
+            "var forwardInputReal = [Float](repeating: 0,",
+            "                               count: halfN)",
+            "var forwardInputImag = [Float](repeating: 0,",
+            "                               count: halfN)",
+            "var forwardOutputReal = [Float](repeating: 0,",
+            "                                count: halfN)",
+            "var forwardOutputImag = [Float](repeating: 0,",
+            "                                count: halfN)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403286",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Because each complex value stores two real values, the length of teach array is half that of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "signal"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Perform the Forward FFT",
+          "anchor": "3403294"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "You use "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/dspsplitcomplex"
+            },
+            {
+              "type": "text",
+              "text": " structures to pass pointers to the real and imaginary parts arrays to the FFT transform function. Use "
+            },
+            {
+              "type": "codeVoice",
+              "code": "withUnsafeMutableBufferPointer(_:)"
+            },
+            {
+              "type": "text",
+              "text": " to pass the output arrays to "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To perform the forward FFT:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/dspsplitcomplex"
+                    },
+                    {
+                      "type": "text",
+                      "text": " structure to store "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "signal"
+                    },
+                    {
+                      "type": "text",
+                      "text": " represented as complex numbers."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Use "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": true,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/vdsp/3240871-convert"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to convert the real values in "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "signal"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to complex numbers. The conversion stores the even values in "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "signal"
+                    },
+                    {
+                      "type": "text",
+                      "text": " as the real components in "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "forwardInput"
+                    },
+                    {
+                      "type": "text",
+                      "text": ", and the odd values in "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "signal"
+                    },
+                    {
+                      "type": "text",
+                      "text": " as the imaginary components in "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "forwardInput"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/dspsplitcomplex"
+                    },
+                    {
+                      "type": "text",
+                      "text": " structure with pointers to "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "forwardOutputReal"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "forwardOutputImag"
+                    },
+                    {
+                      "type": "text",
+                      "text": " to receive the FFT result."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Perform the forward FFT."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows how to perform the forward FFT using the steps described above."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "forwardInputReal.withUnsafeMutableBufferPointer { forwardInputRealPtr in",
+            "    forwardInputImag.withUnsafeMutableBufferPointer { forwardInputImagPtr in",
+            "        forwardOutputReal.withUnsafeMutableBufferPointer { forwardOutputRealPtr in",
+            "            forwardOutputImag.withUnsafeMutableBufferPointer { forwardOutputImagPtr in",
+            "                ",
+            "                // 1: Create a `DSPSplitComplex` to contain the signal.",
+            "                var forwardInput = DSPSplitComplex(realp: forwardInputRealPtr.baseAddress!,",
+            "                                                   imagp: forwardInputImagPtr.baseAddress!)",
+            "                ",
+            "                // 2: Convert the real values in `signal` to complex numbers.",
+            "                signal.withUnsafeBytes {",
+            "                    vDSP.convert(interleavedComplexVector: [DSPComplex]($0.bindMemory(to: DSPComplex.self)),",
+            "                                 toSplitComplexVector: &forwardInput)",
+            "                }",
+            "                ",
+            "                // 3: Create a `DSPSplitComplex` to receive the FFT result.",
+            "                var forwardOutput = DSPSplitComplex(realp: forwardOutputRealPtr.baseAddress!,",
+            "                                                    imagp: forwardOutputImagPtr.baseAddress!)",
+            "                ",
+            "                // 4: Perform the forward FFT.",
+            "                fftSetUp.forward(input: forwardInput,",
+            "                                 output: &forwardOutput)",
+            "            }",
+            "        }",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403295",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "forwardOutputReal"
+            },
+            {
+              "type": "text",
+              "text": " contains the DC components of the forward FFT, and "
+            },
+            {
+              "type": "codeVoice",
+              "code": "forwardOutputImag"
+            },
+            {
+              "type": "text",
+              "text": " contains the Nyquist components of the forward FFT."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Compute Component Frequencies in Frequency Domain",
+          "anchor": "3074125"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The Nyquist components of the forward FFT contain a series of high-magnitude items, rendered as vertical lines in the graph below:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3080649",
+              "metadata": {
+                "anchor": "3080649",
+                "title": "Figure 3"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "These high-magnitude items correspond exactly to the frequencies you specified in the "
+            },
+            {
+              "type": "codeVoice",
+              "code": "frequencies"
+            },
+            {
+              "type": "text",
+              "text": " array:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let componentFrequencies = forwardOutputImag.enumerated().filter {",
+            "    $0.element < -1",
+            "}.map {",
+            "    return $0.offset",
+            "}",
+            "        ",
+            "// Prints \"[1, 5, 25, 30, 75, 100, 300, 500, 512, 1023]\"",
+            "print(componentFrequencies)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3074135",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Recreate the Original Signal",
+          "anchor": "3403296"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "Use an inverse FFT to recreate a signal in the time domain, using the frequency-domain data returned by the forward FFT."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To perform the forward FFT:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create the source of the inverse FFT, with pointers to "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "forwardOutputReal"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "forwardOutputImag"
+                    },
+                    {
+                      "type": "text",
+                      "text": "."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Create a "
+                    },
+                    {
+                      "type": "reference",
+                      "isActive": false,
+                      "identifier": "doc://com.apple.documentation/documentation/accelerate/dspsplitcomplex"
+                    },
+                    {
+                      "type": "text",
+                      "text": " structure to receive the FFT result."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Perform the inverse FFT."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Return an array of real values from the FFT result. Because the forward transform has a scaling factor of "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "2"
+                    },
+                    {
+                      "type": "text",
+                      "text": " and the inverse transform has a scaling factor of the number of items, divide each result by "
+                    },
+                    {
+                      "type": "codeVoice",
+                      "code": "2 * n"
+                    },
+                    {
+                      "type": "text",
+                      "text": ":"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": []
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var inverseOutputReal = [Float](repeating: 0,",
+            "                                count: halfN)",
+            "var inverseOutputImag = [Float](repeating: 0,",
+            "                                count: halfN)",
+            "",
+            "let recreatedSignal: [Float] = forwardOutputReal.withUnsafeMutableBufferPointer { forwardOutputRealPtr in",
+            "    forwardOutputImag.withUnsafeMutableBufferPointer { forwardOutputImagPtr in",
+            "        inverseOutputReal.withUnsafeMutableBufferPointer { inverseOutputRealPtr in",
+            "            inverseOutputImag.withUnsafeMutableBufferPointer { inverseOutputImagPtr in",
+            "                ",
+            "                // 1: Create a `DSPSplitComplex` that contains the frequency domain data.",
+            "                let forwardOutput = DSPSplitComplex(realp: forwardOutputRealPtr.baseAddress!,",
+            "                                                    imagp: forwardOutputImagPtr.baseAddress!)",
+            "                ",
+            "                // 2: Create a `DSPSplitComplex` structure to receive the FFT result.",
+            "                var inverseOutput = DSPSplitComplex(realp: inverseOutputRealPtr.baseAddress!,",
+            "                                                    imagp: inverseOutputImagPtr.baseAddress!)",
+            "                ",
+            "                // 3: Perform the inverse FFT.",
+            "                fftSetUp.inverse(input: forwardOutput,",
+            "                                 output: &inverseOutput)",
+            "                ",
+            "                // 4: Return an array of real values from the FFT result.",
+            "                let scale = 1 / Float(n * 2)",
+            "                return [Float](fromSplitComplex: inverseOutput,",
+            "                               scale: scale,",
+            "                               count: Int(n))",
+            "            }",
+            "        }",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3403297",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "On return, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "recreatedSignal"
+            },
+            {
+              "type": "text",
+              "text": " is approximately equal to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "signal"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

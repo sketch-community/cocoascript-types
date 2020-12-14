@@ -1,0 +1,952 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Manage digital certificates."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/security",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2864147,
+  "kind": "symbol",
+  "metadata": {
+    "title": "Certificates",
+    "role": "collectionGroup",
+    "modules": [
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/security/certificate_key_and_trust_services/certificates"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/security/certificate_key_and_trust_services/certificates"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/security": {
+      "title": "Security",
+      "identifier": "doc://com.apple.documentation/documentation/security",
+      "url": "/documentation/security",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services": {
+      "title": "Certificate, Key, and Trust Services",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services",
+      "url": "/documentation/security/certificate_key_and_trust_services",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "link-media-2904073": {
+      "identifier": "link-media-2904073",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/security/certificate_key_and_trust_services/certificates#2904073"
+    },
+    "media-2904073": {
+      "identifier": "media-2904073",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 298,
+            "height": 459
+          },
+          "url": "https://docs-assets.developer.apple.com/published/0ddea9db46/f54d1629-9526-412b-aa29-79b9a14a0488.png"
+        }
+      ],
+      "alt": "Diagram showing the components of an X.509 certificate, including the version and serial number, the subject and issuer, the validity dates, the public key, the signature, and the extensions.",
+      "title": "Figure 1",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Contents of an X.509 certificate"
+        }
+      ]
+    },
+    "devLink-1745671": {
+      "identifier": "devLink-1745671",
+      "type": "link",
+      "title": "Digital Certificates",
+      "url": "https://developer.apple.com/library/archive/documentation/Security/Conceptual/cryptoservices/CryptographyConcepts/CryptographyConcepts.html#//apple_ref/doc/uid/TP40011172-CH8-CHDBIGCE"
+    },
+    "devLink-1745580": {
+      "identifier": "devLink-1745580",
+      "type": "link",
+      "title": "Cryptographic Services Guide",
+      "url": "https://developer.apple.com/library/archive/documentation/Security/Conceptual/cryptoservices/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011172"
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/getting_a_certificate": {
+      "title": "Getting a Certificate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/getting_a_certificate",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/certificates/getting_a_certificate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtain a certificate from an identity, from DER-encoded data, or from the keychain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/storing_a_certificate_in_the_keychain": {
+      "title": "Storing a Certificate in the Keychain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/storing_a_certificate_in_the_keychain",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/certificates/storing_a_certificate_in_the_keychain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Store a certificate in the keychain for safekeeping."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/seccertificateref": {
+      "title": "SecCertificateRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/seccertificateref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/seccertificateref",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "An abstract Core Foundation-type object representing an X.509 certificate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1396056-seccertificategettypeid": {
+      "title": "SecCertificateGetTypeID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396056-seccertificategettypeid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396056-seccertificategettypeid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the unique identifier of the opaque type to which a certificate object belongs."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/storing_a_der-encoded_x_509_certificate": {
+      "title": "Storing a DER-Encoded X.509 Certificate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/storing_a_der-encoded_x_509_certificate",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/certificates/storing_a_der-encoded_x_509_certificate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Import and export a certificate from a file."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1396073-seccertificatecreatewithdata": {
+      "title": "SecCertificateCreateWithData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396073-seccertificatecreatewithdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396073-seccertificatecreatewithdata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a certificate object from a DER representation of a certificate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1396080-seccertificatecopydata": {
+      "title": "SecCertificateCopyData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396080-seccertificatecopydata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396080-seccertificatecopydata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a DER representation of a certificate given a certificate object."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/examining_a_certificate": {
+      "title": "Examining a Certificate",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/examining_a_certificate",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/certificates/examining_a_certificate",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Learn how to retrieve properties from a certificate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1396041-seccertificatecopysubjectsummary": {
+      "title": "SecCertificateCopySubjectSummary",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396041-seccertificatecopysubjectsummary",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396041-seccertificatecopysubjectsummary",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a human-readable summary of a certificate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1394814-seccertificatecopycommonname": {
+      "title": "SecCertificateCopyCommonName",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1394814-seccertificatecopycommonname",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1394814-seccertificatecopycommonname",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the common name of the subject of a certificate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1396049-seccertificatecopyemailaddresses": {
+      "title": "SecCertificateCopyEmailAddresses",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396049-seccertificatecopyemailaddresses",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396049-seccertificatecopyemailaddresses",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the email addresses for the subject of a certificate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/2799310-seccertificatecopynormalizedissu": {
+      "title": "SecCertificateCopyNormalizedIssuerSequence",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/2799310-seccertificatecopynormalizedissu",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/2799310-seccertificatecopynormalizedissu",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the normalized issuer sequence from a certificate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/2799309-seccertificatecopynormalizedsubj": {
+      "title": "SecCertificateCopyNormalizedSubjectSequence",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/2799309-seccertificatecopynormalizedsubj",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/2799309-seccertificatecopynormalizedsubj",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the normalized subject sequence from a certificate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/2877378-seccertificatecopyserialnumberda": {
+      "title": "SecCertificateCopySerialNumberData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/2877378-seccertificatecopyserialnumberda",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/2877378-seccertificatecopyserialnumberda",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the certificate’s serial number."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/2963103-seccertificatecopykey": {
+      "title": "SecCertificateCopyKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/2963103-seccertificatecopykey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/2963103-seccertificatecopykey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the public key for a given certificate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1396036-seccertificatecopyshortdescripti": {
+      "title": "SecCertificateCopyShortDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396036-seccertificatecopyshortdescripti",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396036-seccertificatecopyshortdescripti",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a copy of the short description of a certificate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1396088-seccertificatecopylongdescriptio": {
+      "title": "SecCertificateCopyLongDescription",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396088-seccertificatecopylongdescriptio",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396088-seccertificatecopylongdescriptio",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a copy of the long description of a certificate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/getting_certificate_values": {
+      "title": "Getting Certificate Values",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/getting_certificate_values",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/security/certificate_key_and_trust_services/certificates/getting_certificate_values",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtain all the values associated with a certificate."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1396051-seccertificatecopyvalues": {
+      "title": "SecCertificateCopyValues",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396051-seccertificatecopyvalues",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396051-seccertificatecopyvalues",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a dictionary that represents a certificate's contents."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/certificate_oids": {
+      "title": "Certificate OIDs",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/certificate_oids",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/certificate_key_and_trust_services/certificates/certificate_oids",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use OIDs as keys in the dictionary representing certificate values."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/certificate_property_keys": {
+      "title": "Certificate Property Keys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/certificate_property_keys",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/certificate_key_and_trust_services/certificates/certificate_property_keys",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Recognize the dictionary keys that taken together define a certificate property."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/certificate_property_type_values": {
+      "title": "Certificate Property Type Values",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/certificate_property_type_values",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/certificate_key_and_trust_services/certificates/certificate_property_type_values",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Recognize the possible certificate property types."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1396076-certificate_item_attribute_const": {
+      "title": "Certificate Item Attribute Constants",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396076-certificate_item_attribute_const",
+      "kind": "symbol",
+      "role": "containerSymbol",
+      "url": "/documentation/security/1396076-certificate_item_attribute_const",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use these four character values to indicate certificate item attributes."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1393683-seccertificatesetpreferred": {
+      "title": "SecCertificateSetPreferred",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1393683-seccertificatesetpreferred",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1393683-seccertificatesetpreferred",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the certificate that should be preferred for the specified name and key use."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1396028-seccertificatecopypreferred": {
+      "title": "SecCertificateCopyPreferred",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396028-seccertificatecopypreferred",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396028-seccertificatecopypreferred",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns the preferred certificate for the specified name and key usage."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/opaqueseccertificateref": {
+      "title": "OpaqueSecCertificateRef",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/opaqueseccertificateref",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/opaqueseccertificateref"
+    },
+    "doc://com.apple.documentation/documentation/security/1396090-seccertificateaddtokeychain": {
+      "title": "SecCertificateAddToKeychain",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396090-seccertificateaddtokeychain",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396090-seccertificateaddtokeychain",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Adds a certificate to a keychain."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1392318-seccertificatecopynormalizedissu": {
+      "title": "SecCertificateCopyNormalizedIssuerContent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1392318-seccertificatecopynormalizedissu",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1392318-seccertificatecopynormalizedissu",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a normalized copy of the distinguished name (DN) of the issuer of a certificate."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1396030-seccertificatecopynormalizedsubj": {
+      "title": "SecCertificateCopyNormalizedSubjectContent",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396030-seccertificatecopynormalizedsubj",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396030-seccertificatecopynormalizedsubj",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a normalized copy of the distinguished name (DN) of the subject of a certificate."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1396025-seccertificatecreatefromdata": {
+      "title": "SecCertificateCreateFromData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396025-seccertificatecreatefromdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396025-seccertificatecreatefromdata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Creates a certificate object based on the specified data, type, and encoding."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1396094-seccertificatecopypreference": {
+      "title": "SecCertificateCopyPreference",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396094-seccertificatecopypreference",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396094-seccertificatecopypreference",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the preferred certificate for the specified name and key use."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1396071-seccertificategetalgorithmid": {
+      "title": "SecCertificateGetAlgorithmID",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396071-seccertificategetalgorithmid",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396071-seccertificategetalgorithmid",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the algorithm identifier for a certificate."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1396053-seccertificategetclhandle": {
+      "title": "SecCertificateGetCLHandle",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396053-seccertificategetclhandle",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396053-seccertificategetclhandle",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the certificate library handle from a certificate object."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1396100-seccertificategetdata": {
+      "title": "SecCertificateGetData",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396100-seccertificategetdata",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396100-seccertificategetdata",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the data for a certificate."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1396068-seccertificategetissuer": {
+      "title": "SecCertificateGetIssuer",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396068-seccertificategetissuer",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396068-seccertificategetissuer",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Unsupported."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/1805309-seccertificategetitem": {
+      "title": "SecCertificateGetItem",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/1805309-seccertificategetitem",
+      "kind": "symbol",
+      "role": "pseudoSymbol",
+      "url": "/documentation/security/certificate_key_and_trust_services/certificates/1805309-seccertificategetitem",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Unsupported."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/1396032-seccertificategetsubject": {
+      "title": "SecCertificateGetSubject",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396032-seccertificategetsubject",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396032-seccertificategetsubject",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Unsupported."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1396092-seccertificategettype": {
+      "title": "SecCertificateGetType",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396092-seccertificategettype",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396092-seccertificategettype",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the type of a specified certificate."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1396063-seccertificatesetpreference": {
+      "title": "SecCertificateSetPreference",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396063-seccertificatesetpreference",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396063-seccertificatesetpreference",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Sets the preferred certificate for a specified name, key use, and date."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1394241-seccertificatecopyserialnumber": {
+      "title": "SecCertificateCopySerialNumber",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1394241-seccertificatecopyserialnumber",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1394241-seccertificatecopyserialnumber",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Returns a copy of a certificate’s serial number."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/1396096-seccertificatecopypublickey": {
+      "title": "SecCertificateCopyPublicKey",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/1396096-seccertificatecopypublickey",
+      "kind": "symbol",
+      "role": "symbol",
+      "url": "/documentation/security/1396096-seccertificatecopypublickey",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Retrieves the public key from a certificate."
+        }
+      ],
+      "deprecated": true
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates": {
+      "title": "Certificates",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/certificate_key_and_trust_services/certificates",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Manage digital certificates."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys": {
+      "title": "Keys",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/certificate_key_and_trust_services/keys",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Generate, store, and use cryptographic keys."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities": {
+      "title": "Identities",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/certificate_key_and_trust_services/identities",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Combine certificates and cryptographic keys into identities."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/policies": {
+      "title": "Policies",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/policies",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/certificate_key_and_trust_services/policies",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Obtain policies for establishing trust."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/trust": {
+      "title": "Trust",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/trust",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/security/certificate_key_and_trust_services/trust",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Evaluate trust based on a given policy."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "topicSections": [
+    {
+      "kind": "taskGroup",
+      "title": "Essentials",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/getting_a_certificate",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/storing_a_certificate_in_the_keychain",
+        "doc://com.apple.documentation/documentation/security/seccertificateref",
+        "doc://com.apple.documentation/documentation/security/1396056-seccertificategettypeid"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Import and Export",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/storing_a_der-encoded_x_509_certificate",
+        "doc://com.apple.documentation/documentation/security/1396073-seccertificatecreatewithdata",
+        "doc://com.apple.documentation/documentation/security/1396080-seccertificatecopydata"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Certificate Components",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/examining_a_certificate",
+        "doc://com.apple.documentation/documentation/security/1396041-seccertificatecopysubjectsummary",
+        "doc://com.apple.documentation/documentation/security/1394814-seccertificatecopycommonname",
+        "doc://com.apple.documentation/documentation/security/1396049-seccertificatecopyemailaddresses",
+        "doc://com.apple.documentation/documentation/security/2799310-seccertificatecopynormalizedissu",
+        "doc://com.apple.documentation/documentation/security/2799309-seccertificatecopynormalizedsubj",
+        "doc://com.apple.documentation/documentation/security/2877378-seccertificatecopyserialnumberda",
+        "doc://com.apple.documentation/documentation/security/2963103-seccertificatecopykey",
+        "doc://com.apple.documentation/documentation/security/1396036-seccertificatecopyshortdescripti",
+        "doc://com.apple.documentation/documentation/security/1396088-seccertificatecopylongdescriptio"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Detailed Certificate Information",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/getting_certificate_values",
+        "doc://com.apple.documentation/documentation/security/1396051-seccertificatecopyvalues",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/certificate_oids",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/certificate_property_keys",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/certificate_property_type_values",
+        "doc://com.apple.documentation/documentation/security/1396076-certificate_item_attribute_const"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Certificate Names",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/1393683-seccertificatesetpreferred",
+        "doc://com.apple.documentation/documentation/security/1396028-seccertificatecopypreferred"
+      ]
+    },
+    {
+      "kind": "taskGroup",
+      "title": "Legacy Symbols",
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/opaqueseccertificateref",
+        "doc://com.apple.documentation/documentation/security/1396090-seccertificateaddtokeychain",
+        "doc://com.apple.documentation/documentation/security/1392318-seccertificatecopynormalizedissu",
+        "doc://com.apple.documentation/documentation/security/1396030-seccertificatecopynormalizedsubj",
+        "doc://com.apple.documentation/documentation/security/1396025-seccertificatecreatefromdata",
+        "doc://com.apple.documentation/documentation/security/1396094-seccertificatecopypreference",
+        "doc://com.apple.documentation/documentation/security/1396071-seccertificategetalgorithmid",
+        "doc://com.apple.documentation/documentation/security/1396053-seccertificategetclhandle",
+        "doc://com.apple.documentation/documentation/security/1396100-seccertificategetdata",
+        "doc://com.apple.documentation/documentation/security/1396068-seccertificategetissuer",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/certificates/1805309-seccertificategetitem",
+        "doc://com.apple.documentation/documentation/security/1396032-seccertificategetsubject",
+        "doc://com.apple.documentation/documentation/security/1396092-seccertificategettype",
+        "doc://com.apple.documentation/documentation/security/1396063-seccertificatesetpreference",
+        "doc://com.apple.documentation/documentation/security/1394241-seccertificatecopyserialnumber",
+        "doc://com.apple.documentation/documentation/security/1396096-seccertificatecopypublickey"
+      ]
+    }
+  ],
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/keys",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/identities",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/policies",
+        "doc://com.apple.documentation/documentation/security/certificate_key_and_trust_services/trust"
+      ],
+      "title": "API Components",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "A digital certificate is a collection of data used to securely distribute the public half of a public/private key pair. Figure 1 shows the parts of a typical X.509 certificate that make this possible. Along with structural information, the certificate contains name and contact information for both its issuer and its owner (or subject), plus the owner's public key. A date range indicates when the certificate is valid. Certificate extensions provide additional information and conditions, like acceptable uses for the public key. When assembling the certificate, to vouch for its integrity, the issuer digitally signs it using the issuer's own identity (private key and certificate). "
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-2904073",
+              "metadata": {
+                "anchor": "2904073",
+                "title": "Figure 1",
+                "abstract": [
+                  {
+                    "type": "text",
+                    "text": "Contents of an X.509 certificate"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To evaluate a certificate, you first verify its signature using the specified algorithm and the issuer's public key, which you obtain from the issuer's publicly available certificate. A valid signature confirms that the certificate under evaluation, known as the leaf certificate, is unaltered. But in order to trust this result, you must also trust the issuer's certificate. You use a similar procedure to test this certificate, and the one that guarantees that certificate, and the next, and so on in a chain back to a trusted root authority whose certificate, known as the anchor, which you trust implicitly. The public key included in the leaf certificate is then considered trustworthy. You can be assured that it has come unaltered from the certificate's owner who controls the corresponding private key. This allows you to securely use the public key to engage in asymmetric cryptography with the certificate's owner."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "For more details about how certificates work, read "
+            },
+            {
+              "type": "link",
+              "title": "Digital Certificates",
+              "destination": "https://developer.apple.com/library/archive/documentation/Security/Conceptual/cryptoservices/CryptographyConcepts/CryptographyConcepts.html#//apple_ref/doc/uid/TP40011172-CH8-CHDBIGCE"
+            },
+            {
+              "type": "text",
+              "text": " in "
+            },
+            {
+              "type": "link",
+              "title": "Cryptographic Services Guide",
+              "destination": "https://developer.apple.com/library/archive/documentation/Security/Conceptual/cryptoservices/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011172"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}

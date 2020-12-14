@@ -1,0 +1,695 @@
+{
+  "abstract": [
+    {
+      "type": "text",
+      "text": "Calculate the histogram of one image and apply it to a second image."
+    }
+  ],
+  "documentVersion": 0,
+  "hierarchy": {
+    "paths": [
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate"
+      ],
+      [
+        "doc://com.apple.documentation/documentation/technologies",
+        "doc://com.apple.documentation/documentation/accelerate",
+        "doc://com.apple.documentation/documentation/accelerate/vimage"
+      ]
+    ]
+  },
+  "identifier": {
+    "url": "doc://com.apple.documentation/documentation/accelerate/specifying_histograms_with_vimage",
+    "interfaceLanguage": "occ"
+  },
+  "legacy_identifier": 2951289,
+  "kind": "article",
+  "metadata": {
+    "title": "Specifying Histograms with vImage",
+    "role": "sampleCode",
+    "roleHeading": "Sample Code",
+    "modules": [
+      {
+        "name": "Accelerate"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "iOS",
+        "introducedAt": "13.0",
+        "current": "14.3"
+      },
+      {
+        "name": "Xcode",
+        "introducedAt": "11.3",
+        "current": "12.3"
+      }
+    ]
+  },
+  "schemaVersion": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "sections": [],
+  "variants": [
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "occ"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/specifying_histograms_with_vimage",
+        "documentation/accelerate/vimage/specifying_histograms_with_vimage"
+      ]
+    },
+    {
+      "traits": [
+        {
+          "interfaceLanguage": "swift"
+        }
+      ],
+      "paths": [
+        "documentation/accelerate/specifying_histograms_with_vimage",
+        "documentation/accelerate/vimage/specifying_histograms_with_vimage"
+      ]
+    }
+  ],
+  "references": {
+    "doc://com.apple.documentation/documentation/accelerate": {
+      "title": "Accelerate",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate",
+      "url": "/documentation/accelerate",
+      "type": "topic",
+      "kind": "symbol",
+      "role": "collection"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/vimage": {
+      "title": "vImage",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/vimage",
+      "url": "/documentation/accelerate/vimage",
+      "type": "topic",
+      "kind": "article",
+      "role": "collectionGroup"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_format": {
+      "title": "Creating a Core Graphics Image Format",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_format",
+      "kind": "article",
+      "role": "article",
+      "url": "/documentation/accelerate/creating_a_core_graphics_image_format"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/specifying_histograms_with_vimage#3524267": {
+      "title": "Listing 1",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/specifying_histograms_with_vimage#3524267",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/specifying_histograms_with_vimage#3524267"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/specifying_histograms_with_vimage#3524268": {
+      "title": "Listing 2",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/specifying_histograms_with_vimage#3524268",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/specifying_histograms_with_vimage#3524268"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/specifying_histograms_with_vimage#3524269": {
+      "title": "Listing 3",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/specifying_histograms_with_vimage#3524269",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/specifying_histograms_with_vimage#3524269"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/specifying_histograms_with_vimage#3524271": {
+      "title": "Listing 4",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/specifying_histograms_with_vimage#3524271",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/specifying_histograms_with_vimage#3524271"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/specifying_histograms_with_vimage#3524272": {
+      "title": "Listing 5",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/specifying_histograms_with_vimage#3524272",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/specifying_histograms_with_vimage#3524272"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/specifying_histograms_with_vimage#3524274": {
+      "title": "Listing 6",
+      "type": "section",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/specifying_histograms_with_vimage#3524274",
+      "kind": "article",
+      "role": "codeListing",
+      "url": "/documentation/accelerate/specifying_histograms_with_vimage#3524274"
+    },
+    "link-media-3524265": {
+      "identifier": "link-media-3524265",
+      "type": "link",
+      "title": "Figure 1",
+      "url": "/documentation/accelerate/specifying_histograms_with_vimage#3524265"
+    },
+    "media-3524265": {
+      "identifier": "media-3524265",
+      "type": "image",
+      "variants": [
+        {
+          "traits": [
+            "2x"
+          ],
+          "size": {
+            "width": 1292,
+            "height": 920
+          },
+          "url": "https://docs-assets.developer.apple.com/published/30dbce58c2/694db859-21b0-4a9c-a73b-5becdad56ac1.png"
+        }
+      ],
+      "alt": "Photos showing original image, histogram source image, and histogram specified result.",
+      "title": "Figure 1"
+    },
+    "doc://com.apple.documentation/documentation/accelerate/adjusting_the_brightness_and_contrast_of_an_image": {
+      "title": "Adjusting the Brightness and Contrast of an Image",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/adjusting_the_brightness_and_contrast_of_an_image",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/adjusting_the_brightness_and_contrast_of_an_image",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use a gamma function to apply a linear or exponential curve."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/applying_tone_curve_adjustments_to_images": {
+      "title": "Applying Tone Curve Adjustments to Images",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/applying_tone_curve_adjustments_to_images",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/applying_tone_curve_adjustments_to_images",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Use the vImage library’s polynomial transform to apply tone curve adjustments to images."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/specifying_histograms_with_vimage": {
+      "title": "Specifying Histograms with vImage",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/specifying_histograms_with_vimage",
+      "kind": "article",
+      "role": "sampleCode",
+      "url": "/documentation/accelerate/specifying_histograms_with_vimage",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculate the histogram of one image and apply it to a second image."
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/transform": {
+      "title": "Transform",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/transform",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/transform",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Apply color transformations to images. "
+        }
+      ]
+    },
+    "doc://com.apple.documentation/documentation/accelerate/histogram": {
+      "title": "Histogram",
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/accelerate/histogram",
+      "kind": "article",
+      "role": "collectionGroup",
+      "url": "/documentation/accelerate/histogram",
+      "abstract": [
+        {
+          "type": "text",
+          "text": "Calculate and or manipulate an image's histogram."
+        }
+      ]
+    },
+    "https://docs-assets.developer.apple.com/published/5ec10e5a22/SpecifyingHistogramsWithVImage.zip": {
+      "type": "download",
+      "identifier": "https://docs-assets.developer.apple.com/published/5ec10e5a22/SpecifyingHistogramsWithVImage.zip",
+      "checksum": "56f4b95c7e2c8006f3b631cbc454caf65e88ec56838dd7d143dcdd9f79e573a78b34ede63d92e3cf6099ec09d962377e0b22c5fcee7e67d79ce28bc454dd5cf1",
+      "url": "https://docs-assets.developer.apple.com/published/5ec10e5a22/SpecifyingHistogramsWithVImage.zip"
+    },
+    "doc://com.apple.documentation/documentation/technologies": {
+      "type": "topic",
+      "identifier": "doc://com.apple.documentation/documentation/technologies",
+      "url": "/documentation/technologies",
+      "kind": "technologies",
+      "title": "Technologies"
+    }
+  },
+  "sampleCodeDownload": {
+    "action": {
+      "overridingTitle": "Download",
+      "type": "reference",
+      "isActive": true,
+      "identifier": "https://docs-assets.developer.apple.com/published/5ec10e5a22/SpecifyingHistogramsWithVImage.zip"
+    }
+  },
+  "seeAlsoSections": [
+    {
+      "identifiers": [
+        "doc://com.apple.documentation/documentation/accelerate/adjusting_the_brightness_and_contrast_of_an_image",
+        "doc://com.apple.documentation/documentation/accelerate/applying_tone_curve_adjustments_to_images",
+        "doc://com.apple.documentation/documentation/accelerate/transform",
+        "doc://com.apple.documentation/documentation/accelerate/histogram"
+      ],
+      "title": "Color and Tone Adjustment",
+      "generated": true
+    }
+  ],
+  "primaryContentSections": [
+    {
+      "kind": "content",
+      "content": [
+        {
+          "anchor": "overview",
+          "level": 2,
+          "text": "Overview",
+          "type": "heading"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "emphasis",
+              "inlineContent": [
+                {
+                  "type": "text",
+                  "text": "Histogram specification"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " is a technique that allows you to calculate the histogram of a reference image and apply it to an input image. This sample walks you through the steps to implement histogram specification in vImage:"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Creating vImage buffers that represent the reference image and input image."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Calculating the histogram of the reference image."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": [
+                {
+                  "type": "paragraph",
+                  "inlineContent": [
+                    {
+                      "type": "text",
+                      "text": "Specifying the histogram of the input image as the reference image’s histogram."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The example below shows an input image (top left) and a histogram reference image (bottom left), with the result on the right:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "image",
+              "identifier": "media-3524265",
+              "metadata": {
+                "anchor": "3524265",
+                "title": "Figure 1"
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Create the vImage Buffers",
+          "anchor": "3524277"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To learn about creating a Core Graphics image format that describes your input and reference images, see "
+            },
+            {
+              "type": "reference",
+              "isActive": true,
+              "identifier": "doc://com.apple.documentation/documentation/accelerate/creating_a_core_graphics_image_format"
+            },
+            {
+              "type": "text",
+              "text": ". In this example, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "format"
+            },
+            {
+              "type": "text",
+              "text": " describes an 8-bit-per-channel ARGB image:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "let format = vImage_CGImageFormat(",
+            "    bitsPerComponent: 8,",
+            "    bitsPerPixel: 32,",
+            "    colorSpace: CGColorSpaceCreateDeviceRGB(),",
+            "    bitmapInfo: CGBitmapInfo(rawValue: CGImageAlphaInfo.first.rawValue),",
+            "    renderingIntent: .defaultIntent)!"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3524267",
+            "title": "Listing 1"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows how to create a vImage buffer initialized with the input image (the flower in the above image)."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard",
+            "    let sourceCGImage = sourceImage.cgImage,",
+            "    var sourceBuffer = try? vImage_Buffer(cgImage: sourceCGImage,",
+            "                                          format: format) else {",
+            "                                            return nil",
+            "}",
+            "",
+            "defer {",
+            "    sourceBuffer.free()",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3524268",
+            "title": "Listing 2"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The following code shows how to create a vImage buffer initialized with the histogram reference image (the rainbow in the above image)."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "guard",
+            "    let histogramSourceCGImage = histogramSourceImage.cgImage,",
+            "    var histogramSourceBuffer = try? vImage_Buffer(cgImage: histogramSourceCGImage,",
+            "                                                   format: format) else {",
+            "                                                    return nil",
+            "}",
+            "",
+            "defer {",
+            "    histogramSourceBuffer.free()",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3524269",
+            "title": "Listing 3"
+          }
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Calculate the Reference Image Histogram",
+          "anchor": "3524278"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The histogram data is stored in four arrays—one for each channel—where the value of each element is the number of pixels in the reference image with that color value. In an 8-bit-per-channel image, each color channel can hold 256 different values, so each array is defined with a count of 256."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "var histogramBinZero = [vImagePixelCount](repeating: 0, count: 256)",
+            "var histogramBinOne = [vImagePixelCount](repeating: 0, count: 256)",
+            "var histogramBinTwo = [vImagePixelCount](repeating: 0, count: 256)",
+            "var histogramBinThree = [vImagePixelCount](repeating: 0, count: 256)"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3524271",
+            "title": "Listing 4"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "To populate the histogram arrays with the calculated histogram data, prepare an array of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UnsafeMutablePointer<vImagePixelCount>"
+            },
+            {
+              "type": "text",
+              "text": " from the arrays, and pass it to "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageHistogramCalculation_ARGB8888"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "histogramBinZero.withUnsafeMutableBufferPointer { zeroPtr in",
+            "    histogramBinOne.withUnsafeMutableBufferPointer { onePtr in",
+            "        histogramBinTwo.withUnsafeMutableBufferPointer { twoPtr in",
+            "            histogramBinThree.withUnsafeMutableBufferPointer { threePtr in",
+            "                ",
+            "                var histogramBins = [zeroPtr.baseAddress, onePtr.baseAddress,",
+            "                                     twoPtr.baseAddress, threePtr.baseAddress]",
+            "                ",
+            "                histogramBins.withUnsafeMutableBufferPointer { histogramBinsPtr in",
+            "                    let error = vImageHistogramCalculation_ARGB8888(&histogramSourceBuffer,",
+            "                                                                    histogramBinsPtr.baseAddress!,",
+            "                                                                    vImage_Flags(kvImageNoFlags))",
+            "                    ",
+            "                    guard error == kvImageNoError else {",
+            "                        fatalError(\"Error calculating histogram: \\(error)\")",
+            "                    }",
+            "                }",
+            "            }",
+            "        }",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3524272",
+            "title": "Listing 5"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageHistogramCalculation_ARGB8888"
+            },
+            {
+              "type": "text",
+              "text": " returns, the four arrays are now populated with the histogram data from the image that "
+            },
+            {
+              "type": "codeVoice",
+              "code": "histogramSourceBuffer"
+            },
+            {
+              "type": "text",
+              "text": " points to."
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "type": "heading",
+          "text": "Specify the Input Image Histogram",
+          "anchor": "3524279"
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "The "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageHistogramSpecification_ARGB8888"
+            },
+            {
+              "type": "text",
+              "text": " function accepts a different parameter to receive the histogram data: an array of "
+            },
+            {
+              "type": "codeVoice",
+              "code": "UnsafePointer<vImagePixelCount>"
+            },
+            {
+              "type": "text",
+              "text": ". Because "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageHistogramSpecification_ARGB8888"
+            },
+            {
+              "type": "text",
+              "text": " can work in place, you can pass the source buffer as both the source and destination:"
+            }
+          ]
+        },
+        {
+          "type": "codeListing",
+          "code": [
+            "histogramBinZero.withUnsafeBufferPointer { zeroPtr in",
+            "    histogramBinOne.withUnsafeBufferPointer { onePtr in",
+            "        histogramBinTwo.withUnsafeBufferPointer { twoPtr in",
+            "            histogramBinThree.withUnsafeBufferPointer { threePtr in",
+            "                ",
+            "                var histogramBins = [zeroPtr.baseAddress, onePtr.baseAddress,",
+            "                                     twoPtr.baseAddress, threePtr.baseAddress]",
+            "                ",
+            "                histogramBins.withUnsafeMutableBufferPointer { histogramBinsPtr in",
+            "                    let error = vImageHistogramSpecification_ARGB8888(&sourceBuffer,",
+            "                                                                      &sourceBuffer,",
+            "                                                                      histogramBinsPtr.baseAddress!,",
+            "                                                                      vImage_Flags(kvImageLeaveAlphaUnchanged))",
+            "                    ",
+            "                    guard error == kvImageNoError else {",
+            "                        fatalError(\"Error specifying histogram: \\(error)\")",
+            "                    }",
+            "                }",
+            "            }",
+            "        }",
+            "    }",
+            "}"
+          ],
+          "syntax": "swift",
+          "metadata": {
+            "anchor": "3524274",
+            "title": "Listing 6"
+          }
+        },
+        {
+          "type": "paragraph",
+          "inlineContent": [
+            {
+              "type": "text",
+              "text": "After "
+            },
+            {
+              "type": "codeVoice",
+              "code": "vImageHistogramSpecification_ARGB8888"
+            },
+            {
+              "type": "text",
+              "text": " returns, "
+            },
+            {
+              "type": "codeVoice",
+              "code": "sourceBuffer"
+            },
+            {
+              "type": "text",
+              "text": " contains the original input image with the histogram specified by the reference image."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "legalNotices": {
+    "copyright": "Copyright &copy; 2020 Apple Inc. All rights reserved.",
+    "termsOfUse": "https://www.apple.com/legal/internet-services/terms/site.html",
+    "privacyPolicy": "https://www.apple.com/privacy/privacy-policy"
+  }
+}
