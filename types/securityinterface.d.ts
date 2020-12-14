@@ -67,7 +67,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatepanel/1543223-setshowshelp
     setShowsHelp(showsHelp: BOOL):void;
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatepanel/1543225-helpanchor
-    helpAnchor():string | cocoascript.NSString;
+    helpAnchor():NSString;
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatepanel/1543231-showshelp
     showsHelp():BOOL;
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatepanel/1543227-setalternatebuttontitle
@@ -111,7 +111,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556992-setshowshelp
     setShowsHelp(showsHelp: BOOL):void;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556996-helpanchor
-    helpAnchor():string | cocoascript.NSString;
+    helpAnchor():NSString;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556997-showshelp
     showsHelp():BOOL;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556993-setalternatebuttontitle
@@ -123,7 +123,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556991-policies
     policies():NSArray;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556994-informativetext
-    informativeText():string | cocoascript.NSString;
+    informativeText():NSString;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556983-setinformativetext
     setInformativeText(informativeText: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556987-beginsheetforwindow
@@ -133,7 +133,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556981-identity
     identity():SecIdentityRef;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556985-domain
-    domain():string | cocoascript.NSString;
+    domain():NSString;
     // doc://com.apple.documentation/documentation/securityinterface/sfchooseidentitypanel/1556988-setdomain
     setDomain(domainString: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1514140-chooseidentitypanelshowhelp
@@ -205,7 +205,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatetrustpanel/1518354-runmodalfortrust
     runModalForTrust_message(trust: SecTrustRef, message: string | cocoascript.NSString):NSInteger;
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatetrustpanel/1518347-informativetext
-    informativeText():string | cocoascript.NSString;
+    informativeText():NSString;
     // doc://com.apple.documentation/documentation/securityinterface/sfcertificatetrustpanel/1518351-setinformativetext
     setInformativeText(informativeText: string | cocoascript.NSString):void;
     //

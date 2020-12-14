@@ -389,13 +389,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/coreimage/cifilter/2138288-filterwithcvpixelbuffer
     filterWithCVPixelBuffer_properties_options(pixelBuffer: CVPixelBufferRef, properties: NSDictionary, options: CIFilter):CIFilter;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1437595-filternamesincategories
-    filterNamesInCategories(categories: string | cocoascript.NSString):string | cocoascript.NSString;
+    filterNamesInCategories(categories: string | cocoascript.NSString):NSString;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1438145-filternamesincategory
-    filterNamesInCategory(category: string | cocoascript.NSString):string | cocoascript.NSString;
+    filterNamesInCategory(category: string | cocoascript.NSString):NSString;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1437889-registerfiltername
     registerFilterName_constructor_classAttributes(name: string | cocoascript.NSString, anObject: CIFilterConstructor, attributes: CIFilter):void;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1437997-setname
-    name():string | cocoascript.NSString;
+    name():NSString;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1438276-enabled
     enabled(): BOOL;
     setEnabled(): void;
@@ -418,11 +418,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1562058-apply
     apply(...k: Array<CIKernel>):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1437697-localizednameforfiltername
-    localizedNameForFilterName(filterName: string | cocoascript.NSString):string | cocoascript.NSString;
+    localizedNameForFilterName(filterName: string | cocoascript.NSString):NSString;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1438057-localizednameforcategory
-    localizedNameForCategory(category: string | cocoascript.NSString):string | cocoascript.NSString;
+    localizedNameForCategory(category: string | cocoascript.NSString):NSString;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1437591-localizeddescriptionforfilternam
-    localizedDescriptionForFilterName(filterName: string | cocoascript.NSString):string | cocoascript.NSString;
+    localizedDescriptionForFilterName(filterName: string | cocoascript.NSString):NSString;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1437642-localizedreferencedocumentationf
     localizedReferenceDocumentationForFilterName(filterName: string | cocoascript.NSString):NSURL;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1427521-viewforuiconfiguration
@@ -432,7 +432,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/coreimage/cifilter/1438237-filterarrayfromserializedxmp
     filterArrayFromSerializedXMP_inputImageExtent_error(xmpData: NSData, extent: CGRect, outError: NSError):CIFilter;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3242782-supportedrawcameramodels
-    supportedRawCameraModels():string | cocoascript.NSString;
+    supportedRawCameraModels():NSString;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3228259-cmykhalftone
     CMYKHalftone():CICMYKHalftone;
     // doc://com.apple.documentation/documentation/coreimage/cifilter/3547110-kmeansfilter
@@ -1230,7 +1230,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/coreimage/cikernel/1438243-applywithextent
     applyWithExtent_roiCallback_arguments(extent: CGRect, callback: CIKernelROICallback, args: CIKernel):CIImage;
     // doc://com.apple.documentation/documentation/coreimage/cikernel/3577535-kernelnamesfrommetallibrarydata
-    kernelNamesFromMetalLibraryData(data: NSData):string | cocoascript.NSString;
+    kernelNamesFromMetalLibraryData(data: NSData):NSString;
     //
     alloc():CIKernel;
     //

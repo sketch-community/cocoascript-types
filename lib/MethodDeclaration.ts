@@ -94,15 +94,15 @@ export class MethodDeclaration {
     });
     code.append(params.join(', '));
     code.append('):');
+    let returnType = 'void';
     if (this.returnType === 'instancetype') {
-      code.append(normalizeType(this.interfaceDecl.identifier));
+      returnType = this.interfaceDecl.identifier;
     } else if (this.returnType === 'id') {
-      code.append(normalizeType(this.interfaceDecl.identifier));
+      returnType = this.interfaceDecl.identifier;
     } else if (this.returnType) {
-      code.append(normalizeType(this.returnType));
-    } else {
-      code.append('void');
+      returnType = this.returnType;
     }
+    code.append(normalizeType(returnType, { extend: false }));
     code.append(';');
     return code.toString();
   }

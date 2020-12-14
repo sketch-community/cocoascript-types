@@ -1287,7 +1287,7 @@ declare namespace cocoascript {
    */
   interface MKDistanceFormatter extends NSFormatter {
     // doc://com.apple.documentation/documentation/mapkit/mkdistanceformatter/1451994-stringfromdistance
-    stringFromDistance(distance: CLLocationDistance):string | cocoascript.NSString;
+    stringFromDistance(distance: CLLocationDistance):NSString;
     // doc://com.apple.documentation/documentation/mapkit/mkdistanceformatter/1452766-distancefromstring
     distanceFromString(distance: string | cocoascript.NSString):CLLocationDistance;
     // doc://com.apple.documentation/documentation/mapkit/mkdistanceformatter/1452235-locale

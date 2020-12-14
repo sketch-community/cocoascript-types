@@ -914,7 +914,7 @@ declare namespace cocoascript {
     metadata(): AVMetadataItem;
     setMetadata(): void;
     // doc://com.apple.documentation/documentation/avfoundation/avcapturemoviefileoutput/2968217-supportedoutputsettingskeysforco
-    supportedOutputSettingsKeysForConnection(connection: AVCaptureConnection):string | cocoascript.NSString;
+    supportedOutputSettingsKeysForConnection(connection: AVCaptureConnection):NSString;
     // doc://com.apple.documentation/documentation/avfoundation/avcapturemoviefileoutput/1386479-outputsettingsforconnection
     outputSettingsForConnection(connection: AVCaptureConnection):AVCaptureMovieFileOutput;
     // doc://com.apple.documentation/documentation/avfoundation/avcapturemoviefileoutput/1388448-setoutputsettings
@@ -2901,7 +2901,7 @@ declare namespace cocoascript {
     displayName(): string | cocoascript.NSString;
     setDisplayName(): void;
     // doc://com.apple.documentation/documentation/avfoundation/avmediaselectionoption/1388021-displaynamewithlocale
-    displayNameWithLocale(locale: NSLocale):string | cocoascript.NSString;
+    displayNameWithLocale(locale: NSLocale):NSString;
     // doc://com.apple.documentation/documentation/avfoundation/avmediaselectionoption/1388436-locale
     locale(): NSLocale;
     setLocale(): void;
@@ -3817,7 +3817,7 @@ declare namespace cocoascript {
     audioFileSettings(): id;
     setAudioFileSettings(): void;
     // doc://com.apple.documentation/documentation/avfoundation/avspeechsynthesisvoice/1619707-currentlanguagecode
-    currentLanguageCode():string | cocoascript.NSString;
+    currentLanguageCode():NSString;
     // doc://com.apple.documentation/documentation/avfoundation/avspeechsynthesisvoice/1619698-language
     language(): string | cocoascript.NSString;
     setLanguage(): void;
@@ -3869,7 +3869,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/avfoundation/avurlasset/1386800-audiovisualtypes
     audiovisualTypes():AVFileType;
     // doc://com.apple.documentation/documentation/avfoundation/avurlasset/1390006-audiovisualmimetypes
-    audiovisualMIMETypes():string | cocoascript.NSString;
+    audiovisualMIMETypes():NSString;
     // doc://com.apple.documentation/documentation/avfoundation/avurlasset/1387142-isplayableextendedmimetype
     isPlayableExtendedMIMEType(extendedMIMEType: string | cocoascript.NSString):BOOL;
     // doc://com.apple.documentation/documentation/avfoundation/avurlasset/1389118-resourceloader
@@ -4125,9 +4125,9 @@ declare namespace cocoascript {
     presetName(): string | cocoascript.NSString;
     setPresetName(): void;
     // doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387150-allexportpresets
-    allExportPresets():string | cocoascript.NSString;
+    allExportPresets():NSString;
     // doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1390567-exportpresetscompatiblewithasset
-    exportPresetsCompatibleWithAsset(asset: AVAsset):string | cocoascript.NSString;
+    exportPresetsCompatibleWithAsset(asset: AVAsset):NSString;
     // doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1385821-determinecompatibilityofexportpr
     determineCompatibilityOfExportPreset_withAsset_outputFileType_completionHandler(presetName: string | cocoascript.NSString, asset: AVAsset, outputFileType: AVFileType, handler: BOOL):void;
     // doc://com.apple.documentation/documentation/avfoundation/avassetexportsession/1387907-determinecompatiblefiletypeswith
@@ -8458,14 +8458,14 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/avfoundation/avaudionode/1390147-inputformatforbus
     inputFormatForBus(bus: AVAudioNodeBus):AVAudioFormat;
     // doc://com.apple.documentation/documentation/avfoundation/avaudionode/1387710-nameforinputbus
-    nameForInputBus(bus: AVAudioNodeBus):string | cocoascript.NSString;
+    nameForInputBus(bus: AVAudioNodeBus):NSString;
     // doc://com.apple.documentation/documentation/avfoundation/avaudionode/1390585-numberofinputs
     numberOfInputs(): NSUInteger;
     setNumberOfInputs(): void;
     // doc://com.apple.documentation/documentation/avfoundation/avaudionode/1389195-outputformatforbus
     outputFormatForBus(bus: AVAudioNodeBus):AVAudioFormat;
     // doc://com.apple.documentation/documentation/avfoundation/avaudionode/1390811-nameforoutputbus
-    nameForOutputBus(bus: AVAudioNodeBus):string | cocoascript.NSString;
+    nameForOutputBus(bus: AVAudioNodeBus):NSString;
     // doc://com.apple.documentation/documentation/avfoundation/avaudionode/1385916-numberofoutputs
     numberOfOutputs(): NSUInteger;
     setNumberOfOutputs(): void;

@@ -25,7 +25,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396691-getsizedescriptor
     getSizeDescriptor():BluetoothSDPDataElementSizeDescriptor;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396695-getstringvalue
-    getStringValue():string | cocoascript.NSString;
+    getStringValue():NSString;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396697-gettypedescriptor
     getTypeDescriptor():BluetoothSDPDataElementTypeDescriptor;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpdataelement/1396702-getuuidvalue
@@ -136,7 +136,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1429688-getsdpservicerecordref
     getSDPServiceRecordRef():IOBluetoothSDPServiceRecordRef;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1434797-getservicename
-    getServiceName():string | cocoascript.NSString;
+    getServiceName():NSString;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1432281-getservicerecordhandle
     getServiceRecordHandle(outServiceRecordHandle: BluetoothSDPServiceRecordHandle):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothsdpservicerecord/1427810-handsfreesupportedfeatures
@@ -386,7 +386,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1434906-createfolder
     createFolder(inDirName: string | cocoascript.NSString):OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1434309-currentpath
-    currentPath():string | cocoascript.NSString;
+    currentPath():NSString;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1434667-disconnect
     disconnect():OBEXError;
     // doc://com.apple.documentation/documentation/iobluetooth/obexfiletransferservices/1433891-getdefaultvcard
@@ -814,11 +814,11 @@ declare namespace cocoascript {
     powerState(): BluetoothHCIPowerState;
     setPowerState(): void;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontroller/1434703-addressasstring
-    addressAsString():string | cocoascript.NSString;
+    addressAsString():NSString;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontroller/1428536-classofdevice
     classOfDevice():BluetoothClassOfDevice;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontroller/1431310-nameasstring
-    nameAsString():string | cocoascript.NSString;
+    nameAsString():NSString;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontroller/1433813-setclassofdevice
     setClassOfDevice_forTimeInterval(classOfDevice: BluetoothClassOfDevice, seconds: NSTimeInterval):any;
     // doc://com.apple.documentation/documentation/iobluetooth/iobluetoothhostcontroller/1433496-defaultcontroller

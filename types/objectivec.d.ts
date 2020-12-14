@@ -45,7 +45,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1571960-methodsignatureforselector
     methodSignatureForSelector(aSelector: SEL):NSMethodSignature;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1418799-description
-    description():string | cocoascript.NSString;
+    description():NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1409224-autocontentaccessingproxy
     autoContentAccessingProxy(): id;
     setAutoContentAccessingProxy(): void;
@@ -89,7 +89,7 @@ declare namespace cocoascript {
     classForKeyedArchiver(): Class;
     setClassForKeyedArchiver(): void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1411048-classfallbacksforkeyedarchiver
-    classFallbacksForKeyedArchiver():string | cocoascript.NSString;
+    classFallbacksForKeyedArchiver():NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1410547-classforkeyedunarchiver
     classForKeyedUnarchiver():Class;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1580076-classforportcoder
@@ -112,7 +112,7 @@ declare namespace cocoascript {
     classDescription(): NSClassDescription;
     setClassDescription(): void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1411046-inverseforrelationshipkey
-    inverseForRelationshipKey(relationshipKey: string | cocoascript.NSString):string | cocoascript.NSString;
+    inverseForRelationshipKey(relationshipKey: string | cocoascript.NSString):NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1415662-tomanyrelationshipkeys
     toManyRelationshipKeys(): string | cocoascript.NSString;
     setToManyRelationshipKeys(): void;
@@ -143,7 +143,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1504653-acceptspreviewpanelcontrol
     acceptsPreviewPanelControl(panel: QLPreviewPanel):BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1411302-actionproperty
-    actionProperty():string | cocoascript.NSString;
+    actionProperty():NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1416402-attemptrecoveryfromerror
     attemptRecoveryFromError_optionIndex(error: NSError, recoveryOptionIndex: NSUInteger):BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1411071-attemptrecoveryfromerror
@@ -241,13 +241,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1504801-imagerepresentation
     imageRepresentation():NSObject;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1503547-imagerepresentationtype
-    imageRepresentationType():string | cocoascript.NSString;
+    imageRepresentationType():NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1503725-imagesubtitle
-    imageSubtitle():string | cocoascript.NSString;
+    imageSubtitle():NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1504080-imagetitle
-    imageTitle():string | cocoascript.NSString;
+    imageTitle():NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1503516-imageuid
-    imageUID():string | cocoascript.NSString;
+    imageUID():NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1504444-imageversion
     imageVersion():NSUInteger;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1417806-indicesofobjectsbyevaluatingobje
@@ -301,7 +301,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1411300-shouldenableactionforperson
     shouldEnableActionForPerson_identifier(person: ABPerson, identifier: string | cocoascript.NSString):BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1411304-titleforperson
-    titleForPerson_identifier(person: ABPerson, identifier: string | cocoascript.NSString):string | cocoascript.NSString;
+    titleForPerson_identifier(person: ABPerson, identifier: string | cocoascript.NSString):NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1494234-pdepanelsfortype
     PDEPanelsForType_withHostInfo(pdeType: string | cocoascript.NSString, host: NSObject):NSArray;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1494230-pmprinter
@@ -367,9 +367,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1539030-panel
     panel_shouldShowFilename(sender: NSObject, filename: string | cocoascript.NSString):BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1494208-panelkind
-    panelKind():string | cocoascript.NSString;
+    panelKind():NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1494224-panelname
-    panelName():string | cocoascript.NSString;
+    panelName():NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1494214-panelview
     panelView():NSView;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1525907-pasteboard
@@ -407,13 +407,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1524282-validatetoolbaritem
     validateToolbarItem(item: NSToolbarItem):BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1483693-view
-    view_stringForToolTip_point_userData(view: NSView, tag: NSToolTipTag, point: NSPoint, data: void):string | cocoascript.NSString;
+    view_stringForToolTip_point_userData(view: NSView, tag: NSToolTipTag, point: NSPoint, data: void):NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1494235-willchangeppdoptionkeyvalue
     willChangePPDOptionKeyValue_ppdChoice(option: string | cocoascript.NSString, choice: string | cocoascript.NSString):BOOL;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1494204-willshow
     willShow():void;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1418711-debugdescription
-    debugDescription():string | cocoascript.NSString;
+    debugDescription():NSString;
     // doc://com.apple.documentation/documentation/objectivec/nsobject/1418561-hash
     hash():NSUInteger;
     //

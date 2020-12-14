@@ -8968,7 +8968,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/sirikit/inpreferences/1829430-siriauthorizationstatus
     siriAuthorizationStatus():INSiriAuthorizationStatus;
     // doc://com.apple.documentation/documentation/sirikit/inpreferences/1638761-sirilanguagecode
-    siriLanguageCode():string | cocoascript.NSString;
+    siriLanguageCode():NSString;
     //
     alloc():INPreferences;
     //

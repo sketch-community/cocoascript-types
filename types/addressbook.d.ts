@@ -27,13 +27,13 @@ declare namespace cocoascript {
    */
   interface ABMultiValue extends NSObject {
     // doc://com.apple.documentation/documentation/addressbook/abmultivalue/1458525-primaryidentifier
-    primaryIdentifier():string | cocoascript.NSString;
+    primaryIdentifier():NSString;
     // doc://com.apple.documentation/documentation/addressbook/abmultivalue/1458743-identifieratindex
-    identifierAtIndex(index: NSUInteger):string | cocoascript.NSString;
+    identifierAtIndex(index: NSUInteger):NSString;
     // doc://com.apple.documentation/documentation/addressbook/abmultivalue/1458700-indexforidentifier
     indexForIdentifier(identifier: string | cocoascript.NSString):NSUInteger;
     // doc://com.apple.documentation/documentation/addressbook/abmultivalue/1458668-labelatindex
-    labelAtIndex(index: NSUInteger):string | cocoascript.NSString;
+    labelAtIndex(index: NSUInteger):NSString;
     // doc://com.apple.documentation/documentation/addressbook/abmultivalue/1458515-valueatindex
     valueAtIndex(index: NSUInteger):ABMultiValue;
     // doc://com.apple.documentation/documentation/addressbook/abmultivalue/1458427-valueforidentifier
@@ -123,9 +123,9 @@ declare namespace cocoascript {
    */
   interface ABMutableMultiValue extends ABMultiValue {
     // doc://com.apple.documentation/documentation/addressbook/abmutablemultivalue/1458374-addvalue
-    addValue_withLabel(value: ABMutableMultiValue, label: string | cocoascript.NSString):string | cocoascript.NSString;
+    addValue_withLabel(value: ABMutableMultiValue, label: string | cocoascript.NSString):NSString;
     // doc://com.apple.documentation/documentation/addressbook/abmutablemultivalue/1458362-insertvalue
-    insertValue_withLabel_atIndex(value: ABMutableMultiValue, label: string | cocoascript.NSString, index: NSUInteger):string | cocoascript.NSString;
+    insertValue_withLabel_atIndex(value: ABMutableMultiValue, label: string | cocoascript.NSString, index: NSUInteger):NSString;
     // doc://com.apple.documentation/documentation/addressbook/abmutablemultivalue/1458689-replacelabelatindex
     replaceLabelAtIndex_withLabel(index: NSUInteger, label: string | cocoascript.NSString):BOOL;
     // doc://com.apple.documentation/documentation/addressbook/abmutablemultivalue/1458609-replacevalueatindex
@@ -167,11 +167,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458571-recordforuniqueid
     recordForUniqueId(uniqueId: string | cocoascript.NSString):ABRecord;
     // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458280-recordclassfromuniqueid
-    recordClassFromUniqueId(uniqueId: string | cocoascript.NSString):string | cocoascript.NSString;
+    recordClassFromUniqueId(uniqueId: string | cocoascript.NSString):NSString;
     // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458665-formattedaddressfromdictionary
     formattedAddressFromDictionary(address: NSDictionary):NSAttributedString;
     // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458703-defaultcountrycode
-    defaultCountryCode():string | cocoascript.NSString;
+    defaultCountryCode():NSString;
     // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458447-defaultnameordering
     defaultNameOrdering():NSInteger;
     // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458709-addrecord
@@ -231,7 +231,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/addressbook/abgroup/1427948-subgroups
     subgroups():NSArray;
     // doc://com.apple.documentation/documentation/addressbook/abgroup/1427942-distributionidentifierforpropert
-    distributionIdentifierForProperty_person(property: string | cocoascript.NSString, person: ABPerson):string | cocoascript.NSString;
+    distributionIdentifierForProperty_person(property: string | cocoascript.NSString, person: ABPerson):NSString;
     // doc://com.apple.documentation/documentation/addressbook/abgroup/1427936-setdistributionidentifier
     setDistributionIdentifier_forProperty_person(identifier: string | cocoascript.NSString, property: string | cocoascript.NSString, person: ABPerson):BOOL;
     // doc://com.apple.documentation/documentation/addressbook/abgroup/1427946-searchelementforproperty
@@ -287,7 +287,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458513-addproperty
     addProperty(property: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458420-columntitleforproperty
-    columnTitleForProperty(property: string | cocoascript.NSString):string | cocoascript.NSString;
+    columnTitleForProperty(property: string | cocoascript.NSString):NSString;
     // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458533-displayedproperty
     displayedProperty(): string | cocoascript.NSString;
     setDisplayedProperty(): void;

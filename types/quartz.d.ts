@@ -179,7 +179,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/qccomposition/1503694-protocols
     protocols():NSArray;
     // doc://com.apple.documentation/documentation/quartz/qccomposition/1493218-identifier
-    identifier():string | cocoascript.NSString;
+    identifier():NSString;
     // doc://com.apple.documentation/documentation/quartz/qccomposition/1504185-inputkeys
     inputKeys():NSArray;
     // doc://com.apple.documentation/documentation/quartz/qccomposition/1504100-outputkeys
@@ -519,7 +519,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/quartzfilter/1433684-applytocontext
     applyToContext(aContext: CGContextRef):BOOL;
     // doc://com.apple.documentation/documentation/quartz/quartzfilter/1433682-localizedname
-    localizedName():string | cocoascript.NSString;
+    localizedName():NSString;
     // doc://com.apple.documentation/documentation/quartz/quartzfilter/1433686-properties
     properties():NSDictionary;
     // doc://com.apple.documentation/documentation/quartz/quartzfilter/1433679-removefromcontext
@@ -749,7 +749,7 @@ declare namespace cocoascript {
    */
   interface IKFilterBrowserPanel extends NSPanel {
     // doc://com.apple.documentation/documentation/quartz/ikfilterbrowserpanel/1504426-filtername
-    filterName():string | cocoascript.NSString;
+    filterName():NSString;
     // doc://com.apple.documentation/documentation/quartz/ikfilterbrowserpanel/1503992-filterbrowserviewwithoptions
     filterBrowserViewWithOptions(inOptions: NSDictionary):IKFilterBrowserView;
     // doc://com.apple.documentation/documentation/quartz/ikfilterbrowserpanel/1504894-beginwithoptions
@@ -1025,7 +1025,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/ikfilterbrowserview/1405296-setpreviewstate
     setPreviewState(inState: BOOL):void;
     // doc://com.apple.documentation/documentation/quartz/ikfilterbrowserview/1405294-filtername
-    filterName():string | cocoascript.NSString;
+    filterName():NSString;
     //
     alloc():IKFilterBrowserView;
     //
@@ -1200,7 +1200,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/ikslideshowdatasource/1503729-slideshowitematindex
     slideshowItemAtIndex(index: NSUInteger):IKSlideshowDataSource;
     // doc://com.apple.documentation/documentation/quartz/ikslideshowdatasource/1503638-nameofslideshowitematindex
-    nameOfSlideshowItemAtIndex(index: NSUInteger):string | cocoascript.NSString;
+    nameOfSlideshowItemAtIndex(index: NSUInteger):NSString;
     // doc://com.apple.documentation/documentation/quartz/ikslideshowdatasource/1505226-canexportslideshowitematindex
     canExportSlideshowItemAtIndex_toApplication(index: NSUInteger, applicationBundleIdentifier: string | cocoascript.NSString):BOOL;
     // doc://com.apple.documentation/documentation/quartz/ikslideshowdatasource/1504337-slideshowwillstart
@@ -1423,7 +1423,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488860-bufferpixelshigh
     bufferPixelsHigh():NSUInteger;
     // doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488758-bufferpixelformat
-    bufferPixelFormat():string | cocoascript.NSString;
+    bufferPixelFormat():NSString;
     // doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488698-buffercolorspace
     bufferColorSpace():CGColorSpaceRef;
     // doc://com.apple.documentation/documentation/quartz/qcplugininputimagesource/1488774-bufferbaseaddress

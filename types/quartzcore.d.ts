@@ -238,7 +238,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410939-removeanimationforkey
     removeAnimationForKey(key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410937-animationkeys
-    animationKeys():string | cocoascript.NSString;
+    animationKeys():NSString;
     // doc://com.apple.documentation/documentation/quartzcore/calayer/1410749-layoutmanager
     layoutManager(): CALayoutManager;
     setLayoutManager(): void;

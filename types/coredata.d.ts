@@ -644,7 +644,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontrollerdelegate/1622290-controllerdidchangecontent
     controllerDidChangeContent(controller: NSFetchedResultsController):void;
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontrollerdelegate/1622286-controller
-    controller_sectionIndexTitleForSectionName(controller: NSFetchedResultsController, sectionName: string | cocoascript.NSString):string | cocoascript.NSString;
+    controller_sectionIndexTitleForSectionName(controller: NSFetchedResultsController, sectionName: string | cocoascript.NSString):NSString;
   }
 }
 declare namespace cocoascript {
@@ -1248,7 +1248,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622284-sectionforsectionindextitle
     sectionForSectionIndexTitle_atIndex(title: string | cocoascript.NSString, sectionIndex: NSInteger):NSInteger;
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622308-sectionindextitleforsectionname
-    sectionIndexTitleForSectionName(sectionName: string | cocoascript.NSString):string | cocoascript.NSString;
+    sectionIndexTitleForSectionName(sectionName: string | cocoascript.NSString):NSString;
     // doc://com.apple.documentation/documentation/coredata/nsfetchedresultscontroller/1622299-sectionindextitles
     sectionIndexTitles(): string | cocoascript.NSString;
     setSectionIndexTitles(): void;
@@ -1803,9 +1803,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897196-initforstorewithdescription
     initForStoreWithDescription_model(description: NSPersistentStoreDescription, model: NSManagedObjectModel):NSCoreDataCoreSpotlightDelegate;
     // doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897202-domainidentifier
-    domainIdentifier():string | cocoascript.NSString;
+    domainIdentifier():NSString;
     // doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897199-indexname
-    indexName():string | cocoascript.NSString;
+    indexName():NSString;
     // doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897197-attributesetforobject
     attributeSetForObject(object: NSManagedObject):CSSearchableItemAttributeSet;
     // doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightdelegate/2897201-searchableindex

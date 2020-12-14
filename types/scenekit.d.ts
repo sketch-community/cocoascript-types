@@ -1725,7 +1725,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/scenekit/scnprogram/1522730-setsemantic
     setSemantic_forSymbol_options(semantic: string | cocoascript.NSString, symbol: string | cocoascript.NSString, options: SCNProgram):void;
     // doc://com.apple.documentation/documentation/scenekit/scnprogram/1523350-semanticforsymbol
-    semanticForSymbol(symbol: string | cocoascript.NSString):string | cocoascript.NSString;
+    semanticForSymbol(symbol: string | cocoascript.NSString):NSString;
     // doc://com.apple.documentation/documentation/scenekit/scnprogram/1522611-delegate
     delegate(): SCNProgramDelegate;
     setDelegate(): void;
@@ -3317,7 +3317,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/scenekit/scnscenesource/1523962-scenewithoptions
     sceneWithOptions_error(options: SCNSceneSource, error: NSError):any;
     // doc://com.apple.documentation/documentation/scenekit/scnscenesource/1523656-identifiersofentrieswithclass
-    identifiersOfEntriesWithClass(entryClass: Class):string | cocoascript.NSString;
+    identifiersOfEntriesWithClass(entryClass: Class):NSString;
     // doc://com.apple.documentation/documentation/scenekit/scnscenesource/1573762-entrywithidentifier
     entryWithIdentifier_withClass(uid: string | cocoascript.NSString, entryClass: Class):SCNSceneSource;
     // doc://com.apple.documentation/documentation/scenekit/scnscenesource/1523055-entriespassingtest

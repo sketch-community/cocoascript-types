@@ -790,7 +790,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/corespotlight/cslocalizedstring/1616403-initwithlocalizedstrings
     initWithLocalizedStrings(localizedStrings: NSDictionary):CSLocalizedString;
     // doc://com.apple.documentation/documentation/corespotlight/cslocalizedstring/1616401-localizedstring
-    localizedString():string | cocoascript.NSString;
+    localizedString():NSString;
     //
     alloc():CSLocalizedString;
     //

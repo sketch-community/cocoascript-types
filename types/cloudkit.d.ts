@@ -220,7 +220,7 @@ declare namespace cocoascript {
     recordChangeTag(): string | cocoascript.NSString;
     setRecordChangeTag(): void;
     // doc://com.apple.documentation/documentation/cloudkit/ckrecord/1462199-alltokens
-    allTokens():string | cocoascript.NSString;
+    allTokens():NSString;
     // doc://com.apple.documentation/documentation/cloudkit/ckrecord/1462200-encodesystemfieldswithcoder
     encodeSystemFieldsWithCoder(coder: NSCoder):void;
     // doc://com.apple.documentation/documentation/cloudkit/ckrecord/1640527-parent
