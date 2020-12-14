@@ -25,19 +25,19 @@ declare namespace cocoascript {
     multitaskingSupported(): BOOL;
     setMultitaskingSupported(): void;
     // doc://com.apple.documentation/documentation/uikit/uidevice/1620015-name
-    name(): string | NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/uikit/uidevice/1620054-systemname
-    systemName(): string | NSString;
+    systemName(): string | cocoascript.NSString;
     setSystemName(): void;
     // doc://com.apple.documentation/documentation/uikit/uidevice/1620043-systemversion
-    systemVersion(): string | NSString;
+    systemVersion(): string | cocoascript.NSString;
     setSystemVersion(): void;
     // doc://com.apple.documentation/documentation/uikit/uidevice/1620044-model
-    model(): string | NSString;
+    model(): string | cocoascript.NSString;
     setModel(): void;
     // doc://com.apple.documentation/documentation/uikit/uidevice/1620029-localizedmodel
-    localizedModel(): string | NSString;
+    localizedModel(): string | cocoascript.NSString;
     setLocalizedModel(): void;
     // doc://com.apple.documentation/documentation/uikit/uidevice/1620037-userinterfaceidiom
     userInterfaceIdiom(): UIUserInterfaceIdiom;
@@ -99,7 +99,7 @@ declare namespace cocoascript {
     name(): NSDataAssetName;
     setName(): void;
     // doc://com.apple.documentation/documentation/uikit/nsdataasset/1403434-typeidentifier
-    typeIdentifier(): string | NSString;
+    typeIdentifier(): string | cocoascript.NSString;
     setTypeIdentifier(): void;
     //
     alloc():NSDataAsset;
@@ -116,7 +116,7 @@ declare namespace cocoascript {
    */
   interface NSLayoutConstraint extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/nslayoutconstraint/1526944-constraintswithvisualformat
-    constraintsWithVisualFormat_options_metrics_views(format: string | NSString, opts: NSLayoutFormatOptions, metrics: NSLayoutConstraint, views: NSLayoutConstraint):NSLayoutConstraint;
+    constraintsWithVisualFormat_options_metrics_views(format: string | cocoascript.NSString, opts: NSLayoutFormatOptions, metrics: NSLayoutConstraint, views: NSLayoutConstraint):NSLayoutConstraint;
     // doc://com.apple.documentation/documentation/uikit/nslayoutconstraint/1526954-constraintwithitem
     constraintWithItem_attribute_relatedBy_toItem_attribute_multiplier_constant(view1: NSLayoutConstraint, attr1: NSLayoutAttribute, relation: NSLayoutRelation, view2: NSLayoutConstraint, attr2: NSLayoutAttribute, multiplier: CGFloat, c: CGFloat):NSLayoutConstraint;
     // doc://com.apple.documentation/documentation/uikit/nslayoutconstraint/1527000-active
@@ -157,7 +157,7 @@ declare namespace cocoascript {
     priority(): UILayoutPriority;
     setPriority(): void;
     // doc://com.apple.documentation/documentation/uikit/nslayoutconstraint/1526879-identifier
-    identifier(): string | NSString;
+    identifier(): string | cocoascript.NSString;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/uikit/nslayoutconstraint/1525647-shouldbearchived
     shouldBeArchived(): BOOL;
@@ -227,7 +227,7 @@ declare namespace cocoascript {
     hasAmbiguousLayout(): BOOL;
     setHasAmbiguousLayout(): void;
     // doc://com.apple.documentation/documentation/appkit/nslayoutanchor/2870022-name
-    name(): string | NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/appkit/nslayoutanchor/2870025-item
     item(): id;
@@ -856,7 +856,7 @@ declare namespace cocoascript {
     headerLevel(): NSInteger;
     setHeaderLevel(): void;
     // doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1535327-defaultwritingdirectionforlangua
-    defaultWritingDirectionForLanguage(languageName: string | NSString):NSWritingDirection;
+    defaultWritingDirectionForLanguage(languageName: string | cocoascript.NSString):NSWritingDirection;
     // doc://com.apple.documentation/documentation/uikit/nsparagraphstyle/1527354-basewritingdirection
     baseWritingDirection(): NSWritingDirection;
     setBaseWritingDirection(): void;
@@ -995,7 +995,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/appkit/nstextattachment/1508373-initwithfilewrapper
     initWithFileWrapper(fileWrapper: NSFileWrapper):NSTextAttachment;
     // doc://com.apple.documentation/documentation/uikit/nstextattachment/1508374-initwithdata
-    initWithData_ofType(contentData: NSData, uti: string | NSString):NSTextAttachment;
+    initWithData_ofType(contentData: NSData, uti: string | cocoascript.NSString):NSTextAttachment;
     // doc://com.apple.documentation/documentation/uikit/nstextattachment/3327290-textattachmentwithimage
     textAttachmentWithImage(image: UIImage):NSTextAttachment;
     // doc://com.apple.documentation/documentation/uikit/nstextattachment/1508394-bounds
@@ -1005,7 +1005,7 @@ declare namespace cocoascript {
     contents(): NSData;
     setContents(): void;
     // doc://com.apple.documentation/documentation/uikit/nstextattachment/1508416-filetype
-    fileType(): string | NSString;
+    fileType(): string | cocoascript.NSString;
     setFileType(): void;
     // doc://com.apple.documentation/documentation/uikit/nstextattachment/1508378-image
     image(): UIImage;
@@ -1077,9 +1077,9 @@ declare namespace cocoascript {
     titleLabel(): UILabel;
     setTitleLabel(): void;
     // doc://com.apple.documentation/documentation/uikit/uibutton/1624022-titleforstate
-    titleForState(state: UIControlState):string | NSString;
+    titleForState(state: UIControlState):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uibutton/1624018-settitle
-    setTitle_forState(title: string | NSString, state: UIControlState):void;
+    setTitle_forState(title: string | cocoascript.NSString, state: UIControlState):void;
     // doc://com.apple.documentation/documentation/uikit/uibutton/1623991-attributedtitleforstate
     attributedTitleForState(state: UIControlState):NSAttributedString;
     // doc://com.apple.documentation/documentation/uikit/uibutton/1624012-setattributedtitle
@@ -1132,7 +1132,7 @@ declare namespace cocoascript {
     buttonType(): UIButtonType;
     setButtonType(): void;
     // doc://com.apple.documentation/documentation/uikit/uibutton/1624032-currenttitle
-    currentTitle(): string | NSString;
+    currentTitle(): string | cocoascript.NSString;
     setCurrentTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uibutton/1624002-currentattributedtitle
     currentAttributedTitle(): NSAttributedString;
@@ -1214,7 +1214,7 @@ declare namespace cocoascript {
     style(): UISwitchStyle;
     setStyle(): void;
     // doc://com.apple.documentation/documentation/uikit/uiswitch/3621876-title
-    title(): string | NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uiswitch/1623687-ontintcolor
     onTintColor(): UIColor;
@@ -1375,25 +1375,25 @@ declare namespace cocoascript {
    */
   interface UIKeyCommand extends UICommand {
     // doc://com.apple.documentation/documentation/uikit/uikeycommand/3340171-commandwithtitle
-    commandWithTitle_image_action_input_modifierFlags_propertyList(title: string | NSString, image: UIImage, action: SEL, input: string | NSString, modifierFlags: UIKeyModifierFlags, propertyList: UIKeyCommand):UIKeyCommand;
+    commandWithTitle_image_action_input_modifierFlags_propertyList(title: string | cocoascript.NSString, image: UIImage, action: SEL, input: string | cocoascript.NSString, modifierFlags: UIKeyModifierFlags, propertyList: UIKeyCommand):UIKeyCommand;
     // doc://com.apple.documentation/documentation/uikit/uikeycommand/3340172-commandwithtitle
-    commandWithTitle_image_action_input_modifierFlags_propertyList_alternates(title: string | NSString, image: UIImage, action: SEL, input: string | NSString, modifierFlags: UIKeyModifierFlags, propertyList: UIKeyCommand, alternates: UICommandAlternate):UIKeyCommand;
+    commandWithTitle_image_action_input_modifierFlags_propertyList_alternates(title: string | cocoascript.NSString, image: UIImage, action: SEL, input: string | cocoascript.NSString, modifierFlags: UIKeyModifierFlags, propertyList: UIKeyCommand, alternates: UICommandAlternate):UIKeyCommand;
     // doc://com.apple.documentation/documentation/uikit/uikeycommand/1621131-keycommandwithinput
-    keyCommandWithInput_modifierFlags_action(input: string | NSString, modifierFlags: UIKeyModifierFlags, action: SEL):UIKeyCommand;
+    keyCommandWithInput_modifierFlags_action(input: string | cocoascript.NSString, modifierFlags: UIKeyModifierFlags, action: SEL):UIKeyCommand;
     // doc://com.apple.documentation/documentation/uikit/uikeycommand/1621100-init
     init():UIKeyCommand;
     // doc://com.apple.documentation/documentation/uikit/uikeycommand/1621115-initwithcoder
     initWithCoder(coder: NSCoder):UIKeyCommand;
     // doc://com.apple.documentation/documentation/uikit/uikeycommand/1621139-keycommandwithinput
-    keyCommandWithInput_modifierFlags_action_discoverabilityTitle(input: string | NSString, modifierFlags: UIKeyModifierFlags, action: SEL, discoverabilityTitle: string | NSString):UIKeyCommand;
+    keyCommandWithInput_modifierFlags_action_discoverabilityTitle(input: string | cocoascript.NSString, modifierFlags: UIKeyModifierFlags, action: SEL, discoverabilityTitle: string | cocoascript.NSString):UIKeyCommand;
     // doc://com.apple.documentation/documentation/uikit/uikeycommand/3335197-title
-    title(): string | NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uikeycommand/3335190-image
     image(): UIImage;
     setImage(): void;
     // doc://com.apple.documentation/documentation/uikit/uikeycommand/1621143-input
-    input(): string | NSString;
+    input(): string | cocoascript.NSString;
     setInput(): void;
     // doc://com.apple.documentation/documentation/uikit/uikeycommand/3175393-action
     action(): SEL;
@@ -1402,7 +1402,7 @@ declare namespace cocoascript {
     modifierFlags(): UIKeyModifierFlags;
     setModifierFlags(): void;
     // doc://com.apple.documentation/documentation/uikit/uikeycommand/1621094-discoverabilitytitle
-    discoverabilityTitle(): string | NSString;
+    discoverabilityTitle(): string | cocoascript.NSString;
     setDiscoverabilityTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uikeycommand/3335189-attributes
     attributes(): UIMenuElementAttributes;
@@ -1425,7 +1425,7 @@ declare namespace cocoascript {
 
 declare const UIKeyCommand: cocoascript.UIKeyCommand;
 // doc://com.apple.documentation/documentation/uikit/uicommandtagshare
-declare const UICommandTagShare: string | NSString;
+declare const UICommandTagShare: string | cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A control for selecting a single value from a continuous range of values.
@@ -1536,9 +1536,9 @@ declare namespace cocoascript {
    */
   interface UIAction extends UIMenuElement {
     // doc://com.apple.documentation/documentation/uikit/uiaction/3340167-actionwithtitle
-    actionWithTitle_image_identifier_handler(title: string | NSString, image: UIImage, identifier: UIActionIdentifier, handler: UIActionHandler):UIAction;
+    actionWithTitle_image_identifier_handler(title: string | cocoascript.NSString, image: UIImage, identifier: UIActionIdentifier, handler: UIActionHandler):UIAction;
     // doc://com.apple.documentation/documentation/uikit/uiaction/3335179-title
-    title(): string | NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uiaction/3335177-image
     image(): UIImage;
@@ -1547,7 +1547,7 @@ declare namespace cocoascript {
     identifier(): UIActionIdentifier;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/uikit/uiaction/3335175-discoverabilitytitle
-    discoverabilityTitle(): string | NSString;
+    discoverabilityTitle(): string | cocoascript.NSString;
     setDiscoverabilityTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uiaction/3335174-attributes
     attributes(): UIMenuElementAttributes;
@@ -1575,9 +1575,9 @@ declare namespace cocoascript {
    */
   interface UIMenu extends UIMenuElement {
     // doc://com.apple.documentation/documentation/uikit/uimenu/3327333-menuwithtitle
-    menuWithTitle_children(title: string | NSString, children: UIMenuElement):UIMenu;
+    menuWithTitle_children(title: string | cocoascript.NSString, children: UIMenuElement):UIMenu;
     // doc://com.apple.documentation/documentation/uikit/uimenu/3327334-menuwithtitle
-    menuWithTitle_image_identifier_options_children(title: string | NSString, image: UIImage, identifier: UIMenuIdentifier, options: UIMenuOptions, children: UIMenuElement):UIMenu;
+    menuWithTitle_image_identifier_options_children(title: string | cocoascript.NSString, image: UIImage, identifier: UIMenuIdentifier, options: UIMenuOptions, children: UIMenuElement):UIMenu;
     // doc://com.apple.documentation/documentation/uikit/uimenu/3281978-initwithcoder
     initWithCoder(coder: NSCoder):UIMenu;
     // doc://com.apple.documentation/documentation/uikit/uimenu/3261448-children
@@ -1644,12 +1644,12 @@ declare namespace cocoascript {
    */
   interface UIAlertController extends UIViewController {
     // doc://com.apple.documentation/documentation/uikit/uialertcontroller/1620092-alertcontrollerwithtitle
-    alertControllerWithTitle_message_preferredStyle(title: string | NSString, message: string | NSString, preferredStyle: UIAlertControllerStyle):UIAlertController;
+    alertControllerWithTitle_message_preferredStyle(title: string | cocoascript.NSString, message: string | cocoascript.NSString, preferredStyle: UIAlertControllerStyle):UIAlertController;
     // doc://com.apple.documentation/documentation/uikit/uialertcontroller/1620103-title
-    title(): string | NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uialertcontroller/1620106-message
-    message(): string | NSString;
+    message(): string | cocoascript.NSString;
     setMessage(): void;
     // doc://com.apple.documentation/documentation/uikit/uialertcontroller/1620096-preferredstyle
     preferredStyle(): UIAlertControllerStyle;
@@ -1802,7 +1802,7 @@ declare namespace cocoascript {
     supportsAlpha(): BOOL;
     setSupportsAlpha(): void;
     // doc://com.apple.documentation/documentation/uikit/uicolorwell/3600474-title
-    title(): string | NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     //
     alloc():UIColorWell;
@@ -1847,14 +1847,14 @@ declare namespace cocoascript {
     delegate(): UIImagePickerControllerDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619169-availablemediatypesforsourcetype
-    availableMediaTypesForSourceType(sourceType: UIImagePickerControllerSourceType):string | NSString;
+    availableMediaTypesForSourceType(sourceType: UIImagePickerControllerSourceType):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619144-issourcetypeavailable
     isSourceTypeAvailable(sourceType: UIImagePickerControllerSourceType):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619167-sourcetype
     sourceType(): UIImagePickerControllerSourceType;
     setSourceType(): void;
     // doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619173-mediatypes
-    mediaTypes(): string | NSString;
+    mediaTypes(): string | cocoascript.NSString;
     setMediaTypes(): void;
     // doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/1619137-allowsediting
     allowsEditing(): BOOL;
@@ -1902,7 +1902,7 @@ declare namespace cocoascript {
     imageExportPreset(): UIImagePickerControllerImageURLExportPreset;
     setImageExportPreset(): void;
     // doc://com.apple.documentation/documentation/uikit/uiimagepickercontroller/2890964-videoexportpreset
-    videoExportPreset(): string | NSString;
+    videoExportPreset(): string | cocoascript.NSString;
     setVideoExportPreset(): void;
     //
     alloc():UIImagePickerController;
@@ -2038,13 +2038,13 @@ declare namespace cocoascript {
     delegate(): UISearchBarDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/uikit/uisearchbar/1624322-placeholder
-    placeholder(): string | NSString;
+    placeholder(): string | cocoascript.NSString;
     setPlaceholder(): void;
     // doc://com.apple.documentation/documentation/uikit/uisearchbar/1624326-prompt
-    prompt(): string | NSString;
+    prompt(): string | cocoascript.NSString;
     setPrompt(): void;
     // doc://com.apple.documentation/documentation/uikit/uisearchbar/1624282-text
-    text(): string | NSString;
+    text(): string | cocoascript.NSString;
     setText(): void;
     // doc://com.apple.documentation/documentation/uikit/uisearchbar/1624295-bartintcolor
     barTintColor(): UIColor;
@@ -2079,7 +2079,7 @@ declare namespace cocoascript {
     searchResultsButtonSelected(): BOOL;
     setSearchResultsButtonSelected(): void;
     // doc://com.apple.documentation/documentation/uikit/uisearchbar/1624292-scopebuttontitles
-    scopeButtonTitles(): string | NSString;
+    scopeButtonTitles(): string | cocoascript.NSString;
     setScopeButtonTitles(): void;
     // doc://com.apple.documentation/documentation/uikit/uisearchbar/1624287-selectedscopebuttonindex
     selectedScopeButtonIndex(): NSInteger;
@@ -2156,13 +2156,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618579-imageforsegmentatindex
     imageForSegmentAtIndex(segment: NSUInteger):UIImage;
     // doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618556-settitle
-    setTitle_forSegmentAtIndex(title: string | NSString, segment: NSUInteger):void;
+    setTitle_forSegmentAtIndex(title: string | cocoascript.NSString, segment: NSUInteger):void;
     // doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618561-titleforsegmentatindex
-    titleForSegmentAtIndex(segment: NSUInteger):string | NSString;
+    titleForSegmentAtIndex(segment: NSUInteger):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618572-insertsegmentwithimage
     insertSegmentWithImage_atIndex_animated(image: UIImage, segment: NSUInteger, animated: BOOL):void;
     // doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618588-insertsegmentwithtitle
-    insertSegmentWithTitle_atIndex_animated(title: string | NSString, segment: NSUInteger, animated: BOOL):void;
+    insertSegmentWithTitle_atIndex_animated(title: string | cocoascript.NSString, segment: NSUInteger, animated: BOOL):void;
     // doc://com.apple.documentation/documentation/uikit/uisegmentedcontrol/1618553-numberofsegments
     numberOfSegments(): NSUInteger;
     setNumberOfSegments(): void;
@@ -2296,13 +2296,13 @@ declare namespace cocoascript {
     delegate(): UITextFieldDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/uikit/uitextfield/1619635-text
-    text(): string | NSString;
+    text(): string | cocoascript.NSString;
     setText(): void;
     // doc://com.apple.documentation/documentation/uikit/uitextfield/1619602-attributedtext
     attributedText(): NSAttributedString;
     setAttributedText(): void;
     // doc://com.apple.documentation/documentation/uikit/uitextfield/1619621-placeholder
-    placeholder(): string | NSString;
+    placeholder(): string | cocoascript.NSString;
     setPlaceholder(): void;
     // doc://com.apple.documentation/documentation/uikit/uitextfield/1619610-attributedplaceholder
     attributedPlaceholder(): NSAttributedString;
@@ -2397,7 +2397,7 @@ declare namespace cocoascript {
 
 declare const UITextField: cocoascript.UITextField;
 // doc://com.apple.documentation/documentation/uikit/uitextfielddidendeditingreasonkey
-declare const UITextFieldDidEndEditingReasonKey: string | NSString;
+declare const UITextFieldDidEndEditingReasonKey: string | cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object that coordinates text formatting using the standard Mac font panel.
@@ -2440,7 +2440,7 @@ declare namespace cocoascript {
     delegate(): UITextViewDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/uikit/uitextview/1618623-text
-    text(): string | NSString;
+    text(): string | cocoascript.NSString;
     setText(): void;
     // doc://com.apple.documentation/documentation/uikit/uitextview/1618626-attributedtext
     attributedText(): NSAttributedString;
@@ -2863,7 +2863,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiview/1622481-removemotioneffect
     removeMotionEffect(effect: UIMotionEffect):void;
     // doc://com.apple.documentation/documentation/uikit/uiview/1622494-restorationidentifier
-    restorationIdentifier(): string | NSString;
+    restorationIdentifier(): string | cocoascript.NSString;
     setRestorationIdentifier(): void;
     // doc://com.apple.documentation/documentation/uikit/uiview/1622516-encoderestorablestatewithcoder
     encodeRestorableStateWithCoder(coder: NSCoder):void;
@@ -2918,7 +2918,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiview/1622484-performwithoutanimation
     performWithoutAnimation(actionsWithoutAnimation: void):void;
     // doc://com.apple.documentation/documentation/uikit/uiview/1622463-beginanimations
-    beginAnimations_context(animationID: string | NSString, context: void):void;
+    beginAnimations_context(animationID: string | cocoascript.NSString, context: void):void;
     // doc://com.apple.documentation/documentation/uikit/uiview/1622664-commitanimations
     commitAnimations():void;
     // doc://com.apple.documentation/documentation/uikit/uiview/1622466-setanimationstartdate
@@ -2949,7 +2949,7 @@ declare namespace cocoascript {
     areAnimationsEnabled(): BOOL;
     setAreAnimationsEnabled(): void;
     // doc://com.apple.documentation/documentation/uikit/uiview/3601233-focusgroupidentifier
-    focusGroupIdentifier(): string | NSString;
+    focusGroupIdentifier(): string | cocoascript.NSString;
     setFocusGroupIdentifier(): void;
     // doc://com.apple.documentation/documentation/uikit/uiview/3183937-largecontentimage
     largeContentImage(): UIImage;
@@ -2958,7 +2958,7 @@ declare namespace cocoascript {
     largeContentImageInsets(): UIEdgeInsets;
     setLargeContentImageInsets(): void;
     // doc://com.apple.documentation/documentation/uikit/uiview/3183939-largecontenttitle
-    largeContentTitle(): string | NSString;
+    largeContentTitle(): string | cocoascript.NSString;
     setLargeContentTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uiview/3183940-scaleslargecontentimage
     scalesLargeContentImage(): BOOL;
@@ -2986,13 +2986,13 @@ declare namespace cocoascript {
    */
   interface UICommand extends UIMenuElement {
     // doc://com.apple.documentation/documentation/uikit/uicommand/3340169-commandwithtitle
-    commandWithTitle_image_action_propertyList(title: string | NSString, image: UIImage, action: SEL, propertyList: UICommand):UICommand;
+    commandWithTitle_image_action_propertyList(title: string | cocoascript.NSString, image: UIImage, action: SEL, propertyList: UICommand):UICommand;
     // doc://com.apple.documentation/documentation/uikit/uicommand/3340170-commandwithtitle
-    commandWithTitle_image_action_propertyList_alternates(title: string | NSString, image: UIImage, action: SEL, propertyList: UICommand, alternates: UICommandAlternate):UICommand;
+    commandWithTitle_image_action_propertyList_alternates(title: string | cocoascript.NSString, image: UIImage, action: SEL, propertyList: UICommand, alternates: UICommandAlternate):UICommand;
     // doc://com.apple.documentation/documentation/uikit/uicommand/3175309-initwithcoder
     initWithCoder(coder: NSCoder):UICommand;
     // doc://com.apple.documentation/documentation/uikit/uicommand/3175312-title
-    title(): string | NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uicommand/3229869-image
     image(): UIImage;
@@ -3001,7 +3001,7 @@ declare namespace cocoascript {
     action(): SEL;
     setAction(): void;
     // doc://com.apple.documentation/documentation/uikit/uicommand/3175308-discoverabilitytitle
-    discoverabilityTitle(): string | NSString;
+    discoverabilityTitle(): string | cocoascript.NSString;
     setDiscoverabilityTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uicommand/3335180-attributes
     attributes(): UIMenuElementAttributes;
@@ -3024,7 +3024,7 @@ declare namespace cocoascript {
 
 declare const UICommand: cocoascript.UICommand;
 // doc://com.apple.documentation/documentation/uikit/uicommandtagshare
-declare const UICommandTagShare: string | NSString;
+declare const UICommandTagShare: string | cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An interaction object that you use to display relevant actions for your content.
@@ -3179,7 +3179,7 @@ declare namespace cocoascript {
    */
   interface UIMenuElement extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uimenuelement/3261458-title
-    title(): string | NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uimenuelement/3261457-image
     image(): UIImage;
@@ -3298,10 +3298,10 @@ declare namespace cocoascript {
     textInputMode(): UITextInputMode;
     setTextInputMode(): void;
     // doc://com.apple.documentation/documentation/uikit/uiresponder/1621091-textinputcontextidentifier
-    textInputContextIdentifier(): string | NSString;
+    textInputContextIdentifier(): string | cocoascript.NSString;
     setTextInputContextIdentifier(): void;
     // doc://com.apple.documentation/documentation/uikit/uiresponder/1621138-cleartextinputcontextidentifier
-    clearTextInputContextIdentifier(identifier: string | NSString):void;
+    clearTextInputContextIdentifier(identifier: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uiresponder/1621135-inputassistantitem
     inputAssistantItem(): UITextInputAssistantItem;
     setInputAssistantItem(): void;
@@ -3332,15 +3332,15 @@ declare namespace cocoascript {
 
 declare const UIResponder: cocoascript.UIResponder;
 // doc://com.apple.documentation/documentation/uikit/uikeyboardanimationcurveuserinfokey
-declare const UIKeyboardAnimationCurveUserInfoKey: string | NSString;
+declare const UIKeyboardAnimationCurveUserInfoKey: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/uikit/uikeyboardanimationdurationuserinfokey
-declare const UIKeyboardAnimationDurationUserInfoKey: string | NSString;
+declare const UIKeyboardAnimationDurationUserInfoKey: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/uikit/uikeyboardframebeginuserinfokey
-declare const UIKeyboardFrameBeginUserInfoKey: string | NSString;
+declare const UIKeyboardFrameBeginUserInfoKey: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/uikit/uikeyboardframeenduserinfokey
-declare const UIKeyboardFrameEndUserInfoKey: string | NSString;
+declare const UIKeyboardFrameEndUserInfoKey: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/uikit/uikeyboardislocaluserinfokey
-declare const UIKeyboardIsLocalUserInfoKey: string | NSString;
+declare const UIKeyboardIsLocalUserInfoKey: string | cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * The centralized point of control and coordination for apps running in iOS.
@@ -3382,7 +3382,7 @@ declare namespace cocoascript {
     backgroundRefreshStatus(): UIBackgroundRefreshStatus;
     setBackgroundRefreshStatus(): void;
     // doc://com.apple.documentation/documentation/uikit/uiapplication/1623051-beginbackgroundtaskwithname
-    beginBackgroundTaskWithName_expirationHandler(taskName: string | NSString, handler: void):UIBackgroundTaskIdentifier;
+    beginBackgroundTaskWithName_expirationHandler(taskName: string | cocoascript.NSString, handler: void):UIBackgroundTaskIdentifier;
     // doc://com.apple.documentation/documentation/uikit/uiapplication/1623031-beginbackgroundtaskwithexpiratio
     beginBackgroundTaskWithExpirationHandler(handler: void):UIBackgroundTaskIdentifier;
     // doc://com.apple.documentation/documentation/uikit/uiapplication/1622970-endbackgroundtask
@@ -3404,7 +3404,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiapplication/1623097-ignoresnapshotonnextapplicationl
     ignoreSnapshotOnNextApplicationLaunch():void;
     // doc://com.apple.documentation/documentation/uikit/uiapplication/1623027-registerobjectforstaterestoratio
-    registerObjectForStateRestoration_restorationIdentifier(object: UIStateRestoring, restorationIdentifier: string | NSString):void;
+    registerObjectForStateRestoration_restorationIdentifier(object: UIStateRestoring, restorationIdentifier: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uiapplication/1623033-shortcutitems
     shortcutItems(): UIApplicationShortcutItem;
     setShortcutItems(): void;
@@ -3439,10 +3439,10 @@ declare namespace cocoascript {
     supportsAlternateIcons(): BOOL;
     setSupportsAlternateIcons(): void;
     // doc://com.apple.documentation/documentation/uikit/uiapplication/2806808-alternateiconname
-    alternateIconName(): string | NSString;
+    alternateIconName(): string | cocoascript.NSString;
     setAlternateIconName(): void;
     // doc://com.apple.documentation/documentation/uikit/uiapplication/2806818-setalternateiconname
-    setAlternateIconName_completionHandler(alternateIconName: string | NSString, completionHandler: NSError):void;
+    setAlternateIconName_completionHandler(alternateIconName: string | cocoascript.NSString, completionHandler: NSError):void;
     // doc://com.apple.documentation/documentation/uikit/uiapplication/1622924-keywindow
     keyWindow(): UIWindow;
     setKeyWindow(): void;
@@ -3522,13 +3522,13 @@ declare namespace cocoascript {
 
 declare const UIApplication: cocoascript.UIApplication;
 // doc://com.apple.documentation/documentation/uikit/uiapplicationopensettingsurlstring
-declare const UIApplicationOpenSettingsURLString: string | NSString;
+declare const UIApplicationOpenSettingsURLString: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/uikit/uicontentsizecategorynewvaluekey
-declare const UIContentSizeCategoryNewValueKey: string | NSString;
+declare const UIContentSizeCategoryNewValueKey: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/uikit/uiapplicationstatusbarorientationuserinfokey
-declare const UIApplicationStatusBarOrientationUserInfoKey: string | NSString;
+declare const UIApplicationStatusBarOrientationUserInfoKey: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/uikit/uiapplicationstatusbarframeuserinfokey
-declare const UIApplicationStatusBarFrameUserInfoKey: string | NSString;
+declare const UIApplicationStatusBarFrameUserInfoKey: string | cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * The base class for concrete gesture recognizers.
@@ -3619,7 +3619,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/1619999-pressescancelled
     pressesCancelled_withEvent(presses: UIPress, event: UIPressesEvent):void;
     // doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/2890966-name
-    name(): string | NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/uikit/uigesturerecognizer/3182937-init
     init():UIGestureRecognizer;
@@ -3813,9 +3813,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uicolor/1648568-initwithdisplayp3red
     initWithDisplayP3Red_green_blue_alpha(displayP3Red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat):UIColor;
     // doc://com.apple.documentation/documentation/uikit/uicolor/2877380-colornamed
-    colorNamed(name: string | NSString):UIColor;
+    colorNamed(name: string | cocoascript.NSString):UIColor;
     // doc://com.apple.documentation/documentation/uikit/uicolor/2877381-colornamed
-    colorNamed_inBundle_compatibleWithTraitCollection(name: string | NSString, bundle: NSBundle, traitCollection: UITraitCollection):UIColor;
+    colorNamed_inBundle_compatibleWithTraitCollection(name: string | cocoascript.NSString, bundle: NSBundle, traitCollection: UITraitCollection):UIColor;
     // doc://com.apple.documentation/documentation/uikit/uicolor/3238040-colorwithdynamicprovider
     colorWithDynamicProvider(dynamicProvider: UITraitCollection):UIColor;
     // doc://com.apple.documentation/documentation/uikit/uicolor/3238041-initwithdynamicprovider
@@ -3855,7 +3855,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uicolor/1621927-getwhite
     getWhite_alpha(white: CGFloat, alpha: CGFloat):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uicolor/3600314-accessibilityname
-    accessibilityName(): string | NSString;
+    accessibilityName(): string | cocoascript.NSString;
     setAccessibilityName(): void;
     // doc://com.apple.documentation/documentation/uikit/uicolor/3238042-resolvedcolorwithtraitcollection
     resolvedColorWithTraitCollection(traitCollection: UITraitCollection):UIColor;
@@ -3874,14 +3874,14 @@ declare namespace cocoascript {
    */
   interface UIViewController extends UIResponder {
     // doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621359-initwithnibname
-    initWithNibName_bundle(nibNameOrNil: string | NSString, nibBundleOrNil: NSBundle):UIViewController;
+    initWithNibName_bundle(nibNameOrNil: string | cocoascript.NSString, nibBundleOrNil: NSBundle):UIViewController;
     // doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621403-initwithcoder
     initWithCoder(coder: NSCoder):UIViewController;
     // doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621399-storyboard
     storyboard(): UIStoryboard;
     setStoryboard(): void;
     // doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621487-nibname
-    nibName(): string | NSString;
+    nibName(): string | cocoascript.NSString;
     setNibName(): void;
     // doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621489-nibbundle
     nibBundle(): NSBundle;
@@ -3902,7 +3902,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621446-loadviewifneeded
     loadViewIfNeeded():void;
     // doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621364-title
-    title(): string | NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621476-preferredcontentsize
     preferredContentSize(): CGSize;
@@ -3964,11 +3964,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621400-attemptrotationtodeviceorientati
     attemptRotationToDeviceOrientation():void;
     // doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621502-shouldperformseguewithidentifier
-    shouldPerformSegueWithIdentifier_sender(identifier: string | NSString, sender: UIViewController):BOOL;
+    shouldPerformSegueWithIdentifier_sender(identifier: string | cocoascript.NSString, sender: UIViewController):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621490-prepareforsegue
     prepareForSegue_sender(segue: UIStoryboardSegue, sender: UIViewController):void;
     // doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621413-performseguewithidentifier
-    performSegueWithIdentifier_sender(identifier: string | NSString, sender: UIViewController):void;
+    performSegueWithIdentifier_sender(identifier: string | cocoascript.NSString, sender: UIViewController):void;
     // doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621371-allowedchildviewcontrollersforun
     allowedChildViewControllersForUnwindingFromSource(source: UIStoryboardUnwindSegueSource):UIViewController;
     // doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621384-childviewcontrollercontainingseg
@@ -4156,7 +4156,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621409-didreceivememorywarning
     didReceiveMemoryWarning():void;
     // doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621499-restorationidentifier
-    restorationIdentifier(): string | NSString;
+    restorationIdentifier(): string | cocoascript.NSString;
     setRestorationIdentifier(): void;
     // doc://com.apple.documentation/documentation/uikit/uiviewcontroller/1621472-restorationclass
     restorationClass(): UIViewControllerRestoration;
@@ -4235,13 +4235,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/3395861-application
     application_shouldRestoreSecureApplicationState(application: UIApplication, coder: NSCoder):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623062-application
-    application_viewControllerWithRestorationIdentifierPath_coder(application: UIApplication, identifierComponents: string | NSString, coder: NSCoder):UIViewController;
+    application_viewControllerWithRestorationIdentifierPath_coder(application: UIApplication, identifierComponents: string | cocoascript.NSString, coder: NSCoder):UIViewController;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623099-application
     application_willEncodeRestorableStateWithCoder(application: UIApplication, coder: NSCoder):void;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623006-application
     application_didDecodeRestorableStateWithCoder(application: UIApplication, coder: NSCoder):void;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622941-application
-    application_handleEventsForBackgroundURLSession_completionHandler(application: UIApplication, identifier: string | NSString, completionHandler: void):void;
+    application_handleEventsForBackgroundURLSession_completionHandler(application: UIApplication, identifier: string | cocoascript.NSString, completionHandler: void):void;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622958-application
     application_didRegisterForRemoteNotificationsWithDeviceToken(application: UIApplication, deviceToken: NSData):void;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622962-application
@@ -4249,13 +4249,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623013-application
     application_didReceiveRemoteNotification_fetchCompletionHandler(application: UIApplication, userInfo: NSDictionary, completionHandler: UIBackgroundFetchResult):void;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622919-application
-    application_willContinueUserActivityWithType(application: UIApplication, userActivityType: string | NSString):BOOL;
+    application_willContinueUserActivityWithType(application: UIApplication, userActivityType: string | cocoascript.NSString):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623072-application
     application_continueUserActivity_restorationHandler(application: UIApplication, userActivity: NSUserActivity, restorationHandler: UIUserActivityRestoring):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622963-application
     application_didUpdateUserActivity(application: UIApplication, userActivity: NSUserActivity):void;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622927-application
-    application_didFailToContinueUserActivityWithType_error(application: UIApplication, userActivityType: string | NSString, error: NSError):void;
+    application_didFailToContinueUserActivityWithType_error(application: UIApplication, userActivityType: string | cocoascript.NSString, error: NSError):void;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1622935-application
     application_performActionForShortcutItem_completionHandler(application: UIApplication, shortcutItem: UIApplicationShortcutItem, completionHandler: BOOL):void;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationdelegate/1623041-application
@@ -4278,15 +4278,15 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/uikit/uiapplicationstaterestorationbundleversionkey
-declare const UIApplicationStateRestorationBundleVersionKey: string | NSString;
+declare const UIApplicationStateRestorationBundleVersionKey: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/uikit/uiapplicationstaterestorationsystemversionkey
-declare const UIApplicationStateRestorationSystemVersionKey: string | NSString;
+declare const UIApplicationStateRestorationSystemVersionKey: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/uikit/uiapplicationstaterestorationtimestampkey
-declare const UIApplicationStateRestorationTimestampKey: string | NSString;
+declare const UIApplicationStateRestorationTimestampKey: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/uikit/uiapplicationstaterestorationuserinterfaceidiomkey
-declare const UIApplicationStateRestorationUserInterfaceIdiomKey: string | NSString;
+declare const UIApplicationStateRestorationUserInterfaceIdiomKey: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/uikit/uistaterestorationviewcontrollerstoryboardkey
-declare const UIStateRestorationViewControllerStoryboardKey: string | NSString;
+declare const UIStateRestorationViewControllerStoryboardKey: string | cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object describing the configuration of the status bar.
@@ -4461,14 +4461,14 @@ declare namespace cocoascript {
    */
   interface UIGuidedAccessRestrictionDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uiguidedaccessrestrictiondelegate/1621160-guidedaccessrestrictionidentifie
-    guidedAccessRestrictionIdentifiers(): string | NSString;
+    guidedAccessRestrictionIdentifiers(): string | cocoascript.NSString;
     setGuidedAccessRestrictionIdentifiers(): void;
     // doc://com.apple.documentation/documentation/uikit/uiguidedaccessrestrictiondelegate/1621161-textforguidedaccessrestrictionwi
-    textForGuidedAccessRestrictionWithIdentifier(restrictionIdentifier: string | NSString):string | NSString;
+    textForGuidedAccessRestrictionWithIdentifier(restrictionIdentifier: string | cocoascript.NSString):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uiguidedaccessrestrictiondelegate/1621158-detailtextforguidedaccessrestric
-    detailTextForGuidedAccessRestrictionWithIdentifier(restrictionIdentifier: string | NSString):string | NSString;
+    detailTextForGuidedAccessRestrictionWithIdentifier(restrictionIdentifier: string | cocoascript.NSString):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uiguidedaccessrestrictiondelegate/1621156-guidedaccessrestrictionwithident
-    guidedAccessRestrictionWithIdentifier_didChangeState(restrictionIdentifier: string | NSString, newRestrictionState: UIGuidedAccessRestrictionState):void;
+    guidedAccessRestrictionWithIdentifier_didChangeState(restrictionIdentifier: string | cocoascript.NSString, newRestrictionState: UIGuidedAccessRestrictionState):void;
   }
 }
 declare namespace cocoascript {
@@ -4483,10 +4483,10 @@ declare namespace cocoascript {
     fileURL(): NSURL;
     setFileURL(): void;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619959-localizedname
-    localizedName(): string | NSString;
+    localizedName(): string | cocoascript.NSString;
     setLocalizedName(): void;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619992-filetype
-    fileType(): string | NSString;
+    fileType(): string | cocoascript.NSString;
     setFileType(): void;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619952-filemodificationdate
     fileModificationDate(): NSDate;
@@ -4500,7 +4500,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619976-closewithcompletionhandler
     closeWithCompletionHandler(completionHandler: BOOL):void;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619978-contentsfortype
-    contentsForType_error(typeName: string | NSString, outError: NSError):UIDocument;
+    contentsForType_error(typeName: string | cocoascript.NSString, outError: NSError):UIDocument;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619988-savetourl
     saveToURL_forSaveOperation_completionHandler(url: NSURL, saveOperation: UIDocumentSaveOperation, completionHandler: BOOL):void;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619951-writecontents
@@ -4508,16 +4508,16 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619989-writecontents
     writeContents_toURL_forSaveOperation_originalContentsURL_error(contents: UIDocument, url: NSURL, saveOperation: UIDocumentSaveOperation, originalContentsURL: NSURL, outError: NSError):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619991-savingfiletype
-    savingFileType(): string | NSString;
+    savingFileType(): string | cocoascript.NSString;
     setSavingFileType(): void;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619947-fileattributestowritetourl
     fileAttributesToWriteToURL_forSaveOperation_error(url: NSURL, saveOperation: UIDocumentSaveOperation, outError: NSError):NSDictionary;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619969-filenameextensionfortype
-    fileNameExtensionForType_saveOperation(typeName: string | NSString, saveOperation: UIDocumentSaveOperation):string | NSString;
+    fileNameExtensionForType_saveOperation(typeName: string | cocoascript.NSString, saveOperation: UIDocumentSaveOperation):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619977-openwithcompletionhandler
     openWithCompletionHandler(completionHandler: BOOL):void;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619971-loadfromcontents
-    loadFromContents_ofType_error(contents: UIDocument, typeName: string | NSString, outError: NSError):BOOL;
+    loadFromContents_ofType_error(contents: UIDocument, typeName: string | cocoascript.NSString, outError: NSError):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619967-readfromurl
     readFromURL_error(url: NSURL, outError: NSError):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uidocument/1619980-performasynchronousfileaccessusi
@@ -4564,7 +4564,7 @@ declare namespace cocoascript {
 
 declare const UIDocument: cocoascript.UIDocument;
 // doc://com.apple.documentation/documentation/uikit/nsuseractivitydocumenturlkey
-declare const NSUserActivityDocumentURLKey: string | NSString;
+declare const NSUserActivityDocumentURLKey: string | cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A managed document object that integrates with Core Data.
@@ -4572,7 +4572,7 @@ declare namespace cocoascript {
    */
   interface UIManagedDocument extends UIDocument {
     // doc://com.apple.documentation/documentation/uikit/uimanageddocument/1622674-configurepersistentstorecoordina
-    configurePersistentStoreCoordinatorForURL_ofType_modelConfiguration_storeOptions_error(storeURL: NSURL, fileType: string | NSString, configuration: string | NSString, storeOptions: NSDictionary, error: NSError):BOOL;
+    configurePersistentStoreCoordinatorForURL_ofType_modelConfiguration_storeOptions_error(storeURL: NSURL, fileType: string | cocoascript.NSString, configuration: string | cocoascript.NSString, storeOptions: NSDictionary, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uimanageddocument/1622667-managedobjectcontext
     managedObjectContext(): NSManagedObjectContext;
     setManagedObjectContext(): void;
@@ -4583,10 +4583,10 @@ declare namespace cocoascript {
     persistentStoreOptions(): NSDictionary;
     setPersistentStoreOptions(): void;
     // doc://com.apple.documentation/documentation/uikit/uimanageddocument/1622671-modelconfiguration
-    modelConfiguration(): string | NSString;
+    modelConfiguration(): string | cocoascript.NSString;
     setModelConfiguration(): void;
     // doc://com.apple.documentation/documentation/uikit/uimanageddocument/1622673-persistentstoretypeforfiletype
-    persistentStoreTypeForFileType(fileType: string | NSString):string | NSString;
+    persistentStoreTypeForFileType(fileType: string | cocoascript.NSString):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uimanageddocument/1622670-readadditionalcontentfromurl
     readAdditionalContentFromURL_error(absoluteURL: NSURL, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uimanageddocument/1622665-additionalcontentforurl
@@ -4594,7 +4594,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uimanageddocument/1622668-writeadditionalcontent
     writeAdditionalContent_toURL_originalContentsURL_error(content: UIManagedDocument, absoluteURL: NSURL, absoluteOriginalContentsURL: NSURL, error: NSError):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uimanageddocument/1622672-persistentstorename
-    persistentStoreName(): string | NSString;
+    persistentStoreName(): string | cocoascript.NSString;
     setPersistentStoreName(): void;
     //
     alloc():UIManagedDocument;
@@ -4611,9 +4611,9 @@ declare namespace cocoascript {
    */
   interface UIDataSourceModelAssociation {
     // doc://com.apple.documentation/documentation/uikit/uidatasourcemodelassociation/1616862-modelidentifierforelementatindex
-    modelIdentifierForElementAtIndexPath_inView(idx: NSIndexPath, view: UIView):string | NSString;
+    modelIdentifierForElementAtIndexPath_inView(idx: NSIndexPath, view: UIView):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uidatasourcemodelassociation/1616850-indexpathforelementwithmodeliden
-    indexPathForElementWithModelIdentifier_inView(identifier: string | NSString, view: UIView):NSIndexPath;
+    indexPathForElementWithModelIdentifier_inView(identifier: string | cocoascript.NSString, view: UIView):NSIndexPath;
   }
 }
 declare namespace cocoascript {
@@ -4649,16 +4649,16 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uipasteboard/3621873-detectvaluesforpatterns
     detectValuesForPatterns_inItemSet_completionHandler(patterns: UIPasteboardDetectionPattern, itemSet: NSIndexSet, completionHandler: NSError):void;
     // doc://com.apple.documentation/documentation/uikit/uipasteboard/1622077-pasteboardtypes
-    pasteboardTypes(): string | NSString;
+    pasteboardTypes(): string | cocoascript.NSString;
     setPasteboardTypes(): void;
     // doc://com.apple.documentation/documentation/uikit/uipasteboard/1622095-pasteboardtypesforitemset
-    pasteboardTypesForItemSet(itemSet: NSIndexSet):string | NSString;
+    pasteboardTypesForItemSet(itemSet: NSIndexSet):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uipasteboard/1622070-containspasteboardtypes
-    containsPasteboardTypes(pasteboardTypes: string | NSString):BOOL;
+    containsPasteboardTypes(pasteboardTypes: string | cocoascript.NSString):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uipasteboard/1622100-containspasteboardtypes
-    containsPasteboardTypes_inItemSet(pasteboardTypes: string | NSString, itemSet: NSIndexSet):BOOL;
+    containsPasteboardTypes_inItemSet(pasteboardTypes: string | cocoascript.NSString, itemSet: NSIndexSet):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uipasteboard/1622071-itemsetwithpasteboardtypes
-    itemSetWithPasteboardTypes(pasteboardTypes: string | NSString):NSIndexSet;
+    itemSetWithPasteboardTypes(pasteboardTypes: string | cocoascript.NSString):NSIndexSet;
     // doc://com.apple.documentation/documentation/uikit/uipasteboard/1622076-numberofitems
     numberOfItems(): NSInteger;
     setNumberOfItems(): void;
@@ -4670,22 +4670,22 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uipasteboard/1829417-setitems
     setItems_options(items: UIPasteboard, options: UIPasteboard):void;
     // doc://com.apple.documentation/documentation/uikit/uipasteboard/1622093-dataforpasteboardtype
-    dataForPasteboardType(pasteboardType: string | NSString):NSData;
+    dataForPasteboardType(pasteboardType: string | cocoascript.NSString):NSData;
     // doc://com.apple.documentation/documentation/uikit/uipasteboard/1622068-dataforpasteboardtype
-    dataForPasteboardType_inItemSet(pasteboardType: string | NSString, itemSet: NSIndexSet):NSData;
+    dataForPasteboardType_inItemSet(pasteboardType: string | cocoascript.NSString, itemSet: NSIndexSet):NSData;
     // doc://com.apple.documentation/documentation/uikit/uipasteboard/1622075-setdata
-    setData_forPasteboardType(data: NSData, pasteboardType: string | NSString):void;
+    setData_forPasteboardType(data: NSData, pasteboardType: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uipasteboard/1622099-valueforpasteboardtype
-    valueForPasteboardType(pasteboardType: string | NSString):UIPasteboard;
+    valueForPasteboardType(pasteboardType: string | cocoascript.NSString):UIPasteboard;
     // doc://com.apple.documentation/documentation/uikit/uipasteboard/1622094-valuesforpasteboardtype
-    valuesForPasteboardType_inItemSet(pasteboardType: string | NSString, itemSet: NSIndexSet):NSArray;
+    valuesForPasteboardType_inItemSet(pasteboardType: string | cocoascript.NSString, itemSet: NSIndexSet):NSArray;
     // doc://com.apple.documentation/documentation/uikit/uipasteboard/1622079-setvalue
-    setValue_forPasteboardType(value: UIPasteboard, pasteboardType: string | NSString):void;
+    setValue_forPasteboardType(value: UIPasteboard, pasteboardType: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uipasteboard/1622092-string
-    string(): string | NSString;
+    string(): string | cocoascript.NSString;
     setString(): void;
     // doc://com.apple.documentation/documentation/uikit/uipasteboard/1622091-strings
-    strings(): string | NSString;
+    strings(): string | cocoascript.NSString;
     setStrings(): void;
     // doc://com.apple.documentation/documentation/uikit/uipasteboard/1622069-image
     image(): UIImage;
@@ -4743,14 +4743,14 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uipasteconfiguration/2882061-init
     init():UIPasteConfiguration;
     // doc://com.apple.documentation/documentation/uikit/uipasteconfiguration/2882060-initwithacceptabletypeidentifier
-    initWithAcceptableTypeIdentifiers(acceptableTypeIdentifiers: string | NSString):UIPasteConfiguration;
+    initWithAcceptableTypeIdentifiers(acceptableTypeIdentifiers: string | cocoascript.NSString):UIPasteConfiguration;
     // doc://com.apple.documentation/documentation/uikit/uipasteconfiguration/2882058-initwithtypeidentifiersforaccept
     initWithTypeIdentifiersForAcceptingClass(aClass: NSItemProviderReading):UIPasteConfiguration;
     // doc://com.apple.documentation/documentation/uikit/uipasteconfiguration/2882059-acceptabletypeidentifiers
-    acceptableTypeIdentifiers(): string | NSString;
+    acceptableTypeIdentifiers(): string | cocoascript.NSString;
     setAcceptableTypeIdentifiers(): void;
     // doc://com.apple.documentation/documentation/uikit/uipasteconfiguration/2882057-addacceptabletypeidentifiers
-    addAcceptableTypeIdentifiers(acceptableTypeIdentifiers: string | NSString):void;
+    addAcceptableTypeIdentifiers(acceptableTypeIdentifiers: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uipasteconfiguration/2882062-addtypeidentifiersforacceptingcl
     addTypeIdentifiersForAcceptingClass(aClass: NSItemProviderReading):void;
     //
@@ -4783,15 +4783,15 @@ declare namespace cocoascript {
    */
   interface UIStoryboard extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uistoryboard/1616216-storyboardwithname
-    storyboardWithName_bundle(name: string | NSString, storyboardBundleOrNil: NSBundle):UIStoryboard;
+    storyboardWithName_bundle(name: string | cocoascript.NSString, storyboardBundleOrNil: NSBundle):UIStoryboard;
     // doc://com.apple.documentation/documentation/uikit/uistoryboard/1616213-instantiateinitialviewcontroller
     instantiateInitialViewController():UIViewController;
     // doc://com.apple.documentation/documentation/uikit/uistoryboard/3173165-instantiateinitialviewcontroller
     instantiateInitialViewControllerWithCreator(block: UIStoryboardViewControllerCreator):UIViewController;
     // doc://com.apple.documentation/documentation/uikit/uistoryboard/1616214-instantiateviewcontrollerwithide
-    instantiateViewControllerWithIdentifier(identifier: string | NSString):UIViewController;
+    instantiateViewControllerWithIdentifier(identifier: string | cocoascript.NSString):UIViewController;
     // doc://com.apple.documentation/documentation/uikit/uistoryboard/3173166-instantiateviewcontrollerwithide
-    instantiateViewControllerWithIdentifier_creator(identifier: string | NSString, block: UIStoryboardViewControllerCreator):UIViewController;
+    instantiateViewControllerWithIdentifier_creator(identifier: string | cocoascript.NSString, block: UIStoryboardViewControllerCreator):UIViewController;
     //
     alloc():UIStoryboard;
     //
@@ -4807,7 +4807,7 @@ declare namespace cocoascript {
    */
   interface UIStoryboardSegue extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uistoryboardsegue/1621908-initwithidentifier
-    initWithIdentifier_source_destination(identifier: string | NSString, source: UIViewController, destination: UIViewController):UIStoryboardSegue;
+    initWithIdentifier_source_destination(identifier: string | cocoascript.NSString, source: UIViewController, destination: UIViewController):UIStoryboardSegue;
     // doc://com.apple.documentation/documentation/uikit/uistoryboardsegue/1621918-sourceviewcontroller
     sourceViewController(): UIViewController;
     setSourceViewController(): void;
@@ -4815,12 +4815,12 @@ declare namespace cocoascript {
     destinationViewController(): UIViewController;
     setDestinationViewController(): void;
     // doc://com.apple.documentation/documentation/uikit/uistoryboardsegue/1621909-identifier
-    identifier(): string | NSString;
+    identifier(): string | cocoascript.NSString;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/uikit/uistoryboardsegue/1621912-perform
     perform():void;
     // doc://com.apple.documentation/documentation/uikit/uistoryboardsegue/1621910-seguewithidentifier
-    segueWithIdentifier_source_destination_performHandler(identifier: string | NSString, source: UIViewController, destination: UIViewController, performHandler: void):UIStoryboardSegue;
+    segueWithIdentifier_source_destination_performHandler(identifier: string | cocoascript.NSString, source: UIViewController, destination: UIViewController, performHandler: void):UIStoryboardSegue;
     //
     alloc():UIStoryboardSegue;
     //
@@ -4893,7 +4893,7 @@ declare namespace cocoascript {
    */
   interface UINib extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uinib/1614138-nibwithnibname
-    nibWithNibName_bundle(name: string | NSString, bundleOrNil: NSBundle):UINib;
+    nibWithNibName_bundle(name: string | cocoascript.NSString, bundleOrNil: NSBundle):UINib;
     // doc://com.apple.documentation/documentation/uikit/uinib/1614135-nibwithdata
     nibWithData_bundle(data: NSData, bundleOrNil: NSBundle):UINib;
     // doc://com.apple.documentation/documentation/uikit/uinib/1614137-instantiatewithowner
@@ -4907,7 +4907,7 @@ declare namespace cocoascript {
 
 declare const UINib: cocoascript.UINib;
 // doc://com.apple.documentation/documentation/uikit/uinibproxiedobjectskey
-declare const UINibProxiedObjectsKey: string | NSString;
+declare const UINibProxiedObjectsKey: string | cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * The principal class for the Document Picker View Controller extension.
@@ -4928,10 +4928,10 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uidocumentpickerextensionviewcontroller/1614395-prepareforpresentationinmode
     prepareForPresentationInMode(mode: UIDocumentPickerMode):void;
     // doc://com.apple.documentation/documentation/uikit/uidocumentpickerextensionviewcontroller/1614396-provideridentifier
-    providerIdentifier(): string | NSString;
+    providerIdentifier(): string | cocoascript.NSString;
     setProviderIdentifier(): void;
     // doc://com.apple.documentation/documentation/uikit/uidocumentpickerextensionviewcontroller/1614394-validtypes
-    validTypes(): string | NSString;
+    validTypes(): string | cocoascript.NSString;
     setValidTypes(): void;
     //
     alloc():UIDocumentPickerExtensionViewController;
@@ -4951,18 +4951,18 @@ declare namespace cocoascript {
     documentInputMode(): UITextInputMode;
     setDocumentInputMode(): void;
     // doc://com.apple.documentation/documentation/uikit/uitextdocumentproxy/1618199-documentcontextafterinput
-    documentContextAfterInput(): string | NSString;
+    documentContextAfterInput(): string | cocoascript.NSString;
     setDocumentContextAfterInput(): void;
     // doc://com.apple.documentation/documentation/uikit/uitextdocumentproxy/1618190-documentcontextbeforeinput
-    documentContextBeforeInput(): string | NSString;
+    documentContextBeforeInput(): string | cocoascript.NSString;
     setDocumentContextBeforeInput(): void;
     // doc://com.apple.documentation/documentation/uikit/uitextdocumentproxy/1618194-adjusttextpositionbycharacteroff
     adjustTextPositionByCharacterOffset(offset: NSInteger):void;
     // doc://com.apple.documentation/documentation/uikit/uitextdocumentproxy/2875749-selectedtext
-    selectedText(): string | NSString;
+    selectedText(): string | cocoascript.NSString;
     setSelectedText(): void;
     // doc://com.apple.documentation/documentation/uikit/uitextdocumentproxy/3152923-setmarkedtext
-    setMarkedText_selectedRange(markedText: string | NSString, selectedRange: NSRange):void;
+    setMarkedText_selectedRange(markedText: string | cocoascript.NSString, selectedRange: NSRange):void;
     // doc://com.apple.documentation/documentation/uikit/uitextdocumentproxy/3152924-unmarktext
     unmarkText():void;
     // doc://com.apple.documentation/documentation/uikit/uitextdocumentproxy/2875742-documentidentifier
@@ -5002,7 +5002,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiinputviewcontroller/1618195-requestsupplementarylexiconwithc
     requestSupplementaryLexiconWithCompletion(completionHandler: UILexicon):void;
     // doc://com.apple.documentation/documentation/uikit/uiinputviewcontroller/1618200-primarylanguage
-    primaryLanguage(): string | NSString;
+    primaryLanguage(): string | cocoascript.NSString;
     setPrimaryLanguage(): void;
     // doc://com.apple.documentation/documentation/uikit/uiinputviewcontroller/2875741-needsinputmodeswitchkey
     needsInputModeSwitchKey(): BOOL;
@@ -5045,10 +5045,10 @@ declare namespace cocoascript {
    */
   interface UILexiconEntry extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uilexiconentry/1614130-documenttext
-    documentText(): string | NSString;
+    documentText(): string | cocoascript.NSString;
     setDocumentText(): void;
     // doc://com.apple.documentation/documentation/uikit/uilexiconentry/1614132-userinput
-    userInput(): string | NSString;
+    userInput(): string | cocoascript.NSString;
     setUserInput(): void;
     //
     alloc():UILexiconEntry;
@@ -5080,7 +5080,7 @@ declare namespace cocoascript {
     activityType(): UIActivityType;
     setActivityType(): void;
     // doc://com.apple.documentation/documentation/uikit/uiactivity/1620674-activitytitle
-    activityTitle(): string | NSString;
+    activityTitle(): string | cocoascript.NSString;
     setActivityTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uiactivity/1620658-activityimage
     activityImage(): UIImage;
@@ -5142,9 +5142,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiactivityitemsource/1620453-activityviewcontroller
     activityViewController_itemForActivityType(activityViewController: UIActivityViewController, activityType: UIActivityType):UIActivityItemSource;
     // doc://com.apple.documentation/documentation/uikit/uiactivityitemsource/1620455-activityviewcontroller
-    activityViewController_subjectForActivityType(activityViewController: UIActivityViewController, activityType: UIActivityType):string | NSString;
+    activityViewController_subjectForActivityType(activityViewController: UIActivityViewController, activityType: UIActivityType):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uiactivityitemsource/1620456-activityviewcontroller
-    activityViewController_dataTypeIdentifierForActivityType(activityViewController: UIActivityViewController, activityType: UIActivityType):string | NSString;
+    activityViewController_dataTypeIdentifierForActivityType(activityViewController: UIActivityViewController, activityType: UIActivityType):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uiactivityitemsource/1620462-activityviewcontroller
     activityViewController_thumbnailImageForActivityType_suggestedSize(activityViewController: UIActivityViewController, activityType: UIActivityType, size: CGSize):UIImage;
     // doc://com.apple.documentation/documentation/uikit/uiactivityitemsource/3144571-activityviewcontrollerlinkmetada
@@ -5323,7 +5323,7 @@ declare namespace cocoascript {
    */
   interface UILayoutGuide extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uilayoutguide/1619655-identifier
-    identifier(): string | NSString;
+    identifier(): string | cocoascript.NSString;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/uikit/uilayoutguide/1619657-layoutframe
     layoutFrame(): CGRect;
@@ -5600,7 +5600,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uidragdropsession/2903561-canloadobjectsofclass
     canLoadObjectsOfClass(aClass: NSItemProviderReading):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uidragdropsession/2891006-hasitemsconformingtotypeidentifi
-    hasItemsConformingToTypeIdentifiers(typeIdentifiers: string | NSString):BOOL;
+    hasItemsConformingToTypeIdentifiers(typeIdentifiers: string | cocoascript.NSString):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uidragdropsession/2891030-items
     items(): UIDragItem;
     setItems(): void;
@@ -5723,7 +5723,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uidragpreview/2902369-previewforurl
     previewForURL(url: NSURL):UIDragPreview;
     // doc://com.apple.documentation/documentation/uikit/uidragpreview/2902371-previewforurl
-    previewForURL_title(url: NSURL, title: string | NSString):UIDragPreview;
+    previewForURL_title(url: NSURL, title: string | cocoascript.NSString):UIDragPreview;
     // doc://com.apple.documentation/documentation/uikit/uidragpreview/2890925-parameters
     parameters(): UIDragPreviewParameters;
     setParameters(): void;
@@ -5761,7 +5761,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uitargeteddragpreview/2902370-previewforurl
     previewForURL_target(url: NSURL, target: UIDragPreviewTarget):UITargetedDragPreview;
     // doc://com.apple.documentation/documentation/uikit/uitargeteddragpreview/2902368-previewforurl
-    previewForURL_title_target(url: NSURL, title: string | NSString, target: UIDragPreviewTarget):UITargetedDragPreview;
+    previewForURL_title_target(url: NSURL, title: string | cocoascript.NSString, target: UIDragPreviewTarget):UITargetedDragPreview;
     // doc://com.apple.documentation/documentation/uikit/uitargeteddragpreview/2890950-retargetedpreviewwithtarget
     retargetedPreviewWithTarget(newTarget: UIDragPreviewTarget):UITargetedDragPreview;
     //
@@ -5779,19 +5779,19 @@ declare namespace cocoascript {
    */
   interface UIImage extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uiimage/1624154-imagenamed
-    imageNamed_inBundle_compatibleWithTraitCollection(name: string | NSString, bundle: NSBundle, traitCollection: UITraitCollection):UIImage;
+    imageNamed_inBundle_compatibleWithTraitCollection(name: string | cocoascript.NSString, bundle: NSBundle, traitCollection: UITraitCollection):UIImage;
     // doc://com.apple.documentation/documentation/uikit/uiimage/3294226-imagenamed
-    imageNamed_inBundle_withConfiguration(name: string | NSString, bundle: NSBundle, configuration: UIImageConfiguration):UIImage;
+    imageNamed_inBundle_withConfiguration(name: string | cocoascript.NSString, bundle: NSBundle, configuration: UIImageConfiguration):UIImage;
     // doc://com.apple.documentation/documentation/uikit/uiimage/1624146-imagenamed
-    imageNamed(name: string | NSString):UIImage;
+    imageNamed(name: string | cocoascript.NSString):UIImage;
     // doc://com.apple.documentation/documentation/uikit/uiimage/3294234-systemimagenamed
-    systemImageNamed_withConfiguration(name: string | NSString, configuration: UIImageConfiguration):UIImage;
+    systemImageNamed_withConfiguration(name: string | cocoascript.NSString, configuration: UIImageConfiguration):UIImage;
     // doc://com.apple.documentation/documentation/uikit/uiimage/3295943-systemimagenamed
-    systemImageNamed_compatibleWithTraitCollection(name: string | NSString, traitCollection: UITraitCollection):UIImage;
+    systemImageNamed_compatibleWithTraitCollection(name: string | cocoascript.NSString, traitCollection: UITraitCollection):UIImage;
     // doc://com.apple.documentation/documentation/uikit/uiimage/3294233-systemimagenamed
-    systemImageNamed(name: string | NSString):UIImage;
+    systemImageNamed(name: string | cocoascript.NSString):UIImage;
     // doc://com.apple.documentation/documentation/uikit/uiimage/1624123-imagewithcontentsoffile
-    imageWithContentsOfFile(path: string | NSString):UIImage;
+    imageWithContentsOfFile(path: string | cocoascript.NSString):UIImage;
     // doc://com.apple.documentation/documentation/uikit/uiimage/1624137-imagewithdata
     imageWithData(data: NSData):UIImage;
     // doc://com.apple.documentation/documentation/uikit/uiimage/1624099-imagewithdata
@@ -5805,7 +5805,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiimage/1624152-imagewithciimage
     imageWithCIImage_scale_orientation(ciImage: CIImage, scale: CGFloat, orientation: UIImageOrientation):UIImage;
     // doc://com.apple.documentation/documentation/uikit/uiimage/1624112-initwithcontentsoffile
-    initWithContentsOfFile(path: string | NSString):UIImage;
+    initWithContentsOfFile(path: string | cocoascript.NSString):UIImage;
     // doc://com.apple.documentation/documentation/uikit/uiimage/1624106-initwithdata
     initWithData(data: NSData):UIImage;
     // doc://com.apple.documentation/documentation/uikit/uiimage/1624109-initwithdata
@@ -5819,13 +5819,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiimage/1624150-initwithciimage
     initWithCIImage_scale_orientation(ciImage: CIImage, scale: CGFloat, orientation: UIImageOrientation):UIImage;
     // doc://com.apple.documentation/documentation/uikit/uiimage/1624094-animatedimagenamed
-    animatedImageNamed_duration(name: string | NSString, duration: NSTimeInterval):UIImage;
+    animatedImageNamed_duration(name: string | cocoascript.NSString, duration: NSTimeInterval):UIImage;
     // doc://com.apple.documentation/documentation/uikit/uiimage/1624149-animatedimagewithimages
     animatedImageWithImages_duration(images: UIImage, duration: NSTimeInterval):UIImage;
     // doc://com.apple.documentation/documentation/uikit/uiimage/1624143-animatedresizableimagenamed
-    animatedResizableImageNamed_capInsets_duration(name: string | NSString, capInsets: UIEdgeInsets, duration: NSTimeInterval):UIImage;
+    animatedResizableImageNamed_capInsets_duration(name: string | cocoascript.NSString, capInsets: UIEdgeInsets, duration: NSTimeInterval):UIImage;
     // doc://com.apple.documentation/documentation/uikit/uiimage/1624103-animatedresizableimagenamed
-    animatedResizableImageNamed_capInsets_resizingMode_duration(name: string | NSString, capInsets: UIEdgeInsets, resizingMode: UIImageResizingMode, duration: NSTimeInterval):UIImage;
+    animatedResizableImageNamed_capInsets_resizingMode_duration(name: string | cocoascript.NSString, capInsets: UIEdgeInsets, resizingMode: UIImageResizingMode, duration: NSTimeInterval):UIImage;
     // doc://com.apple.documentation/documentation/uikit/uiimage/3294228-imagewithconfiguration
     imageWithConfiguration(configuration: UIImageConfiguration):UIImage;
     // doc://com.apple.documentation/documentation/uikit/uiimage/3294225-imagebyapplyingsymbolconfigurati
@@ -6117,7 +6117,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uicontrol/1618248-removetarget
     removeTarget_action_forControlEvents(target: UIControl, action: SEL, controlEvents: UIControlEvents):void;
     // doc://com.apple.documentation/documentation/uikit/uicontrol/1618251-actionsfortarget
-    actionsForTarget_forControlEvent(target: UIControl, controlEvent: UIControlEvents):string | NSString;
+    actionsForTarget_forControlEvent(target: UIControl, controlEvent: UIControlEvents):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uicontrol/1618225-allcontrolevents
     allControlEvents(): UIControlEvents;
     setAllControlEvents(): void;
@@ -6357,9 +6357,9 @@ declare namespace cocoascript {
     delegate(): UIWebViewDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/uikit/uiwebview/1617941-loaddata
-    loadData_MIMEType_textEncodingName_baseURL(data: NSData, MIMEType: string | NSString, textEncodingName: string | NSString, baseURL: NSURL):void;
+    loadData_MIMEType_textEncodingName_baseURL(data: NSData, MIMEType: string | cocoascript.NSString, textEncodingName: string | cocoascript.NSString, baseURL: NSURL):void;
     // doc://com.apple.documentation/documentation/uikit/uiwebview/1617979-loadhtmlstring
-    loadHTMLString_baseURL(string: string | NSString, baseURL: NSURL):void;
+    loadHTMLString_baseURL(string: string | cocoascript.NSString, baseURL: NSURL):void;
     // doc://com.apple.documentation/documentation/uikit/uiwebview/1617957-loadrequest
     loadRequest(request: NSURLRequest):void;
     // doc://com.apple.documentation/documentation/uikit/uiwebview/1617972-request
@@ -6401,7 +6401,7 @@ declare namespace cocoascript {
     dataDetectorTypes(): UIDataDetectorTypes;
     setDataDetectorTypes(): void;
     // doc://com.apple.documentation/documentation/uikit/uiwebview/1617963-stringbyevaluatingjavascriptfrom
-    stringByEvaluatingJavaScriptFromString(script: string | NSString):string | NSString;
+    stringByEvaluatingJavaScriptFromString(script: string | cocoascript.NSString):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uiwebview/1617960-allowsinlinemediaplayback
     allowsInlineMediaPlayback(): BOOL;
     setAllowsInlineMediaPlayback(): void;
@@ -6447,7 +6447,7 @@ declare namespace cocoascript {
    */
   interface UILabel extends UIView {
     // doc://com.apple.documentation/documentation/uikit/uilabel/1620538-text
-    text(): string | NSString;
+    text(): string | cocoascript.NSString;
     setText(): void;
     // doc://com.apple.documentation/documentation/uikit/uilabel/1620542-attributedtext
     attributedText(): NSAttributedString;
@@ -6573,7 +6573,7 @@ declare namespace cocoascript {
    */
   interface UISearchToken extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uisearchtoken/3175449-tokenwithicon
-    tokenWithIcon_text(icon: UIImage, text: string | NSString):UISearchToken;
+    tokenWithIcon_text(icon: UIImage, text: string | cocoascript.NSString):UISearchToken;
     // doc://com.apple.documentation/documentation/uikit/uisearchtoken/3175448-representedobject
     representedObject(): id;
     setRepresentedObject(): void;
@@ -6686,7 +6686,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uibaritem/1616416-initwithcoder
     initWithCoder(coder: NSCoder):UIBarItem;
     // doc://com.apple.documentation/documentation/uikit/uibaritem/1616412-title
-    title(): string | NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uibaritem/1616415-image
     image(): UIImage;
@@ -6737,7 +6737,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uibarbuttonitem/1617163-initwithimage
     initWithImage_style_target_action(image: UIImage, style: UIBarButtonItemStyle, target: UIBarButtonItem, action: SEL):UIBarButtonItem;
     // doc://com.apple.documentation/documentation/uikit/uibarbuttonitem/1617148-initwithtitle
-    initWithTitle_style_target_action(title: string | NSString, style: UIBarButtonItemStyle, target: UIBarButtonItem, action: SEL):UIBarButtonItem;
+    initWithTitle_style_target_action(title: string | cocoascript.NSString, style: UIBarButtonItemStyle, target: UIBarButtonItem, action: SEL):UIBarButtonItem;
     // doc://com.apple.documentation/documentation/uikit/uibarbuttonitem/1617118-initwithimage
     initWithImage_landscapeImagePhone_style_target_action(image: UIImage, landscapeImagePhone: UIImage, style: UIBarButtonItemStyle, target: UIBarButtonItem, action: SEL):UIBarButtonItem;
     // doc://com.apple.documentation/documentation/uikit/uibarbuttonitem/1617166-init
@@ -6753,7 +6753,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uibarbuttonitem/3600343-initwithprimaryaction
     initWithPrimaryAction(primaryAction: UIAction):UIBarButtonItem;
     // doc://com.apple.documentation/documentation/uikit/uibarbuttonitem/3600344-initwithtitle
-    initWithTitle_menu(title: string | NSString, menu: UIMenu):UIBarButtonItem;
+    initWithTitle_menu(title: string | cocoascript.NSString, menu: UIMenu):UIBarButtonItem;
     // doc://com.apple.documentation/documentation/uikit/uibarbuttonitem/3600338-fixedspaceitemofwidth
     fixedSpaceItemOfWidth(width: CGFloat):UIBarButtonItem;
     // doc://com.apple.documentation/documentation/uikit/uibarbuttonitem/3600339-flexiblespaceitem
@@ -6768,7 +6768,7 @@ declare namespace cocoascript {
     style(): UIBarButtonItemStyle;
     setStyle(): void;
     // doc://com.apple.documentation/documentation/uikit/uibarbuttonitem/1617132-possibletitles
-    possibleTitles(): string | NSString;
+    possibleTitles(): string | cocoascript.NSString;
     setPossibleTitles(): void;
     // doc://com.apple.documentation/documentation/uikit/uibarbuttonitem/1617155-width
     width(): CGFloat;
@@ -6951,9 +6951,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617067-initwithtabbarsystemitem
     initWithTabBarSystemItem_tag(systemItem: UITabBarSystemItem, tag: NSInteger):UITabBarItem;
     // doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617056-initwithtitle
-    initWithTitle_image_tag(title: string | NSString, image: UIImage, tag: NSInteger):UITabBarItem;
+    initWithTitle_image_tag(title: string | cocoascript.NSString, image: UIImage, tag: NSInteger):UITabBarItem;
     // doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617066-initwithtitle
-    initWithTitle_image_selectedImage(title: string | NSString, image: UIImage, selectedImage: UIImage):UITabBarItem;
+    initWithTitle_image_selectedImage(title: string | cocoascript.NSString, image: UIImage, selectedImage: UIImage):UITabBarItem;
     // doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617055-init
     init():UITabBarItem;
     // doc://com.apple.documentation/documentation/uikit/uitabbaritem/1617071-initwithcoder
@@ -7034,7 +7034,7 @@ declare namespace cocoascript {
     largeContentImageInsets(): UIEdgeInsets;
     setLargeContentImageInsets(): void;
     // doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183934-largecontenttitle
-    largeContentTitle(): string | NSString;
+    largeContentTitle(): string | cocoascript.NSString;
     setLargeContentTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uilargecontentvieweritem/3183935-scaleslargecontentimage
     scalesLargeContentImage(): BOOL;
@@ -7083,7 +7083,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uinavigationcontroller/1621866-initwithnavigationbarclass
     initWithNavigationBarClass_toolbarClass(navigationBarClass: Class, toolbarClass: Class):UINavigationController;
     // doc://com.apple.documentation/documentation/uikit/uinavigationcontroller/3043561-initwithnibname
-    initWithNibName_bundle(nibNameOrNil: string | NSString, nibBundleOrNil: NSBundle):UINavigationController;
+    initWithNibName_bundle(nibNameOrNil: string | cocoascript.NSString, nibBundleOrNil: NSBundle):UINavigationController;
     // doc://com.apple.documentation/documentation/uikit/uinavigationcontroller/3043560-initwithcoder
     initWithCoder(aDecoder: NSCoder):UINavigationController;
     // doc://com.apple.documentation/documentation/uikit/uinavigationcontroller/1621876-delegate
@@ -7166,7 +7166,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uitableviewcontroller/1614760-initwithcoder
     initWithCoder(coder: NSCoder):UITableViewController;
     // doc://com.apple.documentation/documentation/uikit/uitableviewcontroller/1614757-initwithnibname
-    initWithNibName_bundle(nibNameOrNil: string | NSString, nibBundleOrNil: NSBundle):UITableViewController;
+    initWithNibName_bundle(nibNameOrNil: string | cocoascript.NSString, nibBundleOrNil: NSBundle):UITableViewController;
     // doc://com.apple.documentation/documentation/uikit/uitableviewcontroller/1614753-tableview
     tableView(): UITableView;
     setTableView(): void;
@@ -7193,7 +7193,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewcontroller/1623976-initwithcollectionviewlayout
     initWithCollectionViewLayout(layout: UICollectionViewLayout):UICollectionViewController;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewcontroller/1623975-initwithnibname
-    initWithNibName_bundle(nibNameOrNil: string | NSString, nibBundleOrNil: NSBundle):UICollectionViewController;
+    initWithNibName_bundle(nibNameOrNil: string | cocoascript.NSString, nibBundleOrNil: NSBundle):UICollectionViewController;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewcontroller/1623981-initwithcoder
     initWithCoder(coder: NSCoder):UICollectionViewController;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewcontroller/1623983-collectionview
@@ -7228,7 +7228,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uisplitviewcontroller/3580906-initwithstyle
     initWithStyle(style: UISplitViewControllerStyle):UISplitViewController;
     // doc://com.apple.documentation/documentation/uikit/uisplitviewcontroller/3580905-initwithnibname
-    initWithNibName_bundle(nibNameOrNil: string | NSString, nibBundleOrNil: NSBundle):UISplitViewController;
+    initWithNibName_bundle(nibNameOrNil: string | cocoascript.NSString, nibBundleOrNil: NSBundle):UISplitViewController;
     // doc://com.apple.documentation/documentation/uikit/uisplitviewcontroller/3580904-initwithcoder
     initWithCoder(coder: NSCoder):UISplitViewController;
     // doc://com.apple.documentation/documentation/uikit/uisplitviewcontroller/3580915-style
@@ -7327,11 +7327,11 @@ declare namespace cocoascript {
    */
   interface UINavigationItem extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uinavigationitem/1624943-initwithtitle
-    initWithTitle(title: string | NSString):UINavigationItem;
+    initWithTitle(title: string | cocoascript.NSString):UINavigationItem;
     // doc://com.apple.documentation/documentation/uikit/uinavigationitem/1624950-initwithcoder
     initWithCoder(coder: NSCoder):UINavigationItem;
     // doc://com.apple.documentation/documentation/uikit/uinavigationitem/1624965-title
-    title(): string | NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uinavigationitem/2909056-largetitledisplaymode
     largeTitleDisplayMode(): UINavigationItemLargeTitleDisplayMode;
@@ -7340,7 +7340,7 @@ declare namespace cocoascript {
     backBarButtonItem(): UIBarButtonItem;
     setBackBarButtonItem(): void;
     // doc://com.apple.documentation/documentation/uikit/uinavigationitem/3600576-backbuttontitle
-    backButtonTitle(): string | NSString;
+    backButtonTitle(): string | cocoascript.NSString;
     setBackButtonTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uinavigationitem/3656350-backbuttondisplaymode
     backButtonDisplayMode(): UINavigationItemBackButtonDisplayMode;
@@ -7351,7 +7351,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uinavigationitem/1624934-sethidesbackbutton
     setHidesBackButton_animated(hidesBackButton: BOOL, animated: BOOL):void;
     // doc://com.apple.documentation/documentation/uikit/uinavigationitem/1624930-prompt
-    prompt(): string | NSString;
+    prompt(): string | cocoascript.NSString;
     setPrompt(): void;
     // doc://com.apple.documentation/documentation/uikit/uinavigationitem/1624933-leftitemssupplementbackbutton
     leftItemsSupplementBackButton(): BOOL;
@@ -7576,7 +7576,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uisearchcontroller/3043562-initwithcoder
     initWithCoder(coder: NSCoder):UISearchController;
     // doc://com.apple.documentation/documentation/uikit/uisearchcontroller/3043563-initwithnibname
-    initWithNibName_bundle(nibNameOrNil: string | NSString, nibBundleOrNil: NSBundle):UISearchController;
+    initWithNibName_bundle(nibNameOrNil: string | cocoascript.NSString, nibBundleOrNil: NSBundle):UISearchController;
     // doc://com.apple.documentation/documentation/uikit/uisearchcontroller/1618654-delegate
     delegate(): UISearchControllerDelegate;
     setDelegate(): void;
@@ -7649,12 +7649,12 @@ declare namespace cocoascript {
     delegate(): UIVideoEditorControllerDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/uikit/uivideoeditorcontroller/1622340-caneditvideoatpath
-    canEditVideoAtPath(videoPath: string | NSString):BOOL;
+    canEditVideoAtPath(videoPath: string | cocoascript.NSString):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uivideoeditorcontroller/1622338-videomaximumduration
     videoMaximumDuration(): NSTimeInterval;
     setVideoMaximumDuration(): void;
     // doc://com.apple.documentation/documentation/uikit/uivideoeditorcontroller/1622343-videopath
-    videoPath(): string | NSString;
+    videoPath(): string | cocoascript.NSString;
     setVideoPath(): void;
     // doc://com.apple.documentation/documentation/uikit/uivideoeditorcontroller/1622339-videoquality
     videoQuality(): UIImagePickerControllerQualityType;
@@ -7674,14 +7674,14 @@ declare namespace cocoascript {
    */
   interface UIDocumentBrowserViewController extends UIViewController {
     // doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874203-initforopeningfileswithcontentty
-    initForOpeningFilesWithContentTypes(allowedContentTypes: string | NSString):UIDocumentBrowserViewController;
+    initForOpeningFilesWithContentTypes(allowedContentTypes: string | cocoascript.NSString):UIDocumentBrowserViewController;
     // doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874185-delegate
     delegate(): UIDocumentBrowserViewControllerDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2927800-importdocumentaturl
     importDocumentAtURL_nextToDocumentAtURL_mode_completionHandler(documentURL: NSURL, neighbourURL: NSURL, importMode: UIDocumentBrowserImportMode, completion: NSError):void;
     // doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874182-allowedcontenttypes
-    allowedContentTypes(): string | NSString;
+    allowedContentTypes(): string | cocoascript.NSString;
     setAllowedContentTypes(): void;
     // doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/2874172-allowsdocumentcreation
     allowsDocumentCreation(): BOOL;
@@ -7704,7 +7704,7 @@ declare namespace cocoascript {
     shouldShowFileExtensions(): BOOL;
     setShouldShowFileExtensions(): void;
     // doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3114622-localizedcreatedocumentactiontit
-    localizedCreateDocumentActionTitle(): string | NSString;
+    localizedCreateDocumentActionTitle(): string | cocoascript.NSString;
     setLocalizedCreateDocumentActionTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3123949-defaultdocumentaspectratio
     defaultDocumentAspectRatio(): CGFloat;
@@ -7722,7 +7722,7 @@ declare namespace cocoascript {
     contentTypesForRecentDocuments(): UTType;
     setContentTypesForRecentDocuments(): void;
     // doc://com.apple.documentation/documentation/uikit/uidocumentbrowserviewcontroller/3356325-recentdocumentscontenttypes
-    recentDocumentsContentTypes(): string | NSString;
+    recentDocumentsContentTypes(): string | cocoascript.NSString;
     setRecentDocumentsContentTypes(): void;
     //
     alloc():UIDocumentBrowserViewController;
@@ -7739,7 +7739,7 @@ declare namespace cocoascript {
    */
   interface UIDocumentPickerViewController extends UIViewController {
     // doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/1618678-initwithdocumenttypes
-    initWithDocumentTypes_inMode(allowedUTIs: string | NSString, mode: UIDocumentPickerMode):UIDocumentPickerViewController;
+    initWithDocumentTypes_inMode(allowedUTIs: string | cocoascript.NSString, mode: UIDocumentPickerMode):UIDocumentPickerViewController;
     // doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/1618684-initwithurl
     initWithURL_inMode(url: NSURL, mode: UIDocumentPickerMode):UIDocumentPickerViewController;
     // doc://com.apple.documentation/documentation/uikit/uidocumentpickerviewcontroller/2921628-initwithurls
@@ -7806,10 +7806,10 @@ declare namespace cocoascript {
     URL(): NSURL;
     setURL(): void;
     // doc://com.apple.documentation/documentation/uikit/uidocumentinteractioncontroller/1616802-uti
-    UTI(): string | NSString;
+    UTI(): string | cocoascript.NSString;
     setUTI(): void;
     // doc://com.apple.documentation/documentation/uikit/uidocumentinteractioncontroller/1616810-name
-    name(): string | NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/uikit/uidocumentinteractioncontroller/1616801-icons
     icons(): UIImage;
@@ -7888,7 +7888,7 @@ declare namespace cocoascript {
     filteredLanguagesPredicate(): NSPredicate;
     setFilteredLanguagesPredicate(): void;
     // doc://com.apple.documentation/documentation/uikit/uifontpickerviewcontrollerconfiguration/3327297-filterpredicateforfilteredlangua
-    filterPredicateForFilteredLanguages(filteredLanguages: string | NSString):NSPredicate;
+    filterPredicateForFilteredLanguages(filteredLanguages: string | cocoascript.NSString):NSPredicate;
     //
     alloc():UIFontPickerViewControllerConfiguration;
     //
@@ -7916,9 +7916,9 @@ declare namespace cocoascript {
    */
   interface UIReferenceLibraryViewController extends UIViewController {
     // doc://com.apple.documentation/documentation/uikit/uireferencelibraryviewcontroller/1624810-dictionaryhasdefinitionforterm
-    dictionaryHasDefinitionForTerm(term: string | NSString):BOOL;
+    dictionaryHasDefinitionForTerm(term: string | cocoascript.NSString):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uireferencelibraryviewcontroller/1624808-initwithterm
-    initWithTerm(term: string | NSString):UIReferenceLibraryViewController;
+    initWithTerm(term: string | cocoascript.NSString):UIReferenceLibraryViewController;
     // doc://com.apple.documentation/documentation/uikit/uireferencelibraryviewcontroller/1624809-initwithcoder
     initWithCoder(coder: NSCoder):UIReferenceLibraryViewController;
     //
@@ -7966,7 +7966,7 @@ declare namespace cocoascript {
    */
   interface UIViewControllerRestoration {
     // doc://com.apple.documentation/documentation/uikit/uiviewcontrollerrestoration/1616859-viewcontrollerwithrestorationide
-    viewControllerWithRestorationIdentifierPath_coder(identifierComponents: string | NSString, coder: NSCoder):UIViewController;
+    viewControllerWithRestorationIdentifierPath_coder(identifierComponents: string | cocoascript.NSString, coder: NSCoder):UIViewController;
   }
 }
 declare namespace cocoascript {
@@ -7976,7 +7976,7 @@ declare namespace cocoascript {
    */
   interface UIObjectRestoration {
     // doc://com.apple.documentation/documentation/uikit/uiobjectrestoration/1616855-objectwithrestorationidentifierp
-    objectWithRestorationIdentifierPath_coder(identifierComponents: string | NSString, coder: NSCoder):UIStateRestoring;
+    objectWithRestorationIdentifierPath_coder(identifierComponents: string | cocoascript.NSString, coder: NSCoder):UIStateRestoring;
   }
 }
 declare namespace cocoascript {
@@ -8520,21 +8520,21 @@ declare namespace cocoascript {
 
 declare const UIWindow: cocoascript.UIWindow;
 // doc://com.apple.documentation/documentation/uikit/uikeyboardanimationcurveuserinfokey
-declare const UIKeyboardAnimationCurveUserInfoKey: string | NSString;
+declare const UIKeyboardAnimationCurveUserInfoKey: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/uikit/uikeyboardanimationdurationuserinfokey
-declare const UIKeyboardAnimationDurationUserInfoKey: string | NSString;
+declare const UIKeyboardAnimationDurationUserInfoKey: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/uikit/uikeyboardislocaluserinfokey
-declare const UIKeyboardIsLocalUserInfoKey: string | NSString;
+declare const UIKeyboardIsLocalUserInfoKey: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/uikit/uikeyboardcenterbeginuserinfokey
-declare const UIKeyboardCenterBeginUserInfoKey: string | NSString;
+declare const UIKeyboardCenterBeginUserInfoKey: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/uikit/uikeyboardcenterenduserinfokey
-declare const UIKeyboardCenterEndUserInfoKey: string | NSString;
+declare const UIKeyboardCenterEndUserInfoKey: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/uikit/uikeyboardboundsuserinfokey
-declare const UIKeyboardBoundsUserInfoKey: string | NSString;
+declare const UIKeyboardBoundsUserInfoKey: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/uikit/uikeyboardframebeginuserinfokey
-declare const UIKeyboardFrameBeginUserInfoKey: string | NSString;
+declare const UIKeyboardFrameBeginUserInfoKey: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/uikit/uikeyboardframeenduserinfokey
-declare const UIKeyboardFrameEndUserInfoKey: string | NSString;
+declare const UIKeyboardFrameEndUserInfoKey: string | cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * The background appearance for a popover.
@@ -8645,9 +8645,9 @@ declare namespace cocoascript {
    */
   interface UIAlertAction extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uialertaction/1620097-actionwithtitle
-    actionWithTitle_style_handler(title: string | NSString, style: UIAlertActionStyle, handler: UIAlertAction):UIAlertAction;
+    actionWithTitle_style_handler(title: string | cocoascript.NSString, style: UIAlertActionStyle, handler: UIAlertAction):UIAlertAction;
     // doc://com.apple.documentation/documentation/uikit/uialertaction/1620098-title
-    title(): string | NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uialertaction/1620107-style
     style(): UIAlertActionStyle;
@@ -8928,7 +8928,7 @@ declare namespace cocoascript {
    */
   interface UIPreviewActionItem extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uipreviewactionitem/1621352-title
-    title(): string | NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
   }
 }
@@ -9182,7 +9182,7 @@ declare namespace cocoascript {
     focusItemContainer(): UIFocusItemContainer;
     setFocusItemContainer(): void;
     // doc://com.apple.documentation/documentation/uikit/uifocusenvironment/3601224-focusgroupidentifier
-    focusGroupIdentifier(): string | NSString;
+    focusGroupIdentifier(): string | cocoascript.NSString;
     setFocusGroupIdentifier(): void;
   }
 }
@@ -9214,9 +9214,9 @@ declare namespace cocoascript {
 
 declare const UIFocusSystem: cocoascript.UIFocusSystem;
 // doc://com.apple.documentation/documentation/uikit/uifocusupdateanimationcoordinatorkey
-declare const UIFocusUpdateAnimationCoordinatorKey: string | NSString;
+declare const UIFocusUpdateAnimationCoordinatorKey: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/uikit/uifocusupdatecontextkey
-declare const UIFocusUpdateContextKey: string | NSString;
+declare const UIFocusUpdateContextKey: string | cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object that provides information relevant to a specific focus update from one view to another.
@@ -9247,9 +9247,9 @@ declare namespace cocoascript {
 
 declare const UIFocusUpdateContext: cocoascript.UIFocusUpdateContext;
 // doc://com.apple.documentation/documentation/uikit/uifocusupdateanimationcoordinatorkey
-declare const UIFocusUpdateAnimationCoordinatorKey: string | NSString;
+declare const UIFocusUpdateAnimationCoordinatorKey: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/uikit/uifocusupdatecontextkey
-declare const UIFocusUpdateContextKey: string | NSString;
+declare const UIFocusUpdateContextKey: string | cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object that can become focused.
@@ -9397,9 +9397,9 @@ declare namespace cocoascript {
    */
   interface UIMenuItem extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uimenuitem/1622824-initwithtitle
-    initWithTitle_action(title: string | NSString, action: SEL):UIMenuItem;
+    initWithTitle_action(title: string | cocoascript.NSString, action: SEL):UIMenuItem;
     // doc://com.apple.documentation/documentation/uikit/uimenuitem/1622827-title
-    title(): string | NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uimenuitem/1622817-action
     action(): SEL;
@@ -9509,17 +9509,17 @@ declare namespace cocoascript {
    */
   interface UIApplicationShortcutItem extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uiapplicationshortcutitem/1623355-initwithtype
-    initWithType_localizedTitle(type: string | NSString, localizedTitle: string | NSString):UIApplicationShortcutItem;
+    initWithType_localizedTitle(type: string | cocoascript.NSString, localizedTitle: string | cocoascript.NSString):UIApplicationShortcutItem;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationshortcutitem/1623372-initwithtype
-    initWithType_localizedTitle_localizedSubtitle_icon_userInfo(type: string | NSString, localizedTitle: string | NSString, localizedSubtitle: string | NSString, icon: UIApplicationShortcutIcon, userInfo: NSSecureCoding):UIApplicationShortcutItem;
+    initWithType_localizedTitle_localizedSubtitle_icon_userInfo(type: string | cocoascript.NSString, localizedTitle: string | cocoascript.NSString, localizedSubtitle: string | cocoascript.NSString, icon: UIApplicationShortcutIcon, userInfo: NSSecureCoding):UIApplicationShortcutItem;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationshortcutitem/1623354-localizedtitle
-    localizedTitle(): string | NSString;
+    localizedTitle(): string | cocoascript.NSString;
     setLocalizedTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationshortcutitem/1623376-localizedsubtitle
-    localizedSubtitle(): string | NSString;
+    localizedSubtitle(): string | cocoascript.NSString;
     setLocalizedSubtitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationshortcutitem/1623382-type
-    type(): string | NSString;
+    type(): string | cocoascript.NSString;
     setType(): void;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationshortcutitem/1623352-icon
     icon(): UIApplicationShortcutIcon;
@@ -9547,9 +9547,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiapplicationshortcuticon/1623389-iconwithtype
     iconWithType(type: UIApplicationShortcutIconType):UIApplicationShortcutIcon;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationshortcuticon/1623367-iconwithtemplateimagename
-    iconWithTemplateImageName(templateImageName: string | NSString):UIApplicationShortcutIcon;
+    iconWithTemplateImageName(templateImageName: string | cocoascript.NSString):UIApplicationShortcutIcon;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationshortcuticon/3295912-iconwithsystemimagename
-    iconWithSystemImageName(systemImageName: string | NSString):UIApplicationShortcutIcon;
+    iconWithSystemImageName(systemImageName: string | cocoascript.NSString):UIApplicationShortcutIcon;
     // doc://com.apple.documentation/documentation/uikit/uiapplicationshortcuticon/1616849-iconwithcontact
     iconWithContact(contact: CNContact):UIApplicationShortcutIcon;
     //
@@ -9567,13 +9567,13 @@ declare namespace cocoascript {
    */
   interface UIMutableApplicationShortcutItem extends UIApplicationShortcutItem {
     // doc://com.apple.documentation/documentation/uikit/uimutableapplicationshortcutitem/1623371-localizedtitle
-    localizedTitle(): string | NSString;
+    localizedTitle(): string | cocoascript.NSString;
     setLocalizedTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uimutableapplicationshortcutitem/1623384-localizedsubtitle
-    localizedSubtitle(): string | NSString;
+    localizedSubtitle(): string | cocoascript.NSString;
     setLocalizedSubtitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uimutableapplicationshortcutitem/1623362-type
-    type(): string | NSString;
+    type(): string | cocoascript.NSString;
     setType(): void;
     // doc://com.apple.documentation/documentation/uikit/uimutableapplicationshortcutitem/1623351-icon
     icon(): UIApplicationShortcutIcon;
@@ -9599,7 +9599,7 @@ declare namespace cocoascript {
    */
   interface UIAccessibilityIdentification extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier
-    accessibilityIdentifier(): string | NSString;
+    accessibilityIdentifier(): string | cocoascript.NSString;
     setAccessibilityIdentifier(): void;
   }
 }
@@ -9614,13 +9614,13 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilityreadingcontent/2866114-accessibilityattributedcontentfo
     accessibilityAttributedContentForLineNumber(lineNumber: NSInteger):NSAttributedString;
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilityreadingcontent/1615163-accessibilitycontentforlinenumbe
-    accessibilityContentForLineNumber(lineNumber: NSInteger):string | NSString;
+    accessibilityContentForLineNumber(lineNumber: NSInteger):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilityreadingcontent/1615171-accessibilityframeforlinenumber
     accessibilityFrameForLineNumber(lineNumber: NSInteger):CGRect;
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilityreadingcontent/2865881-accessibilityattributedpageconte
     accessibilityAttributedPageContent():NSAttributedString;
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilityreadingcontent/1615157-accessibilitypagecontent
-    accessibilityPageContent():string | NSString;
+    accessibilityPageContent():string | cocoascript.NSString;
   }
 }
 declare namespace cocoascript {
@@ -9653,11 +9653,11 @@ declare namespace cocoascript {
    */
   interface UIAccessibilityCustomAction extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/1620499-initwithname
-    initWithName_target_selector(name: string | NSString, target: UIAccessibilityCustomAction, selector: SEL):UIAccessibilityCustomAction;
+    initWithName_target_selector(name: string | cocoascript.NSString, target: UIAccessibilityCustomAction, selector: SEL):UIAccessibilityCustomAction;
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/2865951-initwithattributedname
     initWithAttributedName_target_selector(attributedName: NSAttributedString, target: UIAccessibilityCustomAction, selector: SEL):UIAccessibilityCustomAction;
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/1620502-name
-    name(): string | NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/2865932-attributedname
     attributedName(): NSAttributedString;
@@ -9675,11 +9675,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650219-initwithattributedname
     initWithAttributedName_image_target_selector(attributedName: NSAttributedString, image: UIImage, target: UIAccessibilityCustomAction, selector: SEL):UIAccessibilityCustomAction;
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3043557-initwithname
-    initWithName_actionHandler(name: string | NSString, actionHandler: UIAccessibilityCustomActionHandler):UIAccessibilityCustomAction;
+    initWithName_actionHandler(name: string | cocoascript.NSString, actionHandler: UIAccessibilityCustomActionHandler):UIAccessibilityCustomAction;
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650220-initwithname
-    initWithName_image_actionHandler(name: string | NSString, image: UIImage, actionHandler: UIAccessibilityCustomActionHandler):UIAccessibilityCustomAction;
+    initWithName_image_actionHandler(name: string | cocoascript.NSString, image: UIImage, actionHandler: UIAccessibilityCustomActionHandler):UIAccessibilityCustomAction;
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3650221-initwithname
-    initWithName_image_target_selector(name: string | NSString, image: UIImage, target: UIAccessibilityCustomAction, selector: SEL):UIAccessibilityCustomAction;
+    initWithName_image_target_selector(name: string | cocoascript.NSString, image: UIImage, target: UIAccessibilityCustomAction, selector: SEL):UIAccessibilityCustomAction;
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomaction/3043555-actionhandler
     actionHandler(): UIAccessibilityCustomActionHandler;
     setActionHandler(): void;
@@ -9713,13 +9713,13 @@ declare namespace cocoascript {
     isAccessibilityElement(): BOOL;
     setIsAccessibilityElement(): void;
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel
-    accessibilityLabel(): string | NSString;
+    accessibilityLabel(): string | cocoascript.NSString;
     setAccessibilityLabel(): void;
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilityelement/1619585-accessibilityhint
-    accessibilityHint(): string | NSString;
+    accessibilityHint(): string | cocoascript.NSString;
     setAccessibilityHint(): void;
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilityelement/1619583-accessibilityvalue
-    accessibilityValue(): string | NSString;
+    accessibilityValue(): string | cocoascript.NSString;
     setAccessibilityValue(): void;
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilityelement/1619579-accessibilityframe
     accessibilityFrame(): CGRect;
@@ -9745,7 +9745,7 @@ declare namespace cocoascript {
    */
   interface UIScrollViewAccessibilityDelegate extends UIScrollViewDelegate {
     // doc://com.apple.documentation/documentation/uikit/uiscrollviewaccessibilitydelegate/1621055-accessibilityscrollstatusforscro
-    accessibilityScrollStatusForScrollView(scrollView: UIScrollView):string | NSString;
+    accessibilityScrollStatusForScrollView(scrollView: UIScrollView):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uiscrollviewaccessibilitydelegate/2865789-accessibilityattributedscrollsta
     accessibilityAttributedScrollStatusForScrollView(scrollView: UIScrollView):NSAttributedString;
   }
@@ -9757,17 +9757,17 @@ declare namespace cocoascript {
    */
   interface UIPickerViewAccessibilityDelegate extends UIPickerViewDelegate {
     // doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/1621052-pickerview
-    pickerView_accessibilityLabelForComponent(pickerView: UIPickerView, component: NSInteger):string | NSString;
+    pickerView_accessibilityLabelForComponent(pickerView: UIPickerView, component: NSInteger):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/2865955-pickerview
     pickerView_accessibilityAttributedLabelForComponent(pickerView: UIPickerView, component: NSInteger):NSAttributedString;
     // doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/1621056-pickerview
-    pickerView_accessibilityHintForComponent(pickerView: UIPickerView, component: NSInteger):string | NSString;
+    pickerView_accessibilityHintForComponent(pickerView: UIPickerView, component: NSInteger):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/2866017-pickerview
     pickerView_accessibilityAttributedHintForComponent(pickerView: UIPickerView, component: NSInteger):NSAttributedString;
     // doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/3197990-pickerview
     pickerView_accessibilityAttributedUserInputLabelsForComponent(pickerView: UIPickerView, component: NSInteger):NSAttributedString;
     // doc://com.apple.documentation/documentation/uikit/uipickerviewaccessibilitydelegate/3197991-pickerview
-    pickerView_accessibilityUserInputLabelsForComponent(pickerView: UIPickerView, component: NSInteger):string | NSString;
+    pickerView_accessibilityUserInputLabelsForComponent(pickerView: UIPickerView, component: NSInteger):string | cocoascript.NSString;
   }
 }
 declare namespace cocoascript {
@@ -9813,7 +9813,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomrotor/2866000-initwithattributedname
     initWithAttributedName_itemSearchBlock(attributedName: NSAttributedString, itemSearchBlock: UIAccessibilityCustomRotorSearch):UIAccessibilityCustomRotor;
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomrotor/1649751-initwithname
-    initWithName_itemSearchBlock(name: string | NSString, itemSearchBlock: UIAccessibilityCustomRotorSearch):UIAccessibilityCustomRotor;
+    initWithName_itemSearchBlock(name: string | cocoascript.NSString, itemSearchBlock: UIAccessibilityCustomRotorSearch):UIAccessibilityCustomRotor;
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomrotor/2866006-initwithsystemtype
     initWithSystemType_itemSearchBlock(type: UIAccessibilityCustomSystemRotorType, itemSearchBlock: UIAccessibilityCustomRotorSearch):UIAccessibilityCustomRotor;
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomrotor/1649800-itemsearchblock
@@ -9823,7 +9823,7 @@ declare namespace cocoascript {
     systemRotorType(): UIAccessibilityCustomSystemRotorType;
     setSystemRotorType(): void;
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomrotor/1649745-name
-    name(): string | NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilitycustomrotor/2865780-attributedname
     attributedName(): NSAttributedString;
@@ -9887,11 +9887,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilitylocationdescriptor/2890955-initwithattributedname
     initWithAttributedName_point_inView(attributedName: NSAttributedString, point: CGPoint, view: UIView):UIAccessibilityLocationDescriptor;
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilitylocationdescriptor/2890962-initwithname
-    initWithName_point_inView(name: string | NSString, point: CGPoint, view: UIView):UIAccessibilityLocationDescriptor;
+    initWithName_point_inView(name: string | cocoascript.NSString, point: CGPoint, view: UIView):UIAccessibilityLocationDescriptor;
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilitylocationdescriptor/2890958-initwithname
-    initWithName_view(name: string | NSString, view: UIView):UIAccessibilityLocationDescriptor;
+    initWithName_view(name: string | cocoascript.NSString, view: UIView):UIAccessibilityLocationDescriptor;
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilitylocationdescriptor/2890959-name
-    name(): string | NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/uikit/uiaccessibilitylocationdescriptor/2890960-attributedname
     attributedName(): NSAttributedString;
@@ -10188,9 +10188,9 @@ declare namespace cocoascript {
     pdfContextBounds(): CGRect;
     setPdfContextBounds(): void;
     // doc://com.apple.documentation/documentation/uikit/uigraphicspdfrenderercontext/1649128-adddestinationwithname
-    addDestinationWithName_atPoint(name: string | NSString, point: CGPoint):void;
+    addDestinationWithName_atPoint(name: string | cocoascript.NSString, point: CGPoint):void;
     // doc://com.apple.documentation/documentation/uikit/uigraphicspdfrenderercontext/1649118-setdestinationwithname
-    setDestinationWithName_forRect(name: string | NSString, rect: CGRect):void;
+    setDestinationWithName_forRect(name: string | cocoascript.NSString, rect: CGRect):void;
     // doc://com.apple.documentation/documentation/uikit/uigraphicspdfrenderercontext/1649125-seturl
     setURL_forRect(url: NSURL, rect: CGRect):void;
     //
@@ -10338,7 +10338,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiprintinteractioncontroller/1618155-canprinturl
     canPrintURL(url: NSURL):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uiprintinteractioncontroller/1618150-printableutis
-    printableUTIs(): string | NSString;
+    printableUTIs(): string | cocoascript.NSString;
     setPrintableUTIs(): void;
     // doc://com.apple.documentation/documentation/uikit/uiprintinteractioncontroller/1618157-printingitem
     printingItem(): id;
@@ -10445,13 +10445,13 @@ declare namespace cocoascript {
     URL(): NSURL;
     setURL(): void;
     // doc://com.apple.documentation/documentation/uikit/uiprinter/1620427-displayname
-    displayName(): string | NSString;
+    displayName(): string | cocoascript.NSString;
     setDisplayName(): void;
     // doc://com.apple.documentation/documentation/uikit/uiprinter/1620426-displaylocation
-    displayLocation(): string | NSString;
+    displayLocation(): string | cocoascript.NSString;
     setDisplayLocation(): void;
     // doc://com.apple.documentation/documentation/uikit/uiprinter/1620438-makeandmodel
-    makeAndModel(): string | NSString;
+    makeAndModel(): string | cocoascript.NSString;
     setMakeAndModel(): void;
     // doc://com.apple.documentation/documentation/uikit/uiprinter/1620436-supportedjobtypes
     supportedJobTypes(): UIPrinterJobTypes;
@@ -10491,7 +10491,7 @@ declare namespace cocoascript {
     duplex(): UIPrintInfoDuplex;
     setDuplex(): void;
     // doc://com.apple.documentation/documentation/uikit/uiprintinfo/1623543-jobname
-    jobName(): string | NSString;
+    jobName(): string | cocoascript.NSString;
     setJobName(): void;
     // doc://com.apple.documentation/documentation/uikit/uiprintinfo/1623550-orientation
     orientation(): UIPrintInfoOrientation;
@@ -10500,7 +10500,7 @@ declare namespace cocoascript {
     outputType(): UIPrintInfoOutputType;
     setOutputType(): void;
     // doc://com.apple.documentation/documentation/uikit/uiprintinfo/1623535-printerid
-    printerID(): string | NSString;
+    printerID(): string | cocoascript.NSString;
     setPrinterID(): void;
     //
     alloc():UIPrintInfo;
@@ -10601,12 +10601,12 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uisimpletextprintformatter/1621838-initwithattributedtext
     initWithAttributedText(attributedText: NSAttributedString):UISimpleTextPrintFormatter;
     // doc://com.apple.documentation/documentation/uikit/uisimpletextprintformatter/1621822-initwithtext
-    initWithText(text: string | NSString):UISimpleTextPrintFormatter;
+    initWithText(text: string | cocoascript.NSString):UISimpleTextPrintFormatter;
     // doc://com.apple.documentation/documentation/uikit/uisimpletextprintformatter/1621820-attributedtext
     attributedText(): NSAttributedString;
     setAttributedText(): void;
     // doc://com.apple.documentation/documentation/uikit/uisimpletextprintformatter/1621833-text
-    text(): string | NSString;
+    text(): string | cocoascript.NSString;
     setText(): void;
     // doc://com.apple.documentation/documentation/uikit/uisimpletextprintformatter/1621837-font
     font(): UIFont;
@@ -10632,9 +10632,9 @@ declare namespace cocoascript {
    */
   interface UIMarkupTextPrintFormatter extends UIPrintFormatter {
     // doc://com.apple.documentation/documentation/uikit/uimarkuptextprintformatter/1621845-initwithmarkuptext
-    initWithMarkupText(markupText: string | NSString):UIMarkupTextPrintFormatter;
+    initWithMarkupText(markupText: string | cocoascript.NSString):UIMarkupTextPrintFormatter;
     // doc://com.apple.documentation/documentation/uikit/uimarkuptextprintformatter/1621842-markuptext
-    markupText(): string | NSString;
+    markupText(): string | cocoascript.NSString;
     setMarkupText(): void;
     //
     alloc():UIMarkupTextPrintFormatter;
@@ -10655,7 +10655,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uifont/1771762-preferredfontfortextstyle
     preferredFontForTextStyle_compatibleWithTraitCollection(style: UIFontTextStyle, traitCollection: UITraitCollection):UIFont;
     // doc://com.apple.documentation/documentation/uikit/uifont/1619041-fontwithname
-    fontWithName_size(fontName: string | NSString, fontSize: CGFloat):UIFont;
+    fontWithName_size(fontName: string | cocoascript.NSString, fontSize: CGFloat):UIFont;
     // doc://com.apple.documentation/documentation/uikit/uifont/1619025-fontwithdescriptor
     fontWithDescriptor_size(descriptor: UIFontDescriptor, pointSize: CGFloat):UIFont;
     // doc://com.apple.documentation/documentation/uikit/uifont/1619032-fontwithsize
@@ -10673,15 +10673,15 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uifont/1619022-monospaceddigitsystemfontofsize
     monospacedDigitSystemFontOfSize_weight(fontSize: CGFloat, weight: UIFontWeight):UIFont;
     // doc://com.apple.documentation/documentation/uikit/uifont/1619040-familynames
-    familyNames(): string | NSString;
+    familyNames(): string | cocoascript.NSString;
     setFamilyNames(): void;
     // doc://com.apple.documentation/documentation/uikit/uifont/1619023-fontnamesforfamilyname
-    fontNamesForFamilyName(familyName: string | NSString):string | NSString;
+    fontNamesForFamilyName(familyName: string | cocoascript.NSString):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uifont/1619033-familyname
-    familyName(): string | NSString;
+    familyName(): string | cocoascript.NSString;
     setFamilyName(): void;
     // doc://com.apple.documentation/documentation/uikit/uifont/1619024-fontname
-    fontName(): string | NSString;
+    fontName(): string | cocoascript.NSString;
     setFontName(): void;
     // doc://com.apple.documentation/documentation/uikit/uifont/1619031-pointsize
     pointSize(): CGFloat;
@@ -10747,17 +10747,17 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uifontdescriptor/1616717-fontdescriptorwithfontattributes
     fontDescriptorWithFontAttributes(attributes: UIFontDescriptor):UIFontDescriptor;
     // doc://com.apple.documentation/documentation/uikit/uifontdescriptor/1616670-fontdescriptorwithname
-    fontDescriptorWithName_matrix(fontName: string | NSString, matrix: CGAffineTransform):UIFontDescriptor;
+    fontDescriptorWithName_matrix(fontName: string | cocoascript.NSString, matrix: CGAffineTransform):UIFontDescriptor;
     // doc://com.apple.documentation/documentation/uikit/uifontdescriptor/1616674-fontdescriptorwithname
-    fontDescriptorWithName_size(fontName: string | NSString, size: CGFloat):UIFontDescriptor;
+    fontDescriptorWithName_size(fontName: string | cocoascript.NSString, size: CGFloat):UIFontDescriptor;
     // doc://com.apple.documentation/documentation/uikit/uifontdescriptor/1616666-fontdescriptorbyaddingattributes
     fontDescriptorByAddingAttributes(attributes: UIFontDescriptor):UIFontDescriptor;
     // doc://com.apple.documentation/documentation/uikit/uifontdescriptor/3151797-fontdescriptorwithdesign
     fontDescriptorWithDesign(design: UIFontDescriptorSystemDesign):UIFontDescriptor;
     // doc://com.apple.documentation/documentation/uikit/uifontdescriptor/1616676-fontdescriptorwithfamily
-    fontDescriptorWithFamily(newFamily: string | NSString):UIFontDescriptor;
+    fontDescriptorWithFamily(newFamily: string | cocoascript.NSString):UIFontDescriptor;
     // doc://com.apple.documentation/documentation/uikit/uifontdescriptor/1616681-fontdescriptorwithface
-    fontDescriptorWithFace(newFace: string | NSString):UIFontDescriptor;
+    fontDescriptorWithFace(newFace: string | cocoascript.NSString):UIFontDescriptor;
     // doc://com.apple.documentation/documentation/uikit/uifontdescriptor/1616731-fontdescriptorwithmatrix
     fontDescriptorWithMatrix(matrix: CGAffineTransform):UIFontDescriptor;
     // doc://com.apple.documentation/documentation/uikit/uifontdescriptor/1616675-fontdescriptorwithsize
@@ -10784,7 +10784,7 @@ declare namespace cocoascript {
     pointSize(): CGFloat;
     setPointSize(): void;
     // doc://com.apple.documentation/documentation/uikit/uifontdescriptor/1616693-postscriptname
-    postscriptName(): string | NSString;
+    postscriptName(): string | cocoascript.NSString;
     setPostscriptName(): void;
     // doc://com.apple.documentation/documentation/uikit/uifontdescriptor/1616723-symbolictraits
     symbolicTraits(): UIFontDescriptorSymbolicTraits;
@@ -10837,24 +10837,24 @@ declare namespace cocoascript {
    */
   interface UITextChecker extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uitextchecker/1621029-rangeofmisspelledwordinstring
-    rangeOfMisspelledWordInString_range_startingAt_wrap_language(stringToCheck: string | NSString, range: NSRange, startingOffset: NSInteger, wrapFlag: BOOL, language: string | NSString):NSRange;
+    rangeOfMisspelledWordInString_range_startingAt_wrap_language(stringToCheck: string | cocoascript.NSString, range: NSRange, startingOffset: NSInteger, wrapFlag: BOOL, language: string | cocoascript.NSString):NSRange;
     // doc://com.apple.documentation/documentation/uikit/uitextchecker/1621037-guessesforwordrange
-    guessesForWordRange_inString_language(range: NSRange, string: string | NSString, language: string | NSString):string | NSString;
+    guessesForWordRange_inString_language(range: NSRange, string: string | cocoascript.NSString, language: string | cocoascript.NSString):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uitextchecker/1621034-completionsforpartialwordrange
-    completionsForPartialWordRange_inString_language(range: NSRange, string: string | NSString, language: string | NSString):string | NSString;
+    completionsForPartialWordRange_inString_language(range: NSRange, string: string | cocoascript.NSString, language: string | cocoascript.NSString):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uitextchecker/1621031-ignoreword
-    ignoreWord(wordToIgnore: string | NSString):void;
+    ignoreWord(wordToIgnore: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uitextchecker/1621032-ignoredwords
-    ignoredWords(): string | NSString;
+    ignoredWords(): string | cocoascript.NSString;
     setIgnoredWords(): void;
     // doc://com.apple.documentation/documentation/uikit/uitextchecker/1621028-learnword
-    learnWord(word: string | NSString):void;
+    learnWord(word: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uitextchecker/1621036-unlearnword
-    unlearnWord(word: string | NSString):void;
+    unlearnWord(word: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uitextchecker/1621027-haslearnedword
-    hasLearnedWord(word: string | NSString):BOOL;
+    hasLearnedWord(word: string | cocoascript.NSString):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uitextchecker/1621033-availablelanguages
-    availableLanguages(): string | NSString;
+    availableLanguages(): string | cocoascript.NSString;
     setAvailableLanguages(): void;
     //
     alloc():UITextChecker;
@@ -11067,11 +11067,11 @@ declare namespace cocoascript {
     inputDelegate(): UITextInputDelegate;
     setInputDelegate(): void;
     // doc://com.apple.documentation/documentation/uikit/uitextinput/1614527-textinrange
-    textInRange(range: UITextRange):string | NSString;
+    textInRange(range: UITextRange):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uitextinput/1614558-replacerange
-    replaceRange_withText(range: UITextRange, text: string | NSString):void;
+    replaceRange_withText(range: UITextRange, text: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uitextinput/1614495-shouldchangetextinrange
-    shouldChangeTextInRange_replacementText(range: UITextRange, text: string | NSString):BOOL;
+    shouldChangeTextInRange_replacementText(range: UITextRange, text: string | cocoascript.NSString):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uitextinput/1614541-selectedtextrange
     selectedTextRange(): UITextRange;
     setSelectedTextRange(): void;
@@ -11082,7 +11082,7 @@ declare namespace cocoascript {
     markedTextStyle(): id;
     setMarkedTextStyle(): void;
     // doc://com.apple.documentation/documentation/uikit/uitextinput/1614465-setmarkedtext
-    setMarkedText_selectedRange(markedText: string | NSString, selectedRange: NSRange):void;
+    setMarkedText_selectedRange(markedText: string | cocoascript.NSString, selectedRange: NSRange):void;
     // doc://com.apple.documentation/documentation/uikit/uitextinput/3213955-setattributedmarkedtext
     setAttributedMarkedText_selectedRange(markedText: NSAttributedString, selectedRange: NSRange):void;
     // doc://com.apple.documentation/documentation/uikit/uitextinput/1614512-unmarktext
@@ -11153,7 +11153,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uitextinput/3213954-removetextplaceholder
     removeTextPlaceholder(textPlaceholder: UITextPlaceholder):void;
     // doc://com.apple.documentation/documentation/uikit/uitextinput/3213952-inserttext
-    insertText_alternatives_style(text: string | NSString, alternatives: string | NSString, style: UITextAlternativeStyle):void;
+    insertText_alternatives_style(text: string | cocoascript.NSString, alternatives: string | cocoascript.NSString, style: UITextAlternativeStyle):void;
     // doc://com.apple.documentation/documentation/uikit/uitextinput/1614566-textstylingatposition
     textStylingAtPosition_inDirection(position: UITextPosition, direction: UITextStorageDirection):UITextInput;
     // doc://com.apple.documentation/documentation/uikit/uitextinput/1614542-positionwithinrange
@@ -11204,7 +11204,7 @@ declare namespace cocoascript {
    */
   interface UIKeyInput extends UITextInputTraits {
     // doc://com.apple.documentation/documentation/uikit/uikeyinput/1614543-inserttext
-    insertText(text: string | NSString):void;
+    insertText(text: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uikeyinput/1614572-deletebackward
     deleteBackward():void;
     // doc://com.apple.documentation/documentation/uikit/uikeyinput/1614457-hastext
@@ -11224,7 +11224,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uitextinputmode/1614538-currentinputmode
     currentInputMode():UITextInputMode;
     // doc://com.apple.documentation/documentation/uikit/uitextinputmode/1614535-primarylanguage
-    primaryLanguage(): string | NSString;
+    primaryLanguage(): string | cocoascript.NSString;
     setPrimaryLanguage(): void;
     //
     alloc():UITextInputMode;
@@ -11257,10 +11257,10 @@ declare namespace cocoascript {
    */
   interface UIDictationPhrase extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uidictationphrase/1614510-alternativeinterpretations
-    alternativeInterpretations(): string | NSString;
+    alternativeInterpretations(): string | cocoascript.NSString;
     setAlternativeInterpretations(): void;
     // doc://com.apple.documentation/documentation/uikit/uidictationphrase/1614456-text
-    text(): string | NSString;
+    text(): string | cocoascript.NSString;
     setText(): void;
     //
     alloc():UIDictationPhrase;
@@ -11307,10 +11307,10 @@ declare namespace cocoascript {
     modifierFlags(): UIKeyModifierFlags;
     setModifierFlags(): void;
     // doc://com.apple.documentation/documentation/uikit/uikey/3526130-characters
-    characters(): string | NSString;
+    characters(): string | cocoascript.NSString;
     setCharacters(): void;
     // doc://com.apple.documentation/documentation/uikit/uikey/3526131-charactersignoringmodifiers
-    charactersIgnoringModifiers(): string | NSString;
+    charactersIgnoringModifiers(): string | cocoascript.NSString;
     setCharactersIgnoringModifiers(): void;
     //
     alloc():UIKey;
@@ -11420,7 +11420,7 @@ declare namespace cocoascript {
    */
   interface UIPreviewAction extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uipreviewaction/1621445-actionwithtitle
-    actionWithTitle_style_handler(title: string | NSString, style: UIPreviewActionStyle, handler: UIViewController):UIPreviewAction;
+    actionWithTitle_style_handler(title: string | cocoascript.NSString, style: UIPreviewActionStyle, handler: UIViewController):UIPreviewAction;
     // doc://com.apple.documentation/documentation/uikit/uipreviewaction/1621447-handler
     handler(): UIViewController;
     setHandler(): void;
@@ -11460,12 +11460,12 @@ declare namespace cocoascript {
    */
   interface UIActionSheet extends UIView {
     // doc://com.apple.documentation/documentation/uikit/uiactionsheet/1622875-initwithtitle
-    initWithTitle_delegate_cancelButtonTitle_destructiveButtonTitle_otherButtonTitles(title: string | NSString, delegate: UIActionSheetDelegate, cancelButtonTitle: string | NSString, destructiveButtonTitle: string | NSString, ...otherButtonTitles: Array<string | NSString>):UIActionSheet;
+    initWithTitle_delegate_cancelButtonTitle_destructiveButtonTitle_otherButtonTitles(title: string | cocoascript.NSString, delegate: UIActionSheetDelegate, cancelButtonTitle: string | cocoascript.NSString, destructiveButtonTitle: string | cocoascript.NSString, ...otherButtonTitles: Array<string | cocoascript.NSString>):UIActionSheet;
     // doc://com.apple.documentation/documentation/uikit/uiactionsheet/1622878-delegate
     delegate(): UIActionSheetDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/uikit/uiactionsheet/1622882-title
-    title(): string | NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uiactionsheet/1622885-visible
     visible(): BOOL;
@@ -11474,12 +11474,12 @@ declare namespace cocoascript {
     actionSheetStyle(): UIActionSheetStyle;
     setActionSheetStyle(): void;
     // doc://com.apple.documentation/documentation/uikit/uiactionsheet/1622864-addbuttonwithtitle
-    addButtonWithTitle(title: string | NSString):NSInteger;
+    addButtonWithTitle(title: string | cocoascript.NSString):NSInteger;
     // doc://com.apple.documentation/documentation/uikit/uiactionsheet/1622891-numberofbuttons
     numberOfButtons(): NSInteger;
     setNumberOfButtons(): void;
     // doc://com.apple.documentation/documentation/uikit/uiactionsheet/1622871-buttontitleatindex
-    buttonTitleAtIndex(buttonIndex: NSInteger):string | NSString;
+    buttonTitleAtIndex(buttonIndex: NSInteger):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uiactionsheet/1622866-cancelbuttonindex
     cancelButtonIndex(): NSInteger;
     setCancelButtonIndex(): void;
@@ -11539,7 +11539,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uialertview/1620759-initwithframe
     initWithFrame(frame: CGRect):UIAlertView;
     // doc://com.apple.documentation/documentation/uikit/uialertview/1620765-initwithtitle
-    initWithTitle_message_delegate_cancelButtonTitle_otherButtonTitles(title: string | NSString, message: string | NSString, delegate: UIAlertView, cancelButtonTitle: string | NSString, ...otherButtonTitles: Array<string | NSString>):UIAlertView;
+    initWithTitle_message_delegate_cancelButtonTitle_otherButtonTitles(title: string | cocoascript.NSString, message: string | cocoascript.NSString, delegate: UIAlertView, cancelButtonTitle: string | cocoascript.NSString, ...otherButtonTitles: Array<string | cocoascript.NSString>):UIAlertView;
     // doc://com.apple.documentation/documentation/uikit/uialertview/1620769-delegate
     delegate(): id;
     setDelegate(): void;
@@ -11547,21 +11547,21 @@ declare namespace cocoascript {
     alertViewStyle(): UIAlertViewStyle;
     setAlertViewStyle(): void;
     // doc://com.apple.documentation/documentation/uikit/uialertview/1620768-title
-    title(): string | NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uialertview/1620758-message
-    message(): string | NSString;
+    message(): string | cocoascript.NSString;
     setMessage(): void;
     // doc://com.apple.documentation/documentation/uikit/uialertview/1620764-visible
     visible(): BOOL;
     setVisible(): void;
     // doc://com.apple.documentation/documentation/uikit/uialertview/1620761-addbuttonwithtitle
-    addButtonWithTitle(title: string | NSString):NSInteger;
+    addButtonWithTitle(title: string | cocoascript.NSString):NSInteger;
     // doc://com.apple.documentation/documentation/uikit/uialertview/1620753-numberofbuttons
     numberOfButtons(): NSInteger;
     setNumberOfButtons(): void;
     // doc://com.apple.documentation/documentation/uikit/uialertview/1620756-buttontitleatindex
-    buttonTitleAtIndex(buttonIndex: NSInteger):string | NSString;
+    buttonTitleAtIndex(buttonIndex: NSInteger):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uialertview/1620757-textfieldatindex
     textFieldAtIndex(textFieldIndex: NSInteger):UITextField;
     // doc://com.apple.documentation/documentation/uikit/uialertview/1620766-cancelbuttonindex
@@ -11588,10 +11588,10 @@ declare namespace cocoascript {
    */
   interface UIUserNotificationAction extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uiusernotificationaction/1615361-identifier
-    identifier(): string | NSString;
+    identifier(): string | cocoascript.NSString;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/uikit/uiusernotificationaction/1615358-title
-    title(): string | NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uiusernotificationaction/1615329-activationmode
     activationMode(): UIUserNotificationActivationMode;
@@ -11651,7 +11651,7 @@ declare namespace cocoascript {
     searchResultsDelegate(): UITableViewDelegate;
     setSearchResultsDelegate(): void;
     // doc://com.apple.documentation/documentation/uikit/uisearchdisplaycontroller/1620386-searchresultstitle
-    searchResultsTitle(): string | NSString;
+    searchResultsTitle(): string | cocoascript.NSString;
     setSearchResultsTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uisearchdisplaycontroller/1620394-displayssearchbarinnavigationbar
     displaysSearchBarInNavigationBar(): BOOL;
@@ -11693,7 +11693,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uisearchdisplaydelegate/1620395-searchdisplaycontroller
     searchDisplayController_didHideSearchResultsTableView(controller: UISearchDisplayController, tableView: UITableView):void;
     // doc://com.apple.documentation/documentation/uikit/uisearchdisplaydelegate/1620403-searchdisplaycontroller
-    searchDisplayController_shouldReloadTableForSearchString(controller: UISearchDisplayController, searchString: string | NSString):BOOL;
+    searchDisplayController_shouldReloadTableForSearchString(controller: UISearchDisplayController, searchString: string | cocoascript.NSString):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uisearchdisplaydelegate/1620409-searchdisplaycontroller
     searchDisplayController_shouldReloadTableForSearchScope(controller: UISearchDisplayController, searchOption: NSInteger):BOOL;
   }
@@ -11797,7 +11797,7 @@ declare namespace cocoascript {
    */
   interface UIPreviewActionGroup extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uipreviewactiongroup/1621514-actiongroupwithtitle
-    actionGroupWithTitle_style_actions(title: string | NSString, style: UIPreviewActionStyle, actions: UIPreviewAction):UIPreviewActionGroup;
+    actionGroupWithTitle_style_actions(title: string | cocoascript.NSString, style: UIPreviewActionStyle, actions: UIPreviewAction):UIPreviewActionGroup;
     //
     alloc():UIPreviewActionGroup;
     //
@@ -11839,7 +11839,7 @@ declare namespace cocoascript {
    */
   interface UIDocumentMenuViewController extends UIViewController {
     // doc://com.apple.documentation/documentation/uikit/uidocumentmenuviewcontroller/1614187-initwithdocumenttypes
-    initWithDocumentTypes_inMode(allowedUTIs: string | NSString, mode: UIDocumentPickerMode):UIDocumentMenuViewController;
+    initWithDocumentTypes_inMode(allowedUTIs: string | cocoascript.NSString, mode: UIDocumentPickerMode):UIDocumentMenuViewController;
     // doc://com.apple.documentation/documentation/uikit/uidocumentmenuviewcontroller/1614191-initwithurl
     initWithURL_inMode(url: NSURL, mode: UIDocumentPickerMode):UIDocumentMenuViewController;
     // doc://com.apple.documentation/documentation/uikit/uidocumentmenuviewcontroller/1614182-initwithcoder
@@ -11848,7 +11848,7 @@ declare namespace cocoascript {
     delegate(): UIDocumentMenuDelegate;
     setDelegate(): void;
     // doc://com.apple.documentation/documentation/uikit/uidocumentmenuviewcontroller/1614193-addoptionwithtitle
-    addOptionWithTitle_image_order_handler(title: string | NSString, image: UIImage, order: UIDocumentMenuOrder, handler: void):void;
+    addOptionWithTitle_image_order_handler(title: string | cocoascript.NSString, image: UIImage, order: UIDocumentMenuOrder, handler: void):void;
     //
     alloc():UIDocumentMenuViewController;
     //
@@ -11881,28 +11881,28 @@ declare namespace cocoascript {
     regionTriggersOnce(): BOOL;
     setRegionTriggersOnce(): void;
     // doc://com.apple.documentation/documentation/uikit/uilocalnotification/1616646-alertbody
-    alertBody(): string | NSString;
+    alertBody(): string | cocoascript.NSString;
     setAlertBody(): void;
     // doc://com.apple.documentation/documentation/uikit/uilocalnotification/1616648-alertaction
-    alertAction(): string | NSString;
+    alertAction(): string | cocoascript.NSString;
     setAlertAction(): void;
     // doc://com.apple.documentation/documentation/uikit/uilocalnotification/1616647-alerttitle
-    alertTitle(): string | NSString;
+    alertTitle(): string | cocoascript.NSString;
     setAlertTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uilocalnotification/1616649-hasaction
     hasAction(): BOOL;
     setHasAction(): void;
     // doc://com.apple.documentation/documentation/uikit/uilocalnotification/1616660-alertlaunchimage
-    alertLaunchImage(): string | NSString;
+    alertLaunchImage(): string | cocoascript.NSString;
     setAlertLaunchImage(): void;
     // doc://com.apple.documentation/documentation/uikit/uilocalnotification/1616655-category
-    category(): string | NSString;
+    category(): string | cocoascript.NSString;
     setCategory(): void;
     // doc://com.apple.documentation/documentation/uikit/uilocalnotification/1616658-applicationiconbadgenumber
     applicationIconBadgeNumber(): NSInteger;
     setApplicationIconBadgeNumber(): void;
     // doc://com.apple.documentation/documentation/uikit/uilocalnotification/1616651-soundname
-    soundName(): string | NSString;
+    soundName(): string | cocoascript.NSString;
     setSoundName(): void;
     // doc://com.apple.documentation/documentation/uikit/uilocalnotification/1616657-userinfo
     userInfo(): NSDictionary;
@@ -11925,10 +11925,10 @@ declare namespace cocoascript {
    */
   interface UIMutableUserNotificationAction extends UIUserNotificationAction {
     // doc://com.apple.documentation/documentation/uikit/uimutableusernotificationaction/1615379-identifier
-    identifier(): string | NSString;
+    identifier(): string | cocoascript.NSString;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/uikit/uimutableusernotificationaction/1615370-title
-    title(): string | NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uimutableusernotificationaction/1615372-activationmode
     activationMode(): UIUserNotificationActivationMode;
@@ -11959,7 +11959,7 @@ declare namespace cocoascript {
    */
   interface UIMutableUserNotificationCategory extends UIUserNotificationCategory {
     // doc://com.apple.documentation/documentation/uikit/uimutableusernotificationcategory/1615376-identifier
-    identifier(): string | NSString;
+    identifier(): string | cocoascript.NSString;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/uikit/uimutableusernotificationcategory/1615397-setactions
     setActions_forContext(actions: UIUserNotificationAction, context: UIUserNotificationActionContext):void;
@@ -11994,7 +11994,7 @@ declare namespace cocoascript {
    */
   interface UIUserNotificationCategory extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uiusernotificationcategory/1615383-identifier
-    identifier(): string | NSString;
+    identifier(): string | cocoascript.NSString;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/uikit/uiusernotificationcategory/1615374-actionsforcontext
     actionsForContext(context: UIUserNotificationActionContext):UIUserNotificationAction;
@@ -12121,19 +12121,19 @@ declare namespace cocoascript {
     prefetchDataSource(): UITableViewDataSourcePrefetching;
     setPrefetchDataSource(): void;
     // doc://com.apple.documentation/documentation/uikit/uitableview/1614937-registernib
-    registerNib_forCellReuseIdentifier(nib: UINib, identifier: string | NSString):void;
+    registerNib_forCellReuseIdentifier(nib: UINib, identifier: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uitableview/1614888-registerclass
-    registerClass_forCellReuseIdentifier(cellClass: Class, identifier: string | NSString):void;
+    registerClass_forCellReuseIdentifier(cellClass: Class, identifier: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uitableview/1614878-dequeuereusablecellwithidentifie
-    dequeueReusableCellWithIdentifier_forIndexPath(identifier: string | NSString, indexPath: NSIndexPath):UITableViewCell;
+    dequeueReusableCellWithIdentifier_forIndexPath(identifier: string | cocoascript.NSString, indexPath: NSIndexPath):UITableViewCell;
     // doc://com.apple.documentation/documentation/uikit/uitableview/1614891-dequeuereusablecellwithidentifie
-    dequeueReusableCellWithIdentifier(identifier: string | NSString):UITableViewCell;
+    dequeueReusableCellWithIdentifier(identifier: string | cocoascript.NSString):UITableViewCell;
     // doc://com.apple.documentation/documentation/uikit/uitableview/1614921-registernib
-    registerNib_forHeaderFooterViewReuseIdentifier(nib: UINib, identifier: string | NSString):void;
+    registerNib_forHeaderFooterViewReuseIdentifier(nib: UINib, identifier: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uitableview/1614964-registerclass
-    registerClass_forHeaderFooterViewReuseIdentifier(aClass: Class, identifier: string | NSString):void;
+    registerClass_forHeaderFooterViewReuseIdentifier(aClass: Class, identifier: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uitableview/1614975-dequeuereusableheaderfootervieww
-    dequeueReusableHeaderFooterViewWithIdentifier(identifier: string | NSString):UITableViewHeaderFooterView;
+    dequeueReusableHeaderFooterViewWithIdentifier(identifier: string | cocoascript.NSString):UITableViewHeaderFooterView;
     // doc://com.apple.documentation/documentation/uikit/uitableview/1614894-delegate
     delegate(): UITableViewDelegate;
     setDelegate(): void;
@@ -12321,7 +12321,7 @@ declare namespace cocoascript {
 
 declare const UITableView: cocoascript.UITableView;
 // doc://com.apple.documentation/documentation/uikit/uitableviewindexsearch
-declare const UITableViewIndexSearch: string | NSString;
+declare const UITableViewIndexSearch: string | cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An abstract base class for generating layout information for a collection view.
@@ -12350,9 +12350,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617788-layoutattributesforinteractively
     layoutAttributesForInteractivelyMovingItemAtIndexPath_withTargetPosition(indexPath: NSIndexPath, position: CGPoint):UICollectionViewLayoutAttributes;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617792-layoutattributesforsupplementary
-    layoutAttributesForSupplementaryViewOfKind_atIndexPath(elementKind: string | NSString, indexPath: NSIndexPath):UICollectionViewLayoutAttributes;
+    layoutAttributesForSupplementaryViewOfKind_atIndexPath(elementKind: string | cocoascript.NSString, indexPath: NSIndexPath):UICollectionViewLayoutAttributes;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617809-layoutattributesfordecorationvie
-    layoutAttributesForDecorationViewOfKind_atIndexPath(elementKind: string | NSString, indexPath: NSIndexPath):UICollectionViewLayoutAttributes;
+    layoutAttributesForDecorationViewOfKind_atIndexPath(elementKind: string | cocoascript.NSString, indexPath: NSIndexPath):UICollectionViewLayoutAttributes;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617724-targetcontentoffsetforproposedco
     targetContentOffsetForProposedContentOffset(proposedContentOffset: CGPoint):CGPoint;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617729-targetcontentoffsetforproposedco
@@ -12362,25 +12362,25 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617787-finalizecollectionviewupdates
     finalizeCollectionViewUpdates():void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617770-indexpathstoinsertforsupplementa
-    indexPathsToInsertForSupplementaryViewOfKind(elementKind: string | NSString):NSIndexPath;
+    indexPathsToInsertForSupplementaryViewOfKind(elementKind: string | cocoascript.NSString):NSIndexPath;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617750-indexpathstoinsertfordecorationv
-    indexPathsToInsertForDecorationViewOfKind(elementKind: string | NSString):NSIndexPath;
+    indexPathsToInsertForDecorationViewOfKind(elementKind: string | cocoascript.NSString):NSIndexPath;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617789-initiallayoutattributesforappear
     initialLayoutAttributesForAppearingItemAtIndexPath(itemIndexPath: NSIndexPath):UICollectionViewLayoutAttributes;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617737-initiallayoutattributesforappear
-    initialLayoutAttributesForAppearingSupplementaryElementOfKind_atIndexPath(elementKind: string | NSString, elementIndexPath: NSIndexPath):UICollectionViewLayoutAttributes;
+    initialLayoutAttributesForAppearingSupplementaryElementOfKind_atIndexPath(elementKind: string | cocoascript.NSString, elementIndexPath: NSIndexPath):UICollectionViewLayoutAttributes;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617726-initiallayoutattributesforappear
-    initialLayoutAttributesForAppearingDecorationElementOfKind_atIndexPath(elementKind: string | NSString, decorationIndexPath: NSIndexPath):UICollectionViewLayoutAttributes;
+    initialLayoutAttributesForAppearingDecorationElementOfKind_atIndexPath(elementKind: string | cocoascript.NSString, decorationIndexPath: NSIndexPath):UICollectionViewLayoutAttributes;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617807-indexpathstodeleteforsupplementa
-    indexPathsToDeleteForSupplementaryViewOfKind(elementKind: string | NSString):NSIndexPath;
+    indexPathsToDeleteForSupplementaryViewOfKind(elementKind: string | cocoascript.NSString):NSIndexPath;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617730-indexpathstodeletefordecorationv
-    indexPathsToDeleteForDecorationViewOfKind(elementKind: string | NSString):NSIndexPath;
+    indexPathsToDeleteForDecorationViewOfKind(elementKind: string | cocoascript.NSString):NSIndexPath;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617740-finallayoutattributesfordisappea
     finalLayoutAttributesForDisappearingItemAtIndexPath(itemIndexPath: NSIndexPath):UICollectionViewLayoutAttributes;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617742-finallayoutattributesfordisappea
-    finalLayoutAttributesForDisappearingSupplementaryElementOfKind_atIndexPath(elementKind: string | NSString, elementIndexPath: NSIndexPath):UICollectionViewLayoutAttributes;
+    finalLayoutAttributesForDisappearingSupplementaryElementOfKind_atIndexPath(elementKind: string | cocoascript.NSString, elementIndexPath: NSIndexPath):UICollectionViewLayoutAttributes;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617762-finallayoutattributesfordisappea
-    finalLayoutAttributesForDisappearingDecorationElementOfKind_atIndexPath(elementKind: string | NSString, decorationIndexPath: NSIndexPath):UICollectionViewLayoutAttributes;
+    finalLayoutAttributesForDisappearingDecorationElementOfKind_atIndexPath(elementKind: string | cocoascript.NSString, decorationIndexPath: NSIndexPath):UICollectionViewLayoutAttributes;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617778-targetindexpathforinteractivelym
     targetIndexPathForInteractivelyMovingItem_withPosition(previousIndexPath: NSIndexPath, position: CGPoint):NSIndexPath;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617728-invalidatelayout
@@ -12413,9 +12413,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617794-finalizelayouttransition
     finalizeLayoutTransition():void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617739-registerclass
-    registerClass_forDecorationViewOfKind(viewClass: Class, elementKind: string | NSString):void;
+    registerClass_forDecorationViewOfKind(viewClass: Class, elementKind: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/1617732-registernib
-    registerNib_forDecorationViewOfKind(nib: UINib, elementKind: string | NSString):void;
+    registerNib_forDecorationViewOfKind(nib: UINib, elementKind: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayout/2891100-developmentlayoutdirection
     developmentLayoutDirection(): UIUserInterfaceLayoutDirection;
     setDevelopmentLayoutDirection(): void;
@@ -12488,11 +12488,11 @@ declare namespace cocoascript {
    */
   interface UITableViewCell extends UIView {
     // doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623276-initwithstyle
-    initWithStyle_reuseIdentifier(style: UITableViewCellStyle, reuseIdentifier: string | NSString):UITableViewCell;
+    initWithStyle_reuseIdentifier(style: UITableViewCellStyle, reuseIdentifier: string | cocoascript.NSString):UITableViewCell;
     // doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623220-initwithcoder
     initWithCoder(coder: NSCoder):UITableViewCell;
     // doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623246-reuseidentifier
-    reuseIdentifier(): string | NSString;
+    reuseIdentifier(): string | cocoascript.NSString;
     setReuseIdentifier(): void;
     // doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623223-prepareforreuse
     prepareForReuse():void;
@@ -12602,9 +12602,9 @@ declare namespace cocoascript {
     focusStyle(): UITableViewCellFocusStyle;
     setFocusStyle(): void;
     // doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623218-initwithframe
-    initWithFrame_reuseIdentifier(frame: CGRect, reuseIdentifier: string | NSString):UITableViewCell;
+    initWithFrame_reuseIdentifier(frame: CGRect, reuseIdentifier: string | cocoascript.NSString):UITableViewCell;
     // doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623237-text
-    text(): string | NSString;
+    text(): string | cocoascript.NSString;
     setText(): void;
     // doc://com.apple.documentation/documentation/uikit/uitableviewcell/1623236-font
     font(): UIFont;
@@ -12684,9 +12684,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614861-tableview
     tableView_cellForRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):UITableViewCell;
     // doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614850-tableview
-    tableView_titleForHeaderInSection(tableView: UITableView, section: NSInteger):string | NSString;
+    tableView_titleForHeaderInSection(tableView: UITableView, section: NSInteger):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614994-tableview
-    tableView_titleForFooterInSection(tableView: UITableView, section: NSInteger):string | NSString;
+    tableView_titleForFooterInSection(tableView: UITableView, section: NSInteger):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614871-tableview
     tableView_commitEditingStyle_forRowAtIndexPath(tableView: UITableView, editingStyle: UITableViewCellEditingStyle, indexPath: NSIndexPath):void;
     // doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614900-tableview
@@ -12696,9 +12696,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614867-tableview
     tableView_moveRowAtIndexPath_toIndexPath(tableView: UITableView, sourceIndexPath: NSIndexPath, destinationIndexPath: NSIndexPath):void;
     // doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614857-sectionindextitlesfortableview
-    sectionIndexTitlesForTableView(tableView: UITableView):string | NSString;
+    sectionIndexTitlesForTableView(tableView: UITableView):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uitableviewdatasource/1614933-tableview
-    tableView_sectionForSectionIndexTitle_atIndex(tableView: UITableView, title: string | NSString, index: NSInteger):NSInteger;
+    tableView_sectionForSectionIndexTitle_atIndex(tableView: UITableView, title: string | cocoascript.NSString, index: NSInteger):NSInteger;
   }
 }
 declare namespace cocoascript {
@@ -12755,10 +12755,10 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uilocalizedindexedcollation/1620382-sortedarrayfromarray
     sortedArrayFromArray_collationStringSelector(array: NSArray, selector: SEL):NSArray;
     // doc://com.apple.documentation/documentation/uikit/uilocalizedindexedcollation/1620379-sectiontitles
-    sectionTitles(): string | NSString;
+    sectionTitles(): string | cocoascript.NSString;
     setSectionTitles(): void;
     // doc://com.apple.documentation/documentation/uikit/uilocalizedindexedcollation/1620383-sectionindextitles
-    sectionIndexTitles(): string | NSString;
+    sectionIndexTitles(): string | cocoascript.NSString;
     setSectionIndexTitles(): void;
     // doc://com.apple.documentation/documentation/uikit/uilocalizedindexedcollation/1620380-sectionforsectionindextitleatind
     sectionForSectionIndexTitleAtIndex(indexTitleIndex: NSInteger):NSInteger;
@@ -12795,11 +12795,11 @@ declare namespace cocoascript {
    */
   interface UICommandAlternate extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uicommandalternate/3175315-alternatewithtitle
-    alternateWithTitle_action_modifierFlags(title: string | NSString, action: SEL, modifierFlags: UIKeyModifierFlags):UICommandAlternate;
+    alternateWithTitle_action_modifierFlags(title: string | cocoascript.NSString, action: SEL, modifierFlags: UIKeyModifierFlags):UICommandAlternate;
     // doc://com.apple.documentation/documentation/uikit/uicommandalternate/3175316-initwithcoder
     initWithCoder(coder: NSCoder):UICommandAlternate;
     // doc://com.apple.documentation/documentation/uikit/uicommandalternate/3175318-title
-    title(): string | NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uicommandalternate/3175314-action
     action(): SEL;
@@ -12906,7 +12906,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uipickerviewdelegate/1614378-pickerview
     pickerView_widthForComponent(pickerView: UIPickerView, component: NSInteger):CGFloat;
     // doc://com.apple.documentation/documentation/uikit/uipickerviewdelegate/1614384-pickerview
-    pickerView_titleForRow_forComponent(pickerView: UIPickerView, row: NSInteger, component: NSInteger):string | NSString;
+    pickerView_titleForRow_forComponent(pickerView: UIPickerView, row: NSInteger, component: NSInteger):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uipickerviewdelegate/1614375-pickerview
     pickerView_attributedTitleForRow_forComponent(pickerView: UIPickerView, row: NSInteger, component: NSInteger):NSAttributedString;
     // doc://com.apple.documentation/documentation/uikit/uipickerviewdelegate/1614389-pickerview
@@ -12966,9 +12966,9 @@ declare namespace cocoascript {
    */
   interface UISearchBarDelegate extends UIBarPositioningDelegate {
     // doc://com.apple.documentation/documentation/uikit/uisearchbardelegate/1624299-searchbar
-    searchBar_textDidChange(searchBar: UISearchBar, searchText: string | NSString):void;
+    searchBar_textDidChange(searchBar: UISearchBar, searchText: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uisearchbardelegate/1624328-searchbar
-    searchBar_shouldChangeTextInRange_replacementText(searchBar: UISearchBar, range: NSRange, text: string | NSString):BOOL;
+    searchBar_shouldChangeTextInRange_replacementText(searchBar: UISearchBar, range: NSRange, text: string | cocoascript.NSString):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uisearchbardelegate/1624306-searchbarshouldbeginediting
     searchBarShouldBeginEditing(searchBar: UISearchBar):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uisearchbardelegate/1624303-searchbartextdidbeginediting
@@ -13050,7 +13050,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619591-textfielddidendediting
     textFieldDidEndEditing(textField: UITextField):void;
     // doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619599-textfield
-    textField_shouldChangeCharactersInRange_replacementString(textField: UITextField, range: NSRange, string: string | NSString):BOOL;
+    textField_shouldChangeCharactersInRange_replacementString(textField: UITextField, range: NSRange, string: string | cocoascript.NSString):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619594-textfieldshouldclear
     textFieldShouldClear(textField: UITextField):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uitextfielddelegate/1619603-textfieldshouldreturn
@@ -13092,7 +13092,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uitextviewdelegate/1618628-textviewdidendediting
     textViewDidEndEditing(textView: UITextView):void;
     // doc://com.apple.documentation/documentation/uikit/uitextviewdelegate/1618630-textview
-    textView_shouldChangeTextInRange_replacementText(textView: UITextView, range: NSRange, text: string | NSString):BOOL;
+    textView_shouldChangeTextInRange_replacementText(textView: UITextView, range: NSRange, text: string | cocoascript.NSString):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uitextviewdelegate/1618599-textviewdidchange
     textViewDidChange(textView: UITextView):void;
     // doc://com.apple.documentation/documentation/uikit/uitextviewdelegate/1618620-textviewdidchangeselection
@@ -13532,11 +13532,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3238059-scene
     scene_openURLContexts(scene: UIScene, URLContexts: UIOpenURLContext):void;
     // doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3238060-scene
-    scene_willContinueUserActivityWithType(scene: UIScene, userActivityType: string | NSString):void;
+    scene_willContinueUserActivityWithType(scene: UIScene, userActivityType: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3238056-scene
     scene_continueUserActivity(scene: UIScene, userActivity: NSUserActivity):void;
     // doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3238057-scene
-    scene_didFailToContinueUserActivityWithType_error(scene: UIScene, userActivityType: string | NSString, error: NSError):void;
+    scene_didFailToContinueUserActivityWithType_error(scene: UIScene, userActivityType: string | cocoascript.NSString, error: NSError):void;
     // doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3238061-staterestorationactivityforscene
     stateRestorationActivityForScene(scene: UIScene):NSUserActivity;
     // doc://com.apple.documentation/documentation/uikit/uiscenedelegate/3238058-scene
@@ -13617,7 +13617,7 @@ declare namespace cocoascript {
     activationState(): UISceneActivationState;
     setActivationState(): void;
     // doc://com.apple.documentation/documentation/uikit/uiscene/3197912-title
-    title(): string | NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uiscene/3238055-activationconditions
     activationConditions(): UISceneActivationConditions;
@@ -13645,9 +13645,9 @@ declare namespace cocoascript {
    */
   interface UISceneConfiguration extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uisceneconfiguration/3197947-configurationwithname
-    configurationWithName_sessionRole(name: string | NSString, sessionRole: UISceneSessionRole):UISceneConfiguration;
+    configurationWithName_sessionRole(name: string | cocoascript.NSString, sessionRole: UISceneSessionRole):UISceneConfiguration;
     // doc://com.apple.documentation/documentation/uikit/uisceneconfiguration/3197949-initwithname
-    initWithName_sessionRole(name: string | NSString, sessionRole: UISceneSessionRole):UISceneConfiguration;
+    initWithName_sessionRole(name: string | cocoascript.NSString, sessionRole: UISceneSessionRole):UISceneConfiguration;
     // doc://com.apple.documentation/documentation/uikit/uisceneconfiguration/3197952-sceneclass
     sceneClass(): Class;
     setSceneClass(): void;
@@ -13658,7 +13658,7 @@ declare namespace cocoascript {
     storyboard(): UIStoryboard;
     setStoryboard(): void;
     // doc://com.apple.documentation/documentation/uikit/uisceneconfiguration/3197950-name
-    name(): string | NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/uikit/uisceneconfiguration/3197951-role
     role(): UISceneSessionRole;
@@ -13687,7 +13687,7 @@ declare namespace cocoascript {
     configuration(): UISceneConfiguration;
     setConfiguration(): void;
     // doc://com.apple.documentation/documentation/uikit/uiscenesession/3197956-persistentidentifier
-    persistentIdentifier(): string | NSString;
+    persistentIdentifier(): string | cocoascript.NSString;
     setPersistentIdentifier(): void;
     // doc://com.apple.documentation/documentation/uikit/uiscenesession/3197959-staterestorationactivity
     stateRestorationActivity(): NSUserActivity;
@@ -13892,19 +13892,19 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/3600423-dequeueconfiguredreusablecellwit
     dequeueConfiguredReusableCellWithRegistration_forIndexPath_item(registration: UICollectionViewCellRegistration, indexPath: NSIndexPath, item: UICollectionView):UICollectionViewCell;
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/1618089-registerclass
-    registerClass_forCellWithReuseIdentifier(cellClass: Class, identifier: string | NSString):void;
+    registerClass_forCellWithReuseIdentifier(cellClass: Class, identifier: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/1618083-registernib
-    registerNib_forCellWithReuseIdentifier(nib: UINib, identifier: string | NSString):void;
+    registerNib_forCellWithReuseIdentifier(nib: UINib, identifier: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/1618063-dequeuereusablecellwithreuseiden
-    dequeueReusableCellWithReuseIdentifier_forIndexPath(identifier: string | NSString, indexPath: NSIndexPath):UICollectionViewCell;
+    dequeueReusableCellWithReuseIdentifier_forIndexPath(identifier: string | cocoascript.NSString, indexPath: NSIndexPath):UICollectionViewCell;
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/3600424-dequeueconfiguredreusablesupplem
     dequeueConfiguredReusableSupplementaryViewWithRegistration_forIndexPath(registration: UICollectionViewSupplementaryRegistration, indexPath: NSIndexPath):UICollectionReusableView;
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/1618103-registerclass
-    registerClass_forSupplementaryViewOfKind_withReuseIdentifier(viewClass: Class, elementKind: string | NSString, identifier: string | NSString):void;
+    registerClass_forSupplementaryViewOfKind_withReuseIdentifier(viewClass: Class, elementKind: string | cocoascript.NSString, identifier: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/1618101-registernib
-    registerNib_forSupplementaryViewOfKind_withReuseIdentifier(nib: UINib, kind: string | NSString, identifier: string | NSString):void;
+    registerNib_forSupplementaryViewOfKind_withReuseIdentifier(nib: UINib, kind: string | cocoascript.NSString, identifier: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/1618068-dequeuereusablesupplementaryview
-    dequeueReusableSupplementaryViewOfKind_withReuseIdentifier_forIndexPath(elementKind: string | NSString, identifier: string | NSString, indexPath: NSIndexPath):UICollectionReusableView;
+    dequeueReusableSupplementaryViewOfKind_withReuseIdentifier_forIndexPath(elementKind: string | cocoascript.NSString, identifier: string | cocoascript.NSString, indexPath: NSIndexPath):UICollectionReusableView;
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/1618074-backgroundview
     backgroundView(): UIView;
     setBackgroundView(): void;
@@ -14002,15 +14002,15 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/1618088-cellforitematindexpath
     cellForItemAtIndexPath(indexPath: NSIndexPath):UICollectionViewCell;
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/1618034-indexpathsforvisiblesupplementar
-    indexPathsForVisibleSupplementaryElementsOfKind(elementKind: string | NSString):NSIndexPath;
+    indexPathsForVisibleSupplementaryElementsOfKind(elementKind: string | cocoascript.NSString):NSIndexPath;
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/1618041-supplementaryviewforelementkind
-    supplementaryViewForElementKind_atIndexPath(elementKind: string | NSString, indexPath: NSIndexPath):UICollectionReusableView;
+    supplementaryViewForElementKind_atIndexPath(elementKind: string | cocoascript.NSString, indexPath: NSIndexPath):UICollectionReusableView;
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/1618026-visiblesupplementaryviewsofkind
-    visibleSupplementaryViewsOfKind(elementKind: string | NSString):UICollectionReusableView;
+    visibleSupplementaryViewsOfKind(elementKind: string | cocoascript.NSString):UICollectionReusableView;
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/1618093-layoutattributesforitematindexpa
     layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath):UICollectionViewLayoutAttributes;
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/1618012-layoutattributesforsupplementary
-    layoutAttributesForSupplementaryElementOfKind_atIndexPath(kind: string | NSString, indexPath: NSIndexPath):UICollectionViewLayoutAttributes;
+    layoutAttributesForSupplementaryElementOfKind_atIndexPath(kind: string | cocoascript.NSString, indexPath: NSIndexPath):UICollectionViewLayoutAttributes;
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/1618046-scrolltoitematindexpath
     scrollToItemAtIndexPath_atScrollPosition_animated(indexPath: NSIndexPath, scrollPosition: UICollectionViewScrollPosition, animated: BOOL):void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionview/1618045-performbatchupdates
@@ -14036,9 +14036,9 @@ declare namespace cocoascript {
 
 declare const UICollectionView: cocoascript.UICollectionView;
 // doc://com.apple.documentation/documentation/uikit/uicollectionelementkindsectionfooter
-declare const UICollectionElementKindSectionFooter: string | NSString;
+declare const UICollectionElementKindSectionFooter: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/uikit/uicollectionelementkindsectionheader
-declare const UICollectionElementKindSectionHeader: string | NSString;
+declare const UICollectionElementKindSectionHeader: string | cocoascript.NSString;
 // doc://com.apple.documentation/documentation/uikit/uipasteboardnamegeneral
 declare const UIPasteboardNameGeneral: UIPasteboardName;
 // doc://com.apple.documentation/documentation/uikit/uipasteboardoptionlocalonly
@@ -14369,7 +14369,7 @@ declare namespace cocoascript {
    */
   interface UIVideoEditorControllerDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uivideoeditorcontrollerdelegate/1622336-videoeditorcontroller
-    videoEditorController_didSaveEditedVideoToPath(editor: UIVideoEditorController, editedVideoPath: string | NSString):void;
+    videoEditorController_didSaveEditedVideoToPath(editor: UIVideoEditorController, editedVideoPath: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uivideoeditorcontrollerdelegate/1622335-videoeditorcontrollerdidcancel
     videoEditorControllerDidCancel(editor: UIVideoEditorController):void;
     // doc://com.apple.documentation/documentation/uikit/uivideoeditorcontrollerdelegate/1622342-videoeditorcontroller
@@ -14467,9 +14467,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uidocumentinteractioncontrollerdelegate/1616826-documentinteractioncontrollerdid
     documentInteractionControllerDidDismissOpenInMenu(controller: UIDocumentInteractionController):void;
     // doc://com.apple.documentation/documentation/uikit/uidocumentinteractioncontrollerdelegate/1616825-documentinteractioncontroller
-    documentInteractionController_willBeginSendingToApplication(controller: UIDocumentInteractionController, application: string | NSString):void;
+    documentInteractionController_willBeginSendingToApplication(controller: UIDocumentInteractionController, application: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uidocumentinteractioncontrollerdelegate/1616824-documentinteractioncontroller
-    documentInteractionController_didEndSendingToApplication(controller: UIDocumentInteractionController, application: string | NSString):void;
+    documentInteractionController_didEndSendingToApplication(controller: UIDocumentInteractionController, application: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uidocumentinteractioncontrollerdelegate/1616800-documentinteractioncontroller
     documentInteractionController_canPerformAction(controller: UIDocumentInteractionController, action: SEL):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uidocumentinteractioncontrollerdelegate/1616823-documentinteractioncontroller
@@ -14505,10 +14505,10 @@ declare namespace cocoascript {
    */
   interface NSCollectionLayoutVisibleItem extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/nscollectionlayoutvisibleitem/3199122-name
-    name(): string | NSString;
+    name(): string | cocoascript.NSString;
     setName(): void;
     // doc://com.apple.documentation/documentation/uikit/nscollectionlayoutvisibleitem/3199124-representedelementkind
-    representedElementKind(): string | NSString;
+    representedElementKind(): string | cocoascript.NSString;
     setRepresentedElementKind(): void;
     // doc://com.apple.documentation/documentation/uikit/nscollectionlayoutvisibleitem/3199123-representedelementcategory
     representedElementCategory(): UICollectionElementCategory;
@@ -14707,15 +14707,15 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasource/1618029-collectionview
     collectionView_cellForItemAtIndexPath(collectionView: UICollectionView, indexPath: NSIndexPath):UICollectionViewCell;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasource/1618037-collectionview
-    collectionView_viewForSupplementaryElementOfKind_atIndexPath(collectionView: UICollectionView, kind: string | NSString, indexPath: NSIndexPath):UICollectionReusableView;
+    collectionView_viewForSupplementaryElementOfKind_atIndexPath(collectionView: UICollectionView, kind: string | cocoascript.NSString, indexPath: NSIndexPath):UICollectionReusableView;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasource/1618015-collectionview
     collectionView_canMoveItemAtIndexPath(collectionView: UICollectionView, indexPath: NSIndexPath):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasource/1618064-collectionview
     collectionView_moveItemAtIndexPath_toIndexPath(collectionView: UICollectionView, sourceIndexPath: NSIndexPath, destinationIndexPath: NSIndexPath):void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasource/2851455-indextitlesforcollectionview
-    indexTitlesForCollectionView(collectionView: UICollectionView):string | NSString;
+    indexTitlesForCollectionView(collectionView: UICollectionView):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewdatasource/2851456-collectionview
-    collectionView_indexPathForIndexTitle_atIndex(collectionView: UICollectionView, title: string | NSString, index: NSInteger):NSIndexPath;
+    collectionView_indexPathForIndexTitle_atIndex(collectionView: UICollectionView, title: string | cocoascript.NSString, index: NSInteger):NSIndexPath;
   }
 }
 declare namespace cocoascript {
@@ -14796,9 +14796,9 @@ declare namespace cocoascript {
    */
   interface UICloudSharingControllerDelegate extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uicloudsharingcontrollerdelegate/2274280-itemtitleforcloudsharingcontroll
-    itemTitleForCloudSharingController(csc: UICloudSharingController):string | NSString;
+    itemTitleForCloudSharingController(csc: UICloudSharingController):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uicloudsharingcontrollerdelegate/2274281-itemtypeforcloudsharingcontrolle
-    itemTypeForCloudSharingController(csc: UICloudSharingController):string | NSString;
+    itemTypeForCloudSharingController(csc: UICloudSharingController):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uicloudsharingcontrollerdelegate/2274282-itemthumbnaildataforcloudsharing
     itemThumbnailDataForCloudSharingController(csc: UICloudSharingController):NSData;
     // doc://com.apple.documentation/documentation/uikit/uicloudsharingcontrollerdelegate/1649606-cloudsharingcontroller
@@ -14913,7 +14913,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614869-tableview
     tableView_editingStyleForRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):UITableViewCellEditingStyle;
     // doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614970-tableview
-    tableView_titleForDeleteConfirmationButtonForRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):string | NSString;
+    tableView_titleForDeleteConfirmationButtonForRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):string | cocoascript.NSString;
     // doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614873-tableview
     tableView_shouldIndentWhileEditingRowAtIndexPath(tableView: UITableView, indexPath: NSIndexPath):BOOL;
     // doc://com.apple.documentation/documentation/uikit/uitableviewdelegate/1614953-tableview
@@ -15106,7 +15106,7 @@ declare namespace cocoascript {
     defaultAttributes(): id;
     setDefaultAttributes(): void;
     // doc://com.apple.documentation/documentation/uikit/uitextpasteitem/2887487-setstringresult
-    setStringResult(string: string | NSString):void;
+    setStringResult(string: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uitextpasteitem/2887482-setattributedstringresult
     setAttributedStringResult(string: NSAttributedString):void;
     // doc://com.apple.documentation/documentation/uikit/uitextpasteitem/2887484-setattachmentresult
@@ -15286,10 +15286,10 @@ declare namespace cocoascript {
    */
   interface UISearchSuggestion extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uisearchsuggestion/3584826-localizedsuggestion
-    localizedSuggestion(): string | NSString;
+    localizedSuggestion(): string | cocoascript.NSString;
     setLocalizedSuggestion(): void;
     // doc://com.apple.documentation/documentation/uikit/uisearchsuggestion/3584825-localizeddescription
-    localizedDescription(): string | NSString;
+    localizedDescription(): string | cocoascript.NSString;
     setLocalizedDescription(): void;
     // doc://com.apple.documentation/documentation/uikit/uisearchsuggestion/3584824-iconimage
     iconImage(): UIImage;
@@ -15303,12 +15303,12 @@ declare namespace cocoascript {
    */
   interface UITableViewRowAction extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uitableviewrowaction/1614893-rowactionwithstyle
-    rowActionWithStyle_title_handler(style: UITableViewRowActionStyle, title: string | NSString, handler: NSIndexPath):UITableViewRowAction;
+    rowActionWithStyle_title_handler(style: UITableViewRowActionStyle, title: string | cocoascript.NSString, handler: NSIndexPath):UITableViewRowAction;
     // doc://com.apple.documentation/documentation/uikit/uitableviewrowaction/1614887-style
     style(): UITableViewRowActionStyle;
     setStyle(): void;
     // doc://com.apple.documentation/documentation/uikit/uitableviewrowaction/1614993-title
-    title(): string | NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uitableviewrowaction/1614995-backgroundcolor
     backgroundColor(): UIColor;
@@ -15333,9 +15333,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayoutattributes/1617759-layoutattributesforcellwithindex
     layoutAttributesForCellWithIndexPath(indexPath: NSIndexPath):UICollectionViewLayoutAttributes;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayoutattributes/1617801-layoutattributesforsupplementary
-    layoutAttributesForSupplementaryViewOfKind_withIndexPath(elementKind: string | NSString, indexPath: NSIndexPath):UICollectionViewLayoutAttributes;
+    layoutAttributesForSupplementaryViewOfKind_withIndexPath(elementKind: string | cocoascript.NSString, indexPath: NSIndexPath):UICollectionViewLayoutAttributes;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayoutattributes/1617786-layoutattributesfordecorationvie
-    layoutAttributesForDecorationViewOfKind_withIndexPath(decorationViewKind: string | NSString, indexPath: NSIndexPath):UICollectionViewLayoutAttributes;
+    layoutAttributesForDecorationViewOfKind_withIndexPath(decorationViewKind: string | cocoascript.NSString, indexPath: NSIndexPath):UICollectionViewLayoutAttributes;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayoutattributes/1617776-indexpath
     indexPath(): NSIndexPath;
     setIndexPath(): void;
@@ -15343,7 +15343,7 @@ declare namespace cocoascript {
     representedElementCategory(): UICollectionElementCategory;
     setRepresentedElementCategory(): void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayoutattributes/1617806-representedelementkind
-    representedElementKind(): string | NSString;
+    representedElementKind(): string | cocoascript.NSString;
     setRepresentedElementKind(): void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayoutattributes/1617753-frame
     frame(): CGRect;
@@ -15413,9 +15413,9 @@ declare namespace cocoascript {
    */
   interface UITextInputPasswordRules extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uitextinputpasswordrules/2980933-passwordruleswithdescriptor
-    passwordRulesWithDescriptor(passwordRulesDescriptor: string | NSString):UITextInputPasswordRules;
+    passwordRulesWithDescriptor(passwordRulesDescriptor: string | cocoascript.NSString):UITextInputPasswordRules;
     // doc://com.apple.documentation/documentation/uikit/uitextinputpasswordrules/2980932-passwordrulesdescriptor
-    passwordRulesDescriptor(): string | NSString;
+    passwordRulesDescriptor(): string | cocoascript.NSString;
     setPasswordRulesDescriptor(): void;
     //
     alloc():UITextInputPasswordRules;
@@ -15464,9 +15464,9 @@ declare namespace cocoascript {
    */
   interface NSCollectionLayoutBoundarySupplementaryItem extends NSCollectionLayoutSupplementaryItem {
     // doc://com.apple.documentation/documentation/uikit/nscollectionlayoutboundarysupplementaryitem/3213819-boundarysupplementaryitemwithlay
-    boundarySupplementaryItemWithLayoutSize_elementKind_alignment(layoutSize: NSCollectionLayoutSize, elementKind: string | NSString, alignment: NSRectAlignment):NSCollectionLayoutBoundarySupplementaryItem;
+    boundarySupplementaryItemWithLayoutSize_elementKind_alignment(layoutSize: NSCollectionLayoutSize, elementKind: string | cocoascript.NSString, alignment: NSRectAlignment):NSCollectionLayoutBoundarySupplementaryItem;
     // doc://com.apple.documentation/documentation/uikit/nscollectionlayoutboundarysupplementaryitem/3213820-boundarysupplementaryitemwithlay
-    boundarySupplementaryItemWithLayoutSize_elementKind_alignment_absoluteOffset(layoutSize: NSCollectionLayoutSize, elementKind: string | NSString, alignment: NSRectAlignment, absoluteOffset: CGPoint):NSCollectionLayoutBoundarySupplementaryItem;
+    boundarySupplementaryItemWithLayoutSize_elementKind_alignment_absoluteOffset(layoutSize: NSCollectionLayoutSize, elementKind: string | cocoascript.NSString, alignment: NSRectAlignment, absoluteOffset: CGPoint):NSCollectionLayoutBoundarySupplementaryItem;
     // doc://com.apple.documentation/documentation/uikit/nscollectionlayoutboundarysupplementaryitem/3199044-pintovisiblebounds
     pinToVisibleBounds(): BOOL;
     setPinToVisibleBounds(): void;
@@ -15494,9 +15494,9 @@ declare namespace cocoascript {
    */
   interface NSCollectionLayoutDecorationItem extends NSCollectionLayoutItem {
     // doc://com.apple.documentation/documentation/uikit/nscollectionlayoutdecorationitem/3199051-backgrounddecorationitemwithelem
-    backgroundDecorationItemWithElementKind(elementKind: string | NSString):NSCollectionLayoutDecorationItem;
+    backgroundDecorationItemWithElementKind(elementKind: string | cocoascript.NSString):NSCollectionLayoutDecorationItem;
     // doc://com.apple.documentation/documentation/uikit/nscollectionlayoutdecorationitem/3213831-elementkind
-    elementKind(): string | NSString;
+    elementKind(): string | cocoascript.NSString;
     setElementKind(): void;
     // doc://com.apple.documentation/documentation/uikit/nscollectionlayoutdecorationitem/3199053-zindex
     zIndex(): NSInteger;
@@ -15600,7 +15600,7 @@ declare namespace cocoascript {
     interItemSpacing(): NSCollectionLayoutSpacing;
     setInterItemSpacing(): void;
     // doc://com.apple.documentation/documentation/uikit/nscollectionlayoutgroup/3199082-visualdescription
-    visualDescription():string | NSString;
+    visualDescription():string | cocoascript.NSString;
     //
     alloc():NSCollectionLayoutGroup;
     //
@@ -15761,9 +15761,9 @@ declare namespace cocoascript {
    */
   interface NSCollectionLayoutSupplementaryItem extends NSCollectionLayoutItem {
     // doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsupplementaryitem/3213899-supplementaryitemwithlayoutsize
-    supplementaryItemWithLayoutSize_elementKind_containerAnchor(layoutSize: NSCollectionLayoutSize, elementKind: string | NSString, containerAnchor: NSCollectionLayoutAnchor):NSCollectionLayoutSupplementaryItem;
+    supplementaryItemWithLayoutSize_elementKind_containerAnchor(layoutSize: NSCollectionLayoutSize, elementKind: string | cocoascript.NSString, containerAnchor: NSCollectionLayoutAnchor):NSCollectionLayoutSupplementaryItem;
     // doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsupplementaryitem/3213900-supplementaryitemwithlayoutsize
-    supplementaryItemWithLayoutSize_elementKind_containerAnchor_itemAnchor(layoutSize: NSCollectionLayoutSize, elementKind: string | NSString, containerAnchor: NSCollectionLayoutAnchor, itemAnchor: NSCollectionLayoutAnchor):NSCollectionLayoutSupplementaryItem;
+    supplementaryItemWithLayoutSize_elementKind_containerAnchor_itemAnchor(layoutSize: NSCollectionLayoutSize, elementKind: string | cocoascript.NSString, containerAnchor: NSCollectionLayoutAnchor, itemAnchor: NSCollectionLayoutAnchor):NSCollectionLayoutSupplementaryItem;
     // doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsupplementaryitem/3199113-itemanchor
     itemAnchor(): NSCollectionLayoutAnchor;
     setItemAnchor(): void;
@@ -15771,7 +15771,7 @@ declare namespace cocoascript {
     containerAnchor(): NSCollectionLayoutAnchor;
     setContainerAnchor(): void;
     // doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsupplementaryitem/3199110-elementkind
-    elementKind(): string | NSString;
+    elementKind(): string | cocoascript.NSString;
     setElementKind(): void;
     // doc://com.apple.documentation/documentation/uikit/nscollectionlayoutsupplementaryitem/3199114-zindex
     zIndex(): NSInteger;
@@ -15870,7 +15870,7 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesectionsnapshot/3600295-expandeditems
     expandedItems():NSArray;
     // doc://com.apple.documentation/documentation/uikit/nsdiffabledatasourcesectionsnapshot/3600313-visualdescription
-    visualDescription():string | NSString;
+    visualDescription():string | cocoascript.NSString;
     //
     alloc():NSDiffableDataSourceSectionSnapshot;
     //
@@ -16349,13 +16349,13 @@ declare namespace cocoascript {
     image(): UIImage;
     setImage(): void;
     // doc://com.apple.documentation/documentation/uikit/uilistcontentconfiguration/3600546-text
-    text(): string | NSString;
+    text(): string | cocoascript.NSString;
     setText(): void;
     // doc://com.apple.documentation/documentation/uikit/uilistcontentconfiguration/3600527-attributedtext
     attributedText(): NSAttributedString;
     setAttributedText(): void;
     // doc://com.apple.documentation/documentation/uikit/uilistcontentconfiguration/3600540-secondarytext
-    secondaryText(): string | NSString;
+    secondaryText(): string | cocoascript.NSString;
     setSecondaryText(): void;
     // doc://com.apple.documentation/documentation/uikit/uilistcontentconfiguration/3600539-secondaryattributedtext
     secondaryAttributedText(): NSAttributedString;
@@ -16624,11 +16624,11 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/1618087-collectionview
     collectionView_willDisplayCell_forItemAtIndexPath(collectionView: UICollectionView, cell: UICollectionViewCell, indexPath: NSIndexPath):void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/1618062-collectionview
-    collectionView_willDisplaySupplementaryView_forElementKind_atIndexPath(collectionView: UICollectionView, view: UICollectionReusableView, elementKind: string | NSString, indexPath: NSIndexPath):void;
+    collectionView_willDisplaySupplementaryView_forElementKind_atIndexPath(collectionView: UICollectionView, view: UICollectionReusableView, elementKind: string | cocoascript.NSString, indexPath: NSIndexPath):void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/1618006-collectionview
     collectionView_didEndDisplayingCell_forItemAtIndexPath(collectionView: UICollectionView, cell: UICollectionViewCell, indexPath: NSIndexPath):void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/1618036-collectionview
-    collectionView_didEndDisplayingSupplementaryView_forElementOfKind_atIndexPath(collectionView: UICollectionView, view: UICollectionReusableView, elementKind: string | NSString, indexPath: NSIndexPath):void;
+    collectionView_didEndDisplayingSupplementaryView_forElementOfKind_atIndexPath(collectionView: UICollectionView, view: UICollectionReusableView, elementKind: string | cocoascript.NSString, indexPath: NSIndexPath):void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/1618100-collectionview
     collectionView_transitionLayoutForOldLayout_newLayout(collectionView: UICollectionView, fromLayout: UICollectionViewLayout, toLayout: UICollectionViewLayout):UICollectionViewTransitionLayout;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewdelegate/1618007-collectionview
@@ -16724,7 +16724,7 @@ declare namespace cocoascript {
    */
   interface UICollectionReusableView extends UIView {
     // doc://com.apple.documentation/documentation/uikit/uicollectionreusableview/1620136-reuseidentifier
-    reuseIdentifier(): string | NSString;
+    reuseIdentifier(): string | cocoascript.NSString;
     setReuseIdentifier(): void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionreusableview/1620141-prepareforreuse
     prepareForReuse():void;
@@ -16768,7 +16768,7 @@ declare namespace cocoascript {
    */
   interface UICollectionViewPlaceholder extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewplaceholder/2921639-initwithinsertionindexpath
-    initWithInsertionIndexPath_reuseIdentifier(insertionIndexPath: NSIndexPath, reuseIdentifier: string | NSString):UICollectionViewPlaceholder;
+    initWithInsertionIndexPath_reuseIdentifier(insertionIndexPath: NSIndexPath, reuseIdentifier: string | cocoascript.NSString):UICollectionViewPlaceholder;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewplaceholder/2921635-cellupdatehandler
     cellUpdateHandler(): UICollectionViewCell;
     setCellUpdateHandler(): void;
@@ -16807,11 +16807,11 @@ declare namespace cocoascript {
    */
   interface UITableViewHeaderFooterView extends UIView {
     // doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview/1624918-initwithreuseidentifier
-    initWithReuseIdentifier(reuseIdentifier: string | NSString):UITableViewHeaderFooterView;
+    initWithReuseIdentifier(reuseIdentifier: string | cocoascript.NSString):UITableViewHeaderFooterView;
     // doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview/1624917-initwithcoder
     initWithCoder(coder: NSCoder):UITableViewHeaderFooterView;
     // doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview/1624909-reuseidentifier
-    reuseIdentifier(): string | NSString;
+    reuseIdentifier(): string | cocoascript.NSString;
     setReuseIdentifier(): void;
     // doc://com.apple.documentation/documentation/uikit/uitableviewheaderfooterview/1624916-prepareforreuse
     prepareForReuse():void;
@@ -16885,9 +16885,9 @@ declare namespace cocoascript {
    */
   interface UIContextualAction extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uicontextualaction/2902340-contextualactionwithstyle
-    contextualActionWithStyle_title_handler(style: UIContextualActionStyle, title: string | NSString, handler: UIContextualActionHandler):UIContextualAction;
+    contextualActionWithStyle_title_handler(style: UIContextualActionStyle, title: string | cocoascript.NSString, handler: UIContextualActionHandler):UIContextualAction;
     // doc://com.apple.documentation/documentation/uikit/uicontextualaction/2902342-title
-    title(): string | NSString;
+    title(): string | cocoascript.NSString;
     setTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uicontextualaction/2902335-backgroundcolor
     backgroundColor(): UIColor;
@@ -16933,7 +16933,7 @@ declare namespace cocoascript {
    */
   interface UITableViewPlaceholder extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uitableviewplaceholder/2921666-initwithinsertionindexpath
-    initWithInsertionIndexPath_reuseIdentifier_rowHeight(insertionIndexPath: NSIndexPath, reuseIdentifier: string | NSString, rowHeight: CGFloat):UITableViewPlaceholder;
+    initWithInsertionIndexPath_reuseIdentifier_rowHeight(insertionIndexPath: NSIndexPath, reuseIdentifier: string | cocoascript.NSString, rowHeight: CGFloat):UITableViewPlaceholder;
     // doc://com.apple.documentation/documentation/uikit/uitableviewplaceholder/2921671-cellupdatehandler
     cellUpdateHandler(): UITableViewCell;
     setCellUpdateHandler(): void;
@@ -17288,22 +17288,22 @@ declare namespace cocoascript {
    */
   interface UISearchSuggestionItem extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uisearchsuggestionitem/3584831-initwithlocalizedsuggestion
-    initWithLocalizedSuggestion_localizedDescription_iconImage(suggestion: string | NSString, description: string | NSString, iconImage: UIImage):UISearchSuggestionItem;
+    initWithLocalizedSuggestion_localizedDescription_iconImage(suggestion: string | cocoascript.NSString, description: string | cocoascript.NSString, iconImage: UIImage):UISearchSuggestionItem;
     // doc://com.apple.documentation/documentation/uikit/uisearchsuggestionitem/3584836-suggestionwithlocalizedsuggestio
-    suggestionWithLocalizedSuggestion_descriptionString_iconImage(suggestion: string | NSString, description: string | NSString, iconImage: UIImage):UISearchSuggestionItem;
+    suggestionWithLocalizedSuggestion_descriptionString_iconImage(suggestion: string | cocoascript.NSString, description: string | cocoascript.NSString, iconImage: UIImage):UISearchSuggestionItem;
     // doc://com.apple.documentation/documentation/uikit/uisearchsuggestionitem/3584830-initwithlocalizedsuggestion
-    initWithLocalizedSuggestion_localizedDescription(suggestion: string | NSString, description: string | NSString):UISearchSuggestionItem;
+    initWithLocalizedSuggestion_localizedDescription(suggestion: string | cocoascript.NSString, description: string | cocoascript.NSString):UISearchSuggestionItem;
     // doc://com.apple.documentation/documentation/uikit/uisearchsuggestionitem/3584835-suggestionwithlocalizedsuggestio
-    suggestionWithLocalizedSuggestion_descriptionString(suggestion: string | NSString, description: string | NSString):UISearchSuggestionItem;
+    suggestionWithLocalizedSuggestion_descriptionString(suggestion: string | cocoascript.NSString, description: string | cocoascript.NSString):UISearchSuggestionItem;
     // doc://com.apple.documentation/documentation/uikit/uisearchsuggestionitem/3584829-initwithlocalizedsuggestion
-    initWithLocalizedSuggestion(suggestion: string | NSString):UISearchSuggestionItem;
+    initWithLocalizedSuggestion(suggestion: string | cocoascript.NSString):UISearchSuggestionItem;
     // doc://com.apple.documentation/documentation/uikit/uisearchsuggestionitem/3584834-suggestionwithlocalizedsuggestio
-    suggestionWithLocalizedSuggestion(suggestion: string | NSString):UISearchSuggestionItem;
+    suggestionWithLocalizedSuggestion(suggestion: string | cocoascript.NSString):UISearchSuggestionItem;
     // doc://com.apple.documentation/documentation/uikit/uisearchsuggestionitem/3584833-localizedsuggestion
-    localizedSuggestion(): string | NSString;
+    localizedSuggestion(): string | cocoascript.NSString;
     setLocalizedSuggestion(): void;
     // doc://com.apple.documentation/documentation/uikit/uisearchsuggestionitem/3584832-localizeddescription
-    localizedDescription(): string | NSString;
+    localizedDescription(): string | cocoascript.NSString;
     setLocalizedDescription(): void;
     // doc://com.apple.documentation/documentation/uikit/uisearchsuggestionitem/3584828-iconimage
     iconImage(): UIImage;
@@ -17343,21 +17343,21 @@ declare namespace cocoascript {
    */
   interface UIDocumentBrowserAction extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uidocumentbrowseraction/2874075-initwithidentifier
-    initWithIdentifier_localizedTitle_availability_handler(identifier: string | NSString, localizedTitle: string | NSString, availability: UIDocumentBrowserActionAvailability, handler: NSURL):UIDocumentBrowserAction;
+    initWithIdentifier_localizedTitle_availability_handler(identifier: string | cocoascript.NSString, localizedTitle: string | cocoascript.NSString, availability: UIDocumentBrowserActionAvailability, handler: NSURL):UIDocumentBrowserAction;
     // doc://com.apple.documentation/documentation/uikit/uidocumentbrowseraction/2874076-image
     image(): UIImage;
     setImage(): void;
     // doc://com.apple.documentation/documentation/uikit/uidocumentbrowseraction/2874070-supportedcontenttypes
-    supportedContentTypes(): string | NSString;
+    supportedContentTypes(): string | cocoascript.NSString;
     setSupportedContentTypes(): void;
     // doc://com.apple.documentation/documentation/uikit/uidocumentbrowseraction/2874074-supportsmultipleitems
     supportsMultipleItems(): BOOL;
     setSupportsMultipleItems(): void;
     // doc://com.apple.documentation/documentation/uikit/uidocumentbrowseraction/2874069-identifier
-    identifier(): string | NSString;
+    identifier(): string | cocoascript.NSString;
     setIdentifier(): void;
     // doc://com.apple.documentation/documentation/uikit/uidocumentbrowseraction/2874071-localizedtitle
-    localizedTitle(): string | NSString;
+    localizedTitle(): string | cocoascript.NSString;
     setLocalizedTitle(): void;
     // doc://com.apple.documentation/documentation/uikit/uidocumentbrowseraction/2874078-availability
     availability(): UIDocumentBrowserActionAvailability;
@@ -17667,9 +17667,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621204-layoutattributesforcellatindexpa
     layoutAttributesForCellAtIndexPath(indexPath: NSIndexPath):UICollectionViewLayoutAttributes;
     // doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621195-layoutattributesfordecorationvie
-    layoutAttributesForDecorationViewOfKind_atIndexPath(decorationViewKind: string | NSString, indexPath: NSIndexPath):UICollectionViewLayoutAttributes;
+    layoutAttributesForDecorationViewOfKind_atIndexPath(decorationViewKind: string | cocoascript.NSString, indexPath: NSIndexPath):UICollectionViewLayoutAttributes;
     // doc://com.apple.documentation/documentation/uikit/uidynamicanimator/1621186-layoutattributesforsupplementary
-    layoutAttributesForSupplementaryViewOfKind_atIndexPath(kind: string | NSString, indexPath: NSIndexPath):UICollectionViewLayoutAttributes;
+    layoutAttributesForSupplementaryViewOfKind_atIndexPath(kind: string | cocoascript.NSString, indexPath: NSIndexPath):UICollectionViewLayoutAttributes;
     //
     alloc():UIDynamicAnimator;
     //
@@ -18019,11 +18019,11 @@ declare namespace cocoascript {
    */
   interface UIInterpolatingMotionEffect extends UIMotionEffect {
     // doc://com.apple.documentation/documentation/uikit/uiinterpolatingmotioneffect/1622372-initwithkeypath
-    initWithKeyPath_type(keyPath: string | NSString, type: UIInterpolatingMotionEffectType):UIInterpolatingMotionEffect;
+    initWithKeyPath_type(keyPath: string | cocoascript.NSString, type: UIInterpolatingMotionEffectType):UIInterpolatingMotionEffect;
     // doc://com.apple.documentation/documentation/uikit/uiinterpolatingmotioneffect/1622368-initwithcoder
     initWithCoder(coder: NSCoder):UIInterpolatingMotionEffect;
     // doc://com.apple.documentation/documentation/uikit/uiinterpolatingmotioneffect/1622378-keypath
-    keyPath(): string | NSString;
+    keyPath(): string | cocoascript.NSString;
     setKeyPath(): void;
     // doc://com.apple.documentation/documentation/uikit/uiinterpolatingmotioneffect/1622377-type
     type(): UIInterpolatingMotionEffectType;
@@ -18508,9 +18508,9 @@ declare namespace cocoascript {
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayoutinvalidationcontext/1617795-invalidateitemsatindexpaths
     invalidateItemsAtIndexPaths(indexPaths: NSIndexPath):void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayoutinvalidationcontext/1617747-invalidatesupplementaryelementso
-    invalidateSupplementaryElementsOfKind_atIndexPaths(elementKind: string | NSString, indexPaths: NSIndexPath):void;
+    invalidateSupplementaryElementsOfKind_atIndexPaths(elementKind: string | cocoascript.NSString, indexPaths: NSIndexPath):void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayoutinvalidationcontext/1617736-invalidatedecorationelementsofki
-    invalidateDecorationElementsOfKind_atIndexPaths(elementKind: string | NSString, indexPaths: NSIndexPath):void;
+    invalidateDecorationElementsOfKind_atIndexPaths(elementKind: string | cocoascript.NSString, indexPaths: NSIndexPath):void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewlayoutinvalidationcontext/1617723-invalidateditemindexpaths
     invalidatedItemIndexPaths(): NSIndexPath;
     setInvalidatedItemIndexPaths(): void;
@@ -18625,9 +18625,9 @@ declare namespace cocoascript {
     transitionProgress(): CGFloat;
     setTransitionProgress(): void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewtransitionlayout/1622194-updatevalue
-    updateValue_forAnimatedKey(value: CGFloat, key: string | NSString):void;
+    updateValue_forAnimatedKey(value: CGFloat, key: string | cocoascript.NSString):void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewtransitionlayout/1622193-valueforanimatedkey
-    valueForAnimatedKey(key: string | NSString):CGFloat;
+    valueForAnimatedKey(key: string | cocoascript.NSString):CGFloat;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewtransitionlayout/1622190-currentlayout
     currentLayout(): UICollectionViewLayout;
     setCurrentLayout(): void;
@@ -18888,7 +18888,7 @@ declare namespace cocoascript {
     URLContexts(): UIOpenURLContext;
     setURLContexts(): void;
     // doc://com.apple.documentation/documentation/uikit/uisceneconnectionoptions/3238070-handoffuseractivitytype
-    handoffUserActivityType(): string | NSString;
+    handoffUserActivityType(): string | cocoascript.NSString;
     setHandoffUserActivityType(): void;
     // doc://com.apple.documentation/documentation/uikit/uisceneconnectionoptions/3238069-cloudkitsharemetadata
     cloudKitShareMetadata(): CKShareMetadata;
@@ -18897,7 +18897,7 @@ declare namespace cocoascript {
     notificationResponse(): UNNotificationResponse;
     setNotificationResponse(): void;
     // doc://com.apple.documentation/documentation/uikit/uisceneconnectionoptions/3238073-sourceapplication
-    sourceApplication(): string | NSString;
+    sourceApplication(): string | cocoascript.NSString;
     setSourceApplication(): void;
     //
     alloc():UISceneConnectionOptions;
@@ -18970,7 +18970,7 @@ declare namespace cocoascript {
    */
   interface UISceneOpenURLOptions extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uisceneopenurloptions/3197945-sourceapplication
-    sourceApplication(): string | NSString;
+    sourceApplication(): string | cocoascript.NSString;
     setSourceApplication(): void;
     // doc://com.apple.documentation/documentation/uikit/uisceneopenurloptions/3197943-annotation
     annotation(): id;
@@ -19020,14 +19020,14 @@ declare namespace cocoascript {
    */
   interface UICollectionViewSupplementaryRegistration extends NSObject {
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewsupplementaryregistration/3600452-registrationwithsupplementarycla
-    registrationWithSupplementaryClass_elementKind_configurationHandler(supplementaryClass: Class, elementKind: string | NSString, configurationHandler: UICollectionViewSupplementaryRegistrationConfigurationHandler):UICollectionViewSupplementaryRegistration;
+    registrationWithSupplementaryClass_elementKind_configurationHandler(supplementaryClass: Class, elementKind: string | cocoascript.NSString, configurationHandler: UICollectionViewSupplementaryRegistrationConfigurationHandler):UICollectionViewSupplementaryRegistration;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewsupplementaryregistration/3600453-registrationwithsupplementarynib
-    registrationWithSupplementaryNib_elementKind_configurationHandler(supplementaryNib: UINib, elementKind: string | NSString, configurationHandler: UICollectionViewSupplementaryRegistrationConfigurationHandler):UICollectionViewSupplementaryRegistration;
+    registrationWithSupplementaryNib_elementKind_configurationHandler(supplementaryNib: UINib, elementKind: string | cocoascript.NSString, configurationHandler: UICollectionViewSupplementaryRegistrationConfigurationHandler):UICollectionViewSupplementaryRegistration;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewsupplementaryregistration/3600450-configurationhandler
     configurationHandler(): UICollectionViewSupplementaryRegistrationConfigurationHandler;
     setConfigurationHandler(): void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewsupplementaryregistration/3600451-elementkind
-    elementKind(): string | NSString;
+    elementKind(): string | cocoascript.NSString;
     setElementKind(): void;
     // doc://com.apple.documentation/documentation/uikit/uicollectionviewsupplementaryregistration/3600454-supplementaryclass
     supplementaryClass(): Class;
@@ -19361,11 +19361,11 @@ declare namespace cocoascript {
    */
   interface UICellAccessoryLabel extends UICellAccessory {
     // doc://com.apple.documentation/documentation/uikit/uicellaccessorylabel/3600378-initwithtext
-    initWithText(text: string | NSString):UICellAccessoryLabel;
+    initWithText(text: string | cocoascript.NSString):UICellAccessoryLabel;
     // doc://com.apple.documentation/documentation/uikit/uicellaccessorylabel/3600377-initwithcoder
     initWithCoder(coder: NSCoder):UICellAccessoryLabel;
     // doc://com.apple.documentation/documentation/uikit/uicellaccessorylabel/3600379-text
-    text(): string | NSString;
+    text(): string | cocoascript.NSString;
     setText(): void;
     // doc://com.apple.documentation/documentation/uikit/uicellaccessorylabel/3600376-font
     font(): UIFont;
