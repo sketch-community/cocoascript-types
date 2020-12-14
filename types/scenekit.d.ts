@@ -292,7 +292,7 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/scenekit/scnerrordomain
-declare const SCNErrorDomain: string | cocoascript.NSString;
+declare const SCNErrorDomain: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * Methods you can implement to participate in the process of exporting a scene to a file.
@@ -1752,19 +1752,19 @@ declare namespace cocoascript {
 
 declare const SCNProgram: cocoascript.SCNProgram;
 // doc://com.apple.documentation/documentation/scenekit/scnprogrammappingchannelkey
-declare const SCNProgramMappingChannelKey: string | cocoascript.NSString;
+declare const SCNProgramMappingChannelKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/scenekit/scnmodeltransform
-declare const SCNModelTransform: string | cocoascript.NSString;
+declare const SCNModelTransform: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/scenekit/scnmodelviewprojectiontransform
-declare const SCNModelViewProjectionTransform: string | cocoascript.NSString;
+declare const SCNModelViewProjectionTransform: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/scenekit/scnmodelviewtransform
-declare const SCNModelViewTransform: string | cocoascript.NSString;
+declare const SCNModelViewTransform: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/scenekit/scnnormaltransform
-declare const SCNNormalTransform: string | cocoascript.NSString;
+declare const SCNNormalTransform: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/scenekit/scnprojectiontransform
-declare const SCNProjectionTransform: string | cocoascript.NSString;
+declare const SCNProjectionTransform: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/scenekit/scnviewtransform
-declare const SCNViewTransform: string | cocoascript.NSString;
+declare const SCNViewTransform: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A simple, reusable animation that changes attributes of any node you attach it to.
@@ -2738,7 +2738,7 @@ declare namespace cocoascript {
 
 declare const SCNHitTestResult: any;
 // doc://com.apple.documentation/documentation/scenekit/scnpreferredrenderingapikey
-declare const SCNPreferredRenderingAPIKey: SCNViewOption;
+declare const SCNPreferredRenderingAPIKey: cocoascript.SCNViewOption;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scndebugoptions
   type SCNDebugOptions = cocoascript.NSUInteger;
@@ -2760,13 +2760,13 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/scenekit/scnshadermodifierentrypointgeometry
-declare const SCNShaderModifierEntryPointGeometry: SCNShaderModifierEntryPoint;
+declare const SCNShaderModifierEntryPointGeometry: cocoascript.SCNShaderModifierEntryPoint;
 // doc://com.apple.documentation/documentation/scenekit/scnshadermodifierentrypointsurface
-declare const SCNShaderModifierEntryPointSurface: SCNShaderModifierEntryPoint;
+declare const SCNShaderModifierEntryPointSurface: cocoascript.SCNShaderModifierEntryPoint;
 // doc://com.apple.documentation/documentation/scenekit/scnshadermodifierentrypointlightingmodel
-declare const SCNShaderModifierEntryPointLightingModel: SCNShaderModifierEntryPoint;
+declare const SCNShaderModifierEntryPointLightingModel: cocoascript.SCNShaderModifierEntryPoint;
 // doc://com.apple.documentation/documentation/scenekit/scnshadermodifierentrypointfragment
-declare const SCNShaderModifierEntryPointFragment: SCNShaderModifierEntryPoint;
+declare const SCNShaderModifierEntryPointFragment: cocoascript.SCNShaderModifierEntryPoint;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnbindingblock
   type SCNBindingBlock = cocoascript.SCNRenderer;
@@ -3221,7 +3221,7 @@ declare namespace cocoascript {
   type SCNShadowMode = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/scenekit/scnparticlepropertycolor
-declare const SCNParticlePropertyColor: SCNParticleProperty;
+declare const SCNParticlePropertyColor: cocoascript.SCNParticleProperty;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnparticlebirthlocation
   type SCNParticleBirthLocation = cocoascript.NSInteger;
@@ -3271,17 +3271,17 @@ declare namespace cocoascript {
   type SCNParticleInputMode = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemanticvertex
-declare const SCNGeometrySourceSemanticVertex: SCNGeometrySourceSemantic;
+declare const SCNGeometrySourceSemanticVertex: cocoascript.SCNGeometrySourceSemantic;
 // doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemanticnormal
-declare const SCNGeometrySourceSemanticNormal: SCNGeometrySourceSemantic;
+declare const SCNGeometrySourceSemanticNormal: cocoascript.SCNGeometrySourceSemantic;
 // doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemanticcolor
-declare const SCNGeometrySourceSemanticColor: SCNGeometrySourceSemantic;
+declare const SCNGeometrySourceSemanticColor: cocoascript.SCNGeometrySourceSemantic;
 // doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemanticboneindices
-declare const SCNGeometrySourceSemanticBoneIndices: SCNGeometrySourceSemantic;
+declare const SCNGeometrySourceSemanticBoneIndices: cocoascript.SCNGeometrySourceSemantic;
 // doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemanticboneweights
-declare const SCNGeometrySourceSemanticBoneWeights: SCNGeometrySourceSemantic;
+declare const SCNGeometrySourceSemanticBoneWeights: cocoascript.SCNGeometrySourceSemantic;
 // doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemantictexcoord
-declare const SCNGeometrySourceSemanticTexcoord: SCNGeometrySourceSemantic;
+declare const SCNGeometrySourceSemanticTexcoord: cocoascript.SCNGeometrySourceSemantic;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnbufferfrequency
   type SCNBufferFrequency = cocoascript.NSInteger;
@@ -3705,43 +3705,43 @@ declare namespace cocoascript {
   type SCNAnimationEventBlock = cocoascript.BOOL;
 }
 // doc://com.apple.documentation/documentation/scenekit/scnpreferlowpowerdevicekey
-declare const SCNPreferLowPowerDeviceKey: SCNViewOption;
+declare const SCNPreferLowPowerDeviceKey: cocoascript.SCNViewOption;
 // doc://com.apple.documentation/documentation/scenekit/scnpreferreddevicekey
-declare const SCNPreferredDeviceKey: SCNViewOption;
+declare const SCNPreferredDeviceKey: cocoascript.SCNViewOption;
 // doc://com.apple.documentation/documentation/scenekit/scnlighttypespot
-declare const SCNLightTypeSpot: SCNLightType;
+declare const SCNLightTypeSpot: cocoascript.SCNLightType;
 // doc://com.apple.documentation/documentation/scenekit/scnscenesourceanimationimportpolicyplayusingscenetimebase
-declare const SCNSceneSourceAnimationImportPolicyPlayUsingSceneTimeBase: SCNSceneSourceAnimationImportPolicy;
+declare const SCNSceneSourceAnimationImportPolicyPlayUsingSceneTimeBase: cocoascript.SCNSceneSourceAnimationImportPolicy;
 // doc://com.apple.documentation/documentation/scenekit/scnhittestoptionsearchmode
-declare const SCNHitTestOptionSearchMode: SCNHitTestOption;
+declare const SCNHitTestOptionSearchMode: cocoascript.SCNHitTestOption;
 // doc://com.apple.documentation/documentation/scenekit/scnhittestbackfacecullingkey
-declare const SCNHitTestBackFaceCullingKey: SCNHitTestOption;
+declare const SCNHitTestBackFaceCullingKey: cocoascript.SCNHitTestOption;
 // doc://com.apple.documentation/documentation/scenekit/scnhittestboundingboxonlykey
-declare const SCNHitTestBoundingBoxOnlyKey: SCNHitTestOption;
+declare const SCNHitTestBoundingBoxOnlyKey: cocoascript.SCNHitTestOption;
 // doc://com.apple.documentation/documentation/scenekit/scnhittestoptioncategorybitmask
-declare const SCNHitTestOptionCategoryBitMask: SCNHitTestOption;
+declare const SCNHitTestOptionCategoryBitMask: cocoascript.SCNHitTestOption;
 // doc://com.apple.documentation/documentation/scenekit/scnhittestcliptozrangekey
-declare const SCNHitTestClipToZRangeKey: SCNHitTestOption;
+declare const SCNHitTestClipToZRangeKey: cocoascript.SCNHitTestOption;
 // doc://com.apple.documentation/documentation/scenekit/scnhittestignorechildnodeskey
-declare const SCNHitTestIgnoreChildNodesKey: SCNHitTestOption;
+declare const SCNHitTestIgnoreChildNodesKey: cocoascript.SCNHitTestOption;
 // doc://com.apple.documentation/documentation/scenekit/scnhittestignorehiddennodeskey
-declare const SCNHitTestIgnoreHiddenNodesKey: SCNHitTestOption;
+declare const SCNHitTestIgnoreHiddenNodesKey: cocoascript.SCNHitTestOption;
 // doc://com.apple.documentation/documentation/scenekit/scnhittestrootnodekey
-declare const SCNHitTestRootNodeKey: SCNHitTestOption;
+declare const SCNHitTestRootNodeKey: cocoascript.SCNHitTestOption;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnhittestsearchmode
   type SCNHitTestSearchMode = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/scenekit/scnhittestfirstfoundonlykey
-declare const SCNHitTestFirstFoundOnlyKey: SCNHitTestOption;
+declare const SCNHitTestFirstFoundOnlyKey: cocoascript.SCNHitTestOption;
 // doc://com.apple.documentation/documentation/scenekit/scnhittestsortresultskey
-declare const SCNHitTestSortResultsKey: SCNHitTestOption;
+declare const SCNHitTestSortResultsKey: cocoascript.SCNHitTestOption;
 // doc://com.apple.documentation/documentation/scenekit/scnhittestoptionignorelightarea
-declare const SCNHitTestOptionIgnoreLightArea: SCNHitTestOption;
+declare const SCNHitTestOptionIgnoreLightArea: cocoascript.SCNHitTestOption;
 // doc://com.apple.documentation/documentation/scenekit/scnvector3zero
-declare const SCNVector3Zero: SCNVector3;
+declare const SCNVector3Zero: cocoascript.SCNVector3;
 // doc://com.apple.documentation/documentation/scenekit/scnvector4zero
-declare const SCNVector4Zero: SCNVector4;
+declare const SCNVector4Zero: cocoascript.SCNVector4;
 declare namespace cocoascript {
   /**
    * A constraint that orients a node to always point toward the current camera.
@@ -3959,9 +3959,9 @@ declare namespace cocoascript {
 
 declare const SCNPhysicsConeTwistJoint: cocoascript.SCNPhysicsConeTwistJoint;
 // doc://com.apple.documentation/documentation/scenekit/scnmatrix4identity
-declare const SCNMatrix4Identity: SCNMatrix4;
+declare const SCNMatrix4Identity: cocoascript.SCNMatrix4;
 // doc://com.apple.documentation/documentation/scenekit/scnlightingmodelphysicallybased
-declare const SCNLightingModelPhysicallyBased: SCNLightingModel;
+declare const SCNLightingModelPhysicallyBased: cocoascript.SCNLightingModel;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnquaternion
   type SCNQuaternion = cocoascript.SCNVector4;
@@ -3971,17 +3971,17 @@ declare namespace cocoascript {
   type SCNReferenceLoadingPolicy = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/scenekit/scnlightingmodelblinn
-declare const SCNLightingModelBlinn: SCNLightingModel;
+declare const SCNLightingModelBlinn: cocoascript.SCNLightingModel;
 // doc://com.apple.documentation/documentation/scenekit/scnlightingmodelconstant
-declare const SCNLightingModelConstant: SCNLightingModel;
+declare const SCNLightingModelConstant: cocoascript.SCNLightingModel;
 // doc://com.apple.documentation/documentation/scenekit/scnlightingmodellambert
-declare const SCNLightingModelLambert: SCNLightingModel;
+declare const SCNLightingModelLambert: cocoascript.SCNLightingModel;
 // doc://com.apple.documentation/documentation/scenekit/scnlightingmodelphong
-declare const SCNLightingModelPhong: SCNLightingModel;
+declare const SCNLightingModelPhong: cocoascript.SCNLightingModel;
 // doc://com.apple.documentation/documentation/scenekit/scnlightingmodelshadowonly
-declare const SCNLightingModelShadowOnly: SCNLightingModel;
+declare const SCNLightingModelShadowOnly: cocoascript.SCNLightingModel;
 // doc://com.apple.documentation/documentation/scenekit/scnlighttypeambient
-declare const SCNLightTypeAmbient: SCNLightType;
+declare const SCNLightTypeAmbient: cocoascript.SCNLightType;
 declare namespace cocoascript {
   /**
    * A plane that can optionally display a reflection of the scene above it.
@@ -4020,29 +4020,29 @@ declare namespace cocoascript {
 
 declare const SCNFloor: cocoascript.SCNFloor;
 // doc://com.apple.documentation/documentation/scenekit/scnphysicsshapetypekey
-declare const SCNPhysicsShapeTypeKey: SCNPhysicsShapeOption;
+declare const SCNPhysicsShapeTypeKey: cocoascript.SCNPhysicsShapeOption;
 // doc://com.apple.documentation/documentation/scenekit/scnphysicsshapekeepascompoundkey
-declare const SCNPhysicsShapeKeepAsCompoundKey: SCNPhysicsShapeOption;
+declare const SCNPhysicsShapeKeepAsCompoundKey: cocoascript.SCNPhysicsShapeOption;
 // doc://com.apple.documentation/documentation/scenekit/scnphysicsshapetypeboundingbox
-declare const SCNPhysicsShapeTypeBoundingBox: SCNPhysicsShapeType;
+declare const SCNPhysicsShapeTypeBoundingBox: cocoascript.SCNPhysicsShapeType;
 // doc://com.apple.documentation/documentation/scenekit/scnphysicsshapeoptioncollisionmargin
-declare const SCNPhysicsShapeOptionCollisionMargin: SCNPhysicsShapeOption;
+declare const SCNPhysicsShapeOptionCollisionMargin: cocoascript.SCNPhysicsShapeOption;
 // doc://com.apple.documentation/documentation/scenekit/scnphysicsshapescalekey
-declare const SCNPhysicsShapeScaleKey: SCNPhysicsShapeOption;
+declare const SCNPhysicsShapeScaleKey: cocoascript.SCNPhysicsShapeOption;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnphysicsshapetype
   type SCNPhysicsShapeType = cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/scenekit/scnlighttypeies
-declare const SCNLightTypeIES: SCNLightType;
+declare const SCNLightTypeIES: cocoascript.SCNLightType;
 // doc://com.apple.documentation/documentation/scenekit/scnlighttypedirectional
-declare const SCNLightTypeDirectional: SCNLightType;
+declare const SCNLightTypeDirectional: cocoascript.SCNLightType;
 // doc://com.apple.documentation/documentation/scenekit/scnlighttypeomni
-declare const SCNLightTypeOmni: SCNLightType;
+declare const SCNLightTypeOmni: cocoascript.SCNLightType;
 // doc://com.apple.documentation/documentation/scenekit/scnlighttypeprobe
-declare const SCNLightTypeProbe: SCNLightType;
+declare const SCNLightTypeProbe: cocoascript.SCNLightType;
 // doc://com.apple.documentation/documentation/scenekit/scnlighttypearea
-declare const SCNLightTypeArea: SCNLightType;
+declare const SCNLightTypeArea: cocoascript.SCNLightType;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnlightareatype
   type SCNLightAreaType = cocoascript.NSInteger;
@@ -4056,37 +4056,37 @@ declare namespace cocoascript {
   type SCNLightProbeUpdateType = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/scenekit/scnparticlepropertyangle
-declare const SCNParticlePropertyAngle: SCNParticleProperty;
+declare const SCNParticlePropertyAngle: cocoascript.SCNParticleProperty;
 // doc://com.apple.documentation/documentation/scenekit/scnparticlepropertyangularvelocity
-declare const SCNParticlePropertyAngularVelocity: SCNParticleProperty;
+declare const SCNParticlePropertyAngularVelocity: cocoascript.SCNParticleProperty;
 // doc://com.apple.documentation/documentation/scenekit/scnparticlepropertybounce
-declare const SCNParticlePropertyBounce: SCNParticleProperty;
+declare const SCNParticlePropertyBounce: cocoascript.SCNParticleProperty;
 // doc://com.apple.documentation/documentation/scenekit/scnparticlepropertycharge
-declare const SCNParticlePropertyCharge: SCNParticleProperty;
+declare const SCNParticlePropertyCharge: cocoascript.SCNParticleProperty;
 // doc://com.apple.documentation/documentation/scenekit/scnparticlepropertycontactnormal
-declare const SCNParticlePropertyContactNormal: SCNParticleProperty;
+declare const SCNParticlePropertyContactNormal: cocoascript.SCNParticleProperty;
 // doc://com.apple.documentation/documentation/scenekit/scnparticlepropertycontactpoint
-declare const SCNParticlePropertyContactPoint: SCNParticleProperty;
+declare const SCNParticlePropertyContactPoint: cocoascript.SCNParticleProperty;
 // doc://com.apple.documentation/documentation/scenekit/scnparticlepropertyframe
-declare const SCNParticlePropertyFrame: SCNParticleProperty;
+declare const SCNParticlePropertyFrame: cocoascript.SCNParticleProperty;
 // doc://com.apple.documentation/documentation/scenekit/scnparticlepropertyframerate
-declare const SCNParticlePropertyFrameRate: SCNParticleProperty;
+declare const SCNParticlePropertyFrameRate: cocoascript.SCNParticleProperty;
 // doc://com.apple.documentation/documentation/scenekit/scnparticlepropertyfriction
-declare const SCNParticlePropertyFriction: SCNParticleProperty;
+declare const SCNParticlePropertyFriction: cocoascript.SCNParticleProperty;
 // doc://com.apple.documentation/documentation/scenekit/scnparticlepropertylife
-declare const SCNParticlePropertyLife: SCNParticleProperty;
+declare const SCNParticlePropertyLife: cocoascript.SCNParticleProperty;
 // doc://com.apple.documentation/documentation/scenekit/scnparticlepropertyopacity
-declare const SCNParticlePropertyOpacity: SCNParticleProperty;
+declare const SCNParticlePropertyOpacity: cocoascript.SCNParticleProperty;
 // doc://com.apple.documentation/documentation/scenekit/scnparticlepropertyposition
-declare const SCNParticlePropertyPosition: SCNParticleProperty;
+declare const SCNParticlePropertyPosition: cocoascript.SCNParticleProperty;
 // doc://com.apple.documentation/documentation/scenekit/scnparticlepropertyrotationaxis
-declare const SCNParticlePropertyRotationAxis: SCNParticleProperty;
+declare const SCNParticlePropertyRotationAxis: cocoascript.SCNParticleProperty;
 // doc://com.apple.documentation/documentation/scenekit/scnparticlepropertysize
-declare const SCNParticlePropertySize: SCNParticleProperty;
+declare const SCNParticlePropertySize: cocoascript.SCNParticleProperty;
 // doc://com.apple.documentation/documentation/scenekit/scnparticlepropertyvelocity
-declare const SCNParticlePropertyVelocity: SCNParticleProperty;
+declare const SCNParticlePropertyVelocity: cocoascript.SCNParticleProperty;
 // doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemantictangent
-declare const SCNGeometrySourceSemanticTangent: SCNGeometrySourceSemantic;
+declare const SCNGeometrySourceSemanticTangent: cocoascript.SCNGeometrySourceSemantic;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnscenesourcestatushandler
   type SCNSceneSourceStatusHandler = cocoascript.BOOL;
@@ -4104,27 +4104,27 @@ declare namespace cocoascript {
   type SCNChamferMode = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemanticvertexcrease
-declare const SCNGeometrySourceSemanticVertexCrease: SCNGeometrySourceSemantic;
+declare const SCNGeometrySourceSemanticVertexCrease: cocoascript.SCNGeometrySourceSemantic;
 // doc://com.apple.documentation/documentation/scenekit/scngeometrysourcesemanticedgecrease
-declare const SCNGeometrySourceSemanticEdgeCrease: SCNGeometrySourceSemantic;
+declare const SCNGeometrySourceSemanticEdgeCrease: cocoascript.SCNGeometrySourceSemantic;
 // doc://com.apple.documentation/documentation/scenekit/scnphysicstestsearchmodekey
-declare const SCNPhysicsTestSearchModeKey: SCNPhysicsTestOption;
+declare const SCNPhysicsTestSearchModeKey: cocoascript.SCNPhysicsTestOption;
 // doc://com.apple.documentation/documentation/scenekit/scnphysicstestbackfacecullingkey
-declare const SCNPhysicsTestBackfaceCullingKey: SCNPhysicsTestOption;
+declare const SCNPhysicsTestBackfaceCullingKey: cocoascript.SCNPhysicsTestOption;
 // doc://com.apple.documentation/documentation/scenekit/scnphysicstestcollisionbitmaskkey
-declare const SCNPhysicsTestCollisionBitMaskKey: SCNPhysicsTestOption;
+declare const SCNPhysicsTestCollisionBitMaskKey: cocoascript.SCNPhysicsTestOption;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnphysicstestsearchmode
   type SCNPhysicsTestSearchMode = cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/scenekit/scnsceneendtimeattributekey
-declare const SCNSceneEndTimeAttributeKey: SCNSceneAttribute;
+declare const SCNSceneEndTimeAttributeKey: cocoascript.SCNSceneAttribute;
 // doc://com.apple.documentation/documentation/scenekit/scnsceneframerateattributekey
-declare const SCNSceneFrameRateAttributeKey: SCNSceneAttribute;
+declare const SCNSceneFrameRateAttributeKey: cocoascript.SCNSceneAttribute;
 // doc://com.apple.documentation/documentation/scenekit/scnscenestarttimeattributekey
-declare const SCNSceneStartTimeAttributeKey: SCNSceneAttribute;
+declare const SCNSceneStartTimeAttributeKey: cocoascript.SCNSceneAttribute;
 // doc://com.apple.documentation/documentation/scenekit/scnsceneupaxisattributekey
-declare const SCNSceneUpAxisAttributeKey: SCNSceneAttribute;
+declare const SCNSceneUpAxisAttributeKey: cocoascript.SCNSceneAttribute;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/scenekit/scnscenesourceanimationimportpolicy
   type SCNSceneSourceAnimationImportPolicy = cocoascript.NSString;
@@ -4134,40 +4134,40 @@ declare namespace cocoascript {
   type SCNBillboardAxis = cocoascript.NSUInteger;
 }
 // doc://com.apple.documentation/documentation/scenekit/scnphysicsshapetypeconvexhull
-declare const SCNPhysicsShapeTypeConvexHull: SCNPhysicsShapeType;
+declare const SCNPhysicsShapeTypeConvexHull: cocoascript.SCNPhysicsShapeType;
 // doc://com.apple.documentation/documentation/scenekit/scnphysicsshapetypeconcavepolyhedron
-declare const SCNPhysicsShapeTypeConcavePolyhedron: SCNPhysicsShapeType;
+declare const SCNPhysicsShapeTypeConcavePolyhedron: cocoascript.SCNPhysicsShapeType;
 // doc://com.apple.documentation/documentation/scenekit/scnscenesourceanimationimportpolicykey
-declare const SCNSceneSourceAnimationImportPolicyKey: SCNSceneSourceLoadingOption;
+declare const SCNSceneSourceAnimationImportPolicyKey: cocoascript.SCNSceneSourceLoadingOption;
 // doc://com.apple.documentation/documentation/scenekit/scnscenesourceassetdirectoryurlskey
-declare const SCNSceneSourceAssetDirectoryURLsKey: SCNSceneSourceLoadingOption;
+declare const SCNSceneSourceAssetDirectoryURLsKey: cocoascript.SCNSceneSourceLoadingOption;
 // doc://com.apple.documentation/documentation/scenekit/scnscenesourcecheckconsistencykey
-declare const SCNSceneSourceCheckConsistencyKey: SCNSceneSourceLoadingOption;
+declare const SCNSceneSourceCheckConsistencyKey: cocoascript.SCNSceneSourceLoadingOption;
 // doc://com.apple.documentation/documentation/scenekit/scnscenesourceconverttoyupkey
-declare const SCNSceneSourceConvertToYUpKey: SCNSceneSourceLoadingOption;
+declare const SCNSceneSourceConvertToYUpKey: cocoascript.SCNSceneSourceLoadingOption;
 // doc://com.apple.documentation/documentation/scenekit/scnscenesourceconvertunitstometerskey
-declare const SCNSceneSourceConvertUnitsToMetersKey: SCNSceneSourceLoadingOption;
+declare const SCNSceneSourceConvertUnitsToMetersKey: cocoascript.SCNSceneSourceLoadingOption;
 // doc://com.apple.documentation/documentation/scenekit/scnscenesourcecreatenormalsifabsentkey
-declare const SCNSceneSourceCreateNormalsIfAbsentKey: SCNSceneSourceLoadingOption;
+declare const SCNSceneSourceCreateNormalsIfAbsentKey: cocoascript.SCNSceneSourceLoadingOption;
 // doc://com.apple.documentation/documentation/scenekit/scnscenesourceflattenscenekey
-declare const SCNSceneSourceFlattenSceneKey: SCNSceneSourceLoadingOption;
+declare const SCNSceneSourceFlattenSceneKey: cocoascript.SCNSceneSourceLoadingOption;
 // doc://com.apple.documentation/documentation/scenekit/scnscenesourceoverrideasseturlskey
-declare const SCNSceneSourceOverrideAssetURLsKey: SCNSceneSourceLoadingOption;
+declare const SCNSceneSourceOverrideAssetURLsKey: cocoascript.SCNSceneSourceLoadingOption;
 // doc://com.apple.documentation/documentation/scenekit/scnscenesourceloadingoptionpreserveoriginaltopology
-declare const SCNSceneSourceLoadingOptionPreserveOriginalTopology: SCNSceneSourceLoadingOption;
+declare const SCNSceneSourceLoadingOptionPreserveOriginalTopology: cocoascript.SCNSceneSourceLoadingOption;
 // doc://com.apple.documentation/documentation/scenekit/scnscenesourcestrictconformancekey
-declare const SCNSceneSourceStrictConformanceKey: SCNSceneSourceLoadingOption;
+declare const SCNSceneSourceStrictConformanceKey: cocoascript.SCNSceneSourceLoadingOption;
 // doc://com.apple.documentation/documentation/scenekit/scnscenesourceusesafemodekey
-declare const SCNSceneSourceUseSafeModeKey: SCNSceneSourceLoadingOption;
+declare const SCNSceneSourceUseSafeModeKey: cocoascript.SCNSceneSourceLoadingOption;
 // doc://com.apple.documentation/documentation/scenekit/scnphysicstestsearchmodeany
-declare const SCNPhysicsTestSearchModeAny: SCNPhysicsTestSearchMode;
+declare const SCNPhysicsTestSearchModeAny: cocoascript.SCNPhysicsTestSearchMode;
 // doc://com.apple.documentation/documentation/scenekit/scnphysicstestsearchmodeall
-declare const SCNPhysicsTestSearchModeAll: SCNPhysicsTestSearchMode;
+declare const SCNPhysicsTestSearchModeAll: cocoascript.SCNPhysicsTestSearchMode;
 // doc://com.apple.documentation/documentation/scenekit/scnphysicstestsearchmodeclosest
-declare const SCNPhysicsTestSearchModeClosest: SCNPhysicsTestSearchMode;
+declare const SCNPhysicsTestSearchModeClosest: cocoascript.SCNPhysicsTestSearchMode;
 // doc://com.apple.documentation/documentation/scenekit/scnscenesourceanimationimportpolicydonotplay
-declare const SCNSceneSourceAnimationImportPolicyDoNotPlay: SCNSceneSourceAnimationImportPolicy;
+declare const SCNSceneSourceAnimationImportPolicyDoNotPlay: cocoascript.SCNSceneSourceAnimationImportPolicy;
 // doc://com.apple.documentation/documentation/scenekit/scnscenesourceanimationimportpolicyplay
-declare const SCNSceneSourceAnimationImportPolicyPlay: SCNSceneSourceAnimationImportPolicy;
+declare const SCNSceneSourceAnimationImportPolicyPlay: cocoascript.SCNSceneSourceAnimationImportPolicy;
 // doc://com.apple.documentation/documentation/scenekit/scnscenesourceanimationimportpolicyplayrepeatedly
-declare const SCNSceneSourceAnimationImportPolicyPlayRepeatedly: SCNSceneSourceAnimationImportPolicy;
+declare const SCNSceneSourceAnimationImportPolicyPlayRepeatedly: cocoascript.SCNSceneSourceAnimationImportPolicy;

@@ -1187,27 +1187,27 @@ declare namespace cocoascript {
 
 declare const CIContext: cocoascript.CIContext;
 // doc://com.apple.documentation/documentation/coreimage/kciimageprovidertilesize
-declare const kCIImageProviderTileSize: CIImageOption;
+declare const kCIImageProviderTileSize: cocoascript.CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageprovideruserinfo
-declare const kCIImageProviderUserInfo: CIImageOption;
+declare const kCIImageProviderUserInfo: cocoascript.CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagecolorspace
-declare const kCIImageColorSpace: CIImageOption;
+declare const kCIImageColorSpace: cocoascript.CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageproperties
-declare const kCIImageProperties: CIImageOption;
+declare const kCIImageProperties: cocoascript.CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageapplyorientationproperty
-declare const kCIImageApplyOrientationProperty: CIImageOption;
+declare const kCIImageApplyOrientationProperty: cocoascript.CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagetexturetarget
-declare const kCIImageTextureTarget: CIImageOption;
+declare const kCIImageTextureTarget: cocoascript.CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagetextureformat
-declare const kCIImageTextureFormat: CIImageOption;
+declare const kCIImageTextureFormat: cocoascript.CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagenearestsampling
-declare const kCIImageNearestSampling: CIImageOption;
+declare const kCIImageNearestSampling: cocoascript.CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageauxiliarydepth
-declare const kCIImageAuxiliaryDepth: CIImageOption;
+declare const kCIImageAuxiliaryDepth: cocoascript.CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageauxiliarydisparity
-declare const kCIImageAuxiliaryDisparity: CIImageOption;
+declare const kCIImageAuxiliaryDisparity: cocoascript.CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageauxiliaryportraiteffectsmatte
-declare const kCIImageAuxiliaryPortraitEffectsMatte: CIImageOption;
+declare const kCIImageAuxiliaryPortraitEffectsMatte: cocoascript.CIImageOption;
 declare namespace cocoascript {
   /**
    * A GPU-based image processing routine used to create custom Core Image filters.
@@ -1463,13 +1463,13 @@ declare namespace cocoascript {
 
 declare const CIFeature: cocoascript.CIFeature;
 // doc://com.apple.documentation/documentation/coreimage/cifeaturetypeface
-declare const CIFeatureTypeFace: string | cocoascript.NSString;
+declare const CIFeatureTypeFace: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coreimage/cifeaturetyperectangle
-declare const CIFeatureTypeRectangle: string | cocoascript.NSString;
+declare const CIFeatureTypeRectangle: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coreimage/cifeaturetypeqrcode
-declare const CIFeatureTypeQRCode: string | cocoascript.NSString;
+declare const CIFeatureTypeQRCode: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coreimage/cifeaturetypetext
-declare const CIFeatureTypeText: string | cocoascript.NSString;
+declare const CIFeatureTypeText: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * Information about a face detected in a still or video image.
@@ -1762,27 +1762,27 @@ declare namespace cocoascript {
   type CIRAWFilterOption = cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/coreimage/kciimagerepresentationavdepthdata
-declare const kCIImageRepresentationAVDepthData: CIImageRepresentationOption;
+declare const kCIImageRepresentationAVDepthData: cocoascript.CIImageRepresentationOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagerepresentationdepthimage
-declare const kCIImageRepresentationDepthImage: CIImageRepresentationOption;
+declare const kCIImageRepresentationDepthImage: cocoascript.CIImageRepresentationOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagerepresentationdisparityimage
-declare const kCIImageRepresentationDisparityImage: CIImageRepresentationOption;
+declare const kCIImageRepresentationDisparityImage: cocoascript.CIImageRepresentationOption;
 // doc://com.apple.documentation/documentation/coreimage/kcicontextoutputcolorspace
-declare const kCIContextOutputColorSpace: CIContextOption;
+declare const kCIContextOutputColorSpace: cocoascript.CIContextOption;
 // doc://com.apple.documentation/documentation/coreimage/kcicontextworkingcolorspace
-declare const kCIContextWorkingColorSpace: CIContextOption;
+declare const kCIContextWorkingColorSpace: cocoascript.CIContextOption;
 // doc://com.apple.documentation/documentation/coreimage/kcicontextworkingformat
-declare const kCIContextWorkingFormat: CIContextOption;
+declare const kCIContextWorkingFormat: cocoascript.CIContextOption;
 // doc://com.apple.documentation/documentation/coreimage/kcicontexthighqualitydownsample
-declare const kCIContextHighQualityDownsample: CIContextOption;
+declare const kCIContextHighQualityDownsample: cocoascript.CIContextOption;
 // doc://com.apple.documentation/documentation/coreimage/kcicontextoutputpremultiplied
-declare const kCIContextOutputPremultiplied: CIContextOption;
+declare const kCIContextOutputPremultiplied: cocoascript.CIContextOption;
 // doc://com.apple.documentation/documentation/coreimage/kcicontextcacheintermediates
-declare const kCIContextCacheIntermediates: CIContextOption;
+declare const kCIContextCacheIntermediates: cocoascript.CIContextOption;
 // doc://com.apple.documentation/documentation/coreimage/kcicontextusesoftwarerenderer
-declare const kCIContextUseSoftwareRenderer: CIContextOption;
+declare const kCIContextUseSoftwareRenderer: cocoascript.CIContextOption;
 // doc://com.apple.documentation/documentation/coreimage/kcicontextpriorityrequestlow
-declare const kCIContextPriorityRequestLow: CIContextOption;
+declare const kCIContextPriorityRequestLow: cocoascript.CIContextOption;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreimage/ciimageoption
   type CIImageOption = cocoascript.NSString;
@@ -2533,75 +2533,75 @@ declare namespace cocoascript {
   type CIImageAutoAdjustmentOption = cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/coreimage/kciimageautoadjustenhance
-declare const kCIImageAutoAdjustEnhance: CIImageAutoAdjustmentOption;
+declare const kCIImageAutoAdjustEnhance: cocoascript.CIImageAutoAdjustmentOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageautoadjustredeye
-declare const kCIImageAutoAdjustRedEye: CIImageAutoAdjustmentOption;
+declare const kCIImageAutoAdjustRedEye: cocoascript.CIImageAutoAdjustmentOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageautoadjustfeatures
-declare const kCIImageAutoAdjustFeatures: CIImageAutoAdjustmentOption;
+declare const kCIImageAutoAdjustFeatures: cocoascript.CIImageAutoAdjustmentOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageautoadjustcrop
-declare const kCIImageAutoAdjustCrop: CIImageAutoAdjustmentOption;
+declare const kCIImageAutoAdjustCrop: cocoascript.CIImageAutoAdjustmentOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageautoadjustlevel
-declare const kCIImageAutoAdjustLevel: CIImageAutoAdjustmentOption;
+declare const kCIImageAutoAdjustLevel: cocoascript.CIImageAutoAdjustmentOption;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreimage/cikernelroicallback
   type CIKernelROICallback = cocoascript.CGRect;
 }
 // doc://com.apple.documentation/documentation/coreimage/kciinputbaselineexposurekey
-declare const kCIInputBaselineExposureKey: CIRAWFilterOption;
+declare const kCIInputBaselineExposureKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputdisablegamutmapkey
-declare const kCIInputDisableGamutMapKey: CIRAWFilterOption;
+declare const kCIInputDisableGamutMapKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputmoireamountkey
-declare const kCIInputMoireAmountKey: CIRAWFilterOption;
+declare const kCIInputMoireAmountKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kcisupporteddecoderversionskey
-declare const kCISupportedDecoderVersionsKey: CIRAWFilterOption;
+declare const kCISupportedDecoderVersionsKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputallowdraftmodekey
-declare const kCIInputAllowDraftModeKey: CIRAWFilterOption;
+declare const kCIInputAllowDraftModeKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputdecoderversionkey
-declare const kCIInputDecoderVersionKey: CIRAWFilterOption;
+declare const kCIInputDecoderVersionKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputboostkey
-declare const kCIInputBoostKey: CIRAWFilterOption;
+declare const kCIInputBoostKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputneutralchromaticityxkey
-declare const kCIInputNeutralChromaticityXKey: CIRAWFilterOption;
+declare const kCIInputNeutralChromaticityXKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputneutralchromaticityykey
-declare const kCIInputNeutralChromaticityYKey: CIRAWFilterOption;
+declare const kCIInputNeutralChromaticityYKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputneutraltemperaturekey
-declare const kCIInputNeutralTemperatureKey: CIRAWFilterOption;
+declare const kCIInputNeutralTemperatureKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputneutraltintkey
-declare const kCIInputNeutralTintKey: CIRAWFilterOption;
+declare const kCIInputNeutralTintKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputneutrallocationkey
-declare const kCIInputNeutralLocationKey: CIRAWFilterOption;
+declare const kCIInputNeutralLocationKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputscalefactorkey
-declare const kCIInputScaleFactorKey: CIRAWFilterOption;
+declare const kCIInputScaleFactorKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputignoreimageorientationkey
-declare const kCIInputIgnoreImageOrientationKey: CIRAWFilterOption;
+declare const kCIInputIgnoreImageOrientationKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputimageorientationkey
-declare const kCIInputImageOrientationKey: CIRAWFilterOption;
+declare const kCIInputImageOrientationKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputenablesharpeningkey
-declare const kCIInputEnableSharpeningKey: CIRAWFilterOption;
+declare const kCIInputEnableSharpeningKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputenablechromaticnoisetrackingkey
-declare const kCIInputEnableChromaticNoiseTrackingKey: CIRAWFilterOption;
+declare const kCIInputEnableChromaticNoiseTrackingKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputnoisereductionamountkey
-declare const kCIInputNoiseReductionAmountKey: CIRAWFilterOption;
+declare const kCIInputNoiseReductionAmountKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputenablevendorlenscorrectionkey
-declare const kCIInputEnableVendorLensCorrectionKey: CIRAWFilterOption;
+declare const kCIInputEnableVendorLensCorrectionKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputluminancenoisereductionamountkey
-declare const kCIInputLuminanceNoiseReductionAmountKey: CIRAWFilterOption;
+declare const kCIInputLuminanceNoiseReductionAmountKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputcolornoisereductionamountkey
-declare const kCIInputColorNoiseReductionAmountKey: CIRAWFilterOption;
+declare const kCIInputColorNoiseReductionAmountKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputnoisereductionsharpnessamountkey
-declare const kCIInputNoiseReductionSharpnessAmountKey: CIRAWFilterOption;
+declare const kCIInputNoiseReductionSharpnessAmountKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputnoisereductioncontrastamountkey
-declare const kCIInputNoiseReductionContrastAmountKey: CIRAWFilterOption;
+declare const kCIInputNoiseReductionContrastAmountKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputnoisereductiondetailamountkey
-declare const kCIInputNoiseReductionDetailAmountKey: CIRAWFilterOption;
+declare const kCIInputNoiseReductionDetailAmountKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputboostshadowamountkey
-declare const kCIInputBoostShadowAmountKey: CIRAWFilterOption;
+declare const kCIInputBoostShadowAmountKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciinputlinearspacefilter
-declare const kCIInputLinearSpaceFilter: CIRAWFilterOption;
+declare const kCIInputLinearSpaceFilter: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kcioutputnativesizekey
-declare const kCIOutputNativeSizeKey: CIRAWFilterOption;
+declare const kCIOutputNativeSizeKey: cocoascript.CIRAWFilterOption;
 // doc://com.apple.documentation/documentation/coreimage/kciactivekeys
-declare const kCIActiveKeys: CIRAWFilterOption;
+declare const kCIActiveKeys: cocoascript.CIRAWFilterOption;
 declare namespace cocoascript {
   /**
    * The properties you use to configure a CMYK halftone filter.
@@ -5170,7 +5170,7 @@ declare namespace cocoascript {
   type CIDataMatrixCodeECCVersion = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/coreimage/kciinputlocaltonemapamountkey
-declare const kCIInputLocalToneMapAmountKey: CIRAWFilterOption;
+declare const kCIInputLocalToneMapAmountKey: cocoascript.CIRAWFilterOption;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreimage/cirenderdestinationalphamode
   type CIRenderDestinationAlphaMode = cocoascript.NSUInteger;
@@ -5184,17 +5184,17 @@ declare namespace cocoascript {
   type CIImageRepresentationOption = cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/coreimage/kciimageauxiliarysemanticsegmentationglassesmatte
-declare const kCIImageAuxiliarySemanticSegmentationGlassesMatte: CIImageOption;
+declare const kCIImageAuxiliarySemanticSegmentationGlassesMatte: cocoascript.CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageauxiliarysemanticsegmentationhairmatte
-declare const kCIImageAuxiliarySemanticSegmentationHairMatte: CIImageOption;
+declare const kCIImageAuxiliarySemanticSegmentationHairMatte: cocoascript.CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageauxiliarysemanticsegmentationskinmatte
-declare const kCIImageAuxiliarySemanticSegmentationSkinMatte: CIImageOption;
+declare const kCIImageAuxiliarySemanticSegmentationSkinMatte: cocoascript.CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageauxiliarysemanticsegmentationskymatte
-declare const kCIImageAuxiliarySemanticSegmentationSkyMatte: CIImageOption;
+declare const kCIImageAuxiliarySemanticSegmentationSkyMatte: cocoascript.CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimageauxiliarysemanticsegmentationteethmatte
-declare const kCIImageAuxiliarySemanticSegmentationTeethMatte: CIImageOption;
+declare const kCIImageAuxiliarySemanticSegmentationTeethMatte: cocoascript.CIImageOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagetonemaphdrtosdr
-declare const kCIImageToneMapHDRtoSDR: CIImageOption;
+declare const kCIImageToneMapHDRtoSDR: cocoascript.CIImageOption;
 declare namespace cocoascript {
   /**
    * The properties you use to configure a Core Image filter.
@@ -5226,22 +5226,22 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/coreimage/kcicontextallowlowpower
-declare const kCIContextAllowLowPower: CIContextOption;
+declare const kCIContextAllowLowPower: cocoascript.CIContextOption;
 // doc://com.apple.documentation/documentation/coreimage/kcicontextname
-declare const kCIContextName: CIContextOption;
+declare const kCIContextName: cocoascript.CIContextOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagerepresentationavportraiteffectsmatte
-declare const kCIImageRepresentationAVPortraitEffectsMatte: CIImageRepresentationOption;
+declare const kCIImageRepresentationAVPortraitEffectsMatte: cocoascript.CIImageRepresentationOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagerepresentationavsemanticsegmentationmattes
-declare const kCIImageRepresentationAVSemanticSegmentationMattes: CIImageRepresentationOption;
+declare const kCIImageRepresentationAVSemanticSegmentationMattes: cocoascript.CIImageRepresentationOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagerepresentationportraiteffectsmatteimage
-declare const kCIImageRepresentationPortraitEffectsMatteImage: CIImageRepresentationOption;
+declare const kCIImageRepresentationPortraitEffectsMatteImage: cocoascript.CIImageRepresentationOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagerepresentationsemanticsegmentationglassesmatteimage
-declare const kCIImageRepresentationSemanticSegmentationGlassesMatteImage: CIImageRepresentationOption;
+declare const kCIImageRepresentationSemanticSegmentationGlassesMatteImage: cocoascript.CIImageRepresentationOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagerepresentationsemanticsegmentationhairmatteimage
-declare const kCIImageRepresentationSemanticSegmentationHairMatteImage: CIImageRepresentationOption;
+declare const kCIImageRepresentationSemanticSegmentationHairMatteImage: cocoascript.CIImageRepresentationOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagerepresentationsemanticsegmentationskinmatteimage
-declare const kCIImageRepresentationSemanticSegmentationSkinMatteImage: CIImageRepresentationOption;
+declare const kCIImageRepresentationSemanticSegmentationSkinMatteImage: cocoascript.CIImageRepresentationOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagerepresentationsemanticsegmentationskymatteimage
-declare const kCIImageRepresentationSemanticSegmentationSkyMatteImage: CIImageRepresentationOption;
+declare const kCIImageRepresentationSemanticSegmentationSkyMatteImage: cocoascript.CIImageRepresentationOption;
 // doc://com.apple.documentation/documentation/coreimage/kciimagerepresentationsemanticsegmentationteethmatteimage
-declare const kCIImageRepresentationSemanticSegmentationTeethMatteImage: CIImageRepresentationOption;
+declare const kCIImageRepresentationSemanticSegmentationTeethMatteImage: cocoascript.CIImageRepresentationOption;

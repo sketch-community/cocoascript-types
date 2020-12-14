@@ -718,8 +718,8 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/glkit/glkmatrix3identity
-declare const GLKMatrix3Identity: GLKMatrix3;
+declare const GLKMatrix3Identity: cocoascript.GLKMatrix3;
 // doc://com.apple.documentation/documentation/glkit/glkmatrix4identity
-declare const GLKMatrix4Identity: GLKMatrix4;
+declare const GLKMatrix4Identity: cocoascript.GLKMatrix4;
 // doc://com.apple.documentation/documentation/glkit/glkquaternionidentity
-declare const GLKQuaternionIdentity: GLKQuaternion;
+declare const GLKQuaternionIdentity: cocoascript.GLKQuaternion;

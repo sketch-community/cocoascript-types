@@ -1708,9 +1708,9 @@ declare namespace cocoascript {
 
 declare const GKRuleSystem: cocoascript.GKRuleSystem;
 // doc://com.apple.documentation/documentation/gameplaykit/gkgamemodelminscore
-declare const GKGameModelMinScore: NSInteger;
+declare const GKGameModelMinScore: cocoascript.NSInteger;
 // doc://com.apple.documentation/documentation/gameplaykit/gkgamemodelmaxscore
-declare const GKGameModelMaxScore: NSInteger;
+declare const GKGameModelMaxScore: cocoascript.NSInteger;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/gameplaykit/gkmeshgraphtriangulationmode
   type GKMeshGraphTriangulationMode = cocoascript.NSUInteger;

@@ -199,9 +199,9 @@ declare namespace cocoascript {
 
 declare const ABAddressBook: cocoascript.ABAddressBook;
 // doc://com.apple.documentation/documentation/addressbook/kabdatabasechangednotification
-declare const kABDatabaseChangedNotification: string | cocoascript.NSString;
+declare const kABDatabaseChangedNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/addressbook/kabdatabasechangedexternallynotification
-declare const kABDatabaseChangedExternallyNotification: string | cocoascript.NSString;
+declare const kABDatabaseChangedExternallyNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object that represents a group of records in the Address Book database.
@@ -360,13 +360,13 @@ declare namespace cocoascript {
 
 declare const ABPeoplePickerView: cocoascript.ABPeoplePickerView;
 // doc://com.apple.documentation/documentation/addressbook/abpeoplepickergroupselectiondidchangenotification
-declare const ABPeoplePickerGroupSelectionDidChangeNotification: string | cocoascript.NSString;
+declare const ABPeoplePickerGroupSelectionDidChangeNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/addressbook/abpeoplepickernameselectiondidchangenotification
-declare const ABPeoplePickerNameSelectionDidChangeNotification: string | cocoascript.NSString;
+declare const ABPeoplePickerNameSelectionDidChangeNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/addressbook/abpeoplepickervalueselectiondidchangenotification
-declare const ABPeoplePickerValueSelectionDidChangeNotification: string | cocoascript.NSString;
+declare const ABPeoplePickerValueSelectionDidChangeNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerdisplayedpropertydidchangenotification
-declare const ABPeoplePickerDisplayedPropertyDidChangeNotification: string | cocoascript.NSString;
+declare const ABPeoplePickerDisplayedPropertyDidChangeNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object that provides a view for displaying and editing contacts.
@@ -465,177 +465,177 @@ declare namespace cocoascript {
   type ABSourceType = number;
 }
 // doc://com.apple.documentation/documentation/addressbook/abaddressbookerrordomain
-declare const ABAddressBookErrorDomain: CFStringRef;
+declare const ABAddressBookErrorDomain: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonaddresscitykey
-declare const kABPersonAddressCityKey: CFStringRef;
+declare const kABPersonAddressCityKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonaddresscountrycodekey
-declare const kABPersonAddressCountryCodeKey: CFStringRef;
+declare const kABPersonAddressCountryCodeKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonaddresscountrykey
-declare const kABPersonAddressCountryKey: CFStringRef;
+declare const kABPersonAddressCountryKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonaddressproperty
-declare const kABPersonAddressProperty: ABPropertyID;
+declare const kABPersonAddressProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonaddressstatekey
-declare const kABPersonAddressStateKey: CFStringRef;
+declare const kABPersonAddressStateKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonaddressstreetkey
-declare const kABPersonAddressStreetKey: CFStringRef;
+declare const kABPersonAddressStreetKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonaddresszipkey
-declare const kABPersonAddressZIPKey: CFStringRef;
+declare const kABPersonAddressZIPKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonalternatebirthdaycalendaridentifierkey
-declare const kABPersonAlternateBirthdayCalendarIdentifierKey: CFStringRef;
+declare const kABPersonAlternateBirthdayCalendarIdentifierKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonalternatebirthdaydaykey
-declare const kABPersonAlternateBirthdayDayKey: CFStringRef;
+declare const kABPersonAlternateBirthdayDayKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonalternatebirthdayerakey
-declare const kABPersonAlternateBirthdayEraKey: CFStringRef;
+declare const kABPersonAlternateBirthdayEraKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonalternatebirthdayisleapmonthkey
-declare const kABPersonAlternateBirthdayIsLeapMonthKey: CFStringRef;
+declare const kABPersonAlternateBirthdayIsLeapMonthKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonalternatebirthdaymonthkey
-declare const kABPersonAlternateBirthdayMonthKey: CFStringRef;
+declare const kABPersonAlternateBirthdayMonthKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonalternatebirthdayproperty
-declare const kABPersonAlternateBirthdayProperty: ABPropertyID;
+declare const kABPersonAlternateBirthdayProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonalternatebirthdayyearkey
-declare const kABPersonAlternateBirthdayYearKey: CFStringRef;
+declare const kABPersonAlternateBirthdayYearKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonanniversarylabel
-declare const kABPersonAnniversaryLabel: CFStringRef;
+declare const kABPersonAnniversaryLabel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonassistantlabel
-declare const kABPersonAssistantLabel: CFStringRef;
+declare const kABPersonAssistantLabel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonbirthdayproperty
-declare const kABPersonBirthdayProperty: ABPropertyID;
+declare const kABPersonBirthdayProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonbrotherlabel
-declare const kABPersonBrotherLabel: CFStringRef;
+declare const kABPersonBrotherLabel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonchildlabel
-declare const kABPersonChildLabel: CFStringRef;
+declare const kABPersonChildLabel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersoncreationdateproperty
-declare const kABPersonCreationDateProperty: ABPropertyID;
+declare const kABPersonCreationDateProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersondateproperty
-declare const kABPersonDateProperty: ABPropertyID;
+declare const kABPersonDateProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersondepartmentproperty
-declare const kABPersonDepartmentProperty: ABPropertyID;
+declare const kABPersonDepartmentProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonemailproperty
-declare const kABPersonEmailProperty: ABPropertyID;
+declare const kABPersonEmailProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonfatherlabel
-declare const kABPersonFatherLabel: CFStringRef;
+declare const kABPersonFatherLabel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonfirstnamephoneticproperty
-declare const kABPersonFirstNamePhoneticProperty: ABPropertyID;
+declare const kABPersonFirstNamePhoneticProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonfirstnameproperty
-declare const kABPersonFirstNameProperty: ABPropertyID;
+declare const kABPersonFirstNameProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonfriendlabel
-declare const kABPersonFriendLabel: CFStringRef;
+declare const kABPersonFriendLabel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonhomepagelabel
-declare const kABPersonHomePageLabel: CFStringRef;
+declare const kABPersonHomePageLabel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageproperty
-declare const kABPersonInstantMessageProperty: ABPropertyID;
+declare const kABPersonInstantMessageProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageserviceaim
-declare const kABPersonInstantMessageServiceAIM: CFStringRef;
+declare const kABPersonInstantMessageServiceAIM: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageservicefacebook
-declare const kABPersonInstantMessageServiceFacebook: CFStringRef;
+declare const kABPersonInstantMessageServiceFacebook: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageservicegadugadu
-declare const kABPersonInstantMessageServiceGaduGadu: CFStringRef;
+declare const kABPersonInstantMessageServiceGaduGadu: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageservicegoogletalk
-declare const kABPersonInstantMessageServiceGoogleTalk: CFStringRef;
+declare const kABPersonInstantMessageServiceGoogleTalk: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageserviceicq
-declare const kABPersonInstantMessageServiceICQ: CFStringRef;
+declare const kABPersonInstantMessageServiceICQ: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageservicejabber
-declare const kABPersonInstantMessageServiceJabber: CFStringRef;
+declare const kABPersonInstantMessageServiceJabber: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageservicekey
-declare const kABPersonInstantMessageServiceKey: CFStringRef;
+declare const kABPersonInstantMessageServiceKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageservicemsn
-declare const kABPersonInstantMessageServiceMSN: CFStringRef;
+declare const kABPersonInstantMessageServiceMSN: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageserviceqq
-declare const kABPersonInstantMessageServiceQQ: CFStringRef;
+declare const kABPersonInstantMessageServiceQQ: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageserviceskype
-declare const kABPersonInstantMessageServiceSkype: CFStringRef;
+declare const kABPersonInstantMessageServiceSkype: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageserviceyahoo
-declare const kABPersonInstantMessageServiceYahoo: CFStringRef;
+declare const kABPersonInstantMessageServiceYahoo: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageusernamekey
-declare const kABPersonInstantMessageUsernameKey: CFStringRef;
+declare const kABPersonInstantMessageUsernameKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonjobtitleproperty
-declare const kABPersonJobTitleProperty: ABPropertyID;
+declare const kABPersonJobTitleProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonkindorganization
-declare const kABPersonKindOrganization: CFNumberRef;
+declare const kABPersonKindOrganization: cocoascript.CFNumberRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonkindperson
-declare const kABPersonKindPerson: CFNumberRef;
+declare const kABPersonKindPerson: cocoascript.CFNumberRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonkindproperty
-declare const kABPersonKindProperty: ABPropertyID;
+declare const kABPersonKindProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonlastnamephoneticproperty
-declare const kABPersonLastNamePhoneticProperty: ABPropertyID;
+declare const kABPersonLastNamePhoneticProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonlastnameproperty
-declare const kABPersonLastNameProperty: ABPropertyID;
+declare const kABPersonLastNameProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonmanagerlabel
-declare const kABPersonManagerLabel: CFStringRef;
+declare const kABPersonManagerLabel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonmiddlenamephoneticproperty
-declare const kABPersonMiddleNamePhoneticProperty: ABPropertyID;
+declare const kABPersonMiddleNamePhoneticProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonmiddlenameproperty
-declare const kABPersonMiddleNameProperty: ABPropertyID;
+declare const kABPersonMiddleNameProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonmodificationdateproperty
-declare const kABPersonModificationDateProperty: ABPropertyID;
+declare const kABPersonModificationDateProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonmotherlabel
-declare const kABPersonMotherLabel: CFStringRef;
+declare const kABPersonMotherLabel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonnicknameproperty
-declare const kABPersonNicknameProperty: ABPropertyID;
+declare const kABPersonNicknameProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonnoteproperty
-declare const kABPersonNoteProperty: ABPropertyID;
+declare const kABPersonNoteProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonorganizationproperty
-declare const kABPersonOrganizationProperty: ABPropertyID;
+declare const kABPersonOrganizationProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonparentlabel
-declare const kABPersonParentLabel: CFStringRef;
+declare const kABPersonParentLabel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonpartnerlabel
-declare const kABPersonPartnerLabel: CFStringRef;
+declare const kABPersonPartnerLabel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonphonehomefaxlabel
-declare const kABPersonPhoneHomeFAXLabel: CFStringRef;
+declare const kABPersonPhoneHomeFAXLabel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonphoneiphonelabel
-declare const kABPersonPhoneIPhoneLabel: CFStringRef;
+declare const kABPersonPhoneIPhoneLabel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonphonemainlabel
-declare const kABPersonPhoneMainLabel: CFStringRef;
+declare const kABPersonPhoneMainLabel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonphonemobilelabel
-declare const kABPersonPhoneMobileLabel: CFStringRef;
+declare const kABPersonPhoneMobileLabel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonphoneotherfaxlabel
-declare const kABPersonPhoneOtherFAXLabel: CFStringRef;
+declare const kABPersonPhoneOtherFAXLabel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonphonepagerlabel
-declare const kABPersonPhonePagerLabel: CFStringRef;
+declare const kABPersonPhonePagerLabel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonphoneproperty
-declare const kABPersonPhoneProperty: ABPropertyID;
+declare const kABPersonPhoneProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonphoneworkfaxlabel
-declare const kABPersonPhoneWorkFAXLabel: CFStringRef;
+declare const kABPersonPhoneWorkFAXLabel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonprefixproperty
-declare const kABPersonPrefixProperty: ABPropertyID;
+declare const kABPersonPrefixProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonrelatednamesproperty
-declare const kABPersonRelatedNamesProperty: ABPropertyID;
+declare const kABPersonRelatedNamesProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonsisterlabel
-declare const kABPersonSisterLabel: CFStringRef;
+declare const kABPersonSisterLabel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonsocialprofileproperty
-declare const kABPersonSocialProfileProperty: ABPropertyID;
+declare const kABPersonSocialProfileProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonsocialprofileservicefacebook
-declare const kABPersonSocialProfileServiceFacebook: CFStringRef;
+declare const kABPersonSocialProfileServiceFacebook: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonsocialprofileserviceflickr
-declare const kABPersonSocialProfileServiceFlickr: CFStringRef;
+declare const kABPersonSocialProfileServiceFlickr: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonsocialprofileservicegamecenter
-declare const kABPersonSocialProfileServiceGameCenter: CFStringRef;
+declare const kABPersonSocialProfileServiceGameCenter: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonsocialprofileservicekey
-declare const kABPersonSocialProfileServiceKey: CFStringRef;
+declare const kABPersonSocialProfileServiceKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonsocialprofileservicelinkedin
-declare const kABPersonSocialProfileServiceLinkedIn: CFStringRef;
+declare const kABPersonSocialProfileServiceLinkedIn: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonsocialprofileservicemyspace
-declare const kABPersonSocialProfileServiceMyspace: CFStringRef;
+declare const kABPersonSocialProfileServiceMyspace: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonsocialprofileservicesinaweibo
-declare const kABPersonSocialProfileServiceSinaWeibo: CFStringRef;
+declare const kABPersonSocialProfileServiceSinaWeibo: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonsocialprofileservicetwitter
-declare const kABPersonSocialProfileServiceTwitter: CFStringRef;
+declare const kABPersonSocialProfileServiceTwitter: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonsocialprofileurlkey
-declare const kABPersonSocialProfileURLKey: CFStringRef;
+declare const kABPersonSocialProfileURLKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonsocialprofileuseridentifierkey
-declare const kABPersonSocialProfileUserIdentifierKey: CFStringRef;
+declare const kABPersonSocialProfileUserIdentifierKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonsocialprofileusernamekey
-declare const kABPersonSocialProfileUsernameKey: CFStringRef;
+declare const kABPersonSocialProfileUsernameKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonspouselabel
-declare const kABPersonSpouseLabel: CFStringRef;
+declare const kABPersonSpouseLabel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonsuffixproperty
-declare const kABPersonSuffixProperty: ABPropertyID;
+declare const kABPersonSuffixProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabpersonurlproperty
-declare const kABPersonURLProperty: ABPropertyID;
+declare const kABPersonURLProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabsourcenameproperty
-declare const kABSourceNameProperty: ABPropertyID;
+declare const kABSourceNameProperty: cocoascript.ABPropertyID;
 // doc://com.apple.documentation/documentation/addressbook/kabsourcetypeproperty
-declare const kABSourceTypeProperty: ABPropertyID;
+declare const kABSourceTypeProperty: cocoascript.ABPropertyID;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/addressbook/abpickerattributes
   type ABPickerAttributes = cocoascript.OptionBits;
@@ -699,8 +699,8 @@ declare namespace cocoascript {
 // doc://com.apple.documentation/documentation/addressbook/kabgroupnameproperty
 declare const kABGroupNameProperty: number;
 // doc://com.apple.documentation/documentation/addressbook/kabworklabel
-declare const kABWorkLabel: CFStringRef;
+declare const kABWorkLabel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabhomelabel
-declare const kABHomeLabel: CFStringRef;
+declare const kABHomeLabel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/addressbook/kabotherlabel
-declare const kABOtherLabel: CFStringRef;
+declare const kABOtherLabel: cocoascript.CFStringRef;

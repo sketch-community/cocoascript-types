@@ -181,9 +181,9 @@ declare namespace cocoascript {
 
 declare const MKMapView: cocoascript.MKMapView;
 // doc://com.apple.documentation/documentation/mapkit/mkmapviewdefaultannotationviewreuseidentifier
-declare const MKMapViewDefaultAnnotationViewReuseIdentifier: string | cocoascript.NSString;
+declare const MKMapViewDefaultAnnotationViewReuseIdentifier: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/mapkit/mkmapviewdefaultclusterannotationviewreuseidentifier
-declare const MKMapViewDefaultClusterAnnotationViewReuseIdentifier: string | cocoascript.NSString;
+declare const MKMapViewDefaultClusterAnnotationViewReuseIdentifier: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An interface for associating your content with a specific map location.
@@ -565,7 +565,7 @@ declare namespace cocoascript {
 
 declare const MKMapItem: cocoascript.MKMapItem;
 // doc://com.apple.documentation/documentation/mapkit/mkmapitemtypeidentifier
-declare const MKMapItemTypeIdentifier: string | cocoascript.NSString;
+declare const MKMapItemTypeIdentifier: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * The visual representation of one of your annotation objects.
@@ -659,7 +659,7 @@ declare namespace cocoascript {
 
 declare const MKAnnotationView: cocoascript.MKAnnotationView;
 // doc://com.apple.documentation/documentation/mapkit/mkannotationcalloutinfodidchangenotification
-declare const MKAnnotationCalloutInfoDidChangeNotification: string | cocoascript.NSString;
+declare const MKAnnotationCalloutInfoDidChangeNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An annotation view that displays a balloon-shaped marker at the designated location.
@@ -789,7 +789,7 @@ declare namespace cocoascript {
 
 declare const MKOverlayRenderer: cocoascript.MKOverlayRenderer;
 // doc://com.apple.documentation/documentation/mapkit/1452156-mkroadwidthatzoomscale
-declare const MKRoadWidthAtZoomScale: MKZoomScale;
+declare const MKRoadWidthAtZoomScale: cocoascript.MKZoomScale;
 declare namespace cocoascript {
   /**
    * Defines the basic behavior associated with all overlay views.
@@ -1235,7 +1235,7 @@ declare namespace cocoascript {
 
 declare const MKMapSnapshotter: cocoascript.MKMapSnapshotter;
 // doc://com.apple.documentation/documentation/mapkit/mkmapcamerazoomdefault
-declare const MKMapCameraZoomDefault: CLLocationDistance;
+declare const MKMapCameraZoomDefault: cocoascript.CLLocationDistance;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategory
   type MKPointOfInterestCategory = cocoascript.NSString;
@@ -1245,7 +1245,7 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/mapkit/mkpointsofinterestrequestmaxradius
-declare const MKPointsOfInterestRequestMaxRadius: CLLocationDistance;
+declare const MKPointsOfInterestRequestMaxRadius: cocoascript.CLLocationDistance;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/mapkit/mklocalsearchcompleterresulttype
   type MKLocalSearchCompleterResultType = cocoascript.NSUInteger;
@@ -1373,25 +1373,25 @@ declare namespace cocoascript {
 
 declare const MKDirectionsRequest: cocoascript.MKDirectionsRequest;
 // doc://com.apple.documentation/documentation/mapkit/mklaunchoptionscamerakey
-declare const MKLaunchOptionsCameraKey: string | cocoascript.NSString;
+declare const MKLaunchOptionsCameraKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/mapkit/mklaunchoptionsdirectionsmodedefault
-declare const MKLaunchOptionsDirectionsModeDefault: string | cocoascript.NSString;
+declare const MKLaunchOptionsDirectionsModeDefault: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/mapkit/mklaunchoptionsdirectionsmodedriving
-declare const MKLaunchOptionsDirectionsModeDriving: string | cocoascript.NSString;
+declare const MKLaunchOptionsDirectionsModeDriving: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/mapkit/mklaunchoptionsdirectionsmodekey
-declare const MKLaunchOptionsDirectionsModeKey: string | cocoascript.NSString;
+declare const MKLaunchOptionsDirectionsModeKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/mapkit/mklaunchoptionsdirectionsmodetransit
-declare const MKLaunchOptionsDirectionsModeTransit: string | cocoascript.NSString;
+declare const MKLaunchOptionsDirectionsModeTransit: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/mapkit/mklaunchoptionsdirectionsmodewalking
-declare const MKLaunchOptionsDirectionsModeWalking: string | cocoascript.NSString;
+declare const MKLaunchOptionsDirectionsModeWalking: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/mapkit/mklaunchoptionsmapcenterkey
-declare const MKLaunchOptionsMapCenterKey: string | cocoascript.NSString;
+declare const MKLaunchOptionsMapCenterKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/mapkit/mklaunchoptionsmapspankey
-declare const MKLaunchOptionsMapSpanKey: string | cocoascript.NSString;
+declare const MKLaunchOptionsMapSpanKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/mapkit/mklaunchoptionsmaptypekey
-declare const MKLaunchOptionsMapTypeKey: string | cocoascript.NSString;
+declare const MKLaunchOptionsMapTypeKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/mapkit/mklaunchoptionsshowstraffickey
-declare const MKLaunchOptionsShowsTrafficKey: string | cocoascript.NSString;
+declare const MKLaunchOptionsShowsTrafficKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * The route information returned by Apple servers in response to one of your requests for directions.
@@ -1560,7 +1560,7 @@ declare namespace cocoascript {
   type MKAnnotationViewDragState = cocoascript.NSUInteger;
 }
 // doc://com.apple.documentation/documentation/mapkit/mkfeaturedisplayprioritydefaultlow
-declare const MKFeatureDisplayPriorityDefaultLow: MKFeatureDisplayPriority;
+declare const MKFeatureDisplayPriorityDefaultLow: cocoascript.MKFeatureDisplayPriority;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/mapkit/mkfeaturevisibility
   type MKFeatureVisibility = cocoascript.NSInteger;
@@ -1743,11 +1743,11 @@ declare namespace cocoascript {
   type MKZoomScale = cocoascript.CGFloat;
 }
 // doc://com.apple.documentation/documentation/mapkit/mkmapsizeworld
-declare const MKMapSizeWorld: MKMapSize;
+declare const MKMapSizeWorld: cocoascript.MKMapSize;
 // doc://com.apple.documentation/documentation/mapkit/mkmaprectnull
-declare const MKMapRectNull: MKMapRect;
+declare const MKMapRectNull: cocoascript.MKMapRect;
 // doc://com.apple.documentation/documentation/mapkit/mkmaprectworld
-declare const MKMapRectWorld: MKMapRect;
+declare const MKMapRectWorld: cocoascript.MKMapRect;
 declare namespace cocoascript {
   /**
    * An abstract class that defines the common behavior shared by polygon and polyline overlays.
@@ -2161,85 +2161,85 @@ declare namespace cocoascript {
   type MKMapSnapshotCompletionHandler = cocoascript.NSError;
 }
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryairport
-declare const MKPointOfInterestCategoryAirport: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryAirport: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryamusementpark
-declare const MKPointOfInterestCategoryAmusementPark: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryAmusementPark: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryaquarium
-declare const MKPointOfInterestCategoryAquarium: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryAquarium: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryatm
-declare const MKPointOfInterestCategoryATM: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryATM: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorybakery
-declare const MKPointOfInterestCategoryBakery: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryBakery: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorybank
-declare const MKPointOfInterestCategoryBank: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryBank: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorybeach
-declare const MKPointOfInterestCategoryBeach: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryBeach: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorybrewery
-declare const MKPointOfInterestCategoryBrewery: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryBrewery: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorycafe
-declare const MKPointOfInterestCategoryCafe: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryCafe: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorycampground
-declare const MKPointOfInterestCategoryCampground: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryCampground: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorycarrental
-declare const MKPointOfInterestCategoryCarRental: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryCarRental: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryevcharger
-declare const MKPointOfInterestCategoryEVCharger: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryEVCharger: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryfirestation
-declare const MKPointOfInterestCategoryFireStation: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryFireStation: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryfitnesscenter
-declare const MKPointOfInterestCategoryFitnessCenter: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryFitnessCenter: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryfoodmarket
-declare const MKPointOfInterestCategoryFoodMarket: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryFoodMarket: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorygasstation
-declare const MKPointOfInterestCategoryGasStation: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryGasStation: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryhospital
-declare const MKPointOfInterestCategoryHospital: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryHospital: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryhotel
-declare const MKPointOfInterestCategoryHotel: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryHotel: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorylaundry
-declare const MKPointOfInterestCategoryLaundry: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryLaundry: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorylibrary
-declare const MKPointOfInterestCategoryLibrary: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryLibrary: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorymarina
-declare const MKPointOfInterestCategoryMarina: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryMarina: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorymovietheater
-declare const MKPointOfInterestCategoryMovieTheater: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryMovieTheater: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorymuseum
-declare const MKPointOfInterestCategoryMuseum: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryMuseum: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorynationalpark
-declare const MKPointOfInterestCategoryNationalPark: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryNationalPark: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorynightlife
-declare const MKPointOfInterestCategoryNightlife: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryNightlife: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorypark
-declare const MKPointOfInterestCategoryPark: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryPark: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryparking
-declare const MKPointOfInterestCategoryParking: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryParking: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorypharmacy
-declare const MKPointOfInterestCategoryPharmacy: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryPharmacy: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorypolice
-declare const MKPointOfInterestCategoryPolice: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryPolice: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorypostoffice
-declare const MKPointOfInterestCategoryPostOffice: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryPostOffice: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorypublictransport
-declare const MKPointOfInterestCategoryPublicTransport: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryPublicTransport: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryrestaurant
-declare const MKPointOfInterestCategoryRestaurant: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryRestaurant: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryrestroom
-declare const MKPointOfInterestCategoryRestroom: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryRestroom: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryschool
-declare const MKPointOfInterestCategorySchool: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategorySchool: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorystadium
-declare const MKPointOfInterestCategoryStadium: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryStadium: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorystore
-declare const MKPointOfInterestCategoryStore: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryStore: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorytheater
-declare const MKPointOfInterestCategoryTheater: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryTheater: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryuniversity
-declare const MKPointOfInterestCategoryUniversity: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryUniversity: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategorywinery
-declare const MKPointOfInterestCategoryWinery: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryWinery: cocoascript.MKPointOfInterestCategory;
 // doc://com.apple.documentation/documentation/mapkit/mkpointofinterestcategoryzoo
-declare const MKPointOfInterestCategoryZoo: MKPointOfInterestCategory;
+declare const MKPointOfInterestCategoryZoo: cocoascript.MKPointOfInterestCategory;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/mapkit/mkdistanceformatterunits
   type MKDistanceFormatterUnits = cocoascript.NSUInteger;
@@ -2261,17 +2261,17 @@ declare namespace cocoascript {
   type MKDirectionsTransportType = cocoascript.NSUInteger;
 }
 // doc://com.apple.documentation/documentation/mapkit/mkfeaturedisplaypriorityrequired
-declare const MKFeatureDisplayPriorityRequired: MKFeatureDisplayPriority;
+declare const MKFeatureDisplayPriorityRequired: cocoascript.MKFeatureDisplayPriority;
 // doc://com.apple.documentation/documentation/mapkit/mkfeaturedisplayprioritydefaulthigh
-declare const MKFeatureDisplayPriorityDefaultHigh: MKFeatureDisplayPriority;
+declare const MKFeatureDisplayPriorityDefaultHigh: cocoascript.MKFeatureDisplayPriority;
 // doc://com.apple.documentation/documentation/mapkit/mkannotationviewzprioritydefaultunselected
-declare const MKAnnotationViewZPriorityDefaultUnselected: MKAnnotationViewZPriority;
+declare const MKAnnotationViewZPriorityDefaultUnselected: cocoascript.MKAnnotationViewZPriority;
 // doc://com.apple.documentation/documentation/mapkit/mkannotationviewzprioritydefaultselected
-declare const MKAnnotationViewZPriorityDefaultSelected: MKAnnotationViewZPriority;
+declare const MKAnnotationViewZPriorityDefaultSelected: cocoascript.MKAnnotationViewZPriority;
 // doc://com.apple.documentation/documentation/mapkit/mkannotationviewzprioritymax
-declare const MKAnnotationViewZPriorityMax: MKAnnotationViewZPriority;
+declare const MKAnnotationViewZPriorityMax: cocoascript.MKAnnotationViewZPriority;
 // doc://com.apple.documentation/documentation/mapkit/mkannotationviewzprioritymin
-declare const MKAnnotationViewZPriorityMin: MKAnnotationViewZPriority;
+declare const MKAnnotationViewZPriorityMin: cocoascript.MKAnnotationViewZPriority;
 declare namespace cocoascript {
   interface MKTileOverlayPath {
   }

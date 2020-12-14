@@ -19,17 +19,17 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/coreservices/klsquarantineagentnamekey
-declare const kLSQuarantineAgentNameKey: CFStringRef;
+declare const kLSQuarantineAgentNameKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/klsquarantineagentbundleidentifierkey
-declare const kLSQuarantineAgentBundleIdentifierKey: CFStringRef;
+declare const kLSQuarantineAgentBundleIdentifierKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/klsquarantinetimestampkey
-declare const kLSQuarantineTimeStampKey: CFStringRef;
+declare const kLSQuarantineTimeStampKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/klsquarantinetypekey
-declare const kLSQuarantineTypeKey: CFStringRef;
+declare const kLSQuarantineTypeKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/klsquarantineoriginurlkey
-declare const kLSQuarantineOriginURLKey: CFStringRef;
+declare const kLSQuarantineOriginURLKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/klsquarantinedataurlkey
-declare const kLSQuarantineDataURLKey: CFStringRef;
+declare const kLSQuarantineDataURLKey: cocoascript.CFStringRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/aerecord
   type AERecord = cocoascript.AEDescList;
@@ -55,7 +55,7 @@ declare namespace cocoascript {
   type AEKeyword = any;
 }
 // doc://com.apple.documentation/documentation/coreservices/1413055-mdquerygetresultatindex
-declare const MDQueryGetResultAtIndex: CFIndex;
+declare const MDQueryGetResultAtIndex: cocoascript.CFIndex;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/mdquerysortcomparatorfunction
   type MDQuerySortComparatorFunction = void;
@@ -113,13 +113,13 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/coreservices/kaeremoteprocessnamekey
-declare const kAERemoteProcessNameKey: CFStringRef;
+declare const kAERemoteProcessNameKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kaeremoteprocessprocessidkey
-declare const kAERemoteProcessProcessIDKey: CFStringRef;
+declare const kAERemoteProcessProcessIDKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kaeremoteprocessurlkey
-declare const kAERemoteProcessURLKey: CFStringRef;
+declare const kAERemoteProcessURLKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kaeremoteprocessuseridkey
-declare const kAERemoteProcessUserIDKey: CFStringRef;
+declare const kAERemoteProcessUserIDKey: cocoascript.CFStringRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/oslaccessorprocptr
   type OSLAccessorProcPtr = any;
@@ -1225,99 +1225,99 @@ declare namespace cocoascript {
   type MDQuerySortOptionFlags = number;
 }
 // doc://com.apple.documentation/documentation/coreservices/kmditemapplicationcategories
-declare const kMDItemApplicationCategories: CFStringRef;
+declare const kMDItemApplicationCategories: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemcameraowner
-declare const kMDItemCameraOwner: CFStringRef;
+declare const kMDItemCameraOwner: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemcontenttypetree
-declare const kMDItemContentTypeTree: CFStringRef;
+declare const kMDItemContentTypeTree: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemdateadded
-declare const kMDItemDateAdded: CFStringRef;
+declare const kMDItemDateAdded: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemdownloadeddate
-declare const kMDItemDownloadedDate: CFStringRef;
+declare const kMDItemDownloadedDate: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemeditors
-declare const kMDItemEditors: CFStringRef;
+declare const kMDItemEditors: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemexecutablearchitectures
-declare const kMDItemExecutableArchitectures: CFStringRef;
+declare const kMDItemExecutableArchitectures: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemexecutableplatform
-declare const kMDItemExecutablePlatform: CFStringRef;
+declare const kMDItemExecutablePlatform: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemfocallength35mm
-declare const kMDItemFocalLength35mm: CFStringRef;
+declare const kMDItemFocalLength35mm: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemgpsareainformation
-declare const kMDItemGPSAreaInformation: CFStringRef;
+declare const kMDItemGPSAreaInformation: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemgpsdop
-declare const kMDItemGPSDOP: CFStringRef;
+declare const kMDItemGPSDOP: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemgpsdatestamp
-declare const kMDItemGPSDateStamp: CFStringRef;
+declare const kMDItemGPSDateStamp: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemgpsdestbearing
-declare const kMDItemGPSDestBearing: CFStringRef;
+declare const kMDItemGPSDestBearing: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemgpsdestdistance
-declare const kMDItemGPSDestDistance: CFStringRef;
+declare const kMDItemGPSDestDistance: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemgpsdestlatitude
-declare const kMDItemGPSDestLatitude: CFStringRef;
+declare const kMDItemGPSDestLatitude: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemgpsdestlongitude
-declare const kMDItemGPSDestLongitude: CFStringRef;
+declare const kMDItemGPSDestLongitude: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemgpsdifferental
-declare const kMDItemGPSDifferental: CFStringRef;
+declare const kMDItemGPSDifferental: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemgpsmapdatum
-declare const kMDItemGPSMapDatum: CFStringRef;
+declare const kMDItemGPSMapDatum: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemgpsmeasuremode
-declare const kMDItemGPSMeasureMode: CFStringRef;
+declare const kMDItemGPSMeasureMode: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemgpsprocessingmethod
-declare const kMDItemGPSProcessingMethod: CFStringRef;
+declare const kMDItemGPSProcessingMethod: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemgpsstatus
-declare const kMDItemGPSStatus: CFStringRef;
+declare const kMDItemGPSStatus: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemhtmlcontent
-declare const kMDItemHTMLContent: CFStringRef;
+declare const kMDItemHTMLContent: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemisapplicationmanaged
-declare const kMDItemIsApplicationManaged: CFStringRef;
+declare const kMDItemIsApplicationManaged: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemislikelyjunk
-declare const kMDItemIsLikelyJunk: CFStringRef;
+declare const kMDItemIsLikelyJunk: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemlabelid
-declare const kMDItemLabelID: CFStringRef;
+declare const kMDItemLabelID: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemlabelicon
-declare const kMDItemLabelIcon: CFStringRef;
+declare const kMDItemLabelIcon: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemlabelkind
-declare const kMDItemLabelKind: CFStringRef;
+declare const kMDItemLabelKind: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemlabeluuid
-declare const kMDItemLabelUUID: CFStringRef;
+declare const kMDItemLabelUUID: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemlensmodel
-declare const kMDItemLensModel: CFStringRef;
+declare const kMDItemLensModel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmdlabeladdednotification
-declare const kMDLabelAddedNotification: CFStringRef;
+declare const kMDLabelAddedNotification: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmdlabelchangednotification
-declare const kMDLabelChangedNotification: CFStringRef;
+declare const kMDLabelChangedNotification: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmdlabelremovednotification
-declare const kMDLabelRemovedNotification: CFStringRef;
+declare const kMDLabelRemovedNotification: cocoascript.CFStringRef;
 declare namespace cocoascript {
   interface MDItemRef {
   }
 }
 // doc://com.apple.documentation/documentation/coreservices/kmdquerydidfinishnotification
-declare const kMDQueryDidFinishNotification: CFStringRef;
+declare const kMDQueryDidFinishNotification: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmdquerydidupdatenotification
-declare const kMDQueryDidUpdateNotification: CFStringRef;
+declare const kMDQueryDidUpdateNotification: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmdqueryprogressnotification
-declare const kMDQueryProgressNotification: CFStringRef;
+declare const kMDQueryProgressNotification: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmdqueryupdateaddeditems
-declare const kMDQueryUpdateAddedItems: CFStringRef;
+declare const kMDQueryUpdateAddedItems: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmdqueryupdatechangeditems
-declare const kMDQueryUpdateChangedItems: CFStringRef;
+declare const kMDQueryUpdateChangedItems: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmdqueryupdateremoveditems
-declare const kMDQueryUpdateRemovedItems: CFStringRef;
+declare const kMDQueryUpdateRemovedItems: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmdqueryscopehome
-declare const kMDQueryScopeHome: CFStringRef;
+declare const kMDQueryScopeHome: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmdqueryscopecomputer
-declare const kMDQueryScopeComputer: CFStringRef;
+declare const kMDQueryScopeComputer: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmdqueryscopenetwork
-declare const kMDQueryScopeNetwork: CFStringRef;
+declare const kMDQueryScopeNetwork: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmdqueryscopeallindexed
-declare const kMDQueryScopeAllIndexed: CFStringRef;
+declare const kMDQueryScopeAllIndexed: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmdqueryscopecomputerindexed
-declare const kMDQueryScopeComputerIndexed: CFStringRef;
+declare const kMDQueryScopeComputerIndexed: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmdqueryscopenetworkindexed
-declare const kMDQueryScopeNetworkIndexed: CFStringRef;
+declare const kMDQueryScopeNetworkIndexed: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmdqueryresultcontentrelevance
-declare const kMDQueryResultContentRelevance: CFStringRef;
+declare const kMDQueryResultContentRelevance: cocoascript.CFStringRef;
 declare namespace cocoascript {
   interface DCSDictionaryRef {
   }
@@ -1351,17 +1351,17 @@ declare namespace cocoascript {
   type LSRolesMask = cocoascript.OptionBits;
 }
 // doc://com.apple.documentation/documentation/coreservices/klsquarantinetypecalendareventattachment
-declare const kLSQuarantineTypeCalendarEventAttachment: CFStringRef;
+declare const kLSQuarantineTypeCalendarEventAttachment: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/klsquarantinetypeemailattachment
-declare const kLSQuarantineTypeEmailAttachment: CFStringRef;
+declare const kLSQuarantineTypeEmailAttachment: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/klsquarantinetypeinstantmessageattachment
-declare const kLSQuarantineTypeInstantMessageAttachment: CFStringRef;
+declare const kLSQuarantineTypeInstantMessageAttachment: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/klsquarantinetypeotherattachment
-declare const kLSQuarantineTypeOtherAttachment: CFStringRef;
+declare const kLSQuarantineTypeOtherAttachment: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/klsquarantinetypeotherdownload
-declare const kLSQuarantineTypeOtherDownload: CFStringRef;
+declare const kLSQuarantineTypeOtherDownload: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/klsquarantinetypewebdownload
-declare const kLSQuarantineTypeWebDownload: CFStringRef;
+declare const kLSQuarantineTypeWebDownload: cocoascript.CFStringRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/lslaunchflags
   type LSLaunchFlags = cocoascript.OptionBits;
@@ -1443,9 +1443,9 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/coreservices/kcsidentityerrordomain
-declare const kCSIdentityErrorDomain: CFStringRef;
+declare const kCSIdentityErrorDomain: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kcsidentitygenerateposixname
-declare const kCSIdentityGeneratePosixName: CFStringRef;
+declare const kCSIdentityGeneratePosixName: cocoascript.CFStringRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/wsclientcontextcopydescriptioncallbackprocptr
   type WSClientContextCopyDescriptionCallBackProcPtr = void;
@@ -1835,25 +1835,25 @@ declare namespace cocoascript {
   type FSVolumeUnmountUPP = cocoascript.FSVolumeUnmountProcPtr;
 }
 // doc://com.apple.documentation/documentation/coreservices/kfsoperationbytescompletekey
-declare const kFSOperationBytesCompleteKey: CFStringRef;
+declare const kFSOperationBytesCompleteKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kfsoperationbytesremainingkey
-declare const kFSOperationBytesRemainingKey: CFStringRef;
+declare const kFSOperationBytesRemainingKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kfsoperationobjectscompletekey
-declare const kFSOperationObjectsCompleteKey: CFStringRef;
+declare const kFSOperationObjectsCompleteKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kfsoperationobjectsremainingkey
-declare const kFSOperationObjectsRemainingKey: CFStringRef;
+declare const kFSOperationObjectsRemainingKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kfsoperationthroughputkey
-declare const kFSOperationThroughputKey: CFStringRef;
+declare const kFSOperationThroughputKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kfsoperationtotalbyteskey
-declare const kFSOperationTotalBytesKey: CFStringRef;
+declare const kFSOperationTotalBytesKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kfsoperationtotalobjectskey
-declare const kFSOperationTotalObjectsKey: CFStringRef;
+declare const kFSOperationTotalObjectsKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kfsoperationtotaluservisibleobjectskey
-declare const kFSOperationTotalUserVisibleObjectsKey: CFStringRef;
+declare const kFSOperationTotalUserVisibleObjectsKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kfsoperationuservisibleobjectscompletekey
-declare const kFSOperationUserVisibleObjectsCompleteKey: CFStringRef;
+declare const kFSOperationUserVisibleObjectsCompleteKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kfsoperationuservisibleobjectsremainingkey
-declare const kFSOperationUserVisibleObjectsRemainingKey: CFStringRef;
+declare const kFSOperationUserVisibleObjectsRemainingKey: cocoascript.CFStringRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coreservices/selectorfunctionprocptr
   type SelectorFunctionProcPtr = cocoascript.SInt32;
@@ -2375,7 +2375,7 @@ declare namespace cocoascript {
   type MPTaskOptions = cocoascript.OptionBits;
 }
 // doc://com.apple.documentation/documentation/coreservices/pi
-declare const pi: double_t;
+declare const pi: cocoascript.double_t;
 declare namespace cocoascript {
   interface PEFContainerHeader {
   }
@@ -2933,29 +2933,29 @@ declare const GetMacOSStatusCommentString: any;
 // doc://com.apple.documentation/documentation/coreservices/1517786-getmacosstatuserrorstring
 declare const GetMacOSStatusErrorString: any;
 // doc://com.apple.documentation/documentation/coreservices/lslaunchurlspec/1445136-passthruparams
-declare const passThruParams: AEDesc;
+declare const passThruParams: cocoascript.AEDesc;
 declare namespace cocoascript {
   interface LSItemInfoRecord {
   }
 }
 // doc://com.apple.documentation/documentation/coreservices/klsitemcontenttype
-declare const kLSItemContentType: CFStringRef;
+declare const kLSItemContentType: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/klsitemfiletype
-declare const kLSItemFileType: CFStringRef;
+declare const kLSItemFileType: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/klsitemfilecreator
-declare const kLSItemFileCreator: CFStringRef;
+declare const kLSItemFileCreator: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/klsitemextension
-declare const kLSItemExtension: CFStringRef;
+declare const kLSItemExtension: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/klsitemdisplayname
-declare const kLSItemDisplayName: CFStringRef;
+declare const kLSItemDisplayName: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/klsitemdisplaykind
-declare const kLSItemDisplayKind: CFStringRef;
+declare const kLSItemDisplayKind: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/klsitemrolehandlerdisplayname
-declare const kLSItemRoleHandlerDisplayName: CFStringRef;
+declare const kLSItemRoleHandlerDisplayName: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/klsitemisinvisible
-declare const kLSItemIsInvisible: CFStringRef;
+declare const kLSItemIsInvisible: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/klsitemextensionishidden
-declare const kLSItemExtensionIsHidden: CFStringRef;
+declare const kLSItemExtensionIsHidden: cocoascript.CFStringRef;
 declare namespace cocoascript {
   interface LSApplicationParameters {
   }
@@ -2965,350 +2965,350 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/coreservices/klsitemquarantineproperties
-declare const kLSItemQuarantineProperties: CFStringRef;
+declare const kLSItemQuarantineProperties: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kskmintermlength
-declare const kSKMinTermLength: CFStringRef;
+declare const kSKMinTermLength: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kskstopwords
-declare const kSKStopWords: CFStringRef;
+declare const kSKStopWords: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/ksksubstitutions
-declare const kSKSubstitutions: CFStringRef;
+declare const kSKSubstitutions: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kskmaximumterms
-declare const kSKMaximumTerms: CFStringRef;
+declare const kSKMaximumTerms: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kskproximityindexing
-declare const kSKProximityIndexing: CFStringRef;
+declare const kSKProximityIndexing: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/ksktermchars
-declare const kSKTermChars: CFStringRef;
+declare const kSKTermChars: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kskstarttermchars
-declare const kSKStartTermChars: CFStringRef;
+declare const kSKStartTermChars: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kskendtermchars
-declare const kSKEndTermChars: CFStringRef;
+declare const kSKEndTermChars: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/ksklanguagetypes
-declare const kSKLanguageTypes: CFStringRef;
+declare const kSKLanguageTypes: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/fscatalogbulkparam/1565716-container
-declare const container: FSRef;
+declare const container: cocoascript.FSRef;
 // doc://com.apple.documentation/documentation/coreservices/fscatalogbulkparam/1566299-searchparams
-declare const searchParams: FSSearchParams;
+declare const searchParams: cocoascript.FSSearchParams;
 // doc://com.apple.documentation/documentation/coreservices/fsforkioparam/1566668-forkname
-declare const forkName: UniChar;
+declare const forkName: cocoascript.UniChar;
 // doc://com.apple.documentation/documentation/coreservices/fsforkioparam/1565544-ref
-declare const ref: FSRef;
+declare const ref: cocoascript.FSRef;
 // doc://com.apple.documentation/documentation/coreservices/fsrefforkioparam/1566465-catinfo
-declare const catInfo: FSCatalogInfo;
+declare const catInfo: cocoascript.FSCatalogInfo;
 // doc://com.apple.documentation/documentation/coreservices/fsrefforkioparam/1565422-forkname
-declare const forkName: UniChar;
+declare const forkName: cocoascript.UniChar;
 // doc://com.apple.documentation/documentation/coreservices/fsrefforkioparam/1565580-name
-declare const name: UniChar;
+declare const name: cocoascript.UniChar;
 // doc://com.apple.documentation/documentation/coreservices/fsrefforkioparam/1565320-parentref
-declare const parentRef: FSRef;
+declare const parentRef: cocoascript.FSRef;
 // doc://com.apple.documentation/documentation/coreservices/fsrefparam/1566023-name
-declare const name: UniChar;
+declare const name: cocoascript.UniChar;
 // doc://com.apple.documentation/documentation/coreservices/fsrefparam/1566586-ref
-declare const ref: FSRef;
+declare const ref: cocoascript.FSRef;
 // doc://com.apple.documentation/documentation/coreservices/fssearchparams/1566383-searchname
-declare const searchName: UniChar;
+declare const searchName: cocoascript.UniChar;
 // doc://com.apple.documentation/documentation/coreservices/kmdattributedisplayvalues
-declare const kMDAttributeDisplayValues: CFStringRef;
+declare const kMDAttributeDisplayValues: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmdattributeallvalues
-declare const kMDAttributeAllValues: CFStringRef;
+declare const kMDAttributeAllValues: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmdattributereadonlyvalues
-declare const kMDAttributeReadOnlyValues: CFStringRef;
+declare const kMDAttributeReadOnlyValues: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmdexporteravaliable
-declare const kMDExporterAvaliable: CFStringRef;
+declare const kMDExporterAvaliable: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmdattributename
-declare const kMDAttributeName: CFStringRef;
+declare const kMDAttributeName: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmdattributetype
-declare const kMDAttributeType: CFStringRef;
+declare const kMDAttributeType: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmdattributemultivalued
-declare const kMDAttributeMultiValued: CFStringRef;
+declare const kMDAttributeMultiValued: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemattributechangedate
-declare const kMDItemAttributeChangeDate: CFStringRef;
+declare const kMDItemAttributeChangeDate: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemaudiences
-declare const kMDItemAudiences: CFStringRef;
+declare const kMDItemAudiences: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemauthors
-declare const kMDItemAuthors: CFStringRef;
+declare const kMDItemAuthors: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemauthoraddresses
-declare const kMDItemAuthorAddresses: CFStringRef;
+declare const kMDItemAuthorAddresses: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemcity
-declare const kMDItemCity: CFStringRef;
+declare const kMDItemCity: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemcomment
-declare const kMDItemComment: CFStringRef;
+declare const kMDItemComment: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemcontactkeywords
-declare const kMDItemContactKeywords: CFStringRef;
+declare const kMDItemContactKeywords: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemcontentcreationdate
-declare const kMDItemContentCreationDate: CFStringRef;
+declare const kMDItemContentCreationDate: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemcontentmodificationdate
-declare const kMDItemContentModificationDate: CFStringRef;
+declare const kMDItemContentModificationDate: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemcontenttype
-declare const kMDItemContentType: CFStringRef;
+declare const kMDItemContentType: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemcontributors
-declare const kMDItemContributors: CFStringRef;
+declare const kMDItemContributors: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemcopyright
-declare const kMDItemCopyright: CFStringRef;
+declare const kMDItemCopyright: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemcountry
-declare const kMDItemCountry: CFStringRef;
+declare const kMDItemCountry: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemcoverage
-declare const kMDItemCoverage: CFStringRef;
+declare const kMDItemCoverage: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemcreator
-declare const kMDItemCreator: CFStringRef;
+declare const kMDItemCreator: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemdescription
-declare const kMDItemDescription: CFStringRef;
+declare const kMDItemDescription: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemduedate
-declare const kMDItemDueDate: CFStringRef;
+declare const kMDItemDueDate: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemdurationseconds
-declare const kMDItemDurationSeconds: CFStringRef;
+declare const kMDItemDurationSeconds: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditememailaddresses
-declare const kMDItemEmailAddresses: CFStringRef;
+declare const kMDItemEmailAddresses: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemencodingapplications
-declare const kMDItemEncodingApplications: CFStringRef;
+declare const kMDItemEncodingApplications: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemfindercomment
-declare const kMDItemFinderComment: CFStringRef;
+declare const kMDItemFinderComment: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemfonts
-declare const kMDItemFonts: CFStringRef;
+declare const kMDItemFonts: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemheadline
-declare const kMDItemHeadline: CFStringRef;
+declare const kMDItemHeadline: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemidentifier
-declare const kMDItemIdentifier: CFStringRef;
+declare const kMDItemIdentifier: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditeminstantmessageaddresses
-declare const kMDItemInstantMessageAddresses: CFStringRef;
+declare const kMDItemInstantMessageAddresses: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditeminstructions
-declare const kMDItemInstructions: CFStringRef;
+declare const kMDItemInstructions: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemkeywords
-declare const kMDItemKeywords: CFStringRef;
+declare const kMDItemKeywords: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemkind
-declare const kMDItemKind: CFStringRef;
+declare const kMDItemKind: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemlanguages
-declare const kMDItemLanguages: CFStringRef;
+declare const kMDItemLanguages: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemlastuseddate
-declare const kMDItemLastUsedDate: CFStringRef;
+declare const kMDItemLastUsedDate: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemnumberofpages
-declare const kMDItemNumberOfPages: CFStringRef;
+declare const kMDItemNumberOfPages: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemorganizations
-declare const kMDItemOrganizations: CFStringRef;
+declare const kMDItemOrganizations: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditempageheight
-declare const kMDItemPageHeight: CFStringRef;
+declare const kMDItemPageHeight: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditempagewidth
-declare const kMDItemPageWidth: CFStringRef;
+declare const kMDItemPageWidth: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemparticipants
-declare const kMDItemParticipants: CFStringRef;
+declare const kMDItemParticipants: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemphonenumbers
-declare const kMDItemPhoneNumbers: CFStringRef;
+declare const kMDItemPhoneNumbers: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemprojects
-declare const kMDItemProjects: CFStringRef;
+declare const kMDItemProjects: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditempublishers
-declare const kMDItemPublishers: CFStringRef;
+declare const kMDItemPublishers: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemrecipients
-declare const kMDItemRecipients: CFStringRef;
+declare const kMDItemRecipients: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemrecipientaddresses
-declare const kMDItemRecipientAddresses: CFStringRef;
+declare const kMDItemRecipientAddresses: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemrights
-declare const kMDItemRights: CFStringRef;
+declare const kMDItemRights: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemsecuritymethod
-declare const kMDItemSecurityMethod: CFStringRef;
+declare const kMDItemSecurityMethod: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemstarrating
-declare const kMDItemStarRating: CFStringRef;
+declare const kMDItemStarRating: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemstateorprovince
-declare const kMDItemStateOrProvince: CFStringRef;
+declare const kMDItemStateOrProvince: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemtextcontent
-declare const kMDItemTextContent: CFStringRef;
+declare const kMDItemTextContent: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemtitle
-declare const kMDItemTitle: CFStringRef;
+declare const kMDItemTitle: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemversion
-declare const kMDItemVersion: CFStringRef;
+declare const kMDItemVersion: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemwherefroms
-declare const kMDItemWhereFroms: CFStringRef;
+declare const kMDItemWhereFroms: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemsupportfiletype
-declare const kMDItemSupportFileType: CFStringRef;
+declare const kMDItemSupportFileType: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemauthoremailaddresses
-declare const kMDItemAuthorEmailAddresses: CFStringRef;
+declare const kMDItemAuthorEmailAddresses: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemrecipientemailaddresses
-declare const kMDItemRecipientEmailAddresses: CFStringRef;
+declare const kMDItemRecipientEmailAddresses: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemtheme
-declare const kMDItemTheme: CFStringRef;
+declare const kMDItemTheme: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemsubject
-declare const kMDItemSubject: CFStringRef;
+declare const kMDItemSubject: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemcfbundleidentifier
-declare const kMDItemCFBundleIdentifier: CFStringRef;
+declare const kMDItemCFBundleIdentifier: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemfshascustomicon
-declare const kMDItemFSHasCustomIcon: CFStringRef;
+declare const kMDItemFSHasCustomIcon: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemfsisstationery
-declare const kMDItemFSIsStationery: CFStringRef;
+declare const kMDItemFSIsStationery: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditeminformation
-declare const kMDItemInformation: CFStringRef;
+declare const kMDItemInformation: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemurl
-declare const kMDItemURL: CFStringRef;
+declare const kMDItemURL: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditempixelwidth
-declare const kMDItemPixelWidth: CFStringRef;
+declare const kMDItemPixelWidth: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditempixelheight
-declare const kMDItemPixelHeight: CFStringRef;
+declare const kMDItemPixelHeight: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditempixelcount
-declare const kMDItemPixelCount: CFStringRef;
+declare const kMDItemPixelCount: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemcolorspace
-declare const kMDItemColorSpace: CFStringRef;
+declare const kMDItemColorSpace: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditembitspersample
-declare const kMDItemBitsPerSample: CFStringRef;
+declare const kMDItemBitsPerSample: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemflashonoff
-declare const kMDItemFlashOnOff: CFStringRef;
+declare const kMDItemFlashOnOff: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemfocallength
-declare const kMDItemFocalLength: CFStringRef;
+declare const kMDItemFocalLength: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemacquisitionmake
-declare const kMDItemAcquisitionMake: CFStringRef;
+declare const kMDItemAcquisitionMake: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemacquisitionmodel
-declare const kMDItemAcquisitionModel: CFStringRef;
+declare const kMDItemAcquisitionModel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemisospeed
-declare const kMDItemISOSpeed: CFStringRef;
+declare const kMDItemISOSpeed: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemorientation
-declare const kMDItemOrientation: CFStringRef;
+declare const kMDItemOrientation: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemlayernames
-declare const kMDItemLayerNames: CFStringRef;
+declare const kMDItemLayerNames: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemwhitebalance
-declare const kMDItemWhiteBalance: CFStringRef;
+declare const kMDItemWhiteBalance: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemaperture
-declare const kMDItemAperture: CFStringRef;
+declare const kMDItemAperture: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemprofilename
-declare const kMDItemProfileName: CFStringRef;
+declare const kMDItemProfileName: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemresolutionwidthdpi
-declare const kMDItemResolutionWidthDPI: CFStringRef;
+declare const kMDItemResolutionWidthDPI: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemresolutionheightdpi
-declare const kMDItemResolutionHeightDPI: CFStringRef;
+declare const kMDItemResolutionHeightDPI: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemexposuremode
-declare const kMDItemExposureMode: CFStringRef;
+declare const kMDItemExposureMode: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemexposuretimeseconds
-declare const kMDItemExposureTimeSeconds: CFStringRef;
+declare const kMDItemExposureTimeSeconds: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemexifversion
-declare const kMDItemEXIFVersion: CFStringRef;
+declare const kMDItemEXIFVersion: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemalbum
-declare const kMDItemAlbum: CFStringRef;
+declare const kMDItemAlbum: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemhasalphachannel
-declare const kMDItemHasAlphaChannel: CFStringRef;
+declare const kMDItemHasAlphaChannel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemredeyeonoff
-declare const kMDItemRedEyeOnOff: CFStringRef;
+declare const kMDItemRedEyeOnOff: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemmeteringmode
-declare const kMDItemMeteringMode: CFStringRef;
+declare const kMDItemMeteringMode: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemmaxaperture
-declare const kMDItemMaxAperture: CFStringRef;
+declare const kMDItemMaxAperture: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemfnumber
-declare const kMDItemFNumber: CFStringRef;
+declare const kMDItemFNumber: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemexposureprogram
-declare const kMDItemExposureProgram: CFStringRef;
+declare const kMDItemExposureProgram: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemexposuretimestring
-declare const kMDItemExposureTimeString: CFStringRef;
+declare const kMDItemExposureTimeString: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemexifgpsversion
-declare const kMDItemEXIFGPSVersion: CFStringRef;
+declare const kMDItemEXIFGPSVersion: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemaltitude
-declare const kMDItemAltitude: CFStringRef;
+declare const kMDItemAltitude: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemlatitude
-declare const kMDItemLatitude: CFStringRef;
+declare const kMDItemLatitude: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemlongitude
-declare const kMDItemLongitude: CFStringRef;
+declare const kMDItemLongitude: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemtimestamp
-declare const kMDItemTimestamp: CFStringRef;
+declare const kMDItemTimestamp: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemspeed
-declare const kMDItemSpeed: CFStringRef;
+declare const kMDItemSpeed: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemgpstrack
-declare const kMDItemGPSTrack: CFStringRef;
+declare const kMDItemGPSTrack: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemimagedirection
-declare const kMDItemImageDirection: CFStringRef;
+declare const kMDItemImageDirection: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemnamedlocation
-declare const kMDItemNamedLocation: CFStringRef;
+declare const kMDItemNamedLocation: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemaudiobitrate
-declare const kMDItemAudioBitRate: CFStringRef;
+declare const kMDItemAudioBitRate: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemcodecs
-declare const kMDItemCodecs: CFStringRef;
+declare const kMDItemCodecs: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemdeliverytype
-declare const kMDItemDeliveryType: CFStringRef;
+declare const kMDItemDeliveryType: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemmediatypes
-declare const kMDItemMediaTypes: CFStringRef;
+declare const kMDItemMediaTypes: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemstreamable
-declare const kMDItemStreamable: CFStringRef;
+declare const kMDItemStreamable: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemtotalbitrate
-declare const kMDItemTotalBitRate: CFStringRef;
+declare const kMDItemTotalBitRate: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemvideobitrate
-declare const kMDItemVideoBitRate: CFStringRef;
+declare const kMDItemVideoBitRate: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemdirector
-declare const kMDItemDirector: CFStringRef;
+declare const kMDItemDirector: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemproducer
-declare const kMDItemProducer: CFStringRef;
+declare const kMDItemProducer: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemgenre
-declare const kMDItemGenre: CFStringRef;
+declare const kMDItemGenre: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemperformers
-declare const kMDItemPerformers: CFStringRef;
+declare const kMDItemPerformers: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemoriginalformat
-declare const kMDItemOriginalFormat: CFStringRef;
+declare const kMDItemOriginalFormat: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemoriginalsource
-declare const kMDItemOriginalSource: CFStringRef;
+declare const kMDItemOriginalSource: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemappleloopdescriptors
-declare const kMDItemAppleLoopDescriptors: CFStringRef;
+declare const kMDItemAppleLoopDescriptors: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemappleloopskeyfiltertype
-declare const kMDItemAppleLoopsKeyFilterType: CFStringRef;
+declare const kMDItemAppleLoopsKeyFilterType: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemappleloopsloopmode
-declare const kMDItemAppleLoopsLoopMode: CFStringRef;
+declare const kMDItemAppleLoopsLoopMode: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemappleloopsrootkey
-declare const kMDItemAppleLoopsRootKey: CFStringRef;
+declare const kMDItemAppleLoopsRootKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemaudiochannelcount
-declare const kMDItemAudioChannelCount: CFStringRef;
+declare const kMDItemAudioChannelCount: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemaudioencodingapplication
-declare const kMDItemAudioEncodingApplication: CFStringRef;
+declare const kMDItemAudioEncodingApplication: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemaudiosamplerate
-declare const kMDItemAudioSampleRate: CFStringRef;
+declare const kMDItemAudioSampleRate: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemaudiotracknumber
-declare const kMDItemAudioTrackNumber: CFStringRef;
+declare const kMDItemAudioTrackNumber: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemcomposer
-declare const kMDItemComposer: CFStringRef;
+declare const kMDItemComposer: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemisgeneralmidisequence
-declare const kMDItemIsGeneralMIDISequence: CFStringRef;
+declare const kMDItemIsGeneralMIDISequence: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemkeysignature
-declare const kMDItemKeySignature: CFStringRef;
+declare const kMDItemKeySignature: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemlyricist
-declare const kMDItemLyricist: CFStringRef;
+declare const kMDItemLyricist: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemmusicalgenre
-declare const kMDItemMusicalGenre: CFStringRef;
+declare const kMDItemMusicalGenre: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemmusicalinstrumentcategory
-declare const kMDItemMusicalInstrumentCategory: CFStringRef;
+declare const kMDItemMusicalInstrumentCategory: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemmusicalinstrumentname
-declare const kMDItemMusicalInstrumentName: CFStringRef;
+declare const kMDItemMusicalInstrumentName: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemrecordingdate
-declare const kMDItemRecordingDate: CFStringRef;
+declare const kMDItemRecordingDate: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemrecordingyear
-declare const kMDItemRecordingYear: CFStringRef;
+declare const kMDItemRecordingYear: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemtempo
-declare const kMDItemTempo: CFStringRef;
+declare const kMDItemTempo: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemtimesignature
-declare const kMDItemTimeSignature: CFStringRef;
+declare const kMDItemTimeSignature: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemdisplayname
-declare const kMDItemDisplayName: CFStringRef;
+declare const kMDItemDisplayName: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemfscontentchangedate
-declare const kMDItemFSContentChangeDate: CFStringRef;
+declare const kMDItemFSContentChangeDate: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemfscreationdate
-declare const kMDItemFSCreationDate: CFStringRef;
+declare const kMDItemFSCreationDate: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemfsexists
-declare const kMDItemFSExists: CFStringRef;
+declare const kMDItemFSExists: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemfsinvisible
-declare const kMDItemFSInvisible: CFStringRef;
+declare const kMDItemFSInvisible: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemfsisextensionhidden
-declare const kMDItemFSIsExtensionHidden: CFStringRef;
+declare const kMDItemFSIsExtensionHidden: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemfsisreadable
-declare const kMDItemFSIsReadable: CFStringRef;
+declare const kMDItemFSIsReadable: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemfsiswriteable
-declare const kMDItemFSIsWriteable: CFStringRef;
+declare const kMDItemFSIsWriteable: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemfslabel
-declare const kMDItemFSLabel: CFStringRef;
+declare const kMDItemFSLabel: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemfsname
-declare const kMDItemFSName: CFStringRef;
+declare const kMDItemFSName: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemfsnodecount
-declare const kMDItemFSNodeCount: CFStringRef;
+declare const kMDItemFSNodeCount: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemfsownergroupid
-declare const kMDItemFSOwnerGroupID: CFStringRef;
+declare const kMDItemFSOwnerGroupID: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemfsowneruserid
-declare const kMDItemFSOwnerUserID: CFStringRef;
+declare const kMDItemFSOwnerUserID: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditemfssize
-declare const kMDItemFSSize: CFStringRef;
+declare const kMDItemFSSize: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/kmditempath
-declare const kMDItemPath: CFStringRef;
+declare const kMDItemPath: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/coreservices/lsapplicationparameters/1447460-application
-declare const application: FSRef;
+declare const application: cocoascript.FSRef;
 // doc://com.apple.documentation/documentation/coreservices/lslaunchfsrefspec/1448321-appref
-declare const appRef: FSRef;
+declare const appRef: cocoascript.FSRef;
 // doc://com.apple.documentation/documentation/coreservices/lslaunchfsrefspec/1444360-itemrefs
-declare const itemRefs: FSRef;
+declare const itemRefs: cocoascript.FSRef;
 // doc://com.apple.documentation/documentation/coreservices/lslaunchfsrefspec/1445933-passthruparams
-declare const passThruParams: AEDesc;
+declare const passThruParams: cocoascript.AEDesc;

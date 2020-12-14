@@ -134,33 +134,33 @@ declare namespace cocoascript {
 
 declare const NSManagedObjectContext: cocoascript.NSManagedObjectContext;
 // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextquerygenerationkey
-declare const NSManagedObjectContextQueryGenerationKey: string | cocoascript.NSString;
+declare const NSManagedObjectContextQueryGenerationKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextobjectsdidchangenotification
-declare const NSManagedObjectContextObjectsDidChangeNotification: string | cocoascript.NSString;
+declare const NSManagedObjectContextObjectsDidChangeNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextdidsavenotification
-declare const NSManagedObjectContextDidSaveNotification: string | cocoascript.NSString;
+declare const NSManagedObjectContextDidSaveNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nsmanagedobjectcontextwillsavenotification
-declare const NSManagedObjectContextWillSaveNotification: string | cocoascript.NSString;
+declare const NSManagedObjectContextWillSaveNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nsinsertedobjectskey
-declare const NSInsertedObjectsKey: string | cocoascript.NSString;
+declare const NSInsertedObjectsKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nsupdatedobjectskey
-declare const NSUpdatedObjectsKey: string | cocoascript.NSString;
+declare const NSUpdatedObjectsKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nsdeletedobjectskey
-declare const NSDeletedObjectsKey: string | cocoascript.NSString;
+declare const NSDeletedObjectsKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nsrefreshedobjectskey
-declare const NSRefreshedObjectsKey: string | cocoascript.NSString;
+declare const NSRefreshedObjectsKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nsinvalidatedobjectskey
-declare const NSInvalidatedObjectsKey: string | cocoascript.NSString;
+declare const NSInvalidatedObjectsKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nsinvalidatedallobjectskey
-declare const NSInvalidatedAllObjectsKey: string | cocoascript.NSString;
+declare const NSInvalidatedAllObjectsKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nsaffectedobjectserrorkey
-declare const NSAffectedObjectsErrorKey: string | cocoascript.NSString;
+declare const NSAffectedObjectsErrorKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nsaffectedstoreserrorkey
-declare const NSAffectedStoresErrorKey: string | cocoascript.NSString;
+declare const NSAffectedStoresErrorKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nsdetailederrorskey
-declare const NSDetailedErrorsKey: string | cocoascript.NSString;
+declare const NSDetailedErrorsKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nssqliteerrordomain
-declare const NSSQLiteErrorDomain: string | cocoascript.NSString;
+declare const NSSQLiteErrorDomain: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A base class that implements the behavior required of a Core Data model object.
@@ -277,13 +277,13 @@ declare namespace cocoascript {
 
 declare const NSManagedObject: cocoascript.NSManagedObject;
 // doc://com.apple.documentation/documentation/coredata/nsvalidationkeyerrorkey
-declare const NSValidationKeyErrorKey: string | cocoascript.NSString;
+declare const NSValidationKeyErrorKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nsvalidationobjecterrorkey
-declare const NSValidationObjectErrorKey: string | cocoascript.NSString;
+declare const NSValidationObjectErrorKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nsvalidationpredicateerrorkey
-declare const NSValidationPredicateErrorKey: string | cocoascript.NSString;
+declare const NSValidationPredicateErrorKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nsvalidationvalueerrorkey
-declare const NSValidationValueErrorKey: string | cocoascript.NSString;
+declare const NSValidationValueErrorKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A description of an entity in Core Data.
@@ -992,17 +992,17 @@ declare namespace cocoascript {
 
 declare const NSPersistentStoreCoordinator: cocoascript.NSPersistentStoreCoordinator;
 // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinatorstoresdidchangenotification
-declare const NSPersistentStoreCoordinatorStoresDidChangeNotification: string | cocoascript.NSString;
+declare const NSPersistentStoreCoordinatorStoresDidChangeNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinatorstoreswillchangenotification
-declare const NSPersistentStoreCoordinatorStoresWillChangeNotification: string | cocoascript.NSString;
+declare const NSPersistentStoreCoordinatorStoresWillChangeNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nspersistentstorecoordinatorwillremovestorenotification
-declare const NSPersistentStoreCoordinatorWillRemoveStoreNotification: string | cocoascript.NSString;
+declare const NSPersistentStoreCoordinatorWillRemoveStoreNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nspersistenthistorytrackingkey
-declare const NSPersistentHistoryTrackingKey: string | cocoascript.NSString;
+declare const NSPersistentHistoryTrackingKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nscoredatacorespotlightexporter
-declare const NSCoreDataCoreSpotlightExporter: string | cocoascript.NSString;
+declare const NSCoreDataCoreSpotlightExporter: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nspersistentstoredidimportubiquitouscontentchangesnotification
-declare const NSPersistentStoreDidImportUbiquitousContentChangesNotification: string | cocoascript.NSString;
+declare const NSPersistentStoreDidImportUbiquitousContentChangesNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A description of an attribute of a Core Data entity.
@@ -1872,7 +1872,7 @@ declare namespace cocoascript {
 
 declare const NSEntityMapping: cocoascript.NSEntityMapping;
 // doc://com.apple.documentation/documentation/coredata/nsfetchrequestexpressiontype
-declare const NSFetchRequestExpressionType: NSExpressionType;
+declare const NSFetchRequestExpressionType: cocoascript.NSExpressionType;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coredata/nsdeleterule
   type NSDeleteRule = cocoascript.NSUInteger;
@@ -2226,17 +2226,17 @@ declare namespace cocoascript {
 
 declare const NSEntityMigrationPolicy: cocoascript.NSEntityMigrationPolicy;
 // doc://com.apple.documentation/documentation/coredata/nsmigrationmanagerkey
-declare const NSMigrationManagerKey: string | cocoascript.NSString;
+declare const NSMigrationManagerKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nsmigrationsourceobjectkey
-declare const NSMigrationSourceObjectKey: string | cocoascript.NSString;
+declare const NSMigrationSourceObjectKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nsmigrationdestinationobjectkey
-declare const NSMigrationDestinationObjectKey: string | cocoascript.NSString;
+declare const NSMigrationDestinationObjectKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nsmigrationentitymappingkey
-declare const NSMigrationEntityMappingKey: string | cocoascript.NSString;
+declare const NSMigrationEntityMappingKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nsmigrationpropertymappingkey
-declare const NSMigrationPropertyMappingKey: string | cocoascript.NSString;
+declare const NSMigrationPropertyMappingKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/coredata/nsmigrationentitypolicykey
-declare const NSMigrationEntityPolicyKey: string | cocoascript.NSString;
+declare const NSMigrationEntityPolicyKey: cocoascript.NSString;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/coredata/nsentitymappingtype
   type NSEntityMappingType = cocoascript.NSUInteger;

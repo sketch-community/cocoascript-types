@@ -370,7 +370,7 @@ declare namespace cocoascript {
 
 declare const QCCompositionPickerView: cocoascript.QCCompositionPickerView;
 // doc://com.apple.documentation/documentation/quartz/qccompositionpickerviewdidselectcompositionnotification
-declare const QCCompositionPickerViewDidSelectCompositionNotification: string | cocoascript.NSString;
+declare const QCCompositionPickerViewDidSelectCompositionNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * The
@@ -591,7 +591,7 @@ declare namespace cocoascript {
 
 declare const QCCompositionRepository: cocoascript.QCCompositionRepository;
 // doc://com.apple.documentation/documentation/quartz/qccompositionrepositorydidupdatenotification
-declare const QCCompositionRepositoryDidUpdateNotification: string | cocoascript.NSString;
+declare const QCCompositionRepositoryDidUpdateNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A
@@ -693,9 +693,9 @@ declare namespace cocoascript {
 
 declare const QCView: cocoascript.QCView;
 // doc://com.apple.documentation/documentation/quartz/qcviewdidstartrenderingnotification
-declare const QCViewDidStartRenderingNotification: string | cocoascript.NSString;
+declare const QCViewDidStartRenderingNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/quartz/qcviewdidstoprenderingnotification
-declare const QCViewDidStopRenderingNotification: string | cocoascript.NSString;
+declare const QCViewDidStopRenderingNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * The
@@ -771,11 +771,11 @@ declare namespace cocoascript {
 
 declare const IKFilterBrowserPanel: cocoascript.IKFilterBrowserPanel;
 // doc://com.apple.documentation/documentation/quartz/ikfilterbrowserwillpreviewfilternotification
-declare const IKFilterBrowserWillPreviewFilterNotification: string | cocoascript.NSString;
+declare const IKFilterBrowserWillPreviewFilterNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/quartz/ikfilterbrowserfilterselectednotification
-declare const IKFilterBrowserFilterSelectedNotification: string | cocoascript.NSString;
+declare const IKFilterBrowserFilterSelectedNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/quartz/ikfilterbrowserfilterdoubleclicknotification
-declare const IKFilterBrowserFilterDoubleClickNotification: string | cocoascript.NSString;
+declare const IKFilterBrowserFilterDoubleClickNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * The
@@ -1262,7 +1262,7 @@ declare namespace cocoascript {
 
 declare const QCCompositionPickerPanel: cocoascript.QCCompositionPickerPanel;
 // doc://com.apple.documentation/documentation/quartz/qccompositionpickerpaneldidselectcompositionnotification
-declare const QCCompositionPickerPanelDidSelectCompositionNotification: string | cocoascript.NSString;
+declare const QCCompositionPickerPanelDidSelectCompositionNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * doc://com.apple.documentation/documentation/quartz/qcpatchcontroller

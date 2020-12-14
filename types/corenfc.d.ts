@@ -513,7 +513,7 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/corenfc/nfciso15693tagresponseerrorkey
-declare const NFCISO15693TagResponseErrorKey: string | cocoascript.NSString;
+declare const NFCISO15693TagResponseErrorKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An interface for interacting with a MIFARE® tag.
@@ -560,7 +560,7 @@ declare namespace cocoascript {
   type NFCReaderError = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/corenfc/nfcerrordomain
-declare const NFCErrorDomain: NSErrorDomain;
+declare const NFCErrorDomain: cocoascript.NSErrorDomain;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corenfc/pollingrequestcode
   type PollingRequestCode = cocoascript.NFCFeliCaPollingRequestCode;

@@ -506,33 +506,33 @@ declare namespace cocoascript {
 
 declare const Protocol: cocoascript.Protocol;
 // doc://com.apple.documentation/documentation/objectivec/1418635-class_getname
-declare const class_getName: Class;
+declare const class_getName: cocoascript.Class;
 // doc://com.apple.documentation/documentation/objectivec/1418918-class_getivarlayout
-declare const class_getIvarLayout: Class;
+declare const class_getIvarLayout: cocoascript.Class;
 // doc://com.apple.documentation/documentation/objectivec/1418508-class_getweakivarlayout
-declare const class_getWeakIvarLayout: Class;
+declare const class_getWeakIvarLayout: cocoascript.Class;
 // doc://com.apple.documentation/documentation/objectivec/1418547-object_getclassname
-declare const object_getClassName: id;
+declare const object_getClassName: cocoascript.id;
 // doc://com.apple.documentation/documentation/objectivec/1418922-ivar_getname
-declare const ivar_getName: Ivar;
+declare const ivar_getName: cocoascript.Ivar;
 // doc://com.apple.documentation/documentation/objectivec/1418569-ivar_gettypeencoding
-declare const ivar_getTypeEncoding: Ivar;
+declare const ivar_getTypeEncoding: cocoascript.Ivar;
 // doc://com.apple.documentation/documentation/objectivec/1418488-method_gettypeencoding
-declare const method_getTypeEncoding: Method;
+declare const method_getTypeEncoding: cocoascript.Method;
 // doc://com.apple.documentation/documentation/objectivec/1418970-objc_copyimagenames
 declare const objc_copyImageNames: number;
 // doc://com.apple.documentation/documentation/objectivec/1418539-class_getimagename
-declare const class_getImageName: Class;
+declare const class_getImageName: cocoascript.Class;
 // doc://com.apple.documentation/documentation/objectivec/1418485-objc_copyclassnamesforimage
 declare const objc_copyClassNamesForImage: number;
 // doc://com.apple.documentation/documentation/objectivec/1418571-sel_getname
-declare const sel_getName: SEL;
+declare const sel_getName: cocoascript.SEL;
 // doc://com.apple.documentation/documentation/objectivec/1418826-protocol_getname
-declare const protocol_getName: Protocol;
+declare const protocol_getName: cocoascript.Protocol;
 // doc://com.apple.documentation/documentation/objectivec/1418903-property_getname
-declare const property_getName: objc_property_t;
+declare const property_getName: cocoascript.objc_property_t;
 // doc://com.apple.documentation/documentation/objectivec/1418909-property_getattributes
-declare const property_getAttributes: objc_property_t;
+declare const property_getAttributes: cocoascript.objc_property_t;
 declare namespace cocoascript {
   interface Method {
   }
@@ -594,13 +594,13 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/objectivec/nxptrprototype
-declare const NXPtrPrototype: NXHashTablePrototype;
+declare const NXPtrPrototype: cocoascript.NXHashTablePrototype;
 // doc://com.apple.documentation/documentation/objectivec/nxptrstructkeyprototype
-declare const NXPtrStructKeyPrototype: NXHashTablePrototype;
+declare const NXPtrStructKeyPrototype: cocoascript.NXHashTablePrototype;
 // doc://com.apple.documentation/documentation/objectivec/nxstrprototype
-declare const NXStrPrototype: NXHashTablePrototype;
+declare const NXStrPrototype: cocoascript.NXHashTablePrototype;
 // doc://com.apple.documentation/documentation/objectivec/nxstrstructkeyprototype
-declare const NXStrStructKeyPrototype: NXHashTablePrototype;
+declare const NXStrStructKeyPrototype: cocoascript.NXHashTablePrototype;
 // doc://com.apple.documentation/documentation/objectivec/objc_property_attribute_t/1418734-name
 declare const name: string;
 // doc://com.apple.documentation/documentation/objectivec/objc_property_attribute_t/1418797-value
@@ -608,4 +608,4 @@ declare const value: string;
 // doc://com.apple.documentation/documentation/objectivec/nxhashtable/1430264-info
 declare const info: void;
 // doc://com.apple.documentation/documentation/objectivec/nxhashtable/1430270-prototype
-declare const prototype: NXHashTablePrototype;
+declare const prototype: cocoascript.NXHashTablePrototype;

@@ -419,7 +419,7 @@ declare namespace cocoascript {
 
 declare const CKRecordZone: cocoascript.CKRecordZone;
 // doc://com.apple.documentation/documentation/cloudkit/ckrecordzonedefaultname
-declare const CKRecordZoneDefaultName: string | cocoascript.NSString;
+declare const CKRecordZoneDefaultName: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object that identifies a specific version of a record.
@@ -796,11 +796,11 @@ declare namespace cocoascript {
 
 declare const CKAsset: cocoascript.CKAsset;
 // doc://com.apple.documentation/documentation/cloudkit/cksharetypekey
-declare const CKShareTypeKey: CKRecordFieldKey;
+declare const CKShareTypeKey: cocoascript.CKRecordFieldKey;
 // doc://com.apple.documentation/documentation/cloudkit/cksharetitlekey
-declare const CKShareTitleKey: CKRecordFieldKey;
+declare const CKShareTitleKey: cocoascript.CKRecordFieldKey;
 // doc://com.apple.documentation/documentation/cloudkit/cksharethumbnailimagedatakey
-declare const CKShareThumbnailImageDataKey: CKRecordFieldKey;
+declare const CKShareThumbnailImageDataKey: cocoascript.CKRecordFieldKey;
 declare namespace cocoascript {
   /**
    * An operation that fetches metadata for one or more shares.
@@ -968,11 +968,11 @@ declare namespace cocoascript {
 
 declare const CKContainer: cocoascript.CKContainer;
 // doc://com.apple.documentation/documentation/cloudkit/ckcurrentuserdefaultname
-declare const CKCurrentUserDefaultName: string | cocoascript.NSString;
+declare const CKCurrentUserDefaultName: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/cloudkit/ckownerdefaultname
-declare const CKOwnerDefaultName: string | cocoascript.NSString;
+declare const CKOwnerDefaultName: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/cloudkit/ckaccountchangednotification
-declare const CKAccountChangedNotification: string | cocoascript.NSString;
+declare const CKAccountChangedNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A conduit for accessing and performing operations on the data of an app container.
@@ -1133,13 +1133,13 @@ declare namespace cocoascript {
   type CKRecordFieldKey = cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/cloudkit/ckrecordparentkey
-declare const CKRecordParentKey: CKRecordFieldKey;
+declare const CKRecordParentKey: cocoascript.CKRecordFieldKey;
 // doc://com.apple.documentation/documentation/cloudkit/ckrecordsharekey
-declare const CKRecordShareKey: CKRecordFieldKey;
+declare const CKRecordShareKey: cocoascript.CKRecordFieldKey;
 // doc://com.apple.documentation/documentation/cloudkit/ckrecordtypeshare
-declare const CKRecordTypeShare: CKRecordType;
+declare const CKRecordTypeShare: cocoascript.CKRecordType;
 // doc://com.apple.documentation/documentation/cloudkit/ckrecordtypeuserrecord
-declare const CKRecordTypeUserRecord: CKRecordType;
+declare const CKRecordTypeUserRecord: cocoascript.CKRecordType;
 declare namespace cocoascript {
   /**
    * An operation for retrieving records from CloudKit.
@@ -1202,7 +1202,7 @@ declare namespace cocoascript {
 
 declare const CKFetchRecordZonesOperation: cocoascript.CKFetchRecordZonesOperation;
 // doc://com.apple.documentation/documentation/cloudkit/ckqueryoperationmaximumresults
-declare const CKQueryOperationMaximumResults: NSUInteger;
+declare const CKQueryOperationMaximumResults: cocoascript.NSUInteger;
 declare namespace cocoascript {
   /**
    * An operation that retrieves unread notifications from a CloudKit container.

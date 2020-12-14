@@ -696,13 +696,13 @@ declare namespace cocoascript {
 
 declare const CSSearchableItem: cocoascript.CSSearchableItem;
 // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemactiontype
-declare const CSSearchableItemActionType: string | cocoascript.NSString;
+declare const CSSearchableItemActionType: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/corespotlight/cssearchableitemactivityidentifier
-declare const CSSearchableItemActivityIdentifier: string | cocoascript.NSString;
+declare const CSSearchableItemActivityIdentifier: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/corespotlight/csquerycontinuationactiontype
-declare const CSQueryContinuationActionType: string | cocoascript.NSString;
+declare const CSQueryContinuationActionType: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/corespotlight/cssearchquerystring
-declare const CSSearchQueryString: string | cocoascript.NSString;
+declare const CSSearchQueryString: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * The on-device index.
@@ -778,9 +778,9 @@ declare namespace cocoascript {
 
 declare const CSSearchQuery: cocoascript.CSSearchQuery;
 // doc://com.apple.documentation/documentation/corespotlight/cssearchquerystring
-declare const CSSearchQueryString: string | cocoascript.NSString;
+declare const CSSearchQueryString: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/corespotlight/csquerycontinuationactiontype
-declare const CSQueryContinuationActionType: string | cocoascript.NSString;
+declare const CSQueryContinuationActionType: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object displaying localized text in search results related to your app.

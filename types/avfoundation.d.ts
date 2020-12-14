@@ -132,21 +132,21 @@ declare namespace cocoascript {
 
 declare const AVCaptureSession: cocoascript.AVCaptureSession;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesessionruntimeerrornotification
-declare const AVCaptureSessionRuntimeErrorNotification: string | cocoascript.NSString;
+declare const AVCaptureSessionRuntimeErrorNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesessiondidstartrunningnotification
-declare const AVCaptureSessionDidStartRunningNotification: string | cocoascript.NSString;
+declare const AVCaptureSessionDidStartRunningNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesessiondidstoprunningnotification
-declare const AVCaptureSessionDidStopRunningNotification: string | cocoascript.NSString;
+declare const AVCaptureSessionDidStopRunningNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesessionwasinterruptednotification
-declare const AVCaptureSessionWasInterruptedNotification: string | cocoascript.NSString;
+declare const AVCaptureSessionWasInterruptedNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesessioninterruptionendednotification
-declare const AVCaptureSessionInterruptionEndedNotification: string | cocoascript.NSString;
+declare const AVCaptureSessionInterruptionEndedNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesessionerrorkey
-declare const AVCaptureSessionErrorKey: string | cocoascript.NSString;
+declare const AVCaptureSessionErrorKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesessioninterruptionreasonkey
-declare const AVCaptureSessionInterruptionReasonKey: string | cocoascript.NSString;
+declare const AVCaptureSessionInterruptionReasonKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesessioninterruptionsystempressurestatekey
-declare const AVCaptureSessionInterruptionSystemPressureStateKey: string | cocoascript.NSString;
+declare const AVCaptureSessionInterruptionSystemPressureStateKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A capture session that supports simultaneous capture from multiple inputs of the same media type.
@@ -477,13 +477,13 @@ declare namespace cocoascript {
 
 declare const AVCaptureDevice: cocoascript.AVCaptureDevice;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturedevicewasconnectednotification
-declare const AVCaptureDeviceWasConnectedNotification: string | cocoascript.NSString;
+declare const AVCaptureDeviceWasConnectedNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturedevicewasdisconnectednotification
-declare const AVCaptureDeviceWasDisconnectedNotification: string | cocoascript.NSString;
+declare const AVCaptureDeviceWasDisconnectedNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturedevicesubjectareadidchangenotification
-declare const AVCaptureDeviceSubjectAreaDidChangeNotification: string | cocoascript.NSString;
+declare const AVCaptureDeviceSubjectAreaDidChangeNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesessioninterruptionsystempressurestatekey
-declare const AVCaptureSessionInterruptionSystemPressureStateKey: string | cocoascript.NSString;
+declare const AVCaptureSessionInterruptionSystemPressureStateKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A capture input that provides media from a capture device to a capture session.
@@ -3233,17 +3233,17 @@ declare namespace cocoascript {
 
 declare const AVPlayerItem: cocoascript.AVPlayerItem;
 // doc://com.apple.documentation/documentation/avfoundation/avplayeritemdidplaytoendtimenotification
-declare const AVPlayerItemDidPlayToEndTimeNotification: string | cocoascript.NSString;
+declare const AVPlayerItemDidPlayToEndTimeNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/avfoundation/avplayeritemfailedtoplaytoendtimenotification
-declare const AVPlayerItemFailedToPlayToEndTimeNotification: string | cocoascript.NSString;
+declare const AVPlayerItemFailedToPlayToEndTimeNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/avfoundation/avplayeritemtimejumpednotification
-declare const AVPlayerItemTimeJumpedNotification: string | cocoascript.NSString;
+declare const AVPlayerItemTimeJumpedNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/avfoundation/avplayeritemplaybackstallednotification
-declare const AVPlayerItemPlaybackStalledNotification: string | cocoascript.NSString;
+declare const AVPlayerItemPlaybackStalledNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/avfoundation/avplayeritemnewaccesslogentrynotification
-declare const AVPlayerItemNewAccessLogEntryNotification: string | cocoascript.NSString;
+declare const AVPlayerItemNewAccessLogEntryNotification: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/avfoundation/avplayeritemnewerrorlogentrynotification
-declare const AVPlayerItemNewErrorLogEntryNotification: string | cocoascript.NSString;
+declare const AVPlayerItemNewErrorLogEntryNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A single entry in a player item's access log.
@@ -3468,7 +3468,7 @@ declare namespace cocoascript {
 
 declare const AVSpeechUtterance: cocoascript.AVSpeechUtterance;
 // doc://com.apple.documentation/documentation/avfoundation/avspeechsynthesisipanotationattribute
-declare const AVSpeechSynthesisIPANotationAttribute: string | cocoascript.NSString;
+declare const AVSpeechSynthesisIPANotationAttribute: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A specification of the features and settings to use for a single photo capture request.
@@ -3830,7 +3830,7 @@ declare namespace cocoascript {
 
 declare const AVSpeechSynthesisVoice: cocoascript.AVSpeechSynthesisVoice;
 // doc://com.apple.documentation/documentation/avfoundation/avspeechsynthesisvoiceidentifieralex
-declare const AVSpeechSynthesisVoiceIdentifierAlex: string | cocoascript.NSString;
+declare const AVSpeechSynthesisVoiceIdentifierAlex: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object that specifies an original format description together with its replacement format description.
@@ -4621,7 +4621,7 @@ declare namespace cocoascript {
 
 declare const AVPlayerItemTrack: cocoascript.AVPlayerItemTrack;
 // doc://com.apple.documentation/documentation/avfoundation/avplayeritemtrackvideofieldmodedeinterlacefields
-declare const AVPlayerItemTrackVideoFieldModeDeinterlaceFields: string | cocoascript.NSString;
+declare const AVPlayerItemTrackVideoFieldModeDeinterlaceFields: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object that manages a player’s visual output.
@@ -4987,7 +4987,7 @@ declare namespace cocoascript {
 
 declare const AVContentKeyRequest: cocoascript.AVContentKeyRequest;
 // doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequestprotocolversionskey
-declare const AVContentKeyRequestProtocolVersionsKey: string | cocoascript.NSString;
+declare const AVContentKeyRequestProtocolVersionsKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object that encapsulates information about a persistable content decryption key request issued from a content key session.
@@ -5234,9 +5234,9 @@ declare namespace cocoascript {
 
 declare const AVSampleBufferDisplayLayer: cocoascript.AVSampleBufferDisplayLayer;
 // doc://com.apple.documentation/documentation/avfoundation/avsamplebufferdisplaylayerfailedtodecodenotificationerrorkey
-declare const AVSampleBufferDisplayLayerFailedToDecodeNotificationErrorKey: string | cocoascript.NSString;
+declare const AVSampleBufferDisplayLayerFailedToDecodeNotificationErrorKey: cocoascript.NSString;
 // doc://com.apple.documentation/documentation/avfoundation/avsamplebufferdisplaylayerfailedtodecodenotification
-declare const AVSampleBufferDisplayLayerFailedToDecodeNotification: string | cocoascript.NSString;
+declare const AVSampleBufferDisplayLayerFailedToDecodeNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object used to decompress audio and play compressed or uncompressed audio.
@@ -6414,11 +6414,11 @@ declare namespace cocoascript {
 
 declare const AVCaptureSystemPressureState: cocoascript.AVCaptureSystemPressureState;
 // doc://com.apple.documentation/documentation/avfoundation/avsemanticsegmentationmattetypehair
-declare const AVSemanticSegmentationMatteTypeHair: AVSemanticSegmentationMatteType;
+declare const AVSemanticSegmentationMatteTypeHair: cocoascript.AVSemanticSegmentationMatteType;
 // doc://com.apple.documentation/documentation/avfoundation/avsemanticsegmentationmattetypeskin
-declare const AVSemanticSegmentationMatteTypeSkin: AVSemanticSegmentationMatteType;
+declare const AVSemanticSegmentationMatteTypeSkin: cocoascript.AVSemanticSegmentationMatteType;
 // doc://com.apple.documentation/documentation/avfoundation/avsemanticsegmentationmattetypeteeth
-declare const AVSemanticSegmentationMatteTypeTeeth: AVSemanticSegmentationMatteType;
+declare const AVSemanticSegmentationMatteTypeTeeth: cocoascript.AVSemanticSegmentationMatteType;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/avfoundation/avcapturesessioninterruptionreason
   type AVCaptureSessionInterruptionReason = cocoascript.NSInteger;
@@ -6428,7 +6428,7 @@ declare namespace cocoascript {
   type AVCaptureSessionPreset = cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesessionpresetinputpriority
-declare const AVCaptureSessionPresetInputPriority: AVCaptureSessionPreset;
+declare const AVCaptureSessionPresetInputPriority: cocoascript.AVCaptureSessionPreset;
 declare namespace cocoascript {
   /**
    * A query for finding and monitoring available capture devices.
@@ -6573,7 +6573,7 @@ declare const AVCaptureDeviceFormat: cocoascript.AVCaptureDeviceFormat;
 // doc://com.apple.documentation/documentation/avfoundation/avcaptureexposuretargetbiascurrent
 declare const AVCaptureExposureTargetBiasCurrent: number;
 // doc://com.apple.documentation/documentation/avfoundation/avcaptureexposuredurationcurrent
-declare const AVCaptureExposureDurationCurrent: CMTime;
+declare const AVCaptureExposureDurationCurrent: cocoascript.CMTime;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/avfoundation/avcaptureexposuremode
   type AVCaptureExposureMode = cocoascript.NSInteger;
@@ -6607,7 +6607,7 @@ declare namespace cocoascript {
 // doc://com.apple.documentation/documentation/avfoundation/avcapturelenspositioncurrent
 declare const AVCaptureLensPositionCurrent: number;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturewhitebalancegainscurrent
-declare const AVCaptureWhiteBalanceGainsCurrent: AVCaptureWhiteBalanceGains;
+declare const AVCaptureWhiteBalanceGainsCurrent: cocoascript.AVCaptureWhiteBalanceGains;
 declare namespace cocoascript {
   interface AVCaptureWhiteBalanceGains {
   }
@@ -6631,9 +6631,9 @@ declare namespace cocoascript {
   type AVCaptureColorSpace = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesessionpresetphoto
-declare const AVCaptureSessionPresetPhoto: AVCaptureSessionPreset;
+declare const AVCaptureSessionPresetPhoto: cocoascript.AVCaptureSessionPreset;
 // doc://com.apple.documentation/documentation/avfoundation/avvideocodectypehevc
-declare const AVVideoCodecTypeHEVC: AVVideoCodecType;
+declare const AVVideoCodecTypeHEVC: cocoascript.AVVideoCodecType;
 declare namespace cocoascript {
   /**
    * Information about the camera characteristics used to capture images and depth data.
@@ -6766,9 +6766,9 @@ declare namespace cocoascript {
   type AVCapturePhotoQualityPrioritization = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/avfoundation/avcapturedevicetypebuiltindualcamera
-declare const AVCaptureDeviceTypeBuiltInDualCamera: AVCaptureDeviceType;
+declare const AVCaptureDeviceTypeBuiltInDualCamera: cocoascript.AVCaptureDeviceType;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturedevicetypebuiltintruedepthcamera
-declare const AVCaptureDeviceTypeBuiltInTrueDepthCamera: AVCaptureDeviceType;
+declare const AVCaptureDeviceTypeBuiltInTrueDepthCamera: cocoascript.AVCaptureDeviceType;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/avfoundation/avdepthdataaccuracy
   type AVDepthDataAccuracy = cocoascript.NSInteger;
@@ -6782,17 +6782,17 @@ declare namespace cocoascript {
   type AVSemanticSegmentationMatteType = cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/avfoundation/avvideocodectypeh264
-declare const AVVideoCodecTypeH264: AVVideoCodecType;
+declare const AVVideoCodecTypeH264: cocoascript.AVVideoCodecType;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/avfoundation/avvideocodectype
   type AVVideoCodecType = cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/avfoundation/avvideocodectypejpeg
-declare const AVVideoCodecTypeJPEG: AVVideoCodecType;
+declare const AVVideoCodecTypeJPEG: cocoascript.AVVideoCodecType;
 // doc://com.apple.documentation/documentation/avfoundation/avvideocodectypeappleprores422
-declare const AVVideoCodecTypeAppleProRes422: AVVideoCodecType;
+declare const AVVideoCodecTypeAppleProRes422: cocoascript.AVVideoCodecType;
 // doc://com.apple.documentation/documentation/avfoundation/avvideocodectypeappleprores4444
-declare const AVVideoCodecTypeAppleProRes4444: AVVideoCodecType;
+declare const AVVideoCodecTypeAppleProRes4444: cocoascript.AVVideoCodecType;
 declare namespace cocoascript {
   /**
    * A specific stream of data provided by a capture input.
@@ -6829,7 +6829,7 @@ declare namespace cocoascript {
 
 declare const AVCaptureInputPort: cocoascript.AVCaptureInputPort;
 // doc://com.apple.documentation/documentation/avfoundation/avcaptureinputportformatdescriptiondidchangenotification
-declare const AVCaptureInputPortFormatDescriptionDidChangeNotification: string | cocoascript.NSString;
+declare const AVCaptureInputPortFormatDescriptionDidChangeNotification: cocoascript.NSString;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttype
   type AVMetadataObjectType = cocoascript.NSString;
@@ -6847,17 +6847,17 @@ declare namespace cocoascript {
   type AVVideoFieldMode = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessioninterruptionnotification
-declare const AVAudioSessionInterruptionNotification: NSNotificationName;
+declare const AVAudioSessionInterruptionNotification: cocoascript.NSNotificationName;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmediaserviceswerelostnotification
-declare const AVAudioSessionMediaServicesWereLostNotification: NSNotificationName;
+declare const AVAudioSessionMediaServicesWereLostNotification: cocoascript.NSNotificationName;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmediaserviceswereresetnotification
-declare const AVAudioSessionMediaServicesWereResetNotification: NSNotificationName;
+declare const AVAudioSessionMediaServicesWereResetNotification: cocoascript.NSNotificationName;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionroutechangenotification
-declare const AVAudioSessionRouteChangeNotification: NSNotificationName;
+declare const AVAudioSessionRouteChangeNotification: cocoascript.NSNotificationName;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionsilencesecondaryaudiohintnotification
-declare const AVAudioSessionSilenceSecondaryAudioHintNotification: NSNotificationName;
+declare const AVAudioSessionSilenceSecondaryAudioHintNotification: cocoascript.NSNotificationName;
 // doc://com.apple.documentation/documentation/avfoundation/avroutedetectormultipleroutesdetecteddidchangenotification
-declare const AVRouteDetectorMultipleRoutesDetectedDidChangeNotification: NSNotificationName;
+declare const AVRouteDetectorMultipleRoutesDetectedDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   /**
    * An object that provides information about segment data.
@@ -7697,7 +7697,7 @@ declare namespace cocoascript {
 
 declare const AVAudioFile: cocoascript.AVAudioFile;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiofiletypekey
-declare const AVAudioFileTypeKey: string | cocoascript.NSString;
+declare const AVAudioFileTypeKey: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * A class used by the audio engine to represent time.
@@ -7757,9 +7757,9 @@ declare namespace cocoascript {
   type AVPlayerItemStatus = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/avfoundation/avplayeritemmediaselectiondidchangenotification
-declare const AVPlayerItemMediaSelectionDidChangeNotification: NSNotificationName;
+declare const AVPlayerItemMediaSelectionDidChangeNotification: cocoascript.NSNotificationName;
 // doc://com.apple.documentation/documentation/avfoundation/avplayeritemrecommendedtimeoffsetfromlivedidchangenotification
-declare const AVPlayerItemRecommendedTimeOffsetFromLiveDidChangeNotification: NSNotificationName;
+declare const AVPlayerItemRecommendedTimeOffsetFromLiveDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/avfoundation/avvideoaperturemode
   type AVVideoApertureMode = cocoascript.NSString;
@@ -7840,21 +7840,21 @@ declare namespace cocoascript {
   type AVKeyValueStatus = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataformathlsmetadata
-declare const AVMetadataFormatHLSMetadata: AVMetadataFormat;
+declare const AVMetadataFormatHLSMetadata: cocoascript.AVMetadataFormat;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataformatitunesmetadata
-declare const AVMetadataFormatiTunesMetadata: AVMetadataFormat;
+declare const AVMetadataFormatiTunesMetadata: cocoascript.AVMetadataFormat;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataformatid3metadata
-declare const AVMetadataFormatID3Metadata: AVMetadataFormat;
+declare const AVMetadataFormatID3Metadata: cocoascript.AVMetadataFormat;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataformatisouserdata
-declare const AVMetadataFormatISOUserData: AVMetadataFormat;
+declare const AVMetadataFormatISOUserData: cocoascript.AVMetadataFormat;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataformatquicktimemetadata
-declare const AVMetadataFormatQuickTimeMetadata: AVMetadataFormat;
+declare const AVMetadataFormatQuickTimeMetadata: cocoascript.AVMetadataFormat;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataformatquicktimeuserdata
-declare const AVMetadataFormatQuickTimeUserData: AVMetadataFormat;
+declare const AVMetadataFormatQuickTimeUserData: cocoascript.AVMetadataFormat;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataformatunknown
-declare const AVMetadataFormatUnknown: AVMetadataFormat;
+declare const AVMetadataFormatUnknown: cocoascript.AVMetadataFormat;
 // doc://com.apple.documentation/documentation/avfoundation/avfiletypequicktimemovie
-declare const AVFileTypeQuickTimeMovie: AVFileType;
+declare const AVFileTypeQuickTimeMovie: cocoascript.AVFileType;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/avfoundation/avassetexportsessionstatus
   type AVAssetExportSessionStatus = cocoascript.NSInteger;
@@ -8002,115 +8002,115 @@ declare namespace cocoascript {
 
 declare const AVAssetReaderOutputMetadataAdaptor: cocoascript.AVAssetReaderOutputMetadataAdaptor;
 // doc://com.apple.documentation/documentation/avfoundation/avmediatypeaudio
-declare const AVMediaTypeAudio: AVMediaType;
+declare const AVMediaTypeAudio: cocoascript.AVMediaType;
 // doc://com.apple.documentation/documentation/avfoundation/avmediatypeclosedcaption
-declare const AVMediaTypeClosedCaption: AVMediaType;
+declare const AVMediaTypeClosedCaption: cocoascript.AVMediaType;
 // doc://com.apple.documentation/documentation/avfoundation/avmediatypedepthdata
-declare const AVMediaTypeDepthData: AVMediaType;
+declare const AVMediaTypeDepthData: cocoascript.AVMediaType;
 // doc://com.apple.documentation/documentation/avfoundation/avmediatypemetadata
-declare const AVMediaTypeMetadata: AVMediaType;
+declare const AVMediaTypeMetadata: cocoascript.AVMediaType;
 // doc://com.apple.documentation/documentation/avfoundation/avmediatypemetadataobject
-declare const AVMediaTypeMetadataObject: AVMediaType;
+declare const AVMediaTypeMetadataObject: cocoascript.AVMediaType;
 // doc://com.apple.documentation/documentation/avfoundation/avmediatypemuxed
-declare const AVMediaTypeMuxed: AVMediaType;
+declare const AVMediaTypeMuxed: cocoascript.AVMediaType;
 // doc://com.apple.documentation/documentation/avfoundation/avmediatypesubtitle
-declare const AVMediaTypeSubtitle: AVMediaType;
+declare const AVMediaTypeSubtitle: cocoascript.AVMediaType;
 // doc://com.apple.documentation/documentation/avfoundation/avmediatypetext
-declare const AVMediaTypeText: AVMediaType;
+declare const AVMediaTypeText: cocoascript.AVMediaType;
 // doc://com.apple.documentation/documentation/avfoundation/avmediatypetimecode
-declare const AVMediaTypeTimecode: AVMediaType;
+declare const AVMediaTypeTimecode: cocoascript.AVMediaType;
 // doc://com.apple.documentation/documentation/avfoundation/avmediatypevideo
-declare const AVMediaTypeVideo: AVMediaType;
+declare const AVMediaTypeVideo: cocoascript.AVMediaType;
 // doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicaudible
-declare const AVMediaCharacteristicAudible: AVMediaCharacteristic;
+declare const AVMediaCharacteristicAudible: cocoascript.AVMediaCharacteristic;
 // doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiccontainsonlyforcedsubtitles
-declare const AVMediaCharacteristicContainsOnlyForcedSubtitles: AVMediaCharacteristic;
+declare const AVMediaCharacteristicContainsOnlyForcedSubtitles: cocoascript.AVMediaCharacteristic;
 // doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristictranscribesspokendialogforaccessibility
-declare const AVMediaCharacteristicTranscribesSpokenDialogForAccessibility: AVMediaCharacteristic;
+declare const AVMediaCharacteristicTranscribesSpokenDialogForAccessibility: cocoascript.AVMediaCharacteristic;
 // doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiceasytoread
-declare const AVMediaCharacteristicEasyToRead: AVMediaCharacteristic;
+declare const AVMediaCharacteristicEasyToRead: cocoascript.AVMediaCharacteristic;
 // doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiccontainsalphachannel
-declare const AVMediaCharacteristicContainsAlphaChannel: AVMediaCharacteristic;
+declare const AVMediaCharacteristicContainsAlphaChannel: cocoascript.AVMediaCharacteristic;
 // doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiccontainshdrvideo
-declare const AVMediaCharacteristicContainsHDRVideo: AVMediaCharacteristic;
+declare const AVMediaCharacteristicContainsHDRVideo: cocoascript.AVMediaCharacteristic;
 // doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicisoriginalcontent
-declare const AVMediaCharacteristicIsOriginalContent: AVMediaCharacteristic;
+declare const AVMediaCharacteristicIsOriginalContent: cocoascript.AVMediaCharacteristic;
 // doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicdescribesmusicandsoundforaccessibility
-declare const AVMediaCharacteristicDescribesMusicAndSoundForAccessibility: AVMediaCharacteristic;
+declare const AVMediaCharacteristicDescribesMusicAndSoundForAccessibility: cocoascript.AVMediaCharacteristic;
 // doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicdescribesvideoforaccessibility
-declare const AVMediaCharacteristicDescribesVideoForAccessibility: AVMediaCharacteristic;
+declare const AVMediaCharacteristicDescribesVideoForAccessibility: cocoascript.AVMediaCharacteristic;
 // doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicdubbedtranslation
-declare const AVMediaCharacteristicDubbedTranslation: AVMediaCharacteristic;
+declare const AVMediaCharacteristicDubbedTranslation: cocoascript.AVMediaCharacteristic;
 // doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicframebased
-declare const AVMediaCharacteristicFrameBased: AVMediaCharacteristic;
+declare const AVMediaCharacteristicFrameBased: cocoascript.AVMediaCharacteristic;
 // doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicisauxiliarycontent
-declare const AVMediaCharacteristicIsAuxiliaryContent: AVMediaCharacteristic;
+declare const AVMediaCharacteristicIsAuxiliaryContent: cocoascript.AVMediaCharacteristic;
 // doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicismainprogramcontent
-declare const AVMediaCharacteristicIsMainProgramContent: AVMediaCharacteristic;
+declare const AVMediaCharacteristicIsMainProgramContent: cocoascript.AVMediaCharacteristic;
 // doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiclanguagetranslation
-declare const AVMediaCharacteristicLanguageTranslation: AVMediaCharacteristic;
+declare const AVMediaCharacteristicLanguageTranslation: cocoascript.AVMediaCharacteristic;
 // doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristiclegible
-declare const AVMediaCharacteristicLegible: AVMediaCharacteristic;
+declare const AVMediaCharacteristicLegible: cocoascript.AVMediaCharacteristic;
 // doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicuseswidegamutcolorspace
-declare const AVMediaCharacteristicUsesWideGamutColorSpace: AVMediaCharacteristic;
+declare const AVMediaCharacteristicUsesWideGamutColorSpace: cocoascript.AVMediaCharacteristic;
 // doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicvisual
-declare const AVMediaCharacteristicVisual: AVMediaCharacteristic;
+declare const AVMediaCharacteristicVisual: cocoascript.AVMediaCharacteristic;
 // doc://com.apple.documentation/documentation/avfoundation/avmediacharacteristicvoiceovertranslation
-declare const AVMediaCharacteristicVoiceOverTranslation: AVMediaCharacteristic;
+declare const AVMediaCharacteristicVoiceOverTranslation: cocoascript.AVMediaCharacteristic;
 // doc://com.apple.documentation/documentation/avfoundation/avfiletypeac3
-declare const AVFileTypeAC3: AVFileType;
+declare const AVFileTypeAC3: cocoascript.AVFileType;
 // doc://com.apple.documentation/documentation/avfoundation/avfiletypeaifc
-declare const AVFileTypeAIFC: AVFileType;
+declare const AVFileTypeAIFC: cocoascript.AVFileType;
 // doc://com.apple.documentation/documentation/avfoundation/avfiletypeaiff
-declare const AVFileTypeAIFF: AVFileType;
+declare const AVFileTypeAIFF: cocoascript.AVFileType;
 // doc://com.apple.documentation/documentation/avfoundation/avfiletypeamr
-declare const AVFileTypeAMR: AVFileType;
+declare const AVFileTypeAMR: cocoascript.AVFileType;
 // doc://com.apple.documentation/documentation/avfoundation/avfiletypesunau
-declare const AVFileTypeSunAU: AVFileType;
+declare const AVFileTypeSunAU: cocoascript.AVFileType;
 // doc://com.apple.documentation/documentation/avfoundation/avfiletypeavci
-declare const AVFileTypeAVCI: AVFileType;
+declare const AVFileTypeAVCI: cocoascript.AVFileType;
 // doc://com.apple.documentation/documentation/avfoundation/avfiletypecoreaudioformat
-declare const AVFileTypeCoreAudioFormat: AVFileType;
+declare const AVFileTypeCoreAudioFormat: cocoascript.AVFileType;
 // doc://com.apple.documentation/documentation/avfoundation/avfiletypedng
-declare const AVFileTypeDNG: AVFileType;
+declare const AVFileTypeDNG: cocoascript.AVFileType;
 // doc://com.apple.documentation/documentation/avfoundation/avfiletypeenhancedac3
-declare const AVFileTypeEnhancedAC3: AVFileType;
+declare const AVFileTypeEnhancedAC3: cocoascript.AVFileType;
 // doc://com.apple.documentation/documentation/avfoundation/avfiletypeheic
-declare const AVFileTypeHEIC: AVFileType;
+declare const AVFileTypeHEIC: cocoascript.AVFileType;
 // doc://com.apple.documentation/documentation/avfoundation/avfiletypeheif
-declare const AVFileTypeHEIF: AVFileType;
+declare const AVFileTypeHEIF: cocoascript.AVFileType;
 // doc://com.apple.documentation/documentation/avfoundation/avfiletypejpeg
-declare const AVFileTypeJPEG: AVFileType;
+declare const AVFileTypeJPEG: cocoascript.AVFileType;
 // doc://com.apple.documentation/documentation/avfoundation/avfiletypeapplem4a
-declare const AVFileTypeAppleM4A: AVFileType;
+declare const AVFileTypeAppleM4A: cocoascript.AVFileType;
 // doc://com.apple.documentation/documentation/avfoundation/avfiletypeapplem4v
-declare const AVFileTypeAppleM4V: AVFileType;
+declare const AVFileTypeAppleM4V: cocoascript.AVFileType;
 // doc://com.apple.documentation/documentation/avfoundation/avfiletype3gpp
-declare const AVFileType3GPP: AVFileType;
+declare const AVFileType3GPP: cocoascript.AVFileType;
 // doc://com.apple.documentation/documentation/avfoundation/avfiletype3gpp2
-declare const AVFileType3GPP2: AVFileType;
+declare const AVFileType3GPP2: cocoascript.AVFileType;
 // doc://com.apple.documentation/documentation/avfoundation/avfiletypempeglayer3
-declare const AVFileTypeMPEGLayer3: AVFileType;
+declare const AVFileTypeMPEGLayer3: cocoascript.AVFileType;
 // doc://com.apple.documentation/documentation/avfoundation/avfiletypempeg4
-declare const AVFileTypeMPEG4: AVFileType;
+declare const AVFileTypeMPEG4: cocoascript.AVFileType;
 // doc://com.apple.documentation/documentation/avfoundation/avfiletypetiff
-declare const AVFileTypeTIFF: AVFileType;
+declare const AVFileTypeTIFF: cocoascript.AVFileType;
 // doc://com.apple.documentation/documentation/avfoundation/avfiletypewave
-declare const AVFileTypeWAVE: AVFileType;
+declare const AVFileTypeWAVE: cocoascript.AVFileType;
 // doc://com.apple.documentation/documentation/avfoundation/avfiletypeprofilempeg4applehls
-declare const AVFileTypeProfileMPEG4AppleHLS: AVFileTypeProfile;
+declare const AVFileTypeProfileMPEG4AppleHLS: cocoascript.AVFileTypeProfile;
 // doc://com.apple.documentation/documentation/avfoundation/avfiletypeprofilempeg4cmafcompliant
-declare const AVFileTypeProfileMPEG4CMAFCompliant: AVFileTypeProfile;
+declare const AVFileTypeProfileMPEG4CMAFCompliant: cocoascript.AVFileTypeProfile;
 // doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset1280x720
-declare const AVOutputSettingsPreset1280x720: AVOutputSettingsPreset;
+declare const AVOutputSettingsPreset1280x720: cocoascript.AVOutputSettingsPreset;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset
   type AVOutputSettingsPreset = cocoascript.NSString;
 }
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessioncategoryplayback
-declare const AVAudioSessionCategoryPlayback: AVAudioSessionCategory;
+declare const AVAudioSessionCategoryPlayback: cocoascript.AVAudioSessionCategory;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmodemovieplayback
-declare const AVAudioSessionModeMoviePlayback: AVAudioSessionMode;
+declare const AVAudioSessionModeMoviePlayback: cocoascript.AVAudioSessionMode;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/avfoundation/avplayerstatus
   type AVPlayerStatus = cocoascript.NSInteger;
@@ -8136,13 +8136,13 @@ declare namespace cocoascript {
   type AVPlayerHDRMode = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/avfoundation/avplayereligibleforhdrplaybackdidchangenotification
-declare const AVPlayerEligibleForHDRPlaybackDidChangeNotification: NSNotificationName;
+declare const AVPlayerEligibleForHDRPlaybackDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/avfoundation/avplayerlooperstatus
   type AVPlayerLooperStatus = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/avfoundation/avcoreanimationbegintimeatzero
-declare const AVCoreAnimationBeginTimeAtZero: CFTimeInterval;
+declare const AVCoreAnimationBeginTimeAtZero: cocoascript.CFTimeInterval;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/avfoundation/avcontentkeysystem
   type AVContentKeySystem = cocoascript.NSString;
@@ -8176,7 +8176,7 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/avfoundation/avsamplebufferrendersynchronizerratedidchangenotification
-declare const AVSampleBufferRenderSynchronizerRateDidChangeNotification: NSNotificationName;
+declare const AVSampleBufferRenderSynchronizerRateDidChangeNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/avfoundation/avqueuedsamplebufferrenderingstatus
   type AVQueuedSampleBufferRenderingStatus = cocoascript.NSInteger;
@@ -8186,7 +8186,7 @@ declare namespace cocoascript {
   type AVError = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/avfoundation/avfoundationerrordomain
-declare const AVFoundationErrorDomain: NSErrorDomain;
+declare const AVFoundationErrorDomain: cocoascript.NSErrorDomain;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/avfoundation/avaudiosessioncategory
   type AVAudioSessionCategory = cocoascript.NSString;
@@ -8448,7 +8448,7 @@ declare namespace cocoascript {
 
 declare const AVAudioEngine: cocoascript.AVAudioEngine;
 // doc://com.apple.documentation/documentation/avfoundation/avaudioengineconfigurationchangenotification
-declare const AVAudioEngineConfigurationChangeNotification: string | cocoascript.NSString;
+declare const AVAudioEngineConfigurationChangeNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An abstract class for an audio generation, processing, or I/O block.
@@ -8888,47 +8888,47 @@ declare namespace cocoascript {
   type AVCaptureSystemPressureFactors = cocoascript.NSUInteger;
 }
 // doc://com.apple.documentation/documentation/avfoundation/avsemanticsegmentationmattetypeglasses
-declare const AVSemanticSegmentationMatteTypeGlasses: AVSemanticSegmentationMatteType;
+declare const AVSemanticSegmentationMatteTypeGlasses: cocoascript.AVSemanticSegmentationMatteType;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesessionpresethigh
-declare const AVCaptureSessionPresetHigh: AVCaptureSessionPreset;
+declare const AVCaptureSessionPresetHigh: cocoascript.AVCaptureSessionPreset;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesessionpresetlow
-declare const AVCaptureSessionPresetLow: AVCaptureSessionPreset;
+declare const AVCaptureSessionPresetLow: cocoascript.AVCaptureSessionPreset;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesessionpresetmedium
-declare const AVCaptureSessionPresetMedium: AVCaptureSessionPreset;
+declare const AVCaptureSessionPresetMedium: cocoascript.AVCaptureSessionPreset;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesessionpreset960x540
-declare const AVCaptureSessionPreset960x540: AVCaptureSessionPreset;
+declare const AVCaptureSessionPreset960x540: cocoascript.AVCaptureSessionPreset;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesessionpreset1280x720
-declare const AVCaptureSessionPreset1280x720: AVCaptureSessionPreset;
+declare const AVCaptureSessionPreset1280x720: cocoascript.AVCaptureSessionPreset;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesessionpreset1920x1080
-declare const AVCaptureSessionPreset1920x1080: AVCaptureSessionPreset;
+declare const AVCaptureSessionPreset1920x1080: cocoascript.AVCaptureSessionPreset;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesessionpreset3840x2160
-declare const AVCaptureSessionPreset3840x2160: AVCaptureSessionPreset;
+declare const AVCaptureSessionPreset3840x2160: cocoascript.AVCaptureSessionPreset;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesessionpresetiframe960x540
-declare const AVCaptureSessionPresetiFrame960x540: AVCaptureSessionPreset;
+declare const AVCaptureSessionPresetiFrame960x540: cocoascript.AVCaptureSessionPreset;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesessionpresetiframe1280x720
-declare const AVCaptureSessionPresetiFrame1280x720: AVCaptureSessionPreset;
+declare const AVCaptureSessionPresetiFrame1280x720: cocoascript.AVCaptureSessionPreset;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesessionpreset320x240
-declare const AVCaptureSessionPreset320x240: AVCaptureSessionPreset;
+declare const AVCaptureSessionPreset320x240: cocoascript.AVCaptureSessionPreset;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesessionpreset640x480
-declare const AVCaptureSessionPreset640x480: AVCaptureSessionPreset;
+declare const AVCaptureSessionPreset640x480: cocoascript.AVCaptureSessionPreset;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesessionpreset352x288
-declare const AVCaptureSessionPreset352x288: AVCaptureSessionPreset;
+declare const AVCaptureSessionPreset352x288: cocoascript.AVCaptureSessionPreset;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturedevicetypebuiltinwideanglecamera
-declare const AVCaptureDeviceTypeBuiltInWideAngleCamera: AVCaptureDeviceType;
+declare const AVCaptureDeviceTypeBuiltInWideAngleCamera: cocoascript.AVCaptureDeviceType;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturedevicetypebuiltindualwidecamera
-declare const AVCaptureDeviceTypeBuiltInDualWideCamera: AVCaptureDeviceType;
+declare const AVCaptureDeviceTypeBuiltInDualWideCamera: cocoascript.AVCaptureDeviceType;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturedevicetypebuiltintriplecamera
-declare const AVCaptureDeviceTypeBuiltInTripleCamera: AVCaptureDeviceType;
+declare const AVCaptureDeviceTypeBuiltInTripleCamera: cocoascript.AVCaptureDeviceType;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturedevicetypebuiltinultrawidecamera
-declare const AVCaptureDeviceTypeBuiltInUltraWideCamera: AVCaptureDeviceType;
+declare const AVCaptureDeviceTypeBuiltInUltraWideCamera: cocoascript.AVCaptureDeviceType;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturedevicetypebuiltintelephotocamera
-declare const AVCaptureDeviceTypeBuiltInTelephotoCamera: AVCaptureDeviceType;
+declare const AVCaptureDeviceTypeBuiltInTelephotoCamera: cocoascript.AVCaptureDeviceType;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturedevicetypebuiltinmicrophone
-declare const AVCaptureDeviceTypeBuiltInMicrophone: AVCaptureDeviceType;
+declare const AVCaptureDeviceTypeBuiltInMicrophone: cocoascript.AVCaptureDeviceType;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturedevicetypeexternalunknown
-declare const AVCaptureDeviceTypeExternalUnknown: AVCaptureDeviceType;
+declare const AVCaptureDeviceTypeExternalUnknown: cocoascript.AVCaptureDeviceType;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturedevicetypebuiltinduocamera
-declare const AVCaptureDeviceTypeBuiltInDuoCamera: AVCaptureDeviceType;
+declare const AVCaptureDeviceTypeBuiltInDuoCamera: cocoascript.AVCaptureDeviceType;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/avfoundation/avcaptureautofocussystem
   type AVCaptureAutoFocusSystem = cocoascript.NSInteger;
@@ -8964,13 +8964,13 @@ declare namespace cocoascript {
   type AVCaptureVideoStabilizationMode = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/avfoundation/avvideocodectypehevcwithalpha
-declare const AVVideoCodecTypeHEVCWithAlpha: AVVideoCodecType;
+declare const AVVideoCodecTypeHEVCWithAlpha: cocoascript.AVVideoCodecType;
 // doc://com.apple.documentation/documentation/avfoundation/avvideocodectypeappleprores422lt
-declare const AVVideoCodecTypeAppleProRes422LT: AVVideoCodecType;
+declare const AVVideoCodecTypeAppleProRes422LT: cocoascript.AVVideoCodecType;
 // doc://com.apple.documentation/documentation/avfoundation/avvideocodectypeappleprores422hq
-declare const AVVideoCodecTypeAppleProRes422HQ: AVVideoCodecType;
+declare const AVVideoCodecTypeAppleProRes422HQ: cocoascript.AVVideoCodecType;
 // doc://com.apple.documentation/documentation/avfoundation/avvideocodectypeappleprores422proxy
-declare const AVVideoCodecTypeAppleProRes422Proxy: AVVideoCodecType;
+declare const AVVideoCodecTypeAppleProRes422Proxy: cocoascript.AVVideoCodecType;
 declare namespace cocoascript {
   /**
    * A configuration for defining bracketed photo captures in terms of bias relative to automatic exposure.
@@ -9027,53 +9027,53 @@ declare namespace cocoascript {
 
 declare const AVCaptureBracketedStillImageSettings: cocoascript.AVCaptureBracketedStillImageSettings;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeface
-declare const AVMetadataObjectTypeFace: AVMetadataObjectType;
+declare const AVMetadataObjectTypeFace: cocoascript.AVMetadataObjectType;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeupcecode
-declare const AVMetadataObjectTypeUPCECode: AVMetadataObjectType;
+declare const AVMetadataObjectTypeUPCECode: cocoascript.AVMetadataObjectType;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypecode39code
-declare const AVMetadataObjectTypeCode39Code: AVMetadataObjectType;
+declare const AVMetadataObjectTypeCode39Code: cocoascript.AVMetadataObjectType;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypecode39mod43code
-declare const AVMetadataObjectTypeCode39Mod43Code: AVMetadataObjectType;
+declare const AVMetadataObjectTypeCode39Mod43Code: cocoascript.AVMetadataObjectType;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeean13code
-declare const AVMetadataObjectTypeEAN13Code: AVMetadataObjectType;
+declare const AVMetadataObjectTypeEAN13Code: cocoascript.AVMetadataObjectType;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeean8code
-declare const AVMetadataObjectTypeEAN8Code: AVMetadataObjectType;
+declare const AVMetadataObjectTypeEAN8Code: cocoascript.AVMetadataObjectType;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypecode93code
-declare const AVMetadataObjectTypeCode93Code: AVMetadataObjectType;
+declare const AVMetadataObjectTypeCode93Code: cocoascript.AVMetadataObjectType;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypecode128code
-declare const AVMetadataObjectTypeCode128Code: AVMetadataObjectType;
+declare const AVMetadataObjectTypeCode128Code: cocoascript.AVMetadataObjectType;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypepdf417code
-declare const AVMetadataObjectTypePDF417Code: AVMetadataObjectType;
+declare const AVMetadataObjectTypePDF417Code: cocoascript.AVMetadataObjectType;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeqrcode
-declare const AVMetadataObjectTypeQRCode: AVMetadataObjectType;
+declare const AVMetadataObjectTypeQRCode: cocoascript.AVMetadataObjectType;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeazteccode
-declare const AVMetadataObjectTypeAztecCode: AVMetadataObjectType;
+declare const AVMetadataObjectTypeAztecCode: cocoascript.AVMetadataObjectType;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeinterleaved2of5code
-declare const AVMetadataObjectTypeInterleaved2of5Code: AVMetadataObjectType;
+declare const AVMetadataObjectTypeInterleaved2of5Code: cocoascript.AVMetadataObjectType;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypeitf14code
-declare const AVMetadataObjectTypeITF14Code: AVMetadataObjectType;
+declare const AVMetadataObjectTypeITF14Code: cocoascript.AVMetadataObjectType;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypedatamatrixcode
-declare const AVMetadataObjectTypeDataMatrixCode: AVMetadataObjectType;
+declare const AVMetadataObjectTypeDataMatrixCode: cocoascript.AVMetadataObjectType;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypecatbody
-declare const AVMetadataObjectTypeCatBody: AVMetadataObjectType;
+declare const AVMetadataObjectTypeCatBody: cocoascript.AVMetadataObjectType;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypedogbody
-declare const AVMetadataObjectTypeDogBody: AVMetadataObjectType;
+declare const AVMetadataObjectTypeDogBody: cocoascript.AVMetadataObjectType;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypehumanbody
-declare const AVMetadataObjectTypeHumanBody: AVMetadataObjectType;
+declare const AVMetadataObjectTypeHumanBody: cocoascript.AVMetadataObjectType;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataobjecttypesalientobject
-declare const AVMetadataObjectTypeSalientObject: AVMetadataObjectType;
+declare const AVMetadataObjectTypeSalientObject: cocoascript.AVMetadataObjectType;
 // doc://com.apple.documentation/documentation/avfoundation/avlayervideogravityresizeaspect
-declare const AVLayerVideoGravityResizeAspect: AVLayerVideoGravity;
+declare const AVLayerVideoGravityResizeAspect: cocoascript.AVLayerVideoGravity;
 // doc://com.apple.documentation/documentation/avfoundation/avlayervideogravityresizeaspectfill
-declare const AVLayerVideoGravityResizeAspectFill: AVLayerVideoGravity;
+declare const AVLayerVideoGravityResizeAspectFill: cocoascript.AVLayerVideoGravity;
 // doc://com.apple.documentation/documentation/avfoundation/avlayervideogravityresize
-declare const AVLayerVideoGravityResize: AVLayerVideoGravity;
+declare const AVLayerVideoGravityResize: cocoascript.AVLayerVideoGravity;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessioncategoryplayandrecord
-declare const AVAudioSessionCategoryPlayAndRecord: AVAudioSessionCategory;
+declare const AVAudioSessionCategoryPlayAndRecord: cocoascript.AVAudioSessionCategory;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessioncategorysoloambient
-declare const AVAudioSessionCategorySoloAmbient: AVAudioSessionCategory;
+declare const AVAudioSessionCategorySoloAmbient: cocoascript.AVAudioSessionCategory;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessioncategorymultiroute
-declare const AVAudioSessionCategoryMultiRoute: AVAudioSessionCategory;
+declare const AVAudioSessionCategoryMultiRoute: cocoascript.AVAudioSessionCategory;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/avfoundation/avaudiosessioninterruptiontype
   type AVAudioSessionInterruptionType = cocoascript.NSUInteger;
@@ -9167,7 +9167,7 @@ declare namespace cocoascript {
 
 declare const AVAudioUnitComponent: cocoascript.AVAudioUnitComponent;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiounitcomponenttagsdidchangenotification
-declare const AVAudioUnitComponentTagsDidChangeNotification: string | cocoascript.NSString;
+declare const AVAudioUnitComponentTagsDidChangeNotification: cocoascript.NSString;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/avfoundation/avassetsegmenttype
   type AVAssetSegmentType = cocoascript.NSInteger;
@@ -9271,11 +9271,11 @@ declare namespace cocoascript {
   type AVAudioEnvironmentDistanceAttenuationModel = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequestretryreasonreceivedobsoletecontentkey
-declare const AVContentKeyRequestRetryReasonReceivedObsoleteContentKey: AVContentKeyRequestRetryReason;
+declare const AVContentKeyRequestRetryReasonReceivedObsoleteContentKey: cocoascript.AVContentKeyRequestRetryReason;
 // doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequestretryreasonreceivedresponsewithexpiredlease
-declare const AVContentKeyRequestRetryReasonReceivedResponseWithExpiredLease: AVContentKeyRequestRetryReason;
+declare const AVContentKeyRequestRetryReasonReceivedResponseWithExpiredLease: cocoascript.AVContentKeyRequestRetryReason;
 // doc://com.apple.documentation/documentation/avfoundation/avcontentkeyrequestretryreasontimedout
-declare const AVContentKeyRequestRetryReasonTimedOut: AVContentKeyRequestRetryReason;
+declare const AVContentKeyRequestRetryReasonTimedOut: cocoascript.AVContentKeyRequestRetryReason;
 declare namespace cocoascript {
   interface AVEdgeWidths {
   }
@@ -9285,1143 +9285,1143 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatakeyspaceaudiofile
-declare const AVMetadataKeySpaceAudioFile: AVMetadataKeySpace;
+declare const AVMetadataKeySpaceAudioFile: cocoascript.AVMetadataKeySpace;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatakeyspacecommon
-declare const AVMetadataKeySpaceCommon: AVMetadataKeySpace;
+declare const AVMetadataKeySpaceCommon: cocoascript.AVMetadataKeySpace;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatakeyspacehlsdaterange
-declare const AVMetadataKeySpaceHLSDateRange: AVMetadataKeySpace;
+declare const AVMetadataKeySpaceHLSDateRange: cocoascript.AVMetadataKeySpace;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatakeyspaceitunes
-declare const AVMetadataKeySpaceiTunes: AVMetadataKeySpace;
+declare const AVMetadataKeySpaceiTunes: cocoascript.AVMetadataKeySpace;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatakeyspaceicy
-declare const AVMetadataKeySpaceIcy: AVMetadataKeySpace;
+declare const AVMetadataKeySpaceIcy: cocoascript.AVMetadataKeySpace;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatakeyspaceid3
-declare const AVMetadataKeySpaceID3: AVMetadataKeySpace;
+declare const AVMetadataKeySpaceID3: cocoascript.AVMetadataKeySpace;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatakeyspaceisouserdata
-declare const AVMetadataKeySpaceISOUserData: AVMetadataKeySpace;
+declare const AVMetadataKeySpaceISOUserData: cocoascript.AVMetadataKeySpace;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatakeyspacequicktimemetadata
-declare const AVMetadataKeySpaceQuickTimeMetadata: AVMetadataKeySpace;
+declare const AVMetadataKeySpaceQuickTimeMetadata: cocoascript.AVMetadataKeySpace;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatakeyspacequicktimeuserdata
-declare const AVMetadataKeySpaceQuickTimeUserData: AVMetadataKeySpace;
+declare const AVMetadataKeySpaceQuickTimeUserData: cocoascript.AVMetadataKeySpace;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeyaccessibilitydescription
-declare const AVMetadataCommonKeyAccessibilityDescription: AVMetadataKey;
+declare const AVMetadataCommonKeyAccessibilityDescription: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeyalbumname
-declare const AVMetadataCommonKeyAlbumName: AVMetadataKey;
+declare const AVMetadataCommonKeyAlbumName: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeyartist
-declare const AVMetadataCommonKeyArtist: AVMetadataKey;
+declare const AVMetadataCommonKeyArtist: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeyartwork
-declare const AVMetadataCommonKeyArtwork: AVMetadataKey;
+declare const AVMetadataCommonKeyArtwork: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeyauthor
-declare const AVMetadataCommonKeyAuthor: AVMetadataKey;
+declare const AVMetadataCommonKeyAuthor: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeycontributor
-declare const AVMetadataCommonKeyContributor: AVMetadataKey;
+declare const AVMetadataCommonKeyContributor: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeycopyrights
-declare const AVMetadataCommonKeyCopyrights: AVMetadataKey;
+declare const AVMetadataCommonKeyCopyrights: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeycreationdate
-declare const AVMetadataCommonKeyCreationDate: AVMetadataKey;
+declare const AVMetadataCommonKeyCreationDate: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeycreator
-declare const AVMetadataCommonKeyCreator: AVMetadataKey;
+declare const AVMetadataCommonKeyCreator: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeydescription
-declare const AVMetadataCommonKeyDescription: AVMetadataKey;
+declare const AVMetadataCommonKeyDescription: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeyformat
-declare const AVMetadataCommonKeyFormat: AVMetadataKey;
+declare const AVMetadataCommonKeyFormat: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeyidentifier
-declare const AVMetadataCommonKeyIdentifier: AVMetadataKey;
+declare const AVMetadataCommonKeyIdentifier: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeylanguage
-declare const AVMetadataCommonKeyLanguage: AVMetadataKey;
+declare const AVMetadataCommonKeyLanguage: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeylastmodifieddate
-declare const AVMetadataCommonKeyLastModifiedDate: AVMetadataKey;
+declare const AVMetadataCommonKeyLastModifiedDate: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeylocation
-declare const AVMetadataCommonKeyLocation: AVMetadataKey;
+declare const AVMetadataCommonKeyLocation: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeymake
-declare const AVMetadataCommonKeyMake: AVMetadataKey;
+declare const AVMetadataCommonKeyMake: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeymodel
-declare const AVMetadataCommonKeyModel: AVMetadataKey;
+declare const AVMetadataCommonKeyModel: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeypublisher
-declare const AVMetadataCommonKeyPublisher: AVMetadataKey;
+declare const AVMetadataCommonKeyPublisher: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeyrelation
-declare const AVMetadataCommonKeyRelation: AVMetadataKey;
+declare const AVMetadataCommonKeyRelation: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeysoftware
-declare const AVMetadataCommonKeySoftware: AVMetadataKey;
+declare const AVMetadataCommonKeySoftware: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeysource
-declare const AVMetadataCommonKeySource: AVMetadataKey;
+declare const AVMetadataCommonKeySource: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeysubject
-declare const AVMetadataCommonKeySubject: AVMetadataKey;
+declare const AVMetadataCommonKeySubject: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeytitle
-declare const AVMetadataCommonKeyTitle: AVMetadataKey;
+declare const AVMetadataCommonKeyTitle: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonkeytype
-declare const AVMetadataCommonKeyType: AVMetadataKey;
+declare const AVMetadataCommonKeyType: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyaccountkind
-declare const AVMetadataiTunesMetadataKeyAccountKind: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyAccountKind: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyacknowledgement
-declare const AVMetadataiTunesMetadataKeyAcknowledgement: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyAcknowledgement: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyalbum
-declare const AVMetadataiTunesMetadataKeyAlbum: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyAlbum: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyalbumartist
-declare const AVMetadataiTunesMetadataKeyAlbumArtist: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyAlbumArtist: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyappleid
-declare const AVMetadataiTunesMetadataKeyAppleID: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyAppleID: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyarranger
-declare const AVMetadataiTunesMetadataKeyArranger: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyArranger: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyartdirector
-declare const AVMetadataiTunesMetadataKeyArtDirector: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyArtDirector: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyartist
-declare const AVMetadataiTunesMetadataKeyArtist: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyArtist: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyartistid
-declare const AVMetadataiTunesMetadataKeyArtistID: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyArtistID: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyauthor
-declare const AVMetadataiTunesMetadataKeyAuthor: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyAuthor: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeybeatspermin
-declare const AVMetadataiTunesMetadataKeyBeatsPerMin: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyBeatsPerMin: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeycomposer
-declare const AVMetadataiTunesMetadataKeyComposer: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyComposer: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyconductor
-declare const AVMetadataiTunesMetadataKeyConductor: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyConductor: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeycontentrating
-declare const AVMetadataiTunesMetadataKeyContentRating: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyContentRating: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeycopyright
-declare const AVMetadataiTunesMetadataKeyCopyright: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyCopyright: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeycoverart
-declare const AVMetadataiTunesMetadataKeyCoverArt: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyCoverArt: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeycredits
-declare const AVMetadataiTunesMetadataKeyCredits: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyCredits: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeydescription
-declare const AVMetadataiTunesMetadataKeyDescription: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyDescription: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeydirector
-declare const AVMetadataiTunesMetadataKeyDirector: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyDirector: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeydisccompilation
-declare const AVMetadataiTunesMetadataKeyDiscCompilation: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyDiscCompilation: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeydiscnumber
-declare const AVMetadataiTunesMetadataKeyDiscNumber: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyDiscNumber: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyeq
-declare const AVMetadataiTunesMetadataKeyEQ: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyEQ: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyencodedby
-declare const AVMetadataiTunesMetadataKeyEncodedBy: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyEncodedBy: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyencodingtool
-declare const AVMetadataiTunesMetadataKeyEncodingTool: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyEncodingTool: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyexecproducer
-declare const AVMetadataiTunesMetadataKeyExecProducer: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyExecProducer: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeygenreid
-declare const AVMetadataiTunesMetadataKeyGenreID: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyGenreID: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeygrouping
-declare const AVMetadataiTunesMetadataKeyGrouping: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyGrouping: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeylinernotes
-declare const AVMetadataiTunesMetadataKeyLinerNotes: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyLinerNotes: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeylyrics
-declare const AVMetadataiTunesMetadataKeyLyrics: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyLyrics: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyonlineextras
-declare const AVMetadataiTunesMetadataKeyOnlineExtras: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyOnlineExtras: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyoriginalartist
-declare const AVMetadataiTunesMetadataKeyOriginalArtist: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyOriginalArtist: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyperformer
-declare const AVMetadataiTunesMetadataKeyPerformer: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyPerformer: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyphonogramrights
-declare const AVMetadataiTunesMetadataKeyPhonogramRights: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyPhonogramRights: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyplaylistid
-declare const AVMetadataiTunesMetadataKeyPlaylistID: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyPlaylistID: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeypredefinedgenre
-declare const AVMetadataiTunesMetadataKeyPredefinedGenre: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyPredefinedGenre: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyproducer
-declare const AVMetadataiTunesMetadataKeyProducer: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyProducer: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeypublisher
-declare const AVMetadataiTunesMetadataKeyPublisher: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyPublisher: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyrecordcompany
-declare const AVMetadataiTunesMetadataKeyRecordCompany: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyRecordCompany: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyreleasedate
-declare const AVMetadataiTunesMetadataKeyReleaseDate: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyReleaseDate: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeysoloist
-declare const AVMetadataiTunesMetadataKeySoloist: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeySoloist: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeysongid
-declare const AVMetadataiTunesMetadataKeySongID: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeySongID: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeysongname
-declare const AVMetadataiTunesMetadataKeySongName: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeySongName: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeysoundengineer
-declare const AVMetadataiTunesMetadataKeySoundEngineer: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeySoundEngineer: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeythanks
-declare const AVMetadataiTunesMetadataKeyThanks: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyThanks: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeytracknumber
-declare const AVMetadataiTunesMetadataKeyTrackNumber: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyTrackNumber: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeytracksubtitle
-declare const AVMetadataiTunesMetadataKeyTrackSubTitle: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyTrackSubTitle: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyusercomment
-declare const AVMetadataiTunesMetadataKeyUserComment: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyUserComment: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataitunesmetadatakeyusergenre
-declare const AVMetadataiTunesMetadataKeyUserGenre: AVMetadataKey;
+declare const AVMetadataiTunesMetadataKeyUserGenre: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataicymetadatakeystreamtitle
-declare const AVMetadataIcyMetadataKeyStreamTitle: AVMetadataKey;
+declare const AVMetadataIcyMetadataKeyStreamTitle: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataicymetadatakeystreamurl
-declare const AVMetadataIcyMetadataKeyStreamURL: AVMetadataKey;
+declare const AVMetadataIcyMetadataKeyStreamURL: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyalbumsortorder
-declare const AVMetadataID3MetadataKeyAlbumSortOrder: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyAlbumSortOrder: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyalbumtitle
-declare const AVMetadataID3MetadataKeyAlbumTitle: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyAlbumTitle: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyattachedpicture
-declare const AVMetadataID3MetadataKeyAttachedPicture: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyAttachedPicture: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyaudioencryption
-declare const AVMetadataID3MetadataKeyAudioEncryption: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyAudioEncryption: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyaudioseekpointindex
-declare const AVMetadataID3MetadataKeyAudioSeekPointIndex: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyAudioSeekPointIndex: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyband
-declare const AVMetadataID3MetadataKeyBand: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyBand: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeybeatsperminute
-declare const AVMetadataID3MetadataKeyBeatsPerMinute: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyBeatsPerMinute: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeycomments
-declare const AVMetadataID3MetadataKeyComments: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyComments: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeycommercial
-declare const AVMetadataID3MetadataKeyCommercial: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyCommercial: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeycommerical
-declare const AVMetadataID3MetadataKeyCommerical: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyCommerical: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeycommercialinformation
-declare const AVMetadataID3MetadataKeyCommercialInformation: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyCommercialInformation: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeycomposer
-declare const AVMetadataID3MetadataKeyComposer: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyComposer: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyconductor
-declare const AVMetadataID3MetadataKeyConductor: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyConductor: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeycontentgroupdescription
-declare const AVMetadataID3MetadataKeyContentGroupDescription: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyContentGroupDescription: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeycontenttype
-declare const AVMetadataID3MetadataKeyContentType: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyContentType: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeycopyright
-declare const AVMetadataID3MetadataKeyCopyright: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyCopyright: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeycopyrightinformation
-declare const AVMetadataID3MetadataKeyCopyrightInformation: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyCopyrightInformation: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeydate
-declare const AVMetadataID3MetadataKeyDate: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyDate: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyencodedby
-declare const AVMetadataID3MetadataKeyEncodedBy: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyEncodedBy: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyencodedwith
-declare const AVMetadataID3MetadataKeyEncodedWith: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyEncodedWith: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyencodingtime
-declare const AVMetadataID3MetadataKeyEncodingTime: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyEncodingTime: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyencryption
-declare const AVMetadataID3MetadataKeyEncryption: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyEncryption: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyequalization
-declare const AVMetadataID3MetadataKeyEqualization: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyEqualization: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyequalization2
-declare const AVMetadataID3MetadataKeyEqualization2: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyEqualization2: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyeventtimingcodes
-declare const AVMetadataID3MetadataKeyEventTimingCodes: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyEventTimingCodes: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyfileowner
-declare const AVMetadataID3MetadataKeyFileOwner: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyFileOwner: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyfiletype
-declare const AVMetadataID3MetadataKeyFileType: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyFileType: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeygeneralencapsulatedobject
-declare const AVMetadataID3MetadataKeyGeneralEncapsulatedObject: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyGeneralEncapsulatedObject: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeygroupidentifier
-declare const AVMetadataID3MetadataKeyGroupIdentifier: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyGroupIdentifier: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyinitialkey
-declare const AVMetadataID3MetadataKeyInitialKey: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyInitialKey: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyinternationalstandardrecordingcode
-declare const AVMetadataID3MetadataKeyInternationalStandardRecordingCode: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyInternationalStandardRecordingCode: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyinternetradiostationname
-declare const AVMetadataID3MetadataKeyInternetRadioStationName: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyInternetRadioStationName: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyinternetradiostationowner
-declare const AVMetadataID3MetadataKeyInternetRadioStationOwner: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyInternetRadioStationOwner: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyinvolvedpeoplelist_v23
-declare const AVMetadataID3MetadataKeyInvolvedPeopleList_v23: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyInvolvedPeopleList_v23: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyinvolvedpeoplelist_v24
-declare const AVMetadataID3MetadataKeyInvolvedPeopleList_v24: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyInvolvedPeopleList_v24: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeylanguage
-declare const AVMetadataID3MetadataKeyLanguage: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyLanguage: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyleadperformer
-declare const AVMetadataID3MetadataKeyLeadPerformer: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyLeadPerformer: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeylength
-declare const AVMetadataID3MetadataKeyLength: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyLength: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeylink
-declare const AVMetadataID3MetadataKeyLink: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyLink: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeylyricist
-declare const AVMetadataID3MetadataKeyLyricist: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyLyricist: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeympeglocationlookuptable
-declare const AVMetadataID3MetadataKeyMPEGLocationLookupTable: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyMPEGLocationLookupTable: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeymediatype
-declare const AVMetadataID3MetadataKeyMediaType: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyMediaType: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeymodifiedby
-declare const AVMetadataID3MetadataKeyModifiedBy: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyModifiedBy: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeymood
-declare const AVMetadataID3MetadataKeyMood: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyMood: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeymusiccdidentifier
-declare const AVMetadataID3MetadataKeyMusicCDIdentifier: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyMusicCDIdentifier: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeymusiciancreditslist
-declare const AVMetadataID3MetadataKeyMusicianCreditsList: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyMusicianCreditsList: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyofficialartistwebpage
-declare const AVMetadataID3MetadataKeyOfficialArtistWebpage: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyOfficialArtistWebpage: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyofficialaudiofilewebpage
-declare const AVMetadataID3MetadataKeyOfficialAudioFileWebpage: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyOfficialAudioFileWebpage: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyofficialaudiosourcewebpage
-declare const AVMetadataID3MetadataKeyOfficialAudioSourceWebpage: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyOfficialAudioSourceWebpage: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyofficialinternetradiostationhomepage
-declare const AVMetadataID3MetadataKeyOfficialInternetRadioStationHomepage: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyOfficialInternetRadioStationHomepage: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyofficialpublisherwebpage
-declare const AVMetadataID3MetadataKeyOfficialPublisherWebpage: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyOfficialPublisherWebpage: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyoriginalalbumtitle
-declare const AVMetadataID3MetadataKeyOriginalAlbumTitle: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyOriginalAlbumTitle: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyoriginalartist
-declare const AVMetadataID3MetadataKeyOriginalArtist: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyOriginalArtist: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyoriginalfilename
-declare const AVMetadataID3MetadataKeyOriginalFilename: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyOriginalFilename: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyoriginallyricist
-declare const AVMetadataID3MetadataKeyOriginalLyricist: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyOriginalLyricist: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyoriginalreleasetime
-declare const AVMetadataID3MetadataKeyOriginalReleaseTime: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyOriginalReleaseTime: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyoriginalreleaseyear
-declare const AVMetadataID3MetadataKeyOriginalReleaseYear: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyOriginalReleaseYear: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyownership
-declare const AVMetadataID3MetadataKeyOwnership: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyOwnership: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeypartofaset
-declare const AVMetadataID3MetadataKeyPartOfASet: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyPartOfASet: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeypayment
-declare const AVMetadataID3MetadataKeyPayment: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyPayment: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyperformersortorder
-declare const AVMetadataID3MetadataKeyPerformerSortOrder: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyPerformerSortOrder: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyplaycounter
-declare const AVMetadataID3MetadataKeyPlayCounter: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyPlayCounter: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyplaylistdelay
-declare const AVMetadataID3MetadataKeyPlaylistDelay: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyPlaylistDelay: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeypopularimeter
-declare const AVMetadataID3MetadataKeyPopularimeter: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyPopularimeter: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeypositionsynchronization
-declare const AVMetadataID3MetadataKeyPositionSynchronization: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyPositionSynchronization: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyprivate
-declare const AVMetadataID3MetadataKeyPrivate: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyPrivate: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyproducednotice
-declare const AVMetadataID3MetadataKeyProducedNotice: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyProducedNotice: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeypublisher
-declare const AVMetadataID3MetadataKeyPublisher: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyPublisher: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyrecommendedbuffersize
-declare const AVMetadataID3MetadataKeyRecommendedBufferSize: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyRecommendedBufferSize: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyrecordingdates
-declare const AVMetadataID3MetadataKeyRecordingDates: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyRecordingDates: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyrecordingtime
-declare const AVMetadataID3MetadataKeyRecordingTime: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyRecordingTime: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyrelativevolumeadjustment
-declare const AVMetadataID3MetadataKeyRelativeVolumeAdjustment: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyRelativeVolumeAdjustment: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyrelativevolumeadjustment2
-declare const AVMetadataID3MetadataKeyRelativeVolumeAdjustment2: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyRelativeVolumeAdjustment2: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyreleasetime
-declare const AVMetadataID3MetadataKeyReleaseTime: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyReleaseTime: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyreverb
-declare const AVMetadataID3MetadataKeyReverb: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyReverb: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyseek
-declare const AVMetadataID3MetadataKeySeek: AVMetadataKey;
+declare const AVMetadataID3MetadataKeySeek: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeysetsubtitle
-declare const AVMetadataID3MetadataKeySetSubtitle: AVMetadataKey;
+declare const AVMetadataID3MetadataKeySetSubtitle: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeysignature
-declare const AVMetadataID3MetadataKeySignature: AVMetadataKey;
+declare const AVMetadataID3MetadataKeySignature: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeysize
-declare const AVMetadataID3MetadataKeySize: AVMetadataKey;
+declare const AVMetadataID3MetadataKeySize: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeysubtitle
-declare const AVMetadataID3MetadataKeySubTitle: AVMetadataKey;
+declare const AVMetadataID3MetadataKeySubTitle: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeysynchronizedlyric
-declare const AVMetadataID3MetadataKeySynchronizedLyric: AVMetadataKey;
+declare const AVMetadataID3MetadataKeySynchronizedLyric: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeysynchronizedtempocodes
-declare const AVMetadataID3MetadataKeySynchronizedTempoCodes: AVMetadataKey;
+declare const AVMetadataID3MetadataKeySynchronizedTempoCodes: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeytaggingtime
-declare const AVMetadataID3MetadataKeyTaggingTime: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyTaggingTime: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeytermsofuse
-declare const AVMetadataID3MetadataKeyTermsOfUse: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyTermsOfUse: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeytime
-declare const AVMetadataID3MetadataKeyTime: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyTime: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeytitledescription
-declare const AVMetadataID3MetadataKeyTitleDescription: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyTitleDescription: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeytitlesortorder
-declare const AVMetadataID3MetadataKeyTitleSortOrder: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyTitleSortOrder: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeytracknumber
-declare const AVMetadataID3MetadataKeyTrackNumber: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyTrackNumber: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyuniquefileidentifier
-declare const AVMetadataID3MetadataKeyUniqueFileIdentifier: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyUniqueFileIdentifier: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyunsynchronizedlyric
-declare const AVMetadataID3MetadataKeyUnsynchronizedLyric: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyUnsynchronizedLyric: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyusertext
-declare const AVMetadataID3MetadataKeyUserText: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyUserText: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyuserurl
-declare const AVMetadataID3MetadataKeyUserURL: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyUserURL: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataid3metadatakeyyear
-declare const AVMetadataID3MetadataKeyYear: AVMetadataKey;
+declare const AVMetadataID3MetadataKeyYear: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataisouserdatakeyaccessibilitydescription
-declare const AVMetadataISOUserDataKeyAccessibilityDescription: AVMetadataKey;
+declare const AVMetadataISOUserDataKeyAccessibilityDescription: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataisouserdatakeycopyright
-declare const AVMetadataISOUserDataKeyCopyright: AVMetadataKey;
+declare const AVMetadataISOUserDataKeyCopyright: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataisouserdatakeydate
-declare const AVMetadataISOUserDataKeyDate: AVMetadataKey;
+declare const AVMetadataISOUserDataKeyDate: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataisouserdatakeytaggedcharacteristic
-declare const AVMetadataISOUserDataKeyTaggedCharacteristic: AVMetadataKey;
+declare const AVMetadataISOUserDataKeyTaggedCharacteristic: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeyaccessibilitydescription
-declare const AVMetadataQuickTimeMetadataKeyAccessibilityDescription: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyAccessibilityDescription: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeyalbum
-declare const AVMetadataQuickTimeMetadataKeyAlbum: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyAlbum: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeyarranger
-declare const AVMetadataQuickTimeMetadataKeyArranger: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyArranger: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeyartist
-declare const AVMetadataQuickTimeMetadataKeyArtist: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyArtist: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeyartwork
-declare const AVMetadataQuickTimeMetadataKeyArtwork: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyArtwork: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeyauthor
-declare const AVMetadataQuickTimeMetadataKeyAuthor: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyAuthor: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeycameraframereadouttime
-declare const AVMetadataQuickTimeMetadataKeyCameraFrameReadoutTime: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyCameraFrameReadoutTime: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeycameraidentifier
-declare const AVMetadataQuickTimeMetadataKeyCameraIdentifier: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyCameraIdentifier: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeycollectionuser
-declare const AVMetadataQuickTimeMetadataKeyCollectionUser: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyCollectionUser: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeycomment
-declare const AVMetadataQuickTimeMetadataKeyComment: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyComment: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeycomposer
-declare const AVMetadataQuickTimeMetadataKeyComposer: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyComposer: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeycontentidentifier
-declare const AVMetadataQuickTimeMetadataKeyContentIdentifier: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyContentIdentifier: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeycopyright
-declare const AVMetadataQuickTimeMetadataKeyCopyright: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyCopyright: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeycreationdate
-declare const AVMetadataQuickTimeMetadataKeyCreationDate: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyCreationDate: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeycredits
-declare const AVMetadataQuickTimeMetadataKeyCredits: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyCredits: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeydescription
-declare const AVMetadataQuickTimeMetadataKeyDescription: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyDescription: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeydirectionfacing
-declare const AVMetadataQuickTimeMetadataKeyDirectionFacing: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyDirectionFacing: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeydirectionmotion
-declare const AVMetadataQuickTimeMetadataKeyDirectionMotion: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyDirectionMotion: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeydirector
-declare const AVMetadataQuickTimeMetadataKeyDirector: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyDirector: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeydisplayname
-declare const AVMetadataQuickTimeMetadataKeyDisplayName: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyDisplayName: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeyencodedby
-declare const AVMetadataQuickTimeMetadataKeyEncodedBy: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyEncodedBy: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeygenre
-declare const AVMetadataQuickTimeMetadataKeyGenre: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyGenre: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeyinformation
-declare const AVMetadataQuickTimeMetadataKeyInformation: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyInformation: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeykeywords
-declare const AVMetadataQuickTimeMetadataKeyKeywords: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyKeywords: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeylocationbody
-declare const AVMetadataQuickTimeMetadataKeyLocationBody: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyLocationBody: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeylocationdate
-declare const AVMetadataQuickTimeMetadataKeyLocationDate: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyLocationDate: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeylocationiso6709
-declare const AVMetadataQuickTimeMetadataKeyLocationISO6709: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyLocationISO6709: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeylocationname
-declare const AVMetadataQuickTimeMetadataKeyLocationName: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyLocationName: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeylocationnote
-declare const AVMetadataQuickTimeMetadataKeyLocationNote: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyLocationNote: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeylocationrole
-declare const AVMetadataQuickTimeMetadataKeyLocationRole: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyLocationRole: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeymake
-declare const AVMetadataQuickTimeMetadataKeyMake: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyMake: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeymodel
-declare const AVMetadataQuickTimeMetadataKeyModel: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyModel: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeyoriginalartist
-declare const AVMetadataQuickTimeMetadataKeyOriginalArtist: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyOriginalArtist: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeyperformer
-declare const AVMetadataQuickTimeMetadataKeyPerformer: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyPerformer: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeyphonogramrights
-declare const AVMetadataQuickTimeMetadataKeyPhonogramRights: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyPhonogramRights: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeyproducer
-declare const AVMetadataQuickTimeMetadataKeyProducer: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyProducer: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeypublisher
-declare const AVMetadataQuickTimeMetadataKeyPublisher: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyPublisher: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeyratinguser
-declare const AVMetadataQuickTimeMetadataKeyRatingUser: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyRatingUser: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeysoftware
-declare const AVMetadataQuickTimeMetadataKeySoftware: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeySoftware: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeytitle
-declare const AVMetadataQuickTimeMetadataKeyTitle: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyTitle: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeyyear
-declare const AVMetadataQuickTimeMetadataKeyYear: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyYear: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimemetadatakeyixml
-declare const AVMetadataQuickTimeMetadataKeyiXML: AVMetadataKey;
+declare const AVMetadataQuickTimeMetadataKeyiXML: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeyaccessibilitydescription
-declare const AVMetadataQuickTimeUserDataKeyAccessibilityDescription: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyAccessibilityDescription: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeyalbum
-declare const AVMetadataQuickTimeUserDataKeyAlbum: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyAlbum: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeyarranger
-declare const AVMetadataQuickTimeUserDataKeyArranger: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyArranger: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeyartist
-declare const AVMetadataQuickTimeUserDataKeyArtist: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyArtist: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeyauthor
-declare const AVMetadataQuickTimeUserDataKeyAuthor: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyAuthor: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeychapter
-declare const AVMetadataQuickTimeUserDataKeyChapter: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyChapter: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeycomment
-declare const AVMetadataQuickTimeUserDataKeyComment: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyComment: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeycomposer
-declare const AVMetadataQuickTimeUserDataKeyComposer: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyComposer: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeycopyright
-declare const AVMetadataQuickTimeUserDataKeyCopyright: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyCopyright: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeycreationdate
-declare const AVMetadataQuickTimeUserDataKeyCreationDate: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyCreationDate: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeycredits
-declare const AVMetadataQuickTimeUserDataKeyCredits: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyCredits: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeydescription
-declare const AVMetadataQuickTimeUserDataKeyDescription: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyDescription: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeydirector
-declare const AVMetadataQuickTimeUserDataKeyDirector: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyDirector: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeydisclaimer
-declare const AVMetadataQuickTimeUserDataKeyDisclaimer: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyDisclaimer: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeyencodedby
-declare const AVMetadataQuickTimeUserDataKeyEncodedBy: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyEncodedBy: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeyfullname
-declare const AVMetadataQuickTimeUserDataKeyFullName: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyFullName: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeygenre
-declare const AVMetadataQuickTimeUserDataKeyGenre: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyGenre: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeyhostcomputer
-declare const AVMetadataQuickTimeUserDataKeyHostComputer: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyHostComputer: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeyinformation
-declare const AVMetadataQuickTimeUserDataKeyInformation: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyInformation: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeykeywords
-declare const AVMetadataQuickTimeUserDataKeyKeywords: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyKeywords: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeylocationiso6709
-declare const AVMetadataQuickTimeUserDataKeyLocationISO6709: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyLocationISO6709: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeymake
-declare const AVMetadataQuickTimeUserDataKeyMake: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyMake: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeymodel
-declare const AVMetadataQuickTimeUserDataKeyModel: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyModel: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeyoriginalartist
-declare const AVMetadataQuickTimeUserDataKeyOriginalArtist: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyOriginalArtist: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeyoriginalformat
-declare const AVMetadataQuickTimeUserDataKeyOriginalFormat: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyOriginalFormat: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeyoriginalsource
-declare const AVMetadataQuickTimeUserDataKeyOriginalSource: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyOriginalSource: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeyperformers
-declare const AVMetadataQuickTimeUserDataKeyPerformers: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyPerformers: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeyphonogramrights
-declare const AVMetadataQuickTimeUserDataKeyPhonogramRights: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyPhonogramRights: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeyproducer
-declare const AVMetadataQuickTimeUserDataKeyProducer: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyProducer: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeyproduct
-declare const AVMetadataQuickTimeUserDataKeyProduct: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyProduct: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeypublisher
-declare const AVMetadataQuickTimeUserDataKeyPublisher: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyPublisher: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeysoftware
-declare const AVMetadataQuickTimeUserDataKeySoftware: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeySoftware: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeyspecialplaybackrequirements
-declare const AVMetadataQuickTimeUserDataKeySpecialPlaybackRequirements: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeySpecialPlaybackRequirements: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeytaggedcharacteristic
-declare const AVMetadataQuickTimeUserDataKeyTaggedCharacteristic: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyTaggedCharacteristic: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeytrack
-declare const AVMetadataQuickTimeUserDataKeyTrack: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyTrack: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeytrackname
-declare const AVMetadataQuickTimeUserDataKeyTrackName: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyTrackName: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeyurllink
-declare const AVMetadataQuickTimeUserDataKeyURLLink: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyURLLink: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeywarning
-declare const AVMetadataQuickTimeUserDataKeyWarning: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyWarning: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataquicktimeuserdatakeywriter
-declare const AVMetadataQuickTimeUserDataKeyWriter: AVMetadataKey;
+declare const AVMetadataQuickTimeUserDataKeyWriter: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadata3gpuserdatakeyalbumandtrack
-declare const AVMetadata3GPUserDataKeyAlbumAndTrack: AVMetadataKey;
+declare const AVMetadata3GPUserDataKeyAlbumAndTrack: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadata3gpuserdatakeyauthor
-declare const AVMetadata3GPUserDataKeyAuthor: AVMetadataKey;
+declare const AVMetadata3GPUserDataKeyAuthor: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadata3gpuserdatakeycollection
-declare const AVMetadata3GPUserDataKeyCollection: AVMetadataKey;
+declare const AVMetadata3GPUserDataKeyCollection: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadata3gpuserdatakeycopyright
-declare const AVMetadata3GPUserDataKeyCopyright: AVMetadataKey;
+declare const AVMetadata3GPUserDataKeyCopyright: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadata3gpuserdatakeydescription
-declare const AVMetadata3GPUserDataKeyDescription: AVMetadataKey;
+declare const AVMetadata3GPUserDataKeyDescription: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadata3gpuserdatakeygenre
-declare const AVMetadata3GPUserDataKeyGenre: AVMetadataKey;
+declare const AVMetadata3GPUserDataKeyGenre: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadata3gpuserdatakeykeywordlist
-declare const AVMetadata3GPUserDataKeyKeywordList: AVMetadataKey;
+declare const AVMetadata3GPUserDataKeyKeywordList: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadata3gpuserdatakeylocation
-declare const AVMetadata3GPUserDataKeyLocation: AVMetadataKey;
+declare const AVMetadata3GPUserDataKeyLocation: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadata3gpuserdatakeymediaclassification
-declare const AVMetadata3GPUserDataKeyMediaClassification: AVMetadataKey;
+declare const AVMetadata3GPUserDataKeyMediaClassification: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadata3gpuserdatakeymediarating
-declare const AVMetadata3GPUserDataKeyMediaRating: AVMetadataKey;
+declare const AVMetadata3GPUserDataKeyMediaRating: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadata3gpuserdatakeyperformer
-declare const AVMetadata3GPUserDataKeyPerformer: AVMetadataKey;
+declare const AVMetadata3GPUserDataKeyPerformer: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadata3gpuserdatakeyrecordingyear
-declare const AVMetadata3GPUserDataKeyRecordingYear: AVMetadataKey;
+declare const AVMetadata3GPUserDataKeyRecordingYear: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadata3gpuserdatakeythumbnail
-declare const AVMetadata3GPUserDataKeyThumbnail: AVMetadataKey;
+declare const AVMetadata3GPUserDataKeyThumbnail: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadata3gpuserdatakeytitle
-declare const AVMetadata3GPUserDataKeyTitle: AVMetadataKey;
+declare const AVMetadata3GPUserDataKeyTitle: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadata3gpuserdatakeyuserrating
-declare const AVMetadata3GPUserDataKeyUserRating: AVMetadataKey;
+declare const AVMetadata3GPUserDataKeyUserRating: cocoascript.AVMetadataKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataextraattributebaseurikey
-declare const AVMetadataExtraAttributeBaseURIKey: AVMetadataExtraAttributeKey;
+declare const AVMetadataExtraAttributeBaseURIKey: cocoascript.AVMetadataExtraAttributeKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataextraattributeinfokey
-declare const AVMetadataExtraAttributeInfoKey: AVMetadataExtraAttributeKey;
+declare const AVMetadataExtraAttributeInfoKey: cocoascript.AVMetadataExtraAttributeKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataextraattributevalueurikey
-declare const AVMetadataExtraAttributeValueURIKey: AVMetadataExtraAttributeKey;
+declare const AVMetadataExtraAttributeValueURIKey: cocoascript.AVMetadataExtraAttributeKey;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifieraccessibilitydescription
-declare const AVMetadataCommonIdentifierAccessibilityDescription: AVMetadataIdentifier;
+declare const AVMetadataCommonIdentifierAccessibilityDescription: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifieralbumname
-declare const AVMetadataCommonIdentifierAlbumName: AVMetadataIdentifier;
+declare const AVMetadataCommonIdentifierAlbumName: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifierartist
-declare const AVMetadataCommonIdentifierArtist: AVMetadataIdentifier;
+declare const AVMetadataCommonIdentifierArtist: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifierartwork
-declare const AVMetadataCommonIdentifierArtwork: AVMetadataIdentifier;
+declare const AVMetadataCommonIdentifierArtwork: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifierassetidentifier
-declare const AVMetadataCommonIdentifierAssetIdentifier: AVMetadataIdentifier;
+declare const AVMetadataCommonIdentifierAssetIdentifier: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifierauthor
-declare const AVMetadataCommonIdentifierAuthor: AVMetadataIdentifier;
+declare const AVMetadataCommonIdentifierAuthor: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifiercontributor
-declare const AVMetadataCommonIdentifierContributor: AVMetadataIdentifier;
+declare const AVMetadataCommonIdentifierContributor: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifiercopyrights
-declare const AVMetadataCommonIdentifierCopyrights: AVMetadataIdentifier;
+declare const AVMetadataCommonIdentifierCopyrights: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifiercreationdate
-declare const AVMetadataCommonIdentifierCreationDate: AVMetadataIdentifier;
+declare const AVMetadataCommonIdentifierCreationDate: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifiercreator
-declare const AVMetadataCommonIdentifierCreator: AVMetadataIdentifier;
+declare const AVMetadataCommonIdentifierCreator: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifierdescription
-declare const AVMetadataCommonIdentifierDescription: AVMetadataIdentifier;
+declare const AVMetadataCommonIdentifierDescription: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifierformat
-declare const AVMetadataCommonIdentifierFormat: AVMetadataIdentifier;
+declare const AVMetadataCommonIdentifierFormat: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifierlanguage
-declare const AVMetadataCommonIdentifierLanguage: AVMetadataIdentifier;
+declare const AVMetadataCommonIdentifierLanguage: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifierlastmodifieddate
-declare const AVMetadataCommonIdentifierLastModifiedDate: AVMetadataIdentifier;
+declare const AVMetadataCommonIdentifierLastModifiedDate: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifierlocation
-declare const AVMetadataCommonIdentifierLocation: AVMetadataIdentifier;
+declare const AVMetadataCommonIdentifierLocation: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifiermake
-declare const AVMetadataCommonIdentifierMake: AVMetadataIdentifier;
+declare const AVMetadataCommonIdentifierMake: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifiermodel
-declare const AVMetadataCommonIdentifierModel: AVMetadataIdentifier;
+declare const AVMetadataCommonIdentifierModel: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifierpublisher
-declare const AVMetadataCommonIdentifierPublisher: AVMetadataIdentifier;
+declare const AVMetadataCommonIdentifierPublisher: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifierrelation
-declare const AVMetadataCommonIdentifierRelation: AVMetadataIdentifier;
+declare const AVMetadataCommonIdentifierRelation: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifiersoftware
-declare const AVMetadataCommonIdentifierSoftware: AVMetadataIdentifier;
+declare const AVMetadataCommonIdentifierSoftware: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifiersource
-declare const AVMetadataCommonIdentifierSource: AVMetadataIdentifier;
+declare const AVMetadataCommonIdentifierSource: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifiersubject
-declare const AVMetadataCommonIdentifierSubject: AVMetadataIdentifier;
+declare const AVMetadataCommonIdentifierSubject: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifiertitle
-declare const AVMetadataCommonIdentifierTitle: AVMetadataIdentifier;
+declare const AVMetadataCommonIdentifierTitle: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadatacommonidentifiertype
-declare const AVMetadataCommonIdentifierType: AVMetadataIdentifier;
+declare const AVMetadataCommonIdentifierType: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataaccountkind
-declare const AVMetadataIdentifieriTunesMetadataAccountKind: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataAccountKind: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataacknowledgement
-declare const AVMetadataIdentifieriTunesMetadataAcknowledgement: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataAcknowledgement: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataalbum
-declare const AVMetadataIdentifieriTunesMetadataAlbum: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataAlbum: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataalbumartist
-declare const AVMetadataIdentifieriTunesMetadataAlbumArtist: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataAlbumArtist: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataappleid
-declare const AVMetadataIdentifieriTunesMetadataAppleID: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataAppleID: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataarranger
-declare const AVMetadataIdentifieriTunesMetadataArranger: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataArranger: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataartdirector
-declare const AVMetadataIdentifieriTunesMetadataArtDirector: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataArtDirector: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataartist
-declare const AVMetadataIdentifieriTunesMetadataArtist: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataArtist: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataartistid
-declare const AVMetadataIdentifieriTunesMetadataArtistID: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataArtistID: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataauthor
-declare const AVMetadataIdentifieriTunesMetadataAuthor: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataAuthor: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatabeatspermin
-declare const AVMetadataIdentifieriTunesMetadataBeatsPerMin: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataBeatsPerMin: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatacomposer
-declare const AVMetadataIdentifieriTunesMetadataComposer: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataComposer: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataconductor
-declare const AVMetadataIdentifieriTunesMetadataConductor: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataConductor: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatacontentrating
-declare const AVMetadataIdentifieriTunesMetadataContentRating: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataContentRating: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatacopyright
-declare const AVMetadataIdentifieriTunesMetadataCopyright: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataCopyright: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatacoverart
-declare const AVMetadataIdentifieriTunesMetadataCoverArt: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataCoverArt: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatacredits
-declare const AVMetadataIdentifieriTunesMetadataCredits: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataCredits: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatadescription
-declare const AVMetadataIdentifieriTunesMetadataDescription: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataDescription: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatadirector
-declare const AVMetadataIdentifieriTunesMetadataDirector: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataDirector: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatadisccompilation
-declare const AVMetadataIdentifieriTunesMetadataDiscCompilation: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataDiscCompilation: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatadiscnumber
-declare const AVMetadataIdentifieriTunesMetadataDiscNumber: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataDiscNumber: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataeq
-declare const AVMetadataIdentifieriTunesMetadataEQ: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataEQ: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataencodedby
-declare const AVMetadataIdentifieriTunesMetadataEncodedBy: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataEncodedBy: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataencodingtool
-declare const AVMetadataIdentifieriTunesMetadataEncodingTool: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataEncodingTool: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataexecproducer
-declare const AVMetadataIdentifieriTunesMetadataExecProducer: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataExecProducer: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatagenreid
-declare const AVMetadataIdentifieriTunesMetadataGenreID: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataGenreID: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatagrouping
-declare const AVMetadataIdentifieriTunesMetadataGrouping: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataGrouping: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatalinernotes
-declare const AVMetadataIdentifieriTunesMetadataLinerNotes: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataLinerNotes: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatalyrics
-declare const AVMetadataIdentifieriTunesMetadataLyrics: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataLyrics: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataonlineextras
-declare const AVMetadataIdentifieriTunesMetadataOnlineExtras: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataOnlineExtras: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataoriginalartist
-declare const AVMetadataIdentifieriTunesMetadataOriginalArtist: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataOriginalArtist: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataperformer
-declare const AVMetadataIdentifieriTunesMetadataPerformer: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataPerformer: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataphonogramrights
-declare const AVMetadataIdentifieriTunesMetadataPhonogramRights: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataPhonogramRights: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataplaylistid
-declare const AVMetadataIdentifieriTunesMetadataPlaylistID: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataPlaylistID: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatapredefinedgenre
-declare const AVMetadataIdentifieriTunesMetadataPredefinedGenre: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataPredefinedGenre: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadataproducer
-declare const AVMetadataIdentifieriTunesMetadataProducer: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataProducer: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatapublisher
-declare const AVMetadataIdentifieriTunesMetadataPublisher: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataPublisher: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatarecordcompany
-declare const AVMetadataIdentifieriTunesMetadataRecordCompany: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataRecordCompany: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatareleasedate
-declare const AVMetadataIdentifieriTunesMetadataReleaseDate: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataReleaseDate: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatasoloist
-declare const AVMetadataIdentifieriTunesMetadataSoloist: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataSoloist: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatasongid
-declare const AVMetadataIdentifieriTunesMetadataSongID: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataSongID: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatasongname
-declare const AVMetadataIdentifieriTunesMetadataSongName: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataSongName: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatasoundengineer
-declare const AVMetadataIdentifieriTunesMetadataSoundEngineer: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataSoundEngineer: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatathanks
-declare const AVMetadataIdentifieriTunesMetadataThanks: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataThanks: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatatracknumber
-declare const AVMetadataIdentifieriTunesMetadataTrackNumber: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataTrackNumber: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatatracksubtitle
-declare const AVMetadataIdentifieriTunesMetadataTrackSubTitle: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataTrackSubTitle: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatausercomment
-declare const AVMetadataIdentifieriTunesMetadataUserComment: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataUserComment: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifieritunesmetadatausergenre
-declare const AVMetadataIdentifieriTunesMetadataUserGenre: AVMetadataIdentifier;
+declare const AVMetadataIdentifieriTunesMetadataUserGenre: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifiericymetadatastreamtitle
-declare const AVMetadataIdentifierIcyMetadataStreamTitle: AVMetadataIdentifier;
+declare const AVMetadataIdentifierIcyMetadataStreamTitle: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifiericymetadatastreamurl
-declare const AVMetadataIdentifierIcyMetadataStreamURL: AVMetadataIdentifier;
+declare const AVMetadataIdentifierIcyMetadataStreamURL: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataalbumsortorder
-declare const AVMetadataIdentifierID3MetadataAlbumSortOrder: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataAlbumSortOrder: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataalbumtitle
-declare const AVMetadataIdentifierID3MetadataAlbumTitle: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataAlbumTitle: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataattachedpicture
-declare const AVMetadataIdentifierID3MetadataAttachedPicture: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataAttachedPicture: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataaudioencryption
-declare const AVMetadataIdentifierID3MetadataAudioEncryption: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataAudioEncryption: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataaudioseekpointindex
-declare const AVMetadataIdentifierID3MetadataAudioSeekPointIndex: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataAudioSeekPointIndex: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataband
-declare const AVMetadataIdentifierID3MetadataBand: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataBand: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatabeatsperminute
-declare const AVMetadataIdentifierID3MetadataBeatsPerMinute: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataBeatsPerMinute: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatacomments
-declare const AVMetadataIdentifierID3MetadataComments: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataComments: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatacommercial
-declare const AVMetadataIdentifierID3MetadataCommercial: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataCommercial: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatacommerical
-declare const AVMetadataIdentifierID3MetadataCommerical: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataCommerical: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatacommercialinformation
-declare const AVMetadataIdentifierID3MetadataCommercialInformation: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataCommercialInformation: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatacomposer
-declare const AVMetadataIdentifierID3MetadataComposer: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataComposer: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataconductor
-declare const AVMetadataIdentifierID3MetadataConductor: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataConductor: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatacontentgroupdescription
-declare const AVMetadataIdentifierID3MetadataContentGroupDescription: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataContentGroupDescription: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatacontenttype
-declare const AVMetadataIdentifierID3MetadataContentType: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataContentType: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatacopyright
-declare const AVMetadataIdentifierID3MetadataCopyright: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataCopyright: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatacopyrightinformation
-declare const AVMetadataIdentifierID3MetadataCopyrightInformation: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataCopyrightInformation: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatadate
-declare const AVMetadataIdentifierID3MetadataDate: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataDate: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataencodedby
-declare const AVMetadataIdentifierID3MetadataEncodedBy: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataEncodedBy: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataencodedwith
-declare const AVMetadataIdentifierID3MetadataEncodedWith: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataEncodedWith: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataencodingtime
-declare const AVMetadataIdentifierID3MetadataEncodingTime: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataEncodingTime: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataencryption
-declare const AVMetadataIdentifierID3MetadataEncryption: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataEncryption: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataequalization
-declare const AVMetadataIdentifierID3MetadataEqualization: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataEqualization: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataequalization2
-declare const AVMetadataIdentifierID3MetadataEqualization2: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataEqualization2: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataeventtimingcodes
-declare const AVMetadataIdentifierID3MetadataEventTimingCodes: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataEventTimingCodes: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatafileowner
-declare const AVMetadataIdentifierID3MetadataFileOwner: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataFileOwner: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatafiletype
-declare const AVMetadataIdentifierID3MetadataFileType: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataFileType: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatageneralencapsulatedobject
-declare const AVMetadataIdentifierID3MetadataGeneralEncapsulatedObject: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataGeneralEncapsulatedObject: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatagroupidentifier
-declare const AVMetadataIdentifierID3MetadataGroupIdentifier: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataGroupIdentifier: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatainitialkey
-declare const AVMetadataIdentifierID3MetadataInitialKey: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataInitialKey: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatainternationalstandardrecordingcode
-declare const AVMetadataIdentifierID3MetadataInternationalStandardRecordingCode: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataInternationalStandardRecordingCode: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatainternetradiostationname
-declare const AVMetadataIdentifierID3MetadataInternetRadioStationName: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataInternetRadioStationName: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatainternetradiostationowner
-declare const AVMetadataIdentifierID3MetadataInternetRadioStationOwner: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataInternetRadioStationOwner: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatainvolvedpeoplelist_v23
-declare const AVMetadataIdentifierID3MetadataInvolvedPeopleList_v23: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataInvolvedPeopleList_v23: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatainvolvedpeoplelist_v24
-declare const AVMetadataIdentifierID3MetadataInvolvedPeopleList_v24: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataInvolvedPeopleList_v24: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatalanguage
-declare const AVMetadataIdentifierID3MetadataLanguage: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataLanguage: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataleadperformer
-declare const AVMetadataIdentifierID3MetadataLeadPerformer: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataLeadPerformer: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatalength
-declare const AVMetadataIdentifierID3MetadataLength: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataLength: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatalink
-declare const AVMetadataIdentifierID3MetadataLink: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataLink: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatalyricist
-declare const AVMetadataIdentifierID3MetadataLyricist: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataLyricist: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatampeglocationlookuptable
-declare const AVMetadataIdentifierID3MetadataMPEGLocationLookupTable: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataMPEGLocationLookupTable: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatamediatype
-declare const AVMetadataIdentifierID3MetadataMediaType: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataMediaType: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatamodifiedby
-declare const AVMetadataIdentifierID3MetadataModifiedBy: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataModifiedBy: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatamood
-declare const AVMetadataIdentifierID3MetadataMood: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataMood: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatamusiccdidentifier
-declare const AVMetadataIdentifierID3MetadataMusicCDIdentifier: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataMusicCDIdentifier: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatamusiciancreditslist
-declare const AVMetadataIdentifierID3MetadataMusicianCreditsList: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataMusicianCreditsList: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataofficialartistwebpage
-declare const AVMetadataIdentifierID3MetadataOfficialArtistWebpage: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataOfficialArtistWebpage: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataofficialaudiofilewebpage
-declare const AVMetadataIdentifierID3MetadataOfficialAudioFileWebpage: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataOfficialAudioFileWebpage: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataofficialaudiosourcewebpage
-declare const AVMetadataIdentifierID3MetadataOfficialAudioSourceWebpage: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataOfficialAudioSourceWebpage: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataofficialinternetradiostationhomepage
-declare const AVMetadataIdentifierID3MetadataOfficialInternetRadioStationHomepage: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataOfficialInternetRadioStationHomepage: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataofficialpublisherwebpage
-declare const AVMetadataIdentifierID3MetadataOfficialPublisherWebpage: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataOfficialPublisherWebpage: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataoriginalalbumtitle
-declare const AVMetadataIdentifierID3MetadataOriginalAlbumTitle: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataOriginalAlbumTitle: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataoriginalartist
-declare const AVMetadataIdentifierID3MetadataOriginalArtist: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataOriginalArtist: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataoriginalfilename
-declare const AVMetadataIdentifierID3MetadataOriginalFilename: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataOriginalFilename: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataoriginallyricist
-declare const AVMetadataIdentifierID3MetadataOriginalLyricist: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataOriginalLyricist: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataoriginalreleasetime
-declare const AVMetadataIdentifierID3MetadataOriginalReleaseTime: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataOriginalReleaseTime: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataoriginalreleaseyear
-declare const AVMetadataIdentifierID3MetadataOriginalReleaseYear: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataOriginalReleaseYear: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataownership
-declare const AVMetadataIdentifierID3MetadataOwnership: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataOwnership: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatapartofaset
-declare const AVMetadataIdentifierID3MetadataPartOfASet: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataPartOfASet: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatapayment
-declare const AVMetadataIdentifierID3MetadataPayment: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataPayment: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataperformersortorder
-declare const AVMetadataIdentifierID3MetadataPerformerSortOrder: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataPerformerSortOrder: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataplaycounter
-declare const AVMetadataIdentifierID3MetadataPlayCounter: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataPlayCounter: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataplaylistdelay
-declare const AVMetadataIdentifierID3MetadataPlaylistDelay: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataPlaylistDelay: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatapopularimeter
-declare const AVMetadataIdentifierID3MetadataPopularimeter: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataPopularimeter: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatapositionsynchronization
-declare const AVMetadataIdentifierID3MetadataPositionSynchronization: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataPositionSynchronization: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataprivate
-declare const AVMetadataIdentifierID3MetadataPrivate: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataPrivate: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataproducednotice
-declare const AVMetadataIdentifierID3MetadataProducedNotice: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataProducedNotice: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatapublisher
-declare const AVMetadataIdentifierID3MetadataPublisher: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataPublisher: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatarecommendedbuffersize
-declare const AVMetadataIdentifierID3MetadataRecommendedBufferSize: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataRecommendedBufferSize: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatarecordingdates
-declare const AVMetadataIdentifierID3MetadataRecordingDates: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataRecordingDates: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatarecordingtime
-declare const AVMetadataIdentifierID3MetadataRecordingTime: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataRecordingTime: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatarelativevolumeadjustment
-declare const AVMetadataIdentifierID3MetadataRelativeVolumeAdjustment: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataRelativeVolumeAdjustment: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatarelativevolumeadjustment2
-declare const AVMetadataIdentifierID3MetadataRelativeVolumeAdjustment2: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataRelativeVolumeAdjustment2: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatareleasetime
-declare const AVMetadataIdentifierID3MetadataReleaseTime: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataReleaseTime: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatareverb
-declare const AVMetadataIdentifierID3MetadataReverb: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataReverb: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataseek
-declare const AVMetadataIdentifierID3MetadataSeek: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataSeek: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatasetsubtitle
-declare const AVMetadataIdentifierID3MetadataSetSubtitle: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataSetSubtitle: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatasignature
-declare const AVMetadataIdentifierID3MetadataSignature: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataSignature: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatasize
-declare const AVMetadataIdentifierID3MetadataSize: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataSize: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatasubtitle
-declare const AVMetadataIdentifierID3MetadataSubTitle: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataSubTitle: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatasynchronizedlyric
-declare const AVMetadataIdentifierID3MetadataSynchronizedLyric: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataSynchronizedLyric: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatasynchronizedtempocodes
-declare const AVMetadataIdentifierID3MetadataSynchronizedTempoCodes: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataSynchronizedTempoCodes: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatataggingtime
-declare const AVMetadataIdentifierID3MetadataTaggingTime: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataTaggingTime: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatatermsofuse
-declare const AVMetadataIdentifierID3MetadataTermsOfUse: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataTermsOfUse: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatatime
-declare const AVMetadataIdentifierID3MetadataTime: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataTime: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatatitledescription
-declare const AVMetadataIdentifierID3MetadataTitleDescription: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataTitleDescription: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatatitlesortorder
-declare const AVMetadataIdentifierID3MetadataTitleSortOrder: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataTitleSortOrder: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatatracknumber
-declare const AVMetadataIdentifierID3MetadataTrackNumber: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataTrackNumber: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatauniquefileidentifier
-declare const AVMetadataIdentifierID3MetadataUniqueFileIdentifier: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataUniqueFileIdentifier: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadataunsynchronizedlyric
-declare const AVMetadataIdentifierID3MetadataUnsynchronizedLyric: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataUnsynchronizedLyric: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatausertext
-declare const AVMetadataIdentifierID3MetadataUserText: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataUserText: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatauserurl
-declare const AVMetadataIdentifierID3MetadataUserURL: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataUserURL: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierid3metadatayear
-declare const AVMetadataIdentifierID3MetadataYear: AVMetadataIdentifier;
+declare const AVMetadataIdentifierID3MetadataYear: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierisouserdataaccessibilitydescription
-declare const AVMetadataIdentifierISOUserDataAccessibilityDescription: AVMetadataIdentifier;
+declare const AVMetadataIdentifierISOUserDataAccessibilityDescription: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierisouserdatacopyright
-declare const AVMetadataIdentifierISOUserDataCopyright: AVMetadataIdentifier;
+declare const AVMetadataIdentifierISOUserDataCopyright: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierisouserdatadate
-declare const AVMetadataIdentifierISOUserDataDate: AVMetadataIdentifier;
+declare const AVMetadataIdentifierISOUserDataDate: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierisouserdatataggedcharacteristic
-declare const AVMetadataIdentifierISOUserDataTaggedCharacteristic: AVMetadataIdentifier;
+declare const AVMetadataIdentifierISOUserDataTaggedCharacteristic: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadataaccessibilitydescription
-declare const AVMetadataIdentifierQuickTimeMetadataAccessibilityDescription: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataAccessibilityDescription: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadataalbum
-declare const AVMetadataIdentifierQuickTimeMetadataAlbum: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataAlbum: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadataarranger
-declare const AVMetadataIdentifierQuickTimeMetadataArranger: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataArranger: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadataartist
-declare const AVMetadataIdentifierQuickTimeMetadataArtist: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataArtist: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadataartwork
-declare const AVMetadataIdentifierQuickTimeMetadataArtwork: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataArtwork: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadataauthor
-declare const AVMetadataIdentifierQuickTimeMetadataAuthor: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataAuthor: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadataautolivephoto
-declare const AVMetadataIdentifierQuickTimeMetadataAutoLivePhoto: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataAutoLivePhoto: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatacameraframereadouttime
-declare const AVMetadataIdentifierQuickTimeMetadataCameraFrameReadoutTime: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataCameraFrameReadoutTime: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatacameraidentifier
-declare const AVMetadataIdentifierQuickTimeMetadataCameraIdentifier: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataCameraIdentifier: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatacollectionuser
-declare const AVMetadataIdentifierQuickTimeMetadataCollectionUser: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataCollectionUser: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatacomment
-declare const AVMetadataIdentifierQuickTimeMetadataComment: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataComment: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatacomposer
-declare const AVMetadataIdentifierQuickTimeMetadataComposer: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataComposer: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatacontentidentifier
-declare const AVMetadataIdentifierQuickTimeMetadataContentIdentifier: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataContentIdentifier: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatacopyright
-declare const AVMetadataIdentifierQuickTimeMetadataCopyright: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataCopyright: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatacreationdate
-declare const AVMetadataIdentifierQuickTimeMetadataCreationDate: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataCreationDate: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatacredits
-declare const AVMetadataIdentifierQuickTimeMetadataCredits: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataCredits: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatadescription
-declare const AVMetadataIdentifierQuickTimeMetadataDescription: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataDescription: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatadetectedcatbody
-declare const AVMetadataIdentifierQuickTimeMetadataDetectedCatBody: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataDetectedCatBody: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatadetecteddogbody
-declare const AVMetadataIdentifierQuickTimeMetadataDetectedDogBody: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataDetectedDogBody: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatadetectedface
-declare const AVMetadataIdentifierQuickTimeMetadataDetectedFace: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataDetectedFace: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatadetectedhumanbody
-declare const AVMetadataIdentifierQuickTimeMetadataDetectedHumanBody: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataDetectedHumanBody: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatadetectedsalientobject
-declare const AVMetadataIdentifierQuickTimeMetadataDetectedSalientObject: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataDetectedSalientObject: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatadirectionfacing
-declare const AVMetadataIdentifierQuickTimeMetadataDirectionFacing: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataDirectionFacing: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatadirectionmotion
-declare const AVMetadataIdentifierQuickTimeMetadataDirectionMotion: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataDirectionMotion: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatadirector
-declare const AVMetadataIdentifierQuickTimeMetadataDirector: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataDirector: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatadisplayname
-declare const AVMetadataIdentifierQuickTimeMetadataDisplayName: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataDisplayName: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadataencodedby
-declare const AVMetadataIdentifierQuickTimeMetadataEncodedBy: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataEncodedBy: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatagenre
-declare const AVMetadataIdentifierQuickTimeMetadataGenre: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataGenre: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatainformation
-declare const AVMetadataIdentifierQuickTimeMetadataInformation: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataInformation: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatakeywords
-declare const AVMetadataIdentifierQuickTimeMetadataKeywords: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataKeywords: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatalivephotovitalityscore
-declare const AVMetadataIdentifierQuickTimeMetadataLivePhotoVitalityScore: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataLivePhotoVitalityScore: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatalivephotovitalityscoringversion
-declare const AVMetadataIdentifierQuickTimeMetadataLivePhotoVitalityScoringVersion: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataLivePhotoVitalityScoringVersion: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatalocationbody
-declare const AVMetadataIdentifierQuickTimeMetadataLocationBody: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataLocationBody: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatalocationdate
-declare const AVMetadataIdentifierQuickTimeMetadataLocationDate: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataLocationDate: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatalocationhorizontalaccuracyinmeters
-declare const AVMetadataIdentifierQuickTimeMetadataLocationHorizontalAccuracyInMeters: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataLocationHorizontalAccuracyInMeters: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatalocationiso6709
-declare const AVMetadataIdentifierQuickTimeMetadataLocationISO6709: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataLocationISO6709: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatalocationname
-declare const AVMetadataIdentifierQuickTimeMetadataLocationName: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataLocationName: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatalocationnote
-declare const AVMetadataIdentifierQuickTimeMetadataLocationNote: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataLocationNote: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatalocationrole
-declare const AVMetadataIdentifierQuickTimeMetadataLocationRole: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataLocationRole: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatamake
-declare const AVMetadataIdentifierQuickTimeMetadataMake: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataMake: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatamodel
-declare const AVMetadataIdentifierQuickTimeMetadataModel: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataModel: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadataoriginalartist
-declare const AVMetadataIdentifierQuickTimeMetadataOriginalArtist: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataOriginalArtist: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadataperformer
-declare const AVMetadataIdentifierQuickTimeMetadataPerformer: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataPerformer: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadataphonogramrights
-declare const AVMetadataIdentifierQuickTimeMetadataPhonogramRights: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataPhonogramRights: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatapreferredaffinetransform
-declare const AVMetadataIdentifierQuickTimeMetadataPreferredAffineTransform: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataPreferredAffineTransform: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadataproducer
-declare const AVMetadataIdentifierQuickTimeMetadataProducer: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataProducer: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatapublisher
-declare const AVMetadataIdentifierQuickTimeMetadataPublisher: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataPublisher: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadataratinguser
-declare const AVMetadataIdentifierQuickTimeMetadataRatingUser: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataRatingUser: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatasoftware
-declare const AVMetadataIdentifierQuickTimeMetadataSoftware: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataSoftware: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadataspatialovercapturequalityscore
-declare const AVMetadataIdentifierQuickTimeMetadataSpatialOverCaptureQualityScore: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataSpatialOverCaptureQualityScore: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadataspatialovercapturequalityscoringversion
-declare const AVMetadataIdentifierQuickTimeMetadataSpatialOverCaptureQualityScoringVersion: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataSpatialOverCaptureQualityScoringVersion: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatatitle
-declare const AVMetadataIdentifierQuickTimeMetadataTitle: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataTitle: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatavideoorientation
-declare const AVMetadataIdentifierQuickTimeMetadataVideoOrientation: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataVideoOrientation: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadatayear
-declare const AVMetadataIdentifierQuickTimeMetadataYear: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataYear: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimemetadataixml
-declare const AVMetadataIdentifierQuickTimeMetadataiXML: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeMetadataiXML: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdataaccessibilitydescription
-declare const AVMetadataIdentifierQuickTimeUserDataAccessibilityDescription: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataAccessibilityDescription: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdataalbum
-declare const AVMetadataIdentifierQuickTimeUserDataAlbum: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataAlbum: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdataarranger
-declare const AVMetadataIdentifierQuickTimeUserDataArranger: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataArranger: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdataartist
-declare const AVMetadataIdentifierQuickTimeUserDataArtist: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataArtist: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdataauthor
-declare const AVMetadataIdentifierQuickTimeUserDataAuthor: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataAuthor: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdatachapter
-declare const AVMetadataIdentifierQuickTimeUserDataChapter: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataChapter: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdatacomment
-declare const AVMetadataIdentifierQuickTimeUserDataComment: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataComment: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdatacomposer
-declare const AVMetadataIdentifierQuickTimeUserDataComposer: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataComposer: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdatacopyright
-declare const AVMetadataIdentifierQuickTimeUserDataCopyright: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataCopyright: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdatacreationdate
-declare const AVMetadataIdentifierQuickTimeUserDataCreationDate: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataCreationDate: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdatacredits
-declare const AVMetadataIdentifierQuickTimeUserDataCredits: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataCredits: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdatadescription
-declare const AVMetadataIdentifierQuickTimeUserDataDescription: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataDescription: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdatadirector
-declare const AVMetadataIdentifierQuickTimeUserDataDirector: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataDirector: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdatadisclaimer
-declare const AVMetadataIdentifierQuickTimeUserDataDisclaimer: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataDisclaimer: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdataencodedby
-declare const AVMetadataIdentifierQuickTimeUserDataEncodedBy: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataEncodedBy: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdatafullname
-declare const AVMetadataIdentifierQuickTimeUserDataFullName: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataFullName: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdatagenre
-declare const AVMetadataIdentifierQuickTimeUserDataGenre: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataGenre: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdatahostcomputer
-declare const AVMetadataIdentifierQuickTimeUserDataHostComputer: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataHostComputer: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdatainformation
-declare const AVMetadataIdentifierQuickTimeUserDataInformation: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataInformation: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdatakeywords
-declare const AVMetadataIdentifierQuickTimeUserDataKeywords: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataKeywords: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdatalocationiso6709
-declare const AVMetadataIdentifierQuickTimeUserDataLocationISO6709: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataLocationISO6709: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdatamake
-declare const AVMetadataIdentifierQuickTimeUserDataMake: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataMake: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdatamodel
-declare const AVMetadataIdentifierQuickTimeUserDataModel: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataModel: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdataoriginalartist
-declare const AVMetadataIdentifierQuickTimeUserDataOriginalArtist: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataOriginalArtist: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdataoriginalformat
-declare const AVMetadataIdentifierQuickTimeUserDataOriginalFormat: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataOriginalFormat: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdataoriginalsource
-declare const AVMetadataIdentifierQuickTimeUserDataOriginalSource: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataOriginalSource: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdataperformers
-declare const AVMetadataIdentifierQuickTimeUserDataPerformers: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataPerformers: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdataphonogramrights
-declare const AVMetadataIdentifierQuickTimeUserDataPhonogramRights: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataPhonogramRights: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdataproducer
-declare const AVMetadataIdentifierQuickTimeUserDataProducer: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataProducer: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdataproduct
-declare const AVMetadataIdentifierQuickTimeUserDataProduct: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataProduct: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdatapublisher
-declare const AVMetadataIdentifierQuickTimeUserDataPublisher: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataPublisher: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdatasoftware
-declare const AVMetadataIdentifierQuickTimeUserDataSoftware: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataSoftware: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdataspecialplaybackrequirements
-declare const AVMetadataIdentifierQuickTimeUserDataSpecialPlaybackRequirements: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataSpecialPlaybackRequirements: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdatataggedcharacteristic
-declare const AVMetadataIdentifierQuickTimeUserDataTaggedCharacteristic: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataTaggedCharacteristic: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdatatrack
-declare const AVMetadataIdentifierQuickTimeUserDataTrack: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataTrack: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdatatrackname
-declare const AVMetadataIdentifierQuickTimeUserDataTrackName: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataTrackName: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdataurllink
-declare const AVMetadataIdentifierQuickTimeUserDataURLLink: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataURLLink: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdatawarning
-declare const AVMetadataIdentifierQuickTimeUserDataWarning: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataWarning: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifierquicktimeuserdatawriter
-declare const AVMetadataIdentifierQuickTimeUserDataWriter: AVMetadataIdentifier;
+declare const AVMetadataIdentifierQuickTimeUserDataWriter: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdataalbumandtrack
-declare const AVMetadataIdentifier3GPUserDataAlbumAndTrack: AVMetadataIdentifier;
+declare const AVMetadataIdentifier3GPUserDataAlbumAndTrack: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdataauthor
-declare const AVMetadataIdentifier3GPUserDataAuthor: AVMetadataIdentifier;
+declare const AVMetadataIdentifier3GPUserDataAuthor: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatacollection
-declare const AVMetadataIdentifier3GPUserDataCollection: AVMetadataIdentifier;
+declare const AVMetadataIdentifier3GPUserDataCollection: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatacopyright
-declare const AVMetadataIdentifier3GPUserDataCopyright: AVMetadataIdentifier;
+declare const AVMetadataIdentifier3GPUserDataCopyright: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatadescription
-declare const AVMetadataIdentifier3GPUserDataDescription: AVMetadataIdentifier;
+declare const AVMetadataIdentifier3GPUserDataDescription: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatagenre
-declare const AVMetadataIdentifier3GPUserDataGenre: AVMetadataIdentifier;
+declare const AVMetadataIdentifier3GPUserDataGenre: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatakeywordlist
-declare const AVMetadataIdentifier3GPUserDataKeywordList: AVMetadataIdentifier;
+declare const AVMetadataIdentifier3GPUserDataKeywordList: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatalocation
-declare const AVMetadataIdentifier3GPUserDataLocation: AVMetadataIdentifier;
+declare const AVMetadataIdentifier3GPUserDataLocation: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatamediaclassification
-declare const AVMetadataIdentifier3GPUserDataMediaClassification: AVMetadataIdentifier;
+declare const AVMetadataIdentifier3GPUserDataMediaClassification: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatamediarating
-declare const AVMetadataIdentifier3GPUserDataMediaRating: AVMetadataIdentifier;
+declare const AVMetadataIdentifier3GPUserDataMediaRating: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdataperformer
-declare const AVMetadataIdentifier3GPUserDataPerformer: AVMetadataIdentifier;
+declare const AVMetadataIdentifier3GPUserDataPerformer: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatarecordingyear
-declare const AVMetadataIdentifier3GPUserDataRecordingYear: AVMetadataIdentifier;
+declare const AVMetadataIdentifier3GPUserDataRecordingYear: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatathumbnail
-declare const AVMetadataIdentifier3GPUserDataThumbnail: AVMetadataIdentifier;
+declare const AVMetadataIdentifier3GPUserDataThumbnail: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatatitle
-declare const AVMetadataIdentifier3GPUserDataTitle: AVMetadataIdentifier;
+declare const AVMetadataIdentifier3GPUserDataTitle: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avmetadataidentifier3gpuserdatauserrating
-declare const AVMetadataIdentifier3GPUserDataUserRating: AVMetadataIdentifier;
+declare const AVMetadataIdentifier3GPUserDataUserRating: cocoascript.AVMetadataIdentifier;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiotimepitchalgorithmlowqualityzerolatency
-declare const AVAudioTimePitchAlgorithmLowQualityZeroLatency: AVAudioTimePitchAlgorithm;
+declare const AVAudioTimePitchAlgorithmLowQualityZeroLatency: cocoascript.AVAudioTimePitchAlgorithm;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiotimepitchalgorithmspectral
-declare const AVAudioTimePitchAlgorithmSpectral: AVAudioTimePitchAlgorithm;
+declare const AVAudioTimePitchAlgorithmSpectral: cocoascript.AVAudioTimePitchAlgorithm;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiotimepitchalgorithmtimedomain
-declare const AVAudioTimePitchAlgorithmTimeDomain: AVAudioTimePitchAlgorithm;
+declare const AVAudioTimePitchAlgorithmTimeDomain: cocoascript.AVAudioTimePitchAlgorithm;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiotimepitchalgorithmvarispeed
-declare const AVAudioTimePitchAlgorithmVarispeed: AVAudioTimePitchAlgorithm;
+declare const AVAudioTimePitchAlgorithmVarispeed: cocoascript.AVAudioTimePitchAlgorithm;
 // doc://com.apple.documentation/documentation/avfoundation/avtrackassociationtypeaudiofallback
-declare const AVTrackAssociationTypeAudioFallback: AVTrackAssociationType;
+declare const AVTrackAssociationTypeAudioFallback: cocoascript.AVTrackAssociationType;
 // doc://com.apple.documentation/documentation/avfoundation/avtrackassociationtypechapterlist
-declare const AVTrackAssociationTypeChapterList: AVTrackAssociationType;
+declare const AVTrackAssociationTypeChapterList: cocoascript.AVTrackAssociationType;
 // doc://com.apple.documentation/documentation/avfoundation/avtrackassociationtypeforcedsubtitlesonly
-declare const AVTrackAssociationTypeForcedSubtitlesOnly: AVTrackAssociationType;
+declare const AVTrackAssociationTypeForcedSubtitlesOnly: cocoascript.AVTrackAssociationType;
 // doc://com.apple.documentation/documentation/avfoundation/avtrackassociationtypemetadatareferent
-declare const AVTrackAssociationTypeMetadataReferent: AVTrackAssociationType;
+declare const AVTrackAssociationTypeMetadataReferent: cocoascript.AVTrackAssociationType;
 // doc://com.apple.documentation/documentation/avfoundation/avtrackassociationtypeselectionfollower
-declare const AVTrackAssociationTypeSelectionFollower: AVTrackAssociationType;
+declare const AVTrackAssociationTypeSelectionFollower: cocoascript.AVTrackAssociationType;
 // doc://com.apple.documentation/documentation/avfoundation/avtrackassociationtypetimecode
-declare const AVTrackAssociationTypeTimecode: AVTrackAssociationType;
+declare const AVTrackAssociationTypeTimecode: cocoascript.AVTrackAssociationType;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/avfoundation/avaudiopacketcount
   type AVAudioPacketCount = number;
@@ -10439,83 +10439,83 @@ declare namespace cocoascript {
   type AVAudioQuality = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/avfoundation/avvideoaperturemodecleanaperture
-declare const AVVideoApertureModeCleanAperture: AVVideoApertureMode;
+declare const AVVideoApertureModeCleanAperture: cocoascript.AVVideoApertureMode;
 // doc://com.apple.documentation/documentation/avfoundation/avvideoaperturemodeencodedpixels
-declare const AVVideoApertureModeEncodedPixels: AVVideoApertureMode;
+declare const AVVideoApertureModeEncodedPixels: cocoascript.AVVideoApertureMode;
 // doc://com.apple.documentation/documentation/avfoundation/avvideoaperturemodeproductionaperture
-declare const AVVideoApertureModeProductionAperture: AVVideoApertureMode;
+declare const AVVideoApertureModeProductionAperture: cocoascript.AVVideoApertureMode;
 // doc://com.apple.documentation/documentation/avfoundation/avassetdownloadedassetevictionprioritydefault
-declare const AVAssetDownloadedAssetEvictionPriorityDefault: AVAssetDownloadedAssetEvictionPriority;
+declare const AVAssetDownloadedAssetEvictionPriorityDefault: cocoascript.AVAssetDownloadedAssetEvictionPriority;
 // doc://com.apple.documentation/documentation/avfoundation/avassetdownloadedassetevictionpriorityimportant
-declare const AVAssetDownloadedAssetEvictionPriorityImportant: AVAssetDownloadedAssetEvictionPriority;
+declare const AVAssetDownloadedAssetEvictionPriorityImportant: cocoascript.AVAssetDownloadedAssetEvictionPriority;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/avfoundation/avassetreaderstatus
   type AVAssetReaderStatus = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/avfoundation/avassetimagegeneratoraperturemodecleanaperture
-declare const AVAssetImageGeneratorApertureModeCleanAperture: AVAssetImageGeneratorApertureMode;
+declare const AVAssetImageGeneratorApertureModeCleanAperture: cocoascript.AVAssetImageGeneratorApertureMode;
 // doc://com.apple.documentation/documentation/avfoundation/avassetimagegeneratoraperturemodeencodedpixels
-declare const AVAssetImageGeneratorApertureModeEncodedPixels: AVAssetImageGeneratorApertureMode;
+declare const AVAssetImageGeneratorApertureModeEncodedPixels: cocoascript.AVAssetImageGeneratorApertureMode;
 // doc://com.apple.documentation/documentation/avfoundation/avassetimagegeneratoraperturemodeproductionaperture
-declare const AVAssetImageGeneratorApertureModeProductionAperture: AVAssetImageGeneratorApertureMode;
+declare const AVAssetImageGeneratorApertureModeProductionAperture: cocoascript.AVAssetImageGeneratorApertureMode;
 // doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspresethevc3840x2160
-declare const AVOutputSettingsPresetHEVC3840x2160: AVOutputSettingsPreset;
+declare const AVOutputSettingsPresetHEVC3840x2160: cocoascript.AVOutputSettingsPreset;
 // doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspresethevc1920x1080
-declare const AVOutputSettingsPresetHEVC1920x1080: AVOutputSettingsPreset;
+declare const AVOutputSettingsPresetHEVC1920x1080: cocoascript.AVOutputSettingsPreset;
 // doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspresethevc3840x2160withalpha
-declare const AVOutputSettingsPresetHEVC3840x2160WithAlpha: AVOutputSettingsPreset;
+declare const AVOutputSettingsPresetHEVC3840x2160WithAlpha: cocoascript.AVOutputSettingsPreset;
 // doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspresethevc1920x1080withalpha
-declare const AVOutputSettingsPresetHEVC1920x1080WithAlpha: AVOutputSettingsPreset;
+declare const AVOutputSettingsPresetHEVC1920x1080WithAlpha: cocoascript.AVOutputSettingsPreset;
 // doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset3840x2160
-declare const AVOutputSettingsPreset3840x2160: AVOutputSettingsPreset;
+declare const AVOutputSettingsPreset3840x2160: cocoascript.AVOutputSettingsPreset;
 // doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset1920x1080
-declare const AVOutputSettingsPreset1920x1080: AVOutputSettingsPreset;
+declare const AVOutputSettingsPreset1920x1080: cocoascript.AVOutputSettingsPreset;
 // doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset960x540
-declare const AVOutputSettingsPreset960x540: AVOutputSettingsPreset;
+declare const AVOutputSettingsPreset960x540: cocoascript.AVOutputSettingsPreset;
 // doc://com.apple.documentation/documentation/avfoundation/avoutputsettingspreset640x480
-declare const AVOutputSettingsPreset640x480: AVOutputSettingsPreset;
+declare const AVOutputSettingsPreset640x480: cocoascript.AVOutputSettingsPreset;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessioncategoryambient
-declare const AVAudioSessionCategoryAmbient: AVAudioSessionCategory;
+declare const AVAudioSessionCategoryAmbient: cocoascript.AVAudioSessionCategory;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessioncategoryrecord
-declare const AVAudioSessionCategoryRecord: AVAudioSessionCategory;
+declare const AVAudioSessionCategoryRecord: cocoascript.AVAudioSessionCategory;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessioncategoryaudioprocessing
-declare const AVAudioSessionCategoryAudioProcessing: AVAudioSessionCategory;
+declare const AVAudioSessionCategoryAudioProcessing: cocoascript.AVAudioSessionCategory;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmodedefault
-declare const AVAudioSessionModeDefault: AVAudioSessionMode;
+declare const AVAudioSessionModeDefault: cocoascript.AVAudioSessionMode;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmodegamechat
-declare const AVAudioSessionModeGameChat: AVAudioSessionMode;
+declare const AVAudioSessionModeGameChat: cocoascript.AVAudioSessionMode;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmodemeasurement
-declare const AVAudioSessionModeMeasurement: AVAudioSessionMode;
+declare const AVAudioSessionModeMeasurement: cocoascript.AVAudioSessionMode;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmodespokenaudio
-declare const AVAudioSessionModeSpokenAudio: AVAudioSessionMode;
+declare const AVAudioSessionModeSpokenAudio: cocoascript.AVAudioSessionMode;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmodevideochat
-declare const AVAudioSessionModeVideoChat: AVAudioSessionMode;
+declare const AVAudioSessionModeVideoChat: cocoascript.AVAudioSessionMode;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmodevideorecording
-declare const AVAudioSessionModeVideoRecording: AVAudioSessionMode;
+declare const AVAudioSessionModeVideoRecording: cocoascript.AVAudioSessionMode;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmodevoicechat
-declare const AVAudioSessionModeVoiceChat: AVAudioSessionMode;
+declare const AVAudioSessionModeVoiceChat: cocoascript.AVAudioSessionMode;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionmodevoiceprompt
-declare const AVAudioSessionModeVoicePrompt: AVAudioSessionMode;
+declare const AVAudioSessionModeVoicePrompt: cocoascript.AVAudioSessionMode;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionsetactiveoptions
   type AVAudioSessionSetActiveOptions = cocoascript.NSUInteger;
 }
 // doc://com.apple.documentation/documentation/avfoundation/avplayerwaitingtominimizestallsreason
-declare const AVPlayerWaitingToMinimizeStallsReason: AVPlayerWaitingReason;
+declare const AVPlayerWaitingToMinimizeStallsReason: cocoascript.AVPlayerWaitingReason;
 // doc://com.apple.documentation/documentation/avfoundation/avplayerwaitingwithnoitemtoplayreason
-declare const AVPlayerWaitingWithNoItemToPlayReason: AVPlayerWaitingReason;
+declare const AVPlayerWaitingWithNoItemToPlayReason: cocoascript.AVPlayerWaitingReason;
 // doc://com.apple.documentation/documentation/avfoundation/avplayerwaitingwhileevaluatingbufferingratereason
-declare const AVPlayerWaitingWhileEvaluatingBufferingRateReason: AVPlayerWaitingReason;
+declare const AVPlayerWaitingWhileEvaluatingBufferingRateReason: cocoascript.AVPlayerWaitingReason;
 // doc://com.apple.documentation/documentation/avfoundation/avcontentkeysystemfairplaystreaming
-declare const AVContentKeySystemFairPlayStreaming: AVContentKeySystem;
+declare const AVContentKeySystemFairPlayStreaming: cocoascript.AVContentKeySystem;
 // doc://com.apple.documentation/documentation/avfoundation/avcontentkeysystemclearkey
-declare const AVContentKeySystemClearKey: AVContentKeySystem;
+declare const AVContentKeySystemClearKey: cocoascript.AVContentKeySystem;
 // doc://com.apple.documentation/documentation/avfoundation/avcontentkeysystemauthorizationtoken
-declare const AVContentKeySystemAuthorizationToken: AVContentKeySystem;
+declare const AVContentKeySystemAuthorizationToken: cocoascript.AVContentKeySystem;
 // doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessionserverplaybackcontextoptionprotocolversions
-declare const AVContentKeySessionServerPlaybackContextOptionProtocolVersions: AVContentKeySessionServerPlaybackContextOption;
+declare const AVContentKeySessionServerPlaybackContextOptionProtocolVersions: cocoascript.AVContentKeySessionServerPlaybackContextOption;
 // doc://com.apple.documentation/documentation/avfoundation/avcontentkeysessionserverplaybackcontextoptionserverchallenge
-declare const AVContentKeySessionServerPlaybackContextOptionServerChallenge: AVContentKeySessionServerPlaybackContextOption;
+declare const AVContentKeySessionServerPlaybackContextOptionServerChallenge: cocoascript.AVContentKeySessionServerPlaybackContextOption;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionrecordpermission
   type AVAudioSessionRecordPermission = cocoascript.NSUInteger;
@@ -10541,7 +10541,7 @@ declare namespace cocoascript {
   type AVAudioSessionPortOverride = cocoascript.NSUInteger;
 }
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionpolarpatternstereo
-declare const AVAudioSessionPolarPatternStereo: AVAudioSessionPolarPattern;
+declare const AVAudioSessionPolarPatternStereo: cocoascript.AVAudioSessionPolarPattern;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/avfoundation/avmidiplayercompletionhandler
   type AVMIDIPlayerCompletionHandler = void;
@@ -10939,15 +10939,15 @@ declare namespace cocoascript {
   type AVAudioConverterPrimeMethod = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesystempressurelevelnominal
-declare const AVCaptureSystemPressureLevelNominal: AVCaptureSystemPressureLevel;
+declare const AVCaptureSystemPressureLevelNominal: cocoascript.AVCaptureSystemPressureLevel;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesystempressurelevelfair
-declare const AVCaptureSystemPressureLevelFair: AVCaptureSystemPressureLevel;
+declare const AVCaptureSystemPressureLevelFair: cocoascript.AVCaptureSystemPressureLevel;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesystempressurelevelserious
-declare const AVCaptureSystemPressureLevelSerious: AVCaptureSystemPressureLevel;
+declare const AVCaptureSystemPressureLevelSerious: cocoascript.AVCaptureSystemPressureLevel;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesystempressurelevelcritical
-declare const AVCaptureSystemPressureLevelCritical: AVCaptureSystemPressureLevel;
+declare const AVCaptureSystemPressureLevelCritical: cocoascript.AVCaptureSystemPressureLevel;
 // doc://com.apple.documentation/documentation/avfoundation/avcapturesystempressurelevelshutdown
-declare const AVCaptureSystemPressureLevelShutdown: AVCaptureSystemPressureLevel;
+declare const AVCaptureSystemPressureLevelShutdown: cocoascript.AVCaptureSystemPressureLevel;
 declare namespace cocoascript {
   /**
    * An object that provides information on a sample in a track.
@@ -10975,13 +10975,13 @@ declare namespace cocoascript {
 
 declare const AVAssetSegmentReportSampleInformation: cocoascript.AVAssetSegmentReportSampleInformation;
 // doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmediadatalocationbeforemainmediadatanotinterleaved
-declare const AVAssetWriterInputMediaDataLocationBeforeMainMediaDataNotInterleaved: AVAssetWriterInputMediaDataLocation;
+declare const AVAssetWriterInputMediaDataLocationBeforeMainMediaDataNotInterleaved: cocoascript.AVAssetWriterInputMediaDataLocation;
 // doc://com.apple.documentation/documentation/avfoundation/avassetwriterinputmediadatalocationinterleavedwithmainmediadata
-declare const AVAssetWriterInputMediaDataLocationInterleavedWithMainMediaData: AVAssetWriterInputMediaDataLocation;
+declare const AVAssetWriterInputMediaDataLocationInterleavedWithMainMediaData: cocoascript.AVAssetWriterInputMediaDataLocation;
 // doc://com.apple.documentation/documentation/avfoundation/avplayeritemlegibleoutputtextstylingresolutiondefault
-declare const AVPlayerItemLegibleOutputTextStylingResolutionDefault: AVPlayerItemLegibleOutputTextStylingResolution;
+declare const AVPlayerItemLegibleOutputTextStylingResolutionDefault: cocoascript.AVPlayerItemLegibleOutputTextStylingResolution;
 // doc://com.apple.documentation/documentation/avfoundation/avplayeritemlegibleoutputtextstylingresolutionsourceandrulesonly
-declare const AVPlayerItemLegibleOutputTextStylingResolutionSourceAndRulesOnly: AVPlayerItemLegibleOutputTextStylingResolution;
+declare const AVPlayerItemLegibleOutputTextStylingResolutionSourceAndRulesOnly: cocoascript.AVPlayerItemLegibleOutputTextStylingResolution;
 declare namespace cocoascript {
   /**
    * The
@@ -11016,69 +11016,69 @@ declare namespace cocoascript {
   type AVAudioUnitReverbPreset = cocoascript.NSInteger;
 }
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionportbuiltinmic
-declare const AVAudioSessionPortBuiltInMic: AVAudioSessionPort;
+declare const AVAudioSessionPortBuiltInMic: cocoascript.AVAudioSessionPort;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionportheadsetmic
-declare const AVAudioSessionPortHeadsetMic: AVAudioSessionPort;
+declare const AVAudioSessionPortHeadsetMic: cocoascript.AVAudioSessionPort;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionportlinein
-declare const AVAudioSessionPortLineIn: AVAudioSessionPort;
+declare const AVAudioSessionPortLineIn: cocoascript.AVAudioSessionPort;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionportairplay
-declare const AVAudioSessionPortAirPlay: AVAudioSessionPort;
+declare const AVAudioSessionPortAirPlay: cocoascript.AVAudioSessionPort;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionportbluetootha2dp
-declare const AVAudioSessionPortBluetoothA2DP: AVAudioSessionPort;
+declare const AVAudioSessionPortBluetoothA2DP: cocoascript.AVAudioSessionPort;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionportbluetoothle
-declare const AVAudioSessionPortBluetoothLE: AVAudioSessionPort;
+declare const AVAudioSessionPortBluetoothLE: cocoascript.AVAudioSessionPort;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionportbuiltinreceiver
-declare const AVAudioSessionPortBuiltInReceiver: AVAudioSessionPort;
+declare const AVAudioSessionPortBuiltInReceiver: cocoascript.AVAudioSessionPort;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionportbuiltinspeaker
-declare const AVAudioSessionPortBuiltInSpeaker: AVAudioSessionPort;
+declare const AVAudioSessionPortBuiltInSpeaker: cocoascript.AVAudioSessionPort;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionporthdmi
-declare const AVAudioSessionPortHDMI: AVAudioSessionPort;
+declare const AVAudioSessionPortHDMI: cocoascript.AVAudioSessionPort;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionportheadphones
-declare const AVAudioSessionPortHeadphones: AVAudioSessionPort;
+declare const AVAudioSessionPortHeadphones: cocoascript.AVAudioSessionPort;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionportlineout
-declare const AVAudioSessionPortLineOut: AVAudioSessionPort;
+declare const AVAudioSessionPortLineOut: cocoascript.AVAudioSessionPort;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionportavb
-declare const AVAudioSessionPortAVB: AVAudioSessionPort;
+declare const AVAudioSessionPortAVB: cocoascript.AVAudioSessionPort;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionportbluetoothhfp
-declare const AVAudioSessionPortBluetoothHFP: AVAudioSessionPort;
+declare const AVAudioSessionPortBluetoothHFP: cocoascript.AVAudioSessionPort;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionportdisplayport
-declare const AVAudioSessionPortDisplayPort: AVAudioSessionPort;
+declare const AVAudioSessionPortDisplayPort: cocoascript.AVAudioSessionPort;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionportcaraudio
-declare const AVAudioSessionPortCarAudio: AVAudioSessionPort;
+declare const AVAudioSessionPortCarAudio: cocoascript.AVAudioSessionPort;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionportfirewire
-declare const AVAudioSessionPortFireWire: AVAudioSessionPort;
+declare const AVAudioSessionPortFireWire: cocoascript.AVAudioSessionPort;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionportpci
-declare const AVAudioSessionPortPCI: AVAudioSessionPort;
+declare const AVAudioSessionPortPCI: cocoascript.AVAudioSessionPort;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionportthunderbolt
-declare const AVAudioSessionPortThunderbolt: AVAudioSessionPort;
+declare const AVAudioSessionPortThunderbolt: cocoascript.AVAudioSessionPort;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionportusbaudio
-declare const AVAudioSessionPortUSBAudio: AVAudioSessionPort;
+declare const AVAudioSessionPortUSBAudio: cocoascript.AVAudioSessionPort;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionportvirtual
-declare const AVAudioSessionPortVirtual: AVAudioSessionPort;
+declare const AVAudioSessionPortVirtual: cocoascript.AVAudioSessionPort;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionlocationlower
-declare const AVAudioSessionLocationLower: AVAudioSessionLocation;
+declare const AVAudioSessionLocationLower: cocoascript.AVAudioSessionLocation;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionlocationupper
-declare const AVAudioSessionLocationUpper: AVAudioSessionLocation;
+declare const AVAudioSessionLocationUpper: cocoascript.AVAudioSessionLocation;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionorientationtop
-declare const AVAudioSessionOrientationTop: AVAudioSessionOrientation;
+declare const AVAudioSessionOrientationTop: cocoascript.AVAudioSessionOrientation;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionorientationbottom
-declare const AVAudioSessionOrientationBottom: AVAudioSessionOrientation;
+declare const AVAudioSessionOrientationBottom: cocoascript.AVAudioSessionOrientation;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionorientationfront
-declare const AVAudioSessionOrientationFront: AVAudioSessionOrientation;
+declare const AVAudioSessionOrientationFront: cocoascript.AVAudioSessionOrientation;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionorientationback
-declare const AVAudioSessionOrientationBack: AVAudioSessionOrientation;
+declare const AVAudioSessionOrientationBack: cocoascript.AVAudioSessionOrientation;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionorientationleft
-declare const AVAudioSessionOrientationLeft: AVAudioSessionOrientation;
+declare const AVAudioSessionOrientationLeft: cocoascript.AVAudioSessionOrientation;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionorientationright
-declare const AVAudioSessionOrientationRight: AVAudioSessionOrientation;
+declare const AVAudioSessionOrientationRight: cocoascript.AVAudioSessionOrientation;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionpolarpatterncardioid
-declare const AVAudioSessionPolarPatternCardioid: AVAudioSessionPolarPattern;
+declare const AVAudioSessionPolarPatternCardioid: cocoascript.AVAudioSessionPolarPattern;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionpolarpatternsubcardioid
-declare const AVAudioSessionPolarPatternSubcardioid: AVAudioSessionPolarPattern;
+declare const AVAudioSessionPolarPatternSubcardioid: cocoascript.AVAudioSessionPolarPattern;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiosessionpolarpatternomnidirectional
-declare const AVAudioSessionPolarPatternOmnidirectional: AVAudioSessionPolarPattern;
+declare const AVAudioSessionPolarPatternOmnidirectional: cocoascript.AVAudioSessionPolarPattern;
 // doc://com.apple.documentation/documentation/avfoundation/avaudiounitcomponentmanagerregistrationschangednotification
-declare const AVAudioUnitComponentManagerRegistrationsChangedNotification: NSNotificationName;
+declare const AVAudioUnitComponentManagerRegistrationsChangedNotification: cocoascript.NSNotificationName;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/avfoundation/avaudiounitdistortionpreset
   type AVAudioUnitDistortionPreset = cocoascript.NSInteger;

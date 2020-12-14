@@ -123,9 +123,9 @@ declare namespace cocoascript {
   type CFStringEncoding = number;
 }
 // doc://com.apple.documentation/documentation/corefoundation/kcfnull
-declare const kCFNull: CFNullRef;
+declare const kCFNull: cocoascript.CFNullRef;
 // doc://com.apple.documentation/documentation/corefoundation/1388767-cfarraygetvalueatindex
-declare const CFArrayGetValueAtIndex: CFIndex;
+declare const CFArrayGetValueAtIndex: cocoascript.CFIndex;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfarrayapplierfunction
   type CFArrayApplierFunction = void;
@@ -205,11 +205,11 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/corefoundation/kcfcopystringdictionarykeycallbacks
-declare const kCFCopyStringDictionaryKeyCallBacks: CFDictionaryKeyCallBacks;
+declare const kCFCopyStringDictionaryKeyCallBacks: cocoascript.CFDictionaryKeyCallBacks;
 // doc://com.apple.documentation/documentation/corefoundation/kcftypedictionaryvaluecallbacks
-declare const kCFTypeDictionaryValueCallBacks: CFDictionaryValueCallBacks;
+declare const kCFTypeDictionaryValueCallBacks: cocoascript.CFDictionaryValueCallBacks;
 // doc://com.apple.documentation/documentation/corefoundation/kcfallocatordefault
-declare const kCFAllocatorDefault: CFAllocatorRef;
+declare const kCFAllocatorDefault: cocoascript.CFAllocatorRef;
 declare namespace cocoascript {
   interface CFAllocatorRef {
   }
@@ -257,7 +257,7 @@ declare namespace cocoascript {
   type CFAbsoluteTime = cocoascript.CFTimeInterval;
 }
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfileresourcetypekey
-declare const kCFURLFileResourceTypeKey: CFStringRef;
+declare const kCFURLFileResourceTypeKey: cocoascript.CFStringRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfurlbookmarkcreationoptions
   type CFURLBookmarkCreationOptions = cocoascript.CFOptionFlags;
@@ -287,9 +287,9 @@ declare namespace cocoascript {
   type CFOptionFlags = number;
 }
 // doc://com.apple.documentation/documentation/corefoundation/1542939-cfstringgetcharactersptr
-declare const CFStringGetCharactersPtr: CFStringRef;
+declare const CFStringGetCharactersPtr: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/1542133-cfstringgetcstringptr
-declare const CFStringGetCStringPtr: CFStringEncoding;
+declare const CFStringGetCStringPtr: cocoascript.CFStringEncoding;
 // doc://com.apple.documentation/documentation/corefoundation/1542932-cfstringgetlistofavailableencodi
 declare const CFStringGetListOfAvailableEncodings: void;
 declare namespace cocoascript {
@@ -309,23 +309,23 @@ declare namespace cocoascript {
   type CFStringBuiltInEncodings = cocoascript.CFStringEncoding;
 }
 // doc://com.apple.documentation/documentation/corefoundation/kcfbundlelocalizationskey
-declare const kCFBundleLocalizationsKey: CFStringRef;
+declare const kCFBundleLocalizationsKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfbundledevelopmentregionkey
-declare const kCFBundleDevelopmentRegionKey: CFStringRef;
+declare const kCFBundleDevelopmentRegionKey: cocoascript.CFStringRef;
 declare namespace cocoascript {
   interface CFPlugInRef {
   }
 }
 // doc://com.apple.documentation/documentation/corefoundation/kcfbundleinfodictionaryversionkey
-declare const kCFBundleInfoDictionaryVersionKey: CFStringRef;
+declare const kCFBundleInfoDictionaryVersionKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfbundleexecutablekey
-declare const kCFBundleExecutableKey: CFStringRef;
+declare const kCFBundleExecutableKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfbundleidentifierkey
-declare const kCFBundleIdentifierKey: CFStringRef;
+declare const kCFBundleIdentifierKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfbundleversionkey
-declare const kCFBundleVersionKey: CFStringRef;
+declare const kCFBundleVersionKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfbundlenamekey
-declare const kCFBundleNameKey: CFStringRef;
+declare const kCFBundleNameKey: cocoascript.CFStringRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfallocatorallocatecallback
   type CFAllocatorAllocateCallBack = void;
@@ -389,7 +389,7 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/corefoundation/1509325-cfbinaryheapgetminimum
-declare const CFBinaryHeapGetMinimum: CFBinaryHeapRef;
+declare const CFBinaryHeapGetMinimum: cocoascript.CFBinaryHeapRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfbinaryheapapplierfunction
   type CFBinaryHeapApplierFunction = void;
@@ -423,7 +423,7 @@ declare namespace cocoascript {
   type CFCharacterSetPredefinedSet = cocoascript.CFIndex;
 }
 // doc://com.apple.documentation/documentation/corefoundation/1543330-cfdatagetbyteptr
-declare const CFDataGetBytePtr: CFDataRef;
+declare const CFDataGetBytePtr: cocoascript.CFDataRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfdatasearchflags
   type CFDataSearchFlags = cocoascript.CFOptionFlags;
@@ -573,7 +573,7 @@ declare namespace cocoascript {
   type CFPropertyListFormat = cocoascript.CFIndex;
 }
 // doc://com.apple.documentation/documentation/corefoundation/1539692-cfreadstreamgetbuffer
-declare const CFReadStreamGetBuffer: CFIndex;
+declare const CFReadStreamGetBuffer: cocoascript.CFIndex;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfreadstreamclientcallback
   type CFReadStreamClientCallBack = void;
@@ -583,9 +583,9 @@ declare namespace cocoascript {
   }
 }
 // doc://com.apple.documentation/documentation/corefoundation/kcfrunloopdefaultmode
-declare const kCFRunLoopDefaultMode: CFRunLoopMode;
+declare const kCFRunLoopDefaultMode: cocoascript.CFRunLoopMode;
 // doc://com.apple.documentation/documentation/corefoundation/kcfrunloopcommonmodes
-declare const kCFRunLoopCommonModes: CFRunLoopMode;
+declare const kCFRunLoopCommonModes: cocoascript.CFRunLoopMode;
 declare namespace cocoascript {
   interface CFRunLoopRef {
   }
@@ -707,7 +707,7 @@ declare namespace cocoascript {
   type CFXMLNodeTypeCode = cocoascript.CFIndex;
 }
 // doc://com.apple.documentation/documentation/corefoundation/1443276-cfxmlnodegetinfoptr
-declare const CFXMLNodeGetInfoPtr: CFXMLNodeRef;
+declare const CFXMLNodeGetInfoPtr: cocoascript.CFXMLNodeRef;
 declare namespace cocoascript {
   interface CFXMLAttributeDeclarationInfo {
   }
@@ -821,47 +821,47 @@ declare namespace cocoascript {
   type CFRunLoopMode = cocoascript.CFStringRef;
 }
 // doc://com.apple.documentation/documentation/corefoundation/kcfbooleantrue
-declare const kCFBooleanTrue: CFBooleanRef;
+declare const kCFBooleanTrue: cocoascript.CFBooleanRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfstringtransformtolatin
-declare const kCFStringTransformToLatin: CFStringRef;
+declare const kCFStringTransformToLatin: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfstringtransformlatinarabic
-declare const kCFStringTransformLatinArabic: CFStringRef;
+declare const kCFStringTransformLatinArabic: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfstringtransformlatincyrillic
-declare const kCFStringTransformLatinCyrillic: CFStringRef;
+declare const kCFStringTransformLatinCyrillic: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfstringtransformlatingreek
-declare const kCFStringTransformLatinGreek: CFStringRef;
+declare const kCFStringTransformLatinGreek: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfstringtransformlatinhangul
-declare const kCFStringTransformLatinHangul: CFStringRef;
+declare const kCFStringTransformLatinHangul: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfstringtransformlatinhebrew
-declare const kCFStringTransformLatinHebrew: CFStringRef;
+declare const kCFStringTransformLatinHebrew: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfstringtransformlatinhiragana
-declare const kCFStringTransformLatinHiragana: CFStringRef;
+declare const kCFStringTransformLatinHiragana: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfstringtransformlatinkatakana
-declare const kCFStringTransformLatinKatakana: CFStringRef;
+declare const kCFStringTransformLatinKatakana: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfstringtransformlatinthai
-declare const kCFStringTransformLatinThai: CFStringRef;
+declare const kCFStringTransformLatinThai: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfstringtransformhiraganakatakana
-declare const kCFStringTransformHiraganaKatakana: CFStringRef;
+declare const kCFStringTransformHiraganaKatakana: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfstringtransformmandarinlatin
-declare const kCFStringTransformMandarinLatin: CFStringRef;
+declare const kCFStringTransformMandarinLatin: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfstringtransformstripdiacritics
-declare const kCFStringTransformStripDiacritics: CFStringRef;
+declare const kCFStringTransformStripDiacritics: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfstringtransformstripcombiningmarks
-declare const kCFStringTransformStripCombiningMarks: CFStringRef;
+declare const kCFStringTransformStripCombiningMarks: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfstringtransformfullwidthhalfwidth
-declare const kCFStringTransformFullwidthHalfwidth: CFStringRef;
+declare const kCFStringTransformFullwidthHalfwidth: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfstringtransformtounicodename
-declare const kCFStringTransformToUnicodeName: CFStringRef;
+declare const kCFStringTransformToUnicodeName: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfstringtransformtoxmlhex
-declare const kCFStringTransformToXMLHex: CFStringRef;
+declare const kCFStringTransformToXMLHex: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcftypearraycallbacks
-declare const kCFTypeArrayCallBacks: CFArrayCallBacks;
+declare const kCFTypeArrayCallBacks: cocoascript.CFArrayCallBacks;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfcomparatorfunction
   type CFComparatorFunction = void;
 }
 // doc://com.apple.documentation/documentation/corefoundation/kcftypedictionarykeycallbacks
-declare const kCFTypeDictionaryKeyCallBacks: CFDictionaryKeyCallBacks;
+declare const kCFTypeDictionaryKeyCallBacks: cocoascript.CFDictionaryKeyCallBacks;
 declare namespace cocoascript {
   interface CFGregorianDate {
   }
@@ -935,83 +935,83 @@ declare namespace cocoascript {
   type CFURLEnumeratorResult = cocoascript.CFIndex;
 }
 // doc://com.apple.documentation/documentation/corefoundation/kcfnotfound
-declare const kCFNotFound: CFIndex;
+declare const kCFNotFound: cocoascript.CFIndex;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurladdedtodirectorydatekey
-declare const kCFURLAddedToDirectoryDateKey: CFStringRef;
+declare const kCFURLAddedToDirectoryDateKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlapplicationisscriptablekey
-declare const kCFURLApplicationIsScriptableKey: CFStringRef;
+declare const kCFURLApplicationIsScriptableKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlcanonicalpathkey
-declare const kCFURLCanonicalPathKey: CFStringRef;
+declare const kCFURLCanonicalPathKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurldocumentidentifierkey
-declare const kCFURLDocumentIdentifierKey: CFStringRef;
+declare const kCFURLDocumentIdentifierKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfileprotectioncomplete
-declare const kCFURLFileProtectionComplete: CFStringRef;
+declare const kCFURLFileProtectionComplete: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfileprotectioncompleteunlessopen
-declare const kCFURLFileProtectionCompleteUnlessOpen: CFStringRef;
+declare const kCFURLFileProtectionCompleteUnlessOpen: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfileprotectioncompleteuntilfirstuserauthentication
-declare const kCFURLFileProtectionCompleteUntilFirstUserAuthentication: CFStringRef;
+declare const kCFURLFileProtectionCompleteUntilFirstUserAuthentication: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfileprotectionkey
-declare const kCFURLFileProtectionKey: CFStringRef;
+declare const kCFURLFileProtectionKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfileprotectionnone
-declare const kCFURLFileProtectionNone: CFStringRef;
+declare const kCFURLFileProtectionNone: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlgenerationidentifierkey
-declare const kCFURLGenerationIdentifierKey: CFStringRef;
+declare const kCFURLGenerationIdentifierKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlisapplicationkey
-declare const kCFURLIsApplicationKey: CFStringRef;
+declare const kCFURLIsApplicationKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlquarantinepropertieskey
-declare const kCFURLQuarantinePropertiesKey: CFStringRef;
+declare const kCFURLQuarantinePropertiesKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurltagnameskey
-declare const kCFURLTagNamesKey: CFStringRef;
+declare const kCFURLTagNamesKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlubiquitousitemdownloadingerrorkey
-declare const kCFURLUbiquitousItemDownloadingErrorKey: CFStringRef;
+declare const kCFURLUbiquitousItemDownloadingErrorKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlubiquitousitemdownloadingstatuscurrent
-declare const kCFURLUbiquitousItemDownloadingStatusCurrent: CFStringRef;
+declare const kCFURLUbiquitousItemDownloadingStatusCurrent: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlubiquitousitemdownloadingstatusdownloaded
-declare const kCFURLUbiquitousItemDownloadingStatusDownloaded: CFStringRef;
+declare const kCFURLUbiquitousItemDownloadingStatusDownloaded: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlubiquitousitemdownloadingstatuskey
-declare const kCFURLUbiquitousItemDownloadingStatusKey: CFStringRef;
+declare const kCFURLUbiquitousItemDownloadingStatusKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlubiquitousitemdownloadingstatusnotdownloaded
-declare const kCFURLUbiquitousItemDownloadingStatusNotDownloaded: CFStringRef;
+declare const kCFURLUbiquitousItemDownloadingStatusNotDownloaded: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlubiquitousitemuploadingerrorkey
-declare const kCFURLUbiquitousItemUploadingErrorKey: CFStringRef;
+declare const kCFURLUbiquitousItemUploadingErrorKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumeisencryptedkey
-declare const kCFURLVolumeIsEncryptedKey: CFStringRef;
+declare const kCFURLVolumeIsEncryptedKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumeisrootfilesystemkey
-declare const kCFURLVolumeIsRootFileSystemKey: CFStringRef;
+declare const kCFURLVolumeIsRootFileSystemKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumesupportscompressionkey
-declare const kCFURLVolumeSupportsCompressionKey: CFStringRef;
+declare const kCFURLVolumeSupportsCompressionKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumesupportsexclusiverenamingkey
-declare const kCFURLVolumeSupportsExclusiveRenamingKey: CFStringRef;
+declare const kCFURLVolumeSupportsExclusiveRenamingKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumesupportsfilecloningkey
-declare const kCFURLVolumeSupportsFileCloningKey: CFStringRef;
+declare const kCFURLVolumeSupportsFileCloningKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumesupportsswaprenamingkey
-declare const kCFURLVolumeSupportsSwapRenamingKey: CFStringRef;
+declare const kCFURLVolumeSupportsSwapRenamingKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcferrorlocalizedfailurekey
-declare const kCFErrorLocalizedFailureKey: CFStringRef;
+declare const kCFErrorLocalizedFailureKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfilecontentidentifierkey
-declare const kCFURLFileContentIdentifierKey: CFStringRef;
+declare const kCFURLFileContentIdentifierKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlispurgeablekey
-declare const kCFURLIsPurgeableKey: CFStringRef;
+declare const kCFURLIsPurgeableKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlissparsekey
-declare const kCFURLIsSparseKey: CFStringRef;
+declare const kCFURLIsSparseKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlmayhaveextendedattributeskey
-declare const kCFURLMayHaveExtendedAttributesKey: CFStringRef;
+declare const kCFURLMayHaveExtendedAttributesKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlmaysharefilecontentkey
-declare const kCFURLMayShareFileContentKey: CFStringRef;
+declare const kCFURLMayShareFileContentKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumeavailablecapacityforimportantusagekey
-declare const kCFURLVolumeAvailableCapacityForImportantUsageKey: CFStringRef;
+declare const kCFURLVolumeAvailableCapacityForImportantUsageKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumeavailablecapacityforopportunisticusagekey
-declare const kCFURLVolumeAvailableCapacityForOpportunisticUsageKey: CFStringRef;
+declare const kCFURLVolumeAvailableCapacityForOpportunisticUsageKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumesupportsaccesspermissionskey
-declare const kCFURLVolumeSupportsAccessPermissionsKey: CFStringRef;
+declare const kCFURLVolumeSupportsAccessPermissionsKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumesupportsfileprotectionkey
-declare const kCFURLVolumeSupportsFileProtectionKey: CFStringRef;
+declare const kCFURLVolumeSupportsFileProtectionKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumesupportsimmutablefileskey
-declare const kCFURLVolumeSupportsImmutableFilesKey: CFStringRef;
+declare const kCFURLVolumeSupportsImmutableFilesKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfusernotificationalerttopmostkey
-declare const kCFUserNotificationAlertTopMostKey: CFStringRef;
+declare const kCFUserNotificationAlertTopMostKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfusernotificationkeyboardtypeskey
-declare const kCFUserNotificationKeyboardTypesKey: CFStringRef;
+declare const kCFUserNotificationKeyboardTypesKey: cocoascript.CFStringRef;
 declare namespace cocoascript {
   // doc://com.apple.documentation/documentation/corefoundation/cfcalendaridentifier
   type CFCalendarIdentifier = cocoascript.CFStringRef;
@@ -1045,467 +1045,467 @@ declare namespace cocoascript {
   type CFStreamPropertyKey = cocoascript.CFStringRef;
 }
 // doc://com.apple.documentation/documentation/corefoundation/kcftypesetcallbacks
-declare const kCFTypeSetCallBacks: CFSetCallBacks;
+declare const kCFTypeSetCallBacks: cocoascript.CFSetCallBacks;
 // doc://com.apple.documentation/documentation/corefoundation/kcfcopystringsetcallbacks
-declare const kCFCopyStringSetCallBacks: CFSetCallBacks;
+declare const kCFCopyStringSetCallBacks: cocoascript.CFSetCallBacks;
 // doc://com.apple.documentation/documentation/corefoundation/kcfpreferencescurrentapplication
-declare const kCFPreferencesCurrentApplication: CFStringRef;
+declare const kCFPreferencesCurrentApplication: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfpreferencesanyapplication
-declare const kCFPreferencesAnyApplication: CFStringRef;
+declare const kCFPreferencesAnyApplication: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfpreferencescurrentuser
-declare const kCFPreferencesCurrentUser: CFStringRef;
+declare const kCFPreferencesCurrentUser: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfpreferencesanyuser
-declare const kCFPreferencesAnyUser: CFStringRef;
+declare const kCFPreferencesAnyUser: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfpreferencescurrenthost
-declare const kCFPreferencesCurrentHost: CFStringRef;
+declare const kCFPreferencesCurrentHost: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfpreferencesanyhost
-declare const kCFPreferencesAnyHost: CFStringRef;
+declare const kCFPreferencesAnyHost: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlnamekey
-declare const kCFURLNameKey: CFStringRef;
+declare const kCFURLNameKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurllocalizednamekey
-declare const kCFURLLocalizedNameKey: CFStringRef;
+declare const kCFURLLocalizedNameKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlpathkey
-declare const kCFURLPathKey: CFStringRef;
+declare const kCFURLPathKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlisregularfilekey
-declare const kCFURLIsRegularFileKey: CFStringRef;
+declare const kCFURLIsRegularFileKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlisdirectorykey
-declare const kCFURLIsDirectoryKey: CFStringRef;
+declare const kCFURLIsDirectoryKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlissymboliclinkkey
-declare const kCFURLIsSymbolicLinkKey: CFStringRef;
+declare const kCFURLIsSymbolicLinkKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlisvolumekey
-declare const kCFURLIsVolumeKey: CFStringRef;
+declare const kCFURLIsVolumeKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlispackagekey
-declare const kCFURLIsPackageKey: CFStringRef;
+declare const kCFURLIsPackageKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlissystemimmutablekey
-declare const kCFURLIsSystemImmutableKey: CFStringRef;
+declare const kCFURLIsSystemImmutableKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlisuserimmutablekey
-declare const kCFURLIsUserImmutableKey: CFStringRef;
+declare const kCFURLIsUserImmutableKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlishiddenkey
-declare const kCFURLIsHiddenKey: CFStringRef;
+declare const kCFURLIsHiddenKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlhashiddenextensionkey
-declare const kCFURLHasHiddenExtensionKey: CFStringRef;
+declare const kCFURLHasHiddenExtensionKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlcreationdatekey
-declare const kCFURLCreationDateKey: CFStringRef;
+declare const kCFURLCreationDateKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlcontentaccessdatekey
-declare const kCFURLContentAccessDateKey: CFStringRef;
+declare const kCFURLContentAccessDateKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlcontentmodificationdatekey
-declare const kCFURLContentModificationDateKey: CFStringRef;
+declare const kCFURLContentModificationDateKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlattributemodificationdatekey
-declare const kCFURLAttributeModificationDateKey: CFStringRef;
+declare const kCFURLAttributeModificationDateKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurllinkcountkey
-declare const kCFURLLinkCountKey: CFStringRef;
+declare const kCFURLLinkCountKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlparentdirectoryurlkey
-declare const kCFURLParentDirectoryURLKey: CFStringRef;
+declare const kCFURLParentDirectoryURLKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumeurlkey
-declare const kCFURLVolumeURLKey: CFStringRef;
+declare const kCFURLVolumeURLKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurltypeidentifierkey
-declare const kCFURLTypeIdentifierKey: CFStringRef;
+declare const kCFURLTypeIdentifierKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurllocalizedtypedescriptionkey
-declare const kCFURLLocalizedTypeDescriptionKey: CFStringRef;
+declare const kCFURLLocalizedTypeDescriptionKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurllabelnumberkey
-declare const kCFURLLabelNumberKey: CFStringRef;
+declare const kCFURLLabelNumberKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurllabelcolorkey
-declare const kCFURLLabelColorKey: CFStringRef;
+declare const kCFURLLabelColorKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurllocalizedlabelkey
-declare const kCFURLLocalizedLabelKey: CFStringRef;
+declare const kCFURLLocalizedLabelKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurleffectiveiconkey
-declare const kCFURLEffectiveIconKey: CFStringRef;
+declare const kCFURLEffectiveIconKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlcustomiconkey
-declare const kCFURLCustomIconKey: CFStringRef;
+declare const kCFURLCustomIconKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfileresourceidentifierkey
-declare const kCFURLFileResourceIdentifierKey: CFStringRef;
+declare const kCFURLFileResourceIdentifierKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumeidentifierkey
-declare const kCFURLVolumeIdentifierKey: CFStringRef;
+declare const kCFURLVolumeIdentifierKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlpreferredioblocksizekey
-declare const kCFURLPreferredIOBlockSizeKey: CFStringRef;
+declare const kCFURLPreferredIOBlockSizeKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlisreadablekey
-declare const kCFURLIsReadableKey: CFStringRef;
+declare const kCFURLIsReadableKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurliswritablekey
-declare const kCFURLIsWritableKey: CFStringRef;
+declare const kCFURLIsWritableKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlisexecutablekey
-declare const kCFURLIsExecutableKey: CFStringRef;
+declare const kCFURLIsExecutableKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfilesecuritykey
-declare const kCFURLFileSecurityKey: CFStringRef;
+declare const kCFURLFileSecurityKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlisexcludedfrombackupkey
-declare const kCFURLIsExcludedFromBackupKey: CFStringRef;
+declare const kCFURLIsExcludedFromBackupKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfileresourcetypeblockspecial
-declare const kCFURLFileResourceTypeBlockSpecial: CFStringRef;
+declare const kCFURLFileResourceTypeBlockSpecial: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfileresourcetypecharacterspecial
-declare const kCFURLFileResourceTypeCharacterSpecial: CFStringRef;
+declare const kCFURLFileResourceTypeCharacterSpecial: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfileresourcetypedirectory
-declare const kCFURLFileResourceTypeDirectory: CFStringRef;
+declare const kCFURLFileResourceTypeDirectory: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfileresourcetypenamedpipe
-declare const kCFURLFileResourceTypeNamedPipe: CFStringRef;
+declare const kCFURLFileResourceTypeNamedPipe: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfileresourcetyperegular
-declare const kCFURLFileResourceTypeRegular: CFStringRef;
+declare const kCFURLFileResourceTypeRegular: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfileresourcetypesocket
-declare const kCFURLFileResourceTypeSocket: CFStringRef;
+declare const kCFURLFileResourceTypeSocket: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfileresourcetypesymboliclink
-declare const kCFURLFileResourceTypeSymbolicLink: CFStringRef;
+declare const kCFURLFileResourceTypeSymbolicLink: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfileresourcetypeunknown
-declare const kCFURLFileResourceTypeUnknown: CFStringRef;
+declare const kCFURLFileResourceTypeUnknown: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfileallocatedsizekey
-declare const kCFURLFileAllocatedSizeKey: CFStringRef;
+declare const kCFURLFileAllocatedSizeKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfilesizekey
-declare const kCFURLFileSizeKey: CFStringRef;
+declare const kCFURLFileSizeKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlisaliasfilekey
-declare const kCFURLIsAliasFileKey: CFStringRef;
+declare const kCFURLIsAliasFileKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlismounttriggerkey
-declare const kCFURLIsMountTriggerKey: CFStringRef;
+declare const kCFURLIsMountTriggerKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurltotalfileallocatedsizekey
-declare const kCFURLTotalFileAllocatedSizeKey: CFStringRef;
+declare const kCFURLTotalFileAllocatedSizeKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurltotalfilesizekey
-declare const kCFURLTotalFileSizeKey: CFStringRef;
+declare const kCFURLTotalFileSizeKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlisubiquitousitemkey
-declare const kCFURLIsUbiquitousItemKey: CFStringRef;
+declare const kCFURLIsUbiquitousItemKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlubiquitousitemhasunresolvedconflictskey
-declare const kCFURLUbiquitousItemHasUnresolvedConflictsKey: CFStringRef;
+declare const kCFURLUbiquitousItemHasUnresolvedConflictsKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlubiquitousitemisdownloadedkey
-declare const kCFURLUbiquitousItemIsDownloadedKey: CFStringRef;
+declare const kCFURLUbiquitousItemIsDownloadedKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlubiquitousitemisdownloadingkey
-declare const kCFURLUbiquitousItemIsDownloadingKey: CFStringRef;
+declare const kCFURLUbiquitousItemIsDownloadingKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlubiquitousitemisuploadedkey
-declare const kCFURLUbiquitousItemIsUploadedKey: CFStringRef;
+declare const kCFURLUbiquitousItemIsUploadedKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlubiquitousitemisuploadingkey
-declare const kCFURLUbiquitousItemIsUploadingKey: CFStringRef;
+declare const kCFURLUbiquitousItemIsUploadingKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlubiquitousitempercentdownloadedkey
-declare const kCFURLUbiquitousItemPercentDownloadedKey: CFStringRef;
+declare const kCFURLUbiquitousItemPercentDownloadedKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlubiquitousitempercentuploadedkey
-declare const kCFURLUbiquitousItemPercentUploadedKey: CFStringRef;
+declare const kCFURLUbiquitousItemPercentUploadedKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumetotalcapacitykey
-declare const kCFURLVolumeTotalCapacityKey: CFStringRef;
+declare const kCFURLVolumeTotalCapacityKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumeavailablecapacitykey
-declare const kCFURLVolumeAvailableCapacityKey: CFStringRef;
+declare const kCFURLVolumeAvailableCapacityKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumenamekey
-declare const kCFURLVolumeNameKey: CFStringRef;
+declare const kCFURLVolumeNameKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumelocalizednamekey
-declare const kCFURLVolumeLocalizedNameKey: CFStringRef;
+declare const kCFURLVolumeLocalizedNameKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumelocalizedformatdescriptionkey
-declare const kCFURLVolumeLocalizedFormatDescriptionKey: CFStringRef;
+declare const kCFURLVolumeLocalizedFormatDescriptionKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumeresourcecountkey
-declare const kCFURLVolumeResourceCountKey: CFStringRef;
+declare const kCFURLVolumeResourceCountKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumesupportspersistentidskey
-declare const kCFURLVolumeSupportsPersistentIDsKey: CFStringRef;
+declare const kCFURLVolumeSupportsPersistentIDsKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumesupportssymboliclinkskey
-declare const kCFURLVolumeSupportsSymbolicLinksKey: CFStringRef;
+declare const kCFURLVolumeSupportsSymbolicLinksKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumesupportshardlinkskey
-declare const kCFURLVolumeSupportsHardLinksKey: CFStringRef;
+declare const kCFURLVolumeSupportsHardLinksKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumesupportsjournalingkey
-declare const kCFURLVolumeSupportsJournalingKey: CFStringRef;
+declare const kCFURLVolumeSupportsJournalingKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumeisjournalingkey
-declare const kCFURLVolumeIsJournalingKey: CFStringRef;
+declare const kCFURLVolumeIsJournalingKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumesupportssparsefileskey
-declare const kCFURLVolumeSupportsSparseFilesKey: CFStringRef;
+declare const kCFURLVolumeSupportsSparseFilesKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumesupportszerorunskey
-declare const kCFURLVolumeSupportsZeroRunsKey: CFStringRef;
+declare const kCFURLVolumeSupportsZeroRunsKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumesupportscasesensitivenameskey
-declare const kCFURLVolumeSupportsCaseSensitiveNamesKey: CFStringRef;
+declare const kCFURLVolumeSupportsCaseSensitiveNamesKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumesupportscasepreservednameskey
-declare const kCFURLVolumeSupportsCasePreservedNamesKey: CFStringRef;
+declare const kCFURLVolumeSupportsCasePreservedNamesKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumesupportsrootdirectorydateskey
-declare const kCFURLVolumeSupportsRootDirectoryDatesKey: CFStringRef;
+declare const kCFURLVolumeSupportsRootDirectoryDatesKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumesupportsvolumesizeskey
-declare const kCFURLVolumeSupportsVolumeSizesKey: CFStringRef;
+declare const kCFURLVolumeSupportsVolumeSizesKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumesupportsrenamingkey
-declare const kCFURLVolumeSupportsRenamingKey: CFStringRef;
+declare const kCFURLVolumeSupportsRenamingKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumesupportsadvisoryfilelockingkey
-declare const kCFURLVolumeSupportsAdvisoryFileLockingKey: CFStringRef;
+declare const kCFURLVolumeSupportsAdvisoryFileLockingKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumesupportsextendedsecuritykey
-declare const kCFURLVolumeSupportsExtendedSecurityKey: CFStringRef;
+declare const kCFURLVolumeSupportsExtendedSecurityKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumeisbrowsablekey
-declare const kCFURLVolumeIsBrowsableKey: CFStringRef;
+declare const kCFURLVolumeIsBrowsableKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumemaximumfilesizekey
-declare const kCFURLVolumeMaximumFileSizeKey: CFStringRef;
+declare const kCFURLVolumeMaximumFileSizeKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumeisejectablekey
-declare const kCFURLVolumeIsEjectableKey: CFStringRef;
+declare const kCFURLVolumeIsEjectableKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumeisremovablekey
-declare const kCFURLVolumeIsRemovableKey: CFStringRef;
+declare const kCFURLVolumeIsRemovableKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumeisinternalkey
-declare const kCFURLVolumeIsInternalKey: CFStringRef;
+declare const kCFURLVolumeIsInternalKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumeisautomountedkey
-declare const kCFURLVolumeIsAutomountedKey: CFStringRef;
+declare const kCFURLVolumeIsAutomountedKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumeislocalkey
-declare const kCFURLVolumeIsLocalKey: CFStringRef;
+declare const kCFURLVolumeIsLocalKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumeisreadonlykey
-declare const kCFURLVolumeIsReadOnlyKey: CFStringRef;
+declare const kCFURLVolumeIsReadOnlyKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumecreationdatekey
-declare const kCFURLVolumeCreationDateKey: CFStringRef;
+declare const kCFURLVolumeCreationDateKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumeurlforremountingkey
-declare const kCFURLVolumeURLForRemountingKey: CFStringRef;
+declare const kCFURLVolumeURLForRemountingKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlvolumeuuidstringkey
-declare const kCFURLVolumeUUIDStringKey: CFStringRef;
+declare const kCFURLVolumeUUIDStringKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlkeysofunsetvalueskey
-declare const kCFURLKeysOfUnsetValuesKey: CFStringRef;
+declare const kCFURLKeysOfUnsetValuesKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfallocatornull
-declare const kCFAllocatorNull: CFAllocatorRef;
+declare const kCFAllocatorNull: cocoascript.CFAllocatorRef;
 // doc://com.apple.documentation/documentation/corefoundation/cfstringinlinebuffer/1541983-directcstringbuffer
 declare const directCStringBuffer: string;
 // doc://com.apple.documentation/documentation/corefoundation/cfstringinlinebuffer/1542027-directunicharbuffer
-declare const directUniCharBuffer: UniChar;
+declare const directUniCharBuffer: cocoascript.UniChar;
 // doc://com.apple.documentation/documentation/corefoundation/kcfallocatorusecontext
-declare const kCFAllocatorUseContext: CFAllocatorRef;
+declare const kCFAllocatorUseContext: cocoascript.CFAllocatorRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfallocatorsystemdefault
-declare const kCFAllocatorSystemDefault: CFAllocatorRef;
+declare const kCFAllocatorSystemDefault: cocoascript.CFAllocatorRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfallocatormalloc
-declare const kCFAllocatorMalloc: CFAllocatorRef;
+declare const kCFAllocatorMalloc: cocoascript.CFAllocatorRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfallocatormalloczone
-declare const kCFAllocatorMallocZone: CFAllocatorRef;
+declare const kCFAllocatorMallocZone: cocoascript.CFAllocatorRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcftypebagcallbacks
-declare const kCFTypeBagCallBacks: CFBagCallBacks;
+declare const kCFTypeBagCallBacks: cocoascript.CFBagCallBacks;
 // doc://com.apple.documentation/documentation/corefoundation/kcfcopystringbagcallbacks
-declare const kCFCopyStringBagCallBacks: CFBagCallBacks;
+declare const kCFCopyStringBagCallBacks: cocoascript.CFBagCallBacks;
 // doc://com.apple.documentation/documentation/corefoundation/kcfstringbinaryheapcallbacks
-declare const kCFStringBinaryHeapCallBacks: CFBinaryHeapCallBacks;
+declare const kCFStringBinaryHeapCallBacks: cocoascript.CFBinaryHeapCallBacks;
 // doc://com.apple.documentation/documentation/corefoundation/cfbinaryheapcallbacks/1509294-retain
 declare const retain: void;
 // doc://com.apple.documentation/documentation/corefoundation/cfbinaryheapcomparecontext/1509313-retain
 declare const retain: void;
 // doc://com.apple.documentation/documentation/corefoundation/kcfbooleanfalse
-declare const kCFBooleanFalse: CFBooleanRef;
+declare const kCFBooleanFalse: cocoascript.CFBooleanRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformatterislenient
-declare const kCFDateFormatterIsLenient: CFDateFormatterKey;
+declare const kCFDateFormatterIsLenient: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformattertimezone
-declare const kCFDateFormatterTimeZone: CFDateFormatterKey;
+declare const kCFDateFormatterTimeZone: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformattercalendarname
-declare const kCFDateFormatterCalendarName: CFDateFormatterKey;
+declare const kCFDateFormatterCalendarName: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformatterdefaultformat
-declare const kCFDateFormatterDefaultFormat: CFDateFormatterKey;
+declare const kCFDateFormatterDefaultFormat: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformattertwodigitstartdate
-declare const kCFDateFormatterTwoDigitStartDate: CFDateFormatterKey;
+declare const kCFDateFormatterTwoDigitStartDate: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformatterdefaultdate
-declare const kCFDateFormatterDefaultDate: CFDateFormatterKey;
+declare const kCFDateFormatterDefaultDate: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformattercalendar
-declare const kCFDateFormatterCalendar: CFDateFormatterKey;
+declare const kCFDateFormatterCalendar: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformattererasymbols
-declare const kCFDateFormatterEraSymbols: CFDateFormatterKey;
+declare const kCFDateFormatterEraSymbols: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformattermonthsymbols
-declare const kCFDateFormatterMonthSymbols: CFDateFormatterKey;
+declare const kCFDateFormatterMonthSymbols: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformattershortmonthsymbols
-declare const kCFDateFormatterShortMonthSymbols: CFDateFormatterKey;
+declare const kCFDateFormatterShortMonthSymbols: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformatterweekdaysymbols
-declare const kCFDateFormatterWeekdaySymbols: CFDateFormatterKey;
+declare const kCFDateFormatterWeekdaySymbols: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformattershortweekdaysymbols
-declare const kCFDateFormatterShortWeekdaySymbols: CFDateFormatterKey;
+declare const kCFDateFormatterShortWeekdaySymbols: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformatteramsymbol
-declare const kCFDateFormatterAMSymbol: CFDateFormatterKey;
+declare const kCFDateFormatterAMSymbol: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformatterpmsymbol
-declare const kCFDateFormatterPMSymbol: CFDateFormatterKey;
+declare const kCFDateFormatterPMSymbol: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformatterlongerasymbols
-declare const kCFDateFormatterLongEraSymbols: CFDateFormatterKey;
+declare const kCFDateFormatterLongEraSymbols: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformatterveryshortmonthsymbols
-declare const kCFDateFormatterVeryShortMonthSymbols: CFDateFormatterKey;
+declare const kCFDateFormatterVeryShortMonthSymbols: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformatterstandalonemonthsymbols
-declare const kCFDateFormatterStandaloneMonthSymbols: CFDateFormatterKey;
+declare const kCFDateFormatterStandaloneMonthSymbols: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformattershortstandalonemonthsymbols
-declare const kCFDateFormatterShortStandaloneMonthSymbols: CFDateFormatterKey;
+declare const kCFDateFormatterShortStandaloneMonthSymbols: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformatterveryshortstandalonemonthsymbols
-declare const kCFDateFormatterVeryShortStandaloneMonthSymbols: CFDateFormatterKey;
+declare const kCFDateFormatterVeryShortStandaloneMonthSymbols: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformatterveryshortweekdaysymbols
-declare const kCFDateFormatterVeryShortWeekdaySymbols: CFDateFormatterKey;
+declare const kCFDateFormatterVeryShortWeekdaySymbols: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformatterstandaloneweekdaysymbols
-declare const kCFDateFormatterStandaloneWeekdaySymbols: CFDateFormatterKey;
+declare const kCFDateFormatterStandaloneWeekdaySymbols: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformattershortstandaloneweekdaysymbols
-declare const kCFDateFormatterShortStandaloneWeekdaySymbols: CFDateFormatterKey;
+declare const kCFDateFormatterShortStandaloneWeekdaySymbols: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformatterveryshortstandaloneweekdaysymbols
-declare const kCFDateFormatterVeryShortStandaloneWeekdaySymbols: CFDateFormatterKey;
+declare const kCFDateFormatterVeryShortStandaloneWeekdaySymbols: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformatterquartersymbols
-declare const kCFDateFormatterQuarterSymbols: CFDateFormatterKey;
+declare const kCFDateFormatterQuarterSymbols: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformattershortquartersymbols
-declare const kCFDateFormatterShortQuarterSymbols: CFDateFormatterKey;
+declare const kCFDateFormatterShortQuarterSymbols: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformatterstandalonequartersymbols
-declare const kCFDateFormatterStandaloneQuarterSymbols: CFDateFormatterKey;
+declare const kCFDateFormatterStandaloneQuarterSymbols: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformattershortstandalonequartersymbols
-declare const kCFDateFormatterShortStandaloneQuarterSymbols: CFDateFormatterKey;
+declare const kCFDateFormatterShortStandaloneQuarterSymbols: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformattergregorianstartdate
-declare const kCFDateFormatterGregorianStartDate: CFDateFormatterKey;
+declare const kCFDateFormatterGregorianStartDate: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfdateformatterdoesrelativedateformattingkey
-declare const kCFDateFormatterDoesRelativeDateFormattingKey: CFDateFormatterKey;
+declare const kCFDateFormatterDoesRelativeDateFormattingKey: cocoascript.CFDateFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfgregoriancalendar
-declare const kCFGregorianCalendar: CFCalendarIdentifier;
+declare const kCFGregorianCalendar: cocoascript.CFCalendarIdentifier;
 // doc://com.apple.documentation/documentation/corefoundation/kcferrorlocalizeddescriptionkey
-declare const kCFErrorLocalizedDescriptionKey: CFStringRef;
+declare const kCFErrorLocalizedDescriptionKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcferrorlocalizedfailurereasonkey
-declare const kCFErrorLocalizedFailureReasonKey: CFStringRef;
+declare const kCFErrorLocalizedFailureReasonKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcferrordescriptionkey
-declare const kCFErrorDescriptionKey: CFStringRef;
+declare const kCFErrorDescriptionKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcferrorlocalizedrecoverysuggestionkey
-declare const kCFErrorLocalizedRecoverySuggestionKey: CFStringRef;
+declare const kCFErrorLocalizedRecoverySuggestionKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcferrordomainposix
-declare const kCFErrorDomainPOSIX: CFErrorDomain;
+declare const kCFErrorDomainPOSIX: cocoascript.CFErrorDomain;
 // doc://com.apple.documentation/documentation/corefoundation/kcferrordomainosstatus
-declare const kCFErrorDomainOSStatus: CFErrorDomain;
+declare const kCFErrorDomainOSStatus: cocoascript.CFErrorDomain;
 // doc://com.apple.documentation/documentation/corefoundation/kcferrordomainmach
-declare const kCFErrorDomainMach: CFErrorDomain;
+declare const kCFErrorDomainMach: cocoascript.CFErrorDomain;
 // doc://com.apple.documentation/documentation/corefoundation/kcferrordomaincocoa
-declare const kCFErrorDomainCocoa: CFErrorDomain;
+declare const kCFErrorDomainCocoa: cocoascript.CFErrorDomain;
 // doc://com.apple.documentation/documentation/corefoundation/kcferrorunderlyingerrorkey
-declare const kCFErrorUnderlyingErrorKey: CFStringRef;
+declare const kCFErrorUnderlyingErrorKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcferrorurlkey
-declare const kCFErrorURLKey: CFStringRef;
+declare const kCFErrorURLKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcferrorfilepathkey
-declare const kCFErrorFilePathKey: CFStringRef;
+declare const kCFErrorFilePathKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcflocaleidentifier
-declare const kCFLocaleIdentifier: CFLocaleKey;
+declare const kCFLocaleIdentifier: cocoascript.CFLocaleKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcflocalelanguagecode
-declare const kCFLocaleLanguageCode: CFLocaleKey;
+declare const kCFLocaleLanguageCode: cocoascript.CFLocaleKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcflocalecountrycode
-declare const kCFLocaleCountryCode: CFLocaleKey;
+declare const kCFLocaleCountryCode: cocoascript.CFLocaleKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcflocalescriptcode
-declare const kCFLocaleScriptCode: CFLocaleKey;
+declare const kCFLocaleScriptCode: cocoascript.CFLocaleKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcflocalevariantcode
-declare const kCFLocaleVariantCode: CFLocaleKey;
+declare const kCFLocaleVariantCode: cocoascript.CFLocaleKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcflocaleexemplarcharacterset
-declare const kCFLocaleExemplarCharacterSet: CFLocaleKey;
+declare const kCFLocaleExemplarCharacterSet: cocoascript.CFLocaleKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcflocalecalendaridentifier
-declare const kCFLocaleCalendarIdentifier: CFLocaleKey;
+declare const kCFLocaleCalendarIdentifier: cocoascript.CFLocaleKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcflocalecalendar
-declare const kCFLocaleCalendar: CFLocaleKey;
+declare const kCFLocaleCalendar: cocoascript.CFLocaleKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcflocalecollationidentifier
-declare const kCFLocaleCollationIdentifier: CFLocaleKey;
+declare const kCFLocaleCollationIdentifier: cocoascript.CFLocaleKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcflocaleusesmetricsystem
-declare const kCFLocaleUsesMetricSystem: CFLocaleKey;
+declare const kCFLocaleUsesMetricSystem: cocoascript.CFLocaleKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcflocalemeasurementsystem
-declare const kCFLocaleMeasurementSystem: CFLocaleKey;
+declare const kCFLocaleMeasurementSystem: cocoascript.CFLocaleKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcflocaledecimalseparator
-declare const kCFLocaleDecimalSeparator: CFLocaleKey;
+declare const kCFLocaleDecimalSeparator: cocoascript.CFLocaleKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcflocalegroupingseparator
-declare const kCFLocaleGroupingSeparator: CFLocaleKey;
+declare const kCFLocaleGroupingSeparator: cocoascript.CFLocaleKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcflocalecurrencysymbol
-declare const kCFLocaleCurrencySymbol: CFLocaleKey;
+declare const kCFLocaleCurrencySymbol: cocoascript.CFLocaleKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcflocalecurrencycode
-declare const kCFLocaleCurrencyCode: CFLocaleKey;
+declare const kCFLocaleCurrencyCode: cocoascript.CFLocaleKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcflocalecollatoridentifier
-declare const kCFLocaleCollatorIdentifier: CFLocaleKey;
+declare const kCFLocaleCollatorIdentifier: cocoascript.CFLocaleKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcflocalequotationbegindelimiterkey
-declare const kCFLocaleQuotationBeginDelimiterKey: CFLocaleKey;
+declare const kCFLocaleQuotationBeginDelimiterKey: cocoascript.CFLocaleKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcflocalequotationenddelimiterkey
-declare const kCFLocaleQuotationEndDelimiterKey: CFLocaleKey;
+declare const kCFLocaleQuotationEndDelimiterKey: cocoascript.CFLocaleKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcflocalealternatequotationbegindelimiterkey
-declare const kCFLocaleAlternateQuotationBeginDelimiterKey: CFLocaleKey;
+declare const kCFLocaleAlternateQuotationBeginDelimiterKey: cocoascript.CFLocaleKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcflocalealternatequotationenddelimiterkey
-declare const kCFLocaleAlternateQuotationEndDelimiterKey: CFLocaleKey;
+declare const kCFLocaleAlternateQuotationEndDelimiterKey: cocoascript.CFLocaleKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfbuddhistcalendar
-declare const kCFBuddhistCalendar: CFCalendarIdentifier;
+declare const kCFBuddhistCalendar: cocoascript.CFCalendarIdentifier;
 // doc://com.apple.documentation/documentation/corefoundation/kcfchinesecalendar
-declare const kCFChineseCalendar: CFCalendarIdentifier;
+declare const kCFChineseCalendar: cocoascript.CFCalendarIdentifier;
 // doc://com.apple.documentation/documentation/corefoundation/kcfhebrewcalendar
-declare const kCFHebrewCalendar: CFCalendarIdentifier;
+declare const kCFHebrewCalendar: cocoascript.CFCalendarIdentifier;
 // doc://com.apple.documentation/documentation/corefoundation/kcfislamiccalendar
-declare const kCFIslamicCalendar: CFCalendarIdentifier;
+declare const kCFIslamicCalendar: cocoascript.CFCalendarIdentifier;
 // doc://com.apple.documentation/documentation/corefoundation/kcfislamiccivilcalendar
-declare const kCFIslamicCivilCalendar: CFCalendarIdentifier;
+declare const kCFIslamicCivilCalendar: cocoascript.CFCalendarIdentifier;
 // doc://com.apple.documentation/documentation/corefoundation/kcfislamictabularcalendar
-declare const kCFIslamicTabularCalendar: CFCalendarIdentifier;
+declare const kCFIslamicTabularCalendar: cocoascript.CFCalendarIdentifier;
 // doc://com.apple.documentation/documentation/corefoundation/kcfislamicummalquracalendar
-declare const kCFIslamicUmmAlQuraCalendar: CFCalendarIdentifier;
+declare const kCFIslamicUmmAlQuraCalendar: cocoascript.CFCalendarIdentifier;
 // doc://com.apple.documentation/documentation/corefoundation/kcfjapanesecalendar
-declare const kCFJapaneseCalendar: CFCalendarIdentifier;
+declare const kCFJapaneseCalendar: cocoascript.CFCalendarIdentifier;
 // doc://com.apple.documentation/documentation/corefoundation/kcfrepublicofchinacalendar
-declare const kCFRepublicOfChinaCalendar: CFCalendarIdentifier;
+declare const kCFRepublicOfChinaCalendar: cocoascript.CFCalendarIdentifier;
 // doc://com.apple.documentation/documentation/corefoundation/kcfpersiancalendar
-declare const kCFPersianCalendar: CFCalendarIdentifier;
+declare const kCFPersianCalendar: cocoascript.CFCalendarIdentifier;
 // doc://com.apple.documentation/documentation/corefoundation/kcfindiancalendar
-declare const kCFIndianCalendar: CFCalendarIdentifier;
+declare const kCFIndianCalendar: cocoascript.CFCalendarIdentifier;
 // doc://com.apple.documentation/documentation/corefoundation/kcfiso8601calendar
-declare const kCFISO8601Calendar: CFCalendarIdentifier;
+declare const kCFISO8601Calendar: cocoascript.CFCalendarIdentifier;
 // doc://com.apple.documentation/documentation/corefoundation/kcflocalecurrentlocaledidchangenotification
-declare const kCFLocaleCurrentLocaleDidChangeNotification: CFNotificationName;
+declare const kCFLocaleCurrentLocaleDidChangeNotification: cocoascript.CFNotificationName;
 // doc://com.apple.documentation/documentation/corefoundation/cfmachportcontext/1400912-retain
 declare const retain: void;
 // doc://com.apple.documentation/documentation/corefoundation/cfmessageportcontext/1542526-retain
 declare const retain: void;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumbernan
-declare const kCFNumberNaN: CFNumberRef;
+declare const kCFNumberNaN: cocoascript.CFNumberRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumbernegativeinfinity
-declare const kCFNumberNegativeInfinity: CFNumberRef;
+declare const kCFNumberNegativeInfinity: cocoascript.CFNumberRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberpositiveinfinity
-declare const kCFNumberPositiveInfinity: CFNumberRef;
+declare const kCFNumberPositiveInfinity: cocoascript.CFNumberRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatterpaddingposition
-declare const kCFNumberFormatterPaddingPosition: CFNumberFormatterKey;
+declare const kCFNumberFormatterPaddingPosition: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformattercurrencycode
-declare const kCFNumberFormatterCurrencyCode: CFNumberFormatterKey;
+declare const kCFNumberFormatterCurrencyCode: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatterdecimalseparator
-declare const kCFNumberFormatterDecimalSeparator: CFNumberFormatterKey;
+declare const kCFNumberFormatterDecimalSeparator: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformattercurrencydecimalseparator
-declare const kCFNumberFormatterCurrencyDecimalSeparator: CFNumberFormatterKey;
+declare const kCFNumberFormatterCurrencyDecimalSeparator: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatteralwaysshowdecimalseparator
-declare const kCFNumberFormatterAlwaysShowDecimalSeparator: CFNumberFormatterKey;
+declare const kCFNumberFormatterAlwaysShowDecimalSeparator: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformattergroupingseparator
-declare const kCFNumberFormatterGroupingSeparator: CFNumberFormatterKey;
+declare const kCFNumberFormatterGroupingSeparator: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatterusegroupingseparator
-declare const kCFNumberFormatterUseGroupingSeparator: CFNumberFormatterKey;
+declare const kCFNumberFormatterUseGroupingSeparator: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatterpercentsymbol
-declare const kCFNumberFormatterPercentSymbol: CFNumberFormatterKey;
+declare const kCFNumberFormatterPercentSymbol: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatterzerosymbol
-declare const kCFNumberFormatterZeroSymbol: CFNumberFormatterKey;
+declare const kCFNumberFormatterZeroSymbol: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatternansymbol
-declare const kCFNumberFormatterNaNSymbol: CFNumberFormatterKey;
+declare const kCFNumberFormatterNaNSymbol: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatterinfinitysymbol
-declare const kCFNumberFormatterInfinitySymbol: CFNumberFormatterKey;
+declare const kCFNumberFormatterInfinitySymbol: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatterminussign
-declare const kCFNumberFormatterMinusSign: CFNumberFormatterKey;
+declare const kCFNumberFormatterMinusSign: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatterplussign
-declare const kCFNumberFormatterPlusSign: CFNumberFormatterKey;
+declare const kCFNumberFormatterPlusSign: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformattercurrencysymbol
-declare const kCFNumberFormatterCurrencySymbol: CFNumberFormatterKey;
+declare const kCFNumberFormatterCurrencySymbol: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatterexponentsymbol
-declare const kCFNumberFormatterExponentSymbol: CFNumberFormatterKey;
+declare const kCFNumberFormatterExponentSymbol: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatterminintegerdigits
-declare const kCFNumberFormatterMinIntegerDigits: CFNumberFormatterKey;
+declare const kCFNumberFormatterMinIntegerDigits: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformattermaxintegerdigits
-declare const kCFNumberFormatterMaxIntegerDigits: CFNumberFormatterKey;
+declare const kCFNumberFormatterMaxIntegerDigits: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatterminfractiondigits
-declare const kCFNumberFormatterMinFractionDigits: CFNumberFormatterKey;
+declare const kCFNumberFormatterMinFractionDigits: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformattermaxfractiondigits
-declare const kCFNumberFormatterMaxFractionDigits: CFNumberFormatterKey;
+declare const kCFNumberFormatterMaxFractionDigits: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformattergroupingsize
-declare const kCFNumberFormatterGroupingSize: CFNumberFormatterKey;
+declare const kCFNumberFormatterGroupingSize: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformattersecondarygroupingsize
-declare const kCFNumberFormatterSecondaryGroupingSize: CFNumberFormatterKey;
+declare const kCFNumberFormatterSecondaryGroupingSize: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatterroundingmode
-declare const kCFNumberFormatterRoundingMode: CFNumberFormatterKey;
+declare const kCFNumberFormatterRoundingMode: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatterroundingincrement
-declare const kCFNumberFormatterRoundingIncrement: CFNumberFormatterKey;
+declare const kCFNumberFormatterRoundingIncrement: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatterformatwidth
-declare const kCFNumberFormatterFormatWidth: CFNumberFormatterKey;
+declare const kCFNumberFormatterFormatWidth: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatterpaddingcharacter
-declare const kCFNumberFormatterPaddingCharacter: CFNumberFormatterKey;
+declare const kCFNumberFormatterPaddingCharacter: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatterdefaultformat
-declare const kCFNumberFormatterDefaultFormat: CFNumberFormatterKey;
+declare const kCFNumberFormatterDefaultFormat: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformattermultiplier
-declare const kCFNumberFormatterMultiplier: CFNumberFormatterKey;
+declare const kCFNumberFormatterMultiplier: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatterpositiveprefix
-declare const kCFNumberFormatterPositivePrefix: CFNumberFormatterKey;
+declare const kCFNumberFormatterPositivePrefix: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatterpositivesuffix
-declare const kCFNumberFormatterPositiveSuffix: CFNumberFormatterKey;
+declare const kCFNumberFormatterPositiveSuffix: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatternegativeprefix
-declare const kCFNumberFormatterNegativePrefix: CFNumberFormatterKey;
+declare const kCFNumberFormatterNegativePrefix: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatternegativesuffix
-declare const kCFNumberFormatterNegativeSuffix: CFNumberFormatterKey;
+declare const kCFNumberFormatterNegativeSuffix: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatterpermillsymbol
-declare const kCFNumberFormatterPerMillSymbol: CFNumberFormatterKey;
+declare const kCFNumberFormatterPerMillSymbol: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatterinternationalcurrencysymbol
-declare const kCFNumberFormatterInternationalCurrencySymbol: CFNumberFormatterKey;
+declare const kCFNumberFormatterInternationalCurrencySymbol: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformattercurrencygroupingseparator
-declare const kCFNumberFormatterCurrencyGroupingSeparator: CFNumberFormatterKey;
+declare const kCFNumberFormatterCurrencyGroupingSeparator: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatterislenient
-declare const kCFNumberFormatterIsLenient: CFNumberFormatterKey;
+declare const kCFNumberFormatterIsLenient: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatterusesignificantdigits
-declare const kCFNumberFormatterUseSignificantDigits: CFNumberFormatterKey;
+declare const kCFNumberFormatterUseSignificantDigits: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformatterminsignificantdigits
-declare const kCFNumberFormatterMinSignificantDigits: CFNumberFormatterKey;
+declare const kCFNumberFormatterMinSignificantDigits: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfnumberformattermaxsignificantdigits
-declare const kCFNumberFormatterMaxSignificantDigits: CFNumberFormatterKey;
+declare const kCFNumberFormatterMaxSignificantDigits: cocoascript.CFNumberFormatterKey;
 // doc://com.apple.documentation/documentation/corefoundation/kcfplugindynamicregistrationkey
-declare const kCFPlugInDynamicRegistrationKey: CFStringRef;
+declare const kCFPlugInDynamicRegistrationKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfplugindynamicregisterfunctionkey
-declare const kCFPlugInDynamicRegisterFunctionKey: CFStringRef;
+declare const kCFPlugInDynamicRegisterFunctionKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfpluginunloadfunctionkey
-declare const kCFPlugInUnloadFunctionKey: CFStringRef;
+declare const kCFPlugInUnloadFunctionKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfpluginfactorieskey
-declare const kCFPlugInFactoriesKey: CFStringRef;
+declare const kCFPlugInFactoriesKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfplugintypeskey
-declare const kCFPlugInTypesKey: CFStringRef;
+declare const kCFPlugInTypesKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/cfrunloopobservercontext/1541985-retain
 declare const retain: void;
 // doc://com.apple.documentation/documentation/corefoundation/cfrunloopsourcecontext/1543359-retain
@@ -1517,77 +1517,77 @@ declare const retain: void;
 // doc://com.apple.documentation/documentation/corefoundation/cfsocketcontext/1543095-retain
 declare const retain: void;
 // doc://com.apple.documentation/documentation/corefoundation/kcftimezonesystemtimezonedidchangenotification
-declare const kCFTimeZoneSystemTimeZoneDidChangeNotification: CFNotificationName;
+declare const kCFTimeZoneSystemTimeZoneDidChangeNotification: cocoascript.CFNotificationName;
 // doc://com.apple.documentation/documentation/corefoundation/kcfusernotificationalertheaderkey
-declare const kCFUserNotificationAlertHeaderKey: CFStringRef;
+declare const kCFUserNotificationAlertHeaderKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfusernotificationiconurlkey
-declare const kCFUserNotificationIconURLKey: CFStringRef;
+declare const kCFUserNotificationIconURLKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfusernotificationsoundurlkey
-declare const kCFUserNotificationSoundURLKey: CFStringRef;
+declare const kCFUserNotificationSoundURLKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfusernotificationlocalizationurlkey
-declare const kCFUserNotificationLocalizationURLKey: CFStringRef;
+declare const kCFUserNotificationLocalizationURLKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfusernotificationalertmessagekey
-declare const kCFUserNotificationAlertMessageKey: CFStringRef;
+declare const kCFUserNotificationAlertMessageKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfusernotificationdefaultbuttontitlekey
-declare const kCFUserNotificationDefaultButtonTitleKey: CFStringRef;
+declare const kCFUserNotificationDefaultButtonTitleKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfusernotificationalternatebuttontitlekey
-declare const kCFUserNotificationAlternateButtonTitleKey: CFStringRef;
+declare const kCFUserNotificationAlternateButtonTitleKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfusernotificationotherbuttontitlekey
-declare const kCFUserNotificationOtherButtonTitleKey: CFStringRef;
+declare const kCFUserNotificationOtherButtonTitleKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfusernotificationprogressindicatorvaluekey
-declare const kCFUserNotificationProgressIndicatorValueKey: CFStringRef;
+declare const kCFUserNotificationProgressIndicatorValueKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfusernotificationpopuptitleskey
-declare const kCFUserNotificationPopUpTitlesKey: CFStringRef;
+declare const kCFUserNotificationPopUpTitlesKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfusernotificationtextfieldtitleskey
-declare const kCFUserNotificationTextFieldTitlesKey: CFStringRef;
+declare const kCFUserNotificationTextFieldTitlesKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfusernotificationcheckboxtitleskey
-declare const kCFUserNotificationCheckBoxTitlesKey: CFStringRef;
+declare const kCFUserNotificationCheckBoxTitlesKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfusernotificationtextfieldvalueskey
-declare const kCFUserNotificationTextFieldValuesKey: CFStringRef;
+declare const kCFUserNotificationTextFieldValuesKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfusernotificationpopupselectionkey
-declare const kCFUserNotificationPopUpSelectionKey: CFStringRef;
+declare const kCFUserNotificationPopUpSelectionKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfxmltreeerrordescription
-declare const kCFXMLTreeErrorDescription: CFStringRef;
+declare const kCFXMLTreeErrorDescription: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfxmltreeerrorlinenumber
-declare const kCFXMLTreeErrorLineNumber: CFStringRef;
+declare const kCFXMLTreeErrorLineNumber: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfxmltreeerrorlocation
-declare const kCFXMLTreeErrorLocation: CFStringRef;
+declare const kCFXMLTreeErrorLocation: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfxmltreeerrorstatuscode
-declare const kCFXMLTreeErrorStatusCode: CFStringRef;
+declare const kCFXMLTreeErrorStatusCode: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfabsolutetimeintervalsince1970
-declare const kCFAbsoluteTimeIntervalSince1970: CFTimeInterval;
+declare const kCFAbsoluteTimeIntervalSince1970: cocoascript.CFTimeInterval;
 // doc://com.apple.documentation/documentation/corefoundation/kcfabsolutetimeintervalsince1904
-declare const kCFAbsoluteTimeIntervalSince1904: CFTimeInterval;
+declare const kCFAbsoluteTimeIntervalSince1904: cocoascript.CFTimeInterval;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfileexists
-declare const kCFURLFileExists: CFStringRef;
+declare const kCFURLFileExists: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfiledirectorycontents
-declare const kCFURLFileDirectoryContents: CFStringRef;
+declare const kCFURLFileDirectoryContents: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfilelength
-declare const kCFURLFileLength: CFStringRef;
+declare const kCFURLFileLength: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfilelastmodificationtime
-declare const kCFURLFileLastModificationTime: CFStringRef;
+declare const kCFURLFileLastModificationTime: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfileposixmode
-declare const kCFURLFilePOSIXMode: CFStringRef;
+declare const kCFURLFilePOSIXMode: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlfileownerid
-declare const kCFURLFileOwnerID: CFStringRef;
+declare const kCFURLFileOwnerID: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlhttpstatuscode
-declare const kCFURLHTTPStatusCode: CFStringRef;
+declare const kCFURLHTTPStatusCode: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfurlhttpstatusline
-declare const kCFURLHTTPStatusLine: CFStringRef;
+declare const kCFURLHTTPStatusLine: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfsocketcommandkey
-declare const kCFSocketCommandKey: CFStringRef;
+declare const kCFSocketCommandKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfsocketnamekey
-declare const kCFSocketNameKey: CFStringRef;
+declare const kCFSocketNameKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfsocketvaluekey
-declare const kCFSocketValueKey: CFStringRef;
+declare const kCFSocketValueKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfsocketresultkey
-declare const kCFSocketResultKey: CFStringRef;
+declare const kCFSocketResultKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfsocketerrorkey
-declare const kCFSocketErrorKey: CFStringRef;
+declare const kCFSocketErrorKey: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfsocketregistercommand
-declare const kCFSocketRegisterCommand: CFStringRef;
+declare const kCFSocketRegisterCommand: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfsocketretrievecommand
-declare const kCFSocketRetrieveCommand: CFStringRef;
+declare const kCFSocketRetrieveCommand: cocoascript.CFStringRef;
 // doc://com.apple.documentation/documentation/corefoundation/kcfstreamerrordomainsocks
 declare const kCFStreamErrorDomainSOCKS: number;
 // doc://com.apple.documentation/documentation/corefoundation/kcfstreamerrordomainssl
