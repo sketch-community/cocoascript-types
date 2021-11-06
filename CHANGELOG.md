@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.2](https://github.com/sketch-community/cocoascript-types/compare/v0.1.1...v0.1.2) (2021-11-06)
+
+
+### 🐛 Bug Fixes
+
+* 修正 set 类方法入参丢失问题 ([9d24456](https://github.com/sketch-community/cocoascript-types/commit/9d24456)), closes [#6](https://github.com/sketch-community/cocoascript-types/issues/6)
+
+
+### 📝 Documentation
+
+* update apple documentation ([40d9fc5](https://github.com/sketch-community/cocoascript-types/commit/40d9fc5))
+
 ## [0.1.1](https://github.com/sketch-community/cocoascript-types/compare/v0.1.0...v0.1.1) (2021-11-06)
 
 
