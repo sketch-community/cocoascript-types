@@ -1,48 +1,48 @@
 declare namespace cocoascript {
   /**
    * Methods you use to respond to user selections in a person picker.
-   * doc://com.apple.documentation/documentation/addressbook/abpersonpickerdelegate
+   * https://developer.apple.com/documentation/addressbook/abpersonpickerdelegate
    */
   interface ABPersonPickerDelegate extends NSObject {
-    // doc://com.apple.documentation/documentation/addressbook/abpersonpickerdelegate/1395368-personpicker
+    // https://developer.apple.com/documentation/addressbook/abpersonpickerdelegate/1395368-personpicker
     personPicker_didChoosePerson_property_identifier(picker: ABPersonPicker, person: ABPerson, property: string | cocoascript.NSString, identifier: string | cocoascript.NSString):void;
-    // doc://com.apple.documentation/documentation/addressbook/abpersonpickerdelegate/1395366-personpickerdidclose
+    // https://developer.apple.com/documentation/addressbook/abpersonpickerdelegate/1395366-personpickerdidclose
     personPickerDidClose(picker: ABPersonPicker):void;
   }
 }
 declare namespace cocoascript {
   /**
    * Methods for responding to a request to load images associated with a contact.
-   * doc://com.apple.documentation/documentation/addressbook/abimageclient
+   * https://developer.apple.com/documentation/addressbook/abimageclient
    */
   interface ABImageClient extends NSObject {
-    // doc://com.apple.documentation/documentation/addressbook/abimageclient/1392505-consumeimagedata
+    // https://developer.apple.com/documentation/addressbook/abimageclient/1392505-consumeimagedata
     consumeImageData_forTag(data: NSData, tag: NSInteger):void;
   }
 }
 declare namespace cocoascript {
   /**
    * An immutable representation of a property that might have multiple values.
-   * doc://com.apple.documentation/documentation/addressbook/abmultivalue
+   * https://developer.apple.com/documentation/addressbook/abmultivalue
    */
   interface ABMultiValue extends NSObject {
-    // doc://com.apple.documentation/documentation/addressbook/abmultivalue/1458525-primaryidentifier
+    // https://developer.apple.com/documentation/addressbook/abmultivalue/1458525-primaryidentifier
     primaryIdentifier():NSString;
-    // doc://com.apple.documentation/documentation/addressbook/abmultivalue/1458743-identifieratindex
+    // https://developer.apple.com/documentation/addressbook/abmultivalue/1458743-identifieratindex
     identifierAtIndex(index: NSUInteger):NSString;
-    // doc://com.apple.documentation/documentation/addressbook/abmultivalue/1458700-indexforidentifier
+    // https://developer.apple.com/documentation/addressbook/abmultivalue/1458700-indexforidentifier
     indexForIdentifier(identifier: string | cocoascript.NSString):NSUInteger;
-    // doc://com.apple.documentation/documentation/addressbook/abmultivalue/1458668-labelatindex
+    // https://developer.apple.com/documentation/addressbook/abmultivalue/1458668-labelatindex
     labelAtIndex(index: NSUInteger):NSString;
-    // doc://com.apple.documentation/documentation/addressbook/abmultivalue/1458515-valueatindex
+    // https://developer.apple.com/documentation/addressbook/abmultivalue/1458515-valueatindex
     valueAtIndex(index: NSUInteger):ABMultiValue;
-    // doc://com.apple.documentation/documentation/addressbook/abmultivalue/1458427-valueforidentifier
+    // https://developer.apple.com/documentation/addressbook/abmultivalue/1458427-valueforidentifier
     valueForIdentifier(identifier: string | cocoascript.NSString):ABMultiValue;
-    // doc://com.apple.documentation/documentation/addressbook/abmultivalue/1458693-labelforidentifier
+    // https://developer.apple.com/documentation/addressbook/abmultivalue/1458693-labelforidentifier
     labelForIdentifier(identifier: string | cocoascript.NSString):ABMultiValue;
-    // doc://com.apple.documentation/documentation/addressbook/abmultivalue/1458752-count
+    // https://developer.apple.com/documentation/addressbook/abmultivalue/1458752-count
     count():NSUInteger;
-    // doc://com.apple.documentation/documentation/addressbook/abmultivalue/1458267-propertytype
+    // https://developer.apple.com/documentation/addressbook/abmultivalue/1458267-propertytype
     propertyType():ABPropertyType;
     //
     alloc():ABMultiValue;
@@ -55,34 +55,34 @@ declare const ABMultiValue: cocoascript.ABMultiValue;
 declare namespace cocoascript {
   /**
    * An object that encapsulates all information about a person in the Address Book database.
-   * doc://com.apple.documentation/documentation/addressbook/abperson
+   * https://developer.apple.com/documentation/addressbook/abperson
    */
   interface ABPerson extends ABRecord {
-    // doc://com.apple.documentation/documentation/addressbook/abperson/1458438-addpropertiesandtypes
+    // https://developer.apple.com/documentation/addressbook/abperson/1458438-addpropertiesandtypes
     addPropertiesAndTypes(properties: NSDictionary):NSInteger;
-    // doc://com.apple.documentation/documentation/addressbook/abperson/1458554-removeproperties
+    // https://developer.apple.com/documentation/addressbook/abperson/1458554-removeproperties
     removeProperties(properties: NSArray):NSInteger;
-    // doc://com.apple.documentation/documentation/addressbook/abperson/1458494-properties
+    // https://developer.apple.com/documentation/addressbook/abperson/1458494-properties
     properties():NSArray;
-    // doc://com.apple.documentation/documentation/addressbook/abperson/1458682-typeofproperty
+    // https://developer.apple.com/documentation/addressbook/abperson/1458682-typeofproperty
     typeOfProperty(property: string | cocoascript.NSString):ABPropertyType;
-    // doc://com.apple.documentation/documentation/addressbook/abperson/1458372-linkedpeople
+    // https://developer.apple.com/documentation/addressbook/abperson/1458372-linkedpeople
     linkedPeople():NSArray;
-    // doc://com.apple.documentation/documentation/addressbook/abperson/1458380-parentgroups
+    // https://developer.apple.com/documentation/addressbook/abperson/1458380-parentgroups
     parentGroups():NSArray;
-    // doc://com.apple.documentation/documentation/addressbook/abperson/1392511-cancelloadingimagedatafortag
+    // https://developer.apple.com/documentation/addressbook/abperson/1392511-cancelloadingimagedatafortag
     cancelLoadingImageDataForTag(tag: NSInteger):void;
-    // doc://com.apple.documentation/documentation/addressbook/abperson/1392507-beginloadingimagedataforclient
+    // https://developer.apple.com/documentation/addressbook/abperson/1392507-beginloadingimagedataforclient
     beginLoadingImageDataForClient(client: ABImageClient):NSInteger;
-    // doc://com.apple.documentation/documentation/addressbook/abperson/1392509-imagedata
+    // https://developer.apple.com/documentation/addressbook/abperson/1392509-imagedata
     imageData():NSData;
-    // doc://com.apple.documentation/documentation/addressbook/abperson/1392513-setimagedata
+    // https://developer.apple.com/documentation/addressbook/abperson/1392513-setimagedata
     setImageData(data: NSData):BOOL;
-    // doc://com.apple.documentation/documentation/addressbook/abperson/1458332-searchelementforproperty
+    // https://developer.apple.com/documentation/addressbook/abperson/1458332-searchelementforproperty
     searchElementForProperty_label_key_value_comparison(property: string | cocoascript.NSString, label: string | cocoascript.NSString, key: string | cocoascript.NSString, value: ABPerson, comparison: ABSearchComparison):ABSearchElement;
-    // doc://com.apple.documentation/documentation/addressbook/abperson/1458755-initwithvcardrepresentation
+    // https://developer.apple.com/documentation/addressbook/abperson/1458755-initwithvcardrepresentation
     initWithVCardRepresentation(vCardData: NSData):ABPerson;
-    // doc://com.apple.documentation/documentation/addressbook/abperson/1458307-vcardrepresentation
+    // https://developer.apple.com/documentation/addressbook/abperson/1458307-vcardrepresentation
     vCardRepresentation():NSData;
     //
     alloc():ABPerson;
@@ -95,17 +95,17 @@ declare const ABPerson: cocoascript.ABPerson;
 declare namespace cocoascript {
   /**
    * A picker object that you display when you want the user to select contacts.
-   * doc://com.apple.documentation/documentation/addressbook/abpersonpicker
+   * https://developer.apple.com/documentation/addressbook/abpersonpicker
    */
   interface ABPersonPicker extends NSObject {
-    // doc://com.apple.documentation/documentation/addressbook/abpersonpicker/1589907-delegate
+    // https://developer.apple.com/documentation/addressbook/abpersonpicker/1589907-delegate
     delegate(): ABPersonPickerDelegate;
     setDelegate(): void;
-    // doc://com.apple.documentation/documentation/addressbook/abpersonpicker/1589906-showrelativetorect
+    // https://developer.apple.com/documentation/addressbook/abpersonpicker/1589906-showrelativetorect
     showRelativeToRect_ofView_preferredEdge(positioningRect: NSRect, positioningView: NSView, preferredEdge: NSRectEdge):void;
-    // doc://com.apple.documentation/documentation/addressbook/abpersonpicker/1589905-close
+    // https://developer.apple.com/documentation/addressbook/abpersonpicker/1589905-close
     close():void;
-    // doc://com.apple.documentation/documentation/addressbook/abpersonpicker/1589904-properties
+    // https://developer.apple.com/documentation/addressbook/abpersonpicker/1589904-properties
     properties(): NSArray;
     setProperties(): void;
     //
@@ -119,20 +119,20 @@ declare const ABPersonPicker: cocoascript.ABPersonPicker;
 declare namespace cocoascript {
   /**
    * A mutable representation of a property that might have multiple values.
-   * doc://com.apple.documentation/documentation/addressbook/abmutablemultivalue
+   * https://developer.apple.com/documentation/addressbook/abmutablemultivalue
    */
   interface ABMutableMultiValue extends ABMultiValue {
-    // doc://com.apple.documentation/documentation/addressbook/abmutablemultivalue/1458374-addvalue
+    // https://developer.apple.com/documentation/addressbook/abmutablemultivalue/1458374-addvalue
     addValue_withLabel(value: ABMutableMultiValue, label: string | cocoascript.NSString):NSString;
-    // doc://com.apple.documentation/documentation/addressbook/abmutablemultivalue/1458362-insertvalue
+    // https://developer.apple.com/documentation/addressbook/abmutablemultivalue/1458362-insertvalue
     insertValue_withLabel_atIndex(value: ABMutableMultiValue, label: string | cocoascript.NSString, index: NSUInteger):NSString;
-    // doc://com.apple.documentation/documentation/addressbook/abmutablemultivalue/1458689-replacelabelatindex
+    // https://developer.apple.com/documentation/addressbook/abmutablemultivalue/1458689-replacelabelatindex
     replaceLabelAtIndex_withLabel(index: NSUInteger, label: string | cocoascript.NSString):BOOL;
-    // doc://com.apple.documentation/documentation/addressbook/abmutablemultivalue/1458609-replacevalueatindex
+    // https://developer.apple.com/documentation/addressbook/abmutablemultivalue/1458609-replacevalueatindex
     replaceValueAtIndex_withValue(index: NSUInteger, value: ABMutableMultiValue):BOOL;
-    // doc://com.apple.documentation/documentation/addressbook/abmutablemultivalue/1458405-removevalueandlabelatindex
+    // https://developer.apple.com/documentation/addressbook/abmutablemultivalue/1458405-removevalueandlabelatindex
     removeValueAndLabelAtIndex(index: NSUInteger):BOOL;
-    // doc://com.apple.documentation/documentation/addressbook/abmutablemultivalue/1458716-setprimaryidentifier
+    // https://developer.apple.com/documentation/addressbook/abmutablemultivalue/1458716-setprimaryidentifier
     setPrimaryIdentifier(identifier: string | cocoascript.NSString):BOOL;
     //
     alloc():ABMutableMultiValue;
@@ -143,52 +143,52 @@ declare namespace cocoascript {
 
 declare const ABMutableMultiValue: cocoascript.ABMutableMultiValue;
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/abmultivalueref
+  // https://developer.apple.com/documentation/addressbook/abmultivalueref
   type ABMultiValueRef = cocoascript.CFTypeRef;
 }
 declare namespace cocoascript {
   /**
    * The main object you use to access the Address Book database.
-   * doc://com.apple.documentation/documentation/addressbook/abaddressbook
+   * https://developer.apple.com/documentation/addressbook/abaddressbook
    */
   interface ABAddressBook extends NSObject {
-    // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458758-sharedaddressbook
+    // https://developer.apple.com/documentation/addressbook/abaddressbook/1458758-sharedaddressbook
     sharedAddressBook():ABAddressBook;
-    // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1529221-addressbook
+    // https://developer.apple.com/documentation/addressbook/abaddressbook/1529221-addressbook
     addressBook():ABAddressBook;
-    // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458440-groups
+    // https://developer.apple.com/documentation/addressbook/abaddressbook/1458440-groups
     groups():NSArray;
-    // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458683-people
+    // https://developer.apple.com/documentation/addressbook/abaddressbook/1458683-people
     people():NSArray;
-    // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458663-me
+    // https://developer.apple.com/documentation/addressbook/abaddressbook/1458663-me
     me():ABPerson;
-    // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458403-setme
+    // https://developer.apple.com/documentation/addressbook/abaddressbook/1458403-setme
     setMe(moi: ABPerson):void;
-    // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458571-recordforuniqueid
+    // https://developer.apple.com/documentation/addressbook/abaddressbook/1458571-recordforuniqueid
     recordForUniqueId(uniqueId: string | cocoascript.NSString):ABRecord;
-    // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458280-recordclassfromuniqueid
+    // https://developer.apple.com/documentation/addressbook/abaddressbook/1458280-recordclassfromuniqueid
     recordClassFromUniqueId(uniqueId: string | cocoascript.NSString):NSString;
-    // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458665-formattedaddressfromdictionary
+    // https://developer.apple.com/documentation/addressbook/abaddressbook/1458665-formattedaddressfromdictionary
     formattedAddressFromDictionary(address: NSDictionary):NSAttributedString;
-    // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458703-defaultcountrycode
+    // https://developer.apple.com/documentation/addressbook/abaddressbook/1458703-defaultcountrycode
     defaultCountryCode():NSString;
-    // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458447-defaultnameordering
+    // https://developer.apple.com/documentation/addressbook/abaddressbook/1458447-defaultnameordering
     defaultNameOrdering():NSInteger;
-    // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458709-addrecord
+    // https://developer.apple.com/documentation/addressbook/abaddressbook/1458709-addrecord
     addRecord_error(record: ABRecord, error: NSError):BOOL;
-    // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458749-addrecord
+    // https://developer.apple.com/documentation/addressbook/abaddressbook/1458749-addrecord
     addRecord(record: ABRecord):BOOL;
-    // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458388-removerecord
+    // https://developer.apple.com/documentation/addressbook/abaddressbook/1458388-removerecord
     removeRecord_error(record: ABRecord, error: NSError):BOOL;
-    // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458605-removerecord
+    // https://developer.apple.com/documentation/addressbook/abaddressbook/1458605-removerecord
     removeRecord(record: ABRecord):BOOL;
-    // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458410-recordsmatchingsearchelement
+    // https://developer.apple.com/documentation/addressbook/abaddressbook/1458410-recordsmatchingsearchelement
     recordsMatchingSearchElement(search: ABSearchElement):NSArray;
-    // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458270-hasunsavedchanges
+    // https://developer.apple.com/documentation/addressbook/abaddressbook/1458270-hasunsavedchanges
     hasUnsavedChanges():BOOL;
-    // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458432-save
+    // https://developer.apple.com/documentation/addressbook/abaddressbook/1458432-save
     save():BOOL;
-    // doc://com.apple.documentation/documentation/addressbook/abaddressbook/1458623-saveandreturnerror
+    // https://developer.apple.com/documentation/addressbook/abaddressbook/1458623-saveandreturnerror
     saveAndReturnError(error: NSError):BOOL;
     //
     alloc():ABAddressBook;
@@ -198,43 +198,43 @@ declare namespace cocoascript {
 }
 
 declare const ABAddressBook: cocoascript.ABAddressBook;
-// doc://com.apple.documentation/documentation/addressbook/kabdatabasechangednotification
+// https://developer.apple.com/documentation/addressbook/kabdatabasechangednotification
 declare const kABDatabaseChangedNotification: cocoascript.NSString;
-// doc://com.apple.documentation/documentation/addressbook/kabdatabasechangedexternallynotification
+// https://developer.apple.com/documentation/addressbook/kabdatabasechangedexternallynotification
 declare const kABDatabaseChangedExternallyNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object that represents a group of records in the Address Book database.
-   * doc://com.apple.documentation/documentation/addressbook/abgroup
+   * https://developer.apple.com/documentation/addressbook/abgroup
    */
   interface ABGroup extends ABRecord {
-    // doc://com.apple.documentation/documentation/addressbook/abgroup/1427944-addpropertiesandtypes
+    // https://developer.apple.com/documentation/addressbook/abgroup/1427944-addpropertiesandtypes
     addPropertiesAndTypes(properties: NSDictionary):NSInteger;
-    // doc://com.apple.documentation/documentation/addressbook/abgroup/1427954-removeproperties
+    // https://developer.apple.com/documentation/addressbook/abgroup/1427954-removeproperties
     removeProperties(properties: NSArray):NSInteger;
-    // doc://com.apple.documentation/documentation/addressbook/abgroup/1427958-properties
+    // https://developer.apple.com/documentation/addressbook/abgroup/1427958-properties
     properties():NSArray;
-    // doc://com.apple.documentation/documentation/addressbook/abgroup/1427950-typeofproperty
+    // https://developer.apple.com/documentation/addressbook/abgroup/1427950-typeofproperty
     typeOfProperty(property: string | cocoascript.NSString):ABPropertyType;
-    // doc://com.apple.documentation/documentation/addressbook/abgroup/1427932-addmember
+    // https://developer.apple.com/documentation/addressbook/abgroup/1427932-addmember
     addMember(person: ABPerson):BOOL;
-    // doc://com.apple.documentation/documentation/addressbook/abgroup/1427940-removemember
+    // https://developer.apple.com/documentation/addressbook/abgroup/1427940-removemember
     removeMember(person: ABPerson):BOOL;
-    // doc://com.apple.documentation/documentation/addressbook/abgroup/1427934-members
+    // https://developer.apple.com/documentation/addressbook/abgroup/1427934-members
     members():NSArray;
-    // doc://com.apple.documentation/documentation/addressbook/abgroup/1427938-addsubgroup
+    // https://developer.apple.com/documentation/addressbook/abgroup/1427938-addsubgroup
     addSubgroup(group: ABGroup):BOOL;
-    // doc://com.apple.documentation/documentation/addressbook/abgroup/1427960-removesubgroup
+    // https://developer.apple.com/documentation/addressbook/abgroup/1427960-removesubgroup
     removeSubgroup(group: ABGroup):BOOL;
-    // doc://com.apple.documentation/documentation/addressbook/abgroup/1427956-parentgroups
+    // https://developer.apple.com/documentation/addressbook/abgroup/1427956-parentgroups
     parentGroups():NSArray;
-    // doc://com.apple.documentation/documentation/addressbook/abgroup/1427948-subgroups
+    // https://developer.apple.com/documentation/addressbook/abgroup/1427948-subgroups
     subgroups():NSArray;
-    // doc://com.apple.documentation/documentation/addressbook/abgroup/1427942-distributionidentifierforpropert
+    // https://developer.apple.com/documentation/addressbook/abgroup/1427942-distributionidentifierforpropert
     distributionIdentifierForProperty_person(property: string | cocoascript.NSString, person: ABPerson):NSString;
-    // doc://com.apple.documentation/documentation/addressbook/abgroup/1427936-setdistributionidentifier
+    // https://developer.apple.com/documentation/addressbook/abgroup/1427936-setdistributionidentifier
     setDistributionIdentifier_forProperty_person(identifier: string | cocoascript.NSString, property: string | cocoascript.NSString, person: ABPerson):BOOL;
-    // doc://com.apple.documentation/documentation/addressbook/abgroup/1427946-searchelementforproperty
+    // https://developer.apple.com/documentation/addressbook/abgroup/1427946-searchelementforproperty
     searchElementForProperty_label_key_value_comparison(property: string | cocoascript.NSString, label: string | cocoascript.NSString, key: string | cocoascript.NSString, value: ABGroup, comparison: ABSearchComparison):ABSearchElement;
     //
     alloc():ABGroup;
@@ -247,27 +247,27 @@ declare const ABGroup: cocoascript.ABGroup;
 declare namespace cocoascript {
   /**
    * An abstract class that defines the common properties for all Address Book records.
-   * doc://com.apple.documentation/documentation/addressbook/abrecord
+   * https://developer.apple.com/documentation/addressbook/abrecord
    */
   interface ABRecord extends NSObject {
-    // doc://com.apple.documentation/documentation/addressbook/abrecord/1400511-initwithaddressbook
+    // https://developer.apple.com/documentation/addressbook/abrecord/1400511-initwithaddressbook
     initWithAddressBook(addressBook: ABAddressBook):ABRecord;
-    // doc://com.apple.documentation/documentation/addressbook/abrecord/1400517-init
+    // https://developer.apple.com/documentation/addressbook/abrecord/1400517-init
     init():ABRecord;
-    // doc://com.apple.documentation/documentation/addressbook/abrecord/1400513-removevalueforproperty
+    // https://developer.apple.com/documentation/addressbook/abrecord/1400513-removevalueforproperty
     removeValueForProperty(property: string | cocoascript.NSString):BOOL;
-    // doc://com.apple.documentation/documentation/addressbook/abrecord/1400509-setvalue
+    // https://developer.apple.com/documentation/addressbook/abrecord/1400509-setvalue
     setValue_forProperty(value: ABRecord, property: string | cocoascript.NSString):BOOL;
-    // doc://com.apple.documentation/documentation/addressbook/abrecord/1400521-setvalue
+    // https://developer.apple.com/documentation/addressbook/abrecord/1400521-setvalue
     setValue_forProperty_error(value: ABRecord, property: string | cocoascript.NSString, error: NSError):BOOL;
-    // doc://com.apple.documentation/documentation/addressbook/abrecord/1400523-valueforproperty
+    // https://developer.apple.com/documentation/addressbook/abrecord/1400523-valueforproperty
     valueForProperty(property: string | cocoascript.NSString):ABRecord;
-    // doc://com.apple.documentation/documentation/addressbook/abrecord/1400519-isreadonly
+    // https://developer.apple.com/documentation/addressbook/abrecord/1400519-isreadonly
     isReadOnly():BOOL;
-    // doc://com.apple.documentation/documentation/addressbook/abrecord/1400505-displayname
+    // https://developer.apple.com/documentation/addressbook/abrecord/1400505-displayname
     displayName(): string | cocoascript.NSString;
     setDisplayName(): void;
-    // doc://com.apple.documentation/documentation/addressbook/abrecord/1400515-uniqueid
+    // https://developer.apple.com/documentation/addressbook/abrecord/1400515-uniqueid
     uniqueId(): string | cocoascript.NSString;
     setUniqueId(): void;
     //
@@ -281,74 +281,74 @@ declare const ABRecord: cocoascript.ABRecord;
 declare namespace cocoascript {
   /**
    * An object you use to customize the behavior of people-picker views in an app's user interface.
-   * doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview
+   * https://developer.apple.com/documentation/addressbook/abpeoplepickerview
    */
   interface ABPeoplePickerView extends NSView {
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458513-addproperty
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458513-addproperty
     addProperty(property: string | cocoascript.NSString):void;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458420-columntitleforproperty
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458420-columntitleforproperty
     columnTitleForProperty(property: string | cocoascript.NSString):NSString;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458533-displayedproperty
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458533-displayedproperty
     displayedProperty(): string | cocoascript.NSString;
     setDisplayedProperty(): void;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458322-properties
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458322-properties
     properties():NSArray;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458395-removeproperty
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458395-removeproperty
     removeProperty(property: string | cocoascript.NSString):void;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458674-setcolumntitle
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458674-setcolumntitle
     setColumnTitle_forProperty(title: string | cocoascript.NSString, property: string | cocoascript.NSString):void;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458445-valueselectionbehavior
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458445-valueselectionbehavior
     valueSelectionBehavior(): ABPeoplePickerSelectionBehavior;
     setValueSelectionBehavior(): void;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458607-allowsgroupselection
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458607-allowsgroupselection
     allowsGroupSelection(): BOOL;
     setAllowsGroupSelection(): void;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458724-allowsmultipleselection
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458724-allowsmultipleselection
     allowsMultipleSelection(): BOOL;
     setAllowsMultipleSelection(): void;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458712-deselectall
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458712-deselectall
     deselectAll(sender: ABPeoplePickerView):void;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458627-deselectgroup
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458627-deselectgroup
     deselectGroup(group: ABGroup):void;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458304-deselectidentifier
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458304-deselectidentifier
     deselectIdentifier_forPerson(identifier: string | cocoascript.NSString, person: ABPerson):void;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458358-deselectrecord
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458358-deselectrecord
     deselectRecord(record: ABRecord):void;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458699-selectedgroups
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458699-selectedgroups
     selectedGroups(): NSArray;
     setSelectedGroups(): void;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458726-selectedidentifiersforperson
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458726-selectedidentifiersforperson
     selectedIdentifiersForPerson(person: ABPerson):NSArray;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458543-selectedrecords
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458543-selectedrecords
     selectedRecords(): NSArray;
     setSelectedRecords(): void;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458478-selectedvalues
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458478-selectedvalues
     selectedValues():NSArray;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458291-selectgroup
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458291-selectgroup
     selectGroup_byExtendingSelection(group: ABGroup, extend: BOOL):void;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458317-selectidentifier
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458317-selectidentifier
     selectIdentifier_forPerson_byExtendingSelection(identifier: string | cocoascript.NSString, person: ABPerson, extend: BOOL):void;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458370-selectrecord
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458370-selectrecord
     selectRecord_byExtendingSelection(record: ABRecord, extend: BOOL):void;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458746-accessoryview
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458746-accessoryview
     accessoryView(): NSView;
     setAccessoryView(): void;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458688-clearsearchfield
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458688-clearsearchfield
     clearSearchField(sender: ABPeoplePickerView):void;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458324-editinaddressbook
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458324-editinaddressbook
     editInAddressBook(sender: ABPeoplePickerView):void;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458286-groupdoubleaction
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458286-groupdoubleaction
     groupDoubleAction(): SEL;
     setGroupDoubleAction(): void;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458723-namedoubleaction
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458723-namedoubleaction
     nameDoubleAction(): SEL;
     setNameDoubleAction(): void;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458762-selectinaddressbook
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458762-selectinaddressbook
     selectInAddressBook(sender: ABPeoplePickerView):void;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458731-target
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458731-target
     target(): id;
     setTarget(): void;
-    // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerview/1458748-autosavename
+    // https://developer.apple.com/documentation/addressbook/abpeoplepickerview/1458748-autosavename
     autosaveName(): string | cocoascript.NSString;
     setAutosaveName(): void;
     //
@@ -359,27 +359,27 @@ declare namespace cocoascript {
 }
 
 declare const ABPeoplePickerView: cocoascript.ABPeoplePickerView;
-// doc://com.apple.documentation/documentation/addressbook/abpeoplepickergroupselectiondidchangenotification
+// https://developer.apple.com/documentation/addressbook/abpeoplepickergroupselectiondidchangenotification
 declare const ABPeoplePickerGroupSelectionDidChangeNotification: cocoascript.NSString;
-// doc://com.apple.documentation/documentation/addressbook/abpeoplepickernameselectiondidchangenotification
+// https://developer.apple.com/documentation/addressbook/abpeoplepickernameselectiondidchangenotification
 declare const ABPeoplePickerNameSelectionDidChangeNotification: cocoascript.NSString;
-// doc://com.apple.documentation/documentation/addressbook/abpeoplepickervalueselectiondidchangenotification
+// https://developer.apple.com/documentation/addressbook/abpeoplepickervalueselectiondidchangenotification
 declare const ABPeoplePickerValueSelectionDidChangeNotification: cocoascript.NSString;
-// doc://com.apple.documentation/documentation/addressbook/abpeoplepickerdisplayedpropertydidchangenotification
+// https://developer.apple.com/documentation/addressbook/abpeoplepickerdisplayedpropertydidchangenotification
 declare const ABPeoplePickerDisplayedPropertyDidChangeNotification: cocoascript.NSString;
 declare namespace cocoascript {
   /**
    * An object that provides a view for displaying and editing contacts.
-   * doc://com.apple.documentation/documentation/addressbook/abpersonview
+   * https://developer.apple.com/documentation/addressbook/abpersonview
    */
   interface ABPersonView extends NSView {
-    // doc://com.apple.documentation/documentation/addressbook/abpersonview/1411312-editing
+    // https://developer.apple.com/documentation/addressbook/abpersonview/1411312-editing
     editing(): BOOL;
     setEditing(): void;
-    // doc://com.apple.documentation/documentation/addressbook/abpersonview/1411310-person
+    // https://developer.apple.com/documentation/addressbook/abpersonview/1411310-person
     person(): ABPerson;
     setPerson(): void;
-    // doc://com.apple.documentation/documentation/addressbook/abpersonview/1411308-shouldshowlinkedpeople
+    // https://developer.apple.com/documentation/addressbook/abpersonview/1411308-shouldshowlinkedpeople
     shouldShowLinkedPeople(): BOOL;
     setShouldShowLinkedPeople(): void;
     //
@@ -393,12 +393,12 @@ declare const ABPersonView: cocoascript.ABPersonView;
 declare namespace cocoascript {
   /**
    * An object you use to specify a search query for records in the Address Book database.
-   * doc://com.apple.documentation/documentation/addressbook/absearchelement
+   * https://developer.apple.com/documentation/addressbook/absearchelement
    */
   interface ABSearchElement extends NSObject {
-    // doc://com.apple.documentation/documentation/addressbook/absearchelement/1458423-searchelementforconjunction
+    // https://developer.apple.com/documentation/addressbook/absearchelement/1458423-searchelementforconjunction
     searchElementForConjunction_children(conjuction: ABSearchConjunction, children: NSArray):ABSearchElement;
-    // doc://com.apple.documentation/documentation/addressbook/absearchelement/1458642-matchesrecord
+    // https://developer.apple.com/documentation/addressbook/absearchelement/1458642-matchesrecord
     matchesRecord(record: ABRecord):BOOL;
     //
     alloc():ABSearchElement;
@@ -413,32 +413,28 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/abrecordref
-  type ABRecordRef = cocoascript.CFTypeRef;
-}
-declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/abaddressbookref
-  type ABAddressBookRef = cocoascript.CFTypeRef;
-}
-declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/abmutablemultivalueref
+  // https://developer.apple.com/documentation/addressbook/abmutablemultivalueref
   type ABMutableMultiValueRef = cocoascript.CFTypeRef;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/abpropertytype
+  // https://developer.apple.com/documentation/addressbook/abpropertytype
   type ABPropertyType = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/abpeoplepickerselectionbehavior
+  // https://developer.apple.com/documentation/addressbook/abpeoplepickerselectionbehavior
   type ABPeoplePickerSelectionBehavior = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/absearchconjunction
+  // https://developer.apple.com/documentation/addressbook/absearchconjunction
   type ABSearchConjunction = cocoascript.CFIndex;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/absearchcomparison
+  // https://developer.apple.com/documentation/addressbook/absearchcomparison
   type ABSearchComparison = cocoascript.CFIndex;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/addressbook/abaddressbookref
+  type ABAddressBookRef = cocoascript.CFTypeRef;
 }
 declare namespace cocoascript {
   interface ABPersonRef {
@@ -457,250 +453,254 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/abpersonimageformat
+  // https://developer.apple.com/documentation/addressbook/abpersonimageformat
   type ABPersonImageFormat = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/absourcetype
+  // https://developer.apple.com/documentation/addressbook/absourcetype
   type ABSourceType = number;
 }
-// doc://com.apple.documentation/documentation/addressbook/abaddressbookerrordomain
+// https://developer.apple.com/documentation/addressbook/abaddressbookerrordomain
 declare const ABAddressBookErrorDomain: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonaddresscitykey
+// https://developer.apple.com/documentation/addressbook/kabpersonaddresscitykey
 declare const kABPersonAddressCityKey: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonaddresscountrycodekey
+// https://developer.apple.com/documentation/addressbook/kabpersonaddresscountrycodekey
 declare const kABPersonAddressCountryCodeKey: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonaddresscountrykey
+// https://developer.apple.com/documentation/addressbook/kabpersonaddresscountrykey
 declare const kABPersonAddressCountryKey: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonaddressproperty
+// https://developer.apple.com/documentation/addressbook/kabpersonaddressproperty
 declare const kABPersonAddressProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonaddressstatekey
+// https://developer.apple.com/documentation/addressbook/kabpersonaddressstatekey
 declare const kABPersonAddressStateKey: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonaddressstreetkey
+// https://developer.apple.com/documentation/addressbook/kabpersonaddressstreetkey
 declare const kABPersonAddressStreetKey: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonaddresszipkey
+// https://developer.apple.com/documentation/addressbook/kabpersonaddresszipkey
 declare const kABPersonAddressZIPKey: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonalternatebirthdaycalendaridentifierkey
+// https://developer.apple.com/documentation/addressbook/kabpersonalternatebirthdaycalendaridentifierkey
 declare const kABPersonAlternateBirthdayCalendarIdentifierKey: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonalternatebirthdaydaykey
+// https://developer.apple.com/documentation/addressbook/kabpersonalternatebirthdaydaykey
 declare const kABPersonAlternateBirthdayDayKey: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonalternatebirthdayerakey
+// https://developer.apple.com/documentation/addressbook/kabpersonalternatebirthdayerakey
 declare const kABPersonAlternateBirthdayEraKey: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonalternatebirthdayisleapmonthkey
+// https://developer.apple.com/documentation/addressbook/kabpersonalternatebirthdayisleapmonthkey
 declare const kABPersonAlternateBirthdayIsLeapMonthKey: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonalternatebirthdaymonthkey
+// https://developer.apple.com/documentation/addressbook/kabpersonalternatebirthdaymonthkey
 declare const kABPersonAlternateBirthdayMonthKey: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonalternatebirthdayproperty
+// https://developer.apple.com/documentation/addressbook/kabpersonalternatebirthdayproperty
 declare const kABPersonAlternateBirthdayProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonalternatebirthdayyearkey
+// https://developer.apple.com/documentation/addressbook/kabpersonalternatebirthdayyearkey
 declare const kABPersonAlternateBirthdayYearKey: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonanniversarylabel
+// https://developer.apple.com/documentation/addressbook/kabpersonanniversarylabel
 declare const kABPersonAnniversaryLabel: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonassistantlabel
+// https://developer.apple.com/documentation/addressbook/kabpersonassistantlabel
 declare const kABPersonAssistantLabel: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonbirthdayproperty
+// https://developer.apple.com/documentation/addressbook/kabpersonbirthdayproperty
 declare const kABPersonBirthdayProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonbrotherlabel
+// https://developer.apple.com/documentation/addressbook/kabpersonbrotherlabel
 declare const kABPersonBrotherLabel: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonchildlabel
+// https://developer.apple.com/documentation/addressbook/kabpersonchildlabel
 declare const kABPersonChildLabel: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersoncreationdateproperty
+// https://developer.apple.com/documentation/addressbook/kabpersoncreationdateproperty
 declare const kABPersonCreationDateProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersondateproperty
+// https://developer.apple.com/documentation/addressbook/kabpersondateproperty
 declare const kABPersonDateProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersondepartmentproperty
+// https://developer.apple.com/documentation/addressbook/kabpersondepartmentproperty
 declare const kABPersonDepartmentProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonemailproperty
+// https://developer.apple.com/documentation/addressbook/kabpersonemailproperty
 declare const kABPersonEmailProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonfatherlabel
+// https://developer.apple.com/documentation/addressbook/kabpersonfatherlabel
 declare const kABPersonFatherLabel: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonfirstnamephoneticproperty
+// https://developer.apple.com/documentation/addressbook/kabpersonfirstnamephoneticproperty
 declare const kABPersonFirstNamePhoneticProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonfirstnameproperty
+// https://developer.apple.com/documentation/addressbook/kabpersonfirstnameproperty
 declare const kABPersonFirstNameProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonfriendlabel
+// https://developer.apple.com/documentation/addressbook/kabpersonfriendlabel
 declare const kABPersonFriendLabel: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonhomepagelabel
+// https://developer.apple.com/documentation/addressbook/kabpersonhomepagelabel
 declare const kABPersonHomePageLabel: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageproperty
+// https://developer.apple.com/documentation/addressbook/kabpersoninstantmessageproperty
 declare const kABPersonInstantMessageProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageserviceaim
+// https://developer.apple.com/documentation/addressbook/kabpersoninstantmessageserviceaim
 declare const kABPersonInstantMessageServiceAIM: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageservicefacebook
+// https://developer.apple.com/documentation/addressbook/kabpersoninstantmessageservicefacebook
 declare const kABPersonInstantMessageServiceFacebook: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageservicegadugadu
+// https://developer.apple.com/documentation/addressbook/kabpersoninstantmessageservicegadugadu
 declare const kABPersonInstantMessageServiceGaduGadu: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageservicegoogletalk
+// https://developer.apple.com/documentation/addressbook/kabpersoninstantmessageservicegoogletalk
 declare const kABPersonInstantMessageServiceGoogleTalk: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageserviceicq
+// https://developer.apple.com/documentation/addressbook/kabpersoninstantmessageserviceicq
 declare const kABPersonInstantMessageServiceICQ: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageservicejabber
+// https://developer.apple.com/documentation/addressbook/kabpersoninstantmessageservicejabber
 declare const kABPersonInstantMessageServiceJabber: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageservicekey
+// https://developer.apple.com/documentation/addressbook/kabpersoninstantmessageservicekey
 declare const kABPersonInstantMessageServiceKey: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageservicemsn
+// https://developer.apple.com/documentation/addressbook/kabpersoninstantmessageservicemsn
 declare const kABPersonInstantMessageServiceMSN: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageserviceqq
+// https://developer.apple.com/documentation/addressbook/kabpersoninstantmessageserviceqq
 declare const kABPersonInstantMessageServiceQQ: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageserviceskype
+// https://developer.apple.com/documentation/addressbook/kabpersoninstantmessageserviceskype
 declare const kABPersonInstantMessageServiceSkype: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageserviceyahoo
+// https://developer.apple.com/documentation/addressbook/kabpersoninstantmessageserviceyahoo
 declare const kABPersonInstantMessageServiceYahoo: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersoninstantmessageusernamekey
+// https://developer.apple.com/documentation/addressbook/kabpersoninstantmessageusernamekey
 declare const kABPersonInstantMessageUsernameKey: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonjobtitleproperty
+// https://developer.apple.com/documentation/addressbook/kabpersonjobtitleproperty
 declare const kABPersonJobTitleProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonkindorganization
+// https://developer.apple.com/documentation/addressbook/kabpersonkindorganization
 declare const kABPersonKindOrganization: cocoascript.CFNumberRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonkindperson
+// https://developer.apple.com/documentation/addressbook/kabpersonkindperson
 declare const kABPersonKindPerson: cocoascript.CFNumberRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonkindproperty
+// https://developer.apple.com/documentation/addressbook/kabpersonkindproperty
 declare const kABPersonKindProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonlastnamephoneticproperty
+// https://developer.apple.com/documentation/addressbook/kabpersonlastnamephoneticproperty
 declare const kABPersonLastNamePhoneticProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonlastnameproperty
+// https://developer.apple.com/documentation/addressbook/kabpersonlastnameproperty
 declare const kABPersonLastNameProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonmanagerlabel
+// https://developer.apple.com/documentation/addressbook/kabpersonmanagerlabel
 declare const kABPersonManagerLabel: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonmiddlenamephoneticproperty
+// https://developer.apple.com/documentation/addressbook/kabpersonmiddlenamephoneticproperty
 declare const kABPersonMiddleNamePhoneticProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonmiddlenameproperty
+// https://developer.apple.com/documentation/addressbook/kabpersonmiddlenameproperty
 declare const kABPersonMiddleNameProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonmodificationdateproperty
+// https://developer.apple.com/documentation/addressbook/kabpersonmodificationdateproperty
 declare const kABPersonModificationDateProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonmotherlabel
+// https://developer.apple.com/documentation/addressbook/kabpersonmotherlabel
 declare const kABPersonMotherLabel: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonnicknameproperty
+// https://developer.apple.com/documentation/addressbook/kabpersonnicknameproperty
 declare const kABPersonNicknameProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonnoteproperty
+// https://developer.apple.com/documentation/addressbook/kabpersonnoteproperty
 declare const kABPersonNoteProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonorganizationproperty
+// https://developer.apple.com/documentation/addressbook/kabpersonorganizationproperty
 declare const kABPersonOrganizationProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonparentlabel
+// https://developer.apple.com/documentation/addressbook/kabpersonparentlabel
 declare const kABPersonParentLabel: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonpartnerlabel
+// https://developer.apple.com/documentation/addressbook/kabpersonpartnerlabel
 declare const kABPersonPartnerLabel: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonphonehomefaxlabel
+// https://developer.apple.com/documentation/addressbook/kabpersonphonehomefaxlabel
 declare const kABPersonPhoneHomeFAXLabel: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonphoneiphonelabel
+// https://developer.apple.com/documentation/addressbook/kabpersonphoneiphonelabel
 declare const kABPersonPhoneIPhoneLabel: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonphonemainlabel
+// https://developer.apple.com/documentation/addressbook/kabpersonphonemainlabel
 declare const kABPersonPhoneMainLabel: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonphonemobilelabel
+// https://developer.apple.com/documentation/addressbook/kabpersonphonemobilelabel
 declare const kABPersonPhoneMobileLabel: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonphoneotherfaxlabel
+// https://developer.apple.com/documentation/addressbook/kabpersonphoneotherfaxlabel
 declare const kABPersonPhoneOtherFAXLabel: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonphonepagerlabel
+// https://developer.apple.com/documentation/addressbook/kabpersonphonepagerlabel
 declare const kABPersonPhonePagerLabel: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonphoneproperty
+// https://developer.apple.com/documentation/addressbook/kabpersonphoneproperty
 declare const kABPersonPhoneProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonphoneworkfaxlabel
+// https://developer.apple.com/documentation/addressbook/kabpersonphoneworkfaxlabel
 declare const kABPersonPhoneWorkFAXLabel: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonprefixproperty
+// https://developer.apple.com/documentation/addressbook/kabpersonprefixproperty
 declare const kABPersonPrefixProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonrelatednamesproperty
+// https://developer.apple.com/documentation/addressbook/kabpersonrelatednamesproperty
 declare const kABPersonRelatedNamesProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonsisterlabel
+// https://developer.apple.com/documentation/addressbook/kabpersonsisterlabel
 declare const kABPersonSisterLabel: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonsocialprofileproperty
+// https://developer.apple.com/documentation/addressbook/kabpersonsocialprofileproperty
 declare const kABPersonSocialProfileProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonsocialprofileservicefacebook
+// https://developer.apple.com/documentation/addressbook/kabpersonsocialprofileservicefacebook
 declare const kABPersonSocialProfileServiceFacebook: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonsocialprofileserviceflickr
+// https://developer.apple.com/documentation/addressbook/kabpersonsocialprofileserviceflickr
 declare const kABPersonSocialProfileServiceFlickr: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonsocialprofileservicegamecenter
+// https://developer.apple.com/documentation/addressbook/kabpersonsocialprofileservicegamecenter
 declare const kABPersonSocialProfileServiceGameCenter: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonsocialprofileservicekey
+// https://developer.apple.com/documentation/addressbook/kabpersonsocialprofileservicekey
 declare const kABPersonSocialProfileServiceKey: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonsocialprofileservicelinkedin
+// https://developer.apple.com/documentation/addressbook/kabpersonsocialprofileservicelinkedin
 declare const kABPersonSocialProfileServiceLinkedIn: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonsocialprofileservicemyspace
+// https://developer.apple.com/documentation/addressbook/kabpersonsocialprofileservicemyspace
 declare const kABPersonSocialProfileServiceMyspace: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonsocialprofileservicesinaweibo
+// https://developer.apple.com/documentation/addressbook/kabpersonsocialprofileservicesinaweibo
 declare const kABPersonSocialProfileServiceSinaWeibo: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonsocialprofileservicetwitter
+// https://developer.apple.com/documentation/addressbook/kabpersonsocialprofileservicetwitter
 declare const kABPersonSocialProfileServiceTwitter: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonsocialprofileurlkey
+// https://developer.apple.com/documentation/addressbook/kabpersonsocialprofileurlkey
 declare const kABPersonSocialProfileURLKey: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonsocialprofileuseridentifierkey
+// https://developer.apple.com/documentation/addressbook/kabpersonsocialprofileuseridentifierkey
 declare const kABPersonSocialProfileUserIdentifierKey: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonsocialprofileusernamekey
+// https://developer.apple.com/documentation/addressbook/kabpersonsocialprofileusernamekey
 declare const kABPersonSocialProfileUsernameKey: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonspouselabel
+// https://developer.apple.com/documentation/addressbook/kabpersonspouselabel
 declare const kABPersonSpouseLabel: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonsuffixproperty
+// https://developer.apple.com/documentation/addressbook/kabpersonsuffixproperty
 declare const kABPersonSuffixProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabpersonurlproperty
+// https://developer.apple.com/documentation/addressbook/kabpersonurlproperty
 declare const kABPersonURLProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabsourcenameproperty
+// https://developer.apple.com/documentation/addressbook/kabsourcenameproperty
 declare const kABSourceNameProperty: cocoascript.ABPropertyID;
-// doc://com.apple.documentation/documentation/addressbook/kabsourcetypeproperty
+// https://developer.apple.com/documentation/addressbook/kabsourcetypeproperty
 declare const kABSourceTypeProperty: cocoascript.ABPropertyID;
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/abpickerattributes
+  // https://developer.apple.com/documentation/addressbook/abpickerattributes
   type ABPickerAttributes = cocoascript.OptionBits;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/abauthorizationstatus
+  // https://developer.apple.com/documentation/addressbook/abauthorizationstatus
   type ABAuthorizationStatus = cocoascript.CFIndex;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/abactiongetpropertycallback
+  // https://developer.apple.com/documentation/addressbook/abactiongetpropertycallback
   type ABActionGetPropertyCallback = void;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/abimageclientcallback
+  // https://developer.apple.com/documentation/addressbook/abimageclientcallback
   type ABImageClientCallback = void;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/abactioncopytitlecallback
+  // https://developer.apple.com/documentation/addressbook/abactioncopytitlecallback
   type ABActionCopyTitleCallback = cocoascript.CFStringRef;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/abactionenabledcallback
+  // https://developer.apple.com/documentation/addressbook/abactionenabledcallback
   type ABActionEnabledCallback = cocoascript.CFStringRef;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/abactionselectedcallback
+  // https://developer.apple.com/documentation/addressbook/abactionselectedcallback
   type ABActionSelectedCallback = cocoascript.CFStringRef;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/abaddressbookrequestaccesscompletionhandler
+  // https://developer.apple.com/documentation/addressbook/abrecordref
+  type ABRecordRef = cocoascript.CFTypeRef;
+}
+declare namespace cocoascript {
+  // https://developer.apple.com/documentation/addressbook/abaddressbookrequestaccesscompletionhandler
   type ABAddressBookRequestAccessCompletionHandler = cocoascript.CFErrorRef;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/abexternalchangecallback
+  // https://developer.apple.com/documentation/addressbook/abexternalchangecallback
   type ABExternalChangeCallback = void;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/abmultivalueidentifier
+  // https://developer.apple.com/documentation/addressbook/abmultivalueidentifier
   type ABMultiValueIdentifier = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/abpersoncompositenameformat
+  // https://developer.apple.com/documentation/addressbook/abpersoncompositenameformat
   type ABPersonCompositeNameFormat = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/abpersonsortordering
+  // https://developer.apple.com/documentation/addressbook/abpersonsortordering
   type ABPersonSortOrdering = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/abpropertyid
+  // https://developer.apple.com/documentation/addressbook/abpropertyid
   type ABPropertyID = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/abrecordid
+  // https://developer.apple.com/documentation/addressbook/abrecordid
   type ABRecordID = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/addressbook/abrecordtype
+  // https://developer.apple.com/documentation/addressbook/abrecordtype
   type ABRecordType = number;
 }
-// doc://com.apple.documentation/documentation/addressbook/kabgroupnameproperty
+// https://developer.apple.com/documentation/addressbook/kabgroupnameproperty
 declare const kABGroupNameProperty: number;
-// doc://com.apple.documentation/documentation/addressbook/kabworklabel
+// https://developer.apple.com/documentation/addressbook/kabworklabel
 declare const kABWorkLabel: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabhomelabel
+// https://developer.apple.com/documentation/addressbook/kabhomelabel
 declare const kABHomeLabel: cocoascript.CFStringRef;
-// doc://com.apple.documentation/documentation/addressbook/kabotherlabel
+// https://developer.apple.com/documentation/addressbook/kabotherlabel
 declare const kABOtherLabel: cocoascript.CFStringRef;

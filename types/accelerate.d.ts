@@ -1,5 +1,5 @@
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/bnnsdatalayout
+  // https://developer.apple.com/documentation/accelerate/bnnsdatalayout
   type BNNSDataLayout = number;
 }
 declare namespace cocoascript {
@@ -7,7 +7,7 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/bnnsfilter
+  // https://developer.apple.com/documentation/accelerate/bnnsfilter
   type BNNSFilter = void;
 }
 declare namespace cocoascript {
@@ -15,7 +15,7 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/bnnsactivationfunction
+  // https://developer.apple.com/documentation/accelerate/bnnsactivationfunction
   type BNNSActivationFunction = number;
 }
 declare namespace cocoascript {
@@ -27,7 +27,7 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/bnnsdescriptortype
+  // https://developer.apple.com/documentation/accelerate/bnnsdescriptortype
   type BNNSDescriptorType = number;
 }
 declare namespace cocoascript {
@@ -39,7 +39,7 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/bnnsarithmeticfunction
+  // https://developer.apple.com/documentation/accelerate/bnnsarithmeticfunction
   type BNNSArithmeticFunction = number;
 }
 declare namespace cocoascript {
@@ -63,7 +63,7 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/bnnsfiltertype
+  // https://developer.apple.com/documentation/accelerate/bnnsfiltertype
   type BNNSFilterType = number;
 }
 declare namespace cocoascript {
@@ -79,7 +79,7 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/bnnslayerflags
+  // https://developer.apple.com/documentation/accelerate/bnnslayerflags
   type BNNSLayerFlags = number;
 }
 declare namespace cocoascript {
@@ -87,11 +87,11 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/bnnslossfunction
+  // https://developer.apple.com/documentation/accelerate/bnnslossfunction
   type BNNSLossFunction = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/bnnslossreductionfunction
+  // https://developer.apple.com/documentation/accelerate/bnnslossreductionfunction
   type BNNSLossReductionFunction = number;
 }
 declare namespace cocoascript {
@@ -127,11 +127,11 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/bnnsoptimizerfunction
+  // https://developer.apple.com/documentation/accelerate/bnnsoptimizerfunction
   type BNNSOptimizerFunction = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/bnnsoptimizerregularizationfunction
+  // https://developer.apple.com/documentation/accelerate/bnnsoptimizerregularizationfunction
   type BNNSOptimizerRegularizationFunction = number;
 }
 declare namespace cocoascript {
@@ -147,11 +147,11 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/bnnsoptimizersgdmomentumvariant
+  // https://developer.apple.com/documentation/accelerate/bnnsoptimizersgdmomentumvariant
   type BNNSOptimizerSGDMomentumVariant = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/bnnspaddingmode
+  // https://developer.apple.com/documentation/accelerate/bnnspaddingmode
   type BNNSPaddingMode = number;
 }
 declare namespace cocoascript {
@@ -163,7 +163,7 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/bnnspoolingfunction
+  // https://developer.apple.com/documentation/accelerate/bnnspoolingfunction
   type BNNSPoolingFunction = number;
 }
 declare namespace cocoascript {
@@ -171,7 +171,7 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/bnnsreducefunction
+  // https://developer.apple.com/documentation/accelerate/bnnsreducefunction
   type BNNSReduceFunction = number;
 }
 declare namespace cocoascript {
@@ -179,7 +179,7 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/bnnsinterpolationmethod
+  // https://developer.apple.com/documentation/accelerate/bnnsinterpolationmethod
   type BNNSInterpolationMethod = number;
 }
 declare namespace cocoascript {
@@ -187,7 +187,7 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/bnnsrelationaloperator
+  // https://developer.apple.com/documentation/accelerate/bnnsrelationaloperator
   type BNNSRelationalOperator = number;
 }
 declare namespace cocoascript {
@@ -195,15 +195,15 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/bnnsalloc
+  // https://developer.apple.com/documentation/accelerate/bnnsalloc
   type BNNSAlloc = any;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/bnnsfree
+  // https://developer.apple.com/documentation/accelerate/bnnsfree
   type BNNSFree = void;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/bnnspointerspecifier
+  // https://developer.apple.com/documentation/accelerate/bnnspointerspecifier
   type BNNSPointerSpecifier = number;
 }
 declare namespace cocoascript {
@@ -223,11 +223,11 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/vdsp_length
+  // https://developer.apple.com/documentation/accelerate/vdsp_length
   type vDSP_Length = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/vdsp_stride
+  // https://developer.apple.com/documentation/accelerate/vdsp_stride
   type vDSP_Stride = number;
 }
 declare namespace cocoascript {
@@ -271,7 +271,7 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/blasparamerrorproc
+  // https://developer.apple.com/documentation/accelerate/blasparamerrorproc
   type BLASParamErrorProc = number;
 }
 declare namespace cocoascript {
@@ -283,7 +283,7 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/vimage_cgaffinetransform
+  // https://developer.apple.com/documentation/accelerate/vimage_cgaffinetransform
   type vImage_CGAffineTransform = cocoascript.vImage_AffineTransform_Double;
 }
 declare namespace cocoascript {
@@ -295,11 +295,11 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/fftradix
+  // https://developer.apple.com/documentation/accelerate/fftradix
   type FFTRadix = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/fftdirection
+  // https://developer.apple.com/documentation/accelerate/fftdirection
   type FFTDirection = number;
 }
 declare namespace cocoascript {
@@ -307,7 +307,7 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/vdsp_dft_direction
+  // https://developer.apple.com/documentation/accelerate/vdsp_dft_direction
   type vDSP_DFT_Direction = number;
 }
 declare namespace cocoascript {
@@ -318,16 +318,16 @@ declare namespace cocoascript {
   interface vImageConverterRef {
   }
 }
-// doc://com.apple.documentation/documentation/accelerate/1399110-vimageconverter_getsourcebuffero
+// https://developer.apple.com/documentation/accelerate/1399110-vimageconverter_getsourcebuffero
 declare const vImageConverter_GetSourceBufferOrder: cocoascript.vImageConverterRef;
-// doc://com.apple.documentation/documentation/accelerate/1399076-vimageconverter_getdestinationbu
+// https://developer.apple.com/documentation/accelerate/1399076-vimageconverter_getdestinationbu
 declare const vImageConverter_GetDestinationBufferOrder: cocoascript.vImageConverterRef;
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/vimageypcbcrtype
+  // https://developer.apple.com/documentation/accelerate/vimageypcbcrtype
   type vImageYpCbCrType = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/vimageargbtype
+  // https://developer.apple.com/documentation/accelerate/vimageargbtype
   type vImageARGBType = number;
 }
 declare namespace cocoascript {
@@ -351,7 +351,7 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/resamplingfilter
+  // https://developer.apple.com/documentation/accelerate/resamplingfilter
   type ResamplingFilter = void;
 }
 declare namespace cocoascript {
@@ -359,11 +359,11 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/vimagemdtableusagehint
+  // https://developer.apple.com/documentation/accelerate/vimagemdtableusagehint
   type vImageMDTableUsageHint = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/vimage_interpolationmethod
+  // https://developer.apple.com/documentation/accelerate/vimage_interpolationmethod
   type vImage_InterpolationMethod = number;
 }
 declare namespace cocoascript {
@@ -371,7 +371,7 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/sparsepreconditioner_t
+  // https://developer.apple.com/documentation/accelerate/sparsepreconditioner_t
   type SparsePreconditioner_t = number;
 }
 declare namespace cocoascript {
@@ -383,24 +383,24 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/bnnsndarrayflags
+  // https://developer.apple.com/documentation/accelerate/bnnsndarrayflags
   type BNNSNDArrayFlags = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/bnnsflags
+  // https://developer.apple.com/documentation/accelerate/bnnsflags
   type BNNSFlags = number;
 }
-// doc://com.apple.documentation/documentation/accelerate/bnnsactivation/2873589-iscale_per_channel
+// https://developer.apple.com/documentation/accelerate/bnnsactivation/2873589-iscale_per_channel
 declare const iscale_per_channel: number;
-// doc://com.apple.documentation/documentation/accelerate/bnnsactivation/2873578-ioffset_per_channel
+// https://developer.apple.com/documentation/accelerate/bnnsactivation/2873578-ioffset_per_channel
 declare const ioffset_per_channel: number;
-// doc://com.apple.documentation/documentation/accelerate/bnnsactivation/2873626-ishift_per_channel
+// https://developer.apple.com/documentation/accelerate/bnnsactivation/2873626-ishift_per_channel
 declare const ishift_per_channel: number;
-// doc://com.apple.documentation/documentation/accelerate/bnnslayerparameterstensorcontraction/3546978-operation
+// https://developer.apple.com/documentation/accelerate/bnnslayerparameterstensorcontraction/3546978-operation
 declare const operation: string;
-// doc://com.apple.documentation/documentation/accelerate/bnnslayerdata/1642557-data
+// https://developer.apple.com/documentation/accelerate/bnnslayerdata/1642557-data
 declare const data: void;
-// doc://com.apple.documentation/documentation/accelerate/bnnslayerdata/1642290-data_table
+// https://developer.apple.com/documentation/accelerate/bnnslayerdata/1642290-data_table
 declare const data_table: number;
 declare namespace cocoascript {
   interface vImageRGBPrimaries {
@@ -415,7 +415,7 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/vimagepixelcount
+  // https://developer.apple.com/documentation/accelerate/vimagepixelcount
   type vImagePixelCount = number;
 }
 declare namespace cocoascript {
@@ -427,31 +427,31 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/vimage_error
+  // https://developer.apple.com/documentation/accelerate/vimage_error
   type vImage_Error = cocoascript.ssize_t;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/vimage_flags
+  // https://developer.apple.com/documentation/accelerate/vimage_flags
   type vImage_Flags = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/pixel_8
+  // https://developer.apple.com/documentation/accelerate/pixel_8
   type Pixel_8 = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/pixel_f
+  // https://developer.apple.com/documentation/accelerate/pixel_f
   type Pixel_F = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/pixel_8888
+  // https://developer.apple.com/documentation/accelerate/pixel_8888
   type Pixel_8888 = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/pixel_ffff
+  // https://developer.apple.com/documentation/accelerate/pixel_ffff
   type Pixel_FFFF = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/gammafunction
+  // https://developer.apple.com/documentation/accelerate/gammafunction
   type GammaFunction = void;
 }
 declare namespace cocoascript {
@@ -463,7 +463,7 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/sparsefactorization_t
+  // https://developer.apple.com/documentation/accelerate/sparsefactorization_t
   type SparseFactorization_t = number;
 }
 declare namespace cocoascript {
@@ -483,7 +483,7 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/sparsesubfactor_t
+  // https://developer.apple.com/documentation/accelerate/sparsesubfactor_t
   type SparseSubfactor_t = number;
 }
 declare namespace cocoascript {
@@ -511,7 +511,7 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/sparseiterativestatus_t
+  // https://developer.apple.com/documentation/accelerate/sparseiterativestatus_t
   type SparseIterativeStatus_t = number;
 }
 declare namespace cocoascript {
@@ -523,124 +523,124 @@ declare namespace cocoascript {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/sparse_status
+  // https://developer.apple.com/documentation/accelerate/sparse_status
   type sparse_status = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/sparse_dimension
+  // https://developer.apple.com/documentation/accelerate/sparse_dimension
   type sparse_dimension = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/sparse_index
+  // https://developer.apple.com/documentation/accelerate/sparse_index
   type sparse_index = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/sparse_norm
+  // https://developer.apple.com/documentation/accelerate/sparse_norm
   type sparse_norm = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/sparse_stride
+  // https://developer.apple.com/documentation/accelerate/sparse_stride
   type sparse_stride = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/sparse_matrix_property
+  // https://developer.apple.com/documentation/accelerate/sparse_matrix_property
   type sparse_matrix_property = number;
 }
-// doc://com.apple.documentation/documentation/accelerate/vimage_cgimageformat/1399034-decode
+// https://developer.apple.com/documentation/accelerate/vimage_cgimageformat/1399034-decode
 declare const decode: cocoascript.CGFloat;
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/vimageconstcvimageformatref
+  // https://developer.apple.com/documentation/accelerate/vimageconstcvimageformatref
   type vImageConstCVImageFormatRef = cocoascript.vImageCVImageFormat;
 }
-// doc://com.apple.documentation/documentation/accelerate/1498252-vimagecvimageformat_getchannelde
+// https://developer.apple.com/documentation/accelerate/1498252-vimagecvimageformat_getchannelde
 declare const vImageCVImageFormat_GetChannelDescription: cocoascript.vImageBufferTypeCode;
-// doc://com.apple.documentation/documentation/accelerate/1498192-vimagecvimageformat_getchannelna
+// https://developer.apple.com/documentation/accelerate/1498192-vimagecvimageformat_getchannelna
 declare const vImageCVImageFormat_GetChannelNames: cocoascript.vImageConstCVImageFormatRef;
 declare namespace cocoascript {
   interface vImageChannelDescription {
   }
 }
-// doc://com.apple.documentation/documentation/accelerate/1498191-vimagecvimageformat_getconversio
+// https://developer.apple.com/documentation/accelerate/1498191-vimagecvimageformat_getconversio
 declare const vImageCVImageFormat_GetConversionMatrix: cocoascript.vImageMatrixType;
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/vimagebuffertypecode
+  // https://developer.apple.com/documentation/accelerate/vimagebuffertypecode
   type vImageBufferTypeCode = number;
 }
-// doc://com.apple.documentation/documentation/accelerate/kvimage_ypcbcrtoargbmatrix_itu_r_601_4
+// https://developer.apple.com/documentation/accelerate/kvimage_ypcbcrtoargbmatrix_itu_r_601_4
 declare const kvImage_YpCbCrToARGBMatrix_ITU_R_601_4: cocoascript.vImage_YpCbCrToARGBMatrix;
-// doc://com.apple.documentation/documentation/accelerate/kvimage_ypcbcrtoargbmatrix_itu_r_709_2
+// https://developer.apple.com/documentation/accelerate/kvimage_ypcbcrtoargbmatrix_itu_r_709_2
 declare const kvImage_YpCbCrToARGBMatrix_ITU_R_709_2: cocoascript.vImage_YpCbCrToARGBMatrix;
-// doc://com.apple.documentation/documentation/accelerate/kvimage_argbtoypcbcrmatrix_itu_r_709_2
+// https://developer.apple.com/documentation/accelerate/kvimage_argbtoypcbcrmatrix_itu_r_709_2
 declare const kvImage_ARGBToYpCbCrMatrix_ITU_R_709_2: cocoascript.vImage_ARGBToYpCbCrMatrix;
-// doc://com.apple.documentation/documentation/accelerate/kvimage_argbtoypcbcrmatrix_itu_r_601_4
+// https://developer.apple.com/documentation/accelerate/kvimage_argbtoypcbcrmatrix_itu_r_601_4
 declare const kvImage_ARGBToYpCbCrMatrix_ITU_R_601_4: cocoascript.vImage_ARGBToYpCbCrMatrix;
 declare namespace cocoascript {
   interface SparseOpaqueSymbolicFactorization {
   }
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/sparsekind_t
+  // https://developer.apple.com/documentation/accelerate/sparsekind_t
   type SparseKind_t = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/sparsetriangle_t
+  // https://developer.apple.com/documentation/accelerate/sparsetriangle_t
   type SparseTriangle_t = string;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/sparseorder_t
+  // https://developer.apple.com/documentation/accelerate/sparseorder_t
   type SparseOrder_t = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/sparsecontrol_t
+  // https://developer.apple.com/documentation/accelerate/sparsecontrol_t
   type SparseControl_t = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/1544758-vs128
+  // https://developer.apple.com/documentation/accelerate/1544758-vs128
   type vS128 = cocoascript.union;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/1545000-vu1024
+  // https://developer.apple.com/documentation/accelerate/1545000-vu1024
   type vU1024 = cocoascript.union;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/1546704-vu128
+  // https://developer.apple.com/documentation/accelerate/1546704-vu128
   type vU128 = cocoascript.union;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/1545748-vu256
+  // https://developer.apple.com/documentation/accelerate/1545748-vu256
   type vU256 = cocoascript.union;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/1545997-vs256
+  // https://developer.apple.com/documentation/accelerate/1545997-vs256
   type vS256 = cocoascript.union;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/1544674-vu512
+  // https://developer.apple.com/documentation/accelerate/1544674-vu512
   type vU512 = cocoascript.union;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/1545872-vs512
+  // https://developer.apple.com/documentation/accelerate/1545872-vs512
   type vS512 = cocoascript.union;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/1545885-vs1024
+  // https://developer.apple.com/documentation/accelerate/1545885-vs1024
   type vS1024 = cocoascript.union;
 }
-// doc://com.apple.documentation/documentation/accelerate/kvimagedecodearray_16q12format
+// https://developer.apple.com/documentation/accelerate/kvimagedecodearray_16q12format
 declare const kvImageDecodeArray_16Q12Format: cocoascript.CGFloat;
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/sparsescaling_t
+  // https://developer.apple.com/documentation/accelerate/sparsescaling_t
   type SparseScaling_t = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/sparsegmresvariant_t
+  // https://developer.apple.com/documentation/accelerate/sparsegmresvariant_t
   type SparseGMRESVariant_t = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/sparselsmrconvergencetest_t
+  // https://developer.apple.com/documentation/accelerate/sparselsmrconvergencetest_t
   type SparseLSMRConvergenceTest_t = number;
 }
 declare namespace cocoascript {
-  // doc://com.apple.documentation/documentation/accelerate/sparsestatus_t
+  // https://developer.apple.com/documentation/accelerate/sparsestatus_t
   type SparseStatus_t = number;
 }
